@@ -1,0 +1,37 @@
+.. _exhale_class_class_ifc4x2_1_1_ifc_applied_value:
+
+Class Ifc4x2::IfcAppliedValue
+=============================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x2`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcUtil::IfcBaseEntity`` (:ref:`exhale_class_class_ifc_util_1_1_ifc_base_entity`)
+
+
+Derived Type
+************
+
+- ``public Ifc4x2::IfcCostValue`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_cost_value`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x2::IfcAppliedValue
+   :members:
+   :protected-members:
+   :undoc-members:

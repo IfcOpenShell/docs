@@ -1,0 +1,66 @@
+
+.. _program_listing_file_src_ifcparse_utils.h:
+
+Program Listing for File utils.h
+================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_ifcparse_utils.h>` (``src/ifcparse/utils.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /********************************************************************************
+   *                                                                              *
+   * This file is part of IfcOpenShell.                                           *
+   *                                                                              *
+   * IfcOpenShell is free software: you can redistribute it and/or modify         *
+   * it under the terms of the Lesser GNU General Public License as published by  *
+   * the Free Software Foundation, either version 3.0 of the License, or          *
+   * (at your option) any later version.                                          *
+   *                                                                              *
+   * IfcOpenShell is distributed in the hope that it will be useful,              *
+   * but WITHOUT ANY WARRANTY; without even the implied warranty of               *
+   * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 *
+   * Lesser GNU General Public License for more details.                          *
+   *                                                                              *
+   * You should have received a copy of the Lesser GNU General Public License     *
+   * along with this program. If not, see <http://www.gnu.org/licenses/>.         *
+   *                                                                              *
+   ********************************************************************************/
+   
+   #include "../ifcparse/ifc_parse_api.h"
+   
+   #include <string>
+   
+   #ifndef IFCPARSE_UTILS_H
+   #define IFCPARSE_UTILS_H
+   
+   namespace IfcUtil {
+   
+       IFC_PARSE_API void sanitate_material_name(std::string &str);
+   
+       IFC_PARSE_API void escape_xml(std::string &str);
+       IFC_PARSE_API void unescape_xml(std::string &str);
+   
+       namespace path {
+   
+           IFC_PARSE_API bool delete_file(const std::string& filename);
+           IFC_PARSE_API bool rename_file(const std::string& old_filename, const std::string& new_filename);
+           
+   #ifdef _MSC_VER
+   
+           IFC_PARSE_API std::string to_utf8(const std::wstring& str);
+   
+           IFC_PARSE_API std::wstring from_utf8(const std::string& str);
+   #else
+           IFC_PARSE_API inline std::string to_utf8(const std::string& str) { return str; }
+   
+           IFC_PARSE_API inline std::string from_utf8(const std::string& str) { return str; }
+   #endif
+   
+       }
+   
+   }
+   
+   #endif

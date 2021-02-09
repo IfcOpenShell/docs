@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a71e4e60a374c2a805feabad00d15437a:
+
+Define SCHEMA_IfcSurfaceStyleRendering_HAS_TransmissionColour
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSurfaceStyleRendering_HAS_TransmissionColour

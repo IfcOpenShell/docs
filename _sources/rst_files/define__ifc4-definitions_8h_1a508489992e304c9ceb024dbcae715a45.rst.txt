@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a508489992e304c9ceb024dbcae715a45:
+
+Define SCHEMA_HAS_IfcCurvatureMeasure
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcCurvatureMeasure

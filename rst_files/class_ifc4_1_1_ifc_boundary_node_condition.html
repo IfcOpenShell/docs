@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcBoundaryNodeCondition &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcBoundaryNodeConditionWarping" href="class_ifc4_1_1_ifc_boundary_node_condition_warping.html" />
+    <link rel="prev" title="Class Ifc4::IfcBoundaryFaceCondition" href="class_ifc4_1_1_ifc_boundary_face_condition.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcboundarynodecondition">
+<span id="exhale-class-class-ifc4-1-1-ifc-boundary-node-condition"></span><h1>Class Ifc4::IfcBoundaryNodeCondition<a class="headerlink" href="#class-ifc4-ifcboundarynodecondition" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcBoundaryCondition</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_boundary_condition.html#exhale-class-class-ifc4-1-1-ifc-boundary-condition"><span class="std std-ref">Class Ifc4::IfcBoundaryCondition</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="derived-type">
+<h3>Derived Type<a class="headerlink" href="#derived-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcBoundaryNodeConditionWarping</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_boundary_node_condition_warping.html#exhale-class-class-ifc4-1-1-ifc-boundary-node-condition-warping"><span class="std std-ref">Class Ifc4::IfcBoundaryNodeConditionWarping</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc424IfcBoundaryNodeConditionE">
+<span id="_CPPv3N4Ifc424IfcBoundaryNodeConditionE"></span><span id="_CPPv2N4Ifc424IfcBoundaryNodeConditionE"></span><span id="Ifc4::IfcBoundaryNodeCondition"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcBoundaryNodeCondition</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_boundary_condition.html#_CPPv4N4Ifc420IfcBoundaryConditionE" title="Ifc4::IfcBoundaryCondition">IfcBoundaryCondition</a><a class="headerlink" href="#_CPPv4N4Ifc424IfcBoundaryNodeConditionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from IAI: Describes linearly elastic support conditions or connection conditions.</p>
+<p>Applicability:</p>
+<p>Point supports and connections.</p>
+<p>HISTORY: New entity in IFC 2x2. IFC 2x4 change: Attributes LinearStiffnessX/Y/Z renamed to TranslationalStiffnessX/Y/Z.</p>
+<p>IFC 2x4 change: All attribute data types changed from numeric to SELECT between Boolean and numeric. Stiffnesses may now also be negative, for example to capture destabilizing effects in boundary conditions. The IFC 2x3 convention of -1. representing infinite stiffness is no longer valid and must not be used. Infinite stiffness, i.e. fixed supports, are now modeled by the Boolean value TRUE. </p>
+<p>Subclassed by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_boundary_node_condition_warping"><span class="std std-ref">Ifc4::IfcBoundaryNodeConditionWarping</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc424IfcBoundaryNodeCondition4listE">
+<span id="_CPPv3N4Ifc424IfcBoundaryNodeCondition4listE"></span><span id="_CPPv2N4Ifc424IfcBoundaryNodeCondition4listE"></span><span id="Ifc4::IfcBoundaryNodeCondition::list"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a2c8cc83d27df9e3da1705c5761da323b"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc424IfcBoundaryNodeConditionE" title="Ifc4::IfcBoundaryNodeCondition">IfcBoundaryNodeCondition</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc424IfcBoundaryNodeCondition4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcBoundaryNodeCondition26hasTranslationalStiffnessXEv">
+<span id="_CPPv3NK4Ifc424IfcBoundaryNodeCondition26hasTranslationalStiffnessXEv"></span><span id="_CPPv2NK4Ifc424IfcBoundaryNodeCondition26hasTranslationalStiffnessXEv"></span><span id="Ifc4::IfcBoundaryNodeCondition::hasTranslationalStiffnessXC"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a693a9f95d96bd71ac6936871cbf01af7"></span>bool <code class="sig-name descname">hasTranslationalStiffnessX</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcBoundaryNodeCondition26hasTranslationalStiffnessXEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute TranslationalStiffnessX is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_boundary_node_condition"><span class="std std-ref">IfcBoundaryNodeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcBoundaryNodeCondition23TranslationalStiffnessXEv">
+<span id="_CPPv3NK4Ifc424IfcBoundaryNodeCondition23TranslationalStiffnessXEv"></span><span id="_CPPv2NK4Ifc424IfcBoundaryNodeCondition23TranslationalStiffnessXEv"></span><span id="Ifc4::IfcBoundaryNodeCondition::TranslationalStiffnessXC"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a309c01382ff5c7c7f6a2849755f1389e"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc431IfcTranslationalStiffnessSelectE" title="Ifc4::IfcTranslationalStiffnessSelect">IfcTranslationalStiffnessSelect</a> *<code class="sig-name descname">TranslationalStiffnessX</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcBoundaryNodeCondition23TranslationalStiffnessXEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Translational stiffness value in x-direction of the coordinate system defined by the instance which uses this resource object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc424IfcBoundaryNodeCondition26setTranslationalStiffnessXEPN4Ifc431IfcTranslationalStiffnessSelectE">
+<span id="_CPPv3N4Ifc424IfcBoundaryNodeCondition26setTranslationalStiffnessXEPN4Ifc431IfcTranslationalStiffnessSelectE"></span><span id="_CPPv2N4Ifc424IfcBoundaryNodeCondition26setTranslationalStiffnessXEPN4Ifc431IfcTranslationalStiffnessSelectE"></span><span id="Ifc4::IfcBoundaryNodeCondition::setTranslationalStiffnessX__Ifc4::IfcTranslationalStiffnessSelectP"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a472719f1c5e6b76117ccdf1f0d88d304"></span>void <code class="sig-name descname">setTranslationalStiffnessX</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc431IfcTranslationalStiffnessSelectE" title="Ifc4::IfcTranslationalStiffnessSelect">IfcTranslationalStiffnessSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc424IfcBoundaryNodeCondition26setTranslationalStiffnessXEPN4Ifc431IfcTranslationalStiffnessSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcBoundaryNodeCondition26hasTranslationalStiffnessYEv">
+<span id="_CPPv3NK4Ifc424IfcBoundaryNodeCondition26hasTranslationalStiffnessYEv"></span><span id="_CPPv2NK4Ifc424IfcBoundaryNodeCondition26hasTranslationalStiffnessYEv"></span><span id="Ifc4::IfcBoundaryNodeCondition::hasTranslationalStiffnessYC"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a2d5c926bb22a077967b46bcd27b5b094"></span>bool <code class="sig-name descname">hasTranslationalStiffnessY</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcBoundaryNodeCondition26hasTranslationalStiffnessYEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute TranslationalStiffnessY is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_boundary_node_condition"><span class="std std-ref">IfcBoundaryNodeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcBoundaryNodeCondition23TranslationalStiffnessYEv">
+<span id="_CPPv3NK4Ifc424IfcBoundaryNodeCondition23TranslationalStiffnessYEv"></span><span id="_CPPv2NK4Ifc424IfcBoundaryNodeCondition23TranslationalStiffnessYEv"></span><span id="Ifc4::IfcBoundaryNodeCondition::TranslationalStiffnessYC"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a7edf99c51f6b9b0ffac11138d3994d84"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc431IfcTranslationalStiffnessSelectE" title="Ifc4::IfcTranslationalStiffnessSelect">IfcTranslationalStiffnessSelect</a> *<code class="sig-name descname">TranslationalStiffnessY</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcBoundaryNodeCondition23TranslationalStiffnessYEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Translational stiffness value in y-direction of the coordinate system defined by the instance which uses this resource object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc424IfcBoundaryNodeCondition26setTranslationalStiffnessYEPN4Ifc431IfcTranslationalStiffnessSelectE">
+<span id="_CPPv3N4Ifc424IfcBoundaryNodeCondition26setTranslationalStiffnessYEPN4Ifc431IfcTranslationalStiffnessSelectE"></span><span id="_CPPv2N4Ifc424IfcBoundaryNodeCondition26setTranslationalStiffnessYEPN4Ifc431IfcTranslationalStiffnessSelectE"></span><span id="Ifc4::IfcBoundaryNodeCondition::setTranslationalStiffnessY__Ifc4::IfcTranslationalStiffnessSelectP"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a2f99e567acfaa5b18de21b573e2f3da9"></span>void <code class="sig-name descname">setTranslationalStiffnessY</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc431IfcTranslationalStiffnessSelectE" title="Ifc4::IfcTranslationalStiffnessSelect">IfcTranslationalStiffnessSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc424IfcBoundaryNodeCondition26setTranslationalStiffnessYEPN4Ifc431IfcTranslationalStiffnessSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcBoundaryNodeCondition26hasTranslationalStiffnessZEv">
+<span id="_CPPv3NK4Ifc424IfcBoundaryNodeCondition26hasTranslationalStiffnessZEv"></span><span id="_CPPv2NK4Ifc424IfcBoundaryNodeCondition26hasTranslationalStiffnessZEv"></span><span id="Ifc4::IfcBoundaryNodeCondition::hasTranslationalStiffnessZC"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1aeadd16460331e76b436f47edbfe5171c"></span>bool <code class="sig-name descname">hasTranslationalStiffnessZ</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcBoundaryNodeCondition26hasTranslationalStiffnessZEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute TranslationalStiffnessZ is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_boundary_node_condition"><span class="std std-ref">IfcBoundaryNodeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcBoundaryNodeCondition23TranslationalStiffnessZEv">
+<span id="_CPPv3NK4Ifc424IfcBoundaryNodeCondition23TranslationalStiffnessZEv"></span><span id="_CPPv2NK4Ifc424IfcBoundaryNodeCondition23TranslationalStiffnessZEv"></span><span id="Ifc4::IfcBoundaryNodeCondition::TranslationalStiffnessZC"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a92d7b80d51f686a6842abf8c7db450ff"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc431IfcTranslationalStiffnessSelectE" title="Ifc4::IfcTranslationalStiffnessSelect">IfcTranslationalStiffnessSelect</a> *<code class="sig-name descname">TranslationalStiffnessZ</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcBoundaryNodeCondition23TranslationalStiffnessZEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Translational stiffness value in z-direction of the coordinate system defined by the instance which uses this resource object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc424IfcBoundaryNodeCondition26setTranslationalStiffnessZEPN4Ifc431IfcTranslationalStiffnessSelectE">
+<span id="_CPPv3N4Ifc424IfcBoundaryNodeCondition26setTranslationalStiffnessZEPN4Ifc431IfcTranslationalStiffnessSelectE"></span><span id="_CPPv2N4Ifc424IfcBoundaryNodeCondition26setTranslationalStiffnessZEPN4Ifc431IfcTranslationalStiffnessSelectE"></span><span id="Ifc4::IfcBoundaryNodeCondition::setTranslationalStiffnessZ__Ifc4::IfcTranslationalStiffnessSelectP"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a2556ec91c507c80e8bb71e58e68b95bf"></span>void <code class="sig-name descname">setTranslationalStiffnessZ</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc431IfcTranslationalStiffnessSelectE" title="Ifc4::IfcTranslationalStiffnessSelect">IfcTranslationalStiffnessSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc424IfcBoundaryNodeCondition26setTranslationalStiffnessZEPN4Ifc431IfcTranslationalStiffnessSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcBoundaryNodeCondition23hasRotationalStiffnessXEv">
+<span id="_CPPv3NK4Ifc424IfcBoundaryNodeCondition23hasRotationalStiffnessXEv"></span><span id="_CPPv2NK4Ifc424IfcBoundaryNodeCondition23hasRotationalStiffnessXEv"></span><span id="Ifc4::IfcBoundaryNodeCondition::hasRotationalStiffnessXC"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a64a7372c323ac000a16f0111eff99ac3"></span>bool <code class="sig-name descname">hasRotationalStiffnessX</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcBoundaryNodeCondition23hasRotationalStiffnessXEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RotationalStiffnessX is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_boundary_node_condition"><span class="std std-ref">IfcBoundaryNodeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcBoundaryNodeCondition20RotationalStiffnessXEv">
+<span id="_CPPv3NK4Ifc424IfcBoundaryNodeCondition20RotationalStiffnessXEv"></span><span id="_CPPv2NK4Ifc424IfcBoundaryNodeCondition20RotationalStiffnessXEv"></span><span id="Ifc4::IfcBoundaryNodeCondition::RotationalStiffnessXC"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a220413249c1f90aee2238403e6c45227"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc428IfcRotationalStiffnessSelectE" title="Ifc4::IfcRotationalStiffnessSelect">IfcRotationalStiffnessSelect</a> *<code class="sig-name descname">RotationalStiffnessX</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcBoundaryNodeCondition20RotationalStiffnessXEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Rotational stiffness value about the x-axis of the coordinate system defined by the instance which uses this resource object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc424IfcBoundaryNodeCondition23setRotationalStiffnessXEPN4Ifc428IfcRotationalStiffnessSelectE">
+<span id="_CPPv3N4Ifc424IfcBoundaryNodeCondition23setRotationalStiffnessXEPN4Ifc428IfcRotationalStiffnessSelectE"></span><span id="_CPPv2N4Ifc424IfcBoundaryNodeCondition23setRotationalStiffnessXEPN4Ifc428IfcRotationalStiffnessSelectE"></span><span id="Ifc4::IfcBoundaryNodeCondition::setRotationalStiffnessX__Ifc4::IfcRotationalStiffnessSelectP"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a815e22551e7cc7b540561262ed4a2e81"></span>void <code class="sig-name descname">setRotationalStiffnessX</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc428IfcRotationalStiffnessSelectE" title="Ifc4::IfcRotationalStiffnessSelect">IfcRotationalStiffnessSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc424IfcBoundaryNodeCondition23setRotationalStiffnessXEPN4Ifc428IfcRotationalStiffnessSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcBoundaryNodeCondition23hasRotationalStiffnessYEv">
+<span id="_CPPv3NK4Ifc424IfcBoundaryNodeCondition23hasRotationalStiffnessYEv"></span><span id="_CPPv2NK4Ifc424IfcBoundaryNodeCondition23hasRotationalStiffnessYEv"></span><span id="Ifc4::IfcBoundaryNodeCondition::hasRotationalStiffnessYC"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a6efa2b81284ab447f1ff3235571c3f59"></span>bool <code class="sig-name descname">hasRotationalStiffnessY</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcBoundaryNodeCondition23hasRotationalStiffnessYEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RotationalStiffnessY is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_boundary_node_condition"><span class="std std-ref">IfcBoundaryNodeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcBoundaryNodeCondition20RotationalStiffnessYEv">
+<span id="_CPPv3NK4Ifc424IfcBoundaryNodeCondition20RotationalStiffnessYEv"></span><span id="_CPPv2NK4Ifc424IfcBoundaryNodeCondition20RotationalStiffnessYEv"></span><span id="Ifc4::IfcBoundaryNodeCondition::RotationalStiffnessYC"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a600c4e89218481afee8c695a4f3dda68"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc428IfcRotationalStiffnessSelectE" title="Ifc4::IfcRotationalStiffnessSelect">IfcRotationalStiffnessSelect</a> *<code class="sig-name descname">RotationalStiffnessY</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcBoundaryNodeCondition20RotationalStiffnessYEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Rotational stiffness value about the y-axis of the coordinate system defined by the instance which uses this resource object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc424IfcBoundaryNodeCondition23setRotationalStiffnessYEPN4Ifc428IfcRotationalStiffnessSelectE">
+<span id="_CPPv3N4Ifc424IfcBoundaryNodeCondition23setRotationalStiffnessYEPN4Ifc428IfcRotationalStiffnessSelectE"></span><span id="_CPPv2N4Ifc424IfcBoundaryNodeCondition23setRotationalStiffnessYEPN4Ifc428IfcRotationalStiffnessSelectE"></span><span id="Ifc4::IfcBoundaryNodeCondition::setRotationalStiffnessY__Ifc4::IfcRotationalStiffnessSelectP"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a3b47863d716245fbd726c3ff58dc5d04"></span>void <code class="sig-name descname">setRotationalStiffnessY</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc428IfcRotationalStiffnessSelectE" title="Ifc4::IfcRotationalStiffnessSelect">IfcRotationalStiffnessSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc424IfcBoundaryNodeCondition23setRotationalStiffnessYEPN4Ifc428IfcRotationalStiffnessSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcBoundaryNodeCondition23hasRotationalStiffnessZEv">
+<span id="_CPPv3NK4Ifc424IfcBoundaryNodeCondition23hasRotationalStiffnessZEv"></span><span id="_CPPv2NK4Ifc424IfcBoundaryNodeCondition23hasRotationalStiffnessZEv"></span><span id="Ifc4::IfcBoundaryNodeCondition::hasRotationalStiffnessZC"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a7befbe53c6c9c5c67a63c3bccf5a92a1"></span>bool <code class="sig-name descname">hasRotationalStiffnessZ</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcBoundaryNodeCondition23hasRotationalStiffnessZEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RotationalStiffnessZ is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_boundary_node_condition"><span class="std std-ref">IfcBoundaryNodeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcBoundaryNodeCondition20RotationalStiffnessZEv">
+<span id="_CPPv3NK4Ifc424IfcBoundaryNodeCondition20RotationalStiffnessZEv"></span><span id="_CPPv2NK4Ifc424IfcBoundaryNodeCondition20RotationalStiffnessZEv"></span><span id="Ifc4::IfcBoundaryNodeCondition::RotationalStiffnessZC"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1ab89ff621b8dc81adf8172443926b154f"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc428IfcRotationalStiffnessSelectE" title="Ifc4::IfcRotationalStiffnessSelect">IfcRotationalStiffnessSelect</a> *<code class="sig-name descname">RotationalStiffnessZ</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcBoundaryNodeCondition20RotationalStiffnessZEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Rotational stiffness value about the z-axis of the coordinate system defined by the instance which uses this resource object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc424IfcBoundaryNodeCondition23setRotationalStiffnessZEPN4Ifc428IfcRotationalStiffnessSelectE">
+<span id="_CPPv3N4Ifc424IfcBoundaryNodeCondition23setRotationalStiffnessZEPN4Ifc428IfcRotationalStiffnessSelectE"></span><span id="_CPPv2N4Ifc424IfcBoundaryNodeCondition23setRotationalStiffnessZEPN4Ifc428IfcRotationalStiffnessSelectE"></span><span id="Ifc4::IfcBoundaryNodeCondition::setRotationalStiffnessZ__Ifc4::IfcRotationalStiffnessSelectP"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a73f56138876fbbe4a9c1829955b6b65d"></span>void <code class="sig-name descname">setRotationalStiffnessZ</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc428IfcRotationalStiffnessSelectE" title="Ifc4::IfcRotationalStiffnessSelect">IfcRotationalStiffnessSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc424IfcBoundaryNodeCondition23setRotationalStiffnessZEPN4Ifc428IfcRotationalStiffnessSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcBoundaryNodeCondition11declarationEv">
+<span id="_CPPv3NK4Ifc424IfcBoundaryNodeCondition11declarationEv"></span><span id="_CPPv2NK4Ifc424IfcBoundaryNodeCondition11declarationEv"></span><span id="Ifc4::IfcBoundaryNodeCondition::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1a29ae21a7defd682df65fbe92e6ebaa4b"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcBoundaryNodeCondition11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc424IfcBoundaryNodeCondition24IfcBoundaryNodeConditionEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc424IfcBoundaryNodeCondition24IfcBoundaryNodeConditionEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc424IfcBoundaryNodeCondition24IfcBoundaryNodeConditionEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcBoundaryNodeCondition::IfcBoundaryNodeCondition__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1aec7ab8296d6c34a769727be64341d789"></span><code class="sig-name descname">IfcBoundaryNodeCondition</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc424IfcBoundaryNodeCondition24IfcBoundaryNodeConditionEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc424IfcBoundaryNodeCondition24IfcBoundaryNodeConditionEN5boost8optionalINSt6stringEEEPN4Ifc431IfcTranslationalStiffnessSelectEPN4Ifc431IfcTranslationalStiffnessSelectEPN4Ifc431IfcTranslationalStiffnessSelectEPN4Ifc428IfcRotationalStiffnessSelectEPN4Ifc428IfcRotationalStiffnessSelectEPN4Ifc428IfcRotationalStiffnessSelectE">
+<span id="_CPPv3N4Ifc424IfcBoundaryNodeCondition24IfcBoundaryNodeConditionEN5boost8optionalINSt6stringEEEPN4Ifc431IfcTranslationalStiffnessSelectEPN4Ifc431IfcTranslationalStiffnessSelectEPN4Ifc431IfcTranslationalStiffnessSelectEPN4Ifc428IfcRotationalStiffnessSelectEPN4Ifc428IfcRotationalStiffnessSelectEPN4Ifc428IfcRotationalStiffnessSelectE"></span><span id="_CPPv2N4Ifc424IfcBoundaryNodeCondition24IfcBoundaryNodeConditionEN5boost8optionalINSt6stringEEEPN4Ifc431IfcTranslationalStiffnessSelectEPN4Ifc431IfcTranslationalStiffnessSelectEPN4Ifc431IfcTranslationalStiffnessSelectEPN4Ifc428IfcRotationalStiffnessSelectEPN4Ifc428IfcRotationalStiffnessSelectEPN4Ifc428IfcRotationalStiffnessSelectE"></span><span id="Ifc4::IfcBoundaryNodeCondition::IfcBoundaryNodeCondition__boost::optional:ss:.Ifc4::IfcTranslationalStiffnessSelectP.Ifc4::IfcTranslationalStiffnessSelectP.Ifc4::IfcTranslationalStiffnessSelectP.Ifc4::IfcRotationalStiffnessSelectP.Ifc4::IfcRotationalStiffnessSelectP.Ifc4::IfcRotationalStiffnessSelectP"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1ae237c575d11b3d137a315a426f75e513"></span><code class="sig-name descname">IfcBoundaryNodeCondition</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Name</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc431IfcTranslationalStiffnessSelectE" title="Ifc4::IfcTranslationalStiffnessSelect">IfcTranslationalStiffnessSelect</a> *<em>v2_TranslationalStiffnessX</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc431IfcTranslationalStiffnessSelectE" title="Ifc4::IfcTranslationalStiffnessSelect">IfcTranslationalStiffnessSelect</a> *<em>v3_TranslationalStiffnessY</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc431IfcTranslationalStiffnessSelectE" title="Ifc4::IfcTranslationalStiffnessSelect">IfcTranslationalStiffnessSelect</a> *<em>v4_TranslationalStiffnessZ</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc428IfcRotationalStiffnessSelectE" title="Ifc4::IfcRotationalStiffnessSelect">IfcRotationalStiffnessSelect</a> *<em>v5_RotationalStiffnessX</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc428IfcRotationalStiffnessSelectE" title="Ifc4::IfcRotationalStiffnessSelect">IfcRotationalStiffnessSelect</a> *<em>v6_RotationalStiffnessY</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc428IfcRotationalStiffnessSelectE" title="Ifc4::IfcRotationalStiffnessSelect">IfcRotationalStiffnessSelect</a> *<em>v7_RotationalStiffnessZ</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc424IfcBoundaryNodeCondition24IfcBoundaryNodeConditionEN5boost8optionalINSt6stringEEEPN4Ifc431IfcTranslationalStiffnessSelectEPN4Ifc431IfcTranslationalStiffnessSelectEPN4Ifc431IfcTranslationalStiffnessSelectEPN4Ifc428IfcRotationalStiffnessSelectEPN4Ifc428IfcRotationalStiffnessSelectEPN4Ifc428IfcRotationalStiffnessSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc424IfcBoundaryNodeCondition5ClassEv">
+<span id="_CPPv3N4Ifc424IfcBoundaryNodeCondition5ClassEv"></span><span id="_CPPv2N4Ifc424IfcBoundaryNodeCondition5ClassEv"></span><span id="Ifc4::IfcBoundaryNodeCondition::Class"></span><span class="target" id="class_ifc4_1_1_ifc_boundary_node_condition_1affadf0c8dea1a11fe269be4fc00184f3"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc424IfcBoundaryNodeCondition5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_boundary_face_condition.html" title="previous chapter">Class Ifc4::IfcBoundaryFaceCondition</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_boundary_node_condition_warping.html" title="next chapter">Class Ifc4::IfcBoundaryNodeConditionWarping</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_boundary_node_condition.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

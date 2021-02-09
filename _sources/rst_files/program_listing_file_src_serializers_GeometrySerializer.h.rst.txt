@@ -1,0 +1,93 @@
+
+.. _program_listing_file_src_serializers_GeometrySerializer.h:
+
+Program Listing for File GeometrySerializer.h
+=============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_serializers_GeometrySerializer.h>` (``src/serializers/GeometrySerializer.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /********************************************************************************
+    *                                                                              *
+    * This file is part of IfcOpenShell.                                           *
+    *                                                                              *
+    * IfcOpenShell is free software: you can redistribute it and/or modify         *
+    * it under the terms of the Lesser GNU General Public License as published by  *
+    * the Free Software Foundation, either version 3.0 of the License, or          *
+    * (at your option) any later version.                                          *
+    *                                                                              *
+    * IfcOpenShell is distributed in the hope that it will be useful,              *
+    * but WITHOUT ANY WARRANTY; without even the implied warranty of               *
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 *
+    * Lesser GNU General Public License for more details.                          *
+    *                                                                              *
+    * You should have received a copy of the Lesser GNU General Public License     *
+    * along with this program. If not, see <http://www.gnu.org/licenses/>.         *
+    *                                                                              *
+    ********************************************************************************/
+   
+   #ifndef GEOMETRYSERIALIZER_H
+   #define GEOMETRYSERIALIZER_H
+   
+   #ifdef IFCCONVERT_DOUBLE_PRECISION
+   typedef double real_t;
+   #else
+   typedef float real_t;
+   #endif
+   
+   #include "../serializers/Serializer.h"
+   #include "../ifcgeom_schema_agnostic/IfcGeomIterator.h"
+   #include "../ifcgeom/IfcGeomElement.h"
+   
+   class SerializerSettings : public IfcGeom::IteratorSettings
+   {
+   public:
+       enum Setting
+       {
+           USE_ELEMENT_NAMES = 1 << (IfcGeom::IteratorSettings::NUM_SETTINGS + 1),
+           USE_ELEMENT_GUIDS = 1 << (IfcGeom::IteratorSettings::NUM_SETTINGS + 2),
+           USE_MATERIAL_NAMES = 1 << (IfcGeom::IteratorSettings::NUM_SETTINGS + 3),
+           USE_ELEMENT_TYPES = 1 << (IfcGeom::IteratorSettings::NUM_SETTINGS + 4),
+           USE_ELEMENT_HIERARCHY = 1 << (IfcGeom::IteratorSettings::NUM_SETTINGS + 5),
+           USE_ELEMENT_STEPIDS = 1 << (IfcGeom::IteratorSettings::NUM_SETTINGS + 6),
+           USE_Y_UP = 1 << (IfcGeom::IteratorSettings::NUM_SETTINGS + 7),
+           NUM_SETTINGS = 7
+       };
+   
+       SerializerSettings()
+           : precision(DEFAULT_PRECISION) { }
+   
+       short precision;
+   
+       enum { DEFAULT_PRECISION = 15 };
+   };
+   
+   class GeometrySerializer : public Serializer {
+   public:
+       GeometrySerializer(const SerializerSettings& settings) : settings_(settings) {}
+       virtual ~GeometrySerializer() {} 
+   
+       virtual bool isTesselated() const = 0;
+       virtual void write(const IfcGeom::TriangulationElement<real_t>* o) = 0;
+       virtual void write(const IfcGeom::BRepElement<real_t>* o) = 0;
+       virtual void setUnitNameAndMagnitude(const std::string& name, float magnitude) = 0;
+   
+       const SerializerSettings& settings() const { return settings_; }
+       SerializerSettings& settings() { return settings_; }
+   
+       virtual std::string object_id(const IfcGeom::Element<real_t>* o)
+       {
+           if (settings_.get(SerializerSettings::USE_ELEMENT_GUIDS)) return o->guid();
+           if (settings_.get(SerializerSettings::USE_ELEMENT_NAMES)) return o->name();
+           if (settings_.get(SerializerSettings::USE_ELEMENT_STEPIDS)) return "id-" + boost::lexical_cast<std::string>(o->id());
+           return o->unique_id();
+       }
+   
+   protected:
+       SerializerSettings settings_;
+   };
+   
+   #endif

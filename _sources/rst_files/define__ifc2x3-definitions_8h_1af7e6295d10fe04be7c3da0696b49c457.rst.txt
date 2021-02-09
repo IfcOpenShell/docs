@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1af7e6295d10fe04be7c3da0696b49c457:
+
+Define SCHEMA_IfcEnvironmentalImpactValue_HAS_UserDefinedCategory
+=================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcEnvironmentalImpactValue_HAS_UserDefinedCategory

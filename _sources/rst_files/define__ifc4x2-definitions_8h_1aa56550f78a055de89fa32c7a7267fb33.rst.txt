@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1aa56550f78a055de89fa32c7a7267fb33:
+
+Define SCHEMA_IfcPointOnCurve_HAS_BasisCurve
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPointOnCurve_HAS_BasisCurve

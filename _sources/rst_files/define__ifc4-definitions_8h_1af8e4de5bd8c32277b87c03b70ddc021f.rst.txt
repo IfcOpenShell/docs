@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1af8e4de5bd8c32277b87c03b70ddc021f:
+
+Define SCHEMA_IfcChiller_HAS_PredefinedType
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcChiller_HAS_PredefinedType

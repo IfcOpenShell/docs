@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1aa8aa1fe7f3d2afd36ba929fbf94f2f0d:
+
+Define SCHEMA_IfcDistanceExpression_HAS_DistanceAlong
+=====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDistanceExpression_HAS_DistanceAlong

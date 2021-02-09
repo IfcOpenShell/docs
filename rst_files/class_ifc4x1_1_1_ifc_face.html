@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcFace &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcFaceBasedSurfaceModel" href="class_ifc4x1_1_1_ifc_face_based_surface_model.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcExtrudedAreaSolidTapered" href="class_ifc4x1_1_1_ifc_extruded_area_solid_tapered.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcface">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-face"></span><h1>Class Ifc4x1::IfcFace<a class="headerlink" href="#class-ifc4x1-ifcface" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcTopologicalRepresentationItem</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_topological_representation_item.html#exhale-class-class-ifc4x1-1-1-ifc-topological-representation-item"><span class="std std-ref">Class Ifc4x1::IfcTopologicalRepresentationItem</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="derived-type">
+<h3>Derived Type<a class="headerlink" href="#derived-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcFaceSurface</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_face_surface.html#exhale-class-class-ifc4x1-1-1-ifc-face-surface"><span class="std std-ref">Class Ifc4x1::IfcFaceSurface</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x17IfcFaceE">
+<span id="_CPPv3N6Ifc4x17IfcFaceE"></span><span id="_CPPv2N6Ifc4x17IfcFaceE"></span><span id="Ifc4x1::IfcFace"></span><span class="target" id="class_ifc4x1_1_1_ifc_face"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcFace</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_topological_representation_item.html#_CPPv4N6Ifc4x132IfcTopologicalRepresentationItemE" title="Ifc4x1::IfcTopologicalRepresentationItem">IfcTopologicalRepresentationItem</a><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcFaceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: A face is a topological entity of dimensionality 2 corresponding to the intuitive notion of a piece of surface bounded by loops. Its domain, if present, is an oriented, connected, finite 2-manifold in Rm. A face domain shall not have handles but it may have holes, each hole bounded by a loop. The domain of the underlying geometry of the face, if present, does not contain its bounds, and 0 &lt; Ξ &lt; ∞. A face is represented by its bounding loops, which are defined as face bounds. A face has a topological normal n and the tangent to a loop is t. For a loop bounding a face with defined geometry, the cross product n x t points toward the interior of the face. That is, each loop runs counter-clockwise around the face when viewed from above, if we consider the normal n to point up. With each loop is associated a BOOLEAN flag to signify whether the loop direction is oriented with respect to the face normal (TRUE) or should be reversed (FALSE). <p> A face shall have at least one bound, and the loops shall not intersect. One loop is optionally distinguished as the outer loop of the face. If so, it establishes a preferred way of embedding the face domain in the plane, in which the other bounding loops of the face are inside the outer bound. Because the face domain is arcwise connected, no inner loop will contain any other loop. This is true regardless of which embedding in the plane is chosen. </p>
+<p> The edges and vertices referenced by the loops of a face form a graph, of which the individual loops are the connected components. The Euler equation (1) for this graph becomes:</p>
+</p>
+<p>where Gli is the graph genus of the i th loop.</p>
+<p>NOTE Corresponding ISO 10303 entity: face. No subtypes of face have been incorporated into this IFC Release. Please refer to ISO/IS 10303-42:1994, p. 140 for the final definition of the formal standard. The WR1 has not been incorporated, since it is always satisfied, due to the fact that only poly loops exist for face bounds.</p>
+<p>HISTORY New class in IFC Release 1.0</p>
+<p>Informal propositions:</p>
+<p>No edge shall be referenced by the face more than twice. <p> Distinct face bounds of the face shall have no common vertices. If geometry is present, distinct loops of the same face shall not intersect. </p>
+<p> The face shall satisfy the Euler Equation: (number of vertices) - (number of edges) - (number of loops) + (sum of genus for loops) = 0. </p>
+</p>
+<p>Subclassed by <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_face_surface"><span class="std std-ref">Ifc4x1::IfcFaceSurface</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x17IfcFace4listE">
+<span id="_CPPv3N6Ifc4x17IfcFace4listE"></span><span id="_CPPv2N6Ifc4x17IfcFace4listE"></span><span id="Ifc4x1::IfcFace::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_face_1a8b0483d59991ecae991970db5cb2025d"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x17IfcFaceE" title="Ifc4x1::IfcFace">IfcFace</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcFace4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x17IfcFace6BoundsEv">
+<span id="_CPPv3NK6Ifc4x17IfcFace6BoundsEv"></span><span id="_CPPv2NK6Ifc4x17IfcFace6BoundsEv"></span><span id="Ifc4x1::IfcFace::BoundsC"></span><span class="target" id="class_ifc4x1_1_1_ifc_face_1ad5640b79def02e78cbb0e9596744f8b9"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_face_bound.html#_CPPv4N6Ifc4x112IfcFaceBoundE" title="Ifc4x1::IfcFaceBound">IfcFaceBound</a>&gt;::ptr <code class="sig-name descname">Bounds</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x17IfcFace6BoundsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Boundaries of the face. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x17IfcFace9setBoundsEN22IfcTemplatedEntityListIN6Ifc4x112IfcFaceBoundEE3ptrE">
+<span id="_CPPv3N6Ifc4x17IfcFace9setBoundsEN22IfcTemplatedEntityListIN6Ifc4x112IfcFaceBoundEE3ptrE"></span><span id="_CPPv2N6Ifc4x17IfcFace9setBoundsEN22IfcTemplatedEntityListIN6Ifc4x112IfcFaceBoundEE3ptrE"></span><span id="Ifc4x1::IfcFace::setBounds__IfcTemplatedEntityList:Ifc4x1::IfcFaceBound:::ptr"></span><span class="target" id="class_ifc4x1_1_1_ifc_face_1af1359d80e9a56f1686c946c8d7f4de5a"></span>void <code class="sig-name descname">setBounds</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_face_bound.html#_CPPv4N6Ifc4x112IfcFaceBoundE" title="Ifc4x1::IfcFaceBound">IfcFaceBound</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcFace9setBoundsEN22IfcTemplatedEntityListIN6Ifc4x112IfcFaceBoundEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x17IfcFace14HasTextureMapsEv">
+<span id="_CPPv3NK6Ifc4x17IfcFace14HasTextureMapsEv"></span><span id="_CPPv2NK6Ifc4x17IfcFace14HasTextureMapsEv"></span><span id="Ifc4x1::IfcFace::HasTextureMapsC"></span><span class="target" id="class_ifc4x1_1_1_ifc_face_1a3b5aa381383a7a71c1f5f23672680ab3"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4x1_1_1_ifc_texture_map.html#_CPPv4N6Ifc4x113IfcTextureMapE" title="Ifc4x1::IfcTextureMap">IfcTextureMap</a>&gt;::ptr <code class="sig-name descname">HasTextureMaps</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x17IfcFace14HasTextureMapsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x17IfcFace11declarationEv">
+<span id="_CPPv3NK6Ifc4x17IfcFace11declarationEv"></span><span id="_CPPv2NK6Ifc4x17IfcFace11declarationEv"></span><span id="Ifc4x1::IfcFace::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_face_1ad01a4acd7aa2268a4cc45e1648afb6f8"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x17IfcFace11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x17IfcFace7IfcFaceEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x17IfcFace7IfcFaceEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x17IfcFace7IfcFaceEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcFace::IfcFace__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_face_1a41936f998a3ac7fd23a9b82c63e7bd6a"></span><code class="sig-name descname">IfcFace</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcFace7IfcFaceEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x17IfcFace7IfcFaceEN22IfcTemplatedEntityListIN6Ifc4x112IfcFaceBoundEE3ptrE">
+<span id="_CPPv3N6Ifc4x17IfcFace7IfcFaceEN22IfcTemplatedEntityListIN6Ifc4x112IfcFaceBoundEE3ptrE"></span><span id="_CPPv2N6Ifc4x17IfcFace7IfcFaceEN22IfcTemplatedEntityListIN6Ifc4x112IfcFaceBoundEE3ptrE"></span><span id="Ifc4x1::IfcFace::IfcFace__IfcTemplatedEntityList:Ifc4x1::IfcFaceBound:::ptr"></span><span class="target" id="class_ifc4x1_1_1_ifc_face_1ac22f8208c2289e2679eac2040b5cda67"></span><code class="sig-name descname">IfcFace</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_face_bound.html#_CPPv4N6Ifc4x112IfcFaceBoundE" title="Ifc4x1::IfcFaceBound">IfcFaceBound</a>&gt;::ptr <em>v1_Bounds</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcFace7IfcFaceEN22IfcTemplatedEntityListIN6Ifc4x112IfcFaceBoundEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x17IfcFace5ClassEv">
+<span id="_CPPv3N6Ifc4x17IfcFace5ClassEv"></span><span id="_CPPv2N6Ifc4x17IfcFace5ClassEv"></span><span id="Ifc4x1::IfcFace::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_face_1acd90625b96b691c65cb9bb8a64f85143"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcFace5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_extruded_area_solid_tapered.html" title="previous chapter">Class Ifc4x1::IfcExtrudedAreaSolidTapered</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_face_based_surface_model.html" title="next chapter">Class Ifc4x1::IfcFaceBasedSurfaceModel</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_face.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

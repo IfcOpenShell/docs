@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1ab80c904d9f1f418714ec16cb5794f7ce:
+
+Define SCHEMA_IfcSchedulingTime_HAS_UserDefinedDataOrigin
+=========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSchedulingTime_HAS_UserDefinedDataOrigin

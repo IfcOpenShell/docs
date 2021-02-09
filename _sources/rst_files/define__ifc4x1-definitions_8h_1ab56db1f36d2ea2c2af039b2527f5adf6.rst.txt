@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1ab56db1f36d2ea2c2af039b2527f5adf6:
+
+Define SCHEMA_HAS_IfcRelContainedInSpatialStructure
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcRelContainedInSpatialStructure

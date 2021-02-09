@@ -1,0 +1,95 @@
+
+.. _file_src_ifcparse_IfcBaseClass.h:
+
+File IfcBaseClass.h
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcparse>` (``src/ifcparse``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/IfcBaseClass.h``)
+--------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_IfcBaseClass.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/IfcEntityInstanceData.h``
+
+- ``../ifcparse/IfcSchema.h``
+
+- ``../ifcparse/utils.h``
+
+- ``boost/shared_ptr.hpp``
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_IfcParse.h`
+
+- :ref:`file_src_ifcparse_IfcLogger.h`
+
+- :ref:`file_src_ifcparse_IfcEntityList.h`
+
+- :ref:`file_src_ifcgeom_IfcGeom.h`
+
+- :ref:`file_src_ifcgeom_IfcGeomIteratorSettings.h`
+
+- :ref:`file_src_ifcparse_IfcWrite.h`
+
+- :ref:`file_src_ifcparse_Ifc2x3.h`
+
+- :ref:`file_src_ifcparse_Ifc4.h`
+
+- :ref:`file_src_ifcparse_Ifc4x1.h`
+
+- :ref:`file_src_ifcparse_Ifc4x2.h`
+
+- :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+- :ref:`file_src_ifcgeom_IfcRegister.h`
+
+- :ref:`file_src_ifcgeom_schema_agnostic_Serialization.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcUtil`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_ifc_util_1_1_ifc_base_class`
+
+- :ref:`exhale_class_class_ifc_util_1_1_ifc_base_entity`
+
+- :ref:`exhale_class_class_ifc_util_1_1_ifc_base_type`
+
+- :ref:`exhale_class_class_ifc_util_1_1_ifc_late_bound_entity`
+

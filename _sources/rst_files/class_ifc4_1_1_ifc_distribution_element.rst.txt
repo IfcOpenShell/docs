@@ -1,0 +1,38 @@
+.. _exhale_class_class_ifc4_1_1_ifc_distribution_element:
+
+Class Ifc4::IfcDistributionElement
+==================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4::IfcElement`` (:ref:`exhale_class_class_ifc4_1_1_ifc_element`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4::IfcDistributionControlElement`` (:ref:`exhale_class_class_ifc4_1_1_ifc_distribution_control_element`)
+- ``public Ifc4::IfcDistributionFlowElement`` (:ref:`exhale_class_class_ifc4_1_1_ifc_distribution_flow_element`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4::IfcDistributionElement
+   :members:
+   :protected-members:
+   :undoc-members:

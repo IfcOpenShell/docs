@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ab7b08ed3138db29af30e2e8aa3ef6c26:
+
+Define SCHEMA_IfcStructuralLoadSingleForce_HAS_MomentZ
+======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLoadSingleForce_HAS_MomentZ

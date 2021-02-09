@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1aba64a2b381e061d8db177c1b51300283:
+
+Define SCHEMA_IfcBoundaryEdgeCondition_HAS_RotationalStiffnessByLengthZ
+=======================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBoundaryEdgeCondition_HAS_RotationalStiffnessByLengthZ

@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Struct Ifc4x1::IfcWindowPanelOperationEnum &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct Ifc4x1::IfcWindowPanelPositionEnum" href="struct_ifc4x1_1_1_ifc_window_panel_position_enum.html" />
+    <link rel="prev" title="Struct Ifc4x1::IfcWasteTerminalTypeEnum" href="struct_ifc4x1_1_1_ifc_waste_terminal_type_enum.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="struct-ifc4x1-ifcwindowpaneloperationenum">
+<span id="exhale-struct-struct-ifc4x1-1-1-ifc-window-panel-operation-enum"></span><h1>Struct Ifc4x1::IfcWindowPanelOperationEnum<a class="headerlink" href="#struct-ifc4x1-ifcwindowpaneloperationenum" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This struct is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp struct">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnumE">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnumE"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnumE"></span><span id="Ifc4x1::IfcWindowPanelOperationEnum"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum"></span><em class="property">struct </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcWindowPanelOperationEnum</code><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp enum">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum5ValueE">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnum5ValueE"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnum5ValueE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum_1ae0c69788081e247ccd8c8652c22d7aa2"></span><em class="property">enum </em><code class="sig-name descname">Value</code><br /></dt>
+<dd><p>This enumeration defines the basic ways to describe how window panels operate, as shown in Figure 168.</p>
+<p>HISTORY New Enumeration in IFC Release 2.0</p>
+<p>Enumerator Description Figure</p>
+<p>SideHungRightHand panel that opens to the right when viewed from the outside </p>
+<p>SideHungLeftHand panel that opens to the left when viewed from the outside </p>
+<p>TiltAndTurnRightHand panel that opens to the right and is bottom hung </p>
+<p>TiltAndTurnLeftHand panel that opens to the left and is bottom hung </p>
+<p>TopHung panel is top hung </p>
+<p>BottomHung panel is bottom hung </p>
+<p>PivotHorizontal panel is swinging horizontally (hinges are in the middle) </p>
+<p>PivotVertical panel is swinging vertically (hinges are in the middle) </p>
+<p>SlidingHorizontal panel is sliding horizontally</p>
+<p></p>
+<p>SlidingVertical panel is sliding vertically </p>
+<p>RemovableCasement panel is removable </p>
+<p>FixedCasement panel is fixed </p>
+<p>OtherOperation user defined operation type </p>
+<p>NotDefined  </p>
+<p>Figure 168 — Window panel operations</p>
+<p>The opening direction of the window panels is given by the local placement of the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_window"><span class="std std-ref">IfcWindow</span></a>. The positive y-axis determines the direction as shown in Figure 169. NOTE</p>
+<p>Figures are shown as viewed from the outside (in direction of the positive y-axis). Figures (symbolic representation) depend on the national building code These figures are only shown as illustrations</p>
+<p>Figure 169 — Window panel directions </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum5Value41IfcWindowPanelOperation_SIDEHUNGRIGHTHANDE">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnum5Value41IfcWindowPanelOperation_SIDEHUNGRIGHTHANDE"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnum5Value41IfcWindowPanelOperation_SIDEHUNGRIGHTHANDE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum_1ae0c69788081e247ccd8c8652c22d7aa2a43edaf190e9204c1438ce0d8c15233a7"></span><em class="property">enumerator </em><code class="sig-name descname">IfcWindowPanelOperation_SIDEHUNGRIGHTHAND</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum5Value40IfcWindowPanelOperation_SIDEHUNGLEFTHANDE">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnum5Value40IfcWindowPanelOperation_SIDEHUNGLEFTHANDE"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnum5Value40IfcWindowPanelOperation_SIDEHUNGLEFTHANDE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum_1ae0c69788081e247ccd8c8652c22d7aa2ad5f02ce6c6aea1ee98a1c20911d8ea25"></span><em class="property">enumerator </em><code class="sig-name descname">IfcWindowPanelOperation_SIDEHUNGLEFTHAND</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum5Value44IfcWindowPanelOperation_TILTANDTURNRIGHTHANDE">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnum5Value44IfcWindowPanelOperation_TILTANDTURNRIGHTHANDE"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnum5Value44IfcWindowPanelOperation_TILTANDTURNRIGHTHANDE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum_1ae0c69788081e247ccd8c8652c22d7aa2ad529da2c5d32a94ee195a06b3fd908ed"></span><em class="property">enumerator </em><code class="sig-name descname">IfcWindowPanelOperation_TILTANDTURNRIGHTHAND</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum5Value43IfcWindowPanelOperation_TILTANDTURNLEFTHANDE">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnum5Value43IfcWindowPanelOperation_TILTANDTURNLEFTHANDE"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnum5Value43IfcWindowPanelOperation_TILTANDTURNLEFTHANDE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum_1ae0c69788081e247ccd8c8652c22d7aa2a8928ed60c43d39b2bac8cf27a85ded62"></span><em class="property">enumerator </em><code class="sig-name descname">IfcWindowPanelOperation_TILTANDTURNLEFTHAND</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum5Value31IfcWindowPanelOperation_TOPHUNGE">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnum5Value31IfcWindowPanelOperation_TOPHUNGE"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnum5Value31IfcWindowPanelOperation_TOPHUNGE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum_1ae0c69788081e247ccd8c8652c22d7aa2a7714a71a5987415893f1b4b2a3734adf"></span><em class="property">enumerator </em><code class="sig-name descname">IfcWindowPanelOperation_TOPHUNG</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum5Value34IfcWindowPanelOperation_BOTTOMHUNGE">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnum5Value34IfcWindowPanelOperation_BOTTOMHUNGE"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnum5Value34IfcWindowPanelOperation_BOTTOMHUNGE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum_1ae0c69788081e247ccd8c8652c22d7aa2a35d413adb1f895c0873bff93ec7704ac"></span><em class="property">enumerator </em><code class="sig-name descname">IfcWindowPanelOperation_BOTTOMHUNG</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum5Value39IfcWindowPanelOperation_PIVOTHORIZONTALE">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnum5Value39IfcWindowPanelOperation_PIVOTHORIZONTALE"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnum5Value39IfcWindowPanelOperation_PIVOTHORIZONTALE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum_1ae0c69788081e247ccd8c8652c22d7aa2a83f9d78a2016bb18a3505526436f86ff"></span><em class="property">enumerator </em><code class="sig-name descname">IfcWindowPanelOperation_PIVOTHORIZONTAL</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum5Value37IfcWindowPanelOperation_PIVOTVERTICALE">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnum5Value37IfcWindowPanelOperation_PIVOTVERTICALE"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnum5Value37IfcWindowPanelOperation_PIVOTVERTICALE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum_1ae0c69788081e247ccd8c8652c22d7aa2a08bc76d238021550cc9d5ea7131efbb3"></span><em class="property">enumerator </em><code class="sig-name descname">IfcWindowPanelOperation_PIVOTVERTICAL</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum5Value41IfcWindowPanelOperation_SLIDINGHORIZONTALE">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnum5Value41IfcWindowPanelOperation_SLIDINGHORIZONTALE"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnum5Value41IfcWindowPanelOperation_SLIDINGHORIZONTALE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum_1ae0c69788081e247ccd8c8652c22d7aa2a3a3c342c89b403622d7bea29cd94b104"></span><em class="property">enumerator </em><code class="sig-name descname">IfcWindowPanelOperation_SLIDINGHORIZONTAL</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum5Value39IfcWindowPanelOperation_SLIDINGVERTICALE">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnum5Value39IfcWindowPanelOperation_SLIDINGVERTICALE"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnum5Value39IfcWindowPanelOperation_SLIDINGVERTICALE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum_1ae0c69788081e247ccd8c8652c22d7aa2aec20908e6e223943f889d7c4c38109fa"></span><em class="property">enumerator </em><code class="sig-name descname">IfcWindowPanelOperation_SLIDINGVERTICAL</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum5Value41IfcWindowPanelOperation_REMOVABLECASEMENTE">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnum5Value41IfcWindowPanelOperation_REMOVABLECASEMENTE"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnum5Value41IfcWindowPanelOperation_REMOVABLECASEMENTE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum_1ae0c69788081e247ccd8c8652c22d7aa2a06a45e0a092463fec74ff116f4902af2"></span><em class="property">enumerator </em><code class="sig-name descname">IfcWindowPanelOperation_REMOVABLECASEMENT</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum5Value37IfcWindowPanelOperation_FIXEDCASEMENTE">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnum5Value37IfcWindowPanelOperation_FIXEDCASEMENTE"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnum5Value37IfcWindowPanelOperation_FIXEDCASEMENTE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum_1ae0c69788081e247ccd8c8652c22d7aa2a9be2d7ebe8359d9a52d5a37ef53dd5df"></span><em class="property">enumerator </em><code class="sig-name descname">IfcWindowPanelOperation_FIXEDCASEMENT</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum5Value38IfcWindowPanelOperation_OTHEROPERATIONE">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnum5Value38IfcWindowPanelOperation_OTHEROPERATIONE"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnum5Value38IfcWindowPanelOperation_OTHEROPERATIONE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum_1ae0c69788081e247ccd8c8652c22d7aa2aa84cdd49e9b51de5179b2eb0ebdd6433"></span><em class="property">enumerator </em><code class="sig-name descname">IfcWindowPanelOperation_OTHEROPERATION</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum5Value34IfcWindowPanelOperation_NOTDEFINEDE">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnum5Value34IfcWindowPanelOperation_NOTDEFINEDE"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnum5Value34IfcWindowPanelOperation_NOTDEFINEDE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum_1ae0c69788081e247ccd8c8652c22d7aa2afc2b04772b21730c5d5691b157368b63"></span><em class="property">enumerator </em><code class="sig-name descname">IfcWindowPanelOperation_NOTDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum8ToStringE5Value">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnum8ToStringE5Value"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnum8ToStringE5Value"></span><span id="Ifc4x1::IfcWindowPanelOperationEnum::ToString__Value"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum_1a1aa85b9d53a70afb51cab2932259d0a8"></span>IFC_PARSE_API <em class="property">const</em> char *<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum5ValueE" title="Ifc4x1::IfcWindowPanelOperationEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum10FromStringERKNSt6stringE">
+<span id="_CPPv3N6Ifc4x127IfcWindowPanelOperationEnum10FromStringERKNSt6stringE"></span><span id="_CPPv2N6Ifc4x127IfcWindowPanelOperationEnum10FromStringERKNSt6stringE"></span><span id="Ifc4x1::IfcWindowPanelOperationEnum::FromString__ssCR"></span><span class="target" id="struct_ifc4x1_1_1_ifc_window_panel_operation_enum_1a3350ac40dfa8ce559c76e5d6d74abe1e"></span>IFC_PARSE_API <a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x127IfcWindowPanelOperationEnum5ValueE" title="Ifc4x1::IfcWindowPanelOperationEnum::Value">Value</a> <code class="sig-name descname">FromString</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>s</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="struct_ifc4x1_1_1_ifc_waste_terminal_type_enum.html" title="previous chapter">Struct Ifc4x1::IfcWasteTerminalTypeEnum</a></li>
+      <li>Next: <a href="struct_ifc4x1_1_1_ifc_window_panel_position_enum.html" title="next chapter">Struct Ifc4x1::IfcWindowPanelPositionEnum</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/struct_ifc4x1_1_1_ifc_window_panel_operation_enum.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

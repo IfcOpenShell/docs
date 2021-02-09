@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a6cf87b8140cf93ca35f3811fa64de5b4:
+
+Define SCHEMA_IfcInventory_HAS_ResponsiblePersons
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcInventory_HAS_ResponsiblePersons

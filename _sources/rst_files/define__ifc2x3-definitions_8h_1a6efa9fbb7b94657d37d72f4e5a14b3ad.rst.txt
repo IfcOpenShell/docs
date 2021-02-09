@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a6efa9fbb7b94657d37d72f4e5a14b3ad:
+
+Define SCHEMA_IfcElectricalBaseProperties_HAS_InputFrequency
+============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcElectricalBaseProperties_HAS_InputFrequency

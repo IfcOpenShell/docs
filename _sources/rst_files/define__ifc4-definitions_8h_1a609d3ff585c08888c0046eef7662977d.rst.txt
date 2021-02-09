@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a609d3ff585c08888c0046eef7662977d:
+
+Define SCHEMA_IfcElectricDistributionBoardType_HAS_PredefinedType
+=================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcElectricDistributionBoardType_HAS_PredefinedType

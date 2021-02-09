@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a0ce893eafe65518e5023226b477b95ca:
+
+Define SCHEMA_HAS_IfcConstructionMaterialResource
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcConstructionMaterialResource

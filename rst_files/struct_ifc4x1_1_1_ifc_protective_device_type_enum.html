@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Struct Ifc4x1::IfcProtectiveDeviceTypeEnum &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct Ifc4x1::IfcPumpTypeEnum" href="struct_ifc4x1_1_1_ifc_pump_type_enum.html" />
+    <link rel="prev" title="Struct Ifc4x1::IfcProtectiveDeviceTrippingUnitTypeEnum" href="struct_ifc4x1_1_1_ifc_protective_device_tripping_unit_type_enum.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="struct-ifc4x1-ifcprotectivedevicetypeenum">
+<span id="exhale-struct-struct-ifc4x1-1-1-ifc-protective-device-type-enum"></span><h1>Struct Ifc4x1::IfcProtectiveDeviceTypeEnum<a class="headerlink" href="#struct-ifc4x1-ifcprotectivedevicetypeenum" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This struct is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp struct">
+<dt id="_CPPv4N6Ifc4x127IfcProtectiveDeviceTypeEnumE">
+<span id="_CPPv3N6Ifc4x127IfcProtectiveDeviceTypeEnumE"></span><span id="_CPPv2N6Ifc4x127IfcProtectiveDeviceTypeEnumE"></span><span id="Ifc4x1::IfcProtectiveDeviceTypeEnum"></span><span class="target" id="struct_ifc4x1_1_1_ifc_protective_device_type_enum"></span><em class="property">struct </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcProtectiveDeviceTypeEnum</code><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp enum">
+<dt id="_CPPv4N6Ifc4x127IfcProtectiveDeviceTypeEnum5ValueE">
+<span id="_CPPv3N6Ifc4x127IfcProtectiveDeviceTypeEnum5ValueE"></span><span id="_CPPv2N6Ifc4x127IfcProtectiveDeviceTypeEnum5ValueE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_protective_device_type_enum_1a49e8d0d79d99bd7826690b9fa3b49175"></span><em class="property">enum </em><code class="sig-name descname">Value</code><br /></dt>
+<dd><p>The <a class="reference internal" href="#struct_ifc4x1_1_1_ifc_protective_device_type_enum"><span class="std std-ref">IfcProtectiveDeviceTypeEnum</span></a> specifically defines the range of different breaker unit types that can be used in conjunction with protective device. Types may also be used as a reference to a complete protective device in circumstances where tripping units are not separately identified (typically expected to be the case during earlier stages of design).</p>
+<p>HISTORY: New type in IFC 2x2. Modified definition and usage in IFC 2x4</p>
+<p>Enumeration</p>
+<p>FUSEDISCONNECTOR: A device that will electrically open the circuit after a period of prolonged, abnormal current flow. CIRCUITBREAKER: A mechanical switching device capable of making, carrying, and breaking currents under normal circuit conditions and also making, carrying for a specified time and breaking, current under specified abnormal circuit conditions such as those of short circuit. EARTHINGSWITCH: A safety device used to open or close a circuit when there is no current. Used to isolate a part of a circuit, a machine, a part of an overhead line or an underground line so that maintenance can be safely conducted. EARTHLEAKAGECIRCUITBREAKER: A device that opens, closes, or isolates a circuit and has short circuit protection but no overload protection. It attempts to break the circuit when there is a leakage of current from phase to earth, by measuring voltage on the earth conductor. RESIDUALCURRENTCIRCUITBREAKER: A device that opens, closes, or isolates a circuit and has short circuit and overload protection. It attempts to break the circuit when there is a difference in current between any two phases. May also be referred to as ‘Ground Fault Interupter (GFI)’ or ‘Ground Fault Circuit Interuptor (GFCI)’ RESIDUALCURRENTSWITCH: A device that opens, closes or isolates a circuit and has no short circuit or overload protection. May also be identified as a ‘ground fault switch’. VARISTOR: A high voltage surge protection device. USERDEFINED: User-defined type. NOTDEFINED: Undefined type. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value38IfcProtectiveDeviceType_CIRCUITBREAKERE">
+<span id="_CPPv3N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value38IfcProtectiveDeviceType_CIRCUITBREAKERE"></span><span id="_CPPv2N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value38IfcProtectiveDeviceType_CIRCUITBREAKERE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_protective_device_type_enum_1a49e8d0d79d99bd7826690b9fa3b49175ac832f5eb43e0319d8b2ab8e49bff8384"></span><em class="property">enumerator </em><code class="sig-name descname">IfcProtectiveDeviceType_CIRCUITBREAKER</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value50IfcProtectiveDeviceType_EARTHLEAKAGECIRCUITBREAKERE">
+<span id="_CPPv3N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value50IfcProtectiveDeviceType_EARTHLEAKAGECIRCUITBREAKERE"></span><span id="_CPPv2N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value50IfcProtectiveDeviceType_EARTHLEAKAGECIRCUITBREAKERE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_protective_device_type_enum_1a49e8d0d79d99bd7826690b9fa3b49175a28431579b4ebd66029bcab211062ccab"></span><em class="property">enumerator </em><code class="sig-name descname">IfcProtectiveDeviceType_EARTHLEAKAGECIRCUITBREAKER</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value38IfcProtectiveDeviceType_EARTHINGSWITCHE">
+<span id="_CPPv3N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value38IfcProtectiveDeviceType_EARTHINGSWITCHE"></span><span id="_CPPv2N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value38IfcProtectiveDeviceType_EARTHINGSWITCHE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_protective_device_type_enum_1a49e8d0d79d99bd7826690b9fa3b49175a5f4ec59087902cec83c83c188ca21d96"></span><em class="property">enumerator </em><code class="sig-name descname">IfcProtectiveDeviceType_EARTHINGSWITCH</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value40IfcProtectiveDeviceType_FUSEDISCONNECTORE">
+<span id="_CPPv3N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value40IfcProtectiveDeviceType_FUSEDISCONNECTORE"></span><span id="_CPPv2N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value40IfcProtectiveDeviceType_FUSEDISCONNECTORE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_protective_device_type_enum_1a49e8d0d79d99bd7826690b9fa3b49175aa08467bce4c52fd8a3e3628c668f518d"></span><em class="property">enumerator </em><code class="sig-name descname">IfcProtectiveDeviceType_FUSEDISCONNECTOR</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value53IfcProtectiveDeviceType_RESIDUALCURRENTCIRCUITBREAKERE">
+<span id="_CPPv3N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value53IfcProtectiveDeviceType_RESIDUALCURRENTCIRCUITBREAKERE"></span><span id="_CPPv2N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value53IfcProtectiveDeviceType_RESIDUALCURRENTCIRCUITBREAKERE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_protective_device_type_enum_1a49e8d0d79d99bd7826690b9fa3b49175a2aecfeb062767730368eb87b39596921"></span><em class="property">enumerator </em><code class="sig-name descname">IfcProtectiveDeviceType_RESIDUALCURRENTCIRCUITBREAKER</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value45IfcProtectiveDeviceType_RESIDUALCURRENTSWITCHE">
+<span id="_CPPv3N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value45IfcProtectiveDeviceType_RESIDUALCURRENTSWITCHE"></span><span id="_CPPv2N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value45IfcProtectiveDeviceType_RESIDUALCURRENTSWITCHE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_protective_device_type_enum_1a49e8d0d79d99bd7826690b9fa3b49175acc515df6930180e2aa8fae706df27b58"></span><em class="property">enumerator </em><code class="sig-name descname">IfcProtectiveDeviceType_RESIDUALCURRENTSWITCH</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value32IfcProtectiveDeviceType_VARISTORE">
+<span id="_CPPv3N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value32IfcProtectiveDeviceType_VARISTORE"></span><span id="_CPPv2N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value32IfcProtectiveDeviceType_VARISTORE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_protective_device_type_enum_1a49e8d0d79d99bd7826690b9fa3b49175a5846788d811cc155114f442dfe789c60"></span><em class="property">enumerator </em><code class="sig-name descname">IfcProtectiveDeviceType_VARISTOR</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value35IfcProtectiveDeviceType_USERDEFINEDE">
+<span id="_CPPv3N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value35IfcProtectiveDeviceType_USERDEFINEDE"></span><span id="_CPPv2N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value35IfcProtectiveDeviceType_USERDEFINEDE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_protective_device_type_enum_1a49e8d0d79d99bd7826690b9fa3b49175a48a7baad173338ce086def34d49d3606"></span><em class="property">enumerator </em><code class="sig-name descname">IfcProtectiveDeviceType_USERDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value34IfcProtectiveDeviceType_NOTDEFINEDE">
+<span id="_CPPv3N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value34IfcProtectiveDeviceType_NOTDEFINEDE"></span><span id="_CPPv2N6Ifc4x127IfcProtectiveDeviceTypeEnum5Value34IfcProtectiveDeviceType_NOTDEFINEDE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_protective_device_type_enum_1a49e8d0d79d99bd7826690b9fa3b49175a35fd820dc90988fe17aa37d8aaa20b71"></span><em class="property">enumerator </em><code class="sig-name descname">IfcProtectiveDeviceType_NOTDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x127IfcProtectiveDeviceTypeEnum8ToStringE5Value">
+<span id="_CPPv3N6Ifc4x127IfcProtectiveDeviceTypeEnum8ToStringE5Value"></span><span id="_CPPv2N6Ifc4x127IfcProtectiveDeviceTypeEnum8ToStringE5Value"></span><span id="Ifc4x1::IfcProtectiveDeviceTypeEnum::ToString__Value"></span><span class="target" id="struct_ifc4x1_1_1_ifc_protective_device_type_enum_1a7c6da081a31acc3a0466f701ba74962e"></span>IFC_PARSE_API <em class="property">const</em> char *<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x127IfcProtectiveDeviceTypeEnum5ValueE" title="Ifc4x1::IfcProtectiveDeviceTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x127IfcProtectiveDeviceTypeEnum10FromStringERKNSt6stringE">
+<span id="_CPPv3N6Ifc4x127IfcProtectiveDeviceTypeEnum10FromStringERKNSt6stringE"></span><span id="_CPPv2N6Ifc4x127IfcProtectiveDeviceTypeEnum10FromStringERKNSt6stringE"></span><span id="Ifc4x1::IfcProtectiveDeviceTypeEnum::FromString__ssCR"></span><span class="target" id="struct_ifc4x1_1_1_ifc_protective_device_type_enum_1a2d20f357348bf64d973523a2a5390d61"></span>IFC_PARSE_API <a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x127IfcProtectiveDeviceTypeEnum5ValueE" title="Ifc4x1::IfcProtectiveDeviceTypeEnum::Value">Value</a> <code class="sig-name descname">FromString</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>s</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="struct_ifc4x1_1_1_ifc_protective_device_tripping_unit_type_enum.html" title="previous chapter">Struct Ifc4x1::IfcProtectiveDeviceTrippingUnitTypeEnum</a></li>
+      <li>Next: <a href="struct_ifc4x1_1_1_ifc_pump_type_enum.html" title="next chapter">Struct Ifc4x1::IfcPumpTypeEnum</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/struct_ifc4x1_1_1_ifc_protective_device_type_enum.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

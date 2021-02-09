@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1aa0a23eaf09f9147822287f7e5b5e62b5:
+
+Define SCHEMA_IfcIndexedTriangleTextureMap_HAS_TexCoordIndex
+============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcIndexedTriangleTextureMap_HAS_TexCoordIndex

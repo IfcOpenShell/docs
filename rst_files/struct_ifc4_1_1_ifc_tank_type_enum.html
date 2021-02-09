@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Struct Ifc4::IfcTankTypeEnum &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct Ifc4::IfcTaskDurationEnum" href="struct_ifc4_1_1_ifc_task_duration_enum.html" />
+    <link rel="prev" title="Struct Ifc4::IfcSystemFurnitureElementTypeEnum" href="struct_ifc4_1_1_ifc_system_furniture_element_type_enum.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="struct-ifc4-ifctanktypeenum">
+<span id="exhale-struct-struct-ifc4-1-1-ifc-tank-type-enum"></span><h1>Struct Ifc4::IfcTankTypeEnum<a class="headerlink" href="#struct-ifc4-ifctanktypeenum" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This struct is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp struct">
+<dt id="_CPPv4N4Ifc415IfcTankTypeEnumE">
+<span id="_CPPv3N4Ifc415IfcTankTypeEnumE"></span><span id="_CPPv2N4Ifc415IfcTankTypeEnumE"></span><span id="Ifc4::IfcTankTypeEnum"></span><span class="target" id="struct_ifc4_1_1_ifc_tank_type_enum"></span><em class="property">struct </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcTankTypeEnum</code><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp enum">
+<dt id="_CPPv4N4Ifc415IfcTankTypeEnum5ValueE">
+<span id="_CPPv3N4Ifc415IfcTankTypeEnum5ValueE"></span><span id="_CPPv2N4Ifc415IfcTankTypeEnum5ValueE"></span><span class="target" id="struct_ifc4_1_1_ifc_tank_type_enum_1ac14ad22b2aebd52b4dbb8bab94175ead"></span><em class="property">enum </em><code class="sig-name descname">Value</code><br /></dt>
+<dd><p>Enumeration defining the typical types of tanks.</p>
+<p>The <a class="reference internal" href="#struct_ifc4_1_1_ifc_tank_type_enum"><span class="std std-ref">IfcTankTypeEnum</span></a> contains the following:</p>
+<p>BASIN: An arbitrary open tank type.</p>
+<p>BREAKPRESSURE: An open container that breaks the hydraulic pressure in a distribution system, typically located between the fluid reservoir and the fluid supply points. A typical break pressure tank allows the flow to discharge into the atmosphere, thereby reducing its hydrostatic pressure to zero.</p>
+<p>EXPANSION: A closed container used in a closed fluid distribution system to mitigate the effects of thermal expansion or water hammer. The tank is typically constructed with a diaphragm dividing the tank into two sections, with fluid on one side of the diaphragm and air on the other. One example application is when connected to the primary circuit of a hot water system to accommodate the increase in volume of the water when it is heated.</p>
+<p>FEEDANDEXPANSION: An open tank that is used for both storage and thermal expansion. A typical example is a tank used to store make-up water at ambient pressure for supply to a hot water system, simultaneously accommodating increases in volume of the water when heated.</p>
+<p>PRESSUREVESSEL: A closed container used for storing fluids or gases at a pressure different from the ambient pressure. A pressure vessel is typically rated by an authority having jurisdiction for the operational pressure.</p>
+<p>STORAGE: An open or closed containter used for storing a fluid at ambient pressure and from which it can be supplied to the fluid distribution system. There are many examples of storage tanks, such as potable water storage tanks, fuel storage tanks, etc.</p>
+<p>VESSEL: An arbitrary closed tank type.</p>
+<p>USERDEFINED: User-defined tank type.</p>
+<p>NOTDEFINED: Undefined tank type.</p>
+<p>HISTORY: New enumeration in IFC 2x2. BASIN and VESSEL added in IFC2x4. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcTankTypeEnum5Value17IfcTankType_BASINE">
+<span id="_CPPv3N4Ifc415IfcTankTypeEnum5Value17IfcTankType_BASINE"></span><span id="_CPPv2N4Ifc415IfcTankTypeEnum5Value17IfcTankType_BASINE"></span><span class="target" id="struct_ifc4_1_1_ifc_tank_type_enum_1ac14ad22b2aebd52b4dbb8bab94175eadab3b211355b82b18545ee4a72a145b71e"></span><em class="property">enumerator </em><code class="sig-name descname">IfcTankType_BASIN</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcTankTypeEnum5Value25IfcTankType_BREAKPRESSUREE">
+<span id="_CPPv3N4Ifc415IfcTankTypeEnum5Value25IfcTankType_BREAKPRESSUREE"></span><span id="_CPPv2N4Ifc415IfcTankTypeEnum5Value25IfcTankType_BREAKPRESSUREE"></span><span class="target" id="struct_ifc4_1_1_ifc_tank_type_enum_1ac14ad22b2aebd52b4dbb8bab94175eadab7d136bcda30811375ccc572856bf6fc"></span><em class="property">enumerator </em><code class="sig-name descname">IfcTankType_BREAKPRESSURE</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcTankTypeEnum5Value21IfcTankType_EXPANSIONE">
+<span id="_CPPv3N4Ifc415IfcTankTypeEnum5Value21IfcTankType_EXPANSIONE"></span><span id="_CPPv2N4Ifc415IfcTankTypeEnum5Value21IfcTankType_EXPANSIONE"></span><span class="target" id="struct_ifc4_1_1_ifc_tank_type_enum_1ac14ad22b2aebd52b4dbb8bab94175eada67e444d6b6eed94c9c507d41b806a79b"></span><em class="property">enumerator </em><code class="sig-name descname">IfcTankType_EXPANSION</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcTankTypeEnum5Value28IfcTankType_FEEDANDEXPANSIONE">
+<span id="_CPPv3N4Ifc415IfcTankTypeEnum5Value28IfcTankType_FEEDANDEXPANSIONE"></span><span id="_CPPv2N4Ifc415IfcTankTypeEnum5Value28IfcTankType_FEEDANDEXPANSIONE"></span><span class="target" id="struct_ifc4_1_1_ifc_tank_type_enum_1ac14ad22b2aebd52b4dbb8bab94175eadab23d54b7ff57ee2d9a423d3b22eea43b"></span><em class="property">enumerator </em><code class="sig-name descname">IfcTankType_FEEDANDEXPANSION</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcTankTypeEnum5Value26IfcTankType_PRESSUREVESSELE">
+<span id="_CPPv3N4Ifc415IfcTankTypeEnum5Value26IfcTankType_PRESSUREVESSELE"></span><span id="_CPPv2N4Ifc415IfcTankTypeEnum5Value26IfcTankType_PRESSUREVESSELE"></span><span class="target" id="struct_ifc4_1_1_ifc_tank_type_enum_1ac14ad22b2aebd52b4dbb8bab94175eada86fdc86e83c7fc1128f1e68c75e0b92e"></span><em class="property">enumerator </em><code class="sig-name descname">IfcTankType_PRESSUREVESSEL</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcTankTypeEnum5Value19IfcTankType_STORAGEE">
+<span id="_CPPv3N4Ifc415IfcTankTypeEnum5Value19IfcTankType_STORAGEE"></span><span id="_CPPv2N4Ifc415IfcTankTypeEnum5Value19IfcTankType_STORAGEE"></span><span class="target" id="struct_ifc4_1_1_ifc_tank_type_enum_1ac14ad22b2aebd52b4dbb8bab94175eada8167bea74aad3fd28bc9c771c3b1331c"></span><em class="property">enumerator </em><code class="sig-name descname">IfcTankType_STORAGE</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcTankTypeEnum5Value18IfcTankType_VESSELE">
+<span id="_CPPv3N4Ifc415IfcTankTypeEnum5Value18IfcTankType_VESSELE"></span><span id="_CPPv2N4Ifc415IfcTankTypeEnum5Value18IfcTankType_VESSELE"></span><span class="target" id="struct_ifc4_1_1_ifc_tank_type_enum_1ac14ad22b2aebd52b4dbb8bab94175eada87e2289e07607e9ac4da3dfbe010386d"></span><em class="property">enumerator </em><code class="sig-name descname">IfcTankType_VESSEL</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcTankTypeEnum5Value23IfcTankType_USERDEFINEDE">
+<span id="_CPPv3N4Ifc415IfcTankTypeEnum5Value23IfcTankType_USERDEFINEDE"></span><span id="_CPPv2N4Ifc415IfcTankTypeEnum5Value23IfcTankType_USERDEFINEDE"></span><span class="target" id="struct_ifc4_1_1_ifc_tank_type_enum_1ac14ad22b2aebd52b4dbb8bab94175eadacce40340c03319942bfe49f98d485a71"></span><em class="property">enumerator </em><code class="sig-name descname">IfcTankType_USERDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcTankTypeEnum5Value22IfcTankType_NOTDEFINEDE">
+<span id="_CPPv3N4Ifc415IfcTankTypeEnum5Value22IfcTankType_NOTDEFINEDE"></span><span id="_CPPv2N4Ifc415IfcTankTypeEnum5Value22IfcTankType_NOTDEFINEDE"></span><span class="target" id="struct_ifc4_1_1_ifc_tank_type_enum_1ac14ad22b2aebd52b4dbb8bab94175eadaec3de25c7d9a287e2190e1daf2401eed"></span><em class="property">enumerator </em><code class="sig-name descname">IfcTankType_NOTDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc415IfcTankTypeEnum8ToStringE5Value">
+<span id="_CPPv3N4Ifc415IfcTankTypeEnum8ToStringE5Value"></span><span id="_CPPv2N4Ifc415IfcTankTypeEnum8ToStringE5Value"></span><span id="Ifc4::IfcTankTypeEnum::ToString__Value"></span><span class="target" id="struct_ifc4_1_1_ifc_tank_type_enum_1a4229ebdd0ddb08ee035850e1cbcb269e"></span>IFC_PARSE_API <em class="property">const</em> char *<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc415IfcTankTypeEnum5ValueE" title="Ifc4::IfcTankTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc415IfcTankTypeEnum10FromStringERKNSt6stringE">
+<span id="_CPPv3N4Ifc415IfcTankTypeEnum10FromStringERKNSt6stringE"></span><span id="_CPPv2N4Ifc415IfcTankTypeEnum10FromStringERKNSt6stringE"></span><span id="Ifc4::IfcTankTypeEnum::FromString__ssCR"></span><span class="target" id="struct_ifc4_1_1_ifc_tank_type_enum_1a1af673c0064e94a393131ab4696b3c11"></span>IFC_PARSE_API <a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc415IfcTankTypeEnum5ValueE" title="Ifc4::IfcTankTypeEnum::Value">Value</a> <code class="sig-name descname">FromString</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>s</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="struct_ifc4_1_1_ifc_system_furniture_element_type_enum.html" title="previous chapter">Struct Ifc4::IfcSystemFurnitureElementTypeEnum</a></li>
+      <li>Next: <a href="struct_ifc4_1_1_ifc_task_duration_enum.html" title="next chapter">Struct Ifc4::IfcTaskDurationEnum</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/struct_ifc4_1_1_ifc_tank_type_enum.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

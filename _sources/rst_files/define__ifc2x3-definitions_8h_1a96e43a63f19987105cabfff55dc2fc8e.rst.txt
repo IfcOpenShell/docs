@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a96e43a63f19987105cabfff55dc2fc8e:
+
+Define SCHEMA_IfcGeneralProfileProperties_MinimumPlateThickness_IS_OPTIONAL
+===========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcGeneralProfileProperties_MinimumPlateThickness_IS_OPTIONAL

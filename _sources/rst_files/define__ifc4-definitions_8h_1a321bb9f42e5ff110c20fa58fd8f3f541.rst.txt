@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a321bb9f42e5ff110c20fa58fd8f3f541:
+
+Define SCHEMA_IfcMedicalDeviceType_HAS_PredefinedType
+=====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMedicalDeviceType_HAS_PredefinedType

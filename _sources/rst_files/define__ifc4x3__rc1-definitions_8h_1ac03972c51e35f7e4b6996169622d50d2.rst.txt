@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1ac03972c51e35f7e4b6996169622d50d2:
+
+Define SCHEMA_IfcWindowStyle_HAS_ConstructionType
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcWindowStyle_HAS_ConstructionType

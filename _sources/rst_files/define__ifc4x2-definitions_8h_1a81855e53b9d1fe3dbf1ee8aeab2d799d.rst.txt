@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a81855e53b9d1fe3dbf1ee8aeab2d799d:
+
+Define SCHEMA_IfcWindowPanelProperties_FrameDepth_IS_OPTIONAL
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcWindowPanelProperties_FrameDepth_IS_OPTIONAL

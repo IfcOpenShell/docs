@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1acfbb593a7b12348a1a711a830f8f40b1:
+
+Define SCHEMA_IfcStructuralLoadSingleDisplacement_RotationalDisplacementRX_IS_OPTIONAL
+======================================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLoadSingleDisplacement_RotationalDisplacementRX_IS_OPTIONAL

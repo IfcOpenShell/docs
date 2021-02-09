@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1af8c294926b426b6cc0a760f878ade6fd:
+
+Define SCHEMA_IfcSpaceThermalLoadProperties_ThermalLoadTimeSeriesValues_IS_OPTIONAL
+===================================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSpaceThermalLoadProperties_ThermalLoadTimeSeriesValues_IS_OPTIONAL

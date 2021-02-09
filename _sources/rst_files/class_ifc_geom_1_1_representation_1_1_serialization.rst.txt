@@ -1,0 +1,25 @@
+.. _exhale_class_class_ifc_geom_1_1_representation_1_1_serialization:
+
+Class Serialization
+===================
+
+- Defined in :ref:`file_src_ifcgeom_IfcGeomRepresentation.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcGeom::Representation::Representation`` (:ref:`exhale_class_class_ifc_geom_1_1_representation_1_1_representation`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcGeom::Representation::Serialization
+   :members:
+   :protected-members:
+   :undoc-members:

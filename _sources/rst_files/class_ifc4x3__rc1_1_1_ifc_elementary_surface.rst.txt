@@ -1,0 +1,40 @@
+.. _exhale_class_class_ifc4x3__rc1_1_1_ifc_elementary_surface:
+
+Class Ifc4x3_rc1::IfcElementarySurface
+======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x3__rc1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x3_rc1::IfcSurface`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_surface`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x3_rc1::IfcCylindricalSurface`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_cylindrical_surface`)
+- ``public Ifc4x3_rc1::IfcPlane`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_plane`)
+- ``public Ifc4x3_rc1::IfcSphericalSurface`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_spherical_surface`)
+- ``public Ifc4x3_rc1::IfcToroidalSurface`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_toroidal_surface`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x3_rc1::IfcElementarySurface
+   :members:
+   :protected-members:
+   :undoc-members:

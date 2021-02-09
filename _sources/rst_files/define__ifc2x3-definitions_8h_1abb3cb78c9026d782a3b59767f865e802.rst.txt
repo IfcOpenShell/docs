@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1abb3cb78c9026d782a3b59767f865e802:
+
+Define SCHEMA_IfcScheduleTimeControl_IsCritical_IS_OPTIONAL
+===========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcScheduleTimeControl_IsCritical_IS_OPTIONAL

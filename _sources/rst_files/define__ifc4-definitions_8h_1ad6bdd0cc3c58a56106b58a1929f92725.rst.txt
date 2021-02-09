@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ad6bdd0cc3c58a56106b58a1929f92725:
+
+Define SCHEMA_IfcBSplineSurface_HAS_ControlPointsList
+=====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBSplineSurface_HAS_ControlPointsList

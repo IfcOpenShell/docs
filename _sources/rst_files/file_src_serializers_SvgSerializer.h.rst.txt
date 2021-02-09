@@ -1,0 +1,87 @@
+
+.. _file_src_serializers_SvgSerializer.h:
+
+File SvgSerializer.h
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_serializers>` (``src/serializers``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/serializers/SvgSerializer.h``)
+------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_serializers_SvgSerializer.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/utils.h``
+
+- ``../serializers/GeometrySerializer.h``
+
+- ``../serializers/util.h``
+
+- ``HLRAlgo_Projector.hxx``
+
+- ``HLRBRep_Algo.hxx``
+
+- ``HLRBRep_HLRToShape.hxx``
+
+- ``HLRBRep_PolyAlgo.hxx``
+
+- ``gp_Pln.hxx``
+
+- ``limits``
+
+- ``sstream``
+
+- ``string``
+
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structdrawing__meta`
+
+- :ref:`exhale_struct_structgeometry__data`
+
+- :ref:`exhale_struct_structhorizontal__plan`
+
+- :ref:`exhale_struct_structhorizontal__plan__at__element`
+
+- :ref:`exhale_struct_structstorey__sorter`
+
+- :ref:`exhale_struct_structvertical__section`
+
+- :ref:`exhale_class_class_svg_serializer`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef__svg_serializer_8h_1a50cbec1f25b623c8c6a096c285ebddd5`
+
+- :ref:`exhale_typedef__svg_serializer_8h_1aa7e26d25a8b4358f15a4940c08c7d03a`
+
+- :ref:`exhale_typedef__svg_serializer_8h_1a03d18632047cd401a8b9f40ec65df39a`
+

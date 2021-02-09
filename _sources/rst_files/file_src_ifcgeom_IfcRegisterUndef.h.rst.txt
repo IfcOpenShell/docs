@@ -1,0 +1,53 @@
+
+.. _file_src_ifcgeom_IfcRegisterUndef.h:
+
+File IfcRegisterUndef.h
+=======================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcgeom>` (``src/ifcgeom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/IfcRegisterUndef.h``)
+-----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_IfcRegisterUndef.h.rst
+
+
+
+
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_IfcRegisterCreateCache.h`
+
+- :ref:`file_src_ifcgeom_IfcRegisterGeomHeader.h`
+
+- :ref:`file_src_ifcgeom_IfcRegisterConvertCurve.h`
+
+- :ref:`file_src_ifcgeom_IfcRegisterConvertFace.h`
+
+- :ref:`file_src_ifcgeom_IfcRegisterConvertShape.h`
+
+- :ref:`file_src_ifcgeom_IfcRegisterConvertShapes.h`
+
+- :ref:`file_src_ifcgeom_IfcRegisterConvertWire.h`
+
+- :ref:`file_src_ifcgeom_IfcRegisterPurgeCache.h`
+
+- :ref:`file_src_ifcgeom_IfcRegisterShapeType.h`
+
+
+

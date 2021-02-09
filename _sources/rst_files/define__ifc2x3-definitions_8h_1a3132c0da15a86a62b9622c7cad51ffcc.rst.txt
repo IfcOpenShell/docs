@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a3132c0da15a86a62b9622c7cad51ffcc:
+
+Define SCHEMA_IfcLocalTime_DaylightSavingOffset_IS_OPTIONAL
+===========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcLocalTime_DaylightSavingOffset_IS_OPTIONAL

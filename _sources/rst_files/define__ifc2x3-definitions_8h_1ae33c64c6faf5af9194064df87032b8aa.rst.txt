@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ae33c64c6faf5af9194064df87032b8aa:
+
+Define SCHEMA_HAS_IfcDimensionExtentUsage
+=========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcDimensionExtentUsage

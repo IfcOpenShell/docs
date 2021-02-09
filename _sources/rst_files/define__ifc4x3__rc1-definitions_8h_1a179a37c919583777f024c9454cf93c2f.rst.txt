@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a179a37c919583777f024c9454cf93c2f:
+
+Define SCHEMA_IfcSweptSurface_HAS_SweptCurve
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSweptSurface_HAS_SweptCurve

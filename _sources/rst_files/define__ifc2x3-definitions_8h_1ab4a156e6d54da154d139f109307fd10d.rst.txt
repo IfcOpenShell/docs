@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ab4a156e6d54da154d139f109307fd10d:
+
+Define SCHEMA_IfcInventory_HAS_LastUpdateDate
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcInventory_HAS_LastUpdateDate

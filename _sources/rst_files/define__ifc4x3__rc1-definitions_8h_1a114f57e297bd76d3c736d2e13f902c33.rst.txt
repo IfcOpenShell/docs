@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a114f57e297bd76d3c736d2e13f902c33:
+
+Define SCHEMA_HAS_IfcWall
+=========================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcWall

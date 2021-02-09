@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a8fef6bd2dcafa26c612f48df3b6d9cba:
+
+Define SCHEMA_IfcBoundaryEdgeCondition_LinearStiffnessByLengthY_IS_OPTIONAL
+===========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBoundaryEdgeCondition_LinearStiffnessByLengthY_IS_OPTIONAL

@@ -1,0 +1,16 @@
+.. _exhale_struct_structget__factory__type:
+
+Template Struct get_factory_type
+================================
+
+- Defined in :ref:`file_src_ifcgeom_schema_agnostic_IteratorImplementation.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: get_factory_type
+   :members:
+   :protected-members:
+   :undoc-members:

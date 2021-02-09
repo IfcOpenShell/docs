@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcSectionedSpine &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcSectionModulusMeasure" href="class_ifc4x2_1_1_ifc_section_modulus_measure.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcSectionedSolidHorizontal" href="class_ifc4x2_1_1_ifc_sectioned_solid_horizontal.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcsectionedspine">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-sectioned-spine"></span><h1>Class Ifc4x2::IfcSectionedSpine<a class="headerlink" href="#class-ifc4x2-ifcsectionedspine" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcGeometricRepresentationItem</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_geometric_representation_item.html#exhale-class-class-ifc4x2-1-1-ifc-geometric-representation-item"><span class="std std-ref">Class Ifc4x2::IfcGeometricRepresentationItem</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x217IfcSectionedSpineE">
+<span id="_CPPv3N6Ifc4x217IfcSectionedSpineE"></span><span id="_CPPv2N6Ifc4x217IfcSectionedSpineE"></span><span id="Ifc4x2::IfcSectionedSpine"></span><span class="target" id="class_ifc4x2_1_1_ifc_sectioned_spine"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcSectionedSpine</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_geometric_representation_item.html#_CPPv4N6Ifc4x230IfcGeometricRepresentationItemE" title="Ifc4x2::IfcGeometricRepresentationItem">IfcGeometricRepresentationItem</a><a class="headerlink" href="#_CPPv4N6Ifc4x217IfcSectionedSpineE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO 10303-42:1999: A sectioned spine is a representation of the shape of a three dimensional object composed of a spine curve and a number of planar cross sections. The shape is defined between the first element of cross sections and the last element of this set.</p>
+<p>NOTE A sectioned spine may be used to represent a surface or a solid but the interpolation of the shape between the cross-sections is not defined. For the representation of a solid all cross-sections are closed curves.</p>
+<p>A sectioned spine (<a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_sectioned_spine"><span class="std std-ref">IfcSectionedSpine</span></a>) is a representation of the shape of a three dimensional object composed by a number of planar cross sections, and a spine curve. The shape is defined between the first element of cross sections and the last element of the cross sections. A sectioned spine may be used to represent a surface or a solid but the interpolation of the shape between the cross sections is not defined. For the representation of a solid all cross sections are areas. For representation of a surface all cross sections are curves. The cross sections are defined as profiles, whereas the consecutive profiles may be derived by a transformation of the start profile or the previous consecutive profile. The spine curve shall be of type <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_composite_curve"><span class="std std-ref">IfcCompositeCurve</span></a>, each of its segments (<a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_composite_curve_segment"><span class="std std-ref">IfcCompositeCurveSegment</span></a>) shall correspond to the part between exactly two consecutive cross-sections.</p>
+<p>NOTE: Corresponding ISO 10303 entity: sectioned spine. Please refer to ISO/DIS 10303-42-ed2:1999, p. 282 for the definition of the formal standard. The cross sections are defined in IFC as <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_profile_def"><span class="std std-ref">IfcProfileDef</span></a>. The position coordinate systems are added.</p>
+<p>HISTORY New entity in IFC Release 2x.</p>
+<p>Figure 268 illustrates an example of an <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_sectioned_spine"><span class="std std-ref">IfcSectionedSpine</span></a>.</p>
+<p>The SpineCurve is given by an <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_composite_curve"><span class="std std-ref">IfcCompositeCurve</span></a> with two Segments. The Segments[1] has a ParentCurve of type <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a> and a Transition = CONTSAMEGRADIENT. The Segments[2] has a ParentCurve of type <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_trimmed_curve"><span class="std std-ref">IfcTrimmedCurve</span></a> and a Transition = DISCONTINUOUS. Each CrossSectionPosition lies at a start or end point of the Segments. Each CrossSections are inserted by the CrossSectionPositions. The first two cross sections are of type <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rectangle_profile_def"><span class="std std-ref">IfcRectangleProfileDef</span></a>, the third is of type <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_derived_profile_def"><span class="std std-ref">IfcDerivedProfileDef</span></a>.</p>
+<p>Figure 268 — Sectioned spine geometry</p>
+<p>Figure 269 illustrates the final result of the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_sectioned_spine"><span class="std std-ref">IfcSectionedSpine</span></a>. The body (shown transparently) is not fully defined by the exchange definition.</p>
+<p>Figure 269 — Sectioned spine result</p>
+<p>Informal propositions</p>
+<p>none of the cross sections, after being placed by the cross section positions, shall intersect none of the cross sections, after being placed by the cross section positions, shall lie in the same plane the local origin of each cross section position shall lie at the beginning or end of a composite curve segment. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x217IfcSectionedSpine4listE">
+<span id="_CPPv3N6Ifc4x217IfcSectionedSpine4listE"></span><span id="_CPPv2N6Ifc4x217IfcSectionedSpine4listE"></span><span id="Ifc4x2::IfcSectionedSpine::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_sectioned_spine_1a8ea95ddbcbde2a72e08f628e30e17b73"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x217IfcSectionedSpineE" title="Ifc4x2::IfcSectionedSpine">IfcSectionedSpine</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x217IfcSectionedSpine4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x217IfcSectionedSpine10SpineCurveEv">
+<span id="_CPPv3NK6Ifc4x217IfcSectionedSpine10SpineCurveEv"></span><span id="_CPPv2NK6Ifc4x217IfcSectionedSpine10SpineCurveEv"></span><span id="Ifc4x2::IfcSectionedSpine::SpineCurveC"></span><span class="target" id="class_ifc4x2_1_1_ifc_sectioned_spine_1aec0fddfef27aa4059ab618eed277d13b"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_composite_curve.html#_CPPv4N6Ifc4x217IfcCompositeCurveE" title="Ifc4x2::IfcCompositeCurve">IfcCompositeCurve</a> *<code class="sig-name descname">SpineCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x217IfcSectionedSpine10SpineCurveEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A single composite curve, that defines the spine curve. Each of the composite curve segments correspond to the part between two cross-sections. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x217IfcSectionedSpine13setSpineCurveEPN6Ifc4x217IfcCompositeCurveE">
+<span id="_CPPv3N6Ifc4x217IfcSectionedSpine13setSpineCurveEPN6Ifc4x217IfcCompositeCurveE"></span><span id="_CPPv2N6Ifc4x217IfcSectionedSpine13setSpineCurveEPN6Ifc4x217IfcCompositeCurveE"></span><span id="Ifc4x2::IfcSectionedSpine::setSpineCurve__Ifc4x2::IfcCompositeCurveP"></span><span class="target" id="class_ifc4x2_1_1_ifc_sectioned_spine_1adfc088f3d013149c2cdad3fdcc50f036"></span>void <code class="sig-name descname">setSpineCurve</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_composite_curve.html#_CPPv4N6Ifc4x217IfcCompositeCurveE" title="Ifc4x2::IfcCompositeCurve">IfcCompositeCurve</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x217IfcSectionedSpine13setSpineCurveEPN6Ifc4x217IfcCompositeCurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x217IfcSectionedSpine13CrossSectionsEv">
+<span id="_CPPv3NK6Ifc4x217IfcSectionedSpine13CrossSectionsEv"></span><span id="_CPPv2NK6Ifc4x217IfcSectionedSpine13CrossSectionsEv"></span><span id="Ifc4x2::IfcSectionedSpine::CrossSectionsC"></span><span class="target" id="class_ifc4x2_1_1_ifc_sectioned_spine_1a4adb0f4fa6d7f0f13f7ec6b2b54208da"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_profile_def.html#_CPPv4N6Ifc4x213IfcProfileDefE" title="Ifc4x2::IfcProfileDef">IfcProfileDef</a>&gt;::ptr <code class="sig-name descname">CrossSections</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x217IfcSectionedSpine13CrossSectionsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A list of at least two cross sections, each defined within the xy plane of the position coordinate system of the cross section. The position coordinate system is given by the corresponding list CrossSectionPositions. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x217IfcSectionedSpine16setCrossSectionsEN22IfcTemplatedEntityListIN6Ifc4x213IfcProfileDefEE3ptrE">
+<span id="_CPPv3N6Ifc4x217IfcSectionedSpine16setCrossSectionsEN22IfcTemplatedEntityListIN6Ifc4x213IfcProfileDefEE3ptrE"></span><span id="_CPPv2N6Ifc4x217IfcSectionedSpine16setCrossSectionsEN22IfcTemplatedEntityListIN6Ifc4x213IfcProfileDefEE3ptrE"></span><span id="Ifc4x2::IfcSectionedSpine::setCrossSections__IfcTemplatedEntityList:Ifc4x2::IfcProfileDef:::ptr"></span><span class="target" id="class_ifc4x2_1_1_ifc_sectioned_spine_1a930db12c89512ad3232b97e2a359c7c5"></span>void <code class="sig-name descname">setCrossSections</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_profile_def.html#_CPPv4N6Ifc4x213IfcProfileDefE" title="Ifc4x2::IfcProfileDef">IfcProfileDef</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x217IfcSectionedSpine16setCrossSectionsEN22IfcTemplatedEntityListIN6Ifc4x213IfcProfileDefEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x217IfcSectionedSpine21CrossSectionPositionsEv">
+<span id="_CPPv3NK6Ifc4x217IfcSectionedSpine21CrossSectionPositionsEv"></span><span id="_CPPv2NK6Ifc4x217IfcSectionedSpine21CrossSectionPositionsEv"></span><span id="Ifc4x2::IfcSectionedSpine::CrossSectionPositionsC"></span><span class="target" id="class_ifc4x2_1_1_ifc_sectioned_spine_1aa9a80b8fee112cbe25f930e9b7e1075d"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_axis2_placement3_d.html#_CPPv4N6Ifc4x219IfcAxis2Placement3DE" title="Ifc4x2::IfcAxis2Placement3D">IfcAxis2Placement3D</a>&gt;::ptr <code class="sig-name descname">CrossSectionPositions</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x217IfcSectionedSpine21CrossSectionPositionsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Position coordinate systems for the cross sections that form the sectioned spine. The profiles defining the cross sections are positioned within the xy plane of the corresponding position coordinate system. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x217IfcSectionedSpine24setCrossSectionPositionsEN22IfcTemplatedEntityListIN6Ifc4x219IfcAxis2Placement3DEE3ptrE">
+<span id="_CPPv3N6Ifc4x217IfcSectionedSpine24setCrossSectionPositionsEN22IfcTemplatedEntityListIN6Ifc4x219IfcAxis2Placement3DEE3ptrE"></span><span id="_CPPv2N6Ifc4x217IfcSectionedSpine24setCrossSectionPositionsEN22IfcTemplatedEntityListIN6Ifc4x219IfcAxis2Placement3DEE3ptrE"></span><span id="Ifc4x2::IfcSectionedSpine::setCrossSectionPositions__IfcTemplatedEntityList:Ifc4x2::IfcAxis2Placement3D:::ptr"></span><span class="target" id="class_ifc4x2_1_1_ifc_sectioned_spine_1aea56551f0ef647d096619c0242728f7f"></span>void <code class="sig-name descname">setCrossSectionPositions</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_axis2_placement3_d.html#_CPPv4N6Ifc4x219IfcAxis2Placement3DE" title="Ifc4x2::IfcAxis2Placement3D">IfcAxis2Placement3D</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x217IfcSectionedSpine24setCrossSectionPositionsEN22IfcTemplatedEntityListIN6Ifc4x219IfcAxis2Placement3DEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x217IfcSectionedSpine11declarationEv">
+<span id="_CPPv3NK6Ifc4x217IfcSectionedSpine11declarationEv"></span><span id="_CPPv2NK6Ifc4x217IfcSectionedSpine11declarationEv"></span><span id="Ifc4x2::IfcSectionedSpine::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_sectioned_spine_1ad0a942cb78b6c479e9ccaeaa8161f501"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x217IfcSectionedSpine11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x217IfcSectionedSpine17IfcSectionedSpineEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x217IfcSectionedSpine17IfcSectionedSpineEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x217IfcSectionedSpine17IfcSectionedSpineEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcSectionedSpine::IfcSectionedSpine__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_sectioned_spine_1ada656fcad4c2ced03c0047977f04245e"></span><code class="sig-name descname">IfcSectionedSpine</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x217IfcSectionedSpine17IfcSectionedSpineEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x217IfcSectionedSpine17IfcSectionedSpineEPN6Ifc4x217IfcCompositeCurveEN22IfcTemplatedEntityListIN6Ifc4x213IfcProfileDefEE3ptrEN22IfcTemplatedEntityListIN6Ifc4x219IfcAxis2Placement3DEE3ptrE">
+<span id="_CPPv3N6Ifc4x217IfcSectionedSpine17IfcSectionedSpineEPN6Ifc4x217IfcCompositeCurveEN22IfcTemplatedEntityListIN6Ifc4x213IfcProfileDefEE3ptrEN22IfcTemplatedEntityListIN6Ifc4x219IfcAxis2Placement3DEE3ptrE"></span><span id="_CPPv2N6Ifc4x217IfcSectionedSpine17IfcSectionedSpineEPN6Ifc4x217IfcCompositeCurveEN22IfcTemplatedEntityListIN6Ifc4x213IfcProfileDefEE3ptrEN22IfcTemplatedEntityListIN6Ifc4x219IfcAxis2Placement3DEE3ptrE"></span><span id="Ifc4x2::IfcSectionedSpine::IfcSectionedSpine__Ifc4x2::IfcCompositeCurveP.IfcTemplatedEntityList:Ifc4x2::IfcProfileDef:::ptr.IfcTemplatedEntityList:Ifc4x2::IfcAxis2Placement3D:::ptr"></span><span class="target" id="class_ifc4x2_1_1_ifc_sectioned_spine_1ac3f5878a477f29d8b62499e3b4da3d79"></span><code class="sig-name descname">IfcSectionedSpine</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_composite_curve.html#_CPPv4N6Ifc4x217IfcCompositeCurveE" title="Ifc4x2::IfcCompositeCurve">IfcCompositeCurve</a> *<em>v1_SpineCurve</em>, <a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_profile_def.html#_CPPv4N6Ifc4x213IfcProfileDefE" title="Ifc4x2::IfcProfileDef">IfcProfileDef</a>&gt;::ptr <em>v2_CrossSections</em>, <a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_axis2_placement3_d.html#_CPPv4N6Ifc4x219IfcAxis2Placement3DE" title="Ifc4x2::IfcAxis2Placement3D">IfcAxis2Placement3D</a>&gt;::ptr <em>v3_CrossSectionPositions</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x217IfcSectionedSpine17IfcSectionedSpineEPN6Ifc4x217IfcCompositeCurveEN22IfcTemplatedEntityListIN6Ifc4x213IfcProfileDefEE3ptrEN22IfcTemplatedEntityListIN6Ifc4x219IfcAxis2Placement3DEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x217IfcSectionedSpine5ClassEv">
+<span id="_CPPv3N6Ifc4x217IfcSectionedSpine5ClassEv"></span><span id="_CPPv2N6Ifc4x217IfcSectionedSpine5ClassEv"></span><span id="Ifc4x2::IfcSectionedSpine::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_sectioned_spine_1a227f5959645f3957a886da8f48c80631"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x217IfcSectionedSpine5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_sectioned_solid_horizontal.html" title="previous chapter">Class Ifc4x2::IfcSectionedSolidHorizontal</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_section_modulus_measure.html" title="next chapter">Class Ifc4x2::IfcSectionModulusMeasure</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_sectioned_spine.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

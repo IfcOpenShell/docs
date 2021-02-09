@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a4daefc8406b4e8d3a5cfa5062ccf624f:
+
+Define SCHEMA_IfcScheduleTimeControl_HAS_StartFloat
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcScheduleTimeControl_HAS_StartFloat

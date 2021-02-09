@@ -1,0 +1,38 @@
+.. _exhale_class_class_ifc2x3_1_1_ifc_time_series:
+
+Class Ifc2x3::IfcTimeSeries
+===========================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcUtil::IfcBaseEntity`` (:ref:`exhale_class_class_ifc_util_1_1_ifc_base_entity`)
+
+
+Derived Types
+*************
+
+- ``public Ifc2x3::IfcIrregularTimeSeries`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_irregular_time_series`)
+- ``public Ifc2x3::IfcRegularTimeSeries`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_regular_time_series`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc2x3::IfcTimeSeries
+   :members:
+   :protected-members:
+   :undoc-members:

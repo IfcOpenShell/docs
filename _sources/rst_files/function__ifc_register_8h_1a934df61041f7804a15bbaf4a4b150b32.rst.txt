@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_register_8h_1a934df61041f7804a15bbaf4a4b150b32:
+
+Function SHAPE(IfcPlane)
+========================
+
+- Defined in :ref:`file_src_ifcgeom_IfcRegister.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: SHAPE(IfcPlane)

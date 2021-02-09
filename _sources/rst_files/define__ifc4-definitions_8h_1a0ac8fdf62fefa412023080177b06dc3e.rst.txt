@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a0ac8fdf62fefa412023080177b06dc3e:
+
+Define SCHEMA_IfcGroup_HAS_IsGroupedBy
+======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcGroup_HAS_IsGroupedBy

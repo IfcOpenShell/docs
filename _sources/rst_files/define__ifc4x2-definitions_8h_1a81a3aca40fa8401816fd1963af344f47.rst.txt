@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a81a3aca40fa8401816fd1963af344f47:
+
+Define SCHEMA_IfcRelProjectsElement_HAS_RelatingElement
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelProjectsElement_HAS_RelatingElement

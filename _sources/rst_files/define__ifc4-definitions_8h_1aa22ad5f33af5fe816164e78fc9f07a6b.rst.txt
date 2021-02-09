@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1aa22ad5f33af5fe816164e78fc9f07a6b:
+
+Define SCHEMA_IfcTendon_HAS_MinCurvatureRadius
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTendon_HAS_MinCurvatureRadius

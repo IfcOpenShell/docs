@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ad805d968fab6c38a429df92cf00e8dbf:
+
+Define SCHEMA_IfcElectricMotorType_HAS_PredefinedType
+=====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcElectricMotorType_HAS_PredefinedType

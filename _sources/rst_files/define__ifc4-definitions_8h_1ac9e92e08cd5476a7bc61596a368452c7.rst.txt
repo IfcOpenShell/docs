@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ac9e92e08cd5476a7bc61596a368452c7:
+
+Define SCHEMA_IfcReference_InstanceName_IS_OPTIONAL
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcReference_InstanceName_IS_OPTIONAL

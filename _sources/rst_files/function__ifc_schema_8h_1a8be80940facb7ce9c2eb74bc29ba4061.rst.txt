@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_schema_8h_1a8be80940facb7ce9c2eb74bc29ba4061:
+
+Function IfcParse::schema_by_name
+=================================
+
+- Defined in :ref:`file_src_ifcparse_IfcSchema.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcParse::schema_by_name(const std::string&)

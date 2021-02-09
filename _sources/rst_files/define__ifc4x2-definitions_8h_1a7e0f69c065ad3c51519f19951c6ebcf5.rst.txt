@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a7e0f69c065ad3c51519f19951c6ebcf5:
+
+Define SCHEMA_IfcRelConnectsStructuralActivity_HAS_RelatedStructuralActivity
+============================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelConnectsStructuralActivity_HAS_RelatedStructuralActivity

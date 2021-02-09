@@ -1,0 +1,49 @@
+.. _exhale_class_class_ifc4_1_1_ifc_flow_terminal:
+
+Class Ifc4::IfcFlowTerminal
+===========================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4::IfcDistributionFlowElement`` (:ref:`exhale_class_class_ifc4_1_1_ifc_distribution_flow_element`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4::IfcAirTerminal`` (:ref:`exhale_class_class_ifc4_1_1_ifc_air_terminal`)
+- ``public Ifc4::IfcAudioVisualAppliance`` (:ref:`exhale_class_class_ifc4_1_1_ifc_audio_visual_appliance`)
+- ``public Ifc4::IfcCommunicationsAppliance`` (:ref:`exhale_class_class_ifc4_1_1_ifc_communications_appliance`)
+- ``public Ifc4::IfcElectricAppliance`` (:ref:`exhale_class_class_ifc4_1_1_ifc_electric_appliance`)
+- ``public Ifc4::IfcFireSuppressionTerminal`` (:ref:`exhale_class_class_ifc4_1_1_ifc_fire_suppression_terminal`)
+- ``public Ifc4::IfcLamp`` (:ref:`exhale_class_class_ifc4_1_1_ifc_lamp`)
+- ``public Ifc4::IfcLightFixture`` (:ref:`exhale_class_class_ifc4_1_1_ifc_light_fixture`)
+- ``public Ifc4::IfcMedicalDevice`` (:ref:`exhale_class_class_ifc4_1_1_ifc_medical_device`)
+- ``public Ifc4::IfcOutlet`` (:ref:`exhale_class_class_ifc4_1_1_ifc_outlet`)
+- ``public Ifc4::IfcSanitaryTerminal`` (:ref:`exhale_class_class_ifc4_1_1_ifc_sanitary_terminal`)
+- ``public Ifc4::IfcSpaceHeater`` (:ref:`exhale_class_class_ifc4_1_1_ifc_space_heater`)
+- ``public Ifc4::IfcStackTerminal`` (:ref:`exhale_class_class_ifc4_1_1_ifc_stack_terminal`)
+- ``public Ifc4::IfcWasteTerminal`` (:ref:`exhale_class_class_ifc4_1_1_ifc_waste_terminal`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4::IfcFlowTerminal
+   :members:
+   :protected-members:
+   :undoc-members:

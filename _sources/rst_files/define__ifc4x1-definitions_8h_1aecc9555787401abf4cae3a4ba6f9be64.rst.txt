@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1aecc9555787401abf4cae3a4ba6f9be64:
+
+Define SCHEMA_IfcBooleanResult_HAS_Operator
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBooleanResult_HAS_Operator

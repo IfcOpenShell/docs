@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a807c4c555bb137a7cb5a1c2756bbee39:
+
+Define SCHEMA_IfcAxis2Placement2D_RefDirection_IS_OPTIONAL
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcAxis2Placement2D_RefDirection_IS_OPTIONAL

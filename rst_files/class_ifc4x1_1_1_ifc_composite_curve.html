@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcCompositeCurve &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcCompositeCurveOnSurface" href="class_ifc4x1_1_1_ifc_composite_curve_on_surface.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcComplexPropertyTemplate" href="class_ifc4x1_1_1_ifc_complex_property_template.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifccompositecurve">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-composite-curve"></span><h1>Class Ifc4x1::IfcCompositeCurve<a class="headerlink" href="#class-ifc4x1-ifccompositecurve" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcBoundedCurve</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_bounded_curve.html#exhale-class-class-ifc4x1-1-1-ifc-bounded-curve"><span class="std std-ref">Class Ifc4x1::IfcBoundedCurve</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="derived-type">
+<h3>Derived Type<a class="headerlink" href="#derived-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcCompositeCurveOnSurface</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_composite_curve_on_surface.html#exhale-class-class-ifc4x1-1-1-ifc-composite-curve-on-surface"><span class="std std-ref">Class Ifc4x1::IfcCompositeCurveOnSurface</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x117IfcCompositeCurveE">
+<span id="_CPPv3N6Ifc4x117IfcCompositeCurveE"></span><span id="_CPPv2N6Ifc4x117IfcCompositeCurveE"></span><span id="Ifc4x1::IfcCompositeCurve"></span><span class="target" id="class_ifc4x1_1_1_ifc_composite_curve"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcCompositeCurve</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_bounded_curve.html#_CPPv4N6Ifc4x115IfcBoundedCurveE" title="Ifc4x1::IfcBoundedCurve">IfcBoundedCurve</a><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcCompositeCurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: A composite curve is a collection of curves joined end-to-end. The individual segments of the curve are themselves defined as composite curve segments. The parameterization of the composite curve is an accumulation of the parametric ranges of the referenced bounded curves. The first segment is parameterized from 0 to l1 and for i ≤ 2, the ith segment is parameterized from:</p>
+<p>where lk is the parametric length (i.e., difference between maximum and minimum parameter values) of the curve underlying the kth segment.</p>
+<p>Let T denote the parameter for the composite curve. Then, if the ith segment is not a reparameterised composite curve segment, T is related to the parameter ti; ti0 ≤ ti ≤ ti1; for the ith segment by the equation:</p>
+<p>if Segments[i].SameSense = TRUE;</p>
+<p>or by the equation:</p>
+<p>if Segments[i].SameSense = FALSE;</p>
+<p>If the segments[i] is of type reparameterised composite curve segment,</p>
+<p>where τ is defined at reparameterized composite curve segment (see IfcReparameterizedCompositeCurveSegment).</p>
+<p>Figure 279 illustrates an example of a composite curve.</p>
+<p>Figure 279 — Composite curve</p>
+<p>Consider an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_composite_curve"><span class="std std-ref">IfcCompositeCurve</span></a> having line segment and an arc segment. The line should be parameterized:</p>
+<p><a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a> with start= 0.,0. end= 0.,1., SameSense= TRUE, parametric length = 1.</p>
+<p>The arch should be parameterized:</p>
+<p><a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_trimmed_curve"><span class="std std-ref">IfcTrimmedCurve</span></a> with start= 180’, end= 90’, SameSense= FALSE, parametric length = 90.</p>
+<p>Then the parameterization of the composite curve is:</p>
+<p><a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_composite_curve"><span class="std std-ref">IfcCompositeCurve</span></a> with 0. ≤ T ≤ 1. (line segment) and 1. ≤ T ≤ 91. (arc segment), parametric length = 91.</p>
+<p>NOTE Corresponding ISO 10303 entity: composite_curve, please refer to ISO/IS 10303-42:1994, p. 56 for the final definition of the formal standard. The WR2 is added to ensure consistent Dim at all segments.</p>
+<p>HISTORY New class in IFC Release 1.0</p>
+<p>Informal Propositions:</p>
+<p>The SameSense attribute of each segment correctly specifies the senses of the component curves. When traversed in the direction indicated by SameSense, the segments shall join end-to-end. </p>
+<p>Subclassed by <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_composite_curve_on_surface"><span class="std std-ref">Ifc4x1::IfcCompositeCurveOnSurface</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x117IfcCompositeCurve4listE">
+<span id="_CPPv3N6Ifc4x117IfcCompositeCurve4listE"></span><span id="_CPPv2N6Ifc4x117IfcCompositeCurve4listE"></span><span id="Ifc4x1::IfcCompositeCurve::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_composite_curve_1a44a5756c6a405a14e898b6d85388a254"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x117IfcCompositeCurveE" title="Ifc4x1::IfcCompositeCurve">IfcCompositeCurve</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcCompositeCurve4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcCompositeCurve8SegmentsEv">
+<span id="_CPPv3NK6Ifc4x117IfcCompositeCurve8SegmentsEv"></span><span id="_CPPv2NK6Ifc4x117IfcCompositeCurve8SegmentsEv"></span><span id="Ifc4x1::IfcCompositeCurve::SegmentsC"></span><span class="target" id="class_ifc4x1_1_1_ifc_composite_curve_1ab6f2fbd74b5d287ff21c123265607650"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_composite_curve_segment.html#_CPPv4N6Ifc4x124IfcCompositeCurveSegmentE" title="Ifc4x1::IfcCompositeCurveSegment">IfcCompositeCurveSegment</a>&gt;::ptr <code class="sig-name descname">Segments</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcCompositeCurve8SegmentsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The component bounded curves, their transitions and senses. The transition attribute for the last segment defines the transition between the end of the last segment and the start of the first; this transition attribute may take the value discontinuous, which indicates an open curve. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcCompositeCurve11setSegmentsEN22IfcTemplatedEntityListIN6Ifc4x124IfcCompositeCurveSegmentEE3ptrE">
+<span id="_CPPv3N6Ifc4x117IfcCompositeCurve11setSegmentsEN22IfcTemplatedEntityListIN6Ifc4x124IfcCompositeCurveSegmentEE3ptrE"></span><span id="_CPPv2N6Ifc4x117IfcCompositeCurve11setSegmentsEN22IfcTemplatedEntityListIN6Ifc4x124IfcCompositeCurveSegmentEE3ptrE"></span><span id="Ifc4x1::IfcCompositeCurve::setSegments__IfcTemplatedEntityList:Ifc4x1::IfcCompositeCurveSegment:::ptr"></span><span class="target" id="class_ifc4x1_1_1_ifc_composite_curve_1af688d7b592174e6e853ebc6f735add91"></span>void <code class="sig-name descname">setSegments</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_composite_curve_segment.html#_CPPv4N6Ifc4x124IfcCompositeCurveSegmentE" title="Ifc4x1::IfcCompositeCurveSegment">IfcCompositeCurveSegment</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcCompositeCurve11setSegmentsEN22IfcTemplatedEntityListIN6Ifc4x124IfcCompositeCurveSegmentEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcCompositeCurve13SelfIntersectEv">
+<span id="_CPPv3NK6Ifc4x117IfcCompositeCurve13SelfIntersectEv"></span><span id="_CPPv2NK6Ifc4x117IfcCompositeCurve13SelfIntersectEv"></span><span id="Ifc4x1::IfcCompositeCurve::SelfIntersectC"></span><span class="target" id="class_ifc4x1_1_1_ifc_composite_curve_1affa64f143e2d0ad736835ecf12a1ff89"></span>bool <code class="sig-name descname">SelfIntersect</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcCompositeCurve13SelfIntersectEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Indication of whether the curve intersects itself or not; this is for information only. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcCompositeCurve16setSelfIntersectEb">
+<span id="_CPPv3N6Ifc4x117IfcCompositeCurve16setSelfIntersectEb"></span><span id="_CPPv2N6Ifc4x117IfcCompositeCurve16setSelfIntersectEb"></span><span id="Ifc4x1::IfcCompositeCurve::setSelfIntersect__b"></span><span class="target" id="class_ifc4x1_1_1_ifc_composite_curve_1a4fb2bb56f4b0b43cdc391090cc993a1a"></span>void <code class="sig-name descname">setSelfIntersect</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcCompositeCurve16setSelfIntersectEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcCompositeCurve11declarationEv">
+<span id="_CPPv3NK6Ifc4x117IfcCompositeCurve11declarationEv"></span><span id="_CPPv2NK6Ifc4x117IfcCompositeCurve11declarationEv"></span><span id="Ifc4x1::IfcCompositeCurve::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_composite_curve_1a9c0f4c7769ba6eeff33c048971757ced"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcCompositeCurve11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcCompositeCurve17IfcCompositeCurveEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x117IfcCompositeCurve17IfcCompositeCurveEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x117IfcCompositeCurve17IfcCompositeCurveEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcCompositeCurve::IfcCompositeCurve__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_composite_curve_1a9ca4266fe07004083a27c8e3342b35d8"></span><code class="sig-name descname">IfcCompositeCurve</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcCompositeCurve17IfcCompositeCurveEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcCompositeCurve17IfcCompositeCurveEN22IfcTemplatedEntityListIN6Ifc4x124IfcCompositeCurveSegmentEE3ptrEb">
+<span id="_CPPv3N6Ifc4x117IfcCompositeCurve17IfcCompositeCurveEN22IfcTemplatedEntityListIN6Ifc4x124IfcCompositeCurveSegmentEE3ptrEb"></span><span id="_CPPv2N6Ifc4x117IfcCompositeCurve17IfcCompositeCurveEN22IfcTemplatedEntityListIN6Ifc4x124IfcCompositeCurveSegmentEE3ptrEb"></span><span id="Ifc4x1::IfcCompositeCurve::IfcCompositeCurve__IfcTemplatedEntityList:Ifc4x1::IfcCompositeCurveSegment:::ptr.b"></span><span class="target" id="class_ifc4x1_1_1_ifc_composite_curve_1a064ea755fdfbfb99eb620720754ca1b7"></span><code class="sig-name descname">IfcCompositeCurve</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_composite_curve_segment.html#_CPPv4N6Ifc4x124IfcCompositeCurveSegmentE" title="Ifc4x1::IfcCompositeCurveSegment">IfcCompositeCurveSegment</a>&gt;::ptr <em>v1_Segments</em>, bool <em>v2_SelfIntersect</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcCompositeCurve17IfcCompositeCurveEN22IfcTemplatedEntityListIN6Ifc4x124IfcCompositeCurveSegmentEE3ptrEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcCompositeCurve5ClassEv">
+<span id="_CPPv3N6Ifc4x117IfcCompositeCurve5ClassEv"></span><span id="_CPPv2N6Ifc4x117IfcCompositeCurve5ClassEv"></span><span id="Ifc4x1::IfcCompositeCurve::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_composite_curve_1a9a5bc8bf560cf8ced5e087995e6dd30f"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcCompositeCurve5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_complex_property_template.html" title="previous chapter">Class Ifc4x1::IfcComplexPropertyTemplate</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_composite_curve_on_surface.html" title="next chapter">Class Ifc4x1::IfcCompositeCurveOnSurface</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_composite_curve.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

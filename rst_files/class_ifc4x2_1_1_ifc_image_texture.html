@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcImageTexture &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcIndexedColourMap" href="class_ifc4x2_1_1_ifc_indexed_colour_map.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcIlluminanceMeasure" href="class_ifc4x2_1_1_ifc_illuminance_measure.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcimagetexture">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-image-texture"></span><h1>Class Ifc4x2::IfcImageTexture<a class="headerlink" href="#class-ifc4x2-ifcimagetexture" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcSurfaceTexture</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_surface_texture.html#exhale-class-class-ifc4x2-1-1-ifc-surface-texture"><span class="std std-ref">Class Ifc4x2::IfcSurfaceTexture</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x215IfcImageTextureE">
+<span id="_CPPv3N6Ifc4x215IfcImageTextureE"></span><span id="_CPPv2N6Ifc4x215IfcImageTextureE"></span><span id="Ifc4x2::IfcImageTexture"></span><span class="target" id="class_ifc4x2_1_1_ifc_image_texture"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcImageTexture</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_surface_texture.html#_CPPv4N6Ifc4x217IfcSurfaceTextureE" title="Ifc4x2::IfcSurfaceTexture">IfcSurfaceTexture</a><a class="headerlink" href="#_CPPv4N6Ifc4x215IfcImageTextureE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_image_texture"><span class="std std-ref">IfcImageTexture</span></a> provides a 2-dimensional texture that can be applied to a surface of an geometric item and that provides lighting parameters of a surface onto which it is mapped. The texture is provided as an image file at an external location for which an URL is provided.</p>
+<p>The following definitions from ISO/IEC 19775-1 X3D Architecture and base components (X3D Specification) apply:</p>
+<p>The ImageTexture node defines a texture map by specifying an image file and general parameters for mapping to geometry. The texture is read from the URL specified by the url field. When the url field contains no [resolvable] values, texturing is disabled. Browsers shall support the JPEG and PNG (see ISO/IEC 15948) image file formats. Texture nodes that require support for the PNG image format shall interpret the PNG pixel formats in the following way:</p>
+<p>Greyscale pixels without alpha or simple transparency are treated as intensity textures. &gt;Greyscale pixels with alpha or simple transparency are treated as intensity plus alpha textures. RGB pixels without alpha channel or simple transparency are treated as full RGB textures. RGB pixels with alpha channel or simple transparency are treated as full RGB plus alpha textures.</p>
+<p>If the image specifies colours as indexed-colour (that is, palettes or colourmaps), the following semantics should be used (note that greyscale refers to a palette entry with equal red, green, and blue values):</p>
+<p>If all the colours in the palette are greyscale and there is no transparency chunk, it is treated as an intensity texture. If all the colours in the palette are greyscale and there is a transparency chunk, it is treated as an intensity plus opacity texture. &gt;If any colour in the palette is not grey and there is no transparency chunk, it is treated as a full RGB texture. If any colour in the palette is not grey and there is a transparency chunk, it is treated as a full RGB plus alpha texture.</p>
+<p>Texture nodes that require support for JPEG files shall interpret JPEG files as follows:</p>
+<p>Greyscale files (number of components equals 1) are treated as intensity textures. YCbCr files are treated as full RGB textures. No other JPEG file types are required. It is recommended that other JPEG files are treated as a full RGB textures.</p>
+<p>Texture nodes that recommend support for GIF files shall follow the applicable semantics described above for the PNG format.</p>
+<p>The Uniform Resource Locator (URL) is a form of an URI and specified in RFC1738 by IETF. It supports resources located on a particular server being accessed by a particular protocol (usually http), and resources located at a local machine.</p>
+<p>NOTE Exchange files following the ifcZIP convention may include a sub directory structure for image resources to be stored together with the product data set.</p>
+<p>NOTE The definitions of texturing within this standard have been developed in dependence on the texture component of X3D. See ISO/IEC 19775-1.2:2008 X3D Architecture and base components Edition 2, Part 1, 18 Texturing component for the definitions in the international standard.</p>
+<p>HISTORY New entity in Release IFC2x2. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x215IfcImageTexture4listE">
+<span id="_CPPv3N6Ifc4x215IfcImageTexture4listE"></span><span id="_CPPv2N6Ifc4x215IfcImageTexture4listE"></span><span id="Ifc4x2::IfcImageTexture::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_image_texture_1a3c9f48933d136e4c5c2819dac1bb572b"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x215IfcImageTextureE" title="Ifc4x2::IfcImageTexture">IfcImageTexture</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x215IfcImageTexture4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x215IfcImageTexture12URLReferenceEv">
+<span id="_CPPv3NK6Ifc4x215IfcImageTexture12URLReferenceEv"></span><span id="_CPPv2NK6Ifc4x215IfcImageTexture12URLReferenceEv"></span><span id="Ifc4x2::IfcImageTexture::URLReferenceC"></span><span class="target" id="class_ifc4x2_1_1_ifc_image_texture_1a267c651323906e9857260c3b484c7a97"></span>std::string <code class="sig-name descname">URLReference</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x215IfcImageTexture12URLReferenceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Location, provided as an URI, at which the image texture is electronically published. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x215IfcImageTexture15setURLReferenceENSt6stringE">
+<span id="_CPPv3N6Ifc4x215IfcImageTexture15setURLReferenceENSt6stringE"></span><span id="_CPPv2N6Ifc4x215IfcImageTexture15setURLReferenceENSt6stringE"></span><span id="Ifc4x2::IfcImageTexture::setURLReference__ss"></span><span class="target" id="class_ifc4x2_1_1_ifc_image_texture_1a0bb8e7fc693a65d281365d59c4d68dc5"></span>void <code class="sig-name descname">setURLReference</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x215IfcImageTexture15setURLReferenceENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x215IfcImageTexture11declarationEv">
+<span id="_CPPv3NK6Ifc4x215IfcImageTexture11declarationEv"></span><span id="_CPPv2NK6Ifc4x215IfcImageTexture11declarationEv"></span><span id="Ifc4x2::IfcImageTexture::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_image_texture_1a04616c0b50713cca8618069fca0a6810"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x215IfcImageTexture11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x215IfcImageTexture15IfcImageTextureEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x215IfcImageTexture15IfcImageTextureEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x215IfcImageTexture15IfcImageTextureEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcImageTexture::IfcImageTexture__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_image_texture_1ad47128ea9bb02cef27dd0532ff94763e"></span><code class="sig-name descname">IfcImageTexture</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x215IfcImageTexture15IfcImageTextureEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x215IfcImageTexture15IfcImageTextureEbbN5boost8optionalINSt6stringEEEPN6Ifc4x236IfcCartesianTransformationOperator2DEN5boost8optionalINSt6vectorINSt6stringEEEEENSt6stringE">
+<span id="_CPPv3N6Ifc4x215IfcImageTexture15IfcImageTextureEbbN5boost8optionalINSt6stringEEEPN6Ifc4x236IfcCartesianTransformationOperator2DEN5boost8optionalINSt6vectorINSt6stringEEEEENSt6stringE"></span><span id="_CPPv2N6Ifc4x215IfcImageTexture15IfcImageTextureEbbN5boost8optionalINSt6stringEEEPN6Ifc4x236IfcCartesianTransformationOperator2DEN5boost8optionalINSt6vectorINSt6stringEEEEENSt6stringE"></span><span id="Ifc4x2::IfcImageTexture::IfcImageTexture__b.b.boost::optional:ss:.Ifc4x2::IfcCartesianTransformationOperator2DP.boost::optional:std::vector:ss::.ss"></span><span class="target" id="class_ifc4x2_1_1_ifc_image_texture_1ae4abdcd6b3e777e04c333978bd16614a"></span><code class="sig-name descname">IfcImageTexture</code><span class="sig-paren">(</span>bool <em>v1_RepeatS</em>, bool <em>v2_RepeatT</em>, boost::optional&lt;std::string&gt; <em>v3_Mode</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_cartesian_transformation_operator2_d.html#_CPPv4N6Ifc4x236IfcCartesianTransformationOperator2DE" title="Ifc4x2::IfcCartesianTransformationOperator2D">IfcCartesianTransformationOperator2D</a> *<em>v4_TextureTransform</em>, boost::optional&lt;std::vector&lt;std::string&gt;&gt; <em>v5_Parameter</em>, std::string <em>v6_URLReference</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x215IfcImageTexture15IfcImageTextureEbbN5boost8optionalINSt6stringEEEPN6Ifc4x236IfcCartesianTransformationOperator2DEN5boost8optionalINSt6vectorINSt6stringEEEEENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x215IfcImageTexture5ClassEv">
+<span id="_CPPv3N6Ifc4x215IfcImageTexture5ClassEv"></span><span id="_CPPv2N6Ifc4x215IfcImageTexture5ClassEv"></span><span id="Ifc4x2::IfcImageTexture::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_image_texture_1af680ae6f1a2fc2ba4397057c2cb17a47"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x215IfcImageTexture5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_illuminance_measure.html" title="previous chapter">Class Ifc4x2::IfcIlluminanceMeasure</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_indexed_colour_map.html" title="next chapter">Class Ifc4x2::IfcIndexedColourMap</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_image_texture.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

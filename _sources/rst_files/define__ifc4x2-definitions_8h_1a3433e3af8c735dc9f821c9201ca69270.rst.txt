@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a3433e3af8c735dc9f821c9201ca69270:
+
+Define SCHEMA_HAS_IfcBeam
+=========================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcBeam

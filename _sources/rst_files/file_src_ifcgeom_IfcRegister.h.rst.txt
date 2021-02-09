@@ -1,0 +1,226 @@
+
+.. _file_src_ifcgeom_IfcRegister.h:
+
+File IfcRegister.h
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcgeom>` (``src/ifcgeom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/IfcRegister.h``)
+------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_IfcRegister.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/IfcBaseClass.h``
+
+- ``../ifcparse/IfcParse.h``
+
+- ``TopoDS_Face.hxx``
+
+- ``TopoDS_Shape.hxx``
+
+- ``TopoDS_Wire.hxx``
+
+- ``gp_Dir.hxx``
+
+- ``gp_GTrsf.hxx``
+
+- ``gp_GTrsf2d.hxx``
+
+- ``gp_Mat.hxx``
+
+- ``gp_Mat2d.hxx``
+
+- ``gp_Pln.hxx``
+
+- ``gp_Pnt.hxx``
+
+- ``gp_Trsf.hxx``
+
+- ``gp_Trsf2d.hxx``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_IfcRegisterCreateCache.h`
+
+- :ref:`file_src_ifcgeom_IfcRegisterGeomHeader.h`
+
+- :ref:`file_src_ifcgeom_IfcRegisterConvertCurve.h`
+
+- :ref:`file_src_ifcgeom_IfcRegisterConvertFace.h`
+
+- :ref:`file_src_ifcgeom_IfcRegisterConvertShape.h`
+
+- :ref:`file_src_ifcgeom_IfcRegisterConvertShapes.h`
+
+- :ref:`file_src_ifcgeom_IfcRegisterConvertWire.h`
+
+- :ref:`file_src_ifcgeom_IfcRegisterPurgeCache.h`
+
+- :ref:`file_src_ifcgeom_IfcRegisterShapeType.h`
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function__ifc_register_8h_1aa5fb615c0cc6888f68921b4b4e3bebf0`
+
+- :ref:`exhale_function__ifc_register_8h_1a623d07d7e2f561ad8987088db2e04bdf`
+
+- :ref:`exhale_function__ifc_register_8h_1a363bd2decf7d0a625125f63f85354f07`
+
+- :ref:`exhale_function__ifc_register_8h_1a12dd73d9f58e1b7643037190f3a0cef5`
+
+- :ref:`exhale_function__ifc_register_8h_1a547a977adf0ab0643fe53ab2d113a12c`
+
+- :ref:`exhale_function__ifc_register_8h_1ad0c991a0bddd86c1619f1791713619fb`
+
+- :ref:`exhale_function__ifc_register_8h_1ad879cc7eae65e30c78ac4d401647fa8b`
+
+- :ref:`exhale_function__ifc_register_8h_1a59b50bee3b5f13756b403c9a05a049a9`
+
+- :ref:`exhale_function__ifc_register_8h_1a74abebba87efe9fb966c0ca342ea82f2`
+
+- :ref:`exhale_function__ifc_register_8h_1ad4883104fe2aa4fba27f3e170f40d41b`
+
+- :ref:`exhale_function__ifc_register_8h_1a8ced415e6247582dc3448e6380704067`
+
+- :ref:`exhale_function__ifc_register_8h_1a844f854eff7d622fed2397adab4e3732`
+
+- :ref:`exhale_function__ifc_register_8h_1aa77c7090100a517ba0b03b481a907529`
+
+- :ref:`exhale_function__ifc_register_8h_1a650c610f0c0d05b6afb03b4fa7397f0e`
+
+- :ref:`exhale_function__ifc_register_8h_1aef05b68b015c497add4026ae35c77eb1`
+
+- :ref:`exhale_function__ifc_register_8h_1a9b9228a6a855537c6c64e90539a65de9`
+
+- :ref:`exhale_function__ifc_register_8h_1aa1a47d58129fa7d766973d5f189367d4`
+
+- :ref:`exhale_function__ifc_register_8h_1a2cc0ab4497a8c6d3f0881869a38d7415`
+
+- :ref:`exhale_function__ifc_register_8h_1ac42b5af29c4c454b3713513e31f04f97`
+
+- :ref:`exhale_function__ifc_register_8h_1a18d14ecb3cd148459cb653b10da3e298`
+
+- :ref:`exhale_function__ifc_register_8h_1a345a2c247de437b07c0441eb305b61dd`
+
+- :ref:`exhale_function__ifc_register_8h_1a59a0edaa16363badb24789750922eb1a`
+
+- :ref:`exhale_function__ifc_register_8h_1a0f57933d9ad80ef0ef175348dfec0f72`
+
+- :ref:`exhale_function__ifc_register_8h_1ad04307b3af7dab07985d2c03660ff801`
+
+- :ref:`exhale_function__ifc_register_8h_1ad5c7163a4cf73df0d6443bc3849d5702`
+
+- :ref:`exhale_function__ifc_register_8h_1a875dda816347dca2eacaa3757a2627ca`
+
+- :ref:`exhale_function__ifc_register_8h_1a943547a12931c8edb0772397d3fe4c1f`
+
+- :ref:`exhale_function__ifc_register_8h_1a6b0988f6d138ceb3fb516f8fd8d4c8ee`
+
+- :ref:`exhale_function__ifc_register_8h_1aa98c4a92d30b3ffe00beb5d10fb66b53`
+
+- :ref:`exhale_function__ifc_register_8h_1a65f0659df6d0408b74faf951b7c70938`
+
+- :ref:`exhale_function__ifc_register_8h_1ace7fa487065f2a0f66bf150fed99747b`
+
+- :ref:`exhale_function__ifc_register_8h_1a7d9bc70048861b53579ad2379e15225d`
+
+- :ref:`exhale_function__ifc_register_8h_1ae00e598204713df635d833f8a64f11c2`
+
+- :ref:`exhale_function__ifc_register_8h_1a934df61041f7804a15bbaf4a4b150b32`
+
+- :ref:`exhale_function__ifc_register_8h_1a26d1ea0c0951957c89b3bceffa15a212`
+
+- :ref:`exhale_function__ifc_register_8h_1a6c569cc338f68700f0234a9aeefe7e5f`
+
+- :ref:`exhale_function__ifc_register_8h_1ae68ad260e2c0b49cb0ed9c95e12223ac`
+
+- :ref:`exhale_function__ifc_register_8h_1abfab0e8449c8d2218c01198b290adf8c`
+
+- :ref:`exhale_function__ifc_register_8h_1a0e5b62a41d562e1c3a4a430ccd615ba5`
+
+- :ref:`exhale_function__ifc_register_8h_1a7b449fda1661f4a83dd6285e195b5228`
+
+- :ref:`exhale_function__ifc_register_8h_1a50c2579b16c99e7cb66d6e1724ac968e`
+
+- :ref:`exhale_function__ifc_register_8h_1ad361ecad4f0365999a638df03ce5c63a`
+
+- :ref:`exhale_function__ifc_register_8h_1a66d19b0d0faa0ceeefdac3238f514a37`
+
+- :ref:`exhale_function__ifc_register_8h_1a968831a59284d9ae4bcbc54f109f9c64`
+
+- :ref:`exhale_function__ifc_register_8h_1a284236ee7e384dce3c9fa6b515c07c1d`
+
+- :ref:`exhale_function__ifc_register_8h_1a1fb2f982d7698c65012891fab1d8b1d3`
+
+- :ref:`exhale_function__ifc_register_8h_1a9f4bf32201e741f6bc3bc97bf32ff064`
+
+- :ref:`exhale_function__ifc_register_8h_1a6a2292f2a08955af6c1537a051e80cb1`
+
+- :ref:`exhale_function__ifc_register_8h_1adb32e1afd04a551b8528f49f7897adb7`
+
+- :ref:`exhale_function__ifc_register_8h_1a1579e5eb1ba384d7086262956b721e0c`
+
+- :ref:`exhale_function__ifc_register_8h_1aa1cc9ab3763d9797cb5672d544202f3a`
+
+- :ref:`exhale_function__ifc_register_8h_1a9705e8bb6db0b57a914805eed0277f61`
+
+- :ref:`exhale_function__ifc_register_8h_1af93726405a6c617cffe98d8ab58881f4`
+
+- :ref:`exhale_function__ifc_register_8h_1a6afaa8a3dd9e8b0ff152d5aa058a49dc`
+
+- :ref:`exhale_function__ifc_register_8h_1a74a08bc44560e7fc9584acc5c3b04153`
+
+- :ref:`exhale_function__ifc_register_8h_1a48214274ba05f5e90c147e63c85c59e7`
+
+- :ref:`exhale_function__ifc_register_8h_1a177b8a31a59cab50cd56acb53ba130c8`
+
+- :ref:`exhale_function__ifc_register_8h_1abc7797b1200f4cff29d56f599ada89c3`
+
+- :ref:`exhale_function__ifc_register_8h_1a2e17dda97ab961338cbb086335a007df`
+
+- :ref:`exhale_function__ifc_register_8h_1a9a2f90d4d1ddc0be8054de4b56dda7ff`
+
+- :ref:`exhale_function__ifc_register_8h_1aba6a3ea3f92c61e1845ff50fea9cab2f`
+
+- :ref:`exhale_function__ifc_register_8h_1abf04532b4478e5d956182983b476fdbf`
+
+- :ref:`exhale_function__ifc_register_8h_1a34d37dff5fb358dbc538a47810e4c07f`
+
+- :ref:`exhale_function__ifc_register_8h_1a22659d2a314fb5eb7f15ce49e4330130`
+
+- :ref:`exhale_function__ifc_register_8h_1aa1f575028ae493aee8a904354d584514`
+
+- :ref:`exhale_function__ifc_register_8h_1aa57bd08e258bb4ef09e6f4395a6d99ef`
+
+- :ref:`exhale_function__ifc_register_8h_1acb020781623d4ce7d9085f500cad3ff6`
+
+- :ref:`exhale_function__ifc_register_8h_1a8a314be59a443e0a1c54e6f3fb99da95`
+

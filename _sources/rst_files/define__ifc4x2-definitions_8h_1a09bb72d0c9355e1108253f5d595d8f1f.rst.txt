@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a09bb72d0c9355e1108253f5d595d8f1f:
+
+Define SCHEMA_IfcConversionBasedUnit_HAS_ConversionFactor
+=========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConversionBasedUnit_HAS_ConversionFactor

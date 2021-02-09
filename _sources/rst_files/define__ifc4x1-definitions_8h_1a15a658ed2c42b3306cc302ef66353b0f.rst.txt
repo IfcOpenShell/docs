@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1a15a658ed2c42b3306cc302ef66353b0f:
+
+Define SCHEMA_IfcRelAssignsToActor_HAS_RelatingActor
+====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelAssignsToActor_HAS_RelatingActor

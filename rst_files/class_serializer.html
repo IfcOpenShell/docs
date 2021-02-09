@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Serializer &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class SerializerSettings" href="class_serializer_settings.html" />
+    <link rel="prev" title="Class OpenCascadeBasedSerializer" href="class_open_cascade_based_serializer.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-serializer">
+<span id="exhale-class-class-serializer"></span><h1>Class Serializer<a class="headerlink" href="#class-serializer" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_serializers_Serializer.h.html#file-src-serializers-serializer-h"><span class="std std-ref">File Serializer.h</span></a></p></li>
+</ul>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="derived-types">
+<h3>Derived Types<a class="headerlink" href="#derived-types" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">GeometrySerializer</span></code> (<a class="reference internal" href="class_geometry_serializer.html#exhale-class-class-geometry-serializer"><span class="std std-ref">Class GeometrySerializer</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">XmlSerializer</span></code> (<a class="reference internal" href="class_xml_serializer.html#exhale-class-class-xml-serializer"><span class="std std-ref">Class XmlSerializer</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv410Serializer">
+<span id="_CPPv310Serializer"></span><span id="_CPPv210Serializer"></span><span id="Serializer"></span><span class="target" id="class_serializer"></span><em class="property">class </em><code class="sig-name descname">Serializer</code><a class="headerlink" href="#_CPPv410Serializer" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Subclassed by <a class="reference internal" href="class_geometry_serializer.html#class_geometry_serializer"><span class="std std-ref">GeometrySerializer</span></a>, <a class="reference internal" href="class_xml_serializer.html#class_xml_serializer"><span class="std std-ref">XmlSerializer</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N10SerializerD0Ev">
+<span id="_CPPv3N10SerializerD0Ev"></span><span id="_CPPv2N10SerializerD0Ev"></span><span id="Serializer::~Serializer"></span><span class="target" id="class_serializer_1a6e6f41f84f16021d482e039ef82ce856"></span><code class="sig-name descname">~Serializer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10SerializerD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Serializer5readyEv">
+<span id="_CPPv3N10Serializer5readyEv"></span><span id="_CPPv2N10Serializer5readyEv"></span><span id="Serializer::ready"></span><span class="target" id="class_serializer_1a8aae0d5a17793684d5eb78c44cfc71fc"></span>bool <code class="sig-name descname">ready</code><span class="sig-paren">(</span><span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv4N10Serializer5readyEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Serializer11writeHeaderEv">
+<span id="_CPPv3N10Serializer11writeHeaderEv"></span><span id="_CPPv2N10Serializer11writeHeaderEv"></span><span id="Serializer::writeHeader"></span><span class="target" id="class_serializer_1ae5c2e1bbb9984084161b7fb5f23bbc44"></span>void <code class="sig-name descname">writeHeader</code><span class="sig-paren">(</span><span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv4N10Serializer11writeHeaderEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Serializer8finalizeEv">
+<span id="_CPPv3N10Serializer8finalizeEv"></span><span id="_CPPv2N10Serializer8finalizeEv"></span><span id="Serializer::finalize"></span><span class="target" id="class_serializer_1a495313742cf253837969696a7fb7c7ce"></span>void <code class="sig-name descname">finalize</code><span class="sig-paren">(</span><span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv4N10Serializer8finalizeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Serializer7setFileEPN8IfcParse7IfcFileE">
+<span id="_CPPv3N10Serializer7setFileEPN8IfcParse7IfcFileE"></span><span id="_CPPv2N10Serializer7setFileEPN8IfcParse7IfcFileE"></span><span id="Serializer::setFile__IfcParse::IfcFileP"></span><span class="target" id="class_serializer_1a74d38dc4d85550fd744030e5f070d77e"></span>void <code class="sig-name descname">setFile</code><span class="sig-paren">(</span>IfcParse::<a class="reference internal" href="class_ifc_parse_1_1_ifc_file.html#_CPPv4N8IfcParse7IfcFileE" title="IfcParse::IfcFile">IfcFile</a>*<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv4N10Serializer7setFileEPN8IfcParse7IfcFileE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_open_cascade_based_serializer.html" title="previous chapter">Class OpenCascadeBasedSerializer</a></li>
+      <li>Next: <a href="class_serializer_settings.html" title="next chapter">Class SerializerSettings</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_serializer.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

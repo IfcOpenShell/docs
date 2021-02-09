@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcWorkTime &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcZone" href="class_ifc4x2_1_1_ifc_zone.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcWorkSchedule" href="class_ifc4x2_1_1_ifc_work_schedule.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcworktime">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-work-time"></span><h1>Class Ifc4x2::IfcWorkTime<a class="headerlink" href="#class-ifc4x2-ifcworktime" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcSchedulingTime</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_scheduling_time.html#exhale-class-class-ifc4x2-1-1-ifc-scheduling-time"><span class="std std-ref">Class Ifc4x2::IfcSchedulingTime</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x211IfcWorkTimeE">
+<span id="_CPPv3N6Ifc4x211IfcWorkTimeE"></span><span id="_CPPv2N6Ifc4x211IfcWorkTimeE"></span><span id="Ifc4x2::IfcWorkTime"></span><span class="target" id="class_ifc4x2_1_1_ifc_work_time"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcWorkTime</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_scheduling_time.html#_CPPv4N6Ifc4x217IfcSchedulingTimeE" title="Ifc4x2::IfcSchedulingTime">IfcSchedulingTime</a><a class="headerlink" href="#_CPPv4N6Ifc4x211IfcWorkTimeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_work_time"><span class="std std-ref">IfcWorkTime</span></a> defines time periods that are used by <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_work_calendar"><span class="std std-ref">IfcWorkCalendar</span></a> for either describing working times or non-working exception times. Besides start and finish dates, a set of time periods can be given by various types of recurrence patterns.</p>
+<p>HISTORY: New entity in IFC2x4.</p>
+<p>Use definitions A work time should have a meaningful name that describes the time periods (for example, working week, holiday name). Non-recurring time periods should have a start date (<a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_work_time_1a9f76b355c541581bf067611583aecb36"><span class="std std-ref">IfcWorkTime.Start</span></a>) and a finish date (<a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_work_time_1a8d27f530e956000110983906979d1080"><span class="std std-ref">IfcWorkTime.Finish</span></a>). In that case it is assumed that the time period begins at 0:00 on the start date and ends at 24:00 on the finish date.</p>
+<p>The start and finish date is optional if a recurrence pattern is given (<a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_work_time_1adb7e1a00a80dddd4e6d636f63b8a32af"><span class="std std-ref">IfcWorkTime.RecurrencePattern</span></a>). They then restrict never-ending recurrence patterns. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x211IfcWorkTime4listE">
+<span id="_CPPv3N6Ifc4x211IfcWorkTime4listE"></span><span id="_CPPv2N6Ifc4x211IfcWorkTime4listE"></span><span id="Ifc4x2::IfcWorkTime::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_work_time_1a169fc5426d078a884259829966f722ea"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x211IfcWorkTimeE" title="Ifc4x2::IfcWorkTime">IfcWorkTime</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x211IfcWorkTime4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x211IfcWorkTime20hasRecurrencePatternEv">
+<span id="_CPPv3NK6Ifc4x211IfcWorkTime20hasRecurrencePatternEv"></span><span id="_CPPv2NK6Ifc4x211IfcWorkTime20hasRecurrencePatternEv"></span><span id="Ifc4x2::IfcWorkTime::hasRecurrencePatternC"></span><span class="target" id="class_ifc4x2_1_1_ifc_work_time_1a5afe738c77d16997b0c5cf5c3ed7f7cb"></span>bool <code class="sig-name descname">hasRecurrencePattern</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x211IfcWorkTime20hasRecurrencePatternEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RecurrencePattern is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_work_time"><span class="std std-ref">IfcWorkTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x211IfcWorkTime17RecurrencePatternEv">
+<span id="_CPPv3NK6Ifc4x211IfcWorkTime17RecurrencePatternEv"></span><span id="_CPPv2NK6Ifc4x211IfcWorkTime17RecurrencePatternEv"></span><span id="Ifc4x2::IfcWorkTime::RecurrencePatternC"></span><span class="target" id="class_ifc4x2_1_1_ifc_work_time_1adb7e1a00a80dddd4e6d636f63b8a32af"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_recurrence_pattern.html#_CPPv4N6Ifc4x220IfcRecurrencePatternE" title="Ifc4x2::IfcRecurrencePattern">IfcRecurrencePattern</a> *<code class="sig-name descname">RecurrencePattern</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x211IfcWorkTime17RecurrencePatternEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Recurrence pattern that defines a time period, which, if given, is valid within the time period defined by <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_work_time_1a9f76b355c541581bf067611583aecb36"><span class="std std-ref">IfcWorkTime.Start</span></a> and <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_work_time_1a8d27f530e956000110983906979d1080"><span class="std std-ref">IfcWorkTime.Finish</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x211IfcWorkTime20setRecurrencePatternEPN6Ifc4x220IfcRecurrencePatternE">
+<span id="_CPPv3N6Ifc4x211IfcWorkTime20setRecurrencePatternEPN6Ifc4x220IfcRecurrencePatternE"></span><span id="_CPPv2N6Ifc4x211IfcWorkTime20setRecurrencePatternEPN6Ifc4x220IfcRecurrencePatternE"></span><span id="Ifc4x2::IfcWorkTime::setRecurrencePattern__Ifc4x2::IfcRecurrencePatternP"></span><span class="target" id="class_ifc4x2_1_1_ifc_work_time_1a828965b680b9e4de6cd959ffc355e256"></span>void <code class="sig-name descname">setRecurrencePattern</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_recurrence_pattern.html#_CPPv4N6Ifc4x220IfcRecurrencePatternE" title="Ifc4x2::IfcRecurrencePattern">IfcRecurrencePattern</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x211IfcWorkTime20setRecurrencePatternEPN6Ifc4x220IfcRecurrencePatternE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x211IfcWorkTime8hasStartEv">
+<span id="_CPPv3NK6Ifc4x211IfcWorkTime8hasStartEv"></span><span id="_CPPv2NK6Ifc4x211IfcWorkTime8hasStartEv"></span><span id="Ifc4x2::IfcWorkTime::hasStartC"></span><span class="target" id="class_ifc4x2_1_1_ifc_work_time_1ae5b78f4a4a6ec1573c9f2afdf8097271"></span>bool <code class="sig-name descname">hasStart</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x211IfcWorkTime8hasStartEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Start is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_work_time"><span class="std std-ref">IfcWorkTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x211IfcWorkTime5StartEv">
+<span id="_CPPv3NK6Ifc4x211IfcWorkTime5StartEv"></span><span id="_CPPv2NK6Ifc4x211IfcWorkTime5StartEv"></span><span id="Ifc4x2::IfcWorkTime::StartC"></span><span class="target" id="class_ifc4x2_1_1_ifc_work_time_1a9f76b355c541581bf067611583aecb36"></span>std::string <code class="sig-name descname">Start</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x211IfcWorkTime5StartEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Start date of the work time (0:00), that might be further restricted by a recurrence pattern. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x211IfcWorkTime8setStartENSt6stringE">
+<span id="_CPPv3N6Ifc4x211IfcWorkTime8setStartENSt6stringE"></span><span id="_CPPv2N6Ifc4x211IfcWorkTime8setStartENSt6stringE"></span><span id="Ifc4x2::IfcWorkTime::setStart__ss"></span><span class="target" id="class_ifc4x2_1_1_ifc_work_time_1a624e39491448a7ca278e77b5dc2457f0"></span>void <code class="sig-name descname">setStart</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x211IfcWorkTime8setStartENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x211IfcWorkTime9hasFinishEv">
+<span id="_CPPv3NK6Ifc4x211IfcWorkTime9hasFinishEv"></span><span id="_CPPv2NK6Ifc4x211IfcWorkTime9hasFinishEv"></span><span id="Ifc4x2::IfcWorkTime::hasFinishC"></span><span class="target" id="class_ifc4x2_1_1_ifc_work_time_1a0b579debf8d0b7ba6e9a35d2c48b7050"></span>bool <code class="sig-name descname">hasFinish</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x211IfcWorkTime9hasFinishEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Finish is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_work_time"><span class="std std-ref">IfcWorkTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x211IfcWorkTime6FinishEv">
+<span id="_CPPv3NK6Ifc4x211IfcWorkTime6FinishEv"></span><span id="_CPPv2NK6Ifc4x211IfcWorkTime6FinishEv"></span><span id="Ifc4x2::IfcWorkTime::FinishC"></span><span class="target" id="class_ifc4x2_1_1_ifc_work_time_1a8d27f530e956000110983906979d1080"></span>std::string <code class="sig-name descname">Finish</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x211IfcWorkTime6FinishEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>End date of the work time (24:00), that might be further restricted by a recurrence pattern. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x211IfcWorkTime9setFinishENSt6stringE">
+<span id="_CPPv3N6Ifc4x211IfcWorkTime9setFinishENSt6stringE"></span><span id="_CPPv2N6Ifc4x211IfcWorkTime9setFinishENSt6stringE"></span><span id="Ifc4x2::IfcWorkTime::setFinish__ss"></span><span class="target" id="class_ifc4x2_1_1_ifc_work_time_1a84899e5bc62039c03360aa90fd0e81d8"></span>void <code class="sig-name descname">setFinish</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x211IfcWorkTime9setFinishENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x211IfcWorkTime11declarationEv">
+<span id="_CPPv3NK6Ifc4x211IfcWorkTime11declarationEv"></span><span id="_CPPv2NK6Ifc4x211IfcWorkTime11declarationEv"></span><span id="Ifc4x2::IfcWorkTime::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_work_time_1a1f45a066f5be63968196df27cf8f9a7e"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x211IfcWorkTime11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x211IfcWorkTime11IfcWorkTimeEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x211IfcWorkTime11IfcWorkTimeEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x211IfcWorkTime11IfcWorkTimeEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcWorkTime::IfcWorkTime__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_work_time_1a45bed7df40ef7cbb874e46bcac4feb5d"></span><code class="sig-name descname">IfcWorkTime</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x211IfcWorkTime11IfcWorkTimeEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x211IfcWorkTime11IfcWorkTimeEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x217IfcDataOriginEnum5ValueEEEN5boost8optionalINSt6stringEEEPN6Ifc4x220IfcRecurrencePatternEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE">
+<span id="_CPPv3N6Ifc4x211IfcWorkTime11IfcWorkTimeEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x217IfcDataOriginEnum5ValueEEEN5boost8optionalINSt6stringEEEPN6Ifc4x220IfcRecurrencePatternEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE"></span><span id="_CPPv2N6Ifc4x211IfcWorkTime11IfcWorkTimeEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x217IfcDataOriginEnum5ValueEEEN5boost8optionalINSt6stringEEEPN6Ifc4x220IfcRecurrencePatternEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE"></span><span id="Ifc4x2::IfcWorkTime::IfcWorkTime__boost::optional:ss:.boost::optional:Ifc4x2::IfcDataOriginEnum::Value:.boost::optional:ss:.Ifc4x2::IfcRecurrencePatternP.boost::optional:ss:.boost::optional:ss:"></span><span class="target" id="class_ifc4x2_1_1_ifc_work_time_1a4ff39b6a59a8410b00bb18cf46266d1f"></span><code class="sig-name descname">IfcWorkTime</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Name</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x217IfcDataOriginEnumE" title="Ifc4x2::IfcDataOriginEnum">IfcDataOriginEnum</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x217IfcDataOriginEnum5ValueE" title="Ifc4x2::IfcDataOriginEnum::Value">Value</a>&gt; <em>v2_DataOrigin</em>, boost::optional&lt;std::string&gt; <em>v3_UserDefinedDataOrigin</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_recurrence_pattern.html#_CPPv4N6Ifc4x220IfcRecurrencePatternE" title="Ifc4x2::IfcRecurrencePattern">IfcRecurrencePattern</a> *<em>v4_RecurrencePattern</em>, boost::optional&lt;std::string&gt; <em>v5_Start</em>, boost::optional&lt;std::string&gt; <em>v6_Finish</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x211IfcWorkTime11IfcWorkTimeEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x217IfcDataOriginEnum5ValueEEEN5boost8optionalINSt6stringEEEPN6Ifc4x220IfcRecurrencePatternEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x211IfcWorkTime5ClassEv">
+<span id="_CPPv3N6Ifc4x211IfcWorkTime5ClassEv"></span><span id="_CPPv2N6Ifc4x211IfcWorkTime5ClassEv"></span><span id="Ifc4x2::IfcWorkTime::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_work_time_1af860398c59be738459114ead4836150a"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x211IfcWorkTime5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_work_schedule.html" title="previous chapter">Class Ifc4x2::IfcWorkSchedule</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_zone.html" title="next chapter">Class Ifc4x2::IfcZone</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_work_time.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

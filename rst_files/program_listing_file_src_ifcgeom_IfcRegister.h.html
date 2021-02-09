@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Listing for File IfcRegister.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="program-listing-for-file-ifcregister-h">
+<span id="program-listing-file-src-ifcgeom-ifcregister-h"></span><h1>Program Listing for File IfcRegister.h<a class="headerlink" href="#program-listing-for-file-ifcregister-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_ifcgeom_IfcRegister.h.html#file-src-ifcgeom-ifcregister-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom/IfcRegister.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/********************************************************************************</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* This file is part of IfcOpenShell.                                           *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* IfcOpenShell is free software: you can redistribute it and/or modify         *</span>
+<span class="cm">* it under the terms of the Lesser GNU General Public License as published by  *</span>
+<span class="cm">* the Free Software Foundation, either version 3.0 of the License, or          *</span>
+<span class="cm">* (at your option) any later version.                                          *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* IfcOpenShell is distributed in the hope that it will be useful,              *</span>
+<span class="cm">* but WITHOUT ANY WARRANTY; without even the implied warranty of               *</span>
+<span class="cm">* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 *</span>
+<span class="cm">* Lesser GNU General Public License for more details.                          *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* You should have received a copy of the Lesser GNU General Public License     *</span>
+<span class="cm">* along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.         *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">********************************************************************************/</span>
+
+<span class="cm">/********************************************************************************</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * This file registers function prototypes for all supported IFC geometrical    *</span>
+<span class="cm"> * entities. For entities of type CLASS an std::map is also created to cache    *</span>
+<span class="cm"> * the output of the conversion functions                                       *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> ********************************************************************************/</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;TopoDS_Shape.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;TopoDS_Wire.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;TopoDS_Face.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Pnt.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Pln.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Dir.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Mat.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Mat2d.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_GTrsf.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_GTrsf2d.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Trsf.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Trsf2d.hxx&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcBaseClass.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcParse.h&quot;</span><span class="cp"></span>
+
+<span class="n">SHAPES</span><span class="p">(</span><span class="n">IfcShellBasedSurfaceModel</span><span class="p">);</span>
+<span class="n">SHAPES</span><span class="p">(</span><span class="n">IfcFaceBasedSurfaceModel</span><span class="p">);</span>
+<span class="n">SHAPES</span><span class="p">(</span><span class="n">IfcRepresentation</span><span class="p">);</span>
+<span class="n">SHAPES</span><span class="p">(</span><span class="n">IfcMappedItem</span><span class="p">);</span>
+<span class="c1">// IfcFacetedBrep included</span>
+<span class="c1">// IfcAdvancedBrep included</span>
+<span class="c1">// IfcFacetedBrepWithVoids included</span>
+<span class="c1">// IfcAdvancedBrepWithVoids included</span>
+<span class="n">SHAPES</span><span class="p">(</span><span class="n">IfcManifoldSolidBrep</span><span class="p">);</span>
+<span class="n">SHAPES</span><span class="p">(</span><span class="n">IfcGeometricSet</span><span class="p">);</span>
+
+<span class="cp">#ifdef SCHEMA_HAS_IfcCylindricalSurface</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcCylindricalSurface</span><span class="p">);</span>
+<span class="cp">#endif</span>
+<span class="cp">#ifdef SCHEMA_HAS_IfcAdvancedBrep</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcAdvancedBrep</span><span class="p">);</span>
+<span class="cp">#endif</span>
+<span class="cp">#ifdef SCHEMA_HAS_IfcToroidalSurface</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcToroidalSurface</span><span class="p">);</span>
+<span class="cp">#endif</span>
+<span class="cp">#ifdef SCHEMA_HAS_IfcSphericalSurface</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcSphericalSurface</span><span class="p">);</span>
+<span class="cp">#endif</span>
+<span class="c1">// FIXME: Surfaces should have a shape type of their own</span>
+<span class="cp">#ifdef SCHEMA_HAS_IfcBSplineSurfaceWithKnots</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcBSplineSurfaceWithKnots</span><span class="p">);</span>
+<span class="cp">#endif</span>
+<span class="cp">#ifdef SCHEMA_HAS_IfcTriangulatedFaceSet</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcTriangulatedFaceSet</span><span class="p">);</span>
+<span class="cp">#endif</span>
+<span class="cp">#ifdef SCHEMA_HAS_IfcPolygonalFaceSet</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcPolygonalFaceSet</span><span class="p">);</span>
+<span class="cp">#endif</span>
+<span class="cp">#ifdef SCHEMA_HAS_IfcExtrudedAreaSolidTapered</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcExtrudedAreaSolidTapered</span><span class="p">);</span>
+<span class="cp">#endif</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcPlane</span><span class="p">);</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcExtrudedAreaSolid</span><span class="p">);</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcRevolvedAreaSolid</span><span class="p">);</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcConnectedFaceSet</span><span class="p">);</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcBooleanResult</span><span class="p">);</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcPolygonalBoundedHalfSpace</span><span class="p">);</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcHalfSpaceSolid</span><span class="p">);</span>
+<span class="c1">// FIXME: Surfaces should have a shape type of their own</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcSurfaceOfLinearExtrusion</span><span class="p">);</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcSurfaceOfRevolution</span><span class="p">);</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcBlock</span><span class="p">);</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcRectangularPyramid</span><span class="p">);</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcRightCircularCylinder</span><span class="p">);</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcRightCircularCone</span><span class="p">);</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcSphere</span><span class="p">);</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcCsgSolid</span><span class="p">);</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcCurveBoundedPlane</span><span class="p">);</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcRectangularTrimmedSurface</span><span class="p">);</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcSurfaceCurveSweptAreaSolid</span><span class="p">);</span>
+<span class="n">SHAPE</span><span class="p">(</span><span class="n">IfcSweptDiskSolid</span><span class="p">);</span>
+
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcArbitraryProfileDefWithVoids</span><span class="p">);</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcArbitraryClosedProfileDef</span><span class="p">);</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcRoundedRectangleProfileDef</span><span class="p">);</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcRectangleHollowProfileDef</span><span class="p">);</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcRectangleProfileDef</span><span class="p">);</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcTrapeziumProfileDef</span><span class="p">)</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcCShapeProfileDef</span><span class="p">);</span>
+<span class="c1">// IfcAsymmetricIShapeProfileDef included</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcIShapeProfileDef</span><span class="p">);</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcLShapeProfileDef</span><span class="p">);</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcTShapeProfileDef</span><span class="p">);</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcUShapeProfileDef</span><span class="p">);</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcZShapeProfileDef</span><span class="p">);</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcCircleHollowProfileDef</span><span class="p">);</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcCircleProfileDef</span><span class="p">);</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcEllipseProfileDef</span><span class="p">);</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcCenterLineProfileDef</span><span class="p">);</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcCompositeProfileDef</span><span class="p">);</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcDerivedProfileDef</span><span class="p">);</span>
+<span class="c1">// IfcFaceSurface included</span>
+<span class="c1">// IfcAdvancedFace included in case of IFC4</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcFace</span><span class="p">);</span>
+
+<span class="cp">#ifdef SCHEMA_HAS_IfcCraneRailAShapeProfileDef</span>
+<span class="n">FACE</span><span class="p">(</span><span class="n">IfcCraneRailAShapeProfileDef</span><span class="p">);</span>
+<span class="cp">#endif</span>
+
+<span class="n">WIRE</span><span class="p">(</span><span class="n">IfcEdgeCurve</span><span class="p">);</span>
+<span class="n">WIRE</span><span class="p">(</span><span class="n">IfcSubedge</span><span class="p">);</span>
+<span class="n">WIRE</span><span class="p">(</span><span class="n">IfcOrientedEdge</span><span class="p">);</span>
+<span class="n">WIRE</span><span class="p">(</span><span class="n">IfcEdge</span><span class="p">);</span>
+<span class="n">WIRE</span><span class="p">(</span><span class="n">IfcEdgeLoop</span><span class="p">);</span>
+<span class="n">WIRE</span><span class="p">(</span><span class="n">IfcPolyline</span><span class="p">);</span>
+<span class="n">WIRE</span><span class="p">(</span><span class="n">IfcPolyLoop</span><span class="p">);</span>
+<span class="n">WIRE</span><span class="p">(</span><span class="n">IfcCompositeCurve</span><span class="p">);</span>
+<span class="n">WIRE</span><span class="p">(</span><span class="n">IfcTrimmedCurve</span><span class="p">);</span>
+<span class="n">WIRE</span><span class="p">(</span><span class="n">IfcArbitraryOpenProfileDef</span><span class="p">);</span>
+<span class="cp">#ifdef SCHEMA_HAS_IfcIndexedPolyCurve</span>
+<span class="n">WIRE</span><span class="p">(</span><span class="n">IfcIndexedPolyCurve</span><span class="p">)</span>
+<span class="cp">#endif</span>
+
+<span class="n">CURVE</span><span class="p">(</span><span class="n">IfcCircle</span><span class="p">);</span>
+<span class="n">CURVE</span><span class="p">(</span><span class="n">IfcEllipse</span><span class="p">);</span>
+<span class="n">CURVE</span><span class="p">(</span><span class="n">IfcLine</span><span class="p">);</span>
+<span class="cp">#ifdef SCHEMA_HAS_IfcBSplineCurveWithKnots</span>
+<span class="c1">// IfcRationalBSplineCurveWithKnots included</span>
+<span class="n">CURVE</span><span class="p">(</span><span class="n">IfcBSplineCurveWithKnots</span><span class="p">);</span>
+<span class="cp">#endif</span>
+<span class="cp">#ifdef SCHEMA_HAS_IfcSurfaceCurve</span>
+<span class="n">CURVE</span><span class="p">(</span><span class="n">IfcSurfaceCurve</span><span class="p">);</span>
+<span class="cp">#endif</span>
+
+<span class="n">CLASS</span><span class="p">(</span><span class="n">IfcCartesianPoint</span><span class="p">,</span><span class="n">gp_Pnt</span><span class="p">);</span>
+<span class="n">CLASS</span><span class="p">(</span><span class="n">IfcDirection</span><span class="p">,</span><span class="n">gp_Dir</span><span class="p">);</span>
+<span class="n">CLASS</span><span class="p">(</span><span class="n">IfcAxis2Placement2D</span><span class="p">,</span><span class="n">gp_Trsf2d</span><span class="p">);</span>
+<span class="n">CLASS</span><span class="p">(</span><span class="n">IfcAxis2Placement3D</span><span class="p">,</span><span class="n">gp_Trsf</span><span class="p">);</span>
+<span class="n">CLASS</span><span class="p">(</span><span class="n">IfcAxis1Placement</span><span class="p">,</span><span class="n">gp_Ax1</span><span class="p">);</span>
+<span class="n">CLASS</span><span class="p">(</span><span class="n">IfcCartesianTransformationOperator2DnonUniform</span><span class="p">,</span><span class="n">gp_GTrsf2d</span><span class="p">);</span>
+<span class="n">CLASS</span><span class="p">(</span><span class="n">IfcCartesianTransformationOperator3DnonUniform</span><span class="p">,</span><span class="n">gp_GTrsf</span><span class="p">);</span>
+<span class="n">CLASS</span><span class="p">(</span><span class="n">IfcCartesianTransformationOperator2D</span><span class="p">,</span><span class="n">gp_Trsf2d</span><span class="p">);</span>
+<span class="n">CLASS</span><span class="p">(</span><span class="n">IfcCartesianTransformationOperator3D</span><span class="p">,</span><span class="n">gp_Trsf</span><span class="p">);</span>
+<span class="n">CLASS</span><span class="p">(</span><span class="n">IfcObjectPlacement</span><span class="p">,</span><span class="n">gp_Trsf</span><span class="p">);</span>
+<span class="n">CLASS</span><span class="p">(</span><span class="n">IfcVector</span><span class="p">,</span><span class="n">gp_Vec</span><span class="p">);</span>
+<span class="n">CLASS</span><span class="p">(</span><span class="n">IfcPlane</span><span class="p">,</span><span class="n">gp_Pln</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/program_listing_file_src_ifcgeom_IfcRegister.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a9b12b223a8ad1f322862c4db15dd552f:
+
+Define SCHEMA_IfcProject_HAS_LongName
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcProject_HAS_LongName

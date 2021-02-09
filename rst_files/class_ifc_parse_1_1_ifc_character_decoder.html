@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class IfcCharacterDecoder &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class IfcException" href="class_ifc_parse_1_1_ifc_exception.html" />
+    <link rel="prev" title="Class IfcAttributeOutOfRangeException" href="class_ifc_parse_1_1_ifc_attribute_out_of_range_exception.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifccharacterdecoder">
+<span id="exhale-class-class-ifc-parse-1-1-ifc-character-decoder"></span><h1>Class IfcCharacterDecoder<a class="headerlink" href="#class-ifccharacterdecoder" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_IfcCharacterDecoder.h.html#file-src-ifcparse-ifccharacterdecoder-h"><span class="std std-ref">File IfcCharacterDecoder.h</span></a></p></li>
+</ul>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N8IfcParse19IfcCharacterDecoderE">
+<span id="_CPPv3N8IfcParse19IfcCharacterDecoderE"></span><span id="_CPPv2N8IfcParse19IfcCharacterDecoderE"></span><span id="IfcParse::IfcCharacterDecoder"></span><span class="target" id="class_ifc_parse_1_1_ifc_character_decoder"></span><em class="property">class </em><code class="sig-prename descclassname">IfcParse<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcCharacterDecoder</code><a class="headerlink" href="#_CPPv4N8IfcParse19IfcCharacterDecoderE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp enum">
+<dt id="_CPPv4N8IfcParse19IfcCharacterDecoder14ConversionModeE">
+<span id="_CPPv3N8IfcParse19IfcCharacterDecoder14ConversionModeE"></span><span id="_CPPv2N8IfcParse19IfcCharacterDecoder14ConversionModeE"></span><span class="target" id="class_ifc_parse_1_1_ifc_character_decoder_1a5cac14b9b4caaad73e38b021b4c70056"></span><em class="property">enum </em><code class="sig-name descname">ConversionMode</code><a class="headerlink" href="#_CPPv4N8IfcParse19IfcCharacterDecoder14ConversionModeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N8IfcParse19IfcCharacterDecoder14ConversionMode10SUBSTITUTEE">
+<span id="_CPPv3N8IfcParse19IfcCharacterDecoder14ConversionMode10SUBSTITUTEE"></span><span id="_CPPv2N8IfcParse19IfcCharacterDecoder14ConversionMode10SUBSTITUTEE"></span><span class="target" id="class_ifc_parse_1_1_ifc_character_decoder_1a5cac14b9b4caaad73e38b021b4c70056ae5031b6f4dd9c5a63c935227b99340dd"></span><em class="property">enumerator </em><code class="sig-name descname">SUBSTITUTE</code><a class="headerlink" href="#_CPPv4N8IfcParse19IfcCharacterDecoder14ConversionMode10SUBSTITUTEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N8IfcParse19IfcCharacterDecoder14ConversionMode4UTF8E">
+<span id="_CPPv3N8IfcParse19IfcCharacterDecoder14ConversionMode4UTF8E"></span><span id="_CPPv2N8IfcParse19IfcCharacterDecoder14ConversionMode4UTF8E"></span><span class="target" id="class_ifc_parse_1_1_ifc_character_decoder_1a5cac14b9b4caaad73e38b021b4c70056a1a9d3f80583bba47bd0e7d2f4b100de1"></span><em class="property">enumerator </em><code class="sig-name descname">UTF8</code><a class="headerlink" href="#_CPPv4N8IfcParse19IfcCharacterDecoder14ConversionMode4UTF8E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N8IfcParse19IfcCharacterDecoder14ConversionMode6ESCAPEE">
+<span id="_CPPv3N8IfcParse19IfcCharacterDecoder14ConversionMode6ESCAPEE"></span><span id="_CPPv2N8IfcParse19IfcCharacterDecoder14ConversionMode6ESCAPEE"></span><span class="target" id="class_ifc_parse_1_1_ifc_character_decoder_1a5cac14b9b4caaad73e38b021b4c70056adf47f1e32fb5294c9f180ac94cd09d22"></span><em class="property">enumerator </em><code class="sig-name descname">ESCAPE</code><a class="headerlink" href="#_CPPv4N8IfcParse19IfcCharacterDecoder14ConversionMode6ESCAPEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse19IfcCharacterDecoder19IfcCharacterDecoderEPN8IfcParse12IfcSpfStreamE">
+<span id="_CPPv3N8IfcParse19IfcCharacterDecoder19IfcCharacterDecoderEPN8IfcParse12IfcSpfStreamE"></span><span id="_CPPv2N8IfcParse19IfcCharacterDecoder19IfcCharacterDecoderEPN8IfcParse12IfcSpfStreamE"></span><span id="IfcParse::IfcCharacterDecoder::IfcCharacterDecoder__IfcParse::IfcSpfStreamP"></span><span class="target" id="class_ifc_parse_1_1_ifc_character_decoder_1a07cf9a74dfeb3d1b1b72bedce2366e50"></span><code class="sig-name descname">IfcCharacterDecoder</code><span class="sig-paren">(</span>IfcParse::<a class="reference internal" href="class_ifc_parse_1_1_ifc_spf_stream.html#_CPPv4N8IfcParse12IfcSpfStreamE" title="IfcParse::IfcSpfStream">IfcSpfStream</a> *<em>file</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse19IfcCharacterDecoder19IfcCharacterDecoderEPN8IfcParse12IfcSpfStreamE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse19IfcCharacterDecoderD0Ev">
+<span id="_CPPv3N8IfcParse19IfcCharacterDecoderD0Ev"></span><span id="_CPPv2N8IfcParse19IfcCharacterDecoderD0Ev"></span><span id="IfcParse::IfcCharacterDecoder::~IfcCharacterDecoder"></span><span class="target" id="class_ifc_parse_1_1_ifc_character_decoder_1a8ef582044950f5d71666628a315b441e"></span><code class="sig-name descname">~IfcCharacterDecoder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse19IfcCharacterDecoderD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse19IfcCharacterDecoder4skipEv">
+<span id="_CPPv3N8IfcParse19IfcCharacterDecoder4skipEv"></span><span id="_CPPv2N8IfcParse19IfcCharacterDecoder4skipEv"></span><span id="IfcParse::IfcCharacterDecoder::skip"></span><span class="target" id="class_ifc_parse_1_1_ifc_character_decoder_1a6568dd015d5620e3160847e8ecea2e10"></span>void <code class="sig-name descname">skip</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse19IfcCharacterDecoder4skipEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse19IfcCharacterDecodercvNSt6stringEEv">
+<span id="_CPPv3N8IfcParse19IfcCharacterDecodercvNSt6stringEEv"></span><span id="_CPPv2N8IfcParse19IfcCharacterDecodercvNSt6stringEEv"></span><span id="IfcParse::IfcCharacterDecoder::castto-ss-operator"></span><span class="target" id="class_ifc_parse_1_1_ifc_character_decoder_1a0a2edd712ade8931e395209ebb73224c"></span><code class="sig-name descname">operator std::string</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse19IfcCharacterDecodercvNSt6stringEEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse19IfcCharacterDecoder3getERj">
+<span id="_CPPv3N8IfcParse19IfcCharacterDecoder3getERj"></span><span id="_CPPv2N8IfcParse19IfcCharacterDecoder3getERj"></span><span id="IfcParse::IfcCharacterDecoder::get__unsigned-iR"></span><span class="target" id="class_ifc_parse_1_1_ifc_character_decoder_1af5e59dbfd829035a61881fe1253a2ed0"></span>std::string <code class="sig-name descname">get</code><span class="sig-paren">(</span>unsigned int&amp;<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse19IfcCharacterDecoder3getERj" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Attributes</p>
+<dl class="cpp var">
+<dt id="_CPPv4N8IfcParse19IfcCharacterDecoder4modeE">
+<span id="_CPPv3N8IfcParse19IfcCharacterDecoder4modeE"></span><span id="_CPPv2N8IfcParse19IfcCharacterDecoder4modeE"></span><span id="IfcParse::IfcCharacterDecoder::mode__ConversionMode"></span><span class="target" id="class_ifc_parse_1_1_ifc_character_decoder_1a69f68ee33ae804bdbbefaf22992474a5"></span><a class="reference internal" href="#_CPPv4N8IfcParse19IfcCharacterDecoder14ConversionModeE" title="IfcParse::IfcCharacterDecoder::ConversionMode">ConversionMode</a> <code class="sig-name descname">mode</code><a class="headerlink" href="#_CPPv4N8IfcParse19IfcCharacterDecoder4modeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N8IfcParse19IfcCharacterDecoder22substitution_characterE">
+<span id="_CPPv3N8IfcParse19IfcCharacterDecoder22substitution_characterE"></span><span id="_CPPv2N8IfcParse19IfcCharacterDecoder22substitution_characterE"></span><span id="IfcParse::IfcCharacterDecoder::substitution_character__c"></span><span class="target" id="class_ifc_parse_1_1_ifc_character_decoder_1abfbda9ce53aa8f03ba7889ff4ea47e8c"></span>char <code class="sig-name descname">substitution_character</code><a class="headerlink" href="#_CPPv4N8IfcParse19IfcCharacterDecoder22substitution_characterE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc_parse_1_1_ifc_attribute_out_of_range_exception.html" title="previous chapter">Class IfcAttributeOutOfRangeException</a></li>
+      <li>Next: <a href="class_ifc_parse_1_1_ifc_exception.html" title="next chapter">Class IfcException</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc_parse_1_1_ifc_character_decoder.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,48 @@
+
+.. _file_src_ifcgeom_IfcRegisterConvertShapes.h:
+
+File IfcRegisterConvertShapes.h
+===============================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcgeom>` (``src/ifcgeom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/IfcRegisterConvertShapes.h``)
+-------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_IfcRegisterConvertShapes.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``IfcRegister.h`` (:ref:`file_src_ifcgeom_IfcRegister.h`)
+
+- ``IfcRegisterDef.h`` (:ref:`file_src_ifcgeom_IfcRegisterDef.h`)
+
+- ``IfcRegisterUndef.h`` (:ref:`file_src_ifcgeom_IfcRegisterUndef.h`)
+
+
+
+
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define__ifc_register_convert_shapes_8h_1a1fadd270585727887f51fc12f1e4eaf9`
+

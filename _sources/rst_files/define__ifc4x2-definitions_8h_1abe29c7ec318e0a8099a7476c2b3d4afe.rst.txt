@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1abe29c7ec318e0a8099a7476c2b3d4afe:
+
+Define SCHEMA_HAS_IfcHeatExchangerTypeEnum
+==========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcHeatExchangerTypeEnum

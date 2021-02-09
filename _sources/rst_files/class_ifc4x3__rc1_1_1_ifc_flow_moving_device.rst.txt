@@ -1,0 +1,39 @@
+.. _exhale_class_class_ifc4x3__rc1_1_1_ifc_flow_moving_device:
+
+Class Ifc4x3_rc1::IfcFlowMovingDevice
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x3__rc1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x3_rc1::IfcDistributionFlowElement`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_distribution_flow_element`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x3_rc1::IfcCompressor`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_compressor`)
+- ``public Ifc4x3_rc1::IfcFan`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_fan`)
+- ``public Ifc4x3_rc1::IfcPump`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_pump`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x3_rc1::IfcFlowMovingDevice
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,64 @@
+.. _exhale_class_class_ifc2x3_1_1_ifc_geometric_representation_item:
+
+Class Ifc2x3::IfcGeometricRepresentationItem
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc2x3::IfcRepresentationItem`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_representation_item`)
+
+
+Derived Types
+*************
+
+- ``public Ifc2x3::IfcAnnotationFillArea`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_annotation_fill_area`)
+- ``public Ifc2x3::IfcAnnotationSurface`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_annotation_surface`)
+- ``public Ifc2x3::IfcBooleanResult`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_boolean_result`)
+- ``public Ifc2x3::IfcBoundingBox`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_bounding_box`)
+- ``public Ifc2x3::IfcCartesianTransformationOperator`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_cartesian_transformation_operator`)
+- ``public Ifc2x3::IfcCompositeCurveSegment`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_composite_curve_segment`)
+- ``public Ifc2x3::IfcCsgPrimitive3D`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_csg_primitive3_d`)
+- ``public Ifc2x3::IfcCurve`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_curve`)
+- ``public Ifc2x3::IfcDefinedSymbol`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_defined_symbol`)
+- ``public Ifc2x3::IfcDirection`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_direction`)
+- ``public Ifc2x3::IfcDraughtingCallout`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_draughting_callout`)
+- ``public Ifc2x3::IfcFaceBasedSurfaceModel`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_face_based_surface_model`)
+- ``public Ifc2x3::IfcFillAreaStyleHatching`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_fill_area_style_hatching`)
+- ``public Ifc2x3::IfcFillAreaStyleTiles`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_fill_area_style_tiles`)
+- ``public Ifc2x3::IfcFillAreaStyleTileSymbolWithStyle`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_fill_area_style_tile_symbol_with_style`)
+- ``public Ifc2x3::IfcGeometricSet`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_geometric_set`)
+- ``public Ifc2x3::IfcHalfSpaceSolid`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_half_space_solid`)
+- ``public Ifc2x3::IfcLightSource`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_light_source`)
+- ``public Ifc2x3::IfcOneDirectionRepeatFactor`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_one_direction_repeat_factor`)
+- ``public Ifc2x3::IfcPlacement`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_placement`)
+- ``public Ifc2x3::IfcPlanarExtent`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_planar_extent`)
+- ``public Ifc2x3::IfcPoint`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_point`)
+- ``public Ifc2x3::IfcSectionedSpine`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_sectioned_spine`)
+- ``public Ifc2x3::IfcShellBasedSurfaceModel`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_shell_based_surface_model`)
+- ``public Ifc2x3::IfcSolidModel`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_solid_model`)
+- ``public Ifc2x3::IfcSurface`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_surface`)
+- ``public Ifc2x3::IfcTextLiteral`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_text_literal`)
+- ``public Ifc2x3::IfcVector`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_vector`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc2x3::IfcGeometricRepresentationItem
+   :members:
+   :protected-members:
+   :undoc-members:

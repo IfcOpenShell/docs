@@ -1,0 +1,16 @@
+.. _exhale_struct_structstd_1_1iterator__traits_3_01_ifc_parse_1_1_ifc_file_1_1type__iterator_01_4:
+
+Template Struct iterator_traits< IfcParse::IfcFile::type_iterator >
+===================================================================
+
+- Defined in :ref:`file_src_ifcparse_IfcFile.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: std::iterator_traits< IfcParse::IfcFile::type_iterator >
+   :members:
+   :protected-members:
+   :undoc-members:

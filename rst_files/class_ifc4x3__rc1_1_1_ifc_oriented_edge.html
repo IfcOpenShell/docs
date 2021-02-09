@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x3_rc1::IfcOrientedEdge &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x3_rc1::IfcOuterBoundaryCurve" href="class_ifc4x3__rc1_1_1_ifc_outer_boundary_curve.html" />
+    <link rel="prev" title="Class Ifc4x3_rc1::IfcOrientationExpression" href="class_ifc4x3__rc1_1_1_ifc_orientation_expression.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x3-rc1-ifcorientededge">
+<span id="exhale-class-class-ifc4x3-rc1-1-1-ifc-oriented-edge"></span><h1>Class Ifc4x3_rc1::IfcOrientedEdge<a class="headerlink" href="#class-ifc4x3-rc1-ifcorientededge" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x3_rc1.h.html#file-src-ifcparse-ifc4x3-rc1-h"><span class="std std-ref">File Ifc4x3_rc1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x3__rc1.html#exhale-struct-struct-ifc4x3-rc1"><span class="std std-ref">Struct Ifc4x3_rc1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x3_rc1::IfcEdge</span></code> (<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_edge.html#exhale-class-class-ifc4x3-rc1-1-1-ifc-edge"><span class="std std-ref">Class Ifc4x3_rc1::IfcEdge</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N10Ifc4x3_rc115IfcOrientedEdgeE">
+<span id="_CPPv3N10Ifc4x3_rc115IfcOrientedEdgeE"></span><span id="_CPPv2N10Ifc4x3_rc115IfcOrientedEdgeE"></span><span id="Ifc4x3_rc1::IfcOrientedEdge"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_oriented_edge"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcOrientedEdge</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_edge.html#_CPPv4N10Ifc4x3_rc17IfcEdgeE" title="Ifc4x3_rc1::IfcEdge">IfcEdge</a><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc115IfcOrientedEdgeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: An oriented edge is an edge constructed from another edge and contains a BOOLEAN direction flag to indicate whether or not the orientation of the constructed edge agrees with the orientation of the original edge. Except for perhaps orientation, the oriented edge is equivalent to the original edge. </p>
+<p>NOTE A common practice is solid modelling systems is to have an entity that represents the “use” or “traversal” of an edge. This “use” entity explicitly represents the requirement in a manifold solid that each edge must be traversed exactly twice, once in each direction. The “use” functionality is provided by the edge subtype oriented edge.</p>
+<p>NOTE Corresponding ISO 10303 entity: oriented_edge. Please refer to ISO/IS 10303-42:1994, p. 133 for the final definition of the formal standard.</p>
+<p>HISTORY New Entity in IFC Release 2.0. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N10Ifc4x3_rc115IfcOrientedEdge4listE">
+<span id="_CPPv3N10Ifc4x3_rc115IfcOrientedEdge4listE"></span><span id="_CPPv2N10Ifc4x3_rc115IfcOrientedEdge4listE"></span><span id="Ifc4x3_rc1::IfcOrientedEdge::list"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_oriented_edge_1a28646c63108e729fff8a35cd5a803119"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N10Ifc4x3_rc115IfcOrientedEdgeE" title="Ifc4x3_rc1::IfcOrientedEdge">IfcOrientedEdge</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc115IfcOrientedEdge4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc115IfcOrientedEdge11EdgeElementEv">
+<span id="_CPPv3NK10Ifc4x3_rc115IfcOrientedEdge11EdgeElementEv"></span><span id="_CPPv2NK10Ifc4x3_rc115IfcOrientedEdge11EdgeElementEv"></span><span id="Ifc4x3_rc1::IfcOrientedEdge::EdgeElementC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_oriented_edge_1afe9a7feba881d3c2f1b4bbcfbc928b28"></span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_edge.html#_CPPv4N10Ifc4x3_rc17IfcEdgeE" title="Ifc4x3_rc1::IfcEdge">IfcEdge</a> *<code class="sig-name descname">EdgeElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc115IfcOrientedEdge11EdgeElementEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Edge entity used to construct this oriented edge. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc115IfcOrientedEdge14setEdgeElementEPN10Ifc4x3_rc17IfcEdgeE">
+<span id="_CPPv3N10Ifc4x3_rc115IfcOrientedEdge14setEdgeElementEPN10Ifc4x3_rc17IfcEdgeE"></span><span id="_CPPv2N10Ifc4x3_rc115IfcOrientedEdge14setEdgeElementEPN10Ifc4x3_rc17IfcEdgeE"></span><span id="Ifc4x3_rc1::IfcOrientedEdge::setEdgeElement__Ifc4x3_rc1::IfcEdgeP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_oriented_edge_1a94c7f8147288be2abae101fe706df640"></span>void <code class="sig-name descname">setEdgeElement</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_edge.html#_CPPv4N10Ifc4x3_rc17IfcEdgeE" title="Ifc4x3_rc1::IfcEdge">IfcEdge</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc115IfcOrientedEdge14setEdgeElementEPN10Ifc4x3_rc17IfcEdgeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc115IfcOrientedEdge11OrientationEv">
+<span id="_CPPv3NK10Ifc4x3_rc115IfcOrientedEdge11OrientationEv"></span><span id="_CPPv2NK10Ifc4x3_rc115IfcOrientedEdge11OrientationEv"></span><span id="Ifc4x3_rc1::IfcOrientedEdge::OrientationC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_oriented_edge_1aa1ea3788b5134d3d608d082adad4ded7"></span>bool <code class="sig-name descname">Orientation</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc115IfcOrientedEdge11OrientationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>BOOLEAN, If TRUE the topological orientation as used coincides with the orientation from start vertex to end vertex of the edge element. If FALSE otherwise. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc115IfcOrientedEdge14setOrientationEb">
+<span id="_CPPv3N10Ifc4x3_rc115IfcOrientedEdge14setOrientationEb"></span><span id="_CPPv2N10Ifc4x3_rc115IfcOrientedEdge14setOrientationEb"></span><span id="Ifc4x3_rc1::IfcOrientedEdge::setOrientation__b"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_oriented_edge_1a6522f9cb0576f108df22318c8c7a7291"></span>void <code class="sig-name descname">setOrientation</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc115IfcOrientedEdge14setOrientationEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc115IfcOrientedEdge11declarationEv">
+<span id="_CPPv3NK10Ifc4x3_rc115IfcOrientedEdge11declarationEv"></span><span id="_CPPv2NK10Ifc4x3_rc115IfcOrientedEdge11declarationEv"></span><span id="Ifc4x3_rc1::IfcOrientedEdge::declarationC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_oriented_edge_1a1d4f9eb82b6ae7b94180a52f27098c2b"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc115IfcOrientedEdge11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc115IfcOrientedEdge15IfcOrientedEdgeEP21IfcEntityInstanceData">
+<span id="_CPPv3N10Ifc4x3_rc115IfcOrientedEdge15IfcOrientedEdgeEP21IfcEntityInstanceData"></span><span id="_CPPv2N10Ifc4x3_rc115IfcOrientedEdge15IfcOrientedEdgeEP21IfcEntityInstanceData"></span><span id="Ifc4x3_rc1::IfcOrientedEdge::IfcOrientedEdge__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_oriented_edge_1ab58f77ce8115dda1b2775f427c59eae4"></span><code class="sig-name descname">IfcOrientedEdge</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc115IfcOrientedEdge15IfcOrientedEdgeEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc115IfcOrientedEdge15IfcOrientedEdgeEPN10Ifc4x3_rc17IfcEdgeEb">
+<span id="_CPPv3N10Ifc4x3_rc115IfcOrientedEdge15IfcOrientedEdgeEPN10Ifc4x3_rc17IfcEdgeEb"></span><span id="_CPPv2N10Ifc4x3_rc115IfcOrientedEdge15IfcOrientedEdgeEPN10Ifc4x3_rc17IfcEdgeEb"></span><span id="Ifc4x3_rc1::IfcOrientedEdge::IfcOrientedEdge__Ifc4x3_rc1::IfcEdgeP.b"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_oriented_edge_1aeadeeac3656a30985eea5022803a4d3f"></span><code class="sig-name descname">IfcOrientedEdge</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_edge.html#_CPPv4N10Ifc4x3_rc17IfcEdgeE" title="Ifc4x3_rc1::IfcEdge">IfcEdge</a> *<em>v3_EdgeElement</em>, bool <em>v4_Orientation</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc115IfcOrientedEdge15IfcOrientedEdgeEPN10Ifc4x3_rc17IfcEdgeEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc115IfcOrientedEdge5ClassEv">
+<span id="_CPPv3N10Ifc4x3_rc115IfcOrientedEdge5ClassEv"></span><span id="_CPPv2N10Ifc4x3_rc115IfcOrientedEdge5ClassEv"></span><span id="Ifc4x3_rc1::IfcOrientedEdge::Class"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_oriented_edge_1afd5102e522dc827ec14ac071abe87233"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc115IfcOrientedEdge5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x3__rc1_1_1_ifc_orientation_expression.html" title="previous chapter">Class Ifc4x3_rc1::IfcOrientationExpression</a></li>
+      <li>Next: <a href="class_ifc4x3__rc1_1_1_ifc_outer_boundary_curve.html" title="next chapter">Class Ifc4x3_rc1::IfcOuterBoundaryCurve</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x3__rc1_1_1_ifc_oriented_edge.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

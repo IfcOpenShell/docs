@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcRelAssignsToActor &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcRelAssignsToControl" href="class_ifc4_1_1_ifc_rel_assigns_to_control.html" />
+    <link rel="prev" title="Class Ifc4::IfcRelAssigns" href="class_ifc4_1_1_ifc_rel_assigns.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcrelassignstoactor">
+<span id="exhale-class-class-ifc4-1-1-ifc-rel-assigns-to-actor"></span><h1>Class Ifc4::IfcRelAssignsToActor<a class="headerlink" href="#class-ifc4-ifcrelassignstoactor" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcRelAssigns</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_rel_assigns.html#exhale-class-class-ifc4-1-1-ifc-rel-assigns"><span class="std std-ref">Class Ifc4::IfcRelAssigns</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc420IfcRelAssignsToActorE">
+<span id="_CPPv3N4Ifc420IfcRelAssignsToActorE"></span><span id="_CPPv2N4Ifc420IfcRelAssignsToActorE"></span><span id="Ifc4::IfcRelAssignsToActor"></span><span class="target" id="class_ifc4_1_1_ifc_rel_assigns_to_actor"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcRelAssignsToActor</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_rel_assigns.html#_CPPv4N4Ifc413IfcRelAssignsE" title="Ifc4::IfcRelAssigns">IfcRelAssigns</a><a class="headerlink" href="#_CPPv4N4Ifc420IfcRelAssignsToActorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The objectified relationship <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_assigns_to_actor"><span class="std std-ref">IfcRelAssignsToActor</span></a> handles the assignment of objects (subtypes of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_object"><span class="std std-ref">IfcObject</span></a>) to an actor (subtypes of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_actor"><span class="std std-ref">IfcActor</span></a>).</p>
+<p>The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_assigns_to_actor"><span class="std std-ref">IfcRelAssignsToActor</span></a> objectified relationship defines a relationship between an <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_actor"><span class="std std-ref">IfcActor</span></a> and one or many objects. A particular role of the actor played in that relationship can be associated. If specified, it takes priority over the role that may be directly assigned to the person or organization.</p>
+<p>EXAMPLE: An occupant (as an actor) may rent a flat (as a collection of spaces or a zone). This would be an application of this generic relationship.</p>
+<p>Reference to the objects (or single object) on which the actor acts upon in a certain role (if given) is specified in the inherited RelatedObjects attribute. </p>
+<p>HISTORY New Entity in IFC Release 2.0. Has been renamed from IfcRelActsUpon in IFC Release 2x. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc420IfcRelAssignsToActor4listE">
+<span id="_CPPv3N4Ifc420IfcRelAssignsToActor4listE"></span><span id="_CPPv2N4Ifc420IfcRelAssignsToActor4listE"></span><span id="Ifc4::IfcRelAssignsToActor::list"></span><span class="target" id="class_ifc4_1_1_ifc_rel_assigns_to_actor_1a3fff751a2fc01556a2fa081ee91f6da9"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc420IfcRelAssignsToActorE" title="Ifc4::IfcRelAssignsToActor">IfcRelAssignsToActor</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc420IfcRelAssignsToActor4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc420IfcRelAssignsToActor13RelatingActorEv">
+<span id="_CPPv3NK4Ifc420IfcRelAssignsToActor13RelatingActorEv"></span><span id="_CPPv2NK4Ifc420IfcRelAssignsToActor13RelatingActorEv"></span><span id="Ifc4::IfcRelAssignsToActor::RelatingActorC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_assigns_to_actor_1aeab5cae137a21943ecee152e5783ebed"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_actor.html#_CPPv4N4Ifc48IfcActorE" title="Ifc4::IfcActor">IfcActor</a> *<code class="sig-name descname">RelatingActor</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc420IfcRelAssignsToActor13RelatingActorEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reference to the information about the actor. It comprises the information about the person or organization and its addresses. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc420IfcRelAssignsToActor16setRelatingActorEPN4Ifc48IfcActorE">
+<span id="_CPPv3N4Ifc420IfcRelAssignsToActor16setRelatingActorEPN4Ifc48IfcActorE"></span><span id="_CPPv2N4Ifc420IfcRelAssignsToActor16setRelatingActorEPN4Ifc48IfcActorE"></span><span id="Ifc4::IfcRelAssignsToActor::setRelatingActor__Ifc4::IfcActorP"></span><span class="target" id="class_ifc4_1_1_ifc_rel_assigns_to_actor_1aac6a643080596c55cb71e8079ed75f39"></span>void <code class="sig-name descname">setRelatingActor</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_actor.html#_CPPv4N4Ifc48IfcActorE" title="Ifc4::IfcActor">IfcActor</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc420IfcRelAssignsToActor16setRelatingActorEPN4Ifc48IfcActorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc420IfcRelAssignsToActor13hasActingRoleEv">
+<span id="_CPPv3NK4Ifc420IfcRelAssignsToActor13hasActingRoleEv"></span><span id="_CPPv2NK4Ifc420IfcRelAssignsToActor13hasActingRoleEv"></span><span id="Ifc4::IfcRelAssignsToActor::hasActingRoleC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_assigns_to_actor_1a1f02edaac5b8bb1b5cafbc13b8419a71"></span>bool <code class="sig-name descname">hasActingRole</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc420IfcRelAssignsToActor13hasActingRoleEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ActingRole is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_assigns_to_actor"><span class="std std-ref">IfcRelAssignsToActor</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc420IfcRelAssignsToActor10ActingRoleEv">
+<span id="_CPPv3NK4Ifc420IfcRelAssignsToActor10ActingRoleEv"></span><span id="_CPPv2NK4Ifc420IfcRelAssignsToActor10ActingRoleEv"></span><span id="Ifc4::IfcRelAssignsToActor::ActingRoleC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_assigns_to_actor_1a12d562fbee933c10d66081f2165c3e45"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_actor_role.html#_CPPv4N4Ifc412IfcActorRoleE" title="Ifc4::IfcActorRole">IfcActorRole</a> *<code class="sig-name descname">ActingRole</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc420IfcRelAssignsToActor10ActingRoleEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Role of the actor played within the context of the assignment to the object(s). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc420IfcRelAssignsToActor13setActingRoleEPN4Ifc412IfcActorRoleE">
+<span id="_CPPv3N4Ifc420IfcRelAssignsToActor13setActingRoleEPN4Ifc412IfcActorRoleE"></span><span id="_CPPv2N4Ifc420IfcRelAssignsToActor13setActingRoleEPN4Ifc412IfcActorRoleE"></span><span id="Ifc4::IfcRelAssignsToActor::setActingRole__Ifc4::IfcActorRoleP"></span><span class="target" id="class_ifc4_1_1_ifc_rel_assigns_to_actor_1aee331a9dfde7e8d598339f47ca16e2af"></span>void <code class="sig-name descname">setActingRole</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_actor_role.html#_CPPv4N4Ifc412IfcActorRoleE" title="Ifc4::IfcActorRole">IfcActorRole</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc420IfcRelAssignsToActor13setActingRoleEPN4Ifc412IfcActorRoleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc420IfcRelAssignsToActor11declarationEv">
+<span id="_CPPv3NK4Ifc420IfcRelAssignsToActor11declarationEv"></span><span id="_CPPv2NK4Ifc420IfcRelAssignsToActor11declarationEv"></span><span id="Ifc4::IfcRelAssignsToActor::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_assigns_to_actor_1add55c2603b9bb2b1a0ad74d0e25e5959"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc420IfcRelAssignsToActor11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc420IfcRelAssignsToActor20IfcRelAssignsToActorEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc420IfcRelAssignsToActor20IfcRelAssignsToActorEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc420IfcRelAssignsToActor20IfcRelAssignsToActorEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcRelAssignsToActor::IfcRelAssignsToActor__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_rel_assigns_to_actor_1afca565c4f32bf7290bb22bb35104c059"></span><code class="sig-name descname">IfcRelAssignsToActor</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc420IfcRelAssignsToActor20IfcRelAssignsToActorEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc420IfcRelAssignsToActor20IfcRelAssignsToActorENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN4Ifc419IfcObjectDefinitionEE3ptrEN5boost8optionalIN4Ifc417IfcObjectTypeEnum5ValueEEEPN4Ifc48IfcActorEPN4Ifc412IfcActorRoleE">
+<span id="_CPPv3N4Ifc420IfcRelAssignsToActor20IfcRelAssignsToActorENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN4Ifc419IfcObjectDefinitionEE3ptrEN5boost8optionalIN4Ifc417IfcObjectTypeEnum5ValueEEEPN4Ifc48IfcActorEPN4Ifc412IfcActorRoleE"></span><span id="_CPPv2N4Ifc420IfcRelAssignsToActor20IfcRelAssignsToActorENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN4Ifc419IfcObjectDefinitionEE3ptrEN5boost8optionalIN4Ifc417IfcObjectTypeEnum5ValueEEEPN4Ifc48IfcActorEPN4Ifc412IfcActorRoleE"></span><span id="Ifc4::IfcRelAssignsToActor::IfcRelAssignsToActor__ss.Ifc4::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.IfcTemplatedEntityList:Ifc4::IfcObjectDefinition:::ptr.boost::optional:Ifc4::IfcObjectTypeEnum::Value:.Ifc4::IfcActorP.Ifc4::IfcActorRoleP"></span><span class="target" id="class_ifc4_1_1_ifc_rel_assigns_to_actor_1a11d27dc24ce8d56ebba8416de660462a"></span><code class="sig-name descname">IfcRelAssignsToActor</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_owner_history.html#_CPPv4N4Ifc415IfcOwnerHistoryE" title="Ifc4::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, <a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_object_definition.html#_CPPv4N4Ifc419IfcObjectDefinitionE" title="Ifc4::IfcObjectDefinition">IfcObjectDefinition</a>&gt;::ptr <em>v5_RelatedObjects</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc417IfcObjectTypeEnumE" title="Ifc4::IfcObjectTypeEnum">IfcObjectTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc417IfcObjectTypeEnum5ValueE" title="Ifc4::IfcObjectTypeEnum::Value">Value</a>&gt; <em>v6_RelatedObjectsType</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_actor.html#_CPPv4N4Ifc48IfcActorE" title="Ifc4::IfcActor">IfcActor</a> *<em>v7_RelatingActor</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_actor_role.html#_CPPv4N4Ifc412IfcActorRoleE" title="Ifc4::IfcActorRole">IfcActorRole</a> *<em>v8_ActingRole</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc420IfcRelAssignsToActor20IfcRelAssignsToActorENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN4Ifc419IfcObjectDefinitionEE3ptrEN5boost8optionalIN4Ifc417IfcObjectTypeEnum5ValueEEEPN4Ifc48IfcActorEPN4Ifc412IfcActorRoleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc420IfcRelAssignsToActor5ClassEv">
+<span id="_CPPv3N4Ifc420IfcRelAssignsToActor5ClassEv"></span><span id="_CPPv2N4Ifc420IfcRelAssignsToActor5ClassEv"></span><span id="Ifc4::IfcRelAssignsToActor::Class"></span><span class="target" id="class_ifc4_1_1_ifc_rel_assigns_to_actor_1a40b22764a6a367911d4d5ab3b07c078a"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc420IfcRelAssignsToActor5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_rel_assigns.html" title="previous chapter">Class Ifc4::IfcRelAssigns</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_rel_assigns_to_control.html" title="next chapter">Class Ifc4::IfcRelAssignsToControl</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_rel_assigns_to_actor.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

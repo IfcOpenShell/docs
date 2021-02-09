@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1af7d343f8f263cd3980e149b3625e04bd:
+
+Define SCHEMA_IfcFluidFlowProperties_HAS_WetBulbTemperatureTimeSeries
+=====================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcFluidFlowProperties_HAS_WetBulbTemperatureTimeSeries

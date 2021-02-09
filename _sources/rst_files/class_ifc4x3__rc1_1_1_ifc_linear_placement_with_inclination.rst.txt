@@ -1,0 +1,31 @@
+.. _exhale_class_class_ifc4x3__rc1_1_1_ifc_linear_placement_with_inclination:
+
+Class Ifc4x3_rc1::IfcLinearPlacementWithInclination
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x3__rc1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x3_rc1::IfcLinearPlacement`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_linear_placement`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x3_rc1::IfcLinearPlacementWithInclination
+   :members:
+   :protected-members:
+   :undoc-members:

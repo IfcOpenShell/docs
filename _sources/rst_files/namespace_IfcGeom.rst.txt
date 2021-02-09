@@ -1,0 +1,112 @@
+
+.. _namespace_IfcGeom:
+
+Namespace IfcGeom
+=================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcGeom__impl`
+
+- :ref:`namespace_IfcGeom__Representation`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_struct_ifc_geom_1_1attribute__filter`
+
+- :ref:`exhale_struct_struct_ifc_geom_1_1entity__filter`
+
+- :ref:`exhale_struct_struct_ifc_geom_1_1filter`
+
+- :ref:`exhale_struct_struct_ifc_geom_1_1layer__filter`
+
+- :ref:`exhale_struct_struct_ifc_geom_1_1layer__filter_1_1wildcards__match`
+
+- :ref:`exhale_struct_struct_ifc_geom_1_1wildcard__filter`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_b_rep_element`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_element`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_element_settings`
+
+- :ref:`exhale_class_class_ifc_geom_1_1geometry__exception`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_ifc_representation_shape_item`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_iterator`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_iterator_implementation`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_iterator_settings`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_kernel`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_material`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_matrix`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_serialized_element`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_surface_style`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_surface_style_1_1_color_component`
+
+- :ref:`exhale_class_class_ifc_geom_1_1too__many__faces__exception`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_transformation`
+
+- :ref:`exhale_class_class_ifc_geom_1_1tree`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_triangulation_element`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum__ifc_geom_shape_type_8h_1acded6c3385229db0793533db4782b425`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function__ifc_geom_render_styles_8h_1a36715a4198e3c22a81b18ca582f834cc`
+
+- :ref:`exhale_function__ifc_geom_8h_1a50dc2a43fdb9313e23c33a7cf78e8ee8`
+
+- :ref:`exhale_function__serialization_8h_1a02d328664437d9eb23136c9e7f209021`
+
+- :ref:`exhale_function__ifc_geom_8h_1a931777c8a4d3e1e1361448426ef383fe`
+
+- :ref:`exhale_function__ifc_geom_render_styles_8h_1a0805e258e2170e4254caefe72449abc9`
+
+- :ref:`exhale_function__serialization_8h_1a3a8ebe2590ab3f06100ae4c39db204c6`
+
+- :ref:`exhale_function__ifc_geom_8h_1af1de4ef5b695b0c860f4302e9cacd476`
+
+- :ref:`exhale_function__ifc_geom_render_styles_8h_1a287d682b8d5af5e147840a277092239c`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef__ifc_geom_filter_8h_1a12aa1c5ef44699e96c0f8fd74bf75139`
+
+- :ref:`exhale_typedef__ifc_representation_shape_item_8h_1a7a985eae33862a3015946e271c860ddd`

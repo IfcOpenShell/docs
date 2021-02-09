@@ -1,0 +1,44 @@
+.. _exhale_class_class_ifc4x1_1_1_ifc_product:
+
+Class Ifc4x1::IfcProduct
+========================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x1::IfcObject`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_object`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x1::IfcAnnotation`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_annotation`)
+- ``public Ifc4x1::IfcElement`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_element`)
+- ``public Ifc4x1::IfcPort`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_port`)
+- ``public Ifc4x1::IfcPositioningElement`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_positioning_element`)
+- ``public Ifc4x1::IfcProxy`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_proxy`)
+- ``public Ifc4x1::IfcSpatialElement`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_spatial_element`)
+- ``public Ifc4x1::IfcStructuralActivity`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_activity`)
+- ``public Ifc4x1::IfcStructuralItem`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_item`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x1::IfcProduct
+   :members:
+   :protected-members:
+   :undoc-members:

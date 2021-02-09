@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a41bc79ce398989d6a1e0837a49d2288e:
+
+Define SCHEMA_IfcAdvancedBrepWithVoids_HAS_Voids
+================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcAdvancedBrepWithVoids_HAS_Voids

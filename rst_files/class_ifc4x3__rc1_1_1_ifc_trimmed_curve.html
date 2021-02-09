@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x3_rc1::IfcTrimmedCurve &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x3_rc1::IfcTShapeProfileDef" href="class_ifc4x3__rc1_1_1_ifc_t_shape_profile_def.html" />
+    <link rel="prev" title="Class Ifc4x3_rc1::IfcTriangulatedIrregularNetwork" href="class_ifc4x3__rc1_1_1_ifc_triangulated_irregular_network.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x3-rc1-ifctrimmedcurve">
+<span id="exhale-class-class-ifc4x3-rc1-1-1-ifc-trimmed-curve"></span><h1>Class Ifc4x3_rc1::IfcTrimmedCurve<a class="headerlink" href="#class-ifc4x3-rc1-ifctrimmedcurve" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x3_rc1.h.html#file-src-ifcparse-ifc4x3-rc1-h"><span class="std std-ref">File Ifc4x3_rc1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x3__rc1.html#exhale-struct-struct-ifc4x3-rc1"><span class="std std-ref">Struct Ifc4x3_rc1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x3_rc1::IfcBoundedCurve</span></code> (<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_bounded_curve.html#exhale-class-class-ifc4x3-rc1-1-1-ifc-bounded-curve"><span class="std std-ref">Class Ifc4x3_rc1::IfcBoundedCurve</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N10Ifc4x3_rc115IfcTrimmedCurveE">
+<span id="_CPPv3N10Ifc4x3_rc115IfcTrimmedCurveE"></span><span id="_CPPv2N10Ifc4x3_rc115IfcTrimmedCurveE"></span><span id="Ifc4x3_rc1::IfcTrimmedCurve"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_trimmed_curve"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcTrimmedCurve</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_bounded_curve.html#_CPPv4N10Ifc4x3_rc115IfcBoundedCurveE" title="Ifc4x3_rc1::IfcBoundedCurve">IfcBoundedCurve</a><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc115IfcTrimmedCurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: A trimmed curve is a bounded curve which is created by taking a selected portion, between two identified points, of the associated basis curve. The basis curve itself is unaltered and more than one trimmed curve may reference the same basis curve. Trimming points for the curve may be identified by: parametric value geometric position both of the above At least one of these shall be specified at each end of the curve. The SenseAgreement makes it possible to unambiguously define any segment of a closed curve such as a circle. The combinations of sense and ordered end points make it possible to define four distinct directed segments connecting two different points on a circle or other closed curve. For this purpose cyclic properties of the parameter range are assumed; for example, 370 degrees is equivalent to 10 degrees. The <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_trimmed_curve"><span class="std std-ref">IfcTrimmedCurve</span></a> has a parameterization which is inherited from the particular basis curve reference. More precisely the parameter s of the trimmed curve is derived from the parameter of the basis curve as follows: if SenseAgreement is TRUE: s = t - t1 if SenseAgreement is FALSE: s = t2 - t In the above equations t1 is the value given by Trim1 or the parameter value corresponding to point 1 and t2 is the value given by Trim2 or the parameter value corresponding to point 2. The resultant <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_trimmed_curve"><span class="std std-ref">IfcTrimmedCurve</span></a> has a parameter ranging from 0 at the first trimming point to |t2<ul class="simple">
+<li><p>t1| at the second trimming point. NOTE In case of a closed curve, it may be necessary to increment t1 or t2 by the parametric length for consistency with the sense flag.</p></li>
+</ul>
+</p>
+<p>NOTE Corresponding ISO 10303 entity: trimmed_curve; As a further IFC restriction, an <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_trimmed_curve"><span class="std std-ref">IfcTrimmedCurve</span></a> should only trim a <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_line"><span class="std std-ref">IfcLine</span></a> or <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_conic"><span class="std std-ref">IfcConic</span></a>. Please refer to ISO/IS 10303-42:1994, p. 54 for the final definition of the formal standard.</p>
+<p>HISTORY New class in IFC Release 1.0</p>
+<p>Informal Propositions: Where both the parameter value and the Cartesian point exist for Trim1 and Trim2 they shall be consistent. (i.e., the BasisCurve evaluated at the parameter value shall coincide with the specified point). When a Cartesian point is specified by Trim1 or by Trim2 it shall lie on the BasisCurve. Except the case of a closed BasisCurve where both parameter 1 and parameter 2 exist, they shall be consistent with the sense flag, i.e., (sense = parameter 1 &lt; parameter 2). Or, for every open curve where both parameter 1 and parameter 2 exist, they shall be consistent with the SenseAgreement, i.e., SenseAgreement = (parameter 1 &lt; parameter 2). If both parameter 1 and parameter 2 exist, then parameter 1 &lt;&gt; parameter 2. For a closed base curve, e.g. <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_circle"><span class="std std-ref">IfcCircle</span></a> or <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_ellipse"><span class="std std-ref">IfcEllipse</span></a>, this also applies to the cyclic properties, as 360’ is equal to 0’, parameter 1 = 360’ and parameter 2 = 0’ are treated as being equal and therefore violating this proposition. When a parameter value is specified by Trim1 or Trim2 it shall lie within the parametric range of the BasisCurve. Additional illustration from IAI: The figure above shows the four arcs (dashed blue and green lines with arrow showing different orientations) that can be defined by the same BasisCurve (of type <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_circle"><span class="std std-ref">IfcCircle</span></a>) and the same trimming points (given by Cartesian points and parameter values) by using different assignments to Trim1 and Trim2 and SenseAgreement. <p> Note: Since the BasisCurve is closed (type </p>
+<a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_circle"><span class="std std-ref">IfcCircle</span></a>), the exception of the informal proposition IP3 applies, i.e. the sense flag is not required to be consistent with the parameter values of Trim1 and Trim1, so the rule (sense = parameter 1 &lt; parameter 2) may not be fulfilled. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve4listE">
+<span id="_CPPv3N10Ifc4x3_rc115IfcTrimmedCurve4listE"></span><span id="_CPPv2N10Ifc4x3_rc115IfcTrimmedCurve4listE"></span><span id="Ifc4x3_rc1::IfcTrimmedCurve::list"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_trimmed_curve_1a7da355fb54b35475e44d9bd550e1105c"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N10Ifc4x3_rc115IfcTrimmedCurveE" title="Ifc4x3_rc1::IfcTrimmedCurve">IfcTrimmedCurve</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc115IfcTrimmedCurve10BasisCurveEv">
+<span id="_CPPv3NK10Ifc4x3_rc115IfcTrimmedCurve10BasisCurveEv"></span><span id="_CPPv2NK10Ifc4x3_rc115IfcTrimmedCurve10BasisCurveEv"></span><span id="Ifc4x3_rc1::IfcTrimmedCurve::BasisCurveC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_trimmed_curve_1af61394b47850495872685eec337c3ecd"></span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_curve.html#_CPPv4N10Ifc4x3_rc18IfcCurveE" title="Ifc4x3_rc1::IfcCurve">IfcCurve</a> *<code class="sig-name descname">BasisCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc115IfcTrimmedCurve10BasisCurveEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The curve to be trimmed. For curves with multiple representations any parameter values given as Trim1 or Trim2 refer to the master representation of the BasisCurve only. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve13setBasisCurveEPN10Ifc4x3_rc18IfcCurveE">
+<span id="_CPPv3N10Ifc4x3_rc115IfcTrimmedCurve13setBasisCurveEPN10Ifc4x3_rc18IfcCurveE"></span><span id="_CPPv2N10Ifc4x3_rc115IfcTrimmedCurve13setBasisCurveEPN10Ifc4x3_rc18IfcCurveE"></span><span id="Ifc4x3_rc1::IfcTrimmedCurve::setBasisCurve__Ifc4x3_rc1::IfcCurveP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_trimmed_curve_1a64ba2944253759d70fd4c93dcd9d7f3d"></span>void <code class="sig-name descname">setBasisCurve</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_curve.html#_CPPv4N10Ifc4x3_rc18IfcCurveE" title="Ifc4x3_rc1::IfcCurve">IfcCurve</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve13setBasisCurveEPN10Ifc4x3_rc18IfcCurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc115IfcTrimmedCurve5Trim1Ev">
+<span id="_CPPv3NK10Ifc4x3_rc115IfcTrimmedCurve5Trim1Ev"></span><span id="_CPPv2NK10Ifc4x3_rc115IfcTrimmedCurve5Trim1Ev"></span><span id="Ifc4x3_rc1::IfcTrimmedCurve::Trim1C"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_trimmed_curve_1a56613e800551e5d38199b724babe602f"></span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <code class="sig-name descname">Trim1</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc115IfcTrimmedCurve5Trim1Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The first trimming point which may be specified as a Cartesian point, as a real parameter or both. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve8setTrim1EN13IfcEntityList3ptrE">
+<span id="_CPPv3N10Ifc4x3_rc115IfcTrimmedCurve8setTrim1EN13IfcEntityList3ptrE"></span><span id="_CPPv2N10Ifc4x3_rc115IfcTrimmedCurve8setTrim1EN13IfcEntityList3ptrE"></span><span id="Ifc4x3_rc1::IfcTrimmedCurve::setTrim1__IfcEntityList::ptr"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_trimmed_curve_1a6938e1f20b3e9aea6049362b1daf2ee9"></span>void <code class="sig-name descname">setTrim1</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve8setTrim1EN13IfcEntityList3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc115IfcTrimmedCurve5Trim2Ev">
+<span id="_CPPv3NK10Ifc4x3_rc115IfcTrimmedCurve5Trim2Ev"></span><span id="_CPPv2NK10Ifc4x3_rc115IfcTrimmedCurve5Trim2Ev"></span><span id="Ifc4x3_rc1::IfcTrimmedCurve::Trim2C"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_trimmed_curve_1abe2500f6a410c23933b807885835acc2"></span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <code class="sig-name descname">Trim2</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc115IfcTrimmedCurve5Trim2Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The second trimming point which may be specified as a Cartesian point, as a real parameter or both. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve8setTrim2EN13IfcEntityList3ptrE">
+<span id="_CPPv3N10Ifc4x3_rc115IfcTrimmedCurve8setTrim2EN13IfcEntityList3ptrE"></span><span id="_CPPv2N10Ifc4x3_rc115IfcTrimmedCurve8setTrim2EN13IfcEntityList3ptrE"></span><span id="Ifc4x3_rc1::IfcTrimmedCurve::setTrim2__IfcEntityList::ptr"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_trimmed_curve_1a14b0bcbc04e0e41f69a1dd4e20b76b35"></span>void <code class="sig-name descname">setTrim2</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve8setTrim2EN13IfcEntityList3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc115IfcTrimmedCurve14SenseAgreementEv">
+<span id="_CPPv3NK10Ifc4x3_rc115IfcTrimmedCurve14SenseAgreementEv"></span><span id="_CPPv2NK10Ifc4x3_rc115IfcTrimmedCurve14SenseAgreementEv"></span><span id="Ifc4x3_rc1::IfcTrimmedCurve::SenseAgreementC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_trimmed_curve_1a642d90868b8ee83f3a9552c43a896d4d"></span>bool <code class="sig-name descname">SenseAgreement</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc115IfcTrimmedCurve14SenseAgreementEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Flag to indicate whether the direction of the trimmed curve agrees with or is opposed to the direction of the basis curve. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve17setSenseAgreementEb">
+<span id="_CPPv3N10Ifc4x3_rc115IfcTrimmedCurve17setSenseAgreementEb"></span><span id="_CPPv2N10Ifc4x3_rc115IfcTrimmedCurve17setSenseAgreementEb"></span><span id="Ifc4x3_rc1::IfcTrimmedCurve::setSenseAgreement__b"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_trimmed_curve_1a35a7b3446e2838da0c1548d31effd55d"></span>void <code class="sig-name descname">setSenseAgreement</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve17setSenseAgreementEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc115IfcTrimmedCurve20MasterRepresentationEv">
+<span id="_CPPv3NK10Ifc4x3_rc115IfcTrimmedCurve20MasterRepresentationEv"></span><span id="_CPPv2NK10Ifc4x3_rc115IfcTrimmedCurve20MasterRepresentationEv"></span><span id="Ifc4x3_rc1::IfcTrimmedCurve::MasterRepresentationC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_trimmed_curve_1aef8be5b2664abb473d6e54386014fe1a"></span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc121IfcTrimmingPreferenceE" title="Ifc4x3_rc1::IfcTrimmingPreference">IfcTrimmingPreference</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc121IfcTrimmingPreference5ValueE" title="Ifc4x3_rc1::IfcTrimmingPreference::Value">Value</a> <code class="sig-name descname">MasterRepresentation</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc115IfcTrimmedCurve20MasterRepresentationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Where both parameter and point are present at either end of the curve this indicates the preferred form. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve23setMasterRepresentationEN10Ifc4x3_rc121IfcTrimmingPreference5ValueE">
+<span id="_CPPv3N10Ifc4x3_rc115IfcTrimmedCurve23setMasterRepresentationEN10Ifc4x3_rc121IfcTrimmingPreference5ValueE"></span><span id="_CPPv2N10Ifc4x3_rc115IfcTrimmedCurve23setMasterRepresentationEN10Ifc4x3_rc121IfcTrimmingPreference5ValueE"></span><span id="Ifc4x3_rc1::IfcTrimmedCurve::setMasterRepresentation__Ifc4x3_rc1::IfcTrimmingPreference::Value"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_trimmed_curve_1a420d8d4fafddf307b3f239f329101ee6"></span>void <code class="sig-name descname">setMasterRepresentation</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc121IfcTrimmingPreferenceE" title="Ifc4x3_rc1::IfcTrimmingPreference">IfcTrimmingPreference</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc121IfcTrimmingPreference5ValueE" title="Ifc4x3_rc1::IfcTrimmingPreference::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve23setMasterRepresentationEN10Ifc4x3_rc121IfcTrimmingPreference5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc115IfcTrimmedCurve11declarationEv">
+<span id="_CPPv3NK10Ifc4x3_rc115IfcTrimmedCurve11declarationEv"></span><span id="_CPPv2NK10Ifc4x3_rc115IfcTrimmedCurve11declarationEv"></span><span id="Ifc4x3_rc1::IfcTrimmedCurve::declarationC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_trimmed_curve_1adf749efaf22cf2e32a1b688e9d4a2472"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc115IfcTrimmedCurve11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve15IfcTrimmedCurveEP21IfcEntityInstanceData">
+<span id="_CPPv3N10Ifc4x3_rc115IfcTrimmedCurve15IfcTrimmedCurveEP21IfcEntityInstanceData"></span><span id="_CPPv2N10Ifc4x3_rc115IfcTrimmedCurve15IfcTrimmedCurveEP21IfcEntityInstanceData"></span><span id="Ifc4x3_rc1::IfcTrimmedCurve::IfcTrimmedCurve__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_trimmed_curve_1a5bf9649598d4ff6d82a85ab47cf07d3d"></span><code class="sig-name descname">IfcTrimmedCurve</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve15IfcTrimmedCurveEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve15IfcTrimmedCurveEPN10Ifc4x3_rc18IfcCurveEN13IfcEntityList3ptrEN13IfcEntityList3ptrEbN10Ifc4x3_rc121IfcTrimmingPreference5ValueE">
+<span id="_CPPv3N10Ifc4x3_rc115IfcTrimmedCurve15IfcTrimmedCurveEPN10Ifc4x3_rc18IfcCurveEN13IfcEntityList3ptrEN13IfcEntityList3ptrEbN10Ifc4x3_rc121IfcTrimmingPreference5ValueE"></span><span id="_CPPv2N10Ifc4x3_rc115IfcTrimmedCurve15IfcTrimmedCurveEPN10Ifc4x3_rc18IfcCurveEN13IfcEntityList3ptrEN13IfcEntityList3ptrEbN10Ifc4x3_rc121IfcTrimmingPreference5ValueE"></span><span id="Ifc4x3_rc1::IfcTrimmedCurve::IfcTrimmedCurve__Ifc4x3_rc1::IfcCurveP.IfcEntityList::ptr.IfcEntityList::ptr.b.Ifc4x3_rc1::IfcTrimmingPreference::Value"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_trimmed_curve_1a48697804f20f7587ce3c57750e239007"></span><code class="sig-name descname">IfcTrimmedCurve</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_curve.html#_CPPv4N10Ifc4x3_rc18IfcCurveE" title="Ifc4x3_rc1::IfcCurve">IfcCurve</a> *<em>v1_BasisCurve</em>, <a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <em>v2_Trim1</em>, <a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <em>v3_Trim2</em>, bool <em>v4_SenseAgreement</em>, ::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc121IfcTrimmingPreferenceE" title="Ifc4x3_rc1::IfcTrimmingPreference">IfcTrimmingPreference</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc121IfcTrimmingPreference5ValueE" title="Ifc4x3_rc1::IfcTrimmingPreference::Value">Value</a> <em>v5_MasterRepresentation</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve15IfcTrimmedCurveEPN10Ifc4x3_rc18IfcCurveEN13IfcEntityList3ptrEN13IfcEntityList3ptrEbN10Ifc4x3_rc121IfcTrimmingPreference5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve5ClassEv">
+<span id="_CPPv3N10Ifc4x3_rc115IfcTrimmedCurve5ClassEv"></span><span id="_CPPv2N10Ifc4x3_rc115IfcTrimmedCurve5ClassEv"></span><span id="Ifc4x3_rc1::IfcTrimmedCurve::Class"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_trimmed_curve_1a09dc7e8665562489316c2b4aca7ddec1"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc115IfcTrimmedCurve5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x3__rc1_1_1_ifc_triangulated_irregular_network.html" title="previous chapter">Class Ifc4x3_rc1::IfcTriangulatedIrregularNetwork</a></li>
+      <li>Next: <a href="class_ifc4x3__rc1_1_1_ifc_t_shape_profile_def.html" title="next chapter">Class Ifc4x3_rc1::IfcTShapeProfileDef</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x3__rc1_1_1_ifc_trimmed_curve.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

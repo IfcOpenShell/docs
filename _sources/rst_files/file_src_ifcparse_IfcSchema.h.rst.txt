@@ -1,0 +1,122 @@
+
+.. _file_src_ifcparse_IfcSchema.h:
+
+File IfcSchema.h
+================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcparse>` (``src/ifcparse``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/IfcSchema.h``)
+-----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_IfcSchema.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/IfcException.h``
+
+- ``algorithm``
+
+- ``boost/algorithm/string.hpp``
+
+- ``iterator``
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_ArgumentType.h`
+
+- :ref:`file_src_ifcparse_IfcBaseClass.h`
+
+- :ref:`file_src_ifcparse_IfcFile.h`
+
+- :ref:`file_src_ifcparse_Ifc2x3.h`
+
+- :ref:`file_src_ifcparse_Ifc4.h`
+
+- :ref:`file_src_ifcparse_Ifc4x1.h`
+
+- :ref:`file_src_ifcparse_Ifc4x2.h`
+
+- :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcParse`
+
+- :ref:`namespace_IfcUtil`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_ifc_parse_1_1aggregation__type`
+
+- :ref:`exhale_class_class_ifc_parse_1_1attribute`
+
+- :ref:`exhale_class_class_ifc_parse_1_1declaration`
+
+- :ref:`exhale_class_class_ifc_parse_1_1entity`
+
+- :ref:`exhale_class_class_ifc_parse_1_1entity_1_1attribute__by__name__cmp`
+
+- :ref:`exhale_class_class_ifc_parse_1_1enumeration__type`
+
+- :ref:`exhale_class_class_ifc_parse_1_1instance__factory`
+
+- :ref:`exhale_class_class_ifc_parse_1_1inverse__attribute`
+
+- :ref:`exhale_class_class_ifc_parse_1_1named__type`
+
+- :ref:`exhale_class_class_ifc_parse_1_1parameter__type`
+
+- :ref:`exhale_class_class_ifc_parse_1_1schema__definition`
+
+- :ref:`exhale_class_class_ifc_parse_1_1schema__definition_1_1declaration__by__index__sort`
+
+- :ref:`exhale_class_class_ifc_parse_1_1schema__definition_1_1declaration__by__name__cmp`
+
+- :ref:`exhale_class_class_ifc_parse_1_1select__type`
+
+- :ref:`exhale_class_class_ifc_parse_1_1simple__type`
+
+- :ref:`exhale_class_class_ifc_parse_1_1type__declaration`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function__ifc_schema_8h_1a33b6b41dc341c46a88088828e76331ba`
+
+- :ref:`exhale_function__ifc_schema_8h_1a8be80940facb7ce9c2eb74bc29ba4061`
+

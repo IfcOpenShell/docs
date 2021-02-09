@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ab4bd9838096b92e31b070a5b089a0160:
+
+Define SCHEMA_HAS_IfcConnectionCurveGeometry
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcConnectionCurveGeometry

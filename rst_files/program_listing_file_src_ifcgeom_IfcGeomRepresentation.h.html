@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Listing for File IfcGeomRepresentation.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="program-listing-for-file-ifcgeomrepresentation-h">
+<span id="program-listing-file-src-ifcgeom-ifcgeomrepresentation-h"></span><h1>Program Listing for File IfcGeomRepresentation.h<a class="headerlink" href="#program-listing-for-file-ifcgeomrepresentation-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_ifcgeom_IfcGeomRepresentation.h.html#file-src-ifcgeom-ifcgeomrepresentation-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom/IfcGeomRepresentation.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/********************************************************************************</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * This file is part of IfcOpenShell.                                           *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcOpenShell is free software: you can redistribute it and/or modify         *</span>
+<span class="cm"> * it under the terms of the Lesser GNU General Public License as published by  *</span>
+<span class="cm"> * the Free Software Foundation, either version 3.0 of the License, or          *</span>
+<span class="cm"> * (at your option) any later version.                                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcOpenShell is distributed in the hope that it will be useful,              *</span>
+<span class="cm"> * but WITHOUT ANY WARRANTY; without even the implied warranty of               *</span>
+<span class="cm"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 *</span>
+<span class="cm"> * Lesser GNU General Public License for more details.                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * You should have received a copy of the Lesser GNU General Public License     *</span>
+<span class="cm"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.         *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> ********************************************************************************/</span>
+
+<span class="cp">#ifndef IFCGEOMREPRESENTATION_H</span>
+<span class="cp">#define IFCGEOMREPRESENTATION_H</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;BRepMesh_IncrementalMesh.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;BRepGProp_Face.hxx&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;Poly_Triangulation.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;TColgp_Array1OfPnt.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;TColgp_Array1OfPnt2d.hxx&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;TopoDS.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;BRepTools.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;TopExp_Explorer.hxx&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;BRepAdaptor_Curve.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;GCPnts_QuasiUniformDeflection.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;Geom_SphericalSurface.hxx&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom/IfcGeomIteratorSettings.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom_schema_agnostic/IfcGeomMaterial.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom/IfcRepresentationShapeItem.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;TopoDS_Compound.hxx&gt;</span><span class="cp"></span>
+
+<span class="k">namespace</span> <span class="n">IfcGeom</span> <span class="p">{</span>
+
+    <span class="k">namespace</span> <span class="n">Representation</span> <span class="p">{</span>
+
+        <span class="k">class</span> <span class="nc">IFC_GEOM_API</span> <span class="n">Representation</span> <span class="p">{</span>
+            <span class="n">Representation</span><span class="p">(</span><span class="k">const</span> <span class="n">Representation</span><span class="o">&amp;</span><span class="p">);</span> <span class="c1">//N/A</span>
+            <span class="n">Representation</span><span class="o">&amp;</span> <span class="k">operator</span> <span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">Representation</span><span class="o">&amp;</span><span class="p">);</span> <span class="c1">//N/A</span>
+        <span class="k">protected</span><span class="o">:</span>
+            <span class="k">const</span> <span class="n">ElementSettings</span> <span class="n">settings_</span><span class="p">;</span>
+        <span class="k">public</span><span class="o">:</span>
+            <span class="k">explicit</span> <span class="n">Representation</span><span class="p">(</span><span class="k">const</span> <span class="n">ElementSettings</span><span class="o">&amp;</span> <span class="n">settings</span><span class="p">)</span>
+                <span class="o">:</span> <span class="n">settings_</span><span class="p">(</span><span class="n">settings</span><span class="p">)</span>
+            <span class="p">{}</span>
+            <span class="k">const</span> <span class="n">ElementSettings</span><span class="o">&amp;</span> <span class="n">settings</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">settings_</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">virtual</span> <span class="o">~</span><span class="n">Representation</span><span class="p">()</span> <span class="p">{}</span>
+        <span class="p">};</span>
+
+        <span class="k">class</span> <span class="nc">IFC_GEOM_API</span> <span class="nl">BRep</span> <span class="p">:</span> <span class="k">public</span> <span class="n">Representation</span> <span class="p">{</span>
+        <span class="k">private</span><span class="o">:</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">id_</span><span class="p">;</span>
+            <span class="k">const</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">IfcRepresentationShapeItems</span> <span class="n">shapes_</span><span class="p">;</span>
+            <span class="n">BRep</span><span class="p">(</span><span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">);</span>
+            <span class="n">BRep</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">);</span>
+        <span class="k">public</span><span class="o">:</span>
+            <span class="n">BRep</span><span class="p">(</span><span class="k">const</span> <span class="n">ElementSettings</span><span class="o">&amp;</span> <span class="n">settings</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">id</span><span class="p">,</span> <span class="k">const</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">IfcRepresentationShapeItems</span><span class="o">&amp;</span> <span class="n">shapes</span><span class="p">)</span>
+                <span class="o">:</span> <span class="n">Representation</span><span class="p">(</span><span class="n">settings</span><span class="p">)</span>
+                <span class="p">,</span> <span class="n">id_</span><span class="p">(</span><span class="n">id</span><span class="p">)</span>
+                <span class="p">,</span> <span class="n">shapes_</span><span class="p">(</span><span class="n">shapes</span><span class="p">)</span>
+            <span class="p">{}</span>
+            <span class="k">virtual</span> <span class="o">~</span><span class="n">BRep</span><span class="p">()</span> <span class="p">{}</span>
+            <span class="n">IfcGeom</span><span class="o">::</span><span class="n">IfcRepresentationShapeItems</span><span class="o">::</span><span class="n">const_iterator</span> <span class="n">begin</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">shapes_</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span> <span class="p">}</span>
+            <span class="n">IfcGeom</span><span class="o">::</span><span class="n">IfcRepresentationShapeItems</span><span class="o">::</span><span class="n">const_iterator</span> <span class="n">end</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">shapes_</span><span class="p">.</span><span class="n">end</span><span class="p">();</span> <span class="p">}</span>
+            <span class="k">const</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">IfcRepresentationShapeItems</span><span class="o">&amp;</span> <span class="n">shapes</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">shapes_</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">id</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">id_</span><span class="p">;</span> <span class="p">}</span>
+            <span class="n">TopoDS_Compound</span> <span class="n">as_compound</span><span class="p">(</span><span class="kt">bool</span> <span class="n">force_meters</span> <span class="o">=</span> <span class="nb">false</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+            <span class="kt">bool</span> <span class="nf">calculate_volume</span><span class="p">(</span><span class="kt">double</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+            <span class="kt">bool</span> <span class="nf">calculate_surface_area</span><span class="p">(</span><span class="kt">double</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+            <span class="kt">bool</span> <span class="nf">calculate_projected_surface_area</span><span class="p">(</span><span class="k">const</span> <span class="n">gp_Ax3</span><span class="o">&amp;</span> <span class="n">ax</span><span class="p">,</span> <span class="kt">double</span><span class="o">&amp;</span> <span class="n">along_x</span><span class="p">,</span> <span class="kt">double</span><span class="o">&amp;</span> <span class="n">along_y</span><span class="p">,</span> <span class="kt">double</span><span class="o">&amp;</span> <span class="n">along_z</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+        <span class="p">};</span>
+
+        <span class="k">class</span> <span class="nc">IFC_GEOM_API</span> <span class="nl">Serialization</span> <span class="p">:</span> <span class="k">public</span> <span class="n">Representation</span>  <span class="p">{</span>
+        <span class="k">private</span><span class="o">:</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">id_</span><span class="p">;</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">brep_data_</span><span class="p">;</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">surface_styles_</span><span class="p">;</span>
+        <span class="k">public</span><span class="o">:</span>
+            <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">brep_data</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">brep_data_</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&amp;</span> <span class="n">surface_styles</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">surface_styles_</span><span class="p">;</span> <span class="p">}</span>
+            <span class="n">Serialization</span><span class="p">(</span><span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
+            <span class="k">virtual</span> <span class="o">~</span><span class="n">Serialization</span><span class="p">()</span> <span class="p">{}</span>
+            <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">id</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">id_</span><span class="p">;</span> <span class="p">}</span>
+        <span class="k">private</span><span class="o">:</span>
+            <span class="n">Serialization</span><span class="p">();</span>
+            <span class="n">Serialization</span><span class="p">(</span><span class="k">const</span> <span class="n">Serialization</span><span class="o">&amp;</span><span class="p">);</span>
+            <span class="n">Serialization</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">Serialization</span><span class="o">&amp;</span><span class="p">);</span>
+        <span class="p">};</span>
+
+        <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="nc">P</span><span class="o">&gt;</span>
+        <span class="k">class</span> <span class="nc">Triangulation</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Representation</span> <span class="p">{</span>
+        <span class="k">private</span><span class="o">:</span>
+            <span class="c1">// A nested pair of floats and a material index to be able to store an XYZ coordinate in a map.</span>
+            <span class="c1">// TODO: Make this a std::tuple when compilers add support for that.</span>
+            <span class="k">typedef</span> <span class="k">typename</span> <span class="nc">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">P</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">Coordinate</span><span class="p">;</span>
+            <span class="k">typedef</span> <span class="k">typename</span> <span class="nc">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">Coordinate</span><span class="o">&gt;</span> <span class="n">VertexKey</span><span class="p">;</span>
+            <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">VertexKey</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">VertexKeyMap</span><span class="p">;</span>
+            <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">Edge</span><span class="p">;</span>
+
+            <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">id_</span><span class="p">;</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;</span> <span class="n">_verts</span><span class="p">;</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">_faces</span><span class="p">;</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">_edges</span><span class="p">;</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;</span> <span class="n">_normals</span><span class="p">;</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;</span> <span class="n">uvs_</span><span class="p">;</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">_material_ids</span><span class="p">;</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Material</span><span class="o">&gt;</span> <span class="n">_materials</span><span class="p">;</span>
+            <span class="kt">size_t</span> <span class="n">weld_offset_</span><span class="p">;</span>
+            <span class="n">VertexKeyMap</span> <span class="n">welds</span><span class="p">;</span>
+
+        <span class="k">public</span><span class="o">:</span>
+            <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">id</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">id_</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;&amp;</span> <span class="n">verts</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_verts</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">faces</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_faces</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">edges</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_edges</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;&amp;</span> <span class="n">normals</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_normals</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;&amp;</span> <span class="n">uvs</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">uvs_</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">material_ids</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_material_ids</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Material</span><span class="o">&gt;&amp;</span> <span class="n">materials</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_materials</span><span class="p">;</span> <span class="p">}</span>
+
+            <span class="n">Triangulation</span><span class="p">(</span><span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">shape_model</span><span class="p">)</span>
+                <span class="o">:</span> <span class="n">Representation</span><span class="p">(</span><span class="n">shape_model</span><span class="p">.</span><span class="n">settings</span><span class="p">())</span>
+                <span class="p">,</span> <span class="n">id_</span><span class="p">(</span><span class="n">shape_model</span><span class="p">.</span><span class="n">id</span><span class="p">())</span>
+                <span class="p">,</span> <span class="n">weld_offset_</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="k">for</span> <span class="p">(</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">IfcRepresentationShapeItems</span><span class="o">::</span><span class="n">const_iterator</span> <span class="n">iit</span> <span class="o">=</span> <span class="n">shape_model</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span> <span class="n">iit</span> <span class="o">!=</span> <span class="n">shape_model</span><span class="p">.</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span> <span class="n">iit</span> <span class="p">)</span> <span class="p">{</span>
+
+                    <span class="c1">// Don&#39;t weld vertices that belong to different items to prevent non-manifold situations.</span>
+                    <span class="n">weld_offset_</span> <span class="o">+=</span> <span class="n">welds</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+                    <span class="n">welds</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+
+                    <span class="kt">int</span> <span class="n">surface_style_id</span> <span class="o">=</span> <span class="mi">-1</span><span class="p">;</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">iit</span><span class="o">-&gt;</span><span class="n">hasStyle</span><span class="p">())</span> <span class="p">{</span>
+                        <span class="n">Material</span> <span class="nf">adapter</span><span class="p">(</span><span class="o">&amp;</span><span class="n">iit</span><span class="o">-&gt;</span><span class="n">Style</span><span class="p">());</span>
+                        <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Material</span><span class="o">&gt;::</span><span class="n">const_iterator</span> <span class="n">jt</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">find</span><span class="p">(</span><span class="n">_materials</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">_materials</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">adapter</span><span class="p">);</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">jt</span> <span class="o">==</span> <span class="n">_materials</span><span class="p">.</span><span class="n">end</span><span class="p">())</span> <span class="p">{</span>
+                            <span class="n">surface_style_id</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">_materials</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+                            <span class="n">_materials</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">adapter</span><span class="p">);</span>
+                        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                            <span class="n">surface_style_id</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">jt</span> <span class="o">-</span> <span class="n">_materials</span><span class="p">.</span><span class="n">begin</span><span class="p">());</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+
+                    <span class="k">if</span> <span class="p">(</span><span class="n">settings</span><span class="p">().</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">APPLY_DEFAULT_MATERIALS</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">surface_style_id</span> <span class="o">==</span> <span class="mi">-1</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">Material</span> <span class="nf">material</span><span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">get_default_style</span><span class="p">(</span><span class="n">settings</span><span class="p">().</span><span class="n">element_type</span><span class="p">()));</span>
+                        <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Material</span><span class="o">&gt;::</span><span class="n">const_iterator</span> <span class="n">mit</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">find</span><span class="p">(</span><span class="n">_materials</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">_materials</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">material</span><span class="p">);</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">mit</span> <span class="o">==</span> <span class="n">_materials</span><span class="p">.</span><span class="n">end</span><span class="p">())</span> <span class="p">{</span>
+                            <span class="n">surface_style_id</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">_materials</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+                            <span class="n">_materials</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">material</span><span class="p">);</span>
+                        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                            <span class="n">surface_style_id</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">mit</span> <span class="o">-</span> <span class="n">_materials</span><span class="p">.</span><span class="n">begin</span><span class="p">());</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+
+                    <span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">s</span> <span class="o">=</span> <span class="n">iit</span><span class="o">-&gt;</span><span class="n">Shape</span><span class="p">();</span>
+                    <span class="k">const</span> <span class="n">gp_GTrsf</span><span class="o">&amp;</span> <span class="n">trsf</span> <span class="o">=</span> <span class="n">iit</span><span class="o">-&gt;</span><span class="n">Placement</span><span class="p">();</span>
+
+                    <span class="c1">// Triangulate the shape</span>
+                    <span class="k">try</span> <span class="p">{</span>
+                        <span class="n">BRepMesh_IncrementalMesh</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">settings</span><span class="p">().</span><span class="n">deflection_tolerance</span><span class="p">(),</span> <span class="nb">false</span><span class="p">,</span> <span class="n">settings</span><span class="p">().</span><span class="n">angular_tolerance</span><span class="p">());</span>
+                    <span class="p">}</span> <span class="k">catch</span><span class="p">(...)</span> <span class="p">{</span>
+                        <span class="n">Logger</span><span class="o">::</span><span class="n">Message</span><span class="p">(</span><span class="n">Logger</span><span class="o">::</span><span class="n">LOG_ERROR</span><span class="p">,</span> <span class="s">&quot;Failed to triangulate shape&quot;</span><span class="p">);</span>
+                        <span class="k">continue</span><span class="p">;</span>
+                    <span class="p">}</span>
+
+                    <span class="c1">// Iterates over the faces of the shape</span>
+                    <span class="kt">int</span> <span class="n">num_faces</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                    <span class="n">TopExp_Explorer</span> <span class="n">exp</span><span class="p">;</span>
+                    <span class="k">for</span> <span class="p">(</span> <span class="n">exp</span><span class="p">.</span><span class="n">Init</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">TopAbs_FACE</span><span class="p">);</span> <span class="n">exp</span><span class="p">.</span><span class="n">More</span><span class="p">();</span> <span class="n">exp</span><span class="p">.</span><span class="n">Next</span><span class="p">(),</span> <span class="o">++</span><span class="n">num_faces</span> <span class="p">)</span> <span class="p">{</span>
+                        <span class="n">TopoDS_Face</span> <span class="n">face</span> <span class="o">=</span> <span class="n">TopoDS</span><span class="o">::</span><span class="n">Face</span><span class="p">(</span><span class="n">exp</span><span class="p">.</span><span class="n">Current</span><span class="p">());</span>
+                        <span class="n">TopLoc_Location</span> <span class="n">loc</span><span class="p">;</span>
+                        <span class="n">Handle_Poly_Triangulation</span> <span class="n">tri</span> <span class="o">=</span> <span class="n">BRep_Tool</span><span class="o">::</span><span class="n">Triangulation</span><span class="p">(</span><span class="n">face</span><span class="p">,</span><span class="n">loc</span><span class="p">);</span>
+
+                        <span class="k">if</span> <span class="p">(</span><span class="n">tri</span><span class="p">.</span><span class="n">IsNull</span><span class="p">())</span> <span class="p">{</span>
+                            <span class="n">Logger</span><span class="o">::</span><span class="n">Message</span><span class="p">(</span><span class="n">Logger</span><span class="o">::</span><span class="n">LOG_ERROR</span><span class="p">,</span> <span class="s">&quot;Triangulation missing for face&quot;</span><span class="p">);</span>
+                        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                            <span class="c1">// A 3x3 matrix to rotate the vertex normals</span>
+                            <span class="k">const</span> <span class="n">gp_Mat</span> <span class="n">rotation_matrix</span> <span class="o">=</span> <span class="n">trsf</span><span class="p">.</span><span class="n">VectorialPart</span><span class="p">();</span>
+
+                            <span class="c1">// Keep track of the number of times an edge is used</span>
+                            <span class="c1">// Manifold edges (i.e. edges used twice) are deemed invisible</span>
+                            <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">edgecount</span><span class="p">;</span>
+                            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">edges_temp</span><span class="p">;</span>
+
+                            <span class="k">const</span> <span class="n">TColgp_Array1OfPnt</span><span class="o">&amp;</span> <span class="n">nodes</span> <span class="o">=</span> <span class="n">tri</span><span class="o">-&gt;</span><span class="n">Nodes</span><span class="p">();</span>
+                            <span class="k">const</span> <span class="n">TColgp_Array1OfPnt2d</span><span class="o">&amp;</span> <span class="n">uvs</span> <span class="o">=</span> <span class="n">tri</span><span class="o">-&gt;</span><span class="n">UVNodes</span><span class="p">();</span>
+                            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">gp_XYZ</span><span class="o">&gt;</span> <span class="n">coords</span><span class="p">;</span>
+                            <span class="n">BRepGProp_Face</span> <span class="nf">prop</span><span class="p">(</span><span class="n">face</span><span class="p">);</span>
+                            <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">dict</span><span class="p">;</span>
+
+                            <span class="c1">// Vertex normals are only calculated if vertices are not welded and calculation is not disable explicitly.</span>
+                            <span class="k">const</span> <span class="kt">bool</span> <span class="n">calculate_normals</span> <span class="o">=</span> <span class="o">!</span><span class="n">settings</span><span class="p">().</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">WELD_VERTICES</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+                                <span class="o">!</span><span class="n">settings</span><span class="p">().</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">NO_NORMALS</span><span class="p">);</span>
+
+                            <span class="k">for</span><span class="p">(</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">nodes</span><span class="p">.</span><span class="n">Length</span><span class="p">();</span> <span class="o">++</span> <span class="n">i</span> <span class="p">)</span> <span class="p">{</span>
+                                <span class="n">coords</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">nodes</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">Transformed</span><span class="p">(</span><span class="n">loc</span><span class="p">).</span><span class="n">XYZ</span><span class="p">());</span>
+                                <span class="n">trsf</span><span class="p">.</span><span class="n">Transforms</span><span class="p">(</span><span class="o">*</span><span class="n">coords</span><span class="p">.</span><span class="n">rbegin</span><span class="p">());</span>
+                                <span class="n">dict</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">addVertex</span><span class="p">(</span><span class="n">surface_style_id</span><span class="p">,</span> <span class="o">*</span><span class="n">coords</span><span class="p">.</span><span class="n">rbegin</span><span class="p">());</span>
+
+                                <span class="k">if</span> <span class="p">(</span> <span class="n">calculate_normals</span> <span class="p">)</span> <span class="p">{</span>
+                                    <span class="k">const</span> <span class="n">gp_Pnt2d</span><span class="o">&amp;</span> <span class="n">uv</span> <span class="o">=</span> <span class="n">uvs</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+                                    <span class="n">gp_Pnt</span> <span class="n">p</span><span class="p">;</span>
+                                    <span class="n">gp_Vec</span> <span class="n">normal_direction</span><span class="p">;</span>
+                                    <span class="n">prop</span><span class="p">.</span><span class="n">Normal</span><span class="p">(</span><span class="n">uv</span><span class="p">.</span><span class="n">X</span><span class="p">(),</span><span class="n">uv</span><span class="p">.</span><span class="n">Y</span><span class="p">(),</span><span class="n">p</span><span class="p">,</span><span class="n">normal_direction</span><span class="p">);</span>
+                                    <span class="n">gp_Vec</span> <span class="nf">normal</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">);</span>
+                                    <span class="k">if</span> <span class="p">(</span><span class="n">normal_direction</span><span class="p">.</span><span class="n">Magnitude</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mf">1.</span><span class="n">e</span><span class="mi">-9</span><span class="p">)</span> <span class="p">{</span>
+                                        <span class="n">normal</span> <span class="o">=</span> <span class="n">gp_Dir</span><span class="p">(</span><span class="n">normal_direction</span><span class="p">.</span><span class="n">XYZ</span><span class="p">()</span> <span class="o">*</span> <span class="n">rotation_matrix</span><span class="p">);</span>
+                                    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                                        <span class="n">Handle_Geom_Surface</span> <span class="n">surf</span> <span class="o">=</span> <span class="n">BRep_Tool</span><span class="o">::</span><span class="n">Surface</span><span class="p">(</span><span class="n">face</span><span class="p">);</span>
+                                        <span class="c1">// Special case the normal at the poles of a spherical surface</span>
+                                        <span class="k">if</span> <span class="p">(</span><span class="n">surf</span><span class="o">-&gt;</span><span class="n">DynamicType</span><span class="p">()</span> <span class="o">==</span> <span class="n">STANDARD_TYPE</span><span class="p">(</span><span class="n">Geom_SphericalSurface</span><span class="p">))</span> <span class="p">{</span>
+                                            <span class="k">if</span> <span class="p">(</span><span class="n">fabs</span><span class="p">(</span><span class="n">fabs</span><span class="p">(</span><span class="n">uv</span><span class="p">.</span><span class="n">Y</span><span class="p">())</span> <span class="o">-</span> <span class="n">M_PI</span> <span class="o">/</span> <span class="mf">2.</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">1.</span><span class="n">e</span><span class="mi">-9</span><span class="p">)</span> <span class="p">{</span>
+                                                <span class="k">const</span> <span class="kt">bool</span> <span class="n">is_top</span> <span class="o">=</span> <span class="n">uv</span><span class="p">.</span><span class="n">Y</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span>
+                                                <span class="k">const</span> <span class="kt">bool</span> <span class="n">is_forward</span> <span class="o">=</span> <span class="n">face</span><span class="p">.</span><span class="n">Orientation</span><span class="p">()</span> <span class="o">==</span> <span class="n">TopAbs_FORWARD</span><span class="p">;</span>
+                                                <span class="k">const</span> <span class="kt">double</span> <span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="n">is_top</span> <span class="o">==</span> <span class="n">is_forward</span><span class="p">)</span> <span class="o">?</span> <span class="mf">1.</span> <span class="o">:</span> <span class="mf">-1.</span><span class="p">;</span>
+                                                <span class="n">normal</span> <span class="o">=</span> <span class="n">gp_Dir</span><span class="p">(</span><span class="n">gp_XYZ</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span> <span class="o">*</span> <span class="n">rotation_matrix</span><span class="p">);</span>
+                                            <span class="p">}</span>
+                                        <span class="p">}</span>
+                                        <span class="c1">// TODO: Do the same for conical surfaces, but they are rare in IFC.</span>
+                                    <span class="p">}</span>
+                                    <span class="n">_normals</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;</span><span class="p">(</span><span class="n">normal</span><span class="p">.</span><span class="n">X</span><span class="p">()));</span>
+                                    <span class="n">_normals</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;</span><span class="p">(</span><span class="n">normal</span><span class="p">.</span><span class="n">Y</span><span class="p">()));</span>
+                                    <span class="n">_normals</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;</span><span class="p">(</span><span class="n">normal</span><span class="p">.</span><span class="n">Z</span><span class="p">()));</span>
+                                <span class="p">}</span>
+                            <span class="p">}</span>
+
+                            <span class="k">const</span> <span class="n">Poly_Array1OfTriangle</span><span class="o">&amp;</span> <span class="n">triangles</span> <span class="o">=</span> <span class="n">tri</span><span class="o">-&gt;</span><span class="n">Triangles</span><span class="p">();</span>
+                            <span class="k">for</span><span class="p">(</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">triangles</span><span class="p">.</span><span class="n">Length</span><span class="p">();</span> <span class="o">++</span> <span class="n">i</span> <span class="p">)</span> <span class="p">{</span>
+                                <span class="kt">int</span> <span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">,</span><span class="n">n3</span><span class="p">;</span>
+                                <span class="k">if</span> <span class="p">(</span> <span class="n">face</span><span class="p">.</span><span class="n">Orientation</span><span class="p">()</span> <span class="o">==</span> <span class="n">TopAbs_REVERSED</span> <span class="p">)</span>
+                                    <span class="n">triangles</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">Get</span><span class="p">(</span><span class="n">n3</span><span class="p">,</span><span class="n">n2</span><span class="p">,</span><span class="n">n1</span><span class="p">);</span>
+                                <span class="k">else</span> <span class="nf">triangles</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">Get</span><span class="p">(</span><span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">,</span><span class="n">n3</span><span class="p">);</span>
+
+                                <span class="cm">/* An alternative would be to calculate normals based</span>
+<span class="cm">                                    * on the coordinates of the mesh vertices */</span>
+                                <span class="cm">/*</span>
+<span class="cm">                                const gp_XYZ pt1 = coords[n1-1];</span>
+<span class="cm">                                const gp_XYZ pt2 = coords[n2-1];</span>
+<span class="cm">                                const gp_XYZ pt3 = coords[n3-1];</span>
+<span class="cm">                                const gp_XYZ v1 = pt2-pt1;</span>
+<span class="cm">                                const gp_XYZ v2 = pt3-pt2;</span>
+<span class="cm">                                gp_Dir normal = gp_Dir(v1^v2);</span>
+<span class="cm">                                _normals.push_back((float)normal.X());</span>
+<span class="cm">                                _normals.push_back((float)normal.Y());</span>
+<span class="cm">                                _normals.push_back((float)normal.Z());</span>
+<span class="cm">                                */</span>
+
+                                <span class="n">_faces</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">dict</span><span class="p">[</span><span class="n">n1</span><span class="p">]);</span>
+                                <span class="n">_faces</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">dict</span><span class="p">[</span><span class="n">n2</span><span class="p">]);</span>
+                                <span class="n">_faces</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">dict</span><span class="p">[</span><span class="n">n3</span><span class="p">]);</span>
+
+                                <span class="n">_material_ids</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">surface_style_id</span><span class="p">);</span>
+
+                                <span class="n">addEdge</span><span class="p">(</span><span class="n">dict</span><span class="p">[</span><span class="n">n1</span><span class="p">],</span> <span class="n">dict</span><span class="p">[</span><span class="n">n2</span><span class="p">],</span> <span class="n">edgecount</span><span class="p">,</span> <span class="n">edges_temp</span><span class="p">);</span>
+                                <span class="n">addEdge</span><span class="p">(</span><span class="n">dict</span><span class="p">[</span><span class="n">n2</span><span class="p">],</span> <span class="n">dict</span><span class="p">[</span><span class="n">n3</span><span class="p">],</span> <span class="n">edgecount</span><span class="p">,</span> <span class="n">edges_temp</span><span class="p">);</span>
+                                <span class="n">addEdge</span><span class="p">(</span><span class="n">dict</span><span class="p">[</span><span class="n">n3</span><span class="p">],</span> <span class="n">dict</span><span class="p">[</span><span class="n">n1</span><span class="p">],</span> <span class="n">edgecount</span><span class="p">,</span> <span class="n">edges_temp</span><span class="p">);</span>
+                            <span class="p">}</span>
+                            <span class="k">for</span> <span class="p">(</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;</span> <span class="o">&gt;::</span><span class="n">const_iterator</span> <span class="n">jt</span> <span class="o">=</span> <span class="n">edges_temp</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span> <span class="n">jt</span> <span class="o">!=</span> <span class="n">edges_temp</span><span class="p">.</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">jt</span> <span class="p">)</span> <span class="p">{</span>
+                                <span class="k">if</span> <span class="p">(</span><span class="n">edgecount</span><span class="p">[</span><span class="o">*</span><span class="n">jt</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                                    <span class="c1">// non manifold edge, face boundary</span>
+                                    <span class="n">_edges</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">jt</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">);</span>
+                                    <span class="n">_edges</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">jt</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">);</span>
+                                <span class="p">}</span>
+                            <span class="p">}</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+
+                    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">_normals</span><span class="p">.</span><span class="n">empty</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">settings</span><span class="p">().</span><span class="n">get</span><span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">GENERATE_UVS</span><span class="p">))</span> <span class="p">{</span>
+                        <span class="n">uvs_</span> <span class="o">=</span> <span class="n">box_project_uvs</span><span class="p">(</span><span class="n">_verts</span><span class="p">,</span> <span class="n">_normals</span><span class="p">);</span>
+                    <span class="p">}</span>
+
+                    <span class="k">if</span> <span class="p">(</span><span class="n">num_faces</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="c1">// Edges are only emitted if there are no faces. A mixed representation of faces</span>
+                        <span class="c1">// and loose edges is discouraged by the standard. An alternative would be to use</span>
+                        <span class="c1">// TopExp_Explorer texp(s, TopAbs_EDGE, TopAbs_FACE) to find edges that do not</span>
+                        <span class="c1">// belong to any face.</span>
+                        <span class="k">for</span> <span class="p">(</span><span class="n">TopExp_Explorer</span> <span class="n">texp</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">TopAbs_EDGE</span><span class="p">);</span> <span class="n">texp</span><span class="p">.</span><span class="n">More</span><span class="p">();</span> <span class="n">texp</span><span class="p">.</span><span class="n">Next</span><span class="p">())</span> <span class="p">{</span>
+                            <span class="n">BRepAdaptor_Curve</span> <span class="nf">crv</span><span class="p">(</span><span class="n">TopoDS</span><span class="o">::</span><span class="n">Edge</span><span class="p">(</span><span class="n">texp</span><span class="p">.</span><span class="n">Current</span><span class="p">()));</span>
+                            <span class="n">GCPnts_QuasiUniformDeflection</span> <span class="nf">tessellater</span><span class="p">(</span><span class="n">crv</span><span class="p">,</span> <span class="n">settings</span><span class="p">().</span><span class="n">deflection_tolerance</span><span class="p">());</span>
+                            <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">tessellater</span><span class="p">.</span><span class="n">NbPoints</span><span class="p">();</span>
+                            <span class="kt">int</span> <span class="n">previous</span> <span class="o">=</span> <span class="mi">-1</span><span class="p">;</span>
+
+                            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+                                <span class="n">gp_XYZ</span> <span class="n">p</span> <span class="o">=</span> <span class="n">tessellater</span><span class="p">.</span><span class="n">Value</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">XYZ</span><span class="p">();</span>
+
+                                <span class="kt">int</span> <span class="n">current</span> <span class="o">=</span> <span class="n">addVertex</span><span class="p">(</span><span class="n">surface_style_id</span><span class="p">,</span> <span class="n">p</span><span class="p">);</span>
+
+                                <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">segments</span><span class="p">;</span>
+                                <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                                    <span class="n">segments</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">make_pair</span><span class="p">(</span><span class="n">previous</span><span class="p">,</span> <span class="n">current</span><span class="p">));</span>
+                                <span class="p">}</span>
+
+                                <span class="k">if</span> <span class="p">(</span><span class="n">settings</span><span class="p">().</span><span class="n">get</span><span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">EDGE_ARROWS</span><span class="p">))</span> <span class="p">{</span>
+                                    <span class="c1">// In case you want direction arrows on your edges</span>
+                                    <span class="kt">double</span> <span class="n">u</span> <span class="o">=</span> <span class="n">tessellater</span><span class="p">.</span><span class="n">Parameter</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+                                    <span class="n">gp_XYZ</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p3</span><span class="p">;</span>
+                                    <span class="n">gp_Pnt</span> <span class="n">tmp</span><span class="p">;</span>
+                                    <span class="n">gp_Vec</span> <span class="n">tmp2</span><span class="p">;</span>
+                                    <span class="n">crv</span><span class="p">.</span><span class="n">D1</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">tmp</span><span class="p">,</span> <span class="n">tmp2</span><span class="p">);</span>
+                                    <span class="n">gp_Dir</span> <span class="n">d1</span><span class="p">,</span> <span class="n">d2</span><span class="p">,</span> <span class="n">d3</span><span class="p">,</span> <span class="n">d4</span><span class="p">;</span>
+                                    <span class="n">d1</span> <span class="o">=</span> <span class="n">tmp2</span><span class="p">;</span>
+                                    <span class="k">if</span> <span class="p">(</span><span class="n">texp</span><span class="p">.</span><span class="n">Current</span><span class="p">().</span><span class="n">Orientation</span><span class="p">()</span> <span class="o">==</span> <span class="n">TopAbs_REVERSED</span><span class="p">)</span> <span class="p">{</span>
+                                        <span class="n">d1</span> <span class="o">=</span> <span class="o">-</span><span class="n">d1</span><span class="p">;</span>
+                                    <span class="p">}</span>
+                                    <span class="k">if</span> <span class="p">(</span><span class="n">fabs</span><span class="p">(</span><span class="n">d1</span><span class="p">.</span><span class="n">Z</span><span class="p">())</span> <span class="o">&lt;</span> <span class="mf">0.5</span><span class="p">)</span> <span class="p">{</span>
+                                        <span class="n">d2</span> <span class="o">=</span> <span class="n">d1</span><span class="p">.</span><span class="n">Crossed</span><span class="p">(</span><span class="n">gp</span><span class="o">::</span><span class="n">DZ</span><span class="p">());</span>
+                                    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                                        <span class="n">d2</span> <span class="o">=</span> <span class="n">d1</span><span class="p">.</span><span class="n">Crossed</span><span class="p">(</span><span class="n">gp</span><span class="o">::</span><span class="n">DY</span><span class="p">());</span>
+                                    <span class="p">}</span>
+                                    <span class="n">d3</span> <span class="o">=</span> <span class="n">d1</span><span class="p">.</span><span class="n">XYZ</span><span class="p">()</span> <span class="o">+</span> <span class="n">d2</span><span class="p">.</span><span class="n">XYZ</span><span class="p">();</span>
+                                    <span class="n">d4</span> <span class="o">=</span> <span class="n">d1</span><span class="p">.</span><span class="n">XYZ</span><span class="p">()</span> <span class="o">-</span> <span class="n">d2</span><span class="p">.</span><span class="n">XYZ</span><span class="p">();</span>
+                                    <span class="n">p2</span> <span class="o">=</span> <span class="n">p</span> <span class="o">-</span> <span class="n">d3</span><span class="p">.</span><span class="n">XYZ</span><span class="p">()</span> <span class="o">/</span> <span class="mf">10.</span><span class="p">;</span>
+                                    <span class="n">p3</span> <span class="o">=</span> <span class="n">p</span> <span class="o">-</span> <span class="n">d4</span><span class="p">.</span><span class="n">XYZ</span><span class="p">()</span> <span class="o">/</span> <span class="mf">10.</span><span class="p">;</span>
+                                    <span class="n">trsf</span><span class="p">.</span><span class="n">Transforms</span><span class="p">(</span><span class="n">p2</span><span class="p">);</span>
+                                    <span class="n">trsf</span><span class="p">.</span><span class="n">Transforms</span><span class="p">(</span><span class="n">p3</span><span class="p">);</span>
+                                    <span class="n">trsf</span><span class="p">.</span><span class="n">Transforms</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+
+                                    <span class="kt">int</span> <span class="n">left</span> <span class="o">=</span> <span class="n">addVertex</span><span class="p">(</span><span class="n">surface_style_id</span><span class="p">,</span> <span class="n">p2</span><span class="p">);</span>
+                                    <span class="kt">int</span> <span class="n">right</span> <span class="o">=</span> <span class="n">addVertex</span><span class="p">(</span><span class="n">surface_style_id</span><span class="p">,</span> <span class="n">p3</span><span class="p">);</span>
+
+                                    <span class="n">segments</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">make_pair</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">current</span><span class="p">));</span>
+                                    <span class="n">segments</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">make_pair</span><span class="p">(</span><span class="n">right</span><span class="p">,</span> <span class="n">current</span><span class="p">));</span>
+                                <span class="p">}</span>
+
+                                <span class="k">for</span> <span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span> <span class="nl">s</span> <span class="p">:</span> <span class="n">segments</span><span class="p">)</span> <span class="p">{</span>
+                                    <span class="n">_edges</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">first</span><span class="p">);</span>
+                                    <span class="n">_edges</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">second</span><span class="p">);</span>
+                                    <span class="n">_material_ids</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">surface_style_id</span><span class="p">);</span>
+                                <span class="p">}</span>
+
+                                <span class="n">previous</span> <span class="o">=</span> <span class="n">current</span><span class="p">;</span>
+                            <span class="p">}</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+
+                    <span class="n">BRepTools</span><span class="o">::</span><span class="n">Clean</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="k">virtual</span> <span class="o">~</span><span class="n">Triangulation</span><span class="p">()</span> <span class="p">{}</span>
+
+            <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;</span> <span class="n">box_project_uvs</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">vertices</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">normals</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;</span> <span class="n">uvs</span><span class="p">;</span>
+                <span class="n">uvs</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">vertices</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">/</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">2</span><span class="p">);</span>
+                <span class="k">for</span> <span class="p">(</span><span class="kt">size_t</span> <span class="n">uv_idx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">v_idx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="n">uv_idx</span> <span class="o">&lt;</span> <span class="n">uvs</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">v_idx</span> <span class="o">&lt;</span> <span class="n">vertices</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">v_idx</span> <span class="o">&lt;</span> <span class="n">normals</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+                    <span class="n">uv_idx</span> <span class="o">+=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">v_idx</span> <span class="o">+=</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+
+                    <span class="n">P</span> <span class="n">n_x</span> <span class="o">=</span> <span class="n">normals</span><span class="p">[</span><span class="n">v_idx</span><span class="p">],</span> <span class="n">n_y</span> <span class="o">=</span> <span class="n">normals</span><span class="p">[</span><span class="n">v_idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">n_z</span> <span class="o">=</span> <span class="n">normals</span><span class="p">[</span><span class="n">v_idx</span> <span class="o">+</span> <span class="mi">2</span><span class="p">];</span>
+                    <span class="n">P</span> <span class="n">v_x</span> <span class="o">=</span> <span class="n">vertices</span><span class="p">[</span><span class="n">v_idx</span><span class="p">],</span> <span class="n">v_y</span> <span class="o">=</span> <span class="n">vertices</span><span class="p">[</span><span class="n">v_idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">v_z</span> <span class="o">=</span> <span class="n">vertices</span><span class="p">[</span><span class="n">v_idx</span> <span class="o">+</span> <span class="mi">2</span><span class="p">];</span>
+
+                    <span class="k">if</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">n_x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">n_y</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">n_x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">n_z</span><span class="p">))</span> <span class="p">{</span>
+                        <span class="n">uvs</span><span class="p">[</span><span class="n">uv_idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_z</span><span class="p">;</span>
+                        <span class="n">uvs</span><span class="p">[</span><span class="n">uv_idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_y</span><span class="p">;</span>
+                    <span class="p">}</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">n_y</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">n_x</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">n_y</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">n_z</span><span class="p">))</span> <span class="p">{</span>
+                        <span class="n">uvs</span><span class="p">[</span><span class="n">uv_idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_x</span><span class="p">;</span>
+                        <span class="n">uvs</span><span class="p">[</span><span class="n">uv_idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_z</span><span class="p">;</span>
+                    <span class="p">}</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">n_z</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">n_x</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">n_z</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">n_y</span><span class="p">))</span> <span class="p">{</span>
+                        <span class="n">uvs</span><span class="p">[</span><span class="n">uv_idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_x</span><span class="p">;</span>
+                        <span class="n">uvs</span><span class="p">[</span><span class="n">uv_idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_y</span><span class="p">;</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+
+                <span class="k">return</span> <span class="n">uvs</span><span class="p">;</span>
+            <span class="p">}</span>
+
+        <span class="k">private</span><span class="o">:</span>
+            <span class="c1">// Welds vertices that belong to different faces</span>
+            <span class="kt">int</span> <span class="n">addVertex</span><span class="p">(</span><span class="kt">int</span> <span class="n">material_index</span><span class="p">,</span> <span class="k">const</span> <span class="n">gp_XYZ</span><span class="o">&amp;</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">const</span> <span class="kt">bool</span> <span class="n">convert</span> <span class="o">=</span> <span class="n">settings</span><span class="p">().</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">CONVERT_BACK_UNITS</span><span class="p">);</span>
+                <span class="k">const</span> <span class="n">P</span> <span class="n">X</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;</span><span class="p">(</span><span class="n">convert</span> <span class="o">?</span> <span class="p">(</span><span class="n">p</span><span class="p">.</span><span class="n">X</span><span class="p">()</span> <span class="o">/</span> <span class="n">settings</span><span class="p">().</span><span class="n">unit_magnitude</span><span class="p">())</span> <span class="o">:</span> <span class="n">p</span><span class="p">.</span><span class="n">X</span><span class="p">());</span>
+                <span class="k">const</span> <span class="n">P</span> <span class="n">Y</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;</span><span class="p">(</span><span class="n">convert</span> <span class="o">?</span> <span class="p">(</span><span class="n">p</span><span class="p">.</span><span class="n">Y</span><span class="p">()</span> <span class="o">/</span> <span class="n">settings</span><span class="p">().</span><span class="n">unit_magnitude</span><span class="p">())</span> <span class="o">:</span> <span class="n">p</span><span class="p">.</span><span class="n">Y</span><span class="p">());</span>
+                <span class="k">const</span> <span class="n">P</span> <span class="n">Z</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;</span><span class="p">(</span><span class="n">convert</span> <span class="o">?</span> <span class="p">(</span><span class="n">p</span><span class="p">.</span><span class="n">Z</span><span class="p">()</span> <span class="o">/</span> <span class="n">settings</span><span class="p">().</span><span class="n">unit_magnitude</span><span class="p">())</span> <span class="o">:</span> <span class="n">p</span><span class="p">.</span><span class="n">Z</span><span class="p">());</span>
+                <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">_verts</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">/</span> <span class="mi">3</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">settings</span><span class="p">().</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">WELD_VERTICES</span><span class="p">))</span> <span class="p">{</span>
+                    <span class="k">const</span> <span class="n">VertexKey</span> <span class="n">key</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_pair</span><span class="p">(</span><span class="n">material_index</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">make_pair</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">make_pair</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">Z</span><span class="p">)));</span>
+                    <span class="k">typename</span> <span class="nc">VertexKeyMap</span><span class="o">::</span><span class="n">const_iterator</span> <span class="n">it</span> <span class="o">=</span> <span class="n">welds</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">key</span><span class="p">);</span>
+                    <span class="k">if</span> <span class="p">(</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">welds</span><span class="p">.</span><span class="n">end</span><span class="p">()</span> <span class="p">)</span> <span class="k">return</span> <span class="n">it</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">;</span>
+                    <span class="n">i</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">welds</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">+</span> <span class="n">weld_offset_</span><span class="p">;</span>
+                    <span class="n">welds</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+                <span class="p">}</span>
+                <span class="n">_verts</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">X</span><span class="p">);</span>
+                <span class="n">_verts</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">Y</span><span class="p">);</span>
+                <span class="n">_verts</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">Z</span><span class="p">);</span>
+                <span class="k">return</span> <span class="n">i</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="kr">inline</span> <span class="kt">void</span> <span class="n">addEdge</span><span class="p">(</span><span class="kt">int</span> <span class="n">n1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n2</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">edgecount</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;</span> <span class="o">&gt;&amp;</span> <span class="n">edges_temp</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">const</span> <span class="n">Edge</span> <span class="n">e</span> <span class="o">=</span> <span class="n">Edge</span><span class="p">(</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">)(</span><span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">),(</span><span class="n">std</span><span class="o">::</span><span class="n">max</span><span class="p">)(</span><span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">)</span> <span class="p">);</span>
+                <span class="k">if</span> <span class="p">(</span> <span class="n">edgecount</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">e</span><span class="p">)</span> <span class="o">==</span> <span class="n">edgecount</span><span class="p">.</span><span class="n">end</span><span class="p">()</span> <span class="p">)</span> <span class="n">edgecount</span><span class="p">[</span><span class="n">e</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+                <span class="k">else</span> <span class="n">edgecount</span><span class="p">[</span><span class="n">e</span><span class="p">]</span> <span class="o">++</span><span class="p">;</span>
+                <span class="n">edges_temp</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">Triangulation</span><span class="p">();</span>
+            <span class="n">Triangulation</span><span class="p">(</span><span class="k">const</span> <span class="n">Triangulation</span><span class="o">&amp;</span><span class="p">);</span>
+            <span class="n">Triangulation</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">Triangulation</span><span class="o">&amp;</span><span class="p">);</span>
+        <span class="p">};</span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/program_listing_file_src_ifcgeom_IfcGeomRepresentation.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

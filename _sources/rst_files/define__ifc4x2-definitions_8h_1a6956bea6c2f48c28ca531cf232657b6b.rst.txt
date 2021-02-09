@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a6956bea6c2f48c28ca531cf232657b6b:
+
+Define SCHEMA_IfcOwnerHistory_HAS_LastModifyingUser
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcOwnerHistory_HAS_LastModifyingUser

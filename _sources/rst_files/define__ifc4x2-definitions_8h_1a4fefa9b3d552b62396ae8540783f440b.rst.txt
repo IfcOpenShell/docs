@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a4fefa9b3d552b62396ae8540783f440b:
+
+Define SCHEMA_IfcTask_Priority_IS_OPTIONAL
+==========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTask_Priority_IS_OPTIONAL

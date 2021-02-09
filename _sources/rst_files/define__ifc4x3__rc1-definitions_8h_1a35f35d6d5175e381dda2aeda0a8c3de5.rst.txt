@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a35f35d6d5175e381dda2aeda0a8c3de5:
+
+Define SCHEMA_HAS_IfcNonNegativeLengthMeasure
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcNonNegativeLengthMeasure

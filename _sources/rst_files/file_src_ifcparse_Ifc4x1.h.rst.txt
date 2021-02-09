@@ -1,0 +1,2350 @@
+
+.. _file_src_ifcparse_Ifc4x1.h:
+
+File Ifc4x1.h
+=============
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcparse>` (``src/ifcparse``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/Ifc4x1.h``)
+--------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_Ifc4x1.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/Argument.h``
+
+- ``../ifcparse/IfcBaseClass.h``
+
+- ``../ifcparse/IfcEntityList.h``
+
+- ``../ifcparse/IfcException.h``
+
+- ``../ifcparse/IfcSchema.h``
+
+- ``../ifcparse/ifc_parse_api.h``
+
+- ``boost/optional.hpp``
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_schema_agnostic_Kernel.h`
+
+- :ref:`file_src_ifcparse_IfcHierarchyHelper.h`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_struct_ifc4x1`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_action_request_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_action_source_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_action_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_actuator_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_address_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_air_terminal_box_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_air_terminal_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_air_to_air_heat_recovery_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_alarm_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_alignment_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_analysis_model_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_analysis_theory_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_arithmetic_operator_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_assembly_place_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_audio_visual_appliance_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_beam_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_benchmark_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_boiler_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_boolean_operator`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_b_spline_curve_form`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_b_spline_surface_form`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_building_element_part_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_building_element_proxy_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_building_system_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_burner_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_cable_carrier_fitting_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_cable_carrier_segment_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_cable_fitting_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_cable_segment_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_change_action_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_chiller_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_chimney_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_coil_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_column_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_communications_appliance_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_complex_property_template_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_compressor_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_condenser_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_connection_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_constraint_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_construction_equipment_resource_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_construction_material_resource_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_construction_product_resource_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_controller_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_cooled_beam_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_cooling_tower_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_cost_item_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_cost_schedule_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_covering_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_crew_resource_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_curtain_wall_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_curve_interpolation_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_damper_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_data_origin_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_derived_unit_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_direction_sense_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_discrete_accessory_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_distribution_chamber_element_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_distribution_port_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_distribution_system_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_document_confidentiality_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_document_status_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_door_panel_operation_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_door_panel_position_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_door_style_construction_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_door_style_operation_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_door_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_door_type_operation_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_duct_fitting_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_duct_segment_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_duct_silencer_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_electric_appliance_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_electric_distribution_board_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_electric_flow_storage_device_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_electric_generator_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_electric_motor_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_electric_time_control_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_element_assembly_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_element_composition_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_engine_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_evaporative_cooler_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_evaporator_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_event_trigger_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_event_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_external_spatial_element_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_fan_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_fastener_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_filter_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_fire_suppression_terminal_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_flow_direction_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_flow_instrument_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_flow_meter_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_footing_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_furniture_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_geographic_element_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_geometric_projection_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_global_or_local_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_grid_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_heat_exchanger_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_humidifier_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_interceptor_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_internal_or_external_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_inventory_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_junction_box_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_knot_type`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_labor_resource_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_lamp_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_layer_set_direction_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_light_distribution_curve_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_light_emission_source_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_light_fixture_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_load_group_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_logical_operator_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_mechanical_fastener_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_medical_device_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_member_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_motor_connection_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_null_style`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_objective_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_object_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_occupant_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_opening_element_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_outlet_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_performance_history_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_permeable_covering_operation_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_permit_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_physical_or_virtual_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_pile_construction_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_pile_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_pipe_fitting_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_pipe_segment_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_plate_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_preferred_surface_curve_representation`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_procedure_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_profile_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_projected_or_true_length_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_projection_element_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_project_order_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_property_set_template_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_protective_device_tripping_unit_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_protective_device_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_pump_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_railing_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_ramp_flight_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_ramp_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_recurrence_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_referent_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_reflectance_method_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_reinforcing_bar_role_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_reinforcing_bar_surface_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_reinforcing_bar_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_reinforcing_mesh_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_role_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_roof_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_sanitary_terminal_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_section_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_sensor_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_sequence_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_shading_device_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_simple_property_template_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_s_i_prefix`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_s_i_unit_name`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_slab_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_solar_device_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_space_heater_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_space_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_spatial_zone_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_stack_terminal_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_stair_flight_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_stair_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_state_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_structural_curve_activity_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_structural_curve_member_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_structural_surface_activity_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_structural_surface_member_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_sub_contract_resource_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_surface_feature_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_surface_side`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_switching_device_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_system_furniture_element_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_tank_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_task_duration_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_task_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_tendon_anchor_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_tendon_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_text_path`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_time_series_data_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_transformer_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_transition_code`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_transition_curve_type`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_transport_element_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_trimming_preference`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_tube_bundle_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_unitary_control_element_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_unitary_equipment_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_unit_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_valve_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_vibration_isolator_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_voiding_feature_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_wall_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_waste_terminal_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_window_panel_operation_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_window_panel_position_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_window_style_construction_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_window_style_operation_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_window_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_window_type_partitioning_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_work_calendar_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_work_plan_type_enum`
+
+- :ref:`exhale_struct_struct_ifc4x1_1_1_ifc_work_schedule_type_enum`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_absorbed_dose_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_acceleration_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_action_request`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_actor`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_actor_role`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_actuator`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_actuator_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_address`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_advanced_brep`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_advanced_brep_with_voids`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_advanced_face`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_air_terminal`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_air_terminal_box`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_air_terminal_box_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_air_terminal_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_air_to_air_heat_recovery`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_air_to_air_heat_recovery_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_alarm`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_alarm_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_alignment`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_alignment2_d_horizontal`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_alignment2_d_horizontal_segment`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_alignment2_d_segment`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_alignment2_d_ver_seg_circular_arc`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_alignment2_d_ver_seg_line`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_alignment2_d_ver_seg_parabolic_arc`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_alignment2_d_vertical`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_alignment2_d_vertical_segment`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_alignment_curve`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_amount_of_substance_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_angular_velocity_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_annotation`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_annotation_fill_area`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_application`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_applied_value`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_approval`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_approval_relationship`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_arbitrary_closed_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_arbitrary_open_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_arbitrary_profile_def_with_voids`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_arc_index`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_area_density_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_area_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_asset`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_asymmetric_i_shape_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_audio_visual_appliance`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_audio_visual_appliance_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_axis1_placement`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_axis2_placement2_d`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_axis2_placement3_d`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_beam`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_beam_standard_case`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_beam_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_binary`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_blob_texture`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_block`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_boiler`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_boiler_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_boolean`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_boolean_clipping_result`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_boolean_result`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_boundary_condition`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_boundary_curve`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_boundary_edge_condition`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_boundary_face_condition`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_boundary_node_condition`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_boundary_node_condition_warping`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_bounded_curve`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_bounded_surface`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_bounding_box`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_box_alignment`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_boxed_half_space`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_b_spline_curve`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_b_spline_curve_with_knots`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_b_spline_surface`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_b_spline_surface_with_knots`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_building`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_building_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_building_element_part`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_building_element_part_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_building_element_proxy`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_building_element_proxy_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_building_element_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_building_storey`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_building_system`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_burner`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_burner_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cable_carrier_fitting`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cable_carrier_fitting_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cable_carrier_segment`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cable_carrier_segment_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cable_fitting`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cable_fitting_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cable_segment`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cable_segment_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cardinal_point_reference`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cartesian_point`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cartesian_point_list`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cartesian_point_list2_d`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cartesian_point_list3_d`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cartesian_transformation_operator`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cartesian_transformation_operator2_d`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cartesian_transformation_operator2_dnon_uniform`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cartesian_transformation_operator3_d`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cartesian_transformation_operator3_dnon_uniform`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_center_line_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_chiller`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_chiller_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_chimney`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_chimney_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_circle`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_circle_hollow_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_circle_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_circular_arc_segment2_d`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_civil_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_civil_element_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_classification`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_classification_reference`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_closed_shell`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_coil`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_coil_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_colour_rgb`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_colour_rgb_list`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_colour_specification`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_column`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_column_standard_case`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_column_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_communications_appliance`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_communications_appliance_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_complex_number`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_complex_property`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_complex_property_template`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_composite_curve`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_composite_curve_on_surface`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_composite_curve_segment`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_composite_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_compound_plane_angle_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_compressor`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_compressor_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_condenser`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_condenser_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_conic`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_connected_face_set`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_connection_curve_geometry`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_connection_geometry`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_connection_point_eccentricity`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_connection_point_geometry`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_connection_surface_geometry`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_connection_volume_geometry`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_constraint`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_construction_equipment_resource`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_construction_equipment_resource_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_construction_material_resource`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_construction_material_resource_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_construction_product_resource`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_construction_product_resource_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_construction_resource`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_construction_resource_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_context`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_context_dependent_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_context_dependent_unit`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_control`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_controller`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_controller_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_conversion_based_unit`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_conversion_based_unit_with_offset`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cooled_beam`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cooled_beam_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cooling_tower`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cooling_tower_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_coordinate_operation`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_coordinate_reference_system`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cost_item`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cost_schedule`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cost_value`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_count_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_covering`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_covering_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_crew_resource`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_crew_resource_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_csg_primitive3_d`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_csg_solid`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_c_shape_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_currency_relationship`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_curtain_wall`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_curtain_wall_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_curvature_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_curve`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_curve_bounded_plane`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_curve_bounded_surface`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_curve_segment2_d`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_curve_style`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_curve_style_font`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_curve_style_font_and_scaling`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_curve_style_font_pattern`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_cylindrical_surface`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_damper`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_damper_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_date`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_date_time`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_day_in_month_number`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_day_in_week_number`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_derived_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_derived_unit`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_derived_unit_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_descriptive_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_dimensional_exponents`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_dimension_count`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_direction`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_discrete_accessory`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_discrete_accessory_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_distance_expression`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_distribution_chamber_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_distribution_chamber_element_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_distribution_circuit`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_distribution_control_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_distribution_control_element_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_distribution_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_distribution_element_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_distribution_flow_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_distribution_flow_element_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_distribution_port`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_distribution_system`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_document_information`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_document_information_relationship`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_document_reference`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_door`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_door_lining_properties`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_door_panel_properties`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_door_standard_case`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_door_style`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_door_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_dose_equivalent_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_draughting_pre_defined_colour`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_draughting_pre_defined_curve_font`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_duct_fitting`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_duct_fitting_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_duct_segment`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_duct_segment_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_duct_silencer`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_duct_silencer_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_duration`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_dynamic_viscosity_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_edge`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_edge_curve`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_edge_loop`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_appliance`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_appliance_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_capacitance_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_charge_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_conductance_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_current_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_distribution_board`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_distribution_board_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_flow_storage_device`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_flow_storage_device_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_generator`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_generator_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_motor`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_motor_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_resistance_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_time_control`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_time_control_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_voltage_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_elementary_surface`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_element_assembly`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_element_assembly_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_element_component`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_element_component_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_element_quantity`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_element_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_ellipse`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_ellipse_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_energy_conversion_device`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_energy_conversion_device_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_energy_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_engine`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_engine_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_evaporative_cooler`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_evaporative_cooler_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_evaporator`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_evaporator_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_event`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_event_time`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_event_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_extended_properties`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_external_information`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_externally_defined_hatch_style`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_externally_defined_surface_style`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_externally_defined_text_font`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_external_reference`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_external_reference_relationship`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_external_spatial_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_external_spatial_structure_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_extruded_area_solid`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_extruded_area_solid_tapered`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_face`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_face_based_surface_model`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_face_bound`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_face_outer_bound`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_face_surface`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_faceted_brep`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_faceted_brep_with_voids`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_failure_connection_condition`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_fan`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_fan_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_fastener`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_fastener_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_feature_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_feature_element_addition`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_feature_element_subtraction`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_fill_area_style`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_fill_area_style_hatching`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_fill_area_style_tiles`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_filter`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_filter_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_fire_suppression_terminal`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_fire_suppression_terminal_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_fixed_reference_swept_area_solid`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_controller`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_controller_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_fitting`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_fitting_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_instrument`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_instrument_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_meter`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_meter_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_moving_device`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_moving_device_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_segment`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_segment_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_storage_device`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_storage_device_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_terminal`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_terminal_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_treatment_device`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_flow_treatment_device_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_font_style`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_font_variant`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_font_weight`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_footing`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_footing_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_force_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_frequency_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_furnishing_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_furnishing_element_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_furniture`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_furniture_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_geographic_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_geographic_element_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_geometric_curve_set`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_geometric_representation_context`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_geometric_representation_item`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_geometric_representation_sub_context`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_geometric_set`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_globally_unique_id`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_grid`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_grid_axis`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_grid_placement`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_group`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_half_space_solid`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_heat_exchanger`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_heat_exchanger_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_heat_flux_density_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_heating_value_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_humidifier`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_humidifier_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_identifier`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_illuminance_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_image_texture`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_indexed_colour_map`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_indexed_poly_curve`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_indexed_polygonal_face`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_indexed_polygonal_face_with_voids`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_indexed_texture_map`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_indexed_triangle_texture_map`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_inductance_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_integer`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_integer_count_rate_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_interceptor`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_interceptor_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_intersection_curve`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_inventory`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_ion_concentration_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_irregular_time_series`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_irregular_time_series_value`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_i_shape_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_isothermal_moisture_capacity_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_junction_box`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_junction_box_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_kinematic_viscosity_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_label`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_labor_resource`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_labor_resource_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_lag_time`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_lamp`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_lamp_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_language_id`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_length_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_library_information`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_library_reference`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_light_distribution_data`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_light_fixture`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_light_fixture_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_light_intensity_distribution`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_light_source`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_light_source_ambient`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_light_source_directional`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_light_source_goniometric`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_light_source_positional`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_light_source_spot`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_line`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_linear_force_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_linear_moment_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_linear_placement`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_linear_positioning_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_linear_stiffness_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_linear_velocity_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_line_index`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_line_segment2_d`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_local_placement`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_logical`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_loop`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_l_shape_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_luminous_flux_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_luminous_intensity_distribution_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_luminous_intensity_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_magnetic_flux_density_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_magnetic_flux_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_manifold_solid_brep`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_map_conversion`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_mapped_item`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_mass_density_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_mass_flow_rate_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_mass_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_mass_per_length_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_classification_relationship`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_constituent`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_constituent_set`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_definition`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_definition_representation`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_layer`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_layer_set`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_layer_set_usage`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_layer_with_offsets`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_list`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_profile`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_profile_set`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_profile_set_usage`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_profile_set_usage_tapering`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_profile_with_offsets`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_properties`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_relationship`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_material_usage_definition`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_measure_with_unit`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_mechanical_fastener`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_mechanical_fastener_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_medical_device`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_medical_device_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_member`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_member_standard_case`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_member_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_metric`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_mirrored_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_modulus_of_elasticity_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_modulus_of_linear_subgrade_reaction_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_modulus_of_rotational_subgrade_reaction_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_modulus_of_subgrade_reaction_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_moisture_diffusivity_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_molecular_weight_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_moment_of_inertia_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_monetary_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_monetary_unit`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_month_in_year_number`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_motor_connection`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_motor_connection_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_named_unit`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_non_negative_length_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_normalised_ratio_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_numeric_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_object`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_object_definition`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_objective`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_object_placement`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_occupant`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_offset_curve`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_offset_curve2_d`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_offset_curve3_d`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_offset_curve_by_distances`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_opening_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_opening_standard_case`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_open_shell`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_organization`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_organization_relationship`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_orientation_expression`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_oriented_edge`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_outer_boundary_curve`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_outlet`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_outlet_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_owner_history`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_parameterized_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_parameter_value`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_path`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_pcurve`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_performance_history`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_permeable_covering_properties`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_permit`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_person`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_person_and_organization`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_p_h_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_physical_complex_quantity`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_physical_quantity`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_physical_simple_quantity`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_pile`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_pile_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_pipe_fitting`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_pipe_fitting_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_pipe_segment`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_pipe_segment_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_pixel_texture`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_placement`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_planar_box`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_planar_extent`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_planar_force_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_plane`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_plane_angle_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_plate`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_plate_standard_case`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_plate_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_point`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_point_on_curve`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_point_on_surface`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_polygonal_bounded_half_space`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_polygonal_face_set`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_polyline`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_poly_loop`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_port`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_positioning_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_positive_integer`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_positive_length_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_positive_plane_angle_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_positive_ratio_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_postal_address`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_power_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_pre_defined_colour`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_pre_defined_curve_font`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_pre_defined_item`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_pre_defined_properties`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_pre_defined_property_set`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_pre_defined_text_font`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_presentable_text`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_presentation_item`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_presentation_layer_assignment`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_presentation_layer_with_style`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_presentation_style`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_presentation_style_assignment`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_pressure_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_procedure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_procedure_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_process`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_product`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_product_definition_shape`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_product_representation`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_profile_properties`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_project`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_projected_c_r_s`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_projection_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_project_library`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_project_order`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_property`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_property_abstraction`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_property_bounded_value`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_property_definition`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_property_dependency_relationship`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_property_enumerated_value`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_property_enumeration`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_property_list_value`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_property_reference_value`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_property_set`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_property_set_definition`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_property_set_definition_set`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_property_set_template`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_property_single_value`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_property_table_value`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_property_template`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_property_template_definition`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_protective_device`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_protective_device_tripping_unit`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_protective_device_tripping_unit_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_protective_device_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_proxy`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_pump`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_pump_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_quantity_area`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_quantity_count`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_quantity_length`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_quantity_set`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_quantity_time`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_quantity_volume`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_quantity_weight`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_radio_activity_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_railing`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_railing_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_ramp`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_ramp_flight`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_ramp_flight_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_ramp_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_ratio_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rational_b_spline_curve_with_knots`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rational_b_spline_surface_with_knots`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_real`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rectangle_hollow_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rectangle_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rectangular_pyramid`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rectangular_trimmed_surface`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_recurrence_pattern`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_reference`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_referent`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_regular_time_series`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_reinforcement_bar_properties`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_reinforcement_definition_properties`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_reinforcing_bar`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_reinforcing_bar_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_reinforcing_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_reinforcing_element_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_reinforcing_mesh`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_reinforcing_mesh_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_aggregates`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_assigns`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_assigns_to_actor`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_assigns_to_control`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_assigns_to_group`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_assigns_to_group_by_factor`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_assigns_to_process`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_assigns_to_product`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_assigns_to_resource`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_associates`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_associates_approval`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_associates_classification`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_associates_constraint`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_associates_document`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_associates_library`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_associates_material`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_relationship`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_connects`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_connects_elements`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_connects_path_elements`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_connects_ports`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_connects_port_to_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_connects_structural_activity`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_connects_structural_member`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_connects_with_eccentricity`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_connects_with_realizing_elements`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_contained_in_spatial_structure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_covers_bldg_elements`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_covers_spaces`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_declares`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_decomposes`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_defines`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_defines_by_object`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_defines_by_properties`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_defines_by_template`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_defines_by_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_fills_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_flow_control_elements`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_interferes_elements`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_nests`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_projects_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_referenced_in_spatial_structure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_sequence`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_services_buildings`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_space_boundary`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_space_boundary1st_level`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_space_boundary2nd_level`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_voids_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_reparametrised_composite_curve_segment`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_representation`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_representation_context`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_representation_item`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_representation_map`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_resource`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_resource_approval_relationship`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_resource_constraint_relationship`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_resource_level_relationship`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_resource_time`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_revolved_area_solid`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_revolved_area_solid_tapered`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_right_circular_cone`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_right_circular_cylinder`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_roof`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_roof_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_root`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rotational_frequency_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rotational_mass_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rotational_stiffness_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_rounded_rectangle_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_sanitary_terminal`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_sanitary_terminal_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_scheduling_time`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_seam_curve`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_sectional_area_integral_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_sectioned_solid`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_sectioned_solid_horizontal`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_sectioned_spine`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_section_modulus_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_section_properties`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_section_reinforcement_properties`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_sensor`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_sensor_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_shading_device`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_shading_device_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_shape_aspect`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_shape_model`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_shape_representation`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_shear_modulus_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_shell_based_surface_model`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_simple_property`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_simple_property_template`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_site`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_s_i_unit`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_slab`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_slab_elemented_case`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_slab_standard_case`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_slab_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_slippage_connection_condition`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_solar_device`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_solar_device_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_solid_angle_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_solid_model`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_sound_power_level_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_sound_power_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_sound_pressure_level_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_sound_pressure_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_space`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_space_heater`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_space_heater_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_space_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_spatial_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_spatial_element_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_spatial_structure_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_spatial_structure_element_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_spatial_zone`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_spatial_zone_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_specific_heat_capacity_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_specular_exponent`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_specular_roughness`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_sphere`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_spherical_surface`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_stack_terminal`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_stack_terminal_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_stair`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_stair_flight`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_stair_flight_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_stair_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_action`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_activity`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_analysis_model`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_connection`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_connection_condition`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_curve_action`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_curve_connection`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_curve_member`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_curve_member_varying`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_curve_reaction`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_item`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_linear_action`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_load`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_load_case`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_load_configuration`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_load_group`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_load_linear_force`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_load_or_result`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_load_planar_force`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_load_single_displacement`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_load_single_displacement_distortion`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_load_single_force`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_load_single_force_warping`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_load_static`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_load_temperature`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_member`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_planar_action`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_point_action`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_point_connection`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_point_reaction`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_reaction`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_result_group`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_surface_action`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_surface_connection`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_surface_member`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_surface_member_varying`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_structural_surface_reaction`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_styled_item`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_styled_representation`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_style_model`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_sub_contract_resource`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_sub_contract_resource_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_subedge`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_surface`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_surface_curve`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_surface_curve_swept_area_solid`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_surface_feature`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_surface_of_linear_extrusion`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_surface_of_revolution`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_surface_reinforcement_area`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_surface_style`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_surface_style_lighting`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_surface_style_refraction`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_surface_style_rendering`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_surface_style_shading`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_surface_style_with_textures`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_surface_texture`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_swept_area_solid`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_swept_disk_solid`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_swept_disk_solid_polygonal`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_swept_surface`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_switching_device`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_switching_device_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_system`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_system_furniture_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_system_furniture_element_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_table`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_table_column`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_table_row`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_tank`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_tank_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_task`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_task_time`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_task_time_recurring`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_task_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_telecom_address`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_temperature_gradient_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_temperature_rate_of_change_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_tendon`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_tendon_anchor`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_tendon_anchor_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_tendon_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_tessellated_face_set`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_tessellated_item`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_text`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_text_alignment`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_text_decoration`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_text_font_name`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_text_literal`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_text_literal_with_extent`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_text_style`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_text_style_font_model`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_text_style_for_defined_font`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_text_style_text_model`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_text_transformation`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_texture_coordinate`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_texture_coordinate_generator`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_texture_map`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_texture_vertex`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_texture_vertex_list`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_thermal_admittance_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_thermal_conductivity_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_thermal_expansion_coefficient_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_thermal_resistance_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_thermal_transmittance_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_thermodynamic_temperature_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_time`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_time_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_time_period`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_time_series`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_time_series_value`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_time_stamp`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_topological_representation_item`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_topology_representation`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_toroidal_surface`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_torque_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_transformer`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_transformer_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_transition_curve_segment2_d`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_transport_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_transport_element_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_trapezium_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_triangulated_face_set`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_triangulated_irregular_network`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_trimmed_curve`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_t_shape_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_tube_bundle`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_tube_bundle_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_type_object`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_type_process`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_type_product`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_type_resource`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_unitary_control_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_unitary_control_element_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_unitary_equipment`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_unitary_equipment_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_unit_assignment`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_u_r_i_reference`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_u_shape_profile_def`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_valve`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_valve_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_vapor_permeability_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_vector`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_vertex`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_vertex_loop`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_vertex_point`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_vibration_isolator`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_vibration_isolator_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_virtual_element`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_virtual_grid_intersection`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_voiding_feature`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_volume_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_volumetric_flow_rate_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_wall`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_wall_elemented_case`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_wall_standard_case`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_wall_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_warping_constant_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_warping_moment_measure`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_waste_terminal`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_waste_terminal_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_window`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_window_lining_properties`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_window_panel_properties`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_window_standard_case`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_window_style`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_window_type`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_work_calendar`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_work_control`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_work_plan`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_work_schedule`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_work_time`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_zone`
+
+- :ref:`exhale_class_class_ifc4x1_1_1_ifc_z_shape_profile_def`
+

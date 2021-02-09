@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ac2e829f5629d6304e6d7e23054e06879:
+
+Define SCHEMA_IfcSpatialElement_HAS_ReferencesElements
+======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSpatialElement_HAS_ReferencesElements

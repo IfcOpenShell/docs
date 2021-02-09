@@ -1,0 +1,13 @@
+.. _exhale_function__argument_type_8h_1a2d87de927e3891afa8f41ffab42b05d4:
+
+Function IfcUtil::from_parameter_type
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_ArgumentType.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcUtil::from_parameter_type(const IfcParse::parameter_type *)

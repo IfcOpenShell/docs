@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ad2ecf20db66ac1baeaccbab807639d1a:
+
+Define SCHEMA_HAS_IfcHalfSpaceSolid
+===================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcHalfSpaceSolid

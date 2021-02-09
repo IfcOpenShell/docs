@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a0abf1d79b46598e5cdae4f5e0cdc3713:
+
+Define SCHEMA_IfcMechanicalSteelMaterialProperties_HAS_HardeningModule
+======================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMechanicalSteelMaterialProperties_HAS_HardeningModule

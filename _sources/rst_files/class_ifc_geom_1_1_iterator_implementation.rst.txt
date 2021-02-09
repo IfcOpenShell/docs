@@ -1,0 +1,16 @@
+.. _exhale_class_class_ifc_geom_1_1_iterator_implementation:
+
+Template Class IteratorImplementation
+=====================================
+
+- Defined in :ref:`file_src_ifcgeom_schema_agnostic_IteratorImplementation.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcGeom::IteratorImplementation
+   :members:
+   :protected-members:
+   :undoc-members:

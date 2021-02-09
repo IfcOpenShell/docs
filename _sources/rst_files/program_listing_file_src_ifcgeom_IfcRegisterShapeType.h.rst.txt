@@ -1,0 +1,26 @@
+
+.. _program_listing_file_src_ifcgeom_IfcRegisterShapeType.h:
+
+Program Listing for File IfcRegisterShapeType.h
+===============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_ifcgeom_IfcRegisterShapeType.h>` (``src/ifcgeom/IfcRegisterShapeType.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #include "IfcRegisterUndef.h"
+   #define SHAPES(T) \
+       if ( l->declaration().is(IfcSchema::T::Class()) ) return ST_SHAPELIST;
+   #define SHAPE(T) \
+       if ( l->declaration().is(IfcSchema::T::Class()) ) return ST_SHAPE;
+   #define WIRE(T) \
+       if ( l->declaration().is(IfcSchema::T::Class()) ) return ST_WIRE;
+   #define FACE(T) \
+       if ( l->declaration().is(IfcSchema::T::Class()) ) return ST_FACE;
+   #define CURVE(T) \
+       if ( l->declaration().is(IfcSchema::T::Class()) ) return ST_CURVE;
+   #include "IfcRegisterDef.h"
+   
+   #include "IfcRegister.h"

@@ -1,0 +1,22 @@
+.. _exhale_class_class_ifc_write_1_1_ifc_write_argument_1_1empty__aggregate__of__aggregate__t:
+
+Class IfcWriteArgument::empty_aggregate_of_aggregate_t
+======================================================
+
+- Defined in :ref:`file_src_ifcparse_IfcWrite.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_class_class_ifc_write_1_1_ifc_write_argument`.
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcWrite::IfcWriteArgument::empty_aggregate_of_aggregate_t
+   :members:
+   :protected-members:
+   :undoc-members:

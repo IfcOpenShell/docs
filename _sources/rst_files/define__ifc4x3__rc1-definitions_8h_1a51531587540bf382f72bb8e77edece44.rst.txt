@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a51531587540bf382f72bb8e77edece44:
+
+Define SCHEMA_IfcCurveStyleFontAndScaling_HAS_CurveFont
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcCurveStyleFontAndScaling_HAS_CurveFont

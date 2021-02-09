@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1afff3237cb020eae7200ebf11122b103c:
+
+Define SCHEMA_IfcDocumentInformation_HAS_DocumentOwner
+======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDocumentInformation_HAS_DocumentOwner

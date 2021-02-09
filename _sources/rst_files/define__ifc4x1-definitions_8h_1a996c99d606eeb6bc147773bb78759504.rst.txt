@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1a996c99d606eeb6bc147773bb78759504:
+
+Define SCHEMA_IfcTransitionCurveSegment2D_HAS_IsEndRadiusCCW
+============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTransitionCurveSegment2D_HAS_IsEndRadiusCCW

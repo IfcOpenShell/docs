@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1ab4e9d47cfd65d8d1c781ac5181bca4ee:
+
+Define SCHEMA_IfcEventType_HAS_UserDefinedEventTriggerType
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcEventType_HAS_UserDefinedEventTriggerType

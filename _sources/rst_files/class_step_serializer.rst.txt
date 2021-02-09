@@ -1,0 +1,25 @@
+.. _exhale_class_class_step_serializer:
+
+Class StepSerializer
+====================
+
+- Defined in :ref:`file_src_serializers_StepSerializer.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public OpenCascadeBasedSerializer`` (:ref:`exhale_class_class_open_cascade_based_serializer`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: StepSerializer
+   :members:
+   :protected-members:
+   :undoc-members:

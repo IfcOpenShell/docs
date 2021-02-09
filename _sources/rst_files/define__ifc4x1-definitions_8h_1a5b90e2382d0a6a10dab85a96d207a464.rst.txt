@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1a5b90e2382d0a6a10dab85a96d207a464:
+
+Define SCHEMA_IfcLightIntensityDistribution_HAS_LightDistributionCurve
+======================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcLightIntensityDistribution_HAS_LightDistributionCurve

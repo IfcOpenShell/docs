@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a1d39ca5f1ba124f1158a18febcf9b871:
+
+Define SCHEMA_IfcFluidFlowProperties_FlowrateSingleValue_IS_OPTIONAL
+====================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcFluidFlowProperties_FlowrateSingleValue_IS_OPTIONAL

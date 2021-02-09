@@ -1,0 +1,25 @@
+.. _exhale_class_class_xml_serializer:
+
+Class XmlSerializer
+===================
+
+- Defined in :ref:`file_src_serializers_XmlSerializer.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Serializer`` (:ref:`exhale_class_class_serializer`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: XmlSerializer
+   :members:
+   :protected-members:
+   :undoc-members:

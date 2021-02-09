@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1abd11bcf4209ddfec3afccd987a0808d2:
+
+Define SCHEMA_IfcBoundaryEdgeCondition_HAS_TranslationalStiffnessByLengthZ
+==========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBoundaryEdgeCondition_HAS_TranslationalStiffnessByLengthZ

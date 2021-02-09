@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcMaterialConstituentSet &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcMaterialDefinition" href="class_ifc4x2_1_1_ifc_material_definition.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcMaterialConstituent" href="class_ifc4x2_1_1_ifc_material_constituent.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcmaterialconstituentset">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-material-constituent-set"></span><h1>Class Ifc4x2::IfcMaterialConstituentSet<a class="headerlink" href="#class-ifc4x2-ifcmaterialconstituentset" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcMaterialDefinition</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_material_definition.html#exhale-class-class-ifc4x2-1-1-ifc-material-definition"><span class="std std-ref">Class Ifc4x2::IfcMaterialDefinition</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x225IfcMaterialConstituentSetE">
+<span id="_CPPv3N6Ifc4x225IfcMaterialConstituentSetE"></span><span id="_CPPv2N6Ifc4x225IfcMaterialConstituentSetE"></span><span id="Ifc4x2::IfcMaterialConstituentSet"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_constituent_set"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcMaterialConstituentSet</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_material_definition.html#_CPPv4N6Ifc4x221IfcMaterialDefinitionE" title="Ifc4x2::IfcMaterialDefinition">IfcMaterialDefinition</a><a class="headerlink" href="#_CPPv4N6Ifc4x225IfcMaterialConstituentSetE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_constituent_set"><span class="std std-ref">IfcMaterialConstituentSet</span></a> is a collection of individual material constituents, each assigning a material to a part of an element. The parts are only identified by a keyword (as opposed to an <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set"><span class="std std-ref">IfcMaterialLayerSet</span></a> or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile_set"><span class="std std-ref">IfcMaterialProfileSet</span></a> where each part has an individual shape parameter (layer thickness or layer profile).</p>
+<p>EXAMPLE The different materials of a window construction shall be provided for the window lining and the window glazing. An <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_constituent_set"><span class="std std-ref">IfcMaterialConstituentSet</span></a> is assigned to the window with two <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_constituent"><span class="std std-ref">IfcMaterialConstituent</span></a>’s, one with the Name = ‘Lining’, one with the Name = ‘Glazing’. NOTE See the “Material Use Definition” at the individual element to which an <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_constituent_set"><span class="std std-ref">IfcMaterialConstituentSet</span></a> may apply for a required or recommended definition of such keywords.</p>
+<p>HISTORYNew Entity in IFC2x4. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x225IfcMaterialConstituentSet4listE">
+<span id="_CPPv3N6Ifc4x225IfcMaterialConstituentSet4listE"></span><span id="_CPPv2N6Ifc4x225IfcMaterialConstituentSet4listE"></span><span id="Ifc4x2::IfcMaterialConstituentSet::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_constituent_set_1a415e56364ba0164b7bccbb5c7c40154b"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x225IfcMaterialConstituentSetE" title="Ifc4x2::IfcMaterialConstituentSet">IfcMaterialConstituentSet</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x225IfcMaterialConstituentSet4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x225IfcMaterialConstituentSet7hasNameEv">
+<span id="_CPPv3NK6Ifc4x225IfcMaterialConstituentSet7hasNameEv"></span><span id="_CPPv2NK6Ifc4x225IfcMaterialConstituentSet7hasNameEv"></span><span id="Ifc4x2::IfcMaterialConstituentSet::hasNameC"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_constituent_set_1a543353f0839d7d0284139a33d9f39d6e"></span>bool <code class="sig-name descname">hasName</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x225IfcMaterialConstituentSet7hasNameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Name is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_constituent_set"><span class="std std-ref">IfcMaterialConstituentSet</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x225IfcMaterialConstituentSet4NameEv">
+<span id="_CPPv3NK6Ifc4x225IfcMaterialConstituentSet4NameEv"></span><span id="_CPPv2NK6Ifc4x225IfcMaterialConstituentSet4NameEv"></span><span id="Ifc4x2::IfcMaterialConstituentSet::NameC"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_constituent_set_1a0ea5f13b757612c6bf28acd4314a1f29"></span>std::string <code class="sig-name descname">Name</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x225IfcMaterialConstituentSet4NameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The name by which the constituent set is known. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x225IfcMaterialConstituentSet7setNameENSt6stringE">
+<span id="_CPPv3N6Ifc4x225IfcMaterialConstituentSet7setNameENSt6stringE"></span><span id="_CPPv2N6Ifc4x225IfcMaterialConstituentSet7setNameENSt6stringE"></span><span id="Ifc4x2::IfcMaterialConstituentSet::setName__ss"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_constituent_set_1a0c4b672a92b45edfc00769372f06897e"></span>void <code class="sig-name descname">setName</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x225IfcMaterialConstituentSet7setNameENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x225IfcMaterialConstituentSet14hasDescriptionEv">
+<span id="_CPPv3NK6Ifc4x225IfcMaterialConstituentSet14hasDescriptionEv"></span><span id="_CPPv2NK6Ifc4x225IfcMaterialConstituentSet14hasDescriptionEv"></span><span id="Ifc4x2::IfcMaterialConstituentSet::hasDescriptionC"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_constituent_set_1aa74d5145fda34ff7272d0504ae576d5e"></span>bool <code class="sig-name descname">hasDescription</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x225IfcMaterialConstituentSet14hasDescriptionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Description is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_constituent_set"><span class="std std-ref">IfcMaterialConstituentSet</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x225IfcMaterialConstituentSet11DescriptionEv">
+<span id="_CPPv3NK6Ifc4x225IfcMaterialConstituentSet11DescriptionEv"></span><span id="_CPPv2NK6Ifc4x225IfcMaterialConstituentSet11DescriptionEv"></span><span id="Ifc4x2::IfcMaterialConstituentSet::DescriptionC"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_constituent_set_1a68a18c157f7ed1187dc251ad4047e653"></span>std::string <code class="sig-name descname">Description</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x225IfcMaterialConstituentSet11DescriptionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition of the material constituent set in descriptive terms. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x225IfcMaterialConstituentSet14setDescriptionENSt6stringE">
+<span id="_CPPv3N6Ifc4x225IfcMaterialConstituentSet14setDescriptionENSt6stringE"></span><span id="_CPPv2N6Ifc4x225IfcMaterialConstituentSet14setDescriptionENSt6stringE"></span><span id="Ifc4x2::IfcMaterialConstituentSet::setDescription__ss"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_constituent_set_1ade1d3ae5fb0183be27f53f536cd48ad9"></span>void <code class="sig-name descname">setDescription</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x225IfcMaterialConstituentSet14setDescriptionENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x225IfcMaterialConstituentSet23hasMaterialConstituentsEv">
+<span id="_CPPv3NK6Ifc4x225IfcMaterialConstituentSet23hasMaterialConstituentsEv"></span><span id="_CPPv2NK6Ifc4x225IfcMaterialConstituentSet23hasMaterialConstituentsEv"></span><span id="Ifc4x2::IfcMaterialConstituentSet::hasMaterialConstituentsC"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_constituent_set_1a13e14a65b24f723e9ef58284e018d877"></span>bool <code class="sig-name descname">hasMaterialConstituents</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x225IfcMaterialConstituentSet23hasMaterialConstituentsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute MaterialConstituents is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_constituent_set"><span class="std std-ref">IfcMaterialConstituentSet</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x225IfcMaterialConstituentSet20MaterialConstituentsEv">
+<span id="_CPPv3NK6Ifc4x225IfcMaterialConstituentSet20MaterialConstituentsEv"></span><span id="_CPPv2NK6Ifc4x225IfcMaterialConstituentSet20MaterialConstituentsEv"></span><span id="Ifc4x2::IfcMaterialConstituentSet::MaterialConstituentsC"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_constituent_set_1ae3acd86a50874d4731875699bf6be5bf"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_material_constituent.html#_CPPv4N6Ifc4x222IfcMaterialConstituentE" title="Ifc4x2::IfcMaterialConstituent">IfcMaterialConstituent</a>&gt;::ptr <code class="sig-name descname">MaterialConstituents</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x225IfcMaterialConstituentSet20MaterialConstituentsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Identification of the constituents from which the material constituent set is composed. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x225IfcMaterialConstituentSet23setMaterialConstituentsEN22IfcTemplatedEntityListIN6Ifc4x222IfcMaterialConstituentEE3ptrE">
+<span id="_CPPv3N6Ifc4x225IfcMaterialConstituentSet23setMaterialConstituentsEN22IfcTemplatedEntityListIN6Ifc4x222IfcMaterialConstituentEE3ptrE"></span><span id="_CPPv2N6Ifc4x225IfcMaterialConstituentSet23setMaterialConstituentsEN22IfcTemplatedEntityListIN6Ifc4x222IfcMaterialConstituentEE3ptrE"></span><span id="Ifc4x2::IfcMaterialConstituentSet::setMaterialConstituents__IfcTemplatedEntityList:Ifc4x2::IfcMaterialConstituent:::ptr"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_constituent_set_1a646172161dfdf14e03115f85544b1d08"></span>void <code class="sig-name descname">setMaterialConstituents</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_material_constituent.html#_CPPv4N6Ifc4x222IfcMaterialConstituentE" title="Ifc4x2::IfcMaterialConstituent">IfcMaterialConstituent</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x225IfcMaterialConstituentSet23setMaterialConstituentsEN22IfcTemplatedEntityListIN6Ifc4x222IfcMaterialConstituentEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x225IfcMaterialConstituentSet11declarationEv">
+<span id="_CPPv3NK6Ifc4x225IfcMaterialConstituentSet11declarationEv"></span><span id="_CPPv2NK6Ifc4x225IfcMaterialConstituentSet11declarationEv"></span><span id="Ifc4x2::IfcMaterialConstituentSet::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_constituent_set_1a36d8ee4ac51080cffd9b34edd991f171"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x225IfcMaterialConstituentSet11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x225IfcMaterialConstituentSet25IfcMaterialConstituentSetEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x225IfcMaterialConstituentSet25IfcMaterialConstituentSetEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x225IfcMaterialConstituentSet25IfcMaterialConstituentSetEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcMaterialConstituentSet::IfcMaterialConstituentSet__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_constituent_set_1acddce59c36d8f554d355dc4c97580b26"></span><code class="sig-name descname">IfcMaterialConstituentSet</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x225IfcMaterialConstituentSet25IfcMaterialConstituentSetEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x225IfcMaterialConstituentSet25IfcMaterialConstituentSetEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x222IfcMaterialConstituentEE3ptrEEE">
+<span id="_CPPv3N6Ifc4x225IfcMaterialConstituentSet25IfcMaterialConstituentSetEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x222IfcMaterialConstituentEE3ptrEEE"></span><span id="_CPPv2N6Ifc4x225IfcMaterialConstituentSet25IfcMaterialConstituentSetEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x222IfcMaterialConstituentEE3ptrEEE"></span><span id="Ifc4x2::IfcMaterialConstituentSet::IfcMaterialConstituentSet__boost::optional:ss:.boost::optional:ss:.boost::optional:IfcTemplatedEntityList:Ifc4x2::IfcMaterialConstituent:::ptr:"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_constituent_set_1ac6fb57deb1245439e4a51ee6a735892e"></span><code class="sig-name descname">IfcMaterialConstituentSet</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Name</em>, boost::optional&lt;std::string&gt; <em>v2_Description</em>, boost::optional&lt;<a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_material_constituent.html#_CPPv4N6Ifc4x222IfcMaterialConstituentE" title="Ifc4x2::IfcMaterialConstituent">IfcMaterialConstituent</a>&gt;::ptr&gt; <em>v3_MaterialConstituents</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x225IfcMaterialConstituentSet25IfcMaterialConstituentSetEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x222IfcMaterialConstituentEE3ptrEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x225IfcMaterialConstituentSet5ClassEv">
+<span id="_CPPv3N6Ifc4x225IfcMaterialConstituentSet5ClassEv"></span><span id="_CPPv2N6Ifc4x225IfcMaterialConstituentSet5ClassEv"></span><span id="Ifc4x2::IfcMaterialConstituentSet::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_constituent_set_1aea9fbf1478bbc6b4d20f04a21156c5df"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x225IfcMaterialConstituentSet5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_material_constituent.html" title="previous chapter">Class Ifc4x2::IfcMaterialConstituent</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_material_definition.html" title="next chapter">Class Ifc4x2::IfcMaterialDefinition</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_material_constituent_set.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

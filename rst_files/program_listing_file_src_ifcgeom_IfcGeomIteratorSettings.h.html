@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Listing for File IfcGeomIteratorSettings.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="program-listing-for-file-ifcgeomiteratorsettings-h">
+<span id="program-listing-file-src-ifcgeom-ifcgeomiteratorsettings-h"></span><h1>Program Listing for File IfcGeomIteratorSettings.h<a class="headerlink" href="#program-listing-for-file-ifcgeomiteratorsettings-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_ifcgeom_IfcGeomIteratorSettings.h.html#file-src-ifcgeom-ifcgeomiteratorsettings-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom/IfcGeomIteratorSettings.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/********************************************************************************</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * This file is part of IfcOpenShell.                                           *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcOpenShell is free software: you can redistribute it and/or modify         *</span>
+<span class="cm"> * it under the terms of the Lesser GNU General Public License as published by  *</span>
+<span class="cm"> * the Free Software Foundation, either version 3.0 of the License, or          *</span>
+<span class="cm"> * (at your option) any later version.                                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcOpenShell is distributed in the hope that it will be useful,              *</span>
+<span class="cm"> * but WITHOUT ANY WARRANTY; without even the implied warranty of               *</span>
+<span class="cm"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 *</span>
+<span class="cm"> * Lesser GNU General Public License for more details.                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * You should have received a copy of the Lesser GNU General Public License     *</span>
+<span class="cm"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.         *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> ********************************************************************************/</span>
+
+<span class="cp">#ifndef IFCGEOMITERATORSETTINGS_H</span>
+<span class="cp">#define IFCGEOMITERATORSETTINGS_H</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;array&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;ifc_geom_api.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcException.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcBaseClass.h&quot;</span><span class="cp"></span>
+
+<span class="k">namespace</span> <span class="n">IfcGeom</span>
+<span class="p">{</span>
+    <span class="k">class</span> <span class="nc">IFC_GEOM_API</span> <span class="n">IteratorSettings</span>
+    <span class="p">{</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="k">enum</span> <span class="nc">Setting</span>
+        <span class="p">{</span>
+            <span class="n">WELD_VERTICES</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="n">USE_WORLD_COORDS</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="n">CONVERT_BACK_UNITS</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="n">USE_BREP_DATA</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">3</span><span class="p">,</span>
+            <span class="n">SEW_SHELLS</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">4</span><span class="p">,</span>
+            <span class="n">FASTER_BOOLEANS</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">5</span><span class="p">,</span>
+            <span class="n">DISABLE_OPENING_SUBTRACTIONS</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">6</span><span class="p">,</span>
+            <span class="n">DISABLE_TRIANGULATION</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">7</span><span class="p">,</span>
+            <span class="n">APPLY_DEFAULT_MATERIALS</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span><span class="p">,</span>
+            <span class="n">INCLUDE_CURVES</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">9</span><span class="p">,</span>
+            <span class="n">EXCLUDE_SOLIDS_AND_SURFACES</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">10</span><span class="p">,</span>
+            <span class="n">NO_NORMALS</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">11</span><span class="p">,</span>
+            <span class="n">GENERATE_UVS</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">12</span><span class="p">,</span>
+            <span class="n">APPLY_LAYERSETS</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">13</span><span class="p">,</span>
+            <span class="n">SEARCH_FLOOR</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">14</span><span class="p">,</span>
+            <span class="n">SITE_LOCAL_PLACEMENT</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">15</span><span class="p">,</span>
+            <span class="n">BUILDING_LOCAL_PLACEMENT</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">16</span><span class="p">,</span>
+            <span class="n">VALIDATE_QUANTITIES</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">17</span><span class="p">,</span>
+            <span class="n">LAYERSET_FIRST</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">18</span><span class="p">,</span>
+            <span class="n">EDGE_ARROWS</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">19</span><span class="p">,</span>
+            <span class="n">DISABLE_BOOLEAN_RESULT</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">20</span><span class="p">,</span>
+            <span class="n">NUM_SETTINGS</span> <span class="o">=</span> <span class="mi">20</span>
+        <span class="p">};</span>
+        <span class="k">typedef</span> <span class="kt">unsigned</span> <span class="n">SettingField</span><span class="p">;</span>
+
+        <span class="n">IteratorSettings</span><span class="p">()</span>
+            <span class="o">:</span> <span class="n">settings_</span><span class="p">(</span><span class="n">WELD_VERTICES</span><span class="p">)</span> <span class="c1">// OR options that default to true here</span>
+            <span class="p">,</span> <span class="n">deflection_tolerance_</span><span class="p">(</span><span class="mf">1.</span><span class="n">e</span><span class="mi">-3</span><span class="p">)</span>
+            <span class="p">,</span> <span class="n">angular_tolerance_</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+        <span class="p">{</span>
+        <span class="p">}</span>
+
+        <span class="kt">double</span> <span class="n">deflection_tolerance</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">deflection_tolerance_</span><span class="p">;</span> <span class="p">}</span>
+        <span class="kt">double</span> <span class="n">angular_tolerance</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">angular_tolerance_</span><span class="p">;</span> <span class="p">}</span>
+        <span class="kt">double</span> <span class="n">force_space_transparency</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">force_space_transparency_</span><span class="p">;</span> <span class="p">}</span>
+
+        <span class="kt">void</span> <span class="n">set_deflection_tolerance</span><span class="p">(</span><span class="kt">double</span> <span class="n">value</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">deflection_tolerance_</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">deflection_tolerance_</span> <span class="o">&lt;=</span> <span class="mf">1e-6</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">Logger</span><span class="o">::</span><span class="n">Message</span><span class="p">(</span><span class="n">Logger</span><span class="o">::</span><span class="n">LOG_WARNING</span><span class="p">,</span> <span class="s">&quot;Deflection tolerance cannot be set to &lt;= 1e-6; using the default value 1e-3&quot;</span><span class="p">);</span>
+                <span class="n">deflection_tolerance_</span> <span class="o">=</span> <span class="mf">1e-3</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="kt">void</span> <span class="n">set_angular_tolerance</span><span class="p">(</span><span class="kt">double</span> <span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">angular_tolerance_</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kt">void</span> <span class="n">force_space_transparency</span><span class="p">(</span><span class="kt">double</span> <span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">force_space_transparency_</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kt">bool</span> <span class="n">get</span><span class="p">(</span><span class="n">SettingField</span> <span class="n">setting</span><span class="p">)</span> <span class="k">const</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">settings_</span> <span class="o">&amp;</span> <span class="n">setting</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kt">void</span> <span class="n">set</span><span class="p">(</span><span class="n">SettingField</span> <span class="n">setting</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">value</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">settings_</span> <span class="o">|=</span> <span class="n">setting</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="n">settings_</span> <span class="o">&amp;=</span> <span class="o">~</span><span class="n">setting</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="mi">3</span><span class="o">&gt;</span> <span class="n">offset</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="mi">3</span><span class="o">&gt;</span><span class="p">{</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">};</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="mi">4</span><span class="o">&gt;</span> <span class="n">rotation</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="mi">4</span><span class="o">&gt;</span><span class="p">{</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">};</span>
+
+    <span class="k">protected</span><span class="o">:</span>
+        <span class="n">SettingField</span> <span class="n">settings_</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">deflection_tolerance_</span><span class="p">,</span> <span class="n">angular_tolerance_</span><span class="p">,</span> <span class="n">force_space_transparency_</span><span class="p">;</span>
+    <span class="p">};</span>
+
+    <span class="k">class</span> <span class="nc">IFC_GEOM_API</span> <span class="nl">ElementSettings</span> <span class="p">:</span> <span class="k">public</span> <span class="n">IteratorSettings</span>
+    <span class="p">{</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="n">ElementSettings</span><span class="p">(</span><span class="k">const</span> <span class="n">IteratorSettings</span><span class="o">&amp;</span> <span class="n">settings</span><span class="p">,</span>
+            <span class="kt">double</span> <span class="n">unit_magnitude</span><span class="p">,</span>
+            <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">element_type</span><span class="p">)</span>
+            <span class="o">:</span> <span class="n">IteratorSettings</span><span class="p">(</span><span class="n">settings</span><span class="p">)</span>
+            <span class="p">,</span> <span class="n">unit_magnitude_</span><span class="p">(</span><span class="n">unit_magnitude</span><span class="p">)</span>
+            <span class="p">,</span> <span class="n">element_type_</span><span class="p">(</span><span class="n">element_type</span><span class="p">)</span>
+        <span class="p">{</span>
+        <span class="p">}</span>
+
+        <span class="kt">double</span> <span class="n">unit_magnitude</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">unit_magnitude_</span><span class="p">;</span> <span class="p">}</span>
+        <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">element_type</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">element_type_</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="k">private</span><span class="o">:</span>
+        <span class="kt">double</span> <span class="n">unit_magnitude_</span><span class="p">;</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">element_type_</span><span class="p">;</span>
+    <span class="p">};</span>
+<span class="p">}</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/program_listing_file_src_ifcgeom_IfcGeomIteratorSettings.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

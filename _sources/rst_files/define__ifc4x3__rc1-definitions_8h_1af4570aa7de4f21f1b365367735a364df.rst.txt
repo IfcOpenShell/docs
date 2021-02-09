@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1af4570aa7de4f21f1b365367735a364df:
+
+Define SCHEMA_IfcFacetedBrepWithVoids_HAS_Voids
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcFacetedBrepWithVoids_HAS_Voids

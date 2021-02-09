@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcApproval &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcApprovalRelationship" href="class_ifc4x1_1_1_ifc_approval_relationship.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcAppliedValue" href="class_ifc4x1_1_1_ifc_applied_value.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcapproval">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-approval"></span><h1>Class Ifc4x1::IfcApproval<a class="headerlink" href="#class-ifc4x1-ifcapproval" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">IfcUtil::IfcBaseEntity</span></code> (<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#exhale-class-class-ifc-util-1-1-ifc-base-entity"><span class="std std-ref">Class IfcBaseEntity</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x111IfcApprovalE">
+<span id="_CPPv3N6Ifc4x111IfcApprovalE"></span><span id="_CPPv2N6Ifc4x111IfcApprovalE"></span><span id="Ifc4x1::IfcApproval"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcApproval</code> : <em class="property">public</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a><a class="headerlink" href="#_CPPv4N6Ifc4x111IfcApprovalE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition: An <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_approval"><span class="std std-ref">IfcApproval</span></a> represents information about approval processes such as for a plan, a design, a proposal, or a change order in a construction or facilities management project. <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_approval"><span class="std std-ref">IfcApproval</span></a> is referenced by <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_associates_approval"><span class="std std-ref">IfcRelAssociatesApproval</span></a> in IfcControlExtension schema, and thereby can be related to all subtypes of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_root"><span class="std std-ref">IfcRoot</span></a>. An approval may also be given to resource objects using <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_resource_approval_relationship"><span class="std std-ref">IfcResourceApprovalRelationship</span></a></p>
+<p>HISTORY New Entity in IFC Release 2.0</p>
+<p>IFC2x Edition 4 CHANGE Attributes Identifier and Name made optional, where rule added to require at least one of them being asserted. Inverse attributes ApprovedObjects, ApprovedResources and HasExternalReferences added. Inverse attribute Properties deleted (more general relationship via inverse ApprovedResources to be used instead). </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x111IfcApproval4listE">
+<span id="_CPPv3N6Ifc4x111IfcApproval4listE"></span><span id="_CPPv2N6Ifc4x111IfcApproval4listE"></span><span id="Ifc4x1::IfcApproval::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a39c49f1cccf93bf844ad1ad5247e1bda"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x111IfcApprovalE" title="Ifc4x1::IfcApproval">IfcApproval</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x111IfcApproval4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval13hasIdentifierEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval13hasIdentifierEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval13hasIdentifierEv"></span><span id="Ifc4x1::IfcApproval::hasIdentifierC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1ab9d4a7af7b97f4c3fd5934b6fcb0761f"></span>bool <code class="sig-name descname">hasIdentifier</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval13hasIdentifierEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Identifier is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_approval"><span class="std std-ref">IfcApproval</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval10IdentifierEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval10IdentifierEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval10IdentifierEv"></span><span id="Ifc4x1::IfcApproval::IdentifierC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1abd52a62703efec28fc3f32edc284980e"></span>std::string <code class="sig-name descname">Identifier</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval10IdentifierEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A computer interpretable identifier by which the approval is known. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x111IfcApproval13setIdentifierENSt6stringE">
+<span id="_CPPv3N6Ifc4x111IfcApproval13setIdentifierENSt6stringE"></span><span id="_CPPv2N6Ifc4x111IfcApproval13setIdentifierENSt6stringE"></span><span id="Ifc4x1::IfcApproval::setIdentifier__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1af1a50fb158cc7906663cd634b2637316"></span>void <code class="sig-name descname">setIdentifier</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x111IfcApproval13setIdentifierENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval7hasNameEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval7hasNameEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval7hasNameEv"></span><span id="Ifc4x1::IfcApproval::hasNameC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a033490cf010b0d730e644c54db15ad22"></span>bool <code class="sig-name descname">hasName</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval7hasNameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Name is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_approval"><span class="std std-ref">IfcApproval</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval4NameEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval4NameEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval4NameEv"></span><span id="Ifc4x1::IfcApproval::NameC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a7675c7cfed4d4f5c685a572d52668f3c"></span>std::string <code class="sig-name descname">Name</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval4NameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A human readable name given to an approval. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x111IfcApproval7setNameENSt6stringE">
+<span id="_CPPv3N6Ifc4x111IfcApproval7setNameENSt6stringE"></span><span id="_CPPv2N6Ifc4x111IfcApproval7setNameENSt6stringE"></span><span id="Ifc4x1::IfcApproval::setName__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a4578d5e8d1733a196a48f2651257e6bc"></span>void <code class="sig-name descname">setName</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x111IfcApproval7setNameENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval14hasDescriptionEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval14hasDescriptionEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval14hasDescriptionEv"></span><span id="Ifc4x1::IfcApproval::hasDescriptionC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a7c3f80201350bf3b22e5c6064ac9eb94"></span>bool <code class="sig-name descname">hasDescription</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval14hasDescriptionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Description is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_approval"><span class="std std-ref">IfcApproval</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval11DescriptionEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval11DescriptionEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval11DescriptionEv"></span><span id="Ifc4x1::IfcApproval::DescriptionC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a5701cbad85cbb6913339d0b3217da00e"></span>std::string <code class="sig-name descname">Description</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval11DescriptionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A general textual description of a design, work task, plan, etc. that is being approved for. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x111IfcApproval14setDescriptionENSt6stringE">
+<span id="_CPPv3N6Ifc4x111IfcApproval14setDescriptionENSt6stringE"></span><span id="_CPPv2N6Ifc4x111IfcApproval14setDescriptionENSt6stringE"></span><span id="Ifc4x1::IfcApproval::setDescription__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1af29fb06719e0403e69717d94addd1ac6"></span>void <code class="sig-name descname">setDescription</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x111IfcApproval14setDescriptionENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval17hasTimeOfApprovalEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval17hasTimeOfApprovalEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval17hasTimeOfApprovalEv"></span><span id="Ifc4x1::IfcApproval::hasTimeOfApprovalC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1ad376362ab88b31367591f0c9331b95b4"></span>bool <code class="sig-name descname">hasTimeOfApproval</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval17hasTimeOfApprovalEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute TimeOfApproval is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_approval"><span class="std std-ref">IfcApproval</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval14TimeOfApprovalEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval14TimeOfApprovalEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval14TimeOfApprovalEv"></span><span id="Ifc4x1::IfcApproval::TimeOfApprovalC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1ac88c69e47b40451292cc2d390866d175"></span>std::string <code class="sig-name descname">TimeOfApproval</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval14TimeOfApprovalEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Date and time when the result of the approval process is produced.</p>
+<p>IFC2x4 CHANGE Attribute data type changed to <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_date_time"><span class="std std-ref">IfcDateTime</span></a> using ISO 8601 representation, renamed from ApprovalDateTime and made OPTIONAL. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x111IfcApproval17setTimeOfApprovalENSt6stringE">
+<span id="_CPPv3N6Ifc4x111IfcApproval17setTimeOfApprovalENSt6stringE"></span><span id="_CPPv2N6Ifc4x111IfcApproval17setTimeOfApprovalENSt6stringE"></span><span id="Ifc4x1::IfcApproval::setTimeOfApproval__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a54fbf4e94a14982e6328403e15b38575"></span>void <code class="sig-name descname">setTimeOfApproval</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x111IfcApproval17setTimeOfApprovalENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval9hasStatusEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval9hasStatusEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval9hasStatusEv"></span><span id="Ifc4x1::IfcApproval::hasStatusC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a49212ffd98abb1fa89f098b84a6f3c45"></span>bool <code class="sig-name descname">hasStatus</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval9hasStatusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Status is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_approval"><span class="std std-ref">IfcApproval</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval6StatusEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval6StatusEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval6StatusEv"></span><span id="Ifc4x1::IfcApproval::StatusC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a426f0acd1314b5e0c391923389cf2be3"></span>std::string <code class="sig-name descname">Status</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval6StatusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The result or current status of the approval, e.g. Requested, Processed, Approved, Not Approved. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x111IfcApproval9setStatusENSt6stringE">
+<span id="_CPPv3N6Ifc4x111IfcApproval9setStatusENSt6stringE"></span><span id="_CPPv2N6Ifc4x111IfcApproval9setStatusENSt6stringE"></span><span id="Ifc4x1::IfcApproval::setStatus__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a25d4d6127d51b31dad9ad8123f059422"></span>void <code class="sig-name descname">setStatus</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x111IfcApproval9setStatusENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval8hasLevelEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval8hasLevelEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval8hasLevelEv"></span><span id="Ifc4x1::IfcApproval::hasLevelC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a9a55db776e4c33a417da23f82f5299ce"></span>bool <code class="sig-name descname">hasLevel</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval8hasLevelEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Level is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_approval"><span class="std std-ref">IfcApproval</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval5LevelEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval5LevelEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval5LevelEv"></span><span id="Ifc4x1::IfcApproval::LevelC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1ac239e714944f2e4a4defda76c29fe62a"></span>std::string <code class="sig-name descname">Level</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval5LevelEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Level of the approval e.g. Draft v.s. Completed design. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x111IfcApproval8setLevelENSt6stringE">
+<span id="_CPPv3N6Ifc4x111IfcApproval8setLevelENSt6stringE"></span><span id="_CPPv2N6Ifc4x111IfcApproval8setLevelENSt6stringE"></span><span id="Ifc4x1::IfcApproval::setLevel__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a3b648377fef1ad615255599806d6c57e"></span>void <code class="sig-name descname">setLevel</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x111IfcApproval8setLevelENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval12hasQualifierEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval12hasQualifierEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval12hasQualifierEv"></span><span id="Ifc4x1::IfcApproval::hasQualifierC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1af28349bf5372f8578b2ce291754f1756"></span>bool <code class="sig-name descname">hasQualifier</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval12hasQualifierEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Qualifier is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_approval"><span class="std std-ref">IfcApproval</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval9QualifierEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval9QualifierEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval9QualifierEv"></span><span id="Ifc4x1::IfcApproval::QualifierC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1acc1afb05fec38d033a564bf1a83f2e03"></span>std::string <code class="sig-name descname">Qualifier</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval9QualifierEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Textual description of special constraints or conditions for the approval. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x111IfcApproval12setQualifierENSt6stringE">
+<span id="_CPPv3N6Ifc4x111IfcApproval12setQualifierENSt6stringE"></span><span id="_CPPv2N6Ifc4x111IfcApproval12setQualifierENSt6stringE"></span><span id="Ifc4x1::IfcApproval::setQualifier__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a2d1959cbe62a672f15d3fbc8ebbb9c31"></span>void <code class="sig-name descname">setQualifier</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x111IfcApproval12setQualifierENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval21hasRequestingApprovalEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval21hasRequestingApprovalEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval21hasRequestingApprovalEv"></span><span id="Ifc4x1::IfcApproval::hasRequestingApprovalC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1ad94fce17dff5f713d1f23586afca9c50"></span>bool <code class="sig-name descname">hasRequestingApproval</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval21hasRequestingApprovalEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RequestingApproval is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_approval"><span class="std std-ref">IfcApproval</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval18RequestingApprovalEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval18RequestingApprovalEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval18RequestingApprovalEv"></span><span id="Ifc4x1::IfcApproval::RequestingApprovalC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a034be2a07136008117ab4d8c80a8b5a3"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x114IfcActorSelectE" title="Ifc4x1::IfcActorSelect">IfcActorSelect</a> *<code class="sig-name descname">RequestingApproval</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval18RequestingApprovalEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The actor that is acting in the role specified at <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_organization"><span class="std std-ref">IfcOrganization</span></a> or individually at <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_person"><span class="std std-ref">IfcPerson</span></a> and requesting an approval.</p>
+<p>IFC2x4 CHANGE New attribute for approval request replacing IfcApprovalActorRelationship (being deleted). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x111IfcApproval21setRequestingApprovalEPN6Ifc4x114IfcActorSelectE">
+<span id="_CPPv3N6Ifc4x111IfcApproval21setRequestingApprovalEPN6Ifc4x114IfcActorSelectE"></span><span id="_CPPv2N6Ifc4x111IfcApproval21setRequestingApprovalEPN6Ifc4x114IfcActorSelectE"></span><span id="Ifc4x1::IfcApproval::setRequestingApproval__Ifc4x1::IfcActorSelectP"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a370dd68a728ac200387003dd1507dfd8"></span>void <code class="sig-name descname">setRequestingApproval</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x114IfcActorSelectE" title="Ifc4x1::IfcActorSelect">IfcActorSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x111IfcApproval21setRequestingApprovalEPN6Ifc4x114IfcActorSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval17hasGivingApprovalEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval17hasGivingApprovalEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval17hasGivingApprovalEv"></span><span id="Ifc4x1::IfcApproval::hasGivingApprovalC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1ae4163090e3f7e5c4d787c96f7d547891"></span>bool <code class="sig-name descname">hasGivingApproval</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval17hasGivingApprovalEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute GivingApproval is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_approval"><span class="std std-ref">IfcApproval</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval14GivingApprovalEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval14GivingApprovalEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval14GivingApprovalEv"></span><span id="Ifc4x1::IfcApproval::GivingApprovalC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a109019010415eaac5e8fb90c1d9937b0"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x114IfcActorSelectE" title="Ifc4x1::IfcActorSelect">IfcActorSelect</a> *<code class="sig-name descname">GivingApproval</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval14GivingApprovalEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The actor that is acting in the role specified at <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_organization"><span class="std std-ref">IfcOrganization</span></a> or individually at <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_person"><span class="std std-ref">IfcPerson</span></a> and giving an approval.</p>
+<p>IFC2x4 CHANGE New attribute for approval provision replacing IfcApprovalActorRelationship (being deleted). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x111IfcApproval17setGivingApprovalEPN6Ifc4x114IfcActorSelectE">
+<span id="_CPPv3N6Ifc4x111IfcApproval17setGivingApprovalEPN6Ifc4x114IfcActorSelectE"></span><span id="_CPPv2N6Ifc4x111IfcApproval17setGivingApprovalEPN6Ifc4x114IfcActorSelectE"></span><span id="Ifc4x1::IfcApproval::setGivingApproval__Ifc4x1::IfcActorSelectP"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1afd0abf0b3e23d4fcab372f317121e8ea"></span>void <code class="sig-name descname">setGivingApproval</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x114IfcActorSelectE" title="Ifc4x1::IfcActorSelect">IfcActorSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x111IfcApproval17setGivingApprovalEPN6Ifc4x114IfcActorSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval21HasExternalReferencesEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval21HasExternalReferencesEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval21HasExternalReferencesEv"></span><span id="Ifc4x1::IfcApproval::HasExternalReferencesC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a31c66c601205133bf67afff22869ac06"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4x1_1_1_ifc_external_reference_relationship.html#_CPPv4N6Ifc4x132IfcExternalReferenceRelationshipE" title="Ifc4x1::IfcExternalReferenceRelationship">IfcExternalReferenceRelationship</a>&gt;::ptr <code class="sig-name descname">HasExternalReferences</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval21HasExternalReferencesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval15ApprovedObjectsEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval15ApprovedObjectsEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval15ApprovedObjectsEv"></span><span id="Ifc4x1::IfcApproval::ApprovedObjectsC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1ac203722febd109b68f572f0c3e2639a9"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4x1_1_1_ifc_rel_associates_approval.html#_CPPv4N6Ifc4x124IfcRelAssociatesApprovalE" title="Ifc4x1::IfcRelAssociatesApproval">IfcRelAssociatesApproval</a>&gt;::ptr <code class="sig-name descname">ApprovedObjects</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval15ApprovedObjectsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval17ApprovedResourcesEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval17ApprovedResourcesEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval17ApprovedResourcesEv"></span><span id="Ifc4x1::IfcApproval::ApprovedResourcesC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a2ffab23704cf9fbed099b686633eb573"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4x1_1_1_ifc_resource_approval_relationship.html#_CPPv4N6Ifc4x131IfcResourceApprovalRelationshipE" title="Ifc4x1::IfcResourceApprovalRelationship">IfcResourceApprovalRelationship</a>&gt;::ptr <code class="sig-name descname">ApprovedResources</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval17ApprovedResourcesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval13IsRelatedWithEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval13IsRelatedWithEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval13IsRelatedWithEv"></span><span id="Ifc4x1::IfcApproval::IsRelatedWithC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1aa236d8b993398aefb3cefce10b66faa0"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4x1_1_1_ifc_approval_relationship.html#_CPPv4N6Ifc4x123IfcApprovalRelationshipE" title="Ifc4x1::IfcApprovalRelationship">IfcApprovalRelationship</a>&gt;::ptr <code class="sig-name descname">IsRelatedWith</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval13IsRelatedWithEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval7RelatesEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval7RelatesEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval7RelatesEv"></span><span id="Ifc4x1::IfcApproval::RelatesC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1aaefbbb5ea568a64f2327b1825783819b"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4x1_1_1_ifc_approval_relationship.html#_CPPv4N6Ifc4x123IfcApprovalRelationshipE" title="Ifc4x1::IfcApprovalRelationship">IfcApprovalRelationship</a>&gt;::ptr <code class="sig-name descname">Relates</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval7RelatesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x111IfcApproval11declarationEv">
+<span id="_CPPv3NK6Ifc4x111IfcApproval11declarationEv"></span><span id="_CPPv2NK6Ifc4x111IfcApproval11declarationEv"></span><span id="Ifc4x1::IfcApproval::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a44a60c9077b9511dabe4d253e75e7a7b"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x111IfcApproval11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x111IfcApproval11IfcApprovalEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x111IfcApproval11IfcApprovalEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x111IfcApproval11IfcApprovalEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcApproval::IfcApproval__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a0869f7518e6e53d8b70e5c2288c15134"></span><code class="sig-name descname">IfcApproval</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x111IfcApproval11IfcApprovalEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x111IfcApproval11IfcApprovalEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x114IfcActorSelectEPN6Ifc4x114IfcActorSelectE">
+<span id="_CPPv3N6Ifc4x111IfcApproval11IfcApprovalEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x114IfcActorSelectEPN6Ifc4x114IfcActorSelectE"></span><span id="_CPPv2N6Ifc4x111IfcApproval11IfcApprovalEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x114IfcActorSelectEPN6Ifc4x114IfcActorSelectE"></span><span id="Ifc4x1::IfcApproval::IfcApproval__boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4x1::IfcActorSelectP.Ifc4x1::IfcActorSelectP"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1a7d24ab7c60c463cd3ff9886891a15bef"></span><code class="sig-name descname">IfcApproval</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Identifier</em>, boost::optional&lt;std::string&gt; <em>v2_Name</em>, boost::optional&lt;std::string&gt; <em>v3_Description</em>, boost::optional&lt;std::string&gt; <em>v4_TimeOfApproval</em>, boost::optional&lt;std::string&gt; <em>v5_Status</em>, boost::optional&lt;std::string&gt; <em>v6_Level</em>, boost::optional&lt;std::string&gt; <em>v7_Qualifier</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x114IfcActorSelectE" title="Ifc4x1::IfcActorSelect">IfcActorSelect</a> *<em>v8_RequestingApproval</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x114IfcActorSelectE" title="Ifc4x1::IfcActorSelect">IfcActorSelect</a> *<em>v9_GivingApproval</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x111IfcApproval11IfcApprovalEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x114IfcActorSelectEPN6Ifc4x114IfcActorSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x111IfcApproval5ClassEv">
+<span id="_CPPv3N6Ifc4x111IfcApproval5ClassEv"></span><span id="_CPPv2N6Ifc4x111IfcApproval5ClassEv"></span><span id="Ifc4x1::IfcApproval::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_approval_1ab4b594b1121aeddc194fbcdd8bbd8255"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x111IfcApproval5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_applied_value.html" title="previous chapter">Class Ifc4x1::IfcAppliedValue</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_approval_relationship.html" title="next chapter">Class Ifc4x1::IfcApprovalRelationship</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_approval.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

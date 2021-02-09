@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcTwoDirectionRepeatFactor &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcTypeObject" href="class_ifc2x3_1_1_ifc_type_object.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcTubeBundleType" href="class_ifc2x3_1_1_ifc_tube_bundle_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifctwodirectionrepeatfactor">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-two-direction-repeat-factor"></span><h1>Class Ifc2x3::IfcTwoDirectionRepeatFactor<a class="headerlink" href="#class-ifc2x3-ifctwodirectionrepeatfactor" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcOneDirectionRepeatFactor</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_one_direction_repeat_factor.html#exhale-class-class-ifc2x3-1-1-ifc-one-direction-repeat-factor"><span class="std std-ref">Class Ifc2x3::IfcOneDirectionRepeatFactor</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x327IfcTwoDirectionRepeatFactorE">
+<span id="_CPPv3N6Ifc2x327IfcTwoDirectionRepeatFactorE"></span><span id="_CPPv2N6Ifc2x327IfcTwoDirectionRepeatFactorE"></span><span id="Ifc2x3::IfcTwoDirectionRepeatFactor"></span><span class="target" id="class_ifc2x3_1_1_ifc_two_direction_repeat_factor"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcTwoDirectionRepeatFactor</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_one_direction_repeat_factor.html#_CPPv4N6Ifc2x327IfcOneDirectionRepeatFactorE" title="Ifc2x3::IfcOneDirectionRepeatFactor">IfcOneDirectionRepeatFactor</a><a class="headerlink" href="#_CPPv4N6Ifc2x327IfcTwoDirectionRepeatFactorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-46:1992: A two direction repeat factor combines two vectors which are used in the fill area style tiles entity for determining the shape and relative location of tiles. Given the initial position of any tile, the two direction repeat factor determines eight new positions according to the equation:</p>
+<p>k1* R1 + k2* R2 k X{-1,1}</p>
+<p>NOTE Corresponding ISO 10303 name: two_direction_repeat_factor. Please refer to ISO/IS 10303-46:1994 for the final definition of the formal standard.</p>
+<p>HISTORY New entity in IFC2x2. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x327IfcTwoDirectionRepeatFactor4listE">
+<span id="_CPPv3N6Ifc2x327IfcTwoDirectionRepeatFactor4listE"></span><span id="_CPPv2N6Ifc2x327IfcTwoDirectionRepeatFactor4listE"></span><span id="Ifc2x3::IfcTwoDirectionRepeatFactor::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_two_direction_repeat_factor_1ac8de4f80f09c6c9803f48b6d90e74459"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x327IfcTwoDirectionRepeatFactorE" title="Ifc2x3::IfcTwoDirectionRepeatFactor">IfcTwoDirectionRepeatFactor</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x327IfcTwoDirectionRepeatFactor4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x327IfcTwoDirectionRepeatFactor18SecondRepeatFactorEv">
+<span id="_CPPv3NK6Ifc2x327IfcTwoDirectionRepeatFactor18SecondRepeatFactorEv"></span><span id="_CPPv2NK6Ifc2x327IfcTwoDirectionRepeatFactor18SecondRepeatFactorEv"></span><span id="Ifc2x3::IfcTwoDirectionRepeatFactor::SecondRepeatFactorC"></span><span class="target" id="class_ifc2x3_1_1_ifc_two_direction_repeat_factor_1a04fd147abff08d27b2bdf009a2e0ceda"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_vector.html#_CPPv4N6Ifc2x39IfcVectorE" title="Ifc2x3::IfcVector">IfcVector</a> *<code class="sig-name descname">SecondRepeatFactor</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x327IfcTwoDirectionRepeatFactor18SecondRepeatFactorEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A vector which specifies the relative positioning of tiles in the second direction. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x327IfcTwoDirectionRepeatFactor21setSecondRepeatFactorEPN6Ifc2x39IfcVectorE">
+<span id="_CPPv3N6Ifc2x327IfcTwoDirectionRepeatFactor21setSecondRepeatFactorEPN6Ifc2x39IfcVectorE"></span><span id="_CPPv2N6Ifc2x327IfcTwoDirectionRepeatFactor21setSecondRepeatFactorEPN6Ifc2x39IfcVectorE"></span><span id="Ifc2x3::IfcTwoDirectionRepeatFactor::setSecondRepeatFactor__Ifc2x3::IfcVectorP"></span><span class="target" id="class_ifc2x3_1_1_ifc_two_direction_repeat_factor_1adb45b9a7bbf158e219bfd206b0ceea59"></span>void <code class="sig-name descname">setSecondRepeatFactor</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_vector.html#_CPPv4N6Ifc2x39IfcVectorE" title="Ifc2x3::IfcVector">IfcVector</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x327IfcTwoDirectionRepeatFactor21setSecondRepeatFactorEPN6Ifc2x39IfcVectorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x327IfcTwoDirectionRepeatFactor11declarationEv">
+<span id="_CPPv3NK6Ifc2x327IfcTwoDirectionRepeatFactor11declarationEv"></span><span id="_CPPv2NK6Ifc2x327IfcTwoDirectionRepeatFactor11declarationEv"></span><span id="Ifc2x3::IfcTwoDirectionRepeatFactor::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_two_direction_repeat_factor_1a7c92b522cea0b5ff6497486719d0cce2"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x327IfcTwoDirectionRepeatFactor11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x327IfcTwoDirectionRepeatFactor27IfcTwoDirectionRepeatFactorEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x327IfcTwoDirectionRepeatFactor27IfcTwoDirectionRepeatFactorEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x327IfcTwoDirectionRepeatFactor27IfcTwoDirectionRepeatFactorEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcTwoDirectionRepeatFactor::IfcTwoDirectionRepeatFactor__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_two_direction_repeat_factor_1a42c2248e5dac199b50905da95407b4a7"></span><code class="sig-name descname">IfcTwoDirectionRepeatFactor</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x327IfcTwoDirectionRepeatFactor27IfcTwoDirectionRepeatFactorEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x327IfcTwoDirectionRepeatFactor27IfcTwoDirectionRepeatFactorEPN6Ifc2x39IfcVectorEPN6Ifc2x39IfcVectorE">
+<span id="_CPPv3N6Ifc2x327IfcTwoDirectionRepeatFactor27IfcTwoDirectionRepeatFactorEPN6Ifc2x39IfcVectorEPN6Ifc2x39IfcVectorE"></span><span id="_CPPv2N6Ifc2x327IfcTwoDirectionRepeatFactor27IfcTwoDirectionRepeatFactorEPN6Ifc2x39IfcVectorEPN6Ifc2x39IfcVectorE"></span><span id="Ifc2x3::IfcTwoDirectionRepeatFactor::IfcTwoDirectionRepeatFactor__Ifc2x3::IfcVectorP.Ifc2x3::IfcVectorP"></span><span class="target" id="class_ifc2x3_1_1_ifc_two_direction_repeat_factor_1a0f6616a8e6405a9af987e107f1e1f5d9"></span><code class="sig-name descname">IfcTwoDirectionRepeatFactor</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_vector.html#_CPPv4N6Ifc2x39IfcVectorE" title="Ifc2x3::IfcVector">IfcVector</a> *<em>v1_RepeatFactor</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_vector.html#_CPPv4N6Ifc2x39IfcVectorE" title="Ifc2x3::IfcVector">IfcVector</a> *<em>v2_SecondRepeatFactor</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x327IfcTwoDirectionRepeatFactor27IfcTwoDirectionRepeatFactorEPN6Ifc2x39IfcVectorEPN6Ifc2x39IfcVectorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x327IfcTwoDirectionRepeatFactor5ClassEv">
+<span id="_CPPv3N6Ifc2x327IfcTwoDirectionRepeatFactor5ClassEv"></span><span id="_CPPv2N6Ifc2x327IfcTwoDirectionRepeatFactor5ClassEv"></span><span id="Ifc2x3::IfcTwoDirectionRepeatFactor::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_two_direction_repeat_factor_1ac3ee3677d67267279d7f147bff631dfe"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x327IfcTwoDirectionRepeatFactor5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_tube_bundle_type.html" title="previous chapter">Class Ifc2x3::IfcTubeBundleType</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_type_object.html" title="next chapter">Class Ifc2x3::IfcTypeObject</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_two_direction_repeat_factor.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

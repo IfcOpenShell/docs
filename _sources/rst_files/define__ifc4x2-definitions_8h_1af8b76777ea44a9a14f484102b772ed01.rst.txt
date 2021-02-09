@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1af8b76777ea44a9a14f484102b772ed01:
+
+Define SCHEMA_IfcCartesianPointList2D_HAS_CoordList
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcCartesianPointList2D_HAS_CoordList

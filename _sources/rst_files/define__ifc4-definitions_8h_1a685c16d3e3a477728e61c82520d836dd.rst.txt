@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a685c16d3e3a477728e61c82520d836dd:
+
+Define SCHEMA_IfcCartesianPoint_HAS_Coordinates
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcCartesianPoint_HAS_Coordinates

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a7e33e5fbeb1d26b2db569ff1b0531a29:
+
+Define SCHEMA_HAS_IfcElectricalCircuit
+======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcElectricalCircuit

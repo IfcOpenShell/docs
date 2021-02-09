@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_geom_8h_1a931777c8a4d3e1e1361448426ef383fe:
+
+Function IfcGeom::serialise_
+============================
+
+- Defined in :ref:`file_src_ifcgeom_IfcGeom.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcGeom::serialise_(const TopoDS_Shape&, bool)

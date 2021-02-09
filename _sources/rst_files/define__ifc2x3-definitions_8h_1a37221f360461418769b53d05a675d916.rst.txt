@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a37221f360461418769b53d05a675d916:
+
+Define SCHEMA_IfcConnectionPointEccentricity_HAS_EccentricityInY
+================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConnectionPointEccentricity_HAS_EccentricityInY

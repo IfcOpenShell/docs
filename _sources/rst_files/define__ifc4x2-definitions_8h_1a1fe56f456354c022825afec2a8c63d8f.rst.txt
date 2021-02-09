@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a1fe56f456354c022825afec2a8c63d8f:
+
+Define SCHEMA_IfcPropertyBoundedValue_UpperBoundValue_IS_OPTIONAL
+=================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPropertyBoundedValue_UpperBoundValue_IS_OPTIONAL

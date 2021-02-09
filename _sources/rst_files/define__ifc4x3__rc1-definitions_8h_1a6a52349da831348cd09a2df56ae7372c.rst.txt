@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a6a52349da831348cd09a2df56ae7372c:
+
+Define SCHEMA_IfcTriangulatedFaceSet_Closed_IS_OPTIONAL
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTriangulatedFaceSet_Closed_IS_OPTIONAL

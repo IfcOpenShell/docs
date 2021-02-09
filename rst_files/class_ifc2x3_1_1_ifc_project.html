@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcProject &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcProjectionCurve" href="class_ifc2x3_1_1_ifc_projection_curve.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcProfileProperties" href="class_ifc2x3_1_1_ifc_profile_properties.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcproject">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-project"></span><h1>Class Ifc2x3::IfcProject<a class="headerlink" href="#class-ifc2x3-ifcproject" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcObject</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_object.html#exhale-class-class-ifc2x3-1-1-ifc-object"><span class="std std-ref">Class Ifc2x3::IfcObject</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x310IfcProjectE">
+<span id="_CPPv3N6Ifc2x310IfcProjectE"></span><span id="_CPPv2N6Ifc2x310IfcProjectE"></span><span id="Ifc2x3::IfcProject"></span><span class="target" id="class_ifc2x3_1_1_ifc_project"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcProject</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_object.html#_CPPv4N6Ifc2x39IfcObjectE" title="Ifc2x3::IfcObject">IfcObject</a><a class="headerlink" href="#_CPPv4N6Ifc2x310IfcProjectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a> indicates the undertaking of some design, engineering, construction, or maintenance activities leading towards a product. The project establishes the context for information to be exchanged or shared, and it may represent a construction project but does not have to. The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a>’s main purpose in an exchange structure is to provide the root instance and the context for all other information items included. The context provided by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a> includes:</p>
+<p>the default units the geometric representation context for exchange structures including shape representations</p>
+<p>the world coordinate system the coordinate space dimension the precision used within the geometric representations, and optionally the indication of the true north relative to the world coordinate system</p>
+<p>HISTORY New Entity in IFC Release 1.0</p>
+<p>IFC2x4 CHANGE The attributes RepresentationContexts and UnitsInContext are made optional and are promoted to supertype IfcContext.</p>
+<p>Relationship use definition The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a> is used to reference the root of the spatial structure of a building (that serves as the primary project breakdown and is required to be hierarchical). The spatial structure elements are linked together, and to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a>, by using the objectified relationship <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_aggregates"><span class="std std-ref">IfcRelAggregates</span></a>. The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a> references them by its inverse relationship:</p>
+<p>IfcProject.Decomposes  it shall be NIL, i.e. the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a> shall not be decomposed into any parts. IfcProject.IsDecomposedBy  referencing (<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> || <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a>) by IfcRelAggregates.RelatingObject. The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> or <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> referenced shall be the root of the spatial structure.</p>
+<p>The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a> is also the context for other information about the construction project such as a work plan. Non-product structures are assigned by their first level object to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a> using the IfcRelDeclares relationship.</p>
+<p>The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a> provides the context for spatial elements and the associated products, and for work plans (or other non-product based) descriptions of the construction project. It is handled by two distinct relationship objects as shown in Figure 3. NOTE  The spatial structure and the schedule structure can be decomposed. For example the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> can be decomposed into <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_storey"><span class="std std-ref">IfcBuildingStorey</span></a>’s, and the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_work_plan"><span class="std std-ref">IfcWorkPlan</span></a> can be decomposed into <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_work_schedule"><span class="std std-ref">IfcWorkSchedule</span></a>’s. NOTE  The products and tasks can be decomposed further. For example the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_curtain_wall"><span class="std std-ref">IfcCurtainWall</span></a> can be decomposed into <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_member"><span class="std std-ref">IfcMember</span></a> and <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a>, the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> can be decomposed into other <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a>’s. NOTE  The products and tasks can have direct linking relationships. For example the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_curtain_wall"><span class="std std-ref">IfcCurtainWall</span></a> can be assigned to a <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> as an input or output for a construction schedule. NOTE  The anomaly to use the composition structure through <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_aggregates"><span class="std std-ref">IfcRelAggregates</span></a> for assigning the uppermost spatial container to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a> is due to upward compatibility reasons with earlier releases of this standard.</p>
+<p>Figure 3 — Project spatial and work plan structure</p>
+<p>As shown in Figure 4, the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a> provides the context for project libraries that in return provide a context to the library items assigned to it. Product types are an example for items that can be included in a project library.</p>
+<p>Figure 4 — Project spatial structure, products and product type library</p>
+<p>Informal propositions:</p>
+<p>There shall only be one project within the exchange context. This is enforced by the global rule IfcSingleProjectInstance. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x310IfcProject4listE">
+<span id="_CPPv3N6Ifc2x310IfcProject4listE"></span><span id="_CPPv2N6Ifc2x310IfcProject4listE"></span><span id="Ifc2x3::IfcProject::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_project_1a4961bee0b9f3f21b532587862040f2c0"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x310IfcProjectE" title="Ifc2x3::IfcProject">IfcProject</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x310IfcProject4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x310IfcProject11hasLongNameEv">
+<span id="_CPPv3NK6Ifc2x310IfcProject11hasLongNameEv"></span><span id="_CPPv2NK6Ifc2x310IfcProject11hasLongNameEv"></span><span id="Ifc2x3::IfcProject::hasLongNameC"></span><span class="target" id="class_ifc2x3_1_1_ifc_project_1a4f70f0991fc854d5fb6e6d71dc126216"></span>bool <code class="sig-name descname">hasLongName</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x310IfcProject11hasLongNameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute LongName is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x310IfcProject8LongNameEv">
+<span id="_CPPv3NK6Ifc2x310IfcProject8LongNameEv"></span><span id="_CPPv2NK6Ifc2x310IfcProject8LongNameEv"></span><span id="Ifc2x3::IfcProject::LongNameC"></span><span class="target" id="class_ifc2x3_1_1_ifc_project_1a6012dd71ea229c4a316e903e4cbdd108"></span>std::string <code class="sig-name descname">LongName</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x310IfcProject8LongNameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x310IfcProject11setLongNameENSt6stringE">
+<span id="_CPPv3N6Ifc2x310IfcProject11setLongNameENSt6stringE"></span><span id="_CPPv2N6Ifc2x310IfcProject11setLongNameENSt6stringE"></span><span id="Ifc2x3::IfcProject::setLongName__ss"></span><span class="target" id="class_ifc2x3_1_1_ifc_project_1a7fae32b6bed0e2d3ede0815e2b5f30d1"></span>void <code class="sig-name descname">setLongName</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x310IfcProject11setLongNameENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x310IfcProject8hasPhaseEv">
+<span id="_CPPv3NK6Ifc2x310IfcProject8hasPhaseEv"></span><span id="_CPPv2NK6Ifc2x310IfcProject8hasPhaseEv"></span><span id="Ifc2x3::IfcProject::hasPhaseC"></span><span class="target" id="class_ifc2x3_1_1_ifc_project_1a0b5ff885e48a20d28cb42ac3fc6f6c52"></span>bool <code class="sig-name descname">hasPhase</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x310IfcProject8hasPhaseEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Phase is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x310IfcProject5PhaseEv">
+<span id="_CPPv3NK6Ifc2x310IfcProject5PhaseEv"></span><span id="_CPPv2NK6Ifc2x310IfcProject5PhaseEv"></span><span id="Ifc2x3::IfcProject::PhaseC"></span><span class="target" id="class_ifc2x3_1_1_ifc_project_1aa83dc9dfa11a464243a3a4ab0f691b73"></span>std::string <code class="sig-name descname">Phase</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x310IfcProject5PhaseEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x310IfcProject8setPhaseENSt6stringE">
+<span id="_CPPv3N6Ifc2x310IfcProject8setPhaseENSt6stringE"></span><span id="_CPPv2N6Ifc2x310IfcProject8setPhaseENSt6stringE"></span><span id="Ifc2x3::IfcProject::setPhase__ss"></span><span class="target" id="class_ifc2x3_1_1_ifc_project_1a15a33d93d90b30bd66d4752f2ff9295c"></span>void <code class="sig-name descname">setPhase</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x310IfcProject8setPhaseENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x310IfcProject22RepresentationContextsEv">
+<span id="_CPPv3NK6Ifc2x310IfcProject22RepresentationContextsEv"></span><span id="_CPPv2NK6Ifc2x310IfcProject22RepresentationContextsEv"></span><span id="Ifc2x3::IfcProject::RepresentationContextsC"></span><span class="target" id="class_ifc2x3_1_1_ifc_project_1a2960462e1b131f4c31d2476dc52cdb09"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_representation_context.html#_CPPv4N6Ifc2x324IfcRepresentationContextE" title="Ifc2x3::IfcRepresentationContext">IfcRepresentationContext</a>&gt;::ptr <code class="sig-name descname">RepresentationContexts</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x310IfcProject22RepresentationContextsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x310IfcProject25setRepresentationContextsEN22IfcTemplatedEntityListIN6Ifc2x324IfcRepresentationContextEE3ptrE">
+<span id="_CPPv3N6Ifc2x310IfcProject25setRepresentationContextsEN22IfcTemplatedEntityListIN6Ifc2x324IfcRepresentationContextEE3ptrE"></span><span id="_CPPv2N6Ifc2x310IfcProject25setRepresentationContextsEN22IfcTemplatedEntityListIN6Ifc2x324IfcRepresentationContextEE3ptrE"></span><span id="Ifc2x3::IfcProject::setRepresentationContexts__IfcTemplatedEntityList:Ifc2x3::IfcRepresentationContext:::ptr"></span><span class="target" id="class_ifc2x3_1_1_ifc_project_1a877f47b4c727bf5b7e3649dd2e84df02"></span>void <code class="sig-name descname">setRepresentationContexts</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_representation_context.html#_CPPv4N6Ifc2x324IfcRepresentationContextE" title="Ifc2x3::IfcRepresentationContext">IfcRepresentationContext</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x310IfcProject25setRepresentationContextsEN22IfcTemplatedEntityListIN6Ifc2x324IfcRepresentationContextEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x310IfcProject14UnitsInContextEv">
+<span id="_CPPv3NK6Ifc2x310IfcProject14UnitsInContextEv"></span><span id="_CPPv2NK6Ifc2x310IfcProject14UnitsInContextEv"></span><span id="Ifc2x3::IfcProject::UnitsInContextC"></span><span class="target" id="class_ifc2x3_1_1_ifc_project_1acfbcee594323381c98fdeaa7fa5ceee3"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_unit_assignment.html#_CPPv4N6Ifc2x317IfcUnitAssignmentE" title="Ifc2x3::IfcUnitAssignment">IfcUnitAssignment</a> *<code class="sig-name descname">UnitsInContext</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x310IfcProject14UnitsInContextEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x310IfcProject17setUnitsInContextEPN6Ifc2x317IfcUnitAssignmentE">
+<span id="_CPPv3N6Ifc2x310IfcProject17setUnitsInContextEPN6Ifc2x317IfcUnitAssignmentE"></span><span id="_CPPv2N6Ifc2x310IfcProject17setUnitsInContextEPN6Ifc2x317IfcUnitAssignmentE"></span><span id="Ifc2x3::IfcProject::setUnitsInContext__Ifc2x3::IfcUnitAssignmentP"></span><span class="target" id="class_ifc2x3_1_1_ifc_project_1ab76ba4604255cdc725845a029a29d8e6"></span>void <code class="sig-name descname">setUnitsInContext</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_unit_assignment.html#_CPPv4N6Ifc2x317IfcUnitAssignmentE" title="Ifc2x3::IfcUnitAssignment">IfcUnitAssignment</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x310IfcProject17setUnitsInContextEPN6Ifc2x317IfcUnitAssignmentE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x310IfcProject11declarationEv">
+<span id="_CPPv3NK6Ifc2x310IfcProject11declarationEv"></span><span id="_CPPv2NK6Ifc2x310IfcProject11declarationEv"></span><span id="Ifc2x3::IfcProject::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_project_1a015a6202c625e4f923d419061a71e282"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x310IfcProject11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x310IfcProject10IfcProjectEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x310IfcProject10IfcProjectEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x310IfcProject10IfcProjectEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcProject::IfcProject__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_project_1a4be3295b37c65acfad2c922235977492"></span><code class="sig-name descname">IfcProject</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x310IfcProject10IfcProjectEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x310IfcProject10IfcProjectENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc2x324IfcRepresentationContextEE3ptrEPN6Ifc2x317IfcUnitAssignmentE">
+<span id="_CPPv3N6Ifc2x310IfcProject10IfcProjectENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc2x324IfcRepresentationContextEE3ptrEPN6Ifc2x317IfcUnitAssignmentE"></span><span id="_CPPv2N6Ifc2x310IfcProject10IfcProjectENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc2x324IfcRepresentationContextEE3ptrEPN6Ifc2x317IfcUnitAssignmentE"></span><span id="Ifc2x3::IfcProject::IfcProject__ss.Ifc2x3::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.IfcTemplatedEntityList:Ifc2x3::IfcRepresentationContext:::ptr.Ifc2x3::IfcUnitAssignmentP"></span><span class="target" id="class_ifc2x3_1_1_ifc_project_1ad86b584fef2aa45dff15ad1ce1ac2eda"></span><code class="sig-name descname">IfcProject</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_owner_history.html#_CPPv4N6Ifc2x315IfcOwnerHistoryE" title="Ifc2x3::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, boost::optional&lt;std::string&gt; <em>v6_LongName</em>, boost::optional&lt;std::string&gt; <em>v7_Phase</em>, <a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_representation_context.html#_CPPv4N6Ifc2x324IfcRepresentationContextE" title="Ifc2x3::IfcRepresentationContext">IfcRepresentationContext</a>&gt;::ptr <em>v8_RepresentationContexts</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_unit_assignment.html#_CPPv4N6Ifc2x317IfcUnitAssignmentE" title="Ifc2x3::IfcUnitAssignment">IfcUnitAssignment</a> *<em>v9_UnitsInContext</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x310IfcProject10IfcProjectENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc2x324IfcRepresentationContextEE3ptrEPN6Ifc2x317IfcUnitAssignmentE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x310IfcProject5ClassEv">
+<span id="_CPPv3N6Ifc2x310IfcProject5ClassEv"></span><span id="_CPPv2N6Ifc2x310IfcProject5ClassEv"></span><span id="Ifc2x3::IfcProject::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_project_1a01713aaaf8dc17b30a731972e76a4c67"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x310IfcProject5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_profile_properties.html" title="previous chapter">Class Ifc2x3::IfcProfileProperties</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_projection_curve.html" title="next chapter">Class Ifc2x3::IfcProjectionCurve</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_project.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

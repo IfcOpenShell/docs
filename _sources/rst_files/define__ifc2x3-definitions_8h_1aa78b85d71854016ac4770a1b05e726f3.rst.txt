@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aa78b85d71854016ac4770a1b05e726f3:
+
+Define SCHEMA_IfcHygroscopicMaterialProperties_UpperVaporResistanceFactor_IS_OPTIONAL
+=====================================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcHygroscopicMaterialProperties_UpperVaporResistanceFactor_IS_OPTIONAL

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a9d49b33d7f0e84559c00e9c1497afed5:
+
+Define SCHEMA_IfcDocumentInformation_HAS_DocumentId
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDocumentInformation_HAS_DocumentId

@@ -1,0 +1,51 @@
+
+.. _file_src_ifcgeom_IfcGeomShapeType.h:
+
+File IfcGeomShapeType.h
+=======================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcgeom>` (``src/ifcgeom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/IfcGeomShapeType.h``)
+-----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_IfcGeomShapeType.h.rst
+
+
+
+
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_IfcGeom.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcGeom`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum__ifc_geom_shape_type_8h_1acded6c3385229db0793533db4782b425`
+

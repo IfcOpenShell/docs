@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a4f191784564713662765ce788fe4e55d:
+
+Define SCHEMA_IfcGeometricRepresentationContext_HAS_CoordinateSpaceDimension
+============================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcGeometricRepresentationContext_HAS_CoordinateSpaceDimension

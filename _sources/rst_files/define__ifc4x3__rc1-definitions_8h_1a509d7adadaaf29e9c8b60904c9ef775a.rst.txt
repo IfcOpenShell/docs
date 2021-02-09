@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a509d7adadaaf29e9c8b60904c9ef775a:
+
+Define SCHEMA_IfcElectricFlowTreatmentDevice_HAS_PredefinedType
+===============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcElectricFlowTreatmentDevice_HAS_PredefinedType

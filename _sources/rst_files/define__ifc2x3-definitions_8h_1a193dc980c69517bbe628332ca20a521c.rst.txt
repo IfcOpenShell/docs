@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a193dc980c69517bbe628332ca20a521c:
+
+Define SCHEMA_HAS_IfcBezierCurve
+================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcBezierCurve

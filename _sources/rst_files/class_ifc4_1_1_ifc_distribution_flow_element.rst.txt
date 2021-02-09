@@ -1,0 +1,45 @@
+.. _exhale_class_class_ifc4_1_1_ifc_distribution_flow_element:
+
+Class Ifc4::IfcDistributionFlowElement
+======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4::IfcDistributionElement`` (:ref:`exhale_class_class_ifc4_1_1_ifc_distribution_element`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4::IfcDistributionChamberElement`` (:ref:`exhale_class_class_ifc4_1_1_ifc_distribution_chamber_element`)
+- ``public Ifc4::IfcEnergyConversionDevice`` (:ref:`exhale_class_class_ifc4_1_1_ifc_energy_conversion_device`)
+- ``public Ifc4::IfcFlowController`` (:ref:`exhale_class_class_ifc4_1_1_ifc_flow_controller`)
+- ``public Ifc4::IfcFlowFitting`` (:ref:`exhale_class_class_ifc4_1_1_ifc_flow_fitting`)
+- ``public Ifc4::IfcFlowMovingDevice`` (:ref:`exhale_class_class_ifc4_1_1_ifc_flow_moving_device`)
+- ``public Ifc4::IfcFlowSegment`` (:ref:`exhale_class_class_ifc4_1_1_ifc_flow_segment`)
+- ``public Ifc4::IfcFlowStorageDevice`` (:ref:`exhale_class_class_ifc4_1_1_ifc_flow_storage_device`)
+- ``public Ifc4::IfcFlowTerminal`` (:ref:`exhale_class_class_ifc4_1_1_ifc_flow_terminal`)
+- ``public Ifc4::IfcFlowTreatmentDevice`` (:ref:`exhale_class_class_ifc4_1_1_ifc_flow_treatment_device`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4::IfcDistributionFlowElement
+   :members:
+   :protected-members:
+   :undoc-members:

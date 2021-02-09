@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ac24d2d55f682db0ae8ee3c446abc2ee2:
+
+Define SCHEMA_HAS_IfcRelConnectsPathElements
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcRelConnectsPathElements

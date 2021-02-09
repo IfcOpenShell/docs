@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a3133d265e6a42e2d08e7da04d6664212:
+
+Define SCHEMA_HAS_IfcStructuralSurfaceConnection
+================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcStructuralSurfaceConnection

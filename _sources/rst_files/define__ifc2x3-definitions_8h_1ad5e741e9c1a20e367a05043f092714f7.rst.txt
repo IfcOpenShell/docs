@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ad5e741e9c1a20e367a05043f092714f7:
+
+Define SCHEMA_IfcOrganization_HAS_Addresses
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcOrganization_HAS_Addresses

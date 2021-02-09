@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a847d04297c670d20fa734596e5d10cfe:
+
+Define SCHEMA_IfcWaterProperties_IsPotable_IS_OPTIONAL
+======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcWaterProperties_IsPotable_IS_OPTIONAL

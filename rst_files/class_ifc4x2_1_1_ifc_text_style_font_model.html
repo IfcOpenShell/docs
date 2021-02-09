@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcTextStyleFontModel &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcTextStyleForDefinedFont" href="class_ifc4x2_1_1_ifc_text_style_for_defined_font.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcTextStyle" href="class_ifc4x2_1_1_ifc_text_style.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifctextstylefontmodel">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-text-style-font-model"></span><h1>Class Ifc4x2::IfcTextStyleFontModel<a class="headerlink" href="#class-ifc4x2-ifctextstylefontmodel" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcPreDefinedTextFont</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_pre_defined_text_font.html#exhale-class-class-ifc4x2-1-1-ifc-pre-defined-text-font"><span class="std std-ref">Class Ifc4x2::IfcPreDefinedTextFont</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x221IfcTextStyleFontModelE">
+<span id="_CPPv3N6Ifc4x221IfcTextStyleFontModelE"></span><span id="_CPPv2N6Ifc4x221IfcTextStyleFontModelE"></span><span id="Ifc4x2::IfcTextStyleFontModel"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcTextStyleFontModel</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_pre_defined_text_font.html#_CPPv4N6Ifc4x221IfcPreDefinedTextFontE" title="Ifc4x2::IfcPreDefinedTextFont">IfcPreDefinedTextFont</a><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcTextStyleFontModelE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from CSS1 (W3C Recommendation): Setting font properties will be among the most common uses of style sheets. Unfortunately, there exists no well-defined and universally accepted taxonomy for classifying fonts, and terms that apply to one font family may not be appropriate for others. For example, ‘italic’ is commonly used to label slanted text, but slanted text may also be labeled as being Oblique, Slanted, Incline, Cursive or Kursiv. Therefore it is not a simple problem to map typical font selection properties to a specific font.</p>
+<p>Font matching Because there is no accepted, universal taxonomy of font properties, matching of properties to font faces must be done carefully. The properties are matched in a well-defined order to ensure that the results of this matching process are as consistent as possible across user agents (assuming that the same library of font faces is presented to each of them).</p>
+<p>The user agent makes (or accesses) a database of relevant CSS1 properties of all the fonts of which the UA is aware. The UA may be aware of a font because it has been installed locally or it has been previously downloaded over the web. If there are two fonts with exactly the same properties, one of them is ignored. At a given element and for each character in that element, the UA assembles the font-properties applicable to that element. Using the complete set of properties, the UA uses the ‘font-family’ property to choose a tentative font family. The remaining properties are tested against the family according to the matching criteria described with each property. If there are matches for all the remaining properties, then that is the matching font face for the given element. If there is no matching font face within the ‘font-family’ being processed by step 2, and if there is a next alternative ‘font-family’ in the font set, then repeat step 2 with the next alternative ‘font-family’. If there is a matching font face, but it doesn’t contain a glyph for the current character, and if there is a next alternative ‘font-family’ in the font sets, then repeat step 2 with the next alternative ‘font-family’. If there is no font within the family selected in 2, then use a UA-dependent default ‘font-family’ and repeat step 2, using the best match that can be obtained within the default font.</p>
+<p>(The above algorithm can be optimized to avoid having to revisit the CSS1 properties for each character.)</p>
+<p>The per-property matching rules from (2) above are as follows:</p>
+<p>‘font-style’ is tried first. ‘italic’ will be satisfied if there is either a face in the UA’s font database labeled with the CSS keyword ‘italic’ (preferred) or ‘oblique’. Otherwise the values must be matched exactly or font-style will fail. ‘font-variant’ is tried next. ‘normal’ matches a font not labeled as ‘small-caps’; ‘small-caps’ matches (1) a font labeled as ‘small-caps’, (2) a font in which the small caps are synthesized, or (3) a font where all lowercase letters are replaced by upper case letters. A small-caps font may be synthesized by electronically scaling uppercase letters from a normal font. ‘font-weight’ is matched next, it will never fail. (See ‘font-weight’ below.) ‘font-size’ must be matched within a UA-dependent margin of tolerance. (Typically, sizes for scalable fonts are rounded to the nearest whole pixel, while the tolerance for bitmapped fonts could be as large as 20%.) Further computations, are based on the ‘font-size’ value that is used, not the one that is specified.</p>
+<p>The inherited Name attribute is used to define the font name, particularly in cases, where no (list of) font families are provided.</p>
+<p>NOTE Corresponding CSS1 definitions are Font properties (‘font-family’, ‘font-style’, ‘font-variant’, ‘font-weight’).</p>
+<p>HISTORY New entity in IFC2x3. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x221IfcTextStyleFontModel4listE">
+<span id="_CPPv3N6Ifc4x221IfcTextStyleFontModel4listE"></span><span id="_CPPv2N6Ifc4x221IfcTextStyleFontModel4listE"></span><span id="Ifc4x2::IfcTextStyleFontModel::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1ae0092214cc4ba448b951e39c20dcf17c"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x221IfcTextStyleFontModelE" title="Ifc4x2::IfcTextStyleFontModel">IfcTextStyleFontModel</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcTextStyleFontModel4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x221IfcTextStyleFontModel10FontFamilyEv">
+<span id="_CPPv3NK6Ifc4x221IfcTextStyleFontModel10FontFamilyEv"></span><span id="_CPPv2NK6Ifc4x221IfcTextStyleFontModel10FontFamilyEv"></span><span id="Ifc4x2::IfcTextStyleFontModel::FontFamilyC"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1a00196eb761ed3962d8b12d5cc0a9d8be"></span>std::vector&lt;std::string&gt; <code class="sig-name descname">FontFamily</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x221IfcTextStyleFontModel10FontFamilyEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The value is a prioritized list of font family names and/or generic family names. The first list entry has the highest priority, if this font fails, the next list item shall be used. The last list item should (if possible) be a generic family. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x221IfcTextStyleFontModel13setFontFamilyENSt6vectorINSt6stringEEE">
+<span id="_CPPv3N6Ifc4x221IfcTextStyleFontModel13setFontFamilyENSt6vectorINSt6stringEEE"></span><span id="_CPPv2N6Ifc4x221IfcTextStyleFontModel13setFontFamilyENSt6vectorINSt6stringEEE"></span><span id="Ifc4x2::IfcTextStyleFontModel::setFontFamily__std::vector:ss:"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1ae59df0c3be694b9086817196c6b54379"></span>void <code class="sig-name descname">setFontFamily</code><span class="sig-paren">(</span>std::vector&lt;std::string&gt; <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcTextStyleFontModel13setFontFamilyENSt6vectorINSt6stringEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x221IfcTextStyleFontModel12hasFontStyleEv">
+<span id="_CPPv3NK6Ifc4x221IfcTextStyleFontModel12hasFontStyleEv"></span><span id="_CPPv2NK6Ifc4x221IfcTextStyleFontModel12hasFontStyleEv"></span><span id="Ifc4x2::IfcTextStyleFontModel::hasFontStyleC"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1ad8b579f2e327d9ce6d8b1fd81b9cf43c"></span>bool <code class="sig-name descname">hasFontStyle</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x221IfcTextStyleFontModel12hasFontStyleEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute FontStyle is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_text_style_font_model"><span class="std std-ref">IfcTextStyleFontModel</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x221IfcTextStyleFontModel9FontStyleEv">
+<span id="_CPPv3NK6Ifc4x221IfcTextStyleFontModel9FontStyleEv"></span><span id="_CPPv2NK6Ifc4x221IfcTextStyleFontModel9FontStyleEv"></span><span id="Ifc4x2::IfcTextStyleFontModel::FontStyleC"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1a69dd85b7912583ca67125993f4ee7b78"></span>std::string <code class="sig-name descname">FontStyle</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x221IfcTextStyleFontModel9FontStyleEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The font style property selects between normal (sometimes referred to as “roman” or “upright”), italic and oblique faces within a font family. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x221IfcTextStyleFontModel12setFontStyleENSt6stringE">
+<span id="_CPPv3N6Ifc4x221IfcTextStyleFontModel12setFontStyleENSt6stringE"></span><span id="_CPPv2N6Ifc4x221IfcTextStyleFontModel12setFontStyleENSt6stringE"></span><span id="Ifc4x2::IfcTextStyleFontModel::setFontStyle__ss"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1a2b79c9c424ca333cb4aa1c21f8ac856d"></span>void <code class="sig-name descname">setFontStyle</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcTextStyleFontModel12setFontStyleENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x221IfcTextStyleFontModel14hasFontVariantEv">
+<span id="_CPPv3NK6Ifc4x221IfcTextStyleFontModel14hasFontVariantEv"></span><span id="_CPPv2NK6Ifc4x221IfcTextStyleFontModel14hasFontVariantEv"></span><span id="Ifc4x2::IfcTextStyleFontModel::hasFontVariantC"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1a0b5a293ae2818d62eff63209c9d7b585"></span>bool <code class="sig-name descname">hasFontVariant</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x221IfcTextStyleFontModel14hasFontVariantEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute FontVariant is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_text_style_font_model"><span class="std std-ref">IfcTextStyleFontModel</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x221IfcTextStyleFontModel11FontVariantEv">
+<span id="_CPPv3NK6Ifc4x221IfcTextStyleFontModel11FontVariantEv"></span><span id="_CPPv2NK6Ifc4x221IfcTextStyleFontModel11FontVariantEv"></span><span id="Ifc4x2::IfcTextStyleFontModel::FontVariantC"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1acc6998a374c982ae975531f59f1cf270"></span>std::string <code class="sig-name descname">FontVariant</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x221IfcTextStyleFontModel11FontVariantEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The font variant property selects between normal and small-caps. NOTE It has been introduced for later compliance to full CSS1 support. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x221IfcTextStyleFontModel14setFontVariantENSt6stringE">
+<span id="_CPPv3N6Ifc4x221IfcTextStyleFontModel14setFontVariantENSt6stringE"></span><span id="_CPPv2N6Ifc4x221IfcTextStyleFontModel14setFontVariantENSt6stringE"></span><span id="Ifc4x2::IfcTextStyleFontModel::setFontVariant__ss"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1aef01d03f0a45f8e701f79252b6590a49"></span>void <code class="sig-name descname">setFontVariant</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcTextStyleFontModel14setFontVariantENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x221IfcTextStyleFontModel13hasFontWeightEv">
+<span id="_CPPv3NK6Ifc4x221IfcTextStyleFontModel13hasFontWeightEv"></span><span id="_CPPv2NK6Ifc4x221IfcTextStyleFontModel13hasFontWeightEv"></span><span id="Ifc4x2::IfcTextStyleFontModel::hasFontWeightC"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1ae40bb720bf4196c3893c4ae14ca5a39f"></span>bool <code class="sig-name descname">hasFontWeight</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x221IfcTextStyleFontModel13hasFontWeightEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute FontWeight is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_text_style_font_model"><span class="std std-ref">IfcTextStyleFontModel</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x221IfcTextStyleFontModel10FontWeightEv">
+<span id="_CPPv3NK6Ifc4x221IfcTextStyleFontModel10FontWeightEv"></span><span id="_CPPv2NK6Ifc4x221IfcTextStyleFontModel10FontWeightEv"></span><span id="Ifc4x2::IfcTextStyleFontModel::FontWeightC"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1a508a090a1565733235c4a001195aabb6"></span>std::string <code class="sig-name descname">FontWeight</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x221IfcTextStyleFontModel10FontWeightEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The font weight property selects the weight of the font. NOTE Values other then ‘normal’ and ‘bold’ have been introduced for later compliance to full CSS1 support. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x221IfcTextStyleFontModel13setFontWeightENSt6stringE">
+<span id="_CPPv3N6Ifc4x221IfcTextStyleFontModel13setFontWeightENSt6stringE"></span><span id="_CPPv2N6Ifc4x221IfcTextStyleFontModel13setFontWeightENSt6stringE"></span><span id="Ifc4x2::IfcTextStyleFontModel::setFontWeight__ss"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1a62f611644e02db4cf1000e36f75d0e25"></span>void <code class="sig-name descname">setFontWeight</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcTextStyleFontModel13setFontWeightENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x221IfcTextStyleFontModel8FontSizeEv">
+<span id="_CPPv3NK6Ifc4x221IfcTextStyleFontModel8FontSizeEv"></span><span id="_CPPv2NK6Ifc4x221IfcTextStyleFontModel8FontSizeEv"></span><span id="Ifc4x2::IfcTextStyleFontModel::FontSizeC"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1a0f9c4efbd68b5f31a47b0b7b2611ca2f"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x213IfcSizeSelectE" title="Ifc4x2::IfcSizeSelect">IfcSizeSelect</a> *<code class="sig-name descname">FontSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x221IfcTextStyleFontModel8FontSizeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The font size provides the size or height of the text font. NOTE The following values are allowed, &lt;<a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_length_measure"><span class="std std-ref">IfcLengthMeasure</span></a>, with positive values, the length unit is globally defined at <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_unit_assignment"><span class="std std-ref">IfcUnitAssignment</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x221IfcTextStyleFontModel11setFontSizeEPN6Ifc4x213IfcSizeSelectE">
+<span id="_CPPv3N6Ifc4x221IfcTextStyleFontModel11setFontSizeEPN6Ifc4x213IfcSizeSelectE"></span><span id="_CPPv2N6Ifc4x221IfcTextStyleFontModel11setFontSizeEPN6Ifc4x213IfcSizeSelectE"></span><span id="Ifc4x2::IfcTextStyleFontModel::setFontSize__Ifc4x2::IfcSizeSelectP"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1a7d6c4f21e24aa80363a80ad5edbb525f"></span>void <code class="sig-name descname">setFontSize</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x213IfcSizeSelectE" title="Ifc4x2::IfcSizeSelect">IfcSizeSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcTextStyleFontModel11setFontSizeEPN6Ifc4x213IfcSizeSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x221IfcTextStyleFontModel11declarationEv">
+<span id="_CPPv3NK6Ifc4x221IfcTextStyleFontModel11declarationEv"></span><span id="_CPPv2NK6Ifc4x221IfcTextStyleFontModel11declarationEv"></span><span id="Ifc4x2::IfcTextStyleFontModel::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1af1bcd05fd3f9bd730400e2357ebb68cd"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x221IfcTextStyleFontModel11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x221IfcTextStyleFontModel21IfcTextStyleFontModelEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x221IfcTextStyleFontModel21IfcTextStyleFontModelEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x221IfcTextStyleFontModel21IfcTextStyleFontModelEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcTextStyleFontModel::IfcTextStyleFontModel__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1ab68dce44229e7c9fbb6a453326118e8b"></span><code class="sig-name descname">IfcTextStyleFontModel</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcTextStyleFontModel21IfcTextStyleFontModelEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x221IfcTextStyleFontModel21IfcTextStyleFontModelENSt6stringENSt6vectorINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x213IfcSizeSelectE">
+<span id="_CPPv3N6Ifc4x221IfcTextStyleFontModel21IfcTextStyleFontModelENSt6stringENSt6vectorINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x213IfcSizeSelectE"></span><span id="_CPPv2N6Ifc4x221IfcTextStyleFontModel21IfcTextStyleFontModelENSt6stringENSt6vectorINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x213IfcSizeSelectE"></span><span id="Ifc4x2::IfcTextStyleFontModel::IfcTextStyleFontModel__ss.std::vector:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4x2::IfcSizeSelectP"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1a992cf39cd3c8b5ca91e7720e3cab6afd"></span><code class="sig-name descname">IfcTextStyleFontModel</code><span class="sig-paren">(</span>std::string <em>v1_Name</em>, std::vector&lt;std::string&gt; <em>v2_FontFamily</em>, boost::optional&lt;std::string&gt; <em>v3_FontStyle</em>, boost::optional&lt;std::string&gt; <em>v4_FontVariant</em>, boost::optional&lt;std::string&gt; <em>v5_FontWeight</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x213IfcSizeSelectE" title="Ifc4x2::IfcSizeSelect">IfcSizeSelect</a> *<em>v6_FontSize</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcTextStyleFontModel21IfcTextStyleFontModelENSt6stringENSt6vectorINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x213IfcSizeSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x221IfcTextStyleFontModel5ClassEv">
+<span id="_CPPv3N6Ifc4x221IfcTextStyleFontModel5ClassEv"></span><span id="_CPPv2N6Ifc4x221IfcTextStyleFontModel5ClassEv"></span><span id="Ifc4x2::IfcTextStyleFontModel::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_font_model_1a9a3330d377897fcc623e202d366955c8"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcTextStyleFontModel5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_text_style.html" title="previous chapter">Class Ifc4x2::IfcTextStyle</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_text_style_for_defined_font.html" title="next chapter">Class Ifc4x2::IfcTextStyleForDefinedFont</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_text_style_font_model.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aac5e2ece61cdbee68085e2c9a2dcf316:
+
+Define SCHEMA_IfcLocalTime_HAS_MinuteComponent
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcLocalTime_HAS_MinuteComponent

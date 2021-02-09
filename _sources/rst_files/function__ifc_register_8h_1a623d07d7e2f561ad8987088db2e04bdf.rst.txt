@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_register_8h_1a623d07d7e2f561ad8987088db2e04bdf:
+
+Function CLASS(IfcDirection, gp_Dir)
+====================================
+
+- Defined in :ref:`file_src_ifcgeom_IfcRegister.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: CLASS(IfcDirection, gp_Dir)

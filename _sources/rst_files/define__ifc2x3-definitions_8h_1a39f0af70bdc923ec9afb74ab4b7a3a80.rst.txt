@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a39f0af70bdc923ec9afb74ab4b7a3a80:
+
+Define SCHEMA_IfcInventory_CurrentValue_IS_OPTIONAL
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcInventory_CurrentValue_IS_OPTIONAL

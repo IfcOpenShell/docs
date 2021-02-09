@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1adaf627851d8dd010b05a72e016a97a94:
+
+Define SCHEMA_IfcLightSourcePositional_HAS_QuadricAttenuation
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcLightSourcePositional_HAS_QuadricAttenuation

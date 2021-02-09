@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1af94b22d5e4dff64295afbaf43e2fe15a:
+
+Define SCHEMA_IfcElementQuantity_MethodOfMeasurement_IS_OPTIONAL
+================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcElementQuantity_MethodOfMeasurement_IS_OPTIONAL

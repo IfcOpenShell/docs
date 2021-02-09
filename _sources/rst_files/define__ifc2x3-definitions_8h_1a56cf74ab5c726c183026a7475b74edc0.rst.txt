@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a56cf74ab5c726c183026a7475b74edc0:
+
+Define SCHEMA_IfcFluidFlowProperties_PressureSingleValue_IS_OPTIONAL
+====================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcFluidFlowProperties_PressureSingleValue_IS_OPTIONAL

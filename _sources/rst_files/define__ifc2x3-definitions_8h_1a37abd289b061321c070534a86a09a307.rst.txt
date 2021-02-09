@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a37abd289b061321c070534a86a09a307:
+
+Define SCHEMA_IfcStructuralProfileProperties_HAS_TorsionalSectionModulus
+========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralProfileProperties_HAS_TorsionalSectionModulus

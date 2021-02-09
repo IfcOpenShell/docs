@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1adbf3454244bb7ff3e35e91923f4d78be:
+
+Define SCHEMA_IfcAlignment2DCantSegTransition_HAS_IsStartRadiusCCW
+==================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcAlignment2DCantSegTransition_HAS_IsStartRadiusCCW

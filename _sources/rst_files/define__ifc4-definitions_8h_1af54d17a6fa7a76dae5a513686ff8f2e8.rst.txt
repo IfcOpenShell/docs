@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1af54d17a6fa7a76dae5a513686ff8f2e8:
+
+Define SCHEMA_HAS_IfcAngularVelocityMeasure
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcAngularVelocityMeasure

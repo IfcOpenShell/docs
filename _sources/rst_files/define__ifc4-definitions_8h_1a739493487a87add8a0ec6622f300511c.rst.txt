@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a739493487a87add8a0ec6622f300511c:
+
+Define SCHEMA_IfcGeometricRepresentationSubContext_HAS_UserDefinedTargetView
+============================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcGeometricRepresentationSubContext_HAS_UserDefinedTargetView

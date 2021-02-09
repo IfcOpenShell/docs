@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1aa3afc5b589f14faa5f99b3a854628ae7:
+
+Define SCHEMA_IfcConstraint_HAS_PropertiesForConstraint
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConstraint_HAS_PropertiesForConstraint

@@ -1,0 +1,83 @@
+
+.. _file_src_ifcparse_IfcWrite.h:
+
+File IfcWrite.h
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcparse>` (``src/ifcparse``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/IfcWrite.h``)
+----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_IfcWrite.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/IfcBaseClass.h``
+
+- ``../ifcparse/IfcParse.h``
+
+- ``boost/dynamic_bitset.hpp``
+
+- ``boost/optional.hpp``
+
+- ``boost/type_traits/is_base_of.hpp``
+
+- ``boost/type_traits/remove_pointer.hpp``
+
+- ``boost/utility/enable_if.hpp``
+
+- ``boost/variant.hpp``
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_IfcSpfHeader.h`
+
+- :ref:`file_src_ifcparse_IfcHierarchyHelper.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcWrite`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_ifc_write_1_1_ifc_write_argument`
+
+- :ref:`exhale_class_class_ifc_write_1_1_ifc_write_argument_1_1_derived`
+
+- :ref:`exhale_class_class_ifc_write_1_1_ifc_write_argument_1_1empty__aggregate__of__aggregate__t`
+
+- :ref:`exhale_class_class_ifc_write_1_1_ifc_write_argument_1_1empty__aggregate__t`
+
+- :ref:`exhale_class_class_ifc_write_1_1_ifc_write_argument_1_1_enumeration_reference`
+

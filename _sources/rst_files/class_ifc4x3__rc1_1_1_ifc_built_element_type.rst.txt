@@ -1,0 +1,65 @@
+.. _exhale_class_class_ifc4x3__rc1_1_1_ifc_built_element_type:
+
+Class Ifc4x3_rc1::IfcBuiltElementType
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x3__rc1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x3_rc1::IfcElementType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_element_type`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x3_rc1::IfcBeamType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_beam_type`)
+- ``public Ifc4x3_rc1::IfcBearingType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_bearing_type`)
+- ``public Ifc4x3_rc1::IfcBuildingElementProxyType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_building_element_proxy_type`)
+- ``public Ifc4x3_rc1::IfcChimneyType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_chimney_type`)
+- ``public Ifc4x3_rc1::IfcColumnType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_column_type`)
+- ``public Ifc4x3_rc1::IfcCourseType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_course_type`)
+- ``public Ifc4x3_rc1::IfcCoveringType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_covering_type`)
+- ``public Ifc4x3_rc1::IfcCurtainWallType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_curtain_wall_type`)
+- ``public Ifc4x3_rc1::IfcDeepFoundationType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_deep_foundation_type`)
+- ``public Ifc4x3_rc1::IfcDoorType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_door_type`)
+- ``public Ifc4x3_rc1::IfcFootingType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_footing_type`)
+- ``public Ifc4x3_rc1::IfcKerbType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_kerb_type`)
+- ``public Ifc4x3_rc1::IfcMemberType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_member_type`)
+- ``public Ifc4x3_rc1::IfcMooringDeviceType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_mooring_device_type`)
+- ``public Ifc4x3_rc1::IfcNavigationElementType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_navigation_element_type`)
+- ``public Ifc4x3_rc1::IfcPavementType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_pavement_type`)
+- ``public Ifc4x3_rc1::IfcPlateType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_plate_type`)
+- ``public Ifc4x3_rc1::IfcRailingType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_railing_type`)
+- ``public Ifc4x3_rc1::IfcRailType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_rail_type`)
+- ``public Ifc4x3_rc1::IfcRampFlightType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_ramp_flight_type`)
+- ``public Ifc4x3_rc1::IfcRampType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_ramp_type`)
+- ``public Ifc4x3_rc1::IfcRoofType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_roof_type`)
+- ``public Ifc4x3_rc1::IfcShadingDeviceType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_shading_device_type`)
+- ``public Ifc4x3_rc1::IfcSlabType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_slab_type`)
+- ``public Ifc4x3_rc1::IfcStairFlightType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_stair_flight_type`)
+- ``public Ifc4x3_rc1::IfcStairType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_stair_type`)
+- ``public Ifc4x3_rc1::IfcTrackElementType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_track_element_type`)
+- ``public Ifc4x3_rc1::IfcWallType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_wall_type`)
+- ``public Ifc4x3_rc1::IfcWindowType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_window_type`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x3_rc1::IfcBuiltElementType
+   :members:
+   :protected-members:
+   :undoc-members:

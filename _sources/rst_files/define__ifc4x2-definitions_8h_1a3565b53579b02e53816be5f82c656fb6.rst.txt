@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a3565b53579b02e53816be5f82c656fb6:
+
+Define SCHEMA_IfcEventType_UserDefinedEventTriggerType_IS_OPTIONAL
+==================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcEventType_UserDefinedEventTriggerType_IS_OPTIONAL

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a1b9592243903facf7a300fd734f1da2f:
+
+Define SCHEMA_IfcBearing_HAS_PredefinedType
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBearing_HAS_PredefinedType

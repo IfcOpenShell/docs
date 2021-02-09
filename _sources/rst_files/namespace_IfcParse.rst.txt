@@ -1,0 +1,120 @@
+
+.. _namespace_IfcParse:
+
+Namespace IfcParse
+==================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_struct_ifc_parse_1_1_token`
+
+- :ref:`exhale_class_class_ifc_parse_1_1aggregation__type`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_argument_list`
+
+- :ref:`exhale_class_class_ifc_parse_1_1attribute`
+
+- :ref:`exhale_class_class_ifc_parse_1_1declaration`
+
+- :ref:`exhale_class_class_ifc_parse_1_1entity`
+
+- :ref:`exhale_class_class_ifc_parse_1_1entity_1_1attribute__by__name__cmp`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_entity_argument`
+
+- :ref:`exhale_class_class_ifc_parse_1_1enumeration__type`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_file_description`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_file_name`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_file_schema`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_header_entity`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_attribute_out_of_range_exception`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_character_decoder`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_exception`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_file`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_file_1_1type__iterator`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_global_id`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_invalid_token_exception`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_spf_header`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_spf_lexer`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_spf_stream`
+
+- :ref:`exhale_class_class_ifc_parse_1_1instance__factory`
+
+- :ref:`exhale_class_class_ifc_parse_1_1inverse__attribute`
+
+- :ref:`exhale_class_class_ifc_parse_1_1named__type`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_null_argument`
+
+- :ref:`exhale_class_class_ifc_parse_1_1parameter__type`
+
+- :ref:`exhale_class_class_ifc_parse_1_1schema__definition`
+
+- :ref:`exhale_class_class_ifc_parse_1_1schema__definition_1_1declaration__by__index__sort`
+
+- :ref:`exhale_class_class_ifc_parse_1_1schema__definition_1_1declaration__by__name__cmp`
+
+- :ref:`exhale_class_class_ifc_parse_1_1select__type`
+
+- :ref:`exhale_class_class_ifc_parse_1_1simple__type`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_token_argument`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_token_func`
+
+- :ref:`exhale_class_class_ifc_parse_1_1type__declaration`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum__ifc_parse_8h_1a87329b11f95a7c8cc7139328880b0f31`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function__ifc_parse_8h_1a5e72730bef37a4dbd74561720a7d45e1`
+
+- :ref:`exhale_function__ifc_s_i_prefix_8h_1a8b6cecaeb4e7ebbc7128194bc716afbd`
+
+- :ref:`exhale_function__ifc_s_i_prefix_8h_1a5a9547a4b613aca44f1ecbbbabf798d9`
+
+- :ref:`exhale_function__ifc_parse_8h_1a7680f51f9ea25226cfcd49d0ad4ae850`
+
+- :ref:`exhale_function__ifc_parse_8h_1aa755ed49756a10b049abd7ee7bb684bd`
+
+- :ref:`exhale_function__ifc_parse_8h_1ac08f6c495eac51dcfb07f4f5d936e7e9`
+
+- :ref:`exhale_function__ifc_schema_8h_1a33b6b41dc341c46a88088828e76331ba`
+
+- :ref:`exhale_function__ifc_schema_8h_1a8be80940facb7ce9c2eb74bc29ba4061`
+
+- :ref:`exhale_function__ifc_parse_8h_1adbdc1ab9528a2502fb9132a68aaca203`

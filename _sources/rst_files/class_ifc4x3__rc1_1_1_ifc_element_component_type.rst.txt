@@ -1,0 +1,45 @@
+.. _exhale_class_class_ifc4x3__rc1_1_1_ifc_element_component_type:
+
+Class Ifc4x3_rc1::IfcElementComponentType
+=========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x3__rc1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x3_rc1::IfcElementType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_element_type`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x3_rc1::IfcBuildingElementPartType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_building_element_part_type`)
+- ``public Ifc4x3_rc1::IfcDiscreteAccessoryType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_discrete_accessory_type`)
+- ``public Ifc4x3_rc1::IfcFastenerType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_fastener_type`)
+- ``public Ifc4x3_rc1::IfcImpactProtectionDeviceType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_impact_protection_device_type`)
+- ``public Ifc4x3_rc1::IfcMechanicalFastenerType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_mechanical_fastener_type`)
+- ``public Ifc4x3_rc1::IfcReinforcingElementType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_reinforcing_element_type`)
+- ``public Ifc4x3_rc1::IfcSignType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_sign_type`)
+- ``public Ifc4x3_rc1::IfcVibrationDamperType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_vibration_damper_type`)
+- ``public Ifc4x3_rc1::IfcVibrationIsolatorType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_vibration_isolator_type`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x3_rc1::IfcElementComponentType
+   :members:
+   :protected-members:
+   :undoc-members:

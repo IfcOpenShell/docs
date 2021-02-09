@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a7182d88894e4b7f89e84e16dc2c17897:
+
+Define SCHEMA_HAS_IfcMonetaryMeasure
+====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcMonetaryMeasure

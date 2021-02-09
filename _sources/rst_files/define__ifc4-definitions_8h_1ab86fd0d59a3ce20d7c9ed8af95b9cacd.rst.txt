@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ab86fd0d59a3ce20d7c9ed8af95b9cacd:
+
+Define SCHEMA_IfcReference_HAS_AttributeIdentifier
+==================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcReference_HAS_AttributeIdentifier

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a6e456389a27107f8f1dcdd9c970edc6b:
+
+Define SCHEMA_IfcConstructionEquipmentResourceType_HAS_PredefinedType
+=====================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConstructionEquipmentResourceType_HAS_PredefinedType

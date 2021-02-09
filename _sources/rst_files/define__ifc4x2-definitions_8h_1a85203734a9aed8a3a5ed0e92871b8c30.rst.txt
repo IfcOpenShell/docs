@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a85203734a9aed8a3a5ed0e92871b8c30:
+
+Define SCHEMA_IfcStructuralSurfaceAction_HAS_PredefinedType
+===========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralSurfaceAction_HAS_PredefinedType

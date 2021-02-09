@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a3f34b190fdf2bd09630b680359e0cd51:
+
+Define SCHEMA_IfcProduct_HAS_ReferencedBy
+=========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcProduct_HAS_ReferencedBy

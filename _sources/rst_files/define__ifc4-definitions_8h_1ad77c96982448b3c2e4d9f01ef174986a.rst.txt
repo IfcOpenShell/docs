@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ad77c96982448b3c2e4d9f01ef174986a:
+
+Define SCHEMA_IfcTableColumn_Identifier_IS_OPTIONAL
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTableColumn_Identifier_IS_OPTIONAL

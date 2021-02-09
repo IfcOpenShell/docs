@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a49012f127a8e818fe518a39214c676e4:
+
+Define SCHEMA_HAS_IfcIrregularTimeSeries
+========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcIrregularTimeSeries

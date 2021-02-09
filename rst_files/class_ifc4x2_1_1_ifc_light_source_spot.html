@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcLightSourceSpot &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcLine" href="class_ifc4x2_1_1_ifc_line.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcLightSourcePositional" href="class_ifc4x2_1_1_ifc_light_source_positional.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifclightsourcespot">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-light-source-spot"></span><h1>Class Ifc4x2::IfcLightSourceSpot<a class="headerlink" href="#class-ifc4x2-ifclightsourcespot" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcLightSourcePositional</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_light_source_positional.html#exhale-class-class-ifc4x2-1-1-ifc-light-source-positional"><span class="std std-ref">Class Ifc4x2::IfcLightSourcePositional</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x218IfcLightSourceSpotE">
+<span id="_CPPv3N6Ifc4x218IfcLightSourceSpotE"></span><span id="_CPPv2N6Ifc4x218IfcLightSourceSpotE"></span><span id="Ifc4x2::IfcLightSourceSpot"></span><span class="target" id="class_ifc4x2_1_1_ifc_light_source_spot"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcLightSourceSpot</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_light_source_positional.html#_CPPv4N6Ifc4x224IfcLightSourcePositionalE" title="Ifc4x2::IfcLightSourcePositional">IfcLightSourcePositional</a><a class="headerlink" href="#_CPPv4N6Ifc4x218IfcLightSourceSpotE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-46:1992: The light source spot entity is a subtype of light source. Spot light source entities have a light source colour, position, direction, attenuation coefficients, concentration exponent, and spread angle. If a point lies outside the cone of influence of a light source of this type as determined by the light source position, direction and spread angle its colour is not affected by that light source.</p>
+<p>NOTE The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_light_source_spot"><span class="std std-ref">IfcLightSourceSpot</span></a> adds the BeamWidthAngle which defines the inner cone in which the light source emits light at uniform full intensity. The light source’s emission intensity drops off from the inner solid angle (BeamWidthAngle) to the outer solid angle (SpreadAngle).</p>
+<p>Definition from ISO/IEC 14772-1:1997: The Spot light node defines a light source that emits light from a specific point along a specific direction vector and constrained within a solid angle. Spot lights may illuminate geometry nodes that respond to light sources and intersect the solid angle defined by the Spot light. Spot light nodes are specified in the local coordinate system and are affected by ancestors’ transformations.</p>
+<p>Figure 304 (from VRML97) shows the definition of spot light.</p>
+<p>Figure 304 — Light source spot</p>
+<p>NOTE Corresponding ISO 10303 entity: light_source_spot. Please refer to ISO/IS 10303-46:1994, p. 33 for the final definition of the formal standard.</p>
+<p>NOTE In addition to the attributes as defined in ISO10303-46 the additional property from ISO/IEC 14772-1:1997 (VRML) Radius, BeamWidth, and QuadricAttenuation are added to this subtype and the AmbientIntensity and Intensity are inherited from the supertype.</p>
+<p>HISTORY This is a new entity in IFC 2x, renamed and enhanced in IFC2x2. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x218IfcLightSourceSpot4listE">
+<span id="_CPPv3N6Ifc4x218IfcLightSourceSpot4listE"></span><span id="_CPPv2N6Ifc4x218IfcLightSourceSpot4listE"></span><span id="Ifc4x2::IfcLightSourceSpot::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_light_source_spot_1a43d0dff3cbccb7a1cfe937d418a374e2"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x218IfcLightSourceSpotE" title="Ifc4x2::IfcLightSourceSpot">IfcLightSourceSpot</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x218IfcLightSourceSpot4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x218IfcLightSourceSpot11OrientationEv">
+<span id="_CPPv3NK6Ifc4x218IfcLightSourceSpot11OrientationEv"></span><span id="_CPPv2NK6Ifc4x218IfcLightSourceSpot11OrientationEv"></span><span id="Ifc4x2::IfcLightSourceSpot::OrientationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_light_source_spot_1a560d72f8ca69f61639c91cdbc0e7e30e"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_direction.html#_CPPv4N6Ifc4x212IfcDirectionE" title="Ifc4x2::IfcDirection">IfcDirection</a> *<code class="sig-name descname">Orientation</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x218IfcLightSourceSpot11OrientationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-46:1992: This is the direction of the axis of the cone of the light source specified in the coordinate space of the representation being projected.. Definition from VRML97 - ISO/IEC 14772-1:1997: The direction field specifies the direction vector of the light’s central axis defined in the local coordinate system. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x218IfcLightSourceSpot14setOrientationEPN6Ifc4x212IfcDirectionE">
+<span id="_CPPv3N6Ifc4x218IfcLightSourceSpot14setOrientationEPN6Ifc4x212IfcDirectionE"></span><span id="_CPPv2N6Ifc4x218IfcLightSourceSpot14setOrientationEPN6Ifc4x212IfcDirectionE"></span><span id="Ifc4x2::IfcLightSourceSpot::setOrientation__Ifc4x2::IfcDirectionP"></span><span class="target" id="class_ifc4x2_1_1_ifc_light_source_spot_1aa8622596a04f62349195ef47ec9ebe53"></span>void <code class="sig-name descname">setOrientation</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_direction.html#_CPPv4N6Ifc4x212IfcDirectionE" title="Ifc4x2::IfcDirection">IfcDirection</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x218IfcLightSourceSpot14setOrientationEPN6Ifc4x212IfcDirectionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x218IfcLightSourceSpot24hasConcentrationExponentEv">
+<span id="_CPPv3NK6Ifc4x218IfcLightSourceSpot24hasConcentrationExponentEv"></span><span id="_CPPv2NK6Ifc4x218IfcLightSourceSpot24hasConcentrationExponentEv"></span><span id="Ifc4x2::IfcLightSourceSpot::hasConcentrationExponentC"></span><span class="target" id="class_ifc4x2_1_1_ifc_light_source_spot_1a764fcb55e89e7160d33eb3380e4a29c0"></span>bool <code class="sig-name descname">hasConcentrationExponent</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x218IfcLightSourceSpot24hasConcentrationExponentEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ConcentrationExponent is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_light_source_spot"><span class="std std-ref">IfcLightSourceSpot</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x218IfcLightSourceSpot21ConcentrationExponentEv">
+<span id="_CPPv3NK6Ifc4x218IfcLightSourceSpot21ConcentrationExponentEv"></span><span id="_CPPv2NK6Ifc4x218IfcLightSourceSpot21ConcentrationExponentEv"></span><span id="Ifc4x2::IfcLightSourceSpot::ConcentrationExponentC"></span><span class="target" id="class_ifc4x2_1_1_ifc_light_source_spot_1a121b04d63528a1e848400f94368f5f47"></span>double <code class="sig-name descname">ConcentrationExponent</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x218IfcLightSourceSpot21ConcentrationExponentEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-46:1992: This real is the exponent on the cosine of the angle between the line that starts at the position of the spot light source and is in the direction of the orientation of the spot light source and a line that starts at the position of the spot light source and goes through a point on the surface being shaded. NOTE: This attribute does not exists in ISO/IEC 14772-1:1997. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x218IfcLightSourceSpot24setConcentrationExponentEd">
+<span id="_CPPv3N6Ifc4x218IfcLightSourceSpot24setConcentrationExponentEd"></span><span id="_CPPv2N6Ifc4x218IfcLightSourceSpot24setConcentrationExponentEd"></span><span id="Ifc4x2::IfcLightSourceSpot::setConcentrationExponent__double"></span><span class="target" id="class_ifc4x2_1_1_ifc_light_source_spot_1ac2d373288ac89cf3b86df77e41391809"></span>void <code class="sig-name descname">setConcentrationExponent</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x218IfcLightSourceSpot24setConcentrationExponentEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x218IfcLightSourceSpot11SpreadAngleEv">
+<span id="_CPPv3NK6Ifc4x218IfcLightSourceSpot11SpreadAngleEv"></span><span id="_CPPv2NK6Ifc4x218IfcLightSourceSpot11SpreadAngleEv"></span><span id="Ifc4x2::IfcLightSourceSpot::SpreadAngleC"></span><span class="target" id="class_ifc4x2_1_1_ifc_light_source_spot_1a6ab4f91fe5c114abceabc48a4ed11624"></span>double <code class="sig-name descname">SpreadAngle</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x218IfcLightSourceSpot11SpreadAngleEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-46:1992: This planar angle measure is the angle between the line that starts at the position of the spot light source and is in the direction of the spot light source and any line on the boundary of the cone of influence. Definition from VRML97 - ISO/IEC 14772-1:1997: The cutOffAngle (name of spread angle in VRML) field specifies the outer bound of the solid angle. The light source does not emit light outside of this solid angle. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x218IfcLightSourceSpot14setSpreadAngleEd">
+<span id="_CPPv3N6Ifc4x218IfcLightSourceSpot14setSpreadAngleEd"></span><span id="_CPPv2N6Ifc4x218IfcLightSourceSpot14setSpreadAngleEd"></span><span id="Ifc4x2::IfcLightSourceSpot::setSpreadAngle__double"></span><span class="target" id="class_ifc4x2_1_1_ifc_light_source_spot_1acc21c69ea668953f33cc32aadbe790f8"></span>void <code class="sig-name descname">setSpreadAngle</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x218IfcLightSourceSpot14setSpreadAngleEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x218IfcLightSourceSpot14BeamWidthAngleEv">
+<span id="_CPPv3NK6Ifc4x218IfcLightSourceSpot14BeamWidthAngleEv"></span><span id="_CPPv2NK6Ifc4x218IfcLightSourceSpot14BeamWidthAngleEv"></span><span id="Ifc4x2::IfcLightSourceSpot::BeamWidthAngleC"></span><span class="target" id="class_ifc4x2_1_1_ifc_light_source_spot_1a3318ec46bf47d52b77d51e0558856938"></span>double <code class="sig-name descname">BeamWidthAngle</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x218IfcLightSourceSpot14BeamWidthAngleEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from VRML97 - ISO/IEC 14772-1:1997: The beamWidth field specifies an inner solid angle in which the light source emits light at uniform full intensity. The light source’s emission intensity drops off from the inner solid angle (beamWidthAngle) to the outer solid angle (spreadAngle). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x218IfcLightSourceSpot17setBeamWidthAngleEd">
+<span id="_CPPv3N6Ifc4x218IfcLightSourceSpot17setBeamWidthAngleEd"></span><span id="_CPPv2N6Ifc4x218IfcLightSourceSpot17setBeamWidthAngleEd"></span><span id="Ifc4x2::IfcLightSourceSpot::setBeamWidthAngle__double"></span><span class="target" id="class_ifc4x2_1_1_ifc_light_source_spot_1af185f0f864f5d27310b22714d44aa2fe"></span>void <code class="sig-name descname">setBeamWidthAngle</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x218IfcLightSourceSpot17setBeamWidthAngleEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x218IfcLightSourceSpot11declarationEv">
+<span id="_CPPv3NK6Ifc4x218IfcLightSourceSpot11declarationEv"></span><span id="_CPPv2NK6Ifc4x218IfcLightSourceSpot11declarationEv"></span><span id="Ifc4x2::IfcLightSourceSpot::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_light_source_spot_1a10e4dbbfa550ebb69779d5caa5dbb19f"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x218IfcLightSourceSpot11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x218IfcLightSourceSpot18IfcLightSourceSpotEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x218IfcLightSourceSpot18IfcLightSourceSpotEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x218IfcLightSourceSpot18IfcLightSourceSpotEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcLightSourceSpot::IfcLightSourceSpot__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_light_source_spot_1ad84241e67781cacc57799fca31bff78d"></span><code class="sig-name descname">IfcLightSourceSpot</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x218IfcLightSourceSpot18IfcLightSourceSpotEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x218IfcLightSourceSpot18IfcLightSourceSpotEN5boost8optionalINSt6stringEEEPN6Ifc4x212IfcColourRgbEN5boost8optionalIdEEN5boost8optionalIdEEPN6Ifc4x217IfcCartesianPointEddddPN6Ifc4x212IfcDirectionEN5boost8optionalIdEEdd">
+<span id="_CPPv3N6Ifc4x218IfcLightSourceSpot18IfcLightSourceSpotEN5boost8optionalINSt6stringEEEPN6Ifc4x212IfcColourRgbEN5boost8optionalIdEEN5boost8optionalIdEEPN6Ifc4x217IfcCartesianPointEddddPN6Ifc4x212IfcDirectionEN5boost8optionalIdEEdd"></span><span id="_CPPv2N6Ifc4x218IfcLightSourceSpot18IfcLightSourceSpotEN5boost8optionalINSt6stringEEEPN6Ifc4x212IfcColourRgbEN5boost8optionalIdEEN5boost8optionalIdEEPN6Ifc4x217IfcCartesianPointEddddPN6Ifc4x212IfcDirectionEN5boost8optionalIdEEdd"></span><span id="Ifc4x2::IfcLightSourceSpot::IfcLightSourceSpot__boost::optional:ss:.Ifc4x2::IfcColourRgbP.boost::optional:double:.boost::optional:double:.Ifc4x2::IfcCartesianPointP.double.double.double.double.Ifc4x2::IfcDirectionP.boost::optional:double:.double.double"></span><span class="target" id="class_ifc4x2_1_1_ifc_light_source_spot_1aeaff73f28f42e216172b49ef3e88da74"></span><code class="sig-name descname">IfcLightSourceSpot</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Name</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_colour_rgb.html#_CPPv4N6Ifc4x212IfcColourRgbE" title="Ifc4x2::IfcColourRgb">IfcColourRgb</a> *<em>v2_LightColour</em>, boost::optional&lt;double&gt; <em>v3_AmbientIntensity</em>, boost::optional&lt;double&gt; <em>v4_Intensity</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_cartesian_point.html#_CPPv4N6Ifc4x217IfcCartesianPointE" title="Ifc4x2::IfcCartesianPoint">IfcCartesianPoint</a> *<em>v5_Position</em>, double <em>v6_Radius</em>, double <em>v7_ConstantAttenuation</em>, double <em>v8_DistanceAttenuation</em>, double <em>v9_QuadricAttenuation</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_direction.html#_CPPv4N6Ifc4x212IfcDirectionE" title="Ifc4x2::IfcDirection">IfcDirection</a> *<em>v10_Orientation</em>, boost::optional&lt;double&gt; <em>v11_ConcentrationExponent</em>, double <em>v12_SpreadAngle</em>, double <em>v13_BeamWidthAngle</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x218IfcLightSourceSpot18IfcLightSourceSpotEN5boost8optionalINSt6stringEEEPN6Ifc4x212IfcColourRgbEN5boost8optionalIdEEN5boost8optionalIdEEPN6Ifc4x217IfcCartesianPointEddddPN6Ifc4x212IfcDirectionEN5boost8optionalIdEEdd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x218IfcLightSourceSpot5ClassEv">
+<span id="_CPPv3N6Ifc4x218IfcLightSourceSpot5ClassEv"></span><span id="_CPPv2N6Ifc4x218IfcLightSourceSpot5ClassEv"></span><span id="Ifc4x2::IfcLightSourceSpot::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_light_source_spot_1a6f7cf8a97a6a6f89896f800ee718d9ca"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x218IfcLightSourceSpot5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_light_source_positional.html" title="previous chapter">Class Ifc4x2::IfcLightSourcePositional</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_line.html" title="next chapter">Class Ifc4x2::IfcLine</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_light_source_spot.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

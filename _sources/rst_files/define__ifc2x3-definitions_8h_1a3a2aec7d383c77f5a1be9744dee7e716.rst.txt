@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a3a2aec7d383c77f5a1be9744dee7e716:
+
+Define SCHEMA_IfcRelaxation_HAS_InitialStress
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelaxation_HAS_InitialStress

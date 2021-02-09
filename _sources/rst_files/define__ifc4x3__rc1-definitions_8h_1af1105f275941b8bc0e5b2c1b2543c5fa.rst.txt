@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1af1105f275941b8bc0e5b2c1b2543c5fa:
+
+Define SCHEMA_IfcMaterialDefinition_HAS_HasExternalReferences
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMaterialDefinition_HAS_HasExternalReferences

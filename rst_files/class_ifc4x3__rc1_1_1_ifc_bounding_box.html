@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x3_rc1::IfcBoundingBox &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x3_rc1::IfcBoxAlignment" href="class_ifc4x3__rc1_1_1_ifc_box_alignment.html" />
+    <link rel="prev" title="Class Ifc4x3_rc1::IfcBoundedSurface" href="class_ifc4x3__rc1_1_1_ifc_bounded_surface.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x3-rc1-ifcboundingbox">
+<span id="exhale-class-class-ifc4x3-rc1-1-1-ifc-bounding-box"></span><h1>Class Ifc4x3_rc1::IfcBoundingBox<a class="headerlink" href="#class-ifc4x3-rc1-ifcboundingbox" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x3_rc1.h.html#file-src-ifcparse-ifc4x3-rc1-h"><span class="std std-ref">File Ifc4x3_rc1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x3__rc1.html#exhale-struct-struct-ifc4x3-rc1"><span class="std std-ref">Struct Ifc4x3_rc1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x3_rc1::IfcGeometricRepresentationItem</span></code> (<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_geometric_representation_item.html#exhale-class-class-ifc4x3-rc1-1-1-ifc-geometric-representation-item"><span class="std std-ref">Class Ifc4x3_rc1::IfcGeometricRepresentationItem</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N10Ifc4x3_rc114IfcBoundingBoxE">
+<span id="_CPPv3N10Ifc4x3_rc114IfcBoundingBoxE"></span><span id="_CPPv2N10Ifc4x3_rc114IfcBoundingBoxE"></span><span id="Ifc4x3_rc1::IfcBoundingBox"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_bounding_box"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcBoundingBox</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_geometric_representation_item.html#_CPPv4N10Ifc4x3_rc130IfcGeometricRepresentationItemE" title="Ifc4x3_rc1::IfcGeometricRepresentationItem">IfcGeometricRepresentationItem</a><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc114IfcBoundingBoxE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: A box domain is an orthogonal box parallel to the axes of the geometric coordinate system which may be used to limit the domain of a half space solid. A box domain is specified by the coordinates of the bottom left corner, and the lengths of the sides measured in the directions of the coordinate axes.</p>
+<p>Every semantic object having a physical extent might have a minimum default representation of a bounding box. The bounding box is therefore also used as minimal geometric representation for any geometrically represented object. Therefore the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_bounding_box"><span class="std std-ref">IfcBoundingBox</span></a> is subtyped from <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_geometric_representation_item"><span class="std std-ref">IfcGeometricRepresentationItem</span></a>.</p>
+<p>NOTE Corresponding ISO 10303-42 entity: box_domain, please refer to ISO/IS 10303-42:1994, p. 186 for the final definition of the formal standard. In IFC the bounding box can also be used outside of the context of an <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_boxed_half_space"><span class="std std-ref">IfcBoxedHalfSpace</span></a>.</p>
+<p>HISTORY New entity in IFC Release 1.0.</p>
+<p>As shown in Figure 252, the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_bounding_box"><span class="std std-ref">IfcBoundingBox</span></a> is defined with its own location which can be used to place the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_bounding_box"><span class="std std-ref">IfcBoundingBox</span></a> relative to the geometric coordinate system. The <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_bounding_box"><span class="std std-ref">IfcBoundingBox</span></a> is defined by the lower left corner (Corner) and the upper right corner (XDim, YDim, ZDim measured within the parent co-ordinate system).</p>
+<p>Figure 252 — Bounding box </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N10Ifc4x3_rc114IfcBoundingBox4listE">
+<span id="_CPPv3N10Ifc4x3_rc114IfcBoundingBox4listE"></span><span id="_CPPv2N10Ifc4x3_rc114IfcBoundingBox4listE"></span><span id="Ifc4x3_rc1::IfcBoundingBox::list"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_bounding_box_1a0ea7dd47ca894be393cc4677a9fbb396"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N10Ifc4x3_rc114IfcBoundingBoxE" title="Ifc4x3_rc1::IfcBoundingBox">IfcBoundingBox</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc114IfcBoundingBox4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc114IfcBoundingBox6CornerEv">
+<span id="_CPPv3NK10Ifc4x3_rc114IfcBoundingBox6CornerEv"></span><span id="_CPPv2NK10Ifc4x3_rc114IfcBoundingBox6CornerEv"></span><span id="Ifc4x3_rc1::IfcBoundingBox::CornerC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_bounding_box_1a36337aca6c4508b793b5b52d7d5b8dbb"></span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_cartesian_point.html#_CPPv4N10Ifc4x3_rc117IfcCartesianPointE" title="Ifc4x3_rc1::IfcCartesianPoint">IfcCartesianPoint</a> *<code class="sig-name descname">Corner</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc114IfcBoundingBox6CornerEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Location of the bottom left corner (having the minimum values). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc114IfcBoundingBox9setCornerEPN10Ifc4x3_rc117IfcCartesianPointE">
+<span id="_CPPv3N10Ifc4x3_rc114IfcBoundingBox9setCornerEPN10Ifc4x3_rc117IfcCartesianPointE"></span><span id="_CPPv2N10Ifc4x3_rc114IfcBoundingBox9setCornerEPN10Ifc4x3_rc117IfcCartesianPointE"></span><span id="Ifc4x3_rc1::IfcBoundingBox::setCorner__Ifc4x3_rc1::IfcCartesianPointP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_bounding_box_1a09855bfa6e108b5234e2bcea466d3b96"></span>void <code class="sig-name descname">setCorner</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_cartesian_point.html#_CPPv4N10Ifc4x3_rc117IfcCartesianPointE" title="Ifc4x3_rc1::IfcCartesianPoint">IfcCartesianPoint</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc114IfcBoundingBox9setCornerEPN10Ifc4x3_rc117IfcCartesianPointE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc114IfcBoundingBox4XDimEv">
+<span id="_CPPv3NK10Ifc4x3_rc114IfcBoundingBox4XDimEv"></span><span id="_CPPv2NK10Ifc4x3_rc114IfcBoundingBox4XDimEv"></span><span id="Ifc4x3_rc1::IfcBoundingBox::XDimC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_bounding_box_1a1adec9ea0a27bf887fbea2c28dbc95b6"></span>double <code class="sig-name descname">XDim</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc114IfcBoundingBox4XDimEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Length attribute (measured along the edge parallel to the X Axis) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc114IfcBoundingBox7setXDimEd">
+<span id="_CPPv3N10Ifc4x3_rc114IfcBoundingBox7setXDimEd"></span><span id="_CPPv2N10Ifc4x3_rc114IfcBoundingBox7setXDimEd"></span><span id="Ifc4x3_rc1::IfcBoundingBox::setXDim__double"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_bounding_box_1afab2a804773c76b28e1612209d5631be"></span>void <code class="sig-name descname">setXDim</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc114IfcBoundingBox7setXDimEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc114IfcBoundingBox4YDimEv">
+<span id="_CPPv3NK10Ifc4x3_rc114IfcBoundingBox4YDimEv"></span><span id="_CPPv2NK10Ifc4x3_rc114IfcBoundingBox4YDimEv"></span><span id="Ifc4x3_rc1::IfcBoundingBox::YDimC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_bounding_box_1a7f6f6209741c5ec3af8bd3c448d0eced"></span>double <code class="sig-name descname">YDim</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc114IfcBoundingBox4YDimEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Width attribute (measured along the edge parallel to the Y Axis) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc114IfcBoundingBox7setYDimEd">
+<span id="_CPPv3N10Ifc4x3_rc114IfcBoundingBox7setYDimEd"></span><span id="_CPPv2N10Ifc4x3_rc114IfcBoundingBox7setYDimEd"></span><span id="Ifc4x3_rc1::IfcBoundingBox::setYDim__double"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_bounding_box_1abb3acd80b8eec5ee4177ee8891b0aa41"></span>void <code class="sig-name descname">setYDim</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc114IfcBoundingBox7setYDimEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc114IfcBoundingBox4ZDimEv">
+<span id="_CPPv3NK10Ifc4x3_rc114IfcBoundingBox4ZDimEv"></span><span id="_CPPv2NK10Ifc4x3_rc114IfcBoundingBox4ZDimEv"></span><span id="Ifc4x3_rc1::IfcBoundingBox::ZDimC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_bounding_box_1a7b68367f64d31da7eee2032fbd924bbd"></span>double <code class="sig-name descname">ZDim</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc114IfcBoundingBox4ZDimEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Height attribute (measured along the edge parallel to the Z Axis). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc114IfcBoundingBox7setZDimEd">
+<span id="_CPPv3N10Ifc4x3_rc114IfcBoundingBox7setZDimEd"></span><span id="_CPPv2N10Ifc4x3_rc114IfcBoundingBox7setZDimEd"></span><span id="Ifc4x3_rc1::IfcBoundingBox::setZDim__double"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_bounding_box_1ac8613c6a0ac92b913a4f100b12c31d09"></span>void <code class="sig-name descname">setZDim</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc114IfcBoundingBox7setZDimEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc114IfcBoundingBox11declarationEv">
+<span id="_CPPv3NK10Ifc4x3_rc114IfcBoundingBox11declarationEv"></span><span id="_CPPv2NK10Ifc4x3_rc114IfcBoundingBox11declarationEv"></span><span id="Ifc4x3_rc1::IfcBoundingBox::declarationC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_bounding_box_1adc349f64300ce4b0009177330c37a8c5"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc114IfcBoundingBox11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc114IfcBoundingBox14IfcBoundingBoxEP21IfcEntityInstanceData">
+<span id="_CPPv3N10Ifc4x3_rc114IfcBoundingBox14IfcBoundingBoxEP21IfcEntityInstanceData"></span><span id="_CPPv2N10Ifc4x3_rc114IfcBoundingBox14IfcBoundingBoxEP21IfcEntityInstanceData"></span><span id="Ifc4x3_rc1::IfcBoundingBox::IfcBoundingBox__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_bounding_box_1ae78170ad561ad99f2e7c722df61a3c42"></span><code class="sig-name descname">IfcBoundingBox</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc114IfcBoundingBox14IfcBoundingBoxEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc114IfcBoundingBox14IfcBoundingBoxEPN10Ifc4x3_rc117IfcCartesianPointEddd">
+<span id="_CPPv3N10Ifc4x3_rc114IfcBoundingBox14IfcBoundingBoxEPN10Ifc4x3_rc117IfcCartesianPointEddd"></span><span id="_CPPv2N10Ifc4x3_rc114IfcBoundingBox14IfcBoundingBoxEPN10Ifc4x3_rc117IfcCartesianPointEddd"></span><span id="Ifc4x3_rc1::IfcBoundingBox::IfcBoundingBox__Ifc4x3_rc1::IfcCartesianPointP.double.double.double"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_bounding_box_1a1b95967fbf33c8232fee15a3025f8663"></span><code class="sig-name descname">IfcBoundingBox</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_cartesian_point.html#_CPPv4N10Ifc4x3_rc117IfcCartesianPointE" title="Ifc4x3_rc1::IfcCartesianPoint">IfcCartesianPoint</a> *<em>v1_Corner</em>, double <em>v2_XDim</em>, double <em>v3_YDim</em>, double <em>v4_ZDim</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc114IfcBoundingBox14IfcBoundingBoxEPN10Ifc4x3_rc117IfcCartesianPointEddd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc114IfcBoundingBox5ClassEv">
+<span id="_CPPv3N10Ifc4x3_rc114IfcBoundingBox5ClassEv"></span><span id="_CPPv2N10Ifc4x3_rc114IfcBoundingBox5ClassEv"></span><span id="Ifc4x3_rc1::IfcBoundingBox::Class"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_bounding_box_1affa1e082fc15dc9a7b796ff2e0a3bdeb"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc114IfcBoundingBox5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x3__rc1_1_1_ifc_bounded_surface.html" title="previous chapter">Class Ifc4x3_rc1::IfcBoundedSurface</a></li>
+      <li>Next: <a href="class_ifc4x3__rc1_1_1_ifc_box_alignment.html" title="next chapter">Class Ifc4x3_rc1::IfcBoxAlignment</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x3__rc1_1_1_ifc_bounding_box.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

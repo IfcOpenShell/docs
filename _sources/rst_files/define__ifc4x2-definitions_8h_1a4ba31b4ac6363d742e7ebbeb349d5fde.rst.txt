@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a4ba31b4ac6363d742e7ebbeb349d5fde:
+
+Define SCHEMA_IfcObjectDefinition_HAS_HasAssignments
+====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcObjectDefinition_HAS_HasAssignments

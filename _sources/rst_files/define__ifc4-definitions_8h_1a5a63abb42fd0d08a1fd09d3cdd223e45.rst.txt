@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a5a63abb42fd0d08a1fd09d3cdd223e45:
+
+Define SCHEMA_IfcProcess_LongDescription_IS_OPTIONAL
+====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcProcess_LongDescription_IS_OPTIONAL

@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_register_8h_1a6c569cc338f68700f0234a9aeefe7e5f:
+
+Function SHAPE(IfcRevolvedAreaSolid)
+====================================
+
+- Defined in :ref:`file_src_ifcgeom_IfcRegister.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: SHAPE(IfcRevolvedAreaSolid)

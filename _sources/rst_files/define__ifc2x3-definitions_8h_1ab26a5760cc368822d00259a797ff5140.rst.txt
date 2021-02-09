@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ab26a5760cc368822d00259a797ff5140:
+
+Define SCHEMA_IfcSpatialStructureElement_HAS_ContainsElements
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSpatialStructureElement_HAS_ContainsElements

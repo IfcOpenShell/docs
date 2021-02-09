@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1afe0744dd24d71e5ee3c28793f2ab5f23:
+
+Define SCHEMA_IfcStructuralSteelProfileProperties_ShearAreaY_IS_OPTIONAL
+========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralSteelProfileProperties_ShearAreaY_IS_OPTIONAL

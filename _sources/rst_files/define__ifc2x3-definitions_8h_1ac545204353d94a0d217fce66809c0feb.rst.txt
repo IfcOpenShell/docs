@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ac545204353d94a0d217fce66809c0feb:
+
+Define SCHEMA_IfcScheduleTimeControl_HAS_StatusTime
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcScheduleTimeControl_HAS_StatusTime

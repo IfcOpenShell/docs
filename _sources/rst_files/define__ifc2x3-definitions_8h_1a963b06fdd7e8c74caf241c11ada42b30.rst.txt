@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a963b06fdd7e8c74caf241c11ada42b30:
+
+Define SCHEMA_HAS_IfcLightFixtureType
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcLightFixtureType

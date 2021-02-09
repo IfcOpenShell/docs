@@ -1,0 +1,22 @@
+.. _exhale_class_class_ifc_geom_1_1_surface_style_1_1_color_component:
+
+Class SurfaceStyle::ColorComponent
+==================================
+
+- Defined in :ref:`file_src_ifcgeom_schema_agnostic_IfcGeomRenderStyles.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_class_class_ifc_geom_1_1_surface_style`.
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcGeom::SurfaceStyle::ColorComponent
+   :members:
+   :protected-members:
+   :undoc-members:

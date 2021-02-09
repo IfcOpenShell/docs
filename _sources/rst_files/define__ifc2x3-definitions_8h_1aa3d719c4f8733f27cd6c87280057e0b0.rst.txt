@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aa3d719c4f8733f27cd6c87280057e0b0:
+
+Define SCHEMA_IfcPropertyEnumeratedValue_EnumerationReference_IS_OPTIONAL
+=========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPropertyEnumeratedValue_EnumerationReference_IS_OPTIONAL

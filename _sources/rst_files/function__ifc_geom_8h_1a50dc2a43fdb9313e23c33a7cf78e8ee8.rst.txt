@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_geom_8h_1a50dc2a43fdb9313e23c33a7cf78e8ee8:
+
+Function IfcGeom::MAKE_TYPE_NAME
+================================
+
+- Defined in :ref:`file_src_ifcgeom_IfcGeom.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcGeom::MAKE_TYPE_NAME(Cache)

@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcRelFillsElement &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcRelFlowControlElements" href="class_ifc4_1_1_ifc_rel_flow_control_elements.html" />
+    <link rel="prev" title="Class Ifc4::IfcRelDefinesByType" href="class_ifc4_1_1_ifc_rel_defines_by_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcrelfillselement">
+<span id="exhale-class-class-ifc4-1-1-ifc-rel-fills-element"></span><h1>Class Ifc4::IfcRelFillsElement<a class="headerlink" href="#class-ifc4-ifcrelfillselement" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcRelConnects</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_rel_connects.html#exhale-class-class-ifc4-1-1-ifc-rel-connects"><span class="std std-ref">Class Ifc4::IfcRelConnects</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc418IfcRelFillsElementE">
+<span id="_CPPv3N4Ifc418IfcRelFillsElementE"></span><span id="_CPPv2N4Ifc418IfcRelFillsElementE"></span><span id="Ifc4::IfcRelFillsElement"></span><span class="target" id="class_ifc4_1_1_ifc_rel_fills_element"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcRelFillsElement</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_rel_connects.html#_CPPv4N4Ifc414IfcRelConnectsE" title="Ifc4::IfcRelConnects">IfcRelConnects</a><a class="headerlink" href="#_CPPv4N4Ifc418IfcRelFillsElementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_fills_element"><span class="std std-ref">IfcRelFillsElement</span></a> is an objectified relationship between an opening element and an element that fills (or partially fills) the opening element. It is an one-to-one relationship.</p>
+<p>NOTE view definitions or implementer agreements may restrict an opening to be filled by one filling element only.</p>
+<p>HISTORY New entity in IFC Release 1.0</p>
+<p>As shown in Figure 40, the insertion of a door into a wall is represented by two separate relationships. First the door opening is created within the wall by IfcWall(StandardCase) o <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_voids_element"><span class="std std-ref">IfcRelVoidsElement</span></a> o <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_opening_element"><span class="std std-ref">IfcOpeningElement</span></a>, then the door is inserted within the opening by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_opening_element"><span class="std std-ref">IfcOpeningElement</span></a> o <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_fills_element"><span class="std std-ref">IfcRelFillsElement</span></a> o <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a>.</p>
+<p>Figure 40 — Relationships for element filling </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc418IfcRelFillsElement4listE">
+<span id="_CPPv3N4Ifc418IfcRelFillsElement4listE"></span><span id="_CPPv2N4Ifc418IfcRelFillsElement4listE"></span><span id="Ifc4::IfcRelFillsElement::list"></span><span class="target" id="class_ifc4_1_1_ifc_rel_fills_element_1a444925e894e3ebc7c045877f7c97f0a9"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc418IfcRelFillsElementE" title="Ifc4::IfcRelFillsElement">IfcRelFillsElement</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc418IfcRelFillsElement4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc418IfcRelFillsElement22RelatingOpeningElementEv">
+<span id="_CPPv3NK4Ifc418IfcRelFillsElement22RelatingOpeningElementEv"></span><span id="_CPPv2NK4Ifc418IfcRelFillsElement22RelatingOpeningElementEv"></span><span id="Ifc4::IfcRelFillsElement::RelatingOpeningElementC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_fills_element_1abac6629fc18a2d15e9786e5c54182dc2"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_opening_element.html#_CPPv4N4Ifc417IfcOpeningElementE" title="Ifc4::IfcOpeningElement">IfcOpeningElement</a> *<code class="sig-name descname">RelatingOpeningElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc418IfcRelFillsElement22RelatingOpeningElementEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Opening Element being filled by virtue of this relationship. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc418IfcRelFillsElement25setRelatingOpeningElementEPN4Ifc417IfcOpeningElementE">
+<span id="_CPPv3N4Ifc418IfcRelFillsElement25setRelatingOpeningElementEPN4Ifc417IfcOpeningElementE"></span><span id="_CPPv2N4Ifc418IfcRelFillsElement25setRelatingOpeningElementEPN4Ifc417IfcOpeningElementE"></span><span id="Ifc4::IfcRelFillsElement::setRelatingOpeningElement__Ifc4::IfcOpeningElementP"></span><span class="target" id="class_ifc4_1_1_ifc_rel_fills_element_1a5054c3048fb71fe3f90dbdcbb04c6f45"></span>void <code class="sig-name descname">setRelatingOpeningElement</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_opening_element.html#_CPPv4N4Ifc417IfcOpeningElementE" title="Ifc4::IfcOpeningElement">IfcOpeningElement</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc418IfcRelFillsElement25setRelatingOpeningElementEPN4Ifc417IfcOpeningElementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc418IfcRelFillsElement22RelatedBuildingElementEv">
+<span id="_CPPv3NK4Ifc418IfcRelFillsElement22RelatedBuildingElementEv"></span><span id="_CPPv2NK4Ifc418IfcRelFillsElement22RelatedBuildingElementEv"></span><span id="Ifc4::IfcRelFillsElement::RelatedBuildingElementC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_fills_element_1a8e44aa83e2eb848e04c733e573ebdb10"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_element.html#_CPPv4N4Ifc410IfcElementE" title="Ifc4::IfcElement">IfcElement</a> *<code class="sig-name descname">RelatedBuildingElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc418IfcRelFillsElement22RelatedBuildingElementEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reference to building element that occupies fully or partially the associated opening.</p>
+<p>IFC2x PLATFORM CHANGE: The data type has been changed from <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_building_element"><span class="std std-ref">IfcBuildingElement</span></a> to <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a> with upward compatibility for file based exchange. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc418IfcRelFillsElement25setRelatedBuildingElementEPN4Ifc410IfcElementE">
+<span id="_CPPv3N4Ifc418IfcRelFillsElement25setRelatedBuildingElementEPN4Ifc410IfcElementE"></span><span id="_CPPv2N4Ifc418IfcRelFillsElement25setRelatedBuildingElementEPN4Ifc410IfcElementE"></span><span id="Ifc4::IfcRelFillsElement::setRelatedBuildingElement__Ifc4::IfcElementP"></span><span class="target" id="class_ifc4_1_1_ifc_rel_fills_element_1ade0c673606e15597c1d31542ee145b60"></span>void <code class="sig-name descname">setRelatedBuildingElement</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_element.html#_CPPv4N4Ifc410IfcElementE" title="Ifc4::IfcElement">IfcElement</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc418IfcRelFillsElement25setRelatedBuildingElementEPN4Ifc410IfcElementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc418IfcRelFillsElement11declarationEv">
+<span id="_CPPv3NK4Ifc418IfcRelFillsElement11declarationEv"></span><span id="_CPPv2NK4Ifc418IfcRelFillsElement11declarationEv"></span><span id="Ifc4::IfcRelFillsElement::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_fills_element_1a928ef6a4c3737a22ea936bbcbd04cb8a"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc418IfcRelFillsElement11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc418IfcRelFillsElement18IfcRelFillsElementEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc418IfcRelFillsElement18IfcRelFillsElementEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc418IfcRelFillsElement18IfcRelFillsElementEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcRelFillsElement::IfcRelFillsElement__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_rel_fills_element_1a7675088fff21e65a6931a923614fe565"></span><code class="sig-name descname">IfcRelFillsElement</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc418IfcRelFillsElement18IfcRelFillsElementEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc418IfcRelFillsElement18IfcRelFillsElementENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc417IfcOpeningElementEPN4Ifc410IfcElementE">
+<span id="_CPPv3N4Ifc418IfcRelFillsElement18IfcRelFillsElementENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc417IfcOpeningElementEPN4Ifc410IfcElementE"></span><span id="_CPPv2N4Ifc418IfcRelFillsElement18IfcRelFillsElementENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc417IfcOpeningElementEPN4Ifc410IfcElementE"></span><span id="Ifc4::IfcRelFillsElement::IfcRelFillsElement__ss.Ifc4::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.Ifc4::IfcOpeningElementP.Ifc4::IfcElementP"></span><span class="target" id="class_ifc4_1_1_ifc_rel_fills_element_1a02f0e8cfdfb288f2c52bb2f11c97cde5"></span><code class="sig-name descname">IfcRelFillsElement</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_owner_history.html#_CPPv4N4Ifc415IfcOwnerHistoryE" title="Ifc4::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_opening_element.html#_CPPv4N4Ifc417IfcOpeningElementE" title="Ifc4::IfcOpeningElement">IfcOpeningElement</a> *<em>v5_RelatingOpeningElement</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_element.html#_CPPv4N4Ifc410IfcElementE" title="Ifc4::IfcElement">IfcElement</a> *<em>v6_RelatedBuildingElement</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc418IfcRelFillsElement18IfcRelFillsElementENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc417IfcOpeningElementEPN4Ifc410IfcElementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc418IfcRelFillsElement5ClassEv">
+<span id="_CPPv3N4Ifc418IfcRelFillsElement5ClassEv"></span><span id="_CPPv2N4Ifc418IfcRelFillsElement5ClassEv"></span><span id="Ifc4::IfcRelFillsElement::Class"></span><span class="target" id="class_ifc4_1_1_ifc_rel_fills_element_1af9e3d36aaad8796e9ce8633a84a5c9d6"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc418IfcRelFillsElement5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_rel_defines_by_type.html" title="previous chapter">Class Ifc4::IfcRelDefinesByType</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_rel_flow_control_elements.html" title="next chapter">Class Ifc4::IfcRelFlowControlElements</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_rel_fills_element.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

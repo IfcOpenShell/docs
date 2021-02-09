@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a049ec77b011a933928367bccb867ae10:
+
+Define SCHEMA_IfcNavigationElement_HAS_PredefinedType
+=====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcNavigationElement_HAS_PredefinedType

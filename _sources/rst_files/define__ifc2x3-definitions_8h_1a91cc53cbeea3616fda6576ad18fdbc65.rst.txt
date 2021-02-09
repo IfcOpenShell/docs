@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a91cc53cbeea3616fda6576ad18fdbc65:
+
+Define SCHEMA_IfcContextDependentUnit_HAS_Name
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcContextDependentUnit_HAS_Name

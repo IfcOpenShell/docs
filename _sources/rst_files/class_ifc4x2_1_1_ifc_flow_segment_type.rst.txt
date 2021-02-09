@@ -1,0 +1,40 @@
+.. _exhale_class_class_ifc4x2_1_1_ifc_flow_segment_type:
+
+Class Ifc4x2::IfcFlowSegmentType
+================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x2`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x2::IfcDistributionFlowElementType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_distribution_flow_element_type`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x2::IfcCableCarrierSegmentType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_cable_carrier_segment_type`)
+- ``public Ifc4x2::IfcCableSegmentType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_cable_segment_type`)
+- ``public Ifc4x2::IfcDuctSegmentType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_duct_segment_type`)
+- ``public Ifc4x2::IfcPipeSegmentType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_pipe_segment_type`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x2::IfcFlowSegmentType
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcSite &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcSIUnit" href="class_ifc2x3_1_1_ifc_s_i_unit.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcSimpleProperty" href="class_ifc2x3_1_1_ifc_simple_property.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcsite">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-site"></span><h1>Class Ifc2x3::IfcSite<a class="headerlink" href="#class-ifc2x3-ifcsite" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcSpatialStructureElement</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_spatial_structure_element.html#exhale-class-class-ifc2x3-1-1-ifc-spatial-structure-element"><span class="std std-ref">Class Ifc2x3::IfcSpatialStructureElement</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x37IfcSiteE">
+<span id="_CPPv3N6Ifc2x37IfcSiteE"></span><span id="_CPPv2N6Ifc2x37IfcSiteE"></span><span id="Ifc2x3::IfcSite"></span><span class="target" id="class_ifc2x3_1_1_ifc_site"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcSite</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_spatial_structure_element.html#_CPPv4N6Ifc2x326IfcSpatialStructureElementE" title="Ifc2x3::IfcSpatialStructureElement">IfcSpatialStructureElement</a><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcSiteE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO 6707-1:1989: Area where construction works are undertaken. A site is a defined area of land, possibly covered with water, on which the project construction is to be completed. A site may be used to erect building(s) or other AEC products. A site (<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a>) may include a definition of the single geographic reference point for this site (global position using WGS84 with Longitude, Latitude and Elevation). The precision is provided up to millionth of a second and it provides an absolute placement in relation to the real world as used in exchange with geospational information systems. If asserted, the Longitude, Latitude and Elevation establish the point in WGS84 where the point 0.,0.,0. of the LocalPlacement of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> is situated. The geometrical placement of the site, defined by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a>, shall be always relative to the spatial structure element, in which this site is included, or absolute, i.e. to the world coordinate system, as established by the geometric representation context of the project. The world coordinate system, established at the IfcProject.RepresentationContexts, may include a definition of the true north within the XY plane of the world coordinate system, if provided, it can be obtained at <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_geometric_representation_context_1ac45049ec9a4e930f5d92229db0696385"><span class="std std-ref">IfcGeometricRepresentationContext.TrueNorth</span></a>. A project may span over several connected or disconnected sites. Therefore site complex provides for a collection of sites included in a project. A site can also be decomposed in parts, where each part defines a site section. This is defined by the composition type attribute of the supertype IfcSpatialStructureElements which is interpreted as follow:</p>
+<p>COMPLEX = site complex ELEMENT = site PARTIAL = site section</p>
+<p>HISTORY New entity in IFC Release 1.0.</p>
+<p>Property Set Use Definition The property sets relating to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> are defined by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> and attached by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. It is accessible by the inverse IsDefinedBy relationship. The following property set definitions specific to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> are part of this IFC release:</p>
+<p>Pset_SiteCommon: common property set for all types of site</p>
+<p>Quantity Use Definition The quantities relating to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> are defined by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element_quantity"><span class="std std-ref">IfcElementQuantity</span></a> and attached by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. It is accessible by the inverse IsDefinedBy relationship. The following base quantities are defined and should be exchanged with the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_root_1af4c45563ef1c697ea8f42a51ed80454b"><span class="std std-ref">IfcElementQuantity.Name</span></a> = ‘BaseQuantities’. Other quantities, being subjected to local standard of measurement, can be defined with another string value assigned to Name. In this case a valid value for MethodOfMeasurement has to be provided.</p>
+<p>Qto_SiteBaseQuantities: base quantities for all site occurrences.</p>
+<p>Spatial Structure Use Definition The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> is used to build the spatial structure of a building (that serves as the primary project breakdown and is required to be hierarchical). The spatial structure elements are linked together by using the objectified relationship <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_aggregates"><span class="std std-ref">IfcRelAggregates</span></a>. The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> references them by its inverse relationships:</p>
+<p>IfcSite.Decomposes  referencing (<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a> || <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a>) by IfcRelAggregates.RelatingObject, If it refers to another instance of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a>, the referenced <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> needs to have a different and higher CompositionType, i.e. COMPLEX (if the other <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> has ELEMENT), or ELEMENT (if the other <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> has PARTIAL). IfcSite.IsDecomposedBy  referencing (<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> || <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> || <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a>) by IfcRelAggregates.RelatedObjects. If it refers to another instance of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a>, the referenced <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> needs to have a different and lower CompositionType, i.e. ELEMENT (if the other <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> has COMPLEX), or PARTIAL (if the other <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> has ELEMENT).</p>
+<p>If there are building elements and/or other elements directly related to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> (like a fence, or a shear wall), they are associated with the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> by using the objectified relationship <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_contained_in_spatial_structure"><span class="std std-ref">IfcRelContainedInSpatialStructure</span></a>. The IfcIfcSite references them by its inverse relationship:</p>
+<p>IfcSite.ContainsElements  referencing any subtype of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a> (with the exception of other spatial structure element) by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_contained_in_spatial_structure_1a99ef80e96f3bc609936021320250fe78"><span class="std std-ref">IfcRelContainedInSpatialStructure.RelatedElements</span></a>.</p>
+<p>Figure 51 shows the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> as part of the spatial structure. In addition to the logical spatial structure, also the placement hierarchy is shown. In this example the spatial structure hierarchy and the placement hierarchy are identical. NOTE Detailed requirements on mandatory element containment and placement structure relationships are given in view definitions and implementer agreements.</p>
+<p>Figure 51 — Site composition</p>
+<p>Attribute Use Definition Figure 52 describes the heights and elevations of the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a>. It is used to provide the geographic longitude, latitude, and height above sea level for the origin of the site. The origin of the site is the local placement. The provision of longitude, latitude, height at the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> for georeferencing is provided for upward compatibility reasons. It requires a single instance of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> and WGS84 as coordinate reference system. For exact georeferencing the new entities IfcCoordinateReferenceSystem and IfcMapConversion should be used.</p>
+<p>reference height of site is provided by: <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site_1a3fe3cb2ef319c4cba1a57864603f44ad"><span class="std std-ref">IfcSite.RefElevation</span></a>, it is given according to the height datum used at this location. the reference height of each building situated at the site is given againt the same height datum used at this location. the elevations of each storey belonging to each building are given as local height relative to the reference height of the building.</p>
+<p> Figure 52 — Site elevations</p>
+<p>Geometry Use Definitions The geometric representation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> is given by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a> and <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> allowing multiple geometric representations. Local placement The local placement for <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> is defined in its supertype <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a>. It is defined by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a>, which defines the local coordinate system that is referenced by all geometric representations.</p>
+<p>The PlacementRelTo relationship of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> shall point to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_spatial_structure_element"><span class="std std-ref">IfcSpatialStructureElement</span></a> of type “IfcSite”, if relative placement is used (e.g. to position a site relative a a site complex, or a site section to a site). If the relative placement is not used, the absolute placement is defined within the world coordinate system. If there is only one site object, then this is the default situation.</p>
+<p>Foot Print Representation The foot print representation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> is given by either a single 2D curve (such as <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a> or <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_composite_curve"><span class="std std-ref">IfcCompositeCurve</span></a>), or by a list of 2D curves (in case of inner boundaries). The representation identifier and type of this geometric representation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> is:</p>
+<p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_representation_1a7cfe30844e7943fb96869a59f59554c4"><span class="std std-ref">IfcShapeRepresentation.RepresentationIdentifier</span></a> = ‘FootPrint’ <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_representation_1a3943a45023e1b3e5af64c18048fa1e3b"><span class="std std-ref">IfcShapeRepresentation.RepresentationType</span></a> = ‘GeometricCurveSet’, or ‘Annotation2D’</p>
+<p>Survey Points Representation The survey point representation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> is defined using a set of survey points and optionally breaklines. The breaklines are restricted to only connect points given in the set of survey points. Breaklines, if given, are used to constrain the triangulation. The representation identifier and type of this geometric representation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> is:</p>
+<p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_representation_1a7cfe30844e7943fb96869a59f59554c4"><span class="std std-ref">IfcShapeRepresentation.RepresentationIdentifier</span></a> = ‘SurveyPoints’ <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_representation_1a3943a45023e1b3e5af64c18048fa1e3b"><span class="std std-ref">IfcShapeRepresentation.RepresentationType</span></a> = ‘GeometricCurveSet’</p>
+<p>Figure 53 shows a set of survey points, given as 3D Cartesian points within the object coordinate system of the site. Figure 54 shows the result after facetation. The set of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_cartesian_point"><span class="std std-ref">IfcCartesianPoint</span></a> is included in the set of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_geometric_set_1a718fcfccb879e7fab16a83013ccb4ff4"><span class="std std-ref">IfcGeometricCurveSet.Elements</span></a>.</p>
+<p>Figure 53 — Site survey points Figure 54 — Site survey points facetation</p>
+<p>Figure 55 shows A set of survey points, given as 3D Cartesian points, and a set of break points, given as a set of lines, connecting some survey points, within the object coordinate system of the site. Figure 56 shows the result after facetation. The set of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_cartesian_point"><span class="std std-ref">IfcCartesianPoint</span></a> and the set of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a> are included in the set of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_geometric_set_1a718fcfccb879e7fab16a83013ccb4ff4"><span class="std std-ref">IfcGeometricCurveSet.Elements</span></a>.</p>
+<p>Figure 55 — Site breaklines Figure 56 — Site breaklines facetation</p>
+<p>NOTE The geometric representation of the site has been based on the ARM level description of the site_shape_representation given within the ISO 10303-225 “Building Elements using explicit shape representation”.</p>
+<p>Body Representation The body representation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> is defined using a solid or surface model. Applicable solids are the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_faceted_brep"><span class="std std-ref">IfcFacetedBrep</span></a> or on the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_faceted_brep_with_voids"><span class="std std-ref">IfcFacetedBrepWithVoids</span></a>, applicable surface models are the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_face_based_surface_model"><span class="std std-ref">IfcFaceBasedSurfaceModel</span></a> and the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_shell_based_surface_model"><span class="std std-ref">IfcShellBasedSurfaceModel</span></a>. The representation identifier and type of this representation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> is:</p>
+<p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_representation_1a7cfe30844e7943fb96869a59f59554c4"><span class="std std-ref">IfcShapeRepresentation.RepresentationIdentifier</span></a> = ‘Body’ <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_representation_1a3943a45023e1b3e5af64c18048fa1e3b"><span class="std std-ref">IfcShapeRepresentation.RepresentationType</span></a> = ‘Brep’, or ‘SurfaceModel’ </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x37IfcSite4listE">
+<span id="_CPPv3N6Ifc2x37IfcSite4listE"></span><span id="_CPPv2N6Ifc2x37IfcSite4listE"></span><span id="Ifc2x3::IfcSite::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1a93ded185dc952f5b133dfcde4f3126ab"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x37IfcSiteE" title="Ifc2x3::IfcSite">IfcSite</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcSite4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x37IfcSite14hasRefLatitudeEv">
+<span id="_CPPv3NK6Ifc2x37IfcSite14hasRefLatitudeEv"></span><span id="_CPPv2NK6Ifc2x37IfcSite14hasRefLatitudeEv"></span><span id="Ifc2x3::IfcSite::hasRefLatitudeC"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1a61912258aef4fd1089b4972f39b01fb5"></span>bool <code class="sig-name descname">hasRefLatitude</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x37IfcSite14hasRefLatitudeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RefLatitude is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x37IfcSite11RefLatitudeEv">
+<span id="_CPPv3NK6Ifc2x37IfcSite11RefLatitudeEv"></span><span id="_CPPv2NK6Ifc2x37IfcSite11RefLatitudeEv"></span><span id="Ifc2x3::IfcSite::RefLatitudeC"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1a692bc170e578d8bdb25d79637e55a90d"></span>std::vector&lt;int&gt; <code class="sig-name descname">RefLatitude</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x37IfcSite11RefLatitudeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>World Latitude at reference point (most likely defined in legal description). Defined as integer values for degrees, minutes, seconds, and, optionally, millionths of seconds with respect to the world geodetic system WGS84. Latitudes are measured relative to the geodetic equator, north of the equator by positive values - from 0 till +90, south of the equator by negative values - from 0 till -90. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x37IfcSite14setRefLatitudeENSt6vectorIiEE">
+<span id="_CPPv3N6Ifc2x37IfcSite14setRefLatitudeENSt6vectorIiEE"></span><span id="_CPPv2N6Ifc2x37IfcSite14setRefLatitudeENSt6vectorIiEE"></span><span id="Ifc2x3::IfcSite::setRefLatitude__std::vector:i:"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1a45f24e45a10dfd1f165d443becda4fc0"></span>void <code class="sig-name descname">setRefLatitude</code><span class="sig-paren">(</span>std::vector&lt;int&gt; <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcSite14setRefLatitudeENSt6vectorIiEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x37IfcSite15hasRefLongitudeEv">
+<span id="_CPPv3NK6Ifc2x37IfcSite15hasRefLongitudeEv"></span><span id="_CPPv2NK6Ifc2x37IfcSite15hasRefLongitudeEv"></span><span id="Ifc2x3::IfcSite::hasRefLongitudeC"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1abe135767c38cc34808aebee956acf47b"></span>bool <code class="sig-name descname">hasRefLongitude</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x37IfcSite15hasRefLongitudeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RefLongitude is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x37IfcSite12RefLongitudeEv">
+<span id="_CPPv3NK6Ifc2x37IfcSite12RefLongitudeEv"></span><span id="_CPPv2NK6Ifc2x37IfcSite12RefLongitudeEv"></span><span id="Ifc2x3::IfcSite::RefLongitudeC"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1afdf057f86b444e963fbbece8fe364e89"></span>std::vector&lt;int&gt; <code class="sig-name descname">RefLongitude</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x37IfcSite12RefLongitudeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>World Longitude at reference point (most likely defined in legal description). Defined as integer values for degrees, minutes, seconds, and, optionally, millionths of seconds with respect to the world geodetic system WGS84. Longitudes are measured relative to the geodetic zero meridian, nominally the same as the Greenwich prime meridian: longitudes west of the zero meridian have negative values - from 0 till -180, longitudes east of the zero meridian have positive values - from 0 till -180. Example: Chicago Harbor Light has according to WGS84 a longitude -87.35.40 (or 87.35.40W) and a latitude 41.53.30 (or 41.53.30N). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x37IfcSite15setRefLongitudeENSt6vectorIiEE">
+<span id="_CPPv3N6Ifc2x37IfcSite15setRefLongitudeENSt6vectorIiEE"></span><span id="_CPPv2N6Ifc2x37IfcSite15setRefLongitudeENSt6vectorIiEE"></span><span id="Ifc2x3::IfcSite::setRefLongitude__std::vector:i:"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1a4dab9e6263e9d8397d320acdbc455d3f"></span>void <code class="sig-name descname">setRefLongitude</code><span class="sig-paren">(</span>std::vector&lt;int&gt; <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcSite15setRefLongitudeENSt6vectorIiEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x37IfcSite15hasRefElevationEv">
+<span id="_CPPv3NK6Ifc2x37IfcSite15hasRefElevationEv"></span><span id="_CPPv2NK6Ifc2x37IfcSite15hasRefElevationEv"></span><span id="Ifc2x3::IfcSite::hasRefElevationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1a542050fb3fcb4e7bb1b6ff9dfaac12d6"></span>bool <code class="sig-name descname">hasRefElevation</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x37IfcSite15hasRefElevationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RefElevation is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x37IfcSite12RefElevationEv">
+<span id="_CPPv3NK6Ifc2x37IfcSite12RefElevationEv"></span><span id="_CPPv2NK6Ifc2x37IfcSite12RefElevationEv"></span><span id="Ifc2x3::IfcSite::RefElevationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1a3fe3cb2ef319c4cba1a57864603f44ad"></span>double <code class="sig-name descname">RefElevation</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x37IfcSite12RefElevationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Datum elevation relative to sea level. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x37IfcSite15setRefElevationEd">
+<span id="_CPPv3N6Ifc2x37IfcSite15setRefElevationEd"></span><span id="_CPPv2N6Ifc2x37IfcSite15setRefElevationEd"></span><span id="Ifc2x3::IfcSite::setRefElevation__double"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1ae0d032f0ab5ed16ff1d22e930b136034"></span>void <code class="sig-name descname">setRefElevation</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcSite15setRefElevationEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x37IfcSite18hasLandTitleNumberEv">
+<span id="_CPPv3NK6Ifc2x37IfcSite18hasLandTitleNumberEv"></span><span id="_CPPv2NK6Ifc2x37IfcSite18hasLandTitleNumberEv"></span><span id="Ifc2x3::IfcSite::hasLandTitleNumberC"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1a4554ee0dde7827a8a0fccd58dbc9dcc9"></span>bool <code class="sig-name descname">hasLandTitleNumber</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x37IfcSite18hasLandTitleNumberEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute LandTitleNumber is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x37IfcSite15LandTitleNumberEv">
+<span id="_CPPv3NK6Ifc2x37IfcSite15LandTitleNumberEv"></span><span id="_CPPv2NK6Ifc2x37IfcSite15LandTitleNumberEv"></span><span id="Ifc2x3::IfcSite::LandTitleNumberC"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1a82274e7b73f3f2409516f24fcaf40745"></span>std::string <code class="sig-name descname">LandTitleNumber</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x37IfcSite15LandTitleNumberEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The land title number (designation of the site within a regional system). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x37IfcSite18setLandTitleNumberENSt6stringE">
+<span id="_CPPv3N6Ifc2x37IfcSite18setLandTitleNumberENSt6stringE"></span><span id="_CPPv2N6Ifc2x37IfcSite18setLandTitleNumberENSt6stringE"></span><span id="Ifc2x3::IfcSite::setLandTitleNumber__ss"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1a6508359860b88917f81341c8dff68a5c"></span>void <code class="sig-name descname">setLandTitleNumber</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcSite18setLandTitleNumberENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x37IfcSite14hasSiteAddressEv">
+<span id="_CPPv3NK6Ifc2x37IfcSite14hasSiteAddressEv"></span><span id="_CPPv2NK6Ifc2x37IfcSite14hasSiteAddressEv"></span><span id="Ifc2x3::IfcSite::hasSiteAddressC"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1aa42fa060b3cc65591cc6fca0fcd81d05"></span>bool <code class="sig-name descname">hasSiteAddress</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x37IfcSite14hasSiteAddressEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute SiteAddress is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x37IfcSite11SiteAddressEv">
+<span id="_CPPv3NK6Ifc2x37IfcSite11SiteAddressEv"></span><span id="_CPPv2NK6Ifc2x37IfcSite11SiteAddressEv"></span><span id="Ifc2x3::IfcSite::SiteAddressC"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1a48251eb51bdb8edf6c7f8dea8dc6c940"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_postal_address.html#_CPPv4N6Ifc2x316IfcPostalAddressE" title="Ifc2x3::IfcPostalAddress">IfcPostalAddress</a> *<code class="sig-name descname">SiteAddress</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x37IfcSite11SiteAddressEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Address given to the site for postal purposes. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x37IfcSite14setSiteAddressEPN6Ifc2x316IfcPostalAddressE">
+<span id="_CPPv3N6Ifc2x37IfcSite14setSiteAddressEPN6Ifc2x316IfcPostalAddressE"></span><span id="_CPPv2N6Ifc2x37IfcSite14setSiteAddressEPN6Ifc2x316IfcPostalAddressE"></span><span id="Ifc2x3::IfcSite::setSiteAddress__Ifc2x3::IfcPostalAddressP"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1a8924c9cbef243859af9fa15fcb407574"></span>void <code class="sig-name descname">setSiteAddress</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_postal_address.html#_CPPv4N6Ifc2x316IfcPostalAddressE" title="Ifc2x3::IfcPostalAddress">IfcPostalAddress</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcSite14setSiteAddressEPN6Ifc2x316IfcPostalAddressE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x37IfcSite11declarationEv">
+<span id="_CPPv3NK6Ifc2x37IfcSite11declarationEv"></span><span id="_CPPv2NK6Ifc2x37IfcSite11declarationEv"></span><span id="Ifc2x3::IfcSite::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1a668e9a9a5cd9ff19ea305eba2eaac914"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x37IfcSite11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x37IfcSite7IfcSiteEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x37IfcSite7IfcSiteEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x37IfcSite7IfcSiteEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcSite::IfcSite__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1aaa80abf719fa03b211d9fd342af47c3b"></span><code class="sig-name descname">IfcSite</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcSite7IfcSiteEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x37IfcSite7IfcSiteENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEEN6Ifc2x325IfcElementCompositionEnum5ValueEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalIdEEN5boost8optionalINSt6stringEEEPN6Ifc2x316IfcPostalAddressE">
+<span id="_CPPv3N6Ifc2x37IfcSite7IfcSiteENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEEN6Ifc2x325IfcElementCompositionEnum5ValueEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalIdEEN5boost8optionalINSt6stringEEEPN6Ifc2x316IfcPostalAddressE"></span><span id="_CPPv2N6Ifc2x37IfcSite7IfcSiteENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEEN6Ifc2x325IfcElementCompositionEnum5ValueEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalIdEEN5boost8optionalINSt6stringEEEPN6Ifc2x316IfcPostalAddressE"></span><span id="Ifc2x3::IfcSite::IfcSite__ss.Ifc2x3::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc2x3::IfcObjectPlacementP.Ifc2x3::IfcProductRepresentationP.boost::optional:ss:.Ifc2x3::IfcElementCompositionEnum::Value.boost::optional:std::vector:i::.boost::optional:std::vector:i::.boost::optional:double:.boost::optional:ss:.Ifc2x3::IfcPostalAddressP"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1a67c5349c90ddb2ac0a783daeeab17885"></span><code class="sig-name descname">IfcSite</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_owner_history.html#_CPPv4N6Ifc2x315IfcOwnerHistoryE" title="Ifc2x3::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_object_placement.html#_CPPv4N6Ifc2x318IfcObjectPlacementE" title="Ifc2x3::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_product_representation.html#_CPPv4N6Ifc2x324IfcProductRepresentationE" title="Ifc2x3::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, boost::optional&lt;std::string&gt; <em>v8_LongName</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x325IfcElementCompositionEnumE" title="Ifc2x3::IfcElementCompositionEnum">IfcElementCompositionEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x325IfcElementCompositionEnum5ValueE" title="Ifc2x3::IfcElementCompositionEnum::Value">Value</a> <em>v9_CompositionType</em>, boost::optional&lt;std::vector&lt;int&gt;&gt; <em>v10_RefLatitude</em>, boost::optional&lt;std::vector&lt;int&gt;&gt; <em>v11_RefLongitude</em>, boost::optional&lt;double&gt; <em>v12_RefElevation</em>, boost::optional&lt;std::string&gt; <em>v13_LandTitleNumber</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_postal_address.html#_CPPv4N6Ifc2x316IfcPostalAddressE" title="Ifc2x3::IfcPostalAddress">IfcPostalAddress</a> *<em>v14_SiteAddress</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcSite7IfcSiteENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEEN6Ifc2x325IfcElementCompositionEnum5ValueEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalIdEEN5boost8optionalINSt6stringEEEPN6Ifc2x316IfcPostalAddressE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x37IfcSite5ClassEv">
+<span id="_CPPv3N6Ifc2x37IfcSite5ClassEv"></span><span id="_CPPv2N6Ifc2x37IfcSite5ClassEv"></span><span id="Ifc2x3::IfcSite::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_site_1a5f84dd957695b63d7032af10204fbd1f"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcSite5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_simple_property.html" title="previous chapter">Class Ifc2x3::IfcSimpleProperty</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_s_i_unit.html" title="next chapter">Class Ifc2x3::IfcSIUnit</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_site.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1afa141923a4b2910b0a66c89ee4749aa7:
+
+Define SCHEMA_HAS_IfcCountMeasure
+=================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcCountMeasure

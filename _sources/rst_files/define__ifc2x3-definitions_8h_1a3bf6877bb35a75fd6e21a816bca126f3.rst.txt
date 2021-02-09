@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a3bf6877bb35a75fd6e21a816bca126f3:
+
+Define SCHEMA_HAS_IfcDerivedMeasureValue
+========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcDerivedMeasureValue

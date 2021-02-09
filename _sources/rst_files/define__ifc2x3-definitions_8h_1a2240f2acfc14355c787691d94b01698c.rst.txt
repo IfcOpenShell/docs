@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a2240f2acfc14355c787691d94b01698c:
+
+Define SCHEMA_IfcTelecomAddress_HAS_TelephoneNumbers
+====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTelecomAddress_HAS_TelephoneNumbers

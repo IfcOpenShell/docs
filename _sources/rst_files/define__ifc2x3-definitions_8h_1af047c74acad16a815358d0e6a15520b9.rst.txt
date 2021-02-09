@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1af047c74acad16a815358d0e6a15520b9:
+
+Define SCHEMA_IfcTextStyle_HAS_TextFontStyle
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTextStyle_HAS_TextFontStyle

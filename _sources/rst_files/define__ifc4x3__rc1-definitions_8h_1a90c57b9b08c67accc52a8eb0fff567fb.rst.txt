@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a90c57b9b08c67accc52a8eb0fff567fb:
+
+Define SCHEMA_IfcCoordinateOperation_HAS_TargetCRS
+==================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcCoordinateOperation_HAS_TargetCRS

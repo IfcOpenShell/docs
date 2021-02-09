@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a52fcf4efde0a3221be2d20fe6c65fc4a:
+
+Define SCHEMA_IfcTelecomAddress_HAS_FacsimileNumbers
+====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTelecomAddress_HAS_FacsimileNumbers

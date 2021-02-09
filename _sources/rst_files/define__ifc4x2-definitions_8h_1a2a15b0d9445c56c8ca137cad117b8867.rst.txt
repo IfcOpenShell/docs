@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a2a15b0d9445c56c8ca137cad117b8867:
+
+Define SCHEMA_HAS_IfcStructuralCurveMemberVarying
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcStructuralCurveMemberVarying

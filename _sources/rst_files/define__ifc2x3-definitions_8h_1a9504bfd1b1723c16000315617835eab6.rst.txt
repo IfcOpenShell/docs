@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a9504bfd1b1723c16000315617835eab6:
+
+Define SCHEMA_IfcLocalPlacement_HAS_PlacementRelTo
+==================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcLocalPlacement_HAS_PlacementRelTo

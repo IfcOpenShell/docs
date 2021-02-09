@@ -1,0 +1,38 @@
+.. _exhale_class_class_ifc4_1_1_ifc_shape_model:
+
+Class Ifc4::IfcShapeModel
+=========================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4::IfcRepresentation`` (:ref:`exhale_class_class_ifc4_1_1_ifc_representation`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4::IfcShapeRepresentation`` (:ref:`exhale_class_class_ifc4_1_1_ifc_shape_representation`)
+- ``public Ifc4::IfcTopologyRepresentation`` (:ref:`exhale_class_class_ifc4_1_1_ifc_topology_representation`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4::IfcShapeModel
+   :members:
+   :protected-members:
+   :undoc-members:

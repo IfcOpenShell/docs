@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a20ad4cb77c04113d495459f66fedb9a7:
+
+Define SCHEMA_IfcTask_HAS_Priority
+==================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTask_HAS_Priority

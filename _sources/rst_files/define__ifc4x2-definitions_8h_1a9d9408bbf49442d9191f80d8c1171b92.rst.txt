@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a9d9408bbf49442d9191f80d8c1171b92:
+
+Define SCHEMA_IfcBSplineCurve_HAS_ControlPointsList
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBSplineCurve_HAS_ControlPointsList

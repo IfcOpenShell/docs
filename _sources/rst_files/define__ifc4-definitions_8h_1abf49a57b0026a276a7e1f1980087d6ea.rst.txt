@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1abf49a57b0026a276a7e1f1980087d6ea:
+
+Define SCHEMA_IfcDistributionFlowElement_HAS_HasControlElements
+===============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDistributionFlowElement_HAS_HasControlElements

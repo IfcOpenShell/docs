@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a50b2243092c07a393c75bb607d515c66:
+
+Define SCHEMA_IfcWindowType_HAS_UserDefinedPartitioningType
+===========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcWindowType_HAS_UserDefinedPartitioningType

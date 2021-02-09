@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Struct Ifc4x1::IfcStateEnum &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct Ifc4x1::IfcStructuralCurveActivityTypeEnum" href="struct_ifc4x1_1_1_ifc_structural_curve_activity_type_enum.html" />
+    <link rel="prev" title="Struct Ifc4x1::IfcStairTypeEnum" href="struct_ifc4x1_1_1_ifc_stair_type_enum.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="struct-ifc4x1-ifcstateenum">
+<span id="exhale-struct-struct-ifc4x1-1-1-ifc-state-enum"></span><h1>Struct Ifc4x1::IfcStateEnum<a class="headerlink" href="#struct-ifc4x1-ifcstateenum" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This struct is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp struct">
+<dt id="_CPPv4N6Ifc4x112IfcStateEnumE">
+<span id="_CPPv3N6Ifc4x112IfcStateEnumE"></span><span id="_CPPv2N6Ifc4x112IfcStateEnumE"></span><span id="Ifc4x1::IfcStateEnum"></span><span class="target" id="struct_ifc4x1_1_1_ifc_state_enum"></span><em class="property">struct </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcStateEnum</code><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp enum">
+<dt id="_CPPv4N6Ifc4x112IfcStateEnum5ValueE">
+<span id="_CPPv3N6Ifc4x112IfcStateEnum5ValueE"></span><span id="_CPPv2N6Ifc4x112IfcStateEnum5ValueE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_state_enum_1a32aa9b0264818f9814d2967c105c024f"></span><em class="property">enum </em><code class="sig-name descname">Value</code><br /></dt>
+<dd><p>The <a class="reference internal" href="#struct_ifc4x1_1_1_ifc_state_enum"><span class="std std-ref">IfcStateEnum</span></a> enumeration identifies the state or accessibility of the object (for example, read/write, locked).</p>
+<p>Valid enumerations are:</p>
+<p>READWRITE: Object is in a Read-Write state. It may be modified by an application. READONLY: Object is in a Read-Only state. It may be viewed but not modified by an application. LOCKED: Object is in a Locked state. It may not be accessed by an application. READWRITELOCKED: Object is in a Read-Write-Locked state. It may not be accessed by an application. READONLYLOCKED: Object is in a Read-Only-Locked state. It may not be accessed by an application.</p>
+<p>HISTORY New enumeration in IFC R2.0.</p>
+<p>IFC2x3 CHANGE This concept was initially introduced in IFC 2.0 as IfcModifiedFlag of type BINARY(3) FIXED and has been modified in R2x to an enumeration. It was initially introduced as a first step towards providing facilities for partial model exchange from a server as requested by the IFC implementers. It is intended for use primarily by a model server so that an application can identify the state of the object. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x112IfcStateEnum5Value18IfcState_READWRITEE">
+<span id="_CPPv3N6Ifc4x112IfcStateEnum5Value18IfcState_READWRITEE"></span><span id="_CPPv2N6Ifc4x112IfcStateEnum5Value18IfcState_READWRITEE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_state_enum_1a32aa9b0264818f9814d2967c105c024fa186473c5f1d994526ae6f6248d4956fc"></span><em class="property">enumerator </em><code class="sig-name descname">IfcState_READWRITE</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x112IfcStateEnum5Value17IfcState_READONLYE">
+<span id="_CPPv3N6Ifc4x112IfcStateEnum5Value17IfcState_READONLYE"></span><span id="_CPPv2N6Ifc4x112IfcStateEnum5Value17IfcState_READONLYE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_state_enum_1a32aa9b0264818f9814d2967c105c024faacdf3d5c065ffd2bfba2abf4bd19e8ab"></span><em class="property">enumerator </em><code class="sig-name descname">IfcState_READONLY</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x112IfcStateEnum5Value15IfcState_LOCKEDE">
+<span id="_CPPv3N6Ifc4x112IfcStateEnum5Value15IfcState_LOCKEDE"></span><span id="_CPPv2N6Ifc4x112IfcStateEnum5Value15IfcState_LOCKEDE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_state_enum_1a32aa9b0264818f9814d2967c105c024fa870ab4ae3d4c131aa7bde40c3b89b4e6"></span><em class="property">enumerator </em><code class="sig-name descname">IfcState_LOCKED</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x112IfcStateEnum5Value24IfcState_READWRITELOCKEDE">
+<span id="_CPPv3N6Ifc4x112IfcStateEnum5Value24IfcState_READWRITELOCKEDE"></span><span id="_CPPv2N6Ifc4x112IfcStateEnum5Value24IfcState_READWRITELOCKEDE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_state_enum_1a32aa9b0264818f9814d2967c105c024fa87f7a92d8c95df4b5c9382e6c9cdf84d"></span><em class="property">enumerator </em><code class="sig-name descname">IfcState_READWRITELOCKED</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x112IfcStateEnum5Value23IfcState_READONLYLOCKEDE">
+<span id="_CPPv3N6Ifc4x112IfcStateEnum5Value23IfcState_READONLYLOCKEDE"></span><span id="_CPPv2N6Ifc4x112IfcStateEnum5Value23IfcState_READONLYLOCKEDE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_state_enum_1a32aa9b0264818f9814d2967c105c024fa682a0c6da44fa181cdd206a96bfe313a"></span><em class="property">enumerator </em><code class="sig-name descname">IfcState_READONLYLOCKED</code><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x112IfcStateEnum8ToStringE5Value">
+<span id="_CPPv3N6Ifc4x112IfcStateEnum8ToStringE5Value"></span><span id="_CPPv2N6Ifc4x112IfcStateEnum8ToStringE5Value"></span><span id="Ifc4x1::IfcStateEnum::ToString__Value"></span><span class="target" id="struct_ifc4x1_1_1_ifc_state_enum_1a42253876c389ed6214d37674dc220239"></span>IFC_PARSE_API <em class="property">const</em> char *<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x112IfcStateEnum5ValueE" title="Ifc4x1::IfcStateEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x112IfcStateEnum10FromStringERKNSt6stringE">
+<span id="_CPPv3N6Ifc4x112IfcStateEnum10FromStringERKNSt6stringE"></span><span id="_CPPv2N6Ifc4x112IfcStateEnum10FromStringERKNSt6stringE"></span><span id="Ifc4x1::IfcStateEnum::FromString__ssCR"></span><span class="target" id="struct_ifc4x1_1_1_ifc_state_enum_1a4c669de65b0df0db5ad8c579c03d0265"></span>IFC_PARSE_API <a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x112IfcStateEnum5ValueE" title="Ifc4x1::IfcStateEnum::Value">Value</a> <code class="sig-name descname">FromString</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>s</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="struct_ifc4x1_1_1_ifc_stair_type_enum.html" title="previous chapter">Struct Ifc4x1::IfcStairTypeEnum</a></li>
+      <li>Next: <a href="struct_ifc4x1_1_1_ifc_structural_curve_activity_type_enum.html" title="next chapter">Struct Ifc4x1::IfcStructuralCurveActivityTypeEnum</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/struct_ifc4x1_1_1_ifc_state_enum.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

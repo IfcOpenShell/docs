@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a71d92d901ba17c5b789260d9859d044b:
+
+Define SCHEMA_HAS_IfcLinearDimension
+====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcLinearDimension

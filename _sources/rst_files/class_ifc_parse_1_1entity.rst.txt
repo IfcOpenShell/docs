@@ -1,0 +1,35 @@
+.. _exhale_class_class_ifc_parse_1_1entity:
+
+Class entity
+============
+
+- Defined in :ref:`file_src_ifcparse_IfcSchema.h`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_class_class_ifc_parse_1_1entity_1_1attribute__by__name__cmp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcParse::declaration`` (:ref:`exhale_class_class_ifc_parse_1_1declaration`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcParse::entity
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcDistributionControlElement &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcDistributionControlElementType" href="class_ifc2x3_1_1_ifc_distribution_control_element_type.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcDistributionChamberElementType" href="class_ifc2x3_1_1_ifc_distribution_chamber_element_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcdistributioncontrolelement">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-distribution-control-element"></span><h1>Class Ifc2x3::IfcDistributionControlElement<a class="headerlink" href="#class-ifc2x3-ifcdistributioncontrolelement" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcDistributionElement</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_distribution_element.html#exhale-class-class-ifc2x3-1-1-ifc-distribution-element"><span class="std std-ref">Class Ifc2x3::IfcDistributionElement</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x329IfcDistributionControlElementE">
+<span id="_CPPv3N6Ifc2x329IfcDistributionControlElementE"></span><span id="_CPPv2N6Ifc2x329IfcDistributionControlElementE"></span><span id="Ifc2x3::IfcDistributionControlElement"></span><span class="target" id="class_ifc2x3_1_1_ifc_distribution_control_element"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcDistributionControlElement</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_distribution_element.html#_CPPv4N6Ifc2x322IfcDistributionElementE" title="Ifc2x3::IfcDistributionElement">IfcDistributionElement</a><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcDistributionControlElementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The distribution element <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element"><span class="std std-ref">IfcDistributionControlElement</span></a> defines occurrence elements of a building automation control system that are used to impart control over elements of a distribution system.</p>
+<p>This class defines elements of a building automation control system. These are typically used to control distribution system elements to maintain variables such as temperature, humidity, pressure, flow, power, or lighting levels, through the modulation, staging or sequencing of mechanical or electrical devices. The three general functional categories of control elements are as follows:</p>
+<p>Impart control over flow control elements (<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_flow_controller"><span class="std std-ref">IfcFlowController</span></a>) in a distribution system such as dampers, valves, or relays, typically through the use of actuation (IfcActuator). Sensing elements (IfcSensor) that measure changes in the controlled variable such as temperature, humidity, pressure, or flow. Controllers (IfcController) typically classified according to the control action they seek to perform and generally responsible for making decisions about the elements under control.</p>
+<p>Since this class and its subtypes typically relate to many different distribution flow elements (<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_flow_element"><span class="std std-ref">IfcDistributionFlowElement</span></a>), the objectified relationship <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_flow_control_elements"><span class="std std-ref">IfcRelFlowControlElements</span></a> has been provided to relate control and flow elements as required.</p>
+<p>IFC2x4 CHANGE: ControlElementId attribute deleted; replaced by classification usage. HISTORY: New entity in IFC R2.0.</p>
+<p>Type Use Definition <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element"><span class="std std-ref">IfcDistributionControlElement</span></a> defines the occurrence of any distribution control element; common information about distribution control element types is handled by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element_type"><span class="std std-ref">IfcDistributionControlElementType</span></a>. The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element_type"><span class="std std-ref">IfcDistributionControlElementType</span></a> (if present) may establish the common type name, usage (predefined type), properties, materials, ports, composition, assignments, and representations. The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element_type"><span class="std std-ref">IfcDistributionControlElementType</span></a> is attached using the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_defines_by_type"><span class="std std-ref">IfcRelDefinesByType</span></a> objectified relationship and is accessible by the IsTypedBy inverse attribute. If the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element_type"><span class="std std-ref">IfcDistributionControlElementType</span></a> has ports or aggregated elements, such objects are reflected at the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element"><span class="std std-ref">IfcDistributionControlElement</span></a> occurrence using the IfcRelDefinesByObject relationship. Direct instantiation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element"><span class="std std-ref">IfcDistributionControlElement</span></a> with <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_object_1aa8ef9c76e0313df4219c8b89564872fc"><span class="std std-ref">IfcObject.ObjectType</span></a> asserted provides the meaning of a distribution control element proxy.</p>
+<p>Property Set Use Definition The property sets relating to this entity are defined by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> and attached by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. They are accessible by the IsDefinedBy inverse attribute. Property sets may also be specified at the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element_type"><span class="std std-ref">IfcDistributionControlElementType</span></a>, defining the common property data for all occurrences of the same type. They are then accessible by the IsTypedBy inverse attribute pointing to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_type_object_1a333fcadcc907e84f4572e5eeaec1c8ea"><span class="std std-ref">IfcDistributionControlElementType.HasPropertySets</span></a>. If both are given, then the properties directly defined at <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element"><span class="std std-ref">IfcDistributionControlElement</span></a> override the properties defined at <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element_type"><span class="std std-ref">IfcDistributionControlElementType</span></a>. Refer to the documentation at the supertype <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_element"><span class="std std-ref">IfcDistributionElement</span></a> and ancestors for inherited property set definitions.</p>
+<p>Classification Use Definition In addition to general product and project classification (UniFormat, etc.), classifications may also be applied to indicate a device address or addressing scheme using <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_associates_classification"><span class="std std-ref">IfcRelAssociatesClassification</span></a> where RelatedObjects contains the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element"><span class="std std-ref">IfcDistributionControlElement</span></a> and RelatingClassification refers to an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_classification"><span class="std std-ref">IfcClassification</span></a> or <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_classification_reference"><span class="std std-ref">IfcClassificationReference</span></a>.</p>
+<p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_classification"><span class="std std-ref">IfcClassification</span></a>: Indicates an addressing scheme managed by the device where ReferenceTokens defines the format of the address to be specified at IfcClassificationReference.ItemReference. A classification hierarchy may optionally be provided indicating detected or provisioned device addresses. <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_classification_reference"><span class="std std-ref">IfcClassificationReference</span></a>: Indicates the address of the control element where Identification uniquely identifies the element within the control system as determined by the ClassificationSource. Several examples are illustrated:</p>
+<p>‘BACnet’: BACnetObjectIdentifier in the decimal form ‘12.15’ (Digital Input #15) indicating type ID and instance ID. ‘IP’: IP Address in the decimal form ‘192.168.1.2’ such as for an IPv4 network. ‘OPC’: Hierarchical ItemID in the alphanumeric form ‘B204.Tank2.Temperature’ ‘X-10’: Alphabetic and numeric code in the form ‘B12’ (House B, Device 12) indicating House Code and Device Code.</p>
+<p>Figure 147 illustrates classification usage.</p>
+<p>Figure 147 — Distribution control classification</p>
+<p>Composition Use Definition The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element"><span class="std std-ref">IfcDistributionControlElement</span></a> may be decomposed into components using <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_aggregates"><span class="std std-ref">IfcRelAggregates</span></a> where RelatingObject refers to the enclosing <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element"><span class="std std-ref">IfcDistributionControlElement</span></a> and RelatedObjects contains one or more components. Likewise, a control element may be aggregated within another element. For example, a thermostat may contain temperature sensors, and a programmable logic controller may contain virtual (software-based) control elements. Standard types for composition are defined at subtypes.</p>
+<p>Connection Use Definition The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element"><span class="std std-ref">IfcDistributionControlElement</span></a> may be connected to other objects as follows using the indicated relationship:</p>
+<p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_spatial_structure_element"><span class="std std-ref">IfcSpatialStructureElement</span></a> (<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_contained_in_spatial_structure"><span class="std std-ref">IfcRelContainedInSpatialStructure</span></a>) : Indicates the spatial location containing the element. If an element is aggregated within another element, then only the top-level element participates in this relationship. <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a> (<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_connects_elements"><span class="std std-ref">IfcRelConnectsElements</span></a>) : Indicates physical connectivity with another element (but not embedding or flow control), such as a sensor attached to a wall. <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_connects_elements_1addbc9cc28056257d5feee7fd69276a2f"><span class="std std-ref">IfcRelConnectsElements.RelatingElement</span></a> refers to the anchored side (for example, wall hosting sensor). <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a> (<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_connects_port_to_element"><span class="std std-ref">IfcRelConnectsPortToElement</span></a>) : Indicates ports on the element which may be connected to other elements for control signal transmission or electric power. Standard port names, types, and directions are defined at subtypes. <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_flow_element"><span class="std std-ref">IfcDistributionFlowElement</span></a> (<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_flow_control_elements"><span class="std std-ref">IfcRelFlowControlElements</span></a>) : Indicates a flow element is sensed or controlled by the control element, such as a tank for a level sensor or a valve for an actuator.</p>
+<p>Assignment Use Definition The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element"><span class="std std-ref">IfcDistributionControlElement</span></a> may be assigned to the following entities using relationships as indicated:</p>
+<p>IfcDistributionSystem (<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_assigns_to_group"><span class="std std-ref">IfcRelAssignsToGroup</span></a>): Indicates a system containing interconnected devices, where control elements are typically part of a control system having PredefinedType=CONTROL. <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_performance_history"><span class="std std-ref">IfcPerformanceHistory</span></a> (<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_assigns_to_control"><span class="std std-ref">IfcRelAssignsToControl</span></a>): Indicates realtime or historical infomation captured for the device.</p>
+<p>The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element"><span class="std std-ref">IfcDistributionControlElement</span></a> may have assignments of its own using the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_assigns_to_product"><span class="std std-ref">IfcRelAssignsToProduct</span></a> relationship where RelatingProduct refers to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element"><span class="std std-ref">IfcDistributionControlElement</span></a> and RelatedObjects contains one or more objects of the following types:</p>
+<p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a>: Indicates tasks used to purchase, install, renovate, demolish, operate, or otherwise act upon the element. If the element has a type, available task types are assigned to the element type. <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a>: Indicates procedures used to operate the element. If the element has a type, available procedure types are assigned to the element type. IfcEvent: Indicates events raised by the element, sequenced by procedures to be followed. If the element has a type, available event types are assigned to the element type.</p>
+<p>Material Use Definition The material of the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element"><span class="std std-ref">IfcDistributionControlElement</span></a> is defined using one of the following entities:</p>
+<p>IfcMaterialConstituentSet: For elements containing multiple materials, this indicates materials at named aspects.</p>
+<p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_material"><span class="std std-ref">IfcMaterial</span></a>: For elements comprised of a single material, this indicates the material.</p>
+<p>The material is attached by the RelatingMaterial attribute on the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_associates_material"><span class="std std-ref">IfcRelAssociatesMaterial</span></a> relationship. It is accessible by the HasAssociations inverse attribute. Material information can also be given at the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element_type"><span class="std std-ref">IfcDistributionControlElementType</span></a>, defining the common attribute data for all occurrences of the same type. Standard names and material types are defined at subtypes.</p>
+<p>Representation Use Definition The following shape representations are supported for subtypes of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element"><span class="std std-ref">IfcDistributionControlElement</span></a>, distinguished by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_representation_1a7cfe30844e7943fb96869a59f59554c4"><span class="std std-ref">IfcShapeRepresentation.RepresentationIdentifier</span></a>:</p>
+<p>‘Footprint’: Represents the 2D footprint outline of the item having <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_representation_1a3943a45023e1b3e5af64c18048fa1e3b"><span class="std std-ref">IfcShapeRepresentation.RepresentationType</span></a> of ‘GeometricCurveSet’ and containing a single <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_geometric_curve_set"><span class="std std-ref">IfcGeometricCurveSet</span></a> consisting of one or more <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_curve"><span class="std std-ref">IfcCurve</span></a> subtypes such as <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a>, <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_trimmed_curve"><span class="std std-ref">IfcTrimmedCurve</span></a>, <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_composite_curve"><span class="std std-ref">IfcCompositeCurve</span></a>, or <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_circle"><span class="std std-ref">IfcCircle</span></a>.</p>
+<p>‘Body’: Represents the 3D shape of the item having <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_representation_1a3943a45023e1b3e5af64c18048fa1e3b"><span class="std std-ref">IfcShapeRepresentation.RepresentationType</span></a> of ‘SurfaceModel’, ‘SolidModel’, or any solid model specializations including ‘Brep’, ‘AdvancedBrep’, ‘SweptSolid’, ‘AdvancedSweptSolid’, ‘CSG’, ‘Clipping’, or ‘SectionedSpine’).</p>
+<p>‘Clearance’: Represents the 3D clearance volume of the item having RepresentationType of ‘Surface3D’. Such clearance region indicates space that should not intersect with the ‘Body’ representation of other elements, though may intersect with the ‘Clearance’ representation of other elements. The particular use of clearance space may be for safety, maintenance, or other purpose.</p>
+<p>For all representations, if a <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element"><span class="std std-ref">IfcDistributionControlElement</span></a> occurrence is defined by a <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element_type"><span class="std std-ref">IfcDistributionControlElementType</span></a> having a representation of the same identifier, then ‘MappedRepresentation’ should be used at the occurrence unless overridden.</p>
+<p>If materials are defined, geometry of each representation (most typically the ‘Body’ representation) may be organized into shape aspects where styles may be derived by correlating <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_shape_aspect_1a786102a254146ade7523c9d2fb34382c"><span class="std std-ref">IfcShapeAspect.Name</span></a> to a corresponding material (IfcMaterialConstituent.Name). </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x329IfcDistributionControlElement4listE">
+<span id="_CPPv3N6Ifc2x329IfcDistributionControlElement4listE"></span><span id="_CPPv2N6Ifc2x329IfcDistributionControlElement4listE"></span><span id="Ifc2x3::IfcDistributionControlElement::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_distribution_control_element_1a5ee5bc66e32fd33e11104f26f7c2bbdd"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x329IfcDistributionControlElementE" title="Ifc2x3::IfcDistributionControlElement">IfcDistributionControlElement</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcDistributionControlElement4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x329IfcDistributionControlElement19hasControlElementIdEv">
+<span id="_CPPv3NK6Ifc2x329IfcDistributionControlElement19hasControlElementIdEv"></span><span id="_CPPv2NK6Ifc2x329IfcDistributionControlElement19hasControlElementIdEv"></span><span id="Ifc2x3::IfcDistributionControlElement::hasControlElementIdC"></span><span class="target" id="class_ifc2x3_1_1_ifc_distribution_control_element_1a125647c0d18c1566f0745a5da8f88470"></span>bool <code class="sig-name descname">hasControlElementId</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x329IfcDistributionControlElement19hasControlElementIdEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ControlElementId is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_distribution_control_element"><span class="std std-ref">IfcDistributionControlElement</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x329IfcDistributionControlElement16ControlElementIdEv">
+<span id="_CPPv3NK6Ifc2x329IfcDistributionControlElement16ControlElementIdEv"></span><span id="_CPPv2NK6Ifc2x329IfcDistributionControlElement16ControlElementIdEv"></span><span id="Ifc2x3::IfcDistributionControlElement::ControlElementIdC"></span><span class="target" id="class_ifc2x3_1_1_ifc_distribution_control_element_1a17ec434384cdb8682f730e69be90991f"></span>std::string <code class="sig-name descname">ControlElementId</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x329IfcDistributionControlElement16ControlElementIdEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x329IfcDistributionControlElement19setControlElementIdENSt6stringE">
+<span id="_CPPv3N6Ifc2x329IfcDistributionControlElement19setControlElementIdENSt6stringE"></span><span id="_CPPv2N6Ifc2x329IfcDistributionControlElement19setControlElementIdENSt6stringE"></span><span id="Ifc2x3::IfcDistributionControlElement::setControlElementId__ss"></span><span class="target" id="class_ifc2x3_1_1_ifc_distribution_control_element_1a2b401cc1e273a8c838fec154d5787b6c"></span>void <code class="sig-name descname">setControlElementId</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcDistributionControlElement19setControlElementIdENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x329IfcDistributionControlElement21AssignedToFlowElementEv">
+<span id="_CPPv3NK6Ifc2x329IfcDistributionControlElement21AssignedToFlowElementEv"></span><span id="_CPPv2NK6Ifc2x329IfcDistributionControlElement21AssignedToFlowElementEv"></span><span id="Ifc2x3::IfcDistributionControlElement::AssignedToFlowElementC"></span><span class="target" id="class_ifc2x3_1_1_ifc_distribution_control_element_1a2f13d8b2028a26475f8da6f81584438a"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc2x3_1_1_ifc_rel_flow_control_elements.html#_CPPv4N6Ifc2x325IfcRelFlowControlElementsE" title="Ifc2x3::IfcRelFlowControlElements">IfcRelFlowControlElements</a>&gt;::ptr <code class="sig-name descname">AssignedToFlowElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x329IfcDistributionControlElement21AssignedToFlowElementEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x329IfcDistributionControlElement11declarationEv">
+<span id="_CPPv3NK6Ifc2x329IfcDistributionControlElement11declarationEv"></span><span id="_CPPv2NK6Ifc2x329IfcDistributionControlElement11declarationEv"></span><span id="Ifc2x3::IfcDistributionControlElement::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_distribution_control_element_1aee3978ce0ccd4e4d1f445b751875c287"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x329IfcDistributionControlElement11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x329IfcDistributionControlElement29IfcDistributionControlElementEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x329IfcDistributionControlElement29IfcDistributionControlElementEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x329IfcDistributionControlElement29IfcDistributionControlElementEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcDistributionControlElement::IfcDistributionControlElement__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_distribution_control_element_1a9fe49ed6ddfe1f22f15a8356485f290f"></span><code class="sig-name descname">IfcDistributionControlElement</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcDistributionControlElement29IfcDistributionControlElementEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x329IfcDistributionControlElement29IfcDistributionControlElementENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE">
+<span id="_CPPv3N6Ifc2x329IfcDistributionControlElement29IfcDistributionControlElementENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE"></span><span id="_CPPv2N6Ifc2x329IfcDistributionControlElement29IfcDistributionControlElementENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE"></span><span id="Ifc2x3::IfcDistributionControlElement::IfcDistributionControlElement__ss.Ifc2x3::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc2x3::IfcObjectPlacementP.Ifc2x3::IfcProductRepresentationP.boost::optional:ss:.boost::optional:ss:"></span><span class="target" id="class_ifc2x3_1_1_ifc_distribution_control_element_1a8bc57a1f85fa9a1fb68945f6b1fee0cf"></span><code class="sig-name descname">IfcDistributionControlElement</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_owner_history.html#_CPPv4N6Ifc2x315IfcOwnerHistoryE" title="Ifc2x3::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_object_placement.html#_CPPv4N6Ifc2x318IfcObjectPlacementE" title="Ifc2x3::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_product_representation.html#_CPPv4N6Ifc2x324IfcProductRepresentationE" title="Ifc2x3::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, boost::optional&lt;std::string&gt; <em>v8_Tag</em>, boost::optional&lt;std::string&gt; <em>v9_ControlElementId</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcDistributionControlElement29IfcDistributionControlElementENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x329IfcDistributionControlElement5ClassEv">
+<span id="_CPPv3N6Ifc2x329IfcDistributionControlElement5ClassEv"></span><span id="_CPPv2N6Ifc2x329IfcDistributionControlElement5ClassEv"></span><span id="Ifc2x3::IfcDistributionControlElement::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_distribution_control_element_1a0bcfb8e9a3d1bb6cf78c3bd2d1ca157e"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcDistributionControlElement5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_distribution_chamber_element_type.html" title="previous chapter">Class Ifc2x3::IfcDistributionChamberElementType</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_distribution_control_element_type.html" title="next chapter">Class Ifc2x3::IfcDistributionControlElementType</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_distribution_control_element.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

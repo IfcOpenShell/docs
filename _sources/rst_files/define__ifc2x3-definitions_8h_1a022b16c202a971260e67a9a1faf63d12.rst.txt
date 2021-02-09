@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a022b16c202a971260e67a9a1faf63d12:
+
+Define SCHEMA_IfcPerson_HAS_Addresses
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPerson_HAS_Addresses

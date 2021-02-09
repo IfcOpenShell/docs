@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a351c04c67f8578a2349f0a88d5afa17a:
+
+Define SCHEMA_IfcStructuralLoadTemperature_HAS_DeltaTConstant
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLoadTemperature_HAS_DeltaTConstant

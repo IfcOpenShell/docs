@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a8bf2541d8c12ee8d97bc8460ac9b1f8e:
+
+Define SCHEMA_IfcAppliedValue_FixedUntilDate_IS_OPTIONAL
+========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcAppliedValue_FixedUntilDate_IS_OPTIONAL

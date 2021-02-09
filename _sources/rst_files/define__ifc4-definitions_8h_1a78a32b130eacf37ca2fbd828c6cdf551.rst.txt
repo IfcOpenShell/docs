@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a78a32b130eacf37ca2fbd828c6cdf551:
+
+Define SCHEMA_IfcDocumentInformation_Status_IS_OPTIONAL
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDocumentInformation_Status_IS_OPTIONAL

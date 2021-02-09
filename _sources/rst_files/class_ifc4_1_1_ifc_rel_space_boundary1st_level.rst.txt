@@ -1,0 +1,37 @@
+.. _exhale_class_class_ifc4_1_1_ifc_rel_space_boundary1st_level:
+
+Class Ifc4::IfcRelSpaceBoundary1stLevel
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4::IfcRelSpaceBoundary`` (:ref:`exhale_class_class_ifc4_1_1_ifc_rel_space_boundary`)
+
+
+Derived Type
+************
+
+- ``public Ifc4::IfcRelSpaceBoundary2ndLevel`` (:ref:`exhale_class_class_ifc4_1_1_ifc_rel_space_boundary2nd_level`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4::IfcRelSpaceBoundary1stLevel
+   :members:
+   :protected-members:
+   :undoc-members:

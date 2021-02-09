@@ -1,0 +1,35 @@
+.. _dir_src_serializers:
+
+
+Directory serializers
+=====================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_src>` (``src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``src/serializers``
+
+Subdirectories
+--------------
+
+- :ref:`dir_src_serializers_schema_dependent`
+
+
+Files
+-----
+
+- :ref:`file_src_serializers_ColladaSerializer.h`
+- :ref:`file_src_serializers_GeometrySerializer.h`
+- :ref:`file_src_serializers_GltfSerializer.h`
+- :ref:`file_src_serializers_IgesSerializer.h`
+- :ref:`file_src_serializers_OpenCascadeBasedSerializer.h`
+- :ref:`file_src_serializers_Serializer.h`
+- :ref:`file_src_serializers_StepSerializer.h`
+- :ref:`file_src_serializers_SvgSerializer.h`
+- :ref:`file_src_serializers_util.h`
+- :ref:`file_src_serializers_WavefrontObjSerializer.h`
+- :ref:`file_src_serializers_XmlSerializer.h`
+
+

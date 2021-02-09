@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a20e0482c121bbed5968361a6235f46df:
+
+Define SCHEMA_HAS_IfcContextDependentMeasure
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcContextDependentMeasure

@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File IfcGeom.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="file-ifcgeom-h">
+<span id="file-src-ifcgeom-ifcgeom-h"></span><h1>File IfcGeom.h<a class="headerlink" href="#file-ifcgeom-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_src_ifcgeom.html#dir-src-ifcgeom"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-src-ifcgeom-ifcgeom-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom/IfcGeom.h</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id6">Functions</a></p></li>
+<li><p><a class="reference internal" href="#defines" id="id7">Defines</a></p></li>
+<li><p><a class="reference internal" href="#variables" id="id8">Variables</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-src-ifcgeom-ifcgeom-h">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom/IfcGeom.h</span></code>)<a class="headerlink" href="#definition-src-ifcgeom-ifcgeom-h" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_src_ifcgeom_IfcGeom.h.html">Program Listing for File IfcGeom.h</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">../ifcgeom/IfcGeomElement.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">../ifcgeom/IfcGeomRepresentation.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">../ifcgeom/IfcGeomShapeType.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">../ifcgeom/IfcRepresentationShapeItem.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">../ifcgeom_schema_agnostic/Kernel.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">../ifcparse/IfcBaseClass.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">../ifcparse/IfcParse.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">../ifcparse/macros.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">BOPAlgo_Operation.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">BRepBuilderAPI_MakeEdge.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">BRep_Builder.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Geom_Curve.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IfcRegisterCreateCache.h</span></code> (<a class="reference internal" href="file_src_ifcgeom_IfcRegisterCreateCache.h.html#file-src-ifcgeom-ifcregistercreatecache-h"><span class="std std-ref">File IfcRegisterCreateCache.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IfcRegisterGeomHeader.h</span></code> (<a class="reference internal" href="file_src_ifcgeom_IfcRegisterGeomHeader.h.html#file-src-ifcgeom-ifcregistergeomheader-h"><span class="std std-ref">File IfcRegisterGeomHeader.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TColgp_SequenceOfPnt.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TopTools_ListOfShape.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TopoDS.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TopoDS_Face.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TopoDS_Wire.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">array</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cmath</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gp_GTrsf.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gp_GTrsf2d.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gp_Mat.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gp_Mat2d.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gp_Pln.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gp_Pnt.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gp_Quaternion.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gp_Trsf.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gp_Trsf2d.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gp_Vec.hxx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ifc_geom_api.h</span></code> (<a class="reference internal" href="file_src_ifcgeom_ifc_geom_api.h.html#file-src-ifcgeom-ifc-geom-api-h"><span class="std std-ref">File ifc_geom_api.h</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_src_ifcgeom_IfcGeomIteratorImplementation.h.html#file-src-ifcgeom-ifcgeomiteratorimplementation-h"><span class="std std-ref">File IfcGeomIteratorImplementation.h</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_IfcGeom.html#namespace-ifcgeom"><span class="std std-ref">Namespace IfcGeom</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="class_ifc_geom_1_1geometry__exception.html#exhale-class-class-ifc-geom-1-1geometry-exception"><span class="std std-ref">Class geometry_exception</span></a></p></li>
+<li><p><a class="reference internal" href="class_ifc_geom_1_1too__many__faces__exception.html#exhale-class-class-ifc-geom-1-1too-many-faces-exception"><span class="std std-ref">Class too_many_faces_exception</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="function__ifc_geom_8h_1a08a6d29ead2c50b1ee6bb3c322eea3ff.html#exhale-function-ifc-geom-8h-1a08a6d29ead2c50b1ee6bb3c322eea3ff"><span class="std std-ref">Template Function ALMOST_THE_SAME</span></a></p></li>
+<li><p><a class="reference internal" href="function__ifc_geom_8h_1a50dc2a43fdb9313e23c33a7cf78e8ee8.html#exhale-function-ifc-geom-8h-1a50dc2a43fdb9313e23c33a7cf78e8ee8"><span class="std std-ref">Function IfcGeom::MAKE_TYPE_NAME</span></a></p></li>
+<li><p><a class="reference internal" href="function__ifc_geom_8h_1a931777c8a4d3e1e1361448426ef383fe.html#exhale-function-ifc-geom-8h-1a931777c8a4d3e1e1361448426ef383fe"><span class="std std-ref">Function IfcGeom::serialise_</span></a></p></li>
+<li><p><a class="reference internal" href="function__ifc_geom_8h_1af1de4ef5b695b0c860f4302e9cacd476.html#exhale-function-ifc-geom-8h-1af1de4ef5b695b0c860f4302e9cacd476"><span class="std std-ref">Function IfcGeom::tesselate_</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="defines">
+<h2>Defines<a class="headerlink" href="#defines" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="define__ifc_geom_8h_1a6e89bf282cfb2727a409d4cabe4276e8.html#exhale-define-ifc-geom-8h-1a6e89bf282cfb2727a409d4cabe4276e8"><span class="std std-ref">Define CACHE</span></a></p></li>
+<li><p><a class="reference internal" href="define__ifc_geom_8h_1a271e870b7b3e2a554cd7981e05cdc5dc.html#exhale-define-ifc-geom-8h-1a271e870b7b3e2a554cd7981e05cdc5dc"><span class="std std-ref">Define IN_CACHE</span></a></p></li>
+<li><p><a class="reference internal" href="define__ifc_geom_8h_1af30b9f470f5a43076bc31942f34b2be4.html#exhale-define-ifc-geom-8h-1af30b9f470f5a43076bc31942f34b2be4"><span class="std std-ref">Define INCLUDE_PARENT_DIR</span></a></p></li>
+<li><p><a class="reference internal" href="define__ifc_geom_8h_1af30b9f470f5a43076bc31942f34b2be4.html#exhale-define-ifc-geom-8h-1af30b9f470f5a43076bc31942f34b2be4"><span class="std std-ref">Define INCLUDE_PARENT_DIR</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="variable__ifc_geom_8h_1a0c0ce8d3e1c56d4119cfd5f4a2332827.html#exhale-variable-ifc-geom-8h-1a0c0ce8d3e1c56d4119cfd5f4a2332827"><span class="std std-ref">Variable ALMOST_ZERO</span></a></p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/file_src_ifcgeom_IfcGeom.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

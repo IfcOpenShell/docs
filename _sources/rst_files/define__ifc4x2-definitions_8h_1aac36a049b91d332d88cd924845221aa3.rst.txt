@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1aac36a049b91d332d88cd924845221aa3:
+
+Define SCHEMA_HAS_IfcStructuralAnalysisModel
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcStructuralAnalysisModel

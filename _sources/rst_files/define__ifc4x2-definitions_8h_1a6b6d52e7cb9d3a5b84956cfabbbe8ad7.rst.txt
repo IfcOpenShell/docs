@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a6b6d52e7cb9d3a5b84956cfabbbe8ad7:
+
+Define SCHEMA_IfcRelSpaceBoundary1stLevel_HAS_ParentBoundary
+============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelSpaceBoundary1stLevel_HAS_ParentBoundary

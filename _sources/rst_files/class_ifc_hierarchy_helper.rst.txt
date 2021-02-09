@@ -1,0 +1,25 @@
+.. _exhale_class_class_ifc_hierarchy_helper:
+
+Template Class IfcHierarchyHelper
+=================================
+
+- Defined in :ref:`file_src_ifcparse_IfcHierarchyHelper.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcParse::IfcFile`` (:ref:`exhale_class_class_ifc_parse_1_1_ifc_file`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcHierarchyHelper
+   :members:
+   :protected-members:
+   :undoc-members:

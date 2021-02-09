@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a57e86842abf847dd9e089def6df833b9:
+
+Define SCHEMA_IfcVertexBasedTextureMap_HAS_TextureVertices
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcVertexBasedTextureMap_HAS_TextureVertices

@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcRepresentation &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcRepresentationContext" href="class_ifc4_1_1_ifc_representation_context.html" />
+    <link rel="prev" title="Class Ifc4::IfcReparametrisedCompositeCurveSegment" href="class_ifc4_1_1_ifc_reparametrised_composite_curve_segment.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcrepresentation">
+<span id="exhale-class-class-ifc4-1-1-ifc-representation"></span><h1>Class Ifc4::IfcRepresentation<a class="headerlink" href="#class-ifc4-ifcrepresentation" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">IfcUtil::IfcBaseEntity</span></code> (<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#exhale-class-class-ifc-util-1-1-ifc-base-entity"><span class="std std-ref">Class IfcBaseEntity</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="derived-types">
+<h3>Derived Types<a class="headerlink" href="#derived-types" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcShapeModel</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_shape_model.html#exhale-class-class-ifc4-1-1-ifc-shape-model"><span class="std std-ref">Class Ifc4::IfcShapeModel</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcStyleModel</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_style_model.html#exhale-class-class-ifc4-1-1-ifc-style-model"><span class="std std-ref">Class Ifc4::IfcStyleModel</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc417IfcRepresentationE">
+<span id="_CPPv3N4Ifc417IfcRepresentationE"></span><span id="_CPPv2N4Ifc417IfcRepresentationE"></span><span id="Ifc4::IfcRepresentation"></span><span class="target" id="class_ifc4_1_1_ifc_representation"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcRepresentation</code> : <em class="property">public</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a><a class="headerlink" href="#_CPPv4N4Ifc417IfcRepresentationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-43:1992: A representation is one or more representation items that are related in a specified representation context as the representation of some concept.</p>
+<p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_representation"><span class="std std-ref">IfcRepresentation</span></a> defines the general concept of representing product properties.</p>
+<p>Representation Use Definition</p>
+<p>Each representation, either <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a>, or <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_topology_representation"><span class="std std-ref">IfcTopologyRepresentation</span></a> shall have a well defined:</p>
+<p>ContextOfItems: Reference to an <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_geometric_representation_context"><span class="std std-ref">IfcGeometricRepresentationContext</span></a> as agreed for this representation.</p>
+<p>RepresentationIdentifier: Name of the representation, for example, ‘Body’ for 3D shape, ‘FootPrint’ for 2D ground view, ‘Axis’ for reference axis.</p>
+<p>RepresentationType: Name for the geometric, or topological representation type, for example, ‘SweptSolid’ for 3D swept solids, ‘Brep’ for boundary representation.</p>
+<p>Values and guidelines for these three items are provided in the geometry use definition section at each subtype of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a>, or in view definitions / implementer agreements.</p>
+<p>NOTEThe definition of this entity relates to the ISO 10303 entity representation. Please refer to ISO/IS 10303-43:1994 for the final definition of the formal standard.</p>
+<p>HISTORY New entity in IFC Release 2.0</p>
+<p>IFC2x3 CHANGE The inverse attributes LayerAssignments andRepresentationMap have been added with upward compatibility.</p>
+<p>IFC2x4 CHANGE Entity <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_representation"><span class="std std-ref">IfcRepresentation</span></a> has been changed into an ABSTRACT supertype. </p>
+<p>Subclassed by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_shape_model"><span class="std std-ref">Ifc4::IfcShapeModel</span></a>, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_style_model"><span class="std std-ref">Ifc4::IfcStyleModel</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc417IfcRepresentation4listE">
+<span id="_CPPv3N4Ifc417IfcRepresentation4listE"></span><span id="_CPPv2N4Ifc417IfcRepresentation4listE"></span><span id="Ifc4::IfcRepresentation::list"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1a44f6f99fd4f62d772c55b6e3102b1146"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc417IfcRepresentationE" title="Ifc4::IfcRepresentation">IfcRepresentation</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc417IfcRepresentation4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc417IfcRepresentation14ContextOfItemsEv">
+<span id="_CPPv3NK4Ifc417IfcRepresentation14ContextOfItemsEv"></span><span id="_CPPv2NK4Ifc417IfcRepresentation14ContextOfItemsEv"></span><span id="Ifc4::IfcRepresentation::ContextOfItemsC"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1a6db57248b326bf4da242e3c349d04ccc"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_representation_context.html#_CPPv4N4Ifc424IfcRepresentationContextE" title="Ifc4::IfcRepresentationContext">IfcRepresentationContext</a> *<code class="sig-name descname">ContextOfItems</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc417IfcRepresentation14ContextOfItemsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition of the representation context for which the different subtypes of representation are valid. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc417IfcRepresentation17setContextOfItemsEPN4Ifc424IfcRepresentationContextE">
+<span id="_CPPv3N4Ifc417IfcRepresentation17setContextOfItemsEPN4Ifc424IfcRepresentationContextE"></span><span id="_CPPv2N4Ifc417IfcRepresentation17setContextOfItemsEPN4Ifc424IfcRepresentationContextE"></span><span id="Ifc4::IfcRepresentation::setContextOfItems__Ifc4::IfcRepresentationContextP"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1ae32c91df5cf2bf097a3a9694f4b06789"></span>void <code class="sig-name descname">setContextOfItems</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_representation_context.html#_CPPv4N4Ifc424IfcRepresentationContextE" title="Ifc4::IfcRepresentationContext">IfcRepresentationContext</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc417IfcRepresentation17setContextOfItemsEPN4Ifc424IfcRepresentationContextE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc417IfcRepresentation27hasRepresentationIdentifierEv">
+<span id="_CPPv3NK4Ifc417IfcRepresentation27hasRepresentationIdentifierEv"></span><span id="_CPPv2NK4Ifc417IfcRepresentation27hasRepresentationIdentifierEv"></span><span id="Ifc4::IfcRepresentation::hasRepresentationIdentifierC"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1aade7cc70b0dd0408e152e9c2a83e89d1"></span>bool <code class="sig-name descname">hasRepresentationIdentifier</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc417IfcRepresentation27hasRepresentationIdentifierEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RepresentationIdentifier is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_representation"><span class="std std-ref">IfcRepresentation</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc417IfcRepresentation24RepresentationIdentifierEv">
+<span id="_CPPv3NK4Ifc417IfcRepresentation24RepresentationIdentifierEv"></span><span id="_CPPv2NK4Ifc417IfcRepresentation24RepresentationIdentifierEv"></span><span id="Ifc4::IfcRepresentation::RepresentationIdentifierC"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1a87364cd5df88bf914a5d7dd38d72e4ce"></span>std::string <code class="sig-name descname">RepresentationIdentifier</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc417IfcRepresentation24RepresentationIdentifierEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The optional identifier of the representation as used within a project. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc417IfcRepresentation27setRepresentationIdentifierENSt6stringE">
+<span id="_CPPv3N4Ifc417IfcRepresentation27setRepresentationIdentifierENSt6stringE"></span><span id="_CPPv2N4Ifc417IfcRepresentation27setRepresentationIdentifierENSt6stringE"></span><span id="Ifc4::IfcRepresentation::setRepresentationIdentifier__ss"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1ae2c03db01ff29007502b6a3d6df90fad"></span>void <code class="sig-name descname">setRepresentationIdentifier</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc417IfcRepresentation27setRepresentationIdentifierENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc417IfcRepresentation21hasRepresentationTypeEv">
+<span id="_CPPv3NK4Ifc417IfcRepresentation21hasRepresentationTypeEv"></span><span id="_CPPv2NK4Ifc417IfcRepresentation21hasRepresentationTypeEv"></span><span id="Ifc4::IfcRepresentation::hasRepresentationTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1acd591accaba734a133835e03888c1315"></span>bool <code class="sig-name descname">hasRepresentationType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc417IfcRepresentation21hasRepresentationTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RepresentationType is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_representation"><span class="std std-ref">IfcRepresentation</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc417IfcRepresentation18RepresentationTypeEv">
+<span id="_CPPv3NK4Ifc417IfcRepresentation18RepresentationTypeEv"></span><span id="_CPPv2NK4Ifc417IfcRepresentation18RepresentationTypeEv"></span><span id="Ifc4::IfcRepresentation::RepresentationTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1a90c623a674ecde8562a6d01e71f88c9f"></span>std::string <code class="sig-name descname">RepresentationType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc417IfcRepresentation18RepresentationTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The description of the type of a representation context. The representation type defines the type of geometry or topology used for representing the product representation. More information is given at the subtypes <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> and <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_topology_representation"><span class="std std-ref">IfcTopologyRepresentation</span></a>. The supported values for context type are to be specified by implementers agreements. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc417IfcRepresentation21setRepresentationTypeENSt6stringE">
+<span id="_CPPv3N4Ifc417IfcRepresentation21setRepresentationTypeENSt6stringE"></span><span id="_CPPv2N4Ifc417IfcRepresentation21setRepresentationTypeENSt6stringE"></span><span id="Ifc4::IfcRepresentation::setRepresentationType__ss"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1abdbf98288af2f3fc9559c349d708882b"></span>void <code class="sig-name descname">setRepresentationType</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc417IfcRepresentation21setRepresentationTypeENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc417IfcRepresentation5ItemsEv">
+<span id="_CPPv3NK4Ifc417IfcRepresentation5ItemsEv"></span><span id="_CPPv2NK4Ifc417IfcRepresentation5ItemsEv"></span><span id="Ifc4::IfcRepresentation::ItemsC"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1ab8812b6efd2a292c28d5c887aed93e6a"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_representation_item.html#_CPPv4N4Ifc421IfcRepresentationItemE" title="Ifc4::IfcRepresentationItem">IfcRepresentationItem</a>&gt;::ptr <code class="sig-name descname">Items</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc417IfcRepresentation5ItemsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set of geometric representation items that are defined for this representation. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc417IfcRepresentation8setItemsEN22IfcTemplatedEntityListIN4Ifc421IfcRepresentationItemEE3ptrE">
+<span id="_CPPv3N4Ifc417IfcRepresentation8setItemsEN22IfcTemplatedEntityListIN4Ifc421IfcRepresentationItemEE3ptrE"></span><span id="_CPPv2N4Ifc417IfcRepresentation8setItemsEN22IfcTemplatedEntityListIN4Ifc421IfcRepresentationItemEE3ptrE"></span><span id="Ifc4::IfcRepresentation::setItems__IfcTemplatedEntityList:Ifc4::IfcRepresentationItem:::ptr"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1a61df75cb8fed4cb9d67c1badd61346a5"></span>void <code class="sig-name descname">setItems</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_representation_item.html#_CPPv4N4Ifc421IfcRepresentationItemE" title="Ifc4::IfcRepresentationItem">IfcRepresentationItem</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc417IfcRepresentation8setItemsEN22IfcTemplatedEntityListIN4Ifc421IfcRepresentationItemEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc417IfcRepresentation17RepresentationMapEv">
+<span id="_CPPv3NK4Ifc417IfcRepresentation17RepresentationMapEv"></span><span id="_CPPv2NK4Ifc417IfcRepresentation17RepresentationMapEv"></span><span id="Ifc4::IfcRepresentation::RepresentationMapC"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1a026115c4b9daa290f8ee6118383063c8"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4_1_1_ifc_representation_map.html#_CPPv4N4Ifc420IfcRepresentationMapE" title="Ifc4::IfcRepresentationMap">IfcRepresentationMap</a>&gt;::ptr <code class="sig-name descname">RepresentationMap</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc417IfcRepresentation17RepresentationMapEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc417IfcRepresentation16LayerAssignmentsEv">
+<span id="_CPPv3NK4Ifc417IfcRepresentation16LayerAssignmentsEv"></span><span id="_CPPv2NK4Ifc417IfcRepresentation16LayerAssignmentsEv"></span><span id="Ifc4::IfcRepresentation::LayerAssignmentsC"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1ae271181df1cebb6221164c74609d64f4"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4_1_1_ifc_presentation_layer_assignment.html#_CPPv4N4Ifc430IfcPresentationLayerAssignmentE" title="Ifc4::IfcPresentationLayerAssignment">IfcPresentationLayerAssignment</a>&gt;::ptr <code class="sig-name descname">LayerAssignments</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc417IfcRepresentation16LayerAssignmentsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc417IfcRepresentation23OfProductRepresentationEv">
+<span id="_CPPv3NK4Ifc417IfcRepresentation23OfProductRepresentationEv"></span><span id="_CPPv2NK4Ifc417IfcRepresentation23OfProductRepresentationEv"></span><span id="Ifc4::IfcRepresentation::OfProductRepresentationC"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1adb33b8da130d440b8a5dbde0c89c93c4"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4_1_1_ifc_product_representation.html#_CPPv4N4Ifc424IfcProductRepresentationE" title="Ifc4::IfcProductRepresentation">IfcProductRepresentation</a>&gt;::ptr <code class="sig-name descname">OfProductRepresentation</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc417IfcRepresentation23OfProductRepresentationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc417IfcRepresentation11declarationEv">
+<span id="_CPPv3NK4Ifc417IfcRepresentation11declarationEv"></span><span id="_CPPv2NK4Ifc417IfcRepresentation11declarationEv"></span><span id="Ifc4::IfcRepresentation::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1af68931c7299d2b8e4e1e5ad3648d0b45"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc417IfcRepresentation11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc417IfcRepresentation17IfcRepresentationEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc417IfcRepresentation17IfcRepresentationEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc417IfcRepresentation17IfcRepresentationEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcRepresentation::IfcRepresentation__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1a2065b72ff544bee471b82f95c3eac3e1"></span><code class="sig-name descname">IfcRepresentation</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc417IfcRepresentation17IfcRepresentationEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc417IfcRepresentation17IfcRepresentationEPN4Ifc424IfcRepresentationContextEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN4Ifc421IfcRepresentationItemEE3ptrE">
+<span id="_CPPv3N4Ifc417IfcRepresentation17IfcRepresentationEPN4Ifc424IfcRepresentationContextEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN4Ifc421IfcRepresentationItemEE3ptrE"></span><span id="_CPPv2N4Ifc417IfcRepresentation17IfcRepresentationEPN4Ifc424IfcRepresentationContextEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN4Ifc421IfcRepresentationItemEE3ptrE"></span><span id="Ifc4::IfcRepresentation::IfcRepresentation__Ifc4::IfcRepresentationContextP.boost::optional:ss:.boost::optional:ss:.IfcTemplatedEntityList:Ifc4::IfcRepresentationItem:::ptr"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1a9f73e96d113e1c32a88cf3e256774dee"></span><code class="sig-name descname">IfcRepresentation</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_representation_context.html#_CPPv4N4Ifc424IfcRepresentationContextE" title="Ifc4::IfcRepresentationContext">IfcRepresentationContext</a> *<em>v1_ContextOfItems</em>, boost::optional&lt;std::string&gt; <em>v2_RepresentationIdentifier</em>, boost::optional&lt;std::string&gt; <em>v3_RepresentationType</em>, <a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_representation_item.html#_CPPv4N4Ifc421IfcRepresentationItemE" title="Ifc4::IfcRepresentationItem">IfcRepresentationItem</a>&gt;::ptr <em>v4_Items</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc417IfcRepresentation17IfcRepresentationEPN4Ifc424IfcRepresentationContextEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN4Ifc421IfcRepresentationItemEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc417IfcRepresentation5ClassEv">
+<span id="_CPPv3N4Ifc417IfcRepresentation5ClassEv"></span><span id="_CPPv2N4Ifc417IfcRepresentation5ClassEv"></span><span id="Ifc4::IfcRepresentation::Class"></span><span class="target" id="class_ifc4_1_1_ifc_representation_1a4f65705c93687c4004d89d5ee245db48"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc417IfcRepresentation5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_reparametrised_composite_curve_segment.html" title="previous chapter">Class Ifc4::IfcReparametrisedCompositeCurveSegment</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_representation_context.html" title="next chapter">Class Ifc4::IfcRepresentationContext</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_representation.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

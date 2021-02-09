@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_parse_8h_1adbdc1ab9528a2502fb9132a68aaca203:
+
+Function IfcParse::traverse
+===========================
+
+- Defined in :ref:`file_src_ifcparse_IfcParse.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcParse::traverse(IfcUtil::IfcBaseClass *, int)

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a35f284a54b5353ed1c2304502104df43:
+
+Define SCHEMA_IfcRelConnectsStructuralMember_HAS_AppliedCondition
+=================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelConnectsStructuralMember_HAS_AppliedCondition

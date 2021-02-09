@@ -1,0 +1,28 @@
+.. _exhale_class_classutil_1_1string__buffer:
+
+Class string_buffer
+===================
+
+- Defined in :ref:`file_src_serializers_util.h`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_class_classutil_1_1string__buffer_1_1float__item`
+- :ref:`exhale_class_classutil_1_1string__buffer_1_1item`
+- :ref:`exhale_class_classutil_1_1string__buffer_1_1string__item`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: util::string_buffer
+   :members:
+   :protected-members:
+   :undoc-members:

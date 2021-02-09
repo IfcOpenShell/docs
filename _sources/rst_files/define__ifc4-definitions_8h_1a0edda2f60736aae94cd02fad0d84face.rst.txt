@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a0edda2f60736aae94cd02fad0d84face:
+
+Define SCHEMA_IfcObject_HAS_Declares
+====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcObject_HAS_Declares

@@ -1,0 +1,22 @@
+
+.. _program_listing_file_src_ifcgeom_IfcRegisterGeomHeader.h:
+
+Program Listing for File IfcRegisterGeomHeader.h
+================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_ifcgeom_IfcRegisterGeomHeader.h>` (``src/ifcgeom/IfcRegisterGeomHeader.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #include "IfcRegisterUndef.h"
+   #define CLASS(T,V) bool convert(const IfcSchema::T* L, V& r);
+   #define SHAPES(T) CLASS(T,IfcRepresentationShapeItems)
+   #define SHAPE(T) CLASS(T,TopoDS_Shape)
+   #define WIRE(T) CLASS(T,TopoDS_Wire)
+   #define FACE(T) CLASS(T,TopoDS_Shape)
+   #define CURVE(T) CLASS(T,Handle(Geom_Curve))
+   #include "IfcRegisterDef.h"
+   
+   #include "IfcRegister.h"

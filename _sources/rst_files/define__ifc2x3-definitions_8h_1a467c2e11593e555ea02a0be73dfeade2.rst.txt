@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a467c2e11593e555ea02a0be73dfeade2:
+
+Define SCHEMA_IfcMove_HAS_MoveTo
+================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMove_HAS_MoveTo

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a917ffcf9a3e186791bcdc3fabd29b120:
+
+Define SCHEMA_IfcExternalSpatialElement_HAS_BoundedBy
+=====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcExternalSpatialElement_HAS_BoundedBy

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a80f09a57293747f642f445d9fd394c83:
+
+Define SCHEMA_IfcElectricTimeControl_HAS_PredefinedType
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcElectricTimeControl_HAS_PredefinedType

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a6c47c2de9f2da2f1cb38de1dd8b5ff53:
+
+Define SCHEMA_HAS_IfcRelOverridesProperties
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcRelOverridesProperties

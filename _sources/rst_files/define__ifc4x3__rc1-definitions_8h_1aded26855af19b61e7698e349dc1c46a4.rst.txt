@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1aded26855af19b61e7698e349dc1c46a4:
+
+Define SCHEMA_IfcAlignment2DHorizontalSegment_HAS_ToHorizontal
+==============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcAlignment2DHorizontalSegment_HAS_ToHorizontal

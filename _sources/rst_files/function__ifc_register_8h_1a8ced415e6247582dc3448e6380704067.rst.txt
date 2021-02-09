@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_register_8h_1a8ced415e6247582dc3448e6380704067:
+
+Function CLASS(IfcVector, gp_Vec)
+=================================
+
+- Defined in :ref:`file_src_ifcgeom_IfcRegister.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: CLASS(IfcVector, gp_Vec)

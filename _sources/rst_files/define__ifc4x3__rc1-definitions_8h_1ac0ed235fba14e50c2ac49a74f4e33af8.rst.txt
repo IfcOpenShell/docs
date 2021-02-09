@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1ac0ed235fba14e50c2ac49a74f4e33af8:
+
+Define SCHEMA_HAS_IfcSpatialReferenceSelect
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcSpatialReferenceSelect

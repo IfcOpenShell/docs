@@ -1,0 +1,16 @@
+.. _exhale_class_class_logger:
+
+Class Logger
+============
+
+- Defined in :ref:`file_src_ifcparse_IfcLogger.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Logger
+   :members:
+   :protected-members:
+   :undoc-members:

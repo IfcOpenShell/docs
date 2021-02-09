@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1ac2fc1903d92c1e72c3b54d61a1c6d92f:
+
+Define SCHEMA_IfcContext_LongName_IS_OPTIONAL
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcContext_LongName_IS_OPTIONAL

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a2d56da527db2874b098fd3da69ff503b:
+
+Define SCHEMA_HAS_IfcConnectionPointGeometry
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcConnectionPointGeometry

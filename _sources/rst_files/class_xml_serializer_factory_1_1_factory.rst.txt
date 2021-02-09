@@ -1,0 +1,31 @@
+.. _exhale_class_class_xml_serializer_factory_1_1_factory:
+
+Class XmlSerializerFactory::Factory
+===================================
+
+- Defined in :ref:`file_src_serializers_XmlSerializer.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_xml_serializer_factory`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::map< std::string, fn >``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: XmlSerializerFactory::Factory
+   :members:
+   :protected-members:
+   :undoc-members:

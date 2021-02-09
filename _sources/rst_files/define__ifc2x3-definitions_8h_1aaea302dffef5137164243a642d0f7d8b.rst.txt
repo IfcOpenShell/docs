@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aaea302dffef5137164243a642d0f7d8b:
+
+Define SCHEMA_HAS_IfcElementQuantity
+====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcElementQuantity

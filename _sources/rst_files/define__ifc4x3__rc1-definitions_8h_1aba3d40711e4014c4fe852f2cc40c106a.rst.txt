@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1aba3d40711e4014c4fe852f2cc40c106a:
+
+Define SCHEMA_IfcElement_HAS_IsInterferedByElements
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcElement_HAS_IsInterferedByElements

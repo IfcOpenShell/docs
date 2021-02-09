@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a1a9d6f82dc781300e1ba5890172ebfa7:
+
+Define SCHEMA_IfcShapeAspect_HAS_HasExternalReferences
+======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcShapeAspect_HAS_HasExternalReferences

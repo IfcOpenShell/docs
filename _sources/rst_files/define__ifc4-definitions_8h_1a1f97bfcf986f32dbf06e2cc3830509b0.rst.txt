@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a1f97bfcf986f32dbf06e2cc3830509b0:
+
+Define SCHEMA_HAS_IfcPolygonalFaceSet
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcPolygonalFaceSet

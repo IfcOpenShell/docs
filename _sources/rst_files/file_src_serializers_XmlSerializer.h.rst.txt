@@ -1,0 +1,67 @@
+
+.. _file_src_serializers_XmlSerializer.h:
+
+File XmlSerializer.h
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_serializers>` (``src/serializers``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/serializers/XmlSerializer.h``)
+------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_serializers_XmlSerializer.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/IfcFile.h``
+
+- ``../serializers/Serializer.h``
+
+- ``boost/function.hpp``
+
+- ``map``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_serializers_schema_dependent_XmlSerializer.h`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_struct_xml_serializer_factory`
+
+- :ref:`exhale_class_class_xml_serializer`
+
+- :ref:`exhale_class_class_xml_serializer_factory_1_1_factory`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define__xml_serializer_8h_1a10c1c3f889882ed56b5b23820b56dcf0`
+

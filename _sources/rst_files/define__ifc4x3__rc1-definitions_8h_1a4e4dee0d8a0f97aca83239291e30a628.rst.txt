@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a4e4dee0d8a0f97aca83239291e30a628:
+
+Define SCHEMA_IfcStructuralLoadConfiguration_Locations_IS_OPTIONAL
+==================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLoadConfiguration_Locations_IS_OPTIONAL

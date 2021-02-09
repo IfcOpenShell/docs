@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1ab800480a1274d7bb4d9d76683b0048f0:
+
+Define SCHEMA_IfcPostalAddress_HAS_InternalLocation
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPostalAddress_HAS_InternalLocation

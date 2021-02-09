@@ -1,0 +1,43 @@
+.. _exhale_class_class_ifc2x3_1_1_ifc_object:
+
+Class Ifc2x3::IfcObject
+=======================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc2x3::IfcObjectDefinition`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_object_definition`)
+
+
+Derived Types
+*************
+
+- ``public Ifc2x3::IfcActor`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_actor`)
+- ``public Ifc2x3::IfcControl`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_control`)
+- ``public Ifc2x3::IfcGroup`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_group`)
+- ``public Ifc2x3::IfcProcess`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_process`)
+- ``public Ifc2x3::IfcProduct`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_product`)
+- ``public Ifc2x3::IfcProject`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_project`)
+- ``public Ifc2x3::IfcResource`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_resource`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc2x3::IfcObject
+   :members:
+   :protected-members:
+   :undoc-members:

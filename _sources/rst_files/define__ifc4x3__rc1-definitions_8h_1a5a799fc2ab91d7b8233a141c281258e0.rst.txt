@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a5a799fc2ab91d7b8233a141c281258e0:
+
+Define SCHEMA_IfcPropertyDependencyRelationship_Expression_IS_OPTIONAL
+======================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPropertyDependencyRelationship_Expression_IS_OPTIONAL

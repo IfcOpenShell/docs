@@ -1,0 +1,32 @@
+.. _exhale_class_class_ifc_parse_1_1_ifc_exception:
+
+Class IfcException
+==================
+
+- Defined in :ref:`file_src_ifcparse_IfcException.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public exception``
+
+
+Derived Types
+*************
+
+- ``public IfcParse::IfcAttributeOutOfRangeException`` (:ref:`exhale_class_class_ifc_parse_1_1_ifc_attribute_out_of_range_exception`)
+- ``public IfcParse::IfcInvalidTokenException`` (:ref:`exhale_class_class_ifc_parse_1_1_ifc_invalid_token_exception`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcParse::IfcException
+   :members:
+   :protected-members:
+   :undoc-members:

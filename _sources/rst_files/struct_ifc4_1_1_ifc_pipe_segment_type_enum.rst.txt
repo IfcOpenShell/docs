@@ -1,0 +1,22 @@
+.. _exhale_struct_struct_ifc4_1_1_ifc_pipe_segment_type_enum:
+
+Struct Ifc4::IfcPipeSegmentTypeEnum
+===================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Ifc4::IfcPipeSegmentTypeEnum
+   :members:
+   :protected-members:
+   :undoc-members:

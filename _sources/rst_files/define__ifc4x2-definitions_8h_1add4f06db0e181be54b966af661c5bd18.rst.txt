@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1add4f06db0e181be54b966af661c5bd18:
+
+Define SCHEMA_IfcSpatialElement_HAS_LongName
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSpatialElement_HAS_LongName

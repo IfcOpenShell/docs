@@ -1,0 +1,25 @@
+.. _exhale_class_class_ifc_util_1_1_ifc_late_bound_entity:
+
+Class IfcLateBoundEntity
+========================
+
+- Defined in :ref:`file_src_ifcparse_IfcBaseClass.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcUtil::IfcBaseClass`` (:ref:`exhale_class_class_ifc_util_1_1_ifc_base_class`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcUtil::IfcLateBoundEntity
+   :members:
+   :protected-members:
+   :undoc-members:

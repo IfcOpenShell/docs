@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a5d1ea310ddc8490024599cc3e0cd4f89:
+
+Define SCHEMA_IfcPropertyBoundedValue_HAS_LowerBoundValue
+=========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPropertyBoundedValue_HAS_LowerBoundValue

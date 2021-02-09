@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1acda422c125a46e8a4ba67fd44d5f8455:
+
+Define SCHEMA_IfcMechanicalSteelMaterialProperties_ProportionalStress_IS_OPTIONAL
+=================================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMechanicalSteelMaterialProperties_ProportionalStress_IS_OPTIONAL

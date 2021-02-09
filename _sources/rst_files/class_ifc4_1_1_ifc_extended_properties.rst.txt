@@ -1,0 +1,38 @@
+.. _exhale_class_class_ifc4_1_1_ifc_extended_properties:
+
+Class Ifc4::IfcExtendedProperties
+=================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4::IfcPropertyAbstraction`` (:ref:`exhale_class_class_ifc4_1_1_ifc_property_abstraction`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4::IfcMaterialProperties`` (:ref:`exhale_class_class_ifc4_1_1_ifc_material_properties`)
+- ``public Ifc4::IfcProfileProperties`` (:ref:`exhale_class_class_ifc4_1_1_ifc_profile_properties`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4::IfcExtendedProperties
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcCsgSolid &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcCShapeProfileDef" href="class_ifc4_1_1_ifc_c_shape_profile_def.html" />
+    <link rel="prev" title="Class Ifc4::IfcCsgPrimitive3D" href="class_ifc4_1_1_ifc_csg_primitive3_d.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifccsgsolid">
+<span id="exhale-class-class-ifc4-1-1-ifc-csg-solid"></span><h1>Class Ifc4::IfcCsgSolid<a class="headerlink" href="#class-ifc4-ifccsgsolid" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcSolidModel</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_solid_model.html#exhale-class-class-ifc4-1-1-ifc-solid-model"><span class="std std-ref">Class Ifc4::IfcSolidModel</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc411IfcCsgSolidE">
+<span id="_CPPv3N4Ifc411IfcCsgSolidE"></span><span id="_CPPv2N4Ifc411IfcCsgSolidE"></span><span id="Ifc4::IfcCsgSolid"></span><span class="target" id="class_ifc4_1_1_ifc_csg_solid"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcCsgSolid</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_solid_model.html#_CPPv4N4Ifc413IfcSolidModelE" title="Ifc4::IfcSolidModel">IfcSolidModel</a><a class="headerlink" href="#_CPPv4N4Ifc411IfcCsgSolidE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: A solid represented as a CSG model is defined by a collection of so-called primitive solids, combined using regularized Boolean operations. The allowed operations are intersection, union, and difference. As a special case a CSG solid can also consists of a single CSG primitive.</p>
+<p>A CSG solid requires two kinds of information for its complete definition: geometric and structural.</p>
+<p>The geometric information is conveyed by solid models. These typically primitive volumes such as cylinders, wedges and extrusions, but can include general B-Rep models. Solid models can also be half space solids.</p>
+<p>The structural information is in a tree (strictly an acyclic directed graph) of Boolean result and CSG solids, which represent a &amp;#8216;recipe&amp;#8217; for building the solid. The terminal nodes are the geometric primitives and other solids. Every CSG solid has precisely one Boolean result associated with it which is the root of the tree that defines the solid. (There may be further Boolean results within the tree as operands). The significance of a CSG solid entity is that the solid defined by the associated tree is thus identified as a significant object itself, and in this way it is distinguished from other Boolean result entities representing intermediate results during the construction process.</p>
+<p>Definition from IAI: The following primitive volumes can be parts of the CSG tree: solid models, i.e. faceted B-Rep (<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_faceted_brep"><span class="std std-ref">IfcFacetedBrep</span></a>, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_faceted_brep_with_voids"><span class="std std-ref">IfcFacetedBrepWithVoids</span></a>), swept area solid (<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_extruded_area_solid"><span class="std std-ref">IfcExtrudedAreaSolid</span></a>, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_revolved_area_solid"><span class="std std-ref">IfcRevolvedAreaSolid</span></a>, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_surface_curve_swept_area_solid"><span class="std std-ref">IfcSurfaceCurveSweptAreaSolid</span></a>), swept disk solids (<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_swept_disk_solid"><span class="std std-ref">IfcSweptDiskSolid</span></a>), half space solids (<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_half_space_solid"><span class="std std-ref">IfcHalfSpaceSolid</span></a> and subtypes), and CSG primitives (subtypes of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_csg_primitive3_d"><span class="std std-ref">IfcCsgPrimitive3D</span></a>).</p>
+<p>NOTE Corresponding ISO 10303-42 entity: csg_solid, please refer to ISO/IS 10303-42:1994, p.174 for the final definition of the formal standard.</p>
+<p>HISTORY New class in IFC Release 1.5.1 </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc411IfcCsgSolid4listE">
+<span id="_CPPv3N4Ifc411IfcCsgSolid4listE"></span><span id="_CPPv2N4Ifc411IfcCsgSolid4listE"></span><span id="Ifc4::IfcCsgSolid::list"></span><span class="target" id="class_ifc4_1_1_ifc_csg_solid_1a41df65066f7292529ae49262feeacafd"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc411IfcCsgSolidE" title="Ifc4::IfcCsgSolid">IfcCsgSolid</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc411IfcCsgSolid4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcCsgSolid18TreeRootExpressionEv">
+<span id="_CPPv3NK4Ifc411IfcCsgSolid18TreeRootExpressionEv"></span><span id="_CPPv2NK4Ifc411IfcCsgSolid18TreeRootExpressionEv"></span><span id="Ifc4::IfcCsgSolid::TreeRootExpressionC"></span><span class="target" id="class_ifc4_1_1_ifc_csg_solid_1a11abd73b85c5772cee937a81700d5819"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc412IfcCsgSelectE" title="Ifc4::IfcCsgSelect">IfcCsgSelect</a> *<code class="sig-name descname">TreeRootExpression</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcCsgSolid18TreeRootExpressionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Boolean expression of primitives and regularized operators describing the solid. The root of the tree of Boolean expressions is given explicitly as an <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_boolean_result"><span class="std std-ref">IfcBooleanResult</span></a> entitiy or as a primitive (subtypes of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_csg_primitive3_d"><span class="std std-ref">IfcCsgPrimitive3D</span></a>). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcCsgSolid21setTreeRootExpressionEPN4Ifc412IfcCsgSelectE">
+<span id="_CPPv3N4Ifc411IfcCsgSolid21setTreeRootExpressionEPN4Ifc412IfcCsgSelectE"></span><span id="_CPPv2N4Ifc411IfcCsgSolid21setTreeRootExpressionEPN4Ifc412IfcCsgSelectE"></span><span id="Ifc4::IfcCsgSolid::setTreeRootExpression__Ifc4::IfcCsgSelectP"></span><span class="target" id="class_ifc4_1_1_ifc_csg_solid_1a9fc56f3d066a6c97234a433effb7b10d"></span>void <code class="sig-name descname">setTreeRootExpression</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc412IfcCsgSelectE" title="Ifc4::IfcCsgSelect">IfcCsgSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcCsgSolid21setTreeRootExpressionEPN4Ifc412IfcCsgSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcCsgSolid11declarationEv">
+<span id="_CPPv3NK4Ifc411IfcCsgSolid11declarationEv"></span><span id="_CPPv2NK4Ifc411IfcCsgSolid11declarationEv"></span><span id="Ifc4::IfcCsgSolid::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_csg_solid_1afedd8b67afd8647f1e85ed62375725fe"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcCsgSolid11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcCsgSolid11IfcCsgSolidEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc411IfcCsgSolid11IfcCsgSolidEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc411IfcCsgSolid11IfcCsgSolidEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcCsgSolid::IfcCsgSolid__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_csg_solid_1a7dd8b1486295d46d83f78bef239d8c14"></span><code class="sig-name descname">IfcCsgSolid</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcCsgSolid11IfcCsgSolidEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcCsgSolid11IfcCsgSolidEPN4Ifc412IfcCsgSelectE">
+<span id="_CPPv3N4Ifc411IfcCsgSolid11IfcCsgSolidEPN4Ifc412IfcCsgSelectE"></span><span id="_CPPv2N4Ifc411IfcCsgSolid11IfcCsgSolidEPN4Ifc412IfcCsgSelectE"></span><span id="Ifc4::IfcCsgSolid::IfcCsgSolid__Ifc4::IfcCsgSelectP"></span><span class="target" id="class_ifc4_1_1_ifc_csg_solid_1a1b2a631abe6537263f48bbb76621516a"></span><code class="sig-name descname">IfcCsgSolid</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc412IfcCsgSelectE" title="Ifc4::IfcCsgSelect">IfcCsgSelect</a> *<em>v1_TreeRootExpression</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcCsgSolid11IfcCsgSolidEPN4Ifc412IfcCsgSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcCsgSolid5ClassEv">
+<span id="_CPPv3N4Ifc411IfcCsgSolid5ClassEv"></span><span id="_CPPv2N4Ifc411IfcCsgSolid5ClassEv"></span><span id="Ifc4::IfcCsgSolid::Class"></span><span class="target" id="class_ifc4_1_1_ifc_csg_solid_1a7a5a1d392c55638c6a898c31842ff43c"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcCsgSolid5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_csg_primitive3_d.html" title="previous chapter">Class Ifc4::IfcCsgPrimitive3D</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_c_shape_profile_def.html" title="next chapter">Class Ifc4::IfcCShapeProfileDef</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_csg_solid.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

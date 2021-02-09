@@ -1,0 +1,31 @@
+.. _exhale_class_class_ifc4x1_1_1_ifc_extruded_area_solid_tapered:
+
+Class Ifc4x1::IfcExtrudedAreaSolidTapered
+=========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x1::IfcExtrudedAreaSolid`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_extruded_area_solid`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x1::IfcExtrudedAreaSolidTapered
+   :members:
+   :protected-members:
+   :undoc-members:

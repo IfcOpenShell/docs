@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a48d8eb6849b68230febadfc2f9fcb3d5:
+
+Define SCHEMA_IfcSite_SiteAddress_IS_OPTIONAL
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSite_SiteAddress_IS_OPTIONAL

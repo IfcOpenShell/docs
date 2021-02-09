@@ -1,0 +1,96 @@
+
+.. _file_src_ifcparse_Argument.h:
+
+File Argument.h
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcparse>` (``src/ifcparse``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/Argument.h``)
+----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_Argument.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/IfcEntityList.h``
+
+- ``algorithm``
+
+- ``boost/dynamic_bitset.hpp``
+
+- ``boost/shared_ptr.hpp``
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+- ``set``
+
+- ``sstream``
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_IfcParse.h`
+
+- :ref:`file_src_ifcgeom_IfcGeomElement.h`
+
+- :ref:`file_src_ifcparse_Ifc2x3.h`
+
+- :ref:`file_src_ifcparse_Ifc4.h`
+
+- :ref:`file_src_ifcparse_Ifc4x1.h`
+
+- :ref:`file_src_ifcparse_Ifc4x2.h`
+
+- :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcParse`
+
+- :ref:`namespace_IfcUtil`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_argument`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function__argument_8h_1a49a429623e72eec14576aeecdce8a290`
+
+- :ref:`exhale_function__argument_8h_1aca953839133a0b0bd7a174477366d700`
+

@@ -1,0 +1,624 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Listing for File IfcGeom.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="program-listing-for-file-ifcgeom-h">
+<span id="program-listing-file-src-ifcgeom-ifcgeom-h"></span><h1>Program Listing for File IfcGeom.h<a class="headerlink" href="#program-listing-for-file-ifcgeom-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_ifcgeom_IfcGeom.h.html#file-src-ifcgeom-ifcgeom-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom/IfcGeom.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/********************************************************************************</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * This file is part of IfcOpenShell.                                           *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcOpenShell is free software: you can redistribute it and/or modify         *</span>
+<span class="cm"> * it under the terms of the Lesser GNU General Public License as published by  *</span>
+<span class="cm"> * the Free Software Foundation, either version 3.0 of the License, or          *</span>
+<span class="cm"> * (at your option) any later version.                                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcOpenShell is distributed in the hope that it will be useful,              *</span>
+<span class="cm"> * but WITHOUT ANY WARRANTY; without even the implied warranty of               *</span>
+<span class="cm"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 *</span>
+<span class="cm"> * Lesser GNU General Public License for more details.                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * You should have received a copy of the Lesser GNU General Public License     *</span>
+<span class="cm"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.         *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> ********************************************************************************/</span>
+
+<span class="cp">#ifndef IFCGEOM_H</span>
+<span class="cp">#define IFCGEOM_H</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;cmath&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;array&gt;</span><span class="cp"></span>
+
+<span class="k">static</span> <span class="k">const</span> <span class="kt">double</span> <span class="n">ALMOST_ZERO</span> <span class="o">=</span> <span class="mf">1.</span><span class="n">e</span><span class="mi">-9</span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span>
+<span class="kr">inline</span> <span class="k">static</span> <span class="kt">bool</span> <span class="n">ALMOST_THE_SAME</span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">a</span><span class="p">,</span> <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">b</span><span class="p">,</span> <span class="kt">double</span> <span class="n">tolerance</span><span class="o">=</span><span class="n">ALMOST_ZERO</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nf">fabs</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">tolerance</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Pnt.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Vec.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Mat.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Mat2d.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_GTrsf.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_GTrsf2d.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Trsf.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Trsf2d.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Quaternion.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;TopoDS.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;TopoDS_Wire.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;TopoDS_Face.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;Geom_Curve.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Pln.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;TColgp_SequenceOfPnt.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;TopTools_ListOfShape.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;BOPAlgo_Operation.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;BRep_Builder.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;BRepBuilderAPI_MakeEdge.hxx&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/macros.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcParse.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcBaseClass.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom/IfcGeomElement.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom/IfcGeomRepresentation.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom/IfcRepresentationShapeItem.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom/IfcGeomShapeType.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom_schema_agnostic/Kernel.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;ifc_geom_api.h&quot;</span><span class="cp"></span>
+
+<span class="c1">// Define this in case you want to conserve memory usage at all cost. This has been</span>
+<span class="c1">// benchmarked extensively: https://github.com/IfcOpenShell/IfcOpenShell/pull/47</span>
+<span class="c1">// #define NO_CACHE</span>
+
+<span class="cp">#ifdef NO_CACHE</span>
+
+<span class="cp">#define IN_CACHE(T,E,t,e)</span>
+<span class="cp">#define CACHE(T,E,e)</span>
+
+<span class="cp">#else</span>
+
+<span class="cp">#define IN_CACHE(T,E,t,e) std::map&lt;int,t&gt;::const_iterator it = cache.T.find(E-&gt;data().id());\</span>
+<span class="cp">if ( it != cache.T.end() ) { e = it-&gt;second; return true; }</span>
+<span class="cp">#define CACHE(T,E,e) cache.T[E-&gt;data().id()] = e;</span>
+
+<span class="cp">#endif</span>
+
+<span class="cp">#define INCLUDE_PARENT_DIR(x) STRINGIFY(../ifcparse/x.h)</span>
+<span class="cp">#include INCLUDE_PARENT_DIR(IfcSchema)</span>
+<span class="cp">#undef INCLUDE_PARENT_DIR</span>
+<span class="cp">#define INCLUDE_PARENT_DIR(x) STRINGIFY(../ifcparse/x-definitions.h)</span>
+<span class="cp">#include INCLUDE_PARENT_DIR(IfcSchema)</span>
+
+<span class="k">namespace</span> <span class="n">IfcGeom</span> <span class="p">{</span>
+    <span class="k">class</span> <span class="nc">IFC_GEOM_API</span> <span class="nl">geometry_exception</span> <span class="p">:</span> <span class="k">public</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span> <span class="p">{</span>
+    <span class="k">protected</span><span class="o">:</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">message</span><span class="p">;</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="n">geometry_exception</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">m</span><span class="p">)</span>
+            <span class="o">:</span> <span class="n">message</span><span class="p">(</span><span class="n">m</span><span class="p">)</span> <span class="p">{}</span>
+        <span class="k">virtual</span> <span class="o">~</span><span class="n">geometry_exception</span><span class="p">()</span> <span class="k">throw</span> <span class="p">()</span> <span class="p">{}</span>
+        <span class="k">virtual</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">what</span><span class="p">()</span> <span class="k">const</span> <span class="k">throw</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="n">message</span><span class="p">.</span><span class="n">c_str</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+
+    <span class="k">class</span> <span class="nc">IFC_GEOM_API</span> <span class="nl">too_many_faces_exception</span> <span class="p">:</span> <span class="k">public</span> <span class="n">geometry_exception</span> <span class="p">{</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="n">too_many_faces_exception</span><span class="p">()</span>
+            <span class="o">:</span> <span class="n">geometry_exception</span><span class="p">(</span><span class="s">&quot;Too many faces for operation&quot;</span><span class="p">)</span> <span class="p">{}</span>
+    <span class="p">};</span>
+
+<span class="k">class</span> <span class="nc">IFC_GEOM_API</span> <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">Cache</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="cp">#include</span> <span class="cpf">&quot;IfcRegisterCreateCache.h&quot;</span><span class="cp"></span>
+    <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&gt;</span> <span class="n">Shape</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">class</span> <span class="nc">IFC_GEOM_API</span> <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">Kernel</span><span class="p">)</span> <span class="o">:</span> <span class="k">public</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">Kernel</span> <span class="p">{</span>
+<span class="k">private</span><span class="o">:</span>
+
+    <span class="cm">/*</span>
+<span class="cm">    faceset_helper traverses the forward instance references of IfcConnectedFaceSet and then provides a mapping</span>
+<span class="cm">    M of (IfcCartesianPoint, IfcCartesianPoint) -&gt; TopoDS_Edge, where M(a, b) is a partner of M(b, a), ie share</span>
+<span class="cm">    the same underlying edge but with orientation reversed. This then later speeds op the process of creating a</span>
+<span class="cm">    manifold Shell / Solid from this set of faces. Only IfcPolyLoop instances are used. Points within the tolerance</span>
+<span class="cm">    threshiold are merged, so consider points a, b, c, distance(a, b) &lt; eps then M(a, b) = Null, M(a, b) = M(a, c).</span>
+<span class="cm">    */</span>
+    <span class="k">class</span> <span class="nc">faceset_helper</span> <span class="p">{</span>
+    <span class="k">private</span><span class="o">:</span>
+        <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">Kernel</span><span class="p">)</span><span class="o">*</span> <span class="n">kernel_</span><span class="p">;</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">set</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcPolyLoop</span><span class="o">*&gt;</span> <span class="n">duplicates_</span><span class="p">;</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">vertex_mapping_</span><span class="p">;</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">TopoDS_Edge</span><span class="o">&gt;</span> <span class="n">edges_</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">eps_</span><span class="p">;</span>
+        <span class="kt">bool</span> <span class="n">non_manifold_</span><span class="p">;</span>
+
+        <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="nc">Fn</span><span class="o">&gt;</span>
+        <span class="kt">void</span> <span class="n">loop_</span><span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcCartesianPoint</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span><span class="o">&amp;</span> <span class="n">ps</span><span class="p">,</span> <span class="k">const</span> <span class="n">Fn</span><span class="o">&amp;</span> <span class="n">callback</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">ps</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="k">auto</span> <span class="n">a</span> <span class="o">=</span> <span class="o">*</span><span class="p">(</span><span class="n">ps</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+            <span class="k">auto</span> <span class="n">A</span> <span class="o">=</span> <span class="n">a</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">().</span><span class="n">id</span><span class="p">();</span>
+            <span class="k">for</span> <span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span> <span class="nl">b</span> <span class="p">:</span> <span class="o">*</span><span class="n">ps</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">auto</span> <span class="n">B</span> <span class="o">=</span> <span class="n">b</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">().</span><span class="n">id</span><span class="p">();</span>
+                <span class="k">auto</span> <span class="n">C</span> <span class="o">=</span> <span class="n">vertex_mapping_</span><span class="p">[</span><span class="n">A</span><span class="p">],</span> <span class="n">D</span> <span class="o">=</span> <span class="n">vertex_mapping_</span><span class="p">[</span><span class="n">B</span><span class="p">];</span>
+                <span class="kt">bool</span> <span class="n">fwd</span> <span class="o">=</span> <span class="n">C</span> <span class="o">&lt;</span> <span class="n">D</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">fwd</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">std</span><span class="o">::</span><span class="n">swap</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">);</span>
+                <span class="p">}</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">C</span> <span class="o">!=</span> <span class="n">D</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">callback</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">fwd</span><span class="p">);</span>
+                    <span class="n">A</span> <span class="o">=</span> <span class="n">B</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="n">faceset_helper</span><span class="p">(</span><span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">Kernel</span><span class="p">)</span><span class="o">*</span> <span class="n">kernel</span><span class="p">,</span> <span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcConnectedFaceSet</span><span class="o">*</span> <span class="n">l</span><span class="p">);</span>
+
+        <span class="o">~</span><span class="n">faceset_helper</span><span class="p">();</span>
+
+        <span class="kt">bool</span> <span class="nf">non_manifold</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">non_manifold_</span><span class="p">;</span> <span class="p">}</span>
+        <span class="kt">bool</span><span class="o">&amp;</span> <span class="nf">non_manifold</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">non_manifold_</span><span class="p">;</span> <span class="p">}</span>
+
+        <span class="kt">bool</span> <span class="nf">edge</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcCartesianPoint</span><span class="o">*</span> <span class="n">a</span><span class="p">,</span> <span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcCartesianPoint</span><span class="o">*</span> <span class="n">b</span><span class="p">,</span> <span class="n">TopoDS_Edge</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kt">int</span> <span class="n">A</span> <span class="o">=</span> <span class="n">vertex_mapping_</span><span class="p">[</span><span class="n">a</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">().</span><span class="n">id</span><span class="p">()];</span>
+            <span class="kt">int</span> <span class="n">B</span> <span class="o">=</span> <span class="n">vertex_mapping_</span><span class="p">[</span><span class="n">b</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">().</span><span class="n">id</span><span class="p">()];</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">A</span> <span class="o">==</span> <span class="n">B</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="k">return</span> <span class="n">edge</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">e</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="kt">bool</span> <span class="nf">edge</span><span class="p">(</span><span class="kt">int</span> <span class="n">A</span><span class="p">,</span> <span class="kt">int</span> <span class="n">B</span><span class="p">,</span> <span class="n">TopoDS_Edge</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">auto</span> <span class="n">it</span> <span class="o">=</span> <span class="n">edges_</span><span class="p">.</span><span class="n">find</span><span class="p">({</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">});</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">it</span> <span class="o">==</span> <span class="n">edges_</span><span class="p">.</span><span class="n">end</span><span class="p">())</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="n">e</span> <span class="o">=</span> <span class="n">it</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">;</span>
+            <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kt">bool</span> <span class="nf">wire</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcPolyLoop</span><span class="o">*</span> <span class="n">loop</span><span class="p">,</span> <span class="n">TopoDS_Wire</span><span class="o">&amp;</span> <span class="n">wire</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">duplicates_</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">loop</span><span class="p">)</span> <span class="o">!=</span> <span class="n">duplicates_</span><span class="p">.</span><span class="n">end</span><span class="p">())</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="n">BRep_Builder</span> <span class="n">builder</span><span class="p">;</span>
+            <span class="n">builder</span><span class="p">.</span><span class="n">MakeWire</span><span class="p">(</span><span class="n">wire</span><span class="p">);</span>
+            <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="k">auto</span> <span class="n">ps</span> <span class="o">=</span> <span class="n">loop</span><span class="o">-&gt;</span><span class="n">Polygon</span><span class="p">();</span>
+            <span class="n">loop_</span><span class="p">(</span><span class="n">ps</span><span class="p">,</span> <span class="p">[</span><span class="k">this</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">builder</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">wire</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">count</span><span class="p">](</span><span class="kt">int</span> <span class="n">A</span><span class="p">,</span> <span class="kt">int</span> <span class="n">B</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">fwd</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">TopoDS_Edge</span> <span class="n">e</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">edge</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">e</span><span class="p">))</span> <span class="p">{</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">fwd</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">e</span><span class="p">.</span><span class="n">Reverse</span><span class="p">();</span>
+                    <span class="p">}</span>
+                    <span class="n">builder</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">wire</span><span class="p">,</span> <span class="n">e</span><span class="p">);</span>
+                    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">});</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">wire</span><span class="p">.</span><span class="n">Closed</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+
+                <span class="n">TopTools_ListOfShape</span> <span class="n">results</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">kernel_</span><span class="o">-&gt;</span><span class="n">wire_intersections</span><span class="p">(</span><span class="n">wire</span><span class="p">,</span> <span class="n">results</span><span class="p">))</span> <span class="p">{</span>
+                    <span class="n">Logger</span><span class="o">::</span><span class="n">Warning</span><span class="p">(</span><span class="s">&quot;Self-intersections with &quot;</span> <span class="o">+</span> <span class="n">boost</span><span class="o">::</span><span class="n">lexical_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="n">results</span><span class="p">.</span><span class="n">Extent</span><span class="p">())</span> <span class="o">+</span> <span class="s">&quot; cycles detected&quot;</span><span class="p">,</span> <span class="n">loop</span><span class="p">);</span>
+                    <span class="n">kernel_</span><span class="o">-&gt;</span><span class="n">select_largest</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">wire</span><span class="p">);</span>
+                    <span class="n">non_manifold_</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+                <span class="p">}</span>
+
+                <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="kt">double</span> <span class="nf">epsilon</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="n">eps_</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+
+    <span class="kt">double</span> <span class="n">deflection_tolerance</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">max_faces_to_orient</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">ifc_length_unit</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">ifc_planeangle_unit</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">modelling_precision</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">dimensionality</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">layerset_first</span><span class="p">;</span>
+
+    <span class="c1">// For stopping PlacementRelTo recursion in convert(const IfcSchema::IfcObjectPlacement* l, gp_Trsf&amp; trsf)</span>
+    <span class="k">const</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">declaration</span><span class="o">*</span> <span class="n">placement_rel_to</span><span class="p">;</span>
+
+    <span class="n">faceset_helper</span><span class="o">*</span> <span class="n">faceset_helper_</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">disable_boolean_result</span><span class="p">;</span>
+
+    <span class="n">gp_Vec</span> <span class="n">offset</span> <span class="o">=</span> <span class="n">gp_Vec</span><span class="p">{</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">};</span>
+    <span class="n">gp_Quaternion</span> <span class="n">rotation</span> <span class="o">=</span> <span class="n">gp_Quaternion</span><span class="p">{};</span>
+    <span class="n">gp_Trsf</span> <span class="n">offset_and_rotation</span> <span class="o">=</span> <span class="n">gp_Trsf</span><span class="p">();</span>
+
+<span class="cp">#ifndef NO_CACHE</span>
+    <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">Cache</span><span class="p">)</span> <span class="n">cache</span><span class="p">;</span>
+<span class="cp">#endif</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">SurfaceStyle</span><span class="o">&gt;</span> <span class="n">style_cache</span><span class="p">;</span>
+
+    <span class="k">const</span> <span class="n">SurfaceStyle</span><span class="o">*</span> <span class="n">internalize_surface_style</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span><span class="p">,</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*&gt;&amp;</span> <span class="n">shading_style</span><span class="p">);</span>
+
+<span class="k">public</span><span class="o">:</span>
+    <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">Kernel</span><span class="p">)()</span>
+        <span class="o">:</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">Kernel</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">deflection_tolerance</span><span class="p">(</span><span class="mf">0.001</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">max_faces_to_orient</span><span class="p">(</span><span class="mf">-1.0</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">ifc_length_unit</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">ifc_planeangle_unit</span><span class="p">(</span><span class="mf">-1.0</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">modelling_precision</span><span class="p">(</span><span class="mf">0.00001</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">dimensionality</span><span class="p">(</span><span class="mf">1.</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">placement_rel_to</span><span class="p">(</span><span class="k">nullptr</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">faceset_helper_</span><span class="p">(</span><span class="k">nullptr</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">layerset_first</span><span class="p">(</span><span class="mf">-1.</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">disable_boolean_result</span><span class="p">(</span><span class="mf">-1.</span><span class="p">)</span>
+    <span class="p">{}</span>
+
+    <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">Kernel</span><span class="p">)(</span><span class="k">const</span> <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">Kernel</span><span class="p">)</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span>
+        <span class="o">:</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">Kernel</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">deflection_tolerance</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">deflection_tolerance</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">max_faces_to_orient</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">max_faces_to_orient</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">ifc_length_unit</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">ifc_length_unit</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">ifc_planeangle_unit</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">ifc_planeangle_unit</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">modelling_precision</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">modelling_precision</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">dimensionality</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">dimensionality</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">placement_rel_to</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">placement_rel_to</span><span class="p">)</span>
+        <span class="c1">// @nb faceset_helper_ always initialized to 0</span>
+        <span class="p">,</span> <span class="n">faceset_helper_</span><span class="p">(</span><span class="k">nullptr</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">layerset_first</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">layerset_first</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">disable_boolean_result</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">disable_boolean_result</span><span class="p">)</span>
+
+        <span class="p">,</span> <span class="n">offset</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">offset</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">rotation</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">rotation</span><span class="p">)</span>
+        <span class="p">,</span> <span class="n">offset_and_rotation</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">offset_and_rotation</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">Kernel</span><span class="p">)</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">Kernel</span><span class="p">)</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">deflection_tolerance</span> <span class="o">=</span> <span class="n">other</span><span class="p">.</span><span class="n">deflection_tolerance</span><span class="p">;</span>
+        <span class="n">max_faces_to_orient</span> <span class="o">=</span> <span class="n">other</span><span class="p">.</span><span class="n">max_faces_to_orient</span><span class="p">;</span>
+        <span class="n">ifc_length_unit</span> <span class="o">=</span> <span class="n">other</span><span class="p">.</span><span class="n">ifc_length_unit</span><span class="p">;</span>
+        <span class="n">ifc_planeangle_unit</span> <span class="o">=</span> <span class="n">other</span><span class="p">.</span><span class="n">ifc_planeangle_unit</span><span class="p">;</span>
+        <span class="n">modelling_precision</span> <span class="o">=</span> <span class="n">other</span><span class="p">.</span><span class="n">modelling_precision</span><span class="p">;</span>
+        <span class="n">dimensionality</span> <span class="o">=</span> <span class="n">other</span><span class="p">.</span><span class="n">dimensionality</span><span class="p">;</span>
+        <span class="n">placement_rel_to</span> <span class="o">=</span> <span class="n">other</span><span class="p">.</span><span class="n">placement_rel_to</span><span class="p">;</span>
+        <span class="n">layerset_first</span> <span class="o">=</span> <span class="n">other</span><span class="p">.</span><span class="n">layerset_first</span><span class="p">;</span>
+        <span class="n">disable_boolean_result</span> <span class="o">=</span> <span class="n">other</span><span class="p">.</span><span class="n">disable_boolean_result</span><span class="p">;</span>
+
+        <span class="n">offset</span> <span class="o">=</span> <span class="n">other</span><span class="p">.</span><span class="n">offset</span><span class="p">;</span>
+        <span class="n">rotation</span> <span class="o">=</span> <span class="n">other</span><span class="p">.</span><span class="n">rotation</span><span class="p">;</span>
+        <span class="n">offset_and_rotation</span> <span class="o">=</span> <span class="n">other</span><span class="p">.</span><span class="n">offset_and_rotation</span><span class="p">;</span>
+        <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">set_offset</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;&amp;</span> <span class="n">offset</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="nf">set_rotation</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;&amp;</span> <span class="n">rotation</span><span class="p">);</span>
+
+    <span class="kt">bool</span> <span class="nf">convert_wire_to_face</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Wire</span><span class="o">&amp;</span> <span class="n">wire</span><span class="p">,</span> <span class="n">TopoDS_Face</span><span class="o">&amp;</span> <span class="n">face</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">convert_wire_to_faces</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Wire</span><span class="o">&amp;</span> <span class="n">wire</span><span class="p">,</span> <span class="n">TopoDS_Compound</span><span class="o">&amp;</span> <span class="n">face</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">convert_curve_to_wire</span><span class="p">(</span><span class="k">const</span> <span class="n">Handle</span><span class="p">(</span><span class="n">Geom_Curve</span><span class="p">)</span><span class="o">&amp;</span> <span class="n">curve</span><span class="p">,</span> <span class="n">TopoDS_Wire</span><span class="o">&amp;</span> <span class="n">wire</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">convert_shapes</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">L</span><span class="p">,</span> <span class="n">IfcRepresentationShapeItems</span><span class="o">&amp;</span> <span class="n">result</span><span class="p">);</span>
+    <span class="n">IfcGeom</span><span class="o">::</span><span class="n">ShapeType</span> <span class="n">shape_type</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">L</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">convert_shape</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">L</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">result</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">flatten_shape_list</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">IfcRepresentationShapeItems</span><span class="o">&amp;</span> <span class="n">shapes</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">result</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">fuse</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">convert_wire</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">L</span><span class="p">,</span> <span class="n">TopoDS_Wire</span><span class="o">&amp;</span> <span class="n">result</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">convert_curve</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">L</span><span class="p">,</span> <span class="n">Handle</span><span class="p">(</span><span class="n">Geom_Curve</span><span class="p">)</span><span class="o">&amp;</span> <span class="n">result</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">convert_face</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">L</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">result</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">convert_openings</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span> <span class="n">entity</span><span class="p">,</span> <span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRelVoidsElement</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span><span class="o">&amp;</span> <span class="n">openings</span><span class="p">,</span> <span class="k">const</span> <span class="n">IfcRepresentationShapeItems</span><span class="o">&amp;</span> <span class="n">entity_shapes</span><span class="p">,</span> <span class="k">const</span> <span class="n">gp_Trsf</span><span class="o">&amp;</span> <span class="n">entity_trsf</span><span class="p">,</span> <span class="n">IfcRepresentationShapeItems</span><span class="o">&amp;</span> <span class="n">cut_shapes</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">convert_openings_fast</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span> <span class="n">entity</span><span class="p">,</span> <span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRelVoidsElement</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span><span class="o">&amp;</span> <span class="n">openings</span><span class="p">,</span> <span class="k">const</span> <span class="n">IfcRepresentationShapeItems</span><span class="o">&amp;</span> <span class="n">entity_shapes</span><span class="p">,</span> <span class="k">const</span> <span class="n">gp_Trsf</span><span class="o">&amp;</span> <span class="n">entity_trsf</span><span class="p">,</span> <span class="n">IfcRepresentationShapeItems</span><span class="o">&amp;</span> <span class="n">cut_shapes</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="nf">assert_closed_wire</span><span class="p">(</span><span class="n">TopoDS_Wire</span><span class="o">&amp;</span> <span class="n">wire</span><span class="p">);</span>
+
+    <span class="kt">bool</span> <span class="nf">convert_layerset</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Handle_Geom_Surface</span><span class="o">&gt;&amp;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SurfaceStyle</span><span class="o">*&gt;&amp;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&amp;</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">apply_layerset</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcRepresentationShapeItems</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Handle_Geom_Surface</span><span class="o">&gt;&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SurfaceStyle</span><span class="o">*&gt;&amp;</span><span class="p">,</span> <span class="n">IfcRepresentationShapeItems</span><span class="o">&amp;</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">apply_folded_layerset</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcRepresentationShapeItems</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Handle_Geom_Surface</span><span class="o">&gt;</span> <span class="o">&gt;&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SurfaceStyle</span><span class="o">*&gt;&amp;</span><span class="p">,</span> <span class="n">IfcRepresentationShapeItems</span><span class="o">&amp;</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">fold_layers</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcWall</span><span class="o">*</span><span class="p">,</span> <span class="k">const</span> <span class="n">IfcRepresentationShapeItems</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Handle_Geom_Surface</span><span class="o">&gt;&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&amp;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Handle_Geom_Surface</span><span class="o">&gt;</span> <span class="o">&gt;&amp;</span><span class="p">);</span>
+
+    <span class="kt">bool</span> <span class="nf">split_solid_by_surface</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">Handle_Geom_Surface</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">split_solid_by_shell</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">);</span>
+
+<span class="cp">#if OCC_VERSION_HEX &lt; 0x60900</span>
+    <span class="kt">bool</span> <span class="nf">boolean_operation</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">TopTools_ListOfShape</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">BOPAlgo_Operation</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">boolean_operation</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">BOPAlgo_Operation</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">);</span>
+<span class="cp">#else</span>
+    <span class="kt">bool</span> <span class="nf">boolean_operation</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">TopTools_ListOfShape</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">BOPAlgo_Operation</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="kt">double</span> <span class="n">fuzziness</span> <span class="o">=</span> <span class="mf">-1.</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">boolean_operation</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">BOPAlgo_Operation</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="kt">double</span> <span class="n">fuzziness</span> <span class="o">=</span> <span class="mf">-1.</span><span class="p">);</span>
+<span class="cp">#endif</span>
+
+    <span class="kt">bool</span> <span class="nf">fit_halfspace</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">a</span><span class="p">,</span> <span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">b</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">box</span><span class="p">,</span> <span class="kt">double</span><span class="o">&amp;</span> <span class="n">height</span><span class="p">);</span>
+
+    <span class="k">const</span> <span class="n">Handle_Geom_Curve</span> <span class="n">intersect</span><span class="p">(</span><span class="k">const</span> <span class="n">Handle_Geom_Surface</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">Handle_Geom_Surface</span><span class="o">&amp;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">Handle_Geom_Curve</span> <span class="n">intersect</span><span class="p">(</span><span class="k">const</span> <span class="n">Handle_Geom_Surface</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">TopoDS_Face</span><span class="o">&amp;</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">Handle_Geom_Curve</span> <span class="n">intersect</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Face</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">Handle_Geom_Surface</span><span class="o">&amp;</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">intersect</span><span class="p">(</span><span class="k">const</span> <span class="n">Handle_Geom_Curve</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">Handle_Geom_Surface</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">gp_Pnt</span><span class="o">&amp;</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">intersect</span><span class="p">(</span><span class="k">const</span> <span class="n">Handle_Geom_Curve</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">TopoDS_Face</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">gp_Pnt</span><span class="o">&amp;</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">intersect</span><span class="p">(</span><span class="k">const</span> <span class="n">Handle_Geom_Curve</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">gp_Pnt</span><span class="o">&gt;&amp;</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">intersect</span><span class="p">(</span><span class="k">const</span> <span class="n">Handle_Geom_Surface</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">Handle_Geom_Surface</span><span class="p">,</span> <span class="n">Handle_Geom_Curve</span><span class="o">&gt;</span> <span class="o">&gt;&amp;</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">closest</span><span class="p">(</span><span class="k">const</span> <span class="n">gp_Pnt</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">gp_Pnt</span><span class="o">&gt;&amp;</span><span class="p">,</span> <span class="n">gp_Pnt</span><span class="o">&amp;</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">project</span><span class="p">(</span><span class="k">const</span> <span class="n">Handle_Geom_Curve</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">gp_Pnt</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">gp_Pnt</span><span class="o">&amp;</span> <span class="n">p</span><span class="p">,</span> <span class="kt">double</span><span class="o">&amp;</span> <span class="n">u</span><span class="p">,</span> <span class="kt">double</span><span class="o">&amp;</span> <span class="n">d</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">project</span><span class="p">(</span><span class="k">const</span> <span class="n">Handle_Geom_Surface</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="kt">double</span><span class="o">&amp;</span> <span class="n">u1</span><span class="p">,</span> <span class="kt">double</span><span class="o">&amp;</span> <span class="n">v1</span><span class="p">,</span> <span class="kt">double</span><span class="o">&amp;</span> <span class="n">u2</span><span class="p">,</span> <span class="kt">double</span><span class="o">&amp;</span> <span class="n">v2</span><span class="p">,</span> <span class="kt">double</span> <span class="n">widen</span><span class="o">=</span><span class="mf">0.1</span><span class="p">);</span>
+
+    <span class="kt">bool</span> <span class="nf">find_wall_end_points</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcWall</span><span class="o">*</span><span class="p">,</span> <span class="n">gp_Pnt</span><span class="o">&amp;</span> <span class="n">start</span><span class="p">,</span> <span class="n">gp_Pnt</span><span class="o">&amp;</span> <span class="n">end</span><span class="p">);</span>
+
+    <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcSurfaceStyleShading</span><span class="o">*</span> <span class="n">get_surface_style</span><span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentationItem</span><span class="o">*</span> <span class="n">item</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentationItem</span><span class="o">*</span> <span class="n">find_item_carrying_style</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentationItem</span><span class="o">*</span> <span class="n">item</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">create_solid_from_compound</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">compound</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">create_solid_from_faces</span><span class="p">(</span><span class="k">const</span> <span class="n">TopTools_ListOfShape</span><span class="o">&amp;</span> <span class="n">face_list</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">is_compound</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">shape</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">is_convex</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Wire</span><span class="o">&amp;</span> <span class="n">wire</span><span class="p">);</span>
+    <span class="n">TopoDS_Shape</span> <span class="nf">halfspace_from_plane</span><span class="p">(</span><span class="k">const</span> <span class="n">gp_Pln</span><span class="o">&amp;</span> <span class="n">pln</span><span class="p">,</span><span class="k">const</span> <span class="n">gp_Pnt</span><span class="o">&amp;</span> <span class="n">cent</span><span class="p">);</span>
+    <span class="n">gp_Pln</span> <span class="nf">plane_from_face</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Face</span><span class="o">&amp;</span> <span class="n">face</span><span class="p">);</span>
+    <span class="n">gp_Pnt</span> <span class="nf">point_above_plane</span><span class="p">(</span><span class="k">const</span> <span class="n">gp_Pln</span><span class="o">&amp;</span> <span class="n">pln</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">agree</span><span class="o">=</span><span class="nb">true</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">ensure_fit_for_subtraction</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">shape</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">profile_helper</span><span class="p">(</span><span class="kt">int</span> <span class="n">numVerts</span><span class="p">,</span> <span class="kt">double</span><span class="o">*</span> <span class="n">verts</span><span class="p">,</span> <span class="kt">int</span> <span class="n">numFillets</span><span class="p">,</span> <span class="kt">int</span><span class="o">*</span> <span class="n">filletIndices</span><span class="p">,</span> <span class="kt">double</span><span class="o">*</span> <span class="n">filletRadii</span><span class="p">,</span> <span class="n">gp_Trsf2d</span> <span class="n">trsf</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">face</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="nf">apply_tolerance</span><span class="p">(</span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span> <span class="kt">double</span> <span class="n">t</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">fill_nonmanifold_wires_with_planar_faces</span><span class="p">(</span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">shape</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="nf">remove_duplicate_points_from_loop</span><span class="p">(</span><span class="n">TColgp_SequenceOfPnt</span><span class="o">&amp;</span> <span class="n">polygon</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">closed</span><span class="p">,</span> <span class="kt">double</span> <span class="n">tol</span><span class="o">=</span><span class="mf">-1.</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="nf">remove_collinear_points_from_loop</span><span class="p">(</span><span class="n">TColgp_SequenceOfPnt</span><span class="o">&amp;</span> <span class="n">polygon</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">closed</span><span class="p">,</span> <span class="kt">double</span> <span class="n">tol</span><span class="o">=</span><span class="mf">-1.</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">wire_to_sequence_of_point</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Wire</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">TColgp_SequenceOfPnt</span><span class="o">&amp;</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="nf">sequence_of_point_to_wire</span><span class="p">(</span><span class="k">const</span> <span class="n">TColgp_SequenceOfPnt</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">TopoDS_Wire</span><span class="o">&amp;</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">closed</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">approximate_plane_through_wire</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Wire</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">gp_Pln</span><span class="o">&amp;</span><span class="p">,</span> <span class="kt">double</span> <span class="n">eps</span><span class="o">=</span><span class="mf">-1.</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">flatten_wire</span><span class="p">(</span><span class="n">TopoDS_Wire</span><span class="o">&amp;</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">triangulate_wire</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">TopoDS_Wire</span><span class="o">&gt;&amp;</span><span class="p">,</span> <span class="n">TopTools_ListOfShape</span><span class="o">&amp;</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="nf">wire_intersections</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Wire</span> <span class="o">&amp;</span> <span class="n">wire</span><span class="p">,</span> <span class="n">TopTools_ListOfShape</span> <span class="o">&amp;</span> <span class="n">wires</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="nf">select_largest</span><span class="p">(</span><span class="k">const</span> <span class="n">TopTools_ListOfShape</span><span class="o">&amp;</span> <span class="n">shapes</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">largest</span><span class="p">);</span>
+
+    <span class="k">static</span> <span class="kt">double</span> <span class="n">shape_volume</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">);</span>
+    <span class="k">static</span> <span class="kt">double</span> <span class="n">face_area</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Face</span><span class="o">&amp;</span> <span class="n">f</span><span class="p">);</span>
+
+    <span class="k">static</span> <span class="n">TopoDS_Shape</span> <span class="n">apply_transformation</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">gp_Trsf</span><span class="o">&amp;</span><span class="p">);</span>
+    <span class="k">static</span> <span class="n">TopoDS_Shape</span> <span class="n">apply_transformation</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="k">const</span> <span class="n">gp_GTrsf</span><span class="o">&amp;</span><span class="p">);</span>
+
+    <span class="kt">bool</span> <span class="nf">is_identity_transform</span><span class="p">(</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span><span class="p">);</span>
+
+    <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRelVoidsElement</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">find_openings</span><span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span> <span class="n">product</span><span class="p">);</span>
+
+    <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">*</span> <span class="n">find_representation</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="p">);</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <span class="kt">double</span><span class="o">&gt;</span> <span class="n">initializeUnits</span><span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcUnitAssignment</span><span class="o">*</span><span class="p">);</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="nc">P</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">PP</span><span class="o">&gt;</span>
+    <span class="n">IfcGeom</span><span class="o">::</span><span class="n">BRepElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">create_brep_for_representation_and_product</span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">IteratorSettings</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">*</span><span class="p">,</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span><span class="p">);</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="nc">P</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">PP</span><span class="o">&gt;</span>
+    <span class="n">IfcGeom</span><span class="o">::</span><span class="n">BRepElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">create_brep_for_processed_representation</span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">IteratorSettings</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">*</span><span class="p">,</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span><span class="p">,</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">BRepElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span><span class="p">);</span>
+
+    <span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcMaterial</span><span class="o">*</span> <span class="n">get_single_material_association</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span><span class="p">);</span>
+    <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">*</span> <span class="n">representation_mapped_to</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">*</span> <span class="n">representation</span><span class="p">);</span>
+    <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">products_represented_by</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">*</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">SurfaceStyle</span><span class="o">*</span> <span class="n">get_style</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentationItem</span><span class="o">*</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">SurfaceStyle</span><span class="o">*</span> <span class="n">get_style</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcMaterial</span><span class="o">*</span><span class="p">);</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcSurfaceStyle</span><span class="o">*</span><span class="p">,</span> <span class="n">T</span><span class="o">*&gt;</span> <span class="n">_get_surface_style</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcStyledItem</span><span class="o">*</span> <span class="n">si</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcPresentationStyle</span><span class="o">*&gt;</span> <span class="n">prs_styles</span><span class="p">;</span>
+
+<span class="cp">#ifdef SCHEMA_HAS_IfcStyleAssignmentSelect</span>
+        <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">style_assignments</span> <span class="o">=</span> <span class="n">si</span><span class="o">-&gt;</span><span class="n">Styles</span><span class="p">();</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">IfcEntityList</span><span class="o">::</span><span class="n">it</span> <span class="n">kt</span> <span class="o">=</span> <span class="n">style_assignments</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span> <span class="n">kt</span> <span class="o">!=</span> <span class="n">style_assignments</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">kt</span><span class="p">)</span> <span class="p">{</span>
+
+            <span class="c1">// Using IfcPresentationStyleAssignment is deprecated, use the direct assignment of a subtype of IfcPresentationStyle instead.</span>
+            <span class="k">auto</span> <span class="n">style_k</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">kt</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcPresentationStyle</span><span class="o">&gt;</span><span class="p">();</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">style_k</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">prs_styles</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">style_k</span><span class="p">);</span>
+                <span class="k">continue</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="o">*</span><span class="n">kt</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">declaration</span><span class="p">().</span><span class="n">is</span><span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcPresentationStyleAssignment</span><span class="o">::</span><span class="n">Class</span><span class="p">()))</span> <span class="p">{</span>
+                <span class="k">continue</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcPresentationStyleAssignment</span><span class="o">*</span> <span class="n">style_assignment</span> <span class="o">=</span> <span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcPresentationStyleAssignment</span><span class="o">*</span><span class="p">)</span> <span class="o">*</span><span class="n">kt</span><span class="p">;</span>
+
+            <span class="n">Logger</span><span class="o">::</span><span class="n">Warning</span><span class="p">(</span><span class="s">&quot;Deprecated usage of&quot;</span><span class="p">,</span> <span class="n">style_assignment</span><span class="p">);</span>
+<span class="cp">#else</span>
+        <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcPresentationStyleAssignment</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">style_assignments</span> <span class="o">=</span> <span class="n">si</span><span class="o">-&gt;</span><span class="n">Styles</span><span class="p">();</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcPresentationStyleAssignment</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">it</span> <span class="n">kt</span> <span class="o">=</span> <span class="n">style_assignments</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span> <span class="n">kt</span> <span class="o">!=</span> <span class="n">style_assignments</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">kt</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcPresentationStyleAssignment</span><span class="o">*</span> <span class="n">style_assignment</span> <span class="o">=</span> <span class="o">*</span><span class="n">kt</span><span class="p">;</span>
+<span class="cp">#endif</span>
+
+            <span class="c1">// Only in case of 2x3 or old style IfcPresentationStyleAssignment</span>
+
+            <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">styles</span> <span class="o">=</span> <span class="n">style_assignment</span><span class="o">-&gt;</span><span class="n">Styles</span><span class="p">();</span>
+
+            <span class="k">for</span> <span class="p">(</span><span class="n">IfcEntityList</span><span class="o">::</span><span class="n">it</span> <span class="n">lt</span> <span class="o">=</span> <span class="n">styles</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span> <span class="n">lt</span> <span class="o">!=</span> <span class="n">styles</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">lt</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">auto</span> <span class="n">style_l</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">lt</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcPresentationStyle</span><span class="o">&gt;</span><span class="p">();</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">style_l</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">prs_styles</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">style_l</span><span class="p">);</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span> <span class="nl">style</span> <span class="p">:</span> <span class="n">prs_styles</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">style</span><span class="o">-&gt;</span><span class="n">declaration</span><span class="p">().</span><span class="n">is</span><span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcSurfaceStyle</span><span class="o">::</span><span class="n">Class</span><span class="p">()))</span> <span class="p">{</span>
+                <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcSurfaceStyle</span><span class="o">*</span> <span class="n">surface_style</span> <span class="o">=</span> <span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcSurfaceStyle</span><span class="o">*</span><span class="p">)</span> <span class="n">style</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">surface_style</span><span class="o">-&gt;</span><span class="n">Side</span><span class="p">()</span> <span class="o">!=</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcSurfaceSide</span><span class="o">::</span><span class="n">IfcSurfaceSide_NEGATIVE</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">styles_elements</span> <span class="o">=</span> <span class="n">surface_style</span><span class="o">-&gt;</span><span class="n">Styles</span><span class="p">();</span>
+                    <span class="k">for</span> <span class="p">(</span><span class="n">IfcEntityList</span><span class="o">::</span><span class="n">it</span> <span class="n">mt</span> <span class="o">=</span> <span class="n">styles_elements</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span> <span class="n">mt</span> <span class="o">!=</span> <span class="n">styles_elements</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">mt</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="k">if</span> <span class="p">((</span><span class="o">*</span><span class="n">mt</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">declaration</span><span class="p">().</span><span class="n">is</span><span class="p">(</span><span class="n">T</span><span class="o">::</span><span class="n">Class</span><span class="p">()))</span> <span class="p">{</span>
+                            <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">make_pair</span><span class="p">(</span><span class="n">surface_style</span><span class="p">,</span> <span class="p">(</span><span class="n">T</span><span class="o">*</span><span class="p">)</span> <span class="o">*</span><span class="n">mt</span><span class="p">);</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">make_pair</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcSurfaceStyle</span><span class="o">*</span><span class="p">,</span> <span class="n">T</span><span class="o">*&gt;</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcSurfaceStyle</span><span class="o">*</span><span class="p">,</span> <span class="n">T</span><span class="o">*&gt;</span> <span class="n">get_surface_style</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentationItem</span><span class="o">*</span> <span class="n">representation_item</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// For certain representation items, most notably boolean operands,</span>
+        <span class="c1">// a style definition might reside on one of its operands.</span>
+        <span class="n">representation_item</span> <span class="o">=</span> <span class="n">find_item_carrying_style</span><span class="p">(</span><span class="n">representation_item</span><span class="p">);</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">representation_item</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcStyledItem</span><span class="o">&gt;</span><span class="p">())</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="n">_get_surface_style</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">representation_item</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcStyledItem</span><span class="o">&gt;</span><span class="p">());</span>
+        <span class="p">}</span>
+        <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcStyledItem</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">styled_items</span> <span class="o">=</span> <span class="n">representation_item</span><span class="o">-&gt;</span><span class="n">StyledByItem</span><span class="p">();</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">styled_items</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">())</span> <span class="p">{</span>
+            <span class="c1">// StyledByItem is a SET [0:1] OF IfcStyledItem, so we return after the first IfcStyledItem:</span>
+            <span class="k">return</span> <span class="n">_get_surface_style</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="o">*</span><span class="n">styled_items</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">());</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">make_pair</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcSurfaceStyle</span><span class="o">*</span><span class="p">,</span> <span class="n">T</span><span class="o">*&gt;</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">purge_cache</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// Rather hack-ish, but a stopgap solution to keep memory under control</span>
+        <span class="c1">// for large files. SurfaceStyles need to be kept at all costs, as they</span>
+        <span class="c1">// are read later on when serializing Collada files.</span>
+<span class="cp">#ifndef NO_CACHE</span>
+        <span class="n">cache</span> <span class="o">=</span> <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">Cache</span><span class="p">)();</span>
+<span class="cp">#endif</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">set_conversion_placement_rel_to</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">declaration</span><span class="o">*</span> <span class="n">type</span><span class="p">);</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;IfcRegisterGeomHeader.h&quot;</span><span class="cp"></span>
+
+    <span class="k">virtual</span> <span class="kt">void</span> <span class="n">setValue</span><span class="p">(</span><span class="n">GeomValue</span> <span class="n">var</span><span class="p">,</span> <span class="kt">double</span> <span class="n">value</span><span class="p">);</span>
+    <span class="k">virtual</span> <span class="kt">double</span> <span class="n">getValue</span><span class="p">(</span><span class="n">GeomValue</span> <span class="n">var</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="k">virtual</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">BRepElement</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;*</span> <span class="n">convert</span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">IteratorSettings</span><span class="o">&amp;</span> <span class="n">settings</span><span class="p">,</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">representation</span><span class="p">,</span>
+        <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">product</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="n">create_brep_for_representation_and_product</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="kt">double</span><span class="o">&gt;</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">*</span><span class="p">)</span> <span class="n">representation</span><span class="p">,</span> <span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span><span class="p">)</span> <span class="n">product</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">virtual</span> <span class="n">IfcRepresentationShapeItems</span> <span class="n">convert</span><span class="p">(</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">item</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">IfcRepresentationShapeItems</span> <span class="n">items</span><span class="p">;</span>
+        <span class="kt">bool</span> <span class="n">success</span> <span class="o">=</span> <span class="n">convert_shapes</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">items</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">success</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">throw</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcException</span><span class="p">(</span><span class="s">&quot;Failed to process representation item&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">items</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">virtual</span> <span class="kt">bool</span> <span class="n">convert_placement</span><span class="p">(</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">item</span><span class="p">,</span> <span class="n">gp_Trsf</span><span class="o">&amp;</span> <span class="n">trsf</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">item</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcObjectPlacement</span><span class="o">&gt;</span><span class="p">())</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="nf">convert</span><span class="p">(</span><span class="n">item</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcObjectPlacement</span><span class="o">&gt;</span><span class="p">(),</span> <span class="n">trsf</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+<span class="p">};</span>
+
+<span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">tesselate_</span><span class="p">)(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">shape</span><span class="p">,</span> <span class="kt">double</span> <span class="n">deflection</span><span class="p">);</span>
+<span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">serialise_</span><span class="p">)(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">shape</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">advanced</span><span class="p">);</span>
+
+<span class="p">}</span>
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/program_listing_file_src_ifcgeom_IfcGeom.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

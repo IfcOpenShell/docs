@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a5837ee106c2d3a6224f8bf7d33e06dc8:
+
+Define SCHEMA_IfcOwnerHistory_HAS_CreationDate
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcOwnerHistory_HAS_CreationDate

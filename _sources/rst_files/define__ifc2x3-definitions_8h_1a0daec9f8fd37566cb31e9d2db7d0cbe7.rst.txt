@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a0daec9f8fd37566cb31e9d2db7d0cbe7:
+
+Define SCHEMA_IfcSymbolStyle_HAS_StyleOfSymbol
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSymbolStyle_HAS_StyleOfSymbol

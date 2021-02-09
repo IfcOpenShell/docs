@@ -1,0 +1,18 @@
+
+.. _program_listing_file_src_ifcgeom_IfcRegisterConvertCurve.h:
+
+Program Listing for File IfcRegisterConvertCurve.h
+==================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_ifcgeom_IfcRegisterConvertCurve.h>` (``src/ifcgeom/IfcRegisterConvertCurve.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #include "IfcRegisterUndef.h"
+   #define CURVE(T) \
+       if ( l->declaration().is(IfcSchema::T::Class()) ) return convert((IfcSchema::T*)l,r);
+   #include "IfcRegisterDef.h"
+   
+   #include "IfcRegister.h"

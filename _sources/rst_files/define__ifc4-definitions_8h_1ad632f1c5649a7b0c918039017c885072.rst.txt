@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ad632f1c5649a7b0c918039017c885072:
+
+Define SCHEMA_IfcBoundaryFaceCondition_HAS_TranslationalStiffnessByAreaX
+========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBoundaryFaceCondition_HAS_TranslationalStiffnessByAreaX

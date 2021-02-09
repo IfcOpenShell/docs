@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a31e3f196c2ed0433fb2519f729c29a5d:
+
+Define SCHEMA_IfcStructuralLoadLinearForce_LinearForceY_IS_OPTIONAL
+===================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLoadLinearForce_LinearForceY_IS_OPTIONAL

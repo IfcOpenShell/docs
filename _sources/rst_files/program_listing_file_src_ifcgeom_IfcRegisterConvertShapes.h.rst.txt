@@ -1,0 +1,30 @@
+
+.. _program_listing_file_src_ifcgeom_IfcRegisterConvertShapes.h:
+
+Program Listing for File IfcRegisterConvertShapes.h
+===================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_ifcgeom_IfcRegisterConvertShapes.h>` (``src/ifcgeom/IfcRegisterConvertShapes.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #include "IfcRegisterUndef.h"
+   #define SHAPES(T) \
+       if ( l->declaration().is(IfcSchema::T::Class()) ) { \
+           try { \
+               return convert((IfcSchema::T*)l,r); \
+           } catch (const std::exception& e) { \
+               Logger::Message(Logger::LOG_ERROR, std::string(e.what()) + "\nFailed to convert:", l); \
+           } catch (const Standard_Failure& f) { \
+               if (f.GetMessageString()) \
+                   Logger::Message(Logger::LOG_ERROR, std::string("Error in: ") + f.GetMessageString() + "\nFailed to convert:", l); \
+               else \
+                   Logger::Message(Logger::LOG_ERROR, "Failed to convert:", l); \
+           } \
+           return false; \
+       }
+   #include "IfcRegisterDef.h"
+   
+   #include "IfcRegister.h"

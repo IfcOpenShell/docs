@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a85722976551d215ba8b6312d623d6a36:
+
+Define SCHEMA_HAS_IfcDimensionalExponents
+=========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcDimensionalExponents

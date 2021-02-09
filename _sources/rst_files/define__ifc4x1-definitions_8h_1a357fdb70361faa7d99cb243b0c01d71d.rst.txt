@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1a357fdb70361faa7d99cb243b0c01d71d:
+
+Define SCHEMA_IfcConstructionResource_Usage_IS_OPTIONAL
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConstructionResource_Usage_IS_OPTIONAL

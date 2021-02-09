@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a260ea7d0c7b43bd0aa264664b2ffee2e:
+
+Define SCHEMA_IfcStructuralLoadCase_HAS_SelfWeightCoefficients
+==============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLoadCase_HAS_SelfWeightCoefficients

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a92c4058e815e596c44e27b2450a849a5:
+
+Define SCHEMA_IfcSlippageConnectionCondition_HAS_SlippageY
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSlippageConnectionCondition_HAS_SlippageY

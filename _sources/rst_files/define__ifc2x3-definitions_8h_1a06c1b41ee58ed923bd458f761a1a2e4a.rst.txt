@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a06c1b41ee58ed923bd458f761a1a2e4a:
+
+Define SCHEMA_HAS_IfcBoxAlignment
+=================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcBoxAlignment

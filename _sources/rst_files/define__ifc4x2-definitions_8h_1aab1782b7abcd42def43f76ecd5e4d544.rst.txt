@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1aab1782b7abcd42def43f76ecd5e4d544:
+
+Define SCHEMA_IfcBSplineCurveWithKnots_HAS_KnotMultiplicities
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBSplineCurveWithKnots_HAS_KnotMultiplicities

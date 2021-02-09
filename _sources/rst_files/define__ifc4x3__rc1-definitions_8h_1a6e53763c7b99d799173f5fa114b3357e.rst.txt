@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a6e53763c7b99d799173f5fa114b3357e:
+
+Define SCHEMA_IfcRelFlowControlElements_HAS_RelatedControlElements
+==================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelFlowControlElements_HAS_RelatedControlElements

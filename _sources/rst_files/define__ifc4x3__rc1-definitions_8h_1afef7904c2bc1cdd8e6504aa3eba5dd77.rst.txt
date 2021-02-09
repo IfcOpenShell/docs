@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1afef7904c2bc1cdd8e6504aa3eba5dd77:
+
+Define SCHEMA_IfcPointOnSurface_HAS_BasisSurface
+================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPointOnSurface_HAS_BasisSurface

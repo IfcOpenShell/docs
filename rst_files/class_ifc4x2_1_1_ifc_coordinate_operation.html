@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcCoordinateOperation &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcCoordinateReferenceSystem" href="class_ifc4x2_1_1_ifc_coordinate_reference_system.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcCoolingTowerType" href="class_ifc4x2_1_1_ifc_cooling_tower_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifccoordinateoperation">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-coordinate-operation"></span><h1>Class Ifc4x2::IfcCoordinateOperation<a class="headerlink" href="#class-ifc4x2-ifccoordinateoperation" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">IfcUtil::IfcBaseEntity</span></code> (<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#exhale-class-class-ifc-util-1-1-ifc-base-entity"><span class="std std-ref">Class IfcBaseEntity</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="derived-type">
+<h3>Derived Type<a class="headerlink" href="#derived-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcMapConversion</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_map_conversion.html#exhale-class-class-ifc4x2-1-1-ifc-map-conversion"><span class="std std-ref">Class Ifc4x2::IfcMapConversion</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x222IfcCoordinateOperationE">
+<span id="_CPPv3N6Ifc4x222IfcCoordinateOperationE"></span><span id="_CPPv2N6Ifc4x222IfcCoordinateOperationE"></span><span id="Ifc4x2::IfcCoordinateOperation"></span><span class="target" id="class_ifc4x2_1_1_ifc_coordinate_operation"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcCoordinateOperation</code> : <em class="property">public</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a><a class="headerlink" href="#_CPPv4N6Ifc4x222IfcCoordinateOperationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from OpenGIS® Abstract Specification, Topic 2: If the relationship between any two coordinate reference systems is known, coordinates can be transformed or converted to another coordinate reference system. Coordinate operations are divided into two subtypes:</p>
+<p>Coordinate conversion – mathematical operation on coordinates that does not include any change of datum. The best-known example of a coordinate conversion is a map projection. The parameters describing coordinate conversions are defined rather than empirically derived. Note that some conversions have no parameters.</p>
+<p>Coordinate transformation – mathematical operation on coordinates that usually includes a change of datum. The parameters of a coordinate transformation are empirically derived from data containing the coordinates of a series of points in both coordinate reference systems. This computational process is usually ‘over-determined’, allowing derivation of error (or accuracy) estimates for the transformation. Also, the stochastic nature of the parameters may result in multiple (different) versions of the same coordinate transformation. Because of this several transformations may exist for a given pair of coordinate reference systems, differing in their transformation method, parameter values and accuracy characteristics.</p>
+<p>The coordinate operation is an abstract supertype to handle any operation (transformation or conversion) between two coordinate reference systems. It is meant to provide expandability for future versions, since currently only the conversion of a local engineering coordinate system into a map coordinate reference system is dealt with by the subtype <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_map_conversion"><span class="std std-ref">IfcMapConversion</span></a>.</p>
+<p>By convention, a coordinate operation is given between the SourceCRS being the more local, or child coordinate reference system, and the TargetCRS being the more remote or parent coordinate reference system, in thespecial case the coordinate operation between the local engineering coordinate system of the construction project and any map or other coordinate reference system.</p>
+<p>HISTORY New entity in IFC2x4. </p>
+<p>Subclassed by <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_map_conversion"><span class="std std-ref">Ifc4x2::IfcMapConversion</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x222IfcCoordinateOperation4listE">
+<span id="_CPPv3N6Ifc4x222IfcCoordinateOperation4listE"></span><span id="_CPPv2N6Ifc4x222IfcCoordinateOperation4listE"></span><span id="Ifc4x2::IfcCoordinateOperation::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_coordinate_operation_1acd5a615fbeb08a64ef2e2e14a4359d44"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x222IfcCoordinateOperationE" title="Ifc4x2::IfcCoordinateOperation">IfcCoordinateOperation</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x222IfcCoordinateOperation4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x222IfcCoordinateOperation9SourceCRSEv">
+<span id="_CPPv3NK6Ifc4x222IfcCoordinateOperation9SourceCRSEv"></span><span id="_CPPv2NK6Ifc4x222IfcCoordinateOperation9SourceCRSEv"></span><span id="Ifc4x2::IfcCoordinateOperation::SourceCRSC"></span><span class="target" id="class_ifc4x2_1_1_ifc_coordinate_operation_1aa19ccea81964f85d55fb8aa4e977a44e"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x234IfcCoordinateReferenceSystemSelectE" title="Ifc4x2::IfcCoordinateReferenceSystemSelect">IfcCoordinateReferenceSystemSelect</a> *<code class="sig-name descname">SourceCRS</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x222IfcCoordinateOperation9SourceCRSEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Source coordinate reference system for the operation. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x222IfcCoordinateOperation12setSourceCRSEPN6Ifc4x234IfcCoordinateReferenceSystemSelectE">
+<span id="_CPPv3N6Ifc4x222IfcCoordinateOperation12setSourceCRSEPN6Ifc4x234IfcCoordinateReferenceSystemSelectE"></span><span id="_CPPv2N6Ifc4x222IfcCoordinateOperation12setSourceCRSEPN6Ifc4x234IfcCoordinateReferenceSystemSelectE"></span><span id="Ifc4x2::IfcCoordinateOperation::setSourceCRS__Ifc4x2::IfcCoordinateReferenceSystemSelectP"></span><span class="target" id="class_ifc4x2_1_1_ifc_coordinate_operation_1a147b92a77aad64471c80d72589551d95"></span>void <code class="sig-name descname">setSourceCRS</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x234IfcCoordinateReferenceSystemSelectE" title="Ifc4x2::IfcCoordinateReferenceSystemSelect">IfcCoordinateReferenceSystemSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x222IfcCoordinateOperation12setSourceCRSEPN6Ifc4x234IfcCoordinateReferenceSystemSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x222IfcCoordinateOperation9TargetCRSEv">
+<span id="_CPPv3NK6Ifc4x222IfcCoordinateOperation9TargetCRSEv"></span><span id="_CPPv2NK6Ifc4x222IfcCoordinateOperation9TargetCRSEv"></span><span id="Ifc4x2::IfcCoordinateOperation::TargetCRSC"></span><span class="target" id="class_ifc4x2_1_1_ifc_coordinate_operation_1a916195ea8829c6008deb48876b7324fa"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_coordinate_reference_system.html#_CPPv4N6Ifc4x228IfcCoordinateReferenceSystemE" title="Ifc4x2::IfcCoordinateReferenceSystem">IfcCoordinateReferenceSystem</a> *<code class="sig-name descname">TargetCRS</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x222IfcCoordinateOperation9TargetCRSEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Target coordinate reference system for the operation. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x222IfcCoordinateOperation12setTargetCRSEPN6Ifc4x228IfcCoordinateReferenceSystemE">
+<span id="_CPPv3N6Ifc4x222IfcCoordinateOperation12setTargetCRSEPN6Ifc4x228IfcCoordinateReferenceSystemE"></span><span id="_CPPv2N6Ifc4x222IfcCoordinateOperation12setTargetCRSEPN6Ifc4x228IfcCoordinateReferenceSystemE"></span><span id="Ifc4x2::IfcCoordinateOperation::setTargetCRS__Ifc4x2::IfcCoordinateReferenceSystemP"></span><span class="target" id="class_ifc4x2_1_1_ifc_coordinate_operation_1adc4641a528256c5e9266b80b8344e46a"></span>void <code class="sig-name descname">setTargetCRS</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_coordinate_reference_system.html#_CPPv4N6Ifc4x228IfcCoordinateReferenceSystemE" title="Ifc4x2::IfcCoordinateReferenceSystem">IfcCoordinateReferenceSystem</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x222IfcCoordinateOperation12setTargetCRSEPN6Ifc4x228IfcCoordinateReferenceSystemE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x222IfcCoordinateOperation11declarationEv">
+<span id="_CPPv3NK6Ifc4x222IfcCoordinateOperation11declarationEv"></span><span id="_CPPv2NK6Ifc4x222IfcCoordinateOperation11declarationEv"></span><span id="Ifc4x2::IfcCoordinateOperation::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_coordinate_operation_1a6d7742fc4e3a7368eb54507c8db5951d"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x222IfcCoordinateOperation11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x222IfcCoordinateOperation22IfcCoordinateOperationEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x222IfcCoordinateOperation22IfcCoordinateOperationEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x222IfcCoordinateOperation22IfcCoordinateOperationEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcCoordinateOperation::IfcCoordinateOperation__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_coordinate_operation_1ae7c00c4af4bddcc78b91721416bc4d5e"></span><code class="sig-name descname">IfcCoordinateOperation</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x222IfcCoordinateOperation22IfcCoordinateOperationEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x222IfcCoordinateOperation22IfcCoordinateOperationEPN6Ifc4x234IfcCoordinateReferenceSystemSelectEPN6Ifc4x228IfcCoordinateReferenceSystemE">
+<span id="_CPPv3N6Ifc4x222IfcCoordinateOperation22IfcCoordinateOperationEPN6Ifc4x234IfcCoordinateReferenceSystemSelectEPN6Ifc4x228IfcCoordinateReferenceSystemE"></span><span id="_CPPv2N6Ifc4x222IfcCoordinateOperation22IfcCoordinateOperationEPN6Ifc4x234IfcCoordinateReferenceSystemSelectEPN6Ifc4x228IfcCoordinateReferenceSystemE"></span><span id="Ifc4x2::IfcCoordinateOperation::IfcCoordinateOperation__Ifc4x2::IfcCoordinateReferenceSystemSelectP.Ifc4x2::IfcCoordinateReferenceSystemP"></span><span class="target" id="class_ifc4x2_1_1_ifc_coordinate_operation_1a52f18ce5c780291084e730f2921f5413"></span><code class="sig-name descname">IfcCoordinateOperation</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x234IfcCoordinateReferenceSystemSelectE" title="Ifc4x2::IfcCoordinateReferenceSystemSelect">IfcCoordinateReferenceSystemSelect</a> *<em>v1_SourceCRS</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_coordinate_reference_system.html#_CPPv4N6Ifc4x228IfcCoordinateReferenceSystemE" title="Ifc4x2::IfcCoordinateReferenceSystem">IfcCoordinateReferenceSystem</a> *<em>v2_TargetCRS</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x222IfcCoordinateOperation22IfcCoordinateOperationEPN6Ifc4x234IfcCoordinateReferenceSystemSelectEPN6Ifc4x228IfcCoordinateReferenceSystemE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x222IfcCoordinateOperation5ClassEv">
+<span id="_CPPv3N6Ifc4x222IfcCoordinateOperation5ClassEv"></span><span id="_CPPv2N6Ifc4x222IfcCoordinateOperation5ClassEv"></span><span id="Ifc4x2::IfcCoordinateOperation::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_coordinate_operation_1a44dbce3423dfc2da73278565990af01e"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x222IfcCoordinateOperation5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_cooling_tower_type.html" title="previous chapter">Class Ifc4x2::IfcCoolingTowerType</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_coordinate_reference_system.html" title="next chapter">Class Ifc4x2::IfcCoordinateReferenceSystem</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_coordinate_operation.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

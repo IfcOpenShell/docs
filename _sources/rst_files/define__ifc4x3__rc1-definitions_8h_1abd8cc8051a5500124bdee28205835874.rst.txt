@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1abd8cc8051a5500124bdee28205835874:
+
+Define SCHEMA_IfcIndexedPolygonalFace_HAS_CoordIndex
+====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcIndexedPolygonalFace_HAS_CoordIndex

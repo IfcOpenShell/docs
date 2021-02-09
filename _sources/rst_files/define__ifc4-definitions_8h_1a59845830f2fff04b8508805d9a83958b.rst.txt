@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a59845830f2fff04b8508805d9a83958b:
+
+Define SCHEMA_IfcIndexedPolyCurve_HAS_SelfIntersect
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcIndexedPolyCurve_HAS_SelfIntersect

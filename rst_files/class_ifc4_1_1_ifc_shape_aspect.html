@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcShapeAspect &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcShapeModel" href="class_ifc4_1_1_ifc_shape_model.html" />
+    <link rel="prev" title="Class Ifc4::IfcShadingDeviceType" href="class_ifc4_1_1_ifc_shading_device_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcshapeaspect">
+<span id="exhale-class-class-ifc4-1-1-ifc-shape-aspect"></span><h1>Class Ifc4::IfcShapeAspect<a class="headerlink" href="#class-ifc4-ifcshapeaspect" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">IfcUtil::IfcBaseEntity</span></code> (<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#exhale-class-class-ifc-util-1-1-ifc-base-entity"><span class="std std-ref">Class IfcBaseEntity</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc414IfcShapeAspectE">
+<span id="_CPPv3N4Ifc414IfcShapeAspectE"></span><span id="_CPPv2N4Ifc414IfcShapeAspectE"></span><span id="Ifc4::IfcShapeAspect"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcShapeAspect</code> : <em class="property">public</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a><a class="headerlink" href="#_CPPv4N4Ifc414IfcShapeAspectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-41:1992: The shape aspect is an identifiable element of the shape of a product.</p>
+<p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_shape_aspect"><span class="std std-ref">IfcShapeAspect</span></a> allows for grouping of shape representation items that represent aspects (or components) of the shape of a product. Thereby shape representations of components of the product shape represent a distinctive part to a product that can be explicitly addressed.</p>
+<p>NOTEThe definition of this class relates to the ISO 10303 entity shape_aspect. Please refer to ISO/IS 10303-41:1994 for the final definition of the formal standard.</p>
+<p>HISTORY New Entity in IFC Release 2.0</p>
+<p>IFC 2x4 CHANGE Attribute PartOfProductDefinitionShape declared OPTIONAL with upward compatibility for file based exchange.</p>
+<p>Informal propositions:</p>
+<p>If ShapeRepresentations points to shape representations that are part of an <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a>, PartOfProductDefinitionShape must refer to this instance of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a>.</p>
+<p>NOTE PartOfProductDefinitionShape is only to be omitted if the shape representations are attached to an <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_representation_map"><span class="std std-ref">IfcRepresentationMap</span></a>. This enables the use of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_shape_aspect"><span class="std std-ref">IfcShapeAspect</span></a> with <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_representation_map"><span class="std std-ref">IfcRepresentationMap</span></a>’s that are used by an <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_type_product"><span class="std std-ref">IfcTypeProduct</span></a> through the RepresentationMaps attribute. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc414IfcShapeAspect4listE">
+<span id="_CPPv3N4Ifc414IfcShapeAspect4listE"></span><span id="_CPPv2N4Ifc414IfcShapeAspect4listE"></span><span id="Ifc4::IfcShapeAspect::list"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1ad7197276d405cb333d90869a043cd3b9"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc414IfcShapeAspectE" title="Ifc4::IfcShapeAspect">IfcShapeAspect</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc414IfcShapeAspect4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc414IfcShapeAspect20ShapeRepresentationsEv">
+<span id="_CPPv3NK4Ifc414IfcShapeAspect20ShapeRepresentationsEv"></span><span id="_CPPv2NK4Ifc414IfcShapeAspect20ShapeRepresentationsEv"></span><span id="Ifc4::IfcShapeAspect::ShapeRepresentationsC"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1a5d427425f73fd68435616d954b8266ef"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_shape_model.html#_CPPv4N4Ifc413IfcShapeModelE" title="Ifc4::IfcShapeModel">IfcShapeModel</a>&gt;::ptr <code class="sig-name descname">ShapeRepresentations</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc414IfcShapeAspect20ShapeRepresentationsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>List of shape representations. Each member defines a valid representation of a particular type within a particular representation context as being an aspect (or part) of a product definition. IFC2x Edition 3 CHANGE The data type has been changed from <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> to <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_shape_model"><span class="std std-ref">IfcShapeModel</span></a> with upward compatibility </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc414IfcShapeAspect23setShapeRepresentationsEN22IfcTemplatedEntityListIN4Ifc413IfcShapeModelEE3ptrE">
+<span id="_CPPv3N4Ifc414IfcShapeAspect23setShapeRepresentationsEN22IfcTemplatedEntityListIN4Ifc413IfcShapeModelEE3ptrE"></span><span id="_CPPv2N4Ifc414IfcShapeAspect23setShapeRepresentationsEN22IfcTemplatedEntityListIN4Ifc413IfcShapeModelEE3ptrE"></span><span id="Ifc4::IfcShapeAspect::setShapeRepresentations__IfcTemplatedEntityList:Ifc4::IfcShapeModel:::ptr"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1a12349de7c4ee19f246f3c055711201e5"></span>void <code class="sig-name descname">setShapeRepresentations</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_shape_model.html#_CPPv4N4Ifc413IfcShapeModelE" title="Ifc4::IfcShapeModel">IfcShapeModel</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc414IfcShapeAspect23setShapeRepresentationsEN22IfcTemplatedEntityListIN4Ifc413IfcShapeModelEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc414IfcShapeAspect7hasNameEv">
+<span id="_CPPv3NK4Ifc414IfcShapeAspect7hasNameEv"></span><span id="_CPPv2NK4Ifc414IfcShapeAspect7hasNameEv"></span><span id="Ifc4::IfcShapeAspect::hasNameC"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1a5c7fa116f5a94fbca78ab589abc12183"></span>bool <code class="sig-name descname">hasName</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc414IfcShapeAspect7hasNameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Name is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_shape_aspect"><span class="std std-ref">IfcShapeAspect</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc414IfcShapeAspect4NameEv">
+<span id="_CPPv3NK4Ifc414IfcShapeAspect4NameEv"></span><span id="_CPPv2NK4Ifc414IfcShapeAspect4NameEv"></span><span id="Ifc4::IfcShapeAspect::NameC"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1ae29549e408373423e39f8b3e05b8fdba"></span>std::string <code class="sig-name descname">Name</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc414IfcShapeAspect4NameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The word or group of words by which the shape aspect is known. It is a tag to indicate the particular semantic of a component within the product definition shape, used to provide meaning. Example: use the tag “Glazing” to define which component of a window shape defines the glazing area. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc414IfcShapeAspect7setNameENSt6stringE">
+<span id="_CPPv3N4Ifc414IfcShapeAspect7setNameENSt6stringE"></span><span id="_CPPv2N4Ifc414IfcShapeAspect7setNameENSt6stringE"></span><span id="Ifc4::IfcShapeAspect::setName__ss"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1a0c63025e4a2ec638bf8660cc66c089ac"></span>void <code class="sig-name descname">setName</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc414IfcShapeAspect7setNameENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc414IfcShapeAspect14hasDescriptionEv">
+<span id="_CPPv3NK4Ifc414IfcShapeAspect14hasDescriptionEv"></span><span id="_CPPv2NK4Ifc414IfcShapeAspect14hasDescriptionEv"></span><span id="Ifc4::IfcShapeAspect::hasDescriptionC"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1a5c6378aa0272bd0bc211d961efefe3e8"></span>bool <code class="sig-name descname">hasDescription</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc414IfcShapeAspect14hasDescriptionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Description is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_shape_aspect"><span class="std std-ref">IfcShapeAspect</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc414IfcShapeAspect11DescriptionEv">
+<span id="_CPPv3NK4Ifc414IfcShapeAspect11DescriptionEv"></span><span id="_CPPv2NK4Ifc414IfcShapeAspect11DescriptionEv"></span><span id="Ifc4::IfcShapeAspect::DescriptionC"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1af74ec36b539164df43ab81a58f34303f"></span>std::string <code class="sig-name descname">Description</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc414IfcShapeAspect11DescriptionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The word or group of words that characterize the shape aspect. It can be used to add additional meaning to the name of the aspect. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc414IfcShapeAspect14setDescriptionENSt6stringE">
+<span id="_CPPv3N4Ifc414IfcShapeAspect14setDescriptionENSt6stringE"></span><span id="_CPPv2N4Ifc414IfcShapeAspect14setDescriptionENSt6stringE"></span><span id="Ifc4::IfcShapeAspect::setDescription__ss"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1a5fc0c3bb3b0a1e0c105db0f085da2319"></span>void <code class="sig-name descname">setDescription</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc414IfcShapeAspect14setDescriptionENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc414IfcShapeAspect19ProductDefinitionalEv">
+<span id="_CPPv3NK4Ifc414IfcShapeAspect19ProductDefinitionalEv"></span><span id="_CPPv2NK4Ifc414IfcShapeAspect19ProductDefinitionalEv"></span><span id="Ifc4::IfcShapeAspect::ProductDefinitionalC"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1ab42034a6d03c97d00a524f4b114ab895"></span>bool <code class="sig-name descname">ProductDefinitional</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc414IfcShapeAspect19ProductDefinitionalEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc414IfcShapeAspect22setProductDefinitionalEb">
+<span id="_CPPv3N4Ifc414IfcShapeAspect22setProductDefinitionalEb"></span><span id="_CPPv2N4Ifc414IfcShapeAspect22setProductDefinitionalEb"></span><span id="Ifc4::IfcShapeAspect::setProductDefinitional__b"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1a9859f16210241ad585340482335810cc"></span>void <code class="sig-name descname">setProductDefinitional</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc414IfcShapeAspect22setProductDefinitionalEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc414IfcShapeAspect31hasPartOfProductDefinitionShapeEv">
+<span id="_CPPv3NK4Ifc414IfcShapeAspect31hasPartOfProductDefinitionShapeEv"></span><span id="_CPPv2NK4Ifc414IfcShapeAspect31hasPartOfProductDefinitionShapeEv"></span><span id="Ifc4::IfcShapeAspect::hasPartOfProductDefinitionShapeC"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1ad7a3b6ecf67e6862b1d2064d5ff32ab9"></span>bool <code class="sig-name descname">hasPartOfProductDefinitionShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc414IfcShapeAspect31hasPartOfProductDefinitionShapeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute PartOfProductDefinitionShape is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_shape_aspect"><span class="std std-ref">IfcShapeAspect</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc414IfcShapeAspect28PartOfProductDefinitionShapeEv">
+<span id="_CPPv3NK4Ifc414IfcShapeAspect28PartOfProductDefinitionShapeEv"></span><span id="_CPPv2NK4Ifc414IfcShapeAspect28PartOfProductDefinitionShapeEv"></span><span id="Ifc4::IfcShapeAspect::PartOfProductDefinitionShapeC"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1a735dfd8ddcfb1d2ceee2b968d58c37d9"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc430IfcProductRepresentationSelectE" title="Ifc4::IfcProductRepresentationSelect">IfcProductRepresentationSelect</a> *<code class="sig-name descname">PartOfProductDefinitionShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc414IfcShapeAspect28PartOfProductDefinitionShapeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reference to the product definition shape of which this class is an aspect. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc414IfcShapeAspect31setPartOfProductDefinitionShapeEPN4Ifc430IfcProductRepresentationSelectE">
+<span id="_CPPv3N4Ifc414IfcShapeAspect31setPartOfProductDefinitionShapeEPN4Ifc430IfcProductRepresentationSelectE"></span><span id="_CPPv2N4Ifc414IfcShapeAspect31setPartOfProductDefinitionShapeEPN4Ifc430IfcProductRepresentationSelectE"></span><span id="Ifc4::IfcShapeAspect::setPartOfProductDefinitionShape__Ifc4::IfcProductRepresentationSelectP"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1a00360be094d69da3a153b011d9809427"></span>void <code class="sig-name descname">setPartOfProductDefinitionShape</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc430IfcProductRepresentationSelectE" title="Ifc4::IfcProductRepresentationSelect">IfcProductRepresentationSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc414IfcShapeAspect31setPartOfProductDefinitionShapeEPN4Ifc430IfcProductRepresentationSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc414IfcShapeAspect11declarationEv">
+<span id="_CPPv3NK4Ifc414IfcShapeAspect11declarationEv"></span><span id="_CPPv2NK4Ifc414IfcShapeAspect11declarationEv"></span><span id="Ifc4::IfcShapeAspect::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1a955bfbe12a3dd7b540ef96cb7a2dea8f"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc414IfcShapeAspect11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc414IfcShapeAspect14IfcShapeAspectEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc414IfcShapeAspect14IfcShapeAspectEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc414IfcShapeAspect14IfcShapeAspectEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcShapeAspect::IfcShapeAspect__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1af74d4df4b08d53a62650db9db3af4fa0"></span><code class="sig-name descname">IfcShapeAspect</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc414IfcShapeAspect14IfcShapeAspectEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc414IfcShapeAspect14IfcShapeAspectEN22IfcTemplatedEntityListIN4Ifc413IfcShapeModelEE3ptrEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEbPN4Ifc430IfcProductRepresentationSelectE">
+<span id="_CPPv3N4Ifc414IfcShapeAspect14IfcShapeAspectEN22IfcTemplatedEntityListIN4Ifc413IfcShapeModelEE3ptrEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEbPN4Ifc430IfcProductRepresentationSelectE"></span><span id="_CPPv2N4Ifc414IfcShapeAspect14IfcShapeAspectEN22IfcTemplatedEntityListIN4Ifc413IfcShapeModelEE3ptrEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEbPN4Ifc430IfcProductRepresentationSelectE"></span><span id="Ifc4::IfcShapeAspect::IfcShapeAspect__IfcTemplatedEntityList:Ifc4::IfcShapeModel:::ptr.boost::optional:ss:.boost::optional:ss:.b.Ifc4::IfcProductRepresentationSelectP"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1a3156b0b90714d6a00b9377fae667cdd8"></span><code class="sig-name descname">IfcShapeAspect</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_shape_model.html#_CPPv4N4Ifc413IfcShapeModelE" title="Ifc4::IfcShapeModel">IfcShapeModel</a>&gt;::ptr <em>v1_ShapeRepresentations</em>, boost::optional&lt;std::string&gt; <em>v2_Name</em>, boost::optional&lt;std::string&gt; <em>v3_Description</em>, bool <em>v4_ProductDefinitional</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc430IfcProductRepresentationSelectE" title="Ifc4::IfcProductRepresentationSelect">IfcProductRepresentationSelect</a> *<em>v5_PartOfProductDefinitionShape</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc414IfcShapeAspect14IfcShapeAspectEN22IfcTemplatedEntityListIN4Ifc413IfcShapeModelEE3ptrEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEbPN4Ifc430IfcProductRepresentationSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc414IfcShapeAspect5ClassEv">
+<span id="_CPPv3N4Ifc414IfcShapeAspect5ClassEv"></span><span id="_CPPv2N4Ifc414IfcShapeAspect5ClassEv"></span><span id="Ifc4::IfcShapeAspect::Class"></span><span class="target" id="class_ifc4_1_1_ifc_shape_aspect_1a011305092cd0cc94f47e7b305eb66141"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc414IfcShapeAspect5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_shading_device_type.html" title="previous chapter">Class Ifc4::IfcShadingDeviceType</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_shape_model.html" title="next chapter">Class Ifc4::IfcShapeModel</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_shape_aspect.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

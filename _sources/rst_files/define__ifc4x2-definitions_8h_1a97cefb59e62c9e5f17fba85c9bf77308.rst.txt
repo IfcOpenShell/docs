@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a97cefb59e62c9e5f17fba85c9bf77308:
+
+Define SCHEMA_IfcGeographicElement_PredefinedType_IS_OPTIONAL
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcGeographicElement_PredefinedType_IS_OPTIONAL

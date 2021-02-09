@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1ab69530158f3e5ade2d450b8953c15d2e:
+
+Define SCHEMA_IfcPostalAddress_HAS_AddressLines
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPostalAddress_HAS_AddressLines

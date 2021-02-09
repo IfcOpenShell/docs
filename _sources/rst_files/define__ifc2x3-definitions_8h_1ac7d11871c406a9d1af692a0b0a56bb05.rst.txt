@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ac7d11871c406a9d1af692a0b0a56bb05:
+
+Define SCHEMA_IfcExternalReference_Location_IS_OPTIONAL
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcExternalReference_Location_IS_OPTIONAL

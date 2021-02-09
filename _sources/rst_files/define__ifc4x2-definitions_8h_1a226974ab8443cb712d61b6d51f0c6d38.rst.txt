@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a226974ab8443cb712d61b6d51f0c6d38:
+
+Define SCHEMA_HAS_IfcTessellatedFaceSet
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcTessellatedFaceSet

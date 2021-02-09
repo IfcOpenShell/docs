@@ -1,0 +1,73 @@
+
+.. _file_src_ifcgeom_IfcGeomIteratorSettings.h:
+
+File IfcGeomIteratorSettings.h
+==============================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcgeom>` (``src/ifcgeom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/IfcGeomIteratorSettings.h``)
+------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_IfcGeomIteratorSettings.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/IfcBaseClass.h``
+
+- ``../ifcparse/IfcException.h``
+
+- ``array``
+
+- ``ifc_geom_api.h`` (:ref:`file_src_ifcgeom_ifc_geom_api.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_IfcGeomRepresentation.h`
+
+- :ref:`file_src_ifcgeom_IfcGeomElement.h`
+
+- :ref:`file_src_ifcgeom_schema_agnostic_Kernel.h`
+
+- :ref:`file_src_ifcgeom_IfcGeomIteratorImplementation.h`
+
+- :ref:`file_src_ifcgeom_schema_agnostic_IteratorImplementation.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcGeom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_ifc_geom_1_1_element_settings`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_iterator_settings`
+

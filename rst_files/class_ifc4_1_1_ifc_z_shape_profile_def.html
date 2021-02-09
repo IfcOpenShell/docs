@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcZShapeProfileDef &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcAbsorbedDoseMeasure" href="class_ifc4x1_1_1_ifc_absorbed_dose_measure.html" />
+    <link rel="prev" title="Class Ifc4::IfcZone" href="class_ifc4_1_1_ifc_zone.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifczshapeprofiledef">
+<span id="exhale-class-class-ifc4-1-1-ifc-z-shape-profile-def"></span><h1>Class Ifc4::IfcZShapeProfileDef<a class="headerlink" href="#class-ifc4-ifczshapeprofiledef" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcParameterizedProfileDef</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_parameterized_profile_def.html#exhale-class-class-ifc4-1-1-ifc-parameterized-profile-def"><span class="std std-ref">Class Ifc4::IfcParameterizedProfileDef</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc419IfcZShapeProfileDefE">
+<span id="_CPPv3N4Ifc419IfcZShapeProfileDefE"></span><span id="_CPPv2N4Ifc419IfcZShapeProfileDefE"></span><span id="Ifc4::IfcZShapeProfileDef"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcZShapeProfileDef</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_parameterized_profile_def.html#_CPPv4N4Ifc426IfcParameterizedProfileDefE" title="Ifc4::IfcParameterizedProfileDef">IfcParameterizedProfileDef</a><a class="headerlink" href="#_CPPv4N4Ifc419IfcZShapeProfileDefE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_z_shape_profile_def"><span class="std std-ref">IfcZShapeProfileDef</span></a> defines a section profile that provides the defining parameters of a Z-shape section to be used by the swept area solid. Its parameters and orientation relative to the position coordinate system are according to the following illustration. The centre of the position coordinate system is in the profile’s centre of the bounding box.</p>
+<p>HISTORY New entity in IFC2x2.</p>
+<p>IFC2x Edition 4 CHANGE Type of FilletRadius and EdgeRadius relaxed to allow for zero radius.</p>
+<p>Figure 328 illustrates parameters of the Z-shape profile definition.</p>
+<p>Position The parameterized profile defines its own position coordinate system. The underlying coordinate system is defined by the swept area solid that uses the profile definition. It is the xy plane of:</p>
+<p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_swept_area_solid_1a90abb2dcd960a4f47c3f780504effeec"><span class="std std-ref">IfcSweptAreaSolid.Position</span></a></p>
+<p>By using offsets of the position location, the parameterized profile can be positioned centric (using x,y offsets = 0.), or at any position relative to the profile.</p>
+<p>Figure 328 — Z-shape profile </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc419IfcZShapeProfileDef4listE">
+<span id="_CPPv3N4Ifc419IfcZShapeProfileDef4listE"></span><span id="_CPPv2N4Ifc419IfcZShapeProfileDef4listE"></span><span id="Ifc4::IfcZShapeProfileDef::list"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1a353e6670c65a86f6319047ae9031a9f1"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc419IfcZShapeProfileDefE" title="Ifc4::IfcZShapeProfileDef">IfcZShapeProfileDef</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc419IfcZShapeProfileDef4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcZShapeProfileDef5DepthEv">
+<span id="_CPPv3NK4Ifc419IfcZShapeProfileDef5DepthEv"></span><span id="_CPPv2NK4Ifc419IfcZShapeProfileDef5DepthEv"></span><span id="Ifc4::IfcZShapeProfileDef::DepthC"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1a953d809042c3e1bd5af05b54aaa25227"></span>double <code class="sig-name descname">Depth</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcZShapeProfileDef5DepthEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Web length, see illustration above (= h). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcZShapeProfileDef8setDepthEd">
+<span id="_CPPv3N4Ifc419IfcZShapeProfileDef8setDepthEd"></span><span id="_CPPv2N4Ifc419IfcZShapeProfileDef8setDepthEd"></span><span id="Ifc4::IfcZShapeProfileDef::setDepth__double"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1ac4dada81bf01e9dcbf61649905921a73"></span>void <code class="sig-name descname">setDepth</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcZShapeProfileDef8setDepthEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcZShapeProfileDef11FlangeWidthEv">
+<span id="_CPPv3NK4Ifc419IfcZShapeProfileDef11FlangeWidthEv"></span><span id="_CPPv2NK4Ifc419IfcZShapeProfileDef11FlangeWidthEv"></span><span id="Ifc4::IfcZShapeProfileDef::FlangeWidthC"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1a04134ba77c62c5feb10c1fe1aa1c2f8f"></span>double <code class="sig-name descname">FlangeWidth</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcZShapeProfileDef11FlangeWidthEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Flange length, see illustration above (= b). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcZShapeProfileDef14setFlangeWidthEd">
+<span id="_CPPv3N4Ifc419IfcZShapeProfileDef14setFlangeWidthEd"></span><span id="_CPPv2N4Ifc419IfcZShapeProfileDef14setFlangeWidthEd"></span><span id="Ifc4::IfcZShapeProfileDef::setFlangeWidth__double"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1a433ac866579fdd388e2a4c1238409b71"></span>void <code class="sig-name descname">setFlangeWidth</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcZShapeProfileDef14setFlangeWidthEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcZShapeProfileDef12WebThicknessEv">
+<span id="_CPPv3NK4Ifc419IfcZShapeProfileDef12WebThicknessEv"></span><span id="_CPPv2NK4Ifc419IfcZShapeProfileDef12WebThicknessEv"></span><span id="Ifc4::IfcZShapeProfileDef::WebThicknessC"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1af92b08f03dc3cbed66b36c93d807e74b"></span>double <code class="sig-name descname">WebThickness</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcZShapeProfileDef12WebThicknessEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constant wall thickness of web, see illustration above (= ts). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcZShapeProfileDef15setWebThicknessEd">
+<span id="_CPPv3N4Ifc419IfcZShapeProfileDef15setWebThicknessEd"></span><span id="_CPPv2N4Ifc419IfcZShapeProfileDef15setWebThicknessEd"></span><span id="Ifc4::IfcZShapeProfileDef::setWebThickness__double"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1afadea6956349545f1d465ae71187fb59"></span>void <code class="sig-name descname">setWebThickness</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcZShapeProfileDef15setWebThicknessEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcZShapeProfileDef15FlangeThicknessEv">
+<span id="_CPPv3NK4Ifc419IfcZShapeProfileDef15FlangeThicknessEv"></span><span id="_CPPv2NK4Ifc419IfcZShapeProfileDef15FlangeThicknessEv"></span><span id="Ifc4::IfcZShapeProfileDef::FlangeThicknessC"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1aef3c2cd356048ba024124513fbbb8118"></span>double <code class="sig-name descname">FlangeThickness</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcZShapeProfileDef15FlangeThicknessEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constant wall thickness of flange, see illustration above (= tg). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcZShapeProfileDef18setFlangeThicknessEd">
+<span id="_CPPv3N4Ifc419IfcZShapeProfileDef18setFlangeThicknessEd"></span><span id="_CPPv2N4Ifc419IfcZShapeProfileDef18setFlangeThicknessEd"></span><span id="Ifc4::IfcZShapeProfileDef::setFlangeThickness__double"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1aab01601e7fc86eccfc136334d59d2b39"></span>void <code class="sig-name descname">setFlangeThickness</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcZShapeProfileDef18setFlangeThicknessEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcZShapeProfileDef15hasFilletRadiusEv">
+<span id="_CPPv3NK4Ifc419IfcZShapeProfileDef15hasFilletRadiusEv"></span><span id="_CPPv2NK4Ifc419IfcZShapeProfileDef15hasFilletRadiusEv"></span><span id="Ifc4::IfcZShapeProfileDef::hasFilletRadiusC"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1aa4a7542bc1e8ab11e4c2e089cd7d0039"></span>bool <code class="sig-name descname">hasFilletRadius</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcZShapeProfileDef15hasFilletRadiusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute FilletRadius is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_z_shape_profile_def"><span class="std std-ref">IfcZShapeProfileDef</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcZShapeProfileDef12FilletRadiusEv">
+<span id="_CPPv3NK4Ifc419IfcZShapeProfileDef12FilletRadiusEv"></span><span id="_CPPv2NK4Ifc419IfcZShapeProfileDef12FilletRadiusEv"></span><span id="Ifc4::IfcZShapeProfileDef::FilletRadiusC"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1a8c9e1cde0b29ae4f64662f4746bbda66"></span>double <code class="sig-name descname">FilletRadius</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcZShapeProfileDef12FilletRadiusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Fillet radius according the above illustration (= r1). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcZShapeProfileDef15setFilletRadiusEd">
+<span id="_CPPv3N4Ifc419IfcZShapeProfileDef15setFilletRadiusEd"></span><span id="_CPPv2N4Ifc419IfcZShapeProfileDef15setFilletRadiusEd"></span><span id="Ifc4::IfcZShapeProfileDef::setFilletRadius__double"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1a1c7752e3cc4a8ed8db67be11bd20f979"></span>void <code class="sig-name descname">setFilletRadius</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcZShapeProfileDef15setFilletRadiusEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcZShapeProfileDef13hasEdgeRadiusEv">
+<span id="_CPPv3NK4Ifc419IfcZShapeProfileDef13hasEdgeRadiusEv"></span><span id="_CPPv2NK4Ifc419IfcZShapeProfileDef13hasEdgeRadiusEv"></span><span id="Ifc4::IfcZShapeProfileDef::hasEdgeRadiusC"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1a9c805c28ab2712515c4de826104798f3"></span>bool <code class="sig-name descname">hasEdgeRadius</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcZShapeProfileDef13hasEdgeRadiusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute EdgeRadius is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_z_shape_profile_def"><span class="std std-ref">IfcZShapeProfileDef</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcZShapeProfileDef10EdgeRadiusEv">
+<span id="_CPPv3NK4Ifc419IfcZShapeProfileDef10EdgeRadiusEv"></span><span id="_CPPv2NK4Ifc419IfcZShapeProfileDef10EdgeRadiusEv"></span><span id="Ifc4::IfcZShapeProfileDef::EdgeRadiusC"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1a5e63270463eb89a9af29de61e4e739d8"></span>double <code class="sig-name descname">EdgeRadius</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcZShapeProfileDef10EdgeRadiusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Edge radius according the above illustration (= r2). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcZShapeProfileDef13setEdgeRadiusEd">
+<span id="_CPPv3N4Ifc419IfcZShapeProfileDef13setEdgeRadiusEd"></span><span id="_CPPv2N4Ifc419IfcZShapeProfileDef13setEdgeRadiusEd"></span><span id="Ifc4::IfcZShapeProfileDef::setEdgeRadius__double"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1a5adfca8029ba915478e354208e08c736"></span>void <code class="sig-name descname">setEdgeRadius</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcZShapeProfileDef13setEdgeRadiusEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcZShapeProfileDef11declarationEv">
+<span id="_CPPv3NK4Ifc419IfcZShapeProfileDef11declarationEv"></span><span id="_CPPv2NK4Ifc419IfcZShapeProfileDef11declarationEv"></span><span id="Ifc4::IfcZShapeProfileDef::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1adeebcfef23e1fe6af5e8db0fa1e1b033"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcZShapeProfileDef11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcZShapeProfileDef19IfcZShapeProfileDefEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc419IfcZShapeProfileDef19IfcZShapeProfileDefEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc419IfcZShapeProfileDef19IfcZShapeProfileDefEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcZShapeProfileDef::IfcZShapeProfileDef__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1a6817f6c6fe9ef14f16f765e3fb4dfc81"></span><code class="sig-name descname">IfcZShapeProfileDef</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcZShapeProfileDef19IfcZShapeProfileDefEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcZShapeProfileDef19IfcZShapeProfileDefEN4Ifc418IfcProfileTypeEnum5ValueEN5boost8optionalINSt6stringEEEPN4Ifc419IfcAxis2Placement2DEddddN5boost8optionalIdEEN5boost8optionalIdEE">
+<span id="_CPPv3N4Ifc419IfcZShapeProfileDef19IfcZShapeProfileDefEN4Ifc418IfcProfileTypeEnum5ValueEN5boost8optionalINSt6stringEEEPN4Ifc419IfcAxis2Placement2DEddddN5boost8optionalIdEEN5boost8optionalIdEE"></span><span id="_CPPv2N4Ifc419IfcZShapeProfileDef19IfcZShapeProfileDefEN4Ifc418IfcProfileTypeEnum5ValueEN5boost8optionalINSt6stringEEEPN4Ifc419IfcAxis2Placement2DEddddN5boost8optionalIdEEN5boost8optionalIdEE"></span><span id="Ifc4::IfcZShapeProfileDef::IfcZShapeProfileDef__Ifc4::IfcProfileTypeEnum::Value.boost::optional:ss:.Ifc4::IfcAxis2Placement2DP.double.double.double.double.boost::optional:double:.boost::optional:double:"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1a7efd7ad6b4f0adf824b2ff09dc09a3eb"></span><code class="sig-name descname">IfcZShapeProfileDef</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc418IfcProfileTypeEnumE" title="Ifc4::IfcProfileTypeEnum">IfcProfileTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc418IfcProfileTypeEnum5ValueE" title="Ifc4::IfcProfileTypeEnum::Value">Value</a> <em>v1_ProfileType</em>, boost::optional&lt;std::string&gt; <em>v2_ProfileName</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_axis2_placement2_d.html#_CPPv4N4Ifc419IfcAxis2Placement2DE" title="Ifc4::IfcAxis2Placement2D">IfcAxis2Placement2D</a> *<em>v3_Position</em>, double <em>v4_Depth</em>, double <em>v5_FlangeWidth</em>, double <em>v6_WebThickness</em>, double <em>v7_FlangeThickness</em>, boost::optional&lt;double&gt; <em>v8_FilletRadius</em>, boost::optional&lt;double&gt; <em>v9_EdgeRadius</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcZShapeProfileDef19IfcZShapeProfileDefEN4Ifc418IfcProfileTypeEnum5ValueEN5boost8optionalINSt6stringEEEPN4Ifc419IfcAxis2Placement2DEddddN5boost8optionalIdEEN5boost8optionalIdEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcZShapeProfileDef5ClassEv">
+<span id="_CPPv3N4Ifc419IfcZShapeProfileDef5ClassEv"></span><span id="_CPPv2N4Ifc419IfcZShapeProfileDef5ClassEv"></span><span id="Ifc4::IfcZShapeProfileDef::Class"></span><span class="target" id="class_ifc4_1_1_ifc_z_shape_profile_def_1a78c36b1a3b7595592b006e94bb87527a"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcZShapeProfileDef5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_zone.html" title="previous chapter">Class Ifc4::IfcZone</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_absorbed_dose_measure.html" title="next chapter">Class Ifc4x1::IfcAbsorbedDoseMeasure</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_z_shape_profile_def.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a501c74050cf9dc21ad3d92cd4bda6bf2:
+
+Define SCHEMA_IfcMechanicalMaterialProperties_PoissonRatio_IS_OPTIONAL
+======================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMechanicalMaterialProperties_PoissonRatio_IS_OPTIONAL

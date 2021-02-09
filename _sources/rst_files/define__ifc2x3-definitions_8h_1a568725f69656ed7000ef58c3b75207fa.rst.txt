@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a568725f69656ed7000ef58c3b75207fa:
+
+Define SCHEMA_IfcMaterialLayerSet_LayerSetName_IS_OPTIONAL
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMaterialLayerSet_LayerSetName_IS_OPTIONAL

@@ -1,0 +1,50 @@
+
+.. _file_src_serializers_StepSerializer.h:
+
+File StepSerializer.h
+=====================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_serializers>` (``src/serializers``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/serializers/StepSerializer.h``)
+-------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_serializers_StepSerializer.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom_schema_agnostic/IfcGeomIterator.h``
+
+- ``../serializers/OpenCascadeBasedSerializer.h``
+
+- ``Interface_Static.hxx``
+
+- ``STEPControl_Writer.hxx``
+
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_step_serializer`
+

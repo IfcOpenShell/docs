@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a4ef4fc62537f098e2dfe6f9eb50f6fa5:
+
+Define SCHEMA_HAS_IfcURIReference
+=================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcURIReference

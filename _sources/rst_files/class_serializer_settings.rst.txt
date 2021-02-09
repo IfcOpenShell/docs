@@ -1,0 +1,25 @@
+.. _exhale_class_class_serializer_settings:
+
+Class SerializerSettings
+========================
+
+- Defined in :ref:`file_src_serializers_GeometrySerializer.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcGeom::IteratorSettings`` (:ref:`exhale_class_class_ifc_geom_1_1_iterator_settings`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: SerializerSettings
+   :members:
+   :protected-members:
+   :undoc-members:

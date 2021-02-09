@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aad7cd27e6c5403373b73012d2b91784d:
+
+Define SCHEMA_IfcMechanicalConcreteMaterialProperties_HAS_AdmixturesDescription
+===============================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMechanicalConcreteMaterialProperties_HAS_AdmixturesDescription

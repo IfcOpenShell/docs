@@ -1,0 +1,41 @@
+.. _exhale_class_class_ifc4x2_1_1_ifc_reinforcing_element_type:
+
+Class Ifc4x2::IfcReinforcingElementType
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x2`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x2::IfcElementComponentType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_element_component_type`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x2::IfcReinforcingBarType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_reinforcing_bar_type`)
+- ``public Ifc4x2::IfcReinforcingMeshType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_reinforcing_mesh_type`)
+- ``public Ifc4x2::IfcTendonAnchorType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_tendon_anchor_type`)
+- ``public Ifc4x2::IfcTendonConduitType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_tendon_conduit_type`)
+- ``public Ifc4x2::IfcTendonType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_tendon_type`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x2::IfcReinforcingElementType
+   :members:
+   :protected-members:
+   :undoc-members:

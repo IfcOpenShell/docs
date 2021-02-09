@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a17712368c0752800e7e2f7df785c79b8:
+
+Define SCHEMA_HAS_IfcAxis2Placement2D
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcAxis2Placement2D

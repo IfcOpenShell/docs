@@ -1,0 +1,26 @@
+.. _exhale_class_class_serializer:
+
+Class Serializer
+================
+
+- Defined in :ref:`file_src_serializers_Serializer.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public GeometrySerializer`` (:ref:`exhale_class_class_geometry_serializer`)
+- ``public XmlSerializer`` (:ref:`exhale_class_class_xml_serializer`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Serializer
+   :members:
+   :protected-members:
+   :undoc-members:

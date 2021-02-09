@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1a2a0d1ee1ad1076f230bb50fd9df6d986:
+
+Define SCHEMA_HAS_IfcOwnerHistory
+=================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcOwnerHistory

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a32436a8805b93ff0ba02b7aca2e2b468:
+
+Define SCHEMA_IfcAsymmetricIShapeProfileDef_TopFlangeFilletRadius_IS_OPTIONAL
+=============================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcAsymmetricIShapeProfileDef_TopFlangeFilletRadius_IS_OPTIONAL

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a7973ebe23a9c71ddb9ebc34a2ec7d74c:
+
+Define SCHEMA_IfcReinforcingMesh_HAS_TransverseBarNominalDiameter
+=================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcReinforcingMesh_HAS_TransverseBarNominalDiameter

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aea21ceef92612f40c0bbf43b9301a6a2:
+
+Define SCHEMA_HAS_IfcMinuteInHour
+=================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcMinuteInHour

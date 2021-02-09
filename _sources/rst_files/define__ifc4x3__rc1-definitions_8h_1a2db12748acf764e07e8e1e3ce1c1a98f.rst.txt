@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a2db12748acf764e07e8e1e3ce1c1a98f:
+
+Define SCHEMA_IfcDistributionElement_HAS_HasPorts
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDistributionElement_HAS_HasPorts

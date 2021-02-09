@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a589bc74aaf938511b2705d2d551a96c3:
+
+Define SCHEMA_IfcWaterProperties_AcidityConcentration_IS_OPTIONAL
+=================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcWaterProperties_AcidityConcentration_IS_OPTIONAL

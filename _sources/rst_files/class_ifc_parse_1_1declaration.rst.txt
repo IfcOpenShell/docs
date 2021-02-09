@@ -1,0 +1,28 @@
+.. _exhale_class_class_ifc_parse_1_1declaration:
+
+Class declaration
+=================
+
+- Defined in :ref:`file_src_ifcparse_IfcSchema.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public IfcParse::entity`` (:ref:`exhale_class_class_ifc_parse_1_1entity`)
+- ``public IfcParse::enumeration_type`` (:ref:`exhale_class_class_ifc_parse_1_1enumeration__type`)
+- ``public IfcParse::select_type`` (:ref:`exhale_class_class_ifc_parse_1_1select__type`)
+- ``public IfcParse::type_declaration`` (:ref:`exhale_class_class_ifc_parse_1_1type__declaration`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcParse::declaration
+   :members:
+   :protected-members:
+   :undoc-members:

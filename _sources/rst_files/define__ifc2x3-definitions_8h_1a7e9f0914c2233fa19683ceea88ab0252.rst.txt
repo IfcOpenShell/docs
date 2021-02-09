@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a7e9f0914c2233fa19683ceea88ab0252:
+
+Define SCHEMA_IfcRelCoversBldgElements_HAS_RelatedCoverings
+===========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelCoversBldgElements_HAS_RelatedCoverings

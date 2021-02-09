@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a3e8085b9459311cb5d869ad24055d76e:
+
+Define SCHEMA_HAS_IfcShellBasedSurfaceModel
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcShellBasedSurfaceModel

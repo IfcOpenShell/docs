@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a7eb6d538f633eb854ae1da0abe370d8f:
+
+Define SCHEMA_IfcRelSpaceBoundary1stLevel_HAS_InnerBoundaries
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelSpaceBoundary1stLevel_HAS_InnerBoundaries

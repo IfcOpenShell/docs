@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x3_rc1::IfcGridAxis &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x3_rc1::IfcGridPlacement" href="class_ifc4x3__rc1_1_1_ifc_grid_placement.html" />
+    <link rel="prev" title="Class Ifc4x3_rc1::IfcGrid" href="class_ifc4x3__rc1_1_1_ifc_grid.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x3-rc1-ifcgridaxis">
+<span id="exhale-class-class-ifc4x3-rc1-1-1-ifc-grid-axis"></span><h1>Class Ifc4x3_rc1::IfcGridAxis<a class="headerlink" href="#class-ifc4x3-rc1-ifcgridaxis" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x3_rc1.h.html#file-src-ifcparse-ifc4x3-rc1-h"><span class="std std-ref">File Ifc4x3_rc1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x3__rc1.html#exhale-struct-struct-ifc4x3-rc1"><span class="std std-ref">Struct Ifc4x3_rc1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">IfcUtil::IfcBaseEntity</span></code> (<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#exhale-class-class-ifc-util-1-1-ifc-base-entity"><span class="std std-ref">Class IfcBaseEntity</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N10Ifc4x3_rc111IfcGridAxisE">
+<span id="_CPPv3N10Ifc4x3_rc111IfcGridAxisE"></span><span id="_CPPv2N10Ifc4x3_rc111IfcGridAxisE"></span><span id="Ifc4x3_rc1::IfcGridAxis"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_grid_axis"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcGridAxis</code> : <em class="property">public</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc111IfcGridAxisE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An individual axis, <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_grid_axis"><span class="std std-ref">IfcGridAxis</span></a>, is defined in the context of a design grid. The axis definition is based on a curve of dimensionality 2. The grid axis is positioned within the XY plane of the position coordinate system defined by the IfcDesignGrid.</p>
+<p>HISTORY New entity in IFC Release 1.0</p>
+<p>Geometry use definitions The standard geometric representation of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_grid_axis"><span class="std std-ref">IfcGridAxis</span></a> is defined using a 2D curve entity. Grid axes are normally defined by an offset to another axis. The <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_offset_curve2_d"><span class="std std-ref">IfcOffsetCurve2D</span></a> supports this concept. Each grid axis has a sense given by the parameterization of the curve. The attribute SameSense is an indicator of whether or not the sense of the grid axis agrees with, or opposes, that of the underlying curve. As shown in Figure 242, the grid axis is defined as a 2D curve within the xy plane of the position coordinate system. Any curve can be used to define a grid axis, most common is the use of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_line"><span class="std std-ref">IfcLine</span></a> for linear grids and <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_circle"><span class="std std-ref">IfcCircle</span></a> for radial grids. Most grids are defined by a pair of axis lists, each defined by a base grid axis and axes given by an offset to the base axis. The use of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_offset_curve2_d"><span class="std std-ref">IfcOffsetCurve2D</span></a> as underlying AxisCurve supports this concept.</p>
+<p>Figure 242 — Grid axis </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N10Ifc4x3_rc111IfcGridAxis4listE">
+<span id="_CPPv3N10Ifc4x3_rc111IfcGridAxis4listE"></span><span id="_CPPv2N10Ifc4x3_rc111IfcGridAxis4listE"></span><span id="Ifc4x3_rc1::IfcGridAxis::list"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_grid_axis_1ae48e6ac3f4da8e7a1a90a98474839f7d"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N10Ifc4x3_rc111IfcGridAxisE" title="Ifc4x3_rc1::IfcGridAxis">IfcGridAxis</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc111IfcGridAxis4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc111IfcGridAxis10hasAxisTagEv">
+<span id="_CPPv3NK10Ifc4x3_rc111IfcGridAxis10hasAxisTagEv"></span><span id="_CPPv2NK10Ifc4x3_rc111IfcGridAxis10hasAxisTagEv"></span><span id="Ifc4x3_rc1::IfcGridAxis::hasAxisTagC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_grid_axis_1acb70deb0705992856ceb213c1df1878f"></span>bool <code class="sig-name descname">hasAxisTag</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc111IfcGridAxis10hasAxisTagEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute AxisTag is defined for this <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_grid_axis"><span class="std std-ref">IfcGridAxis</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc111IfcGridAxis7AxisTagEv">
+<span id="_CPPv3NK10Ifc4x3_rc111IfcGridAxis7AxisTagEv"></span><span id="_CPPv2NK10Ifc4x3_rc111IfcGridAxis7AxisTagEv"></span><span id="Ifc4x3_rc1::IfcGridAxis::AxisTagC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_grid_axis_1a69de112a354fe0f063a53d5ef31d1fb8"></span>std::string <code class="sig-name descname">AxisTag</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc111IfcGridAxis7AxisTagEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The tag or name for this grid axis. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc111IfcGridAxis10setAxisTagENSt6stringE">
+<span id="_CPPv3N10Ifc4x3_rc111IfcGridAxis10setAxisTagENSt6stringE"></span><span id="_CPPv2N10Ifc4x3_rc111IfcGridAxis10setAxisTagENSt6stringE"></span><span id="Ifc4x3_rc1::IfcGridAxis::setAxisTag__ss"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_grid_axis_1ad018e068bb3485a0a3a6dfb4766532f7"></span>void <code class="sig-name descname">setAxisTag</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc111IfcGridAxis10setAxisTagENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc111IfcGridAxis9AxisCurveEv">
+<span id="_CPPv3NK10Ifc4x3_rc111IfcGridAxis9AxisCurveEv"></span><span id="_CPPv2NK10Ifc4x3_rc111IfcGridAxis9AxisCurveEv"></span><span id="Ifc4x3_rc1::IfcGridAxis::AxisCurveC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_grid_axis_1a1db7cc60a3a48b718f6818bec11736cb"></span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_curve.html#_CPPv4N10Ifc4x3_rc18IfcCurveE" title="Ifc4x3_rc1::IfcCurve">IfcCurve</a> *<code class="sig-name descname">AxisCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc111IfcGridAxis9AxisCurveEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Underlying curve which provides the geometry for this grid axis. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc111IfcGridAxis12setAxisCurveEPN10Ifc4x3_rc18IfcCurveE">
+<span id="_CPPv3N10Ifc4x3_rc111IfcGridAxis12setAxisCurveEPN10Ifc4x3_rc18IfcCurveE"></span><span id="_CPPv2N10Ifc4x3_rc111IfcGridAxis12setAxisCurveEPN10Ifc4x3_rc18IfcCurveE"></span><span id="Ifc4x3_rc1::IfcGridAxis::setAxisCurve__Ifc4x3_rc1::IfcCurveP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_grid_axis_1ab28b37ee4e70d4d77603d2ec66126b68"></span>void <code class="sig-name descname">setAxisCurve</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_curve.html#_CPPv4N10Ifc4x3_rc18IfcCurveE" title="Ifc4x3_rc1::IfcCurve">IfcCurve</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc111IfcGridAxis12setAxisCurveEPN10Ifc4x3_rc18IfcCurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc111IfcGridAxis9SameSenseEv">
+<span id="_CPPv3NK10Ifc4x3_rc111IfcGridAxis9SameSenseEv"></span><span id="_CPPv2NK10Ifc4x3_rc111IfcGridAxis9SameSenseEv"></span><span id="Ifc4x3_rc1::IfcGridAxis::SameSenseC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_grid_axis_1a62b2f0a85e5cb88100f5c929b08e5154"></span>bool <code class="sig-name descname">SameSense</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc111IfcGridAxis9SameSenseEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Defines whether the original sense of curve is used or whether it is reversed in the context of the grid axis. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc111IfcGridAxis12setSameSenseEb">
+<span id="_CPPv3N10Ifc4x3_rc111IfcGridAxis12setSameSenseEb"></span><span id="_CPPv2N10Ifc4x3_rc111IfcGridAxis12setSameSenseEb"></span><span id="Ifc4x3_rc1::IfcGridAxis::setSameSense__b"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_grid_axis_1aeac39a1e49e7cd4da08201905328e335"></span>void <code class="sig-name descname">setSameSense</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc111IfcGridAxis12setSameSenseEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc111IfcGridAxis7PartOfWEv">
+<span id="_CPPv3NK10Ifc4x3_rc111IfcGridAxis7PartOfWEv"></span><span id="_CPPv2NK10Ifc4x3_rc111IfcGridAxis7PartOfWEv"></span><span id="Ifc4x3_rc1::IfcGridAxis::PartOfWC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_grid_axis_1ac3d79406c064c25cbcd4b0f625994add"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_grid.html#_CPPv4N10Ifc4x3_rc17IfcGridE" title="Ifc4x3_rc1::IfcGrid">IfcGrid</a>&gt;::ptr <code class="sig-name descname">PartOfW</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc111IfcGridAxis7PartOfWEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc111IfcGridAxis7PartOfVEv">
+<span id="_CPPv3NK10Ifc4x3_rc111IfcGridAxis7PartOfVEv"></span><span id="_CPPv2NK10Ifc4x3_rc111IfcGridAxis7PartOfVEv"></span><span id="Ifc4x3_rc1::IfcGridAxis::PartOfVC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_grid_axis_1ae5c43bfdb767ef0f1d99980012e939d2"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_grid.html#_CPPv4N10Ifc4x3_rc17IfcGridE" title="Ifc4x3_rc1::IfcGrid">IfcGrid</a>&gt;::ptr <code class="sig-name descname">PartOfV</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc111IfcGridAxis7PartOfVEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc111IfcGridAxis7PartOfUEv">
+<span id="_CPPv3NK10Ifc4x3_rc111IfcGridAxis7PartOfUEv"></span><span id="_CPPv2NK10Ifc4x3_rc111IfcGridAxis7PartOfUEv"></span><span id="Ifc4x3_rc1::IfcGridAxis::PartOfUC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_grid_axis_1a539eae67dc82d52e6a327b0dd8e69056"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_grid.html#_CPPv4N10Ifc4x3_rc17IfcGridE" title="Ifc4x3_rc1::IfcGrid">IfcGrid</a>&gt;::ptr <code class="sig-name descname">PartOfU</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc111IfcGridAxis7PartOfUEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc111IfcGridAxis16HasIntersectionsEv">
+<span id="_CPPv3NK10Ifc4x3_rc111IfcGridAxis16HasIntersectionsEv"></span><span id="_CPPv2NK10Ifc4x3_rc111IfcGridAxis16HasIntersectionsEv"></span><span id="Ifc4x3_rc1::IfcGridAxis::HasIntersectionsC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_grid_axis_1ad75d8e9b4bb0ef75d8ac3ed665de5c6d"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_virtual_grid_intersection.html#_CPPv4N10Ifc4x3_rc126IfcVirtualGridIntersectionE" title="Ifc4x3_rc1::IfcVirtualGridIntersection">IfcVirtualGridIntersection</a>&gt;::ptr <code class="sig-name descname">HasIntersections</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc111IfcGridAxis16HasIntersectionsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc111IfcGridAxis11declarationEv">
+<span id="_CPPv3NK10Ifc4x3_rc111IfcGridAxis11declarationEv"></span><span id="_CPPv2NK10Ifc4x3_rc111IfcGridAxis11declarationEv"></span><span id="Ifc4x3_rc1::IfcGridAxis::declarationC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_grid_axis_1a57f88d63fc6c5673728703a7d28d1793"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc111IfcGridAxis11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc111IfcGridAxis11IfcGridAxisEP21IfcEntityInstanceData">
+<span id="_CPPv3N10Ifc4x3_rc111IfcGridAxis11IfcGridAxisEP21IfcEntityInstanceData"></span><span id="_CPPv2N10Ifc4x3_rc111IfcGridAxis11IfcGridAxisEP21IfcEntityInstanceData"></span><span id="Ifc4x3_rc1::IfcGridAxis::IfcGridAxis__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_grid_axis_1a828a1f4a384e5038e56eaa93a6e57103"></span><code class="sig-name descname">IfcGridAxis</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc111IfcGridAxis11IfcGridAxisEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc111IfcGridAxis11IfcGridAxisEN5boost8optionalINSt6stringEEEPN10Ifc4x3_rc18IfcCurveEb">
+<span id="_CPPv3N10Ifc4x3_rc111IfcGridAxis11IfcGridAxisEN5boost8optionalINSt6stringEEEPN10Ifc4x3_rc18IfcCurveEb"></span><span id="_CPPv2N10Ifc4x3_rc111IfcGridAxis11IfcGridAxisEN5boost8optionalINSt6stringEEEPN10Ifc4x3_rc18IfcCurveEb"></span><span id="Ifc4x3_rc1::IfcGridAxis::IfcGridAxis__boost::optional:ss:.Ifc4x3_rc1::IfcCurveP.b"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_grid_axis_1a5dbe458c502028e180d8d215136a38ae"></span><code class="sig-name descname">IfcGridAxis</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_AxisTag</em>, ::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_curve.html#_CPPv4N10Ifc4x3_rc18IfcCurveE" title="Ifc4x3_rc1::IfcCurve">IfcCurve</a> *<em>v2_AxisCurve</em>, bool <em>v3_SameSense</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc111IfcGridAxis11IfcGridAxisEN5boost8optionalINSt6stringEEEPN10Ifc4x3_rc18IfcCurveEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc111IfcGridAxis5ClassEv">
+<span id="_CPPv3N10Ifc4x3_rc111IfcGridAxis5ClassEv"></span><span id="_CPPv2N10Ifc4x3_rc111IfcGridAxis5ClassEv"></span><span id="Ifc4x3_rc1::IfcGridAxis::Class"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_grid_axis_1a7a6d8bd45bffa786ac037d92ef58b63e"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc111IfcGridAxis5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x3__rc1_1_1_ifc_grid.html" title="previous chapter">Class Ifc4x3_rc1::IfcGrid</a></li>
+      <li>Next: <a href="class_ifc4x3__rc1_1_1_ifc_grid_placement.html" title="next chapter">Class Ifc4x3_rc1::IfcGridPlacement</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x3__rc1_1_1_ifc_grid_axis.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

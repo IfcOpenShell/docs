@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aa6cd9fa59ed91e34c0e60edf9590e7e1:
+
+Define SCHEMA_IfcApproval_HAS_ApprovalStatus
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcApproval_HAS_ApprovalStatus

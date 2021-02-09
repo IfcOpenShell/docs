@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a99ac0d78e639ac2edc8dbd0ad658da31:
+
+Define SCHEMA_IfcTaskTime_HAS_ActualStart
+=========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTaskTime_HAS_ActualStart

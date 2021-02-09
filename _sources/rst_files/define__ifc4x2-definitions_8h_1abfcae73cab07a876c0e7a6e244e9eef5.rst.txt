@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1abfcae73cab07a876c0e7a6e244e9eef5:
+
+Define SCHEMA_IfcTriangulatedFaceSet_Normals_IS_OPTIONAL
+========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTriangulatedFaceSet_Normals_IS_OPTIONAL

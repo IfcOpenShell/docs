@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a2fa68012cb5ca4c3a44057a7b94c7f67:
+
+Define SCHEMA_IfcFluidFlowProperties_WetBulbTemperatureSingleValue_IS_OPTIONAL
+==============================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcFluidFlowProperties_WetBulbTemperatureSingleValue_IS_OPTIONAL

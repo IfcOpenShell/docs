@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a4a3243ce844f6e90ae184eb80e0c45e4:
+
+Define SCHEMA_IfcDraughtingCalloutRelationship_HAS_RelatedDraughtingCallout
+===========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDraughtingCalloutRelationship_HAS_RelatedDraughtingCallout

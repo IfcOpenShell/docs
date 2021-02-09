@@ -1,0 +1,25 @@
+.. _exhale_class_class_ifc_geom_1_1_element_settings:
+
+Class ElementSettings
+=====================
+
+- Defined in :ref:`file_src_ifcgeom_IfcGeomIteratorSettings.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcGeom::IteratorSettings`` (:ref:`exhale_class_class_ifc_geom_1_1_iterator_settings`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcGeom::ElementSettings
+   :members:
+   :protected-members:
+   :undoc-members:

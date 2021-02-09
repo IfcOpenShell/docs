@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a5b756b85b1aac0604fff6a5badd40bf2:
+
+Define SCHEMA_IfcResourceTime_StatusTime_IS_OPTIONAL
+====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcResourceTime_StatusTime_IS_OPTIONAL

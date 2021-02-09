@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a693753806d769787c709aeffe9a4c7c3:
+
+Define SCHEMA_IfcSurfaceStyleLighting_HAS_DiffuseReflectionColour
+=================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSurfaceStyleLighting_HAS_DiffuseReflectionColour

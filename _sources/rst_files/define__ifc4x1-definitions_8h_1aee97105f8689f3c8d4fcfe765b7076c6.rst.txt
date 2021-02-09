@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1aee97105f8689f3c8d4fcfe765b7076c6:
+
+Define SCHEMA_HAS_IfcAirToAirHeatRecovery
+=========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcAirToAirHeatRecovery

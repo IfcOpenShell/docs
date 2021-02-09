@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a5b333b1b4f7b9000b12c76149f3b0179:
+
+Define SCHEMA_IfcRelConnectsPorts_HAS_RelatedPort
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelConnectsPorts_HAS_RelatedPort

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1a1c351c270ecdd73a1e269daf123d9f94:
+
+Define SCHEMA_HAS_IfcCsgPrimitive3D
+===================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcCsgPrimitive3D

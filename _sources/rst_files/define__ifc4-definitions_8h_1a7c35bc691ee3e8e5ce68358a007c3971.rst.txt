@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a7c35bc691ee3e8e5ce68358a007c3971:
+
+Define SCHEMA_IfcDocumentInformation_HAS_HasDocumentReferences
+==============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDocumentInformation_HAS_HasDocumentReferences

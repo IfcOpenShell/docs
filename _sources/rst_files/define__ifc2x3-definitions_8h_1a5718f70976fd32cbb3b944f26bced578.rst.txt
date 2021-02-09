@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a5718f70976fd32cbb3b944f26bced578:
+
+Define SCHEMA_IfcBoundaryFaceCondition_HAS_LinearStiffnessByAreaZ
+=================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBoundaryFaceCondition_HAS_LinearStiffnessByAreaZ

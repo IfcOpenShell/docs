@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aa8b19e86cca4ecf7ea7120b30df5862f:
+
+Define SCHEMA_IfcMechanicalConcreteMaterialProperties_MaxAggregateSize_IS_OPTIONAL
+==================================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMechanicalConcreteMaterialProperties_MaxAggregateSize_IS_OPTIONAL

@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcTask &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcTaskTime" href="class_ifc4_1_1_ifc_task_time.html" />
+    <link rel="prev" title="Class Ifc4::IfcTankType" href="class_ifc4_1_1_ifc_tank_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifctask">
+<span id="exhale-class-class-ifc4-1-1-ifc-task"></span><h1>Class Ifc4::IfcTask<a class="headerlink" href="#class-ifc4-ifctask" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcProcess</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_process.html#exhale-class-class-ifc4-1-1-ifc-process"><span class="std std-ref">Class Ifc4::IfcProcess</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc47IfcTaskE">
+<span id="_CPPv3N4Ifc47IfcTaskE"></span><span id="_CPPv2N4Ifc47IfcTaskE"></span><span id="Ifc4::IfcTask"></span><span class="target" id="class_ifc4_1_1_ifc_task"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcTask</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_process.html#_CPPv4N4Ifc410IfcProcessE" title="Ifc4::IfcProcess">IfcProcess</a><a class="headerlink" href="#_CPPv4N4Ifc47IfcTaskE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> is an identifiable unit of work to be carried out in a construction project.</p>
+<p>A task is typically used to describe an activity for the construction or installation of products, but is not limited to these types. For example it might be used to describe design processes, move operations and other design, construction and operation related activities as well.</p>
+<p>HISTORY New entity in IFC 1.0. Renamed from IfcWorkTask in IFC 2x.</p>
+<p>IFC2x4 CHANGE Attributes TaskTime and PredefinedType added. IfcMove and IfcOrderRequest has been removed in IFC2x4 and are now represented by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a>. Further information can be found in the description below.</p>
+<p>Type use definition</p>
+<p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> defines the anticipated or actual occurrence of any task; common information about task types is handled by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_type"><span class="std std-ref">IfcTaskType</span></a>. The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_type"><span class="std std-ref">IfcTaskType</span></a> (if present) may establish the common type name, usage (or predefined) type, common set of properties, and common product assignment using <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_assigns_to_product"><span class="std std-ref">IfcRelAssignsToProduct</span></a>. The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_type"><span class="std std-ref">IfcTaskType</span></a> is attached using the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_defines_by_type_1a775f1e1c0529dcdd66d85c0623d01ff8"><span class="std std-ref">IfcRelDefinesByType.RelatingType</span></a> objectified relationship and is accessible by the inverse IsTypedBy attribute. Special type information relating to a task occurrence is asserted using <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_object_1a155053537597f7fa5c81500107724134"><span class="std std-ref">IfcTask.ObjectType</span></a> (inherited from <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_object"><span class="std std-ref">IfcObject</span></a>). Examples that may be used include fixed duration, fixed unit or fixed work. <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> can be aggregated to a task type in order to specify a task sequence or any time related information, e.g. the duration of a task. Please see the documentation of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_type"><span class="std std-ref">IfcTaskType</span></a> for further information.</p>
+<p>Attribute use definition</p>
+<p>Each occurrence of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> is given a name that is indicative of its content (<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_root_1a1ef7c3a72b9eb9525620876ce029c16b"><span class="std std-ref">IfcRoot.Name</span></a>). A textual description of the task may be provided and this may be further elaborated by a narrative long description (<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_process_1a0befdf20b40c79ab44393c61042c6079"><span class="std std-ref">IfcProcess.LongDescription</span></a>). A work method may be declared for the method of work used in carrying out a task. A task is identified as being either a milestone task or not. A milestone task is defined by the marker IsMilestone. and has no duration. A status and priority for each task may also be set.</p>
+<p>Property set use definition</p>
+<p>The property sets relating to <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> are defined by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> and attached by the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. They are accessible by the inverse IsDefinedBy relationship. Such property sets may define task parameters. No property sets for <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> are currently defined by IFC.</p>
+<p>Connectivity Use Definition</p>
+<p>The relationship <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_sequence"><span class="std std-ref">IfcRelSequence</span></a> is used to indicate control flow. An <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> as a successor to an <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> indicates logical sequence how these tasks should be performed. <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a>’s can be triggered or can trigger <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_event"><span class="std std-ref">IfcEvent</span></a>’s, which is also defined through the relationship <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_sequence"><span class="std std-ref">IfcRelSequence</span></a>.</p>
+<p>Composition use definition</p>
+<p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> may be contained within an <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> using the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_nests"><span class="std std-ref">IfcRelNests</span></a> relationship. An <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> may in turn nest other <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a>, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> or <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_event"><span class="std std-ref">IfcEvent</span></a> entities. Such nesting indicates decomposed level of detail. From IFC2x4 onwards it is required to have a summary task (root of all tasks), which is used to define a link to the work plan or work schedule. All subtasks of the summary tasks are then implicitly linked to this work plan or work schedule. Please note that the summary task is used for data organization and not meant to store typical task information as defined by the user. It is therefore recommended that the summary task is hidden from the user to avoid confusion. Please also note that <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_nests"><span class="std std-ref">IfcRelNests</span></a> is used to show the dependency between regular tasks and recurring task definitions (please see the section about time and duration use definitions).</p>
+<p>As shown in Figure 13, the installation of a number of items of equipment within a particular space may be the subject of a single task which is identified as ‘fix equipment in space 123’. <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> represents the occurrence of a work performance of a type of process in a construction plan.</p>
+<p>Figure 13 — Task visualization</p>
+<p>A task may nest other tasks as sub-items; the nesting relationship is modeled by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_nests"><span class="std std-ref">IfcRelNests</span></a> as shown in Figure 14. For example, the construction of a stud wall may be designated as a nesting task named ‘install wall #1’ including other tasks such as ‘install dry wall’, ‘install studs’, ‘wall taping’, and ‘erect wall’ as sub-processes. A value that indicates the relative tree view position of the task (in comparison to the tree view position of other tasks and the task hierarchy defined by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_nests"><span class="std std-ref">IfcRelNests</span></a>). The task order information that is used for viewing purposes is derived from the order defined by the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_nests"><span class="std std-ref">IfcRelNests</span></a> relationship and thus is independent of the logical task order defined through <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_sequence"><span class="std std-ref">IfcRelSequence</span></a>. The hierarchy and order defined through <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_nests"><span class="std std-ref">IfcRelNests</span></a> enables to order the tasks in a tree view or list view structure.</p>
+<p>Figure 14 — Task nesting relationships</p>
+<p>Time and duration use definition</p>
+<p>Compared to previous IFC releases, basic task time information (scheduled start time, scheduled finish time, duration) is now directly attached to <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> through the TaskTime attribute. Regular tasks are defined through <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. Recurring tasks are defined through <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time_recurring"><span class="std std-ref">IfcTaskTimeRecurring</span></a>. In case a regular task is derived from a recurring task both tasks should be linked together through a <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_nests"><span class="std std-ref">IfcRelNests</span></a> relationship, where IfcRelNests.IsNestedBy points to the recurring task and IfcRelNests.Nests points to all regular tasks that have been derived from the recurring task.</p>
+<p>Assignment use definition</p>
+<p>Occurrences of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> may be assigned to an <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_work_control"><span class="std std-ref">IfcWorkControl</span></a> (either a work plan or a work schedule) through <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_assigns_to_control"><span class="std std-ref">IfcRelAssignsToControl</span></a>. From IFC2x4 onwards it is suggested to use the ‘summary task’ (root element of the task hierarchy that is required for task management purposes) to assign all subtask to a work plan or work schedule. Resources used by tasks are assigned by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_assigns_to_process"><span class="std std-ref">IfcRelAssignsToProcess</span></a>. Quantities of resources consumed by the task are dealt with by defining the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_element_quantity"><span class="std std-ref">IfcElementQuantity</span></a> for the resource and not at the instance of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a>. Please note that the IfcRelAssignsTasks relationship class has been removed in IFC2x4 and is no longer available.</p>
+<p>An <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> may be assigned a Work Breakdown Structure (WBS) code. A WBS code is dealt with as a classification of task and is associated to a task occurrence using the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_associates_classification"><span class="std std-ref">IfcRelAssociatesClassification</span></a> relationship class. As well as being to designate the code, the classification structure of the IFC model also enables the source of the work breakdown structure classification to be identified.</p>
+<p>Constraint use definition</p>
+<p>Constraints may be applied to a task to indicate fixed task duration, fixed start or fixed finish (see Figure 15). The relationship <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_associates_constraint"><span class="std std-ref">IfcRelAssociatesConstraint</span></a> is used where RelatingConstraint points to an <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_metric"><span class="std std-ref">IfcMetric</span></a> and RelatedObjects includes the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a>. <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_root_1a1ef7c3a72b9eb9525620876ce029c16b"><span class="std std-ref">IfcRelAssociatesConstraint.Name</span></a> identifies the attribute to be constrained using a period (“.”) to dereference; for example, “TaskTime.ScheduleStart” refers to the ScheduleStart attribute on the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a> entity referenced on the TaskTime attribute. The following attributes may be constrained:</p>
+<p>‘TaskTime.ScheduleDuration’: Indicate fixed duration of task with ConstraintGrade=HARD and Benchmark=EQUALTO such that changes to an assigned IfcConstructionResource.ResourceTime.ScheduleWork should impact IfcConstructionResource.ResourceTime.ScheduleUsage, and vice-versa.</p>
+<p>‘TaskTime.ScheduleStart’: Indicate constrained start date with ConstraintGrade=HARD and Benchmark of EQUALTO, GREATERTHANOREQUALTO, or LESSTHANOREQUALTO to indicate “must start on”, “start no earlier than” or “start no later than” respectively where <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_metric_1a131565ce464a45f0ac916f40799ec4a3"><span class="std std-ref">IfcMetric.DataValue</span></a> indicates the specific <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_date_time"><span class="std std-ref">IfcDateTime</span></a>. Use SOFT constraint having LESSTHAN benchmark to indicate “start as soon as possible”.</p>
+<p>‘TaskTime.ScheduleFinish’: Indicate constrained finish date with ConstraintGrade=HARD and Benchmark of EQUALTO, GREATERTHANOREQUALTO, or LESSTHANOREQUALTO to indicate “must finish on”, “finish no earlier than” or “finish no later than” respectively where IfcMetric.DateValue indicates the specific <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_date_time"><span class="std std-ref">IfcDateTime</span></a><p>. Use SOFT constraint having GREATERTHAN benchmark to indicate “finish as late as</p>
+<p>  possible”.</p>
+</p>
+<p>A “manual scheduled task” is indicated with ConstraintGrade=HARD and Benchmark=EQUALTO for both TaskTime.ScheduleStart and TaskTime.ScheduleFinish.</p>
+<p>Figure 15 — Task constraints</p>
+<p>Use Definition to represent other activities</p>
+<p>The use definitions for <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> have been generalised to represent other activities as well, including actitities that had been defined by own entities in previous IFC releases. This includes</p>
+<p>Order actions Move operations</p>
+<p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> represents an order that might be carried out by a Helpdesk acting the role of interface for the organization between the facility user and the functional requirement of fulfilling their needs. The actual task represented by the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> entity is turning a request into an order and initiating the action that will enable the order to be completed. The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_project_order"><span class="std std-ref">IfcProjectOrder</span></a> or one of its subtypes including maintenance work order, is related to the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> using <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_assigns_to_control"><span class="std std-ref">IfcRelAssignsToControl</span></a>.</p>
+<p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> can also be used to describe an activity that moves people, groups within an organization or complete organizations together with their associated furniture and equipment from one place to another. It thus replaces the previous IFC entity IfcMove. The functionality is represented in <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> as follows:</p>
+<p>Move from: The place from which actors and their associated equipment are moving. Use <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_assigns_to_process"><span class="std std-ref">IfcRelAssignsToProcess</span></a> where RelatingProcess points to the task and RelatedObjects holds the location(s) from which to move. Move to: The place to which actors and their associated equipment are moving. Use <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_assigns_to_product"><span class="std std-ref">IfcRelAssignsToProduct</span></a> where RelatedObjects points to the task(s) and RelatingProduct points to the location to which to move. Punch list: A list of points concerning a move that require attention. Use LongDescription or else identify sub-tasks to track punch list items individually via <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_nests"><span class="std std-ref">IfcRelNests</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc47IfcTask4listE">
+<span id="_CPPv3N4Ifc47IfcTask4listE"></span><span id="_CPPv2N4Ifc47IfcTask4listE"></span><span id="Ifc4::IfcTask::list"></span><span class="target" id="class_ifc4_1_1_ifc_task_1a3407d7268551211571bb67126415d96d"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc47IfcTaskE" title="Ifc4::IfcTask">IfcTask</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc47IfcTask4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc47IfcTask9hasStatusEv">
+<span id="_CPPv3NK4Ifc47IfcTask9hasStatusEv"></span><span id="_CPPv2NK4Ifc47IfcTask9hasStatusEv"></span><span id="Ifc4::IfcTask::hasStatusC"></span><span class="target" id="class_ifc4_1_1_ifc_task_1a4812fb22fdafcb38694baf074566afd2"></span>bool <code class="sig-name descname">hasStatus</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc47IfcTask9hasStatusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Status is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc47IfcTask6StatusEv">
+<span id="_CPPv3NK4Ifc47IfcTask6StatusEv"></span><span id="_CPPv2NK4Ifc47IfcTask6StatusEv"></span><span id="Ifc4::IfcTask::StatusC"></span><span class="target" id="class_ifc4_1_1_ifc_task_1a993ed66df263525ea20439f533ba8d57"></span>std::string <code class="sig-name descname">Status</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc47IfcTask6StatusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Current status of the task.</p>
+<p>NOTE: Particular values for status are not specified, these should be determined and agreed by local usage. Examples of possible status values include ‘Not Yet Started’, ‘Started’, ‘Completed’. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc47IfcTask9setStatusENSt6stringE">
+<span id="_CPPv3N4Ifc47IfcTask9setStatusENSt6stringE"></span><span id="_CPPv2N4Ifc47IfcTask9setStatusENSt6stringE"></span><span id="Ifc4::IfcTask::setStatus__ss"></span><span class="target" id="class_ifc4_1_1_ifc_task_1a07acc096c8107cca585aa3db415fa310"></span>void <code class="sig-name descname">setStatus</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc47IfcTask9setStatusENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc47IfcTask13hasWorkMethodEv">
+<span id="_CPPv3NK4Ifc47IfcTask13hasWorkMethodEv"></span><span id="_CPPv2NK4Ifc47IfcTask13hasWorkMethodEv"></span><span id="Ifc4::IfcTask::hasWorkMethodC"></span><span class="target" id="class_ifc4_1_1_ifc_task_1aa0cc7659973f8c0fbc97acd2864ff4c8"></span>bool <code class="sig-name descname">hasWorkMethod</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc47IfcTask13hasWorkMethodEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute WorkMethod is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc47IfcTask10WorkMethodEv">
+<span id="_CPPv3NK4Ifc47IfcTask10WorkMethodEv"></span><span id="_CPPv2NK4Ifc47IfcTask10WorkMethodEv"></span><span id="Ifc4::IfcTask::WorkMethodC"></span><span class="target" id="class_ifc4_1_1_ifc_task_1aa06522a0938abcfc6f8fff010b91d23c"></span>std::string <code class="sig-name descname">WorkMethod</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc47IfcTask10WorkMethodEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The method of work used in carrying out a task.</p>
+<p>NOTE: This attribute should not be used if the work method is specified for the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_type"><span class="std std-ref">IfcTaskType</span></a> </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc47IfcTask13setWorkMethodENSt6stringE">
+<span id="_CPPv3N4Ifc47IfcTask13setWorkMethodENSt6stringE"></span><span id="_CPPv2N4Ifc47IfcTask13setWorkMethodENSt6stringE"></span><span id="Ifc4::IfcTask::setWorkMethod__ss"></span><span class="target" id="class_ifc4_1_1_ifc_task_1a0d513deb0a06a6178dc78ce5fbe18dff"></span>void <code class="sig-name descname">setWorkMethod</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc47IfcTask13setWorkMethodENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc47IfcTask11IsMilestoneEv">
+<span id="_CPPv3NK4Ifc47IfcTask11IsMilestoneEv"></span><span id="_CPPv2NK4Ifc47IfcTask11IsMilestoneEv"></span><span id="Ifc4::IfcTask::IsMilestoneC"></span><span class="target" id="class_ifc4_1_1_ifc_task_1af4381b6339201ac34638c783e9eea790"></span>bool <code class="sig-name descname">IsMilestone</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc47IfcTask11IsMilestoneEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Identifies whether a task is a milestone task (=TRUE) or not (= FALSE).</p>
+<p>NOTE: In small project planning applications, a milestone task may be understood to be a task having no duration. As such, it represents a singular point in time. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc47IfcTask14setIsMilestoneEb">
+<span id="_CPPv3N4Ifc47IfcTask14setIsMilestoneEb"></span><span id="_CPPv2N4Ifc47IfcTask14setIsMilestoneEb"></span><span id="Ifc4::IfcTask::setIsMilestone__b"></span><span class="target" id="class_ifc4_1_1_ifc_task_1ae05c478789909a2ebdd1d2b944d48213"></span>void <code class="sig-name descname">setIsMilestone</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc47IfcTask14setIsMilestoneEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc47IfcTask11hasPriorityEv">
+<span id="_CPPv3NK4Ifc47IfcTask11hasPriorityEv"></span><span id="_CPPv2NK4Ifc47IfcTask11hasPriorityEv"></span><span id="Ifc4::IfcTask::hasPriorityC"></span><span class="target" id="class_ifc4_1_1_ifc_task_1aff8f5fa423772478e5675a251b7cbf8c"></span>bool <code class="sig-name descname">hasPriority</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc47IfcTask11hasPriorityEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Priority is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc47IfcTask8PriorityEv">
+<span id="_CPPv3NK4Ifc47IfcTask8PriorityEv"></span><span id="_CPPv2NK4Ifc47IfcTask8PriorityEv"></span><span id="Ifc4::IfcTask::PriorityC"></span><span class="target" id="class_ifc4_1_1_ifc_task_1a436e8bd2efa082b0120adce5e233f21e"></span>int <code class="sig-name descname">Priority</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc47IfcTask8PriorityEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A value that indicates the relative priority of the task (in comparison to the priorities of other tasks). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc47IfcTask11setPriorityEi">
+<span id="_CPPv3N4Ifc47IfcTask11setPriorityEi"></span><span id="_CPPv2N4Ifc47IfcTask11setPriorityEi"></span><span id="Ifc4::IfcTask::setPriority__i"></span><span class="target" id="class_ifc4_1_1_ifc_task_1a02d60fbb6ee1de816fca4e19f78d9112"></span>void <code class="sig-name descname">setPriority</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc47IfcTask11setPriorityEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc47IfcTask11hasTaskTimeEv">
+<span id="_CPPv3NK4Ifc47IfcTask11hasTaskTimeEv"></span><span id="_CPPv2NK4Ifc47IfcTask11hasTaskTimeEv"></span><span id="Ifc4::IfcTask::hasTaskTimeC"></span><span class="target" id="class_ifc4_1_1_ifc_task_1a0cfb67a3593e95283a1b0deba0a5b367"></span>bool <code class="sig-name descname">hasTaskTime</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc47IfcTask11hasTaskTimeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute TaskTime is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc47IfcTask8TaskTimeEv">
+<span id="_CPPv3NK4Ifc47IfcTask8TaskTimeEv"></span><span id="_CPPv2NK4Ifc47IfcTask8TaskTimeEv"></span><span id="Ifc4::IfcTask::TaskTimeC"></span><span class="target" id="class_ifc4_1_1_ifc_task_1a46cf26e4cce55611da420af1cbacaba9"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_task_time.html#_CPPv4N4Ifc411IfcTaskTimeE" title="Ifc4::IfcTaskTime">IfcTaskTime</a> *<code class="sig-name descname">TaskTime</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc47IfcTask8TaskTimeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Time related information for the task.</p>
+<p>Added in IFC 2x4 </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc47IfcTask11setTaskTimeEPN4Ifc411IfcTaskTimeE">
+<span id="_CPPv3N4Ifc47IfcTask11setTaskTimeEPN4Ifc411IfcTaskTimeE"></span><span id="_CPPv2N4Ifc47IfcTask11setTaskTimeEPN4Ifc411IfcTaskTimeE"></span><span id="Ifc4::IfcTask::setTaskTime__Ifc4::IfcTaskTimeP"></span><span class="target" id="class_ifc4_1_1_ifc_task_1a2a274a14ee9c91c8bd0cd17dc6c11ff3"></span>void <code class="sig-name descname">setTaskTime</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_task_time.html#_CPPv4N4Ifc411IfcTaskTimeE" title="Ifc4::IfcTaskTime">IfcTaskTime</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc47IfcTask11setTaskTimeEPN4Ifc411IfcTaskTimeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc47IfcTask17hasPredefinedTypeEv">
+<span id="_CPPv3NK4Ifc47IfcTask17hasPredefinedTypeEv"></span><span id="_CPPv2NK4Ifc47IfcTask17hasPredefinedTypeEv"></span><span id="Ifc4::IfcTask::hasPredefinedTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_task_1a762b4b2250b2311ee3a504da24c8c3ac"></span>bool <code class="sig-name descname">hasPredefinedType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc47IfcTask17hasPredefinedTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute PredefinedType is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc47IfcTask14PredefinedTypeEv">
+<span id="_CPPv3NK4Ifc47IfcTask14PredefinedTypeEv"></span><span id="_CPPv2NK4Ifc47IfcTask14PredefinedTypeEv"></span><span id="Ifc4::IfcTask::PredefinedTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_task_1a75904671e918f7b7944c02b4074075c1"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc415IfcTaskTypeEnumE" title="Ifc4::IfcTaskTypeEnum">IfcTaskTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc415IfcTaskTypeEnum5ValueE" title="Ifc4::IfcTaskTypeEnum::Value">Value</a> <code class="sig-name descname">PredefinedType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc47IfcTask14PredefinedTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Identifies the predefined types of a task from which the type required may be set.</p>
+<p>Added in IFC 2x4 </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc47IfcTask17setPredefinedTypeEN4Ifc415IfcTaskTypeEnum5ValueE">
+<span id="_CPPv3N4Ifc47IfcTask17setPredefinedTypeEN4Ifc415IfcTaskTypeEnum5ValueE"></span><span id="_CPPv2N4Ifc47IfcTask17setPredefinedTypeEN4Ifc415IfcTaskTypeEnum5ValueE"></span><span id="Ifc4::IfcTask::setPredefinedType__Ifc4::IfcTaskTypeEnum::Value"></span><span class="target" id="class_ifc4_1_1_ifc_task_1a6627f74423ac061a72113c5e044687e3"></span>void <code class="sig-name descname">setPredefinedType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc415IfcTaskTypeEnumE" title="Ifc4::IfcTaskTypeEnum">IfcTaskTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc415IfcTaskTypeEnum5ValueE" title="Ifc4::IfcTaskTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc47IfcTask17setPredefinedTypeEN4Ifc415IfcTaskTypeEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc47IfcTask11declarationEv">
+<span id="_CPPv3NK4Ifc47IfcTask11declarationEv"></span><span id="_CPPv2NK4Ifc47IfcTask11declarationEv"></span><span id="Ifc4::IfcTask::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_task_1acf4011090bb355e9a18057200cc9bf10"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc47IfcTask11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc47IfcTask7IfcTaskEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc47IfcTask7IfcTaskEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc47IfcTask7IfcTaskEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcTask::IfcTask__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_task_1a300ddde452911c8e620e71f441eb3c7b"></span><code class="sig-name descname">IfcTask</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc47IfcTask7IfcTaskEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc47IfcTask7IfcTaskENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEbN5boost8optionalIiEEPN4Ifc411IfcTaskTimeEN5boost8optionalIN4Ifc415IfcTaskTypeEnum5ValueEEE">
+<span id="_CPPv3N4Ifc47IfcTask7IfcTaskENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEbN5boost8optionalIiEEPN4Ifc411IfcTaskTimeEN5boost8optionalIN4Ifc415IfcTaskTypeEnum5ValueEEE"></span><span id="_CPPv2N4Ifc47IfcTask7IfcTaskENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEbN5boost8optionalIiEEPN4Ifc411IfcTaskTimeEN5boost8optionalIN4Ifc415IfcTaskTypeEnum5ValueEEE"></span><span id="Ifc4::IfcTask::IfcTask__ss.Ifc4::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.b.boost::optional:i:.Ifc4::IfcTaskTimeP.boost::optional:Ifc4::IfcTaskTypeEnum::Value:"></span><span class="target" id="class_ifc4_1_1_ifc_task_1ae7eeeac851f6b35c4fb8dbbbd7fd85be"></span><code class="sig-name descname">IfcTask</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_owner_history.html#_CPPv4N4Ifc415IfcOwnerHistoryE" title="Ifc4::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, boost::optional&lt;std::string&gt; <em>v6_Identification</em>, boost::optional&lt;std::string&gt; <em>v7_LongDescription</em>, boost::optional&lt;std::string&gt; <em>v8_Status</em>, boost::optional&lt;std::string&gt; <em>v9_WorkMethod</em>, bool <em>v10_IsMilestone</em>, boost::optional&lt;int&gt; <em>v11_Priority</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_task_time.html#_CPPv4N4Ifc411IfcTaskTimeE" title="Ifc4::IfcTaskTime">IfcTaskTime</a> *<em>v12_TaskTime</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc415IfcTaskTypeEnumE" title="Ifc4::IfcTaskTypeEnum">IfcTaskTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc415IfcTaskTypeEnum5ValueE" title="Ifc4::IfcTaskTypeEnum::Value">Value</a>&gt; <em>v13_PredefinedType</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc47IfcTask7IfcTaskENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEbN5boost8optionalIiEEPN4Ifc411IfcTaskTimeEN5boost8optionalIN4Ifc415IfcTaskTypeEnum5ValueEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc47IfcTask5ClassEv">
+<span id="_CPPv3N4Ifc47IfcTask5ClassEv"></span><span id="_CPPv2N4Ifc47IfcTask5ClassEv"></span><span id="Ifc4::IfcTask::Class"></span><span class="target" id="class_ifc4_1_1_ifc_task_1a86cd1454f1d8cc418d3792383b436716"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc47IfcTask5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_tank_type.html" title="previous chapter">Class Ifc4::IfcTankType</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_task_time.html" title="next chapter">Class Ifc4::IfcTaskTime</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_task.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

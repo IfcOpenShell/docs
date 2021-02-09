@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a3519fefcd558c90518df9f358790977a:
+
+Define SCHEMA_IfcOpticalMaterialProperties_VisibleTransmittance_IS_OPTIONAL
+===========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcOpticalMaterialProperties_VisibleTransmittance_IS_OPTIONAL

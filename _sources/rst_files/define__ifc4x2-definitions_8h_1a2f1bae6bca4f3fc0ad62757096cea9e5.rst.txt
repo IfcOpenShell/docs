@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a2f1bae6bca4f3fc0ad62757096cea9e5:
+
+Define SCHEMA_HAS_IfcPile
+=========================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcPile

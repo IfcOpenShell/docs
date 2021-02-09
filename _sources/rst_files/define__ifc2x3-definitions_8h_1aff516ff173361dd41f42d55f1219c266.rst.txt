@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aff516ff173361dd41f42d55f1219c266:
+
+Define SCHEMA_IfcRepresentation_HAS_RepresentationIdentifier
+============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRepresentation_HAS_RepresentationIdentifier

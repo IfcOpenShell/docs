@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a6d92b37e3bd3eaeae6b44c69ecf4b91e:
+
+Define SCHEMA_IfcMaterialLayerWithOffsets_HAS_OffsetValues
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMaterialLayerWithOffsets_HAS_OffsetValues

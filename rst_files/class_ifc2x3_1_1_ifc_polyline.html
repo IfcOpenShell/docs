@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcPolyline &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcPolyLoop" href="class_ifc2x3_1_1_ifc_poly_loop.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcPolygonalBoundedHalfSpace" href="class_ifc2x3_1_1_ifc_polygonal_bounded_half_space.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcpolyline">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-polyline"></span><h1>Class Ifc2x3::IfcPolyline<a class="headerlink" href="#class-ifc2x3-ifcpolyline" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcBoundedCurve</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_bounded_curve.html#exhale-class-class-ifc2x3-1-1-ifc-bounded-curve"><span class="std std-ref">Class Ifc2x3::IfcBoundedCurve</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x311IfcPolylineE">
+<span id="_CPPv3N6Ifc2x311IfcPolylineE"></span><span id="_CPPv2N6Ifc2x311IfcPolylineE"></span><span id="Ifc2x3::IfcPolyline"></span><span class="target" id="class_ifc2x3_1_1_ifc_polyline"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcPolyline</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_bounded_curve.html#_CPPv4N6Ifc2x315IfcBoundedCurveE" title="Ifc2x3::IfcBoundedCurve">IfcBoundedCurve</a><a class="headerlink" href="#_CPPv4N6Ifc2x311IfcPolylineE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: A polyline is a bounded curve of n - 1 linear segments, defined by a list of n points, P1, P2 … Pn. The ith segment of the curve is parameterized as follows:</p>
+<p> for 1 ≤ i ≤ n - 1</p>
+<p>where i - 1 ≤ u ≤ i and with parametric range of 0 &lt;≤ u ≤ n - 1.</p>
+<p>NOTE Corresponding ISO 10303 entity: polyline. Please refer to ISO/IS 10303-42:1994, p. 45 for the final definition of the formal standard.</p>
+<p>HISTORY New class in IFC Release 1.0 </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x311IfcPolyline4listE">
+<span id="_CPPv3N6Ifc2x311IfcPolyline4listE"></span><span id="_CPPv2N6Ifc2x311IfcPolyline4listE"></span><span id="Ifc2x3::IfcPolyline::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_polyline_1ac340aee0fb6431529ff163c372fdee75"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x311IfcPolylineE" title="Ifc2x3::IfcPolyline">IfcPolyline</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x311IfcPolyline4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x311IfcPolyline6PointsEv">
+<span id="_CPPv3NK6Ifc2x311IfcPolyline6PointsEv"></span><span id="_CPPv2NK6Ifc2x311IfcPolyline6PointsEv"></span><span id="Ifc2x3::IfcPolyline::PointsC"></span><span class="target" id="class_ifc2x3_1_1_ifc_polyline_1ad85c4cf6522125d602e993886bbdd605"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cartesian_point.html#_CPPv4N6Ifc2x317IfcCartesianPointE" title="Ifc2x3::IfcCartesianPoint">IfcCartesianPoint</a>&gt;::ptr <code class="sig-name descname">Points</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x311IfcPolyline6PointsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The points defining the polyline. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x311IfcPolyline9setPointsEN22IfcTemplatedEntityListIN6Ifc2x317IfcCartesianPointEE3ptrE">
+<span id="_CPPv3N6Ifc2x311IfcPolyline9setPointsEN22IfcTemplatedEntityListIN6Ifc2x317IfcCartesianPointEE3ptrE"></span><span id="_CPPv2N6Ifc2x311IfcPolyline9setPointsEN22IfcTemplatedEntityListIN6Ifc2x317IfcCartesianPointEE3ptrE"></span><span id="Ifc2x3::IfcPolyline::setPoints__IfcTemplatedEntityList:Ifc2x3::IfcCartesianPoint:::ptr"></span><span class="target" id="class_ifc2x3_1_1_ifc_polyline_1a66f64caad840144b0a804b5a810ab13a"></span>void <code class="sig-name descname">setPoints</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cartesian_point.html#_CPPv4N6Ifc2x317IfcCartesianPointE" title="Ifc2x3::IfcCartesianPoint">IfcCartesianPoint</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x311IfcPolyline9setPointsEN22IfcTemplatedEntityListIN6Ifc2x317IfcCartesianPointEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x311IfcPolyline11declarationEv">
+<span id="_CPPv3NK6Ifc2x311IfcPolyline11declarationEv"></span><span id="_CPPv2NK6Ifc2x311IfcPolyline11declarationEv"></span><span id="Ifc2x3::IfcPolyline::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_polyline_1a68319edce7a37544aed5bcb8e01c3b31"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x311IfcPolyline11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x311IfcPolyline11IfcPolylineEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x311IfcPolyline11IfcPolylineEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x311IfcPolyline11IfcPolylineEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcPolyline::IfcPolyline__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_polyline_1ad746b4c1b398cccbcec81125d787d0a7"></span><code class="sig-name descname">IfcPolyline</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x311IfcPolyline11IfcPolylineEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x311IfcPolyline11IfcPolylineEN22IfcTemplatedEntityListIN6Ifc2x317IfcCartesianPointEE3ptrE">
+<span id="_CPPv3N6Ifc2x311IfcPolyline11IfcPolylineEN22IfcTemplatedEntityListIN6Ifc2x317IfcCartesianPointEE3ptrE"></span><span id="_CPPv2N6Ifc2x311IfcPolyline11IfcPolylineEN22IfcTemplatedEntityListIN6Ifc2x317IfcCartesianPointEE3ptrE"></span><span id="Ifc2x3::IfcPolyline::IfcPolyline__IfcTemplatedEntityList:Ifc2x3::IfcCartesianPoint:::ptr"></span><span class="target" id="class_ifc2x3_1_1_ifc_polyline_1a327704f0974d0c5709826ce4c537eb64"></span><code class="sig-name descname">IfcPolyline</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cartesian_point.html#_CPPv4N6Ifc2x317IfcCartesianPointE" title="Ifc2x3::IfcCartesianPoint">IfcCartesianPoint</a>&gt;::ptr <em>v1_Points</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x311IfcPolyline11IfcPolylineEN22IfcTemplatedEntityListIN6Ifc2x317IfcCartesianPointEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x311IfcPolyline5ClassEv">
+<span id="_CPPv3N6Ifc2x311IfcPolyline5ClassEv"></span><span id="_CPPv2N6Ifc2x311IfcPolyline5ClassEv"></span><span id="Ifc2x3::IfcPolyline::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_polyline_1ad536e649853a264203a64fd875d61669"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x311IfcPolyline5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_polygonal_bounded_half_space.html" title="previous chapter">Class Ifc2x3::IfcPolygonalBoundedHalfSpace</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_poly_loop.html" title="next chapter">Class Ifc2x3::IfcPolyLoop</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_polyline.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

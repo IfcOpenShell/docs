@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcTransportElement &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcTransportElementType" href="class_ifc2x3_1_1_ifc_transport_element_type.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcTransformerType" href="class_ifc2x3_1_1_ifc_transformer_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifctransportelement">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-transport-element"></span><h1>Class Ifc2x3::IfcTransportElement<a class="headerlink" href="#class-ifc2x3-ifctransportelement" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcElement</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_element.html#exhale-class-class-ifc2x3-1-1-ifc-element"><span class="std std-ref">Class Ifc2x3::IfcElement</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x319IfcTransportElementE">
+<span id="_CPPv3N6Ifc2x319IfcTransportElementE"></span><span id="_CPPv2N6Ifc2x319IfcTransportElementE"></span><span id="Ifc2x3::IfcTransportElement"></span><span class="target" id="class_ifc2x3_1_1_ifc_transport_element"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcTransportElement</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_element.html#_CPPv4N6Ifc2x310IfcElementE" title="Ifc2x3::IfcElement">IfcElement</a><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcTransportElementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from IAI: Generalization of all transport related objects that move people, animals or goods within a building or building complex. The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element"><span class="std std-ref">IfcTransportElement</span></a> defines the occurrence of a transport element, that (if given), is expressed by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element_type"><span class="std std-ref">IfcTransportElementType</span></a>. EXAMPLE Transportation elements include elevator (lift), escalator, moving walkway, etc. NOTE More detailed equipment that may be a part of a transportation device, like a lifting hook, is defined as <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_discrete_accessory"><span class="std std-ref">IfcDiscreteAccessory</span></a> Depending on local classification systems transport elements and transportation systems in buildings are either considered as part of a building system, or as part of a building service system. Within IFC they are considered as part of a building system and may have to be mapped appropriately. HISTORY New entity in IFC Release 2x. IFC2x PLATFORM CHANGE The attribute PredefinedType (previously OperationType) is made optional. Type Use Definition <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element"><span class="std std-ref">IfcTransportElement</span></a> defines the occuurence of any transportation device, common information about transportation device types (or styles) is handled by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element_type"><span class="std std-ref">IfcTransportElementType</span></a>. The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element_type"><span class="std std-ref">IfcTransportElementType</span></a> (if present) may establish the commontype name, usage (or predefined) type, common material layer set, common set of properties and common shape representations (using <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_representation_map"><span class="std std-ref">IfcRepresentationMap</span></a>). The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element_type"><span class="std std-ref">IfcTransportElementType</span></a> is attached using the IfcRelDefinedByType.RelatingType objectified relationship and is accessible by the inverse IsTypedBy attribute. If no <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element_type"><span class="std std-ref">IfcTransportElementType</span></a> is attached(i.e. if only occurrence information is given) the PredefinedType should be provided. If set to .USERDEFINED. a user defined value can be provided by the ObjectType attribute. Property Set Use Definition: The property sets relating to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element"><span class="std std-ref">IfcTransportElement</span></a> are defined by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> and attached by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. It is accessible by the inverse IsDefinedBy relationship. The following property set definitions specific to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element"><span class="std std-ref">IfcTransportElement</span></a> are part of this IFC release:</p>
+<p>Pset_TransportElementCommon: common property set for all transport element occurrences</p>
+<p>Pset_TransportElementElevator: specific property set for all occurrences of transport elements with the PredefinedType: ELEVATOR</p>
+<p>Containment Use Definition The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element"><span class="std std-ref">IfcTransportElement</span></a>, as any subtype of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a>, may have a hierarchical spatial containment relationships that is mandatory in most implementation scenarios.</p>
+<p>The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element"><span class="std std-ref">IfcTransportElement</span></a> is placed within the project spatial hierarchy using the objectified relationship <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_contained_in_spatial_structure"><span class="std std-ref">IfcRelContainedInSpatialStructure</span></a>, refering to it by its inverse attribute SELF\IfcElement.ContainedInStructure. Subtypes ofIfcSpatialStructureElement are valid spatial containers, with <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> being the default container.</p>
+<p>Geometry Use Definitions: The geometric representation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element"><span class="std std-ref">IfcTransportElement</span></a> is given by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a>, allowing multiple geometric representation. Local Placement The local placement for <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element"><span class="std std-ref">IfcTransportElement</span></a> is defined in its supertype <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a>. It is defined by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a>, which defines the local coordinate system that is referenced by all geometric representations.</p>
+<p>The PlacementRelTo relationship of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> shall point (if given) to the local placement of the same <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_spatial_structure_element"><span class="std std-ref">IfcSpatialStructureElement</span></a> , which is used in the ContainedInStructure inverse attribute, or to a spatial structure element at a higher level, referenced by that. If the relative placement is not used, the absolute placement is defined within the world coordinate system.</p>
+<p>SurfaceModel Representation Any <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element"><span class="std std-ref">IfcTransportElement</span></a> (so far no further constraints are defined at the level of its subtypes) may be represented as a single or multiple surface models, based on either shell or face based models. Then the following attribute values for the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘SurfaceModel’</p>
+<p>Brep Representation Any <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element"><span class="std std-ref">IfcTransportElement</span></a> (so far no further constraints are defined at the level of its subtypes) may be represented as a single or multiple Boundary Representation elements (which are restricted to faceted Brep with or without voids). Then the following attribute values for the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘Brep’</p>
+<p>MappedRepresentation The mapped item, <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_mapped_item"><span class="std std-ref">IfcMappedItem</span></a>, should be used if appropriate as it allows for reusing the geometry definition of the property element type at occurrences of the same equipement type. Then the following attribute values for the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘MappedRepresentation’ </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x319IfcTransportElement4listE">
+<span id="_CPPv3N6Ifc2x319IfcTransportElement4listE"></span><span id="_CPPv2N6Ifc2x319IfcTransportElement4listE"></span><span id="Ifc2x3::IfcTransportElement::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_transport_element_1af86a299618e4ce36b3aee0eb38e7f5a9"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x319IfcTransportElementE" title="Ifc2x3::IfcTransportElement">IfcTransportElement</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcTransportElement4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x319IfcTransportElement16hasOperationTypeEv">
+<span id="_CPPv3NK6Ifc2x319IfcTransportElement16hasOperationTypeEv"></span><span id="_CPPv2NK6Ifc2x319IfcTransportElement16hasOperationTypeEv"></span><span id="Ifc2x3::IfcTransportElement::hasOperationTypeC"></span><span class="target" id="class_ifc2x3_1_1_ifc_transport_element_1ab42367c95943a93421ab511a022988af"></span>bool <code class="sig-name descname">hasOperationType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x319IfcTransportElement16hasOperationTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute OperationType is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element"><span class="std std-ref">IfcTransportElement</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x319IfcTransportElement13OperationTypeEv">
+<span id="_CPPv3NK6Ifc2x319IfcTransportElement13OperationTypeEv"></span><span id="_CPPv2NK6Ifc2x319IfcTransportElement13OperationTypeEv"></span><span id="Ifc2x3::IfcTransportElement::OperationTypeC"></span><span class="target" id="class_ifc2x3_1_1_ifc_transport_element_1a59082e0ffac890d35bc11560a722624c"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x327IfcTransportElementTypeEnumE" title="Ifc2x3::IfcTransportElementTypeEnum">IfcTransportElementTypeEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x327IfcTransportElementTypeEnum5ValueE" title="Ifc2x3::IfcTransportElementTypeEnum::Value">Value</a> <code class="sig-name descname">OperationType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x319IfcTransportElement13OperationTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x319IfcTransportElement16setOperationTypeEN6Ifc2x327IfcTransportElementTypeEnum5ValueE">
+<span id="_CPPv3N6Ifc2x319IfcTransportElement16setOperationTypeEN6Ifc2x327IfcTransportElementTypeEnum5ValueE"></span><span id="_CPPv2N6Ifc2x319IfcTransportElement16setOperationTypeEN6Ifc2x327IfcTransportElementTypeEnum5ValueE"></span><span id="Ifc2x3::IfcTransportElement::setOperationType__Ifc2x3::IfcTransportElementTypeEnum::Value"></span><span class="target" id="class_ifc2x3_1_1_ifc_transport_element_1aa76a7ae6dd62cd38a9ef32f2e81230a6"></span>void <code class="sig-name descname">setOperationType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x327IfcTransportElementTypeEnumE" title="Ifc2x3::IfcTransportElementTypeEnum">IfcTransportElementTypeEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x327IfcTransportElementTypeEnum5ValueE" title="Ifc2x3::IfcTransportElementTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcTransportElement16setOperationTypeEN6Ifc2x327IfcTransportElementTypeEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x319IfcTransportElement19hasCapacityByWeightEv">
+<span id="_CPPv3NK6Ifc2x319IfcTransportElement19hasCapacityByWeightEv"></span><span id="_CPPv2NK6Ifc2x319IfcTransportElement19hasCapacityByWeightEv"></span><span id="Ifc2x3::IfcTransportElement::hasCapacityByWeightC"></span><span class="target" id="class_ifc2x3_1_1_ifc_transport_element_1a5dcff4bfa2856a947fc5b279d0c942c1"></span>bool <code class="sig-name descname">hasCapacityByWeight</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x319IfcTransportElement19hasCapacityByWeightEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute CapacityByWeight is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element"><span class="std std-ref">IfcTransportElement</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x319IfcTransportElement16CapacityByWeightEv">
+<span id="_CPPv3NK6Ifc2x319IfcTransportElement16CapacityByWeightEv"></span><span id="_CPPv2NK6Ifc2x319IfcTransportElement16CapacityByWeightEv"></span><span id="Ifc2x3::IfcTransportElement::CapacityByWeightC"></span><span class="target" id="class_ifc2x3_1_1_ifc_transport_element_1a26c101baeba3648bc251434b27deaf9e"></span>double <code class="sig-name descname">CapacityByWeight</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x319IfcTransportElement16CapacityByWeightEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Capacity of the transport element measured by weight. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x319IfcTransportElement19setCapacityByWeightEd">
+<span id="_CPPv3N6Ifc2x319IfcTransportElement19setCapacityByWeightEd"></span><span id="_CPPv2N6Ifc2x319IfcTransportElement19setCapacityByWeightEd"></span><span id="Ifc2x3::IfcTransportElement::setCapacityByWeight__double"></span><span class="target" id="class_ifc2x3_1_1_ifc_transport_element_1a4cba18f3b5303a3cfbe7dd10bd383f7d"></span>void <code class="sig-name descname">setCapacityByWeight</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcTransportElement19setCapacityByWeightEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x319IfcTransportElement19hasCapacityByNumberEv">
+<span id="_CPPv3NK6Ifc2x319IfcTransportElement19hasCapacityByNumberEv"></span><span id="_CPPv2NK6Ifc2x319IfcTransportElement19hasCapacityByNumberEv"></span><span id="Ifc2x3::IfcTransportElement::hasCapacityByNumberC"></span><span class="target" id="class_ifc2x3_1_1_ifc_transport_element_1abc64006713e3f070abe9735211a9f961"></span>bool <code class="sig-name descname">hasCapacityByNumber</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x319IfcTransportElement19hasCapacityByNumberEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute CapacityByNumber is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_transport_element"><span class="std std-ref">IfcTransportElement</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x319IfcTransportElement16CapacityByNumberEv">
+<span id="_CPPv3NK6Ifc2x319IfcTransportElement16CapacityByNumberEv"></span><span id="_CPPv2NK6Ifc2x319IfcTransportElement16CapacityByNumberEv"></span><span id="Ifc2x3::IfcTransportElement::CapacityByNumberC"></span><span class="target" id="class_ifc2x3_1_1_ifc_transport_element_1af584e95ab089f4f2651ca48120a6b97c"></span>double <code class="sig-name descname">CapacityByNumber</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x319IfcTransportElement16CapacityByNumberEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Capacity of the transportation element measured in numbers of person. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x319IfcTransportElement19setCapacityByNumberEd">
+<span id="_CPPv3N6Ifc2x319IfcTransportElement19setCapacityByNumberEd"></span><span id="_CPPv2N6Ifc2x319IfcTransportElement19setCapacityByNumberEd"></span><span id="Ifc2x3::IfcTransportElement::setCapacityByNumber__double"></span><span class="target" id="class_ifc2x3_1_1_ifc_transport_element_1afbf1df4caee20fec4a4a339f3697e0c4"></span>void <code class="sig-name descname">setCapacityByNumber</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcTransportElement19setCapacityByNumberEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x319IfcTransportElement11declarationEv">
+<span id="_CPPv3NK6Ifc2x319IfcTransportElement11declarationEv"></span><span id="_CPPv2NK6Ifc2x319IfcTransportElement11declarationEv"></span><span id="Ifc2x3::IfcTransportElement::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_transport_element_1a46e14ae72487e59e19b2702699d61dba"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x319IfcTransportElement11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x319IfcTransportElement19IfcTransportElementEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x319IfcTransportElement19IfcTransportElementEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x319IfcTransportElement19IfcTransportElementEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcTransportElement::IfcTransportElement__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_transport_element_1ab01ea7f3762e5d4dd00c6e1cd767fa06"></span><code class="sig-name descname">IfcTransportElement</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcTransportElement19IfcTransportElementEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x319IfcTransportElement19IfcTransportElementENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc2x327IfcTransportElementTypeEnum5ValueEEEN5boost8optionalIdEEN5boost8optionalIdEE">
+<span id="_CPPv3N6Ifc2x319IfcTransportElement19IfcTransportElementENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc2x327IfcTransportElementTypeEnum5ValueEEEN5boost8optionalIdEEN5boost8optionalIdEE"></span><span id="_CPPv2N6Ifc2x319IfcTransportElement19IfcTransportElementENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc2x327IfcTransportElementTypeEnum5ValueEEEN5boost8optionalIdEEN5boost8optionalIdEE"></span><span id="Ifc2x3::IfcTransportElement::IfcTransportElement__ss.Ifc2x3::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc2x3::IfcObjectPlacementP.Ifc2x3::IfcProductRepresentationP.boost::optional:ss:.boost::optional:Ifc2x3::IfcTransportElementTypeEnum::Value:.boost::optional:double:.boost::optional:double:"></span><span class="target" id="class_ifc2x3_1_1_ifc_transport_element_1aa30e13d4780b97585f1c002c3f4b331e"></span><code class="sig-name descname">IfcTransportElement</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_owner_history.html#_CPPv4N6Ifc2x315IfcOwnerHistoryE" title="Ifc2x3::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_object_placement.html#_CPPv4N6Ifc2x318IfcObjectPlacementE" title="Ifc2x3::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_product_representation.html#_CPPv4N6Ifc2x324IfcProductRepresentationE" title="Ifc2x3::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, boost::optional&lt;std::string&gt; <em>v8_Tag</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x327IfcTransportElementTypeEnumE" title="Ifc2x3::IfcTransportElementTypeEnum">IfcTransportElementTypeEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x327IfcTransportElementTypeEnum5ValueE" title="Ifc2x3::IfcTransportElementTypeEnum::Value">Value</a>&gt; <em>v9_OperationType</em>, boost::optional&lt;double&gt; <em>v10_CapacityByWeight</em>, boost::optional&lt;double&gt; <em>v11_CapacityByNumber</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcTransportElement19IfcTransportElementENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc2x327IfcTransportElementTypeEnum5ValueEEEN5boost8optionalIdEEN5boost8optionalIdEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x319IfcTransportElement5ClassEv">
+<span id="_CPPv3N6Ifc2x319IfcTransportElement5ClassEv"></span><span id="_CPPv2N6Ifc2x319IfcTransportElement5ClassEv"></span><span id="Ifc2x3::IfcTransportElement::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_transport_element_1ac55b2218e6007147904cbc1f497af2a3"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcTransportElement5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_transformer_type.html" title="previous chapter">Class Ifc2x3::IfcTransformerType</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_transport_element_type.html" title="next chapter">Class Ifc2x3::IfcTransportElementType</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_transport_element.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

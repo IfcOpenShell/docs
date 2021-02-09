@@ -1,0 +1,39 @@
+.. _exhale_class_class_ifc4x1_1_1_ifc_object_placement:
+
+Class Ifc4x1::IfcObjectPlacement
+================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcUtil::IfcBaseEntity`` (:ref:`exhale_class_class_ifc_util_1_1_ifc_base_entity`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x1::IfcGridPlacement`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_grid_placement`)
+- ``public Ifc4x1::IfcLinearPlacement`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_linear_placement`)
+- ``public Ifc4x1::IfcLocalPlacement`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_local_placement`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x1::IfcObjectPlacement
+   :members:
+   :protected-members:
+   :undoc-members:

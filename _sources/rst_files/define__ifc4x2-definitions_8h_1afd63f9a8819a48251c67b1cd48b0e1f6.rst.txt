@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1afd63f9a8819a48251c67b1cd48b0e1f6:
+
+Define SCHEMA_IfcVertexPoint_HAS_VertexGeometry
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcVertexPoint_HAS_VertexGeometry

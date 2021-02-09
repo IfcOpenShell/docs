@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a8c4fe31a3bde70db76a3fc6bc0218f5d:
+
+Define SCHEMA_HAS_IfcDoor
+=========================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcDoor

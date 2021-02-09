@@ -1,0 +1,43 @@
+.. _exhale_class_class_ifc4_1_1_ifc_material_definition:
+
+Class Ifc4::IfcMaterialDefinition
+=================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcUtil::IfcBaseEntity`` (:ref:`exhale_class_class_ifc_util_1_1_ifc_base_entity`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4::IfcMaterial`` (:ref:`exhale_class_class_ifc4_1_1_ifc_material`)
+- ``public Ifc4::IfcMaterialConstituent`` (:ref:`exhale_class_class_ifc4_1_1_ifc_material_constituent`)
+- ``public Ifc4::IfcMaterialConstituentSet`` (:ref:`exhale_class_class_ifc4_1_1_ifc_material_constituent_set`)
+- ``public Ifc4::IfcMaterialLayer`` (:ref:`exhale_class_class_ifc4_1_1_ifc_material_layer`)
+- ``public Ifc4::IfcMaterialLayerSet`` (:ref:`exhale_class_class_ifc4_1_1_ifc_material_layer_set`)
+- ``public Ifc4::IfcMaterialProfile`` (:ref:`exhale_class_class_ifc4_1_1_ifc_material_profile`)
+- ``public Ifc4::IfcMaterialProfileSet`` (:ref:`exhale_class_class_ifc4_1_1_ifc_material_profile_set`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4::IfcMaterialDefinition
+   :members:
+   :protected-members:
+   :undoc-members:

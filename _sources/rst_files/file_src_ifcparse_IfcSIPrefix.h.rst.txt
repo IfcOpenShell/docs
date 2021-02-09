@@ -1,0 +1,55 @@
+
+.. _file_src_ifcparse_IfcSIPrefix.h:
+
+File IfcSIPrefix.h
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcparse>` (``src/ifcparse``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/IfcSIPrefix.h``)
+-------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_IfcSIPrefix.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/IfcParse.h``
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcParse`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function__ifc_s_i_prefix_8h_1a8b6cecaeb4e7ebbc7128194bc716afbd`
+
+- :ref:`exhale_function__ifc_s_i_prefix_8h_1a5a9547a4b613aca44f1ecbbbabf798d9`
+

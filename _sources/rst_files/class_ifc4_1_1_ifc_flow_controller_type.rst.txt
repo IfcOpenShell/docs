@@ -1,0 +1,44 @@
+.. _exhale_class_class_ifc4_1_1_ifc_flow_controller_type:
+
+Class Ifc4::IfcFlowControllerType
+=================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4::IfcDistributionFlowElementType`` (:ref:`exhale_class_class_ifc4_1_1_ifc_distribution_flow_element_type`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4::IfcAirTerminalBoxType`` (:ref:`exhale_class_class_ifc4_1_1_ifc_air_terminal_box_type`)
+- ``public Ifc4::IfcDamperType`` (:ref:`exhale_class_class_ifc4_1_1_ifc_damper_type`)
+- ``public Ifc4::IfcElectricDistributionBoardType`` (:ref:`exhale_class_class_ifc4_1_1_ifc_electric_distribution_board_type`)
+- ``public Ifc4::IfcElectricTimeControlType`` (:ref:`exhale_class_class_ifc4_1_1_ifc_electric_time_control_type`)
+- ``public Ifc4::IfcFlowMeterType`` (:ref:`exhale_class_class_ifc4_1_1_ifc_flow_meter_type`)
+- ``public Ifc4::IfcProtectiveDeviceType`` (:ref:`exhale_class_class_ifc4_1_1_ifc_protective_device_type`)
+- ``public Ifc4::IfcSwitchingDeviceType`` (:ref:`exhale_class_class_ifc4_1_1_ifc_switching_device_type`)
+- ``public Ifc4::IfcValveType`` (:ref:`exhale_class_class_ifc4_1_1_ifc_valve_type`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4::IfcFlowControllerType
+   :members:
+   :protected-members:
+   :undoc-members:

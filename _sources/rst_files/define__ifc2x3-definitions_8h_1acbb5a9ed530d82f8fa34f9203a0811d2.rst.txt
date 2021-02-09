@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1acbb5a9ed530d82f8fa34f9203a0811d2:
+
+Define SCHEMA_HAS_IfcPlaneAngleMeasure
+======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcPlaneAngleMeasure

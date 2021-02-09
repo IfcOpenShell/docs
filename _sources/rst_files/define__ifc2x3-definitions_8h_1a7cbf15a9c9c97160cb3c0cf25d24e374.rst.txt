@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a7cbf15a9c9c97160cb3c0cf25d24e374:
+
+Define SCHEMA_IfcHeatExchangerType_HAS_PredefinedType
+=====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcHeatExchangerType_HAS_PredefinedType

@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcSectionProperties &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcSectionReinforcementProperties" href="class_ifc4x2_1_1_ifc_section_reinforcement_properties.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcSectionModulusMeasure" href="class_ifc4x2_1_1_ifc_section_modulus_measure.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcsectionproperties">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-section-properties"></span><h1>Class Ifc4x2::IfcSectionProperties<a class="headerlink" href="#class-ifc4x2-ifcsectionproperties" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcPreDefinedProperties</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_pre_defined_properties.html#exhale-class-class-ifc4x2-1-1-ifc-pre-defined-properties"><span class="std std-ref">Class Ifc4x2::IfcPreDefinedProperties</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x220IfcSectionPropertiesE">
+<span id="_CPPv3N6Ifc4x220IfcSectionPropertiesE"></span><span id="_CPPv2N6Ifc4x220IfcSectionPropertiesE"></span><span id="Ifc4x2::IfcSectionProperties"></span><span class="target" id="class_ifc4x2_1_1_ifc_section_properties"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcSectionProperties</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_pre_defined_properties.html#_CPPv4N6Ifc4x223IfcPreDefinedPropertiesE" title="Ifc4x2::IfcPreDefinedProperties">IfcPreDefinedProperties</a><a class="headerlink" href="#_CPPv4N6Ifc4x220IfcSectionPropertiesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_section_properties"><span class="std std-ref">IfcSectionProperties</span></a> defines the cross section properties for a single longitudinal piece of a cross section. It is a special-purpose helper class for <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_section_reinforcement_properties"><span class="std std-ref">IfcSectionReinforcementProperties</span></a>.</p>
+<p>HISTORY New entity in IFC2x2.</p>
+<p>The section piece may be either uniform or tapered. In the latter case an end profile should also be provided. The start and end profiles are assumed to be of the same profile type. Generally only rectangular or circular cross section profiles are assumed to be used. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x220IfcSectionProperties4listE">
+<span id="_CPPv3N6Ifc4x220IfcSectionProperties4listE"></span><span id="_CPPv2N6Ifc4x220IfcSectionProperties4listE"></span><span id="Ifc4x2::IfcSectionProperties::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_section_properties_1a2253be1257c6e5c489d8cfdd984729e9"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x220IfcSectionPropertiesE" title="Ifc4x2::IfcSectionProperties">IfcSectionProperties</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x220IfcSectionProperties4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x220IfcSectionProperties11SectionTypeEv">
+<span id="_CPPv3NK6Ifc4x220IfcSectionProperties11SectionTypeEv"></span><span id="_CPPv2NK6Ifc4x220IfcSectionProperties11SectionTypeEv"></span><span id="Ifc4x2::IfcSectionProperties::SectionTypeC"></span><span class="target" id="class_ifc4x2_1_1_ifc_section_properties_1adb1e7aa068077b61541fdb05db78a842"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x218IfcSectionTypeEnumE" title="Ifc4x2::IfcSectionTypeEnum">IfcSectionTypeEnum</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x218IfcSectionTypeEnum5ValueE" title="Ifc4x2::IfcSectionTypeEnum::Value">Value</a> <code class="sig-name descname">SectionType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x220IfcSectionProperties11SectionTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An indicator whether a specific piece of a cross section is uniform or tapered in longitudinal direction. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x220IfcSectionProperties14setSectionTypeEN6Ifc4x218IfcSectionTypeEnum5ValueE">
+<span id="_CPPv3N6Ifc4x220IfcSectionProperties14setSectionTypeEN6Ifc4x218IfcSectionTypeEnum5ValueE"></span><span id="_CPPv2N6Ifc4x220IfcSectionProperties14setSectionTypeEN6Ifc4x218IfcSectionTypeEnum5ValueE"></span><span id="Ifc4x2::IfcSectionProperties::setSectionType__Ifc4x2::IfcSectionTypeEnum::Value"></span><span class="target" id="class_ifc4x2_1_1_ifc_section_properties_1a69dcc6353a2c37ee371d2958e78d2aba"></span>void <code class="sig-name descname">setSectionType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x218IfcSectionTypeEnumE" title="Ifc4x2::IfcSectionTypeEnum">IfcSectionTypeEnum</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x218IfcSectionTypeEnum5ValueE" title="Ifc4x2::IfcSectionTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x220IfcSectionProperties14setSectionTypeEN6Ifc4x218IfcSectionTypeEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x220IfcSectionProperties12StartProfileEv">
+<span id="_CPPv3NK6Ifc4x220IfcSectionProperties12StartProfileEv"></span><span id="_CPPv2NK6Ifc4x220IfcSectionProperties12StartProfileEv"></span><span id="Ifc4x2::IfcSectionProperties::StartProfileC"></span><span class="target" id="class_ifc4x2_1_1_ifc_section_properties_1a7709a73bf8ff41a5f84691e3ffb53cdf"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_profile_def.html#_CPPv4N6Ifc4x213IfcProfileDefE" title="Ifc4x2::IfcProfileDef">IfcProfileDef</a> *<code class="sig-name descname">StartProfile</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x220IfcSectionProperties12StartProfileEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The cross section profile at the start point of the longitudinal section. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x220IfcSectionProperties15setStartProfileEPN6Ifc4x213IfcProfileDefE">
+<span id="_CPPv3N6Ifc4x220IfcSectionProperties15setStartProfileEPN6Ifc4x213IfcProfileDefE"></span><span id="_CPPv2N6Ifc4x220IfcSectionProperties15setStartProfileEPN6Ifc4x213IfcProfileDefE"></span><span id="Ifc4x2::IfcSectionProperties::setStartProfile__Ifc4x2::IfcProfileDefP"></span><span class="target" id="class_ifc4x2_1_1_ifc_section_properties_1ac17043e510d5696991458f99be006575"></span>void <code class="sig-name descname">setStartProfile</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_profile_def.html#_CPPv4N6Ifc4x213IfcProfileDefE" title="Ifc4x2::IfcProfileDef">IfcProfileDef</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x220IfcSectionProperties15setStartProfileEPN6Ifc4x213IfcProfileDefE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x220IfcSectionProperties13hasEndProfileEv">
+<span id="_CPPv3NK6Ifc4x220IfcSectionProperties13hasEndProfileEv"></span><span id="_CPPv2NK6Ifc4x220IfcSectionProperties13hasEndProfileEv"></span><span id="Ifc4x2::IfcSectionProperties::hasEndProfileC"></span><span class="target" id="class_ifc4x2_1_1_ifc_section_properties_1aa7620714c1b77c0b4e0a32f2d9b2bda6"></span>bool <code class="sig-name descname">hasEndProfile</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x220IfcSectionProperties13hasEndProfileEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute EndProfile is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_section_properties"><span class="std std-ref">IfcSectionProperties</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x220IfcSectionProperties10EndProfileEv">
+<span id="_CPPv3NK6Ifc4x220IfcSectionProperties10EndProfileEv"></span><span id="_CPPv2NK6Ifc4x220IfcSectionProperties10EndProfileEv"></span><span id="Ifc4x2::IfcSectionProperties::EndProfileC"></span><span class="target" id="class_ifc4x2_1_1_ifc_section_properties_1af95da48eccf8b9d17f6ce2a556cb4fd6"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_profile_def.html#_CPPv4N6Ifc4x213IfcProfileDefE" title="Ifc4x2::IfcProfileDef">IfcProfileDef</a> *<code class="sig-name descname">EndProfile</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x220IfcSectionProperties10EndProfileEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The cross section profile at the end point of the longitudinal section. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x220IfcSectionProperties13setEndProfileEPN6Ifc4x213IfcProfileDefE">
+<span id="_CPPv3N6Ifc4x220IfcSectionProperties13setEndProfileEPN6Ifc4x213IfcProfileDefE"></span><span id="_CPPv2N6Ifc4x220IfcSectionProperties13setEndProfileEPN6Ifc4x213IfcProfileDefE"></span><span id="Ifc4x2::IfcSectionProperties::setEndProfile__Ifc4x2::IfcProfileDefP"></span><span class="target" id="class_ifc4x2_1_1_ifc_section_properties_1af193c4c7af84b91267ca73fb8d77bba4"></span>void <code class="sig-name descname">setEndProfile</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_profile_def.html#_CPPv4N6Ifc4x213IfcProfileDefE" title="Ifc4x2::IfcProfileDef">IfcProfileDef</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x220IfcSectionProperties13setEndProfileEPN6Ifc4x213IfcProfileDefE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x220IfcSectionProperties11declarationEv">
+<span id="_CPPv3NK6Ifc4x220IfcSectionProperties11declarationEv"></span><span id="_CPPv2NK6Ifc4x220IfcSectionProperties11declarationEv"></span><span id="Ifc4x2::IfcSectionProperties::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_section_properties_1ada41260a95f7c6305a4b88647e1d3d07"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x220IfcSectionProperties11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x220IfcSectionProperties20IfcSectionPropertiesEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x220IfcSectionProperties20IfcSectionPropertiesEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x220IfcSectionProperties20IfcSectionPropertiesEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcSectionProperties::IfcSectionProperties__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_section_properties_1aa803db87684b3efafa3ddfc8c5b20077"></span><code class="sig-name descname">IfcSectionProperties</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x220IfcSectionProperties20IfcSectionPropertiesEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x220IfcSectionProperties20IfcSectionPropertiesEN6Ifc4x218IfcSectionTypeEnum5ValueEPN6Ifc4x213IfcProfileDefEPN6Ifc4x213IfcProfileDefE">
+<span id="_CPPv3N6Ifc4x220IfcSectionProperties20IfcSectionPropertiesEN6Ifc4x218IfcSectionTypeEnum5ValueEPN6Ifc4x213IfcProfileDefEPN6Ifc4x213IfcProfileDefE"></span><span id="_CPPv2N6Ifc4x220IfcSectionProperties20IfcSectionPropertiesEN6Ifc4x218IfcSectionTypeEnum5ValueEPN6Ifc4x213IfcProfileDefEPN6Ifc4x213IfcProfileDefE"></span><span id="Ifc4x2::IfcSectionProperties::IfcSectionProperties__Ifc4x2::IfcSectionTypeEnum::Value.Ifc4x2::IfcProfileDefP.Ifc4x2::IfcProfileDefP"></span><span class="target" id="class_ifc4x2_1_1_ifc_section_properties_1abca5006e0497ace56b32f1965aea7875"></span><code class="sig-name descname">IfcSectionProperties</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x218IfcSectionTypeEnumE" title="Ifc4x2::IfcSectionTypeEnum">IfcSectionTypeEnum</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x218IfcSectionTypeEnum5ValueE" title="Ifc4x2::IfcSectionTypeEnum::Value">Value</a> <em>v1_SectionType</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_profile_def.html#_CPPv4N6Ifc4x213IfcProfileDefE" title="Ifc4x2::IfcProfileDef">IfcProfileDef</a> *<em>v2_StartProfile</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_profile_def.html#_CPPv4N6Ifc4x213IfcProfileDefE" title="Ifc4x2::IfcProfileDef">IfcProfileDef</a> *<em>v3_EndProfile</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x220IfcSectionProperties20IfcSectionPropertiesEN6Ifc4x218IfcSectionTypeEnum5ValueEPN6Ifc4x213IfcProfileDefEPN6Ifc4x213IfcProfileDefE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x220IfcSectionProperties5ClassEv">
+<span id="_CPPv3N6Ifc4x220IfcSectionProperties5ClassEv"></span><span id="_CPPv2N6Ifc4x220IfcSectionProperties5ClassEv"></span><span id="Ifc4x2::IfcSectionProperties::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_section_properties_1afad076b50e0e885e6f3b12d3950621a2"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x220IfcSectionProperties5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_section_modulus_measure.html" title="previous chapter">Class Ifc4x2::IfcSectionModulusMeasure</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_section_reinforcement_properties.html" title="next chapter">Class Ifc4x2::IfcSectionReinforcementProperties</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_section_properties.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

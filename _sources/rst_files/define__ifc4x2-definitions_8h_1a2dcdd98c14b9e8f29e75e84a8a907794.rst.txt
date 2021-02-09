@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a2dcdd98c14b9e8f29e75e84a8a907794:
+
+Define SCHEMA_IfcRegularTimeSeries_HAS_TimeStep
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRegularTimeSeries_HAS_TimeStep

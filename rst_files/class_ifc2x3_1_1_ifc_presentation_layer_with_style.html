@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcPresentationLayerWithStyle &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcPresentationStyle" href="class_ifc2x3_1_1_ifc_presentation_style.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcPresentationLayerAssignment" href="class_ifc2x3_1_1_ifc_presentation_layer_assignment.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcpresentationlayerwithstyle">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-presentation-layer-with-style"></span><h1>Class Ifc2x3::IfcPresentationLayerWithStyle<a class="headerlink" href="#class-ifc2x3-ifcpresentationlayerwithstyle" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcPresentationLayerAssignment</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_presentation_layer_assignment.html#exhale-class-class-ifc2x3-1-1-ifc-presentation-layer-assignment"><span class="std std-ref">Class Ifc2x3::IfcPresentationLayerAssignment</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x329IfcPresentationLayerWithStyleE">
+<span id="_CPPv3N6Ifc2x329IfcPresentationLayerWithStyleE"></span><span id="_CPPv2N6Ifc2x329IfcPresentationLayerWithStyleE"></span><span id="Ifc2x3::IfcPresentationLayerWithStyle"></span><span class="target" id="class_ifc2x3_1_1_ifc_presentation_layer_with_style"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcPresentationLayerWithStyle</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_presentation_layer_assignment.html#_CPPv4N6Ifc2x330IfcPresentationLayerAssignmentE" title="Ifc2x3::IfcPresentationLayerAssignment">IfcPresentationLayerAssignment</a><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcPresentationLayerWithStyleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An IfcPresentationLayerAssignmentWithStyle extends the presentation layer assignment with capabilities to define visibility control, access control and common style information.</p>
+<p>The visibility control allows to define a layer to be either ‘on’ or ‘off’, and/or ‘frozen’ or ‘not frozen’. The access control allows to block graphical entities from manipulations by setting a layer to be either ‘blocked’ or ‘not blocked’. Common style information can be given to the layer.</p>
+<p>NOTE Style information assigned to layers is often restricted to ‘layer colour’, ‘curve font’, and/or ‘curve width’. These styles are assigned by using the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_curve_style"><span class="std std-ref">IfcCurveStyle</span></a> within the LayerStyles.</p>
+<p>NOTE: If a styled item is assigned to a layer using the IfcPresentationLayerAssignmentWithStyle, it inherits the style information from the layer. In this case, it should omit its own style information. If the styled item has style information assigned (such as by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_curve_style"><span class="std std-ref">IfcCurveStyle</span></a>, <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_fill_area_style"><span class="std std-ref">IfcFillAreaStyle</span></a>, <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_text_style"><span class="std std-ref">IfcTextStyle</span></a>, <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_surface_style"><span class="std std-ref">IfcSurfaceStyle</span></a>, <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_symbol_style"><span class="std std-ref">IfcSymbolStyle</span></a>), then it overrides the style provided by the IfcPresentationLayerAssignmentWithStyle.</p>
+<p>NOTE The IfcPresentationLayerAssignmentWithStyle extends the presentation_layer_assignment entity as defined in ISO/IS 10303-46:1994, p. 36.</p>
+<p>HISTORY New entity in IFC2x2.</p>
+<p>IFC2x3 CHANGE The attributes have been modified without upward compatibility. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x329IfcPresentationLayerWithStyle4listE">
+<span id="_CPPv3N6Ifc2x329IfcPresentationLayerWithStyle4listE"></span><span id="_CPPv2N6Ifc2x329IfcPresentationLayerWithStyle4listE"></span><span id="Ifc2x3::IfcPresentationLayerWithStyle::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_presentation_layer_with_style_1a43d690226755c4bbdebedb9d0fa756c6"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x329IfcPresentationLayerWithStyleE" title="Ifc2x3::IfcPresentationLayerWithStyle">IfcPresentationLayerWithStyle</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcPresentationLayerWithStyle4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x329IfcPresentationLayerWithStyle7LayerOnEv">
+<span id="_CPPv3NK6Ifc2x329IfcPresentationLayerWithStyle7LayerOnEv"></span><span id="_CPPv2NK6Ifc2x329IfcPresentationLayerWithStyle7LayerOnEv"></span><span id="Ifc2x3::IfcPresentationLayerWithStyle::LayerOnC"></span><span class="target" id="class_ifc2x3_1_1_ifc_presentation_layer_with_style_1ac6f93d856e4cedaee588d7d2343a9e59"></span>bool <code class="sig-name descname">LayerOn</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x329IfcPresentationLayerWithStyle7LayerOnEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A logical setting, TRUE indicates that the layer is set to ‘On’, FALSE that the layer is set to ‘Off’, UNKNOWN that such information is not available. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x329IfcPresentationLayerWithStyle10setLayerOnEb">
+<span id="_CPPv3N6Ifc2x329IfcPresentationLayerWithStyle10setLayerOnEb"></span><span id="_CPPv2N6Ifc2x329IfcPresentationLayerWithStyle10setLayerOnEb"></span><span id="Ifc2x3::IfcPresentationLayerWithStyle::setLayerOn__b"></span><span class="target" id="class_ifc2x3_1_1_ifc_presentation_layer_with_style_1ab37ec7b7f63df8c4f2f3f72e3900125b"></span>void <code class="sig-name descname">setLayerOn</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcPresentationLayerWithStyle10setLayerOnEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x329IfcPresentationLayerWithStyle11LayerFrozenEv">
+<span id="_CPPv3NK6Ifc2x329IfcPresentationLayerWithStyle11LayerFrozenEv"></span><span id="_CPPv2NK6Ifc2x329IfcPresentationLayerWithStyle11LayerFrozenEv"></span><span id="Ifc2x3::IfcPresentationLayerWithStyle::LayerFrozenC"></span><span class="target" id="class_ifc2x3_1_1_ifc_presentation_layer_with_style_1aead7db908e6dc2787140320f5ddedc07"></span>bool <code class="sig-name descname">LayerFrozen</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x329IfcPresentationLayerWithStyle11LayerFrozenEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A logical setting, TRUE indicates that the layer is set to ‘Frozen’, FALSE that the layer is set to ‘Not frozen’, UNKNOWN that such information is not available. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x329IfcPresentationLayerWithStyle14setLayerFrozenEb">
+<span id="_CPPv3N6Ifc2x329IfcPresentationLayerWithStyle14setLayerFrozenEb"></span><span id="_CPPv2N6Ifc2x329IfcPresentationLayerWithStyle14setLayerFrozenEb"></span><span id="Ifc2x3::IfcPresentationLayerWithStyle::setLayerFrozen__b"></span><span class="target" id="class_ifc2x3_1_1_ifc_presentation_layer_with_style_1a1d6cc7fa4d4258122d6b013c68a44358"></span>void <code class="sig-name descname">setLayerFrozen</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcPresentationLayerWithStyle14setLayerFrozenEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x329IfcPresentationLayerWithStyle12LayerBlockedEv">
+<span id="_CPPv3NK6Ifc2x329IfcPresentationLayerWithStyle12LayerBlockedEv"></span><span id="_CPPv2NK6Ifc2x329IfcPresentationLayerWithStyle12LayerBlockedEv"></span><span id="Ifc2x3::IfcPresentationLayerWithStyle::LayerBlockedC"></span><span class="target" id="class_ifc2x3_1_1_ifc_presentation_layer_with_style_1a6f1598ef32718bdc53bd1c89b3593841"></span>bool <code class="sig-name descname">LayerBlocked</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x329IfcPresentationLayerWithStyle12LayerBlockedEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A logical setting, TRUE indicates that the layer is set to ‘Blocked’, FALSE that the layer is set to ‘Not blocked’, UNKNOWN that such information is not available. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x329IfcPresentationLayerWithStyle15setLayerBlockedEb">
+<span id="_CPPv3N6Ifc2x329IfcPresentationLayerWithStyle15setLayerBlockedEb"></span><span id="_CPPv2N6Ifc2x329IfcPresentationLayerWithStyle15setLayerBlockedEb"></span><span id="Ifc2x3::IfcPresentationLayerWithStyle::setLayerBlocked__b"></span><span class="target" id="class_ifc2x3_1_1_ifc_presentation_layer_with_style_1a82ee5f0c46ed153ef6d66e838f0c1e8f"></span>void <code class="sig-name descname">setLayerBlocked</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcPresentationLayerWithStyle15setLayerBlockedEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x329IfcPresentationLayerWithStyle11LayerStylesEv">
+<span id="_CPPv3NK6Ifc2x329IfcPresentationLayerWithStyle11LayerStylesEv"></span><span id="_CPPv2NK6Ifc2x329IfcPresentationLayerWithStyle11LayerStylesEv"></span><span id="Ifc2x3::IfcPresentationLayerWithStyle::LayerStylesC"></span><span class="target" id="class_ifc2x3_1_1_ifc_presentation_layer_with_style_1a64fa4727adcbbee4144b4ca78bd66f44"></span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <code class="sig-name descname">LayerStyles</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x329IfcPresentationLayerWithStyle11LayerStylesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Assignment of presentation styles to the layer to provide a default style for representation items.</p>
+<p>NOTE In most cases the assignment of styles to a layer is restricted to an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_curve_style"><span class="std std-ref">IfcCurveStyle</span></a> representing the layer curve colour, layer curve thickness, and layer curve type.</p>
+<p>IFC2x4 CHANGE The data type has been changed from IfcPresentationStyleSelect (now deprecated) to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_presentation_style"><span class="std std-ref">IfcPresentationStyle</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x329IfcPresentationLayerWithStyle14setLayerStylesEN13IfcEntityList3ptrE">
+<span id="_CPPv3N6Ifc2x329IfcPresentationLayerWithStyle14setLayerStylesEN13IfcEntityList3ptrE"></span><span id="_CPPv2N6Ifc2x329IfcPresentationLayerWithStyle14setLayerStylesEN13IfcEntityList3ptrE"></span><span id="Ifc2x3::IfcPresentationLayerWithStyle::setLayerStyles__IfcEntityList::ptr"></span><span class="target" id="class_ifc2x3_1_1_ifc_presentation_layer_with_style_1ad940c0f41a9f9f3fb9c045dbef3430af"></span>void <code class="sig-name descname">setLayerStyles</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcPresentationLayerWithStyle14setLayerStylesEN13IfcEntityList3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x329IfcPresentationLayerWithStyle11declarationEv">
+<span id="_CPPv3NK6Ifc2x329IfcPresentationLayerWithStyle11declarationEv"></span><span id="_CPPv2NK6Ifc2x329IfcPresentationLayerWithStyle11declarationEv"></span><span id="Ifc2x3::IfcPresentationLayerWithStyle::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_presentation_layer_with_style_1ab153772e6b48a2297f0788777adcd1b5"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x329IfcPresentationLayerWithStyle11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x329IfcPresentationLayerWithStyle29IfcPresentationLayerWithStyleEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x329IfcPresentationLayerWithStyle29IfcPresentationLayerWithStyleEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x329IfcPresentationLayerWithStyle29IfcPresentationLayerWithStyleEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcPresentationLayerWithStyle::IfcPresentationLayerWithStyle__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_presentation_layer_with_style_1ad320118f71afa5addb8efd7c02731cbb"></span><code class="sig-name descname">IfcPresentationLayerWithStyle</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcPresentationLayerWithStyle29IfcPresentationLayerWithStyleEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x329IfcPresentationLayerWithStyle29IfcPresentationLayerWithStyleENSt6stringEN5boost8optionalINSt6stringEEEN13IfcEntityList3ptrEN5boost8optionalINSt6stringEEEbbbN13IfcEntityList3ptrE">
+<span id="_CPPv3N6Ifc2x329IfcPresentationLayerWithStyle29IfcPresentationLayerWithStyleENSt6stringEN5boost8optionalINSt6stringEEEN13IfcEntityList3ptrEN5boost8optionalINSt6stringEEEbbbN13IfcEntityList3ptrE"></span><span id="_CPPv2N6Ifc2x329IfcPresentationLayerWithStyle29IfcPresentationLayerWithStyleENSt6stringEN5boost8optionalINSt6stringEEEN13IfcEntityList3ptrEN5boost8optionalINSt6stringEEEbbbN13IfcEntityList3ptrE"></span><span id="Ifc2x3::IfcPresentationLayerWithStyle::IfcPresentationLayerWithStyle__ss.boost::optional:ss:.IfcEntityList::ptr.boost::optional:ss:.b.b.b.IfcEntityList::ptr"></span><span class="target" id="class_ifc2x3_1_1_ifc_presentation_layer_with_style_1a73f56a32caba22c1125dd1203e0a79c1"></span><code class="sig-name descname">IfcPresentationLayerWithStyle</code><span class="sig-paren">(</span>std::string <em>v1_Name</em>, boost::optional&lt;std::string&gt; <em>v2_Description</em>, <a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <em>v3_AssignedItems</em>, boost::optional&lt;std::string&gt; <em>v4_Identifier</em>, bool <em>v5_LayerOn</em>, bool <em>v6_LayerFrozen</em>, bool <em>v7_LayerBlocked</em>, <a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <em>v8_LayerStyles</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcPresentationLayerWithStyle29IfcPresentationLayerWithStyleENSt6stringEN5boost8optionalINSt6stringEEEN13IfcEntityList3ptrEN5boost8optionalINSt6stringEEEbbbN13IfcEntityList3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x329IfcPresentationLayerWithStyle5ClassEv">
+<span id="_CPPv3N6Ifc2x329IfcPresentationLayerWithStyle5ClassEv"></span><span id="_CPPv2N6Ifc2x329IfcPresentationLayerWithStyle5ClassEv"></span><span id="Ifc2x3::IfcPresentationLayerWithStyle::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_presentation_layer_with_style_1ae52863b2ea76cf3216b0df0d198b44b9"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcPresentationLayerWithStyle5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_presentation_layer_assignment.html" title="previous chapter">Class Ifc2x3::IfcPresentationLayerAssignment</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_presentation_style.html" title="next chapter">Class Ifc2x3::IfcPresentationStyle</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_presentation_layer_with_style.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

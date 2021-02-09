@@ -1,0 +1,16 @@
+.. _exhale_class_class_ifc_parse_1_1instance__factory:
+
+Class instance_factory
+======================
+
+- Defined in :ref:`file_src_ifcparse_IfcSchema.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcParse::instance_factory
+   :members:
+   :protected-members:
+   :undoc-members:

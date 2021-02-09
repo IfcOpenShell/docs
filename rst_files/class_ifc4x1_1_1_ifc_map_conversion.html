@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcMapConversion &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcMappedItem" href="class_ifc4x1_1_1_ifc_mapped_item.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcManifoldSolidBrep" href="class_ifc4x1_1_1_ifc_manifold_solid_brep.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcmapconversion">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-map-conversion"></span><h1>Class Ifc4x1::IfcMapConversion<a class="headerlink" href="#class-ifc4x1-ifcmapconversion" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcCoordinateOperation</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_coordinate_operation.html#exhale-class-class-ifc4x1-1-1-ifc-coordinate-operation"><span class="std std-ref">Class Ifc4x1::IfcCoordinateOperation</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x116IfcMapConversionE">
+<span id="_CPPv3N6Ifc4x116IfcMapConversionE"></span><span id="_CPPv2N6Ifc4x116IfcMapConversionE"></span><span id="Ifc4x1::IfcMapConversion"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcMapConversion</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_coordinate_operation.html#_CPPv4N6Ifc4x122IfcCoordinateOperationE" title="Ifc4x1::IfcCoordinateOperation">IfcCoordinateOperation</a><a class="headerlink" href="#_CPPv4N6Ifc4x116IfcMapConversionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The map conversion deals with transforming the local engineering coordinate system, often called world coordinate system, into the coordinate reference system of the underlying map.</p>
+<p>NOTE The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_map_conversion"><span class="std std-ref">IfcMapConversion</span></a> does not handle the projection of a map from the geodetic coordinate reference system.</p>
+<p>The map conversion allows to convert the local origin of the local engineering coordinate system to its place within a map (easting, northing, orthogonal height) and to rotate the x-axis of the local engineering coordinate system within the horizontal (easting/westing) plane of the map.</p>
+<p>NOTE The z axis of the local engineering coordinate system is always parallel to the z axis of the map coordinate system.</p>
+<p>The scale factor can be used when the length unit for the 3 axes of the map coordinate system are not identical with the length unit established for this project (seeIfcProject.UnitsInContext), if omitted, the scale factor 1.0 is assumed.</p>
+<p>HISTORY New entity in IFC2x4. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x116IfcMapConversion4listE">
+<span id="_CPPv3N6Ifc4x116IfcMapConversion4listE"></span><span id="_CPPv2N6Ifc4x116IfcMapConversion4listE"></span><span id="Ifc4x1::IfcMapConversion::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1a369a1cabb95192b9564ff94622d49088"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x116IfcMapConversionE" title="Ifc4x1::IfcMapConversion">IfcMapConversion</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x116IfcMapConversion4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x116IfcMapConversion8EastingsEv">
+<span id="_CPPv3NK6Ifc4x116IfcMapConversion8EastingsEv"></span><span id="_CPPv2NK6Ifc4x116IfcMapConversion8EastingsEv"></span><span id="Ifc4x1::IfcMapConversion::EastingsC"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1aa03dfcf1abe130c8efc17df7a2e0b5df"></span>double <code class="sig-name descname">Eastings</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x116IfcMapConversion8EastingsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Specifies the location along the easting of the coordinate system of the target map coordinate reference system. NOTE for right-handed Cartesian coordinate systems this would establish the location along the x axis </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x116IfcMapConversion11setEastingsEd">
+<span id="_CPPv3N6Ifc4x116IfcMapConversion11setEastingsEd"></span><span id="_CPPv2N6Ifc4x116IfcMapConversion11setEastingsEd"></span><span id="Ifc4x1::IfcMapConversion::setEastings__double"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1ace086234f28746f670e83298b6a853b1"></span>void <code class="sig-name descname">setEastings</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x116IfcMapConversion11setEastingsEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x116IfcMapConversion9NorthingsEv">
+<span id="_CPPv3NK6Ifc4x116IfcMapConversion9NorthingsEv"></span><span id="_CPPv2NK6Ifc4x116IfcMapConversion9NorthingsEv"></span><span id="Ifc4x1::IfcMapConversion::NorthingsC"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1a210af3c4ecb91a8e74114e542db7d068"></span>double <code class="sig-name descname">Northings</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x116IfcMapConversion9NorthingsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Specifies the location along the northing of the coordinate system of the target map coordinate reference system. NOTE for right-handed Cartesian coordinate systems this would establish the location along the y axis </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x116IfcMapConversion12setNorthingsEd">
+<span id="_CPPv3N6Ifc4x116IfcMapConversion12setNorthingsEd"></span><span id="_CPPv2N6Ifc4x116IfcMapConversion12setNorthingsEd"></span><span id="Ifc4x1::IfcMapConversion::setNorthings__double"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1a622afa27ae224a24b6727286b7b0e3a2"></span>void <code class="sig-name descname">setNorthings</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x116IfcMapConversion12setNorthingsEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x116IfcMapConversion16OrthogonalHeightEv">
+<span id="_CPPv3NK6Ifc4x116IfcMapConversion16OrthogonalHeightEv"></span><span id="_CPPv2NK6Ifc4x116IfcMapConversion16OrthogonalHeightEv"></span><span id="Ifc4x1::IfcMapConversion::OrthogonalHeightC"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1a30643d77341f9b6c3292b25f3e8ae0a4"></span>double <code class="sig-name descname">OrthogonalHeight</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x116IfcMapConversion16OrthogonalHeightEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Orthogonal height relativ to the vertical datum specified. NOTE for right-handed Cartesian coordinate systems this would establish the location along the z axis </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x116IfcMapConversion19setOrthogonalHeightEd">
+<span id="_CPPv3N6Ifc4x116IfcMapConversion19setOrthogonalHeightEd"></span><span id="_CPPv2N6Ifc4x116IfcMapConversion19setOrthogonalHeightEd"></span><span id="Ifc4x1::IfcMapConversion::setOrthogonalHeight__double"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1aa718c2af63b12c0f668c9e348d3da5e9"></span>void <code class="sig-name descname">setOrthogonalHeight</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x116IfcMapConversion19setOrthogonalHeightEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x116IfcMapConversion16hasXAxisAbscissaEv">
+<span id="_CPPv3NK6Ifc4x116IfcMapConversion16hasXAxisAbscissaEv"></span><span id="_CPPv2NK6Ifc4x116IfcMapConversion16hasXAxisAbscissaEv"></span><span id="Ifc4x1::IfcMapConversion::hasXAxisAbscissaC"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1a0d82f8c592d8cbf01c619605271f112e"></span>bool <code class="sig-name descname">hasXAxisAbscissa</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x116IfcMapConversion16hasXAxisAbscissaEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute XAxisAbscissa is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_map_conversion"><span class="std std-ref">IfcMapConversion</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x116IfcMapConversion13XAxisAbscissaEv">
+<span id="_CPPv3NK6Ifc4x116IfcMapConversion13XAxisAbscissaEv"></span><span id="_CPPv2NK6Ifc4x116IfcMapConversion13XAxisAbscissaEv"></span><span id="Ifc4x1::IfcMapConversion::XAxisAbscissaC"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1adbeb6f0e3f563809b1acd202da60fa88"></span>double <code class="sig-name descname">XAxisAbscissa</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x116IfcMapConversion13XAxisAbscissaEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Specifies the value along the easing axis of the end point of a vector indicating the position of the local x axis of the engineering coordinate reference system. NOTE for right-handed Cartesian coordinate systems this would establish the location along the x axis NOTE together with the XAxisOrdinate it provides the direction of the local x axis within the horizontal plane of the map coordinate system </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x116IfcMapConversion16setXAxisAbscissaEd">
+<span id="_CPPv3N6Ifc4x116IfcMapConversion16setXAxisAbscissaEd"></span><span id="_CPPv2N6Ifc4x116IfcMapConversion16setXAxisAbscissaEd"></span><span id="Ifc4x1::IfcMapConversion::setXAxisAbscissa__double"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1aa904685a9218178eda9ccced922a965d"></span>void <code class="sig-name descname">setXAxisAbscissa</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x116IfcMapConversion16setXAxisAbscissaEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x116IfcMapConversion16hasXAxisOrdinateEv">
+<span id="_CPPv3NK6Ifc4x116IfcMapConversion16hasXAxisOrdinateEv"></span><span id="_CPPv2NK6Ifc4x116IfcMapConversion16hasXAxisOrdinateEv"></span><span id="Ifc4x1::IfcMapConversion::hasXAxisOrdinateC"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1a9585f5d52e8693df23aa00393c35af5b"></span>bool <code class="sig-name descname">hasXAxisOrdinate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x116IfcMapConversion16hasXAxisOrdinateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute XAxisOrdinate is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_map_conversion"><span class="std std-ref">IfcMapConversion</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x116IfcMapConversion13XAxisOrdinateEv">
+<span id="_CPPv3NK6Ifc4x116IfcMapConversion13XAxisOrdinateEv"></span><span id="_CPPv2NK6Ifc4x116IfcMapConversion13XAxisOrdinateEv"></span><span id="Ifc4x1::IfcMapConversion::XAxisOrdinateC"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1adaa8aa93a993f963dea3d8ee130c9ded"></span>double <code class="sig-name descname">XAxisOrdinate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x116IfcMapConversion13XAxisOrdinateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Specifies the value along the northing axis of the end point of a vector indicating the position of the local x axis of the engineering coordinate reference system. NOTE for right-handed Cartesian coordinate systems this would establish the location along the y axis NOTE together with the XAxisAbscissa it provides the direction of the local x axis within the horizontal plane of the map coordinate system </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x116IfcMapConversion16setXAxisOrdinateEd">
+<span id="_CPPv3N6Ifc4x116IfcMapConversion16setXAxisOrdinateEd"></span><span id="_CPPv2N6Ifc4x116IfcMapConversion16setXAxisOrdinateEd"></span><span id="Ifc4x1::IfcMapConversion::setXAxisOrdinate__double"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1af06b23ac7b6646d02c487764ae639af4"></span>void <code class="sig-name descname">setXAxisOrdinate</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x116IfcMapConversion16setXAxisOrdinateEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x116IfcMapConversion8hasScaleEv">
+<span id="_CPPv3NK6Ifc4x116IfcMapConversion8hasScaleEv"></span><span id="_CPPv2NK6Ifc4x116IfcMapConversion8hasScaleEv"></span><span id="Ifc4x1::IfcMapConversion::hasScaleC"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1a369213e42dc7bc65e029d293113635eb"></span>bool <code class="sig-name descname">hasScale</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x116IfcMapConversion8hasScaleEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Scale is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_map_conversion"><span class="std std-ref">IfcMapConversion</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x116IfcMapConversion5ScaleEv">
+<span id="_CPPv3NK6Ifc4x116IfcMapConversion5ScaleEv"></span><span id="_CPPv2NK6Ifc4x116IfcMapConversion5ScaleEv"></span><span id="Ifc4x1::IfcMapConversion::ScaleC"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1ac6800aabc0afd8722086ba0789b1fbfe"></span>double <code class="sig-name descname">Scale</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x116IfcMapConversion5ScaleEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Scale to be used, when the units of the CRS are not identical to the units of the engineering coordinate system. If omited, the value of 1.0 is assumed. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x116IfcMapConversion8setScaleEd">
+<span id="_CPPv3N6Ifc4x116IfcMapConversion8setScaleEd"></span><span id="_CPPv2N6Ifc4x116IfcMapConversion8setScaleEd"></span><span id="Ifc4x1::IfcMapConversion::setScale__double"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1a412f897ac4d41721e675b355300ff825"></span>void <code class="sig-name descname">setScale</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x116IfcMapConversion8setScaleEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x116IfcMapConversion11declarationEv">
+<span id="_CPPv3NK6Ifc4x116IfcMapConversion11declarationEv"></span><span id="_CPPv2NK6Ifc4x116IfcMapConversion11declarationEv"></span><span id="Ifc4x1::IfcMapConversion::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1a33315eeff4f971352d18dbbf3dd0b6e9"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x116IfcMapConversion11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x116IfcMapConversion16IfcMapConversionEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x116IfcMapConversion16IfcMapConversionEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x116IfcMapConversion16IfcMapConversionEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcMapConversion::IfcMapConversion__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1a4a4f53abde9157e4576d8ae332fbcfe0"></span><code class="sig-name descname">IfcMapConversion</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x116IfcMapConversion16IfcMapConversionEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x116IfcMapConversion16IfcMapConversionEPN6Ifc4x134IfcCoordinateReferenceSystemSelectEPN6Ifc4x128IfcCoordinateReferenceSystemEdddN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEE">
+<span id="_CPPv3N6Ifc4x116IfcMapConversion16IfcMapConversionEPN6Ifc4x134IfcCoordinateReferenceSystemSelectEPN6Ifc4x128IfcCoordinateReferenceSystemEdddN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEE"></span><span id="_CPPv2N6Ifc4x116IfcMapConversion16IfcMapConversionEPN6Ifc4x134IfcCoordinateReferenceSystemSelectEPN6Ifc4x128IfcCoordinateReferenceSystemEdddN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEE"></span><span id="Ifc4x1::IfcMapConversion::IfcMapConversion__Ifc4x1::IfcCoordinateReferenceSystemSelectP.Ifc4x1::IfcCoordinateReferenceSystemP.double.double.double.boost::optional:double:.boost::optional:double:.boost::optional:double:"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1aadf3c24aee80347efd52cb5560b4b011"></span><code class="sig-name descname">IfcMapConversion</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x134IfcCoordinateReferenceSystemSelectE" title="Ifc4x1::IfcCoordinateReferenceSystemSelect">IfcCoordinateReferenceSystemSelect</a> *<em>v1_SourceCRS</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_coordinate_reference_system.html#_CPPv4N6Ifc4x128IfcCoordinateReferenceSystemE" title="Ifc4x1::IfcCoordinateReferenceSystem">IfcCoordinateReferenceSystem</a> *<em>v2_TargetCRS</em>, double <em>v3_Eastings</em>, double <em>v4_Northings</em>, double <em>v5_OrthogonalHeight</em>, boost::optional&lt;double&gt; <em>v6_XAxisAbscissa</em>, boost::optional&lt;double&gt; <em>v7_XAxisOrdinate</em>, boost::optional&lt;double&gt; <em>v8_Scale</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x116IfcMapConversion16IfcMapConversionEPN6Ifc4x134IfcCoordinateReferenceSystemSelectEPN6Ifc4x128IfcCoordinateReferenceSystemEdddN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x116IfcMapConversion5ClassEv">
+<span id="_CPPv3N6Ifc4x116IfcMapConversion5ClassEv"></span><span id="_CPPv2N6Ifc4x116IfcMapConversion5ClassEv"></span><span id="Ifc4x1::IfcMapConversion::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_map_conversion_1a7fd60b3338ffa8e6f6f76df5a205272b"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x116IfcMapConversion5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_manifold_solid_brep.html" title="previous chapter">Class Ifc4x1::IfcManifoldSolidBrep</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_mapped_item.html" title="next chapter">Class Ifc4x1::IfcMappedItem</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_map_conversion.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

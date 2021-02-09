@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1aa41b57885905dc0febd12ca09cbba292:
+
+Define SCHEMA_IfcTimeSeries_HAS_DataOrigin
+==========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTimeSeries_HAS_DataOrigin

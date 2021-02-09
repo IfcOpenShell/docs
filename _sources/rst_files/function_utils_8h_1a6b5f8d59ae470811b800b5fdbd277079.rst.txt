@@ -1,0 +1,13 @@
+.. _exhale_function_utils_8h_1a6b5f8d59ae470811b800b5fdbd277079:
+
+Function IfcUtil::path::delete_file
+===================================
+
+- Defined in :ref:`file_src_ifcparse_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcUtil::path::delete_file(const std::string&)

@@ -1,0 +1,26 @@
+.. _exhale_struct_struct_ifc_geom_1_1filter:
+
+Struct filter
+=============
+
+- Defined in :ref:`file_src_ifcgeom_schema_agnostic_IfcGeomFilter.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public IfcGeom::entity_filter`` (:ref:`exhale_struct_struct_ifc_geom_1_1entity__filter`)
+- ``public IfcGeom::wildcard_filter`` (:ref:`exhale_struct_struct_ifc_geom_1_1wildcard__filter`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: IfcGeom::filter
+   :members:
+   :protected-members:
+   :undoc-members:

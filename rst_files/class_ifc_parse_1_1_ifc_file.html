@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class IfcFile &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class IfcFile::type_iterator" href="class_ifc_parse_1_1_ifc_file_1_1type__iterator.html" />
+    <link rel="prev" title="Class IfcException" href="class_ifc_parse_1_1_ifc_exception.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifcfile">
+<span id="exhale-class-class-ifc-parse-1-1-ifc-file"></span><h1>Class IfcFile<a class="headerlink" href="#class-ifcfile" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_IfcFile.h.html#file-src-ifcparse-ifcfile-h"><span class="std std-ref">File IfcFile.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="nested-types">
+<h3>Nested Types<a class="headerlink" href="#nested-types" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="class_ifc_parse_1_1_ifc_file_1_1type__iterator.html#exhale-class-class-ifc-parse-1-1-ifc-file-1-1type-iterator"><span class="std std-ref">Class IfcFile::type_iterator</span></a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="derived-type">
+<h3>Derived Type<a class="headerlink" href="#derived-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">IfcHierarchyHelper&lt;</span> <span class="pre">Schema</span> <span class="pre">&gt;</span></code> (<a class="reference internal" href="class_ifc_hierarchy_helper.html#exhale-class-class-ifc-hierarchy-helper"><span class="std std-ref">Template Class IfcHierarchyHelper</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N8IfcParse7IfcFileE">
+<span id="_CPPv3N8IfcParse7IfcFileE"></span><span id="_CPPv2N8IfcParse7IfcFileE"></span><span id="IfcParse::IfcFile"></span><span class="target" id="class_ifc_parse_1_1_ifc_file"></span><em class="property">class </em><code class="sig-prename descclassname">IfcParse<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcFile</code><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFileE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>This class provides several static convenience functions and variables and provide access to the entities in an IFC file </p>
+<p>Subclassed by <a class="reference internal" href="class_ifc_hierarchy_helper.html#class_ifc_hierarchy_helper"><span class="std std-ref">IfcHierarchyHelper&lt; Schema &gt;</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N8IfcParse7IfcFile18entities_by_type_tE">
+<span id="_CPPv3N8IfcParse7IfcFile18entities_by_type_tE"></span><span id="_CPPv2N8IfcParse7IfcFile18entities_by_type_tE"></span><span id="IfcParse::IfcFile::entities_by_type_t"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a7a249dac2eb626627a9c197a47021041"></span><em class="property">typedef </em>std::map&lt;<em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1declaration.html#_CPPv4N8IfcParse11declarationE" title="IfcParse::declaration">declaration</a>*, <a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a>&gt; <code class="sig-name descname">entities_by_type_t</code><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile18entities_by_type_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt id="_CPPv4N8IfcParse7IfcFile14entity_by_id_tE">
+<span id="_CPPv3N8IfcParse7IfcFile14entity_by_id_tE"></span><span id="_CPPv2N8IfcParse7IfcFile14entity_by_id_tE"></span><span id="IfcParse::IfcFile::entity_by_id_t"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1acde37f64c492b1f68926363f7ad938f2"></span><em class="property">typedef </em>boost::unordered_map&lt;unsigned int, IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a>*&gt; <code class="sig-name descname">entity_by_id_t</code><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile14entity_by_id_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt id="_CPPv4N8IfcParse7IfcFile16entity_by_guid_tE">
+<span id="_CPPv3N8IfcParse7IfcFile16entity_by_guid_tE"></span><span id="_CPPv2N8IfcParse7IfcFile16entity_by_guid_tE"></span><span id="IfcParse::IfcFile::entity_by_guid_t"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1aeae4effea964c9ff0e8f9e4793ab661d"></span><em class="property">typedef </em>std::map&lt;std::string, IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a>*&gt; <code class="sig-name descname">entity_by_guid_t</code><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile16entity_by_guid_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt id="_CPPv4N8IfcParse7IfcFile17entities_by_ref_tE">
+<span id="_CPPv3N8IfcParse7IfcFile17entities_by_ref_tE"></span><span id="_CPPv2N8IfcParse7IfcFile17entities_by_ref_tE"></span><span id="IfcParse::IfcFile::entities_by_ref_t"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a9f473bcc31c8976a2efe24a79f3f295c"></span><em class="property">typedef </em>std::map&lt;unsigned int, std::vector&lt;unsigned int&gt;&gt; <code class="sig-name descname">entities_by_ref_t</code><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile17entities_by_ref_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt id="_CPPv4N8IfcParse7IfcFile9ref_map_tE">
+<span id="_CPPv3N8IfcParse7IfcFile9ref_map_tE"></span><span id="_CPPv2N8IfcParse7IfcFile9ref_map_tE"></span><span id="IfcParse::IfcFile::ref_map_t"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a639eec2df04ecbb9c03146c33dc8bdff"></span><em class="property">typedef </em>std::map&lt;unsigned int, <a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a>&gt; <code class="sig-name descname">ref_map_t</code><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile9ref_map_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt id="_CPPv4N8IfcParse7IfcFile14const_iteratorE">
+<span id="_CPPv3N8IfcParse7IfcFile14const_iteratorE"></span><span id="_CPPv2N8IfcParse7IfcFile14const_iteratorE"></span><span id="IfcParse::IfcFile::const_iterator"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a9aff335865a08956346e8f2bddcac41c"></span><em class="property">typedef </em><a class="reference internal" href="#_CPPv4N8IfcParse7IfcFile14entity_by_id_tE" title="IfcParse::IfcFile::entity_by_id_t">entity_by_id_t</a>::const_iterator <code class="sig-name descname">const_iterator</code><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile14const_iteratorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile7IfcFileERKNSt6stringE">
+<span id="_CPPv3N8IfcParse7IfcFile7IfcFileERKNSt6stringE"></span><span id="_CPPv2N8IfcParse7IfcFile7IfcFileERKNSt6stringE"></span><span id="IfcParse::IfcFile::IfcFile__ssCR"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1acd615519e6b4bffce3d96b953f1c86f8"></span><code class="sig-name descname">IfcFile</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>fn</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile7IfcFileERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile7IfcFileERNSt7istreamEi">
+<span id="_CPPv3N8IfcParse7IfcFile7IfcFileERNSt7istreamEi"></span><span id="_CPPv2N8IfcParse7IfcFile7IfcFileERNSt7istreamEi"></span><span id="IfcParse::IfcFile::IfcFile__isR.i"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1ae11a1acc294f860213695652e4860776"></span><code class="sig-name descname">IfcFile</code><span class="sig-paren">(</span>std::istream &amp;<em>fn</em>, int <em>len</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile7IfcFileERNSt7istreamEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile7IfcFileEPvi">
+<span id="_CPPv3N8IfcParse7IfcFile7IfcFileEPvi"></span><span id="_CPPv2N8IfcParse7IfcFile7IfcFileEPvi"></span><span id="IfcParse::IfcFile::IfcFile__voidP.i"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a24a2c338cb2f457a1d02ecb17a51e903"></span><code class="sig-name descname">IfcFile</code><span class="sig-paren">(</span>void *<em>data</em>, int <em>len</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile7IfcFileEPvi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile7IfcFileEPN8IfcParse12IfcSpfStreamE">
+<span id="_CPPv3N8IfcParse7IfcFile7IfcFileEPN8IfcParse12IfcSpfStreamE"></span><span id="_CPPv2N8IfcParse7IfcFile7IfcFileEPN8IfcParse12IfcSpfStreamE"></span><span id="IfcParse::IfcFile::IfcFile__IfcParse::IfcSpfStreamP"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1ad1ee40ee2548b51bb29bfb80b89c2a19"></span><code class="sig-name descname">IfcFile</code><span class="sig-paren">(</span>IfcParse::<a class="reference internal" href="class_ifc_parse_1_1_ifc_spf_stream.html#_CPPv4N8IfcParse12IfcSpfStreamE" title="IfcParse::IfcSpfStream">IfcSpfStream</a> *<em>f</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile7IfcFileEPN8IfcParse12IfcSpfStreamE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile7IfcFileEPKN8IfcParse17schema_definitionE">
+<span id="_CPPv3N8IfcParse7IfcFile7IfcFileEPKN8IfcParse17schema_definitionE"></span><span id="_CPPv2N8IfcParse7IfcFile7IfcFileEPKN8IfcParse17schema_definitionE"></span><span id="IfcParse::IfcFile::IfcFile__IfcParse::schema_definitionCP"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a0d7734a3dcd09566b4e722d6e44168d2"></span><code class="sig-name descname">IfcFile</code><span class="sig-paren">(</span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1schema__definition.html#_CPPv4N8IfcParse17schema_definitionE" title="IfcParse::schema_definition">schema_definition</a> *<em>schema</em> = IfcParse::<a class="reference internal" href="function__ifc_schema_8h_1a8be80940facb7ce9c2eb74bc29ba4061.html#_CPPv4N8IfcParse14schema_by_nameERKNSt6stringE" title="IfcParse::schema_by_name">schema_by_name</a>(&quot;IFC4&quot;)<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile7IfcFileEPKN8IfcParse17schema_definitionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFileD0Ev">
+<span id="_CPPv3N8IfcParse7IfcFileD0Ev"></span><span id="_CPPv2N8IfcParse7IfcFileD0Ev"></span><span id="IfcParse::IfcFile::~IfcFile"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a472425d8717a6239b97b6994ce9fad1d"></span><code class="sig-name descname">~IfcFile</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFileD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcParse7IfcFile4goodEv">
+<span id="_CPPv3NK8IfcParse7IfcFile4goodEv"></span><span id="_CPPv2NK8IfcParse7IfcFile4goodEv"></span><span id="IfcParse::IfcFile::goodC"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1ae751ea675235f8c23955b199c23ff3c4"></span>bool <code class="sig-name descname">good</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcParse7IfcFile4goodEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcParse7IfcFile5beginEv">
+<span id="_CPPv3NK8IfcParse7IfcFile5beginEv"></span><span id="_CPPv2NK8IfcParse7IfcFile5beginEv"></span><span id="IfcParse::IfcFile::beginC"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a97d54b8b81695f73519696b3d68f7f52"></span><a class="reference internal" href="#_CPPv4N8IfcParse7IfcFile14const_iteratorE" title="IfcParse::IfcFile::const_iterator">const_iterator</a> <code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcParse7IfcFile5beginEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the first entity in the file, this probably is the entity with the lowest id (EXPRESS ENTITY_INSTANCE_NAME) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcParse7IfcFile3endEv">
+<span id="_CPPv3NK8IfcParse7IfcFile3endEv"></span><span id="_CPPv2NK8IfcParse7IfcFile3endEv"></span><span id="IfcParse::IfcFile::endC"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a97ff0bc1a677097e0fb29313b3325936"></span><a class="reference internal" href="#_CPPv4N8IfcParse7IfcFile14const_iteratorE" title="IfcParse::IfcFile::const_iterator">const_iterator</a> <code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcParse7IfcFile3endEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the last entity in the file, this probably is the entity with the highest id (EXPRESS ENTITY_INSTANCE_NAME) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcParse7IfcFile11types_beginEv">
+<span id="_CPPv3NK8IfcParse7IfcFile11types_beginEv"></span><span id="_CPPv2NK8IfcParse7IfcFile11types_beginEv"></span><span id="IfcParse::IfcFile::types_beginC"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1ab5ea57b0cffa679a31b012e49e1699e1"></span><a class="reference internal" href="#_CPPv4N8IfcParse7IfcFile13type_iteratorE" title="IfcParse::IfcFile::type_iterator">type_iterator</a> <code class="sig-name descname">types_begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcParse7IfcFile11types_beginEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcParse7IfcFile9types_endEv">
+<span id="_CPPv3NK8IfcParse7IfcFile9types_endEv"></span><span id="_CPPv2NK8IfcParse7IfcFile9types_endEv"></span><span id="IfcParse::IfcFile::types_endC"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a61c552e9863c2a44faa887d559dd6ff3"></span><a class="reference internal" href="#_CPPv4N8IfcParse7IfcFile13type_iteratorE" title="IfcParse::IfcFile::type_iterator">type_iterator</a> <code class="sig-name descname">types_end</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcParse7IfcFile9types_endEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcParse7IfcFile22types_incl_super_beginEv">
+<span id="_CPPv3NK8IfcParse7IfcFile22types_incl_super_beginEv"></span><span id="_CPPv2NK8IfcParse7IfcFile22types_incl_super_beginEv"></span><span id="IfcParse::IfcFile::types_incl_super_beginC"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1ab196f9f249c25bfc989ade525ff836b3"></span><a class="reference internal" href="#_CPPv4N8IfcParse7IfcFile13type_iteratorE" title="IfcParse::IfcFile::type_iterator">type_iterator</a> <code class="sig-name descname">types_incl_super_begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcParse7IfcFile22types_incl_super_beginEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcParse7IfcFile20types_incl_super_endEv">
+<span id="_CPPv3NK8IfcParse7IfcFile20types_incl_super_endEv"></span><span id="_CPPv2NK8IfcParse7IfcFile20types_incl_super_endEv"></span><span id="IfcParse::IfcFile::types_incl_super_endC"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a9698066235df798490b4274150ec231b"></span><a class="reference internal" href="#_CPPv4N8IfcParse7IfcFile13type_iteratorE" title="IfcParse::IfcFile::type_iterator">type_iterator</a> <code class="sig-name descname">types_incl_super_end</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcParse7IfcFile20types_incl_super_endEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4I0EN8IfcParse7IfcFile17instances_by_typeEN1T4list3ptrEv">
+<span id="_CPPv3I0EN8IfcParse7IfcFile17instances_by_typeEv"></span><span id="_CPPv2I0EN8IfcParse7IfcFile17instances_by_typeEv"></span>template&lt;class <code class="sig-name descname">T</code>&gt;<br /><span class="target" id="class_ifc_parse_1_1_ifc_file_1a9308acf21411d118a6a038da603ea3d5"></span><a class="reference internal" href="#_CPPv4I0EN8IfcParse7IfcFile17instances_by_typeEN1T4list3ptrEv" title="IfcParse::IfcFile::instances_by_type::T">T</a>::list::ptr <code class="sig-name descname">instances_by_type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN8IfcParse7IfcFile17instances_by_typeEN1T4list3ptrEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns all entities in the file that match the template argument. NOTE: This also returns subtypes of the requested type, for example: IfcWall will also return IfcWallStandardCase entities </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4I0EN8IfcParse7IfcFile31instances_by_type_excl_subtypesEN1T4list3ptrEv">
+<span id="_CPPv3I0EN8IfcParse7IfcFile31instances_by_type_excl_subtypesEv"></span><span id="_CPPv2I0EN8IfcParse7IfcFile31instances_by_type_excl_subtypesEv"></span>template&lt;class <code class="sig-name descname">T</code>&gt;<br /><span class="target" id="class_ifc_parse_1_1_ifc_file_1ab4de10b925a5e4590dbca0dc679b8a12"></span><a class="reference internal" href="#_CPPv4I0EN8IfcParse7IfcFile31instances_by_type_excl_subtypesEN1T4list3ptrEv" title="IfcParse::IfcFile::instances_by_type_excl_subtypes::T">T</a>::list::ptr <code class="sig-name descname">instances_by_type_excl_subtypes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN8IfcParse7IfcFile31instances_by_type_excl_subtypesEN1T4list3ptrEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile17instances_by_typeEPKN8IfcParse11declarationE">
+<span id="_CPPv3N8IfcParse7IfcFile17instances_by_typeEPKN8IfcParse11declarationE"></span><span id="_CPPv2N8IfcParse7IfcFile17instances_by_typeEPKN8IfcParse11declarationE"></span><span id="IfcParse::IfcFile::instances_by_type__IfcParse::declarationCP"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a6374e73cb776c1e43b034cb4a079ad6f"></span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <code class="sig-name descname">instances_by_type</code><span class="sig-paren">(</span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1declaration.html#_CPPv4N8IfcParse11declarationE" title="IfcParse::declaration">declaration</a>*<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile17instances_by_typeEPKN8IfcParse11declarationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns all entities in the file that match the positional argument. NOTE: This also returns subtypes of the requested type, for example: IfcWall will also return IfcWallStandardCase entities </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile31instances_by_type_excl_subtypesEPKN8IfcParse11declarationE">
+<span id="_CPPv3N8IfcParse7IfcFile31instances_by_type_excl_subtypesEPKN8IfcParse11declarationE"></span><span id="_CPPv2N8IfcParse7IfcFile31instances_by_type_excl_subtypesEPKN8IfcParse11declarationE"></span><span id="IfcParse::IfcFile::instances_by_type_excl_subtypes__IfcParse::declarationCP"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1abf301b1c022f830c5d0466071ea169ea"></span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <code class="sig-name descname">instances_by_type_excl_subtypes</code><span class="sig-paren">(</span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1declaration.html#_CPPv4N8IfcParse11declarationE" title="IfcParse::declaration">declaration</a>*<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile31instances_by_type_excl_subtypesEPKN8IfcParse11declarationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns all entities in the file that match the positional argument. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile17instances_by_typeERKNSt6stringE">
+<span id="_CPPv3N8IfcParse7IfcFile17instances_by_typeERKNSt6stringE"></span><span id="_CPPv2N8IfcParse7IfcFile17instances_by_typeERKNSt6stringE"></span><span id="IfcParse::IfcFile::instances_by_type__ssCR"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a0edcdcec95dffb6c1a32622c6afa2865"></span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <code class="sig-name descname">instances_by_type</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile17instances_by_typeERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns all entities in the file that match the positional argument. NOTE: This also returns subtypes of the requested type, for example: IfcWall will also return IfcWallStandardCase entities </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile31instances_by_type_excl_subtypesERKNSt6stringE">
+<span id="_CPPv3N8IfcParse7IfcFile31instances_by_type_excl_subtypesERKNSt6stringE"></span><span id="_CPPv2N8IfcParse7IfcFile31instances_by_type_excl_subtypesERKNSt6stringE"></span><span id="IfcParse::IfcFile::instances_by_type_excl_subtypes__ssCR"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1aacb449d194056ec697755a6a86621539"></span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <code class="sig-name descname">instances_by_type_excl_subtypes</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile31instances_by_type_excl_subtypesERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns all entities in the file that match the positional argument. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile22instances_by_referenceEi">
+<span id="_CPPv3N8IfcParse7IfcFile22instances_by_referenceEi"></span><span id="_CPPv2N8IfcParse7IfcFile22instances_by_referenceEi"></span><span id="IfcParse::IfcFile::instances_by_reference__i"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a8774f1d989deffc2acc855cf680a7240"></span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <code class="sig-name descname">instances_by_reference</code><span class="sig-paren">(</span>int <em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile22instances_by_referenceEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns all entities in the file that reference the id. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile14instance_by_idEi">
+<span id="_CPPv3N8IfcParse7IfcFile14instance_by_idEi"></span><span id="_CPPv2N8IfcParse7IfcFile14instance_by_idEi"></span><span id="IfcParse::IfcFile::instance_by_id__i"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1ad540627470a8115b4532e0d26b7f00ce"></span>IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a> *<code class="sig-name descname">instance_by_id</code><span class="sig-paren">(</span>int <em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile14instance_by_idEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the entity with the specified id. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile16instance_by_guidERKNSt6stringE">
+<span id="_CPPv3N8IfcParse7IfcFile16instance_by_guidERKNSt6stringE"></span><span id="_CPPv2N8IfcParse7IfcFile16instance_by_guidERKNSt6stringE"></span><span id="IfcParse::IfcFile::instance_by_guid__ssCR"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1afba31bc3360f6a1ade3447707793c0e2"></span>IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a> *<code class="sig-name descname">instance_by_guid</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>guid</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile16instance_by_guidERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the entity with the specified GlobalId. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile8traverseEPN7IfcUtil12IfcBaseClassEi">
+<span id="_CPPv3N8IfcParse7IfcFile8traverseEPN7IfcUtil12IfcBaseClassEi"></span><span id="_CPPv2N8IfcParse7IfcFile8traverseEPN7IfcUtil12IfcBaseClassEi"></span><span id="IfcParse::IfcFile::traverse__IfcUtil::IfcBaseClassP.i"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a3f0ecaf62dd0704650b1197b5932518f"></span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <code class="sig-name descname">traverse</code><span class="sig-paren">(</span>IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a> *<em>instance</em>, int <em>max_level</em> = -1<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile8traverseEPN7IfcUtil12IfcBaseClassEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Performs a depth-first traversal, returning all entity instance attributes as a flat list. NB: includes the root instance specified in the first function argument. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile10getInverseEiPKN8IfcParse11declarationEi">
+<span id="_CPPv3N8IfcParse7IfcFile10getInverseEiPKN8IfcParse11declarationEi"></span><span id="_CPPv2N8IfcParse7IfcFile10getInverseEiPKN8IfcParse11declarationEi"></span><span id="IfcParse::IfcFile::getInverse__i.IfcParse::declarationCP.i"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a78cd9f8c182469f5d4bfe141f931ab6b"></span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <code class="sig-name descname">getInverse</code><span class="sig-paren">(</span>int <em>instance_id</em>, <em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1declaration.html#_CPPv4N8IfcParse11declarationE" title="IfcParse::declaration">declaration</a> *<em>type</em>, int <em>attribute_index</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile10getInverseEiPKN8IfcParse11declarationEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile23mark_entity_as_modifiedEi">
+<span id="_CPPv3N8IfcParse7IfcFile23mark_entity_as_modifiedEi"></span><span id="_CPPv2N8IfcParse7IfcFile23mark_entity_as_modifiedEi"></span><span id="IfcParse::IfcFile::mark_entity_as_modified__i"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a9627994f9274957bee9ecf49e5b32509"></span>void <code class="sig-name descname">mark_entity_as_modified</code><span class="sig-paren">(</span>int <em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile23mark_entity_as_modifiedEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Marks entity as modified so that potential cache for it is invalidated. <dl class="xrefsect">
+<dt>
+<em>Todo:</em></dt>
+<dd><p>Currently the whole cache is invalidated. Implement more fine-grained invalidation. </p>
+</dd></dl>
+
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile7FreshIdEv">
+<span id="_CPPv3N8IfcParse7IfcFile7FreshIdEv"></span><span id="_CPPv2N8IfcParse7IfcFile7FreshIdEv"></span><span id="IfcParse::IfcFile::FreshId"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a8e4462ff67afbce0afa803c733dcac31"></span>unsigned int <code class="sig-name descname">FreshId</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile7FreshIdEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile9addEntityEPN7IfcUtil12IfcBaseClassE">
+<span id="_CPPv3N8IfcParse7IfcFile9addEntityEPN7IfcUtil12IfcBaseClassE"></span><span id="_CPPv2N8IfcParse7IfcFile9addEntityEPN7IfcUtil12IfcBaseClassE"></span><span id="IfcParse::IfcFile::addEntity__IfcUtil::IfcBaseClassP"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a8d61ff227c9b505bbc92e72cfb54594c"></span>IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a> *<code class="sig-name descname">addEntity</code><span class="sig-paren">(</span>IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a> *<em>entity</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile9addEntityEPN7IfcUtil12IfcBaseClassE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile11addEntitiesEN13IfcEntityList3ptrE">
+<span id="_CPPv3N8IfcParse7IfcFile11addEntitiesEN13IfcEntityList3ptrE"></span><span id="_CPPv2N8IfcParse7IfcFile11addEntitiesEN13IfcEntityList3ptrE"></span><span id="IfcParse::IfcFile::addEntities__IfcEntityList::ptr"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1ae49947f28b2b5c5252c9d52fe0b19e72"></span>void <code class="sig-name descname">addEntities</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <em>es</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile11addEntitiesEN13IfcEntityList3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile12removeEntityEPN7IfcUtil12IfcBaseClassE">
+<span id="_CPPv3N8IfcParse7IfcFile12removeEntityEPN7IfcUtil12IfcBaseClassE"></span><span id="_CPPv2N8IfcParse7IfcFile12removeEntityEPN7IfcUtil12IfcBaseClassE"></span><span id="IfcParse::IfcFile::removeEntity__IfcUtil::IfcBaseClassP"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a0c6e17024ebe8d42ac8d34fe3886f828"></span>void <code class="sig-name descname">removeEntity</code><span class="sig-paren">(</span>IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a> *<em>entity</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile12removeEntityEPN7IfcUtil12IfcBaseClassE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Removes entity instance from file and unsets references.</p>
+<p>Attention when running removeEntity inside a loop over a list of entities to be removed. This invalidates the iterator. A workaround is to reverse the loop: boost::shared_ptr&lt;IfcEntityList&gt; entities = …; for (auto it = entities-&gt;<a class="reference internal" href="#class_ifc_parse_1_1_ifc_file_1a97ff0bc1a677097e0fb29313b3325936"><span class="std std-ref">end()</span></a> - 1; it &gt;= entities-&gt;<a class="reference internal" href="#class_ifc_parse_1_1_ifc_file_1a97d54b8b81695f73519696b3d68f7f52"><span class="std std-ref">begin()</span></a>; it) { <a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#class_ifc_util_1_1_ifc_base_class"><span class="std std-ref">IfcUtil::IfcBaseClass</span></a> *const inst = *it; model-&gt;removeEntity(inst); } </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcParse7IfcFile6headerEv">
+<span id="_CPPv3NK8IfcParse7IfcFile6headerEv"></span><span id="_CPPv2NK8IfcParse7IfcFile6headerEv"></span><span id="IfcParse::IfcFile::headerC"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a9f8f0eff319029003ba9262d11bd1ad2"></span><em class="property">const</em> <a class="reference internal" href="class_ifc_parse_1_1_ifc_spf_header.html#_CPPv4N8IfcParse12IfcSpfHeaderE" title="IfcParse::IfcSpfHeader">IfcSpfHeader</a> &amp;<code class="sig-name descname">header</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcParse7IfcFile6headerEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile6headerEv">
+<span id="_CPPv3N8IfcParse7IfcFile6headerEv"></span><span id="_CPPv2N8IfcParse7IfcFile6headerEv"></span><span id="IfcParse::IfcFile::header"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a476ebc18303fb646389f18872a164a79"></span><a class="reference internal" href="class_ifc_parse_1_1_ifc_spf_header.html#_CPPv4N8IfcParse12IfcSpfHeaderE" title="IfcParse::IfcSpfHeader">IfcSpfHeader</a> &amp;<code class="sig-name descname">header</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile6headerEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcParse7IfcFile15createTimestampEv">
+<span id="_CPPv3NK8IfcParse7IfcFile15createTimestampEv"></span><span id="_CPPv2NK8IfcParse7IfcFile15createTimestampEv"></span><span id="IfcParse::IfcFile::createTimestampC"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a47d4ba5308663d90a560f3a3a2b90f79"></span>std::string <code class="sig-name descname">createTimestamp</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcParse7IfcFile15createTimestampEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile4loadEjRPP8Argument6size_t">
+<span id="_CPPv3N8IfcParse7IfcFile4loadEjRPP8Argument6size_t"></span><span id="_CPPv2N8IfcParse7IfcFile4loadEjRPP8Argument6size_t"></span><span id="IfcParse::IfcFile::load__unsigned.ArgumentPPR.s"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a3c20d9b9124762f8f0a4bd2ceb3cdd8e"></span>size_t <code class="sig-name descname">load</code><span class="sig-paren">(</span>unsigned <em>entity_instance_name</em>, <a class="reference internal" href="class_argument.html#_CPPv48Argument" title="Argument">Argument</a> **&amp;<em>attributes</em>, size_t <em>num_attributes</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile4loadEjRPP8Argument6size_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile7seek_toERK21IfcEntityInstanceData">
+<span id="_CPPv3N8IfcParse7IfcFile7seek_toERK21IfcEntityInstanceData"></span><span id="_CPPv2N8IfcParse7IfcFile7seek_toERK21IfcEntityInstanceData"></span><span id="IfcParse::IfcFile::seek_to__IfcEntityInstanceDataCR"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1ad5dd12bfdfd6e35570a2f1c77f845489"></span>void <code class="sig-name descname">seek_to</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> &amp;<em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile7seek_toERK21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile18try_read_semicolonEv">
+<span id="_CPPv3N8IfcParse7IfcFile18try_read_semicolonEv"></span><span id="_CPPv2N8IfcParse7IfcFile18try_read_semicolonEv"></span><span id="IfcParse::IfcFile::try_read_semicolon"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1acc4198301cf23d9158c7ed1d678c5aa8"></span>void <code class="sig-name descname">try_read_semicolon</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile18try_read_semicolonEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile16register_inverseEj5Token">
+<span id="_CPPv3N8IfcParse7IfcFile16register_inverseEj5Token"></span><span id="_CPPv2N8IfcParse7IfcFile16register_inverseEj5Token"></span><span id="IfcParse::IfcFile::register_inverse__unsigned.Token"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a068c3e51f2f25d0fe28c2271391acbd2"></span>void <code class="sig-name descname">register_inverse</code><span class="sig-paren">(</span>unsigned, <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile16register_inverseEj5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile16register_inverseEjPN7IfcUtil12IfcBaseClassE">
+<span id="_CPPv3N8IfcParse7IfcFile16register_inverseEjPN7IfcUtil12IfcBaseClassE"></span><span id="_CPPv2N8IfcParse7IfcFile16register_inverseEjPN7IfcUtil12IfcBaseClassE"></span><span id="IfcParse::IfcFile::register_inverse__unsigned.IfcUtil::IfcBaseClassP"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1ad1a7305297d385091386bdfddc49cbbc"></span>void <code class="sig-name descname">register_inverse</code><span class="sig-paren">(</span>unsigned, IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a>*<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile16register_inverseEjPN7IfcUtil12IfcBaseClassE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile18unregister_inverseEjPN7IfcUtil12IfcBaseClassE">
+<span id="_CPPv3N8IfcParse7IfcFile18unregister_inverseEjPN7IfcUtil12IfcBaseClassE"></span><span id="_CPPv2N8IfcParse7IfcFile18unregister_inverseEjPN7IfcUtil12IfcBaseClassE"></span><span id="IfcParse::IfcFile::unregister_inverse__unsigned.IfcUtil::IfcBaseClassP"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a9433efb86568625bc747f11bd2a1f7f6"></span>void <code class="sig-name descname">unregister_inverse</code><span class="sig-paren">(</span>unsigned, IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a>*<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile18unregister_inverseEjPN7IfcUtil12IfcBaseClassE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcParse7IfcFile6schemaEv">
+<span id="_CPPv3NK8IfcParse7IfcFile6schemaEv"></span><span id="_CPPv2NK8IfcParse7IfcFile6schemaEv"></span><span id="IfcParse::IfcFile::schemaC"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a58152c3570a586bd915ad10bf0fdf340"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1schema__definition.html#_CPPv4N8IfcParse17schema_definitionE" title="IfcParse::schema_definition">schema_definition</a> *<code class="sig-name descname">schema</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcParse7IfcFile6schemaEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile7getUnitERKNSt6stringE">
+<span id="_CPPv3N8IfcParse7IfcFile7getUnitERKNSt6stringE"></span><span id="_CPPv2N8IfcParse7IfcFile7getUnitERKNSt6stringE"></span><span id="IfcParse::IfcFile::getUnit__ssCR"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a59fb6e85ffc33db025fee208de5680f9"></span>std::pair&lt;IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a>*, double&gt; <code class="sig-name descname">getUnit</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>unit_type</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile7getUnitERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcParse7IfcFile16parsing_completeEv">
+<span id="_CPPv3NK8IfcParse7IfcFile16parsing_completeEv"></span><span id="_CPPv2NK8IfcParse7IfcFile16parsing_completeEv"></span><span id="IfcParse::IfcFile::parsing_completeC"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a8c6da75c2dd121b7d6d21a903a673ed9"></span>bool <code class="sig-name descname">parsing_complete</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcParse7IfcFile16parsing_completeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile16parsing_completeEv">
+<span id="_CPPv3N8IfcParse7IfcFile16parsing_completeEv"></span><span id="_CPPv2N8IfcParse7IfcFile16parsing_completeEv"></span><span id="IfcParse::IfcFile::parsing_complete"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1ad125594a1a867044b1e095ec76f70c0f"></span>bool &amp;<code class="sig-name descname">parsing_complete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile16parsing_completeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile14build_inversesEv">
+<span id="_CPPv3N8IfcParse7IfcFile14build_inversesEv"></span><span id="_CPPv2N8IfcParse7IfcFile14build_inversesEv"></span><span id="IfcParse::IfcFile::build_inverses"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a45e5a1c4e8a4fbedf98bee329e62ef45"></span>void <code class="sig-name descname">build_inverses</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile14build_inversesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="cpp var">
+<dt id="_CPPv4N8IfcParse7IfcFile6tokensE">
+<span id="_CPPv3N8IfcParse7IfcFile6tokensE"></span><span id="_CPPv2N8IfcParse7IfcFile6tokensE"></span><span id="IfcParse::IfcFile::tokens__IfcParse::IfcSpfLexerP"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a2f56c14f160715c502bff43f0d0c3949"></span>IfcParse::<a class="reference internal" href="class_ifc_parse_1_1_ifc_spf_lexer.html#_CPPv4N8IfcParse11IfcSpfLexerE" title="IfcParse::IfcSpfLexer">IfcSpfLexer</a> *<code class="sig-name descname">tokens</code><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile6tokensE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N8IfcParse7IfcFile6streamE">
+<span id="_CPPv3N8IfcParse7IfcFile6streamE"></span><span id="_CPPv2N8IfcParse7IfcFile6streamE"></span><span id="IfcParse::IfcFile::stream__IfcParse::IfcSpfStreamP"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1a69276e14ef8eafdbce947195a535b17c"></span>IfcParse::<a class="reference internal" href="class_ifc_parse_1_1_ifc_spf_stream.html#_CPPv4N8IfcParse12IfcSpfStreamE" title="IfcParse::IfcSpfStream">IfcSpfStream</a> *<code class="sig-name descname">stream</code><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile6streamE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp class">
+<dt id="_CPPv4N8IfcParse7IfcFile13type_iteratorE">
+<span id="_CPPv3N8IfcParse7IfcFile13type_iteratorE"></span><span id="_CPPv2N8IfcParse7IfcFile13type_iteratorE"></span><span id="IfcParse::IfcFile::type_iterator"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1_1type__iterator"></span><em class="property">class </em><code class="sig-name descname">type_iterator</code> : <em class="property">private</em> <a class="reference internal" href="#_CPPv4N8IfcParse7IfcFile14const_iteratorE" title="IfcParse::IfcFile::const_iterator">const_iterator</a><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile13type_iteratorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile13type_iterator13type_iteratorEv">
+<span id="_CPPv3N8IfcParse7IfcFile13type_iterator13type_iteratorEv"></span><span id="_CPPv2N8IfcParse7IfcFile13type_iterator13type_iteratorEv"></span><span id="IfcParse::IfcFile::type_iterator::type_iterator"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1_1type__iterator_1aeca5511feb330e2c949b926413acc35e"></span><code class="sig-name descname">type_iterator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile13type_iterator13type_iteratorEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile13type_iterator13type_iteratorERKN18entities_by_type_t14const_iteratorE">
+<span id="_CPPv3N8IfcParse7IfcFile13type_iterator13type_iteratorERKN18entities_by_type_t14const_iteratorE"></span><span id="_CPPv2N8IfcParse7IfcFile13type_iterator13type_iteratorERKN18entities_by_type_t14const_iteratorE"></span><span id="IfcParse::IfcFile::type_iterator::type_iterator__entities_by_type_t::const_iteratorCR"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1_1type__iterator_1ace11f83d67387b449b717da718f30300"></span><code class="sig-name descname">type_iterator</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4N8IfcParse7IfcFile18entities_by_type_tE" title="IfcParse::IfcFile::entities_by_type_t">entities_by_type_t</a>::const_iterator &amp;<em>it</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile13type_iterator13type_iteratorERKN18entities_by_type_t14const_iteratorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcParse7IfcFile13type_iteratorptEv">
+<span id="_CPPv3NK8IfcParse7IfcFile13type_iteratorptEv"></span><span id="_CPPv2NK8IfcParse7IfcFile13type_iteratorptEv"></span><span id="IfcParse::IfcFile::type_iterator::pointer-operatorC"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1_1type__iterator_1a2b7003e4fe2ad8abed296a69a9c5775a"></span><em class="property">const</em> <a class="reference internal" href="#_CPPv4N8IfcParse7IfcFile18entities_by_type_tE" title="IfcParse::IfcFile::entities_by_type_t">entities_by_type_t</a>::key_type *<code class="sig-name descname">operator-&gt;</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcParse7IfcFile13type_iteratorptEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcParse7IfcFile13type_iteratormlEv">
+<span id="_CPPv3NK8IfcParse7IfcFile13type_iteratormlEv"></span><span id="_CPPv2NK8IfcParse7IfcFile13type_iteratormlEv"></span><span id="IfcParse::IfcFile::type_iterator::mul-operatorC"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1_1type__iterator_1a08b224b12978d84ae8087a763745c70e"></span><em class="property">const</em> <a class="reference internal" href="#_CPPv4N8IfcParse7IfcFile18entities_by_type_tE" title="IfcParse::IfcFile::entities_by_type_t">entities_by_type_t</a>::key_type &amp;<code class="sig-name descname">operator*</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcParse7IfcFile13type_iteratormlEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile13type_iteratorppEv">
+<span id="_CPPv3N8IfcParse7IfcFile13type_iteratorppEv"></span><span id="_CPPv2N8IfcParse7IfcFile13type_iteratorppEv"></span><span id="IfcParse::IfcFile::type_iterator::inc-operator"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1_1type__iterator_1a803289d6ddc417015a42e350f3c6cc46"></span><a class="reference internal" href="#_CPPv4N8IfcParse7IfcFile13type_iteratorE" title="IfcParse::IfcFile::type_iterator">type_iterator</a> &amp;<code class="sig-name descname">operator++</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile13type_iteratorppEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse7IfcFile13type_iteratorppEi">
+<span id="_CPPv3N8IfcParse7IfcFile13type_iteratorppEi"></span><span id="_CPPv2N8IfcParse7IfcFile13type_iteratorppEi"></span><span id="IfcParse::IfcFile::type_iterator::inc-operator__i"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1_1type__iterator_1a572e423d8f27d11287021f873940b195"></span><a class="reference internal" href="#_CPPv4N8IfcParse7IfcFile13type_iteratorE" title="IfcParse::IfcFile::type_iterator">type_iterator</a> <code class="sig-name descname">operator++</code><span class="sig-paren">(</span>int<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse7IfcFile13type_iteratorppEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcParse7IfcFile13type_iteratorneERK13type_iterator">
+<span id="_CPPv3NK8IfcParse7IfcFile13type_iteratorneERK13type_iterator"></span><span id="_CPPv2NK8IfcParse7IfcFile13type_iteratorneERK13type_iterator"></span><span id="IfcParse::IfcFile::type_iterator::neq-operator__type_iteratorCRC"></span><span class="target" id="class_ifc_parse_1_1_ifc_file_1_1type__iterator_1ae0dbd9933d231080260b0ff985c91ef6"></span>bool <code class="sig-name descname">operator!=</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4N8IfcParse7IfcFile13type_iteratorE" title="IfcParse::IfcFile::type_iterator">type_iterator</a> &amp;<em>other</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcParse7IfcFile13type_iteratorneERK13type_iterator" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc_parse_1_1_ifc_exception.html" title="previous chapter">Class IfcException</a></li>
+      <li>Next: <a href="class_ifc_parse_1_1_ifc_file_1_1type__iterator.html" title="next chapter">Class IfcFile::type_iterator</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc_parse_1_1_ifc_file.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

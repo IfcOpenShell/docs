@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a75fc3ba7ee64d6ddf45eac406abf21e0:
+
+Define SCHEMA_IfcLinearPlacement_HAS_CartesianPosition
+======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcLinearPlacement_HAS_CartesianPosition

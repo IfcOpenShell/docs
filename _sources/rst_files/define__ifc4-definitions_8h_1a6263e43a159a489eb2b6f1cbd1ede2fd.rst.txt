@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a6263e43a159a489eb2b6f1cbd1ede2fd:
+
+Define SCHEMA_IfcExternalReferenceRelationship_HAS_RelatedResourceObjects
+=========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcExternalReferenceRelationship_HAS_RelatedResourceObjects

@@ -1,0 +1,41 @@
+.. _exhale_class_class_ifc2x3_1_1_ifc_distribution_control_element_type:
+
+Class Ifc2x3::IfcDistributionControlElementType
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc2x3::IfcDistributionElementType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_distribution_element_type`)
+
+
+Derived Types
+*************
+
+- ``public Ifc2x3::IfcActuatorType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_actuator_type`)
+- ``public Ifc2x3::IfcAlarmType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_alarm_type`)
+- ``public Ifc2x3::IfcControllerType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_controller_type`)
+- ``public Ifc2x3::IfcFlowInstrumentType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_flow_instrument_type`)
+- ``public Ifc2x3::IfcSensorType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_sensor_type`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc2x3::IfcDistributionControlElementType
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcRelSpaceBoundary &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcRelVoidsElement" href="class_ifc2x3_1_1_ifc_rel_voids_element.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcRelServicesBuildings" href="class_ifc2x3_1_1_ifc_rel_services_buildings.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcrelspaceboundary">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-rel-space-boundary"></span><h1>Class Ifc2x3::IfcRelSpaceBoundary<a class="headerlink" href="#class-ifc2x3-ifcrelspaceboundary" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcRelConnects</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_rel_connects.html#exhale-class-class-ifc2x3-1-1-ifc-rel-connects"><span class="std std-ref">Class Ifc2x3::IfcRelConnects</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x319IfcRelSpaceBoundaryE">
+<span id="_CPPv3N6Ifc2x319IfcRelSpaceBoundaryE"></span><span id="_CPPv2N6Ifc2x319IfcRelSpaceBoundaryE"></span><span id="Ifc2x3::IfcRelSpaceBoundary"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcRelSpaceBoundary</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_rel_connects.html#_CPPv4N6Ifc2x314IfcRelConnectsE" title="Ifc2x3::IfcRelConnects">IfcRelConnects</a><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcRelSpaceBoundaryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The space boundary defines the physical or virtual delimiter of a space by the relationship <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_space_boundary"><span class="std std-ref">IfcRelSpaceBoundary</span></a> to the surrounding elements.</p>
+<p>In the case of a physical space boundary, the placement and shape of the boundary may be given, and the building element, providing the boundary, is referenced, In the case of a virtual space boundary, the placement and shape of the boundary may be given, but no building element is referenced and a virtual element is referenced instead.</p>
+<p>The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_space_boundary"><span class="std std-ref">IfcRelSpaceBoundary</span></a> is defined as an objectified relationship that handles the element to space relationship by objectifying the relationship between an element and the space it bounds. It is given as a one-to-one relationship, but allows each element (including virutal elements and openings) to define many such relationship and each space to be defined by many such relationships. Space boundaries are always defined as seen from the space. In general two basic types of space boundaries are distinguished:</p>
+<p>1st level space boundary: defined as boundaries of the space, not taking into account any change in building element or spaces on the other side. 2nd level space boundary: defined as boundary taking any change in building element or spaces on the other side into account. It can be further distinguished into</p>
+<p>2nd level type A: There is a space on the other side. 2nd level type B: There is a building element on the other side.</p>
+<p>The exact definition of how space boundaries are broken down depends on the view definition, more detailed conventions on how space boundaries are decomposed can only be given at the domain or application type level.</p>
+<p>In an architectural or FM related view, a space boundary is defined totally from inside the space. This is a 1st level space boundary. In a thermal view, the decomposition of the space boundary depends on the material of the providing building element and the adjacent spaces behind. This is a 2nd level space boundary.</p>
+<p>Figure 42 — Space boundary at first level Figure 43 — Space boundary at second level</p>
+<p>Figure 44 — Space boundary at second level type A Figure 45 — Space boundary at second level type B</p>
+<p>HISTORY New entity in IFC Release 1.5, the entity has been modified in IFC Release 2x. IFC2x CHANGE The data type of the attributeRelatedBuildingElement has been changed from <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element"><span class="std std-ref">IfcBuildingElement</span></a> to its supertype <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a>. The data type of the attribute ConnectionGeometry has been changed from <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_connection_surface_geometry"><span class="std std-ref">IfcConnectionSurfaceGeometry</span></a> to its supertype <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_connection_geometry"><span class="std std-ref">IfcConnectionGeometry</span></a>. IFC2x4 CHANGE The attribute RelatedBuildingElement has been made mandatory. For virtual boundaries the reference to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_virtual_element"><span class="std std-ref">IfcVirtualElement</span></a> is now mandatory.</p>
+<p>Attribute Use Definitions The differences between the 1st and 2nd level space boundaries is identified by:</p>
+<p>1st level: SELF\IfcRoot.Name = “1stLevel” SELF\IfcRootDescription = NIL 2nd level: SELF\IfcRoot.Name = “2ndLevel” SELF\IfcRootDescription = “2a”, or “2b”</p>
+<p>Differentiation between physical and virtual space boundary is illustrated in Figure 46 and Figure 47.</p>
+<p>As shown in Figure 46, if the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_space_boundary"><span class="std std-ref">IfcRelSpaceBoundary</span></a> is used to express a virtual boundary, the attribute PhysicalOrVirtualBoundary has to be set to VIRTUAL. The attribute RelatedBuildingElement shall point to an instance of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_virtual_element"><span class="std std-ref">IfcVirtualElement</span></a>. If the correct location is of interest, the attribute ConnectionGeometry is required. NOTE The connection geometry, either by a 2D curve or a 3D surface, is used to describe the portion of the “virtual wall” that separates the two spaces. All instances of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_space_boundary"><span class="std std-ref">IfcRelSpaceBoundary</span></a> given at the adjacent spaces share the same instance of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_virtual_element"><span class="std std-ref">IfcVirtualElement</span></a>. Each instance of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_space_boundary"><span class="std std-ref">IfcRelSpaceBoundary</span></a> provides in addition the ConnectionGeometry given within the local placement of each space.</p>
+<p>Figure 46 — Space boundary of virtual element</p>
+<p>As shown in Figure 47, if the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_space_boundary"><span class="std std-ref">IfcRelSpaceBoundary</span></a> is used to express a physical boundary between two spaces, the attribute PhysicalOrVirtualBoundary has to be set to PHYSICAL. The attribute RelatedBuildingElement has to be given and points to the element providing the space boundary. The attribute ConnectionGeometry may be inserted, in this case it describes the physical space boundary geometically, or it may be omited, in that case it describes a physical space boundary logically.</p>
+<p>Figure 47 — Space boundary of physical element</p>
+<p>Geometry Use Definitions The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_space_boundary"><span class="std std-ref">IfcRelSpaceBoundary</span></a> may have geometry attached. If geometry is not attached, the relationship between space and building element is handled only on a logical level. If geometry is attached, it is given within the local coordinate systems of the space. NOTE: The attributes CurveOnRelatingElement at <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_connection_curve_geometry"><span class="std std-ref">IfcConnectionCurveGeometry</span></a> or SurfaceOnRelatingElement at <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_connection_surface_geometry"><span class="std std-ref">IfcConnectionSurfaceGeometry</span></a> provide the geometry within the local coordinate system of the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a>, whereas the attributes CurveOnRelatedElement at <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_connection_curve_geometry"><span class="std std-ref">IfcConnectionCurveGeometry</span></a> or SurfaceOnRelatedElement at <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_connection_surface_geometry"><span class="std std-ref">IfcConnectionSurfaceGeometry</span></a> provide the geometry within the local coordinate system of the subtype of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a>. NOTE In most view definitions the connection geometry for the related <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a> is not provided. The geometric representation (through the ConnectionGeometry attribute) is defined using either 2D curve geometry or 3D surface geometry for space boundaries. In most view definitions the 3D connection surface geometry is required.</p>
+<p>1st level space boundary:</p>
+<p>only connection geometry for related space shall be provided only surface connection geometry shall be provided only the following surface representations are supported:</p>
+<p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_surface_of_linear_extrusion"><span class="std std-ref">IfcSurfaceOfLinearExtrusion</span></a> <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_curve_bounded_plane"><span class="std std-ref">IfcCurveBoundedPlane</span></a> IfcCurveBoundedSurface <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_face_based_surface_model"><span class="std std-ref">IfcFaceBasedSurfaceModel</span></a></p>
+<p>2nd level space boundary:</p>
+<p>only connection geometry for related space shall be provided only surface connection geometry shall be provided only the following surface representations are supported:</p>
+<p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_curve_bounded_plane"><span class="std std-ref">IfcCurveBoundedPlane</span></a> with restrictions to have polygonal boundaries only <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_face_based_surface_model"><span class="std std-ref">IfcFaceBasedSurfaceModel</span></a></p>
+<p>Surface connection geometry The following constraints apply to the surface connection geometry representation:</p>
+<p>planar boundaries:</p>
+<p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_surface_of_linear_extrusion"><span class="std std-ref">IfcSurfaceOfLinearExtrusion</span></a> defined by a SweptCurve being an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_arbitrary_open_profile_def"><span class="std std-ref">IfcArbitraryOpenProfileDef</span></a> with straight segements, or <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_curve_bounded_plane"><span class="std std-ref">IfcCurveBoundedPlane</span></a></p>
+<p>curved boundaries</p>
+<p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_surface_of_linear_extrusion"><span class="std std-ref">IfcSurfaceOfLinearExtrusion</span></a> defined by a SweptCurve being an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_arbitrary_open_profile_def"><span class="std std-ref">IfcArbitraryOpenProfileDef</span></a> with curves segements, or IfcCurveBoundedSurface with a BasisSurface being a non planar surface, such as IfcCylindricalSurface, or <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_face_based_surface_model"><span class="std std-ref">IfcFaceBasedSurfaceModel</span></a> if already faceted.</p>
+<p>Curve connection geometry The following constraints apply to the 2D curve representation:</p>
+<p>Curve: <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a>, <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_trimmed_curve"><span class="std std-ref">IfcTrimmedCurve</span></a> or <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_composite_curve"><span class="std std-ref">IfcCompositeCurve</span></a> </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x319IfcRelSpaceBoundary4listE">
+<span id="_CPPv3N6Ifc2x319IfcRelSpaceBoundary4listE"></span><span id="_CPPv2N6Ifc2x319IfcRelSpaceBoundary4listE"></span><span id="Ifc2x3::IfcRelSpaceBoundary::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary_1aac86649442322cbd12fffd85c7aeecff"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x319IfcRelSpaceBoundaryE" title="Ifc2x3::IfcRelSpaceBoundary">IfcRelSpaceBoundary</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcRelSpaceBoundary4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x319IfcRelSpaceBoundary13RelatingSpaceEv">
+<span id="_CPPv3NK6Ifc2x319IfcRelSpaceBoundary13RelatingSpaceEv"></span><span id="_CPPv2NK6Ifc2x319IfcRelSpaceBoundary13RelatingSpaceEv"></span><span id="Ifc2x3::IfcRelSpaceBoundary::RelatingSpaceC"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary_1a8d6af38cefc2d39c81a0a5e9396ad1e1"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_space.html#_CPPv4N6Ifc2x38IfcSpaceE" title="Ifc2x3::IfcSpace">IfcSpace</a> *<code class="sig-name descname">RelatingSpace</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x319IfcRelSpaceBoundary13RelatingSpaceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reference to one spaces that is delimited by this boundary. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x319IfcRelSpaceBoundary16setRelatingSpaceEPN6Ifc2x38IfcSpaceE">
+<span id="_CPPv3N6Ifc2x319IfcRelSpaceBoundary16setRelatingSpaceEPN6Ifc2x38IfcSpaceE"></span><span id="_CPPv2N6Ifc2x319IfcRelSpaceBoundary16setRelatingSpaceEPN6Ifc2x38IfcSpaceE"></span><span id="Ifc2x3::IfcRelSpaceBoundary::setRelatingSpace__Ifc2x3::IfcSpaceP"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary_1a735d83f789b5e254cad4f811d6d3c257"></span>void <code class="sig-name descname">setRelatingSpace</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_space.html#_CPPv4N6Ifc2x38IfcSpaceE" title="Ifc2x3::IfcSpace">IfcSpace</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcRelSpaceBoundary16setRelatingSpaceEPN6Ifc2x38IfcSpaceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x319IfcRelSpaceBoundary25hasRelatedBuildingElementEv">
+<span id="_CPPv3NK6Ifc2x319IfcRelSpaceBoundary25hasRelatedBuildingElementEv"></span><span id="_CPPv2NK6Ifc2x319IfcRelSpaceBoundary25hasRelatedBuildingElementEv"></span><span id="Ifc2x3::IfcRelSpaceBoundary::hasRelatedBuildingElementC"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary_1a04475d0f729506a6b87c98aa9acc0e47"></span>bool <code class="sig-name descname">hasRelatedBuildingElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x319IfcRelSpaceBoundary25hasRelatedBuildingElementEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RelatedBuildingElement is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_space_boundary"><span class="std std-ref">IfcRelSpaceBoundary</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x319IfcRelSpaceBoundary22RelatedBuildingElementEv">
+<span id="_CPPv3NK6Ifc2x319IfcRelSpaceBoundary22RelatedBuildingElementEv"></span><span id="_CPPv2NK6Ifc2x319IfcRelSpaceBoundary22RelatedBuildingElementEv"></span><span id="Ifc2x3::IfcRelSpaceBoundary::RelatedBuildingElementC"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary_1a5ec5aa68f7bbbe1f41096033fa850b75"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_element.html#_CPPv4N6Ifc2x310IfcElementE" title="Ifc2x3::IfcElement">IfcElement</a> *<code class="sig-name descname">RelatedBuildingElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x319IfcRelSpaceBoundary22RelatedBuildingElementEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reference to Building Element, that defines the Space Boundaries.</p>
+<p>IFC2x PLATFORM CHANGE The data type has been changed from <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element"><span class="std std-ref">IfcBuildingElement</span></a> to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a> with upward compatibility for file based exchange.</p>
+<p>IFC2x4 CHANGE The attribute has been changed to be mandatory. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x319IfcRelSpaceBoundary25setRelatedBuildingElementEPN6Ifc2x310IfcElementE">
+<span id="_CPPv3N6Ifc2x319IfcRelSpaceBoundary25setRelatedBuildingElementEPN6Ifc2x310IfcElementE"></span><span id="_CPPv2N6Ifc2x319IfcRelSpaceBoundary25setRelatedBuildingElementEPN6Ifc2x310IfcElementE"></span><span id="Ifc2x3::IfcRelSpaceBoundary::setRelatedBuildingElement__Ifc2x3::IfcElementP"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary_1a8bfab18f20af351fb6d0e712485aad37"></span>void <code class="sig-name descname">setRelatedBuildingElement</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_element.html#_CPPv4N6Ifc2x310IfcElementE" title="Ifc2x3::IfcElement">IfcElement</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcRelSpaceBoundary25setRelatedBuildingElementEPN6Ifc2x310IfcElementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x319IfcRelSpaceBoundary21hasConnectionGeometryEv">
+<span id="_CPPv3NK6Ifc2x319IfcRelSpaceBoundary21hasConnectionGeometryEv"></span><span id="_CPPv2NK6Ifc2x319IfcRelSpaceBoundary21hasConnectionGeometryEv"></span><span id="Ifc2x3::IfcRelSpaceBoundary::hasConnectionGeometryC"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary_1a105182c7e0a6fef087389f9f03289128"></span>bool <code class="sig-name descname">hasConnectionGeometry</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x319IfcRelSpaceBoundary21hasConnectionGeometryEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ConnectionGeometry is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_space_boundary"><span class="std std-ref">IfcRelSpaceBoundary</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x319IfcRelSpaceBoundary18ConnectionGeometryEv">
+<span id="_CPPv3NK6Ifc2x319IfcRelSpaceBoundary18ConnectionGeometryEv"></span><span id="_CPPv2NK6Ifc2x319IfcRelSpaceBoundary18ConnectionGeometryEv"></span><span id="Ifc2x3::IfcRelSpaceBoundary::ConnectionGeometryC"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary_1ad73f2a326fea2208ff33accc7968fa41"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_connection_geometry.html#_CPPv4N6Ifc2x321IfcConnectionGeometryE" title="Ifc2x3::IfcConnectionGeometry">IfcConnectionGeometry</a> *<code class="sig-name descname">ConnectionGeometry</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x319IfcRelSpaceBoundary18ConnectionGeometryEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Physical representation of the space boundary. Provided as a curve or surface given within the LCS of the space.</p>
+<p>IFC2x PLATFORM CHANGE The data type has been changed from <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_connection_surface_geometry"><span class="std std-ref">IfcConnectionSurfaceGeometry</span></a> to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_connection_geometry"><span class="std std-ref">IfcConnectionGeometry</span></a> with upward compatibility for file based exchange. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x319IfcRelSpaceBoundary21setConnectionGeometryEPN6Ifc2x321IfcConnectionGeometryE">
+<span id="_CPPv3N6Ifc2x319IfcRelSpaceBoundary21setConnectionGeometryEPN6Ifc2x321IfcConnectionGeometryE"></span><span id="_CPPv2N6Ifc2x319IfcRelSpaceBoundary21setConnectionGeometryEPN6Ifc2x321IfcConnectionGeometryE"></span><span id="Ifc2x3::IfcRelSpaceBoundary::setConnectionGeometry__Ifc2x3::IfcConnectionGeometryP"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary_1a1ac18e647fc8259e55a2292f1c32716d"></span>void <code class="sig-name descname">setConnectionGeometry</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_connection_geometry.html#_CPPv4N6Ifc2x321IfcConnectionGeometryE" title="Ifc2x3::IfcConnectionGeometry">IfcConnectionGeometry</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcRelSpaceBoundary21setConnectionGeometryEPN6Ifc2x321IfcConnectionGeometryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x319IfcRelSpaceBoundary25PhysicalOrVirtualBoundaryEv">
+<span id="_CPPv3NK6Ifc2x319IfcRelSpaceBoundary25PhysicalOrVirtualBoundaryEv"></span><span id="_CPPv2NK6Ifc2x319IfcRelSpaceBoundary25PhysicalOrVirtualBoundaryEv"></span><span id="Ifc2x3::IfcRelSpaceBoundary::PhysicalOrVirtualBoundaryC"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary_1a8e65963c3b6fbe4da8711923c3897e2b"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x324IfcPhysicalOrVirtualEnumE" title="Ifc2x3::IfcPhysicalOrVirtualEnum">IfcPhysicalOrVirtualEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x324IfcPhysicalOrVirtualEnum5ValueE" title="Ifc2x3::IfcPhysicalOrVirtualEnum::Value">Value</a> <code class="sig-name descname">PhysicalOrVirtualBoundary</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x319IfcRelSpaceBoundary25PhysicalOrVirtualBoundaryEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Defines, whether the Space Boundary is physical (Physical) or virtual (Virtual). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x319IfcRelSpaceBoundary28setPhysicalOrVirtualBoundaryEN6Ifc2x324IfcPhysicalOrVirtualEnum5ValueE">
+<span id="_CPPv3N6Ifc2x319IfcRelSpaceBoundary28setPhysicalOrVirtualBoundaryEN6Ifc2x324IfcPhysicalOrVirtualEnum5ValueE"></span><span id="_CPPv2N6Ifc2x319IfcRelSpaceBoundary28setPhysicalOrVirtualBoundaryEN6Ifc2x324IfcPhysicalOrVirtualEnum5ValueE"></span><span id="Ifc2x3::IfcRelSpaceBoundary::setPhysicalOrVirtualBoundary__Ifc2x3::IfcPhysicalOrVirtualEnum::Value"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary_1ab7ba2b8160213ad9c29f5dc67da88889"></span>void <code class="sig-name descname">setPhysicalOrVirtualBoundary</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x324IfcPhysicalOrVirtualEnumE" title="Ifc2x3::IfcPhysicalOrVirtualEnum">IfcPhysicalOrVirtualEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x324IfcPhysicalOrVirtualEnum5ValueE" title="Ifc2x3::IfcPhysicalOrVirtualEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcRelSpaceBoundary28setPhysicalOrVirtualBoundaryEN6Ifc2x324IfcPhysicalOrVirtualEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x319IfcRelSpaceBoundary26InternalOrExternalBoundaryEv">
+<span id="_CPPv3NK6Ifc2x319IfcRelSpaceBoundary26InternalOrExternalBoundaryEv"></span><span id="_CPPv2NK6Ifc2x319IfcRelSpaceBoundary26InternalOrExternalBoundaryEv"></span><span id="Ifc2x3::IfcRelSpaceBoundary::InternalOrExternalBoundaryC"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary_1a8e638375503395fd3d088e313fb8ef03"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x325IfcInternalOrExternalEnumE" title="Ifc2x3::IfcInternalOrExternalEnum">IfcInternalOrExternalEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x325IfcInternalOrExternalEnum5ValueE" title="Ifc2x3::IfcInternalOrExternalEnum::Value">Value</a> <code class="sig-name descname">InternalOrExternalBoundary</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x319IfcRelSpaceBoundary26InternalOrExternalBoundaryEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Defines, whether the Space Boundary is internal (Internal), or external, i.e. adjacent to open space (that can be an partially enclosed space, such as terrace (External). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x319IfcRelSpaceBoundary29setInternalOrExternalBoundaryEN6Ifc2x325IfcInternalOrExternalEnum5ValueE">
+<span id="_CPPv3N6Ifc2x319IfcRelSpaceBoundary29setInternalOrExternalBoundaryEN6Ifc2x325IfcInternalOrExternalEnum5ValueE"></span><span id="_CPPv2N6Ifc2x319IfcRelSpaceBoundary29setInternalOrExternalBoundaryEN6Ifc2x325IfcInternalOrExternalEnum5ValueE"></span><span id="Ifc2x3::IfcRelSpaceBoundary::setInternalOrExternalBoundary__Ifc2x3::IfcInternalOrExternalEnum::Value"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary_1a167e2524daf89d887c6c6a8f0a9e2917"></span>void <code class="sig-name descname">setInternalOrExternalBoundary</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x325IfcInternalOrExternalEnumE" title="Ifc2x3::IfcInternalOrExternalEnum">IfcInternalOrExternalEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x325IfcInternalOrExternalEnum5ValueE" title="Ifc2x3::IfcInternalOrExternalEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcRelSpaceBoundary29setInternalOrExternalBoundaryEN6Ifc2x325IfcInternalOrExternalEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x319IfcRelSpaceBoundary11declarationEv">
+<span id="_CPPv3NK6Ifc2x319IfcRelSpaceBoundary11declarationEv"></span><span id="_CPPv2NK6Ifc2x319IfcRelSpaceBoundary11declarationEv"></span><span id="Ifc2x3::IfcRelSpaceBoundary::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary_1a5231e671851a5ba627cfcc0c5bbd3d44"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x319IfcRelSpaceBoundary11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x319IfcRelSpaceBoundary19IfcRelSpaceBoundaryEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x319IfcRelSpaceBoundary19IfcRelSpaceBoundaryEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x319IfcRelSpaceBoundary19IfcRelSpaceBoundaryEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcRelSpaceBoundary::IfcRelSpaceBoundary__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary_1a7040e42329a23e2ebf3739b891c78647"></span><code class="sig-name descname">IfcRelSpaceBoundary</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcRelSpaceBoundary19IfcRelSpaceBoundaryEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x319IfcRelSpaceBoundary19IfcRelSpaceBoundaryENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x38IfcSpaceEPN6Ifc2x310IfcElementEPN6Ifc2x321IfcConnectionGeometryEN6Ifc2x324IfcPhysicalOrVirtualEnum5ValueEN6Ifc2x325IfcInternalOrExternalEnum5ValueE">
+<span id="_CPPv3N6Ifc2x319IfcRelSpaceBoundary19IfcRelSpaceBoundaryENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x38IfcSpaceEPN6Ifc2x310IfcElementEPN6Ifc2x321IfcConnectionGeometryEN6Ifc2x324IfcPhysicalOrVirtualEnum5ValueEN6Ifc2x325IfcInternalOrExternalEnum5ValueE"></span><span id="_CPPv2N6Ifc2x319IfcRelSpaceBoundary19IfcRelSpaceBoundaryENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x38IfcSpaceEPN6Ifc2x310IfcElementEPN6Ifc2x321IfcConnectionGeometryEN6Ifc2x324IfcPhysicalOrVirtualEnum5ValueEN6Ifc2x325IfcInternalOrExternalEnum5ValueE"></span><span id="Ifc2x3::IfcRelSpaceBoundary::IfcRelSpaceBoundary__ss.Ifc2x3::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.Ifc2x3::IfcSpaceP.Ifc2x3::IfcElementP.Ifc2x3::IfcConnectionGeometryP.Ifc2x3::IfcPhysicalOrVirtualEnum::Value.Ifc2x3::IfcInternalOrExternalEnum::Value"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary_1a0e99eb4db8743625cda826243d4f306c"></span><code class="sig-name descname">IfcRelSpaceBoundary</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_owner_history.html#_CPPv4N6Ifc2x315IfcOwnerHistoryE" title="Ifc2x3::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_space.html#_CPPv4N6Ifc2x38IfcSpaceE" title="Ifc2x3::IfcSpace">IfcSpace</a> *<em>v5_RelatingSpace</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_element.html#_CPPv4N6Ifc2x310IfcElementE" title="Ifc2x3::IfcElement">IfcElement</a> *<em>v6_RelatedBuildingElement</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_connection_geometry.html#_CPPv4N6Ifc2x321IfcConnectionGeometryE" title="Ifc2x3::IfcConnectionGeometry">IfcConnectionGeometry</a> *<em>v7_ConnectionGeometry</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x324IfcPhysicalOrVirtualEnumE" title="Ifc2x3::IfcPhysicalOrVirtualEnum">IfcPhysicalOrVirtualEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x324IfcPhysicalOrVirtualEnum5ValueE" title="Ifc2x3::IfcPhysicalOrVirtualEnum::Value">Value</a> <em>v8_PhysicalOrVirtualBoundary</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x325IfcInternalOrExternalEnumE" title="Ifc2x3::IfcInternalOrExternalEnum">IfcInternalOrExternalEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x325IfcInternalOrExternalEnum5ValueE" title="Ifc2x3::IfcInternalOrExternalEnum::Value">Value</a> <em>v9_InternalOrExternalBoundary</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcRelSpaceBoundary19IfcRelSpaceBoundaryENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x38IfcSpaceEPN6Ifc2x310IfcElementEPN6Ifc2x321IfcConnectionGeometryEN6Ifc2x324IfcPhysicalOrVirtualEnum5ValueEN6Ifc2x325IfcInternalOrExternalEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x319IfcRelSpaceBoundary5ClassEv">
+<span id="_CPPv3N6Ifc2x319IfcRelSpaceBoundary5ClassEv"></span><span id="_CPPv2N6Ifc2x319IfcRelSpaceBoundary5ClassEv"></span><span id="Ifc2x3::IfcRelSpaceBoundary::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_rel_space_boundary_1af15e19608359ad6b1e5dd6ccf45e7108"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x319IfcRelSpaceBoundary5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_rel_services_buildings.html" title="previous chapter">Class Ifc2x3::IfcRelServicesBuildings</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_rel_voids_element.html" title="next chapter">Class Ifc2x3::IfcRelVoidsElement</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_rel_space_boundary.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aa3c37645484a5c492840eb62416f6987:
+
+Define SCHEMA_IfcLaborResource_HAS_SkillSet
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcLaborResource_HAS_SkillSet

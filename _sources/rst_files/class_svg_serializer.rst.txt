@@ -1,0 +1,25 @@
+.. _exhale_class_class_svg_serializer:
+
+Class SvgSerializer
+===================
+
+- Defined in :ref:`file_src_serializers_SvgSerializer.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public GeometrySerializer`` (:ref:`exhale_class_class_geometry_serializer`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: SvgSerializer
+   :members:
+   :protected-members:
+   :undoc-members:

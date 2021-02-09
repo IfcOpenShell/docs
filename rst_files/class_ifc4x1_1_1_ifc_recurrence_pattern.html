@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcRecurrencePattern &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcReference" href="class_ifc4x1_1_1_ifc_reference.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcRectangularTrimmedSurface" href="class_ifc4x1_1_1_ifc_rectangular_trimmed_surface.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcrecurrencepattern">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-recurrence-pattern"></span><h1>Class Ifc4x1::IfcRecurrencePattern<a class="headerlink" href="#class-ifc4x1-ifcrecurrencepattern" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">IfcUtil::IfcBaseEntity</span></code> (<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#exhale-class-class-ifc-util-1-1-ifc-base-entity"><span class="std std-ref">Class IfcBaseEntity</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x120IfcRecurrencePatternE">
+<span id="_CPPv3N6Ifc4x120IfcRecurrencePatternE"></span><span id="_CPPv2N6Ifc4x120IfcRecurrencePatternE"></span><span id="Ifc4x1::IfcRecurrencePattern"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcRecurrencePattern</code> : <em class="property">public</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcRecurrencePatternE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_recurrence_pattern"><span class="std std-ref">IfcRecurrencePattern</span></a> defines repetitive time periods on the basis of regular recurrences such as each Monday in a week, or every third Tuesday in a month. The population of the remaining attributes such as DayComponent, Position, and Interval depend on the specified recurrence type.</p>
+<p>HISTORY: New entity in IFC2x4.</p>
+<p>Use definitions <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_recurrence_pattern"><span class="std std-ref">IfcRecurrencePattern</span></a> supports various recurrence patterns that are differentiated by a type definition (<a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_recurrence_pattern_1a34f167161ca43e939664caa645842b9b"><span class="std std-ref">IfcRecurrencePattern.RecurrenceType</span></a>), which is required to provide the meaning of the given values. It can be further constrained by applicable times through specified <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_time_period"><span class="std std-ref">IfcTimePeriod</span></a> instances, thus enabling time periods such as between 7:00 and 12:00 and between 13:00 and 17:00 for each of the applicable days, weeks or months. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x120IfcRecurrencePattern4listE">
+<span id="_CPPv3N6Ifc4x120IfcRecurrencePattern4listE"></span><span id="_CPPv2N6Ifc4x120IfcRecurrencePattern4listE"></span><span id="Ifc4x1::IfcRecurrencePattern::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1a75c80770502897a3488329f128d9ede9"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x120IfcRecurrencePatternE" title="Ifc4x1::IfcRecurrencePattern">IfcRecurrencePattern</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcRecurrencePattern4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcRecurrencePattern14RecurrenceTypeEv">
+<span id="_CPPv3NK6Ifc4x120IfcRecurrencePattern14RecurrenceTypeEv"></span><span id="_CPPv2NK6Ifc4x120IfcRecurrencePattern14RecurrenceTypeEv"></span><span id="Ifc4x1::IfcRecurrencePattern::RecurrenceTypeC"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1a34f167161ca43e939664caa645842b9b"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x121IfcRecurrenceTypeEnumE" title="Ifc4x1::IfcRecurrenceTypeEnum">IfcRecurrenceTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x121IfcRecurrenceTypeEnum5ValueE" title="Ifc4x1::IfcRecurrenceTypeEnum::Value">Value</a> <code class="sig-name descname">RecurrenceType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcRecurrencePattern14RecurrenceTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Defines the recurrence type that gives meaning to the used attributes and decides about possible attribute combinations, i.e. what attributes are needed to fully describe the pattern type. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcRecurrencePattern17setRecurrenceTypeEN6Ifc4x121IfcRecurrenceTypeEnum5ValueE">
+<span id="_CPPv3N6Ifc4x120IfcRecurrencePattern17setRecurrenceTypeEN6Ifc4x121IfcRecurrenceTypeEnum5ValueE"></span><span id="_CPPv2N6Ifc4x120IfcRecurrencePattern17setRecurrenceTypeEN6Ifc4x121IfcRecurrenceTypeEnum5ValueE"></span><span id="Ifc4x1::IfcRecurrencePattern::setRecurrenceType__Ifc4x1::IfcRecurrenceTypeEnum::Value"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1abd0ca16fc93b109b8023897116bc636a"></span>void <code class="sig-name descname">setRecurrenceType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x121IfcRecurrenceTypeEnumE" title="Ifc4x1::IfcRecurrenceTypeEnum">IfcRecurrenceTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x121IfcRecurrenceTypeEnum5ValueE" title="Ifc4x1::IfcRecurrenceTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcRecurrencePattern17setRecurrenceTypeEN6Ifc4x121IfcRecurrenceTypeEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcRecurrencePattern15hasDayComponentEv">
+<span id="_CPPv3NK6Ifc4x120IfcRecurrencePattern15hasDayComponentEv"></span><span id="_CPPv2NK6Ifc4x120IfcRecurrencePattern15hasDayComponentEv"></span><span id="Ifc4x1::IfcRecurrencePattern::hasDayComponentC"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1a3b20e135c9cb1df00d42a742ba7391b2"></span>bool <code class="sig-name descname">hasDayComponent</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcRecurrencePattern15hasDayComponentEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute DayComponent is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_recurrence_pattern"><span class="std std-ref">IfcRecurrencePattern</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcRecurrencePattern12DayComponentEv">
+<span id="_CPPv3NK6Ifc4x120IfcRecurrencePattern12DayComponentEv"></span><span id="_CPPv2NK6Ifc4x120IfcRecurrencePattern12DayComponentEv"></span><span id="Ifc4x1::IfcRecurrencePattern::DayComponentC"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1a3769c641db8052527169076a2de202d0"></span>std::vector&lt;int&gt; <code class="sig-name descname">DayComponent</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcRecurrencePattern12DayComponentEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The position of the specified day in a month. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcRecurrencePattern15setDayComponentENSt6vectorIiEE">
+<span id="_CPPv3N6Ifc4x120IfcRecurrencePattern15setDayComponentENSt6vectorIiEE"></span><span id="_CPPv2N6Ifc4x120IfcRecurrencePattern15setDayComponentENSt6vectorIiEE"></span><span id="Ifc4x1::IfcRecurrencePattern::setDayComponent__std::vector:i:"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1a22fa7849a9a7d72f143d714251fb014d"></span>void <code class="sig-name descname">setDayComponent</code><span class="sig-paren">(</span>std::vector&lt;int&gt; <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcRecurrencePattern15setDayComponentENSt6vectorIiEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcRecurrencePattern19hasWeekdayComponentEv">
+<span id="_CPPv3NK6Ifc4x120IfcRecurrencePattern19hasWeekdayComponentEv"></span><span id="_CPPv2NK6Ifc4x120IfcRecurrencePattern19hasWeekdayComponentEv"></span><span id="Ifc4x1::IfcRecurrencePattern::hasWeekdayComponentC"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1a5fbf8add14f39e8110cc86f191c0b465"></span>bool <code class="sig-name descname">hasWeekdayComponent</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcRecurrencePattern19hasWeekdayComponentEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute WeekdayComponent is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_recurrence_pattern"><span class="std std-ref">IfcRecurrencePattern</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcRecurrencePattern16WeekdayComponentEv">
+<span id="_CPPv3NK6Ifc4x120IfcRecurrencePattern16WeekdayComponentEv"></span><span id="_CPPv2NK6Ifc4x120IfcRecurrencePattern16WeekdayComponentEv"></span><span id="Ifc4x1::IfcRecurrencePattern::WeekdayComponentC"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1af90d25804ed2bf07eb342e2e8a62dc53"></span>std::vector&lt;int&gt; <code class="sig-name descname">WeekdayComponent</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcRecurrencePattern16WeekdayComponentEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The weekday name of the specified day in a week. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcRecurrencePattern19setWeekdayComponentENSt6vectorIiEE">
+<span id="_CPPv3N6Ifc4x120IfcRecurrencePattern19setWeekdayComponentENSt6vectorIiEE"></span><span id="_CPPv2N6Ifc4x120IfcRecurrencePattern19setWeekdayComponentENSt6vectorIiEE"></span><span id="Ifc4x1::IfcRecurrencePattern::setWeekdayComponent__std::vector:i:"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1aed57a48b22a610791faf3c59f1b0b3c8"></span>void <code class="sig-name descname">setWeekdayComponent</code><span class="sig-paren">(</span>std::vector&lt;int&gt; <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcRecurrencePattern19setWeekdayComponentENSt6vectorIiEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcRecurrencePattern17hasMonthComponentEv">
+<span id="_CPPv3NK6Ifc4x120IfcRecurrencePattern17hasMonthComponentEv"></span><span id="_CPPv2NK6Ifc4x120IfcRecurrencePattern17hasMonthComponentEv"></span><span id="Ifc4x1::IfcRecurrencePattern::hasMonthComponentC"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1a8cac5a48b11c9b2d69992b04fa826076"></span>bool <code class="sig-name descname">hasMonthComponent</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcRecurrencePattern17hasMonthComponentEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute MonthComponent is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_recurrence_pattern"><span class="std std-ref">IfcRecurrencePattern</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcRecurrencePattern14MonthComponentEv">
+<span id="_CPPv3NK6Ifc4x120IfcRecurrencePattern14MonthComponentEv"></span><span id="_CPPv2NK6Ifc4x120IfcRecurrencePattern14MonthComponentEv"></span><span id="Ifc4x1::IfcRecurrencePattern::MonthComponentC"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1a286494421ad6a5b216ea8f40a064a7e0"></span>std::vector&lt;int&gt; <code class="sig-name descname">MonthComponent</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcRecurrencePattern14MonthComponentEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The position of the specified month in a year. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcRecurrencePattern17setMonthComponentENSt6vectorIiEE">
+<span id="_CPPv3N6Ifc4x120IfcRecurrencePattern17setMonthComponentENSt6vectorIiEE"></span><span id="_CPPv2N6Ifc4x120IfcRecurrencePattern17setMonthComponentENSt6vectorIiEE"></span><span id="Ifc4x1::IfcRecurrencePattern::setMonthComponent__std::vector:i:"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1a8d7bef48c5f53d952962d0c56b58b5d4"></span>void <code class="sig-name descname">setMonthComponent</code><span class="sig-paren">(</span>std::vector&lt;int&gt; <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcRecurrencePattern17setMonthComponentENSt6vectorIiEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcRecurrencePattern11hasPositionEv">
+<span id="_CPPv3NK6Ifc4x120IfcRecurrencePattern11hasPositionEv"></span><span id="_CPPv2NK6Ifc4x120IfcRecurrencePattern11hasPositionEv"></span><span id="Ifc4x1::IfcRecurrencePattern::hasPositionC"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1ad3a4a70377fe743ae7ffb79b8b7f9984"></span>bool <code class="sig-name descname">hasPosition</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcRecurrencePattern11hasPositionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Position is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_recurrence_pattern"><span class="std std-ref">IfcRecurrencePattern</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcRecurrencePattern8PositionEv">
+<span id="_CPPv3NK6Ifc4x120IfcRecurrencePattern8PositionEv"></span><span id="_CPPv2NK6Ifc4x120IfcRecurrencePattern8PositionEv"></span><span id="Ifc4x1::IfcRecurrencePattern::PositionC"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1aee074b7f132d43f319fc2262b1ff178f"></span>int <code class="sig-name descname">Position</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcRecurrencePattern8PositionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The position of the specified component, e.g. the 3rd (position=3) Tuesday (weekday component) in a month. A negative position value is used to define the last position of the component (-1), the next to last position (-2) etc. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcRecurrencePattern11setPositionEi">
+<span id="_CPPv3N6Ifc4x120IfcRecurrencePattern11setPositionEi"></span><span id="_CPPv2N6Ifc4x120IfcRecurrencePattern11setPositionEi"></span><span id="Ifc4x1::IfcRecurrencePattern::setPosition__i"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1aea96e6f8ba73d22e584c5729e7495f40"></span>void <code class="sig-name descname">setPosition</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcRecurrencePattern11setPositionEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcRecurrencePattern11hasIntervalEv">
+<span id="_CPPv3NK6Ifc4x120IfcRecurrencePattern11hasIntervalEv"></span><span id="_CPPv2NK6Ifc4x120IfcRecurrencePattern11hasIntervalEv"></span><span id="Ifc4x1::IfcRecurrencePattern::hasIntervalC"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1a3cb83c8684538289247e1535bc5d60a2"></span>bool <code class="sig-name descname">hasInterval</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcRecurrencePattern11hasIntervalEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Interval is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_recurrence_pattern"><span class="std std-ref">IfcRecurrencePattern</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcRecurrencePattern8IntervalEv">
+<span id="_CPPv3NK6Ifc4x120IfcRecurrencePattern8IntervalEv"></span><span id="_CPPv2NK6Ifc4x120IfcRecurrencePattern8IntervalEv"></span><span id="Ifc4x1::IfcRecurrencePattern::IntervalC"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1a17b4274c9413370dd753202ec038d153"></span>int <code class="sig-name descname">Interval</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcRecurrencePattern8IntervalEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An interval can be given according to the pattern type. An interval value of 2 can for instance every two days, weeks, months, years. An empty interval value is regarded as 1. The used interval values should be in a reasonable range, e.g. not 0 or &lt;0. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcRecurrencePattern11setIntervalEi">
+<span id="_CPPv3N6Ifc4x120IfcRecurrencePattern11setIntervalEi"></span><span id="_CPPv2N6Ifc4x120IfcRecurrencePattern11setIntervalEi"></span><span id="Ifc4x1::IfcRecurrencePattern::setInterval__i"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1adfeaab16796d1cd37f204432d6fe9e49"></span>void <code class="sig-name descname">setInterval</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcRecurrencePattern11setIntervalEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcRecurrencePattern14hasOccurrencesEv">
+<span id="_CPPv3NK6Ifc4x120IfcRecurrencePattern14hasOccurrencesEv"></span><span id="_CPPv2NK6Ifc4x120IfcRecurrencePattern14hasOccurrencesEv"></span><span id="Ifc4x1::IfcRecurrencePattern::hasOccurrencesC"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1acbd7e7751de7315640a9fd09440b74e9"></span>bool <code class="sig-name descname">hasOccurrences</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcRecurrencePattern14hasOccurrencesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Occurrences is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_recurrence_pattern"><span class="std std-ref">IfcRecurrencePattern</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcRecurrencePattern11OccurrencesEv">
+<span id="_CPPv3NK6Ifc4x120IfcRecurrencePattern11OccurrencesEv"></span><span id="_CPPv2NK6Ifc4x120IfcRecurrencePattern11OccurrencesEv"></span><span id="Ifc4x1::IfcRecurrencePattern::OccurrencesC"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1aea8a0261796535530a006e51c90569e6"></span>int <code class="sig-name descname">Occurrences</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcRecurrencePattern11OccurrencesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Defines the number of occurrences of this pattern, e.g. a weekly event might be defined to occur 5 times before it stops. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcRecurrencePattern14setOccurrencesEi">
+<span id="_CPPv3N6Ifc4x120IfcRecurrencePattern14setOccurrencesEi"></span><span id="_CPPv2N6Ifc4x120IfcRecurrencePattern14setOccurrencesEi"></span><span id="Ifc4x1::IfcRecurrencePattern::setOccurrences__i"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1a17b3ada61012fc60d3e41cc359d2f1f1"></span>void <code class="sig-name descname">setOccurrences</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcRecurrencePattern14setOccurrencesEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcRecurrencePattern14hasTimePeriodsEv">
+<span id="_CPPv3NK6Ifc4x120IfcRecurrencePattern14hasTimePeriodsEv"></span><span id="_CPPv2NK6Ifc4x120IfcRecurrencePattern14hasTimePeriodsEv"></span><span id="Ifc4x1::IfcRecurrencePattern::hasTimePeriodsC"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1aae0449000cd21d252482ac88a39d3c67"></span>bool <code class="sig-name descname">hasTimePeriods</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcRecurrencePattern14hasTimePeriodsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute TimePeriods is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_recurrence_pattern"><span class="std std-ref">IfcRecurrencePattern</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcRecurrencePattern11TimePeriodsEv">
+<span id="_CPPv3NK6Ifc4x120IfcRecurrencePattern11TimePeriodsEv"></span><span id="_CPPv2NK6Ifc4x120IfcRecurrencePattern11TimePeriodsEv"></span><span id="Ifc4x1::IfcRecurrencePattern::TimePeriodsC"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1ac8ee8d0161b3c5eb464c8c6195a1eefd"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_time_period.html#_CPPv4N6Ifc4x113IfcTimePeriodE" title="Ifc4x1::IfcTimePeriod">IfcTimePeriod</a>&gt;::ptr <code class="sig-name descname">TimePeriods</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcRecurrencePattern11TimePeriodsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>List of time periods that are defined by a start and end time of the recurring element (day). The order of the list should reflect the sequence of the time periods. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcRecurrencePattern14setTimePeriodsEN22IfcTemplatedEntityListIN6Ifc4x113IfcTimePeriodEE3ptrE">
+<span id="_CPPv3N6Ifc4x120IfcRecurrencePattern14setTimePeriodsEN22IfcTemplatedEntityListIN6Ifc4x113IfcTimePeriodEE3ptrE"></span><span id="_CPPv2N6Ifc4x120IfcRecurrencePattern14setTimePeriodsEN22IfcTemplatedEntityListIN6Ifc4x113IfcTimePeriodEE3ptrE"></span><span id="Ifc4x1::IfcRecurrencePattern::setTimePeriods__IfcTemplatedEntityList:Ifc4x1::IfcTimePeriod:::ptr"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1af4b653e43de9baf5e981e82bd55dc2d1"></span>void <code class="sig-name descname">setTimePeriods</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_time_period.html#_CPPv4N6Ifc4x113IfcTimePeriodE" title="Ifc4x1::IfcTimePeriod">IfcTimePeriod</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcRecurrencePattern14setTimePeriodsEN22IfcTemplatedEntityListIN6Ifc4x113IfcTimePeriodEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcRecurrencePattern11declarationEv">
+<span id="_CPPv3NK6Ifc4x120IfcRecurrencePattern11declarationEv"></span><span id="_CPPv2NK6Ifc4x120IfcRecurrencePattern11declarationEv"></span><span id="Ifc4x1::IfcRecurrencePattern::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1a2c54d5b8259a266e7baf4a73dae994ee"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcRecurrencePattern11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcRecurrencePattern20IfcRecurrencePatternEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x120IfcRecurrencePattern20IfcRecurrencePatternEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x120IfcRecurrencePattern20IfcRecurrencePatternEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcRecurrencePattern::IfcRecurrencePattern__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1a2089c9c6f2dcc5f6980cb58ad2ae3520"></span><code class="sig-name descname">IfcRecurrencePattern</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcRecurrencePattern20IfcRecurrencePatternEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcRecurrencePattern20IfcRecurrencePatternEN6Ifc4x121IfcRecurrenceTypeEnum5ValueEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalIiEEN5boost8optionalIiEEN5boost8optionalIiEEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x113IfcTimePeriodEE3ptrEEE">
+<span id="_CPPv3N6Ifc4x120IfcRecurrencePattern20IfcRecurrencePatternEN6Ifc4x121IfcRecurrenceTypeEnum5ValueEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalIiEEN5boost8optionalIiEEN5boost8optionalIiEEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x113IfcTimePeriodEE3ptrEEE"></span><span id="_CPPv2N6Ifc4x120IfcRecurrencePattern20IfcRecurrencePatternEN6Ifc4x121IfcRecurrenceTypeEnum5ValueEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalIiEEN5boost8optionalIiEEN5boost8optionalIiEEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x113IfcTimePeriodEE3ptrEEE"></span><span id="Ifc4x1::IfcRecurrencePattern::IfcRecurrencePattern__Ifc4x1::IfcRecurrenceTypeEnum::Value.boost::optional:std::vector:i::.boost::optional:std::vector:i::.boost::optional:std::vector:i::.boost::optional:i:.boost::optional:i:.boost::optional:i:.boost::optional:IfcTemplatedEntityList:Ifc4x1::IfcTimePeriod:::ptr:"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1a2bf483a17dc1b389ae9186c9f0cb7ac7"></span><code class="sig-name descname">IfcRecurrencePattern</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x121IfcRecurrenceTypeEnumE" title="Ifc4x1::IfcRecurrenceTypeEnum">IfcRecurrenceTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x121IfcRecurrenceTypeEnum5ValueE" title="Ifc4x1::IfcRecurrenceTypeEnum::Value">Value</a> <em>v1_RecurrenceType</em>, boost::optional&lt;std::vector&lt;int&gt;&gt; <em>v2_DayComponent</em>, boost::optional&lt;std::vector&lt;int&gt;&gt; <em>v3_WeekdayComponent</em>, boost::optional&lt;std::vector&lt;int&gt;&gt; <em>v4_MonthComponent</em>, boost::optional&lt;int&gt; <em>v5_Position</em>, boost::optional&lt;int&gt; <em>v6_Interval</em>, boost::optional&lt;int&gt; <em>v7_Occurrences</em>, boost::optional&lt;<a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_time_period.html#_CPPv4N6Ifc4x113IfcTimePeriodE" title="Ifc4x1::IfcTimePeriod">IfcTimePeriod</a>&gt;::ptr&gt; <em>v8_TimePeriods</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcRecurrencePattern20IfcRecurrencePatternEN6Ifc4x121IfcRecurrenceTypeEnum5ValueEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalINSt6vectorIiEEEEN5boost8optionalIiEEN5boost8optionalIiEEN5boost8optionalIiEEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x113IfcTimePeriodEE3ptrEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcRecurrencePattern5ClassEv">
+<span id="_CPPv3N6Ifc4x120IfcRecurrencePattern5ClassEv"></span><span id="_CPPv2N6Ifc4x120IfcRecurrencePattern5ClassEv"></span><span id="Ifc4x1::IfcRecurrencePattern::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_recurrence_pattern_1a78ab2c087908fc45fb77c598ea1d725b"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcRecurrencePattern5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_rectangular_trimmed_surface.html" title="previous chapter">Class Ifc4x1::IfcRectangularTrimmedSurface</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_reference.html" title="next chapter">Class Ifc4x1::IfcReference</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_recurrence_pattern.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

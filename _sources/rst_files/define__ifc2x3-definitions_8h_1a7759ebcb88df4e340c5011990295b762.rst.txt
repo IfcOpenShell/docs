@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a7759ebcb88df4e340c5011990295b762:
+
+Define SCHEMA_HAS_IfcTimeMeasure
+================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcTimeMeasure

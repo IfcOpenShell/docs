@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a5ff3f937eb25245c69bcfc11c7b3f317:
+
+Define SCHEMA_IfcRepresentationContext_ContextIdentifier_IS_OPTIONAL
+====================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRepresentationContext_ContextIdentifier_IS_OPTIONAL

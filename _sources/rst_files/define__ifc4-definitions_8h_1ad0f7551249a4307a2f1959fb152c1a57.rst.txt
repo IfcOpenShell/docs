@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ad0f7551249a4307a2f1959fb152c1a57:
+
+Define SCHEMA_IfcSubedge_HAS_ParentEdge
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSubedge_HAS_ParentEdge

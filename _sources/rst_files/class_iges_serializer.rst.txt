@@ -1,0 +1,25 @@
+.. _exhale_class_class_iges_serializer:
+
+Class IgesSerializer
+====================
+
+- Defined in :ref:`file_src_serializers_IgesSerializer.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public OpenCascadeBasedSerializer`` (:ref:`exhale_class_class_open_cascade_based_serializer`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IgesSerializer
+   :members:
+   :protected-members:
+   :undoc-members:

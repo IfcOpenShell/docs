@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a0ff919e074ab3ab42d552dd5aa835fe9:
+
+Define SCHEMA_HAS_IfcMechanicalMaterialProperties
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcMechanicalMaterialProperties

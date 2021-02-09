@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1a4c315d1c467712795ed1fa42131014f2:
+
+Define SCHEMA_IfcPropertyDefinition_HAS_HasAssociations
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPropertyDefinition_HAS_HasAssociations

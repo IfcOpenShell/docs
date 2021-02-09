@@ -1,0 +1,13 @@
+.. _exhale_function_utils_8h_1aa37c1f7b1c94535a8f10e62559711eaf:
+
+Function IfcUtil::path::rename_file
+===================================
+
+- Defined in :ref:`file_src_ifcparse_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcUtil::path::rename_file(const std::string&, const std::string&)

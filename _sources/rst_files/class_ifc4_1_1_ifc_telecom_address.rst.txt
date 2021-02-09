@@ -1,0 +1,31 @@
+.. _exhale_class_class_ifc4_1_1_ifc_telecom_address:
+
+Class Ifc4::IfcTelecomAddress
+=============================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4::IfcAddress`` (:ref:`exhale_class_class_ifc4_1_1_ifc_address`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4::IfcTelecomAddress
+   :members:
+   :protected-members:
+   :undoc-members:

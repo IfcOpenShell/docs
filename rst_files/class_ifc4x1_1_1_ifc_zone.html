@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcZone &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcZShapeProfileDef" href="class_ifc4x1_1_1_ifc_z_shape_profile_def.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcWorkTime" href="class_ifc4x1_1_1_ifc_work_time.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifczone">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-zone"></span><h1>Class Ifc4x1::IfcZone<a class="headerlink" href="#class-ifc4x1-ifczone" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcSystem</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_system.html#exhale-class-class-ifc4x1-1-1-ifc-system"><span class="std std-ref">Class Ifc4x1::IfcSystem</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x17IfcZoneE">
+<span id="_CPPv3N6Ifc4x17IfcZoneE"></span><span id="_CPPv2N6Ifc4x17IfcZoneE"></span><span id="Ifc4x1::IfcZone"></span><span class="target" id="class_ifc4x1_1_1_ifc_zone"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcZone</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_system.html#_CPPv4N6Ifc4x19IfcSystemE" title="Ifc4x1::IfcSystem">IfcSystem</a><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcZoneE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from IAI: A zone isa group of spaces, partial spaces or other zones. Zone structures may not be hierarchical (in contrary to the spatial structure of a project - see <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_spatial_structure_element"><span class="std std-ref">IfcSpatialStructureElement</span></a>), i.e. one individual <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> may be associated with zero, one, or several <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_zone"><span class="std std-ref">IfcZone</span></a>’s. <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a>’s are grouped into an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_zone"><span class="std std-ref">IfcZone</span></a> by using the objectified relationship <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_assigns_to_group"><span class="std std-ref">IfcRelAssignsToGroup</span></a> as specified at the supertype <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_group"><span class="std std-ref">IfcGroup</span></a>. NOTE Certain use cases may restrict the freedom of non hierarchical relationships. In some building service use cases the zone denotes aview based delimited volume for the purpose of analysis and calculation. This type of zone cannot overlap with respect to that analysis, but may overlap otherwise. An <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_zone"><span class="std std-ref">IfcZone</span></a> is a spatial system under which individual <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a>’s (and other <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_zone"><span class="std std-ref">IfcZone</span></a>’s) are grouped. In contrary to the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_spatial_zone"><span class="std std-ref">IfcSpatialZone</span></a> entity, <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_zone"><span class="std std-ref">IfcZone</span></a> is a mere grouping, it can not define an own geometric representation and placement. Therefore it cannot be used for spatial zones having a different shape and size compared to the shape and size of aggregated spaces. NOTE The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_zone"><span class="std std-ref">IfcZone</span></a> is regarded as the spatial system (as compared to the building service, electrical, or analytical system), the name remains <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_zone"><span class="std std-ref">IfcZone</span></a> for compatibility reasons, instead of using a proper naming convention, like IfcSpatialSystem. NOTE One of the purposes of a zone is to define a fire compartmentation. In this case it defines the geometric information about the fire compartment (through the contained spaces) and information, whether this compartment is ventilated or sprinkler protected. In addition the fire risk code and the hazard type can be added, the coding is normally defined within a national fire regulation. All that information is available within the relevant property sets. Again, if an independent shape has to be provided to the fire compartment, then the entity <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_spatial_zone"><span class="std std-ref">IfcSpatialZone</span></a> shall be used. RECOMMENDATION In case of a zone denoting a (fire) compartment, the following types should be used, if applicable, as values of the ObjectType attribute:</p>
+<p>FireCompartment - a zone of spaces, collected to represent a single fire compartment. ElevatorShaft - a collection of spaces within an elevator, potentially going through many storeys. RisingDuct RunningDuct</p>
+<p>Additional classifications of the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_zone"><span class="std std-ref">IfcZone</span></a>, as provided by a national classification system, can be assigned by using the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_associates_classification"><span class="std std-ref">IfcRelAssociatesClassification</span></a> relationship, accessible via the inverse attribute HasAssociations. The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_zone"><span class="std std-ref">IfcZone</span></a> can be assigned to a spatial structure element, it refers to, e.g. to a particular <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_building_storey"><span class="std std-ref">IfcBuildingStorey</span></a> by using the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_services_buildings"><span class="std std-ref">IfcRelServicesBuildings</span></a> relationship, accessible via the inverse attribute ServicesBuilding. HISTORY New entity in IFC Release 1.0 IFC2x4 CHANGE The entity is now subtyped from <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_system"><span class="std std-ref">IfcSystem</span></a> (not its supertype <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_group"><span class="std std-ref">IfcGroup</span></a>) with upward compatibility for file based exchange. Property Set Use Definition: The property sets relating to the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_zone"><span class="std std-ref">IfcZone</span></a> are defined by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> and attached by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. It is accessible by the inverse IsDefinedBy relationship. The following property set definitions specific to the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_zone"><span class="std std-ref">IfcZone</span></a> are part of this IFC release:</p>
+<p>Pset_ZoneCommon: common property set for all types of zone Pset_SpaceFireSafetyRequirements: common property set for all types of zones to capture the fire safety requirements Pset_SpaceLightingRequirements: common property set for all types of zones to capture the lighting requirements Pset_SpaceOccupancyRequirements: common property set for all types of zones to capture the occupancy requirements Pset_SpaceThermalRequirements: common property set for all types of zones to capture the thermal requirements </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x17IfcZone4listE">
+<span id="_CPPv3N6Ifc4x17IfcZone4listE"></span><span id="_CPPv2N6Ifc4x17IfcZone4listE"></span><span id="Ifc4x1::IfcZone::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_zone_1ae9b02bd45245f9dc9f2af96f7802563b"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x17IfcZoneE" title="Ifc4x1::IfcZone">IfcZone</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcZone4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x17IfcZone11hasLongNameEv">
+<span id="_CPPv3NK6Ifc4x17IfcZone11hasLongNameEv"></span><span id="_CPPv2NK6Ifc4x17IfcZone11hasLongNameEv"></span><span id="Ifc4x1::IfcZone::hasLongNameC"></span><span class="target" id="class_ifc4x1_1_1_ifc_zone_1ae2053144c9dbd7ae4036d18116e6bd4f"></span>bool <code class="sig-name descname">hasLongName</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x17IfcZone11hasLongNameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute LongName is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_zone"><span class="std std-ref">IfcZone</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x17IfcZone8LongNameEv">
+<span id="_CPPv3NK6Ifc4x17IfcZone8LongNameEv"></span><span id="_CPPv2NK6Ifc4x17IfcZone8LongNameEv"></span><span id="Ifc4x1::IfcZone::LongNameC"></span><span class="target" id="class_ifc4x1_1_1_ifc_zone_1a4b8d887040e66ac964d96ad1ae84f02c"></span>std::string <code class="sig-name descname">LongName</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x17IfcZone8LongNameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Long name for a zone, used for informal purposes. It should be used, if available, in conjunction with the inherited Name attribute.</p>
+<p>NOTE In many scenarios the Name attribute refers to the short name or number of a zone, and the LongName refers to the full name.</p>
+<p>IFC2x4 CHANGE The attribute has been added at the end of the entity definition. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x17IfcZone11setLongNameENSt6stringE">
+<span id="_CPPv3N6Ifc4x17IfcZone11setLongNameENSt6stringE"></span><span id="_CPPv2N6Ifc4x17IfcZone11setLongNameENSt6stringE"></span><span id="Ifc4x1::IfcZone::setLongName__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_zone_1ac514af00714abf17dcdd8ff6c0aa2a73"></span>void <code class="sig-name descname">setLongName</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcZone11setLongNameENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x17IfcZone11declarationEv">
+<span id="_CPPv3NK6Ifc4x17IfcZone11declarationEv"></span><span id="_CPPv2NK6Ifc4x17IfcZone11declarationEv"></span><span id="Ifc4x1::IfcZone::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_zone_1a41611edb791dba6a8ad470ed71a8c74f"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x17IfcZone11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x17IfcZone7IfcZoneEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x17IfcZone7IfcZoneEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x17IfcZone7IfcZoneEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcZone::IfcZone__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_zone_1ad515037a3c9f7f7db700dd69ce9e0631"></span><code class="sig-name descname">IfcZone</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcZone7IfcZoneEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x17IfcZone7IfcZoneENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE">
+<span id="_CPPv3N6Ifc4x17IfcZone7IfcZoneENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE"></span><span id="_CPPv2N6Ifc4x17IfcZone7IfcZoneENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE"></span><span id="Ifc4x1::IfcZone::IfcZone__ss.Ifc4x1::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:"></span><span class="target" id="class_ifc4x1_1_1_ifc_zone_1a5dc3abc3998f6ae5e411fb430d9642ee"></span><code class="sig-name descname">IfcZone</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_owner_history.html#_CPPv4N6Ifc4x115IfcOwnerHistoryE" title="Ifc4x1::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, boost::optional&lt;std::string&gt; <em>v6_LongName</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcZone7IfcZoneENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x17IfcZone5ClassEv">
+<span id="_CPPv3N6Ifc4x17IfcZone5ClassEv"></span><span id="_CPPv2N6Ifc4x17IfcZone5ClassEv"></span><span id="Ifc4x1::IfcZone::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_zone_1a9692d001b88bd01037e4db1099afd486"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcZone5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_work_time.html" title="previous chapter">Class Ifc4x1::IfcWorkTime</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_z_shape_profile_def.html" title="next chapter">Class Ifc4x1::IfcZShapeProfileDef</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_zone.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

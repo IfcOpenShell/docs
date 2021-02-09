@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a8766eec91f72b2ce43116857a86a633f:
+
+Define SCHEMA_IfcMechanicalConcreteMaterialProperties_HAS_ProtectivePoreRatio
+=============================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMechanicalConcreteMaterialProperties_HAS_ProtectivePoreRatio

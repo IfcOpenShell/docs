@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a8dac7783b378f5c945f15a33322ffe89:
+
+Define SCHEMA_IfcPolyline_HAS_Points
+====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPolyline_HAS_Points

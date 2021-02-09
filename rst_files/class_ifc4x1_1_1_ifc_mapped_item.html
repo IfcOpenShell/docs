@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcMappedItem &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcMassDensityMeasure" href="class_ifc4x1_1_1_ifc_mass_density_measure.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcMapConversion" href="class_ifc4x1_1_1_ifc_map_conversion.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcmappeditem">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-mapped-item"></span><h1>Class Ifc4x1::IfcMappedItem<a class="headerlink" href="#class-ifc4x1-ifcmappeditem" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcRepresentationItem</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_representation_item.html#exhale-class-class-ifc4x1-1-1-ifc-representation-item"><span class="std std-ref">Class Ifc4x1::IfcRepresentationItem</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x113IfcMappedItemE">
+<span id="_CPPv3N6Ifc4x113IfcMappedItemE"></span><span id="_CPPv2N6Ifc4x113IfcMappedItemE"></span><span id="Ifc4x1::IfcMappedItem"></span><span class="target" id="class_ifc4x1_1_1_ifc_mapped_item"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcMappedItem</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_representation_item.html#_CPPv4N6Ifc4x121IfcRepresentationItemE" title="Ifc4x1::IfcRepresentationItem">IfcRepresentationItem</a><a class="headerlink" href="#_CPPv4N6Ifc4x113IfcMappedItemE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-43:1992: A mapped item is the use of an existing representation (the mapping source - mapped representation) as a representation item in a second representation.</p>
+<p>NOTE: A mapped item is a subtype of representation item. It enables a representation to be used as a representation item in one or more other representations. The mapped item allows for the definition of a representation using other representations.</p>
+<p>The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_mapped_item"><span class="std std-ref">IfcMappedItem</span></a> is the inserted instance of a source definition (to be compared with a block / shared cell / macro definition). The instance is inserted by applying a Cartesian transformation operator as the MappingTarget.</p>
+<p>EXAMPLE An <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_mapped_item"><span class="std std-ref">IfcMappedItem</span></a> can reuse other mapped items (ako nested blocks), doing so the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_representation_map"><span class="std std-ref">IfcRepresentationMap</span></a> is based on an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> including one or more <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_mapped_item"><span class="std std-ref">IfcMappedItem</span></a>’s.</p>
+<p>NOTE  Corresponding ISO 10303 entity: mapped_item. Please refer to ISO/IS 10303-43:1994, for the final definition of the formal standard. The definition of mapping_target (MappingTarget) has been restricted to be of the type cartesian_transformation_operator (<a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_cartesian_transformation_operator"><span class="std std-ref">IfcCartesianTransformationOperator</span></a>).</p>
+<p>HISTORY New entity in IFC Release 2x.</p>
+<p>Informal Propositions</p>
+<p>A mapped item shall not be self-defining by participating in the definition of the representation being mapped. The dimensionality of the mapping source and the mapping target has to be the same, if the mapping source is a geometric representation item. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x113IfcMappedItem4listE">
+<span id="_CPPv3N6Ifc4x113IfcMappedItem4listE"></span><span id="_CPPv2N6Ifc4x113IfcMappedItem4listE"></span><span id="Ifc4x1::IfcMappedItem::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_mapped_item_1a8559ebbf180befb5d2c5f3fe02f17805"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x113IfcMappedItemE" title="Ifc4x1::IfcMappedItem">IfcMappedItem</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x113IfcMappedItem4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x113IfcMappedItem13MappingSourceEv">
+<span id="_CPPv3NK6Ifc4x113IfcMappedItem13MappingSourceEv"></span><span id="_CPPv2NK6Ifc4x113IfcMappedItem13MappingSourceEv"></span><span id="Ifc4x1::IfcMappedItem::MappingSourceC"></span><span class="target" id="class_ifc4x1_1_1_ifc_mapped_item_1ad77734215f71f69a5fca9e841faf22a3"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_representation_map.html#_CPPv4N6Ifc4x120IfcRepresentationMapE" title="Ifc4x1::IfcRepresentationMap">IfcRepresentationMap</a> *<code class="sig-name descname">MappingSource</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x113IfcMappedItem13MappingSourceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A representation map that is the source of the mapped item. It can be seen as a block (or cell or marco) definition. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x113IfcMappedItem16setMappingSourceEPN6Ifc4x120IfcRepresentationMapE">
+<span id="_CPPv3N6Ifc4x113IfcMappedItem16setMappingSourceEPN6Ifc4x120IfcRepresentationMapE"></span><span id="_CPPv2N6Ifc4x113IfcMappedItem16setMappingSourceEPN6Ifc4x120IfcRepresentationMapE"></span><span id="Ifc4x1::IfcMappedItem::setMappingSource__Ifc4x1::IfcRepresentationMapP"></span><span class="target" id="class_ifc4x1_1_1_ifc_mapped_item_1a117875af05d33b33a79f8edc5147c72c"></span>void <code class="sig-name descname">setMappingSource</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_representation_map.html#_CPPv4N6Ifc4x120IfcRepresentationMapE" title="Ifc4x1::IfcRepresentationMap">IfcRepresentationMap</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x113IfcMappedItem16setMappingSourceEPN6Ifc4x120IfcRepresentationMapE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x113IfcMappedItem13MappingTargetEv">
+<span id="_CPPv3NK6Ifc4x113IfcMappedItem13MappingTargetEv"></span><span id="_CPPv2NK6Ifc4x113IfcMappedItem13MappingTargetEv"></span><span id="Ifc4x1::IfcMappedItem::MappingTargetC"></span><span class="target" id="class_ifc4x1_1_1_ifc_mapped_item_1ad216a006c796652774aa0e7cae7aba86"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_cartesian_transformation_operator.html#_CPPv4N6Ifc4x134IfcCartesianTransformationOperatorE" title="Ifc4x1::IfcCartesianTransformationOperator">IfcCartesianTransformationOperator</a> *<code class="sig-name descname">MappingTarget</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x113IfcMappedItem13MappingTargetEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A representation item that is the target onto which the mapping source is mapped. It is constraint to be a Cartesian transformation operator. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x113IfcMappedItem16setMappingTargetEPN6Ifc4x134IfcCartesianTransformationOperatorE">
+<span id="_CPPv3N6Ifc4x113IfcMappedItem16setMappingTargetEPN6Ifc4x134IfcCartesianTransformationOperatorE"></span><span id="_CPPv2N6Ifc4x113IfcMappedItem16setMappingTargetEPN6Ifc4x134IfcCartesianTransformationOperatorE"></span><span id="Ifc4x1::IfcMappedItem::setMappingTarget__Ifc4x1::IfcCartesianTransformationOperatorP"></span><span class="target" id="class_ifc4x1_1_1_ifc_mapped_item_1aa4e04db85f2403d15f4b04c2f3bbc660"></span>void <code class="sig-name descname">setMappingTarget</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_cartesian_transformation_operator.html#_CPPv4N6Ifc4x134IfcCartesianTransformationOperatorE" title="Ifc4x1::IfcCartesianTransformationOperator">IfcCartesianTransformationOperator</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x113IfcMappedItem16setMappingTargetEPN6Ifc4x134IfcCartesianTransformationOperatorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x113IfcMappedItem11declarationEv">
+<span id="_CPPv3NK6Ifc4x113IfcMappedItem11declarationEv"></span><span id="_CPPv2NK6Ifc4x113IfcMappedItem11declarationEv"></span><span id="Ifc4x1::IfcMappedItem::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_mapped_item_1a1df056f5f3b3fc9e4d917ffc5e95ca4f"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x113IfcMappedItem11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x113IfcMappedItem13IfcMappedItemEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x113IfcMappedItem13IfcMappedItemEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x113IfcMappedItem13IfcMappedItemEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcMappedItem::IfcMappedItem__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_mapped_item_1a0d6baf7b844c61f0d984a8e39e541ed6"></span><code class="sig-name descname">IfcMappedItem</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x113IfcMappedItem13IfcMappedItemEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x113IfcMappedItem13IfcMappedItemEPN6Ifc4x120IfcRepresentationMapEPN6Ifc4x134IfcCartesianTransformationOperatorE">
+<span id="_CPPv3N6Ifc4x113IfcMappedItem13IfcMappedItemEPN6Ifc4x120IfcRepresentationMapEPN6Ifc4x134IfcCartesianTransformationOperatorE"></span><span id="_CPPv2N6Ifc4x113IfcMappedItem13IfcMappedItemEPN6Ifc4x120IfcRepresentationMapEPN6Ifc4x134IfcCartesianTransformationOperatorE"></span><span id="Ifc4x1::IfcMappedItem::IfcMappedItem__Ifc4x1::IfcRepresentationMapP.Ifc4x1::IfcCartesianTransformationOperatorP"></span><span class="target" id="class_ifc4x1_1_1_ifc_mapped_item_1a2ead2f6fd7ec811cc7635c6e53ede645"></span><code class="sig-name descname">IfcMappedItem</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_representation_map.html#_CPPv4N6Ifc4x120IfcRepresentationMapE" title="Ifc4x1::IfcRepresentationMap">IfcRepresentationMap</a> *<em>v1_MappingSource</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_cartesian_transformation_operator.html#_CPPv4N6Ifc4x134IfcCartesianTransformationOperatorE" title="Ifc4x1::IfcCartesianTransformationOperator">IfcCartesianTransformationOperator</a> *<em>v2_MappingTarget</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x113IfcMappedItem13IfcMappedItemEPN6Ifc4x120IfcRepresentationMapEPN6Ifc4x134IfcCartesianTransformationOperatorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x113IfcMappedItem5ClassEv">
+<span id="_CPPv3N6Ifc4x113IfcMappedItem5ClassEv"></span><span id="_CPPv2N6Ifc4x113IfcMappedItem5ClassEv"></span><span id="Ifc4x1::IfcMappedItem::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_mapped_item_1a58b07945c0ae6db684b8bb408840449a"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x113IfcMappedItem5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_map_conversion.html" title="previous chapter">Class Ifc4x1::IfcMapConversion</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_mass_density_measure.html" title="next chapter">Class Ifc4x1::IfcMassDensityMeasure</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_mapped_item.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

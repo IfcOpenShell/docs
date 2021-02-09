@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1af6024cf37524df7cf28eaa8dec73a3d6:
+
+Define SCHEMA_HAS_IfcAlarmType
+==============================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcAlarmType

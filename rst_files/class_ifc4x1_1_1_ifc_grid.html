@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcGrid &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcGridAxis" href="class_ifc4x1_1_1_ifc_grid_axis.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcGloballyUniqueId" href="class_ifc4x1_1_1_ifc_globally_unique_id.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcgrid">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-grid"></span><h1>Class Ifc4x1::IfcGrid<a class="headerlink" href="#class-ifc4x1-ifcgrid" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcPositioningElement</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_positioning_element.html#exhale-class-class-ifc4x1-1-1-ifc-positioning-element"><span class="std std-ref">Class Ifc4x1::IfcPositioningElement</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x17IfcGridE">
+<span id="_CPPv3N6Ifc4x17IfcGridE"></span><span id="_CPPv2N6Ifc4x17IfcGridE"></span><span id="Ifc4x1::IfcGrid"></span><span class="target" id="class_ifc4x1_1_1_ifc_grid"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcGrid</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_positioning_element.html#_CPPv4N6Ifc4x121IfcPositioningElementE" title="Ifc4x1::IfcPositioningElement">IfcPositioningElement</a><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcGridE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a> ia a planar design grid defined in 3D space used as an aid in locating structural and design elements. The position of the grid (ObjectPlacement) is defined by a 3D coordinate system (and thereby the design grid can be used in plan, section or in any position relative to the world coordinate system). The position can be relative to the object placement of other products or grids. The XY plane of the 3D coordinate system is used to place the grid axes, which are 2D curves (for example, line, circle, trimmed curve, polyline, or composite curve). The inherited attributes Name and Description can be used to define a descriptive name of the grid and to indicate the grid’s purpose.A grid is defined by (normally) two, or (in case of a triangular grid) three lists of grid axes. The following table shows some examples. A grid may support a rectangular layout (Figure 28), a radial layout (Figure 29), or a triangular layout (Figure 30).</p>
+<p>Figure 28 — Grid rectangular layout Figure 29 — Grid radial layout Figure 30 — Grid triangular layout</p>
+<p>The grid axes, defined within the design grid, are those elements to which project objects will be placed relatively using the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_grid_placement"><span class="std std-ref">IfcGridPlacement</span></a>.</p>
+<p>HISTORY New entity in IFC Release 1.0. Informal Proposition</p>
+<p>Grid axes, which are referenced in different lists of axes (UAxes, VAxes, WAxes) shall not be parallel. Grid axes should be defined such as there are no two grid axes which intersect twice (see Figure 31).</p>
+<p>left side: ambiguous intersections A1 and A2, a grid containing such grid axes is not a valid design grid. right side: the conflict can be resolved by splitting one grid axis in a way, such as no ambiguous intersections exist.</p>
+<p>Figure 31 — Grid intersections</p>
+<p>Geometry Use Definitions The geometric representation of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a> is given by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a>, allowing geometric representations. Included are: Local Placement The local placement for <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a> is defined in its supertype <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a>. It is defined by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a>, which defines the local coordinate system that is referenced by all geometric representations.</p>
+<p>The PlacementRelTo relationship of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> shall point (if given) to the local placement of the same <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_spatial_structure_element"><span class="std std-ref">IfcSpatialStructureElement</span></a>, which is used in the ContainedInStructure inverse attribute, or to a spatial structure element at a higher level, referenced by that. If the relative placement is not used, the absolute placement is defined within the world coordinate system.</p>
+<p>Geometric Representations Currently, the use of a 2D ‘FootPrint’ representation of type ‘GeometricCurveSet’ is supported. GeometricCurveSet representation The 2D geometric representation of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a> is defined using the ‘GeometricCurveSet’ geometry. The following attribute values should be inserted</p>
+<p><a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_representation_1ac5adba31e876785ef28332cc5308f890"><span class="std std-ref">IfcShapeRepresentation.RepresentationIdentifier</span></a> = ‘FootPrint’. <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_representation_1a0fcc0a0e68ba5ab875c15a62ad38223d"><span class="std std-ref">IfcShapeRepresentation.RepresentationType</span></a> = ‘GeometricCurveSet’ .</p>
+<p>The following constraints apply to the 2D representation:</p>
+<p>The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_geometric_curve_set"><span class="std std-ref">IfcGeometricCurveSet</span></a> shall be an (and the only) Item of the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a>. It should contain an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_geometric_curve_set"><span class="std std-ref">IfcGeometricCurveSet</span></a> containing subtypes of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_curve"><span class="std std-ref">IfcCurve</span></a>, each representing a grid axis. Applicable subtypes of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_curve"><span class="std std-ref">IfcCurve</span></a> are: <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a>, <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_circle"><span class="std std-ref">IfcCircle</span></a>, <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_trimmed_curve"><span class="std std-ref">IfcTrimmedCurve</span></a> (based on BaseCurve referencing <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_line"><span class="std std-ref">IfcLine</span></a> or <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_circle"><span class="std std-ref">IfcCircle</span></a>). Each subtype of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_curve"><span class="std std-ref">IfcCurve</span></a> may have a curve style assigned, using IfcAnnotationCurveOccurrence referencing <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_curve_style"><span class="std std-ref">IfcCurveStyle</span></a>. Optionally the grid axis labels may be added as <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_text_literal"><span class="std std-ref">IfcTextLiteral</span></a>, and they may have text styles assigned, using IfcAnnotationTextOccurrence referencing <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_text_style"><span class="std std-ref">IfcTextStyle</span></a>.</p>
+<p>As shown in Figure 32, the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a> defines a placement coordinate system using the ObjectPlacement. The XY plane of the coordinate system is used to place the 2D grid axes. The Representation of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a> is defined using <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_product_representation"><span class="std std-ref">IfcProductRepresentation</span></a>, referencing an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a>, that includes<a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_geometric_curve_set"><span class="std std-ref">IfcGeometricCurveSet</span></a> as Items. All grid axes are added as <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a> to the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_geometric_curve_set"><span class="std std-ref">IfcGeometricCurveSet</span></a>.</p>
+<p>Figure 32 — Grid layout</p>
+<p>As shown in Figure 33, the attributes UAxes and VAxes define lists of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_grid_axis"><span class="std std-ref">IfcGridAxis</span></a> within the context of thegrid. Each instance of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_grid_axis"><span class="std std-ref">IfcGridAxis</span></a> refers to the same instance of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_curve"><span class="std std-ref">IfcCurve</span></a> (here the subtype <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a>) that is contained within the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_geometric_curve_set"><span class="std std-ref">IfcGeometricCurveSet</span></a> that represents the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a>.</p>
+<p>Figure 33 — Grid representation </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x17IfcGrid4listE">
+<span id="_CPPv3N6Ifc4x17IfcGrid4listE"></span><span id="_CPPv2N6Ifc4x17IfcGrid4listE"></span><span id="Ifc4x1::IfcGrid::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_grid_1a862493e8a0e198469552b86aa50be681"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x17IfcGridE" title="Ifc4x1::IfcGrid">IfcGrid</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcGrid4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x17IfcGrid5UAxesEv">
+<span id="_CPPv3NK6Ifc4x17IfcGrid5UAxesEv"></span><span id="_CPPv2NK6Ifc4x17IfcGrid5UAxesEv"></span><span id="Ifc4x1::IfcGrid::UAxesC"></span><span class="target" id="class_ifc4x1_1_1_ifc_grid_1a9638c2f4cf924b2c49f4fe2481f9c97b"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_grid_axis.html#_CPPv4N6Ifc4x111IfcGridAxisE" title="Ifc4x1::IfcGridAxis">IfcGridAxis</a>&gt;::ptr <code class="sig-name descname">UAxes</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x17IfcGrid5UAxesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>List of grid axes defining the first row of grid lines. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x17IfcGrid8setUAxesEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrE">
+<span id="_CPPv3N6Ifc4x17IfcGrid8setUAxesEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrE"></span><span id="_CPPv2N6Ifc4x17IfcGrid8setUAxesEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrE"></span><span id="Ifc4x1::IfcGrid::setUAxes__IfcTemplatedEntityList:Ifc4x1::IfcGridAxis:::ptr"></span><span class="target" id="class_ifc4x1_1_1_ifc_grid_1a6e02c4e180106d10e837677987712469"></span>void <code class="sig-name descname">setUAxes</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_grid_axis.html#_CPPv4N6Ifc4x111IfcGridAxisE" title="Ifc4x1::IfcGridAxis">IfcGridAxis</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcGrid8setUAxesEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x17IfcGrid5VAxesEv">
+<span id="_CPPv3NK6Ifc4x17IfcGrid5VAxesEv"></span><span id="_CPPv2NK6Ifc4x17IfcGrid5VAxesEv"></span><span id="Ifc4x1::IfcGrid::VAxesC"></span><span class="target" id="class_ifc4x1_1_1_ifc_grid_1aedd5da9d5a7030bffb4920db1fd1f7d9"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_grid_axis.html#_CPPv4N6Ifc4x111IfcGridAxisE" title="Ifc4x1::IfcGridAxis">IfcGridAxis</a>&gt;::ptr <code class="sig-name descname">VAxes</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x17IfcGrid5VAxesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>List of grid axes defining the second row of grid lines. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x17IfcGrid8setVAxesEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrE">
+<span id="_CPPv3N6Ifc4x17IfcGrid8setVAxesEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrE"></span><span id="_CPPv2N6Ifc4x17IfcGrid8setVAxesEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrE"></span><span id="Ifc4x1::IfcGrid::setVAxes__IfcTemplatedEntityList:Ifc4x1::IfcGridAxis:::ptr"></span><span class="target" id="class_ifc4x1_1_1_ifc_grid_1a655d36c7c0721210a2cc773bd69e6f6f"></span>void <code class="sig-name descname">setVAxes</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_grid_axis.html#_CPPv4N6Ifc4x111IfcGridAxisE" title="Ifc4x1::IfcGridAxis">IfcGridAxis</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcGrid8setVAxesEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x17IfcGrid8hasWAxesEv">
+<span id="_CPPv3NK6Ifc4x17IfcGrid8hasWAxesEv"></span><span id="_CPPv2NK6Ifc4x17IfcGrid8hasWAxesEv"></span><span id="Ifc4x1::IfcGrid::hasWAxesC"></span><span class="target" id="class_ifc4x1_1_1_ifc_grid_1abc4b9c5689713907c16e0be3e307c720"></span>bool <code class="sig-name descname">hasWAxes</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x17IfcGrid8hasWAxesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute WAxes is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x17IfcGrid5WAxesEv">
+<span id="_CPPv3NK6Ifc4x17IfcGrid5WAxesEv"></span><span id="_CPPv2NK6Ifc4x17IfcGrid5WAxesEv"></span><span id="Ifc4x1::IfcGrid::WAxesC"></span><span class="target" id="class_ifc4x1_1_1_ifc_grid_1a682ee860865599407819be4cba718068"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_grid_axis.html#_CPPv4N6Ifc4x111IfcGridAxisE" title="Ifc4x1::IfcGridAxis">IfcGridAxis</a>&gt;::ptr <code class="sig-name descname">WAxes</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x17IfcGrid5WAxesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>List of grid axes defining the third row of grid lines. It may be given in the case of a triangular grid. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x17IfcGrid8setWAxesEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrE">
+<span id="_CPPv3N6Ifc4x17IfcGrid8setWAxesEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrE"></span><span id="_CPPv2N6Ifc4x17IfcGrid8setWAxesEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrE"></span><span id="Ifc4x1::IfcGrid::setWAxes__IfcTemplatedEntityList:Ifc4x1::IfcGridAxis:::ptr"></span><span class="target" id="class_ifc4x1_1_1_ifc_grid_1a6a3cd38bd87012aa8a087f6fe6544d1b"></span>void <code class="sig-name descname">setWAxes</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_grid_axis.html#_CPPv4N6Ifc4x111IfcGridAxisE" title="Ifc4x1::IfcGridAxis">IfcGridAxis</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcGrid8setWAxesEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x17IfcGrid17hasPredefinedTypeEv">
+<span id="_CPPv3NK6Ifc4x17IfcGrid17hasPredefinedTypeEv"></span><span id="_CPPv2NK6Ifc4x17IfcGrid17hasPredefinedTypeEv"></span><span id="Ifc4x1::IfcGrid::hasPredefinedTypeC"></span><span class="target" id="class_ifc4x1_1_1_ifc_grid_1a6c47784f6035275d003eb5592c748e4f"></span>bool <code class="sig-name descname">hasPredefinedType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x17IfcGrid17hasPredefinedTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute PredefinedType is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x17IfcGrid14PredefinedTypeEv">
+<span id="_CPPv3NK6Ifc4x17IfcGrid14PredefinedTypeEv"></span><span id="_CPPv2NK6Ifc4x17IfcGrid14PredefinedTypeEv"></span><span id="Ifc4x1::IfcGrid::PredefinedTypeC"></span><span class="target" id="class_ifc4x1_1_1_ifc_grid_1a484d4b74fd38cecff4770f4893575026"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x115IfcGridTypeEnumE" title="Ifc4x1::IfcGridTypeEnum">IfcGridTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x115IfcGridTypeEnum5ValueE" title="Ifc4x1::IfcGridTypeEnum::Value">Value</a> <code class="sig-name descname">PredefinedType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x17IfcGrid14PredefinedTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x17IfcGrid17setPredefinedTypeEN6Ifc4x115IfcGridTypeEnum5ValueE">
+<span id="_CPPv3N6Ifc4x17IfcGrid17setPredefinedTypeEN6Ifc4x115IfcGridTypeEnum5ValueE"></span><span id="_CPPv2N6Ifc4x17IfcGrid17setPredefinedTypeEN6Ifc4x115IfcGridTypeEnum5ValueE"></span><span id="Ifc4x1::IfcGrid::setPredefinedType__Ifc4x1::IfcGridTypeEnum::Value"></span><span class="target" id="class_ifc4x1_1_1_ifc_grid_1a3e2dbd48fddab2af53ad25df7f4c5265"></span>void <code class="sig-name descname">setPredefinedType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x115IfcGridTypeEnumE" title="Ifc4x1::IfcGridTypeEnum">IfcGridTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x115IfcGridTypeEnum5ValueE" title="Ifc4x1::IfcGridTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcGrid17setPredefinedTypeEN6Ifc4x115IfcGridTypeEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x17IfcGrid11declarationEv">
+<span id="_CPPv3NK6Ifc4x17IfcGrid11declarationEv"></span><span id="_CPPv2NK6Ifc4x17IfcGrid11declarationEv"></span><span id="Ifc4x1::IfcGrid::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_grid_1aa6db8e46b40962c0dd05e905139250a3"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x17IfcGrid11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x17IfcGrid7IfcGridEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x17IfcGrid7IfcGridEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x17IfcGrid7IfcGridEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcGrid::IfcGrid__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_grid_1ad8c66bed46ddf6a66b9dfa5a7928ac1f"></span><code class="sig-name descname">IfcGrid</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcGrid7IfcGridEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x17IfcGrid7IfcGridENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrEEEN5boost8optionalIN6Ifc4x115IfcGridTypeEnum5ValueEEE">
+<span id="_CPPv3N6Ifc4x17IfcGrid7IfcGridENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrEEEN5boost8optionalIN6Ifc4x115IfcGridTypeEnum5ValueEEE"></span><span id="_CPPv2N6Ifc4x17IfcGrid7IfcGridENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrEEEN5boost8optionalIN6Ifc4x115IfcGridTypeEnum5ValueEEE"></span><span id="Ifc4x1::IfcGrid::IfcGrid__ss.Ifc4x1::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4x1::IfcObjectPlacementP.Ifc4x1::IfcProductRepresentationP.IfcTemplatedEntityList:Ifc4x1::IfcGridAxis:::ptr.IfcTemplatedEntityList:Ifc4x1::IfcGridAxis:::ptr.boost::optional:IfcTemplatedEntityList:Ifc4x1::IfcGridAxis:::ptr:.boost::optional:Ifc4x1::IfcGridTypeEnum::Value:"></span><span class="target" id="class_ifc4x1_1_1_ifc_grid_1a2856cd9b6f1504a1c82af7dd892ab6fa"></span><code class="sig-name descname">IfcGrid</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_owner_history.html#_CPPv4N6Ifc4x115IfcOwnerHistoryE" title="Ifc4x1::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_object_placement.html#_CPPv4N6Ifc4x118IfcObjectPlacementE" title="Ifc4x1::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_product_representation.html#_CPPv4N6Ifc4x124IfcProductRepresentationE" title="Ifc4x1::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, <a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_grid_axis.html#_CPPv4N6Ifc4x111IfcGridAxisE" title="Ifc4x1::IfcGridAxis">IfcGridAxis</a>&gt;::ptr <em>v8_UAxes</em>, <a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_grid_axis.html#_CPPv4N6Ifc4x111IfcGridAxisE" title="Ifc4x1::IfcGridAxis">IfcGridAxis</a>&gt;::ptr <em>v9_VAxes</em>, boost::optional&lt;<a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_grid_axis.html#_CPPv4N6Ifc4x111IfcGridAxisE" title="Ifc4x1::IfcGridAxis">IfcGridAxis</a>&gt;::ptr&gt; <em>v10_WAxes</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x115IfcGridTypeEnumE" title="Ifc4x1::IfcGridTypeEnum">IfcGridTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x115IfcGridTypeEnum5ValueE" title="Ifc4x1::IfcGridTypeEnum::Value">Value</a>&gt; <em>v11_PredefinedType</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcGrid7IfcGridENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrEN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x111IfcGridAxisEE3ptrEEEN5boost8optionalIN6Ifc4x115IfcGridTypeEnum5ValueEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x17IfcGrid5ClassEv">
+<span id="_CPPv3N6Ifc4x17IfcGrid5ClassEv"></span><span id="_CPPv2N6Ifc4x17IfcGrid5ClassEv"></span><span id="Ifc4x1::IfcGrid::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_grid_1a401d95e1b8071ad17eb6d972ca4ba3a6"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x17IfcGrid5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_globally_unique_id.html" title="previous chapter">Class Ifc4x1::IfcGloballyUniqueId</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_grid_axis.html" title="next chapter">Class Ifc4x1::IfcGridAxis</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_grid.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

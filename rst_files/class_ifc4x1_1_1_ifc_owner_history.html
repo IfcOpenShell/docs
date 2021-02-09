@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcOwnerHistory &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcParameterizedProfileDef" href="class_ifc4x1_1_1_ifc_parameterized_profile_def.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcOutletType" href="class_ifc4x1_1_1_ifc_outlet_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcownerhistory">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-owner-history"></span><h1>Class Ifc4x1::IfcOwnerHistory<a class="headerlink" href="#class-ifc4x1-ifcownerhistory" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">IfcUtil::IfcBaseEntity</span></code> (<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#exhale-class-class-ifc-util-1-1-ifc-base-entity"><span class="std std-ref">Class IfcBaseEntity</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x115IfcOwnerHistoryE">
+<span id="_CPPv3N6Ifc4x115IfcOwnerHistoryE"></span><span id="_CPPv2N6Ifc4x115IfcOwnerHistoryE"></span><span id="Ifc4x1::IfcOwnerHistory"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcOwnerHistory</code> : <em class="property">public</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a><a class="headerlink" href="#_CPPv4N6Ifc4x115IfcOwnerHistoryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_owner_history"><span class="std std-ref">IfcOwnerHistory</span></a> defines all history and identification related information. In order to provide fast access it is directly attached to all independent objects, relationships and properties.</p>
+<p><a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_owner_history"><span class="std std-ref">IfcOwnerHistory</span></a> is used to identify the creating and owning application and user for the associated object, as well as capture the last modifying application and user.</p>
+<p>HISTORY New entity in IFC R1.0. Modified in IFC R2x4.</p>
+<p>Informal propositions</p>
+<p>If LastModifiedDate is defined but ChangeAction is not asserted, then the state of ChangeAction is assumed to be UNDEFINED. <p> If both LastModifiedDate and ChangeAction are asserted, then the state of ChangeAction applies to the value asserted in LastModifiedDate. </p>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x115IfcOwnerHistory4listE">
+<span id="_CPPv3N6Ifc4x115IfcOwnerHistory4listE"></span><span id="_CPPv2N6Ifc4x115IfcOwnerHistory4listE"></span><span id="Ifc4x1::IfcOwnerHistory::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a376b913ee1860d62a7a1af5679474bbb"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x115IfcOwnerHistoryE" title="Ifc4x1::IfcOwnerHistory">IfcOwnerHistory</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x115IfcOwnerHistory4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x115IfcOwnerHistory10OwningUserEv">
+<span id="_CPPv3NK6Ifc4x115IfcOwnerHistory10OwningUserEv"></span><span id="_CPPv2NK6Ifc4x115IfcOwnerHistory10OwningUserEv"></span><span id="Ifc4x1::IfcOwnerHistory::OwningUserC"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1aa4522d1d6e6594445a28d034d82ce608"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_person_and_organization.html#_CPPv4N6Ifc4x124IfcPersonAndOrganizationE" title="Ifc4x1::IfcPersonAndOrganization">IfcPersonAndOrganization</a> *<code class="sig-name descname">OwningUser</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x115IfcOwnerHistory10OwningUserEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Direct reference to the end user who currently “owns” this object. Note that IFC includes the concept of ownership transfer from one user to another and therefore distinguishes between the Owning User and Creating User. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x115IfcOwnerHistory13setOwningUserEPN6Ifc4x124IfcPersonAndOrganizationE">
+<span id="_CPPv3N6Ifc4x115IfcOwnerHistory13setOwningUserEPN6Ifc4x124IfcPersonAndOrganizationE"></span><span id="_CPPv2N6Ifc4x115IfcOwnerHistory13setOwningUserEPN6Ifc4x124IfcPersonAndOrganizationE"></span><span id="Ifc4x1::IfcOwnerHistory::setOwningUser__Ifc4x1::IfcPersonAndOrganizationP"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a144a06bcd08ab3e454da3b0f1aa37c73"></span>void <code class="sig-name descname">setOwningUser</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_person_and_organization.html#_CPPv4N6Ifc4x124IfcPersonAndOrganizationE" title="Ifc4x1::IfcPersonAndOrganization">IfcPersonAndOrganization</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x115IfcOwnerHistory13setOwningUserEPN6Ifc4x124IfcPersonAndOrganizationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x115IfcOwnerHistory17OwningApplicationEv">
+<span id="_CPPv3NK6Ifc4x115IfcOwnerHistory17OwningApplicationEv"></span><span id="_CPPv2NK6Ifc4x115IfcOwnerHistory17OwningApplicationEv"></span><span id="Ifc4x1::IfcOwnerHistory::OwningApplicationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a7d72230c4d4958830655020139f288df"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_application.html#_CPPv4N6Ifc4x114IfcApplicationE" title="Ifc4x1::IfcApplication">IfcApplication</a> *<code class="sig-name descname">OwningApplication</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x115IfcOwnerHistory17OwningApplicationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Direct reference to the application which currently “Owns” this object on behalf of the owning user, who uses this application. Note that IFC includes the concept of ownership transfer from one application to another and therefore distinguishes between the Owning Application and Creating Application. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x115IfcOwnerHistory20setOwningApplicationEPN6Ifc4x114IfcApplicationE">
+<span id="_CPPv3N6Ifc4x115IfcOwnerHistory20setOwningApplicationEPN6Ifc4x114IfcApplicationE"></span><span id="_CPPv2N6Ifc4x115IfcOwnerHistory20setOwningApplicationEPN6Ifc4x114IfcApplicationE"></span><span id="Ifc4x1::IfcOwnerHistory::setOwningApplication__Ifc4x1::IfcApplicationP"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a4a8e47e336e732fe4403ce5d47da8211"></span>void <code class="sig-name descname">setOwningApplication</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_application.html#_CPPv4N6Ifc4x114IfcApplicationE" title="Ifc4x1::IfcApplication">IfcApplication</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x115IfcOwnerHistory20setOwningApplicationEPN6Ifc4x114IfcApplicationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x115IfcOwnerHistory8hasStateEv">
+<span id="_CPPv3NK6Ifc4x115IfcOwnerHistory8hasStateEv"></span><span id="_CPPv2NK6Ifc4x115IfcOwnerHistory8hasStateEv"></span><span id="Ifc4x1::IfcOwnerHistory::hasStateC"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a6b566e9335c31fb217de0eb12170683e"></span>bool <code class="sig-name descname">hasState</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x115IfcOwnerHistory8hasStateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute State is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_owner_history"><span class="std std-ref">IfcOwnerHistory</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x115IfcOwnerHistory5StateEv">
+<span id="_CPPv3NK6Ifc4x115IfcOwnerHistory5StateEv"></span><span id="_CPPv2NK6Ifc4x115IfcOwnerHistory5StateEv"></span><span id="Ifc4x1::IfcOwnerHistory::StateC"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a42cc6741a57ddb29a06ebc8f7e1c0c40"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x112IfcStateEnumE" title="Ifc4x1::IfcStateEnum">IfcStateEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x112IfcStateEnum5ValueE" title="Ifc4x1::IfcStateEnum::Value">Value</a> <code class="sig-name descname">State</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x115IfcOwnerHistory5StateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Enumeration that defines the current access state of the object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x115IfcOwnerHistory8setStateEN6Ifc4x112IfcStateEnum5ValueE">
+<span id="_CPPv3N6Ifc4x115IfcOwnerHistory8setStateEN6Ifc4x112IfcStateEnum5ValueE"></span><span id="_CPPv2N6Ifc4x115IfcOwnerHistory8setStateEN6Ifc4x112IfcStateEnum5ValueE"></span><span id="Ifc4x1::IfcOwnerHistory::setState__Ifc4x1::IfcStateEnum::Value"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a1a3555493dc7ca4faf5c48ae8b7b69e9"></span>void <code class="sig-name descname">setState</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x112IfcStateEnumE" title="Ifc4x1::IfcStateEnum">IfcStateEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x112IfcStateEnum5ValueE" title="Ifc4x1::IfcStateEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x115IfcOwnerHistory8setStateEN6Ifc4x112IfcStateEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x115IfcOwnerHistory15hasChangeActionEv">
+<span id="_CPPv3NK6Ifc4x115IfcOwnerHistory15hasChangeActionEv"></span><span id="_CPPv2NK6Ifc4x115IfcOwnerHistory15hasChangeActionEv"></span><span id="Ifc4x1::IfcOwnerHistory::hasChangeActionC"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a20b13bfcb838fb3f8a002d0b4d7b06a2"></span>bool <code class="sig-name descname">hasChangeAction</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x115IfcOwnerHistory15hasChangeActionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ChangeAction is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_owner_history"><span class="std std-ref">IfcOwnerHistory</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x115IfcOwnerHistory12ChangeActionEv">
+<span id="_CPPv3NK6Ifc4x115IfcOwnerHistory12ChangeActionEv"></span><span id="_CPPv2NK6Ifc4x115IfcOwnerHistory12ChangeActionEv"></span><span id="Ifc4x1::IfcOwnerHistory::ChangeActionC"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a1bed040155b99dcbbc1d8ec2bcf61a38"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x119IfcChangeActionEnumE" title="Ifc4x1::IfcChangeActionEnum">IfcChangeActionEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x119IfcChangeActionEnum5ValueE" title="Ifc4x1::IfcChangeActionEnum::Value">Value</a> <code class="sig-name descname">ChangeAction</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x115IfcOwnerHistory12ChangeActionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Enumeration that defines the actions associated with changes made to the object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x115IfcOwnerHistory15setChangeActionEN6Ifc4x119IfcChangeActionEnum5ValueE">
+<span id="_CPPv3N6Ifc4x115IfcOwnerHistory15setChangeActionEN6Ifc4x119IfcChangeActionEnum5ValueE"></span><span id="_CPPv2N6Ifc4x115IfcOwnerHistory15setChangeActionEN6Ifc4x119IfcChangeActionEnum5ValueE"></span><span id="Ifc4x1::IfcOwnerHistory::setChangeAction__Ifc4x1::IfcChangeActionEnum::Value"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1ae4392ce8cbb8d0d4fde6fb3cc1a5bbac"></span>void <code class="sig-name descname">setChangeAction</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x119IfcChangeActionEnumE" title="Ifc4x1::IfcChangeActionEnum">IfcChangeActionEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x119IfcChangeActionEnum5ValueE" title="Ifc4x1::IfcChangeActionEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x115IfcOwnerHistory15setChangeActionEN6Ifc4x119IfcChangeActionEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x115IfcOwnerHistory19hasLastModifiedDateEv">
+<span id="_CPPv3NK6Ifc4x115IfcOwnerHistory19hasLastModifiedDateEv"></span><span id="_CPPv2NK6Ifc4x115IfcOwnerHistory19hasLastModifiedDateEv"></span><span id="Ifc4x1::IfcOwnerHistory::hasLastModifiedDateC"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a18d284ce1d287d4e0955ec42174caeff"></span>bool <code class="sig-name descname">hasLastModifiedDate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x115IfcOwnerHistory19hasLastModifiedDateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute LastModifiedDate is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_owner_history"><span class="std std-ref">IfcOwnerHistory</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x115IfcOwnerHistory16LastModifiedDateEv">
+<span id="_CPPv3NK6Ifc4x115IfcOwnerHistory16LastModifiedDateEv"></span><span id="_CPPv2NK6Ifc4x115IfcOwnerHistory16LastModifiedDateEv"></span><span id="Ifc4x1::IfcOwnerHistory::LastModifiedDateC"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a98dfb976024ee0deee7fc587768934d0"></span>int <code class="sig-name descname">LastModifiedDate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x115IfcOwnerHistory16LastModifiedDateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Date and Time expressed in UTC (Universal Time Coordinated, formerly Greenwich Mean Time or GMT) at which the last modification was made by LastModifyingUser and LastModifyingApplication. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x115IfcOwnerHistory19setLastModifiedDateEi">
+<span id="_CPPv3N6Ifc4x115IfcOwnerHistory19setLastModifiedDateEi"></span><span id="_CPPv2N6Ifc4x115IfcOwnerHistory19setLastModifiedDateEi"></span><span id="Ifc4x1::IfcOwnerHistory::setLastModifiedDate__i"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a0db301444f09ed8e96263bfc47ed874e"></span>void <code class="sig-name descname">setLastModifiedDate</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x115IfcOwnerHistory19setLastModifiedDateEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x115IfcOwnerHistory20hasLastModifyingUserEv">
+<span id="_CPPv3NK6Ifc4x115IfcOwnerHistory20hasLastModifyingUserEv"></span><span id="_CPPv2NK6Ifc4x115IfcOwnerHistory20hasLastModifyingUserEv"></span><span id="Ifc4x1::IfcOwnerHistory::hasLastModifyingUserC"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a638fcf4925b34f6789babfa9be8c2738"></span>bool <code class="sig-name descname">hasLastModifyingUser</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x115IfcOwnerHistory20hasLastModifyingUserEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute LastModifyingUser is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_owner_history"><span class="std std-ref">IfcOwnerHistory</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x115IfcOwnerHistory17LastModifyingUserEv">
+<span id="_CPPv3NK6Ifc4x115IfcOwnerHistory17LastModifyingUserEv"></span><span id="_CPPv2NK6Ifc4x115IfcOwnerHistory17LastModifyingUserEv"></span><span id="Ifc4x1::IfcOwnerHistory::LastModifyingUserC"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a916161658ca7f754a2735475d3839de6"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_person_and_organization.html#_CPPv4N6Ifc4x124IfcPersonAndOrganizationE" title="Ifc4x1::IfcPersonAndOrganization">IfcPersonAndOrganization</a> *<code class="sig-name descname">LastModifyingUser</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x115IfcOwnerHistory17LastModifyingUserEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>User who carried out the last modification using LastModifyingApplication. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x115IfcOwnerHistory20setLastModifyingUserEPN6Ifc4x124IfcPersonAndOrganizationE">
+<span id="_CPPv3N6Ifc4x115IfcOwnerHistory20setLastModifyingUserEPN6Ifc4x124IfcPersonAndOrganizationE"></span><span id="_CPPv2N6Ifc4x115IfcOwnerHistory20setLastModifyingUserEPN6Ifc4x124IfcPersonAndOrganizationE"></span><span id="Ifc4x1::IfcOwnerHistory::setLastModifyingUser__Ifc4x1::IfcPersonAndOrganizationP"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a4486975c4a882c4893266395a4453463"></span>void <code class="sig-name descname">setLastModifyingUser</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_person_and_organization.html#_CPPv4N6Ifc4x124IfcPersonAndOrganizationE" title="Ifc4x1::IfcPersonAndOrganization">IfcPersonAndOrganization</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x115IfcOwnerHistory20setLastModifyingUserEPN6Ifc4x124IfcPersonAndOrganizationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x115IfcOwnerHistory27hasLastModifyingApplicationEv">
+<span id="_CPPv3NK6Ifc4x115IfcOwnerHistory27hasLastModifyingApplicationEv"></span><span id="_CPPv2NK6Ifc4x115IfcOwnerHistory27hasLastModifyingApplicationEv"></span><span id="Ifc4x1::IfcOwnerHistory::hasLastModifyingApplicationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1ac93b7fe1ad5720b1c5a775b83be9c47a"></span>bool <code class="sig-name descname">hasLastModifyingApplication</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x115IfcOwnerHistory27hasLastModifyingApplicationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute LastModifyingApplication is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_owner_history"><span class="std std-ref">IfcOwnerHistory</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x115IfcOwnerHistory24LastModifyingApplicationEv">
+<span id="_CPPv3NK6Ifc4x115IfcOwnerHistory24LastModifyingApplicationEv"></span><span id="_CPPv2NK6Ifc4x115IfcOwnerHistory24LastModifyingApplicationEv"></span><span id="Ifc4x1::IfcOwnerHistory::LastModifyingApplicationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a00bc45909c116642cf0674a5a24dd77b"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_application.html#_CPPv4N6Ifc4x114IfcApplicationE" title="Ifc4x1::IfcApplication">IfcApplication</a> *<code class="sig-name descname">LastModifyingApplication</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x115IfcOwnerHistory24LastModifyingApplicationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Application used to make the last modification. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x115IfcOwnerHistory27setLastModifyingApplicationEPN6Ifc4x114IfcApplicationE">
+<span id="_CPPv3N6Ifc4x115IfcOwnerHistory27setLastModifyingApplicationEPN6Ifc4x114IfcApplicationE"></span><span id="_CPPv2N6Ifc4x115IfcOwnerHistory27setLastModifyingApplicationEPN6Ifc4x114IfcApplicationE"></span><span id="Ifc4x1::IfcOwnerHistory::setLastModifyingApplication__Ifc4x1::IfcApplicationP"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a942c9973b63f91c5283fddbe3ec83736"></span>void <code class="sig-name descname">setLastModifyingApplication</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_application.html#_CPPv4N6Ifc4x114IfcApplicationE" title="Ifc4x1::IfcApplication">IfcApplication</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x115IfcOwnerHistory27setLastModifyingApplicationEPN6Ifc4x114IfcApplicationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x115IfcOwnerHistory12CreationDateEv">
+<span id="_CPPv3NK6Ifc4x115IfcOwnerHistory12CreationDateEv"></span><span id="_CPPv2NK6Ifc4x115IfcOwnerHistory12CreationDateEv"></span><span id="Ifc4x1::IfcOwnerHistory::CreationDateC"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a0b4050459b195070d41fdcf562d9ecb3"></span>int <code class="sig-name descname">CreationDate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x115IfcOwnerHistory12CreationDateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The date and time expressed in UTC (Universal Time Coordinated, formerly Greenwich Mean Time or GMT) when first created by the original OwningApplication. Once defined this value remains unchanged through the lifetime of the entity. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x115IfcOwnerHistory15setCreationDateEi">
+<span id="_CPPv3N6Ifc4x115IfcOwnerHistory15setCreationDateEi"></span><span id="_CPPv2N6Ifc4x115IfcOwnerHistory15setCreationDateEi"></span><span id="Ifc4x1::IfcOwnerHistory::setCreationDate__i"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a45ecb3d6629d2919b60090a69f4ff96b"></span>void <code class="sig-name descname">setCreationDate</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x115IfcOwnerHistory15setCreationDateEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x115IfcOwnerHistory11declarationEv">
+<span id="_CPPv3NK6Ifc4x115IfcOwnerHistory11declarationEv"></span><span id="_CPPv2NK6Ifc4x115IfcOwnerHistory11declarationEv"></span><span id="Ifc4x1::IfcOwnerHistory::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a9dbae9741d4384c8affe40a6569082c1"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x115IfcOwnerHistory11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x115IfcOwnerHistory15IfcOwnerHistoryEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x115IfcOwnerHistory15IfcOwnerHistoryEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x115IfcOwnerHistory15IfcOwnerHistoryEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcOwnerHistory::IfcOwnerHistory__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1ab48e79d1bae7f08491bb3d39d4c30af5"></span><code class="sig-name descname">IfcOwnerHistory</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x115IfcOwnerHistory15IfcOwnerHistoryEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x115IfcOwnerHistory15IfcOwnerHistoryEPN6Ifc4x124IfcPersonAndOrganizationEPN6Ifc4x114IfcApplicationEN5boost8optionalIN6Ifc4x112IfcStateEnum5ValueEEEN5boost8optionalIN6Ifc4x119IfcChangeActionEnum5ValueEEEN5boost8optionalIiEEPN6Ifc4x124IfcPersonAndOrganizationEPN6Ifc4x114IfcApplicationEi">
+<span id="_CPPv3N6Ifc4x115IfcOwnerHistory15IfcOwnerHistoryEPN6Ifc4x124IfcPersonAndOrganizationEPN6Ifc4x114IfcApplicationEN5boost8optionalIN6Ifc4x112IfcStateEnum5ValueEEEN5boost8optionalIN6Ifc4x119IfcChangeActionEnum5ValueEEEN5boost8optionalIiEEPN6Ifc4x124IfcPersonAndOrganizationEPN6Ifc4x114IfcApplicationEi"></span><span id="_CPPv2N6Ifc4x115IfcOwnerHistory15IfcOwnerHistoryEPN6Ifc4x124IfcPersonAndOrganizationEPN6Ifc4x114IfcApplicationEN5boost8optionalIN6Ifc4x112IfcStateEnum5ValueEEEN5boost8optionalIN6Ifc4x119IfcChangeActionEnum5ValueEEEN5boost8optionalIiEEPN6Ifc4x124IfcPersonAndOrganizationEPN6Ifc4x114IfcApplicationEi"></span><span id="Ifc4x1::IfcOwnerHistory::IfcOwnerHistory__Ifc4x1::IfcPersonAndOrganizationP.Ifc4x1::IfcApplicationP.boost::optional:Ifc4x1::IfcStateEnum::Value:.boost::optional:Ifc4x1::IfcChangeActionEnum::Value:.boost::optional:i:.Ifc4x1::IfcPersonAndOrganizationP.Ifc4x1::IfcApplicationP.i"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1ac12457f18747dd1a453ca9c548937566"></span><code class="sig-name descname">IfcOwnerHistory</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_person_and_organization.html#_CPPv4N6Ifc4x124IfcPersonAndOrganizationE" title="Ifc4x1::IfcPersonAndOrganization">IfcPersonAndOrganization</a> *<em>v1_OwningUser</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_application.html#_CPPv4N6Ifc4x114IfcApplicationE" title="Ifc4x1::IfcApplication">IfcApplication</a> *<em>v2_OwningApplication</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x112IfcStateEnumE" title="Ifc4x1::IfcStateEnum">IfcStateEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x112IfcStateEnum5ValueE" title="Ifc4x1::IfcStateEnum::Value">Value</a>&gt; <em>v3_State</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x119IfcChangeActionEnumE" title="Ifc4x1::IfcChangeActionEnum">IfcChangeActionEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x119IfcChangeActionEnum5ValueE" title="Ifc4x1::IfcChangeActionEnum::Value">Value</a>&gt; <em>v4_ChangeAction</em>, boost::optional&lt;int&gt; <em>v5_LastModifiedDate</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_person_and_organization.html#_CPPv4N6Ifc4x124IfcPersonAndOrganizationE" title="Ifc4x1::IfcPersonAndOrganization">IfcPersonAndOrganization</a> *<em>v6_LastModifyingUser</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_application.html#_CPPv4N6Ifc4x114IfcApplicationE" title="Ifc4x1::IfcApplication">IfcApplication</a> *<em>v7_LastModifyingApplication</em>, int <em>v8_CreationDate</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x115IfcOwnerHistory15IfcOwnerHistoryEPN6Ifc4x124IfcPersonAndOrganizationEPN6Ifc4x114IfcApplicationEN5boost8optionalIN6Ifc4x112IfcStateEnum5ValueEEEN5boost8optionalIN6Ifc4x119IfcChangeActionEnum5ValueEEEN5boost8optionalIiEEPN6Ifc4x124IfcPersonAndOrganizationEPN6Ifc4x114IfcApplicationEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x115IfcOwnerHistory5ClassEv">
+<span id="_CPPv3N6Ifc4x115IfcOwnerHistory5ClassEv"></span><span id="_CPPv2N6Ifc4x115IfcOwnerHistory5ClassEv"></span><span id="Ifc4x1::IfcOwnerHistory::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_owner_history_1a11671f3739c251027ddb7c415f840ff9"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x115IfcOwnerHistory5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_outlet_type.html" title="previous chapter">Class Ifc4x1::IfcOutletType</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_parameterized_profile_def.html" title="next chapter">Class Ifc4x1::IfcParameterizedProfileDef</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_owner_history.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a46881c820b5d36084503aaac379dc030:
+
+Define SCHEMA_IfcInventory_HAS_InventoryType
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcInventory_HAS_InventoryType

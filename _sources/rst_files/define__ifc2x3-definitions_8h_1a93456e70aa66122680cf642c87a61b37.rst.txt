@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a93456e70aa66122680cf642c87a61b37:
+
+Define SCHEMA_IfcRelDefines_HAS_RelatedObjects
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelDefines_HAS_RelatedObjects

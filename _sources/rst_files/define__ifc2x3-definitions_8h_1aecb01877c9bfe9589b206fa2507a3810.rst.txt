@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aecb01877c9bfe9589b206fa2507a3810:
+
+Define SCHEMA_IfcApprovalPropertyRelationship_HAS_ApprovedProperties
+====================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcApprovalPropertyRelationship_HAS_ApprovedProperties

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a66b671d50940bd83bc385f503825b68f:
+
+Define SCHEMA_IfcProject_HAS_UnitsInContext
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcProject_HAS_UnitsInContext

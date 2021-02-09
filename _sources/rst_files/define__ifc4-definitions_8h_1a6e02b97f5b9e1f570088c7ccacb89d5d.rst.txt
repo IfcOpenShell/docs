@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a6e02b97f5b9e1f570088c7ccacb89d5d:
+
+Define SCHEMA_IfcTaskTime_HAS_ScheduleDuration
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTaskTime_HAS_ScheduleDuration

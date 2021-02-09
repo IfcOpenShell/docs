@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a00f2d5489d3bb0cfc1be04be8eb44329:
+
+Define SCHEMA_IfcReinforcingBarType_NominalDiameter_IS_OPTIONAL
+===============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcReinforcingBarType_NominalDiameter_IS_OPTIONAL

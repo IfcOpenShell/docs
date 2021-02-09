@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1af8cafd07aaa55d8fd841207a6426748e:
+
+Define SCHEMA_IfcPort_HAS_ConnectedTo
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPort_HAS_ConnectedTo

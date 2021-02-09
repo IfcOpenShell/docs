@@ -1,0 +1,13 @@
+.. _exhale_function__argument_8h_1a49a429623e72eec14576aeecdce8a290:
+
+Function IfcUtil::ArgumentTypeToString
+======================================
+
+- Defined in :ref:`file_src_ifcparse_Argument.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcUtil::ArgumentTypeToString(ArgumentType)

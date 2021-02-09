@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a2ede1609e16ab54bab947fb7ff0acb30:
+
+Define SCHEMA_IfcRelAssociatesApproval_HAS_RelatingApproval
+===========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelAssociatesApproval_HAS_RelatingApproval

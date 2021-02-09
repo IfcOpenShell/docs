@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a072782531b1d3f17ce39d99b500e2fa0:
+
+Define SCHEMA_IfcContextDependentUnit_HAS_HasExternalReference
+==============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcContextDependentUnit_HAS_HasExternalReference

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aed15b65c0c2ec5942608a4094f97ecb1:
+
+Define SCHEMA_IfcCShapeProfileDef_InternalFilletRadius_IS_OPTIONAL
+==================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcCShapeProfileDef_InternalFilletRadius_IS_OPTIONAL

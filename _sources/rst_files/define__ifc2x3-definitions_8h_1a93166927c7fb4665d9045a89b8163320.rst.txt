@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a93166927c7fb4665d9045a89b8163320:
+
+Define SCHEMA_IfcLightSourceDirectional_HAS_Orientation
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcLightSourceDirectional_HAS_Orientation

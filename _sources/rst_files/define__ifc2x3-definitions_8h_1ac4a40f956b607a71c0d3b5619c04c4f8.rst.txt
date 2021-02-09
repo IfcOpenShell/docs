@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ac4a40f956b607a71c0d3b5619c04c4f8:
+
+Define SCHEMA_HAS_IfcPointOnSurface
+===================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcPointOnSurface

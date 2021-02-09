@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcRelAssignsToProcess &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcRelAssignsToProduct" href="class_ifc4x1_1_1_ifc_rel_assigns_to_product.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcRelAssignsToGroupByFactor" href="class_ifc4x1_1_1_ifc_rel_assigns_to_group_by_factor.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcrelassignstoprocess">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-rel-assigns-to-process"></span><h1>Class Ifc4x1::IfcRelAssignsToProcess<a class="headerlink" href="#class-ifc4x1-ifcrelassignstoprocess" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcRelAssigns</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_rel_assigns.html#exhale-class-class-ifc4x1-1-1-ifc-rel-assigns"><span class="std std-ref">Class Ifc4x1::IfcRelAssigns</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x122IfcRelAssignsToProcessE">
+<span id="_CPPv3N6Ifc4x122IfcRelAssignsToProcessE"></span><span id="_CPPv2N6Ifc4x122IfcRelAssignsToProcessE"></span><span id="Ifc4x1::IfcRelAssignsToProcess"></span><span class="target" id="class_ifc4x1_1_1_ifc_rel_assigns_to_process"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcRelAssignsToProcess</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_rel_assigns.html#_CPPv4N6Ifc4x113IfcRelAssignsE" title="Ifc4x1::IfcRelAssigns">IfcRelAssigns</a><a class="headerlink" href="#_CPPv4N6Ifc4x122IfcRelAssignsToProcessE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The objectified relationship <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_assigns_to_process"><span class="std std-ref">IfcRelAssignsToProcess</span></a> handles the assignment of one or many objects to a process or activity. An object can be a product that is the item the process operates on. Processes and activities can operate on things other than products, and can operate in ways other than input and output.</p>
+<p>EXAMPLE It may be common to define processes during estimating or scheduling that describe design tasks (resulting in documents), procurement tasks (resulting in construction materials), planning tasks (resulting in processes), etc. Furthermore, the ways in which process can operate on something might include “installs”, “finishes”, “transports”, “removes”, etc. The ways are described as operation types. The inherited attribute RelatedObjects gives the references to the objects, or object type, which the process operates on. The RelatingProcess is the process or process type, that operates on the object. The operation types are captured in the inherited attribute Name. NOTE The agreement on valid and recognizable values for the Name attribute is part of view definitions and implementer agreements.</p>
+<p>HISTORY New entity in IFC Release 1.5. Has been renamed from IfcRelProcessOperatesOn in IFC Release 2x.</p>
+<p>IFC2x4 CHANGE The data type RelatingProcess has been extended to cover also <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_type_process"><span class="std std-ref">IfcTypeProcess</span></a> </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x122IfcRelAssignsToProcess4listE">
+<span id="_CPPv3N6Ifc4x122IfcRelAssignsToProcess4listE"></span><span id="_CPPv2N6Ifc4x122IfcRelAssignsToProcess4listE"></span><span id="Ifc4x1::IfcRelAssignsToProcess::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_rel_assigns_to_process_1a4a852d57b4af50e434de9815ab5d8816"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x122IfcRelAssignsToProcessE" title="Ifc4x1::IfcRelAssignsToProcess">IfcRelAssignsToProcess</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x122IfcRelAssignsToProcess4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x122IfcRelAssignsToProcess15RelatingProcessEv">
+<span id="_CPPv3NK6Ifc4x122IfcRelAssignsToProcess15RelatingProcessEv"></span><span id="_CPPv2NK6Ifc4x122IfcRelAssignsToProcess15RelatingProcessEv"></span><span id="Ifc4x1::IfcRelAssignsToProcess::RelatingProcessC"></span><span class="target" id="class_ifc4x1_1_1_ifc_rel_assigns_to_process_1ad3effc2d3febbdf4d06259c573131b3a"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x116IfcProcessSelectE" title="Ifc4x1::IfcProcessSelect">IfcProcessSelect</a> *<code class="sig-name descname">RelatingProcess</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x122IfcRelAssignsToProcess15RelatingProcessEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reference to the process to which the objects are assigned to.</p>
+<p>IFC2x4 CHANGE Datatype expanded to include <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_process"><span class="std std-ref">IfcProcess</span></a> and <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_type_process"><span class="std std-ref">IfcTypeProcess</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x122IfcRelAssignsToProcess18setRelatingProcessEPN6Ifc4x116IfcProcessSelectE">
+<span id="_CPPv3N6Ifc4x122IfcRelAssignsToProcess18setRelatingProcessEPN6Ifc4x116IfcProcessSelectE"></span><span id="_CPPv2N6Ifc4x122IfcRelAssignsToProcess18setRelatingProcessEPN6Ifc4x116IfcProcessSelectE"></span><span id="Ifc4x1::IfcRelAssignsToProcess::setRelatingProcess__Ifc4x1::IfcProcessSelectP"></span><span class="target" id="class_ifc4x1_1_1_ifc_rel_assigns_to_process_1a3139b80b363bc4ac9bef6a142171656c"></span>void <code class="sig-name descname">setRelatingProcess</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x116IfcProcessSelectE" title="Ifc4x1::IfcProcessSelect">IfcProcessSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x122IfcRelAssignsToProcess18setRelatingProcessEPN6Ifc4x116IfcProcessSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x122IfcRelAssignsToProcess20hasQuantityInProcessEv">
+<span id="_CPPv3NK6Ifc4x122IfcRelAssignsToProcess20hasQuantityInProcessEv"></span><span id="_CPPv2NK6Ifc4x122IfcRelAssignsToProcess20hasQuantityInProcessEv"></span><span id="Ifc4x1::IfcRelAssignsToProcess::hasQuantityInProcessC"></span><span class="target" id="class_ifc4x1_1_1_ifc_rel_assigns_to_process_1a9f9e5aa14592f99eb3eefc7f3fd646b4"></span>bool <code class="sig-name descname">hasQuantityInProcess</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x122IfcRelAssignsToProcess20hasQuantityInProcessEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute QuantityInProcess is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_assigns_to_process"><span class="std std-ref">IfcRelAssignsToProcess</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x122IfcRelAssignsToProcess17QuantityInProcessEv">
+<span id="_CPPv3NK6Ifc4x122IfcRelAssignsToProcess17QuantityInProcessEv"></span><span id="_CPPv2NK6Ifc4x122IfcRelAssignsToProcess17QuantityInProcessEv"></span><span id="Ifc4x1::IfcRelAssignsToProcess::QuantityInProcessC"></span><span class="target" id="class_ifc4x1_1_1_ifc_rel_assigns_to_process_1a75e5f26f3f2fffe8f9fd7820f4d61d08"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_measure_with_unit.html#_CPPv4N6Ifc4x118IfcMeasureWithUnitE" title="Ifc4x1::IfcMeasureWithUnit">IfcMeasureWithUnit</a> *<code class="sig-name descname">QuantityInProcess</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x122IfcRelAssignsToProcess17QuantityInProcessEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Quantity of the object specific for the operation by this process. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x122IfcRelAssignsToProcess20setQuantityInProcessEPN6Ifc4x118IfcMeasureWithUnitE">
+<span id="_CPPv3N6Ifc4x122IfcRelAssignsToProcess20setQuantityInProcessEPN6Ifc4x118IfcMeasureWithUnitE"></span><span id="_CPPv2N6Ifc4x122IfcRelAssignsToProcess20setQuantityInProcessEPN6Ifc4x118IfcMeasureWithUnitE"></span><span id="Ifc4x1::IfcRelAssignsToProcess::setQuantityInProcess__Ifc4x1::IfcMeasureWithUnitP"></span><span class="target" id="class_ifc4x1_1_1_ifc_rel_assigns_to_process_1a782dfe276c1a92629b8f548a451f4ad0"></span>void <code class="sig-name descname">setQuantityInProcess</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_measure_with_unit.html#_CPPv4N6Ifc4x118IfcMeasureWithUnitE" title="Ifc4x1::IfcMeasureWithUnit">IfcMeasureWithUnit</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x122IfcRelAssignsToProcess20setQuantityInProcessEPN6Ifc4x118IfcMeasureWithUnitE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x122IfcRelAssignsToProcess11declarationEv">
+<span id="_CPPv3NK6Ifc4x122IfcRelAssignsToProcess11declarationEv"></span><span id="_CPPv2NK6Ifc4x122IfcRelAssignsToProcess11declarationEv"></span><span id="Ifc4x1::IfcRelAssignsToProcess::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_rel_assigns_to_process_1af22cd395886892577a7eafd571aa69c7"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x122IfcRelAssignsToProcess11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x122IfcRelAssignsToProcess22IfcRelAssignsToProcessEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x122IfcRelAssignsToProcess22IfcRelAssignsToProcessEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x122IfcRelAssignsToProcess22IfcRelAssignsToProcessEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcRelAssignsToProcess::IfcRelAssignsToProcess__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_rel_assigns_to_process_1a3259db87e328d5142a3bacbe3a28be75"></span><code class="sig-name descname">IfcRelAssignsToProcess</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x122IfcRelAssignsToProcess22IfcRelAssignsToProcessEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x122IfcRelAssignsToProcess22IfcRelAssignsToProcessENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x119IfcObjectDefinitionEE3ptrEN5boost8optionalIN6Ifc4x117IfcObjectTypeEnum5ValueEEEPN6Ifc4x116IfcProcessSelectEPN6Ifc4x118IfcMeasureWithUnitE">
+<span id="_CPPv3N6Ifc4x122IfcRelAssignsToProcess22IfcRelAssignsToProcessENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x119IfcObjectDefinitionEE3ptrEN5boost8optionalIN6Ifc4x117IfcObjectTypeEnum5ValueEEEPN6Ifc4x116IfcProcessSelectEPN6Ifc4x118IfcMeasureWithUnitE"></span><span id="_CPPv2N6Ifc4x122IfcRelAssignsToProcess22IfcRelAssignsToProcessENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x119IfcObjectDefinitionEE3ptrEN5boost8optionalIN6Ifc4x117IfcObjectTypeEnum5ValueEEEPN6Ifc4x116IfcProcessSelectEPN6Ifc4x118IfcMeasureWithUnitE"></span><span id="Ifc4x1::IfcRelAssignsToProcess::IfcRelAssignsToProcess__ss.Ifc4x1::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.IfcTemplatedEntityList:Ifc4x1::IfcObjectDefinition:::ptr.boost::optional:Ifc4x1::IfcObjectTypeEnum::Value:.Ifc4x1::IfcProcessSelectP.Ifc4x1::IfcMeasureWithUnitP"></span><span class="target" id="class_ifc4x1_1_1_ifc_rel_assigns_to_process_1a06a2601f5fea2a324aff5ad0ef184f6f"></span><code class="sig-name descname">IfcRelAssignsToProcess</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_owner_history.html#_CPPv4N6Ifc4x115IfcOwnerHistoryE" title="Ifc4x1::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, <a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_object_definition.html#_CPPv4N6Ifc4x119IfcObjectDefinitionE" title="Ifc4x1::IfcObjectDefinition">IfcObjectDefinition</a>&gt;::ptr <em>v5_RelatedObjects</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x117IfcObjectTypeEnumE" title="Ifc4x1::IfcObjectTypeEnum">IfcObjectTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x117IfcObjectTypeEnum5ValueE" title="Ifc4x1::IfcObjectTypeEnum::Value">Value</a>&gt; <em>v6_RelatedObjectsType</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x116IfcProcessSelectE" title="Ifc4x1::IfcProcessSelect">IfcProcessSelect</a> *<em>v7_RelatingProcess</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_measure_with_unit.html#_CPPv4N6Ifc4x118IfcMeasureWithUnitE" title="Ifc4x1::IfcMeasureWithUnit">IfcMeasureWithUnit</a> *<em>v8_QuantityInProcess</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x122IfcRelAssignsToProcess22IfcRelAssignsToProcessENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x119IfcObjectDefinitionEE3ptrEN5boost8optionalIN6Ifc4x117IfcObjectTypeEnum5ValueEEEPN6Ifc4x116IfcProcessSelectEPN6Ifc4x118IfcMeasureWithUnitE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x122IfcRelAssignsToProcess5ClassEv">
+<span id="_CPPv3N6Ifc4x122IfcRelAssignsToProcess5ClassEv"></span><span id="_CPPv2N6Ifc4x122IfcRelAssignsToProcess5ClassEv"></span><span id="Ifc4x1::IfcRelAssignsToProcess::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_rel_assigns_to_process_1a34f152e90baf965a0639b22ee9d59d7c"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x122IfcRelAssignsToProcess5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_rel_assigns_to_group_by_factor.html" title="previous chapter">Class Ifc4x1::IfcRelAssignsToGroupByFactor</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_rel_assigns_to_product.html" title="next chapter">Class Ifc4x1::IfcRelAssignsToProduct</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_rel_assigns_to_process.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

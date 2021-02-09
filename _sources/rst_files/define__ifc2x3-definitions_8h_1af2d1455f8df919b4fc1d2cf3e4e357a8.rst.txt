@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1af2d1455f8df919b4fc1d2cf3e4e357a8:
+
+Define SCHEMA_HAS_IfcLightSourcePositional
+==========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcLightSourcePositional

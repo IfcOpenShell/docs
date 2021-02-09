@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a551f8b8ccdba86e01a93c926c3cc92a4:
+
+Define SCHEMA_IfcPropertyTableValue_HAS_DefinedValues
+=====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPropertyTableValue_HAS_DefinedValues

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a8e21371ea3d408a134cc5f56916a0270:
+
+Define SCHEMA_IfcTaskTime_StatusTime_IS_OPTIONAL
+================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTaskTime_StatusTime_IS_OPTIONAL

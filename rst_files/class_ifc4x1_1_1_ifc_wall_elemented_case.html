@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcWallElementedCase &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcWallStandardCase" href="class_ifc4x1_1_1_ifc_wall_standard_case.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcWall" href="class_ifc4x1_1_1_ifc_wall.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcwallelementedcase">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-wall-elemented-case"></span><h1>Class Ifc4x1::IfcWallElementedCase<a class="headerlink" href="#class-ifc4x1-ifcwallelementedcase" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcWall</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_wall.html#exhale-class-class-ifc4x1-1-1-ifc-wall"><span class="std std-ref">Class Ifc4x1::IfcWall</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x120IfcWallElementedCaseE">
+<span id="_CPPv3N6Ifc4x120IfcWallElementedCaseE"></span><span id="_CPPv2N6Ifc4x120IfcWallElementedCaseE"></span><span id="Ifc4x1::IfcWallElementedCase"></span><span class="target" id="class_ifc4x1_1_1_ifc_wall_elemented_case"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcWallElementedCase</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_wall.html#_CPPv4N6Ifc4x17IfcWallE" title="Ifc4x1::IfcWall">IfcWall</a><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcWallElementedCaseE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_wall_elemented_case"><span class="std std-ref">IfcWallElementedCase</span></a> defines a wall with certain constraints for the provision of its components. The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_wall_elemented_case"><span class="std std-ref">IfcWallElementedCase</span></a> handles all cases of walls, that are decomposed into parts:</p>
+<p>having components being assigned to the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_wall_elemented_case"><span class="std std-ref">IfcWallElementedCase</span></a> using the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_aggregates"><span class="std std-ref">IfcRelAggregates</span></a> relationship accessible by the inverse relationship IsDecomposedBy. applying the constraint that the parts within the decomposition shall be of type <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_member"><span class="std std-ref">IfcMember</span></a>, <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a>, <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_building_element_part"><span class="std std-ref">IfcBuildingElementPart</span></a> or <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a>.</p>
+<p>HISTORY New entity in IFC2x4. Property Set Use Definition: The property sets relating to the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_wall_elemented_case"><span class="std std-ref">IfcWallElementedCase</span></a> are defined at the supertype <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_wall"><span class="std std-ref">IfcWall</span></a>. NOTE The parts within the decomposition relationship may define their own property sets. Quantity Use Definition: The quantities relating to the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_wall_elemented_case"><span class="std std-ref">IfcWallElementedCase</span></a> are defined at the supertype <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_wall"><span class="std std-ref">IfcWall</span></a>. NOTE The parts within the decomposition relationship may define their own individual quantities.</p>
+<p>Voiding Use Definition:</p>
+<p>As shown in Figure 132, openings within the composite wall are directly assigned to <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_wall_elemented_case"><span class="std std-ref">IfcWallElementedCase</span></a> using <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_voids_element"><span class="std std-ref">IfcRelVoidsElement</span></a> pointing to <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_opening_element"><span class="std std-ref">IfcOpeningElement</span></a> and apply to all aggregated parts. If individual parts have cutting and other voiding features, then the decomposed parts have a separate voiding relationship <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_voids_element"><span class="std std-ref">IfcRelVoidsElement</span></a> pointing to <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_voiding_feature"><span class="std std-ref">IfcVoidingFeature</span></a>.</p>
+<p>Figure 132 — Wall elemented voiding</p>
+<p>Decomposition Use Definition: The following guidance is provided for the components of the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_wall_elemented_case"><span class="std std-ref">IfcWallElementedCase</span></a>. The following component entity types should be used:</p>
+<p>Framed Walls</p>
+<p>studs : <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_member"><span class="std std-ref">IfcMember</span></a> plates : <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_member"><span class="std std-ref">IfcMember</span></a> drywall : <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a> wood sheathing : <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a> insulation : <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_building_element_part"><span class="std std-ref">IfcBuildingElementPart</span></a> precast panel : <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_building_element_part"><span class="std std-ref">IfcBuildingElementPart</span></a> others : <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_building_element_part"><span class="std std-ref">IfcBuildingElementPart</span></a></p>
+<p>Geometry Use Definitions: The geometric representation of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_wall_elemented_case"><span class="std std-ref">IfcWallElementedCase</span></a> is given by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a>, allowing multiple geometric representation. Included are: Local Placement The use of local placement is defined at the supertype <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_wall"><span class="std std-ref">IfcWall</span></a>. The local placement of the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_wall_elemented_case"><span class="std std-ref">IfcWallElementedCase</span></a> defines the parent coordinate systems for the parts within the decomposition. All parts shall be positioned relative to the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_wall_elemented_case"><span class="std std-ref">IfcWallElementedCase</span></a>. Geometric Representation The standard geometric representation of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_wall_elemented_case"><span class="std std-ref">IfcWallElementedCase</span></a> is defined using the following multiple shape representations for its definition:</p>
+<p>Axis: A two-dimensional open curve being a subtype of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_bounded_curve"><span class="std std-ref">IfcBoundedCurve</span></a> defining the axis for the elemented wall. It maybe used as a simplified representation directly at the elemented wall. Surface: A three-dimensional surface being a subtype of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_bounded_surface"><span class="std std-ref">IfcBoundedSurface</span></a> defining the reference surface for the elemented wall. It maybe used as a simplified representation directly at the elemented wall.</p>
+<p>NOTE It is invalid to exhange a ‘Body’ shape representation of an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_wall_elemented_case"><span class="std std-ref">IfcWallElementedCase</span></a>. The body geometry is defined by the parts within the decomposition. Axis Representation The wall axis is represented by a two-dimensional open curve within a particular shape representation.</p>
+<p>RepresentationIdentifier : ‘Axis’ RepresentationType : ‘Curve2D’</p>
+<p>Surface Representation The surfacic geometric representation of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_wall_elemented_case"><span class="std std-ref">IfcWallElementedCase</span></a> is defined using the ‘Surface’ representation.</p>
+<p>RepresentationIdentifier : ‘Surface’ RepresentationType : ‘Surface3D’</p>
+<p>NOTE The ‘Surface’ can be used to define a surfacic model of the building (e.g. for analytical purposes, or for reduced Level of Detail representation). It could suppress the geometric details of the parts in the decomposition. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x120IfcWallElementedCase4listE">
+<span id="_CPPv3N6Ifc4x120IfcWallElementedCase4listE"></span><span id="_CPPv2N6Ifc4x120IfcWallElementedCase4listE"></span><span id="Ifc4x1::IfcWallElementedCase::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_wall_elemented_case_1a446f1860145089b8622e78e15ae40ca9"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x120IfcWallElementedCaseE" title="Ifc4x1::IfcWallElementedCase">IfcWallElementedCase</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcWallElementedCase4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcWallElementedCase11declarationEv">
+<span id="_CPPv3NK6Ifc4x120IfcWallElementedCase11declarationEv"></span><span id="_CPPv2NK6Ifc4x120IfcWallElementedCase11declarationEv"></span><span id="Ifc4x1::IfcWallElementedCase::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_wall_elemented_case_1a12a2754e25830806a74cfcae87833641"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcWallElementedCase11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcWallElementedCase20IfcWallElementedCaseEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x120IfcWallElementedCase20IfcWallElementedCaseEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x120IfcWallElementedCase20IfcWallElementedCaseEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcWallElementedCase::IfcWallElementedCase__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_wall_elemented_case_1aeb303546b0491383eb551ec2599fae4a"></span><code class="sig-name descname">IfcWallElementedCase</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcWallElementedCase20IfcWallElementedCaseEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcWallElementedCase20IfcWallElementedCaseENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x115IfcWallTypeEnum5ValueEEE">
+<span id="_CPPv3N6Ifc4x120IfcWallElementedCase20IfcWallElementedCaseENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x115IfcWallTypeEnum5ValueEEE"></span><span id="_CPPv2N6Ifc4x120IfcWallElementedCase20IfcWallElementedCaseENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x115IfcWallTypeEnum5ValueEEE"></span><span id="Ifc4x1::IfcWallElementedCase::IfcWallElementedCase__ss.Ifc4x1::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4x1::IfcObjectPlacementP.Ifc4x1::IfcProductRepresentationP.boost::optional:ss:.boost::optional:Ifc4x1::IfcWallTypeEnum::Value:"></span><span class="target" id="class_ifc4x1_1_1_ifc_wall_elemented_case_1a93411a7d0fe4f4614ec9bfe9a2dcee19"></span><code class="sig-name descname">IfcWallElementedCase</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_owner_history.html#_CPPv4N6Ifc4x115IfcOwnerHistoryE" title="Ifc4x1::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_object_placement.html#_CPPv4N6Ifc4x118IfcObjectPlacementE" title="Ifc4x1::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_product_representation.html#_CPPv4N6Ifc4x124IfcProductRepresentationE" title="Ifc4x1::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, boost::optional&lt;std::string&gt; <em>v8_Tag</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x115IfcWallTypeEnumE" title="Ifc4x1::IfcWallTypeEnum">IfcWallTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x115IfcWallTypeEnum5ValueE" title="Ifc4x1::IfcWallTypeEnum::Value">Value</a>&gt; <em>v9_PredefinedType</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcWallElementedCase20IfcWallElementedCaseENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x115IfcWallTypeEnum5ValueEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcWallElementedCase5ClassEv">
+<span id="_CPPv3N6Ifc4x120IfcWallElementedCase5ClassEv"></span><span id="_CPPv2N6Ifc4x120IfcWallElementedCase5ClassEv"></span><span id="Ifc4x1::IfcWallElementedCase::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_wall_elemented_case_1acea177fb51db6c501c8c92becfba52b6"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcWallElementedCase5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_wall.html" title="previous chapter">Class Ifc4x1::IfcWall</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_wall_standard_case.html" title="next chapter">Class Ifc4x1::IfcWallStandardCase</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_wall_elemented_case.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

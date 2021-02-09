@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a6d6bc5df707c3d512d3d2c4ed50216e2:
+
+Define SCHEMA_IfcReinforcingMeshType_HAS_TransverseBarCrossSectionArea
+======================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcReinforcingMeshType_HAS_TransverseBarCrossSectionArea

@@ -1,0 +1,63 @@
+
+.. _file_src_ifcparse_IfcEntityInstanceData.h:
+
+File IfcEntityInstanceData.h
+============================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcparse>` (``src/ifcparse``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/IfcEntityInstanceData.h``)
+-----------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_IfcEntityInstanceData.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/ArgumentType.h``
+
+- ``boost/optional.hpp``
+
+- ``boost/shared_ptr.hpp``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_IfcBaseClass.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcParse`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_ifc_entity_instance_data`
+

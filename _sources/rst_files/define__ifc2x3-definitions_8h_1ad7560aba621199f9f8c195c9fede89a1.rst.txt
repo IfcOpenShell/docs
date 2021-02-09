@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ad7560aba621199f9f8c195c9fede89a1:
+
+Define SCHEMA_IfcConstraintAggregationRelationship_HAS_LogicalAggregator
+========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConstraintAggregationRelationship_HAS_LogicalAggregator

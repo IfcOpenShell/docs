@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a09a74d88db94ec7b0844140156d4d2f6:
+
+Define SCHEMA_IfcDocumentElectronicFormat_MimeSubtype_IS_OPTIONAL
+=================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDocumentElectronicFormat_MimeSubtype_IS_OPTIONAL

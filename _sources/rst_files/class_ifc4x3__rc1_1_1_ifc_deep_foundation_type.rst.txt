@@ -1,0 +1,38 @@
+.. _exhale_class_class_ifc4x3__rc1_1_1_ifc_deep_foundation_type:
+
+Class Ifc4x3_rc1::IfcDeepFoundationType
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x3__rc1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x3_rc1::IfcBuiltElementType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_built_element_type`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x3_rc1::IfcCaissonFoundationType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_caisson_foundation_type`)
+- ``public Ifc4x3_rc1::IfcPileType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_pile_type`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x3_rc1::IfcDeepFoundationType
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1ad01afe703fc3f0f1369f5586c93e06c7:
+
+Define SCHEMA_IfcExternalReferenceRelationship_HAS_RelatingReference
+====================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcExternalReferenceRelationship_HAS_RelatingReference

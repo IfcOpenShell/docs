@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1ac9092d4e0250bf2da60cc51a92ea64af:
+
+Define SCHEMA_IfcBSplineCurve_HAS_ClosedCurve
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBSplineCurve_HAS_ClosedCurve

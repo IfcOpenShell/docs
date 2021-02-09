@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a8143018d9b2c133e2c8eb5dfdee59036:
+
+Define SCHEMA_HAS_IfcVolumetricFlowRateMeasure
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcVolumetricFlowRateMeasure

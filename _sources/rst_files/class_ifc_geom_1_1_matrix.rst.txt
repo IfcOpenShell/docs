@@ -1,0 +1,16 @@
+.. _exhale_class_class_ifc_geom_1_1_matrix:
+
+Template Class Matrix
+=====================
+
+- Defined in :ref:`file_src_ifcgeom_IfcGeomElement.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcGeom::Matrix
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a8cfb2e0b74576ba9d392b84256a4e6e5:
+
+Define SCHEMA_IfcGrid_HAS_ContainedInStructure
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcGrid_HAS_ContainedInStructure

@@ -1,0 +1,42 @@
+.. _exhale_class_class_ifc4x2_1_1_ifc_physical_simple_quantity:
+
+Class Ifc4x2::IfcPhysicalSimpleQuantity
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x2`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x2::IfcPhysicalQuantity`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_physical_quantity`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x2::IfcQuantityArea`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_quantity_area`)
+- ``public Ifc4x2::IfcQuantityCount`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_quantity_count`)
+- ``public Ifc4x2::IfcQuantityLength`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_quantity_length`)
+- ``public Ifc4x2::IfcQuantityTime`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_quantity_time`)
+- ``public Ifc4x2::IfcQuantityVolume`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_quantity_volume`)
+- ``public Ifc4x2::IfcQuantityWeight`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_quantity_weight`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x2::IfcPhysicalSimpleQuantity
+   :members:
+   :protected-members:
+   :undoc-members:

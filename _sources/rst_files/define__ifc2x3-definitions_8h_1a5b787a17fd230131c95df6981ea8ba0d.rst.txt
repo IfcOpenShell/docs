@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a5b787a17fd230131c95df6981ea8ba0d:
+
+Define SCHEMA_IfcScheduleTimeControl_ActualDuration_IS_OPTIONAL
+===============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcScheduleTimeControl_ActualDuration_IS_OPTIONAL

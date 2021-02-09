@@ -1,0 +1,31 @@
+.. _exhale_class_class_ifc4x3__rc1_1_1_ifc_window_standard_case:
+
+Class Ifc4x3_rc1::IfcWindowStandardCase
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x3__rc1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x3_rc1::IfcWindow`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_window`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x3_rc1::IfcWindowStandardCase
+   :members:
+   :protected-members:
+   :undoc-members:

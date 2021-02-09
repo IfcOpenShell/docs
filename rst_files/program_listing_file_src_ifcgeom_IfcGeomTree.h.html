@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Listing for File IfcGeomTree.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="program-listing-for-file-ifcgeomtree-h">
+<span id="program-listing-file-src-ifcgeom-ifcgeomtree-h"></span><h1>Program Listing for File IfcGeomTree.h<a class="headerlink" href="#program-listing-for-file-ifcgeomtree-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_ifcgeom_IfcGeomTree.h.html#file-src-ifcgeom-ifcgeomtree-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom/IfcGeomTree.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/********************************************************************************</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* This file is part of IfcOpenShell.                                           *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* IfcOpenShell is free software: you can redistribute it and/or modify         *</span>
+<span class="cm">* it under the terms of the Lesser GNU General Public License as published by  *</span>
+<span class="cm">* the Free Software Foundation, either version 3.0 of the License, or          *</span>
+<span class="cm">* (at your option) any later version.                                          *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* IfcOpenShell is distributed in the hope that it will be useful,              *</span>
+<span class="cm">* but WITHOUT ANY WARRANTY; without even the implied warranty of               *</span>
+<span class="cm">* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 *</span>
+<span class="cm">* Lesser GNU General Public License for more details.                          *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* You should have received a copy of the Lesser GNU General Public License     *</span>
+<span class="cm">* along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.         *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">********************************************************************************/</span>
+
+<span class="cp">#ifndef IFCGEOMTREE_H</span>
+<span class="cp">#define IFCGEOMTREE_H</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcFile.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom/IfcGeomElement.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom_schema_agnostic/IfcGeomIterator.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom_schema_agnostic/Kernel.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;NCollection_UBTree.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;BRepBndLib.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;Bnd_Box.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;BRepAlgoAPI_Common.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;BRepAlgoAPI_Cut.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;BRepClass3d_SolidClassifier.hxx&gt;</span><span class="cp"></span>
+
+<span class="k">namespace</span> <span class="n">IfcGeom</span> <span class="p">{</span>
+
+    <span class="k">namespace</span> <span class="n">impl</span> <span class="p">{</span>
+        <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span>
+        <span class="k">class</span> <span class="nc">tree</span> <span class="p">{</span>
+
+        <span class="k">public</span><span class="o">:</span>
+
+            <span class="kt">void</span> <span class="n">add</span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">,</span> <span class="k">const</span> <span class="n">Bnd_Box</span><span class="o">&amp;</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">tree_</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">b</span><span class="p">);</span>
+            <span class="p">}</span>
+
+            <span class="kt">void</span> <span class="n">add</span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">,</span> <span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">Bnd_Box</span> <span class="n">b</span><span class="p">;</span>
+                <span class="n">BRepBndLib</span><span class="o">::</span><span class="n">AddClose</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">b</span><span class="p">);</span>
+                <span class="n">add</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">b</span><span class="p">);</span>
+                <span class="n">shapes_</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="n">s</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">select_box</span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">completely_within</span> <span class="o">=</span> <span class="nb">false</span><span class="p">,</span> <span class="kt">double</span> <span class="n">extend</span><span class="o">=</span><span class="mf">-1.</span><span class="n">e</span><span class="mi">-5</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+                <span class="k">typename</span> <span class="nc">map_t</span><span class="o">::</span><span class="n">const_iterator</span> <span class="n">it</span> <span class="o">=</span> <span class="n">shapes_</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">it</span> <span class="o">==</span> <span class="n">shapes_</span><span class="p">.</span><span class="n">end</span><span class="p">())</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">();</span>
+                <span class="p">}</span>
+
+                <span class="n">Bnd_Box</span> <span class="n">b</span><span class="p">;</span>
+                <span class="n">BRepBndLib</span><span class="o">::</span><span class="n">AddClose</span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">,</span> <span class="n">b</span><span class="p">);</span>
+
+                <span class="c1">// Gap is assumed to be positive throughout the codebase,</span>
+                <span class="c1">// but at least for IsOut() in the selector a negative</span>
+                <span class="c1">// Gap should work as well.</span>
+                <span class="n">b</span><span class="p">.</span><span class="n">SetGap</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">GetGap</span><span class="p">()</span> <span class="o">+</span> <span class="n">extend</span><span class="p">);</span>
+
+                <span class="k">return</span> <span class="nf">select_box</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">completely_within</span><span class="p">);</span>
+            <span class="p">}</span>
+
+            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">select_box</span><span class="p">(</span><span class="k">const</span> <span class="n">gp_Pnt</span><span class="o">&amp;</span> <span class="n">p</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+                <span class="n">Bnd_Box</span> <span class="n">b</span><span class="p">;</span>
+                <span class="n">b</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+                <span class="k">return</span> <span class="nf">select_box</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+            <span class="p">}</span>
+
+            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">select_box</span><span class="p">(</span><span class="k">const</span> <span class="n">Bnd_Box</span><span class="o">&amp;</span> <span class="n">b</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">completely_within</span> <span class="o">=</span> <span class="nb">false</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+                <span class="n">selector</span> <span class="nf">s</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+                <span class="n">tree_</span><span class="p">.</span><span class="n">Select</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">completely_within</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">ts</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">results</span><span class="p">();</span>
+                    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">ts_filtered</span><span class="p">;</span>
+                    <span class="n">ts_filtered</span><span class="p">.</span><span class="n">reserve</span><span class="p">(</span><span class="n">ts</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
+                    <span class="k">typename</span> <span class="nc">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">const_iterator</span> <span class="n">it</span> <span class="o">=</span> <span class="n">ts</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+                    <span class="k">for</span> <span class="p">(;</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">ts</span><span class="p">.</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">it</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">shp</span> <span class="o">=</span> <span class="n">shapes_</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">;</span>
+                        <span class="n">Bnd_Box</span> <span class="n">B</span><span class="p">;</span>
+                        <span class="n">BRepBndLib</span><span class="o">::</span><span class="n">AddClose</span><span class="p">(</span><span class="n">shp</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+
+                        <span class="c1">// BndBox::CornerMin() /-Max() introduced in OCCT 6.8</span>
+                        <span class="kt">double</span> <span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">z1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">z2</span><span class="p">;</span>
+                        <span class="n">b</span><span class="p">.</span><span class="n">Get</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">z1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">z2</span><span class="p">);</span>
+                        <span class="kt">double</span> <span class="n">gap</span> <span class="o">=</span> <span class="n">B</span><span class="p">.</span><span class="n">GetGap</span><span class="p">();</span>
+                        <span class="n">gp_Pnt</span> <span class="nf">p1</span><span class="p">(</span><span class="n">x1</span> <span class="o">-</span> <span class="n">gap</span><span class="p">,</span> <span class="n">y1</span> <span class="o">-</span> <span class="n">gap</span><span class="p">,</span> <span class="n">z1</span> <span class="o">-</span> <span class="n">gap</span><span class="p">);</span>
+                        <span class="n">gp_Pnt</span> <span class="nf">p2</span><span class="p">(</span><span class="n">x2</span> <span class="o">+</span> <span class="n">gap</span><span class="p">,</span> <span class="n">y2</span> <span class="o">+</span> <span class="n">gap</span><span class="p">,</span> <span class="n">z2</span> <span class="o">+</span> <span class="n">gap</span><span class="p">);</span>
+
+                        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">b</span><span class="p">.</span><span class="n">IsOut</span><span class="p">(</span><span class="n">p1</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">b</span><span class="p">.</span><span class="n">IsOut</span><span class="p">(</span><span class="n">p2</span><span class="p">))</span> <span class="p">{</span>
+                            <span class="n">ts_filtered</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">);</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+                    <span class="k">return</span> <span class="n">ts_filtered</span><span class="p">;</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="n">s</span><span class="p">.</span><span class="n">results</span><span class="p">();</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">select</span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">completely_within</span> <span class="o">=</span> <span class="nb">false</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+                <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">ts</span> <span class="o">=</span> <span class="n">select_box</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">ts</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="n">ts</span><span class="p">;</span>
+                <span class="p">}</span>
+
+                <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">ts_filtered</span><span class="p">;</span>
+
+                <span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">A</span> <span class="o">=</span> <span class="n">shapes_</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">Kernel</span><span class="o">::</span><span class="n">count</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">TopAbs_SHELL</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="n">ts_filtered</span><span class="p">;</span>
+                <span class="p">}</span>
+
+                <span class="n">ts_filtered</span><span class="p">.</span><span class="n">reserve</span><span class="p">(</span><span class="n">ts</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
+
+                <span class="k">typename</span> <span class="nc">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">const_iterator</span> <span class="n">it</span> <span class="o">=</span> <span class="n">ts</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+                <span class="k">for</span> <span class="p">(</span><span class="n">it</span> <span class="o">=</span> <span class="n">ts</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">ts</span><span class="p">.</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">it</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">B</span> <span class="o">=</span> <span class="n">shapes_</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">;</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">Kernel</span><span class="o">::</span><span class="n">count</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">TopAbs_SHELL</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="k">continue</span><span class="p">;</span>
+                    <span class="p">}</span>
+
+                    <span class="k">if</span> <span class="p">(</span><span class="n">completely_within</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">BRepAlgoAPI_Cut</span> <span class="nf">cut</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">A</span><span class="p">);</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">cut</span><span class="p">.</span><span class="n">IsDone</span><span class="p">())</span> <span class="p">{</span>
+                            <span class="k">if</span> <span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">Kernel</span><span class="o">::</span><span class="n">count</span><span class="p">(</span><span class="n">cut</span><span class="p">.</span><span class="n">Shape</span><span class="p">(),</span> <span class="n">TopAbs_SHELL</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                                <span class="n">ts_filtered</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">);</span>
+                            <span class="p">}</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                        <span class="n">BRepAlgoAPI_Common</span> <span class="nf">common</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">common</span><span class="p">.</span><span class="n">IsDone</span><span class="p">())</span> <span class="p">{</span>
+                            <span class="k">if</span> <span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">Kernel</span><span class="o">::</span><span class="n">count</span><span class="p">(</span><span class="n">common</span><span class="p">.</span><span class="n">Shape</span><span class="p">(),</span> <span class="n">TopAbs_SHELL</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                                <span class="n">ts_filtered</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">);</span>
+                            <span class="p">}</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+
+                <span class="k">return</span> <span class="n">ts_filtered</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">select</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+                <span class="n">Bnd_Box</span> <span class="n">bb</span><span class="p">;</span>
+                <span class="n">BRepBndLib</span><span class="o">::</span><span class="n">AddClose</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">bb</span><span class="p">);</span>
+
+                <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">ts</span><span class="p">;</span>
+
+                <span class="k">if</span> <span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">Kernel</span><span class="o">::</span><span class="n">count</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">TopAbs_SHELL</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="n">ts</span><span class="p">;</span>
+                <span class="p">}</span>
+
+                <span class="n">ts</span> <span class="o">=</span> <span class="n">select_box</span><span class="p">(</span><span class="n">bb</span><span class="p">);</span>
+
+                <span class="k">if</span> <span class="p">(</span><span class="n">ts</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="n">ts</span><span class="p">;</span>
+                <span class="p">}</span>
+
+                <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">ts_filtered</span><span class="p">;</span>
+                <span class="n">ts_filtered</span><span class="p">.</span><span class="n">reserve</span><span class="p">(</span><span class="n">ts</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
+
+                <span class="k">typename</span> <span class="nc">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">const_iterator</span> <span class="n">it</span> <span class="o">=</span> <span class="n">ts</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+                <span class="k">for</span> <span class="p">(</span><span class="n">it</span> <span class="o">=</span> <span class="n">ts</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">ts</span><span class="p">.</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">it</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">B</span> <span class="o">=</span> <span class="n">shapes_</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">;</span>
+
+                    <span class="k">if</span> <span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">Kernel</span><span class="o">::</span><span class="n">count</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">TopAbs_SHELL</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="k">continue</span><span class="p">;</span>
+                    <span class="p">}</span>
+
+                    <span class="n">BRepAlgoAPI_Common</span> <span class="n">common</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">common</span><span class="p">.</span><span class="n">IsDone</span><span class="p">())</span> <span class="p">{</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">Kernel</span><span class="o">::</span><span class="n">count</span><span class="p">(</span><span class="n">common</span><span class="p">.</span><span class="n">Shape</span><span class="p">(),</span> <span class="n">TopAbs_SHELL</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                            <span class="n">ts_filtered</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">);</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+
+                <span class="k">return</span> <span class="n">ts_filtered</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">select</span><span class="p">(</span><span class="k">const</span> <span class="n">gp_Pnt</span><span class="o">&amp;</span> <span class="n">p</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+                <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">ts</span> <span class="o">=</span> <span class="n">select_box</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">ts</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="n">ts</span><span class="p">;</span>
+                <span class="p">}</span>
+
+                <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">ts_filtered</span><span class="p">;</span>
+                <span class="n">ts_filtered</span><span class="p">.</span><span class="n">reserve</span><span class="p">(</span><span class="n">ts</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
+
+                <span class="k">typename</span> <span class="nc">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">const_iterator</span> <span class="n">it</span> <span class="o">=</span> <span class="n">ts</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+                <span class="k">for</span> <span class="p">(</span><span class="n">it</span> <span class="o">=</span> <span class="n">ts</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">ts</span><span class="p">.</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">it</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">B</span> <span class="o">=</span> <span class="n">shapes_</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">;</span>
+                    <span class="n">TopExp_Explorer</span> <span class="nf">exp</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">TopAbs_SOLID</span><span class="p">);</span>
+                    <span class="k">for</span> <span class="p">(;</span> <span class="n">exp</span><span class="p">.</span><span class="n">More</span><span class="p">();</span> <span class="n">exp</span><span class="p">.</span><span class="n">Next</span><span class="p">())</span> <span class="p">{</span>
+                        <span class="n">BRepClass3d_SolidClassifier</span> <span class="nf">cls</span><span class="p">(</span><span class="n">exp</span><span class="p">.</span><span class="n">Current</span><span class="p">(),</span> <span class="n">p</span><span class="p">,</span> <span class="mf">1e-5</span><span class="p">);</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">cls</span><span class="p">.</span><span class="n">State</span><span class="p">()</span> <span class="o">!=</span> <span class="n">TopAbs_OUT</span><span class="p">)</span> <span class="p">{</span>
+                            <span class="n">ts_filtered</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="o">*</span><span class="n">it</span><span class="p">);</span>
+                            <span class="k">break</span><span class="p">;</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+
+                <span class="k">return</span> <span class="n">ts_filtered</span><span class="p">;</span>
+            <span class="p">}</span>
+
+        <span class="k">protected</span><span class="o">:</span>
+
+            <span class="k">typedef</span> <span class="n">NCollection_UBTree</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span> <span class="n">Bnd_Box</span><span class="o">&gt;</span> <span class="n">tree_t</span><span class="p">;</span>
+            <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span> <span class="n">TopoDS_Shape</span><span class="o">&gt;</span> <span class="n">map_t</span><span class="p">;</span>
+            <span class="n">tree_t</span> <span class="n">tree_</span><span class="p">;</span>
+            <span class="n">map_t</span> <span class="n">shapes_</span><span class="p">;</span>
+
+            <span class="k">class</span> <span class="nc">selector</span> <span class="o">:</span> <span class="k">public</span> <span class="n">tree_t</span><span class="o">::</span><span class="n">Selector</span>
+            <span class="p">{</span>
+            <span class="k">public</span><span class="o">:</span>
+                <span class="n">selector</span><span class="p">(</span><span class="k">const</span> <span class="n">Bnd_Box</span><span class="o">&amp;</span> <span class="n">b</span><span class="p">)</span>
+                    <span class="o">:</span> <span class="n">tree_t</span><span class="o">::</span><span class="n">Selector</span><span class="p">()</span>
+                    <span class="p">,</span> <span class="n">bounds_</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+                <span class="p">{}</span>
+
+                <span class="n">Standard_Boolean</span> <span class="n">Reject</span><span class="p">(</span><span class="k">const</span> <span class="n">Bnd_Box</span><span class="o">&amp;</span> <span class="n">b</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="n">bounds_</span><span class="p">.</span><span class="n">IsOut</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+                <span class="p">}</span>
+
+                <span class="n">Standard_Boolean</span> <span class="n">Accept</span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">o</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">results_</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">o</span><span class="p">);</span>
+                    <span class="k">return</span> <span class="n">Standard_True</span><span class="p">;</span>
+                <span class="p">}</span>
+
+                <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span> <span class="n">results</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="n">results_</span><span class="p">;</span>
+                <span class="p">}</span>
+
+            <span class="k">private</span><span class="o">:</span>
+                <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">results_</span><span class="p">;</span>
+                <span class="k">const</span> <span class="n">Bnd_Box</span><span class="o">&amp;</span> <span class="n">bounds_</span><span class="p">;</span>
+            <span class="p">};</span>
+
+        <span class="p">};</span>
+    <span class="p">}</span>
+
+    <span class="k">class</span> <span class="nc">tree</span> <span class="o">:</span> <span class="k">public</span> <span class="n">impl</span><span class="o">::</span><span class="n">tree</span><span class="o">&lt;</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseEntity</span><span class="o">*&gt;</span> <span class="p">{</span>
+    <span class="k">public</span><span class="o">:</span>
+
+        <span class="n">tree</span><span class="p">()</span> <span class="p">{};</span>
+
+        <span class="n">tree</span><span class="p">(</span><span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcFile</span><span class="o">&amp;</span> <span class="n">f</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">add_file</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">IteratorSettings</span><span class="p">());</span>
+        <span class="p">}</span>
+
+        <span class="n">tree</span><span class="p">(</span><span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcFile</span><span class="o">&amp;</span> <span class="n">f</span><span class="p">,</span> <span class="k">const</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">IteratorSettings</span><span class="o">&amp;</span> <span class="n">settings</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">add_file</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">settings</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="kt">void</span> <span class="n">add_file</span><span class="p">(</span><span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcFile</span><span class="o">&amp;</span> <span class="n">f</span><span class="p">,</span> <span class="k">const</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">IteratorSettings</span><span class="o">&amp;</span> <span class="n">settings</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">IfcGeom</span><span class="o">::</span><span class="n">IteratorSettings</span> <span class="n">settings_</span> <span class="o">=</span> <span class="n">settings</span><span class="p">;</span>
+            <span class="n">settings_</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">DISABLE_TRIANGULATION</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
+            <span class="n">settings_</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">USE_WORLD_COORDS</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
+            <span class="n">settings_</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">SEW_SHELLS</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
+
+            <span class="n">IfcGeom</span><span class="o">::</span><span class="n">Iterator</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">it</span><span class="p">(</span><span class="n">settings_</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">f</span><span class="p">);</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">it</span><span class="p">.</span><span class="n">initialize</span><span class="p">())</span> <span class="p">{</span>
+                <span class="k">do</span> <span class="p">{</span>
+                    <span class="n">IfcGeom</span><span class="o">::</span><span class="n">BRepElement</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;*</span> <span class="n">elem</span> <span class="o">=</span> <span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">BRepElement</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;*</span><span class="p">)</span><span class="n">it</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
+                    <span class="n">add</span><span class="p">((</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseEntity</span><span class="o">*</span><span class="p">)</span><span class="n">f</span><span class="p">.</span><span class="n">instance_by_id</span><span class="p">(</span><span class="n">elem</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">()),</span> <span class="n">elem</span><span class="o">-&gt;</span><span class="n">geometry</span><span class="p">().</span><span class="n">as_compound</span><span class="p">());</span>
+                <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">it</span><span class="p">.</span><span class="n">next</span><span class="p">());</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+
+<span class="p">}</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/program_listing_file_src_ifcgeom_IfcGeomTree.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

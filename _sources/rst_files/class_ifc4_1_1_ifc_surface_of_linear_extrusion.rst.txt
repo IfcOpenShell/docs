@@ -1,0 +1,31 @@
+.. _exhale_class_class_ifc4_1_1_ifc_surface_of_linear_extrusion:
+
+Class Ifc4::IfcSurfaceOfLinearExtrusion
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4::IfcSweptSurface`` (:ref:`exhale_class_class_ifc4_1_1_ifc_swept_surface`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4::IfcSurfaceOfLinearExtrusion
+   :members:
+   :protected-members:
+   :undoc-members:

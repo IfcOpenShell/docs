@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a2dc53cd4d7a601c479e7e1182860e6ee:
+
+Define SCHEMA_IfcStructuralLoadSingleDisplacement_HAS_RotationalDisplacementRZ
+==============================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLoadSingleDisplacement_HAS_RotationalDisplacementRZ

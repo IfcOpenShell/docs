@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcDerivedProfileDef &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcDerivedUnit" href="class_ifc4x1_1_1_ifc_derived_unit.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcDayInWeekNumber" href="class_ifc4x1_1_1_ifc_day_in_week_number.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcderivedprofiledef">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-derived-profile-def"></span><h1>Class Ifc4x1::IfcDerivedProfileDef<a class="headerlink" href="#class-ifc4x1-ifcderivedprofiledef" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcProfileDef</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_profile_def.html#exhale-class-class-ifc4x1-1-1-ifc-profile-def"><span class="std std-ref">Class Ifc4x1::IfcProfileDef</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="derived-type">
+<h3>Derived Type<a class="headerlink" href="#derived-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcMirroredProfileDef</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_mirrored_profile_def.html#exhale-class-class-ifc4x1-1-1-ifc-mirrored-profile-def"><span class="std std-ref">Class Ifc4x1::IfcMirroredProfileDef</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x120IfcDerivedProfileDefE">
+<span id="_CPPv3N6Ifc4x120IfcDerivedProfileDefE"></span><span id="_CPPv2N6Ifc4x120IfcDerivedProfileDefE"></span><span id="Ifc4x1::IfcDerivedProfileDef"></span><span class="target" id="class_ifc4x1_1_1_ifc_derived_profile_def"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcDerivedProfileDef</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_profile_def.html#_CPPv4N6Ifc4x113IfcProfileDefE" title="Ifc4x1::IfcProfileDef">IfcProfileDef</a><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcDerivedProfileDefE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_derived_profile_def"><span class="std std-ref">IfcDerivedProfileDef</span></a> defines the profile by transformation from the parent profile. The transformation is given by a two dimensional transformation operator. Transformation includes translation, rotation, mirror and scaling. The latter can be uniform or non uniform. The derived profiles may be used to define swept surfaces, swept area solids or sectioned spines.</p>
+<p>The transformation effects the position, rotation, mirroring or scale of the profile at the underlying coordinate system, i.e. the coordinate system defined by the swept surface or swept area solid that uses the profile definition. It is the xy plane of either:</p>
+<p><a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_swept_surface_1ac16711298aad39485143159475c30c9b"><span class="std std-ref">IfcSweptSurface.Position</span></a> <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_swept_area_solid_1a321880278069a5ef3c2accbde4223066"><span class="std std-ref">IfcSweptAreaSolid.Position</span></a></p>
+<p>or in case of sectioned spines the xy plane of each list member of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_sectioned_spine_1a70551ca8d6d1d2c8ef366b8cf8b69f53"><span class="std std-ref">IfcSectionedSpine.CrossSectionPositions</span></a>. The position and potential rotation of the ParentProfile within the underlying coordinate system is taken into consideration before applying the Cartesian transformation operator.</p>
+<p>Note, if only mirroring is required, <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_mirrored_profile_def"><span class="std std-ref">IfcMirroredProfileDef</span></a> should be used instead.</p>
+<p>HISTORY: New entity in IFC Release 2x.</p>
+<p>Figure 316 illustrates examples of derived profiles.</p>
+<p>Parameter The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_derived_profile_def"><span class="std std-ref">IfcDerivedProfileDef</span></a> is defined using the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_cartesian_transformation_operator2_d"><span class="std std-ref">IfcCartesianTransformationOperator2D</span></a> (CTO), which is applied to the parent profile definition.</p>
+<p>Example The example shows an uniform scaling and a transformation of an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rectangle_profile_def"><span class="std std-ref">IfcRectangleProfileDef</span></a> to match the lower-left cardinal point. The attributes of the CTO are:</p>
+<p>Axis1 = NIL (defaults to 1.,0.) Axis2 = NIL (defaults to 0.,1.) LocalOrigin = IfcCartesianPoint(,) Scale = 2.</p>
+<p>Note: The ParentProfile has a Position = IfcCartesianPoint(,) already.</p>
+<p>Parameter The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_derived_profile_def"><span class="std std-ref">IfcDerivedProfileDef</span></a> is defined using non uniform transformationsby applying the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_cartesian_transformation_operator2_dnon_uniform"><span class="std std-ref">IfcCartesianTransformationOperator2DnonUniform</span></a> as a subtype of the 2D CTO.</p>
+<p>Example The example shows a non-uniform scaling and a translation of an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rectangle_profile_def"><span class="std std-ref">IfcRectangleProfileDef</span></a> to match the lower-left cardinal point. The attributes of the CTO are:</p>
+<p>Axis1 = NIL (defaults to 1.,0.) Axis2 = NIL (defaults to 0.,1.) LocalOrigin = <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_cartesian_point"><span class="std std-ref">IfcCartesianPoint</span></a>(0.,&lt;1/2 YDim) Scale = 1. Scale2 = 2.</p>
+<p>Note: The ParentProfile has a Position = IfcCartesianPoint(,) already.</p>
+<p>Parameter The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_derived_profile_def"><span class="std std-ref">IfcDerivedProfileDef</span></a> is defined using mirroring by applying the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_cartesian_transformation_operator2_d"><span class="std std-ref">IfcCartesianTransformationOperator2D</span></a> (CTO) to the parent profile.</p>
+<p>Example The example shows a mirroring of an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_l_shape_profile_def"><span class="std std-ref">IfcLShapeProfileDef</span></a> to match the centre cardinal point. The attributes of the CTO are:</p>
+<p>Axis1 = (-1.,0.) Axis2 = NIL (defaults to 0.,1.) LocalOrigin = <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_cartesian_point"><span class="std std-ref">IfcCartesianPoint</span></a>(0.,0.) Scale = NIL (defaults to 1.)</p>
+<p>Note: The ParentProfile has a Position = <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_cartesian_point"><span class="std std-ref">IfcCartesianPoint</span></a>(0.,0.).</p>
+<p>This example is for illustration only. If the transformation results only in mirroring like shown in the example, then <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_mirrored_profile_def"><span class="std std-ref">IfcMirroredProfileDef</span></a> should be used instead of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_derived_profile_def"><span class="std std-ref">IfcDerivedProfileDef</span></a>.</p>
+<p>Note: The following color map applies:</p>
+<p>black coordinate axes show the underlying coordinate system of the swept surface, swept area solid, or sectioned spine</p>
+<p>red coordinate axes show the position coordinate system of the parent profile</p>
+<p>brown coordinate axes show the position coordinate system of the derived profile</p>
+<p>Figure 316 — Derived profile </p>
+<p>Subclassed by <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_mirrored_profile_def"><span class="std std-ref">Ifc4x1::IfcMirroredProfileDef</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x120IfcDerivedProfileDef4listE">
+<span id="_CPPv3N6Ifc4x120IfcDerivedProfileDef4listE"></span><span id="_CPPv2N6Ifc4x120IfcDerivedProfileDef4listE"></span><span id="Ifc4x1::IfcDerivedProfileDef::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_derived_profile_def_1a9d672169bf275b5ea8f70abe25feff26"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x120IfcDerivedProfileDefE" title="Ifc4x1::IfcDerivedProfileDef">IfcDerivedProfileDef</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcDerivedProfileDef4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcDerivedProfileDef13ParentProfileEv">
+<span id="_CPPv3NK6Ifc4x120IfcDerivedProfileDef13ParentProfileEv"></span><span id="_CPPv2NK6Ifc4x120IfcDerivedProfileDef13ParentProfileEv"></span><span id="Ifc4x1::IfcDerivedProfileDef::ParentProfileC"></span><span class="target" id="class_ifc4x1_1_1_ifc_derived_profile_def_1aa05b6c09eb727711c40c123ce403b566"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_profile_def.html#_CPPv4N6Ifc4x113IfcProfileDefE" title="Ifc4x1::IfcProfileDef">IfcProfileDef</a> *<code class="sig-name descname">ParentProfile</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcDerivedProfileDef13ParentProfileEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The parent profile provides the origin of the transformation. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcDerivedProfileDef16setParentProfileEPN6Ifc4x113IfcProfileDefE">
+<span id="_CPPv3N6Ifc4x120IfcDerivedProfileDef16setParentProfileEPN6Ifc4x113IfcProfileDefE"></span><span id="_CPPv2N6Ifc4x120IfcDerivedProfileDef16setParentProfileEPN6Ifc4x113IfcProfileDefE"></span><span id="Ifc4x1::IfcDerivedProfileDef::setParentProfile__Ifc4x1::IfcProfileDefP"></span><span class="target" id="class_ifc4x1_1_1_ifc_derived_profile_def_1a4925ca5812177870f1339f7266c754f9"></span>void <code class="sig-name descname">setParentProfile</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_profile_def.html#_CPPv4N6Ifc4x113IfcProfileDefE" title="Ifc4x1::IfcProfileDef">IfcProfileDef</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcDerivedProfileDef16setParentProfileEPN6Ifc4x113IfcProfileDefE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcDerivedProfileDef8OperatorEv">
+<span id="_CPPv3NK6Ifc4x120IfcDerivedProfileDef8OperatorEv"></span><span id="_CPPv2NK6Ifc4x120IfcDerivedProfileDef8OperatorEv"></span><span id="Ifc4x1::IfcDerivedProfileDef::OperatorC"></span><span class="target" id="class_ifc4x1_1_1_ifc_derived_profile_def_1aadfc23e3b4d703a598b131afb89e6eb1"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_cartesian_transformation_operator2_d.html#_CPPv4N6Ifc4x136IfcCartesianTransformationOperator2DE" title="Ifc4x1::IfcCartesianTransformationOperator2D">IfcCartesianTransformationOperator2D</a> *<code class="sig-name descname">Operator</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcDerivedProfileDef8OperatorEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Transformation operator applied to the parent profile. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcDerivedProfileDef11setOperatorEPN6Ifc4x136IfcCartesianTransformationOperator2DE">
+<span id="_CPPv3N6Ifc4x120IfcDerivedProfileDef11setOperatorEPN6Ifc4x136IfcCartesianTransformationOperator2DE"></span><span id="_CPPv2N6Ifc4x120IfcDerivedProfileDef11setOperatorEPN6Ifc4x136IfcCartesianTransformationOperator2DE"></span><span id="Ifc4x1::IfcDerivedProfileDef::setOperator__Ifc4x1::IfcCartesianTransformationOperator2DP"></span><span class="target" id="class_ifc4x1_1_1_ifc_derived_profile_def_1aa0523b8e18390811d945c11ca4c35f57"></span>void <code class="sig-name descname">setOperator</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_cartesian_transformation_operator2_d.html#_CPPv4N6Ifc4x136IfcCartesianTransformationOperator2DE" title="Ifc4x1::IfcCartesianTransformationOperator2D">IfcCartesianTransformationOperator2D</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcDerivedProfileDef11setOperatorEPN6Ifc4x136IfcCartesianTransformationOperator2DE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcDerivedProfileDef8hasLabelEv">
+<span id="_CPPv3NK6Ifc4x120IfcDerivedProfileDef8hasLabelEv"></span><span id="_CPPv2NK6Ifc4x120IfcDerivedProfileDef8hasLabelEv"></span><span id="Ifc4x1::IfcDerivedProfileDef::hasLabelC"></span><span class="target" id="class_ifc4x1_1_1_ifc_derived_profile_def_1a27515a0383212895964ed94a1e7cd9e8"></span>bool <code class="sig-name descname">hasLabel</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcDerivedProfileDef8hasLabelEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Label is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_derived_profile_def"><span class="std std-ref">IfcDerivedProfileDef</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcDerivedProfileDef5LabelEv">
+<span id="_CPPv3NK6Ifc4x120IfcDerivedProfileDef5LabelEv"></span><span id="_CPPv2NK6Ifc4x120IfcDerivedProfileDef5LabelEv"></span><span id="Ifc4x1::IfcDerivedProfileDef::LabelC"></span><span class="target" id="class_ifc4x1_1_1_ifc_derived_profile_def_1a7c5c917198b928f86c1f65a7de515d11"></span>std::string <code class="sig-name descname">Label</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcDerivedProfileDef5LabelEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The name by which the transformation may be referred to. The actual meaning of the name has to be defined in the context of applications. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcDerivedProfileDef8setLabelENSt6stringE">
+<span id="_CPPv3N6Ifc4x120IfcDerivedProfileDef8setLabelENSt6stringE"></span><span id="_CPPv2N6Ifc4x120IfcDerivedProfileDef8setLabelENSt6stringE"></span><span id="Ifc4x1::IfcDerivedProfileDef::setLabel__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_derived_profile_def_1aa841fc7d56a9a9ac6b065777121a07a1"></span>void <code class="sig-name descname">setLabel</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcDerivedProfileDef8setLabelENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcDerivedProfileDef11declarationEv">
+<span id="_CPPv3NK6Ifc4x120IfcDerivedProfileDef11declarationEv"></span><span id="_CPPv2NK6Ifc4x120IfcDerivedProfileDef11declarationEv"></span><span id="Ifc4x1::IfcDerivedProfileDef::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_derived_profile_def_1a9f2416bbee816924d1d308501ad23728"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcDerivedProfileDef11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcDerivedProfileDef20IfcDerivedProfileDefEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x120IfcDerivedProfileDef20IfcDerivedProfileDefEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x120IfcDerivedProfileDef20IfcDerivedProfileDefEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcDerivedProfileDef::IfcDerivedProfileDef__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_derived_profile_def_1a665c8a38ef132583c96637c3d61c52ab"></span><code class="sig-name descname">IfcDerivedProfileDef</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcDerivedProfileDef20IfcDerivedProfileDefEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcDerivedProfileDef20IfcDerivedProfileDefEN6Ifc4x118IfcProfileTypeEnum5ValueEN5boost8optionalINSt6stringEEEPN6Ifc4x113IfcProfileDefEPN6Ifc4x136IfcCartesianTransformationOperator2DEN5boost8optionalINSt6stringEEE">
+<span id="_CPPv3N6Ifc4x120IfcDerivedProfileDef20IfcDerivedProfileDefEN6Ifc4x118IfcProfileTypeEnum5ValueEN5boost8optionalINSt6stringEEEPN6Ifc4x113IfcProfileDefEPN6Ifc4x136IfcCartesianTransformationOperator2DEN5boost8optionalINSt6stringEEE"></span><span id="_CPPv2N6Ifc4x120IfcDerivedProfileDef20IfcDerivedProfileDefEN6Ifc4x118IfcProfileTypeEnum5ValueEN5boost8optionalINSt6stringEEEPN6Ifc4x113IfcProfileDefEPN6Ifc4x136IfcCartesianTransformationOperator2DEN5boost8optionalINSt6stringEEE"></span><span id="Ifc4x1::IfcDerivedProfileDef::IfcDerivedProfileDef__Ifc4x1::IfcProfileTypeEnum::Value.boost::optional:ss:.Ifc4x1::IfcProfileDefP.Ifc4x1::IfcCartesianTransformationOperator2DP.boost::optional:ss:"></span><span class="target" id="class_ifc4x1_1_1_ifc_derived_profile_def_1a0e0c0600b6309c214105733347fe8548"></span><code class="sig-name descname">IfcDerivedProfileDef</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x118IfcProfileTypeEnumE" title="Ifc4x1::IfcProfileTypeEnum">IfcProfileTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x118IfcProfileTypeEnum5ValueE" title="Ifc4x1::IfcProfileTypeEnum::Value">Value</a> <em>v1_ProfileType</em>, boost::optional&lt;std::string&gt; <em>v2_ProfileName</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_profile_def.html#_CPPv4N6Ifc4x113IfcProfileDefE" title="Ifc4x1::IfcProfileDef">IfcProfileDef</a> *<em>v3_ParentProfile</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_cartesian_transformation_operator2_d.html#_CPPv4N6Ifc4x136IfcCartesianTransformationOperator2DE" title="Ifc4x1::IfcCartesianTransformationOperator2D">IfcCartesianTransformationOperator2D</a> *<em>v4_Operator</em>, boost::optional&lt;std::string&gt; <em>v5_Label</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcDerivedProfileDef20IfcDerivedProfileDefEN6Ifc4x118IfcProfileTypeEnum5ValueEN5boost8optionalINSt6stringEEEPN6Ifc4x113IfcProfileDefEPN6Ifc4x136IfcCartesianTransformationOperator2DEN5boost8optionalINSt6stringEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcDerivedProfileDef5ClassEv">
+<span id="_CPPv3N6Ifc4x120IfcDerivedProfileDef5ClassEv"></span><span id="_CPPv2N6Ifc4x120IfcDerivedProfileDef5ClassEv"></span><span id="Ifc4x1::IfcDerivedProfileDef::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_derived_profile_def_1ac190f257b80f066892f39111df5403c7"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcDerivedProfileDef5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_day_in_week_number.html" title="previous chapter">Class Ifc4x1::IfcDayInWeekNumber</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_derived_unit.html" title="next chapter">Class Ifc4x1::IfcDerivedUnit</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_derived_profile_def.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

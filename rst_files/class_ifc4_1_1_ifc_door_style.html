@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcDoorStyle &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcDoorType" href="class_ifc4_1_1_ifc_door_type.html" />
+    <link rel="prev" title="Class Ifc4::IfcDoorStandardCase" href="class_ifc4_1_1_ifc_door_standard_case.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcdoorstyle">
+<span id="exhale-class-class-ifc4-1-1-ifc-door-style"></span><h1>Class Ifc4::IfcDoorStyle<a class="headerlink" href="#class-ifc4-ifcdoorstyle" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcTypeProduct</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_type_product.html#exhale-class-class-ifc4-1-1-ifc-type-product"><span class="std std-ref">Class Ifc4::IfcTypeProduct</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc412IfcDoorStyleE">
+<span id="_CPPv3N4Ifc412IfcDoorStyleE"></span><span id="_CPPv2N4Ifc412IfcDoorStyleE"></span><span id="Ifc4::IfcDoorStyle"></span><span class="target" id="class_ifc4_1_1_ifc_door_style"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcDoorStyle</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_type_product.html#_CPPv4N4Ifc414IfcTypeProductE" title="Ifc4::IfcTypeProduct">IfcTypeProduct</a><a class="headerlink" href="#_CPPv4N4Ifc412IfcDoorStyleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition: The door style, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_door_style"><span class="std std-ref">IfcDoorStyle</span></a>, defines a particular style of doors, which may be included into the spatial context of the building model through instances of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a>. A door style defines the overall parameter of the door style and refers to the particular parameter of the lining and one (or several) panels through the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_door_lining_properties"><span class="std std-ref">IfcDoorLiningProperties</span></a> and the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_door_panel_properties"><span class="std std-ref">IfcDoorPanelProperties</span></a>.</p>
+<p>The door entity, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a>, defines a particular occurrence of a door inserted in the spatial context of a project. The actual parameter of the door and/or its shape is defined at the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_door_style"><span class="std std-ref">IfcDoorStyle</span></a>, to which the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a> is related by the inverse relationship IsDefinedBy pointing to IfcRelDefinedByType. The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_door_style"><span class="std std-ref">IfcDoorStyle</span></a> also defines the particular attributes for the lining, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_door_lining_properties"><span class="std std-ref">IfcDoorLiningProperties</span></a>, and panels, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_door_panel_properties"><span class="std std-ref">IfcDoorPanelProperties</span></a>.</p>
+<p>HISTORYNew entity in IFC Release 2x.</p>
+<p>IFC2x4 CHANGE The entity is deprecated and shall not be used. The new entity <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_door_type"><span class="std std-ref">IfcDoorType</span></a> shall be used instead.</p>
+<p>Geometry use definitions</p>
+<p>The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_door_style"><span class="std std-ref">IfcDoorStyle</span></a> defines the baseline geometry, or the representation map, for all occurrences of the door style, given by the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a>, pointing to this style. The representation of the door style may be given by the agreed set of minimal parameters, defined for the door lining and the door panel(s), or it may be given by a geometric representation used by the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_representation_map"><span class="std std-ref">IfcRepresentationMap</span></a>. The attribute ParameterTakesPrecedence decides, whether the set of parameters can be used to exactly represent the shape of the door style (TRUE), or whether the attached <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_representation_map"><span class="std std-ref">IfcRepresentationMap</span></a> holds the exact representation (FALSE).</p>
+<p>The IfcDoorStyleOperationTypeEnum defines the general layout of the door style. Depending on the enumerator, the appropriate instances of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_door_lining_properties"><span class="std std-ref">IfcDoorLiningProperties</span></a> and <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_door_panel_properties"><span class="std std-ref">IfcDoorPanelProperties</span></a> are attached in the list of HasPropertySets. The IfcDoorStyleOperationTypeEnum mainly determines the hinge side (left hung, or right hung), the operation (swinging, sliding, folding, etc.)and the number of panels.</p>
+<p>See geometry use definitions at IfcDoorStyleOperationTypeEnum for the correct usage of opening symbols for different operation types. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc412IfcDoorStyle4listE">
+<span id="_CPPv3N4Ifc412IfcDoorStyle4listE"></span><span id="_CPPv2N4Ifc412IfcDoorStyle4listE"></span><span id="Ifc4::IfcDoorStyle::list"></span><span class="target" id="class_ifc4_1_1_ifc_door_style_1a52e05c92aa798216c3455e1f35a42165"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc412IfcDoorStyleE" title="Ifc4::IfcDoorStyle">IfcDoorStyle</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc412IfcDoorStyle4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc412IfcDoorStyle13OperationTypeEv">
+<span id="_CPPv3NK4Ifc412IfcDoorStyle13OperationTypeEv"></span><span id="_CPPv2NK4Ifc412IfcDoorStyle13OperationTypeEv"></span><span id="Ifc4::IfcDoorStyle::OperationTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_door_style_1a9f74be57ab007b89774cc0ac22fe10cb"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcDoorStyleOperationEnumE" title="Ifc4::IfcDoorStyleOperationEnum">IfcDoorStyleOperationEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcDoorStyleOperationEnum5ValueE" title="Ifc4::IfcDoorStyleOperationEnum::Value">Value</a> <code class="sig-name descname">OperationType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc412IfcDoorStyle13OperationTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Type defining the general layout and operation of the door style. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc412IfcDoorStyle16setOperationTypeEN4Ifc425IfcDoorStyleOperationEnum5ValueE">
+<span id="_CPPv3N4Ifc412IfcDoorStyle16setOperationTypeEN4Ifc425IfcDoorStyleOperationEnum5ValueE"></span><span id="_CPPv2N4Ifc412IfcDoorStyle16setOperationTypeEN4Ifc425IfcDoorStyleOperationEnum5ValueE"></span><span id="Ifc4::IfcDoorStyle::setOperationType__Ifc4::IfcDoorStyleOperationEnum::Value"></span><span class="target" id="class_ifc4_1_1_ifc_door_style_1a7c126fbdd800ec69bebc663cf367dfc0"></span>void <code class="sig-name descname">setOperationType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcDoorStyleOperationEnumE" title="Ifc4::IfcDoorStyleOperationEnum">IfcDoorStyleOperationEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcDoorStyleOperationEnum5ValueE" title="Ifc4::IfcDoorStyleOperationEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc412IfcDoorStyle16setOperationTypeEN4Ifc425IfcDoorStyleOperationEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc412IfcDoorStyle16ConstructionTypeEv">
+<span id="_CPPv3NK4Ifc412IfcDoorStyle16ConstructionTypeEv"></span><span id="_CPPv2NK4Ifc412IfcDoorStyle16ConstructionTypeEv"></span><span id="Ifc4::IfcDoorStyle::ConstructionTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_door_style_1a81e354fed13090822633219f3d117759"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc428IfcDoorStyleConstructionEnumE" title="Ifc4::IfcDoorStyleConstructionEnum">IfcDoorStyleConstructionEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc428IfcDoorStyleConstructionEnum5ValueE" title="Ifc4::IfcDoorStyleConstructionEnum::Value">Value</a> <code class="sig-name descname">ConstructionType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc412IfcDoorStyle16ConstructionTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Type defining the basic construction and material type of the door. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc412IfcDoorStyle19setConstructionTypeEN4Ifc428IfcDoorStyleConstructionEnum5ValueE">
+<span id="_CPPv3N4Ifc412IfcDoorStyle19setConstructionTypeEN4Ifc428IfcDoorStyleConstructionEnum5ValueE"></span><span id="_CPPv2N4Ifc412IfcDoorStyle19setConstructionTypeEN4Ifc428IfcDoorStyleConstructionEnum5ValueE"></span><span id="Ifc4::IfcDoorStyle::setConstructionType__Ifc4::IfcDoorStyleConstructionEnum::Value"></span><span class="target" id="class_ifc4_1_1_ifc_door_style_1a998d65c6238058247546ecc14467da81"></span>void <code class="sig-name descname">setConstructionType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc428IfcDoorStyleConstructionEnumE" title="Ifc4::IfcDoorStyleConstructionEnum">IfcDoorStyleConstructionEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc428IfcDoorStyleConstructionEnum5ValueE" title="Ifc4::IfcDoorStyleConstructionEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc412IfcDoorStyle19setConstructionTypeEN4Ifc428IfcDoorStyleConstructionEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc412IfcDoorStyle24ParameterTakesPrecedenceEv">
+<span id="_CPPv3NK4Ifc412IfcDoorStyle24ParameterTakesPrecedenceEv"></span><span id="_CPPv2NK4Ifc412IfcDoorStyle24ParameterTakesPrecedenceEv"></span><span id="Ifc4::IfcDoorStyle::ParameterTakesPrecedenceC"></span><span class="target" id="class_ifc4_1_1_ifc_door_style_1ac8a692d03c323b7fe20a044a51ff4c75"></span>bool <code class="sig-name descname">ParameterTakesPrecedence</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc412IfcDoorStyle24ParameterTakesPrecedenceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The Boolean value reflects, whether the parameter given in the attached lining and panel properties exactly define the geometry (TRUE), or whether the attached style shape take precedence (FALSE). In the last case the parameter have only informative value. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc412IfcDoorStyle27setParameterTakesPrecedenceEb">
+<span id="_CPPv3N4Ifc412IfcDoorStyle27setParameterTakesPrecedenceEb"></span><span id="_CPPv2N4Ifc412IfcDoorStyle27setParameterTakesPrecedenceEb"></span><span id="Ifc4::IfcDoorStyle::setParameterTakesPrecedence__b"></span><span class="target" id="class_ifc4_1_1_ifc_door_style_1a41d8e31c1ec319956a386cc308c3b887"></span>void <code class="sig-name descname">setParameterTakesPrecedence</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc412IfcDoorStyle27setParameterTakesPrecedenceEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc412IfcDoorStyle8SizeableEv">
+<span id="_CPPv3NK4Ifc412IfcDoorStyle8SizeableEv"></span><span id="_CPPv2NK4Ifc412IfcDoorStyle8SizeableEv"></span><span id="Ifc4::IfcDoorStyle::SizeableC"></span><span class="target" id="class_ifc4_1_1_ifc_door_style_1a264fadb5093fcde875ac27c76abb17e1"></span>bool <code class="sig-name descname">Sizeable</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc412IfcDoorStyle8SizeableEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The Boolean indicates, whether the attached IfcMappedRepresentation (if given) can be sized (using scale factor of transformation), or not (FALSE). If not, the IfcMappedRepresentation should be <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> of the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a> (using <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_mapped_item"><span class="std std-ref">IfcMappedItem</span></a> as the Item) with the scale factor = 1. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc412IfcDoorStyle11setSizeableEb">
+<span id="_CPPv3N4Ifc412IfcDoorStyle11setSizeableEb"></span><span id="_CPPv2N4Ifc412IfcDoorStyle11setSizeableEb"></span><span id="Ifc4::IfcDoorStyle::setSizeable__b"></span><span class="target" id="class_ifc4_1_1_ifc_door_style_1a5dd79204e56dae94535558a6263ab01c"></span>void <code class="sig-name descname">setSizeable</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc412IfcDoorStyle11setSizeableEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc412IfcDoorStyle11declarationEv">
+<span id="_CPPv3NK4Ifc412IfcDoorStyle11declarationEv"></span><span id="_CPPv2NK4Ifc412IfcDoorStyle11declarationEv"></span><span id="Ifc4::IfcDoorStyle::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_door_style_1a4b0502c7b0797256511751a6c59f7e90"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc412IfcDoorStyle11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc412IfcDoorStyle12IfcDoorStyleEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc412IfcDoorStyle12IfcDoorStyleEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc412IfcDoorStyle12IfcDoorStyleEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcDoorStyle::IfcDoorStyle__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_door_style_1ad0b7212bc4e1e9e52ecb7d1544387b61"></span><code class="sig-name descname">IfcDoorStyle</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc412IfcDoorStyle12IfcDoorStyleEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc412IfcDoorStyle12IfcDoorStyleENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN22IfcTemplatedEntityListIN4Ifc424IfcPropertySetDefinitionEE3ptrEEEN5boost8optionalIN22IfcTemplatedEntityListIN4Ifc420IfcRepresentationMapEE3ptrEEEN5boost8optionalINSt6stringEEEN4Ifc425IfcDoorStyleOperationEnum5ValueEN4Ifc428IfcDoorStyleConstructionEnum5ValueEbb">
+<span id="_CPPv3N4Ifc412IfcDoorStyle12IfcDoorStyleENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN22IfcTemplatedEntityListIN4Ifc424IfcPropertySetDefinitionEE3ptrEEEN5boost8optionalIN22IfcTemplatedEntityListIN4Ifc420IfcRepresentationMapEE3ptrEEEN5boost8optionalINSt6stringEEEN4Ifc425IfcDoorStyleOperationEnum5ValueEN4Ifc428IfcDoorStyleConstructionEnum5ValueEbb"></span><span id="_CPPv2N4Ifc412IfcDoorStyle12IfcDoorStyleENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN22IfcTemplatedEntityListIN4Ifc424IfcPropertySetDefinitionEE3ptrEEEN5boost8optionalIN22IfcTemplatedEntityListIN4Ifc420IfcRepresentationMapEE3ptrEEEN5boost8optionalINSt6stringEEEN4Ifc425IfcDoorStyleOperationEnum5ValueEN4Ifc428IfcDoorStyleConstructionEnum5ValueEbb"></span><span id="Ifc4::IfcDoorStyle::IfcDoorStyle__ss.Ifc4::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:IfcTemplatedEntityList:Ifc4::IfcPropertySetDefinition:::ptr:.boost::optional:IfcTemplatedEntityList:Ifc4::IfcRepresentationMap:::ptr:.boost::optional:ss:.Ifc4::IfcDoorStyleOperationEnum::Value.Ifc4::IfcDoorStyleConstructionEnum::Value.b.b"></span><span class="target" id="class_ifc4_1_1_ifc_door_style_1a42d621135a6e4d15b52cc464d3ea0976"></span><code class="sig-name descname">IfcDoorStyle</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_owner_history.html#_CPPv4N4Ifc415IfcOwnerHistoryE" title="Ifc4::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ApplicableOccurrence</em>, boost::optional&lt;<a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_property_set_definition.html#_CPPv4N4Ifc424IfcPropertySetDefinitionE" title="Ifc4::IfcPropertySetDefinition">IfcPropertySetDefinition</a>&gt;::ptr&gt; <em>v6_HasPropertySets</em>, boost::optional&lt;<a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_representation_map.html#_CPPv4N4Ifc420IfcRepresentationMapE" title="Ifc4::IfcRepresentationMap">IfcRepresentationMap</a>&gt;::ptr&gt; <em>v7_RepresentationMaps</em>, boost::optional&lt;std::string&gt; <em>v8_Tag</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcDoorStyleOperationEnumE" title="Ifc4::IfcDoorStyleOperationEnum">IfcDoorStyleOperationEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcDoorStyleOperationEnum5ValueE" title="Ifc4::IfcDoorStyleOperationEnum::Value">Value</a> <em>v9_OperationType</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc428IfcDoorStyleConstructionEnumE" title="Ifc4::IfcDoorStyleConstructionEnum">IfcDoorStyleConstructionEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc428IfcDoorStyleConstructionEnum5ValueE" title="Ifc4::IfcDoorStyleConstructionEnum::Value">Value</a> <em>v10_ConstructionType</em>, bool <em>v11_ParameterTakesPrecedence</em>, bool <em>v12_Sizeable</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc412IfcDoorStyle12IfcDoorStyleENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN22IfcTemplatedEntityListIN4Ifc424IfcPropertySetDefinitionEE3ptrEEEN5boost8optionalIN22IfcTemplatedEntityListIN4Ifc420IfcRepresentationMapEE3ptrEEEN5boost8optionalINSt6stringEEEN4Ifc425IfcDoorStyleOperationEnum5ValueEN4Ifc428IfcDoorStyleConstructionEnum5ValueEbb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc412IfcDoorStyle5ClassEv">
+<span id="_CPPv3N4Ifc412IfcDoorStyle5ClassEv"></span><span id="_CPPv2N4Ifc412IfcDoorStyle5ClassEv"></span><span id="Ifc4::IfcDoorStyle::Class"></span><span class="target" id="class_ifc4_1_1_ifc_door_style_1ad9158168341c45d12879b81cd1b23fa3"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc412IfcDoorStyle5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_door_standard_case.html" title="previous chapter">Class Ifc4::IfcDoorStandardCase</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_door_type.html" title="next chapter">Class Ifc4::IfcDoorType</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_door_style.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,95 @@
+
+.. _file_src_ifcgeom_IfcGeomRepresentation.h:
+
+File IfcGeomRepresentation.h
+============================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcgeom>` (``src/ifcgeom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/IfcGeomRepresentation.h``)
+----------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_IfcGeomRepresentation.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/IfcGeomIteratorSettings.h``
+
+- ``../ifcgeom/IfcRepresentationShapeItem.h``
+
+- ``../ifcgeom_schema_agnostic/IfcGeomMaterial.h``
+
+- ``BRepAdaptor_Curve.hxx``
+
+- ``BRepGProp_Face.hxx``
+
+- ``BRepMesh_IncrementalMesh.hxx``
+
+- ``BRepTools.hxx``
+
+- ``GCPnts_QuasiUniformDeflection.hxx``
+
+- ``Geom_SphericalSurface.hxx``
+
+- ``Poly_Triangulation.hxx``
+
+- ``TColgp_Array1OfPnt.hxx``
+
+- ``TColgp_Array1OfPnt2d.hxx``
+
+- ``TopExp_Explorer.hxx``
+
+- ``TopoDS.hxx``
+
+- ``TopoDS_Compound.hxx``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_IfcGeomElement.h`
+
+- :ref:`file_src_ifcgeom_IfcGeom.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcGeom`
+
+- :ref:`namespace_IfcGeom__Representation`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_ifc_geom_1_1_representation_1_1_b_rep`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_representation_1_1_representation`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_representation_1_1_serialization`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_representation_1_1_triangulation`
+

@@ -1,0 +1,19 @@
+.. _dir_src:
+
+
+Directory src
+=============
+
+
+*Directory path:* ``src``
+
+Subdirectories
+--------------
+
+- :ref:`dir_src_ifcgeom`
+- :ref:`dir_src_ifcgeom_schema_agnostic`
+- :ref:`dir_src_ifcparse`
+- :ref:`dir_src_serializers`
+
+
+

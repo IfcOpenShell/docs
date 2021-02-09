@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcStructuralLoadConfiguration &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcStructuralLoadGroup" href="class_ifc4x1_1_1_ifc_structural_load_group.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcStructuralLoadCase" href="class_ifc4x1_1_1_ifc_structural_load_case.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcstructuralloadconfiguration">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-structural-load-configuration"></span><h1>Class Ifc4x1::IfcStructuralLoadConfiguration<a class="headerlink" href="#class-ifc4x1-ifcstructuralloadconfiguration" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcStructuralLoad</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_structural_load.html#exhale-class-class-ifc4x1-1-1-ifc-structural-load"><span class="std std-ref">Class Ifc4x1::IfcStructuralLoad</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x130IfcStructuralLoadConfigurationE">
+<span id="_CPPv3N6Ifc4x130IfcStructuralLoadConfigurationE"></span><span id="_CPPv2N6Ifc4x130IfcStructuralLoadConfigurationE"></span><span id="Ifc4x1::IfcStructuralLoadConfiguration"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_load_configuration"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcStructuralLoadConfiguration</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_structural_load.html#_CPPv4N6Ifc4x117IfcStructuralLoadE" title="Ifc4x1::IfcStructuralLoad">IfcStructuralLoad</a><a class="headerlink" href="#_CPPv4N6Ifc4x130IfcStructuralLoadConfigurationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from IAI: This class combines one or more load or result values in a 1- or 2-dimensional configuration.</p>
+<p>HISTORY: New entity in IFC 2x4.</p>
+<p>Informal propositions:</p>
+<p>All items in Values shall be of the same type. If the loads or results comprise a curve activity, 1-dimensional locations shall be given, measured locally along the curve. The location shall not exceed the bounds of the curve actvity. The load samples and corresponding locations shall be given in ascending order of locations. If the loads or results comprise a surface activity, 2-dimensional locations shall be given, measured in the surface activity’s local x and y directions. The location shall not exceed the bounds of the surface activity.</p>
+<p>NOTE There are no ordering requirements in the 2-dimensional case, but the 1-dimensional case shall be spatially ordered for simplicity. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x130IfcStructuralLoadConfiguration4listE">
+<span id="_CPPv3N6Ifc4x130IfcStructuralLoadConfiguration4listE"></span><span id="_CPPv2N6Ifc4x130IfcStructuralLoadConfiguration4listE"></span><span id="Ifc4x1::IfcStructuralLoadConfiguration::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_load_configuration_1a0716fb6be9674a6f1e1d7d0027b87ae1"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x130IfcStructuralLoadConfigurationE" title="Ifc4x1::IfcStructuralLoadConfiguration">IfcStructuralLoadConfiguration</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x130IfcStructuralLoadConfiguration4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x130IfcStructuralLoadConfiguration6ValuesEv">
+<span id="_CPPv3NK6Ifc4x130IfcStructuralLoadConfiguration6ValuesEv"></span><span id="_CPPv2NK6Ifc4x130IfcStructuralLoadConfiguration6ValuesEv"></span><span id="Ifc4x1::IfcStructuralLoadConfiguration::ValuesC"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_load_configuration_1a03bc305dcdbe2ffc385a3d2af19b2061"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_structural_load_or_result.html#_CPPv4N6Ifc4x125IfcStructuralLoadOrResultE" title="Ifc4x1::IfcStructuralLoadOrResult">IfcStructuralLoadOrResult</a>&gt;::ptr <code class="sig-name descname">Values</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x130IfcStructuralLoadConfiguration6ValuesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>List of load or result values. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x130IfcStructuralLoadConfiguration9setValuesEN22IfcTemplatedEntityListIN6Ifc4x125IfcStructuralLoadOrResultEE3ptrE">
+<span id="_CPPv3N6Ifc4x130IfcStructuralLoadConfiguration9setValuesEN22IfcTemplatedEntityListIN6Ifc4x125IfcStructuralLoadOrResultEE3ptrE"></span><span id="_CPPv2N6Ifc4x130IfcStructuralLoadConfiguration9setValuesEN22IfcTemplatedEntityListIN6Ifc4x125IfcStructuralLoadOrResultEE3ptrE"></span><span id="Ifc4x1::IfcStructuralLoadConfiguration::setValues__IfcTemplatedEntityList:Ifc4x1::IfcStructuralLoadOrResult:::ptr"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_load_configuration_1a1e9ff9b91ff24f849b69611693f73f60"></span>void <code class="sig-name descname">setValues</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_structural_load_or_result.html#_CPPv4N6Ifc4x125IfcStructuralLoadOrResultE" title="Ifc4x1::IfcStructuralLoadOrResult">IfcStructuralLoadOrResult</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x130IfcStructuralLoadConfiguration9setValuesEN22IfcTemplatedEntityListIN6Ifc4x125IfcStructuralLoadOrResultEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x130IfcStructuralLoadConfiguration12hasLocationsEv">
+<span id="_CPPv3NK6Ifc4x130IfcStructuralLoadConfiguration12hasLocationsEv"></span><span id="_CPPv2NK6Ifc4x130IfcStructuralLoadConfiguration12hasLocationsEv"></span><span id="Ifc4x1::IfcStructuralLoadConfiguration::hasLocationsC"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_load_configuration_1a42249756da29207abb94e4212fddb118"></span>bool <code class="sig-name descname">hasLocations</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x130IfcStructuralLoadConfiguration12hasLocationsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Locations is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_structural_load_configuration"><span class="std std-ref">IfcStructuralLoadConfiguration</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x130IfcStructuralLoadConfiguration9LocationsEv">
+<span id="_CPPv3NK6Ifc4x130IfcStructuralLoadConfiguration9LocationsEv"></span><span id="_CPPv2NK6Ifc4x130IfcStructuralLoadConfiguration9LocationsEv"></span><span id="Ifc4x1::IfcStructuralLoadConfiguration::LocationsC"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_load_configuration_1a6cd0f83e536ce606c957c9c5bfd1dbc5"></span>std::vector&lt;std::vector&lt;double&gt;&gt; <code class="sig-name descname">Locations</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x130IfcStructuralLoadConfiguration9LocationsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Locations of the load samples or result samples, given within the local coordinate system defined by the instance which uses this resource object. Each item in the list of locations pertains to the values list item at the same list index. This attribute is optional for configurations in which the locations are implicitly known from higher-level definitions. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x130IfcStructuralLoadConfiguration12setLocationsENSt6vectorINSt6vectorIdEEEE">
+<span id="_CPPv3N6Ifc4x130IfcStructuralLoadConfiguration12setLocationsENSt6vectorINSt6vectorIdEEEE"></span><span id="_CPPv2N6Ifc4x130IfcStructuralLoadConfiguration12setLocationsENSt6vectorINSt6vectorIdEEEE"></span><span id="Ifc4x1::IfcStructuralLoadConfiguration::setLocations__std::vector:std::vector:double::"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_load_configuration_1a6b864e657ee0962559b5eab778b88b09"></span>void <code class="sig-name descname">setLocations</code><span class="sig-paren">(</span>std::vector&lt;std::vector&lt;double&gt;&gt; <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x130IfcStructuralLoadConfiguration12setLocationsENSt6vectorINSt6vectorIdEEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x130IfcStructuralLoadConfiguration11declarationEv">
+<span id="_CPPv3NK6Ifc4x130IfcStructuralLoadConfiguration11declarationEv"></span><span id="_CPPv2NK6Ifc4x130IfcStructuralLoadConfiguration11declarationEv"></span><span id="Ifc4x1::IfcStructuralLoadConfiguration::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_load_configuration_1af82ecdc4dc870caefc38dcac88621077"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x130IfcStructuralLoadConfiguration11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x130IfcStructuralLoadConfiguration30IfcStructuralLoadConfigurationEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x130IfcStructuralLoadConfiguration30IfcStructuralLoadConfigurationEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x130IfcStructuralLoadConfiguration30IfcStructuralLoadConfigurationEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcStructuralLoadConfiguration::IfcStructuralLoadConfiguration__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_load_configuration_1aff5ae18ca380bf9d1d690af693c0721e"></span><code class="sig-name descname">IfcStructuralLoadConfiguration</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x130IfcStructuralLoadConfiguration30IfcStructuralLoadConfigurationEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x130IfcStructuralLoadConfiguration30IfcStructuralLoadConfigurationEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x125IfcStructuralLoadOrResultEE3ptrEN5boost8optionalINSt6vectorINSt6vectorIdEEEEEE">
+<span id="_CPPv3N6Ifc4x130IfcStructuralLoadConfiguration30IfcStructuralLoadConfigurationEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x125IfcStructuralLoadOrResultEE3ptrEN5boost8optionalINSt6vectorINSt6vectorIdEEEEEE"></span><span id="_CPPv2N6Ifc4x130IfcStructuralLoadConfiguration30IfcStructuralLoadConfigurationEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x125IfcStructuralLoadOrResultEE3ptrEN5boost8optionalINSt6vectorINSt6vectorIdEEEEEE"></span><span id="Ifc4x1::IfcStructuralLoadConfiguration::IfcStructuralLoadConfiguration__boost::optional:ss:.IfcTemplatedEntityList:Ifc4x1::IfcStructuralLoadOrResult:::ptr.boost::optional:std::vector:std::vector:double:::"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_load_configuration_1a3459fbd81b4439b76908e2e5c3fb1d3c"></span><code class="sig-name descname">IfcStructuralLoadConfiguration</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Name</em>, <a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_structural_load_or_result.html#_CPPv4N6Ifc4x125IfcStructuralLoadOrResultE" title="Ifc4x1::IfcStructuralLoadOrResult">IfcStructuralLoadOrResult</a>&gt;::ptr <em>v2_Values</em>, boost::optional&lt;std::vector&lt;std::vector&lt;double&gt;&gt;&gt; <em>v3_Locations</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x130IfcStructuralLoadConfiguration30IfcStructuralLoadConfigurationEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x125IfcStructuralLoadOrResultEE3ptrEN5boost8optionalINSt6vectorINSt6vectorIdEEEEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x130IfcStructuralLoadConfiguration5ClassEv">
+<span id="_CPPv3N6Ifc4x130IfcStructuralLoadConfiguration5ClassEv"></span><span id="_CPPv2N6Ifc4x130IfcStructuralLoadConfiguration5ClassEv"></span><span id="Ifc4x1::IfcStructuralLoadConfiguration::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_load_configuration_1a7a0feff6787a6f4f9d21bea3f95aa204"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x130IfcStructuralLoadConfiguration5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_structural_load_case.html" title="previous chapter">Class Ifc4x1::IfcStructuralLoadCase</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_structural_load_group.html" title="next chapter">Class Ifc4x1::IfcStructuralLoadGroup</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_structural_load_configuration.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

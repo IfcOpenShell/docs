@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a58b754fdd05cc74e44600ece1a6d2e2e:
+
+Define SCHEMA_IfcRelServicesBuildings_HAS_RelatedBuildings
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelServicesBuildings_HAS_RelatedBuildings

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a0ec138ae72a3b077ea0d9ebe9a84ea3b:
+
+Define SCHEMA_IfcActorRole_HAS_UserDefinedRole
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcActorRole_HAS_UserDefinedRole

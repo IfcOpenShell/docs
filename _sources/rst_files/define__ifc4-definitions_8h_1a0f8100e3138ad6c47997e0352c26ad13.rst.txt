@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a0f8100e3138ad6c47997e0352c26ad13:
+
+Define SCHEMA_HAS_IfcSpatialStructureElement
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcSpatialStructureElement

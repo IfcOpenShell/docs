@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcTableColumn &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcTableRow" href="class_ifc4x1_1_1_ifc_table_row.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcTable" href="class_ifc4x1_1_1_ifc_table.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifctablecolumn">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-table-column"></span><h1>Class Ifc4x1::IfcTableColumn<a class="headerlink" href="#class-ifc4x1-ifctablecolumn" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">IfcUtil::IfcBaseEntity</span></code> (<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#exhale-class-class-ifc-util-1-1-ifc-base-entity"><span class="std std-ref">Class IfcBaseEntity</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x114IfcTableColumnE">
+<span id="_CPPv3N6Ifc4x114IfcTableColumnE"></span><span id="_CPPv2N6Ifc4x114IfcTableColumnE"></span><span id="Ifc4x1::IfcTableColumn"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcTableColumn</code> : <em class="property">public</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcTableColumnE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_table_column"><span class="std std-ref">IfcTableColumn</span></a> is a data structure that captures column information for use in an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_table"><span class="std std-ref">IfcTable</span></a>. Each instance defines the name, description, identifier, and units of measure that are applicable to the columnar data associated with the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_table_row"><span class="std std-ref">IfcTableRow</span></a> objects.</p>
+<p>The use of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_table_column"><span class="std std-ref">IfcTableColumn</span></a> supercedes the IsHeading flag associated with <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_table_row"><span class="std std-ref">IfcTableRow</span></a>.</p>
+<p>HISTORY New entity in IFC2x4. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x114IfcTableColumn4listE">
+<span id="_CPPv3N6Ifc4x114IfcTableColumn4listE"></span><span id="_CPPv2N6Ifc4x114IfcTableColumn4listE"></span><span id="Ifc4x1::IfcTableColumn::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1a293474b145ccd75a4c1a1b6c5aff95f3"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x114IfcTableColumnE" title="Ifc4x1::IfcTableColumn">IfcTableColumn</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcTableColumn4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcTableColumn13hasIdentifierEv">
+<span id="_CPPv3NK6Ifc4x114IfcTableColumn13hasIdentifierEv"></span><span id="_CPPv2NK6Ifc4x114IfcTableColumn13hasIdentifierEv"></span><span id="Ifc4x1::IfcTableColumn::hasIdentifierC"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1a376a8c9b32dd3be30a07be2ea79b16f5"></span>bool <code class="sig-name descname">hasIdentifier</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcTableColumn13hasIdentifierEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Identifier is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_table_column"><span class="std std-ref">IfcTableColumn</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcTableColumn10IdentifierEv">
+<span id="_CPPv3NK6Ifc4x114IfcTableColumn10IdentifierEv"></span><span id="_CPPv2NK6Ifc4x114IfcTableColumn10IdentifierEv"></span><span id="Ifc4x1::IfcTableColumn::IdentifierC"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1a5bde79d716e549a5ba91fdde5575fa99"></span>std::string <code class="sig-name descname">Identifier</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcTableColumn10IdentifierEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Table column identifier. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x114IfcTableColumn13setIdentifierENSt6stringE">
+<span id="_CPPv3N6Ifc4x114IfcTableColumn13setIdentifierENSt6stringE"></span><span id="_CPPv2N6Ifc4x114IfcTableColumn13setIdentifierENSt6stringE"></span><span id="Ifc4x1::IfcTableColumn::setIdentifier__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1a87e31e9a8fc34012d2cae2f091093354"></span>void <code class="sig-name descname">setIdentifier</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcTableColumn13setIdentifierENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcTableColumn7hasNameEv">
+<span id="_CPPv3NK6Ifc4x114IfcTableColumn7hasNameEv"></span><span id="_CPPv2NK6Ifc4x114IfcTableColumn7hasNameEv"></span><span id="Ifc4x1::IfcTableColumn::hasNameC"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1ad4e49a14263781286228e7fd03e6c66e"></span>bool <code class="sig-name descname">hasName</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcTableColumn7hasNameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Name is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_table_column"><span class="std std-ref">IfcTableColumn</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcTableColumn4NameEv">
+<span id="_CPPv3NK6Ifc4x114IfcTableColumn4NameEv"></span><span id="_CPPv2NK6Ifc4x114IfcTableColumn4NameEv"></span><span id="Ifc4x1::IfcTableColumn::NameC"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1a3f3f6ddbc670ab3870895ee2e26a4417"></span>std::string <code class="sig-name descname">Name</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcTableColumn4NameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The table column display name. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x114IfcTableColumn7setNameENSt6stringE">
+<span id="_CPPv3N6Ifc4x114IfcTableColumn7setNameENSt6stringE"></span><span id="_CPPv2N6Ifc4x114IfcTableColumn7setNameENSt6stringE"></span><span id="Ifc4x1::IfcTableColumn::setName__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1a7f596b15b91b544fcd712a7f00a72109"></span>void <code class="sig-name descname">setName</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcTableColumn7setNameENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcTableColumn14hasDescriptionEv">
+<span id="_CPPv3NK6Ifc4x114IfcTableColumn14hasDescriptionEv"></span><span id="_CPPv2NK6Ifc4x114IfcTableColumn14hasDescriptionEv"></span><span id="Ifc4x1::IfcTableColumn::hasDescriptionC"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1abffe3b87f3214040af869963f2922b69"></span>bool <code class="sig-name descname">hasDescription</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcTableColumn14hasDescriptionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Description is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_table_column"><span class="std std-ref">IfcTableColumn</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcTableColumn11DescriptionEv">
+<span id="_CPPv3NK6Ifc4x114IfcTableColumn11DescriptionEv"></span><span id="_CPPv2NK6Ifc4x114IfcTableColumn11DescriptionEv"></span><span id="Ifc4x1::IfcTableColumn::DescriptionC"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1a552d9e8df962bfdc6bcef4550045f9cb"></span>std::string <code class="sig-name descname">Description</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcTableColumn11DescriptionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Descriptive text for the table column. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x114IfcTableColumn14setDescriptionENSt6stringE">
+<span id="_CPPv3N6Ifc4x114IfcTableColumn14setDescriptionENSt6stringE"></span><span id="_CPPv2N6Ifc4x114IfcTableColumn14setDescriptionENSt6stringE"></span><span id="Ifc4x1::IfcTableColumn::setDescription__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1a8fda1d5419c8f391c853a8d807b44acb"></span>void <code class="sig-name descname">setDescription</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcTableColumn14setDescriptionENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcTableColumn7hasUnitEv">
+<span id="_CPPv3NK6Ifc4x114IfcTableColumn7hasUnitEv"></span><span id="_CPPv2NK6Ifc4x114IfcTableColumn7hasUnitEv"></span><span id="Ifc4x1::IfcTableColumn::hasUnitC"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1abb7795d03ac96cf21bdc3b126f159c62"></span>bool <code class="sig-name descname">hasUnit</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcTableColumn7hasUnitEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Unit is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_table_column"><span class="std std-ref">IfcTableColumn</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcTableColumn4UnitEv">
+<span id="_CPPv3NK6Ifc4x114IfcTableColumn4UnitEv"></span><span id="_CPPv2NK6Ifc4x114IfcTableColumn4UnitEv"></span><span id="Ifc4x1::IfcTableColumn::UnitC"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1ad1fd70275a1891cba66f28cb5ba0e9a5"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x17IfcUnitE" title="Ifc4x1::IfcUnit">IfcUnit</a> *<code class="sig-name descname">Unit</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcTableColumn4UnitEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The unit of measure to be used for this column’s data. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x114IfcTableColumn7setUnitEPN6Ifc4x17IfcUnitE">
+<span id="_CPPv3N6Ifc4x114IfcTableColumn7setUnitEPN6Ifc4x17IfcUnitE"></span><span id="_CPPv2N6Ifc4x114IfcTableColumn7setUnitEPN6Ifc4x17IfcUnitE"></span><span id="Ifc4x1::IfcTableColumn::setUnit__Ifc4x1::IfcUnitP"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1a20463642bb5e298b381ffc860b9054f8"></span>void <code class="sig-name descname">setUnit</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x17IfcUnitE" title="Ifc4x1::IfcUnit">IfcUnit</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcTableColumn7setUnitEPN6Ifc4x17IfcUnitE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcTableColumn16hasReferencePathEv">
+<span id="_CPPv3NK6Ifc4x114IfcTableColumn16hasReferencePathEv"></span><span id="_CPPv2NK6Ifc4x114IfcTableColumn16hasReferencePathEv"></span><span id="Ifc4x1::IfcTableColumn::hasReferencePathC"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1a632caaa1af1ec8e118e32d48b447ccf6"></span>bool <code class="sig-name descname">hasReferencePath</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcTableColumn16hasReferencePathEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ReferencePath is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_table_column"><span class="std std-ref">IfcTableColumn</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcTableColumn13ReferencePathEv">
+<span id="_CPPv3NK6Ifc4x114IfcTableColumn13ReferencePathEv"></span><span id="_CPPv2NK6Ifc4x114IfcTableColumn13ReferencePathEv"></span><span id="Ifc4x1::IfcTableColumn::ReferencePathC"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1ae5ba1d0ade9edf90f6caaf7458298454"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_reference.html#_CPPv4N6Ifc4x112IfcReferenceE" title="Ifc4x1::IfcReference">IfcReference</a> *<code class="sig-name descname">ReferencePath</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcTableColumn13ReferencePathEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x114IfcTableColumn16setReferencePathEPN6Ifc4x112IfcReferenceE">
+<span id="_CPPv3N6Ifc4x114IfcTableColumn16setReferencePathEPN6Ifc4x112IfcReferenceE"></span><span id="_CPPv2N6Ifc4x114IfcTableColumn16setReferencePathEPN6Ifc4x112IfcReferenceE"></span><span id="Ifc4x1::IfcTableColumn::setReferencePath__Ifc4x1::IfcReferenceP"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1a56bdc037c1eda8edbe195d4f5916a456"></span>void <code class="sig-name descname">setReferencePath</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_reference.html#_CPPv4N6Ifc4x112IfcReferenceE" title="Ifc4x1::IfcReference">IfcReference</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcTableColumn16setReferencePathEPN6Ifc4x112IfcReferenceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcTableColumn11declarationEv">
+<span id="_CPPv3NK6Ifc4x114IfcTableColumn11declarationEv"></span><span id="_CPPv2NK6Ifc4x114IfcTableColumn11declarationEv"></span><span id="Ifc4x1::IfcTableColumn::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1a88cd5a9b60deb5f1024ab33548b49df9"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcTableColumn11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x114IfcTableColumn14IfcTableColumnEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x114IfcTableColumn14IfcTableColumnEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x114IfcTableColumn14IfcTableColumnEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcTableColumn::IfcTableColumn__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1ac871a7dfa0d68b6dcfb3c218b940038c"></span><code class="sig-name descname">IfcTableColumn</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcTableColumn14IfcTableColumnEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x114IfcTableColumn14IfcTableColumnEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x17IfcUnitEPN6Ifc4x112IfcReferenceE">
+<span id="_CPPv3N6Ifc4x114IfcTableColumn14IfcTableColumnEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x17IfcUnitEPN6Ifc4x112IfcReferenceE"></span><span id="_CPPv2N6Ifc4x114IfcTableColumn14IfcTableColumnEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x17IfcUnitEPN6Ifc4x112IfcReferenceE"></span><span id="Ifc4x1::IfcTableColumn::IfcTableColumn__boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4x1::IfcUnitP.Ifc4x1::IfcReferenceP"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1a6690cf4e0d5dd2b502e5f3f869c1a9e7"></span><code class="sig-name descname">IfcTableColumn</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Identifier</em>, boost::optional&lt;std::string&gt; <em>v2_Name</em>, boost::optional&lt;std::string&gt; <em>v3_Description</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x17IfcUnitE" title="Ifc4x1::IfcUnit">IfcUnit</a> *<em>v4_Unit</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_reference.html#_CPPv4N6Ifc4x112IfcReferenceE" title="Ifc4x1::IfcReference">IfcReference</a> *<em>v5_ReferencePath</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcTableColumn14IfcTableColumnEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x17IfcUnitEPN6Ifc4x112IfcReferenceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x114IfcTableColumn5ClassEv">
+<span id="_CPPv3N6Ifc4x114IfcTableColumn5ClassEv"></span><span id="_CPPv2N6Ifc4x114IfcTableColumn5ClassEv"></span><span id="Ifc4x1::IfcTableColumn::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_table_column_1a46cb4538bf2883e7c9fef97d68a62afb"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcTableColumn5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_table.html" title="previous chapter">Class Ifc4x1::IfcTable</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_table_row.html" title="next chapter">Class Ifc4x1::IfcTableRow</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_table_column.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

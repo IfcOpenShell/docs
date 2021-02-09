@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a5141097875bb33af360d07e460e6e8eb:
+
+Define SCHEMA_IfcConnectionVolumeGeometry_VolumeOnRelatedElement_IS_OPTIONAL
+============================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConnectionVolumeGeometry_VolumeOnRelatedElement_IS_OPTIONAL

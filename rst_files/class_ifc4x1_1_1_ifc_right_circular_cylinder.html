@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcRightCircularCylinder &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcRoof" href="class_ifc4x1_1_1_ifc_roof.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcRightCircularCone" href="class_ifc4x1_1_1_ifc_right_circular_cone.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcrightcircularcylinder">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-right-circular-cylinder"></span><h1>Class Ifc4x1::IfcRightCircularCylinder<a class="headerlink" href="#class-ifc4x1-ifcrightcircularcylinder" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcCsgPrimitive3D</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_csg_primitive3_d.html#exhale-class-class-ifc4x1-1-1-ifc-csg-primitive3-d"><span class="std std-ref">Class Ifc4x1::IfcCsgPrimitive3D</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x124IfcRightCircularCylinderE">
+<span id="_CPPv3N6Ifc4x124IfcRightCircularCylinderE"></span><span id="_CPPv2N6Ifc4x124IfcRightCircularCylinderE"></span><span id="Ifc4x1::IfcRightCircularCylinder"></span><span class="target" id="class_ifc4x1_1_1_ifc_right_circular_cylinder"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcRightCircularCylinder</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_csg_primitive3_d.html#_CPPv4N6Ifc4x117IfcCsgPrimitive3DE" title="Ifc4x1::IfcCsgPrimitive3D">IfcCsgPrimitive3D</a><a class="headerlink" href="#_CPPv4N6Ifc4x124IfcRightCircularCylinderE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_right_circular_cylinder"><span class="std std-ref">IfcRightCircularCylinder</span></a> is a Construction Solid Geometry (CSG) 3D primitive. It is a solid with a circular base and top. The cylindrical surface between if formed by points at a fixed distance from the axis of the cylinder. The inherited Position attribute defines the IfcAxisPlacement3D and provides:</p>
+<p>SELF\IfcCsgPrimitive3D.Position: The location and orientation of the axis system for the primitive. SELF\IfcCsgPrimitive3D.Position.Location: The center of the circular area being the bottom face of the cylinder. SELF\IfcCsgPrimitive3D.Position.Position[3]: The z axis provides the center axis and the height is measured from the origin along the positive direction of the z axis.</p>
+<p>The following definitions from ISO 10303-42 apply:</p>
+<p>A right circular cylinder is a CSG primitive in the form of a solid cylinder of finite height. It is defined by an axis point at the centre of one planar circular face, an axis, a height, and a radius. The faces are perpendicular to the axis and are circular discs with the specified radius. The height is the distance from the first circular face centre in the positive direction of the axis to the second circular face centre.</p>
+<p>Figure 266 illustrates geometric parameters of the cylinder. The cylinder is positioned within its own placement coordiante system. The origin is the center of the bottom circular disk, that lies in the XY plane. The center of the top circular disk is on the positive z axis at [0, 0, Height].</p>
+<p>Figure 266 — Right circular cylinder geometry</p>
+<p>NOTE Corresponding ISO 10303 entity: right_circular_cyclinder, the position attribute has been promoted to the immediate supertype <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_csg_primitive3_d"><span class="std std-ref">IfcCsgPrimitive3D</span></a>. Please refer to ISO/IS 10303-42:1994, p. 177 for the definition in the international standard.</p>
+<p>HISTORY New entity in IFC2x3.</p>
+<p>Texture use definition On the circular side, textures are aligned facing upright with origin at the back (+Y direction) revolving counter-clockwise. Textures are stretched or repeated to the extent of the circumference according to RepeatS. Textures are stretched or repeated to the extent of the Height according to RepeatT. On the top and bottom faces, textures are aligned facing front-to-back, with the center of the circle aligned to the center of the texture.</p>
+<p>Figure 267 illustrates default texture mapping with a clamped texture (RepeatS=False and RepeatT=False). The image on the left shows the texture where the S axis points to the right and the T axis points up. The image on the right shows the texture applied to the geometry where the X axis points back to the right, the Y axis points back to the left, and the Z axis points up.</p>
+<p>Side Normal Origin X Origin Y Origin Z S Axis T Axis</p>
+<p>Side -Y 0 +Radius 0 -X +Z</p>
+<p>Bottom -Z 0 0 0 -X +Y</p>
+<p>Top +Z 0 0 +Height +X +Y</p>
+<p>Figure 267 — Right circular cylinder textures </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x124IfcRightCircularCylinder4listE">
+<span id="_CPPv3N6Ifc4x124IfcRightCircularCylinder4listE"></span><span id="_CPPv2N6Ifc4x124IfcRightCircularCylinder4listE"></span><span id="Ifc4x1::IfcRightCircularCylinder::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_right_circular_cylinder_1ad7d511463cd96284bc38c3b749237c84"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x124IfcRightCircularCylinderE" title="Ifc4x1::IfcRightCircularCylinder">IfcRightCircularCylinder</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x124IfcRightCircularCylinder4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x124IfcRightCircularCylinder6HeightEv">
+<span id="_CPPv3NK6Ifc4x124IfcRightCircularCylinder6HeightEv"></span><span id="_CPPv2NK6Ifc4x124IfcRightCircularCylinder6HeightEv"></span><span id="Ifc4x1::IfcRightCircularCylinder::HeightC"></span><span class="target" id="class_ifc4x1_1_1_ifc_right_circular_cylinder_1a585b37a20a4399dafb7233678c613f38"></span>double <code class="sig-name descname">Height</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x124IfcRightCircularCylinder6HeightEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The distance between the planar circular faces of the cylinder. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x124IfcRightCircularCylinder9setHeightEd">
+<span id="_CPPv3N6Ifc4x124IfcRightCircularCylinder9setHeightEd"></span><span id="_CPPv2N6Ifc4x124IfcRightCircularCylinder9setHeightEd"></span><span id="Ifc4x1::IfcRightCircularCylinder::setHeight__double"></span><span class="target" id="class_ifc4x1_1_1_ifc_right_circular_cylinder_1a7b598ccccd902e22c38b5fa77c38e54b"></span>void <code class="sig-name descname">setHeight</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x124IfcRightCircularCylinder9setHeightEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x124IfcRightCircularCylinder6RadiusEv">
+<span id="_CPPv3NK6Ifc4x124IfcRightCircularCylinder6RadiusEv"></span><span id="_CPPv2NK6Ifc4x124IfcRightCircularCylinder6RadiusEv"></span><span id="Ifc4x1::IfcRightCircularCylinder::RadiusC"></span><span class="target" id="class_ifc4x1_1_1_ifc_right_circular_cylinder_1a086135d07a2cc719a0c6a286503f45c4"></span>double <code class="sig-name descname">Radius</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x124IfcRightCircularCylinder6RadiusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The radius of the cylinder. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x124IfcRightCircularCylinder9setRadiusEd">
+<span id="_CPPv3N6Ifc4x124IfcRightCircularCylinder9setRadiusEd"></span><span id="_CPPv2N6Ifc4x124IfcRightCircularCylinder9setRadiusEd"></span><span id="Ifc4x1::IfcRightCircularCylinder::setRadius__double"></span><span class="target" id="class_ifc4x1_1_1_ifc_right_circular_cylinder_1a2a7a6e4e51ed9c920105661e343a70dd"></span>void <code class="sig-name descname">setRadius</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x124IfcRightCircularCylinder9setRadiusEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x124IfcRightCircularCylinder11declarationEv">
+<span id="_CPPv3NK6Ifc4x124IfcRightCircularCylinder11declarationEv"></span><span id="_CPPv2NK6Ifc4x124IfcRightCircularCylinder11declarationEv"></span><span id="Ifc4x1::IfcRightCircularCylinder::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_right_circular_cylinder_1aaec40e52e301d10569101ca47aa420d5"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x124IfcRightCircularCylinder11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x124IfcRightCircularCylinder24IfcRightCircularCylinderEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x124IfcRightCircularCylinder24IfcRightCircularCylinderEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x124IfcRightCircularCylinder24IfcRightCircularCylinderEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcRightCircularCylinder::IfcRightCircularCylinder__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_right_circular_cylinder_1acee7bfb27213551d3758ca6a7d8c75d4"></span><code class="sig-name descname">IfcRightCircularCylinder</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x124IfcRightCircularCylinder24IfcRightCircularCylinderEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x124IfcRightCircularCylinder24IfcRightCircularCylinderEPN6Ifc4x119IfcAxis2Placement3DEdd">
+<span id="_CPPv3N6Ifc4x124IfcRightCircularCylinder24IfcRightCircularCylinderEPN6Ifc4x119IfcAxis2Placement3DEdd"></span><span id="_CPPv2N6Ifc4x124IfcRightCircularCylinder24IfcRightCircularCylinderEPN6Ifc4x119IfcAxis2Placement3DEdd"></span><span id="Ifc4x1::IfcRightCircularCylinder::IfcRightCircularCylinder__Ifc4x1::IfcAxis2Placement3DP.double.double"></span><span class="target" id="class_ifc4x1_1_1_ifc_right_circular_cylinder_1a8bc8ddd438a7295cd414041f8c712ade"></span><code class="sig-name descname">IfcRightCircularCylinder</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_axis2_placement3_d.html#_CPPv4N6Ifc4x119IfcAxis2Placement3DE" title="Ifc4x1::IfcAxis2Placement3D">IfcAxis2Placement3D</a> *<em>v1_Position</em>, double <em>v2_Height</em>, double <em>v3_Radius</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x124IfcRightCircularCylinder24IfcRightCircularCylinderEPN6Ifc4x119IfcAxis2Placement3DEdd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x124IfcRightCircularCylinder5ClassEv">
+<span id="_CPPv3N6Ifc4x124IfcRightCircularCylinder5ClassEv"></span><span id="_CPPv2N6Ifc4x124IfcRightCircularCylinder5ClassEv"></span><span id="Ifc4x1::IfcRightCircularCylinder::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_right_circular_cylinder_1a806dd6c9e53cbb4c57986ab2f8d1e157"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x124IfcRightCircularCylinder5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_right_circular_cone.html" title="previous chapter">Class Ifc4x1::IfcRightCircularCone</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_roof.html" title="next chapter">Class Ifc4x1::IfcRoof</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_right_circular_cylinder.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

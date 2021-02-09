@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a7c4b241ad8f0470f6ed55a6d64d71b23:
+
+Define SCHEMA_HAS_IfcSurfaceStyleRendering
+==========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcSurfaceStyleRendering

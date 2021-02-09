@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1afed9e49cdb86e321c9fa5ba4c5944b83:
+
+Define SCHEMA_IfcExternalSpatialElement_HAS_PredefinedType
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcExternalSpatialElement_HAS_PredefinedType

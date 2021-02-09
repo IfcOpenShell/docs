@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a4a0896987c54c8e483f24e8d0b5dc371:
+
+Define SCHEMA_IfcLocalPlacement_HAS_RelativePlacement
+=====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcLocalPlacement_HAS_RelativePlacement

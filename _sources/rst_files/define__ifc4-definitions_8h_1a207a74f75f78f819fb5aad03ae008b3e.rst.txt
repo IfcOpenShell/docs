@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a207a74f75f78f819fb5aad03ae008b3e:
+
+Define SCHEMA_IfcProcess_HAS_OperatesOn
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcProcess_HAS_OperatesOn

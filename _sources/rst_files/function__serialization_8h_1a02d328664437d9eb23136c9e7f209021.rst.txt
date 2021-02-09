@@ -1,0 +1,13 @@
+.. _exhale_function__serialization_8h_1a02d328664437d9eb23136c9e7f209021:
+
+Function IfcGeom::serialise
+===========================
+
+- Defined in :ref:`file_src_ifcgeom_schema_agnostic_Serialization.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcGeom::serialise(const std::string&, const TopoDS_Shape&, bool)

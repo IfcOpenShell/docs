@@ -1,0 +1,65 @@
+
+.. _file_src_ifcparse_IfcSpfStream.h:
+
+File IfcSpfStream.h
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcparse>` (``src/ifcparse``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/IfcSpfStream.h``)
+--------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_IfcSpfStream.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``fstream``
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_IfcCharacterDecoder.h`
+
+- :ref:`file_src_ifcparse_IfcParse.h`
+
+- :ref:`file_src_ifcparse_IfcSpfHeader.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcParse`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_spf_stream`
+

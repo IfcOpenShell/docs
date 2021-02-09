@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a97c79687a6f4fdebb6f3c068f9a4e9ce:
+
+Define SCHEMA_IfcBoundaryNodeCondition_HAS_TranslationalStiffnessX
+==================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBoundaryNodeCondition_HAS_TranslationalStiffnessX

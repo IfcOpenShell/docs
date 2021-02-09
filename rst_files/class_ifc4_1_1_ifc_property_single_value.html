@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcPropertySingleValue &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcPropertyTableValue" href="class_ifc4_1_1_ifc_property_table_value.html" />
+    <link rel="prev" title="Class Ifc4::IfcPropertySetTemplate" href="class_ifc4_1_1_ifc_property_set_template.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcpropertysinglevalue">
+<span id="exhale-class-class-ifc4-1-1-ifc-property-single-value"></span><h1>Class Ifc4::IfcPropertySingleValue<a class="headerlink" href="#class-ifc4-ifcpropertysinglevalue" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcSimpleProperty</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_simple_property.html#exhale-class-class-ifc4-1-1-ifc-simple-property"><span class="std std-ref">Class Ifc4::IfcSimpleProperty</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc422IfcPropertySingleValueE">
+<span id="_CPPv3N4Ifc422IfcPropertySingleValueE"></span><span id="_CPPv2N4Ifc422IfcPropertySingleValueE"></span><span id="Ifc4::IfcPropertySingleValue"></span><span class="target" id="class_ifc4_1_1_ifc_property_single_value"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcPropertySingleValue</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_simple_property.html#_CPPv4N4Ifc417IfcSimplePropertyE" title="Ifc4::IfcSimpleProperty">IfcSimpleProperty</a><a class="headerlink" href="#_CPPv4N4Ifc422IfcPropertySingleValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The property with a single value <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_property_single_value"><span class="std std-ref">IfcPropertySingleValue</span></a> defines a property object which has a single (numeric or descriptive) value assigned. It defines a property - single value combination for which the property Name, an optional Description,and an optional NominalValue with measure type is provided. In addition, the default unit as specified within the project unit context can be overriden by assigning an Unit. The unit is handled by the Unit attribute:</p>
+<p>If the Unit attribute is not given, then the unit is already implied by the type of IfcMeasureValue or IfcDerivedMeasureValue. The associated unit can be found at the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_unit_assignment"><span class="std std-ref">IfcUnitAssignment</span></a> globally defined at the project level (<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_context_1a8a64efe3eaf70918b5c094004d08a1e2"><span class="std std-ref">IfcProject.UnitsInContext</span></a>). If the Unit attribute is given, then the unit assigned by the Unit attribute overrides the globally assigned unit.</p>
+<p>Examples of a property with single value are:</p>
+<p>Name NominalValue Type (through IfcValue) Unit</p>
+<p>Description Manufacturer “A” door <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_label"><span class="std std-ref">IfcLabel</span></a><ul class="simple">
+<li><p>PanelThickness 0.12 <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_positive_length_measure"><span class="std std-ref">IfcPositiveLengthMeasure</span></a></p></li>
+<li><p>ThermalTransmittance 2.6 <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_thermal_transmittance_measure"><span class="std std-ref">IfcThermalTransmittanceMeasure</span></a> W/(m2K)</p></li>
+</ul>
+</p>
+<p>HISTORYNew entity in IFC Release 1.0. The entity has been renamed from <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_simple_property"><span class="std std-ref">IfcSimpleProperty</span></a> in IFC Release 2x.</p>
+<p>IFC2x3 CHANGEAttribute NominalValue has been made OPTIONAL with upward compatibility for file based exchange. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc422IfcPropertySingleValue4listE">
+<span id="_CPPv3N4Ifc422IfcPropertySingleValue4listE"></span><span id="_CPPv2N4Ifc422IfcPropertySingleValue4listE"></span><span id="Ifc4::IfcPropertySingleValue::list"></span><span class="target" id="class_ifc4_1_1_ifc_property_single_value_1a848f250c0cfbfb8961f4633036a945bd"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc422IfcPropertySingleValueE" title="Ifc4::IfcPropertySingleValue">IfcPropertySingleValue</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc422IfcPropertySingleValue4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc422IfcPropertySingleValue15hasNominalValueEv">
+<span id="_CPPv3NK4Ifc422IfcPropertySingleValue15hasNominalValueEv"></span><span id="_CPPv2NK4Ifc422IfcPropertySingleValue15hasNominalValueEv"></span><span id="Ifc4::IfcPropertySingleValue::hasNominalValueC"></span><span class="target" id="class_ifc4_1_1_ifc_property_single_value_1a8bca532b197087b957dec4698ac9e6bd"></span>bool <code class="sig-name descname">hasNominalValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc422IfcPropertySingleValue15hasNominalValueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute NominalValue is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_property_single_value"><span class="std std-ref">IfcPropertySingleValue</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc422IfcPropertySingleValue12NominalValueEv">
+<span id="_CPPv3NK4Ifc422IfcPropertySingleValue12NominalValueEv"></span><span id="_CPPv2NK4Ifc422IfcPropertySingleValue12NominalValueEv"></span><span id="Ifc4::IfcPropertySingleValue::NominalValueC"></span><span class="target" id="class_ifc4_1_1_ifc_property_single_value_1a3a99d22e38deb1a554f0df1e588a00b4"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc48IfcValueE" title="Ifc4::IfcValue">IfcValue</a> *<code class="sig-name descname">NominalValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc422IfcPropertySingleValue12NominalValueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Value and measure type of this property.</p>
+<p>NOTE By virtue of the defined data type, that is selected from the SELECT IfcValue, the appropriate unit can be found within the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_unit_assignment"><span class="std std-ref">IfcUnitAssignment</span></a>, defined for the project if no value for the unit attribute is given.</p>
+<p>IFC2x3 CHANGE The attribute has been made optional with upward compatibility for file based exchange. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc422IfcPropertySingleValue15setNominalValueEPN4Ifc48IfcValueE">
+<span id="_CPPv3N4Ifc422IfcPropertySingleValue15setNominalValueEPN4Ifc48IfcValueE"></span><span id="_CPPv2N4Ifc422IfcPropertySingleValue15setNominalValueEPN4Ifc48IfcValueE"></span><span id="Ifc4::IfcPropertySingleValue::setNominalValue__Ifc4::IfcValueP"></span><span class="target" id="class_ifc4_1_1_ifc_property_single_value_1ae4cf70279c87e7e265005192f94d634c"></span>void <code class="sig-name descname">setNominalValue</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc48IfcValueE" title="Ifc4::IfcValue">IfcValue</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc422IfcPropertySingleValue15setNominalValueEPN4Ifc48IfcValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc422IfcPropertySingleValue7hasUnitEv">
+<span id="_CPPv3NK4Ifc422IfcPropertySingleValue7hasUnitEv"></span><span id="_CPPv2NK4Ifc422IfcPropertySingleValue7hasUnitEv"></span><span id="Ifc4::IfcPropertySingleValue::hasUnitC"></span><span class="target" id="class_ifc4_1_1_ifc_property_single_value_1ac288288f90be885cfcd32cd8dbf05fd5"></span>bool <code class="sig-name descname">hasUnit</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc422IfcPropertySingleValue7hasUnitEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Unit is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_property_single_value"><span class="std std-ref">IfcPropertySingleValue</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc422IfcPropertySingleValue4UnitEv">
+<span id="_CPPv3NK4Ifc422IfcPropertySingleValue4UnitEv"></span><span id="_CPPv2NK4Ifc422IfcPropertySingleValue4UnitEv"></span><span id="Ifc4::IfcPropertySingleValue::UnitC"></span><span class="target" id="class_ifc4_1_1_ifc_property_single_value_1ab09da76843cc7c477ed154b27fb1ecbd"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc47IfcUnitE" title="Ifc4::IfcUnit">IfcUnit</a> *<code class="sig-name descname">Unit</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc422IfcPropertySingleValue4UnitEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Unit for the nominal value, if not given, the default value for the measure type (given by the TYPE of nominal value) is used as defined by the global unit assignment at <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc422IfcPropertySingleValue7setUnitEPN4Ifc47IfcUnitE">
+<span id="_CPPv3N4Ifc422IfcPropertySingleValue7setUnitEPN4Ifc47IfcUnitE"></span><span id="_CPPv2N4Ifc422IfcPropertySingleValue7setUnitEPN4Ifc47IfcUnitE"></span><span id="Ifc4::IfcPropertySingleValue::setUnit__Ifc4::IfcUnitP"></span><span class="target" id="class_ifc4_1_1_ifc_property_single_value_1af51d15150edf4b590eac070218a4730b"></span>void <code class="sig-name descname">setUnit</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc47IfcUnitE" title="Ifc4::IfcUnit">IfcUnit</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc422IfcPropertySingleValue7setUnitEPN4Ifc47IfcUnitE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc422IfcPropertySingleValue11declarationEv">
+<span id="_CPPv3NK4Ifc422IfcPropertySingleValue11declarationEv"></span><span id="_CPPv2NK4Ifc422IfcPropertySingleValue11declarationEv"></span><span id="Ifc4::IfcPropertySingleValue::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_property_single_value_1a2f4dded3576e9b8217b23874e4950a93"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc422IfcPropertySingleValue11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc422IfcPropertySingleValue22IfcPropertySingleValueEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc422IfcPropertySingleValue22IfcPropertySingleValueEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc422IfcPropertySingleValue22IfcPropertySingleValueEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcPropertySingleValue::IfcPropertySingleValue__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_property_single_value_1a9681911e54564da10157ce8feaa86d24"></span><code class="sig-name descname">IfcPropertySingleValue</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc422IfcPropertySingleValue22IfcPropertySingleValueEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc422IfcPropertySingleValue22IfcPropertySingleValueENSt6stringEN5boost8optionalINSt6stringEEEPN4Ifc48IfcValueEPN4Ifc47IfcUnitE">
+<span id="_CPPv3N4Ifc422IfcPropertySingleValue22IfcPropertySingleValueENSt6stringEN5boost8optionalINSt6stringEEEPN4Ifc48IfcValueEPN4Ifc47IfcUnitE"></span><span id="_CPPv2N4Ifc422IfcPropertySingleValue22IfcPropertySingleValueENSt6stringEN5boost8optionalINSt6stringEEEPN4Ifc48IfcValueEPN4Ifc47IfcUnitE"></span><span id="Ifc4::IfcPropertySingleValue::IfcPropertySingleValue__ss.boost::optional:ss:.Ifc4::IfcValueP.Ifc4::IfcUnitP"></span><span class="target" id="class_ifc4_1_1_ifc_property_single_value_1adda95b8d44da5e4bf7dbb7456fa0e845"></span><code class="sig-name descname">IfcPropertySingleValue</code><span class="sig-paren">(</span>std::string <em>v1_Name</em>, boost::optional&lt;std::string&gt; <em>v2_Description</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc48IfcValueE" title="Ifc4::IfcValue">IfcValue</a> *<em>v3_NominalValue</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc47IfcUnitE" title="Ifc4::IfcUnit">IfcUnit</a> *<em>v4_Unit</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc422IfcPropertySingleValue22IfcPropertySingleValueENSt6stringEN5boost8optionalINSt6stringEEEPN4Ifc48IfcValueEPN4Ifc47IfcUnitE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc422IfcPropertySingleValue5ClassEv">
+<span id="_CPPv3N4Ifc422IfcPropertySingleValue5ClassEv"></span><span id="_CPPv2N4Ifc422IfcPropertySingleValue5ClassEv"></span><span id="Ifc4::IfcPropertySingleValue::Class"></span><span class="target" id="class_ifc4_1_1_ifc_property_single_value_1a5f9dbec240b19efee7527bfc64fefa5f"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc422IfcPropertySingleValue5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_property_set_template.html" title="previous chapter">Class Ifc4::IfcPropertySetTemplate</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_property_table_value.html" title="next chapter">Class Ifc4::IfcPropertyTableValue</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_property_single_value.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

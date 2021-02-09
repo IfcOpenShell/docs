@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1acf3cd75f3bcca938a145d7a11b520383:
+
+Define SCHEMA_IfcStructuralLoadPlanarForce_PlanarForceZ_IS_OPTIONAL
+===================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLoadPlanarForce_PlanarForceZ_IS_OPTIONAL

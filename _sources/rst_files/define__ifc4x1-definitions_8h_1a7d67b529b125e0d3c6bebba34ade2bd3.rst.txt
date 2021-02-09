@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1a7d67b529b125e0d3c6bebba34ade2bd3:
+
+Define SCHEMA_IfcTableColumn_HAS_Identifier
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTableColumn_HAS_Identifier

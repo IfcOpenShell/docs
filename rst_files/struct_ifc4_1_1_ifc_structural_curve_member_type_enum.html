@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Struct Ifc4::IfcStructuralCurveMemberTypeEnum &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct Ifc4::IfcStructuralSurfaceActivityTypeEnum" href="struct_ifc4_1_1_ifc_structural_surface_activity_type_enum.html" />
+    <link rel="prev" title="Struct Ifc4::IfcStructuralCurveActivityTypeEnum" href="struct_ifc4_1_1_ifc_structural_curve_activity_type_enum.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="struct-ifc4-ifcstructuralcurvemembertypeenum">
+<span id="exhale-struct-struct-ifc4-1-1-ifc-structural-curve-member-type-enum"></span><h1>Struct Ifc4::IfcStructuralCurveMemberTypeEnum<a class="headerlink" href="#struct-ifc4-ifcstructuralcurvemembertypeenum" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This struct is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp struct">
+<dt id="_CPPv4N4Ifc432IfcStructuralCurveMemberTypeEnumE">
+<span id="_CPPv3N4Ifc432IfcStructuralCurveMemberTypeEnumE"></span><span id="_CPPv2N4Ifc432IfcStructuralCurveMemberTypeEnumE"></span><span id="Ifc4::IfcStructuralCurveMemberTypeEnum"></span><span class="target" id="struct_ifc4_1_1_ifc_structural_curve_member_type_enum"></span><em class="property">struct </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcStructuralCurveMemberTypeEnum</code><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp enum">
+<dt id="_CPPv4N4Ifc432IfcStructuralCurveMemberTypeEnum5ValueE">
+<span id="_CPPv3N4Ifc432IfcStructuralCurveMemberTypeEnum5ValueE"></span><span id="_CPPv2N4Ifc432IfcStructuralCurveMemberTypeEnum5ValueE"></span><span class="target" id="struct_ifc4_1_1_ifc_structural_curve_member_type_enum_1a6c9c241edef0ef3a19e9b95be6001582"></span><em class="property">enum </em><code class="sig-name descname">Value</code><br /></dt>
+<dd><p>Definition from IAI: This type definition shall be used to</p>
+<p>distinguish between different types of structural ‘curve’ members, such as</p>
+<p>cables. The IfcStructuralCurveTypeEnum type is referenced by the entity</p>
+<p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_structural_curve_member"><span class="std std-ref">IfcStructuralCurveMember</span></a>.</p>
+<p>RIGID_JOINED_MEMBER: A member with capacity to carry transverse and axial loads, i.e. a beam. Its actual joints may be rigid or pinned. Typically used in rigid frames. PIN_JOINED_MEMBER: A member with capacity to carry axial loads only, i.e. a link. Typically used in trusses. CABLE: A tension member which is able to carry transverse loads only under large deflection. TENSION_MEMBER: A member without compressional stiffness. COMPRESSION_MEMBER: A member without tensional stiffness. USERDEFINED: A specially defined member. NOTDEFINED: A member without further categorization.</p>
+<p>HISTORY New type in IFC 2x2. IFC 2x4 change: Renamed from IfcStructuralCurveTypeEnum. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc432IfcStructuralCurveMemberTypeEnum5Value48IfcStructuralCurveMemberType_RIGID_JOINED_MEMBERE">
+<span id="_CPPv3N4Ifc432IfcStructuralCurveMemberTypeEnum5Value48IfcStructuralCurveMemberType_RIGID_JOINED_MEMBERE"></span><span id="_CPPv2N4Ifc432IfcStructuralCurveMemberTypeEnum5Value48IfcStructuralCurveMemberType_RIGID_JOINED_MEMBERE"></span><span class="target" id="struct_ifc4_1_1_ifc_structural_curve_member_type_enum_1a6c9c241edef0ef3a19e9b95be6001582a175d7ade480cdd82f33b47408c8d32b5"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStructuralCurveMemberType_RIGID_JOINED_MEMBER</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc432IfcStructuralCurveMemberTypeEnum5Value46IfcStructuralCurveMemberType_PIN_JOINED_MEMBERE">
+<span id="_CPPv3N4Ifc432IfcStructuralCurveMemberTypeEnum5Value46IfcStructuralCurveMemberType_PIN_JOINED_MEMBERE"></span><span id="_CPPv2N4Ifc432IfcStructuralCurveMemberTypeEnum5Value46IfcStructuralCurveMemberType_PIN_JOINED_MEMBERE"></span><span class="target" id="struct_ifc4_1_1_ifc_structural_curve_member_type_enum_1a6c9c241edef0ef3a19e9b95be6001582ab56dcd762bdac511ebd4de9d70a3747d"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStructuralCurveMemberType_PIN_JOINED_MEMBER</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc432IfcStructuralCurveMemberTypeEnum5Value34IfcStructuralCurveMemberType_CABLEE">
+<span id="_CPPv3N4Ifc432IfcStructuralCurveMemberTypeEnum5Value34IfcStructuralCurveMemberType_CABLEE"></span><span id="_CPPv2N4Ifc432IfcStructuralCurveMemberTypeEnum5Value34IfcStructuralCurveMemberType_CABLEE"></span><span class="target" id="struct_ifc4_1_1_ifc_structural_curve_member_type_enum_1a6c9c241edef0ef3a19e9b95be6001582a12cd5cf99abfb393078a240b061351f4"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStructuralCurveMemberType_CABLE</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc432IfcStructuralCurveMemberTypeEnum5Value43IfcStructuralCurveMemberType_TENSION_MEMBERE">
+<span id="_CPPv3N4Ifc432IfcStructuralCurveMemberTypeEnum5Value43IfcStructuralCurveMemberType_TENSION_MEMBERE"></span><span id="_CPPv2N4Ifc432IfcStructuralCurveMemberTypeEnum5Value43IfcStructuralCurveMemberType_TENSION_MEMBERE"></span><span class="target" id="struct_ifc4_1_1_ifc_structural_curve_member_type_enum_1a6c9c241edef0ef3a19e9b95be6001582a7d29f4048cf21f80e18d5fda189213dd"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStructuralCurveMemberType_TENSION_MEMBER</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc432IfcStructuralCurveMemberTypeEnum5Value47IfcStructuralCurveMemberType_COMPRESSION_MEMBERE">
+<span id="_CPPv3N4Ifc432IfcStructuralCurveMemberTypeEnum5Value47IfcStructuralCurveMemberType_COMPRESSION_MEMBERE"></span><span id="_CPPv2N4Ifc432IfcStructuralCurveMemberTypeEnum5Value47IfcStructuralCurveMemberType_COMPRESSION_MEMBERE"></span><span class="target" id="struct_ifc4_1_1_ifc_structural_curve_member_type_enum_1a6c9c241edef0ef3a19e9b95be6001582a97f918681e47294cbb3ad7fb91186040"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStructuralCurveMemberType_COMPRESSION_MEMBER</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc432IfcStructuralCurveMemberTypeEnum5Value40IfcStructuralCurveMemberType_USERDEFINEDE">
+<span id="_CPPv3N4Ifc432IfcStructuralCurveMemberTypeEnum5Value40IfcStructuralCurveMemberType_USERDEFINEDE"></span><span id="_CPPv2N4Ifc432IfcStructuralCurveMemberTypeEnum5Value40IfcStructuralCurveMemberType_USERDEFINEDE"></span><span class="target" id="struct_ifc4_1_1_ifc_structural_curve_member_type_enum_1a6c9c241edef0ef3a19e9b95be6001582a0aee3ee86942a31f93fee52819b4a785"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStructuralCurveMemberType_USERDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc432IfcStructuralCurveMemberTypeEnum5Value39IfcStructuralCurveMemberType_NOTDEFINEDE">
+<span id="_CPPv3N4Ifc432IfcStructuralCurveMemberTypeEnum5Value39IfcStructuralCurveMemberType_NOTDEFINEDE"></span><span id="_CPPv2N4Ifc432IfcStructuralCurveMemberTypeEnum5Value39IfcStructuralCurveMemberType_NOTDEFINEDE"></span><span class="target" id="struct_ifc4_1_1_ifc_structural_curve_member_type_enum_1a6c9c241edef0ef3a19e9b95be6001582af3a41576e16cbc9eb26e421833534c53"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStructuralCurveMemberType_NOTDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc432IfcStructuralCurveMemberTypeEnum8ToStringE5Value">
+<span id="_CPPv3N4Ifc432IfcStructuralCurveMemberTypeEnum8ToStringE5Value"></span><span id="_CPPv2N4Ifc432IfcStructuralCurveMemberTypeEnum8ToStringE5Value"></span><span id="Ifc4::IfcStructuralCurveMemberTypeEnum::ToString__Value"></span><span class="target" id="struct_ifc4_1_1_ifc_structural_curve_member_type_enum_1ae86b29b684c58118c6de38492acadf18"></span>IFC_PARSE_API <em class="property">const</em> char *<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc432IfcStructuralCurveMemberTypeEnum5ValueE" title="Ifc4::IfcStructuralCurveMemberTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc432IfcStructuralCurveMemberTypeEnum10FromStringERKNSt6stringE">
+<span id="_CPPv3N4Ifc432IfcStructuralCurveMemberTypeEnum10FromStringERKNSt6stringE"></span><span id="_CPPv2N4Ifc432IfcStructuralCurveMemberTypeEnum10FromStringERKNSt6stringE"></span><span id="Ifc4::IfcStructuralCurveMemberTypeEnum::FromString__ssCR"></span><span class="target" id="struct_ifc4_1_1_ifc_structural_curve_member_type_enum_1ada9aa0034364454969846b14166e6e4b"></span>IFC_PARSE_API <a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc432IfcStructuralCurveMemberTypeEnum5ValueE" title="Ifc4::IfcStructuralCurveMemberTypeEnum::Value">Value</a> <code class="sig-name descname">FromString</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>s</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="struct_ifc4_1_1_ifc_structural_curve_activity_type_enum.html" title="previous chapter">Struct Ifc4::IfcStructuralCurveActivityTypeEnum</a></li>
+      <li>Next: <a href="struct_ifc4_1_1_ifc_structural_surface_activity_type_enum.html" title="next chapter">Struct Ifc4::IfcStructuralSurfaceActivityTypeEnum</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/struct_ifc4_1_1_ifc_structural_curve_member_type_enum.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

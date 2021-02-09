@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a5007f84caa69c6cf9f21524db94794e4:
+
+Define SCHEMA_IfcStructuralLoadConfiguration_HAS_Locations
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLoadConfiguration_HAS_Locations

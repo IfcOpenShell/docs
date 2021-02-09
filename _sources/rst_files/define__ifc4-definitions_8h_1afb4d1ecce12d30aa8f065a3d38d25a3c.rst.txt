@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1afb4d1ecce12d30aa8f065a3d38d25a3c:
+
+Define SCHEMA_IfcDoorStyle_HAS_ParameterTakesPrecedence
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDoorStyle_HAS_ParameterTakesPrecedence

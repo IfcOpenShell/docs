@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_geom_8h_1af1de4ef5b695b0c860f4302e9cacd476:
+
+Function IfcGeom::tesselate_
+============================
+
+- Defined in :ref:`file_src_ifcgeom_IfcGeom.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcGeom::tesselate_(const TopoDS_Shape&, double)

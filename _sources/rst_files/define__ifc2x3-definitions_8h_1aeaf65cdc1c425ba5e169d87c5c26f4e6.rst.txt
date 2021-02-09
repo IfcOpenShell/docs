@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aeaf65cdc1c425ba5e169d87c5c26f4e6:
+
+Define SCHEMA_IfcReinforcementDefinitionProperties_HAS_ReinforcementSectionDefinitions
+======================================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcReinforcementDefinitionProperties_HAS_ReinforcementSectionDefinitions

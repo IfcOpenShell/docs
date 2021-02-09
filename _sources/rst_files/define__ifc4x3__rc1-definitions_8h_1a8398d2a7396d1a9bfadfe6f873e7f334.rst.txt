@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a8398d2a7396d1a9bfadfe6f873e7f334:
+
+Define SCHEMA_IfcBoundedCurve_HAS_PositioningElement
+====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBoundedCurve_HAS_PositioningElement

@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_geom_render_styles_8h_1a0805e258e2170e4254caefe72449abc9:
+
+Function IfcGeom::set_default_style_file
+========================================
+
+- Defined in :ref:`file_src_ifcgeom_schema_agnostic_IfcGeomRenderStyles.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcGeom::set_default_style_file(const std::string&)

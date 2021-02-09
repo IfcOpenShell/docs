@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a28e7c9ca3d5db6baf8dc9c8daafd5089:
+
+Define SCHEMA_IfcResourceTime_HAS_ScheduleContour
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcResourceTime_HAS_ScheduleContour

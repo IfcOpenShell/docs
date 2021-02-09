@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Listing for File Kernel.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="program-listing-for-file-kernel-h">
+<span id="program-listing-file-src-ifcgeom-schema-agnostic-kernel-h"></span><h1>Program Listing for File Kernel.h<a class="headerlink" href="#program-listing-for-file-kernel-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_ifcgeom_schema_agnostic_Kernel.h.html#file-src-ifcgeom-schema-agnostic-kernel-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom_schema_agnostic/Kernel.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef ITERATOR_KERNEL_H</span>
+<span class="cp">#define ITERATOR_KERNEL_H</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcFile.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom/IfcGeomIteratorSettings.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom/IfcRepresentationShapeItem.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/Ifc2x3.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/Ifc4.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/Ifc4x1.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/Ifc4x2.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/Ifc4x3_rc1.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;boost/function.hpp&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;TopExp_Explorer.hxx&gt;</span><span class="cp"></span>
+
+<span class="k">namespace</span> <span class="n">IfcGeom</span> <span class="p">{</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="nc">P</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">PP</span><span class="o">&gt;</span>
+    <span class="k">class</span> <span class="nc">BRepElement</span><span class="p">;</span>
+
+    <span class="k">class</span> <span class="nc">Kernel</span> <span class="p">{</span>
+    <span class="k">private</span><span class="o">:</span>
+        <span class="n">Kernel</span><span class="o">*</span> <span class="n">implementation_</span><span class="p">;</span>
+
+    <span class="k">public</span><span class="o">:</span>
+        <span class="c1">// Tolerances and settings for various geometrical operations:</span>
+        <span class="k">enum</span> <span class="nc">GeomValue</span> <span class="p">{</span>
+            <span class="c1">// Specifies the deflection of the mesher</span>
+            <span class="c1">// Default: 0.001m / 1mm</span>
+            <span class="n">GV_DEFLECTION_TOLERANCE</span><span class="p">,</span>
+            <span class="c1">// Specifies the minimal area of a face to be included in an IfcConnectedFaceset</span>
+            <span class="c1">// Read-only</span>
+            <span class="n">GV_MINIMAL_FACE_AREA</span><span class="p">,</span>
+            <span class="c1">// Specifies the threshold distance under which cartesian points are deemed equal</span>
+            <span class="c1">// Read-only</span>
+            <span class="n">GV_POINT_EQUALITY_TOLERANCE</span><span class="p">,</span>
+            <span class="c1">// Specifies maximum number of faces for a shell to be reoriented.</span>
+            <span class="c1">// Default: -1</span>
+            <span class="n">GV_MAX_FACES_TO_ORIENT</span><span class="p">,</span>
+            <span class="c1">// The length unit used the creation of TopoDS_Shapes, primarily affects the</span>
+            <span class="c1">// interpretation of IfcCartesianPoints and IfcVector magnitudes</span>
+            <span class="c1">// DefaultL 1.0</span>
+            <span class="n">GV_LENGTH_UNIT</span><span class="p">,</span>
+            <span class="c1">// The plane angle unit used for the creation of TopoDS_Shapes, primarily affects</span>
+            <span class="c1">// the interpretation of IfcParamaterValues of IfcTrimmedCurves</span>
+            <span class="c1">// Default: -1.0 (= not set, fist try degrees, then radians)</span>
+            <span class="n">GV_PLANEANGLE_UNIT</span><span class="p">,</span>
+            <span class="c1">// The precision used in boolean operations, setting this value too low results</span>
+            <span class="c1">// in artefacts and potentially modelling failures</span>
+            <span class="c1">// Default: 0.00001 (obtained from IfcGeometricRepresentationContext if available)</span>
+            <span class="n">GV_PRECISION</span><span class="p">,</span>
+            <span class="c1">// Whether to process shapes of type Face or higher (1) Wire or lower (-1) or all (0)</span>
+            <span class="n">GV_DIMENSIONALITY</span><span class="p">,</span>
+            <span class="n">GV_LAYERSET_FIRST</span><span class="p">,</span>
+            <span class="n">GV_DISABLE_BOOLEAN_RESULT</span>
+        <span class="p">};</span>
+
+        <span class="n">Kernel</span><span class="p">(</span><span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcFile</span><span class="o">*</span> <span class="n">file_</span> <span class="o">=</span> <span class="mi">0</span><span class="p">);</span>
+
+        <span class="k">virtual</span> <span class="o">~</span><span class="n">Kernel</span><span class="p">()</span> <span class="p">{}</span>
+
+        <span class="k">virtual</span> <span class="kt">void</span> <span class="n">setValue</span><span class="p">(</span><span class="n">GeomValue</span> <span class="n">var</span><span class="p">,</span> <span class="kt">double</span> <span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">implementation_</span><span class="o">-&gt;</span><span class="n">setValue</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="n">value</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">virtual</span> <span class="kt">double</span> <span class="n">getValue</span><span class="p">(</span><span class="n">GeomValue</span> <span class="n">var</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="n">implementation_</span><span class="o">-&gt;</span><span class="n">getValue</span><span class="p">(</span><span class="n">var</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">virtual</span> <span class="n">BRepElement</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="kt">double</span><span class="o">&gt;*</span> <span class="n">convert</span><span class="p">(</span>
+            <span class="k">const</span> <span class="n">IteratorSettings</span><span class="o">&amp;</span> <span class="n">settings</span><span class="p">,</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">representation</span><span class="p">,</span>
+            <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">product</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="n">implementation_</span><span class="o">-&gt;</span><span class="n">convert</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="n">representation</span><span class="p">,</span> <span class="n">product</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">virtual</span> <span class="n">IfcRepresentationShapeItems</span> <span class="n">convert</span><span class="p">(</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">item</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="n">implementation_</span><span class="o">-&gt;</span><span class="n">convert</span><span class="p">(</span><span class="n">item</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">virtual</span> <span class="kt">bool</span> <span class="n">convert_placement</span><span class="p">(</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">item</span><span class="p">,</span> <span class="n">gp_Trsf</span><span class="o">&amp;</span> <span class="n">trsf</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="n">implementation_</span><span class="o">-&gt;</span><span class="n">convert_placement</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">trsf</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">TopAbs_ShapeEnum</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">unique</span><span class="o">=</span><span class="nb">false</span><span class="p">);</span>
+        <span class="k">static</span> <span class="kt">int</span> <span class="n">surface_genus</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">);</span>
+
+        <span class="k">static</span> <span class="kt">bool</span> <span class="n">is_manifold</span><span class="p">(</span><span class="k">const</span> <span class="n">TopoDS_Shape</span><span class="o">&amp;</span> <span class="n">a</span><span class="p">);</span>
+        <span class="k">static</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseEntity</span><span class="o">*</span> <span class="n">get_decomposing_entity</span><span class="p">(</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseEntity</span><span class="o">*</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">include_openings</span><span class="o">=</span><span class="nb">true</span><span class="p">);</span>
+        <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseEntity</span><span class="o">*&gt;</span> <span class="n">get_layers</span><span class="p">(</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseEntity</span><span class="o">*</span><span class="p">);</span>
+    <span class="p">};</span>
+
+    <span class="k">namespace</span> <span class="n">impl</span> <span class="p">{</span>
+        <span class="k">typedef</span> <span class="n">boost</span><span class="o">::</span><span class="n">function1</span><span class="o">&lt;</span><span class="n">Kernel</span><span class="o">*</span><span class="p">,</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcFile</span><span class="o">*&gt;</span> <span class="n">kernel_fn</span><span class="p">;</span>
+
+        <span class="k">class</span> <span class="nc">KernelFactoryImplementation</span> <span class="o">:</span> <span class="k">public</span> <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <span class="n">kernel_fn</span><span class="o">&gt;</span> <span class="p">{</span>
+        <span class="k">public</span><span class="o">:</span>
+            <span class="n">KernelFactoryImplementation</span><span class="p">();</span>
+            <span class="kt">void</span> <span class="nf">bind</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">schema_name</span><span class="p">,</span> <span class="n">kernel_fn</span><span class="p">);</span>
+            <span class="n">Kernel</span><span class="o">*</span> <span class="nf">construct</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">schema_name</span><span class="p">,</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcFile</span><span class="o">*</span><span class="p">);</span>
+        <span class="p">};</span>
+
+        <span class="n">KernelFactoryImplementation</span><span class="o">&amp;</span> <span class="nf">kernel_implementations</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/program_listing_file_src_ifcgeom_schema_agnostic_Kernel.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

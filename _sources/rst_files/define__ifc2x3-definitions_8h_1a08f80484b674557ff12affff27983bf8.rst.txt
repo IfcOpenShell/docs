@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a08f80484b674557ff12affff27983bf8:
+
+Define SCHEMA_IfcLightSourceGoniometric_HAS_ColourTemperature
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcLightSourceGoniometric_HAS_ColourTemperature

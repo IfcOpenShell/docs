@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a1955ae55f4802ca6e8faf0abac138ba0:
+
+Define SCHEMA_IfcProcess_HAS_IsPredecessorTo
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcProcess_HAS_IsPredecessorTo

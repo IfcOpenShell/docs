@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcVirtualElement &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcVirtualGridIntersection" href="class_ifc4x1_1_1_ifc_virtual_grid_intersection.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcVibrationIsolatorType" href="class_ifc4x1_1_1_ifc_vibration_isolator_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcvirtualelement">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-virtual-element"></span><h1>Class Ifc4x1::IfcVirtualElement<a class="headerlink" href="#class-ifc4x1-ifcvirtualelement" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcElement</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_element.html#exhale-class-class-ifc4x1-1-1-ifc-element"><span class="std std-ref">Class Ifc4x1::IfcElement</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x117IfcVirtualElementE">
+<span id="_CPPv3N6Ifc4x117IfcVirtualElementE"></span><span id="_CPPv2N6Ifc4x117IfcVirtualElementE"></span><span id="Ifc4x1::IfcVirtualElement"></span><span class="target" id="class_ifc4x1_1_1_ifc_virtual_element"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcVirtualElement</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_element.html#_CPPv4N6Ifc4x110IfcElementE" title="Ifc4x1::IfcElement">IfcElement</a><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcVirtualElementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A virtual element is a special element used to provide imaginary boundaries, such as between two adjacent, but not separated, spaces. Virtual elements are usually not displayed and does not have quantities and other measures. Therefore <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_virtual_element"><span class="std std-ref">IfcVirtualElement</span></a> does not have material information and quantities attached.</p>
+<p>NOTE The main purpose of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_virtual_element"><span class="std std-ref">IfcVirtualElement</span></a> is the provision of a virtual space boundary. The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_virtual_element"><span class="std std-ref">IfcVirtualElement</span></a> may provide the 2D curve or 3D surface representation of the virtual space connection and is referenced by two instances of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_space_boundary"><span class="std std-ref">IfcRelSpaceBoundary</span></a>, each pointing to one of the two adjacent IfcSpaces.</p>
+<p>HISTORY New entity in IFC Release 2x2 Addendum. IFC2x2 CHANGE: The entity <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_virtual_element"><span class="std std-ref">IfcVirtualElement</span></a> has been added. Upward compatibility for file based exchange is guaranteed.</p>
+<p>Space Boundary Use Definition The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_virtual_element"><span class="std std-ref">IfcVirtualElement</span></a> is mainly used to define a virtual boundary between two spaces. Figure 63 describes how to use <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_space_boundary"><span class="std std-ref">IfcRelSpaceBoundary</span></a> in conjunction with <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_virtual_element"><span class="std std-ref">IfcVirtualElement</span></a> to define space boundaries.</p>
+<p>Figure 63 — Virtual element space boundaries</p>
+<p>Geometry Use Definition The geometric representation of any <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_virtual_element"><span class="std std-ref">IfcVirtualElement</span></a> is given by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a> and <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> allowing multiple geometric representations. Included are: Local Placement The local placement for <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_virtual_element"><span class="std std-ref">IfcVirtualElement</span></a> is defined in its supertype <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a>. It is defined by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a>, which defines the local coordinate system that is referenced by all geometric representations.</p>
+<p>The PlacementRelTo relationship of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> shall point (if given) to the local placement of the same <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_spatial_structure_element"><span class="std std-ref">IfcSpatialStructureElement</span></a> that is used in the ContainedInStructure inverse attribute or to a referenced spatial structure element at a higher level. If the relative placement is not used, the absolute placement is defined within the world coordinate system.</p>
+<p>Geometric Representation Currently, the use of ‘FootPrint’ and ‘Surface’ representation is supported. FootPrint Representation The 2D geometric representation of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_virtual_element"><span class="std std-ref">IfcVirtualElement</span></a> is defined using the ‘FootPrint’ representation.</p>
+<p><a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_representation_1ac5adba31e876785ef28332cc5308f890"><span class="std std-ref">IfcShapeRepresentation.RepresentationIdentifier</span></a> = ‘FootPrint’. <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_representation_1a0fcc0a0e68ba5ab875c15a62ad38223d"><span class="std std-ref">IfcShapeRepresentation.RepresentationType</span></a> = ‘Curve2D’ or ‘GeometricCurveSet’ .</p>
+<p>The following constraints apply to the 2D FootPrint representation:</p>
+<p>‘Curve2D’: <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a>, <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_trimmed_curve"><span class="std std-ref">IfcTrimmedCurve</span></a> or <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_composite_curve"><span class="std std-ref">IfcCompositeCurve</span></a> ‘GeometricCurveSet’: a list of 2D curves within the constraints shown above.</p>
+<p>Surface Representation The 3D geometric representation of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_virtual_element"><span class="std std-ref">IfcVirtualElement</span></a> is defined using a surface geometry.</p>
+<p><a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_representation_1ac5adba31e876785ef28332cc5308f890"><span class="std std-ref">IfcShapeRepresentation.RepresentationIdentifier</span></a> = ‘Surface’. <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_representation_1a0fcc0a0e68ba5ab875c15a62ad38223d"><span class="std std-ref">IfcShapeRepresentation.RepresentationType</span></a> = ‘Surface3D’ or ‘GeometricSet .</p>
+<p>The following constraints apply to the 3D surface representation:</p>
+<p>‘Surface3D’: <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_surface_of_linear_extrusion"><span class="std std-ref">IfcSurfaceOfLinearExtrusion</span></a>, <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_curve_bounded_plane"><span class="std std-ref">IfcCurveBoundedPlane</span></a>, <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_curve_bounded_surface"><span class="std std-ref">IfcCurveBoundedSurface</span></a>, <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rectangular_trimmed_surface"><span class="std std-ref">IfcRectangularTrimmedSurface</span></a> in case of an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_surface_of_linear_extrusion"><span class="std std-ref">IfcSurfaceOfLinearExtrusion</span></a></p>
+<p>Profile: <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_arbitrary_open_profile_def"><span class="std std-ref">IfcArbitraryOpenProfileDef</span></a> Extrusion: The extrusion direction shall be vertically, i.e., along the positive Z Axis of the co-ordinate system of the containing spatial structure element.</p>
+<p>in case of an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_curve_bounded_plane"><span class="std std-ref">IfcCurveBoundedPlane</span></a>, <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_curve_bounded_surface"><span class="std std-ref">IfcCurveBoundedSurface</span></a>, <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rectangular_trimmed_surface"><span class="std std-ref">IfcRectangularTrimmedSurface</span></a></p>
+<p>Extrusion: The BasisSurface shall be a surface that is upright, i.e. standing perpendicular to the xy place of the co-ordinate system of the containing spatial structure element.</p>
+<p>‘GeometricSet’: a list of 3D surfaces within the constraints shown above. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x117IfcVirtualElement4listE">
+<span id="_CPPv3N6Ifc4x117IfcVirtualElement4listE"></span><span id="_CPPv2N6Ifc4x117IfcVirtualElement4listE"></span><span id="Ifc4x1::IfcVirtualElement::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_virtual_element_1a1359bb0e704a26cb11fe48c24784a33e"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x117IfcVirtualElementE" title="Ifc4x1::IfcVirtualElement">IfcVirtualElement</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcVirtualElement4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcVirtualElement11declarationEv">
+<span id="_CPPv3NK6Ifc4x117IfcVirtualElement11declarationEv"></span><span id="_CPPv2NK6Ifc4x117IfcVirtualElement11declarationEv"></span><span id="Ifc4x1::IfcVirtualElement::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_virtual_element_1a00865b6bbd1a22e3d899f96627921c48"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcVirtualElement11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcVirtualElement17IfcVirtualElementEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x117IfcVirtualElement17IfcVirtualElementEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x117IfcVirtualElement17IfcVirtualElementEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcVirtualElement::IfcVirtualElement__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_virtual_element_1a7a88c91c78636221a7826b2442f44703"></span><code class="sig-name descname">IfcVirtualElement</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcVirtualElement17IfcVirtualElementEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcVirtualElement17IfcVirtualElementENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN5boost8optionalINSt6stringEEE">
+<span id="_CPPv3N6Ifc4x117IfcVirtualElement17IfcVirtualElementENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN5boost8optionalINSt6stringEEE"></span><span id="_CPPv2N6Ifc4x117IfcVirtualElement17IfcVirtualElementENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN5boost8optionalINSt6stringEEE"></span><span id="Ifc4x1::IfcVirtualElement::IfcVirtualElement__ss.Ifc4x1::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4x1::IfcObjectPlacementP.Ifc4x1::IfcProductRepresentationP.boost::optional:ss:"></span><span class="target" id="class_ifc4x1_1_1_ifc_virtual_element_1abf056bcfc486a83f499ba76e06182d60"></span><code class="sig-name descname">IfcVirtualElement</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_owner_history.html#_CPPv4N6Ifc4x115IfcOwnerHistoryE" title="Ifc4x1::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_object_placement.html#_CPPv4N6Ifc4x118IfcObjectPlacementE" title="Ifc4x1::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_product_representation.html#_CPPv4N6Ifc4x124IfcProductRepresentationE" title="Ifc4x1::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, boost::optional&lt;std::string&gt; <em>v8_Tag</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcVirtualElement17IfcVirtualElementENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN5boost8optionalINSt6stringEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcVirtualElement5ClassEv">
+<span id="_CPPv3N6Ifc4x117IfcVirtualElement5ClassEv"></span><span id="_CPPv2N6Ifc4x117IfcVirtualElement5ClassEv"></span><span id="Ifc4x1::IfcVirtualElement::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_virtual_element_1a2bfd04cdbfd8e5588841a95f1bb2d680"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcVirtualElement5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_vibration_isolator_type.html" title="previous chapter">Class Ifc4x1::IfcVibrationIsolatorType</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_virtual_grid_intersection.html" title="next chapter">Class Ifc4x1::IfcVirtualGridIntersection</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_virtual_element.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

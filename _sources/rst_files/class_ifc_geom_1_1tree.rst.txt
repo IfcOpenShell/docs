@@ -1,0 +1,25 @@
+.. _exhale_class_class_ifc_geom_1_1tree:
+
+Class tree
+==========
+
+- Defined in :ref:`file_src_ifcgeom_IfcGeomTree.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcGeom::impl::tree< IfcUtil::IfcBaseEntity * >`` (:ref:`exhale_class_class_ifc_geom_1_1impl_1_1tree`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcGeom::tree
+   :members:
+   :protected-members:
+   :undoc-members:

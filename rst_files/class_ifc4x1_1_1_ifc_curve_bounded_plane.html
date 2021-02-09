@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcCurveBoundedPlane &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcCurveBoundedSurface" href="class_ifc4x1_1_1_ifc_curve_bounded_surface.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcCurve" href="class_ifc4x1_1_1_ifc_curve.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifccurveboundedplane">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-curve-bounded-plane"></span><h1>Class Ifc4x1::IfcCurveBoundedPlane<a class="headerlink" href="#class-ifc4x1-ifccurveboundedplane" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcBoundedSurface</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_bounded_surface.html#exhale-class-class-ifc4x1-1-1-ifc-bounded-surface"><span class="std std-ref">Class Ifc4x1::IfcBoundedSurface</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x120IfcCurveBoundedPlaneE">
+<span id="_CPPv3N6Ifc4x120IfcCurveBoundedPlaneE"></span><span id="_CPPv2N6Ifc4x120IfcCurveBoundedPlaneE"></span><span id="Ifc4x1::IfcCurveBoundedPlane"></span><span class="target" id="class_ifc4x1_1_1_ifc_curve_bounded_plane"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcCurveBoundedPlane</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_bounded_surface.html#_CPPv4N6Ifc4x117IfcBoundedSurfaceE" title="Ifc4x1::IfcBoundedSurface">IfcBoundedSurface</a><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcCurveBoundedPlaneE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: The curve bounded surface is a parametric surface with curved boundaries defined by one or more boundary curves. The bounded surface is defined to be the portion of the basis surface in the direction of N x T from any point on the boundary, where N is the surface normal and T the boundary curve tangent vector at this point. The region so defined shall be arcwise connected.</p>
+<p>The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_curve_bounded_plane"><span class="std std-ref">IfcCurveBoundedPlane</span></a> is a specialized bounded surface class that deals only with bounding basis plane surfaces. The definition varies from STEP as outer and inner boundaries are separated attributes and refer to <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_curve"><span class="std std-ref">IfcCurve</span></a>. The only basis surface that is allowed is of type <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_plane"><span class="std std-ref">IfcPlane</span></a>, and the implicit_outer attribute has not been incorporated, since only unbounded surfaces are used as basis surface.</p>
+<p>The BasisSurface is an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_plane"><span class="std std-ref">IfcPlane</span></a> that establishes the position coordinate system by SELF\IfcElementarySurface.Position. The OuterBoundary and the InnerBoundaries (if provided) shall lie on the surface of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_plane"><span class="std std-ref">IfcPlane</span></a>. Therefore the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_curve"><span class="std std-ref">IfcCurve</span></a>’s establishing the outer and inner boundaries shall be:</p>
+<p>either a 2D curve within the XY plane of the position coordinate sytem of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_plane"><span class="std std-ref">IfcPlane</span></a> or a 3D curve with all coordinates having a z value = 0.</p>
+<p>NOTE Corresponding ISO 10303 entity curve_bounded_surface has been changed to meet the specific requirements of an easy representation of curve bounded planes.</p>
+<p>HISTORY New entity in IFC Release 1.5</p>
+<p>IFC2x PLATFORM CHANGE: The data type of the attribute OuterBoundary and InnerBoundaries has been changed from Ifc2DCompositeCurve to its supertype <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_curve"><span class="std std-ref">IfcCurve</span></a> with upward compatibility for file based exchange. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x120IfcCurveBoundedPlane4listE">
+<span id="_CPPv3N6Ifc4x120IfcCurveBoundedPlane4listE"></span><span id="_CPPv2N6Ifc4x120IfcCurveBoundedPlane4listE"></span><span id="Ifc4x1::IfcCurveBoundedPlane::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_curve_bounded_plane_1a748d00770271e65863e32749d44fb381"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x120IfcCurveBoundedPlaneE" title="Ifc4x1::IfcCurveBoundedPlane">IfcCurveBoundedPlane</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcCurveBoundedPlane4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcCurveBoundedPlane12BasisSurfaceEv">
+<span id="_CPPv3NK6Ifc4x120IfcCurveBoundedPlane12BasisSurfaceEv"></span><span id="_CPPv2NK6Ifc4x120IfcCurveBoundedPlane12BasisSurfaceEv"></span><span id="Ifc4x1::IfcCurveBoundedPlane::BasisSurfaceC"></span><span class="target" id="class_ifc4x1_1_1_ifc_curve_bounded_plane_1a5f665c7af0124352c51f4b829a6324e6"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_plane.html#_CPPv4N6Ifc4x18IfcPlaneE" title="Ifc4x1::IfcPlane">IfcPlane</a> *<code class="sig-name descname">BasisSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcCurveBoundedPlane12BasisSurfaceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The surface to be bound. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcCurveBoundedPlane15setBasisSurfaceEPN6Ifc4x18IfcPlaneE">
+<span id="_CPPv3N6Ifc4x120IfcCurveBoundedPlane15setBasisSurfaceEPN6Ifc4x18IfcPlaneE"></span><span id="_CPPv2N6Ifc4x120IfcCurveBoundedPlane15setBasisSurfaceEPN6Ifc4x18IfcPlaneE"></span><span id="Ifc4x1::IfcCurveBoundedPlane::setBasisSurface__Ifc4x1::IfcPlaneP"></span><span class="target" id="class_ifc4x1_1_1_ifc_curve_bounded_plane_1a9de721e01dc4e380a3420fa489fabf7c"></span>void <code class="sig-name descname">setBasisSurface</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_plane.html#_CPPv4N6Ifc4x18IfcPlaneE" title="Ifc4x1::IfcPlane">IfcPlane</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcCurveBoundedPlane15setBasisSurfaceEPN6Ifc4x18IfcPlaneE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcCurveBoundedPlane13OuterBoundaryEv">
+<span id="_CPPv3NK6Ifc4x120IfcCurveBoundedPlane13OuterBoundaryEv"></span><span id="_CPPv2NK6Ifc4x120IfcCurveBoundedPlane13OuterBoundaryEv"></span><span id="Ifc4x1::IfcCurveBoundedPlane::OuterBoundaryC"></span><span class="target" id="class_ifc4x1_1_1_ifc_curve_bounded_plane_1aef7f2f40760496b799b4f8162dcbfc85"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_curve.html#_CPPv4N6Ifc4x18IfcCurveE" title="Ifc4x1::IfcCurve">IfcCurve</a> *<code class="sig-name descname">OuterBoundary</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcCurveBoundedPlane13OuterBoundaryEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The outer boundary of the surface. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcCurveBoundedPlane16setOuterBoundaryEPN6Ifc4x18IfcCurveE">
+<span id="_CPPv3N6Ifc4x120IfcCurveBoundedPlane16setOuterBoundaryEPN6Ifc4x18IfcCurveE"></span><span id="_CPPv2N6Ifc4x120IfcCurveBoundedPlane16setOuterBoundaryEPN6Ifc4x18IfcCurveE"></span><span id="Ifc4x1::IfcCurveBoundedPlane::setOuterBoundary__Ifc4x1::IfcCurveP"></span><span class="target" id="class_ifc4x1_1_1_ifc_curve_bounded_plane_1ac1db387e8084e7da1d3b0c2918003cba"></span>void <code class="sig-name descname">setOuterBoundary</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_curve.html#_CPPv4N6Ifc4x18IfcCurveE" title="Ifc4x1::IfcCurve">IfcCurve</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcCurveBoundedPlane16setOuterBoundaryEPN6Ifc4x18IfcCurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcCurveBoundedPlane15InnerBoundariesEv">
+<span id="_CPPv3NK6Ifc4x120IfcCurveBoundedPlane15InnerBoundariesEv"></span><span id="_CPPv2NK6Ifc4x120IfcCurveBoundedPlane15InnerBoundariesEv"></span><span id="Ifc4x1::IfcCurveBoundedPlane::InnerBoundariesC"></span><span class="target" id="class_ifc4x1_1_1_ifc_curve_bounded_plane_1a58e35b9f544304acdb0899e822418f93"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_curve.html#_CPPv4N6Ifc4x18IfcCurveE" title="Ifc4x1::IfcCurve">IfcCurve</a>&gt;::ptr <code class="sig-name descname">InnerBoundaries</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcCurveBoundedPlane15InnerBoundariesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An optional set of inner boundaries. They shall not intersect each other or the outer boundary. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcCurveBoundedPlane18setInnerBoundariesEN22IfcTemplatedEntityListIN6Ifc4x18IfcCurveEE3ptrE">
+<span id="_CPPv3N6Ifc4x120IfcCurveBoundedPlane18setInnerBoundariesEN22IfcTemplatedEntityListIN6Ifc4x18IfcCurveEE3ptrE"></span><span id="_CPPv2N6Ifc4x120IfcCurveBoundedPlane18setInnerBoundariesEN22IfcTemplatedEntityListIN6Ifc4x18IfcCurveEE3ptrE"></span><span id="Ifc4x1::IfcCurveBoundedPlane::setInnerBoundaries__IfcTemplatedEntityList:Ifc4x1::IfcCurve:::ptr"></span><span class="target" id="class_ifc4x1_1_1_ifc_curve_bounded_plane_1a5dfd503ed2ab2d0000b610daa1544e51"></span>void <code class="sig-name descname">setInnerBoundaries</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_curve.html#_CPPv4N6Ifc4x18IfcCurveE" title="Ifc4x1::IfcCurve">IfcCurve</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcCurveBoundedPlane18setInnerBoundariesEN22IfcTemplatedEntityListIN6Ifc4x18IfcCurveEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcCurveBoundedPlane11declarationEv">
+<span id="_CPPv3NK6Ifc4x120IfcCurveBoundedPlane11declarationEv"></span><span id="_CPPv2NK6Ifc4x120IfcCurveBoundedPlane11declarationEv"></span><span id="Ifc4x1::IfcCurveBoundedPlane::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_curve_bounded_plane_1aa720667e8c7b624a8577cc82f7caf392"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcCurveBoundedPlane11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcCurveBoundedPlane20IfcCurveBoundedPlaneEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x120IfcCurveBoundedPlane20IfcCurveBoundedPlaneEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x120IfcCurveBoundedPlane20IfcCurveBoundedPlaneEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcCurveBoundedPlane::IfcCurveBoundedPlane__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_curve_bounded_plane_1a3fa857ec54319b9463655b37693ff4cc"></span><code class="sig-name descname">IfcCurveBoundedPlane</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcCurveBoundedPlane20IfcCurveBoundedPlaneEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcCurveBoundedPlane20IfcCurveBoundedPlaneEPN6Ifc4x18IfcPlaneEPN6Ifc4x18IfcCurveEN22IfcTemplatedEntityListIN6Ifc4x18IfcCurveEE3ptrE">
+<span id="_CPPv3N6Ifc4x120IfcCurveBoundedPlane20IfcCurveBoundedPlaneEPN6Ifc4x18IfcPlaneEPN6Ifc4x18IfcCurveEN22IfcTemplatedEntityListIN6Ifc4x18IfcCurveEE3ptrE"></span><span id="_CPPv2N6Ifc4x120IfcCurveBoundedPlane20IfcCurveBoundedPlaneEPN6Ifc4x18IfcPlaneEPN6Ifc4x18IfcCurveEN22IfcTemplatedEntityListIN6Ifc4x18IfcCurveEE3ptrE"></span><span id="Ifc4x1::IfcCurveBoundedPlane::IfcCurveBoundedPlane__Ifc4x1::IfcPlaneP.Ifc4x1::IfcCurveP.IfcTemplatedEntityList:Ifc4x1::IfcCurve:::ptr"></span><span class="target" id="class_ifc4x1_1_1_ifc_curve_bounded_plane_1aa0eea9870c23be810bcc6bb75fe7ccf3"></span><code class="sig-name descname">IfcCurveBoundedPlane</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_plane.html#_CPPv4N6Ifc4x18IfcPlaneE" title="Ifc4x1::IfcPlane">IfcPlane</a> *<em>v1_BasisSurface</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_curve.html#_CPPv4N6Ifc4x18IfcCurveE" title="Ifc4x1::IfcCurve">IfcCurve</a> *<em>v2_OuterBoundary</em>, <a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_curve.html#_CPPv4N6Ifc4x18IfcCurveE" title="Ifc4x1::IfcCurve">IfcCurve</a>&gt;::ptr <em>v3_InnerBoundaries</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcCurveBoundedPlane20IfcCurveBoundedPlaneEPN6Ifc4x18IfcPlaneEPN6Ifc4x18IfcCurveEN22IfcTemplatedEntityListIN6Ifc4x18IfcCurveEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcCurveBoundedPlane5ClassEv">
+<span id="_CPPv3N6Ifc4x120IfcCurveBoundedPlane5ClassEv"></span><span id="_CPPv2N6Ifc4x120IfcCurveBoundedPlane5ClassEv"></span><span id="Ifc4x1::IfcCurveBoundedPlane::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_curve_bounded_plane_1a8ec8c9a35efe92d73c71f015258ac7d3"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcCurveBoundedPlane5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_curve.html" title="previous chapter">Class Ifc4x1::IfcCurve</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_curve_bounded_surface.html" title="next chapter">Class Ifc4x1::IfcCurveBoundedSurface</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_curve_bounded_plane.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

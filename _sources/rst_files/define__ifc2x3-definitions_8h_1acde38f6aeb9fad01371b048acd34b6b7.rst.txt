@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1acde38f6aeb9fad01371b048acd34b6b7:
+
+Define SCHEMA_IfcObject_ObjectType_IS_OPTIONAL
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcObject_ObjectType_IS_OPTIONAL

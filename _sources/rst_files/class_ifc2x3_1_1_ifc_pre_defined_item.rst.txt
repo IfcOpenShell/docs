@@ -1,0 +1,40 @@
+.. _exhale_class_class_ifc2x3_1_1_ifc_pre_defined_item:
+
+Class Ifc2x3::IfcPreDefinedItem
+===============================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcUtil::IfcBaseEntity`` (:ref:`exhale_class_class_ifc_util_1_1_ifc_base_entity`)
+
+
+Derived Types
+*************
+
+- ``public Ifc2x3::IfcPreDefinedColour`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_pre_defined_colour`)
+- ``public Ifc2x3::IfcPreDefinedCurveFont`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_pre_defined_curve_font`)
+- ``public Ifc2x3::IfcPreDefinedSymbol`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_pre_defined_symbol`)
+- ``public Ifc2x3::IfcPreDefinedTextFont`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_pre_defined_text_font`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc2x3::IfcPreDefinedItem
+   :members:
+   :protected-members:
+   :undoc-members:

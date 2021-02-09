@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Struct Ifc4x2::IfcDoorTypeOperationEnum &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct Ifc4x2::IfcDuctFittingTypeEnum" href="struct_ifc4x2_1_1_ifc_duct_fitting_type_enum.html" />
+    <link rel="prev" title="Struct Ifc4x2::IfcDoorTypeEnum" href="struct_ifc4x2_1_1_ifc_door_type_enum.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="struct-ifc4x2-ifcdoortypeoperationenum">
+<span id="exhale-struct-struct-ifc4x2-1-1-ifc-door-type-operation-enum"></span><h1>Struct Ifc4x2::IfcDoorTypeOperationEnum<a class="headerlink" href="#struct-ifc4x2-ifcdoortypeoperationenum" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This struct is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp struct">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnumE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnumE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnumE"></span><span id="Ifc4x2::IfcDoorTypeOperationEnum"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum"></span><em class="property">struct </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcDoorTypeOperationEnum</code><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp enum">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5ValueE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5ValueE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5ValueE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7b"></span><em class="property">enum </em><code class="sig-name descname">Value</code><br /></dt>
+<dd><p>This enumeration defines the basic ways to describe how doors operate, as shown in Figure 66. It combines the partitioning of the door into a single or multiple door panels and the operation types of that panels.</p>
+<p>In the most common case of swinging doors the <a class="reference internal" href="#struct_ifc4x2_1_1_ifc_door_type_operation_enum"><span class="std std-ref">IfcDoorTypeOperationEnum</span></a> defined the hinge side (left hing or right hung) and the opening direction (opening to the left, opening to the right). Whether the door opens inwards or outwards is determined by the local coordinate system of the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a>, or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door_standard_case"><span class="std std-ref">IfcDoorStandardCase</span></a>.</p>
+<p>NOTEThere are different definitions in various countries on what a left opening or left hung or left swing door is (same for right). Therefore the IFC definition terms may derivate from the local standard and may need to be mapped appropriately.</p>
+<p>HISTORY New Enumeration in IFC2x4.</p>
+<p>IFC2x4 CHANGE The new <a class="reference internal" href="#struct_ifc4x2_1_1_ifc_door_type_operation_enum"><span class="std std-ref">IfcDoorTypeOperationEnum</span></a> replaces the use of <a class="reference internal" href="struct_ifc4x2_1_1_ifc_door_style_operation_enum.html#struct_ifc4x2_1_1_ifc_door_style_operation_enum"><span class="std std-ref">IfcDoorStyleOperationEnum</span></a> that is deprecated from IFC2x4 onwards.</p>
+<p>Enumerator Description Figures</p>
+<p>SINGLE_SWING_LEFT</p>
+<p>Door with one panel that opens (swings) to the left. The hinges are on the left side as viewed in the direction of the positive y-axis. Note: Direction of swing (whether in or out) is determined at the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a> or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door_standard_case"><span class="std std-ref">IfcDoorStandardCase</span></a>.</p>
+<p>SINGLE_SWING_RIGHT</p>
+<p>Door with one panel that opens (swings) to the right. The hinges are on the right side as viewed in the direction of the positive y-axis. Note: Direction of swing (whether in or out) is determined at the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a> or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door_standard_case"><span class="std std-ref">IfcDoorStandardCase</span></a>.</p>
+<p>DOUBLE_DOOR_ SINGLE_SWING</p>
+<p>Door with two panels, one opens (swings) to the left the other opens (swings) to the right. Note: Direction of swing (whether in or out) is determined at the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a> or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door_standard_case"><span class="std std-ref">IfcDoorStandardCase</span></a>.</p>
+<p>DOUBLE_SWING_LEFT</p>
+<p>Door with one panel that swings in both directions and to the left in the main trafic direction. Also called double acting door. Note: Direction of main swing (whether in or out) is determined at the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a> or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door_standard_case"><span class="std std-ref">IfcDoorStandardCase</span></a>.</p>
+<p>DOUBLE_SWING_RIGHT</p>
+<p>Door with one panel that swings in both directions and to the right in the main trafic direction. Also called double acting door. Note: Direction of main swing (whether in or out) is determined at the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a> or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door_standard_case"><span class="std std-ref">IfcDoorStandardCase</span></a>.</p>
+<p>DOUBLE_DOOR_ DOUBLE_SWING</p>
+<p>Door with two panels, one swings in both directions and to the right in the main trafic direction the other swings also in both directions and to the left in the main trafic direction. Note: Direction of main swing (whether in or out) is determined at the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a> or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door_standard_case"><span class="std std-ref">IfcDoorStandardCase</span></a>.</p>
+<p>DOUBLE_DOOR_ SINGLE_SWING_ OPPOSITE_LEFT</p>
+<p>Door with two panels that both open to the left, one panel swings in one direction and the other panel swings in the opposite direction. Note: Direction of main swing (whether in or out) is determined at the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a> or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door_standard_case"><span class="std std-ref">IfcDoorStandardCase</span></a>.</p>
+<p>DOUBLE_DOOR_ SINGLE_SWING_ OPPOSITE_RIGHT Door with two panels that both open to the right, one panel swings in one direction and the other panel swings in the opposite direction. Note: Direction of main swing (whether in or out) is determined at the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a> or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door_standard_case"><span class="std std-ref">IfcDoorStandardCase</span></a>.</p>
+<p>SLIDING_TO_LEFT</p>
+<p>Door with one panel that is sliding to the left.</p>
+<p>SLIDING_TO_RIGHT</p>
+<p>Door with one panel that is sliding to the right.</p>
+<p>DOUBLE_DOOR_SLIDING</p>
+<p>Door with two panels, one is sliding to the left the other is sliding to the right.</p>
+<p>FOLDING_TO_LEFT</p>
+<p>Door with one panel that is folding to the left.</p>
+<p>FOLDING_TO_RIGHT Door with one panel that is folding to the right.</p>
+<p>DOUBLE_DOOR_FOLDING</p>
+<p>Door with two panels, one is folding to the left the other is folding to the right.</p>
+<p>REVOLVING</p>
+<p>An entrance door consisting of four leaves set in a form of a cross and revolving around a central vertical axis (the four panels are described by a single <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a> panel property).</p>
+<p>ROLLINGUP</p>
+<p>Door that opens by rolling up. Note: Whether it rolls up to the inside or outside is determined at the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a>.</p>
+<p>SWING_FIXED_LEFT Door with one panel that opens (swings) to the left and one fixed panel. The hinges of the swinging panel are on the left side as viewed in the direction of the positive y-axis. Note: Direction of swing (whether in or out) is determined at the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a> or or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door_standard_case"><span class="std std-ref">IfcDoorStandardCase</span></a>. IFC2x4 CHANGE This is a new enumerator compared with previous <a class="reference internal" href="struct_ifc4x2_1_1_ifc_door_style_operation_enum.html#struct_ifc4x2_1_1_ifc_door_style_operation_enum"><span class="std std-ref">IfcDoorStyleOperationEnum</span></a>.</p>
+<p>SWING_FIXED_RIGHT Door with one panel that opens (swings) to the right and one fixed panel. The hinges of the swinging panel are on the right side as viewed in the direction of the positive y-axis. Note: Direction of swing (whether in or out) is determined at the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a> or or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door_standard_case"><span class="std std-ref">IfcDoorStandardCase</span></a>. IFC2x4 CHANGE This is a new enumerator compared with previous <a class="reference internal" href="struct_ifc4x2_1_1_ifc_door_style_operation_enum.html#struct_ifc4x2_1_1_ifc_door_style_operation_enum"><span class="std std-ref">IfcDoorStyleOperationEnum</span></a>.</p>
+<p>USERDEFINED User defined operation type</p>
+<p>NOTDEFINED A door with a not defined operation type is considered as a door with a lining, but no panels. It is thereby always open.</p>
+<p>Figure 66 — Door operations</p>
+<p>NOTE</p>
+<p>Figures are shown in the ground view. Figures (symbolic representation) depend on the national building code. These figures are only shown as illustrations, the actual representation in the ground view might differ. Open to the outside is declared as open into the direction of the positive y-axis, determined by the ObjectPlacement at <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a> The location of the panel relative to the wall thickness is defined by theObjectPlacement at <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door"><span class="std std-ref">IfcDoor</span></a>, and the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_door_lining_properties_1ae392646b4aecee05a627e05c96e5e69c"><span class="std std-ref">IfcDoorLiningProperties.LiningOffset</span></a> parameter. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value38IfcDoorTypeOperation_SINGLE_SWING_LEFTE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value38IfcDoorTypeOperation_SINGLE_SWING_LEFTE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value38IfcDoorTypeOperation_SINGLE_SWING_LEFTE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7ba8a022a9319432d60cfcc8761d7426498"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_SINGLE_SWING_LEFT</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value39IfcDoorTypeOperation_SINGLE_SWING_RIGHTE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value39IfcDoorTypeOperation_SINGLE_SWING_RIGHTE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value39IfcDoorTypeOperation_SINGLE_SWING_RIGHTE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7ba03668bfbeb79e40bb67606788d97c28c"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_SINGLE_SWING_RIGHT</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value45IfcDoorTypeOperation_DOUBLE_DOOR_SINGLE_SWINGE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value45IfcDoorTypeOperation_DOUBLE_DOOR_SINGLE_SWINGE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value45IfcDoorTypeOperation_DOUBLE_DOOR_SINGLE_SWINGE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7ba4cc993635c7c2b8cb974e0da5a09f5f0"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_DOUBLE_DOOR_SINGLE_SWING</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value59IfcDoorTypeOperation_DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFTE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value59IfcDoorTypeOperation_DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFTE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value59IfcDoorTypeOperation_DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFTE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7ba2a510a0f0a0b6c13a46811a178b5c0a5"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value60IfcDoorTypeOperation_DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHTE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value60IfcDoorTypeOperation_DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHTE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value60IfcDoorTypeOperation_DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHTE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7ba7b3d3206a9bfdcc327d3770021af0fac"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value38IfcDoorTypeOperation_DOUBLE_SWING_LEFTE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value38IfcDoorTypeOperation_DOUBLE_SWING_LEFTE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value38IfcDoorTypeOperation_DOUBLE_SWING_LEFTE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7badbf62438944ea7280faf500ebc47a068"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_DOUBLE_SWING_LEFT</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value39IfcDoorTypeOperation_DOUBLE_SWING_RIGHTE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value39IfcDoorTypeOperation_DOUBLE_SWING_RIGHTE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value39IfcDoorTypeOperation_DOUBLE_SWING_RIGHTE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7ba3913c4e7e9893c4ac791fc202e5e3ba4"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_DOUBLE_SWING_RIGHT</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value45IfcDoorTypeOperation_DOUBLE_DOOR_DOUBLE_SWINGE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value45IfcDoorTypeOperation_DOUBLE_DOOR_DOUBLE_SWINGE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value45IfcDoorTypeOperation_DOUBLE_DOOR_DOUBLE_SWINGE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7ba4d68751d55abea2a287492f121e8027e"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_DOUBLE_DOOR_DOUBLE_SWING</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value36IfcDoorTypeOperation_SLIDING_TO_LEFTE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value36IfcDoorTypeOperation_SLIDING_TO_LEFTE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value36IfcDoorTypeOperation_SLIDING_TO_LEFTE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7baac2807b285112037731f9393f98e0c36"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_SLIDING_TO_LEFT</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value37IfcDoorTypeOperation_SLIDING_TO_RIGHTE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value37IfcDoorTypeOperation_SLIDING_TO_RIGHTE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value37IfcDoorTypeOperation_SLIDING_TO_RIGHTE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7ba100f1d331ae586533bc529d6f8c0bfac"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_SLIDING_TO_RIGHT</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value40IfcDoorTypeOperation_DOUBLE_DOOR_SLIDINGE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value40IfcDoorTypeOperation_DOUBLE_DOOR_SLIDINGE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value40IfcDoorTypeOperation_DOUBLE_DOOR_SLIDINGE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7ba181d0a69a657d801e5c87dd517ebb6b3"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_DOUBLE_DOOR_SLIDING</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value36IfcDoorTypeOperation_FOLDING_TO_LEFTE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value36IfcDoorTypeOperation_FOLDING_TO_LEFTE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value36IfcDoorTypeOperation_FOLDING_TO_LEFTE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7ba7924cdf6445d2d6b4c3c9250d9e40cf4"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_FOLDING_TO_LEFT</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value37IfcDoorTypeOperation_FOLDING_TO_RIGHTE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value37IfcDoorTypeOperation_FOLDING_TO_RIGHTE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value37IfcDoorTypeOperation_FOLDING_TO_RIGHTE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7ba65716704346e7c65f613c05fbb908cf9"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_FOLDING_TO_RIGHT</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value40IfcDoorTypeOperation_DOUBLE_DOOR_FOLDINGE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value40IfcDoorTypeOperation_DOUBLE_DOOR_FOLDINGE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value40IfcDoorTypeOperation_DOUBLE_DOOR_FOLDINGE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7ba3080fcdea89f90450be56063743ac681"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_DOUBLE_DOOR_FOLDING</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value30IfcDoorTypeOperation_REVOLVINGE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value30IfcDoorTypeOperation_REVOLVINGE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value30IfcDoorTypeOperation_REVOLVINGE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7ba46824efd25b5c519eb9ce0f268c97450"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_REVOLVING</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value30IfcDoorTypeOperation_ROLLINGUPE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value30IfcDoorTypeOperation_ROLLINGUPE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value30IfcDoorTypeOperation_ROLLINGUPE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7ba0fcf575e041e193156667ff9769956de"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_ROLLINGUP</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value37IfcDoorTypeOperation_SWING_FIXED_LEFTE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value37IfcDoorTypeOperation_SWING_FIXED_LEFTE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value37IfcDoorTypeOperation_SWING_FIXED_LEFTE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7baa15d90a4e3e29710dc3dfc3f7147bc5d"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_SWING_FIXED_LEFT</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value38IfcDoorTypeOperation_SWING_FIXED_RIGHTE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value38IfcDoorTypeOperation_SWING_FIXED_RIGHTE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value38IfcDoorTypeOperation_SWING_FIXED_RIGHTE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7bac37aec2faf2b22851a90212e34be6406"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_SWING_FIXED_RIGHT</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value32IfcDoorTypeOperation_USERDEFINEDE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value32IfcDoorTypeOperation_USERDEFINEDE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value32IfcDoorTypeOperation_USERDEFINEDE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7ba1cab8dca5f15e2e8f0258073fb60b9a0"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_USERDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5Value31IfcDoorTypeOperation_NOTDEFINEDE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum5Value31IfcDoorTypeOperation_NOTDEFINEDE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum5Value31IfcDoorTypeOperation_NOTDEFINEDE"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a8978ba09c0463ebb0b47d9fc149a0c7ba203d1ff0c8de2174f9c37c6c70073b30"></span><em class="property">enumerator </em><code class="sig-name descname">IfcDoorTypeOperation_NOTDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum8ToStringE5Value">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum8ToStringE5Value"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum8ToStringE5Value"></span><span id="Ifc4x2::IfcDoorTypeOperationEnum::ToString__Value"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1aeb06c182632f656f1a5eedfc4f6282d4"></span>IFC_PARSE_API <em class="property">const</em> char *<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5ValueE" title="Ifc4x2::IfcDoorTypeOperationEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum10FromStringERKNSt6stringE">
+<span id="_CPPv3N6Ifc4x224IfcDoorTypeOperationEnum10FromStringERKNSt6stringE"></span><span id="_CPPv2N6Ifc4x224IfcDoorTypeOperationEnum10FromStringERKNSt6stringE"></span><span id="Ifc4x2::IfcDoorTypeOperationEnum::FromString__ssCR"></span><span class="target" id="struct_ifc4x2_1_1_ifc_door_type_operation_enum_1a2422ddb7b7c3d0521da560051a6418a2"></span>IFC_PARSE_API <a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x224IfcDoorTypeOperationEnum5ValueE" title="Ifc4x2::IfcDoorTypeOperationEnum::Value">Value</a> <code class="sig-name descname">FromString</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>s</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="struct_ifc4x2_1_1_ifc_door_type_enum.html" title="previous chapter">Struct Ifc4x2::IfcDoorTypeEnum</a></li>
+      <li>Next: <a href="struct_ifc4x2_1_1_ifc_duct_fitting_type_enum.html" title="next chapter">Struct Ifc4x2::IfcDuctFittingTypeEnum</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/struct_ifc4x2_1_1_ifc_door_type_operation_enum.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

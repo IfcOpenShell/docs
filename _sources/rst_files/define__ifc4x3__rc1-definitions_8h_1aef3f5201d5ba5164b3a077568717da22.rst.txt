@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1aef3f5201d5ba5164b3a077568717da22:
+
+Define SCHEMA_IfcObjectPlacement_HAS_PlacesObject
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcObjectPlacement_HAS_PlacesObject

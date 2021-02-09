@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1accc97c5f1933e8e859b3a6d90d8288fb:
+
+Define SCHEMA_IfcMaterialClassificationRelationship_HAS_MaterialClassifications
+===============================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMaterialClassificationRelationship_HAS_MaterialClassifications

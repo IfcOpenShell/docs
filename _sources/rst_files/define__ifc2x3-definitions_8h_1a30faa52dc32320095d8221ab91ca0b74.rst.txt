@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a30faa52dc32320095d8221ab91ca0b74:
+
+Define SCHEMA_IfcExternalReference_HAS_Name
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcExternalReference_HAS_Name

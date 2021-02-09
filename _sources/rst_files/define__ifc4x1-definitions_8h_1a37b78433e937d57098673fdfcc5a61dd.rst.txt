@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1a37b78433e937d57098673fdfcc5a61dd:
+
+Define SCHEMA_IfcRecurrencePattern_TimePeriods_IS_OPTIONAL
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRecurrencePattern_TimePeriods_IS_OPTIONAL

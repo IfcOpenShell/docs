@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcPropertyBoundedValue &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcPropertyDefinition" href="class_ifc4x2_1_1_ifc_property_definition.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcPropertyAbstraction" href="class_ifc4x2_1_1_ifc_property_abstraction.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcpropertyboundedvalue">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-property-bounded-value"></span><h1>Class Ifc4x2::IfcPropertyBoundedValue<a class="headerlink" href="#class-ifc4x2-ifcpropertyboundedvalue" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcSimpleProperty</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_simple_property.html#exhale-class-class-ifc4x2-1-1-ifc-simple-property"><span class="std std-ref">Class Ifc4x2::IfcSimpleProperty</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x223IfcPropertyBoundedValueE">
+<span id="_CPPv3N6Ifc4x223IfcPropertyBoundedValueE"></span><span id="_CPPv2N6Ifc4x223IfcPropertyBoundedValueE"></span><span id="Ifc4x2::IfcPropertyBoundedValue"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcPropertyBoundedValue</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_simple_property.html#_CPPv4N6Ifc4x217IfcSimplePropertyE" title="Ifc4x2::IfcSimpleProperty">IfcSimpleProperty</a><a class="headerlink" href="#_CPPv4N6Ifc4x223IfcPropertyBoundedValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A property with a bounded value, <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_property_bounded_value"><span class="std std-ref">IfcPropertyBoundedValue</span></a>, defines a property object which has a maximum of two (numeric or descriptive) values assigned, the first value specifying the upper bound and the second value specifying the lower bound. It defines a property - value bound (min-max) combination for which the property Name, an optional Description,the optional UpperBoundValue with measure type, the optional LowerBoundValue with measure type, and the optional Unit is given.</p>
+<p>A set point value can be provided in addition to the upper and lower bound values for operational value setting.</p>
+<p>The unit is handled by the Unit attribute:</p>
+<p>If the Unit attribute is not given, then the unit is already implied by the type of IfcMeasureValue or IfcDerivedMeasureValue. The associated unit can be found at the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_unit_assignment"><span class="std std-ref">IfcUnitAssignment</span></a> globally defined at the project level (<a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_context_1a490df070e4702301bd747d0405645239"><span class="std std-ref">IfcProject.UnitsInContext</span></a>).</p>
+<p>If the Unit attribute is given, then the unit assigned by the Unit attribute overrides the globally assigned unit.</p>
+<p>The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_property_bounded_value"><span class="std std-ref">IfcPropertyBoundedValue</span></a> allows for the specification of an interval for the value component of the property description. If either the LowerBoundValue or the UpperBoundValue is not given, then it indicates an open bound (either a minimum value or a maximum value). The interval is by definition inclusive, that is, the value given for the LowerBoundValue or the UpperBoundValue is included in the interval.</p>
+<p>NOTE An <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_property_bounded_value"><span class="std std-ref">IfcPropertyBoundedValue</span></a> may be exchanged with no values assigned yet. In this case the LowerBoundValue and the UpperBoundValue are set to NIL.</p>
+<p>Examples of a property with bounded value are:</p>
+<p>Name</p>
+<p>UpperBoundValue</p>
+<p>LowerBoundValue</p>
+<p>SetPointValue</p>
+<p>Type (through IfcValue, WR1 ensures same type for both values)</p>
+<p>Unit</p>
+<p>OverallHeight</p>
+<p>1930</p>
+<p>2300</p>
+<p><a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_positive_length_measure"><span class="std std-ref">IfcPositiveLengthMeasure</span></a></p>
+<p><ul class="simple">
+<li><p>OverallWidth</p></li>
+</ul>
+</p>
+<p>0.9</p>
+<p>1.25</p>
+<p><a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_positive_length_measure"><span class="std std-ref">IfcPositiveLengthMeasure</span></a></p>
+<p>m</p>
+<p>MaxHeight</p>
+<p>20.0</p>
+<p><a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_positive_length_measure"><span class="std std-ref">IfcPositiveLengthMeasure</span></a></p>
+<p><ul class="simple">
+<li><p>MinWeight</p></li>
+</ul>
+</p>
+<p>20</p>
+<p><a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_mass_measure"><span class="std std-ref">IfcMassMeasure</span></a></p>
+<p>kg</p>
+<p>HISTORYNew entity in IFC Release 2x.</p>
+<p>IFC2x2 CHANGE The attribute type of the attribute UpperBoundValue and LowerBoundValue has been changed from mandatory to optional with upward compatibility for file based exchange.</p>
+<p>IFC2x4 CHANGE The attribute SetPointValue has been added.</p>
+<p>Informal proposition:</p>
+<p>If the measure type for the upper and lover bound value is a numeric measure, then the following shall be true: UpperBoundValue &gt; LowerBoundValue. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x223IfcPropertyBoundedValue4listE">
+<span id="_CPPv3N6Ifc4x223IfcPropertyBoundedValue4listE"></span><span id="_CPPv2N6Ifc4x223IfcPropertyBoundedValue4listE"></span><span id="Ifc4x2::IfcPropertyBoundedValue::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value_1af889ea2bf254daf81dd55a55dea7bb9a"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x223IfcPropertyBoundedValueE" title="Ifc4x2::IfcPropertyBoundedValue">IfcPropertyBoundedValue</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x223IfcPropertyBoundedValue4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x223IfcPropertyBoundedValue18hasUpperBoundValueEv">
+<span id="_CPPv3NK6Ifc4x223IfcPropertyBoundedValue18hasUpperBoundValueEv"></span><span id="_CPPv2NK6Ifc4x223IfcPropertyBoundedValue18hasUpperBoundValueEv"></span><span id="Ifc4x2::IfcPropertyBoundedValue::hasUpperBoundValueC"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value_1a0b1823f405c991464887376c2e62dda0"></span>bool <code class="sig-name descname">hasUpperBoundValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x223IfcPropertyBoundedValue18hasUpperBoundValueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute UpperBoundValue is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_property_bounded_value"><span class="std std-ref">IfcPropertyBoundedValue</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x223IfcPropertyBoundedValue15UpperBoundValueEv">
+<span id="_CPPv3NK6Ifc4x223IfcPropertyBoundedValue15UpperBoundValueEv"></span><span id="_CPPv2NK6Ifc4x223IfcPropertyBoundedValue15UpperBoundValueEv"></span><span id="Ifc4x2::IfcPropertyBoundedValue::UpperBoundValueC"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value_1aa962ff7e1f9cb43dab95222fc78ce96d"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x28IfcValueE" title="Ifc4x2::IfcValue">IfcValue</a> *<code class="sig-name descname">UpperBoundValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x223IfcPropertyBoundedValue15UpperBoundValueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Upper bound value for the interval defining the property value. If the value is not given, it indicates an open bound (all values to be greater than or equal to LowerBoundValue). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x223IfcPropertyBoundedValue18setUpperBoundValueEPN6Ifc4x28IfcValueE">
+<span id="_CPPv3N6Ifc4x223IfcPropertyBoundedValue18setUpperBoundValueEPN6Ifc4x28IfcValueE"></span><span id="_CPPv2N6Ifc4x223IfcPropertyBoundedValue18setUpperBoundValueEPN6Ifc4x28IfcValueE"></span><span id="Ifc4x2::IfcPropertyBoundedValue::setUpperBoundValue__Ifc4x2::IfcValueP"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value_1a55c9244e78e22139d1b0e3b0d9d10f52"></span>void <code class="sig-name descname">setUpperBoundValue</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x28IfcValueE" title="Ifc4x2::IfcValue">IfcValue</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x223IfcPropertyBoundedValue18setUpperBoundValueEPN6Ifc4x28IfcValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x223IfcPropertyBoundedValue18hasLowerBoundValueEv">
+<span id="_CPPv3NK6Ifc4x223IfcPropertyBoundedValue18hasLowerBoundValueEv"></span><span id="_CPPv2NK6Ifc4x223IfcPropertyBoundedValue18hasLowerBoundValueEv"></span><span id="Ifc4x2::IfcPropertyBoundedValue::hasLowerBoundValueC"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value_1a40ad346a1b3b2fd039a270a3a77e444b"></span>bool <code class="sig-name descname">hasLowerBoundValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x223IfcPropertyBoundedValue18hasLowerBoundValueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute LowerBoundValue is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_property_bounded_value"><span class="std std-ref">IfcPropertyBoundedValue</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x223IfcPropertyBoundedValue15LowerBoundValueEv">
+<span id="_CPPv3NK6Ifc4x223IfcPropertyBoundedValue15LowerBoundValueEv"></span><span id="_CPPv2NK6Ifc4x223IfcPropertyBoundedValue15LowerBoundValueEv"></span><span id="Ifc4x2::IfcPropertyBoundedValue::LowerBoundValueC"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value_1afe29eac99b16ef1d270e606dfa48216e"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x28IfcValueE" title="Ifc4x2::IfcValue">IfcValue</a> *<code class="sig-name descname">LowerBoundValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x223IfcPropertyBoundedValue15LowerBoundValueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Lower bound value for the interval defining the property value. If the value is not given, it indicates an open bound (all values to be lower than or equal to UpperBoundValue). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x223IfcPropertyBoundedValue18setLowerBoundValueEPN6Ifc4x28IfcValueE">
+<span id="_CPPv3N6Ifc4x223IfcPropertyBoundedValue18setLowerBoundValueEPN6Ifc4x28IfcValueE"></span><span id="_CPPv2N6Ifc4x223IfcPropertyBoundedValue18setLowerBoundValueEPN6Ifc4x28IfcValueE"></span><span id="Ifc4x2::IfcPropertyBoundedValue::setLowerBoundValue__Ifc4x2::IfcValueP"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value_1a161f399139d4c5db8e9e7713cc130f26"></span>void <code class="sig-name descname">setLowerBoundValue</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x28IfcValueE" title="Ifc4x2::IfcValue">IfcValue</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x223IfcPropertyBoundedValue18setLowerBoundValueEPN6Ifc4x28IfcValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x223IfcPropertyBoundedValue7hasUnitEv">
+<span id="_CPPv3NK6Ifc4x223IfcPropertyBoundedValue7hasUnitEv"></span><span id="_CPPv2NK6Ifc4x223IfcPropertyBoundedValue7hasUnitEv"></span><span id="Ifc4x2::IfcPropertyBoundedValue::hasUnitC"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value_1a104d39bed8f2c98e935aee5b6588d40a"></span>bool <code class="sig-name descname">hasUnit</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x223IfcPropertyBoundedValue7hasUnitEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Unit is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_property_bounded_value"><span class="std std-ref">IfcPropertyBoundedValue</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x223IfcPropertyBoundedValue4UnitEv">
+<span id="_CPPv3NK6Ifc4x223IfcPropertyBoundedValue4UnitEv"></span><span id="_CPPv2NK6Ifc4x223IfcPropertyBoundedValue4UnitEv"></span><span id="Ifc4x2::IfcPropertyBoundedValue::UnitC"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value_1acd00e1a557dddc47cc2b98f326263849"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x27IfcUnitE" title="Ifc4x2::IfcUnit">IfcUnit</a> *<code class="sig-name descname">Unit</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x223IfcPropertyBoundedValue4UnitEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Unit for the upper and lower bound values, if not given, the default value for the measure type is used as defined by the global unit assignment at IfcProject.UnitInContext. The applicable unit is then selected by the underlying TYPE of the UpperBoundValue, LowerBoundValue, and SetPointValue) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x223IfcPropertyBoundedValue7setUnitEPN6Ifc4x27IfcUnitE">
+<span id="_CPPv3N6Ifc4x223IfcPropertyBoundedValue7setUnitEPN6Ifc4x27IfcUnitE"></span><span id="_CPPv2N6Ifc4x223IfcPropertyBoundedValue7setUnitEPN6Ifc4x27IfcUnitE"></span><span id="Ifc4x2::IfcPropertyBoundedValue::setUnit__Ifc4x2::IfcUnitP"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value_1aa7bf9f9631b15f53a63aaa5466a45ef2"></span>void <code class="sig-name descname">setUnit</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x27IfcUnitE" title="Ifc4x2::IfcUnit">IfcUnit</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x223IfcPropertyBoundedValue7setUnitEPN6Ifc4x27IfcUnitE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x223IfcPropertyBoundedValue16hasSetPointValueEv">
+<span id="_CPPv3NK6Ifc4x223IfcPropertyBoundedValue16hasSetPointValueEv"></span><span id="_CPPv2NK6Ifc4x223IfcPropertyBoundedValue16hasSetPointValueEv"></span><span id="Ifc4x2::IfcPropertyBoundedValue::hasSetPointValueC"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value_1a9c48ee01a8aa576bb490d8b6e41499f8"></span>bool <code class="sig-name descname">hasSetPointValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x223IfcPropertyBoundedValue16hasSetPointValueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute SetPointValue is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_property_bounded_value"><span class="std std-ref">IfcPropertyBoundedValue</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x223IfcPropertyBoundedValue13SetPointValueEv">
+<span id="_CPPv3NK6Ifc4x223IfcPropertyBoundedValue13SetPointValueEv"></span><span id="_CPPv2NK6Ifc4x223IfcPropertyBoundedValue13SetPointValueEv"></span><span id="Ifc4x2::IfcPropertyBoundedValue::SetPointValueC"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value_1ab179503614fa916d38fa44359f08f6b0"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x28IfcValueE" title="Ifc4x2::IfcValue">IfcValue</a> *<code class="sig-name descname">SetPointValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x223IfcPropertyBoundedValue13SetPointValueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set point value as typically used for operational value setting.</p>
+<p>IFC2x4 CHANGE The attribute has been added at the end of the attribute list. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x223IfcPropertyBoundedValue16setSetPointValueEPN6Ifc4x28IfcValueE">
+<span id="_CPPv3N6Ifc4x223IfcPropertyBoundedValue16setSetPointValueEPN6Ifc4x28IfcValueE"></span><span id="_CPPv2N6Ifc4x223IfcPropertyBoundedValue16setSetPointValueEPN6Ifc4x28IfcValueE"></span><span id="Ifc4x2::IfcPropertyBoundedValue::setSetPointValue__Ifc4x2::IfcValueP"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value_1a2b924055934e5be62c3d27133cd31179"></span>void <code class="sig-name descname">setSetPointValue</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x28IfcValueE" title="Ifc4x2::IfcValue">IfcValue</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x223IfcPropertyBoundedValue16setSetPointValueEPN6Ifc4x28IfcValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x223IfcPropertyBoundedValue11declarationEv">
+<span id="_CPPv3NK6Ifc4x223IfcPropertyBoundedValue11declarationEv"></span><span id="_CPPv2NK6Ifc4x223IfcPropertyBoundedValue11declarationEv"></span><span id="Ifc4x2::IfcPropertyBoundedValue::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value_1a05a0986bff93765b7717ec554b154447"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x223IfcPropertyBoundedValue11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x223IfcPropertyBoundedValue23IfcPropertyBoundedValueEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x223IfcPropertyBoundedValue23IfcPropertyBoundedValueEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x223IfcPropertyBoundedValue23IfcPropertyBoundedValueEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcPropertyBoundedValue::IfcPropertyBoundedValue__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value_1aee58ea7ed2357806a26efce6b490dcfa"></span><code class="sig-name descname">IfcPropertyBoundedValue</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x223IfcPropertyBoundedValue23IfcPropertyBoundedValueEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x223IfcPropertyBoundedValue23IfcPropertyBoundedValueENSt6stringEN5boost8optionalINSt6stringEEEPN6Ifc4x28IfcValueEPN6Ifc4x28IfcValueEPN6Ifc4x27IfcUnitEPN6Ifc4x28IfcValueE">
+<span id="_CPPv3N6Ifc4x223IfcPropertyBoundedValue23IfcPropertyBoundedValueENSt6stringEN5boost8optionalINSt6stringEEEPN6Ifc4x28IfcValueEPN6Ifc4x28IfcValueEPN6Ifc4x27IfcUnitEPN6Ifc4x28IfcValueE"></span><span id="_CPPv2N6Ifc4x223IfcPropertyBoundedValue23IfcPropertyBoundedValueENSt6stringEN5boost8optionalINSt6stringEEEPN6Ifc4x28IfcValueEPN6Ifc4x28IfcValueEPN6Ifc4x27IfcUnitEPN6Ifc4x28IfcValueE"></span><span id="Ifc4x2::IfcPropertyBoundedValue::IfcPropertyBoundedValue__ss.boost::optional:ss:.Ifc4x2::IfcValueP.Ifc4x2::IfcValueP.Ifc4x2::IfcUnitP.Ifc4x2::IfcValueP"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value_1a64d74b06464f3ab9c4873282a718aba9"></span><code class="sig-name descname">IfcPropertyBoundedValue</code><span class="sig-paren">(</span>std::string <em>v1_Name</em>, boost::optional&lt;std::string&gt; <em>v2_Description</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x28IfcValueE" title="Ifc4x2::IfcValue">IfcValue</a> *<em>v3_UpperBoundValue</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x28IfcValueE" title="Ifc4x2::IfcValue">IfcValue</a> *<em>v4_LowerBoundValue</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x27IfcUnitE" title="Ifc4x2::IfcUnit">IfcUnit</a> *<em>v5_Unit</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x28IfcValueE" title="Ifc4x2::IfcValue">IfcValue</a> *<em>v6_SetPointValue</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x223IfcPropertyBoundedValue23IfcPropertyBoundedValueENSt6stringEN5boost8optionalINSt6stringEEEPN6Ifc4x28IfcValueEPN6Ifc4x28IfcValueEPN6Ifc4x27IfcUnitEPN6Ifc4x28IfcValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x223IfcPropertyBoundedValue5ClassEv">
+<span id="_CPPv3N6Ifc4x223IfcPropertyBoundedValue5ClassEv"></span><span id="_CPPv2N6Ifc4x223IfcPropertyBoundedValue5ClassEv"></span><span id="Ifc4x2::IfcPropertyBoundedValue::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_property_bounded_value_1a40230c0fa4943f125816d4f7b7af6271"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x223IfcPropertyBoundedValue5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_property_abstraction.html" title="previous chapter">Class Ifc4x2::IfcPropertyAbstraction</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_property_definition.html" title="next chapter">Class Ifc4x2::IfcPropertyDefinition</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_property_bounded_value.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

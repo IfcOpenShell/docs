@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ae974e24c65e37bd66c3f231bb4f163a7:
+
+Define SCHEMA_HAS_IfcCartesianTransformationOperator3D
+======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcCartesianTransformationOperator3D

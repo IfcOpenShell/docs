@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1afc1564e35e8476b25ddd409fc00aae40:
+
+Define SCHEMA_HAS_IfcLightSourceGoniometric
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcLightSourceGoniometric

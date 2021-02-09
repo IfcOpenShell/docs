@@ -1,0 +1,13 @@
+.. _exhale_function__argument_8h_1aca953839133a0b0bd7a174477366d700:
+
+Function IfcUtil::valid_binary_string
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Argument.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcUtil::valid_binary_string(const std::string&)

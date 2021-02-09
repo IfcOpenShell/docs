@@ -1,0 +1,16 @@
+.. _exhale_class_class_ifc_parse_1_1inverse__attribute:
+
+Class inverse_attribute
+=======================
+
+- Defined in :ref:`file_src_ifcparse_IfcSchema.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcParse::inverse_attribute
+   :members:
+   :protected-members:
+   :undoc-members:

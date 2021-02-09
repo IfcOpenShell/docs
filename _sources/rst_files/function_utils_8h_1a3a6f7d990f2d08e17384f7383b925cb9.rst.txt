@@ -1,0 +1,13 @@
+.. _exhale_function_utils_8h_1a3a6f7d990f2d08e17384f7383b925cb9:
+
+Function IfcUtil::unescape_xml
+==============================
+
+- Defined in :ref:`file_src_ifcparse_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcUtil::unescape_xml(std::string&)

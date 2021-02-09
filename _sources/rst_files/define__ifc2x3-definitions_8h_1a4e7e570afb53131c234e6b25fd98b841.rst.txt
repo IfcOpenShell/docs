@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a4e7e570afb53131c234e6b25fd98b841:
+
+Define SCHEMA_IfcStructuralReaction_HAS_Causes
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralReaction_HAS_Causes

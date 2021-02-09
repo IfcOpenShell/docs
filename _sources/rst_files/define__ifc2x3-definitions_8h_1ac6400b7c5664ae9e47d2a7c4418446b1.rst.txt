@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ac6400b7c5664ae9e47d2a7c4418446b1:
+
+Define SCHEMA_IfcRelSpaceBoundary_HAS_InternalOrExternalBoundary
+================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelSpaceBoundary_HAS_InternalOrExternalBoundary

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1aec289f545ec5bc856a2767386124feb7:
+
+Define SCHEMA_IfcInventory_HAS_OriginalValue
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcInventory_HAS_OriginalValue

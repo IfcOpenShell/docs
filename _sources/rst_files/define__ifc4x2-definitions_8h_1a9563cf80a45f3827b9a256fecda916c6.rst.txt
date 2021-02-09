@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a9563cf80a45f3827b9a256fecda916c6:
+
+Define SCHEMA_IfcTaskTime_HAS_EarlyStart
+========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTaskTime_HAS_EarlyStart

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1afdc36fe46f2b47102a2b8a26e6ea4ed6:
+
+Define SCHEMA_IfcPositioningElement_HAS_Positions
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPositioningElement_HAS_Positions

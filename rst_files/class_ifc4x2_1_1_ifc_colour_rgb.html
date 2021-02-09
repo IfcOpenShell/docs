@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcColourRgb &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcColourRgbList" href="class_ifc4x2_1_1_ifc_colour_rgb_list.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcCoilType" href="class_ifc4x2_1_1_ifc_coil_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifccolourrgb">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-colour-rgb"></span><h1>Class Ifc4x2::IfcColourRgb<a class="headerlink" href="#class-ifc4x2-ifccolourrgb" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcColourSpecification</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_colour_specification.html#exhale-class-class-ifc4x2-1-1-ifc-colour-specification"><span class="std std-ref">Class Ifc4x2::IfcColourSpecification</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x212IfcColourRgbE">
+<span id="_CPPv3N6Ifc4x212IfcColourRgbE"></span><span id="_CPPv2N6Ifc4x212IfcColourRgbE"></span><span id="Ifc4x2::IfcColourRgb"></span><span class="target" id="class_ifc4x2_1_1_ifc_colour_rgb"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcColourRgb</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_colour_specification.html#_CPPv4N6Ifc4x222IfcColourSpecificationE" title="Ifc4x2::IfcColourSpecification">IfcColourSpecification</a><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcColourRgbE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-46:1992: A colour rgb as a subtype of colour specifications is defined by three colour component values for red, green, and blue in the RGB colour model.</p>
+<p>NOTE In contrary to the usual value range of colour components being integer from 0…255, the definition from ISO10303-46 defines the colour components as real from 0.0 … 1.0. Applications need to execute this conversion before populating the colour RGB values.</p>
+<p>NOTE Corresponding STEP name: colour_rgb. The name attribute has been omitted, the data type for the reg, green and blue parts is IfcNormalizedRatioMeasure, that already includes the range restrictions for the values. Please refer to ISO/IS 10303-46:1994, p. 138 for the final definition of the formal standard.</p>
+<p>HISTORY New entity in IFC2x2. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x212IfcColourRgb4listE">
+<span id="_CPPv3N6Ifc4x212IfcColourRgb4listE"></span><span id="_CPPv2N6Ifc4x212IfcColourRgb4listE"></span><span id="Ifc4x2::IfcColourRgb::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_colour_rgb_1af044fabdca4d7a2d250d681e9c0e0cfe"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x212IfcColourRgbE" title="Ifc4x2::IfcColourRgb">IfcColourRgb</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcColourRgb4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcColourRgb3RedEv">
+<span id="_CPPv3NK6Ifc4x212IfcColourRgb3RedEv"></span><span id="_CPPv2NK6Ifc4x212IfcColourRgb3RedEv"></span><span id="Ifc4x2::IfcColourRgb::RedC"></span><span class="target" id="class_ifc4x2_1_1_ifc_colour_rgb_1a6b4b5f8f29d494f1d0386ba776afe75c"></span>double <code class="sig-name descname">Red</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcColourRgb3RedEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The intensity of the red colour component.</p>
+<p>NOTE The colour component value is given within the range of 0..1, and not within the range of 0..255 as otherwise usual. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcColourRgb6setRedEd">
+<span id="_CPPv3N6Ifc4x212IfcColourRgb6setRedEd"></span><span id="_CPPv2N6Ifc4x212IfcColourRgb6setRedEd"></span><span id="Ifc4x2::IfcColourRgb::setRed__double"></span><span class="target" id="class_ifc4x2_1_1_ifc_colour_rgb_1aac3c1fe7286c04df389c357d19169e14"></span>void <code class="sig-name descname">setRed</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcColourRgb6setRedEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcColourRgb5GreenEv">
+<span id="_CPPv3NK6Ifc4x212IfcColourRgb5GreenEv"></span><span id="_CPPv2NK6Ifc4x212IfcColourRgb5GreenEv"></span><span id="Ifc4x2::IfcColourRgb::GreenC"></span><span class="target" id="class_ifc4x2_1_1_ifc_colour_rgb_1a9bf3fb595d3935a4c704ec8566147528"></span>double <code class="sig-name descname">Green</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcColourRgb5GreenEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The intensity of the green colour component.</p>
+<p>NOTE The colour component value is given within the range of 0..1, and not within the range of 0..255 as otherwise usual. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcColourRgb8setGreenEd">
+<span id="_CPPv3N6Ifc4x212IfcColourRgb8setGreenEd"></span><span id="_CPPv2N6Ifc4x212IfcColourRgb8setGreenEd"></span><span id="Ifc4x2::IfcColourRgb::setGreen__double"></span><span class="target" id="class_ifc4x2_1_1_ifc_colour_rgb_1ab157f148dc3cafae01bba3fd62dbbfe5"></span>void <code class="sig-name descname">setGreen</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcColourRgb8setGreenEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcColourRgb4BlueEv">
+<span id="_CPPv3NK6Ifc4x212IfcColourRgb4BlueEv"></span><span id="_CPPv2NK6Ifc4x212IfcColourRgb4BlueEv"></span><span id="Ifc4x2::IfcColourRgb::BlueC"></span><span class="target" id="class_ifc4x2_1_1_ifc_colour_rgb_1a24877996428232c2ccf0faecb353bef2"></span>double <code class="sig-name descname">Blue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcColourRgb4BlueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The intensity of the blue colour component.</p>
+<p>NOTE The colour component value is given within the range of 0..1, and not within the range of 0..255 as otherwise usual. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcColourRgb7setBlueEd">
+<span id="_CPPv3N6Ifc4x212IfcColourRgb7setBlueEd"></span><span id="_CPPv2N6Ifc4x212IfcColourRgb7setBlueEd"></span><span id="Ifc4x2::IfcColourRgb::setBlue__double"></span><span class="target" id="class_ifc4x2_1_1_ifc_colour_rgb_1a4df29e1a9b8feaad147b2d7499c20fdb"></span>void <code class="sig-name descname">setBlue</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcColourRgb7setBlueEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcColourRgb11declarationEv">
+<span id="_CPPv3NK6Ifc4x212IfcColourRgb11declarationEv"></span><span id="_CPPv2NK6Ifc4x212IfcColourRgb11declarationEv"></span><span id="Ifc4x2::IfcColourRgb::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_colour_rgb_1ad00d9e821c5e20904b7f7280db3008dc"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcColourRgb11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcColourRgb12IfcColourRgbEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x212IfcColourRgb12IfcColourRgbEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x212IfcColourRgb12IfcColourRgbEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcColourRgb::IfcColourRgb__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_colour_rgb_1a5794aade906a659660498a743fd0b104"></span><code class="sig-name descname">IfcColourRgb</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcColourRgb12IfcColourRgbEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcColourRgb12IfcColourRgbEN5boost8optionalINSt6stringEEEddd">
+<span id="_CPPv3N6Ifc4x212IfcColourRgb12IfcColourRgbEN5boost8optionalINSt6stringEEEddd"></span><span id="_CPPv2N6Ifc4x212IfcColourRgb12IfcColourRgbEN5boost8optionalINSt6stringEEEddd"></span><span id="Ifc4x2::IfcColourRgb::IfcColourRgb__boost::optional:ss:.double.double.double"></span><span class="target" id="class_ifc4x2_1_1_ifc_colour_rgb_1aa8762a8524b5ef45c36d231197a9b56c"></span><code class="sig-name descname">IfcColourRgb</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Name</em>, double <em>v2_Red</em>, double <em>v3_Green</em>, double <em>v4_Blue</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcColourRgb12IfcColourRgbEN5boost8optionalINSt6stringEEEddd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcColourRgb5ClassEv">
+<span id="_CPPv3N6Ifc4x212IfcColourRgb5ClassEv"></span><span id="_CPPv2N6Ifc4x212IfcColourRgb5ClassEv"></span><span id="Ifc4x2::IfcColourRgb::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_colour_rgb_1aa2c951305082c9522851a7d48eeeaf21"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcColourRgb5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_coil_type.html" title="previous chapter">Class Ifc4x2::IfcCoilType</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_colour_rgb_list.html" title="next chapter">Class Ifc4x2::IfcColourRgbList</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_colour_rgb.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a2a2060cd5a05ad40b716b29639033986:
+
+Define SCHEMA_IfcSpace_HAS_InteriorOrExteriorSpace
+==================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSpace_HAS_InteriorOrExteriorSpace

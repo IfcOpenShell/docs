@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1ac1380340b7c1e0d6dc85f416604471e9:
+
+Define SCHEMA_HAS_IfcStructuralItem
+===================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcStructuralItem

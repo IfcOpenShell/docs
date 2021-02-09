@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1af11a00fccc112a4f1509c65f203b6900:
+
+Define SCHEMA_HAS_IfcSchedulingTime
+===================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcSchedulingTime

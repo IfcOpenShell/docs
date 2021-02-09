@@ -1,0 +1,46 @@
+
+.. _file_src_serializers_schema_dependent_XmlSerializer.h:
+
+File XmlSerializer.h
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_serializers_schema_dependent>` (``src/serializers/schema_dependent``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/serializers/schema_dependent/XmlSerializer.h``)
+-----------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_serializers_schema_dependent_XmlSerializer.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../ifcparse/macros.h``
+
+- ``../../serializers/XmlSerializer.h``
+
+
+
+
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_schema__dependent_2_xml_serializer_8h_1aaddbf6dc5d8a0acb1abbfa955589781a`
+

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a8b19088790fe4a748fa25ea82b7e0938:
+
+Define SCHEMA_IfcTimeSeriesReferenceRelationship_HAS_ReferencedTimeSeries
+=========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTimeSeriesReferenceRelationship_HAS_ReferencedTimeSeries

@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcConnectionPointEccentricity &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcConnectionPointGeometry" href="class_ifc4_1_1_ifc_connection_point_geometry.html" />
+    <link rel="prev" title="Class Ifc4::IfcConnectionGeometry" href="class_ifc4_1_1_ifc_connection_geometry.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcconnectionpointeccentricity">
+<span id="exhale-class-class-ifc4-1-1-ifc-connection-point-eccentricity"></span><h1>Class Ifc4::IfcConnectionPointEccentricity<a class="headerlink" href="#class-ifc4-ifcconnectionpointeccentricity" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcConnectionPointGeometry</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_connection_point_geometry.html#exhale-class-class-ifc4-1-1-ifc-connection-point-geometry"><span class="std std-ref">Class Ifc4::IfcConnectionPointGeometry</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc430IfcConnectionPointEccentricityE">
+<span id="_CPPv3N4Ifc430IfcConnectionPointEccentricityE"></span><span id="_CPPv2N4Ifc430IfcConnectionPointEccentricityE"></span><span id="Ifc4::IfcConnectionPointEccentricity"></span><span class="target" id="class_ifc4_1_1_ifc_connection_point_eccentricity"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcConnectionPointEccentricity</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_connection_point_geometry.html#_CPPv4N4Ifc426IfcConnectionPointGeometryE" title="Ifc4::IfcConnectionPointGeometry">IfcConnectionPointGeometry</a><a class="headerlink" href="#_CPPv4N4Ifc430IfcConnectionPointEccentricityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_connection_point_eccentricity"><span class="std std-ref">IfcConnectionPointEccentricity</span></a> is used to describe the geometric constraints that facilitate the physical connection of two objects at a point or vertex point with associated point coordinates. There is a physical distance, or eccentricity, etween the connection points of both object. The eccentricity can be either given by:</p>
+<p>providing the PointOnRelatingElement and the PointOnRelatedElement, where bothpoint coordinates are not identical within a common parent coordinate system (latestly within the world coordinate system), providing the PointOnRelatingElement and the three distance measures, EccentricityInX, EccentricityInY, and EccentricityInZ (or only EccentricityInX, and EccentricityInY if the underlying coordinate system is two-dimensional), or providing both.</p>
+<p>NOTE If both, PointOnRelatedElement, and EccentricityInX, EccentricityInY, (EccentricityInZ) are provided, the values should be consistent. In case of any non-consistency, the calculated distance between PointOnRelatingElement and PointOnRelatedElement takes precedence.</p>
+<p>The explicit values for EccentricityInX, EccentricityInY, and EccentricityInZ are always measured in the following direction and coordinate system (defining when the value is positive or negative):</p>
+<p>from the PointOnRelatedElement to PointOnRelatingElement within the coordinate system of the RelatingElement. in addition: when used to specify connections in structural analysis models, the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_structural_member"><span class="std std-ref">IfcStructuralMember</span></a> is to be used as the RelatingElement of the relationship object utilizing <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_connection_point_eccentricity"><span class="std std-ref">IfcConnectionPointEccentricity</span></a>, and the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_structural_connection"><span class="std std-ref">IfcStructuralConnection</span></a> is the RelatedElement.</p>
+<p>HISTORY New entity in IFC 2x Edition 3.</p>
+<p>Geometry use definitions The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_point"><span class="std std-ref">IfcPoint</span></a> (or the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_vertex_point"><span class="std std-ref">IfcVertexPoint</span></a> with an associated <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_point"><span class="std std-ref">IfcPoint</span></a>) at the PointOnRelatingElement attribute defines the point where the basic geometry items of the connected elements connects. The point coordinates are provided within the local coordinate system of the RelatingElement, as specified at the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_connects"><span class="std std-ref">IfcRelConnects</span></a> subtype that utilizes the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_connection_point_geometry"><span class="std std-ref">IfcConnectionPointGeometry</span></a>. Optionally, the same point coordinates can also be provided within the local coordinate system of the RelatedElement by using the PointOnRelatedElement attribute, otherwise the distance to the point at the RelatedElement has to be given by the three eccentricity values. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc430IfcConnectionPointEccentricity4listE">
+<span id="_CPPv3N4Ifc430IfcConnectionPointEccentricity4listE"></span><span id="_CPPv2N4Ifc430IfcConnectionPointEccentricity4listE"></span><span id="Ifc4::IfcConnectionPointEccentricity::list"></span><span class="target" id="class_ifc4_1_1_ifc_connection_point_eccentricity_1ab0baa3221e38a9ad9869b0e58b7aaba1"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc430IfcConnectionPointEccentricityE" title="Ifc4::IfcConnectionPointEccentricity">IfcConnectionPointEccentricity</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc430IfcConnectionPointEccentricity4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc430IfcConnectionPointEccentricity18hasEccentricityInXEv">
+<span id="_CPPv3NK4Ifc430IfcConnectionPointEccentricity18hasEccentricityInXEv"></span><span id="_CPPv2NK4Ifc430IfcConnectionPointEccentricity18hasEccentricityInXEv"></span><span id="Ifc4::IfcConnectionPointEccentricity::hasEccentricityInXC"></span><span class="target" id="class_ifc4_1_1_ifc_connection_point_eccentricity_1a0f60c9104323d68818bdad7719f4d8f6"></span>bool <code class="sig-name descname">hasEccentricityInX</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc430IfcConnectionPointEccentricity18hasEccentricityInXEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute EccentricityInX is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_connection_point_eccentricity"><span class="std std-ref">IfcConnectionPointEccentricity</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc430IfcConnectionPointEccentricity15EccentricityInXEv">
+<span id="_CPPv3NK4Ifc430IfcConnectionPointEccentricity15EccentricityInXEv"></span><span id="_CPPv2NK4Ifc430IfcConnectionPointEccentricity15EccentricityInXEv"></span><span id="Ifc4::IfcConnectionPointEccentricity::EccentricityInXC"></span><span class="target" id="class_ifc4_1_1_ifc_connection_point_eccentricity_1a83f977e2c25d436dffe756238808e197"></span>double <code class="sig-name descname">EccentricityInX</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc430IfcConnectionPointEccentricity15EccentricityInXEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Distance in x direction between the two points (or vertex points) engaged in the point connection. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc430IfcConnectionPointEccentricity18setEccentricityInXEd">
+<span id="_CPPv3N4Ifc430IfcConnectionPointEccentricity18setEccentricityInXEd"></span><span id="_CPPv2N4Ifc430IfcConnectionPointEccentricity18setEccentricityInXEd"></span><span id="Ifc4::IfcConnectionPointEccentricity::setEccentricityInX__double"></span><span class="target" id="class_ifc4_1_1_ifc_connection_point_eccentricity_1a371f5bcb270b4e5e671f1804d0b5a46a"></span>void <code class="sig-name descname">setEccentricityInX</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc430IfcConnectionPointEccentricity18setEccentricityInXEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc430IfcConnectionPointEccentricity18hasEccentricityInYEv">
+<span id="_CPPv3NK4Ifc430IfcConnectionPointEccentricity18hasEccentricityInYEv"></span><span id="_CPPv2NK4Ifc430IfcConnectionPointEccentricity18hasEccentricityInYEv"></span><span id="Ifc4::IfcConnectionPointEccentricity::hasEccentricityInYC"></span><span class="target" id="class_ifc4_1_1_ifc_connection_point_eccentricity_1aab59c84890cf905f5e55955f6729e3ee"></span>bool <code class="sig-name descname">hasEccentricityInY</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc430IfcConnectionPointEccentricity18hasEccentricityInYEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute EccentricityInY is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_connection_point_eccentricity"><span class="std std-ref">IfcConnectionPointEccentricity</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc430IfcConnectionPointEccentricity15EccentricityInYEv">
+<span id="_CPPv3NK4Ifc430IfcConnectionPointEccentricity15EccentricityInYEv"></span><span id="_CPPv2NK4Ifc430IfcConnectionPointEccentricity15EccentricityInYEv"></span><span id="Ifc4::IfcConnectionPointEccentricity::EccentricityInYC"></span><span class="target" id="class_ifc4_1_1_ifc_connection_point_eccentricity_1ab2ef9bb6d730f83ac297f62b9857dd31"></span>double <code class="sig-name descname">EccentricityInY</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc430IfcConnectionPointEccentricity15EccentricityInYEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Distance in y direction between the two points (or vertex points) engaged in the point connection. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc430IfcConnectionPointEccentricity18setEccentricityInYEd">
+<span id="_CPPv3N4Ifc430IfcConnectionPointEccentricity18setEccentricityInYEd"></span><span id="_CPPv2N4Ifc430IfcConnectionPointEccentricity18setEccentricityInYEd"></span><span id="Ifc4::IfcConnectionPointEccentricity::setEccentricityInY__double"></span><span class="target" id="class_ifc4_1_1_ifc_connection_point_eccentricity_1ade52dd5f35205d3b6692367da92fe547"></span>void <code class="sig-name descname">setEccentricityInY</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc430IfcConnectionPointEccentricity18setEccentricityInYEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc430IfcConnectionPointEccentricity18hasEccentricityInZEv">
+<span id="_CPPv3NK4Ifc430IfcConnectionPointEccentricity18hasEccentricityInZEv"></span><span id="_CPPv2NK4Ifc430IfcConnectionPointEccentricity18hasEccentricityInZEv"></span><span id="Ifc4::IfcConnectionPointEccentricity::hasEccentricityInZC"></span><span class="target" id="class_ifc4_1_1_ifc_connection_point_eccentricity_1a7c93a6046495be221adfbf1334c3fa5f"></span>bool <code class="sig-name descname">hasEccentricityInZ</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc430IfcConnectionPointEccentricity18hasEccentricityInZEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute EccentricityInZ is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_connection_point_eccentricity"><span class="std std-ref">IfcConnectionPointEccentricity</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc430IfcConnectionPointEccentricity15EccentricityInZEv">
+<span id="_CPPv3NK4Ifc430IfcConnectionPointEccentricity15EccentricityInZEv"></span><span id="_CPPv2NK4Ifc430IfcConnectionPointEccentricity15EccentricityInZEv"></span><span id="Ifc4::IfcConnectionPointEccentricity::EccentricityInZC"></span><span class="target" id="class_ifc4_1_1_ifc_connection_point_eccentricity_1a7ed56d19589dabab7ccc678de59a18b0"></span>double <code class="sig-name descname">EccentricityInZ</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc430IfcConnectionPointEccentricity15EccentricityInZEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Distance in z direction between the two points (or vertex points) engaged in the point connection. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc430IfcConnectionPointEccentricity18setEccentricityInZEd">
+<span id="_CPPv3N4Ifc430IfcConnectionPointEccentricity18setEccentricityInZEd"></span><span id="_CPPv2N4Ifc430IfcConnectionPointEccentricity18setEccentricityInZEd"></span><span id="Ifc4::IfcConnectionPointEccentricity::setEccentricityInZ__double"></span><span class="target" id="class_ifc4_1_1_ifc_connection_point_eccentricity_1a29e8ab0e03dba2a318b1d5e15fa839ae"></span>void <code class="sig-name descname">setEccentricityInZ</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc430IfcConnectionPointEccentricity18setEccentricityInZEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc430IfcConnectionPointEccentricity11declarationEv">
+<span id="_CPPv3NK4Ifc430IfcConnectionPointEccentricity11declarationEv"></span><span id="_CPPv2NK4Ifc430IfcConnectionPointEccentricity11declarationEv"></span><span id="Ifc4::IfcConnectionPointEccentricity::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_connection_point_eccentricity_1a93b40294f4e1a1f0b1bb4c5aa83ed8f5"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc430IfcConnectionPointEccentricity11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc430IfcConnectionPointEccentricity30IfcConnectionPointEccentricityEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc430IfcConnectionPointEccentricity30IfcConnectionPointEccentricityEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc430IfcConnectionPointEccentricity30IfcConnectionPointEccentricityEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcConnectionPointEccentricity::IfcConnectionPointEccentricity__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_connection_point_eccentricity_1a82ead93468305ae1153755b6052c7715"></span><code class="sig-name descname">IfcConnectionPointEccentricity</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc430IfcConnectionPointEccentricity30IfcConnectionPointEccentricityEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc430IfcConnectionPointEccentricity30IfcConnectionPointEccentricityEPN4Ifc421IfcPointOrVertexPointEPN4Ifc421IfcPointOrVertexPointEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEE">
+<span id="_CPPv3N4Ifc430IfcConnectionPointEccentricity30IfcConnectionPointEccentricityEPN4Ifc421IfcPointOrVertexPointEPN4Ifc421IfcPointOrVertexPointEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEE"></span><span id="_CPPv2N4Ifc430IfcConnectionPointEccentricity30IfcConnectionPointEccentricityEPN4Ifc421IfcPointOrVertexPointEPN4Ifc421IfcPointOrVertexPointEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEE"></span><span id="Ifc4::IfcConnectionPointEccentricity::IfcConnectionPointEccentricity__Ifc4::IfcPointOrVertexPointP.Ifc4::IfcPointOrVertexPointP.boost::optional:double:.boost::optional:double:.boost::optional:double:"></span><span class="target" id="class_ifc4_1_1_ifc_connection_point_eccentricity_1ae1d6f6ae42d37c89941617f7539e40bc"></span><code class="sig-name descname">IfcConnectionPointEccentricity</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc421IfcPointOrVertexPointE" title="Ifc4::IfcPointOrVertexPoint">IfcPointOrVertexPoint</a> *<em>v1_PointOnRelatingElement</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc421IfcPointOrVertexPointE" title="Ifc4::IfcPointOrVertexPoint">IfcPointOrVertexPoint</a> *<em>v2_PointOnRelatedElement</em>, boost::optional&lt;double&gt; <em>v3_EccentricityInX</em>, boost::optional&lt;double&gt; <em>v4_EccentricityInY</em>, boost::optional&lt;double&gt; <em>v5_EccentricityInZ</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc430IfcConnectionPointEccentricity30IfcConnectionPointEccentricityEPN4Ifc421IfcPointOrVertexPointEPN4Ifc421IfcPointOrVertexPointEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc430IfcConnectionPointEccentricity5ClassEv">
+<span id="_CPPv3N4Ifc430IfcConnectionPointEccentricity5ClassEv"></span><span id="_CPPv2N4Ifc430IfcConnectionPointEccentricity5ClassEv"></span><span id="Ifc4::IfcConnectionPointEccentricity::Class"></span><span class="target" id="class_ifc4_1_1_ifc_connection_point_eccentricity_1ad5b36e612cfbefa0c11714240c7bca50"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc430IfcConnectionPointEccentricity5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_connection_geometry.html" title="previous chapter">Class Ifc4::IfcConnectionGeometry</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_connection_point_geometry.html" title="next chapter">Class Ifc4::IfcConnectionPointGeometry</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_connection_point_eccentricity.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

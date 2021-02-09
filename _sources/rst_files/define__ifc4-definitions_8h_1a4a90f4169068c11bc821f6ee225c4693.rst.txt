@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a4a90f4169068c11bc821f6ee225c4693:
+
+Define SCHEMA_IfcMechanicalFastenerType_NominalLength_IS_OPTIONAL
+=================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMechanicalFastenerType_NominalLength_IS_OPTIONAL

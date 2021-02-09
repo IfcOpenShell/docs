@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1afa037bab376327c2311d9bcb5f7c984d:
+
+Define SCHEMA_IfcTransportElement_CapacityByNumber_IS_OPTIONAL
+==============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTransportElement_CapacityByNumber_IS_OPTIONAL

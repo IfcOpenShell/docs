@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1aa37b2b3e951978d25bf31907883c903a:
+
+Define SCHEMA_IfcExtrudedAreaSolidTapered_HAS_EndSweptArea
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcExtrudedAreaSolidTapered_HAS_EndSweptArea

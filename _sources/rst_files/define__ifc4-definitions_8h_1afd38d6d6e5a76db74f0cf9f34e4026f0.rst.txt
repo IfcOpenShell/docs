@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1afd38d6d6e5a76db74f0cf9f34e4026f0:
+
+Define SCHEMA_IfcController_HAS_PredefinedType
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcController_HAS_PredefinedType

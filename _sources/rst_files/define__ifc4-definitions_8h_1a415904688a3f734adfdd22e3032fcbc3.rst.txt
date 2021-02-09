@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a415904688a3f734adfdd22e3032fcbc3:
+
+Define SCHEMA_IfcHumidifier_HAS_PredefinedType
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcHumidifier_HAS_PredefinedType

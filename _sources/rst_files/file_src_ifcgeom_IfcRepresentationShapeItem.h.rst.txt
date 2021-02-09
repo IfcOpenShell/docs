@@ -1,0 +1,74 @@
+
+.. _file_src_ifcgeom_IfcRepresentationShapeItem.h:
+
+File IfcRepresentationShapeItem.h
+=================================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcgeom>` (``src/ifcgeom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/IfcRepresentationShapeItem.h``)
+---------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_IfcRepresentationShapeItem.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom_schema_agnostic/IfcGeomRenderStyles.h``
+
+- ``TopoDS_Shape.hxx``
+
+- ``gp_GTrsf.hxx``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_IfcGeomRepresentation.h`
+
+- :ref:`file_src_ifcgeom_IfcGeom.h`
+
+- :ref:`file_src_ifcgeom_schema_agnostic_Kernel.h`
+
+- :ref:`file_src_ifcgeom_IfcGeomIteratorImplementation.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcGeom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_ifc_geom_1_1_ifc_representation_shape_item`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef__ifc_representation_shape_item_8h_1a7a985eae33862a3015946e271c860ddd`
+

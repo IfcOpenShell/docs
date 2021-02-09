@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ab27769ee255b4869d043beb06b847e58:
+
+Define SCHEMA_IfcConversionBasedUnitWithOffset_HAS_ConversionOffset
+===================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConversionBasedUnitWithOffset_HAS_ConversionOffset

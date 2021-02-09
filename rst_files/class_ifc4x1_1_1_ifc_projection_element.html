@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcProjectionElement &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcProjectLibrary" href="class_ifc4x1_1_1_ifc_project_library.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcProjectedCRS" href="class_ifc4x1_1_1_ifc_projected_c_r_s.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcprojectionelement">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-projection-element"></span><h1>Class Ifc4x1::IfcProjectionElement<a class="headerlink" href="#class-ifc4x1-ifcprojectionelement" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcFeatureElementAddition</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_feature_element_addition.html#exhale-class-class-ifc4x1-1-1-ifc-feature-element-addition"><span class="std std-ref">Class Ifc4x1::IfcFeatureElementAddition</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x120IfcProjectionElementE">
+<span id="_CPPv3N6Ifc4x120IfcProjectionElementE"></span><span id="_CPPv2N6Ifc4x120IfcProjectionElementE"></span><span id="Ifc4x1::IfcProjectionElement"></span><span class="target" id="class_ifc4x1_1_1_ifc_projection_element"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcProjectionElement</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_feature_element_addition.html#_CPPv4N6Ifc4x125IfcFeatureElementAdditionE" title="Ifc4x1::IfcFeatureElementAddition">IfcFeatureElementAddition</a><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcProjectionElementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The projection element is a specialization of the general feature element to represent projections applied to building elements. It represents a solid attached to any element that has physical manifestation. EXAMPLE A wall projection such as a pilaster strip is handled by <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_projection_element"><span class="std std-ref">IfcProjectionElement</span></a> NOTE View definitions or implementer agreements may restrict the types of elements to which <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_projection_element"><span class="std std-ref">IfcProjectionElement</span></a> can be applied. An <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_projection_element"><span class="std std-ref">IfcProjectionElement</span></a> has to be linked to a element (all subtypes of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a>) by using the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_projects_element"><span class="std std-ref">IfcRelProjectsElement</span></a> relationship. Its existence depends on the existence of the master element. The relationship implies a Boolean union operation between the volume of the projection element and the volume of the element. HISTORY New entity in IFC2x2. IFC2x4 CHANGE The attribute PredefinedType has been added at the end of attribute list. The quantities relating to the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_projection_element"><span class="std std-ref">IfcProjectionElement</span></a> are defined by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_element_quantity"><span class="std std-ref">IfcElementQuantity</span></a> and attached by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. It is accessible by the inverse IsDefinedBy relationship. The following base quantities are defined and should be exchanged with the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_root_1a19b3c6f66df5365f61595e0e96ca48c3"><span class="std std-ref">IfcElementQuantity.Name</span></a> = ‘BaseQuantities’. Other quantities, being subjected to local standard of measurement, can be defined with another string value assigned to Name. In this case a valid value for MethodOfMeasurement has to be provided.</p>
+<p>Qto_ProjectionElementBaseQuantities: base quantities for all opening occurrences.</p>
+<p>Containment Use Definition The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_projection_element"><span class="std std-ref">IfcProjectionElement</span></a> shall not participate in the containment relationship, i.e. it is not linked directly to the spatial structure of the project. It has a mandatory ProjectsElements inverse relationship pointing to the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a> that is contained in the spatial structure.</p>
+<p>The inverse relationship ContainedInStructure shall be NIL.</p>
+<p>Geometry Use Definition The geometric representation of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_projection_element"><span class="std std-ref">IfcProjectionElement</span></a> is given by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a> and <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> allowing multiple geometric representations. Local Placement The local placement for IfcOpeningRecess is defined in its supertype <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a>. It is defined by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a>, which defines the local coordinate system that is referenced by all geometric representations.</p>
+<p>The PlacementRelTo relationship of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> should point to the local placement of the same element, to which the projection adds, i.e. referred to by ProjectsElement.RelatingBuildingElement.</p>
+<p>Swept Solid Representation The geometric representation of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_projection_element"><span class="std std-ref">IfcProjectionElement</span></a> is defined using the swept area solid geometry. The following attribute values for the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘SweptSolid’</p>
+<p>The following additional constraints apply to the swept solid representation:</p>
+<p>Solid: <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_extruded_area_solid"><span class="std std-ref">IfcExtrudedAreaSolid</span></a> is required. Profile: <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rectangle_profile_def"><span class="std std-ref">IfcRectangleProfileDef</span></a>, <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_circle_profile_def"><span class="std std-ref">IfcCircleProfileDef</span></a> and <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_arbitrary_closed_profile_def"><span class="std std-ref">IfcArbitraryClosedProfileDef</span></a> shall be supported. Extrusion: The profile shall be extruded horizontally (that is, perpendicular to the extrusion direction of the modified element), such as for wall projections, or vertically (that is, in the extrusion direction of the projected element), such as for floor projections.</p>
+<p>As shown in Figure 38, the following interpretation of dimension parameter applies for rectangular projection:</p>
+<p><a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rectangle_profile_def_1a3a700cb4349b3fd839c1b242c2fa76a6"><span class="std std-ref">IfcRectangleProfileDef.YDim</span></a> interpreted as projection width <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rectangle_profile_def_1a3c01c3e5f0768d6db750e57cda2689cf"><span class="std std-ref">IfcRectangleProfileDef.XDim</span></a> interpreted as projection height <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_extruded_area_solid_1a68682753426e8029f514e8f80aa73cdb"><span class="std std-ref">IfcExtrudedAreaSolid.Depth</span></a> is interpreted as projection depth</p>
+<p>NOTE Rectangles are now defined centric, the placement location has to be set: <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_cartesian_point"><span class="std std-ref">IfcCartesianPoint</span></a>(XDim/2,YDim/2) NOTE The local placement directions for the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_projection_element"><span class="std std-ref">IfcProjectionElement</span></a> are only given as an example, other directions are valid as well.</p>
+<p>Figure 38 — Projection representation</p>
+<p>Brep Representation The general b-rep geometric representation of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_projection_element"><span class="std std-ref">IfcProjectionElement</span></a> is defined using the Brep geometry. The Brep representation allows for the representation of complex element shape. The following attribute values for the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘Brep’ </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x120IfcProjectionElement4listE">
+<span id="_CPPv3N6Ifc4x120IfcProjectionElement4listE"></span><span id="_CPPv2N6Ifc4x120IfcProjectionElement4listE"></span><span id="Ifc4x1::IfcProjectionElement::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_projection_element_1a3d57fb691f29362d8488e9abd3bf2b44"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x120IfcProjectionElementE" title="Ifc4x1::IfcProjectionElement">IfcProjectionElement</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcProjectionElement4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcProjectionElement17hasPredefinedTypeEv">
+<span id="_CPPv3NK6Ifc4x120IfcProjectionElement17hasPredefinedTypeEv"></span><span id="_CPPv2NK6Ifc4x120IfcProjectionElement17hasPredefinedTypeEv"></span><span id="Ifc4x1::IfcProjectionElement::hasPredefinedTypeC"></span><span class="target" id="class_ifc4x1_1_1_ifc_projection_element_1a81f0e8b19810021cb70a80650f996d61"></span>bool <code class="sig-name descname">hasPredefinedType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcProjectionElement17hasPredefinedTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute PredefinedType is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_projection_element"><span class="std std-ref">IfcProjectionElement</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcProjectionElement14PredefinedTypeEv">
+<span id="_CPPv3NK6Ifc4x120IfcProjectionElement14PredefinedTypeEv"></span><span id="_CPPv2NK6Ifc4x120IfcProjectionElement14PredefinedTypeEv"></span><span id="Ifc4x1::IfcProjectionElement::PredefinedTypeC"></span><span class="target" id="class_ifc4x1_1_1_ifc_projection_element_1ab06b4ecc02483e465f83f9583d886d25"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x128IfcProjectionElementTypeEnumE" title="Ifc4x1::IfcProjectionElementTypeEnum">IfcProjectionElementTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x128IfcProjectionElementTypeEnum5ValueE" title="Ifc4x1::IfcProjectionElementTypeEnum::Value">Value</a> <code class="sig-name descname">PredefinedType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcProjectionElement14PredefinedTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Predefined generic type for a projection element that is specified in an enumeration. There may be a property set given specificly for the predefined types.</p>
+<p>IFC2x4 CHANGE The attribute has been added at the end of the entity definition. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcProjectionElement17setPredefinedTypeEN6Ifc4x128IfcProjectionElementTypeEnum5ValueE">
+<span id="_CPPv3N6Ifc4x120IfcProjectionElement17setPredefinedTypeEN6Ifc4x128IfcProjectionElementTypeEnum5ValueE"></span><span id="_CPPv2N6Ifc4x120IfcProjectionElement17setPredefinedTypeEN6Ifc4x128IfcProjectionElementTypeEnum5ValueE"></span><span id="Ifc4x1::IfcProjectionElement::setPredefinedType__Ifc4x1::IfcProjectionElementTypeEnum::Value"></span><span class="target" id="class_ifc4x1_1_1_ifc_projection_element_1a8c00b50ee0ecc1e60fc7a2decb5f8caa"></span>void <code class="sig-name descname">setPredefinedType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x128IfcProjectionElementTypeEnumE" title="Ifc4x1::IfcProjectionElementTypeEnum">IfcProjectionElementTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x128IfcProjectionElementTypeEnum5ValueE" title="Ifc4x1::IfcProjectionElementTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcProjectionElement17setPredefinedTypeEN6Ifc4x128IfcProjectionElementTypeEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x120IfcProjectionElement11declarationEv">
+<span id="_CPPv3NK6Ifc4x120IfcProjectionElement11declarationEv"></span><span id="_CPPv2NK6Ifc4x120IfcProjectionElement11declarationEv"></span><span id="Ifc4x1::IfcProjectionElement::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_projection_element_1a6ab8b36b218b35bdff8614960f29d031"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x120IfcProjectionElement11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcProjectionElement20IfcProjectionElementEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x120IfcProjectionElement20IfcProjectionElementEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x120IfcProjectionElement20IfcProjectionElementEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcProjectionElement::IfcProjectionElement__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_projection_element_1af346113c325b654f5ca57312bccfe729"></span><code class="sig-name descname">IfcProjectionElement</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcProjectionElement20IfcProjectionElementEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcProjectionElement20IfcProjectionElementENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x128IfcProjectionElementTypeEnum5ValueEEE">
+<span id="_CPPv3N6Ifc4x120IfcProjectionElement20IfcProjectionElementENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x128IfcProjectionElementTypeEnum5ValueEEE"></span><span id="_CPPv2N6Ifc4x120IfcProjectionElement20IfcProjectionElementENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x128IfcProjectionElementTypeEnum5ValueEEE"></span><span id="Ifc4x1::IfcProjectionElement::IfcProjectionElement__ss.Ifc4x1::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4x1::IfcObjectPlacementP.Ifc4x1::IfcProductRepresentationP.boost::optional:ss:.boost::optional:Ifc4x1::IfcProjectionElementTypeEnum::Value:"></span><span class="target" id="class_ifc4x1_1_1_ifc_projection_element_1aefd1477fdaa5ecaeea2572b974966934"></span><code class="sig-name descname">IfcProjectionElement</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_owner_history.html#_CPPv4N6Ifc4x115IfcOwnerHistoryE" title="Ifc4x1::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_object_placement.html#_CPPv4N6Ifc4x118IfcObjectPlacementE" title="Ifc4x1::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_product_representation.html#_CPPv4N6Ifc4x124IfcProductRepresentationE" title="Ifc4x1::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, boost::optional&lt;std::string&gt; <em>v8_Tag</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x128IfcProjectionElementTypeEnumE" title="Ifc4x1::IfcProjectionElementTypeEnum">IfcProjectionElementTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x128IfcProjectionElementTypeEnum5ValueE" title="Ifc4x1::IfcProjectionElementTypeEnum::Value">Value</a>&gt; <em>v9_PredefinedType</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcProjectionElement20IfcProjectionElementENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x128IfcProjectionElementTypeEnum5ValueEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x120IfcProjectionElement5ClassEv">
+<span id="_CPPv3N6Ifc4x120IfcProjectionElement5ClassEv"></span><span id="_CPPv2N6Ifc4x120IfcProjectionElement5ClassEv"></span><span id="Ifc4x1::IfcProjectionElement::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_projection_element_1a720d7bb25bad80f1abfac004067b7176"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x120IfcProjectionElement5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_projected_c_r_s.html" title="previous chapter">Class Ifc4x1::IfcProjectedCRS</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_project_library.html" title="next chapter">Class Ifc4x1::IfcProjectLibrary</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_projection_element.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

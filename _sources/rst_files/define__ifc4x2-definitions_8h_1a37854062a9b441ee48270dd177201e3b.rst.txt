@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a37854062a9b441ee48270dd177201e3b:
+
+Define SCHEMA_IfcRelReferencedInSpatialStructure_HAS_RelatedElements
+====================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelReferencedInSpatialStructure_HAS_RelatedElements

@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcEventTime &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcEventType" href="class_ifc4x2_1_1_ifc_event_type.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcEvent" href="class_ifc4x2_1_1_ifc_event.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifceventtime">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-event-time"></span><h1>Class Ifc4x2::IfcEventTime<a class="headerlink" href="#class-ifc4x2-ifceventtime" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcSchedulingTime</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_scheduling_time.html#exhale-class-class-ifc4x2-1-1-ifc-scheduling-time"><span class="std std-ref">Class Ifc4x2::IfcSchedulingTime</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x212IfcEventTimeE">
+<span id="_CPPv3N6Ifc4x212IfcEventTimeE"></span><span id="_CPPv2N6Ifc4x212IfcEventTimeE"></span><span id="Ifc4x2::IfcEventTime"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcEventTime</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_scheduling_time.html#_CPPv4N6Ifc4x217IfcSchedulingTimeE" title="Ifc4x2::IfcSchedulingTime">IfcSchedulingTime</a><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcEventTimeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_event_time"><span class="std std-ref">IfcEventTime</span></a> captures the time-related information about an event including the different types of event dates (i.e. actual, scheduled, early, and late).</p>
+<p>HISTORY: New entity in IFC2x4. Use definitions</p>
+<p>All given values should be provided by the application, i.e. the IFC schema does not deal with dependencies between process time values. At this stage there is also no consistency check through where rules that guarantee a meaningful population of date values. Thus, an application is responsible to provide reasonable values and, if an application receives event dates, has to make consistency checks by their own.</p>
+<p><a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_event_time"><span class="std std-ref">IfcEventTime</span></a> furthermore provides a generic mechanism to differentiate between user given time values and time values derived from user given time values and other constraints such as work calendars and assigned resources (derived from the process graph). The data origin flag is provided as a single attribute applying to all date time related attributes of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_event_time"><span class="std std-ref">IfcEventTime</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x212IfcEventTime4listE">
+<span id="_CPPv3N6Ifc4x212IfcEventTime4listE"></span><span id="_CPPv2N6Ifc4x212IfcEventTime4listE"></span><span id="Ifc4x2::IfcEventTime::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time_1ac64a68574e059f8e8a8f53c8735ce70b"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x212IfcEventTimeE" title="Ifc4x2::IfcEventTime">IfcEventTime</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcEventTime4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcEventTime13hasActualDateEv">
+<span id="_CPPv3NK6Ifc4x212IfcEventTime13hasActualDateEv"></span><span id="_CPPv2NK6Ifc4x212IfcEventTime13hasActualDateEv"></span><span id="Ifc4x2::IfcEventTime::hasActualDateC"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time_1a178ba1dbb0baefc532b0877bd70b2dca"></span>bool <code class="sig-name descname">hasActualDate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcEventTime13hasActualDateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ActualDate is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_event_time"><span class="std std-ref">IfcEventTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcEventTime10ActualDateEv">
+<span id="_CPPv3NK6Ifc4x212IfcEventTime10ActualDateEv"></span><span id="_CPPv2NK6Ifc4x212IfcEventTime10ActualDateEv"></span><span id="Ifc4x2::IfcEventTime::ActualDateC"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time_1a6d3e9491a8796050b39e7f3c97f521be"></span>std::string <code class="sig-name descname">ActualDate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcEventTime10ActualDateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The date on which an event actually occurs. It is a measured value. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcEventTime13setActualDateENSt6stringE">
+<span id="_CPPv3N6Ifc4x212IfcEventTime13setActualDateENSt6stringE"></span><span id="_CPPv2N6Ifc4x212IfcEventTime13setActualDateENSt6stringE"></span><span id="Ifc4x2::IfcEventTime::setActualDate__ss"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time_1a87c96bcd8ae932d98ff3e44fc411370f"></span>void <code class="sig-name descname">setActualDate</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcEventTime13setActualDateENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcEventTime12hasEarlyDateEv">
+<span id="_CPPv3NK6Ifc4x212IfcEventTime12hasEarlyDateEv"></span><span id="_CPPv2NK6Ifc4x212IfcEventTime12hasEarlyDateEv"></span><span id="Ifc4x2::IfcEventTime::hasEarlyDateC"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time_1ac2c8cf041421cfe10dd5f9f495ce1dd7"></span>bool <code class="sig-name descname">hasEarlyDate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcEventTime12hasEarlyDateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute EarlyDate is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_event_time"><span class="std std-ref">IfcEventTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcEventTime9EarlyDateEv">
+<span id="_CPPv3NK6Ifc4x212IfcEventTime9EarlyDateEv"></span><span id="_CPPv2NK6Ifc4x212IfcEventTime9EarlyDateEv"></span><span id="Ifc4x2::IfcEventTime::EarlyDateC"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time_1abef45ffe129d3162c69704ac95a277a9"></span>std::string <code class="sig-name descname">EarlyDate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcEventTime9EarlyDateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The earliest date on which an event can occur. It is a calculated value. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcEventTime12setEarlyDateENSt6stringE">
+<span id="_CPPv3N6Ifc4x212IfcEventTime12setEarlyDateENSt6stringE"></span><span id="_CPPv2N6Ifc4x212IfcEventTime12setEarlyDateENSt6stringE"></span><span id="Ifc4x2::IfcEventTime::setEarlyDate__ss"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time_1aaad1b674d99483733a385c717d185425"></span>void <code class="sig-name descname">setEarlyDate</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcEventTime12setEarlyDateENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcEventTime11hasLateDateEv">
+<span id="_CPPv3NK6Ifc4x212IfcEventTime11hasLateDateEv"></span><span id="_CPPv2NK6Ifc4x212IfcEventTime11hasLateDateEv"></span><span id="Ifc4x2::IfcEventTime::hasLateDateC"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time_1a553e408c735c32c984315cca39f33e97"></span>bool <code class="sig-name descname">hasLateDate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcEventTime11hasLateDateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute LateDate is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_event_time"><span class="std std-ref">IfcEventTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcEventTime8LateDateEv">
+<span id="_CPPv3NK6Ifc4x212IfcEventTime8LateDateEv"></span><span id="_CPPv2NK6Ifc4x212IfcEventTime8LateDateEv"></span><span id="Ifc4x2::IfcEventTime::LateDateC"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time_1a531a26631003e063fe70b21b20b6441f"></span>std::string <code class="sig-name descname">LateDate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcEventTime8LateDateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The latest date on which an event can occur. It is a calculated value. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcEventTime11setLateDateENSt6stringE">
+<span id="_CPPv3N6Ifc4x212IfcEventTime11setLateDateENSt6stringE"></span><span id="_CPPv2N6Ifc4x212IfcEventTime11setLateDateENSt6stringE"></span><span id="Ifc4x2::IfcEventTime::setLateDate__ss"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time_1a83fdb1d6ba2236e821ef53c79314c75a"></span>void <code class="sig-name descname">setLateDate</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcEventTime11setLateDateENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcEventTime15hasScheduleDateEv">
+<span id="_CPPv3NK6Ifc4x212IfcEventTime15hasScheduleDateEv"></span><span id="_CPPv2NK6Ifc4x212IfcEventTime15hasScheduleDateEv"></span><span id="Ifc4x2::IfcEventTime::hasScheduleDateC"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time_1a6bdaeef1cc103c05d4ae6c67987d50b7"></span>bool <code class="sig-name descname">hasScheduleDate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcEventTime15hasScheduleDateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ScheduleDate is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_event_time"><span class="std std-ref">IfcEventTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcEventTime12ScheduleDateEv">
+<span id="_CPPv3NK6Ifc4x212IfcEventTime12ScheduleDateEv"></span><span id="_CPPv2NK6Ifc4x212IfcEventTime12ScheduleDateEv"></span><span id="Ifc4x2::IfcEventTime::ScheduleDateC"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time_1a761e4aa85e17e80e20aceeebd3fb7fe7"></span>std::string <code class="sig-name descname">ScheduleDate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcEventTime12ScheduleDateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The date on which an event is scheduled to occur. The value might be measured or somehow calculated, which is defined by ScheduleDataOrigin. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcEventTime15setScheduleDateENSt6stringE">
+<span id="_CPPv3N6Ifc4x212IfcEventTime15setScheduleDateENSt6stringE"></span><span id="_CPPv2N6Ifc4x212IfcEventTime15setScheduleDateENSt6stringE"></span><span id="Ifc4x2::IfcEventTime::setScheduleDate__ss"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time_1ad93fe7d0e0beeddaa73d7ddac80f7f24"></span>void <code class="sig-name descname">setScheduleDate</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcEventTime15setScheduleDateENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcEventTime11declarationEv">
+<span id="_CPPv3NK6Ifc4x212IfcEventTime11declarationEv"></span><span id="_CPPv2NK6Ifc4x212IfcEventTime11declarationEv"></span><span id="Ifc4x2::IfcEventTime::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time_1a59825e64fc859e112a99352ce0f35059"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcEventTime11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcEventTime12IfcEventTimeEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x212IfcEventTime12IfcEventTimeEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x212IfcEventTime12IfcEventTimeEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcEventTime::IfcEventTime__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time_1a93138c091e35bda5c15d7c94c3631272"></span><code class="sig-name descname">IfcEventTime</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcEventTime12IfcEventTimeEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcEventTime12IfcEventTimeEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x217IfcDataOriginEnum5ValueEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE">
+<span id="_CPPv3N6Ifc4x212IfcEventTime12IfcEventTimeEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x217IfcDataOriginEnum5ValueEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE"></span><span id="_CPPv2N6Ifc4x212IfcEventTime12IfcEventTimeEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x217IfcDataOriginEnum5ValueEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE"></span><span id="Ifc4x2::IfcEventTime::IfcEventTime__boost::optional:ss:.boost::optional:Ifc4x2::IfcDataOriginEnum::Value:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time_1a86d4720f9f8b070b74b1428acec3915d"></span><code class="sig-name descname">IfcEventTime</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Name</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x217IfcDataOriginEnumE" title="Ifc4x2::IfcDataOriginEnum">IfcDataOriginEnum</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x217IfcDataOriginEnum5ValueE" title="Ifc4x2::IfcDataOriginEnum::Value">Value</a>&gt; <em>v2_DataOrigin</em>, boost::optional&lt;std::string&gt; <em>v3_UserDefinedDataOrigin</em>, boost::optional&lt;std::string&gt; <em>v4_ActualDate</em>, boost::optional&lt;std::string&gt; <em>v5_EarlyDate</em>, boost::optional&lt;std::string&gt; <em>v6_LateDate</em>, boost::optional&lt;std::string&gt; <em>v7_ScheduleDate</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcEventTime12IfcEventTimeEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x217IfcDataOriginEnum5ValueEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcEventTime5ClassEv">
+<span id="_CPPv3N6Ifc4x212IfcEventTime5ClassEv"></span><span id="_CPPv2N6Ifc4x212IfcEventTime5ClassEv"></span><span id="Ifc4x2::IfcEventTime::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_event_time_1a58126e1a290f2db44bd5f8bea0db1a6d"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcEventTime5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_event.html" title="previous chapter">Class Ifc4x2::IfcEvent</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_event_type.html" title="next chapter">Class Ifc4x2::IfcEventType</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_event_time.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

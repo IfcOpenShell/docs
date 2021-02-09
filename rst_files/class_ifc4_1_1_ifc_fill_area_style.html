@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcFillAreaStyle &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcFillAreaStyleHatching" href="class_ifc4_1_1_ifc_fill_area_style_hatching.html" />
+    <link rel="prev" title="Class Ifc4::IfcFeatureElementSubtraction" href="class_ifc4_1_1_ifc_feature_element_subtraction.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcfillareastyle">
+<span id="exhale-class-class-ifc4-1-1-ifc-fill-area-style"></span><h1>Class Ifc4::IfcFillAreaStyle<a class="headerlink" href="#class-ifc4-ifcfillareastyle" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcPresentationStyle</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_presentation_style.html#exhale-class-class-ifc4-1-1-ifc-presentation-style"><span class="std std-ref">Class Ifc4::IfcPresentationStyle</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc416IfcFillAreaStyleE">
+<span id="_CPPv3N4Ifc416IfcFillAreaStyleE"></span><span id="_CPPv2N4Ifc416IfcFillAreaStyleE"></span><span id="Ifc4::IfcFillAreaStyle"></span><span class="target" id="class_ifc4_1_1_ifc_fill_area_style"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcFillAreaStyle</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_presentation_style.html#_CPPv4N4Ifc420IfcPresentationStyleE" title="Ifc4::IfcPresentationStyle">IfcPresentationStyle</a><a class="headerlink" href="#_CPPv4N4Ifc416IfcFillAreaStyleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-46:1992: The style for filling visible curve segments, annotation fill areas or surfaces with tiles or hatches.</p>
+<p>An <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_fill_area_style"><span class="std std-ref">IfcFillAreaStyle</span></a> provides the style table for presentation information assigned to annotation fill areas or surfaces for hatching and tiling. The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_fill_area_style"><span class="std std-ref">IfcFillAreaStyle</span></a> defines hatches as model hatches, that is, the distance between hatch lines, or the curve patterns of hatch lines are given in model space dimensions (that have to be scaled using the target plot scale). The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_fill_area_style"><span class="std std-ref">IfcFillAreaStyle</span></a> allows for the following combinations of defining the style of hatching and tiling:</p>
+<p>Solid fill for areas and surfaces by only assigning IfcColour to the set of FillStyles. It then provides the background colour for the filled area or surface.</p>
+<p>NOTE Color information of surfaces for rendering is assigned by using <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_surface_style"><span class="std std-ref">IfcSurfaceStyle</span></a>, not by using <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_fill_area_style"><span class="std std-ref">IfcFillAreaStyle</span></a>.</p>
+<p>Vector based hatching for areas and surfaces based on a single row of hatch lines by assigning a single instance of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_fill_area_style_hatching"><span class="std std-ref">IfcFillAreaStyleHatching</span></a> to the set of FillStyles. If an instance of IfcColour is assigned in addition to the set of FillStyles, it provides the background colour for the hatching. Vector based hatching for areas and surfaces based on two (potentially crossing) rows of hatch lines by assigning two instances of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_fill_area_style_hatching"><span class="std std-ref">IfcFillAreaStyleHatching</span></a> to the set of FillStyles.</p>
+<p>If an instance of IfcColour is assigned in addition to the set of FillStyles, it provides the background colour for the hatching.</p>
+<p>NOTE Assigning more then two instances of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_fill_area_style_hatching"><span class="std std-ref">IfcFillAreaStyleHatching</span></a> to define three or more rows of hatch lines is not encouraged.</p>
+<p>Tiling for areas and surfaces by assigning a single instance of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_fill_area_style_tiles"><span class="std std-ref">IfcFillAreaStyleTiles</span></a> to the set of FillStyles. If an instance of IfcColour is assigned in addition to the set of FillStyles, it provides the background colour for the tiling.</p>
+<p>IFC2x3 NOTE The use of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_fill_area_style_tiles"><span class="std std-ref">IfcFillAreaStyleTiles</span></a> is discouraged., as its definition might change is future releases.</p>
+<p>Externally defined hatch style by assigning a single instance of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_externally_defined_hatch_style"><span class="std std-ref">IfcExternallyDefinedHatchStyle</span></a> to the set of FillStyles. If an instance of IfcColour is assigned in addition to the set of FillStyles, it provides the background colour for the hatching.</p>
+<p>Measures given to a hatch or tile pattern are given in global drawing length units.</p>
+<p>NOTE Global units are defined at the single <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a> instance, given by UnitsInContext:<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_unit_assignment"><span class="std std-ref">IfcUnitAssignment</span></a>, the same units are used for the geometric representation items and for the style definitions.</p>
+<p>The measure values for hatch or tile pattern apply to the model space with a target plot scale provided for the correct appearance in the default plot scale. For different scale and projection dependent fill area styles a different instance of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_fill_area_style"><span class="std std-ref">IfcFillAreaStyle</span></a> needs to be used by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_presentation_style_assignment"><span class="std std-ref">IfcPresentationStyleAssignment</span></a> for different <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_geometric_representation_sub_context"><span class="std std-ref">IfcGeometricRepresentationSubContext</span></a> dependent representations.</p>
+<p>NOTE the target plot scale is given by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_geometric_representation_sub_context_1af9f62572e60f129b043737659c458bce"><span class="std std-ref">IfcGeometricRepresentationSubContext.TargetScale</span></a>.</p>
+<p>An <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_fill_area_style"><span class="std std-ref">IfcFillAreaStyle</span></a> can be assigned to IfcFillArea via the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_presentation_style_assignment"><span class="std std-ref">IfcPresentationStyleAssignment</span></a> through an intermediate <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_styled_item"><span class="std std-ref">IfcStyledItem</span></a> or subtype IfcAnnotationFillAreaOccurrence.</p>
+<p>NOTE Corresponding ISO 10303 name: fill_area_style. Please refer to ISO/IS 10303-46:1994 for the final definition of the formal standard.</p>
+<p>HISTORY New entity in IFC2x2. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc416IfcFillAreaStyle4listE">
+<span id="_CPPv3N4Ifc416IfcFillAreaStyle4listE"></span><span id="_CPPv2N4Ifc416IfcFillAreaStyle4listE"></span><span id="Ifc4::IfcFillAreaStyle::list"></span><span class="target" id="class_ifc4_1_1_ifc_fill_area_style_1a9a8524efe70275e0af5bf3fd721f330e"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc416IfcFillAreaStyleE" title="Ifc4::IfcFillAreaStyle">IfcFillAreaStyle</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc416IfcFillAreaStyle4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc416IfcFillAreaStyle10FillStylesEv">
+<span id="_CPPv3NK4Ifc416IfcFillAreaStyle10FillStylesEv"></span><span id="_CPPv2NK4Ifc416IfcFillAreaStyle10FillStylesEv"></span><span id="Ifc4::IfcFillAreaStyle::FillStylesC"></span><span class="target" id="class_ifc4_1_1_ifc_fill_area_style_1a8ea3523707e1b0d100db0534350d3992"></span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <code class="sig-name descname">FillStyles</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc416IfcFillAreaStyle10FillStylesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The set of fill area styles to use in presenting visible curve segments, annotation fill areas or surfaces. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc416IfcFillAreaStyle13setFillStylesEN13IfcEntityList3ptrE">
+<span id="_CPPv3N4Ifc416IfcFillAreaStyle13setFillStylesEN13IfcEntityList3ptrE"></span><span id="_CPPv2N4Ifc416IfcFillAreaStyle13setFillStylesEN13IfcEntityList3ptrE"></span><span id="Ifc4::IfcFillAreaStyle::setFillStyles__IfcEntityList::ptr"></span><span class="target" id="class_ifc4_1_1_ifc_fill_area_style_1ae35b0b8c7904cf079d6cdd8a880ec4d0"></span>void <code class="sig-name descname">setFillStyles</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc416IfcFillAreaStyle13setFillStylesEN13IfcEntityList3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc416IfcFillAreaStyle20hasModelorDraughtingEv">
+<span id="_CPPv3NK4Ifc416IfcFillAreaStyle20hasModelorDraughtingEv"></span><span id="_CPPv2NK4Ifc416IfcFillAreaStyle20hasModelorDraughtingEv"></span><span id="Ifc4::IfcFillAreaStyle::hasModelorDraughtingC"></span><span class="target" id="class_ifc4_1_1_ifc_fill_area_style_1ae342ca892ef3103e291807ac08fcd87f"></span>bool <code class="sig-name descname">hasModelorDraughting</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc416IfcFillAreaStyle20hasModelorDraughtingEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ModelorDraughting is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_fill_area_style"><span class="std std-ref">IfcFillAreaStyle</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc416IfcFillAreaStyle17ModelorDraughtingEv">
+<span id="_CPPv3NK4Ifc416IfcFillAreaStyle17ModelorDraughtingEv"></span><span id="_CPPv2NK4Ifc416IfcFillAreaStyle17ModelorDraughtingEv"></span><span id="Ifc4::IfcFillAreaStyle::ModelorDraughtingC"></span><span class="target" id="class_ifc4_1_1_ifc_fill_area_style_1adb4feaef222a76882ebf8bf66703598a"></span>bool <code class="sig-name descname">ModelorDraughting</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc416IfcFillAreaStyle17ModelorDraughtingEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc416IfcFillAreaStyle20setModelorDraughtingEb">
+<span id="_CPPv3N4Ifc416IfcFillAreaStyle20setModelorDraughtingEb"></span><span id="_CPPv2N4Ifc416IfcFillAreaStyle20setModelorDraughtingEb"></span><span id="Ifc4::IfcFillAreaStyle::setModelorDraughting__b"></span><span class="target" id="class_ifc4_1_1_ifc_fill_area_style_1a43c071045a44cec172c371c204282782"></span>void <code class="sig-name descname">setModelorDraughting</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc416IfcFillAreaStyle20setModelorDraughtingEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc416IfcFillAreaStyle11declarationEv">
+<span id="_CPPv3NK4Ifc416IfcFillAreaStyle11declarationEv"></span><span id="_CPPv2NK4Ifc416IfcFillAreaStyle11declarationEv"></span><span id="Ifc4::IfcFillAreaStyle::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_fill_area_style_1a33d7c0cf08671fe67bcbe1e827988b1a"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc416IfcFillAreaStyle11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc416IfcFillAreaStyle16IfcFillAreaStyleEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc416IfcFillAreaStyle16IfcFillAreaStyleEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc416IfcFillAreaStyle16IfcFillAreaStyleEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcFillAreaStyle::IfcFillAreaStyle__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_fill_area_style_1a912d507a35d5144d733e649438b80952"></span><code class="sig-name descname">IfcFillAreaStyle</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc416IfcFillAreaStyle16IfcFillAreaStyleEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc416IfcFillAreaStyle16IfcFillAreaStyleEN5boost8optionalINSt6stringEEEN13IfcEntityList3ptrEN5boost8optionalIbEE">
+<span id="_CPPv3N4Ifc416IfcFillAreaStyle16IfcFillAreaStyleEN5boost8optionalINSt6stringEEEN13IfcEntityList3ptrEN5boost8optionalIbEE"></span><span id="_CPPv2N4Ifc416IfcFillAreaStyle16IfcFillAreaStyleEN5boost8optionalINSt6stringEEEN13IfcEntityList3ptrEN5boost8optionalIbEE"></span><span id="Ifc4::IfcFillAreaStyle::IfcFillAreaStyle__boost::optional:ss:.IfcEntityList::ptr.boost::optional:b:"></span><span class="target" id="class_ifc4_1_1_ifc_fill_area_style_1a46c87f6a0ec7c19f6035635b6748d18d"></span><code class="sig-name descname">IfcFillAreaStyle</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Name</em>, <a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <em>v2_FillStyles</em>, boost::optional&lt;bool&gt; <em>v3_ModelorDraughting</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc416IfcFillAreaStyle16IfcFillAreaStyleEN5boost8optionalINSt6stringEEEN13IfcEntityList3ptrEN5boost8optionalIbEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc416IfcFillAreaStyle5ClassEv">
+<span id="_CPPv3N4Ifc416IfcFillAreaStyle5ClassEv"></span><span id="_CPPv2N4Ifc416IfcFillAreaStyle5ClassEv"></span><span id="Ifc4::IfcFillAreaStyle::Class"></span><span class="target" id="class_ifc4_1_1_ifc_fill_area_style_1a74380c078240393fbc39f184aa4bb76c"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc416IfcFillAreaStyle5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_feature_element_subtraction.html" title="previous chapter">Class Ifc4::IfcFeatureElementSubtraction</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_fill_area_style_hatching.html" title="next chapter">Class Ifc4::IfcFillAreaStyleHatching</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_fill_area_style.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

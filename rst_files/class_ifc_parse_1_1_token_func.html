@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class TokenFunc &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class type_declaration" href="class_ifc_parse_1_1type__declaration.html" />
+    <link rel="prev" title="Class TokenArgument" href="class_ifc_parse_1_1_token_argument.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-tokenfunc">
+<span id="exhale-class-class-ifc-parse-1-1-token-func"></span><h1>Class TokenFunc<a class="headerlink" href="#class-tokenfunc" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_IfcParse.h.html#file-src-ifcparse-ifcparse-h"><span class="std std-ref">File IfcParse.h</span></a></p></li>
+</ul>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N8IfcParse9TokenFuncE">
+<span id="_CPPv3N8IfcParse9TokenFuncE"></span><span id="_CPPv2N8IfcParse9TokenFuncE"></span><span id="IfcParse::TokenFunc"></span><span class="target" id="class_ifc_parse_1_1_token_func"></span><em class="property">class </em><code class="sig-prename descclassname">IfcParse<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">TokenFunc</code><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFuncE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Provides functions to convert Tokens to binary data Tokens are merely offsets to where they can be read in the file </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc8isStringERK5Token">
+<span id="_CPPv3N8IfcParse9TokenFunc8isStringERK5Token"></span><span id="_CPPv2N8IfcParse9TokenFunc8isStringERK5Token"></span><span id="IfcParse::TokenFunc::isString__TokenCR"></span><span class="target" id="class_ifc_parse_1_1_token_func_1a1648aeff1eafb451181913ca7d22f979"></span>bool <code class="sig-name descname">isString</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc8isStringERK5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the offset at which the token is read from the file. </p>
+<p>Returns whether the token can be interpreted as a string </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc12isIdentifierERK5Token">
+<span id="_CPPv3N8IfcParse9TokenFunc12isIdentifierERK5Token"></span><span id="_CPPv2N8IfcParse9TokenFunc12isIdentifierERK5Token"></span><span id="IfcParse::TokenFunc::isIdentifier__TokenCR"></span><span class="target" id="class_ifc_parse_1_1_token_func_1a695be8a94a7f6ad1b39fad6337d88e9c"></span>bool <code class="sig-name descname">isIdentifier</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc12isIdentifierERK5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns whether the token can be interpreted as an identifier. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc10isOperatorERK5Token">
+<span id="_CPPv3N8IfcParse9TokenFunc10isOperatorERK5Token"></span><span id="_CPPv2N8IfcParse9TokenFunc10isOperatorERK5Token"></span><span id="IfcParse::TokenFunc::isOperator__TokenCR"></span><span class="target" id="class_ifc_parse_1_1_token_func_1a5e9324d3ea4bf37cb0eb0be7f110f90c"></span>bool <code class="sig-name descname">isOperator</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc10isOperatorERK5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns whether the token can be interpreted as a syntactical operator. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc10isOperatorERK5Tokenc">
+<span id="_CPPv3N8IfcParse9TokenFunc10isOperatorERK5Tokenc"></span><span id="_CPPv2N8IfcParse9TokenFunc10isOperatorERK5Tokenc"></span><span id="IfcParse::TokenFunc::isOperator__TokenCR.c"></span><span class="target" id="class_ifc_parse_1_1_token_func_1a4fcd7a2a694ea42a941ba56041dc0e72"></span>bool <code class="sig-name descname">isOperator</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em>, char <em>op</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc10isOperatorERK5Tokenc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns whether the token is a given operator. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc13isEnumerationERK5Token">
+<span id="_CPPv3N8IfcParse9TokenFunc13isEnumerationERK5Token"></span><span id="_CPPv2N8IfcParse9TokenFunc13isEnumerationERK5Token"></span><span id="IfcParse::TokenFunc::isEnumeration__TokenCR"></span><span class="target" id="class_ifc_parse_1_1_token_func_1a4e7ad91bcf941cd107cd6419f38c6586"></span>bool <code class="sig-name descname">isEnumeration</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc13isEnumerationERK5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns whether the token can be interpreted as an enumerated value. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc9isKeywordERK5Token">
+<span id="_CPPv3N8IfcParse9TokenFunc9isKeywordERK5Token"></span><span id="_CPPv2N8IfcParse9TokenFunc9isKeywordERK5Token"></span><span id="IfcParse::TokenFunc::isKeyword__TokenCR"></span><span class="target" id="class_ifc_parse_1_1_token_func_1a7ece751ccc0184e5ca927d6ae3aa05e2"></span>bool <code class="sig-name descname">isKeyword</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc9isKeywordERK5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns whether the token can be interpreted as a datatype name. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc5isIntERK5Token">
+<span id="_CPPv3N8IfcParse9TokenFunc5isIntERK5Token"></span><span id="_CPPv2N8IfcParse9TokenFunc5isIntERK5Token"></span><span id="IfcParse::TokenFunc::isInt__TokenCR"></span><span class="target" id="class_ifc_parse_1_1_token_func_1a12127ee6b43f884c0ae52375a271b796"></span>bool <code class="sig-name descname">isInt</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc5isIntERK5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns whether the token can be interpreted as an integer. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc6isBoolERK5Token">
+<span id="_CPPv3N8IfcParse9TokenFunc6isBoolERK5Token"></span><span id="_CPPv2N8IfcParse9TokenFunc6isBoolERK5Token"></span><span id="IfcParse::TokenFunc::isBool__TokenCR"></span><span class="target" id="class_ifc_parse_1_1_token_func_1a1ccbbbe3da9b1ccb615d3dc425ab8a74"></span>bool <code class="sig-name descname">isBool</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc6isBoolERK5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns whether the token can be interpreted as a boolean. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc7isFloatERK5Token">
+<span id="_CPPv3N8IfcParse9TokenFunc7isFloatERK5Token"></span><span id="_CPPv2N8IfcParse9TokenFunc7isFloatERK5Token"></span><span id="IfcParse::TokenFunc::isFloat__TokenCR"></span><span class="target" id="class_ifc_parse_1_1_token_func_1a2ad09020d4ab3ff7f6b803b5fee02a41"></span>bool <code class="sig-name descname">isFloat</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc7isFloatERK5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns whether the token can be interpreted as a floating point number. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc8isBinaryERK5Token">
+<span id="_CPPv3N8IfcParse9TokenFunc8isBinaryERK5Token"></span><span id="_CPPv2N8IfcParse9TokenFunc8isBinaryERK5Token"></span><span id="IfcParse::TokenFunc::isBinary__TokenCR"></span><span class="target" id="class_ifc_parse_1_1_token_func_1a7d88f096b5f8d4379125472e454861c3"></span>bool <code class="sig-name descname">isBinary</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc8isBinaryERK5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns whether the token can be interpreted as a binary type. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc5asIntERK5Token">
+<span id="_CPPv3N8IfcParse9TokenFunc5asIntERK5Token"></span><span id="_CPPv2N8IfcParse9TokenFunc5asIntERK5Token"></span><span id="IfcParse::TokenFunc::asInt__TokenCR"></span><span class="target" id="class_ifc_parse_1_1_token_func_1af07f15b824b0550cc3f4efafc6689a92"></span>int <code class="sig-name descname">asInt</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc5asIntERK5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the token interpreted as an integer. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc12asIdentifierERK5Token">
+<span id="_CPPv3N8IfcParse9TokenFunc12asIdentifierERK5Token"></span><span id="_CPPv2N8IfcParse9TokenFunc12asIdentifierERK5Token"></span><span id="IfcParse::TokenFunc::asIdentifier__TokenCR"></span><span class="target" id="class_ifc_parse_1_1_token_func_1a306ce80474abb63d08b5f8f9bcab648b"></span>int <code class="sig-name descname">asIdentifier</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc12asIdentifierERK5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the token interpreted as an identifier. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc6asBoolERK5Token">
+<span id="_CPPv3N8IfcParse9TokenFunc6asBoolERK5Token"></span><span id="_CPPv2N8IfcParse9TokenFunc6asBoolERK5Token"></span><span id="IfcParse::TokenFunc::asBool__TokenCR"></span><span class="target" id="class_ifc_parse_1_1_token_func_1a03851750a040a08a50f65e45c9d20a56"></span>bool <code class="sig-name descname">asBool</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc6asBoolERK5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the token interpreted as an boolean (.T. or .F.) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc7asFloatERK5Token">
+<span id="_CPPv3N8IfcParse9TokenFunc7asFloatERK5Token"></span><span id="_CPPv2N8IfcParse9TokenFunc7asFloatERK5Token"></span><span id="IfcParse::TokenFunc::asFloat__TokenCR"></span><span class="target" id="class_ifc_parse_1_1_token_func_1a71938c8ceb8119e4ff29c5abdf87e087"></span>double <code class="sig-name descname">asFloat</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc7asFloatERK5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the token as a floating point number. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc8asStringERK5Token">
+<span id="_CPPv3N8IfcParse9TokenFunc8asStringERK5Token"></span><span id="_CPPv2N8IfcParse9TokenFunc8asStringERK5Token"></span><span id="IfcParse::TokenFunc::asString__TokenCR"></span><span class="target" id="class_ifc_parse_1_1_token_func_1a6a3f7af4722775a9464b1e719d601b16"></span>std::string <code class="sig-name descname">asString</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc8asStringERK5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the token as a string (without the dot or apostrophe) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc11asStringRefERK5Token">
+<span id="_CPPv3N8IfcParse9TokenFunc11asStringRefERK5Token"></span><span id="_CPPv2N8IfcParse9TokenFunc11asStringRefERK5Token"></span><span id="IfcParse::TokenFunc::asStringRef__TokenCR"></span><span class="target" id="class_ifc_parse_1_1_token_func_1aaeb998657700f542f4caf6dd99ffbbb9"></span><em class="property">const</em> std::string &amp;<code class="sig-name descname">asStringRef</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc11asStringRefERK5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the token as a string in internal buffer (for optimization purposes) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc8asBinaryERK5Token">
+<span id="_CPPv3N8IfcParse9TokenFunc8asBinaryERK5Token"></span><span id="_CPPv2N8IfcParse9TokenFunc8asBinaryERK5Token"></span><span id="IfcParse::TokenFunc::asBinary__TokenCR"></span><span class="target" id="class_ifc_parse_1_1_token_func_1af7c95f20bdaeb61387190fcf8644a818"></span>boost::dynamic_bitset <code class="sig-name descname">asBinary</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc8asBinaryERK5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the token as a string (without the dot or apostrophe) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcParse9TokenFunc8toStringERK5Token">
+<span id="_CPPv3N8IfcParse9TokenFunc8toStringERK5Token"></span><span id="_CPPv2N8IfcParse9TokenFunc8toStringERK5Token"></span><span id="IfcParse::TokenFunc::toString__TokenCR"></span><span class="target" id="class_ifc_parse_1_1_token_func_1ac4dd8eb44e1389bef762e1c9f8010ef9"></span>std::string <code class="sig-name descname">toString</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="struct_ifc_parse_1_1_token.html#_CPPv4N8IfcParse5TokenE" title="IfcParse::Token">Token</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcParse9TokenFunc8toStringERK5Token" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns a string representation of the token (including the dot or apostrophe) </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc_parse_1_1_token_argument.html" title="previous chapter">Class TokenArgument</a></li>
+      <li>Next: <a href="class_ifc_parse_1_1type__declaration.html" title="next chapter">Class type_declaration</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc_parse_1_1_token_func.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

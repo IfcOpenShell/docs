@@ -1,0 +1,37 @@
+.. _exhale_class_class_ifc4x1_1_1_ifc_geometric_representation_context:
+
+Class Ifc4x1::IfcGeometricRepresentationContext
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x1::IfcRepresentationContext`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_representation_context`)
+
+
+Derived Type
+************
+
+- ``public Ifc4x1::IfcGeometricRepresentationSubContext`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_geometric_representation_sub_context`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x1::IfcGeometricRepresentationContext
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcAsset &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcAsymmetricIShapeProfileDef" href="class_ifc2x3_1_1_ifc_asymmetric_i_shape_profile_def.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcAreaMeasure" href="class_ifc2x3_1_1_ifc_area_measure.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcasset">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-asset"></span><h1>Class Ifc2x3::IfcAsset<a class="headerlink" href="#class-ifc2x3-ifcasset" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcGroup</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_group.html#exhale-class-class-ifc2x3-1-1-ifc-group"><span class="std std-ref">Class Ifc2x3::IfcGroup</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x38IfcAssetE">
+<span id="_CPPv3N6Ifc2x38IfcAssetE"></span><span id="_CPPv2N6Ifc2x38IfcAssetE"></span><span id="Ifc2x3::IfcAsset"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcAsset</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_group.html#_CPPv4N6Ifc2x38IfcGroupE" title="Ifc2x3::IfcGroup">IfcGroup</a><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcAssetE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An asset is a uniquely identifiable grouping of elements acting as a single entity that has a financial value or that can be operated on as a single unit.</p>
+<p>An asset is generally the level of granularity at which maintenance operations are undertaken. An asset is a group that can contain one or more elements. Whilst the financial value of a component or element can be defined, financial value is also defined for accounting purposes at the level of the asset. There are a number of actors that can be associated with an asset, each actor having a role. Actors within the scope of the project are indicated using the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_assigns_to_actor"><span class="std std-ref">IfcRelAssignsToActor</span></a> relationship in which case roles should be defined through the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_actor_role"><span class="std std-ref">IfcActorRole</span></a> class; otherwise principal actors are identified as attributes of the class. In the existence of both, direct attributes take precedence. There are a number of costs that can be associated with an asset, each cost having a role. These are specified through the OriginalValue, CurrentValue, TotalReplacementCost and DepreciatedValue attributes.</p>
+<p>HISTORY: New entity in IFC2x. In IFC2x4, all attributes made optional and date values changed to use IfcDate.</p>
+<p>Property Set Use Definition The property sets relating to this entity are defined by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> and attached by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. They are accessible by the IsDefinedBy inverse attribute. Refer to the documentation at the supertype <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_group"><span class="std std-ref">IfcGroup</span></a> and ancestors for inherited property set definitions. The following property set definitions are applicable to this entity: Pset_Asset</p>
+<p>Classification Use Definition Classifications may be applied using <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_associates_classification"><span class="std std-ref">IfcRelAssociatesClassification</span></a> where RelatedObjects contains the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_asset"><span class="std std-ref">IfcAsset</span></a> and RelatingClassification refers to an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_classification"><span class="std std-ref">IfcClassification</span></a> or <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_classification_reference"><span class="std std-ref">IfcClassificationReference</span></a>.</p>
+<p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_classification_reference"><span class="std std-ref">IfcClassificationReference</span></a>: The operating function of an asset within an organization may be particularly valuable in situations where one organization provides and maintains core services and another organization adds and maintains terminal services. It can classify who owns and is responsible for the asset. Operating function can be designated through the use of one or more classification references.</p>
+<p>Assignment Use Definition The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_asset"><span class="std std-ref">IfcAsset</span></a> may be assigned to the following entities using relationships as indicated:</p>
+<p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_actor"><span class="std std-ref">IfcActor</span></a> (<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_assigns_to_actor"><span class="std std-ref">IfcRelAssignsToActor</span></a>): Indicates the actor who owns, uses, or is responsible for the asset (as indicated by role in relationship), if such actor is within the scope of the project. <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_cost_item"><span class="std std-ref">IfcCostItem</span></a> (<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_assigns_to_control"><span class="std std-ref">IfcRelAssignsToControl</span></a>): Indicates a cost item encompassing the asset.</p>
+<p>The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_asset"><span class="std std-ref">IfcAsset</span></a> may have assignments of its own using the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_assigns_to_group"><span class="std std-ref">IfcRelAssignsToGroup</span></a> relationship where RelatingGroup refers to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_asset"><span class="std std-ref">IfcAsset</span></a> and RelatedObjects contains one or more objects of the following types: <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a>: Physical elements that comprise the asset. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x38IfcAsset4listE">
+<span id="_CPPv3N6Ifc2x38IfcAsset4listE"></span><span id="_CPPv2N6Ifc2x38IfcAsset4listE"></span><span id="Ifc2x3::IfcAsset::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1a391d5947274fb2711cc75419ad4fac58"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x38IfcAssetE" title="Ifc2x3::IfcAsset">IfcAsset</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcAsset4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x38IfcAsset7AssetIDEv">
+<span id="_CPPv3NK6Ifc2x38IfcAsset7AssetIDEv"></span><span id="_CPPv2NK6Ifc2x38IfcAsset7AssetIDEv"></span><span id="Ifc2x3::IfcAsset::AssetIDC"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1abf8e52c6b4ed286f1f8e8df2d9c2e15f"></span>std::string <code class="sig-name descname">AssetID</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x38IfcAsset7AssetIDEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x38IfcAsset10setAssetIDENSt6stringE">
+<span id="_CPPv3N6Ifc2x38IfcAsset10setAssetIDENSt6stringE"></span><span id="_CPPv2N6Ifc2x38IfcAsset10setAssetIDENSt6stringE"></span><span id="Ifc2x3::IfcAsset::setAssetID__ss"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1a2c03ef61e9332fec70031f8bb5710ca8"></span>void <code class="sig-name descname">setAssetID</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcAsset10setAssetIDENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x38IfcAsset13OriginalValueEv">
+<span id="_CPPv3NK6Ifc2x38IfcAsset13OriginalValueEv"></span><span id="_CPPv2NK6Ifc2x38IfcAsset13OriginalValueEv"></span><span id="Ifc2x3::IfcAsset::OriginalValueC"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1ae6f54f8d17bed815e977b6ce343e5049"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cost_value.html#_CPPv4N6Ifc2x312IfcCostValueE" title="Ifc2x3::IfcCostValue">IfcCostValue</a> *<code class="sig-name descname">OriginalValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x38IfcAsset13OriginalValueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The cost value of the asset at the time of purchase. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x38IfcAsset16setOriginalValueEPN6Ifc2x312IfcCostValueE">
+<span id="_CPPv3N6Ifc2x38IfcAsset16setOriginalValueEPN6Ifc2x312IfcCostValueE"></span><span id="_CPPv2N6Ifc2x38IfcAsset16setOriginalValueEPN6Ifc2x312IfcCostValueE"></span><span id="Ifc2x3::IfcAsset::setOriginalValue__Ifc2x3::IfcCostValueP"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1aa9c9733463f45252c1450a8125ef1d4d"></span>void <code class="sig-name descname">setOriginalValue</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cost_value.html#_CPPv4N6Ifc2x312IfcCostValueE" title="Ifc2x3::IfcCostValue">IfcCostValue</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcAsset16setOriginalValueEPN6Ifc2x312IfcCostValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x38IfcAsset12CurrentValueEv">
+<span id="_CPPv3NK6Ifc2x38IfcAsset12CurrentValueEv"></span><span id="_CPPv2NK6Ifc2x38IfcAsset12CurrentValueEv"></span><span id="Ifc2x3::IfcAsset::CurrentValueC"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1a6967ce32b1a0b43b92ce233df49b81b3"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cost_value.html#_CPPv4N6Ifc2x312IfcCostValueE" title="Ifc2x3::IfcCostValue">IfcCostValue</a> *<code class="sig-name descname">CurrentValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x38IfcAsset12CurrentValueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The current cost value of the asset. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x38IfcAsset15setCurrentValueEPN6Ifc2x312IfcCostValueE">
+<span id="_CPPv3N6Ifc2x38IfcAsset15setCurrentValueEPN6Ifc2x312IfcCostValueE"></span><span id="_CPPv2N6Ifc2x38IfcAsset15setCurrentValueEPN6Ifc2x312IfcCostValueE"></span><span id="Ifc2x3::IfcAsset::setCurrentValue__Ifc2x3::IfcCostValueP"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1a9b719cffde3296a9aa9215365e874049"></span>void <code class="sig-name descname">setCurrentValue</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cost_value.html#_CPPv4N6Ifc2x312IfcCostValueE" title="Ifc2x3::IfcCostValue">IfcCostValue</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcAsset15setCurrentValueEPN6Ifc2x312IfcCostValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x38IfcAsset20TotalReplacementCostEv">
+<span id="_CPPv3NK6Ifc2x38IfcAsset20TotalReplacementCostEv"></span><span id="_CPPv2NK6Ifc2x38IfcAsset20TotalReplacementCostEv"></span><span id="Ifc2x3::IfcAsset::TotalReplacementCostC"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1a424d74d8325115f2708e09d953229cb4"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cost_value.html#_CPPv4N6Ifc2x312IfcCostValueE" title="Ifc2x3::IfcCostValue">IfcCostValue</a> *<code class="sig-name descname">TotalReplacementCost</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x38IfcAsset20TotalReplacementCostEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The total cost of replacement of the asset. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x38IfcAsset23setTotalReplacementCostEPN6Ifc2x312IfcCostValueE">
+<span id="_CPPv3N6Ifc2x38IfcAsset23setTotalReplacementCostEPN6Ifc2x312IfcCostValueE"></span><span id="_CPPv2N6Ifc2x38IfcAsset23setTotalReplacementCostEPN6Ifc2x312IfcCostValueE"></span><span id="Ifc2x3::IfcAsset::setTotalReplacementCost__Ifc2x3::IfcCostValueP"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1a872a4f4046a25f023c8954ba8b3d3923"></span>void <code class="sig-name descname">setTotalReplacementCost</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cost_value.html#_CPPv4N6Ifc2x312IfcCostValueE" title="Ifc2x3::IfcCostValue">IfcCostValue</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcAsset23setTotalReplacementCostEPN6Ifc2x312IfcCostValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x38IfcAsset5OwnerEv">
+<span id="_CPPv3NK6Ifc2x38IfcAsset5OwnerEv"></span><span id="_CPPv2NK6Ifc2x38IfcAsset5OwnerEv"></span><span id="Ifc2x3::IfcAsset::OwnerC"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1aa384eb1b3dd0bfdb59b3f54dfe6dc0c1"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x314IfcActorSelectE" title="Ifc2x3::IfcActorSelect">IfcActorSelect</a> *<code class="sig-name descname">Owner</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x38IfcAsset5OwnerEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The name of the person or organization that ‘owns’ the asset. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x38IfcAsset8setOwnerEPN6Ifc2x314IfcActorSelectE">
+<span id="_CPPv3N6Ifc2x38IfcAsset8setOwnerEPN6Ifc2x314IfcActorSelectE"></span><span id="_CPPv2N6Ifc2x38IfcAsset8setOwnerEPN6Ifc2x314IfcActorSelectE"></span><span id="Ifc2x3::IfcAsset::setOwner__Ifc2x3::IfcActorSelectP"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1af907b81904392d9891afd9b6dce86b7e"></span>void <code class="sig-name descname">setOwner</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x314IfcActorSelectE" title="Ifc2x3::IfcActorSelect">IfcActorSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcAsset8setOwnerEPN6Ifc2x314IfcActorSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x38IfcAsset4UserEv">
+<span id="_CPPv3NK6Ifc2x38IfcAsset4UserEv"></span><span id="_CPPv2NK6Ifc2x38IfcAsset4UserEv"></span><span id="Ifc2x3::IfcAsset::UserC"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1ad60bbc41f18b65a5676728577124635b"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x314IfcActorSelectE" title="Ifc2x3::IfcActorSelect">IfcActorSelect</a> *<code class="sig-name descname">User</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x38IfcAsset4UserEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The name of the person or organization that ‘uses’ the asset. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x38IfcAsset7setUserEPN6Ifc2x314IfcActorSelectE">
+<span id="_CPPv3N6Ifc2x38IfcAsset7setUserEPN6Ifc2x314IfcActorSelectE"></span><span id="_CPPv2N6Ifc2x38IfcAsset7setUserEPN6Ifc2x314IfcActorSelectE"></span><span id="Ifc2x3::IfcAsset::setUser__Ifc2x3::IfcActorSelectP"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1aa7dc9fbf53ca065d8695e1b56f14c551"></span>void <code class="sig-name descname">setUser</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x314IfcActorSelectE" title="Ifc2x3::IfcActorSelect">IfcActorSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcAsset7setUserEPN6Ifc2x314IfcActorSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x38IfcAsset17ResponsiblePersonEv">
+<span id="_CPPv3NK6Ifc2x38IfcAsset17ResponsiblePersonEv"></span><span id="_CPPv2NK6Ifc2x38IfcAsset17ResponsiblePersonEv"></span><span id="Ifc2x3::IfcAsset::ResponsiblePersonC"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1af93e535692b823046dfbc609de9b8e57"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_person.html#_CPPv4N6Ifc2x39IfcPersonE" title="Ifc2x3::IfcPerson">IfcPerson</a> *<code class="sig-name descname">ResponsiblePerson</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x38IfcAsset17ResponsiblePersonEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The person designated to be responsible for the asset. NOTE: In some regulations (for example, UK Health and Safety at Work Act, Electricity at Work Regulations), management of assets must have a person identified as being responsible and to whom regulatory, insurance and other organizations communicate. In places where there is not a legal requirement, the responsible person would be the asset manager but would not have a legal status. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x38IfcAsset20setResponsiblePersonEPN6Ifc2x39IfcPersonE">
+<span id="_CPPv3N6Ifc2x38IfcAsset20setResponsiblePersonEPN6Ifc2x39IfcPersonE"></span><span id="_CPPv2N6Ifc2x38IfcAsset20setResponsiblePersonEPN6Ifc2x39IfcPersonE"></span><span id="Ifc2x3::IfcAsset::setResponsiblePerson__Ifc2x3::IfcPersonP"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1a966ad626199c601e931eaf3cd8b77129"></span>void <code class="sig-name descname">setResponsiblePerson</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_person.html#_CPPv4N6Ifc2x39IfcPersonE" title="Ifc2x3::IfcPerson">IfcPerson</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcAsset20setResponsiblePersonEPN6Ifc2x39IfcPersonE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x38IfcAsset17IncorporationDateEv">
+<span id="_CPPv3NK6Ifc2x38IfcAsset17IncorporationDateEv"></span><span id="_CPPv2NK6Ifc2x38IfcAsset17IncorporationDateEv"></span><span id="Ifc2x3::IfcAsset::IncorporationDateC"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1a07459ee4c9f512ddf0922936b0a6a74a"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_calendar_date.html#_CPPv4N6Ifc2x315IfcCalendarDateE" title="Ifc2x3::IfcCalendarDate">IfcCalendarDate</a> *<code class="sig-name descname">IncorporationDate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x38IfcAsset17IncorporationDateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The date on which an asset was incorporated into the works, installed, constructed, erected or completed. NOTE: This is the date on which an asset is considered to start depreciating.</p>
+<p>IFC2x4 CHANGE Type changed from IfcDateTimeSelect. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x38IfcAsset20setIncorporationDateEPN6Ifc2x315IfcCalendarDateE">
+<span id="_CPPv3N6Ifc2x38IfcAsset20setIncorporationDateEPN6Ifc2x315IfcCalendarDateE"></span><span id="_CPPv2N6Ifc2x38IfcAsset20setIncorporationDateEPN6Ifc2x315IfcCalendarDateE"></span><span id="Ifc2x3::IfcAsset::setIncorporationDate__Ifc2x3::IfcCalendarDateP"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1a70b3f80be363248a5a341a096464db9d"></span>void <code class="sig-name descname">setIncorporationDate</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_calendar_date.html#_CPPv4N6Ifc2x315IfcCalendarDateE" title="Ifc2x3::IfcCalendarDate">IfcCalendarDate</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcAsset20setIncorporationDateEPN6Ifc2x315IfcCalendarDateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x38IfcAsset16DepreciatedValueEv">
+<span id="_CPPv3NK6Ifc2x38IfcAsset16DepreciatedValueEv"></span><span id="_CPPv2NK6Ifc2x38IfcAsset16DepreciatedValueEv"></span><span id="Ifc2x3::IfcAsset::DepreciatedValueC"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1ad599e756bb6f55f6e48768b262d3ad48"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cost_value.html#_CPPv4N6Ifc2x312IfcCostValueE" title="Ifc2x3::IfcCostValue">IfcCostValue</a> *<code class="sig-name descname">DepreciatedValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x38IfcAsset16DepreciatedValueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The current value of an asset within the accounting rules and procedures of an organization. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x38IfcAsset19setDepreciatedValueEPN6Ifc2x312IfcCostValueE">
+<span id="_CPPv3N6Ifc2x38IfcAsset19setDepreciatedValueEPN6Ifc2x312IfcCostValueE"></span><span id="_CPPv2N6Ifc2x38IfcAsset19setDepreciatedValueEPN6Ifc2x312IfcCostValueE"></span><span id="Ifc2x3::IfcAsset::setDepreciatedValue__Ifc2x3::IfcCostValueP"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1aa663686d76d9880e7c58952e5f897704"></span>void <code class="sig-name descname">setDepreciatedValue</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cost_value.html#_CPPv4N6Ifc2x312IfcCostValueE" title="Ifc2x3::IfcCostValue">IfcCostValue</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcAsset19setDepreciatedValueEPN6Ifc2x312IfcCostValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x38IfcAsset11declarationEv">
+<span id="_CPPv3NK6Ifc2x38IfcAsset11declarationEv"></span><span id="_CPPv2NK6Ifc2x38IfcAsset11declarationEv"></span><span id="Ifc2x3::IfcAsset::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1a4415a814c68a7625a442abad514a6566"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x38IfcAsset11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x38IfcAsset8IfcAssetEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x38IfcAsset8IfcAssetEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x38IfcAsset8IfcAssetEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcAsset::IfcAsset__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1a4efaa59f8f6b9047069ccba1641692c0"></span><code class="sig-name descname">IfcAsset</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcAsset8IfcAssetEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x38IfcAsset8IfcAssetENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEENSt6stringEPN6Ifc2x312IfcCostValueEPN6Ifc2x312IfcCostValueEPN6Ifc2x312IfcCostValueEPN6Ifc2x314IfcActorSelectEPN6Ifc2x314IfcActorSelectEPN6Ifc2x39IfcPersonEPN6Ifc2x315IfcCalendarDateEPN6Ifc2x312IfcCostValueE">
+<span id="_CPPv3N6Ifc2x38IfcAsset8IfcAssetENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEENSt6stringEPN6Ifc2x312IfcCostValueEPN6Ifc2x312IfcCostValueEPN6Ifc2x312IfcCostValueEPN6Ifc2x314IfcActorSelectEPN6Ifc2x314IfcActorSelectEPN6Ifc2x39IfcPersonEPN6Ifc2x315IfcCalendarDateEPN6Ifc2x312IfcCostValueE"></span><span id="_CPPv2N6Ifc2x38IfcAsset8IfcAssetENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEENSt6stringEPN6Ifc2x312IfcCostValueEPN6Ifc2x312IfcCostValueEPN6Ifc2x312IfcCostValueEPN6Ifc2x314IfcActorSelectEPN6Ifc2x314IfcActorSelectEPN6Ifc2x39IfcPersonEPN6Ifc2x315IfcCalendarDateEPN6Ifc2x312IfcCostValueE"></span><span id="Ifc2x3::IfcAsset::IfcAsset__ss.Ifc2x3::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.ss.Ifc2x3::IfcCostValueP.Ifc2x3::IfcCostValueP.Ifc2x3::IfcCostValueP.Ifc2x3::IfcActorSelectP.Ifc2x3::IfcActorSelectP.Ifc2x3::IfcPersonP.Ifc2x3::IfcCalendarDateP.Ifc2x3::IfcCostValueP"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1a1e0b6dfcd88fd48c534d545a38e6f53f"></span><code class="sig-name descname">IfcAsset</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_owner_history.html#_CPPv4N6Ifc2x315IfcOwnerHistoryE" title="Ifc2x3::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, std::string <em>v6_AssetID</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cost_value.html#_CPPv4N6Ifc2x312IfcCostValueE" title="Ifc2x3::IfcCostValue">IfcCostValue</a> *<em>v7_OriginalValue</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cost_value.html#_CPPv4N6Ifc2x312IfcCostValueE" title="Ifc2x3::IfcCostValue">IfcCostValue</a> *<em>v8_CurrentValue</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cost_value.html#_CPPv4N6Ifc2x312IfcCostValueE" title="Ifc2x3::IfcCostValue">IfcCostValue</a> *<em>v9_TotalReplacementCost</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x314IfcActorSelectE" title="Ifc2x3::IfcActorSelect">IfcActorSelect</a> *<em>v10_Owner</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x314IfcActorSelectE" title="Ifc2x3::IfcActorSelect">IfcActorSelect</a> *<em>v11_User</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_person.html#_CPPv4N6Ifc2x39IfcPersonE" title="Ifc2x3::IfcPerson">IfcPerson</a> *<em>v12_ResponsiblePerson</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_calendar_date.html#_CPPv4N6Ifc2x315IfcCalendarDateE" title="Ifc2x3::IfcCalendarDate">IfcCalendarDate</a> *<em>v13_IncorporationDate</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cost_value.html#_CPPv4N6Ifc2x312IfcCostValueE" title="Ifc2x3::IfcCostValue">IfcCostValue</a> *<em>v14_DepreciatedValue</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcAsset8IfcAssetENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEENSt6stringEPN6Ifc2x312IfcCostValueEPN6Ifc2x312IfcCostValueEPN6Ifc2x312IfcCostValueEPN6Ifc2x314IfcActorSelectEPN6Ifc2x314IfcActorSelectEPN6Ifc2x39IfcPersonEPN6Ifc2x315IfcCalendarDateEPN6Ifc2x312IfcCostValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x38IfcAsset5ClassEv">
+<span id="_CPPv3N6Ifc2x38IfcAsset5ClassEv"></span><span id="_CPPv2N6Ifc2x38IfcAsset5ClassEv"></span><span id="Ifc2x3::IfcAsset::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_asset_1a35dec0f0e9e2a2a25f85b0ea22d54274"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcAsset5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_area_measure.html" title="previous chapter">Class Ifc2x3::IfcAreaMeasure</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_asymmetric_i_shape_profile_def.html" title="next chapter">Class Ifc2x3::IfcAsymmetricIShapeProfileDef</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_asset.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

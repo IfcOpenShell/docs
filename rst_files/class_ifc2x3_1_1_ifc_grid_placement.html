@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcGridPlacement &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcGroup" href="class_ifc2x3_1_1_ifc_group.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcGridAxis" href="class_ifc2x3_1_1_ifc_grid_axis.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcgridplacement">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-grid-placement"></span><h1>Class Ifc2x3::IfcGridPlacement<a class="headerlink" href="#class-ifc2x3-ifcgridplacement" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcObjectPlacement</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_object_placement.html#exhale-class-class-ifc2x3-1-1-ifc-object-placement"><span class="std std-ref">Class Ifc2x3::IfcObjectPlacement</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x316IfcGridPlacementE">
+<span id="_CPPv3N6Ifc2x316IfcGridPlacementE"></span><span id="_CPPv2N6Ifc2x316IfcGridPlacementE"></span><span id="Ifc2x3::IfcGridPlacement"></span><span class="target" id="class_ifc2x3_1_1_ifc_grid_placement"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcGridPlacement</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_object_placement.html#_CPPv4N6Ifc2x318IfcObjectPlacementE" title="Ifc2x3::IfcObjectPlacement">IfcObjectPlacement</a><a class="headerlink" href="#_CPPv4N6Ifc2x316IfcGridPlacementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_grid_placement"><span class="std std-ref">IfcGridPlacement</span></a> provides a specialization of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_object_placement"><span class="std std-ref">IfcObjectPlacement</span></a> in which the placement and axis direction of the object coordinate system is defined by a reference to the design grid as defined in <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a>. The location of the object coordinate system is given by the attribute PlacementLocation. It is defined as an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_virtual_grid_intersection"><span class="std std-ref">IfcVirtualGridIntersection</span></a>, that is, an intersection between two grid axes with optional offsets. The axis direction of the x-axis of the object coordinate system is given either:</p>
+<p>PlacementRefDirection = NIL: by the tangent of the first grid axis (PlacementLocation.IntersectingAxes[1]) at the virtual intersection (maybe using the offset curve, if PlacementLocation.OffsetDistances is given); PlacementRefDirection = <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_direction"><span class="std std-ref">IfcDirection</span></a>: by the explicitly provided direction information; PlacementRefDirection = <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_virtual_grid_intersection"><span class="std std-ref">IfcVirtualGridIntersection</span></a>: by the tangent between the virtual grid intersection of PlacementLocation and the virtual grid intersection of PlacementRefDirection. Offsets as potentially provided in the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_virtual_grid_intersection"><span class="std std-ref">IfcVirtualGridIntersection</span></a>’s of PlacementLocation and PlacementRefDirection have to be taken into account.</p>
+<p>The direction of the y-axis of the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_grid_placement"><span class="std std-ref">IfcGridPlacement</span></a> is the orthogonal complement to the x-axis. The plane defined by the x and y axis shall be co-planar to the xy plane of the local placement of the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a>. The direction of the z-axis is the orientation of the cross product of the x-axis and the y-axis, i.e. the z-axis of the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_grid_placement"><span class="std std-ref">IfcGridPlacement</span></a> shall be co-linear to the z-axis of the local placement of the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a>.</p>
+<p>NOTE The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a> local placement, that can be provided relative to the local placement of another spatial structure element, has to be taken into account for calculating the absolute placement of the virtual grid intersection.</p>
+<p>NOTE The PlacementLocation.OffsetDistances[3] and the PlacementRefDirection.OffsetDistances[3] shall either not be assigned or should have the same z offset value.</p>
+<p>HISTORY New entity in IFC Release 1.5. The entity name was changed from IfcConstrainedPlacement in IFC Release 2x.</p>
+<p>IFC2x4 CHANGE Attribute data type of PlacementRefDirection has been changed to IfcGridPlacementDirectionSelect.</p>
+<p>Geometry use definitions The following examples show the usage of placement location and direction for an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_grid_placement"><span class="std std-ref">IfcGridPlacement</span></a>.</p>
+<p>Figure 243 illustrates the case where PlacementRefDirection is not given - the object coordinate system is defined by:</p>
+<p>its location: given by the virtual grid intersection of PlacementLocation its x-axis direction: given by the tangent of the first intersecting axis in the offset location of the virtual grid intersection</p>
+<p>Figure 243 — Grid placement</p>
+<p>Figure 244 illustrates the case where PlacementRefDirection is given as an IfcDirection- the object coordinate system is defined by:</p>
+<p>its location: given by the virtual grid intersection of PlacementLocation its x-axis direction: given by the DirectionRatios of the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_direction"><span class="std std-ref">IfcDirection</span></a>, only the ratios for x and y are taken into account,</p>
+<p>Figure 244 — Grid placement with direction</p>
+<p>Figure 245 illustrates the case where PlacementRefDirection is given as an IfcVirtualGridIntersection- the object coordinate system is defined by:</p>
+<p>its location: given by the virtual grid intersection of PlacementLocation its x-axis direction: given by the tangent of the line between the virtual grid intersection of the PlacementLocation and the virtual grid intersection of the PlacementRefDirection.</p>
+<p>Figure 245 — Grid placement with intersection </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x316IfcGridPlacement4listE">
+<span id="_CPPv3N6Ifc2x316IfcGridPlacement4listE"></span><span id="_CPPv2N6Ifc2x316IfcGridPlacement4listE"></span><span id="Ifc2x3::IfcGridPlacement::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_grid_placement_1aef5dfd23197383f5281e61b4766b6bfd"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x316IfcGridPlacementE" title="Ifc2x3::IfcGridPlacement">IfcGridPlacement</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x316IfcGridPlacement4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x316IfcGridPlacement17PlacementLocationEv">
+<span id="_CPPv3NK6Ifc2x316IfcGridPlacement17PlacementLocationEv"></span><span id="_CPPv2NK6Ifc2x316IfcGridPlacement17PlacementLocationEv"></span><span id="Ifc2x3::IfcGridPlacement::PlacementLocationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_grid_placement_1a6f8921c362eaa218731b5220e684d5fd"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_virtual_grid_intersection.html#_CPPv4N6Ifc2x326IfcVirtualGridIntersectionE" title="Ifc2x3::IfcVirtualGridIntersection">IfcVirtualGridIntersection</a> *<code class="sig-name descname">PlacementLocation</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x316IfcGridPlacement17PlacementLocationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Placement of the object coordinate system defined by the intersection of two grid axes. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x316IfcGridPlacement20setPlacementLocationEPN6Ifc2x326IfcVirtualGridIntersectionE">
+<span id="_CPPv3N6Ifc2x316IfcGridPlacement20setPlacementLocationEPN6Ifc2x326IfcVirtualGridIntersectionE"></span><span id="_CPPv2N6Ifc2x316IfcGridPlacement20setPlacementLocationEPN6Ifc2x326IfcVirtualGridIntersectionE"></span><span id="Ifc2x3::IfcGridPlacement::setPlacementLocation__Ifc2x3::IfcVirtualGridIntersectionP"></span><span class="target" id="class_ifc2x3_1_1_ifc_grid_placement_1af2f20ac58864ebb919622728fca5c2b5"></span>void <code class="sig-name descname">setPlacementLocation</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_virtual_grid_intersection.html#_CPPv4N6Ifc2x326IfcVirtualGridIntersectionE" title="Ifc2x3::IfcVirtualGridIntersection">IfcVirtualGridIntersection</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x316IfcGridPlacement20setPlacementLocationEPN6Ifc2x326IfcVirtualGridIntersectionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x316IfcGridPlacement24hasPlacementRefDirectionEv">
+<span id="_CPPv3NK6Ifc2x316IfcGridPlacement24hasPlacementRefDirectionEv"></span><span id="_CPPv2NK6Ifc2x316IfcGridPlacement24hasPlacementRefDirectionEv"></span><span id="Ifc2x3::IfcGridPlacement::hasPlacementRefDirectionC"></span><span class="target" id="class_ifc2x3_1_1_ifc_grid_placement_1a02bc4eaea0fed752e1061114f0f8a019"></span>bool <code class="sig-name descname">hasPlacementRefDirection</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x316IfcGridPlacement24hasPlacementRefDirectionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute PlacementRefDirection is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_grid_placement"><span class="std std-ref">IfcGridPlacement</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x316IfcGridPlacement21PlacementRefDirectionEv">
+<span id="_CPPv3NK6Ifc2x316IfcGridPlacement21PlacementRefDirectionEv"></span><span id="_CPPv2NK6Ifc2x316IfcGridPlacement21PlacementRefDirectionEv"></span><span id="Ifc2x3::IfcGridPlacement::PlacementRefDirectionC"></span><span class="target" id="class_ifc2x3_1_1_ifc_grid_placement_1ab74dd485ed2aae68f8752f23a04ad24e"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_virtual_grid_intersection.html#_CPPv4N6Ifc2x326IfcVirtualGridIntersectionE" title="Ifc2x3::IfcVirtualGridIntersection">IfcVirtualGridIntersection</a> *<code class="sig-name descname">PlacementRefDirection</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x316IfcGridPlacement21PlacementRefDirectionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reference to either an explicit direction, or a second grid axis intersection, which defines the orientation of the grid placement.</p>
+<p>IFC2x4 CHANGE The select of an explict direction has been added. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x316IfcGridPlacement24setPlacementRefDirectionEPN6Ifc2x326IfcVirtualGridIntersectionE">
+<span id="_CPPv3N6Ifc2x316IfcGridPlacement24setPlacementRefDirectionEPN6Ifc2x326IfcVirtualGridIntersectionE"></span><span id="_CPPv2N6Ifc2x316IfcGridPlacement24setPlacementRefDirectionEPN6Ifc2x326IfcVirtualGridIntersectionE"></span><span id="Ifc2x3::IfcGridPlacement::setPlacementRefDirection__Ifc2x3::IfcVirtualGridIntersectionP"></span><span class="target" id="class_ifc2x3_1_1_ifc_grid_placement_1af52440b2eb9e9efb4adae25aea3eddd0"></span>void <code class="sig-name descname">setPlacementRefDirection</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_virtual_grid_intersection.html#_CPPv4N6Ifc2x326IfcVirtualGridIntersectionE" title="Ifc2x3::IfcVirtualGridIntersection">IfcVirtualGridIntersection</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x316IfcGridPlacement24setPlacementRefDirectionEPN6Ifc2x326IfcVirtualGridIntersectionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x316IfcGridPlacement11declarationEv">
+<span id="_CPPv3NK6Ifc2x316IfcGridPlacement11declarationEv"></span><span id="_CPPv2NK6Ifc2x316IfcGridPlacement11declarationEv"></span><span id="Ifc2x3::IfcGridPlacement::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_grid_placement_1aa8ffc0bcd423093e63cfb4b32507235d"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x316IfcGridPlacement11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x316IfcGridPlacement16IfcGridPlacementEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x316IfcGridPlacement16IfcGridPlacementEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x316IfcGridPlacement16IfcGridPlacementEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcGridPlacement::IfcGridPlacement__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_grid_placement_1a8f65aedd7fdeab1be945ce6d8ee19831"></span><code class="sig-name descname">IfcGridPlacement</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x316IfcGridPlacement16IfcGridPlacementEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x316IfcGridPlacement16IfcGridPlacementEPN6Ifc2x326IfcVirtualGridIntersectionEPN6Ifc2x326IfcVirtualGridIntersectionE">
+<span id="_CPPv3N6Ifc2x316IfcGridPlacement16IfcGridPlacementEPN6Ifc2x326IfcVirtualGridIntersectionEPN6Ifc2x326IfcVirtualGridIntersectionE"></span><span id="_CPPv2N6Ifc2x316IfcGridPlacement16IfcGridPlacementEPN6Ifc2x326IfcVirtualGridIntersectionEPN6Ifc2x326IfcVirtualGridIntersectionE"></span><span id="Ifc2x3::IfcGridPlacement::IfcGridPlacement__Ifc2x3::IfcVirtualGridIntersectionP.Ifc2x3::IfcVirtualGridIntersectionP"></span><span class="target" id="class_ifc2x3_1_1_ifc_grid_placement_1a62fa8bb92729be93c3eaad6d747ff85d"></span><code class="sig-name descname">IfcGridPlacement</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_virtual_grid_intersection.html#_CPPv4N6Ifc2x326IfcVirtualGridIntersectionE" title="Ifc2x3::IfcVirtualGridIntersection">IfcVirtualGridIntersection</a> *<em>v1_PlacementLocation</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_virtual_grid_intersection.html#_CPPv4N6Ifc2x326IfcVirtualGridIntersectionE" title="Ifc2x3::IfcVirtualGridIntersection">IfcVirtualGridIntersection</a> *<em>v2_PlacementRefDirection</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x316IfcGridPlacement16IfcGridPlacementEPN6Ifc2x326IfcVirtualGridIntersectionEPN6Ifc2x326IfcVirtualGridIntersectionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x316IfcGridPlacement5ClassEv">
+<span id="_CPPv3N6Ifc2x316IfcGridPlacement5ClassEv"></span><span id="_CPPv2N6Ifc2x316IfcGridPlacement5ClassEv"></span><span id="Ifc2x3::IfcGridPlacement::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_grid_placement_1a12498378f19995865cd951199f12b0d0"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x316IfcGridPlacement5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_grid_axis.html" title="previous chapter">Class Ifc2x3::IfcGridAxis</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_group.html" title="next chapter">Class Ifc2x3::IfcGroup</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_grid_placement.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

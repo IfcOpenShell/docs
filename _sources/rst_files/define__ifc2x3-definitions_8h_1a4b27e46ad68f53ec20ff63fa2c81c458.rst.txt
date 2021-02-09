@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a4b27e46ad68f53ec20ff63fa2c81c458:
+
+Define SCHEMA_HAS_IfcStructuredDimensionCallout
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcStructuredDimensionCallout

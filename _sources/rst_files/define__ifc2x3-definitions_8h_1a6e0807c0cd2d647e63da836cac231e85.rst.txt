@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a6e0807c0cd2d647e63da836cac231e85:
+
+Define SCHEMA_IfcStructuralProfileProperties_HAS_MinimumSectionModulusZ
+=======================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralProfileProperties_HAS_MinimumSectionModulusZ

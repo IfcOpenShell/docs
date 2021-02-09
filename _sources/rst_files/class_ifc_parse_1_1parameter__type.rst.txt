@@ -1,0 +1,27 @@
+.. _exhale_class_class_ifc_parse_1_1parameter__type:
+
+Class parameter_type
+====================
+
+- Defined in :ref:`file_src_ifcparse_IfcSchema.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public IfcParse::aggregation_type`` (:ref:`exhale_class_class_ifc_parse_1_1aggregation__type`)
+- ``public IfcParse::named_type`` (:ref:`exhale_class_class_ifc_parse_1_1named__type`)
+- ``public IfcParse::simple_type`` (:ref:`exhale_class_class_ifc_parse_1_1simple__type`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcParse::parameter_type
+   :members:
+   :protected-members:
+   :undoc-members:

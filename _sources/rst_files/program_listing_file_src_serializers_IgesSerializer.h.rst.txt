@@ -1,0 +1,72 @@
+
+.. _program_listing_file_src_serializers_IgesSerializer.h:
+
+Program Listing for File IgesSerializer.h
+=========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_serializers_IgesSerializer.h>` (``src/serializers/IgesSerializer.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /********************************************************************************
+    *                                                                              *
+    * This file is part of IfcOpenShell.                                           *
+    *                                                                              *
+    * IfcOpenShell is free software: you can redistribute it and/or modify         *
+    * it under the terms of the Lesser GNU General Public License as published by  *
+    * the Free Software Foundation, either version 3.0 of the License, or          *
+    * (at your option) any later version.                                          *
+    *                                                                              *
+    * IfcOpenShell is distributed in the hope that it will be useful,              *
+    * but WITHOUT ANY WARRANTY; without even the implied warranty of               *
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 *
+    * Lesser GNU General Public License for more details.                          *
+    *                                                                              *
+    * You should have received a copy of the Lesser GNU General Public License     *
+    * along with this program. If not, see <http://www.gnu.org/licenses/>.         *
+    *                                                                              *
+    ********************************************************************************/
+   
+   #ifndef IGESSERIALIZER_H
+   #define IGESSERIALIZER_H
+   
+   #include "OpenCascadeBasedSerializer.h"
+   #include "../ifcparse/IfcLogger.h"
+   
+   #include <IGESControl_Writer.hxx>
+   
+   #ifndef HAVE_CONFIG_H
+   #include <Interface_Static.hxx>
+   #endif
+   
+   class IgesSerializer : public OpenCascadeBasedSerializer
+   {
+   private:
+       IGESControl_Writer writer;
+   public:
+       IgesSerializer(const std::string& out_filename, const SerializerSettings& settings)
+           : OpenCascadeBasedSerializer(out_filename, settings)
+       {}
+       virtual ~IgesSerializer() {}
+       void writeShape(const std::string&, const TopoDS_Shape& shape) {
+           writer.AddShape(shape);
+       }
+       void finalize() {
+           writer.Write(out_filename.c_str());
+       }
+       void setUnitNameAndMagnitude(const std::string& /*name*/, float magnitude) {
+           const char* symbol = getSymbolForUnitMagnitude(magnitude);
+           if (symbol) {
+   #ifdef HAVE_CONFIG_H
+               Logger::Warning("Setting IGES units not supported on OCE");
+   #else
+               Interface_Static::SetCVal("xstep.cascade.unit", symbol);
+               Interface_Static::SetCVal("write.iges.unit", symbol);
+   #endif
+           }
+       }
+   };
+   
+   #endif

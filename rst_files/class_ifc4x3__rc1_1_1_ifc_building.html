@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x3_rc1::IfcBuilding &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x3_rc1::IfcBuildingElementPart" href="class_ifc4x3__rc1_1_1_ifc_building_element_part.html" />
+    <link rel="prev" title="Class Ifc4x3_rc1::IfcBSplineSurfaceWithKnots" href="class_ifc4x3__rc1_1_1_ifc_b_spline_surface_with_knots.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x3-rc1-ifcbuilding">
+<span id="exhale-class-class-ifc4x3-rc1-1-1-ifc-building"></span><h1>Class Ifc4x3_rc1::IfcBuilding<a class="headerlink" href="#class-ifc4x3-rc1-ifcbuilding" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x3_rc1.h.html#file-src-ifcparse-ifc4x3-rc1-h"><span class="std std-ref">File Ifc4x3_rc1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x3__rc1.html#exhale-struct-struct-ifc4x3-rc1"><span class="std std-ref">Struct Ifc4x3_rc1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x3_rc1::IfcFacility</span></code> (<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_facility.html#exhale-class-class-ifc4x3-rc1-1-1-ifc-facility"><span class="std std-ref">Class Ifc4x3_rc1::IfcFacility</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N10Ifc4x3_rc111IfcBuildingE">
+<span id="_CPPv3N10Ifc4x3_rc111IfcBuildingE"></span><span id="_CPPv2N10Ifc4x3_rc111IfcBuildingE"></span><span id="Ifc4x3_rc1::IfcBuilding"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_building"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcBuilding</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_facility.html#_CPPv4N10Ifc4x3_rc111IfcFacilityE" title="Ifc4x3_rc1::IfcFacility">IfcFacility</a><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc111IfcBuildingE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO 6707-1:1989: Construction work that has the provision of shelter for its occupants or contents as one of its main purpose and is normally designed to stand permanently in one place. A building represents a structure that provides shelter for its occupants or contents and stands in one place. The building is also used to provide a basic element within the spatial structure hierarchy for the components of a building project (together with site, storey, and space). A building is (if specified) associated to a site. A building may span over several connected or disconnected buildings. Therefore building complex provides for a collection of buildings included in a site. A building can also be decomposed in (vertical) parts, where each part defines a building section. This is defined by the composition type attribute of the supertype IfcSpatialStructureElements which is interpreted as follow:</p>
+<p>COMPLEX = building complex ELEMENT = building PARTIAL = building section</p>
+<p>HISTORY New entity in IFC Release 1.0.</p>
+<p>Property Set Use Definition The property sets relating to the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> are defined by the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> and attached by the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. It is accessible by the inverse IsDefinedBy relationship. The following property set definitions specific to the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> are part of this IFC release:</p>
+<p>Pset_BuildingCommon: common property set for all types of buildings Pset_BuildingWaterStorage: specific property set for buildings to capture the water supply requirements Pset_BuildingUse: specific property set for buildings to capture the current and anticipated real estate context. Pset_BuildingUseAdjacent: specific property set for buildings to capture the use information about the adjacent buildings.</p>
+<p>Quantity Use Definition The quantities relating to the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> are defined by the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_element_quantity"><span class="std std-ref">IfcElementQuantity</span></a> and attached by the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. It is accessible by the inverse IsDefinedBy relationship. The following base quantities are defined and should be exchanged with the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_root_1a53d26b214942dac4c16f486416155c67"><span class="std std-ref">IfcElementQuantity.Name</span></a> = ‘BaseQuantities’. Other quantities, being subjected to local standard of measurement, can be defined with another string value assigned to Name. In this case a valid value for MethodOfMeasurement has to be provided.</p>
+<p>Qto_BuildingBaseQuantities: base quantities for all building occurrences.</p>
+<p>Spatial Structure Use Definition The <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> is used to build the spatial structure of a building (that serves as the primary project breakdown and is required to be hierarchical). The spatial structure elements are linked together by using the objectified relationship <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_rel_aggregates"><span class="std std-ref">IfcRelAggregates</span></a>. The <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> references them by its inverse relationships:</p>
+<p>IfcBuilding.Decomposes  referencing (<a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> || <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a>) by <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_rel_aggregates_1ab7c82792e1cecd5a9c49883edd5f8a16"><span class="std std-ref">IfcRelAggregates.RelatingObject</span></a>, If it refers to another instance of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a>, the referenced <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> needs to have a different and higher CompositionType, i.e. COMPLEX (if the other <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> has ELEMENT), or ELEMENT (if the other <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> has PARTIAL). IfcBuilding.IsDecomposedBy  referencing (<a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> || <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building_storey"><span class="std std-ref">IfcBuildingStorey</span></a>) by <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_rel_aggregates_1ae56aea78c3ec48591c50b5e614e383c2"><span class="std std-ref">IfcRelAggregates.RelatedObjects</span></a>. If it refers to another instance ofIfcBuilding, the referenced <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> needs to have a different and lower CompositionType, i.e. ELEMENT (if the other <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> has COMPLEX), or PARTIAL (if the other <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> has ELEMENT).</p>
+<p>If there are building elements and/or other elements directly related to the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a>(like a curtain wall spanning several stories), they are associated with the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> by using the objectified relationship <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_rel_contained_in_spatial_structure"><span class="std std-ref">IfcRelContainedInSpatialStructure</span></a>. The <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> references them by its inverse relationship:</p>
+<p>IfcBuilding.ContainsElements  referencing any subtype of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a> (with the exception of other spatial structure element) by <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_rel_contained_in_spatial_structure_1a831538d61c974d614f409ee729bfbc05"><span class="std std-ref">IfcRelContainedInSpatialStructure.RelatedElements</span></a>.</p>
+<p>Figure 20 shows the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> as part of the spatial structure. It also serves as the spatial container for building and other elements. NOTE Detailed requirements on mandatory element containment and placement structure relationships are given in view definitions and implementer agreements.</p>
+<p>Figure 20 — Building composition</p>
+<p>Systems, such as building service or electrical distribution systems, zonal systems, or structural analysis systems, relate to <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> by using the objectified relationship <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_rel_services_buildings"><span class="std std-ref">IfcRelServicesBuildings</span></a>.</p>
+<p>Attribute Use Definition</p>
+<p>Figure 21 describes the heights and elevations of the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a>. It is used to provide the height above sea level of the project height datum for this building, that is, the internal height 0.00. The height 0.00 is often used as a building internal reference height and equal to the floor finish level of the ground floor.</p>
+<p>base elevation of building provided by: <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building_1a6f259317addb005b728789cda3ca4f44"><span class="std std-ref">IfcBuilding.ElevationOfRefHeight</span></a>, it is usually the top of construction slab base elevation of terrain at the perimeter of the building provided by: <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building_1a5a27689ae2c40355fa0ab28bbb2c21ea"><span class="std std-ref">IfcBuilding.ElevationOfTerrain</span></a>, it is usually the minimum elevation is sloped terrain total height of building, also referred to as ridge height (top of roof structure, e.g the ridge against terrain): provided by BaseQuantity with Name=”TotalHeight” eaves height of building (base of roof structure, e.g the eaves against terrain): provided by BaseQuantity with Name=”EavesHeight”</p>
+<p>Figure 21 — Building elevations</p>
+<p>Geometry Use Definitions The geometric representation of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> is given by the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a> and <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a>, allowing multiple geometric representation. Local Placement The local placement for <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> is defined in its supertype <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a>. It is defined by the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a>, which defines the local coordinate system that is referenced by all geometric representations.</p>
+<p>The PlacementRelTo relationship of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> shall point (if relative placement is used) to the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_spatial_structure_element"><span class="std std-ref">IfcSpatialStructureElement</span></a> of type <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a>, or of type <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> (e.g. to position a building relative to a building complex, or a building section to a building). If the relative placement is not used, the absolute placement is defined within the world coordinate system.</p>
+<p>Geometric Representations Currently, the use of a 2D ‘FootPrint’ representation of type ‘GeometricCurveSet’ and a 3D ‘Body’ representation of type ‘Brep’ is supported. Foot Print Representation The foot print representation of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> is given by either a single 2D curve (such as <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a> or <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_composite_curve"><span class="std std-ref">IfcCompositeCurve</span></a>), or by a list of 2D curves (in case of inner boundaries), if the building has an independent geometric representation. The representation identifier and type of this geometric representation of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> is:</p>
+<p><a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_representation_1a6feb4b4fe5c1a7c253f7d25b63b820cd"><span class="std std-ref">IfcShapeRepresentation.RepresentationIdentifier</span></a> = ‘FootPrint’ <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_representation_1a3bdb9f43bb52825df6512349b6c1f7ca"><span class="std std-ref">IfcShapeRepresentation.RepresentationType</span></a> = ‘GeometricCurveSet’</p>
+<p>Body Representation The body (or solid model) geometric representation (if the building has an independent geometric representation) of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> is defined using faceted B-Rep capabilities (with or without voids), based on the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_faceted_brep"><span class="std std-ref">IfcFacetedBrep</span></a> or on the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_faceted_brep_with_voids"><span class="std std-ref">IfcFacetedBrepWithVoids</span></a>. The representation identifier and type of this representation of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> is:</p>
+<p><a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_representation_1a6feb4b4fe5c1a7c253f7d25b63b820cd"><span class="std std-ref">IfcShapeRepresentation.RepresentationIdentifier</span></a> = ‘Body’ <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_representation_1a3bdb9f43bb52825df6512349b6c1f7ca"><span class="std std-ref">IfcShapeRepresentation.RepresentationType</span></a> = ‘Brep’</p>
+<p>Since the building shape is usually described by the exterior building elements, an independent shape representation shall only be given, if the building is exposed independently from its constituting elements. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N10Ifc4x3_rc111IfcBuilding4listE">
+<span id="_CPPv3N10Ifc4x3_rc111IfcBuilding4listE"></span><span id="_CPPv2N10Ifc4x3_rc111IfcBuilding4listE"></span><span id="Ifc4x3_rc1::IfcBuilding::list"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_building_1a4b98af7524ec5c7b55a4a130c485d14f"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N10Ifc4x3_rc111IfcBuildingE" title="Ifc4x3_rc1::IfcBuilding">IfcBuilding</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc111IfcBuilding4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc111IfcBuilding23hasElevationOfRefHeightEv">
+<span id="_CPPv3NK10Ifc4x3_rc111IfcBuilding23hasElevationOfRefHeightEv"></span><span id="_CPPv2NK10Ifc4x3_rc111IfcBuilding23hasElevationOfRefHeightEv"></span><span id="Ifc4x3_rc1::IfcBuilding::hasElevationOfRefHeightC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_building_1ab0fdf915601ea1e30994c40116f5536d"></span>bool <code class="sig-name descname">hasElevationOfRefHeight</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc111IfcBuilding23hasElevationOfRefHeightEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ElevationOfRefHeight is defined for this <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc111IfcBuilding20ElevationOfRefHeightEv">
+<span id="_CPPv3NK10Ifc4x3_rc111IfcBuilding20ElevationOfRefHeightEv"></span><span id="_CPPv2NK10Ifc4x3_rc111IfcBuilding20ElevationOfRefHeightEv"></span><span id="Ifc4x3_rc1::IfcBuilding::ElevationOfRefHeightC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_building_1a6f259317addb005b728789cda3ca4f44"></span>double <code class="sig-name descname">ElevationOfRefHeight</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc111IfcBuilding20ElevationOfRefHeightEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Elevation above sea level of the reference height used for all storey elevation measures, equals to height 0.0. It is usually the ground floor level. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc111IfcBuilding23setElevationOfRefHeightEd">
+<span id="_CPPv3N10Ifc4x3_rc111IfcBuilding23setElevationOfRefHeightEd"></span><span id="_CPPv2N10Ifc4x3_rc111IfcBuilding23setElevationOfRefHeightEd"></span><span id="Ifc4x3_rc1::IfcBuilding::setElevationOfRefHeight__double"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_building_1aa50502d7c5600443f21ee8d5e1d89857"></span>void <code class="sig-name descname">setElevationOfRefHeight</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc111IfcBuilding23setElevationOfRefHeightEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc111IfcBuilding21hasElevationOfTerrainEv">
+<span id="_CPPv3NK10Ifc4x3_rc111IfcBuilding21hasElevationOfTerrainEv"></span><span id="_CPPv2NK10Ifc4x3_rc111IfcBuilding21hasElevationOfTerrainEv"></span><span id="Ifc4x3_rc1::IfcBuilding::hasElevationOfTerrainC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_building_1ade9c8a4e49a62a9b13e3579945ea5375"></span>bool <code class="sig-name descname">hasElevationOfTerrain</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc111IfcBuilding21hasElevationOfTerrainEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ElevationOfTerrain is defined for this <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc111IfcBuilding18ElevationOfTerrainEv">
+<span id="_CPPv3NK10Ifc4x3_rc111IfcBuilding18ElevationOfTerrainEv"></span><span id="_CPPv2NK10Ifc4x3_rc111IfcBuilding18ElevationOfTerrainEv"></span><span id="Ifc4x3_rc1::IfcBuilding::ElevationOfTerrainC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_building_1a5a27689ae2c40355fa0ab28bbb2c21ea"></span>double <code class="sig-name descname">ElevationOfTerrain</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc111IfcBuilding18ElevationOfTerrainEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Elevation above the minimal terrain level around the foot print of the building, given in elevation above sea level. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc111IfcBuilding21setElevationOfTerrainEd">
+<span id="_CPPv3N10Ifc4x3_rc111IfcBuilding21setElevationOfTerrainEd"></span><span id="_CPPv2N10Ifc4x3_rc111IfcBuilding21setElevationOfTerrainEd"></span><span id="Ifc4x3_rc1::IfcBuilding::setElevationOfTerrain__double"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_building_1a725edf31bf93d0936ee02b0f214612b0"></span>void <code class="sig-name descname">setElevationOfTerrain</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc111IfcBuilding21setElevationOfTerrainEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc111IfcBuilding18hasBuildingAddressEv">
+<span id="_CPPv3NK10Ifc4x3_rc111IfcBuilding18hasBuildingAddressEv"></span><span id="_CPPv2NK10Ifc4x3_rc111IfcBuilding18hasBuildingAddressEv"></span><span id="Ifc4x3_rc1::IfcBuilding::hasBuildingAddressC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_building_1a3f0a0d9f230cc162c5397d47e042cf8b"></span>bool <code class="sig-name descname">hasBuildingAddress</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc111IfcBuilding18hasBuildingAddressEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute BuildingAddress is defined for this <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc111IfcBuilding15BuildingAddressEv">
+<span id="_CPPv3NK10Ifc4x3_rc111IfcBuilding15BuildingAddressEv"></span><span id="_CPPv2NK10Ifc4x3_rc111IfcBuilding15BuildingAddressEv"></span><span id="Ifc4x3_rc1::IfcBuilding::BuildingAddressC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_building_1a24e5ba13206ba6900b10a74a3077b1a4"></span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_postal_address.html#_CPPv4N10Ifc4x3_rc116IfcPostalAddressE" title="Ifc4x3_rc1::IfcPostalAddress">IfcPostalAddress</a> *<code class="sig-name descname">BuildingAddress</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc111IfcBuilding15BuildingAddressEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Address given to the building for postal purposes. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc111IfcBuilding18setBuildingAddressEPN10Ifc4x3_rc116IfcPostalAddressE">
+<span id="_CPPv3N10Ifc4x3_rc111IfcBuilding18setBuildingAddressEPN10Ifc4x3_rc116IfcPostalAddressE"></span><span id="_CPPv2N10Ifc4x3_rc111IfcBuilding18setBuildingAddressEPN10Ifc4x3_rc116IfcPostalAddressE"></span><span id="Ifc4x3_rc1::IfcBuilding::setBuildingAddress__Ifc4x3_rc1::IfcPostalAddressP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_building_1a60cef35f3e5d84b3c22fe53a736156ec"></span>void <code class="sig-name descname">setBuildingAddress</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_postal_address.html#_CPPv4N10Ifc4x3_rc116IfcPostalAddressE" title="Ifc4x3_rc1::IfcPostalAddress">IfcPostalAddress</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc111IfcBuilding18setBuildingAddressEPN10Ifc4x3_rc116IfcPostalAddressE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc111IfcBuilding11declarationEv">
+<span id="_CPPv3NK10Ifc4x3_rc111IfcBuilding11declarationEv"></span><span id="_CPPv2NK10Ifc4x3_rc111IfcBuilding11declarationEv"></span><span id="Ifc4x3_rc1::IfcBuilding::declarationC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_building_1aca66580034b1dee5a80379e9aa3a5f80"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc111IfcBuilding11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc111IfcBuilding11IfcBuildingEP21IfcEntityInstanceData">
+<span id="_CPPv3N10Ifc4x3_rc111IfcBuilding11IfcBuildingEP21IfcEntityInstanceData"></span><span id="_CPPv2N10Ifc4x3_rc111IfcBuilding11IfcBuildingEP21IfcEntityInstanceData"></span><span id="Ifc4x3_rc1::IfcBuilding::IfcBuilding__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_building_1a134789a7e551b6b9923efaa3c9d3c460"></span><code class="sig-name descname">IfcBuilding</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc111IfcBuilding11IfcBuildingEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc111IfcBuilding11IfcBuildingENSt6stringEPN10Ifc4x3_rc115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN10Ifc4x3_rc118IfcObjectPlacementEPN10Ifc4x3_rc124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN10Ifc4x3_rc125IfcElementCompositionEnum5ValueEEEN5boost8optionalIdEEN5boost8optionalIdEEPN10Ifc4x3_rc116IfcPostalAddressE">
+<span id="_CPPv3N10Ifc4x3_rc111IfcBuilding11IfcBuildingENSt6stringEPN10Ifc4x3_rc115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN10Ifc4x3_rc118IfcObjectPlacementEPN10Ifc4x3_rc124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN10Ifc4x3_rc125IfcElementCompositionEnum5ValueEEEN5boost8optionalIdEEN5boost8optionalIdEEPN10Ifc4x3_rc116IfcPostalAddressE"></span><span id="_CPPv2N10Ifc4x3_rc111IfcBuilding11IfcBuildingENSt6stringEPN10Ifc4x3_rc115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN10Ifc4x3_rc118IfcObjectPlacementEPN10Ifc4x3_rc124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN10Ifc4x3_rc125IfcElementCompositionEnum5ValueEEEN5boost8optionalIdEEN5boost8optionalIdEEPN10Ifc4x3_rc116IfcPostalAddressE"></span><span id="Ifc4x3_rc1::IfcBuilding::IfcBuilding__ss.Ifc4x3_rc1::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4x3_rc1::IfcObjectPlacementP.Ifc4x3_rc1::IfcProductRepresentationP.boost::optional:ss:.boost::optional:Ifc4x3_rc1::IfcElementCompositionEnum::Value:.boost::optional:double:.boost::optional:double:.Ifc4x3_rc1::IfcPostalAddressP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_building_1a4fae583ec8b739827df283d6baed9d54"></span><code class="sig-name descname">IfcBuilding</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_owner_history.html#_CPPv4N10Ifc4x3_rc115IfcOwnerHistoryE" title="Ifc4x3_rc1::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_object_placement.html#_CPPv4N10Ifc4x3_rc118IfcObjectPlacementE" title="Ifc4x3_rc1::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_product_representation.html#_CPPv4N10Ifc4x3_rc124IfcProductRepresentationE" title="Ifc4x3_rc1::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, boost::optional&lt;std::string&gt; <em>v8_LongName</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc125IfcElementCompositionEnumE" title="Ifc4x3_rc1::IfcElementCompositionEnum">IfcElementCompositionEnum</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc125IfcElementCompositionEnum5ValueE" title="Ifc4x3_rc1::IfcElementCompositionEnum::Value">Value</a>&gt; <em>v9_CompositionType</em>, boost::optional&lt;double&gt; <em>v10_ElevationOfRefHeight</em>, boost::optional&lt;double&gt; <em>v11_ElevationOfTerrain</em>, ::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_postal_address.html#_CPPv4N10Ifc4x3_rc116IfcPostalAddressE" title="Ifc4x3_rc1::IfcPostalAddress">IfcPostalAddress</a> *<em>v12_BuildingAddress</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc111IfcBuilding11IfcBuildingENSt6stringEPN10Ifc4x3_rc115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN10Ifc4x3_rc118IfcObjectPlacementEPN10Ifc4x3_rc124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN10Ifc4x3_rc125IfcElementCompositionEnum5ValueEEEN5boost8optionalIdEEN5boost8optionalIdEEPN10Ifc4x3_rc116IfcPostalAddressE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc111IfcBuilding5ClassEv">
+<span id="_CPPv3N10Ifc4x3_rc111IfcBuilding5ClassEv"></span><span id="_CPPv2N10Ifc4x3_rc111IfcBuilding5ClassEv"></span><span id="Ifc4x3_rc1::IfcBuilding::Class"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_building_1ae50c5e1a261dd276fbd04c963248e069"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc111IfcBuilding5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x3__rc1_1_1_ifc_b_spline_surface_with_knots.html" title="previous chapter">Class Ifc4x3_rc1::IfcBSplineSurfaceWithKnots</a></li>
+      <li>Next: <a href="class_ifc4x3__rc1_1_1_ifc_building_element_part.html" title="next chapter">Class Ifc4x3_rc1::IfcBuildingElementPart</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x3__rc1_1_1_ifc_building.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

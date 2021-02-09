@@ -1,0 +1,41 @@
+.. _exhale_class_class_ifc4x2_1_1_ifc_spatial_structure_element:
+
+Class Ifc4x2::IfcSpatialStructureElement
+========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x2`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x2::IfcSpatialElement`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_spatial_element`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x2::IfcBuildingStorey`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_building_storey`)
+- ``public Ifc4x2::IfcFacility`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_facility`)
+- ``public Ifc4x2::IfcFacilityPart`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_facility_part`)
+- ``public Ifc4x2::IfcSite`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_site`)
+- ``public Ifc4x2::IfcSpace`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_space`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x2::IfcSpatialStructureElement
+   :members:
+   :protected-members:
+   :undoc-members:

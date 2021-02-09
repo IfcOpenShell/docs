@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a76c7562f6b4ee304c381a18982a7fbf5:
+
+Define SCHEMA_IfcWorkCalendar_HAS_ExceptionTimes
+================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcWorkCalendar_HAS_ExceptionTimes

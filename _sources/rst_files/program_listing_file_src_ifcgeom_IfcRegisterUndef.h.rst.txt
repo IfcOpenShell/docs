@@ -1,0 +1,30 @@
+
+.. _program_listing_file_src_ifcgeom_IfcRegisterUndef.h:
+
+Program Listing for File IfcRegisterUndef.h
+===========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_ifcgeom_IfcRegisterUndef.h>` (``src/ifcgeom/IfcRegisterUndef.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifdef SHAPES
+   #undef SHAPES
+   #endif
+   #ifdef SHAPE
+   #undef SHAPE
+   #endif
+   #ifdef WIRE
+   #undef WIRE
+   #endif
+   #ifdef FACE
+   #undef FACE
+   #endif
+   #ifdef CURVE
+   #undef CURVE
+   #endif
+   #ifdef CLASS
+   #undef CLASS
+   #endif

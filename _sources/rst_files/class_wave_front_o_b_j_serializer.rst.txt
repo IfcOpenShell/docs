@@ -1,0 +1,25 @@
+.. _exhale_class_class_wave_front_o_b_j_serializer:
+
+Class WaveFrontOBJSerializer
+============================
+
+- Defined in :ref:`file_src_serializers_WavefrontObjSerializer.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public GeometrySerializer`` (:ref:`exhale_class_class_geometry_serializer`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: WaveFrontOBJSerializer
+   :members:
+   :protected-members:
+   :undoc-members:

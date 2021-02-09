@@ -1,0 +1,43 @@
+.. _exhale_class_class_ifc4x3__rc1_1_1_ifc_distribution_control_element_type:
+
+Class Ifc4x3_rc1::IfcDistributionControlElementType
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x3__rc1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x3_rc1::IfcDistributionElementType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_distribution_element_type`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x3_rc1::IfcActuatorType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_actuator_type`)
+- ``public Ifc4x3_rc1::IfcAlarmType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_alarm_type`)
+- ``public Ifc4x3_rc1::IfcControllerType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_controller_type`)
+- ``public Ifc4x3_rc1::IfcFlowInstrumentType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_flow_instrument_type`)
+- ``public Ifc4x3_rc1::IfcProtectiveDeviceTrippingUnitType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_protective_device_tripping_unit_type`)
+- ``public Ifc4x3_rc1::IfcSensorType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_sensor_type`)
+- ``public Ifc4x3_rc1::IfcUnitaryControlElementType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_unitary_control_element_type`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x3_rc1::IfcDistributionControlElementType
+   :members:
+   :protected-members:
+   :undoc-members:

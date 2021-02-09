@@ -1,0 +1,22 @@
+.. _exhale_struct_struct_ifc4x1_1_1_ifc_door_type_operation_enum:
+
+Struct Ifc4x1::IfcDoorTypeOperationEnum
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_struct_struct_ifc4x1`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Ifc4x1::IfcDoorTypeOperationEnum
+   :members:
+   :protected-members:
+   :undoc-members:

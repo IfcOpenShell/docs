@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a87459282afc07a9a3f2bf138fb405a70:
+
+Define SCHEMA_HAS_IfcInventory
+==============================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcInventory

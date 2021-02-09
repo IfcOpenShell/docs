@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcProcedure &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcProcess" href="class_ifc2x3_1_1_ifc_process.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcPressureMeasure" href="class_ifc2x3_1_1_ifc_pressure_measure.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcprocedure">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-procedure"></span><h1>Class Ifc2x3::IfcProcedure<a class="headerlink" href="#class-ifc2x3-ifcprocedure" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcProcess</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_process.html#exhale-class-class-ifc2x3-1-1-ifc-process"><span class="std std-ref">Class Ifc2x3::IfcProcess</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x312IfcProcedureE">
+<span id="_CPPv3N6Ifc2x312IfcProcedureE"></span><span id="_CPPv2N6Ifc2x312IfcProcedureE"></span><span id="Ifc2x3::IfcProcedure"></span><span class="target" id="class_ifc2x3_1_1_ifc_procedure"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcProcedure</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_process.html#_CPPv4N6Ifc2x310IfcProcessE" title="Ifc2x3::IfcProcess">IfcProcess</a><a class="headerlink" href="#_CPPv4N6Ifc2x312IfcProcedureE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> is a logical set of actions to be taken in response to an event or to cause an event to occur.</p>
+<p>HISTORY New entity in IFC2x2</p>
+<p>IFC2x4 CHANGE ProcedureType renamed to PredefinedType and made optional (upward compatible). Where rules WR1 and WR2 have been removed.</p>
+<p>Use definitions</p>
+<p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> is used to capture information about stepped processes such as calibration, start/stop procedures for equipment items, designated actions to take in the event of an emergency etc. A procedure is not a task, but may describe a set of tasks and their order of occurrence in response to or to cause an event.</p>
+<p>Type use definition</p>
+<p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> defines the anticipated or actual occurrence of any procedure; common information about procedure types is handled by IfcProcedureType. The IfcProcedureType (if present) may establish the common type name, usage (or predefined) type, common nested procedures (using <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_nests"><span class="std std-ref">IfcRelNests</span></a>), common set of properties, and common product assignment using <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_assigns_to_product"><span class="std std-ref">IfcRelAssignsToProduct</span></a>. The IfcProcedureType is attached using the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_defines_by_type_1a3f8f793487d3f65c6fee7a9fab9c173d"><span class="std std-ref">IfcRelDefinesByType.RelatingType</span></a> objectified relationship and is accessible by the inverse IsTypedBy attribute.</p>
+<p>Property set use definition</p>
+<p>The property sets relating to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> are defined by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> and attached by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. They are accessible by the inverse IsDefinedBy relationship. Such property sets may define procedure parameters. No property sets for <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> are currently defined by IFC.</p>
+<p>Connectivity use definition</p>
+<p>The relationship <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_sequence"><span class="std std-ref">IfcRelSequence</span></a> is used to indicate control flow. An <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> as a successor to an IfcEvent indicates that the procedure should be performed in response to the event. An <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> as a predecessor to an IfcEvent indicates that the event should be trigerred following the procedure. As procedures have arbitrary duration, the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_sequence_1a06ebcdb2cee7998e2f1a141e28cb27d9"><span class="std std-ref">IfcRelSequence.SequenceType</span></a> attribute has no effect on an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> but still applies to the opposite end of the relationship if <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> is used.</p>
+<p>Composition use definition</p>
+<p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> may be contained within an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_task"><span class="std std-ref">IfcTask</span></a> or <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> using the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_nests"><span class="std std-ref">IfcRelNests</span></a> relationship. An <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> may in turn nest other <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> or IfcEvent entities. Such nesting indicates decomposed level of detail.</p>
+<p>Note that a particular type of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> is a caution, warning or other form of advisory note. Typically, it is anticipated that such a procedure would be assigned to the specific <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_process"><span class="std std-ref">IfcProcess</span></a> for which it gives advice using <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_assigns_to_process"><span class="std std-ref">IfcRelAssignsToProcess</span></a>.</p>
+<p>Assignment use definition</p>
+<p>An <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> may be assigned to an IfcWorkCalendar to indicate times when such procedure may be performed using <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_assigns_to_control"><span class="std std-ref">IfcRelAssignsToControl</span></a>; otherwise the effective calendar is determined by the nearest <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_process"><span class="std std-ref">IfcProcess</span></a> ancestor with a calendar assigned. Advisory notes should be assigned to the specific <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_process"><span class="std std-ref">IfcProcess</span></a> for which it gives advice using <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_assigns_to_process"><span class="std std-ref">IfcRelAssignsToProcess</span></a>.</p>
+<p>For building operation scenarios, <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> may be assigned to a product (<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a> subtype) using <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_assigns_to_product"><span class="std std-ref">IfcRelAssignsToProduct</span></a> to indicate a specific product occurrence that performs the procedure. For example, an IfcActuator may have a “Close” procedure. If the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> is defined by an IfcProcedureType and the IfcProcedureType is assigned to a product type (using <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_assigns_to_product"><span class="std std-ref">IfcRelAssignsToProduct</span></a>), then the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a> must be assigned to one or more occurrences of the specified product type using <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_assigns_to_product"><span class="std std-ref">IfcRelAssignsToProduct</span></a>.</p>
+<p>As shown in Figure 12, <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a><p> does not restrict anything but describes specific steps of how something should happen. While a procedure does control/restrict in the sense of indicating “this is how the task should be performed” by nature of describing inner detail, this is not different than parts of a product indicating “this is how the parts should</p>
+<p>  be assembled”. Consequently, it doesn’t restrict the outer item as a whole but provides inner detail of the item.</p>
+</p>
+<p>Figure 12 — Procedure relationships </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x312IfcProcedure4listE">
+<span id="_CPPv3N6Ifc2x312IfcProcedure4listE"></span><span id="_CPPv2N6Ifc2x312IfcProcedure4listE"></span><span id="Ifc2x3::IfcProcedure::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_procedure_1a311dddfbbfeb93395299df6c01bbd37b"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x312IfcProcedureE" title="Ifc2x3::IfcProcedure">IfcProcedure</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x312IfcProcedure4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x312IfcProcedure11ProcedureIDEv">
+<span id="_CPPv3NK6Ifc2x312IfcProcedure11ProcedureIDEv"></span><span id="_CPPv2NK6Ifc2x312IfcProcedure11ProcedureIDEv"></span><span id="Ifc2x3::IfcProcedure::ProcedureIDC"></span><span class="target" id="class_ifc2x3_1_1_ifc_procedure_1a415d2c6871f9892ca38a6be8e840287e"></span>std::string <code class="sig-name descname">ProcedureID</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x312IfcProcedure11ProcedureIDEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x312IfcProcedure14setProcedureIDENSt6stringE">
+<span id="_CPPv3N6Ifc2x312IfcProcedure14setProcedureIDENSt6stringE"></span><span id="_CPPv2N6Ifc2x312IfcProcedure14setProcedureIDENSt6stringE"></span><span id="Ifc2x3::IfcProcedure::setProcedureID__ss"></span><span class="target" id="class_ifc2x3_1_1_ifc_procedure_1a1a41f8ba2b114d0e00ffaee141c8b0a6"></span>void <code class="sig-name descname">setProcedureID</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x312IfcProcedure14setProcedureIDENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x312IfcProcedure13ProcedureTypeEv">
+<span id="_CPPv3NK6Ifc2x312IfcProcedure13ProcedureTypeEv"></span><span id="_CPPv2NK6Ifc2x312IfcProcedure13ProcedureTypeEv"></span><span id="Ifc2x3::IfcProcedure::ProcedureTypeC"></span><span class="target" id="class_ifc2x3_1_1_ifc_procedure_1a469daa44bbef4fdf5f016cad1e3fb705"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x320IfcProcedureTypeEnumE" title="Ifc2x3::IfcProcedureTypeEnum">IfcProcedureTypeEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x320IfcProcedureTypeEnum5ValueE" title="Ifc2x3::IfcProcedureTypeEnum::Value">Value</a> <code class="sig-name descname">ProcedureType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x312IfcProcedure13ProcedureTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x312IfcProcedure16setProcedureTypeEN6Ifc2x320IfcProcedureTypeEnum5ValueE">
+<span id="_CPPv3N6Ifc2x312IfcProcedure16setProcedureTypeEN6Ifc2x320IfcProcedureTypeEnum5ValueE"></span><span id="_CPPv2N6Ifc2x312IfcProcedure16setProcedureTypeEN6Ifc2x320IfcProcedureTypeEnum5ValueE"></span><span id="Ifc2x3::IfcProcedure::setProcedureType__Ifc2x3::IfcProcedureTypeEnum::Value"></span><span class="target" id="class_ifc2x3_1_1_ifc_procedure_1a6d1848b9c9ff6af48fa455795f5d0595"></span>void <code class="sig-name descname">setProcedureType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x320IfcProcedureTypeEnumE" title="Ifc2x3::IfcProcedureTypeEnum">IfcProcedureTypeEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x320IfcProcedureTypeEnum5ValueE" title="Ifc2x3::IfcProcedureTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x312IfcProcedure16setProcedureTypeEN6Ifc2x320IfcProcedureTypeEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x312IfcProcedure27hasUserDefinedProcedureTypeEv">
+<span id="_CPPv3NK6Ifc2x312IfcProcedure27hasUserDefinedProcedureTypeEv"></span><span id="_CPPv2NK6Ifc2x312IfcProcedure27hasUserDefinedProcedureTypeEv"></span><span id="Ifc2x3::IfcProcedure::hasUserDefinedProcedureTypeC"></span><span class="target" id="class_ifc2x3_1_1_ifc_procedure_1aa41609771c5b337a4745db6c10ae2487"></span>bool <code class="sig-name descname">hasUserDefinedProcedureType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x312IfcProcedure27hasUserDefinedProcedureTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute UserDefinedProcedureType is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_procedure"><span class="std std-ref">IfcProcedure</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x312IfcProcedure24UserDefinedProcedureTypeEv">
+<span id="_CPPv3NK6Ifc2x312IfcProcedure24UserDefinedProcedureTypeEv"></span><span id="_CPPv2NK6Ifc2x312IfcProcedure24UserDefinedProcedureTypeEv"></span><span id="Ifc2x3::IfcProcedure::UserDefinedProcedureTypeC"></span><span class="target" id="class_ifc2x3_1_1_ifc_procedure_1af698c3d16b45c0b4cfb3276ffb3ee2d1"></span>std::string <code class="sig-name descname">UserDefinedProcedureType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x312IfcProcedure24UserDefinedProcedureTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x312IfcProcedure27setUserDefinedProcedureTypeENSt6stringE">
+<span id="_CPPv3N6Ifc2x312IfcProcedure27setUserDefinedProcedureTypeENSt6stringE"></span><span id="_CPPv2N6Ifc2x312IfcProcedure27setUserDefinedProcedureTypeENSt6stringE"></span><span id="Ifc2x3::IfcProcedure::setUserDefinedProcedureType__ss"></span><span class="target" id="class_ifc2x3_1_1_ifc_procedure_1a4eb5bd81e3e5113c72ba3c00ee76e247"></span>void <code class="sig-name descname">setUserDefinedProcedureType</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x312IfcProcedure27setUserDefinedProcedureTypeENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x312IfcProcedure11declarationEv">
+<span id="_CPPv3NK6Ifc2x312IfcProcedure11declarationEv"></span><span id="_CPPv2NK6Ifc2x312IfcProcedure11declarationEv"></span><span id="Ifc2x3::IfcProcedure::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_procedure_1a39784e23160636e3c19b2590b4a51167"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x312IfcProcedure11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x312IfcProcedure12IfcProcedureEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x312IfcProcedure12IfcProcedureEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x312IfcProcedure12IfcProcedureEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcProcedure::IfcProcedure__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_procedure_1ae9b723db4680b344926100087557c624"></span><code class="sig-name descname">IfcProcedure</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x312IfcProcedure12IfcProcedureEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x312IfcProcedure12IfcProcedureENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEENSt6stringEN6Ifc2x320IfcProcedureTypeEnum5ValueEN5boost8optionalINSt6stringEEE">
+<span id="_CPPv3N6Ifc2x312IfcProcedure12IfcProcedureENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEENSt6stringEN6Ifc2x320IfcProcedureTypeEnum5ValueEN5boost8optionalINSt6stringEEE"></span><span id="_CPPv2N6Ifc2x312IfcProcedure12IfcProcedureENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEENSt6stringEN6Ifc2x320IfcProcedureTypeEnum5ValueEN5boost8optionalINSt6stringEEE"></span><span id="Ifc2x3::IfcProcedure::IfcProcedure__ss.Ifc2x3::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.ss.Ifc2x3::IfcProcedureTypeEnum::Value.boost::optional:ss:"></span><span class="target" id="class_ifc2x3_1_1_ifc_procedure_1a89a75687655b37fed892981bd6bcd70f"></span><code class="sig-name descname">IfcProcedure</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_owner_history.html#_CPPv4N6Ifc2x315IfcOwnerHistoryE" title="Ifc2x3::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, std::string <em>v6_ProcedureID</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x320IfcProcedureTypeEnumE" title="Ifc2x3::IfcProcedureTypeEnum">IfcProcedureTypeEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x320IfcProcedureTypeEnum5ValueE" title="Ifc2x3::IfcProcedureTypeEnum::Value">Value</a> <em>v7_ProcedureType</em>, boost::optional&lt;std::string&gt; <em>v8_UserDefinedProcedureType</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x312IfcProcedure12IfcProcedureENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEENSt6stringEN6Ifc2x320IfcProcedureTypeEnum5ValueEN5boost8optionalINSt6stringEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x312IfcProcedure5ClassEv">
+<span id="_CPPv3N6Ifc2x312IfcProcedure5ClassEv"></span><span id="_CPPv2N6Ifc2x312IfcProcedure5ClassEv"></span><span id="Ifc2x3::IfcProcedure::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_procedure_1abe1af662824f887b968e7de0ab6c4904"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x312IfcProcedure5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_pressure_measure.html" title="previous chapter">Class Ifc2x3::IfcPressureMeasure</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_process.html" title="next chapter">Class Ifc2x3::IfcProcess</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_procedure.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

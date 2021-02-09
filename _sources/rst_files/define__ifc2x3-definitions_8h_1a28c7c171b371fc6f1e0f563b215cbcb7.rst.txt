@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a28c7c171b371fc6f1e0f563b215cbcb7:
+
+Define SCHEMA_IfcCostValue_HAS_CostType
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcCostValue_HAS_CostType

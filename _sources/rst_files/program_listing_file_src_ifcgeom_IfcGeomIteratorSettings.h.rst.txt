@@ -1,0 +1,144 @@
+
+.. _program_listing_file_src_ifcgeom_IfcGeomIteratorSettings.h:
+
+Program Listing for File IfcGeomIteratorSettings.h
+==================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_ifcgeom_IfcGeomIteratorSettings.h>` (``src/ifcgeom/IfcGeomIteratorSettings.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /********************************************************************************
+    *                                                                              *
+    * This file is part of IfcOpenShell.                                           *
+    *                                                                              *
+    * IfcOpenShell is free software: you can redistribute it and/or modify         *
+    * it under the terms of the Lesser GNU General Public License as published by  *
+    * the Free Software Foundation, either version 3.0 of the License, or          *
+    * (at your option) any later version.                                          *
+    *                                                                              *
+    * IfcOpenShell is distributed in the hope that it will be useful,              *
+    * but WITHOUT ANY WARRANTY; without even the implied warranty of               *
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 *
+    * Lesser GNU General Public License for more details.                          *
+    *                                                                              *
+    * You should have received a copy of the Lesser GNU General Public License     *
+    * along with this program. If not, see <http://www.gnu.org/licenses/>.         *
+    *                                                                              *
+    ********************************************************************************/
+   
+   #ifndef IFCGEOMITERATORSETTINGS_H
+   #define IFCGEOMITERATORSETTINGS_H
+   
+   #include <array>
+   
+   #include "ifc_geom_api.h"
+   #include "../ifcparse/IfcException.h"
+   #include "../ifcparse/IfcBaseClass.h"
+   
+   namespace IfcGeom
+   {
+       class IFC_GEOM_API IteratorSettings
+       {
+       public:
+           enum Setting
+           {
+               WELD_VERTICES = 1,
+               USE_WORLD_COORDS = 1 << 1,
+               CONVERT_BACK_UNITS = 1 << 2,
+               USE_BREP_DATA = 1 << 3,
+               SEW_SHELLS = 1 << 4,
+               FASTER_BOOLEANS = 1 << 5,
+               DISABLE_OPENING_SUBTRACTIONS = 1 << 6,
+               DISABLE_TRIANGULATION = 1 << 7,
+               APPLY_DEFAULT_MATERIALS = 1 << 8,
+               INCLUDE_CURVES = 1 << 9,
+               EXCLUDE_SOLIDS_AND_SURFACES = 1 << 10,
+               NO_NORMALS = 1 << 11,
+               GENERATE_UVS = 1 << 12,
+               APPLY_LAYERSETS = 1 << 13,
+               SEARCH_FLOOR = 1 << 14,
+               SITE_LOCAL_PLACEMENT = 1 << 15,
+               BUILDING_LOCAL_PLACEMENT = 1 << 16,
+               VALIDATE_QUANTITIES = 1 << 17,
+               LAYERSET_FIRST = 1 << 18,
+               EDGE_ARROWS = 1 << 19,
+               DISABLE_BOOLEAN_RESULT = 1 << 20,
+               NUM_SETTINGS = 20
+           };
+           typedef unsigned SettingField;
+   
+           IteratorSettings()
+               : settings_(WELD_VERTICES) // OR options that default to true here
+               , deflection_tolerance_(1.e-3)
+               , angular_tolerance_(0.5)
+           {
+           }
+   
+           double deflection_tolerance() const { return deflection_tolerance_; }
+           double angular_tolerance() const { return angular_tolerance_; }
+           double force_space_transparency() const { return force_space_transparency_; }
+   
+           void set_deflection_tolerance(double value)
+           {
+               deflection_tolerance_ = value;
+               if (deflection_tolerance_ <= 1e-6) {
+                   Logger::Message(Logger::LOG_WARNING, "Deflection tolerance cannot be set to <= 1e-6; using the default value 1e-3");
+                   deflection_tolerance_ = 1e-3;
+               }
+           }
+   
+           void set_angular_tolerance(double value) {
+               angular_tolerance_ = value;
+           }
+   
+           void force_space_transparency(double value) {
+               force_space_transparency_ = value;
+           }       
+   
+           bool get(SettingField setting) const
+           {
+               return (settings_ & setting) != 0;
+           }
+   
+           void set(SettingField setting, bool value)
+           {
+               if (value) {
+                   settings_ |= setting;
+               } else {
+                   settings_ &= ~setting;
+               }
+           }
+   
+           std::array<double,3> offset = std::array<double,3>{0.0, 0.0, 0.0};
+           std::array<double,4> rotation = std::array<double,4>{0.0, 0.0, 0.0, 1.0};
+   
+       protected:
+           SettingField settings_;
+           double deflection_tolerance_, angular_tolerance_, force_space_transparency_;
+       };
+   
+       class IFC_GEOM_API ElementSettings : public IteratorSettings
+       {
+       public:
+           ElementSettings(const IteratorSettings& settings,
+               double unit_magnitude,
+               const std::string& element_type)
+               : IteratorSettings(settings)
+               , unit_magnitude_(unit_magnitude)
+               , element_type_(element_type)
+           {
+           }
+   
+           double unit_magnitude() const { return unit_magnitude_; }
+           const std::string& element_type() const { return element_type_; }
+   
+       private:
+           double unit_magnitude_;
+           std::string element_type_;
+       };
+   }
+   
+   #endif

@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcPropertySet &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcPropertySetDefinition" href="class_ifc2x3_1_1_ifc_property_set_definition.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcPropertyReferenceValue" href="class_ifc2x3_1_1_ifc_property_reference_value.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcpropertyset">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-property-set"></span><h1>Class Ifc2x3::IfcPropertySet<a class="headerlink" href="#class-ifc2x3-ifcpropertyset" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcPropertySetDefinition</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_property_set_definition.html#exhale-class-class-ifc2x3-1-1-ifc-property-set-definition"><span class="std std-ref">Class Ifc2x3::IfcPropertySetDefinition</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x314IfcPropertySetE">
+<span id="_CPPv3N6Ifc2x314IfcPropertySetE"></span><span id="_CPPv2N6Ifc2x314IfcPropertySetE"></span><span id="Ifc2x3::IfcPropertySet"></span><span class="target" id="class_ifc2x3_1_1_ifc_property_set"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcPropertySet</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_property_set_definition.html#_CPPv4N6Ifc2x324IfcPropertySetDefinitionE" title="Ifc2x3::IfcPropertySetDefinition">IfcPropertySetDefinition</a><a class="headerlink" href="#_CPPv4N6Ifc2x314IfcPropertySetE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> defines all dynamically extensible properties. The property set is a container class that holds properties within a property tree. These properties are interpreted according to their name attribute. The same <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> can be assignd to multiple object occurrences, it should then be assigned by a single instance of IfcRelDefinedByProperties to a set of related objects. Those property sets are referred to as shared property sets. It can also be assigned to an object type. The underlying structure, i.e. the required name, the applicable object or object types to which the property set can be attached and the individual properties that maybe included can be assigned using the property set template.</p>
+<p>NOTE See <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_defines_by_type"><span class="std std-ref">IfcRelDefinesByType</span></a> for how to override property sets assigned to an object type within the object occurrence.</p>
+<p>HISTORY New Entity in IFC Release 1.0</p>
+<p>IFC2x4 CHANGE All statically defined property set entities are no longer subtypes of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a>.</p>
+<p>Relationship use definition Property sets are related to other objects by using the relationship object that refers to the corresponding object:</p>
+<p>Occurrence Object: <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> using the inverse attribute DefinesOccurrence. Type Object: using a direct link by inverse attribute DefinesType. External reference: subtypes of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_associates"><span class="std std-ref">IfcRelAssociates</span></a> are used to provide a link to a classification system, or external library providing further reference to the property set. Accessible by inverse attribute HasAssociations. Underlying template: IfcRelDefinesByTemplate using the inverse attribute IsDefinedBy.</p>
+<p>Attribute use definition Instances of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> are used to assign named sets of individual properties (complex or single properties). Each individual property has a significant name string. Some property sets are included in the IFC specification and havea predefined set of properties indicated by assigning a significant name. These property sets are listed under “property sets” main menu item within this specification and from the object documentation sheet for those object to which they are applicable. The naming convention “Pset_Xxx” applies to all those property sets that are defined as part of the IFC specification and it shall be used as the value of the Name attribute. In addition any user defined property set can be captured. Property sets that are not declared as part of the IFC specification shall have a Name value not including the “Pset_” prefix. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x314IfcPropertySet4listE">
+<span id="_CPPv3N6Ifc2x314IfcPropertySet4listE"></span><span id="_CPPv2N6Ifc2x314IfcPropertySet4listE"></span><span id="Ifc2x3::IfcPropertySet::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_property_set_1aa1db6f5f8e314f996f91b10cf252ad1b"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x314IfcPropertySetE" title="Ifc2x3::IfcPropertySet">IfcPropertySet</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x314IfcPropertySet4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x314IfcPropertySet13HasPropertiesEv">
+<span id="_CPPv3NK6Ifc2x314IfcPropertySet13HasPropertiesEv"></span><span id="_CPPv2NK6Ifc2x314IfcPropertySet13HasPropertiesEv"></span><span id="Ifc2x3::IfcPropertySet::HasPropertiesC"></span><span class="target" id="class_ifc2x3_1_1_ifc_property_set_1a41c79bde04678b954cec5e9707c78b11"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_property.html#_CPPv4N6Ifc2x311IfcPropertyE" title="Ifc2x3::IfcProperty">IfcProperty</a>&gt;::ptr <code class="sig-name descname">HasProperties</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x314IfcPropertySet13HasPropertiesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Contained set of properties. For property sets defined as part of the IFC Object model, the property objects within a property set are defined as part of the standard. If a property is not contained within the set of predefined properties, its value has not been set at this time. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x314IfcPropertySet16setHasPropertiesEN22IfcTemplatedEntityListIN6Ifc2x311IfcPropertyEE3ptrE">
+<span id="_CPPv3N6Ifc2x314IfcPropertySet16setHasPropertiesEN22IfcTemplatedEntityListIN6Ifc2x311IfcPropertyEE3ptrE"></span><span id="_CPPv2N6Ifc2x314IfcPropertySet16setHasPropertiesEN22IfcTemplatedEntityListIN6Ifc2x311IfcPropertyEE3ptrE"></span><span id="Ifc2x3::IfcPropertySet::setHasProperties__IfcTemplatedEntityList:Ifc2x3::IfcProperty:::ptr"></span><span class="target" id="class_ifc2x3_1_1_ifc_property_set_1a6932bb6c7e0af884fb0f349be8cf1582"></span>void <code class="sig-name descname">setHasProperties</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_property.html#_CPPv4N6Ifc2x311IfcPropertyE" title="Ifc2x3::IfcProperty">IfcProperty</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x314IfcPropertySet16setHasPropertiesEN22IfcTemplatedEntityListIN6Ifc2x311IfcPropertyEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x314IfcPropertySet11declarationEv">
+<span id="_CPPv3NK6Ifc2x314IfcPropertySet11declarationEv"></span><span id="_CPPv2NK6Ifc2x314IfcPropertySet11declarationEv"></span><span id="Ifc2x3::IfcPropertySet::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_property_set_1a544be0b4e3853e5370e61a7b303842ed"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x314IfcPropertySet11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x314IfcPropertySet14IfcPropertySetEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x314IfcPropertySet14IfcPropertySetEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x314IfcPropertySet14IfcPropertySetEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcPropertySet::IfcPropertySet__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_property_set_1a48b38adf2350a5e7567412e8d6e87508"></span><code class="sig-name descname">IfcPropertySet</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x314IfcPropertySet14IfcPropertySetEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x314IfcPropertySet14IfcPropertySetENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc2x311IfcPropertyEE3ptrE">
+<span id="_CPPv3N6Ifc2x314IfcPropertySet14IfcPropertySetENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc2x311IfcPropertyEE3ptrE"></span><span id="_CPPv2N6Ifc2x314IfcPropertySet14IfcPropertySetENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc2x311IfcPropertyEE3ptrE"></span><span id="Ifc2x3::IfcPropertySet::IfcPropertySet__ss.Ifc2x3::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.IfcTemplatedEntityList:Ifc2x3::IfcProperty:::ptr"></span><span class="target" id="class_ifc2x3_1_1_ifc_property_set_1ac9d088a3f37afdd5b00baf752c745d3b"></span><code class="sig-name descname">IfcPropertySet</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_owner_history.html#_CPPv4N6Ifc2x315IfcOwnerHistoryE" title="Ifc2x3::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, <a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_property.html#_CPPv4N6Ifc2x311IfcPropertyE" title="Ifc2x3::IfcProperty">IfcProperty</a>&gt;::ptr <em>v5_HasProperties</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x314IfcPropertySet14IfcPropertySetENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc2x311IfcPropertyEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x314IfcPropertySet5ClassEv">
+<span id="_CPPv3N6Ifc2x314IfcPropertySet5ClassEv"></span><span id="_CPPv2N6Ifc2x314IfcPropertySet5ClassEv"></span><span id="Ifc2x3::IfcPropertySet::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_property_set_1a5da354f4a8fa3e851427043b19ab1309"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x314IfcPropertySet5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_property_reference_value.html" title="previous chapter">Class Ifc2x3::IfcPropertyReferenceValue</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_property_set_definition.html" title="next chapter">Class Ifc2x3::IfcPropertySetDefinition</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_property_set.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

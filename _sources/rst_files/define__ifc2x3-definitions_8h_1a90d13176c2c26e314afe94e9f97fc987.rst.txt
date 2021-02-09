@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a90d13176c2c26e314afe94e9f97fc987:
+
+Define SCHEMA_IfcObject_HAS_IsDefinedBy
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcObject_HAS_IsDefinedBy

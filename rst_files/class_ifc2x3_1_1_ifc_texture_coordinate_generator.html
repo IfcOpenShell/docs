@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcTextureCoordinateGenerator &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcTextureMap" href="class_ifc2x3_1_1_ifc_texture_map.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcTextureCoordinate" href="class_ifc2x3_1_1_ifc_texture_coordinate.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifctexturecoordinategenerator">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-texture-coordinate-generator"></span><h1>Class Ifc2x3::IfcTextureCoordinateGenerator<a class="headerlink" href="#class-ifc2x3-ifctexturecoordinategenerator" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcTextureCoordinate</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_texture_coordinate.html#exhale-class-class-ifc2x3-1-1-ifc-texture-coordinate"><span class="std std-ref">Class Ifc2x3::IfcTextureCoordinate</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x329IfcTextureCoordinateGeneratorE">
+<span id="_CPPv3N6Ifc2x329IfcTextureCoordinateGeneratorE"></span><span id="_CPPv2N6Ifc2x329IfcTextureCoordinateGeneratorE"></span><span id="Ifc2x3::IfcTextureCoordinateGenerator"></span><span class="target" id="class_ifc2x3_1_1_ifc_texture_coordinate_generator"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcTextureCoordinateGenerator</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_texture_coordinate.html#_CPPv4N6Ifc2x320IfcTextureCoordinateE" title="Ifc2x3::IfcTextureCoordinate">IfcTextureCoordinate</a><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcTextureCoordinateGeneratorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_texture_coordinate_generator"><span class="std std-ref">IfcTextureCoordinateGenerator</span></a> describes a procedurally defined mapping function with input parameter to map 2D texture coordinates to 3D geometry vertices. The allowable Mode values and input Parameter need to be agreed upon in view definitions and implementer agreements.</p>
+<p>It is recommended to use the texture coordinate generation modes as defined in X3D.</p>
+<p>The following definitions from ISO/IEC 19775-1 X3D Architecture and base components (X3D Specification) apply:</p>
+<p>The TextureCoordinateGenerator supports the automatic generation of texture coordinates for geometric shapes. The mode field describes the algorithm used to compute texture coordinates.</p>
+<p>SPHERE, CAMERASPACENORMAL, CAMERASPACEPOSITION, CAMERASPACEREFLECTIONVECTOR, SPHERE-LOCAL, COORD, COORD-EYE, NOISE, NOISE-EYE, SPHERE-REFLECT, SPHERE-REFLECT-LOCAL</p>
+<p>NOTE The definitions of texturing within this standard have been developed in dependence on the texture component of X3D. See ISO/IEC 19775-1.2:2008 X3D Architecture and base components Edition 2, Part 1, 18 Texturing component for the definitions in the international standard.</p>
+<p>HISTORY New entity in IFC2x2.</p>
+<p>IFC2x2 Addendum 2 CHANGE The attribute Texturehas been deleted. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x329IfcTextureCoordinateGenerator4listE">
+<span id="_CPPv3N6Ifc2x329IfcTextureCoordinateGenerator4listE"></span><span id="_CPPv2N6Ifc2x329IfcTextureCoordinateGenerator4listE"></span><span id="Ifc2x3::IfcTextureCoordinateGenerator::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_texture_coordinate_generator_1ad8c0379e52a18ec7fe2693a0d888e350"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x329IfcTextureCoordinateGeneratorE" title="Ifc2x3::IfcTextureCoordinateGenerator">IfcTextureCoordinateGenerator</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcTextureCoordinateGenerator4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x329IfcTextureCoordinateGenerator4ModeEv">
+<span id="_CPPv3NK6Ifc2x329IfcTextureCoordinateGenerator4ModeEv"></span><span id="_CPPv2NK6Ifc2x329IfcTextureCoordinateGenerator4ModeEv"></span><span id="Ifc2x3::IfcTextureCoordinateGenerator::ModeC"></span><span class="target" id="class_ifc2x3_1_1_ifc_texture_coordinate_generator_1ad50d46f42b4f9ea10f14963b5d34a49e"></span>std::string <code class="sig-name descname">Mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x329IfcTextureCoordinateGenerator4ModeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The Mode attribute describes the algorithm used to compute texture coordinates.</p>
+<p>NOTE The applicable values for the Mode attribute are determined by view definitions or implementer agreements. It is recommended to use the modes described in ISO/IES 19775-1.2:2008 X3D Architecture and base components Edition 2, Part 1. See 18.4.8 TextureCoordinateGenerator for recommended values. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x329IfcTextureCoordinateGenerator7setModeENSt6stringE">
+<span id="_CPPv3N6Ifc2x329IfcTextureCoordinateGenerator7setModeENSt6stringE"></span><span id="_CPPv2N6Ifc2x329IfcTextureCoordinateGenerator7setModeENSt6stringE"></span><span id="Ifc2x3::IfcTextureCoordinateGenerator::setMode__ss"></span><span class="target" id="class_ifc2x3_1_1_ifc_texture_coordinate_generator_1a99032a4aba37575e26c0871efe5f8793"></span>void <code class="sig-name descname">setMode</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcTextureCoordinateGenerator7setModeENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x329IfcTextureCoordinateGenerator9ParameterEv">
+<span id="_CPPv3NK6Ifc2x329IfcTextureCoordinateGenerator9ParameterEv"></span><span id="_CPPv2NK6Ifc2x329IfcTextureCoordinateGenerator9ParameterEv"></span><span id="Ifc2x3::IfcTextureCoordinateGenerator::ParameterC"></span><span class="target" id="class_ifc2x3_1_1_ifc_texture_coordinate_generator_1a8fce120c240dff309f2436573f3fe492"></span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <code class="sig-name descname">Parameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x329IfcTextureCoordinateGenerator9ParameterEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The parameters used as arguments by the function as specified by Mode.</p>
+<p>IFC2x4 CHANGE Made optional data type restricted to REAL. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x329IfcTextureCoordinateGenerator12setParameterEN13IfcEntityList3ptrE">
+<span id="_CPPv3N6Ifc2x329IfcTextureCoordinateGenerator12setParameterEN13IfcEntityList3ptrE"></span><span id="_CPPv2N6Ifc2x329IfcTextureCoordinateGenerator12setParameterEN13IfcEntityList3ptrE"></span><span id="Ifc2x3::IfcTextureCoordinateGenerator::setParameter__IfcEntityList::ptr"></span><span class="target" id="class_ifc2x3_1_1_ifc_texture_coordinate_generator_1a9ef6898ec07a0417f218797d3c9d5915"></span>void <code class="sig-name descname">setParameter</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcTextureCoordinateGenerator12setParameterEN13IfcEntityList3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x329IfcTextureCoordinateGenerator11declarationEv">
+<span id="_CPPv3NK6Ifc2x329IfcTextureCoordinateGenerator11declarationEv"></span><span id="_CPPv2NK6Ifc2x329IfcTextureCoordinateGenerator11declarationEv"></span><span id="Ifc2x3::IfcTextureCoordinateGenerator::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_texture_coordinate_generator_1a19bc8f4b77228bfa3ad99973bc9fe267"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x329IfcTextureCoordinateGenerator11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x329IfcTextureCoordinateGenerator29IfcTextureCoordinateGeneratorEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x329IfcTextureCoordinateGenerator29IfcTextureCoordinateGeneratorEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x329IfcTextureCoordinateGenerator29IfcTextureCoordinateGeneratorEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcTextureCoordinateGenerator::IfcTextureCoordinateGenerator__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_texture_coordinate_generator_1aeb11c4563881ae25f5f7aa90e31ad7d1"></span><code class="sig-name descname">IfcTextureCoordinateGenerator</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcTextureCoordinateGenerator29IfcTextureCoordinateGeneratorEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x329IfcTextureCoordinateGenerator29IfcTextureCoordinateGeneratorENSt6stringEN13IfcEntityList3ptrE">
+<span id="_CPPv3N6Ifc2x329IfcTextureCoordinateGenerator29IfcTextureCoordinateGeneratorENSt6stringEN13IfcEntityList3ptrE"></span><span id="_CPPv2N6Ifc2x329IfcTextureCoordinateGenerator29IfcTextureCoordinateGeneratorENSt6stringEN13IfcEntityList3ptrE"></span><span id="Ifc2x3::IfcTextureCoordinateGenerator::IfcTextureCoordinateGenerator__ss.IfcEntityList::ptr"></span><span class="target" id="class_ifc2x3_1_1_ifc_texture_coordinate_generator_1a906f8b946fc17913a376a9efe38eb2ca"></span><code class="sig-name descname">IfcTextureCoordinateGenerator</code><span class="sig-paren">(</span>std::string <em>v1_Mode</em>, <a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <em>v2_Parameter</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcTextureCoordinateGenerator29IfcTextureCoordinateGeneratorENSt6stringEN13IfcEntityList3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x329IfcTextureCoordinateGenerator5ClassEv">
+<span id="_CPPv3N6Ifc2x329IfcTextureCoordinateGenerator5ClassEv"></span><span id="_CPPv2N6Ifc2x329IfcTextureCoordinateGenerator5ClassEv"></span><span id="Ifc2x3::IfcTextureCoordinateGenerator::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_texture_coordinate_generator_1a87849cb920f0546454b0cfc445f84327"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x329IfcTextureCoordinateGenerator5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_texture_coordinate.html" title="previous chapter">Class Ifc2x3::IfcTextureCoordinate</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_texture_map.html" title="next chapter">Class Ifc2x3::IfcTextureMap</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_texture_coordinate_generator.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

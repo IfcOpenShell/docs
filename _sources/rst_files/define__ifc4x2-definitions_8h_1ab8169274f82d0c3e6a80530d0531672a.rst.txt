@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1ab8169274f82d0c3e6a80530d0531672a:
+
+Define SCHEMA_IfcLibraryReference_HAS_LibraryRefForObjects
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcLibraryReference_HAS_LibraryRefForObjects

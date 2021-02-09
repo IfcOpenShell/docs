@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1a23c1f71db347b729de508ccb8949d89b:
+
+Define SCHEMA_IfcRectangleHollowProfileDef_OuterFilletRadius_IS_OPTIONAL
+========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRectangleHollowProfileDef_OuterFilletRadius_IS_OPTIONAL

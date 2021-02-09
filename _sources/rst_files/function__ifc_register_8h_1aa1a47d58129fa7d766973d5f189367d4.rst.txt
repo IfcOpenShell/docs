@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_register_8h_1aa1a47d58129fa7d766973d5f189367d4:
+
+Function FACE(IfcArbitraryClosedProfileDef)
+===========================================
+
+- Defined in :ref:`file_src_ifcgeom_IfcRegister.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: FACE(IfcArbitraryClosedProfileDef)

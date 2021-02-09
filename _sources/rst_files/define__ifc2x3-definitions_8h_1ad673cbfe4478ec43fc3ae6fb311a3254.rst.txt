@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ad673cbfe4478ec43fc3ae6fb311a3254:
+
+Define SCHEMA_IfcConstraint_HAS_IsRelatedWith
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConstraint_HAS_IsRelatedWith

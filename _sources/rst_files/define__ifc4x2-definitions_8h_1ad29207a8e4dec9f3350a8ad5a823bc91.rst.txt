@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1ad29207a8e4dec9f3350a8ad5a823bc91:
+
+Define SCHEMA_IfcTaskTime_EarlyFinish_IS_OPTIONAL
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTaskTime_EarlyFinish_IS_OPTIONAL

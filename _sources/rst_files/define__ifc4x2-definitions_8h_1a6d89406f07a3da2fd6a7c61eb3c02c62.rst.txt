@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a6d89406f07a3da2fd6a7c61eb3c02c62:
+
+Define SCHEMA_IfcElement_HAS_ConnectedTo
+========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcElement_HAS_ConnectedTo

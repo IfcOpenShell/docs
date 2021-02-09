@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a793f369e32e3cc93caccd94b734a810f:
+
+Define SCHEMA_HAS_IfcLengthMeasure
+==================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcLengthMeasure

@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcTextStyleForDefinedFont &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcTextStyleTextModel" href="class_ifc4x2_1_1_ifc_text_style_text_model.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcTextStyleFontModel" href="class_ifc4x2_1_1_ifc_text_style_font_model.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifctextstylefordefinedfont">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-text-style-for-defined-font"></span><h1>Class Ifc4x2::IfcTextStyleForDefinedFont<a class="headerlink" href="#class-ifc4x2-ifctextstylefordefinedfont" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcPresentationItem</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_presentation_item.html#exhale-class-class-ifc4x2-1-1-ifc-presentation-item"><span class="std std-ref">Class Ifc4x2::IfcPresentationItem</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x226IfcTextStyleForDefinedFontE">
+<span id="_CPPv3N6Ifc4x226IfcTextStyleForDefinedFontE"></span><span id="_CPPv2N6Ifc4x226IfcTextStyleForDefinedFontE"></span><span id="Ifc4x2::IfcTextStyleForDefinedFont"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_for_defined_font"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcTextStyleForDefinedFont</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_presentation_item.html#_CPPv4N6Ifc4x219IfcPresentationItemE" title="Ifc4x2::IfcPresentationItem">IfcPresentationItem</a><a class="headerlink" href="#_CPPv4N6Ifc4x226IfcTextStyleForDefinedFontE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-46:1992: A text style for defined font is a character glyph style for pre-defined or externally defined text fonts.</p>
+<p>Definition from CSS1 (W3C Recommendation): These properties describe the color (often called foreground color) and background of an element (i.e. the surface onto which the content is rendered). One can set a background color.</p>
+<p>NOTE The CSS1 definition allows also for a background image. This has not been incorporated into IFC.</p>
+<p>The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_text_style_for_defined_font"><span class="std std-ref">IfcTextStyleForDefinedFont</span></a> combines the text font color with an optional background color, that fills the text box, defined by the planar extent given to the text literal.</p>
+<p>NOTE Corresponding ISO 10303 name: text_style_for_defined_font. Please refer to ISO/IS 10303-46:1994, p.122 for the final definition of the formal standard. The attribute BackgroundColour has been added.</p>
+<p>NOTE Corresponding CSS1 definitions are Color and background properties (color, background-color).</p>
+<p>HISTORY New entity in IFC2x3.</p>
+<p>IFC2x3 CHANGE The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_text_style_for_defined_font"><span class="std std-ref">IfcTextStyleForDefinedFont</span></a> has been added and replaces IfcColour at the IfcCharacterStyleSelect. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x226IfcTextStyleForDefinedFont4listE">
+<span id="_CPPv3N6Ifc4x226IfcTextStyleForDefinedFont4listE"></span><span id="_CPPv2N6Ifc4x226IfcTextStyleForDefinedFont4listE"></span><span id="Ifc4x2::IfcTextStyleForDefinedFont::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_for_defined_font_1a4ce839a1e4de4b4b8ac06dfb661e3070"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x226IfcTextStyleForDefinedFontE" title="Ifc4x2::IfcTextStyleForDefinedFont">IfcTextStyleForDefinedFont</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x226IfcTextStyleForDefinedFont4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x226IfcTextStyleForDefinedFont6ColourEv">
+<span id="_CPPv3NK6Ifc4x226IfcTextStyleForDefinedFont6ColourEv"></span><span id="_CPPv2NK6Ifc4x226IfcTextStyleForDefinedFont6ColourEv"></span><span id="Ifc4x2::IfcTextStyleForDefinedFont::ColourC"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_for_defined_font_1ac6ae487175fbd5041df5841a59602ada"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x29IfcColourE" title="Ifc4x2::IfcColour">IfcColour</a> *<code class="sig-name descname">Colour</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x226IfcTextStyleForDefinedFont6ColourEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>This property describes the text color of an element (often referred to as the foreground color). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x226IfcTextStyleForDefinedFont9setColourEPN6Ifc4x29IfcColourE">
+<span id="_CPPv3N6Ifc4x226IfcTextStyleForDefinedFont9setColourEPN6Ifc4x29IfcColourE"></span><span id="_CPPv2N6Ifc4x226IfcTextStyleForDefinedFont9setColourEPN6Ifc4x29IfcColourE"></span><span id="Ifc4x2::IfcTextStyleForDefinedFont::setColour__Ifc4x2::IfcColourP"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_for_defined_font_1a91449c0e0558366b318817ec83b13102"></span>void <code class="sig-name descname">setColour</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x29IfcColourE" title="Ifc4x2::IfcColour">IfcColour</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x226IfcTextStyleForDefinedFont9setColourEPN6Ifc4x29IfcColourE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x226IfcTextStyleForDefinedFont19hasBackgroundColourEv">
+<span id="_CPPv3NK6Ifc4x226IfcTextStyleForDefinedFont19hasBackgroundColourEv"></span><span id="_CPPv2NK6Ifc4x226IfcTextStyleForDefinedFont19hasBackgroundColourEv"></span><span id="Ifc4x2::IfcTextStyleForDefinedFont::hasBackgroundColourC"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_for_defined_font_1a3a889206bbcdd221591c9b725b5d3c65"></span>bool <code class="sig-name descname">hasBackgroundColour</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x226IfcTextStyleForDefinedFont19hasBackgroundColourEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute BackgroundColour is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_text_style_for_defined_font"><span class="std std-ref">IfcTextStyleForDefinedFont</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x226IfcTextStyleForDefinedFont16BackgroundColourEv">
+<span id="_CPPv3NK6Ifc4x226IfcTextStyleForDefinedFont16BackgroundColourEv"></span><span id="_CPPv2NK6Ifc4x226IfcTextStyleForDefinedFont16BackgroundColourEv"></span><span id="Ifc4x2::IfcTextStyleForDefinedFont::BackgroundColourC"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_for_defined_font_1a3bd92c65943f9e932defd5d86a535a85"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x29IfcColourE" title="Ifc4x2::IfcColour">IfcColour</a> *<code class="sig-name descname">BackgroundColour</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x226IfcTextStyleForDefinedFont16BackgroundColourEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>This property sets the background color of an element. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x226IfcTextStyleForDefinedFont19setBackgroundColourEPN6Ifc4x29IfcColourE">
+<span id="_CPPv3N6Ifc4x226IfcTextStyleForDefinedFont19setBackgroundColourEPN6Ifc4x29IfcColourE"></span><span id="_CPPv2N6Ifc4x226IfcTextStyleForDefinedFont19setBackgroundColourEPN6Ifc4x29IfcColourE"></span><span id="Ifc4x2::IfcTextStyleForDefinedFont::setBackgroundColour__Ifc4x2::IfcColourP"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_for_defined_font_1a96193af73b8ba721ed80ffaab639f1de"></span>void <code class="sig-name descname">setBackgroundColour</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x29IfcColourE" title="Ifc4x2::IfcColour">IfcColour</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x226IfcTextStyleForDefinedFont19setBackgroundColourEPN6Ifc4x29IfcColourE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x226IfcTextStyleForDefinedFont11declarationEv">
+<span id="_CPPv3NK6Ifc4x226IfcTextStyleForDefinedFont11declarationEv"></span><span id="_CPPv2NK6Ifc4x226IfcTextStyleForDefinedFont11declarationEv"></span><span id="Ifc4x2::IfcTextStyleForDefinedFont::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_for_defined_font_1a4e0b04adfb540a6249b8963f031af184"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x226IfcTextStyleForDefinedFont11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x226IfcTextStyleForDefinedFont26IfcTextStyleForDefinedFontEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x226IfcTextStyleForDefinedFont26IfcTextStyleForDefinedFontEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x226IfcTextStyleForDefinedFont26IfcTextStyleForDefinedFontEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcTextStyleForDefinedFont::IfcTextStyleForDefinedFont__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_for_defined_font_1ab0bca540c5a6924ed8cff5b40e027825"></span><code class="sig-name descname">IfcTextStyleForDefinedFont</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x226IfcTextStyleForDefinedFont26IfcTextStyleForDefinedFontEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x226IfcTextStyleForDefinedFont26IfcTextStyleForDefinedFontEPN6Ifc4x29IfcColourEPN6Ifc4x29IfcColourE">
+<span id="_CPPv3N6Ifc4x226IfcTextStyleForDefinedFont26IfcTextStyleForDefinedFontEPN6Ifc4x29IfcColourEPN6Ifc4x29IfcColourE"></span><span id="_CPPv2N6Ifc4x226IfcTextStyleForDefinedFont26IfcTextStyleForDefinedFontEPN6Ifc4x29IfcColourEPN6Ifc4x29IfcColourE"></span><span id="Ifc4x2::IfcTextStyleForDefinedFont::IfcTextStyleForDefinedFont__Ifc4x2::IfcColourP.Ifc4x2::IfcColourP"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_for_defined_font_1a272eaff4f61eee0496833c6c4f5e779b"></span><code class="sig-name descname">IfcTextStyleForDefinedFont</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x29IfcColourE" title="Ifc4x2::IfcColour">IfcColour</a> *<em>v1_Colour</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x29IfcColourE" title="Ifc4x2::IfcColour">IfcColour</a> *<em>v2_BackgroundColour</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x226IfcTextStyleForDefinedFont26IfcTextStyleForDefinedFontEPN6Ifc4x29IfcColourEPN6Ifc4x29IfcColourE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x226IfcTextStyleForDefinedFont5ClassEv">
+<span id="_CPPv3N6Ifc4x226IfcTextStyleForDefinedFont5ClassEv"></span><span id="_CPPv2N6Ifc4x226IfcTextStyleForDefinedFont5ClassEv"></span><span id="Ifc4x2::IfcTextStyleForDefinedFont::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_text_style_for_defined_font_1aa2d97c89ef39c262b284b3bf02b6f4bb"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x226IfcTextStyleForDefinedFont5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_text_style_font_model.html" title="previous chapter">Class Ifc4x2::IfcTextStyleFontModel</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_text_style_text_model.html" title="next chapter">Class Ifc4x2::IfcTextStyleTextModel</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_text_style_for_defined_font.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ad8240d3aba6f676c70b22a0f13a9de84:
+
+Define SCHEMA_HAS_IfcSurfaceStyleRefraction
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcSurfaceStyleRefraction

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a6759fbc91fd3237a0f6f76ab5b83ad82:
+
+Define SCHEMA_IfcMechanicalSteelMaterialProperties_HAS_YieldStress
+==================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMechanicalSteelMaterialProperties_HAS_YieldStress

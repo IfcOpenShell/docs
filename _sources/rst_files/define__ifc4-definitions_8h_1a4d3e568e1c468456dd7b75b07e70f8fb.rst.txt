@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a4d3e568e1c468456dd7b75b07e70f8fb:
+
+Define SCHEMA_IfcIndexedPolygonalFaceWithVoids_HAS_InnerCoordIndices
+====================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcIndexedPolygonalFaceWithVoids_HAS_InnerCoordIndices

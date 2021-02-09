@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a4b47cac81904adc19bb6addebc8d5c86:
+
+Define SCHEMA_IfcPropertySingleValue_HAS_NominalValue
+=====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPropertySingleValue_HAS_NominalValue

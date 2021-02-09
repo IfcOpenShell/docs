@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a5aa54000c9dba4f5937f86325d88f42f:
+
+Define SCHEMA_IfcRelConnectsStructuralElement_HAS_RelatingElement
+=================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelConnectsStructuralElement_HAS_RelatingElement

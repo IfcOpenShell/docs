@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a4325c534ad74645543ba52b22e11c9c9:
+
+Define SCHEMA_IfcProcedure_HAS_PredefinedType
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcProcedure_HAS_PredefinedType

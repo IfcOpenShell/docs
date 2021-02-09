@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1acb317aa9210f016b2170d2659f13e339:
+
+Define SCHEMA_IfcBSplineCurve_HAS_SelfIntersect
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBSplineCurve_HAS_SelfIntersect

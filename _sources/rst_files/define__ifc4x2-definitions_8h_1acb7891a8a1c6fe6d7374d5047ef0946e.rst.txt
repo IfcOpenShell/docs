@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1acb7891a8a1c6fe6d7374d5047ef0946e:
+
+Define SCHEMA_IfcRelConnectsWithRealizingElements_HAS_RealizingElements
+=======================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelConnectsWithRealizingElements_HAS_RealizingElements

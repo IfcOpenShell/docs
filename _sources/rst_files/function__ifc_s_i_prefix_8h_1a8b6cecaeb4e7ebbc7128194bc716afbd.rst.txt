@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_s_i_prefix_8h_1a8b6cecaeb4e7ebbc7128194bc716afbd:
+
+Template Function IfcParse::get_SI_equivalent
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_IfcSIPrefix.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcParse::get_SI_equivalent(typename Schema::IfcNamedUnit *)

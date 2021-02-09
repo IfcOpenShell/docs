@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a208677ac15567624141cf4ea2fb6f397:
+
+Define SCHEMA_IfcGeneralMaterialProperties_Porosity_IS_OPTIONAL
+===============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcGeneralMaterialProperties_Porosity_IS_OPTIONAL

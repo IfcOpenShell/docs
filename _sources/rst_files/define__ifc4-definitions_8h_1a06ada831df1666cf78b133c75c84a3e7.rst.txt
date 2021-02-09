@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a06ada831df1666cf78b133c75c84a3e7:
+
+Define SCHEMA_IfcResourceTime_HAS_ScheduleWork
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcResourceTime_HAS_ScheduleWork

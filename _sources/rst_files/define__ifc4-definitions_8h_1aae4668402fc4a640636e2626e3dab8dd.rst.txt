@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1aae4668402fc4a640636e2626e3dab8dd:
+
+Define SCHEMA_IfcPropertyListValue_HAS_ListValues
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPropertyListValue_HAS_ListValues

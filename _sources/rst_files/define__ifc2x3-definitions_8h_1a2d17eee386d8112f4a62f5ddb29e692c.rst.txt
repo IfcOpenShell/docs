@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a2d17eee386d8112f4a62f5ddb29e692c:
+
+Define SCHEMA_IfcConstructionResource_BaseQuantity_IS_OPTIONAL
+==============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConstructionResource_BaseQuantity_IS_OPTIONAL

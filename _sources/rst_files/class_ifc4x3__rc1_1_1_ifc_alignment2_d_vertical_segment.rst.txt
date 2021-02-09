@@ -1,0 +1,40 @@
+.. _exhale_class_class_ifc4x3__rc1_1_1_ifc_alignment2_d_vertical_segment:
+
+Class Ifc4x3_rc1::IfcAlignment2DVerticalSegment
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x3__rc1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x3_rc1::IfcAlignment2DSegment`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_alignment2_d_segment`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x3_rc1::IfcAlignment2DVerSegCircularArc`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_alignment2_d_ver_seg_circular_arc`)
+- ``public Ifc4x3_rc1::IfcAlignment2DVerSegLine`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_alignment2_d_ver_seg_line`)
+- ``public Ifc4x3_rc1::IfcAlignment2DVerSegParabolicArc`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_alignment2_d_ver_seg_parabolic_arc`)
+- ``public Ifc4x3_rc1::IfcAlignment2DVerSegTransition`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_alignment2_d_ver_seg_transition`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x3_rc1::IfcAlignment2DVerticalSegment
+   :members:
+   :protected-members:
+   :undoc-members:

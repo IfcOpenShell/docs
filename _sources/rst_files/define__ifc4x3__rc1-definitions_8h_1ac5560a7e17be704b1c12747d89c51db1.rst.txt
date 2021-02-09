@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1ac5560a7e17be704b1c12747d89c51db1:
+
+Define SCHEMA_IfcMaterialConstituentSet_HAS_MaterialConstituents
+================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMaterialConstituentSet_HAS_MaterialConstituents

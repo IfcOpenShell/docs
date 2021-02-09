@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x3_rc1::IfcBoundaryEdgeCondition &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x3_rc1::IfcBoundaryFaceCondition" href="class_ifc4x3__rc1_1_1_ifc_boundary_face_condition.html" />
+    <link rel="prev" title="Class Ifc4x3_rc1::IfcBoundaryCurve" href="class_ifc4x3__rc1_1_1_ifc_boundary_curve.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x3-rc1-ifcboundaryedgecondition">
+<span id="exhale-class-class-ifc4x3-rc1-1-1-ifc-boundary-edge-condition"></span><h1>Class Ifc4x3_rc1::IfcBoundaryEdgeCondition<a class="headerlink" href="#class-ifc4x3-rc1-ifcboundaryedgecondition" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x3_rc1.h.html#file-src-ifcparse-ifc4x3-rc1-h"><span class="std std-ref">File Ifc4x3_rc1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x3__rc1.html#exhale-struct-struct-ifc4x3-rc1"><span class="std std-ref">Struct Ifc4x3_rc1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x3_rc1::IfcBoundaryCondition</span></code> (<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_boundary_condition.html#exhale-class-class-ifc4x3-rc1-1-1-ifc-boundary-condition"><span class="std std-ref">Class Ifc4x3_rc1::IfcBoundaryCondition</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeConditionE">
+<span id="_CPPv3N10Ifc4x3_rc124IfcBoundaryEdgeConditionE"></span><span id="_CPPv2N10Ifc4x3_rc124IfcBoundaryEdgeConditionE"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcBoundaryEdgeCondition</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_boundary_condition.html#_CPPv4N10Ifc4x3_rc120IfcBoundaryConditionE" title="Ifc4x3_rc1::IfcBoundaryCondition">IfcBoundaryCondition</a><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeConditionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from IAI: Describes linearly elastic support conditions or connection conditions.</p>
+<p>Applicability:</p>
+<p>Curve supports and connections.</p>
+<p>HISTORY: New entity in IFC 2x2. IFC 2x4 change: Attributes LinearStiffnessX/Y/Z renamed to TranslationalStiffnessX/Y/Z.</p>
+<p>IFC 2x4 change: All attribute data types changed from numeric to SELECT between Boolean and numeric. Stiffnesses may now also be negative, for example to capture destabilizing effects in boundary conditions. The IFC 2x3 convention of -1. representing infinite stiffness is no longer valid and must not be used. Infinite stiffness, i.e. fixed supports, are now modeled by the Boolean value TRUE. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition4listE">
+<span id="_CPPv3N10Ifc4x3_rc124IfcBoundaryEdgeCondition4listE"></span><span id="_CPPv2N10Ifc4x3_rc124IfcBoundaryEdgeCondition4listE"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::list"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1a4d5b33d004ce4632590b928e9ac2f12b"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeConditionE" title="Ifc4x3_rc1::IfcBoundaryEdgeCondition">IfcBoundaryEdgeCondition</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition34hasTranslationalStiffnessByLengthXEv">
+<span id="_CPPv3NK10Ifc4x3_rc124IfcBoundaryEdgeCondition34hasTranslationalStiffnessByLengthXEv"></span><span id="_CPPv2NK10Ifc4x3_rc124IfcBoundaryEdgeCondition34hasTranslationalStiffnessByLengthXEv"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::hasTranslationalStiffnessByLengthXC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1a64b7aa6dc267ea77fe2bbe7ed8d9aebc"></span>bool <code class="sig-name descname">hasTranslationalStiffnessByLengthX</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition34hasTranslationalStiffnessByLengthXEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute TranslationalStiffnessByLengthX is defined for this <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition"><span class="std std-ref">IfcBoundaryEdgeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31TranslationalStiffnessByLengthXEv">
+<span id="_CPPv3NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31TranslationalStiffnessByLengthXEv"></span><span id="_CPPv2NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31TranslationalStiffnessByLengthXEv"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::TranslationalStiffnessByLengthXC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1a2475d498e9acbf7e6e0dc7d22ecfbed4"></span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfTranslationalSubgradeReactionSelect">IfcModulusOfTranslationalSubgradeReactionSelect</a> *<code class="sig-name descname">TranslationalStiffnessByLengthX</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31TranslationalStiffnessByLengthXEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Translational stiffness value in x-direction of the coordinate system defined by the instance which uses this resource object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition34setTranslationalStiffnessByLengthXEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE">
+<span id="_CPPv3N10Ifc4x3_rc124IfcBoundaryEdgeCondition34setTranslationalStiffnessByLengthXEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE"></span><span id="_CPPv2N10Ifc4x3_rc124IfcBoundaryEdgeCondition34setTranslationalStiffnessByLengthXEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::setTranslationalStiffnessByLengthX__Ifc4x3_rc1::IfcModulusOfTranslationalSubgradeReactionSelectP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1a133271d493b215b634efc709b181cacf"></span>void <code class="sig-name descname">setTranslationalStiffnessByLengthX</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfTranslationalSubgradeReactionSelect">IfcModulusOfTranslationalSubgradeReactionSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition34setTranslationalStiffnessByLengthXEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition34hasTranslationalStiffnessByLengthYEv">
+<span id="_CPPv3NK10Ifc4x3_rc124IfcBoundaryEdgeCondition34hasTranslationalStiffnessByLengthYEv"></span><span id="_CPPv2NK10Ifc4x3_rc124IfcBoundaryEdgeCondition34hasTranslationalStiffnessByLengthYEv"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::hasTranslationalStiffnessByLengthYC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1a0f221139485d83e5f26365db08ba59ec"></span>bool <code class="sig-name descname">hasTranslationalStiffnessByLengthY</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition34hasTranslationalStiffnessByLengthYEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute TranslationalStiffnessByLengthY is defined for this <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition"><span class="std std-ref">IfcBoundaryEdgeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31TranslationalStiffnessByLengthYEv">
+<span id="_CPPv3NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31TranslationalStiffnessByLengthYEv"></span><span id="_CPPv2NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31TranslationalStiffnessByLengthYEv"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::TranslationalStiffnessByLengthYC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1a461dbfe351eb6e207b28215151e26b8d"></span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfTranslationalSubgradeReactionSelect">IfcModulusOfTranslationalSubgradeReactionSelect</a> *<code class="sig-name descname">TranslationalStiffnessByLengthY</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31TranslationalStiffnessByLengthYEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Translational stiffness value in y-direction of the coordinate system defined by the instance which uses this resource object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition34setTranslationalStiffnessByLengthYEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE">
+<span id="_CPPv3N10Ifc4x3_rc124IfcBoundaryEdgeCondition34setTranslationalStiffnessByLengthYEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE"></span><span id="_CPPv2N10Ifc4x3_rc124IfcBoundaryEdgeCondition34setTranslationalStiffnessByLengthYEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::setTranslationalStiffnessByLengthY__Ifc4x3_rc1::IfcModulusOfTranslationalSubgradeReactionSelectP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1a1261074ed87205bc74b58a5357576e4c"></span>void <code class="sig-name descname">setTranslationalStiffnessByLengthY</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfTranslationalSubgradeReactionSelect">IfcModulusOfTranslationalSubgradeReactionSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition34setTranslationalStiffnessByLengthYEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition34hasTranslationalStiffnessByLengthZEv">
+<span id="_CPPv3NK10Ifc4x3_rc124IfcBoundaryEdgeCondition34hasTranslationalStiffnessByLengthZEv"></span><span id="_CPPv2NK10Ifc4x3_rc124IfcBoundaryEdgeCondition34hasTranslationalStiffnessByLengthZEv"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::hasTranslationalStiffnessByLengthZC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1a991c491efe86a957d6263d1437507433"></span>bool <code class="sig-name descname">hasTranslationalStiffnessByLengthZ</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition34hasTranslationalStiffnessByLengthZEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute TranslationalStiffnessByLengthZ is defined for this <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition"><span class="std std-ref">IfcBoundaryEdgeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31TranslationalStiffnessByLengthZEv">
+<span id="_CPPv3NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31TranslationalStiffnessByLengthZEv"></span><span id="_CPPv2NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31TranslationalStiffnessByLengthZEv"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::TranslationalStiffnessByLengthZC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1a17bf2110060757fa98fbf10fae1c59e7"></span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfTranslationalSubgradeReactionSelect">IfcModulusOfTranslationalSubgradeReactionSelect</a> *<code class="sig-name descname">TranslationalStiffnessByLengthZ</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31TranslationalStiffnessByLengthZEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Translational stiffness value in z-direction of the coordinate system defined by the instance which uses this resource object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition34setTranslationalStiffnessByLengthZEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE">
+<span id="_CPPv3N10Ifc4x3_rc124IfcBoundaryEdgeCondition34setTranslationalStiffnessByLengthZEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE"></span><span id="_CPPv2N10Ifc4x3_rc124IfcBoundaryEdgeCondition34setTranslationalStiffnessByLengthZEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::setTranslationalStiffnessByLengthZ__Ifc4x3_rc1::IfcModulusOfTranslationalSubgradeReactionSelectP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1aabe89b40c106c25abc8ae084a4dbc5d0"></span>void <code class="sig-name descname">setTranslationalStiffnessByLengthZ</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfTranslationalSubgradeReactionSelect">IfcModulusOfTranslationalSubgradeReactionSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition34setTranslationalStiffnessByLengthZEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthXEv">
+<span id="_CPPv3NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthXEv"></span><span id="_CPPv2NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthXEv"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::hasRotationalStiffnessByLengthXC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1a43e8855d90d12f85809a03a28f30276d"></span>bool <code class="sig-name descname">hasRotationalStiffnessByLengthX</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthXEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RotationalStiffnessByLengthX is defined for this <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition"><span class="std std-ref">IfcBoundaryEdgeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition28RotationalStiffnessByLengthXEv">
+<span id="_CPPv3NK10Ifc4x3_rc124IfcBoundaryEdgeCondition28RotationalStiffnessByLengthXEv"></span><span id="_CPPv2NK10Ifc4x3_rc124IfcBoundaryEdgeCondition28RotationalStiffnessByLengthXEv"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::RotationalStiffnessByLengthXC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1ad231ded00dda7190c4ca4e333f0424a3"></span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfRotationalSubgradeReactionSelect">IfcModulusOfRotationalSubgradeReactionSelect</a> *<code class="sig-name descname">RotationalStiffnessByLengthX</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition28RotationalStiffnessByLengthXEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Rotational stiffness value about the x-axis of the coordinate system defined by the instance which uses this resource object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthXEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE">
+<span id="_CPPv3N10Ifc4x3_rc124IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthXEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE"></span><span id="_CPPv2N10Ifc4x3_rc124IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthXEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::setRotationalStiffnessByLengthX__Ifc4x3_rc1::IfcModulusOfRotationalSubgradeReactionSelectP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1a74afada95256c835be1952b88b1f4dfc"></span>void <code class="sig-name descname">setRotationalStiffnessByLengthX</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfRotationalSubgradeReactionSelect">IfcModulusOfRotationalSubgradeReactionSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthXEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthYEv">
+<span id="_CPPv3NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthYEv"></span><span id="_CPPv2NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthYEv"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::hasRotationalStiffnessByLengthYC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1aa717f4291160022cfd29d0b55f76af99"></span>bool <code class="sig-name descname">hasRotationalStiffnessByLengthY</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthYEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RotationalStiffnessByLengthY is defined for this <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition"><span class="std std-ref">IfcBoundaryEdgeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition28RotationalStiffnessByLengthYEv">
+<span id="_CPPv3NK10Ifc4x3_rc124IfcBoundaryEdgeCondition28RotationalStiffnessByLengthYEv"></span><span id="_CPPv2NK10Ifc4x3_rc124IfcBoundaryEdgeCondition28RotationalStiffnessByLengthYEv"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::RotationalStiffnessByLengthYC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1a5868ea07c205b566abdae254f82b064f"></span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfRotationalSubgradeReactionSelect">IfcModulusOfRotationalSubgradeReactionSelect</a> *<code class="sig-name descname">RotationalStiffnessByLengthY</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition28RotationalStiffnessByLengthYEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Rotational stiffness value about the y-axis of the coordinate system defined by the instance which uses this resource object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthYEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE">
+<span id="_CPPv3N10Ifc4x3_rc124IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthYEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE"></span><span id="_CPPv2N10Ifc4x3_rc124IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthYEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::setRotationalStiffnessByLengthY__Ifc4x3_rc1::IfcModulusOfRotationalSubgradeReactionSelectP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1a335e58fa170aba06a3343b328e620aa4"></span>void <code class="sig-name descname">setRotationalStiffnessByLengthY</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfRotationalSubgradeReactionSelect">IfcModulusOfRotationalSubgradeReactionSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthYEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthZEv">
+<span id="_CPPv3NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthZEv"></span><span id="_CPPv2NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthZEv"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::hasRotationalStiffnessByLengthZC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1ad041c52cca0278020d71f9feeb302ac3"></span>bool <code class="sig-name descname">hasRotationalStiffnessByLengthZ</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthZEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RotationalStiffnessByLengthZ is defined for this <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition"><span class="std std-ref">IfcBoundaryEdgeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition28RotationalStiffnessByLengthZEv">
+<span id="_CPPv3NK10Ifc4x3_rc124IfcBoundaryEdgeCondition28RotationalStiffnessByLengthZEv"></span><span id="_CPPv2NK10Ifc4x3_rc124IfcBoundaryEdgeCondition28RotationalStiffnessByLengthZEv"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::RotationalStiffnessByLengthZC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1af4079626d001c1c51bb4c7cb2140bfa7"></span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfRotationalSubgradeReactionSelect">IfcModulusOfRotationalSubgradeReactionSelect</a> *<code class="sig-name descname">RotationalStiffnessByLengthZ</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition28RotationalStiffnessByLengthZEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Rotational stiffness value about the z-axis of the coordinate system defined by the instance which uses this resource object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthZEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE">
+<span id="_CPPv3N10Ifc4x3_rc124IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthZEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE"></span><span id="_CPPv2N10Ifc4x3_rc124IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthZEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::setRotationalStiffnessByLengthZ__Ifc4x3_rc1::IfcModulusOfRotationalSubgradeReactionSelectP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1a9027f642025f4540e387e49c41a599ed"></span>void <code class="sig-name descname">setRotationalStiffnessByLengthZ</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfRotationalSubgradeReactionSelect">IfcModulusOfRotationalSubgradeReactionSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthZEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition11declarationEv">
+<span id="_CPPv3NK10Ifc4x3_rc124IfcBoundaryEdgeCondition11declarationEv"></span><span id="_CPPv2NK10Ifc4x3_rc124IfcBoundaryEdgeCondition11declarationEv"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::declarationC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1a6065c858f2abeae8b044bec8cfe6c059"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc124IfcBoundaryEdgeCondition11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition24IfcBoundaryEdgeConditionEP21IfcEntityInstanceData">
+<span id="_CPPv3N10Ifc4x3_rc124IfcBoundaryEdgeCondition24IfcBoundaryEdgeConditionEP21IfcEntityInstanceData"></span><span id="_CPPv2N10Ifc4x3_rc124IfcBoundaryEdgeCondition24IfcBoundaryEdgeConditionEP21IfcEntityInstanceData"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::IfcBoundaryEdgeCondition__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1aea05746d75690b8ca30cebbbe5440414"></span><code class="sig-name descname">IfcBoundaryEdgeCondition</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition24IfcBoundaryEdgeConditionEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition24IfcBoundaryEdgeConditionEN5boost8optionalINSt6stringEEEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE">
+<span id="_CPPv3N10Ifc4x3_rc124IfcBoundaryEdgeCondition24IfcBoundaryEdgeConditionEN5boost8optionalINSt6stringEEEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE"></span><span id="_CPPv2N10Ifc4x3_rc124IfcBoundaryEdgeCondition24IfcBoundaryEdgeConditionEN5boost8optionalINSt6stringEEEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::IfcBoundaryEdgeCondition__boost::optional:ss:.Ifc4x3_rc1::IfcModulusOfTranslationalSubgradeReactionSelectP.Ifc4x3_rc1::IfcModulusOfTranslationalSubgradeReactionSelectP.Ifc4x3_rc1::IfcModulusOfTranslationalSubgradeReactionSelectP.Ifc4x3_rc1::IfcModulusOfRotationalSubgradeReactionSelectP.Ifc4x3_rc1::IfcModulusOfRotationalSubgradeReactionSelectP.Ifc4x3_rc1::IfcModulusOfRotationalSubgradeReactionSelectP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1a3d7a6af2c4f72fc2d9cde13b10880677"></span><code class="sig-name descname">IfcBoundaryEdgeCondition</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Name</em>, ::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfTranslationalSubgradeReactionSelect">IfcModulusOfTranslationalSubgradeReactionSelect</a> *<em>v2_TranslationalStiffnessByLengthX</em>, ::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfTranslationalSubgradeReactionSelect">IfcModulusOfTranslationalSubgradeReactionSelect</a> *<em>v3_TranslationalStiffnessByLengthY</em>, ::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfTranslationalSubgradeReactionSelect">IfcModulusOfTranslationalSubgradeReactionSelect</a> *<em>v4_TranslationalStiffnessByLengthZ</em>, ::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfRotationalSubgradeReactionSelect">IfcModulusOfRotationalSubgradeReactionSelect</a> *<em>v5_RotationalStiffnessByLengthX</em>, ::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfRotationalSubgradeReactionSelect">IfcModulusOfRotationalSubgradeReactionSelect</a> *<em>v6_RotationalStiffnessByLengthY</em>, ::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE" title="Ifc4x3_rc1::IfcModulusOfRotationalSubgradeReactionSelect">IfcModulusOfRotationalSubgradeReactionSelect</a> *<em>v7_RotationalStiffnessByLengthZ</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition24IfcBoundaryEdgeConditionEN5boost8optionalINSt6stringEEEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectEPN10Ifc4x3_rc147IfcModulusOfTranslationalSubgradeReactionSelectEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectEPN10Ifc4x3_rc144IfcModulusOfRotationalSubgradeReactionSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition5ClassEv">
+<span id="_CPPv3N10Ifc4x3_rc124IfcBoundaryEdgeCondition5ClassEv"></span><span id="_CPPv2N10Ifc4x3_rc124IfcBoundaryEdgeCondition5ClassEv"></span><span id="Ifc4x3_rc1::IfcBoundaryEdgeCondition::Class"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition_1a4988620370dec3f8d0c60ad2ff5e2991"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc124IfcBoundaryEdgeCondition5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x3__rc1_1_1_ifc_boundary_curve.html" title="previous chapter">Class Ifc4x3_rc1::IfcBoundaryCurve</a></li>
+      <li>Next: <a href="class_ifc4x3__rc1_1_1_ifc_boundary_face_condition.html" title="next chapter">Class Ifc4x3_rc1::IfcBoundaryFaceCondition</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x3__rc1_1_1_ifc_boundary_edge_condition.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

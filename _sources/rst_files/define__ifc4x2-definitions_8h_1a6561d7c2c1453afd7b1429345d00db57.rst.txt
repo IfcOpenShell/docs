@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a6561d7c2c1453afd7b1429345d00db57:
+
+Define SCHEMA_IfcStructuralLoadPlanarForce_HAS_PlanarForceZ
+===========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLoadPlanarForce_HAS_PlanarForceZ

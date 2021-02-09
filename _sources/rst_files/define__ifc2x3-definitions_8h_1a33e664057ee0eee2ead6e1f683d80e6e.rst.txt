@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a33e664057ee0eee2ead6e1f683d80e6e:
+
+Define SCHEMA_IfcSoundValue_SoundLevelTimeSeries_IS_OPTIONAL
+============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSoundValue_SoundLevelTimeSeries_IS_OPTIONAL

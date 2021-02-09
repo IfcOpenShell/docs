@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a7ac904888db4390f1095e53a91b1b6f9:
+
+Define SCHEMA_IfcConveyorSegmentType_HAS_PredefinedType
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConveyorSegmentType_HAS_PredefinedType

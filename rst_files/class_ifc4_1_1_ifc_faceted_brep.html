@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcFacetedBrep &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcFacetedBrepWithVoids" href="class_ifc4_1_1_ifc_faceted_brep_with_voids.html" />
+    <link rel="prev" title="Class Ifc4::IfcFaceSurface" href="class_ifc4_1_1_ifc_face_surface.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcfacetedbrep">
+<span id="exhale-class-class-ifc4-1-1-ifc-faceted-brep"></span><h1>Class Ifc4::IfcFacetedBrep<a class="headerlink" href="#class-ifc4-ifcfacetedbrep" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcManifoldSolidBrep</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_manifold_solid_brep.html#exhale-class-class-ifc4-1-1-ifc-manifold-solid-brep"><span class="std std-ref">Class Ifc4::IfcManifoldSolidBrep</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="derived-type">
+<h3>Derived Type<a class="headerlink" href="#derived-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcFacetedBrepWithVoids</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_faceted_brep_with_voids.html#exhale-class-class-ifc4-1-1-ifc-faceted-brep-with-voids"><span class="std std-ref">Class Ifc4::IfcFacetedBrepWithVoids</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc414IfcFacetedBrepE">
+<span id="_CPPv3N4Ifc414IfcFacetedBrepE"></span><span id="_CPPv2N4Ifc414IfcFacetedBrepE"></span><span id="Ifc4::IfcFacetedBrep"></span><span class="target" id="class_ifc4_1_1_ifc_faceted_brep"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcFacetedBrep</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_manifold_solid_brep.html#_CPPv4N4Ifc420IfcManifoldSolidBrepE" title="Ifc4::IfcManifoldSolidBrep">IfcManifoldSolidBrep</a><a class="headerlink" href="#_CPPv4N4Ifc414IfcFacetedBrepE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: A faceted B-rep is a simple form of boundary representation model in which all faces are planar and all edges are straight lines. Unlike the B-rep model, edges and vertices are not represented explicitly in the model but are implicitly available through the poly loop entity. A faceted B-rep has to meet the same topological constraints as the manifold solid B-rep.</p>
+<p>NOTE The faceted B-rep has been introduced in order to support the larger number of systems that allow boundary type solid representations with planar surfaces only.</p>
+<p>NOTE Corresponding ISO 10303-42 entity: faceted_brep. Please refer to ISO/IS 10303-42:1994, p. 173 for the final definition of the formal standard. In the current IFC Release faceted B-rep with voids is represented by an own subtype and not defined via an implicit ANDOR supertype constraint as in ISO/IS 10303-42:1994. This change has been made due to the fact, that only ONEOF supertype constraint is allowed within the IFC data schema.</p>
+<p>HISTORY New entity in IFC Release 1.0</p>
+<p>Informal proposition:</p>
+<p>All the bounding loops of all the faces of all the shells in the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_faceted_brep"><span class="std std-ref">IfcFacetedBrep</span></a> shall be of type <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_poly_loop"><span class="std std-ref">IfcPolyLoop</span></a>. All vertices shall be referenced by all polyloops, sharing the vertex. That is, each Cartesian point shall be referenced by at least three polyloops.</p>
+<p>Figure 257 illustrates use of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_faceted_brep"><span class="std std-ref">IfcFacetedBrep</span></a> for boundary representation models with planar surfaces only. The diagram shows the topological and geometric representation items that are used for faceted breps. Each <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_cartesian_point"><span class="std std-ref">IfcCartesianPoint</span></a>, used within the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_faceted_brep"><span class="std std-ref">IfcFacetedBrep</span></a> shall be referenced three times by an <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_poly_loop"><span class="std std-ref">IfcPolyLoop</span></a> bounding a different <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_face"><span class="std std-ref">IfcFace</span></a>.</p>
+<p>Figure 257 — Faceted B-rep </p>
+<p>Subclassed by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_faceted_brep_with_voids"><span class="std std-ref">Ifc4::IfcFacetedBrepWithVoids</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc414IfcFacetedBrep4listE">
+<span id="_CPPv3N4Ifc414IfcFacetedBrep4listE"></span><span id="_CPPv2N4Ifc414IfcFacetedBrep4listE"></span><span id="Ifc4::IfcFacetedBrep::list"></span><span class="target" id="class_ifc4_1_1_ifc_faceted_brep_1a35c1192ceccee06f55c2edc16bff4a87"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc414IfcFacetedBrepE" title="Ifc4::IfcFacetedBrep">IfcFacetedBrep</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc414IfcFacetedBrep4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc414IfcFacetedBrep11declarationEv">
+<span id="_CPPv3NK4Ifc414IfcFacetedBrep11declarationEv"></span><span id="_CPPv2NK4Ifc414IfcFacetedBrep11declarationEv"></span><span id="Ifc4::IfcFacetedBrep::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_faceted_brep_1a3a7c643fa8cc835dd14df43eebd11f73"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc414IfcFacetedBrep11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc414IfcFacetedBrep14IfcFacetedBrepEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc414IfcFacetedBrep14IfcFacetedBrepEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc414IfcFacetedBrep14IfcFacetedBrepEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcFacetedBrep::IfcFacetedBrep__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_faceted_brep_1aa30de78230e7347614773053220de6a5"></span><code class="sig-name descname">IfcFacetedBrep</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc414IfcFacetedBrep14IfcFacetedBrepEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc414IfcFacetedBrep14IfcFacetedBrepEPN4Ifc414IfcClosedShellE">
+<span id="_CPPv3N4Ifc414IfcFacetedBrep14IfcFacetedBrepEPN4Ifc414IfcClosedShellE"></span><span id="_CPPv2N4Ifc414IfcFacetedBrep14IfcFacetedBrepEPN4Ifc414IfcClosedShellE"></span><span id="Ifc4::IfcFacetedBrep::IfcFacetedBrep__Ifc4::IfcClosedShellP"></span><span class="target" id="class_ifc4_1_1_ifc_faceted_brep_1ae8211e96375232470a31a889ef246748"></span><code class="sig-name descname">IfcFacetedBrep</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_closed_shell.html#_CPPv4N4Ifc414IfcClosedShellE" title="Ifc4::IfcClosedShell">IfcClosedShell</a> *<em>v1_Outer</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc414IfcFacetedBrep14IfcFacetedBrepEPN4Ifc414IfcClosedShellE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc414IfcFacetedBrep5ClassEv">
+<span id="_CPPv3N4Ifc414IfcFacetedBrep5ClassEv"></span><span id="_CPPv2N4Ifc414IfcFacetedBrep5ClassEv"></span><span id="Ifc4::IfcFacetedBrep::Class"></span><span class="target" id="class_ifc4_1_1_ifc_faceted_brep_1a3ad5ea8ae10a3c3de23fdd752f46fc54"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc414IfcFacetedBrep5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_face_surface.html" title="previous chapter">Class Ifc4::IfcFaceSurface</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_faceted_brep_with_voids.html" title="next chapter">Class Ifc4::IfcFacetedBrepWithVoids</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_faceted_brep.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

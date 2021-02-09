@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1aac54689d0ea0c2110670bb6d534e2ae0:
+
+Define SCHEMA_HAS_IfcStructuralLoadTemperature
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcStructuralLoadTemperature

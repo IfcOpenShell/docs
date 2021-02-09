@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a8a9749be55920c3514846cfda656de96:
+
+Define SCHEMA_HAS_IfcWorkCalendar
+=================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcWorkCalendar

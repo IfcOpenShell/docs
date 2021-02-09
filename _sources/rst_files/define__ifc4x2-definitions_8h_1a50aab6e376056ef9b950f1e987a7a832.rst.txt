@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a50aab6e376056ef9b950f1e987a7a832:
+
+Define SCHEMA_IfcShadingDevice_HAS_PredefinedType
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcShadingDevice_HAS_PredefinedType

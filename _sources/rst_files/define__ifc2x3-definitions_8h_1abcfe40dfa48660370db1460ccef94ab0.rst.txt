@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1abcfe40dfa48660370db1460ccef94ab0:
+
+Define SCHEMA_IfcBuilding_HAS_BuildingAddress
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBuilding_HAS_BuildingAddress

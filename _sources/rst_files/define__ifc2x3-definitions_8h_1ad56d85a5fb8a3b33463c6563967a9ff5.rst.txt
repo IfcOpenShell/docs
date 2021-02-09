@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ad56d85a5fb8a3b33463c6563967a9ff5:
+
+Define SCHEMA_IfcStructuralLinearActionVarying_HAS_SubsequentAppliedLoads
+=========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLinearActionVarying_HAS_SubsequentAppliedLoads

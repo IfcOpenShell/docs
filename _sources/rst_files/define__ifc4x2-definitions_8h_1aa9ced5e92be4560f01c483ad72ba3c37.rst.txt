@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1aa9ced5e92be4560f01c483ad72ba3c37:
+
+Define SCHEMA_IfcAddress_HAS_OfPerson
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcAddress_HAS_OfPerson

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a89fba65369ee815e426b71e972eedee9:
+
+Define SCHEMA_IfcOpeningElement_HAS_HasFillings
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcOpeningElement_HAS_HasFillings

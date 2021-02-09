@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcBuildingElementProxy &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcBuildingElementProxyType" href="class_ifc2x3_1_1_ifc_building_element_proxy_type.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcBuildingElementPart" href="class_ifc2x3_1_1_ifc_building_element_part.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcbuildingelementproxy">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-building-element-proxy"></span><h1>Class Ifc2x3::IfcBuildingElementProxy<a class="headerlink" href="#class-ifc2x3-ifcbuildingelementproxy" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcBuildingElement</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_building_element.html#exhale-class-class-ifc2x3-1-1-ifc-building-element"><span class="std std-ref">Class Ifc2x3::IfcBuildingElement</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x323IfcBuildingElementProxyE">
+<span id="_CPPv3N6Ifc2x323IfcBuildingElementProxyE"></span><span id="_CPPv2N6Ifc2x323IfcBuildingElementProxyE"></span><span id="Ifc2x3::IfcBuildingElementProxy"></span><span class="target" id="class_ifc2x3_1_1_ifc_building_element_proxy"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcBuildingElementProxy</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_building_element.html#_CPPv4N6Ifc2x318IfcBuildingElementE" title="Ifc2x3::IfcBuildingElement">IfcBuildingElement</a><a class="headerlink" href="#_CPPv4N6Ifc2x323IfcBuildingElementProxyE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from IAI: The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> is a proxy definition that provides the same functionality as an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element"><span class="std std-ref">IfcBuildingElement</span></a>, but without having a predefined meaning of the special type of building element, it represents. Proxies can also be used as spatial place holders or provisions, that maybe later replaced by special types of elements. One use of the proxy object is a provision for voids, i.e. where a particular volume of space is requested by some engineering function that might later be accepted or rejected and if accepted potentially transformed into a void within a building element, like a wall opening, or a slab opening. The provision for voids is exchanged as an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> with the PredefinedType = ProvisionForVoid. Other usages of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> include:</p>
+<p>The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> can be used to exchange special types of building elements for which the current IFC Release does not yet provide a semantic definition. The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> can also be used to represent building elements for which the participating applications can not provide additional semantic classification.</p>
+<p>HISTORY New entity in IFC Release 2x. IFC2x4 CHANGE The attribute CompositionType has been replaced by PredefinedType, being a superset of the enumerators. Type Use Definition The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> defines the occuurence of any building element, common information about the types (or styles) is handled by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy_type"><span class="std std-ref">IfcBuildingElementProxyType</span></a>. The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy_type"><span class="std std-ref">IfcBuildingElementProxyType</span></a> (if present) may establish the common type name, usage (or predefined) type, common material, common set of properties and common shape representations (using <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_representation_map"><span class="std std-ref">IfcRepresentationMap</span></a>). The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy_type"><span class="std std-ref">IfcBuildingElementProxyType</span></a> is attached using the IfcRelDefinedByType.RelatingType objectified relationship and is accessible by the inverse IsTypedBy attribute.</p>
+<p>NOTE The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy_type"><span class="std std-ref">IfcBuildingElementProxyType</span></a> can be used to share common information among many occurrences of the same proxy without establishing a particular semantic meaning of the type.</p>
+<p>If no <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy_type"><span class="std std-ref">IfcBuildingElementProxyType</span></a> is attached (i.e. if only occurrence information is given) the PredefinedType should be provided. If set to .USERDEFINED. a user defined value can be provided by the ObjectType attribute. Material Use Definition The material of the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> is defined by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_material"><span class="std std-ref">IfcMaterial</span></a> and attached by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_associates_material_1a524b927c8fc7eb816c986fc3b7c7c7c3"><span class="std std-ref">IfcRelAssociatesMaterial.RelatingMaterial</span></a>. It is accessible by the inverse HasAssociations relationship. Note It is illegal to assign an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_material"><span class="std std-ref">IfcMaterial</span></a> to an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> with the PredefinedType = ProvisionForVoid. Material information can also be given at the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy_type"><span class="std std-ref">IfcBuildingElementProxyType</span></a>, defining the common attribute data for all occurrences of the same type.It is then accessible by the inverse IsTypedBy relationship pointing to IfcBuildingElementProxyType.HasAssociations and via <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_associates_material_1a524b927c8fc7eb816c986fc3b7c7c7c3"><span class="std std-ref">IfcRelAssociatesMaterial.RelatingMaterial</span></a> to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_material"><span class="std std-ref">IfcMaterial</span></a>. If both are given, then the material directly assigned to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> overrides the material assigned to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy_type"><span class="std std-ref">IfcBuildingElementProxyType</span></a>. Property Set Use Definition: The property sets relating to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> are defined by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> and attached by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. It is accessible by the inverse IsDefinedBy relationship. The following property set definitions specific to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> are part of this IFC release:</p>
+<p>Pset_BuildingElementProxyCommon: common property set for all occurrences of building element proxies. Pset_BuildingElementProxyProvisionForVoid: specific property set for all occurrences of building element proxy with the PredefinedType: PROVISIONFORVOID.</p>
+<p>Property sets can also be given at the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy_type"><span class="std std-ref">IfcBuildingElementProxyType</span></a>, defining the common property data for all occurrences of the same type.It is then accessible by the inverse IsTypedBy relationship pointing to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_type_object_1a333fcadcc907e84f4572e5eeaec1c8ea"><span class="std std-ref">IfcBuildingElementProxyType.HasPropertySets</span></a>. If both are given, then the properties directly assigned to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> overrides the properties assigned to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy_type"><span class="std std-ref">IfcBuildingElementProxyType</span></a>. Containment Use Definition The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a>, as any subtype of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element"><span class="std std-ref">IfcBuildingElement</span></a>, may participate in two different containment relationships. The first (and in most implementation scenarios mandatory) relationship is the hierachical spatial containment, the second (optional) relationship is the aggregation within anelement assembly.</p>
+<p>The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> is places within the project spatial hierarchy using the objectified relationship <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_contained_in_spatial_structure"><span class="std std-ref">IfcRelContainedInSpatialStructure</span></a>, refering to it by its inverse attribute SELF\IfcElement.ContainedInStructure. Subtypes of<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_spatial_structure_element"><span class="std std-ref">IfcSpatialStructureElement</span></a> are valid spatial containers, with <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_storey"><span class="std std-ref">IfcBuildingStorey</span></a> being the default container. The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> may be aggregated into an element assembly using the objectified relationship <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_aggregates"><span class="std std-ref">IfcRelAggregates</span></a>, refering to it by its inverse attribute SELF\IfcObjectDefinition.Decomposes. Any subtype of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a> can be an element assembly, with <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element_assembly"><span class="std std-ref">IfcElementAssembly</span></a> as a special focus subtype. In this case it should not be additionally contained in the project spatial hierarchy, i.e.SELF\IfcElement.ContainedInStructure should be NIL.</p>
+<p>Geometry Use Definition The geometric representation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> is given by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a>, allowing multiple geometric representations. Included are: Local Placement The local placement for any <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> is defined in its supertype <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a>. It is defined by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a>, which defines the local coordinate system that is referenced by all geometric representations. The local placement can be given relativly.</p>
+<p>The PlacementRelTo relationship of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> shall point (if given) to the local placement of the same <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_spatial_structure_element"><span class="std std-ref">IfcSpatialStructureElement</span></a>, which is used in the ContainedInStructure inverse attribute, or to a spatial structure element at a higher level, referenced by that. If the relative placement is not used, the absolute placement is defined within the world coordinate system.</p>
+<p>Geometric Representation Currently, the ‘FootPrint’, ‘Body’, and ‘Box’ representations are supported. The ‘Box’ representation includes the representation type ‘BoundingBox’ and is explained at <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element"><span class="std std-ref">IfcBuildingElement</span></a>. FootPrint Representation Any building element proxy may be represented by a geometric curve set, given by a collection of 2D points and curves. The foot pring geometric representation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> is defined using the ‘FootPrint’ representation.</p>
+<p>RepresentationIdentifier: ‘FootPrint’ RepresentationType: ‘GeometricCurveSet’, ‘Annotation2D’</p>
+<p>Body Representation The body representation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a> can be represented using the representation types ‘GeometricSet’, ‘SweptSolid’, ‘CSG’ ‘SurfaceModel’, ‘Brep’, and ‘MappedRepresentation’. The representation types ‘SurfaceModel’, ‘Brep’, and ‘MappedRepresentation’ are explained at <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element"><span class="std std-ref">IfcBuildingElement</span></a>. GeometricSet Representation Type Any building element proxy may be represented by a geometric set, given by a collection of 2D and 3D points, curves, and surfaces. It represents the body of the proxy object, when no topological structure is available. The following attribute values for the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier: ‘Body’ RepresentationType: ‘GeometricSet’</p>
+<p>SweptSolid Representation Type Any building element proxy may be represented by swept solid geometry (either by extrusion or by revolution). The following attribute values for the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier: ‘Body’ RepresentationType: ‘SweptSolid’</p>
+<p>No further restrictions (e.g., for the profile or extrusion direction) are defined at this level. A single or multiple swept area solid(s) can be the Items of the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a>. CSG Representation Type Any building element proxy may be represented by a CSG primitive or CSG tree. The following attribute values for the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier: ‘Body’ RepresentationType: ‘CSG’</p>
+<p>No further restrictions (e.g., for the depths of the CSG tree) are defined at this level. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x323IfcBuildingElementProxy4listE">
+<span id="_CPPv3N6Ifc2x323IfcBuildingElementProxy4listE"></span><span id="_CPPv2N6Ifc2x323IfcBuildingElementProxy4listE"></span><span id="Ifc2x3::IfcBuildingElementProxy::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_building_element_proxy_1a7d225397307f4b69e3d8824bc519bddb"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x323IfcBuildingElementProxyE" title="Ifc2x3::IfcBuildingElementProxy">IfcBuildingElementProxy</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x323IfcBuildingElementProxy4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x323IfcBuildingElementProxy18hasCompositionTypeEv">
+<span id="_CPPv3NK6Ifc2x323IfcBuildingElementProxy18hasCompositionTypeEv"></span><span id="_CPPv2NK6Ifc2x323IfcBuildingElementProxy18hasCompositionTypeEv"></span><span id="Ifc2x3::IfcBuildingElementProxy::hasCompositionTypeC"></span><span class="target" id="class_ifc2x3_1_1_ifc_building_element_proxy_1abd242aea495cc4c5c871ec0d1016ab66"></span>bool <code class="sig-name descname">hasCompositionType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x323IfcBuildingElementProxy18hasCompositionTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute CompositionType is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x323IfcBuildingElementProxy15CompositionTypeEv">
+<span id="_CPPv3NK6Ifc2x323IfcBuildingElementProxy15CompositionTypeEv"></span><span id="_CPPv2NK6Ifc2x323IfcBuildingElementProxy15CompositionTypeEv"></span><span id="Ifc2x3::IfcBuildingElementProxy::CompositionTypeC"></span><span class="target" id="class_ifc2x3_1_1_ifc_building_element_proxy_1aeff9172fd30a3dcf95f1c54a5539a203"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x325IfcElementCompositionEnumE" title="Ifc2x3::IfcElementCompositionEnum">IfcElementCompositionEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x325IfcElementCompositionEnum5ValueE" title="Ifc2x3::IfcElementCompositionEnum::Value">Value</a> <code class="sig-name descname">CompositionType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x323IfcBuildingElementProxy15CompositionTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x323IfcBuildingElementProxy18setCompositionTypeEN6Ifc2x325IfcElementCompositionEnum5ValueE">
+<span id="_CPPv3N6Ifc2x323IfcBuildingElementProxy18setCompositionTypeEN6Ifc2x325IfcElementCompositionEnum5ValueE"></span><span id="_CPPv2N6Ifc2x323IfcBuildingElementProxy18setCompositionTypeEN6Ifc2x325IfcElementCompositionEnum5ValueE"></span><span id="Ifc2x3::IfcBuildingElementProxy::setCompositionType__Ifc2x3::IfcElementCompositionEnum::Value"></span><span class="target" id="class_ifc2x3_1_1_ifc_building_element_proxy_1ab07f74f920f3b39ef46c7f788d4325a0"></span>void <code class="sig-name descname">setCompositionType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x325IfcElementCompositionEnumE" title="Ifc2x3::IfcElementCompositionEnum">IfcElementCompositionEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x325IfcElementCompositionEnum5ValueE" title="Ifc2x3::IfcElementCompositionEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x323IfcBuildingElementProxy18setCompositionTypeEN6Ifc2x325IfcElementCompositionEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x323IfcBuildingElementProxy11declarationEv">
+<span id="_CPPv3NK6Ifc2x323IfcBuildingElementProxy11declarationEv"></span><span id="_CPPv2NK6Ifc2x323IfcBuildingElementProxy11declarationEv"></span><span id="Ifc2x3::IfcBuildingElementProxy::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_building_element_proxy_1afc4a77b1e681b5ff4cbb1100d3eec1d2"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x323IfcBuildingElementProxy11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x323IfcBuildingElementProxy23IfcBuildingElementProxyEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x323IfcBuildingElementProxy23IfcBuildingElementProxyEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x323IfcBuildingElementProxy23IfcBuildingElementProxyEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcBuildingElementProxy::IfcBuildingElementProxy__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_building_element_proxy_1acd986f40249b699e2fafc0efb8fd7d52"></span><code class="sig-name descname">IfcBuildingElementProxy</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x323IfcBuildingElementProxy23IfcBuildingElementProxyEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x323IfcBuildingElementProxy23IfcBuildingElementProxyENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc2x325IfcElementCompositionEnum5ValueEEE">
+<span id="_CPPv3N6Ifc2x323IfcBuildingElementProxy23IfcBuildingElementProxyENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc2x325IfcElementCompositionEnum5ValueEEE"></span><span id="_CPPv2N6Ifc2x323IfcBuildingElementProxy23IfcBuildingElementProxyENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc2x325IfcElementCompositionEnum5ValueEEE"></span><span id="Ifc2x3::IfcBuildingElementProxy::IfcBuildingElementProxy__ss.Ifc2x3::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc2x3::IfcObjectPlacementP.Ifc2x3::IfcProductRepresentationP.boost::optional:ss:.boost::optional:Ifc2x3::IfcElementCompositionEnum::Value:"></span><span class="target" id="class_ifc2x3_1_1_ifc_building_element_proxy_1ad17e9fc6d078fb79eb9c8f06e1daed4a"></span><code class="sig-name descname">IfcBuildingElementProxy</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_owner_history.html#_CPPv4N6Ifc2x315IfcOwnerHistoryE" title="Ifc2x3::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_object_placement.html#_CPPv4N6Ifc2x318IfcObjectPlacementE" title="Ifc2x3::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_product_representation.html#_CPPv4N6Ifc2x324IfcProductRepresentationE" title="Ifc2x3::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, boost::optional&lt;std::string&gt; <em>v8_Tag</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x325IfcElementCompositionEnumE" title="Ifc2x3::IfcElementCompositionEnum">IfcElementCompositionEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x325IfcElementCompositionEnum5ValueE" title="Ifc2x3::IfcElementCompositionEnum::Value">Value</a>&gt; <em>v9_CompositionType</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x323IfcBuildingElementProxy23IfcBuildingElementProxyENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc2x325IfcElementCompositionEnum5ValueEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x323IfcBuildingElementProxy5ClassEv">
+<span id="_CPPv3N6Ifc2x323IfcBuildingElementProxy5ClassEv"></span><span id="_CPPv2N6Ifc2x323IfcBuildingElementProxy5ClassEv"></span><span id="Ifc2x3::IfcBuildingElementProxy::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_building_element_proxy_1a9b616e92620c40117d6ee906f68b72d4"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x323IfcBuildingElementProxy5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_building_element_part.html" title="previous chapter">Class Ifc2x3::IfcBuildingElementPart</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_building_element_proxy_type.html" title="next chapter">Class Ifc2x3::IfcBuildingElementProxyType</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_building_element_proxy.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,40 @@
+.. _exhale_class_class_ifc4_1_1_ifc_flow_segment:
+
+Class Ifc4::IfcFlowSegment
+==========================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4::IfcDistributionFlowElement`` (:ref:`exhale_class_class_ifc4_1_1_ifc_distribution_flow_element`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4::IfcCableCarrierSegment`` (:ref:`exhale_class_class_ifc4_1_1_ifc_cable_carrier_segment`)
+- ``public Ifc4::IfcCableSegment`` (:ref:`exhale_class_class_ifc4_1_1_ifc_cable_segment`)
+- ``public Ifc4::IfcDuctSegment`` (:ref:`exhale_class_class_ifc4_1_1_ifc_duct_segment`)
+- ``public Ifc4::IfcPipeSegment`` (:ref:`exhale_class_class_ifc4_1_1_ifc_pipe_segment`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4::IfcFlowSegment
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a3a23dc4d7dc110c3c9fc7e9ac60bdfc7:
+
+Define SCHEMA_IfcDocumentInformation_HAS_DocumentReferences
+===========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDocumentInformation_HAS_DocumentReferences

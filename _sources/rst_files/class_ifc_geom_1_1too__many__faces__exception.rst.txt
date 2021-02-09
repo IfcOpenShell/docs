@@ -1,0 +1,25 @@
+.. _exhale_class_class_ifc_geom_1_1too__many__faces__exception:
+
+Class too_many_faces_exception
+==============================
+
+- Defined in :ref:`file_src_ifcgeom_IfcGeom.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcGeom::geometry_exception`` (:ref:`exhale_class_class_ifc_geom_1_1geometry__exception`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcGeom::too_many_faces_exception
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,31 @@
+.. _exhale_class_class_ifc_geom_1_1impl_1_1tree_1_1selector:
+
+Class tree::selector
+====================
+
+- Defined in :ref:`file_src_ifcgeom_IfcGeomTree.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_class_class_ifc_geom_1_1impl_1_1tree`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Selector``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcGeom::impl::tree::selector
+   :members:
+   :protected-members:
+   :undoc-members:

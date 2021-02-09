@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcProjectedCRS &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcProjectionElement" href="class_ifc4x2_1_1_ifc_projection_element.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcProject" href="class_ifc4x2_1_1_ifc_project.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcprojectedcrs">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-projected-c-r-s"></span><h1>Class Ifc4x2::IfcProjectedCRS<a class="headerlink" href="#class-ifc4x2-ifcprojectedcrs" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcCoordinateReferenceSystem</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_coordinate_reference_system.html#exhale-class-class-ifc4x2-1-1-ifc-coordinate-reference-system"><span class="std std-ref">Class Ifc4x2::IfcCoordinateReferenceSystem</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x215IfcProjectedCRSE">
+<span id="_CPPv3N6Ifc4x215IfcProjectedCRSE"></span><span id="_CPPv2N6Ifc4x215IfcProjectedCRSE"></span><span id="Ifc4x2::IfcProjectedCRS"></span><span class="target" id="class_ifc4x2_1_1_ifc_projected_c_r_s"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcProjectedCRS</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_coordinate_reference_system.html#_CPPv4N6Ifc4x228IfcCoordinateReferenceSystemE" title="Ifc4x2::IfcCoordinateReferenceSystem">IfcCoordinateReferenceSystem</a><a class="headerlink" href="#_CPPv4N6Ifc4x215IfcProjectedCRSE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from OpenGIS® Abstract Specification, Topic 2: A 2D (or with vertical coordinate axis 3D) coordinate reference system used to approximate the shape of the earth on a planar surface, but in such a way that the distortion that is inherent to the approximation is carefully controlled and known. Distortion correction is commonly applied to calculated bearings and distances to produce values that are a close match to actual field values. <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_projected_c_r_s"><span class="std std-ref">IfcProjectedCRS</span></a> is a coordinate reference system of the map to which the map translation of the local engineering coordinate system of the construction or facility engineering project relates. The MapProjection and MapZone attributes uniquely identify the projection to the underlying geographic coordinate reference system, provided that they are well-known in the receiving application. The projected coordinate reference system is assumed to be a 2D or 3D right-handed Cartesian coordinate system, the optional MapUnit attribute can be used determine the length unit used by the map.</p>
+<p>HISTORY New entity in IFC2x4. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x215IfcProjectedCRS4listE">
+<span id="_CPPv3N6Ifc4x215IfcProjectedCRS4listE"></span><span id="_CPPv2N6Ifc4x215IfcProjectedCRS4listE"></span><span id="Ifc4x2::IfcProjectedCRS::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_projected_c_r_s_1a2f670c2bf8e4056f5db2c8ed3da8dbce"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x215IfcProjectedCRSE" title="Ifc4x2::IfcProjectedCRS">IfcProjectedCRS</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x215IfcProjectedCRS4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x215IfcProjectedCRS16hasMapProjectionEv">
+<span id="_CPPv3NK6Ifc4x215IfcProjectedCRS16hasMapProjectionEv"></span><span id="_CPPv2NK6Ifc4x215IfcProjectedCRS16hasMapProjectionEv"></span><span id="Ifc4x2::IfcProjectedCRS::hasMapProjectionC"></span><span class="target" id="class_ifc4x2_1_1_ifc_projected_c_r_s_1af65037bd8ce69730e6b07e7ccd51e16e"></span>bool <code class="sig-name descname">hasMapProjection</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x215IfcProjectedCRS16hasMapProjectionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute MapProjection is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_projected_c_r_s"><span class="std std-ref">IfcProjectedCRS</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x215IfcProjectedCRS13MapProjectionEv">
+<span id="_CPPv3NK6Ifc4x215IfcProjectedCRS13MapProjectionEv"></span><span id="_CPPv2NK6Ifc4x215IfcProjectedCRS13MapProjectionEv"></span><span id="Ifc4x2::IfcProjectedCRS::MapProjectionC"></span><span class="target" id="class_ifc4x2_1_1_ifc_projected_c_r_s_1a9b4955eb442014092032b82344fa506f"></span>std::string <code class="sig-name descname">MapProjection</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x215IfcProjectedCRS13MapProjectionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Name by which the map projection is identified.</p>
+<p>UTM Gaus-Krueger </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x215IfcProjectedCRS16setMapProjectionENSt6stringE">
+<span id="_CPPv3N6Ifc4x215IfcProjectedCRS16setMapProjectionENSt6stringE"></span><span id="_CPPv2N6Ifc4x215IfcProjectedCRS16setMapProjectionENSt6stringE"></span><span id="Ifc4x2::IfcProjectedCRS::setMapProjection__ss"></span><span class="target" id="class_ifc4x2_1_1_ifc_projected_c_r_s_1ad9a30fbb6d814d3b62f0605121fd080a"></span>void <code class="sig-name descname">setMapProjection</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x215IfcProjectedCRS16setMapProjectionENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x215IfcProjectedCRS10hasMapZoneEv">
+<span id="_CPPv3NK6Ifc4x215IfcProjectedCRS10hasMapZoneEv"></span><span id="_CPPv2NK6Ifc4x215IfcProjectedCRS10hasMapZoneEv"></span><span id="Ifc4x2::IfcProjectedCRS::hasMapZoneC"></span><span class="target" id="class_ifc4x2_1_1_ifc_projected_c_r_s_1a3ab6b17724988eecd2d5d795da48d280"></span>bool <code class="sig-name descname">hasMapZone</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x215IfcProjectedCRS10hasMapZoneEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute MapZone is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_projected_c_r_s"><span class="std std-ref">IfcProjectedCRS</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x215IfcProjectedCRS7MapZoneEv">
+<span id="_CPPv3NK6Ifc4x215IfcProjectedCRS7MapZoneEv"></span><span id="_CPPv2NK6Ifc4x215IfcProjectedCRS7MapZoneEv"></span><span id="Ifc4x2::IfcProjectedCRS::MapZoneC"></span><span class="target" id="class_ifc4x2_1_1_ifc_projected_c_r_s_1a588480fceecd3f5ddceaa72c98bc01f8"></span>std::string <code class="sig-name descname">MapZone</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x215IfcProjectedCRS7MapZoneEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Name by which the map zone, relating to the MapProjection, is identified. Examples are</p>
+<p>for UTM, the zone number, like 32 for UTM32 for Gaus-Krueger, the zones of longitudinal width, like 3’ </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x215IfcProjectedCRS10setMapZoneENSt6stringE">
+<span id="_CPPv3N6Ifc4x215IfcProjectedCRS10setMapZoneENSt6stringE"></span><span id="_CPPv2N6Ifc4x215IfcProjectedCRS10setMapZoneENSt6stringE"></span><span id="Ifc4x2::IfcProjectedCRS::setMapZone__ss"></span><span class="target" id="class_ifc4x2_1_1_ifc_projected_c_r_s_1adc2361e381173b5ce9f05bcaf998161c"></span>void <code class="sig-name descname">setMapZone</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x215IfcProjectedCRS10setMapZoneENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x215IfcProjectedCRS10hasMapUnitEv">
+<span id="_CPPv3NK6Ifc4x215IfcProjectedCRS10hasMapUnitEv"></span><span id="_CPPv2NK6Ifc4x215IfcProjectedCRS10hasMapUnitEv"></span><span id="Ifc4x2::IfcProjectedCRS::hasMapUnitC"></span><span class="target" id="class_ifc4x2_1_1_ifc_projected_c_r_s_1a6a80356ca640ab1e4f42a5c861f1aabc"></span>bool <code class="sig-name descname">hasMapUnit</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x215IfcProjectedCRS10hasMapUnitEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute MapUnit is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_projected_c_r_s"><span class="std std-ref">IfcProjectedCRS</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x215IfcProjectedCRS7MapUnitEv">
+<span id="_CPPv3NK6Ifc4x215IfcProjectedCRS7MapUnitEv"></span><span id="_CPPv2NK6Ifc4x215IfcProjectedCRS7MapUnitEv"></span><span id="Ifc4x2::IfcProjectedCRS::MapUnitC"></span><span class="target" id="class_ifc4x2_1_1_ifc_projected_c_r_s_1ad90edadde4582e97b4a564c1121b3165"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_named_unit.html#_CPPv4N6Ifc4x212IfcNamedUnitE" title="Ifc4x2::IfcNamedUnit">IfcNamedUnit</a> *<code class="sig-name descname">MapUnit</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x215IfcProjectedCRS7MapUnitEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Unit of the coordinate axes composing the map coordinate system. NOTE Only length measures are in scope and all two or three axes of the map coordinate system shall have the same length unit. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x215IfcProjectedCRS10setMapUnitEPN6Ifc4x212IfcNamedUnitE">
+<span id="_CPPv3N6Ifc4x215IfcProjectedCRS10setMapUnitEPN6Ifc4x212IfcNamedUnitE"></span><span id="_CPPv2N6Ifc4x215IfcProjectedCRS10setMapUnitEPN6Ifc4x212IfcNamedUnitE"></span><span id="Ifc4x2::IfcProjectedCRS::setMapUnit__Ifc4x2::IfcNamedUnitP"></span><span class="target" id="class_ifc4x2_1_1_ifc_projected_c_r_s_1a10a103f156431c09c6e2ba114135def6"></span>void <code class="sig-name descname">setMapUnit</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_named_unit.html#_CPPv4N6Ifc4x212IfcNamedUnitE" title="Ifc4x2::IfcNamedUnit">IfcNamedUnit</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x215IfcProjectedCRS10setMapUnitEPN6Ifc4x212IfcNamedUnitE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x215IfcProjectedCRS11declarationEv">
+<span id="_CPPv3NK6Ifc4x215IfcProjectedCRS11declarationEv"></span><span id="_CPPv2NK6Ifc4x215IfcProjectedCRS11declarationEv"></span><span id="Ifc4x2::IfcProjectedCRS::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_projected_c_r_s_1ad51508346f6030c3a01bd7f07b8f885d"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x215IfcProjectedCRS11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x215IfcProjectedCRS15IfcProjectedCRSEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x215IfcProjectedCRS15IfcProjectedCRSEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x215IfcProjectedCRS15IfcProjectedCRSEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcProjectedCRS::IfcProjectedCRS__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_projected_c_r_s_1a92543c465865cd779bbb306c4765e948"></span><code class="sig-name descname">IfcProjectedCRS</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x215IfcProjectedCRS15IfcProjectedCRSEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x215IfcProjectedCRS15IfcProjectedCRSENSt6stringEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x212IfcNamedUnitE">
+<span id="_CPPv3N6Ifc4x215IfcProjectedCRS15IfcProjectedCRSENSt6stringEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x212IfcNamedUnitE"></span><span id="_CPPv2N6Ifc4x215IfcProjectedCRS15IfcProjectedCRSENSt6stringEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x212IfcNamedUnitE"></span><span id="Ifc4x2::IfcProjectedCRS::IfcProjectedCRS__ss.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4x2::IfcNamedUnitP"></span><span class="target" id="class_ifc4x2_1_1_ifc_projected_c_r_s_1a061585925945e288a80c02e9ef93e748"></span><code class="sig-name descname">IfcProjectedCRS</code><span class="sig-paren">(</span>std::string <em>v1_Name</em>, boost::optional&lt;std::string&gt; <em>v2_Description</em>, boost::optional&lt;std::string&gt; <em>v3_GeodeticDatum</em>, boost::optional&lt;std::string&gt; <em>v4_VerticalDatum</em>, boost::optional&lt;std::string&gt; <em>v5_MapProjection</em>, boost::optional&lt;std::string&gt; <em>v6_MapZone</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_named_unit.html#_CPPv4N6Ifc4x212IfcNamedUnitE" title="Ifc4x2::IfcNamedUnit">IfcNamedUnit</a> *<em>v7_MapUnit</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x215IfcProjectedCRS15IfcProjectedCRSENSt6stringEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x212IfcNamedUnitE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x215IfcProjectedCRS5ClassEv">
+<span id="_CPPv3N6Ifc4x215IfcProjectedCRS5ClassEv"></span><span id="_CPPv2N6Ifc4x215IfcProjectedCRS5ClassEv"></span><span id="Ifc4x2::IfcProjectedCRS::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_projected_c_r_s_1a00ed53ac5c70af2d917dd1c1b198834a"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x215IfcProjectedCRS5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_project.html" title="previous chapter">Class Ifc4x2::IfcProject</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_projection_element.html" title="next chapter">Class Ifc4x2::IfcProjectionElement</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_projected_c_r_s.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,42 @@
+.. _exhale_class_class_ifc4x1_1_1_ifc_rel_assigns:
+
+Class Ifc4x1::IfcRelAssigns
+===========================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x1::IfcRelationship`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_relationship`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x1::IfcRelAssignsToActor`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_assigns_to_actor`)
+- ``public Ifc4x1::IfcRelAssignsToControl`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_assigns_to_control`)
+- ``public Ifc4x1::IfcRelAssignsToGroup`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_assigns_to_group`)
+- ``public Ifc4x1::IfcRelAssignsToProcess`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_assigns_to_process`)
+- ``public Ifc4x1::IfcRelAssignsToProduct`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_assigns_to_product`)
+- ``public Ifc4x1::IfcRelAssignsToResource`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_assigns_to_resource`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x1::IfcRelAssigns
+   :members:
+   :protected-members:
+   :undoc-members:

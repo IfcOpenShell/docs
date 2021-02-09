@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a4cacb1a59d50504be05e532bce1699ad:
+
+Define SCHEMA_HAS_IfcContextDependentUnit
+=========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcContextDependentUnit

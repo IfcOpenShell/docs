@@ -1,0 +1,47 @@
+.. _exhale_class_class_ifc4_1_1_ifc_parameterized_profile_def:
+
+Class Ifc4::IfcParameterizedProfileDef
+======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4::IfcProfileDef`` (:ref:`exhale_class_class_ifc4_1_1_ifc_profile_def`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4::IfcAsymmetricIShapeProfileDef`` (:ref:`exhale_class_class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def`)
+- ``public Ifc4::IfcCircleProfileDef`` (:ref:`exhale_class_class_ifc4_1_1_ifc_circle_profile_def`)
+- ``public Ifc4::IfcCShapeProfileDef`` (:ref:`exhale_class_class_ifc4_1_1_ifc_c_shape_profile_def`)
+- ``public Ifc4::IfcEllipseProfileDef`` (:ref:`exhale_class_class_ifc4_1_1_ifc_ellipse_profile_def`)
+- ``public Ifc4::IfcIShapeProfileDef`` (:ref:`exhale_class_class_ifc4_1_1_ifc_i_shape_profile_def`)
+- ``public Ifc4::IfcLShapeProfileDef`` (:ref:`exhale_class_class_ifc4_1_1_ifc_l_shape_profile_def`)
+- ``public Ifc4::IfcRectangleProfileDef`` (:ref:`exhale_class_class_ifc4_1_1_ifc_rectangle_profile_def`)
+- ``public Ifc4::IfcTrapeziumProfileDef`` (:ref:`exhale_class_class_ifc4_1_1_ifc_trapezium_profile_def`)
+- ``public Ifc4::IfcTShapeProfileDef`` (:ref:`exhale_class_class_ifc4_1_1_ifc_t_shape_profile_def`)
+- ``public Ifc4::IfcUShapeProfileDef`` (:ref:`exhale_class_class_ifc4_1_1_ifc_u_shape_profile_def`)
+- ``public Ifc4::IfcZShapeProfileDef`` (:ref:`exhale_class_class_ifc4_1_1_ifc_z_shape_profile_def`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4::IfcParameterizedProfileDef
+   :members:
+   :protected-members:
+   :undoc-members:

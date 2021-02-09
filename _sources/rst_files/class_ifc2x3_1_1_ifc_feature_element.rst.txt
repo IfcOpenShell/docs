@@ -1,0 +1,38 @@
+.. _exhale_class_class_ifc2x3_1_1_ifc_feature_element:
+
+Class Ifc2x3::IfcFeatureElement
+===============================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc2x3::IfcElement`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_element`)
+
+
+Derived Types
+*************
+
+- ``public Ifc2x3::IfcFeatureElementAddition`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_feature_element_addition`)
+- ``public Ifc2x3::IfcFeatureElementSubtraction`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_feature_element_subtraction`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc2x3::IfcFeatureElement
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ab6a3459bd1e4bd91e2b1c3a2ae2b9695:
+
+Define SCHEMA_IfcPostalAddress_PostalCode_IS_OPTIONAL
+=====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPostalAddress_PostalCode_IS_OPTIONAL

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a91945e51473bae6f5a14f3aa836880a9:
+
+Define SCHEMA_IfcImageTexture_HAS_UrlReference
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcImageTexture_HAS_UrlReference

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a34aacf1b69080f297d64ff03e95624e5:
+
+Define SCHEMA_IfcDistributionControlElement_HAS_ControlElementId
+================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDistributionControlElement_HAS_ControlElementId

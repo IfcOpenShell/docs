@@ -1,0 +1,56 @@
+
+.. _file_src_ifcgeom_IfcRegisterShapeType.h:
+
+File IfcRegisterShapeType.h
+===========================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcgeom>` (``src/ifcgeom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/IfcRegisterShapeType.h``)
+---------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_IfcRegisterShapeType.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``IfcRegister.h`` (:ref:`file_src_ifcgeom_IfcRegister.h`)
+
+- ``IfcRegisterDef.h`` (:ref:`file_src_ifcgeom_IfcRegisterDef.h`)
+
+- ``IfcRegisterUndef.h`` (:ref:`file_src_ifcgeom_IfcRegisterUndef.h`)
+
+
+
+
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define__ifc_register_shape_type_8h_1a8d884e03ffbedfe05789e8bc7c0a892f`
+
+- :ref:`exhale_define__ifc_register_shape_type_8h_1a9d4ff5f2f94ac2ae2aef7ee3eb0e1911`
+
+- :ref:`exhale_define__ifc_register_shape_type_8h_1a67204c2fe5378a23b28713a6becdf68c`
+
+- :ref:`exhale_define__ifc_register_shape_type_8h_1a1fadd270585727887f51fc12f1e4eaf9`
+
+- :ref:`exhale_define__ifc_register_shape_type_8h_1a862da117564defa9e8e5d5de6db21ec6`
+

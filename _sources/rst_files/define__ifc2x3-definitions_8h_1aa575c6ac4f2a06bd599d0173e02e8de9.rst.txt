@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aa575c6ac4f2a06bd599d0173e02e8de9:
+
+Define SCHEMA_IfcProcedure_UserDefinedProcedureType_IS_OPTIONAL
+===============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcProcedure_UserDefinedProcedureType_IS_OPTIONAL

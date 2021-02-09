@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_register_8h_1a22659d2a314fb5eb7f15ce49e4330130:
+
+Function WIRE(IfcPolyline)
+==========================
+
+- Defined in :ref:`file_src_ifcgeom_IfcRegister.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: WIRE(IfcPolyline)

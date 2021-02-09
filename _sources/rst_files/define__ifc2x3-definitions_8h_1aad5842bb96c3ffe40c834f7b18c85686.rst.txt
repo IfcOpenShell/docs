@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aad5842bb96c3ffe40c834f7b18c85686:
+
+Define SCHEMA_IfcSoundValue_HAS_SoundLevelSingleValue
+=====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSoundValue_HAS_SoundLevelSingleValue

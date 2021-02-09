@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1af0e2627d42b7da206ecec55455125920:
+
+Define SCHEMA_HAS_IfcTriangulatedFaceSet
+========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcTriangulatedFaceSet

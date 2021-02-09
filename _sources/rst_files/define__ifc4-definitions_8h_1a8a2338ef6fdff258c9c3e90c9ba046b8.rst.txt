@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a8a2338ef6fdff258c9c3e90c9ba046b8:
+
+Define SCHEMA_HAS_IfcPersonAndOrganization
+==========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcPersonAndOrganization

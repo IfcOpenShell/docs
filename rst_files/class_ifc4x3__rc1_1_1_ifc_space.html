@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x3_rc1::IfcSpace &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x3_rc1::IfcSpaceHeater" href="class_ifc4x3__rc1_1_1_ifc_space_heater.html" />
+    <link rel="prev" title="Class Ifc4x3_rc1::IfcSoundPressureMeasure" href="class_ifc4x3__rc1_1_1_ifc_sound_pressure_measure.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x3-rc1-ifcspace">
+<span id="exhale-class-class-ifc4x3-rc1-1-1-ifc-space"></span><h1>Class Ifc4x3_rc1::IfcSpace<a class="headerlink" href="#class-ifc4x3-rc1-ifcspace" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x3_rc1.h.html#file-src-ifcparse-ifc4x3-rc1-h"><span class="std std-ref">File Ifc4x3_rc1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x3__rc1.html#exhale-struct-struct-ifc4x3-rc1"><span class="std std-ref">Struct Ifc4x3_rc1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x3_rc1::IfcSpatialStructureElement</span></code> (<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_spatial_structure_element.html#exhale-class-class-ifc4x3-rc1-1-1-ifc-spatial-structure-element"><span class="std std-ref">Class Ifc4x3_rc1::IfcSpatialStructureElement</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N10Ifc4x3_rc18IfcSpaceE">
+<span id="_CPPv3N10Ifc4x3_rc18IfcSpaceE"></span><span id="_CPPv2N10Ifc4x3_rc18IfcSpaceE"></span><span id="Ifc4x3_rc1::IfcSpace"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_space"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcSpace</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_spatial_structure_element.html#_CPPv4N10Ifc4x3_rc126IfcSpatialStructureElementE" title="Ifc4x3_rc1::IfcSpatialStructureElement">IfcSpatialStructureElement</a><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc18IfcSpaceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A space represents an area or volume bounded actually or theoretically. Spaces are areas or volumes that provide for certain functions within a building. A space is associated to a building storey (or in case of exterior spaces to a site). A space may span over several connected spaces. Therefore a space group provides for a collection of spaces included in a storey. A space can also be decomposed in parts, where each part defines a partial space. This is defined by the CompositionType attribute of the supertype <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_spatial_structure_element"><span class="std std-ref">IfcSpatialStructureElement</span></a> which is interpreted as follow:</p>
+<p>COMPLEX = space group ELEMENT = space PARTIAL = partial space</p>
+<p>NOTE View definitions and implementation agreements may restrict spaces with CompositionType=ELEMENT to be non-overlapping. The following guidelines should apply for using the Name, Description, LongName and ObjectType attributes.</p>
+<p>Name holds the unique name (or space number) from the plan. Description holds any additional information field the user may have specified, there are no further recommendations. LongName holds the full name of the space, it is often used in addition to the Name, if a number is assigned to the room, then the descriptive name is exchanged as LongName. ObjectType holds the space type, i.e. usually the functional category of the space .</p>
+<p>HISTORY New Entity in IFC Release 1.0</p>
+<p>Property Set Use Definition The property sets relating to the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> are defined by the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> and attached by the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. It is accessible by the inverse IsDefinedBy relationship. The following property set definitions specific to the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> are part of this IFC release:</p>
+<p>Pset_SpaceCommon: common property set for all types of spaces</p>
+<p>Pset_SpaceParking: specific property set for only those spaces that are used to define parking spaces by PredefinedType: PARKING</p>
+<p>Pset_SpaceFireSafetyRequirements: common property set for all types of spaces to capture the fire safety requirements Pset_SpaceLightingRequirements: common property set for all types of spaces to capture the lighting requirements Pset_SpaceOccupancyRequirements: common property set for all types of spaces to capture the occupancy requirements Pset_SpaceThermalRequirements: common property set for all types of spaces to capture the thermal requirements Pset_SpaceThermalDesign: common property set for allall types of spaces to capture building service design values</p>
+<p>Quantity Use Definition The quantities relating to the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> are defined by the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_element_quantity"><span class="std std-ref">IfcElementQuantity</span></a> and attached by the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. It is accessible by the inverse IsDefinedBy relationship. The following base quantities are defined and should be exchanged with the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_root_1a53d26b214942dac4c16f486416155c67"><span class="std std-ref">IfcElementQuantity.Name</span></a> = ‘BaseQuantities’. Other quantities, being subjected to local standard of measurement, can be defined with another string value assigned to Name. In this case a valid value for MethodOfMeasurement has to be provided.</p>
+<p>Qto_SpaceBaseQuantities: base quantities for all space occurrences.</p>
+<p>Spatial Structure Use Definition The <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> is used to build the spatial structure of a building (that serves as the primary project breakdown and is required to be hierarchical). The spatial structure elements are linked together by using the objectified relationship <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_rel_aggregates"><span class="std std-ref">IfcRelAggregates</span></a>. The <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> references them by its inverse relationships:</p>
+<p>IfcSpace.Decomposes  referencing (<a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> || <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building_storey"><span class="std std-ref">IfcBuildingStorey</span></a> || <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a>) by <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_rel_aggregates_1ab7c82792e1cecd5a9c49883edd5f8a16"><span class="std std-ref">IfcRelAggregates.RelatingObject</span></a>, If it refers to another instance of<a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a>, the referenced <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> needs to have a different and higher CompositionType, i.e. COMPLEX (if the other <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> has ELEMENT), or ELEMENT (if the other <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> has PARTIAL). IfcSpace.IsDecomposedBy  referencing (<a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a>) by <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_rel_aggregates_1ae56aea78c3ec48591c50b5e614e383c2"><span class="std std-ref">IfcRelAggregates.RelatedObjects</span></a>. If it refers to another instance of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a>, the referenced <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> needs to have a different and lower CompositionType, i.e. ELEMENT (if the other <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> has COMPLEX), or PARTIAL (if the other <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> has ELEMENT).</p>
+<p>If there are building elements and/or other elements directly related to the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a>(like most furniture and distribution elements), they are associated with the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> by using the objectified relationship <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_rel_contained_in_spatial_structure"><span class="std std-ref">IfcRelContainedInSpatialStructure</span></a>. The <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> references them by its inverse relationship:</p>
+<p>IfcSpace.ContainsElements  referencing any subtype of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a> (with the exception of other spatial structure element) by <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_rel_contained_in_spatial_structure_1a831538d61c974d614f409ee729bfbc05"><span class="std std-ref">IfcRelContainedInSpatialStructure.RelatedElements</span></a>.</p>
+<p>Figure 57 shows the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> as part of the spatial structure. It also serves as the spatial container for space related elements. NOTE Detailed requirements on mandatory element containment and placement structure relationships are given in view definitions and implementer agreements.</p>
+<p>Figure 57 — Space composition</p>
+<p>Attribute Use Definition</p>
+<p>Figure 58 describes the heights and elevations of the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a>.</p>
+<p>elevation of the space (top of construction slab) equals elevation of storey: provided by <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building_storey_1a7bdd36b2dbdd945333ff5a248a79f602"><span class="std std-ref">IfcBuildingStorey.Elevation</span></a> relative to <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building_1a6f259317addb005b728789cda3ca4f44"><span class="std std-ref">IfcBuilding.ElevationOfRefHeight</span></a> elevation of the space flooring (top of flooring on top of slab): provided by <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space_1a05731dfdc1526c04c77aaed2f9a14a9f"><span class="std std-ref">IfcSpace.ElevationWithFlooring</span></a> relative to <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_building_1a6f259317addb005b728789cda3ca4f44"><span class="std std-ref">IfcBuilding.ElevationOfRefHeight</span></a> height of space (top of slab below to bottom of slab above): provided by BaseQuantity with Name=”Height” floor height of space (top of slab below to top of flooring): provided by BaseQuantity with Name=”FinishFloorHeight” net height of space (top of flooring to bottom of suspended ceiling): provided by BaseQuantity with Name=”FinishCeilingHeight”</p>
+<p>Figure 58 — Space elevations</p>
+<p>Geometry Use Definition The geometric representation of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> is given by the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a> and <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> allowing multiple geometric representations. NOTE In cases of inconsistency between the geometric representation of the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> and the combined geometric representations of the surrounding <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_rel_space_boundary"><span class="std std-ref">IfcRelSpaceBoundary</span></a>, the geometric representation of the space should take priority over the geometric representation of the surrounding space boundaries. Local Placement The local placement for <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> is defined in its supertype <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a>. It is defined by the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a>, which defines the local coordinate system that is referenced by all geometric representations.</p>
+<p>The PlacementRelTo relationship of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> shall point to the local placement of the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_spatial_structure_element"><span class="std std-ref">IfcSpatialStructureElement</span></a> of type “IfcBuildingStorey”, if relative placement is used, or of type “IfcSpace” (e.g. to position a space relative to a space group, or a partial space to a space). If the relative placement is not used, the absolute placement is defined within the world coordinate system.</p>
+<p>Geometric Representations Currently, the use of a 2D ‘FootPrint’ representation of type ‘Curve2D’ or ‘GeometricCurveSet’ and a 3D ‘Body’ representation of type ‘SweptSolid, ‘Clipping’ and ‘Brep’ is supported. ‘Foot Print’ Representation The 2D geometric representation of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> is defined using the ‘Curve2D’ or ‘GeometricCurveSet’ geometry. The following attribute values should be inserted</p>
+<p><a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_representation_1a6feb4b4fe5c1a7c253f7d25b63b820cd"><span class="std std-ref">IfcShapeRepresentation.RepresentationIdentifier</span></a> = ‘FootPrint’. <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_representation_1a3bdb9f43bb52825df6512349b6c1f7ca"><span class="std std-ref">IfcShapeRepresentation.RepresentationType</span></a> = ‘Curve2D’ or ‘GeometricCurveSet’ .</p>
+<p>The following constraints apply to the 2D representation:</p>
+<p>Profile: <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_bounded_curve"><span class="std std-ref">IfcBoundedCurve</span></a> is required, using <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a> for faceted space contours or <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_composite_curve"><span class="std std-ref">IfcCompositeCurve</span></a> for space contours with arc segments. For spaces with inner boundaries, a set of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_bounded_curve"><span class="std std-ref">IfcBoundedCurve</span></a>’s is used, that should be grouped into an <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_geometric_curve_set"><span class="std std-ref">IfcGeometricCurveSet</span></a>.</p>
+<p>Figure 59 shows a two-dimensional bounded curve representing the foot print of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a>.</p>
+<p>Figure 59 — Space footprint</p>
+<p>‘Swept Solid’ Representation The standard geometric representation of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> is defined using the swept area solid geometry. The following attribute values should be inserted</p>
+<p><a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_representation_1a6feb4b4fe5c1a7c253f7d25b63b820cd"><span class="std std-ref">IfcShapeRepresentation.RepresentationIdentifier</span></a> = ‘Body’. <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_representation_1a3bdb9f43bb52825df6512349b6c1f7ca"><span class="std std-ref">IfcShapeRepresentation.RepresentationType</span></a> = ‘SweptSolid’.</p>
+<p>The following constraints apply to the standard representation:</p>
+<p>Solid: <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_extruded_area_solid"><span class="std std-ref">IfcExtrudedAreaSolid</span></a> is required, Profile: <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_arbitrary_closed_profile_def"><span class="std std-ref">IfcArbitraryClosedProfileDef</span></a> is required, <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_arbitrary_profile_def_with_voids"><span class="std std-ref">IfcArbitraryProfileDefWithVoids</span></a> shall be supported. Extrusion: The extrusion direction shall be vertically, i.e., along the positive Z Axis of the co-ordinate system of the containing spatial structure element.</p>
+<p>Figure 60 shows an extrusion of an arbitrary profile definition with voids into the swept area solid of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a>.</p>
+<p>Figure 60 — Space body swept solid</p>
+<p>‘Clipping’ representation The advanced geometric representation of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> is defined using the swept area solid geometry that can be subjected to a Boolean expression. The following attribute values should be inserted.</p>
+<p><a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_representation_1a6feb4b4fe5c1a7c253f7d25b63b820cd"><span class="std std-ref">IfcShapeRepresentation.RepresentationIdentifier</span></a> = ‘Body’. <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_representation_1a3bdb9f43bb52825df6512349b6c1f7ca"><span class="std std-ref">IfcShapeRepresentation.RepresentationType</span></a> = ‘Clipping’.</p>
+<p>The following additional constraints apply to the advanced representation:</p>
+<p>Solid: see standard geometric representation, Profile: see standard geometric representation, Extrusion: see standard geometric representation, Boolean result: The difference operation with the second operand being of type <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_half_space_solid"><span class="std std-ref">IfcHalfSpaceSolid</span></a> (or one of its subtypes) shall be supported.</p>
+<p>Figure 61 shows an extrusion of an arbitrary profile definition into the swept area solid. The solid and an half space solid are operands of the Boolean result of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a>.</p>
+<p>Figure 61 — Space body clipping</p>
+<p>‘Brep’ representation The fallback advanced geometric representation of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> is defined using the Brep solid geometry.may be represented as a single or multiple instances of <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_faceted_brep"><span class="std std-ref">IfcFacetedBrep</span></a> or <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_faceted_brep_with_voids"><span class="std std-ref">IfcFacetedBrepWithVoids</span></a>. The Brep representation allows for the representation of complex element shape. The following attribute values for the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p><a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_representation_1a6feb4b4fe5c1a7c253f7d25b63b820cd"><span class="std std-ref">IfcShapeRepresentation.RepresentationIdentifier</span></a> : ‘Body’ <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_representation_1a3bdb9f43bb52825df6512349b6c1f7ca"><span class="std std-ref">IfcShapeRepresentation.RepresentationType</span></a> : ‘Brep’ </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N10Ifc4x3_rc18IfcSpace4listE">
+<span id="_CPPv3N10Ifc4x3_rc18IfcSpace4listE"></span><span id="_CPPv2N10Ifc4x3_rc18IfcSpace4listE"></span><span id="Ifc4x3_rc1::IfcSpace::list"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_space_1a1c56b97ad24ec677cf8ef1ffa3457a32"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N10Ifc4x3_rc18IfcSpaceE" title="Ifc4x3_rc1::IfcSpace">IfcSpace</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc18IfcSpace4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc18IfcSpace17hasPredefinedTypeEv">
+<span id="_CPPv3NK10Ifc4x3_rc18IfcSpace17hasPredefinedTypeEv"></span><span id="_CPPv2NK10Ifc4x3_rc18IfcSpace17hasPredefinedTypeEv"></span><span id="Ifc4x3_rc1::IfcSpace::hasPredefinedTypeC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_space_1ab3961025bcc45f5b0a919f692d5b55b3"></span>bool <code class="sig-name descname">hasPredefinedType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc18IfcSpace17hasPredefinedTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute PredefinedType is defined for this <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc18IfcSpace14PredefinedTypeEv">
+<span id="_CPPv3NK10Ifc4x3_rc18IfcSpace14PredefinedTypeEv"></span><span id="_CPPv2NK10Ifc4x3_rc18IfcSpace14PredefinedTypeEv"></span><span id="Ifc4x3_rc1::IfcSpace::PredefinedTypeC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_space_1a3647026aa8274ae9d726cf050d57a679"></span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc116IfcSpaceTypeEnumE" title="Ifc4x3_rc1::IfcSpaceTypeEnum">IfcSpaceTypeEnum</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc116IfcSpaceTypeEnum5ValueE" title="Ifc4x3_rc1::IfcSpaceTypeEnum::Value">Value</a> <code class="sig-name descname">PredefinedType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc18IfcSpace14PredefinedTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Predefined generic types for a space that are specified in an enumeration. There might be property sets defined specifically for each predefined type.</p>
+<p>Previous use, prior to IFC2x4, had been to indicates whether the <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a> is an interior space by value INTERNAL, or an exterior space by value EXTERNAL. This use is now deprecated, the property ‘IsExternal’ at ‘Pset_SpaceCommon’ should be used instead.</p>
+<p>IFC2x4 CHANGE The attribute has been renamed from ExteriorOrInteriorSpace with upward compatibility for file based exchange. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc18IfcSpace17setPredefinedTypeEN10Ifc4x3_rc116IfcSpaceTypeEnum5ValueE">
+<span id="_CPPv3N10Ifc4x3_rc18IfcSpace17setPredefinedTypeEN10Ifc4x3_rc116IfcSpaceTypeEnum5ValueE"></span><span id="_CPPv2N10Ifc4x3_rc18IfcSpace17setPredefinedTypeEN10Ifc4x3_rc116IfcSpaceTypeEnum5ValueE"></span><span id="Ifc4x3_rc1::IfcSpace::setPredefinedType__Ifc4x3_rc1::IfcSpaceTypeEnum::Value"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_space_1a90c065f9cc78f285334e8769a242e458"></span>void <code class="sig-name descname">setPredefinedType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc116IfcSpaceTypeEnumE" title="Ifc4x3_rc1::IfcSpaceTypeEnum">IfcSpaceTypeEnum</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc116IfcSpaceTypeEnum5ValueE" title="Ifc4x3_rc1::IfcSpaceTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc18IfcSpace17setPredefinedTypeEN10Ifc4x3_rc116IfcSpaceTypeEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc18IfcSpace24hasElevationWithFlooringEv">
+<span id="_CPPv3NK10Ifc4x3_rc18IfcSpace24hasElevationWithFlooringEv"></span><span id="_CPPv2NK10Ifc4x3_rc18IfcSpace24hasElevationWithFlooringEv"></span><span id="Ifc4x3_rc1::IfcSpace::hasElevationWithFlooringC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_space_1a4a3b2057837d1207049333de95c694cf"></span>bool <code class="sig-name descname">hasElevationWithFlooring</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc18IfcSpace24hasElevationWithFlooringEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ElevationWithFlooring is defined for this <a class="reference internal" href="struct_ifc4x3__rc1.html#class_ifc4x3__rc1_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc18IfcSpace21ElevationWithFlooringEv">
+<span id="_CPPv3NK10Ifc4x3_rc18IfcSpace21ElevationWithFlooringEv"></span><span id="_CPPv2NK10Ifc4x3_rc18IfcSpace21ElevationWithFlooringEv"></span><span id="Ifc4x3_rc1::IfcSpace::ElevationWithFlooringC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_space_1a05731dfdc1526c04c77aaed2f9a14a9f"></span>double <code class="sig-name descname">ElevationWithFlooring</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc18IfcSpace21ElevationWithFlooringEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Level of flooring of this space; the average shall be taken, if the space ground surface is sloping or if there are level differences within this space. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc18IfcSpace24setElevationWithFlooringEd">
+<span id="_CPPv3N10Ifc4x3_rc18IfcSpace24setElevationWithFlooringEd"></span><span id="_CPPv2N10Ifc4x3_rc18IfcSpace24setElevationWithFlooringEd"></span><span id="Ifc4x3_rc1::IfcSpace::setElevationWithFlooring__double"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_space_1a0e025c8b733370384f3e5431ae14d88a"></span>void <code class="sig-name descname">setElevationWithFlooring</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc18IfcSpace24setElevationWithFlooringEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc18IfcSpace12HasCoveringsEv">
+<span id="_CPPv3NK10Ifc4x3_rc18IfcSpace12HasCoveringsEv"></span><span id="_CPPv2NK10Ifc4x3_rc18IfcSpace12HasCoveringsEv"></span><span id="Ifc4x3_rc1::IfcSpace::HasCoveringsC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_space_1a5e4ed7f696dd67076a5c4e3976210ffd"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_rel_covers_spaces.html#_CPPv4N10Ifc4x3_rc118IfcRelCoversSpacesE" title="Ifc4x3_rc1::IfcRelCoversSpaces">IfcRelCoversSpaces</a>&gt;::ptr <code class="sig-name descname">HasCoverings</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc18IfcSpace12HasCoveringsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc18IfcSpace9BoundedByEv">
+<span id="_CPPv3NK10Ifc4x3_rc18IfcSpace9BoundedByEv"></span><span id="_CPPv2NK10Ifc4x3_rc18IfcSpace9BoundedByEv"></span><span id="Ifc4x3_rc1::IfcSpace::BoundedByC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_space_1a6b56184c016a458ff5fec179dbd89e59"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_rel_space_boundary.html#_CPPv4N10Ifc4x3_rc119IfcRelSpaceBoundaryE" title="Ifc4x3_rc1::IfcRelSpaceBoundary">IfcRelSpaceBoundary</a>&gt;::ptr <code class="sig-name descname">BoundedBy</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc18IfcSpace9BoundedByEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc18IfcSpace11declarationEv">
+<span id="_CPPv3NK10Ifc4x3_rc18IfcSpace11declarationEv"></span><span id="_CPPv2NK10Ifc4x3_rc18IfcSpace11declarationEv"></span><span id="Ifc4x3_rc1::IfcSpace::declarationC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_space_1a9b396831b64000d5440982ddf25c4316"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc18IfcSpace11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc18IfcSpace8IfcSpaceEP21IfcEntityInstanceData">
+<span id="_CPPv3N10Ifc4x3_rc18IfcSpace8IfcSpaceEP21IfcEntityInstanceData"></span><span id="_CPPv2N10Ifc4x3_rc18IfcSpace8IfcSpaceEP21IfcEntityInstanceData"></span><span id="Ifc4x3_rc1::IfcSpace::IfcSpace__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_space_1a605b27aed90e84562744f97e774c5fbb"></span><code class="sig-name descname">IfcSpace</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc18IfcSpace8IfcSpaceEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc18IfcSpace8IfcSpaceENSt6stringEPN10Ifc4x3_rc115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN10Ifc4x3_rc118IfcObjectPlacementEPN10Ifc4x3_rc124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN10Ifc4x3_rc125IfcElementCompositionEnum5ValueEEEN5boost8optionalIN10Ifc4x3_rc116IfcSpaceTypeEnum5ValueEEEN5boost8optionalIdEE">
+<span id="_CPPv3N10Ifc4x3_rc18IfcSpace8IfcSpaceENSt6stringEPN10Ifc4x3_rc115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN10Ifc4x3_rc118IfcObjectPlacementEPN10Ifc4x3_rc124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN10Ifc4x3_rc125IfcElementCompositionEnum5ValueEEEN5boost8optionalIN10Ifc4x3_rc116IfcSpaceTypeEnum5ValueEEEN5boost8optionalIdEE"></span><span id="_CPPv2N10Ifc4x3_rc18IfcSpace8IfcSpaceENSt6stringEPN10Ifc4x3_rc115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN10Ifc4x3_rc118IfcObjectPlacementEPN10Ifc4x3_rc124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN10Ifc4x3_rc125IfcElementCompositionEnum5ValueEEEN5boost8optionalIN10Ifc4x3_rc116IfcSpaceTypeEnum5ValueEEEN5boost8optionalIdEE"></span><span id="Ifc4x3_rc1::IfcSpace::IfcSpace__ss.Ifc4x3_rc1::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4x3_rc1::IfcObjectPlacementP.Ifc4x3_rc1::IfcProductRepresentationP.boost::optional:ss:.boost::optional:Ifc4x3_rc1::IfcElementCompositionEnum::Value:.boost::optional:Ifc4x3_rc1::IfcSpaceTypeEnum::Value:.boost::optional:double:"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_space_1ace0fb138e658a21e428b9814c824678d"></span><code class="sig-name descname">IfcSpace</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_owner_history.html#_CPPv4N10Ifc4x3_rc115IfcOwnerHistoryE" title="Ifc4x3_rc1::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_object_placement.html#_CPPv4N10Ifc4x3_rc118IfcObjectPlacementE" title="Ifc4x3_rc1::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_product_representation.html#_CPPv4N10Ifc4x3_rc124IfcProductRepresentationE" title="Ifc4x3_rc1::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, boost::optional&lt;std::string&gt; <em>v8_LongName</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc125IfcElementCompositionEnumE" title="Ifc4x3_rc1::IfcElementCompositionEnum">IfcElementCompositionEnum</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc125IfcElementCompositionEnum5ValueE" title="Ifc4x3_rc1::IfcElementCompositionEnum::Value">Value</a>&gt; <em>v9_CompositionType</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc116IfcSpaceTypeEnumE" title="Ifc4x3_rc1::IfcSpaceTypeEnum">IfcSpaceTypeEnum</a>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc116IfcSpaceTypeEnum5ValueE" title="Ifc4x3_rc1::IfcSpaceTypeEnum::Value">Value</a>&gt; <em>v10_PredefinedType</em>, boost::optional&lt;double&gt; <em>v11_ElevationWithFlooring</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc18IfcSpace8IfcSpaceENSt6stringEPN10Ifc4x3_rc115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN10Ifc4x3_rc118IfcObjectPlacementEPN10Ifc4x3_rc124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN10Ifc4x3_rc125IfcElementCompositionEnum5ValueEEEN5boost8optionalIN10Ifc4x3_rc116IfcSpaceTypeEnum5ValueEEEN5boost8optionalIdEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc18IfcSpace5ClassEv">
+<span id="_CPPv3N10Ifc4x3_rc18IfcSpace5ClassEv"></span><span id="_CPPv2N10Ifc4x3_rc18IfcSpace5ClassEv"></span><span id="Ifc4x3_rc1::IfcSpace::Class"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_space_1a46d7170db028aec2909313f3dd435d7e"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc18IfcSpace5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x3__rc1_1_1_ifc_sound_pressure_measure.html" title="previous chapter">Class Ifc4x3_rc1::IfcSoundPressureMeasure</a></li>
+      <li>Next: <a href="class_ifc4x3__rc1_1_1_ifc_space_heater.html" title="next chapter">Class Ifc4x3_rc1::IfcSpaceHeater</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x3__rc1_1_1_ifc_space.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

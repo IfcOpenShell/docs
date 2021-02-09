@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a71563f34db8acf82363601d9729df0f5:
+
+Define SCHEMA_IfcDirection_HAS_DirectionRatios
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDirection_HAS_DirectionRatios

@@ -1,0 +1,22 @@
+.. _exhale_struct_struct_ifc4_1_1_ifc_curve_interpolation_enum:
+
+Struct Ifc4::IfcCurveInterpolationEnum
+======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Ifc4::IfcCurveInterpolationEnum
+   :members:
+   :protected-members:
+   :undoc-members:

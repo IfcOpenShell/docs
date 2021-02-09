@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1aad420ab77bd11d313f7356acea6ec1fa:
+
+Define SCHEMA_HAS_IfcResourceLevelRelationship
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcResourceLevelRelationship

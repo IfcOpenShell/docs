@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcSimplePropertyTemplate &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcSite" href="class_ifc4_1_1_ifc_site.html" />
+    <link rel="prev" title="Class Ifc4::IfcSimpleProperty" href="class_ifc4_1_1_ifc_simple_property.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcsimplepropertytemplate">
+<span id="exhale-class-class-ifc4-1-1-ifc-simple-property-template"></span><h1>Class Ifc4::IfcSimplePropertyTemplate<a class="headerlink" href="#class-ifc4-ifcsimplepropertytemplate" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcPropertyTemplate</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_property_template.html#exhale-class-class-ifc4-1-1-ifc-property-template"><span class="std std-ref">Class Ifc4::IfcPropertyTemplate</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc425IfcSimplePropertyTemplateE">
+<span id="_CPPv3N4Ifc425IfcSimplePropertyTemplateE"></span><span id="_CPPv2N4Ifc425IfcSimplePropertyTemplateE"></span><span id="Ifc4::IfcSimplePropertyTemplate"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcSimplePropertyTemplate</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_property_template.html#_CPPv4N4Ifc419IfcPropertyTemplateE" title="Ifc4::IfcPropertyTemplate">IfcPropertyTemplate</a><a class="headerlink" href="#_CPPv4N4Ifc425IfcSimplePropertyTemplateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_simple_property_template"><span class="std std-ref">IfcSimplePropertyTemplate</span></a> defines the template for all dynamically extensible properties, either the subtypes of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_simple_property"><span class="std std-ref">IfcSimpleProperty</span></a>, or the subtypes of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_physical_simple_quantity"><span class="std std-ref">IfcPhysicalSimpleQuantity</span></a>. The individual property templates are interpreted according to their Name attribute and may have a predefined template type, property units, and property data types. The correct interpretation of the attributes:</p>
+<p>PrimaryUnit SecondaryUnit PrimaryDataType SecondaryDataType</p>
+<p>is determined by the TemplateType. The TemplateType also controls, which subtype of either <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_simple_property"><span class="std std-ref">IfcSimpleProperty</span></a> or <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_physical_simple_quantity"><span class="std std-ref">IfcPhysicalSimpleQuantity</span></a> shall be used for property occurrences corresponding to this template.</p>
+<p>HISTORY New entity in IFC2x4.</p>
+<p>Relationship use definition The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_simple_property_template"><span class="std std-ref">IfcSimplePropertyTemplate</span></a> is part of the set of templates included in the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_property_set_template"><span class="std std-ref">IfcPropertySetTemplate</span></a>. The template can be accessed throught the inverse attribute PartOfPsetTemplate The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_property_set_template"><span class="std std-ref">IfcPropertySetTemplate</span></a> may define one or several instances of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> (or <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_element_quantity"><span class="std std-ref">IfcElementQuantity</span></a>). The definition assignment is established by the objectified relationship <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_defines_by_template"><span class="std std-ref">IfcRelDefinesByTemplate</span></a>. There is no direct link between an <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_simple_property_template"><span class="std std-ref">IfcSimplePropertyTemplate</span></a> and a subtype of either <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_simple_property"><span class="std std-ref">IfcSimpleProperty</span></a> or <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_physical_simple_quantity"><span class="std std-ref">IfcPhysicalSimpleQuantity</span></a>. The definition relationship between the template and the individual properties (or quantities) is established by the Name attributes.</p>
+<p>Constraints at <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_property_set_template"><span class="std std-ref">IfcPropertySetTemplate</span></a> and <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> (and <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_element_quantity"><span class="std std-ref">IfcElementQuantity</span></a>) guarantee that the Name attributes of included property templates and individual properties are unique.</p>
+<p>Figure 9 — Property template relationships </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc425IfcSimplePropertyTemplate4listE">
+<span id="_CPPv3N4Ifc425IfcSimplePropertyTemplate4listE"></span><span id="_CPPv2N4Ifc425IfcSimplePropertyTemplate4listE"></span><span id="Ifc4::IfcSimplePropertyTemplate::list"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1abf554f2bb170b9407d5730583021a398"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc425IfcSimplePropertyTemplateE" title="Ifc4::IfcSimplePropertyTemplate">IfcSimplePropertyTemplate</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc425IfcSimplePropertyTemplate4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc425IfcSimplePropertyTemplate15hasTemplateTypeEv">
+<span id="_CPPv3NK4Ifc425IfcSimplePropertyTemplate15hasTemplateTypeEv"></span><span id="_CPPv2NK4Ifc425IfcSimplePropertyTemplate15hasTemplateTypeEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::hasTemplateTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1a1dfce0914479f4fb15cc351d794b3206"></span>bool <code class="sig-name descname">hasTemplateType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc425IfcSimplePropertyTemplate15hasTemplateTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute TemplateType is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_simple_property_template"><span class="std std-ref">IfcSimplePropertyTemplate</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc425IfcSimplePropertyTemplate12TemplateTypeEv">
+<span id="_CPPv3NK4Ifc425IfcSimplePropertyTemplate12TemplateTypeEv"></span><span id="_CPPv2NK4Ifc425IfcSimplePropertyTemplate12TemplateTypeEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::TemplateTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1ad61e32c6c74b500c76c56defcc1c466b"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc433IfcSimplePropertyTemplateTypeEnumE" title="Ifc4::IfcSimplePropertyTemplateTypeEnum">IfcSimplePropertyTemplateTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc433IfcSimplePropertyTemplateTypeEnum5ValueE" title="Ifc4::IfcSimplePropertyTemplateTypeEnum::Value">Value</a> <code class="sig-name descname">TemplateType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc425IfcSimplePropertyTemplate12TemplateTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Property type defining whether the property template defines a property with a single value, a bounded value, a list value, a table value, an enumerated value, or a reference value. Or the quantity type defining whether the template defines a quantity with a length, area, volume, weight or time value.</p>
+<p>NOTE the value of this property determines the correct use of the PrimaryUnit, SecondaryUnit, PrimaryDataType, SecondaryDataType, and Expression attributes. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc425IfcSimplePropertyTemplate15setTemplateTypeEN4Ifc433IfcSimplePropertyTemplateTypeEnum5ValueE">
+<span id="_CPPv3N4Ifc425IfcSimplePropertyTemplate15setTemplateTypeEN4Ifc433IfcSimplePropertyTemplateTypeEnum5ValueE"></span><span id="_CPPv2N4Ifc425IfcSimplePropertyTemplate15setTemplateTypeEN4Ifc433IfcSimplePropertyTemplateTypeEnum5ValueE"></span><span id="Ifc4::IfcSimplePropertyTemplate::setTemplateType__Ifc4::IfcSimplePropertyTemplateTypeEnum::Value"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1a2c359003621f0106ab7e68fc1d495aec"></span>void <code class="sig-name descname">setTemplateType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc433IfcSimplePropertyTemplateTypeEnumE" title="Ifc4::IfcSimplePropertyTemplateTypeEnum">IfcSimplePropertyTemplateTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc433IfcSimplePropertyTemplateTypeEnum5ValueE" title="Ifc4::IfcSimplePropertyTemplateTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc425IfcSimplePropertyTemplate15setTemplateTypeEN4Ifc433IfcSimplePropertyTemplateTypeEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc425IfcSimplePropertyTemplate21hasPrimaryMeasureTypeEv">
+<span id="_CPPv3NK4Ifc425IfcSimplePropertyTemplate21hasPrimaryMeasureTypeEv"></span><span id="_CPPv2NK4Ifc425IfcSimplePropertyTemplate21hasPrimaryMeasureTypeEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::hasPrimaryMeasureTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1a35495e80046c2c4fc38b170d3c362c2d"></span>bool <code class="sig-name descname">hasPrimaryMeasureType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc425IfcSimplePropertyTemplate21hasPrimaryMeasureTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute PrimaryMeasureType is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_simple_property_template"><span class="std std-ref">IfcSimplePropertyTemplate</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc425IfcSimplePropertyTemplate18PrimaryMeasureTypeEv">
+<span id="_CPPv3NK4Ifc425IfcSimplePropertyTemplate18PrimaryMeasureTypeEv"></span><span id="_CPPv2NK4Ifc425IfcSimplePropertyTemplate18PrimaryMeasureTypeEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::PrimaryMeasureTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1af38aa788055706f23050bc4d5ec2f2c4"></span>std::string <code class="sig-name descname">PrimaryMeasureType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc425IfcSimplePropertyTemplate18PrimaryMeasureTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc425IfcSimplePropertyTemplate21setPrimaryMeasureTypeENSt6stringE">
+<span id="_CPPv3N4Ifc425IfcSimplePropertyTemplate21setPrimaryMeasureTypeENSt6stringE"></span><span id="_CPPv2N4Ifc425IfcSimplePropertyTemplate21setPrimaryMeasureTypeENSt6stringE"></span><span id="Ifc4::IfcSimplePropertyTemplate::setPrimaryMeasureType__ss"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1a009268228c1b12daa86ad74178bcf996"></span>void <code class="sig-name descname">setPrimaryMeasureType</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc425IfcSimplePropertyTemplate21setPrimaryMeasureTypeENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc425IfcSimplePropertyTemplate23hasSecondaryMeasureTypeEv">
+<span id="_CPPv3NK4Ifc425IfcSimplePropertyTemplate23hasSecondaryMeasureTypeEv"></span><span id="_CPPv2NK4Ifc425IfcSimplePropertyTemplate23hasSecondaryMeasureTypeEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::hasSecondaryMeasureTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1aea4424616c36b4bd3b3df9524c56aad6"></span>bool <code class="sig-name descname">hasSecondaryMeasureType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc425IfcSimplePropertyTemplate23hasSecondaryMeasureTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute SecondaryMeasureType is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_simple_property_template"><span class="std std-ref">IfcSimplePropertyTemplate</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc425IfcSimplePropertyTemplate20SecondaryMeasureTypeEv">
+<span id="_CPPv3NK4Ifc425IfcSimplePropertyTemplate20SecondaryMeasureTypeEv"></span><span id="_CPPv2NK4Ifc425IfcSimplePropertyTemplate20SecondaryMeasureTypeEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::SecondaryMeasureTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1a49cb8dec25858e28baeb42591da2c851"></span>std::string <code class="sig-name descname">SecondaryMeasureType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc425IfcSimplePropertyTemplate20SecondaryMeasureTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc425IfcSimplePropertyTemplate23setSecondaryMeasureTypeENSt6stringE">
+<span id="_CPPv3N4Ifc425IfcSimplePropertyTemplate23setSecondaryMeasureTypeENSt6stringE"></span><span id="_CPPv2N4Ifc425IfcSimplePropertyTemplate23setSecondaryMeasureTypeENSt6stringE"></span><span id="Ifc4::IfcSimplePropertyTemplate::setSecondaryMeasureType__ss"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1a1318b918b1c8d086a9ed2793d5b1365a"></span>void <code class="sig-name descname">setSecondaryMeasureType</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc425IfcSimplePropertyTemplate23setSecondaryMeasureTypeENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc425IfcSimplePropertyTemplate14hasEnumeratorsEv">
+<span id="_CPPv3NK4Ifc425IfcSimplePropertyTemplate14hasEnumeratorsEv"></span><span id="_CPPv2NK4Ifc425IfcSimplePropertyTemplate14hasEnumeratorsEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::hasEnumeratorsC"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1a7449442b78fba5f5286abc717d67ac48"></span>bool <code class="sig-name descname">hasEnumerators</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc425IfcSimplePropertyTemplate14hasEnumeratorsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Enumerators is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_simple_property_template"><span class="std std-ref">IfcSimplePropertyTemplate</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc425IfcSimplePropertyTemplate11EnumeratorsEv">
+<span id="_CPPv3NK4Ifc425IfcSimplePropertyTemplate11EnumeratorsEv"></span><span id="_CPPv2NK4Ifc425IfcSimplePropertyTemplate11EnumeratorsEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::EnumeratorsC"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1aee201e3164c08c017e93348f285e1a63"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_property_enumeration.html#_CPPv4N4Ifc422IfcPropertyEnumerationE" title="Ifc4::IfcPropertyEnumeration">IfcPropertyEnumeration</a> *<code class="sig-name descname">Enumerators</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc425IfcSimplePropertyTemplate11EnumeratorsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc425IfcSimplePropertyTemplate14setEnumeratorsEPN4Ifc422IfcPropertyEnumerationE">
+<span id="_CPPv3N4Ifc425IfcSimplePropertyTemplate14setEnumeratorsEPN4Ifc422IfcPropertyEnumerationE"></span><span id="_CPPv2N4Ifc425IfcSimplePropertyTemplate14setEnumeratorsEPN4Ifc422IfcPropertyEnumerationE"></span><span id="Ifc4::IfcSimplePropertyTemplate::setEnumerators__Ifc4::IfcPropertyEnumerationP"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1abac8034a5585a7d3f71f06a34e6071e0"></span>void <code class="sig-name descname">setEnumerators</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_property_enumeration.html#_CPPv4N4Ifc422IfcPropertyEnumerationE" title="Ifc4::IfcPropertyEnumeration">IfcPropertyEnumeration</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc425IfcSimplePropertyTemplate14setEnumeratorsEPN4Ifc422IfcPropertyEnumerationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc425IfcSimplePropertyTemplate14hasPrimaryUnitEv">
+<span id="_CPPv3NK4Ifc425IfcSimplePropertyTemplate14hasPrimaryUnitEv"></span><span id="_CPPv2NK4Ifc425IfcSimplePropertyTemplate14hasPrimaryUnitEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::hasPrimaryUnitC"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1a0a0400f043bea3797e930fd9c751d803"></span>bool <code class="sig-name descname">hasPrimaryUnit</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc425IfcSimplePropertyTemplate14hasPrimaryUnitEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute PrimaryUnit is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_simple_property_template"><span class="std std-ref">IfcSimplePropertyTemplate</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc425IfcSimplePropertyTemplate11PrimaryUnitEv">
+<span id="_CPPv3NK4Ifc425IfcSimplePropertyTemplate11PrimaryUnitEv"></span><span id="_CPPv2NK4Ifc425IfcSimplePropertyTemplate11PrimaryUnitEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::PrimaryUnitC"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1a6b8f8c7661ccbe868f4664fe3415fd6e"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc47IfcUnitE" title="Ifc4::IfcUnit">IfcUnit</a> *<code class="sig-name descname">PrimaryUnit</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc425IfcSimplePropertyTemplate11PrimaryUnitEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Primary unit assigned to the definition of the property. It should be provided, if the PropertyType is set to:</p>
+<p>P_SINGLEVALUE: determining the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_property_single_value_1ab09da76843cc7c477ed154b27fb1ecbd"><span class="std std-ref">IfcPropertySingleValue.Unit</span></a> P_ENUMERATEDVALUE: determining the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_property_enumeration_1a533c728ee6793eccb813903bf51245b1"><span class="std std-ref">IfcPropertyEnumeration.Unit</span></a> P_BOUNDEDVALUE: determining the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_property_bounded_value_1a4754be39aa9188df8479e04bfd9794a2"><span class="std std-ref">IfcPropertyBoundedValue.Unit</span></a> P_LISTVALUE: determining the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_property_list_value_1af799c1f7ac4bdb4127db9caa8a973956"><span class="std std-ref">IfcPropertyListValue.Unit</span></a> P_TABLEVALUE: determining the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_property_table_value_1aadfe4bc5c0c71de7c5a38db404263c4a"><span class="std std-ref">IfcPropertyTableValue.DefiningUnit</span></a> </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc425IfcSimplePropertyTemplate14setPrimaryUnitEPN4Ifc47IfcUnitE">
+<span id="_CPPv3N4Ifc425IfcSimplePropertyTemplate14setPrimaryUnitEPN4Ifc47IfcUnitE"></span><span id="_CPPv2N4Ifc425IfcSimplePropertyTemplate14setPrimaryUnitEPN4Ifc47IfcUnitE"></span><span id="Ifc4::IfcSimplePropertyTemplate::setPrimaryUnit__Ifc4::IfcUnitP"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1a4bf83a34fe2523066f1bbea8a64afa06"></span>void <code class="sig-name descname">setPrimaryUnit</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc47IfcUnitE" title="Ifc4::IfcUnit">IfcUnit</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc425IfcSimplePropertyTemplate14setPrimaryUnitEPN4Ifc47IfcUnitE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc425IfcSimplePropertyTemplate16hasSecondaryUnitEv">
+<span id="_CPPv3NK4Ifc425IfcSimplePropertyTemplate16hasSecondaryUnitEv"></span><span id="_CPPv2NK4Ifc425IfcSimplePropertyTemplate16hasSecondaryUnitEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::hasSecondaryUnitC"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1a68e4719b755700cd20aab6bd58009942"></span>bool <code class="sig-name descname">hasSecondaryUnit</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc425IfcSimplePropertyTemplate16hasSecondaryUnitEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute SecondaryUnit is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_simple_property_template"><span class="std std-ref">IfcSimplePropertyTemplate</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc425IfcSimplePropertyTemplate13SecondaryUnitEv">
+<span id="_CPPv3NK4Ifc425IfcSimplePropertyTemplate13SecondaryUnitEv"></span><span id="_CPPv2NK4Ifc425IfcSimplePropertyTemplate13SecondaryUnitEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::SecondaryUnitC"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1aaf7505e421f8e639d3830ac4601fcf20"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc47IfcUnitE" title="Ifc4::IfcUnit">IfcUnit</a> *<code class="sig-name descname">SecondaryUnit</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc425IfcSimplePropertyTemplate13SecondaryUnitEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Secondary unit assigned to the definition of the property. It should be provided, if the PropertyType is set to:</p>
+<p>P_TABLEVALUE: determining the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_property_table_value_1a693994431658a6f058bd07126422a597"><span class="std std-ref">IfcPropertyTableValue.DefinedUnit</span></a> </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc425IfcSimplePropertyTemplate16setSecondaryUnitEPN4Ifc47IfcUnitE">
+<span id="_CPPv3N4Ifc425IfcSimplePropertyTemplate16setSecondaryUnitEPN4Ifc47IfcUnitE"></span><span id="_CPPv2N4Ifc425IfcSimplePropertyTemplate16setSecondaryUnitEPN4Ifc47IfcUnitE"></span><span id="Ifc4::IfcSimplePropertyTemplate::setSecondaryUnit__Ifc4::IfcUnitP"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1ab5f388ecad46a525b221c3d8ea5afaaa"></span>void <code class="sig-name descname">setSecondaryUnit</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc47IfcUnitE" title="Ifc4::IfcUnit">IfcUnit</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc425IfcSimplePropertyTemplate16setSecondaryUnitEPN4Ifc47IfcUnitE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc425IfcSimplePropertyTemplate13hasExpressionEv">
+<span id="_CPPv3NK4Ifc425IfcSimplePropertyTemplate13hasExpressionEv"></span><span id="_CPPv2NK4Ifc425IfcSimplePropertyTemplate13hasExpressionEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::hasExpressionC"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1ae00d7f6b3ae006257e04abf5e71c6f1c"></span>bool <code class="sig-name descname">hasExpression</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc425IfcSimplePropertyTemplate13hasExpressionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Expression is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_simple_property_template"><span class="std std-ref">IfcSimplePropertyTemplate</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc425IfcSimplePropertyTemplate10ExpressionEv">
+<span id="_CPPv3NK4Ifc425IfcSimplePropertyTemplate10ExpressionEv"></span><span id="_CPPv2NK4Ifc425IfcSimplePropertyTemplate10ExpressionEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::ExpressionC"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1a84375c6636f0bcfed5ebc6a475431589"></span>std::string <code class="sig-name descname">Expression</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc425IfcSimplePropertyTemplate10ExpressionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The expression used to store additional information for the property template depending on the PropertyType. It should the following definitions, if the PropertyType is set to:</p>
+<p>P_TABLEVALUE: the expression that could be evaluated to define the correlation between the defining values and the defined values. Q_LENGTH, Q_AREA, Q_VOLUME, Q_COUNT, Q_WEIGTH, Q_TIME: the formula to be used to calculate the quantity</p>
+<p>NOTE No value shall be asserted if the PropertyType is not listed above. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc425IfcSimplePropertyTemplate13setExpressionENSt6stringE">
+<span id="_CPPv3N4Ifc425IfcSimplePropertyTemplate13setExpressionENSt6stringE"></span><span id="_CPPv2N4Ifc425IfcSimplePropertyTemplate13setExpressionENSt6stringE"></span><span id="Ifc4::IfcSimplePropertyTemplate::setExpression__ss"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1aa348c21abd8ba43a1dd4a039ba0bb03d"></span>void <code class="sig-name descname">setExpression</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc425IfcSimplePropertyTemplate13setExpressionENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc425IfcSimplePropertyTemplate14hasAccessStateEv">
+<span id="_CPPv3NK4Ifc425IfcSimplePropertyTemplate14hasAccessStateEv"></span><span id="_CPPv2NK4Ifc425IfcSimplePropertyTemplate14hasAccessStateEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::hasAccessStateC"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1aa23d19743b117b3eadfa8f93a122fa83"></span>bool <code class="sig-name descname">hasAccessState</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc425IfcSimplePropertyTemplate14hasAccessStateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute AccessState is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_simple_property_template"><span class="std std-ref">IfcSimplePropertyTemplate</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc425IfcSimplePropertyTemplate11AccessStateEv">
+<span id="_CPPv3NK4Ifc425IfcSimplePropertyTemplate11AccessStateEv"></span><span id="_CPPv2NK4Ifc425IfcSimplePropertyTemplate11AccessStateEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::AccessStateC"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1a34909a951fd3f5d3a1da9e50de385c82"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc412IfcStateEnumE" title="Ifc4::IfcStateEnum">IfcStateEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc412IfcStateEnum5ValueE" title="Ifc4::IfcStateEnum::Value">Value</a> <code class="sig-name descname">AccessState</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc425IfcSimplePropertyTemplate11AccessStateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Information about the access state of the property. It determines whether a property be viewed and/or modified by any receiving application without specific knowledge of it. Attribute use definition for <a class="reference internal" href="struct_ifc4_1_1_ifc_state_enum.html#struct_ifc4_1_1_ifc_state_enum"><span class="std std-ref">IfcStateEnum</span></a></p>
+<p>READWRITE: Properties of this template are readable and writable. They may be viewed and modified by users of any application. These are typical informational properties set by a user.</p>
+<p>READONLY: Properties of this template are read-only. They may be viewed but not modified by users of any application. (Applications may generate such values). These are typical automatically generated properties that should be displayed only, but not written back.</p>
+<p>LOCKED: Properties of this template are locked. They may only be accessed by the owning application (the publisher of the property set template). These are typically application depended, internal properties that should not be published.</p>
+<p>READWRITELOCKED: Properties of this template are locked, readable, and writable. They may only be accessed by the owning application.</p>
+<p>READONLYLOCKED: Properties of this template are locked and read-only. They may only be accessed by the owning application. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc425IfcSimplePropertyTemplate14setAccessStateEN4Ifc412IfcStateEnum5ValueE">
+<span id="_CPPv3N4Ifc425IfcSimplePropertyTemplate14setAccessStateEN4Ifc412IfcStateEnum5ValueE"></span><span id="_CPPv2N4Ifc425IfcSimplePropertyTemplate14setAccessStateEN4Ifc412IfcStateEnum5ValueE"></span><span id="Ifc4::IfcSimplePropertyTemplate::setAccessState__Ifc4::IfcStateEnum::Value"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1ac82f3446fbe3fbe29c59e9a1f285947e"></span>void <code class="sig-name descname">setAccessState</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc412IfcStateEnumE" title="Ifc4::IfcStateEnum">IfcStateEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc412IfcStateEnum5ValueE" title="Ifc4::IfcStateEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc425IfcSimplePropertyTemplate14setAccessStateEN4Ifc412IfcStateEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc425IfcSimplePropertyTemplate11declarationEv">
+<span id="_CPPv3NK4Ifc425IfcSimplePropertyTemplate11declarationEv"></span><span id="_CPPv2NK4Ifc425IfcSimplePropertyTemplate11declarationEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1a40bed7b7c95ecf7533b3c3a1400c32d6"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc425IfcSimplePropertyTemplate11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc425IfcSimplePropertyTemplate25IfcSimplePropertyTemplateEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc425IfcSimplePropertyTemplate25IfcSimplePropertyTemplateEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc425IfcSimplePropertyTemplate25IfcSimplePropertyTemplateEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcSimplePropertyTemplate::IfcSimplePropertyTemplate__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1a4793e655c3f27faaa2e7e24d24a29fd3"></span><code class="sig-name descname">IfcSimplePropertyTemplate</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc425IfcSimplePropertyTemplate25IfcSimplePropertyTemplateEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc425IfcSimplePropertyTemplate25IfcSimplePropertyTemplateENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc433IfcSimplePropertyTemplateTypeEnum5ValueEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc422IfcPropertyEnumerationEPN4Ifc47IfcUnitEPN4Ifc47IfcUnitEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc412IfcStateEnum5ValueEEE">
+<span id="_CPPv3N4Ifc425IfcSimplePropertyTemplate25IfcSimplePropertyTemplateENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc433IfcSimplePropertyTemplateTypeEnum5ValueEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc422IfcPropertyEnumerationEPN4Ifc47IfcUnitEPN4Ifc47IfcUnitEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc412IfcStateEnum5ValueEEE"></span><span id="_CPPv2N4Ifc425IfcSimplePropertyTemplate25IfcSimplePropertyTemplateENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc433IfcSimplePropertyTemplateTypeEnum5ValueEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc422IfcPropertyEnumerationEPN4Ifc47IfcUnitEPN4Ifc47IfcUnitEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc412IfcStateEnum5ValueEEE"></span><span id="Ifc4::IfcSimplePropertyTemplate::IfcSimplePropertyTemplate__ss.Ifc4::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:Ifc4::IfcSimplePropertyTemplateTypeEnum::Value:.boost::optional:ss:.boost::optional:ss:.Ifc4::IfcPropertyEnumerationP.Ifc4::IfcUnitP.Ifc4::IfcUnitP.boost::optional:ss:.boost::optional:Ifc4::IfcStateEnum::Value:"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1a1df3cada2cb691b2f52ea37ed12b0380"></span><code class="sig-name descname">IfcSimplePropertyTemplate</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_owner_history.html#_CPPv4N4Ifc415IfcOwnerHistoryE" title="Ifc4::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc433IfcSimplePropertyTemplateTypeEnumE" title="Ifc4::IfcSimplePropertyTemplateTypeEnum">IfcSimplePropertyTemplateTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc433IfcSimplePropertyTemplateTypeEnum5ValueE" title="Ifc4::IfcSimplePropertyTemplateTypeEnum::Value">Value</a>&gt; <em>v5_TemplateType</em>, boost::optional&lt;std::string&gt; <em>v6_PrimaryMeasureType</em>, boost::optional&lt;std::string&gt; <em>v7_SecondaryMeasureType</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_property_enumeration.html#_CPPv4N4Ifc422IfcPropertyEnumerationE" title="Ifc4::IfcPropertyEnumeration">IfcPropertyEnumeration</a> *<em>v8_Enumerators</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc47IfcUnitE" title="Ifc4::IfcUnit">IfcUnit</a> *<em>v9_PrimaryUnit</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc47IfcUnitE" title="Ifc4::IfcUnit">IfcUnit</a> *<em>v10_SecondaryUnit</em>, boost::optional&lt;std::string&gt; <em>v11_Expression</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc412IfcStateEnumE" title="Ifc4::IfcStateEnum">IfcStateEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc412IfcStateEnum5ValueE" title="Ifc4::IfcStateEnum::Value">Value</a>&gt; <em>v12_AccessState</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc425IfcSimplePropertyTemplate25IfcSimplePropertyTemplateENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc433IfcSimplePropertyTemplateTypeEnum5ValueEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc422IfcPropertyEnumerationEPN4Ifc47IfcUnitEPN4Ifc47IfcUnitEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc412IfcStateEnum5ValueEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc425IfcSimplePropertyTemplate5ClassEv">
+<span id="_CPPv3N4Ifc425IfcSimplePropertyTemplate5ClassEv"></span><span id="_CPPv2N4Ifc425IfcSimplePropertyTemplate5ClassEv"></span><span id="Ifc4::IfcSimplePropertyTemplate::Class"></span><span class="target" id="class_ifc4_1_1_ifc_simple_property_template_1ad230d617b50bee147466e09cebd91160"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc425IfcSimplePropertyTemplate5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_simple_property.html" title="previous chapter">Class Ifc4::IfcSimpleProperty</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_site.html" title="next chapter">Class Ifc4::IfcSite</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_simple_property_template.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

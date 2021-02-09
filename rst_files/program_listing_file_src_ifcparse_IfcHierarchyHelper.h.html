@@ -1,0 +1,498 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Listing for File IfcHierarchyHelper.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="program-listing-for-file-ifchierarchyhelper-h">
+<span id="program-listing-file-src-ifcparse-ifchierarchyhelper-h"></span><h1>Program Listing for File IfcHierarchyHelper.h<a class="headerlink" href="#program-listing-for-file-ifchierarchyhelper-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_ifcparse_IfcHierarchyHelper.h.html#file-src-ifcparse-ifchierarchyhelper-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/ifcparse/IfcHierarchyHelper.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/********************************************************************************</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * This file is part of IfcOpenShell.                                           *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcOpenShell is free software: you can redistribute it and/or modify         *</span>
+<span class="cm"> * it under the terms of the Lesser GNU General Public License as published by  *</span>
+<span class="cm"> * the Free Software Foundation, either version 3.0 of the License, or          *</span>
+<span class="cm"> * (at your option) any later version.                                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcOpenShell is distributed in the hope that it will be useful,              *</span>
+<span class="cm"> * but WITHOUT ANY WARRANTY; without even the implied warranty of               *</span>
+<span class="cm"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 *</span>
+<span class="cm"> * Lesser GNU General Public License for more details.                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * You should have received a copy of the Lesser GNU General Public License     *</span>
+<span class="cm"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.         *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> ********************************************************************************/</span>
+
+<span class="cm">/********************************************************************************</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * This class is a subclass of the regular IfcFile class that implements        *</span>
+<span class="cm"> * several convenience functions for creating geometrical representations and   *</span>
+<span class="cm"> * spatial containers.                                                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> ********************************************************************************/</span>
+
+<span class="cp">#ifndef IFCHIERARCHYHELPER_H</span>
+<span class="cp">#define IFCHIERARCHYHELPER_H</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;map&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;ifc_parse_api.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/Ifc2x3.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/Ifc4.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/Ifc4x1.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/Ifc4x2.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/Ifc4x3_rc1.h&quot;</span><span class="cp"></span>
+
+
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcFile.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcWrite.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcGlobalId.h&quot;</span><span class="cp"></span>
+
+<span class="k">namespace</span> <span class="p">{</span>
+    <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">get_parent_of_relation</span><span class="p">(</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="o">*</span><span class="n">t</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">().</span><span class="n">getArgument</span><span class="p">(</span>
+            <span class="n">t</span><span class="o">-&gt;</span><span class="n">declaration</span><span class="p">().</span><span class="n">as_entity</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">attribute_index</span><span class="p">(</span><span class="s">&quot;RelatingObject&quot;</span><span class="p">)</span>
+        <span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">Ifc2x3</span><span class="o">::</span><span class="n">IfcObjectDefinition</span><span class="o">*</span> <span class="n">get_parent_of_relation</span><span class="p">(</span><span class="n">Ifc2x3</span><span class="o">::</span><span class="n">IfcRelContainedInSpatialStructure</span><span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">t</span><span class="o">-&gt;</span><span class="n">RelatingStructure</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="n">Ifc4</span><span class="o">::</span><span class="n">IfcObjectDefinition</span><span class="o">*</span> <span class="n">get_parent_of_relation</span><span class="p">(</span><span class="n">Ifc4</span><span class="o">::</span><span class="n">IfcRelContainedInSpatialStructure</span><span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">t</span><span class="o">-&gt;</span><span class="n">RelatingStructure</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="n">Ifc4x1</span><span class="o">::</span><span class="n">IfcObjectDefinition</span><span class="o">*</span> <span class="n">get_parent_of_relation</span><span class="p">(</span><span class="n">Ifc4x1</span><span class="o">::</span><span class="n">IfcRelContainedInSpatialStructure</span><span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">t</span><span class="o">-&gt;</span><span class="n">RelatingStructure</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="n">Ifc4x2</span><span class="o">::</span><span class="n">IfcObjectDefinition</span><span class="o">*</span> <span class="n">get_parent_of_relation</span><span class="p">(</span><span class="n">Ifc4x2</span><span class="o">::</span><span class="n">IfcRelContainedInSpatialStructure</span><span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">t</span><span class="o">-&gt;</span><span class="n">RelatingStructure</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="n">Ifc4x3_rc1</span><span class="o">::</span><span class="n">IfcObjectDefinition</span><span class="o">*</span> <span class="n">get_parent_of_relation</span><span class="p">(</span><span class="n">Ifc4x3_rc1</span><span class="o">::</span><span class="n">IfcRelContainedInSpatialStructure</span><span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">t</span><span class="o">-&gt;</span><span class="n">RelatingStructure</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">get_children_of_relation</span><span class="p">(</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="o">*</span><span class="n">t</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">().</span><span class="n">getArgument</span><span class="p">(</span>
+            <span class="n">t</span><span class="o">-&gt;</span><span class="n">declaration</span><span class="p">().</span><span class="n">as_entity</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">attribute_index</span><span class="p">(</span><span class="s">&quot;RelatedElements&quot;</span><span class="p">)</span>
+            <span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">get_children_of_relation</span><span class="p">(</span><span class="n">Ifc2x3</span><span class="o">::</span><span class="n">IfcRelContainedInSpatialStructure</span><span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">t</span><span class="o">-&gt;</span><span class="n">RelatedElements</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">generalize</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">get_children_of_relation</span><span class="p">(</span><span class="n">Ifc4</span><span class="o">::</span><span class="n">IfcRelContainedInSpatialStructure</span><span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">t</span><span class="o">-&gt;</span><span class="n">RelatedElements</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">generalize</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">get_children_of_relation</span><span class="p">(</span><span class="n">Ifc4x1</span><span class="o">::</span><span class="n">IfcRelContainedInSpatialStructure</span><span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">t</span><span class="o">-&gt;</span><span class="n">RelatedElements</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">generalize</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">get_children_of_relation</span><span class="p">(</span><span class="n">Ifc4x2</span><span class="o">::</span><span class="n">IfcRelContainedInSpatialStructure</span><span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">t</span><span class="o">-&gt;</span><span class="n">RelatedElements</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">generalize</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">get_children_of_relation</span><span class="p">(</span><span class="n">Ifc4x3_rc1</span><span class="o">::</span><span class="n">IfcRelContainedInSpatialStructure</span><span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">t</span><span class="o">-&gt;</span><span class="n">RelatedElements</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">generalize</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">get_children_of_relation</span><span class="p">(</span><span class="n">Ifc2x3</span><span class="o">::</span><span class="n">IfcRelAggregates</span><span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">t</span><span class="o">-&gt;</span><span class="n">RelatedObjects</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">generalize</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">get_children_of_relation</span><span class="p">(</span><span class="n">Ifc4</span><span class="o">::</span><span class="n">IfcRelAggregates</span><span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">t</span><span class="o">-&gt;</span><span class="n">RelatedObjects</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">generalize</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">get_children_of_relation</span><span class="p">(</span><span class="n">Ifc4x1</span><span class="o">::</span><span class="n">IfcRelAggregates</span><span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">t</span><span class="o">-&gt;</span><span class="n">RelatedObjects</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">generalize</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">get_children_of_relation</span><span class="p">(</span><span class="n">Ifc4x2</span><span class="o">::</span><span class="n">IfcRelAggregates</span><span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">t</span><span class="o">-&gt;</span><span class="n">RelatedObjects</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">generalize</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">get_children_of_relation</span><span class="p">(</span><span class="n">Ifc4x3_rc1</span><span class="o">::</span><span class="n">IfcRelAggregates</span><span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">t</span><span class="o">-&gt;</span><span class="n">RelatedObjects</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">generalize</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">set_children_of_relation</span><span class="p">(</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span><span class="o">&amp;</span> <span class="n">cs</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">IfcWrite</span><span class="o">::</span><span class="n">IfcWriteArgument</span><span class="o">*</span> <span class="n">attr</span> <span class="o">=</span> <span class="k">new</span> <span class="n">IfcWrite</span><span class="o">::</span><span class="n">IfcWriteArgument</span><span class="p">;</span>
+        <span class="n">attr</span><span class="o">-&gt;</span><span class="n">set</span><span class="p">(</span><span class="n">cs</span><span class="p">);</span>
+        <span class="n">t</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">().</span><span class="n">setArgument</span><span class="p">(</span>
+            <span class="n">t</span><span class="o">-&gt;</span><span class="n">declaration</span><span class="p">().</span><span class="n">as_entity</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">attribute_index</span><span class="p">(</span><span class="s">&quot;RelatedElements&quot;</span><span class="p">),</span>
+            <span class="n">attr</span>
+        <span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">set_children_of_relation</span><span class="p">(</span><span class="n">Ifc2x3</span><span class="o">::</span><span class="n">IfcRelContainedInSpatialStructure</span><span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span><span class="o">&amp;</span> <span class="n">cs</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">t</span><span class="o">-&gt;</span><span class="n">setRelatedElements</span><span class="p">(</span><span class="n">cs</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">Ifc2x3</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">&gt;</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">set_children_of_relation</span><span class="p">(</span><span class="n">Ifc4</span><span class="o">::</span><span class="n">IfcRelContainedInSpatialStructure</span><span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span><span class="o">&amp;</span> <span class="n">cs</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">t</span><span class="o">-&gt;</span><span class="n">setRelatedElements</span><span class="p">(</span><span class="n">cs</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">Ifc4</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">&gt;</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">set_children_of_relation</span><span class="p">(</span><span class="n">Ifc4x1</span><span class="o">::</span><span class="n">IfcRelContainedInSpatialStructure</span><span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span><span class="o">&amp;</span> <span class="n">cs</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">t</span><span class="o">-&gt;</span><span class="n">setRelatedElements</span><span class="p">(</span><span class="n">cs</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">Ifc4x1</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">&gt;</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">set_children_of_relation</span><span class="p">(</span><span class="n">Ifc4x2</span><span class="o">::</span><span class="n">IfcRelContainedInSpatialStructure</span><span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span><span class="o">&amp;</span> <span class="n">cs</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">t</span><span class="o">-&gt;</span><span class="n">setRelatedElements</span><span class="p">(</span><span class="n">cs</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">Ifc4x2</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">&gt;</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">set_children_of_relation</span><span class="p">(</span><span class="n">Ifc4x3_rc1</span><span class="o">::</span><span class="n">IfcRelContainedInSpatialStructure</span><span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span><span class="o">&amp;</span> <span class="n">cs</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">t</span><span class="o">-&gt;</span><span class="n">setRelatedElements</span><span class="p">(</span><span class="n">cs</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">Ifc4x3_rc1</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">&gt;</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">set_children_of_relation</span><span class="p">(</span><span class="n">Ifc2x3</span><span class="o">::</span><span class="n">IfcRelAggregates</span><span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span><span class="o">&amp;</span> <span class="n">cs</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">t</span><span class="o">-&gt;</span><span class="n">setRelatedObjects</span><span class="p">(</span><span class="n">cs</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">Ifc2x3</span><span class="o">::</span><span class="n">IfcObjectDefinition</span><span class="o">&gt;</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">set_children_of_relation</span><span class="p">(</span><span class="n">Ifc4</span><span class="o">::</span><span class="n">IfcRelAggregates</span><span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span><span class="o">&amp;</span> <span class="n">cs</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">t</span><span class="o">-&gt;</span><span class="n">setRelatedObjects</span><span class="p">(</span><span class="n">cs</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">Ifc4</span><span class="o">::</span><span class="n">IfcObjectDefinition</span><span class="o">&gt;</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">set_children_of_relation</span><span class="p">(</span><span class="n">Ifc4x1</span><span class="o">::</span><span class="n">IfcRelAggregates</span><span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span><span class="o">&amp;</span> <span class="n">cs</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">t</span><span class="o">-&gt;</span><span class="n">setRelatedObjects</span><span class="p">(</span><span class="n">cs</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">Ifc4x1</span><span class="o">::</span><span class="n">IfcObjectDefinition</span><span class="o">&gt;</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">set_children_of_relation</span><span class="p">(</span><span class="n">Ifc4x2</span><span class="o">::</span><span class="n">IfcRelAggregates</span><span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span><span class="o">&amp;</span> <span class="n">cs</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">t</span><span class="o">-&gt;</span><span class="n">setRelatedObjects</span><span class="p">(</span><span class="n">cs</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">Ifc4x2</span><span class="o">::</span><span class="n">IfcObjectDefinition</span><span class="o">&gt;</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">set_children_of_relation</span><span class="p">(</span><span class="n">Ifc4x3_rc1</span><span class="o">::</span><span class="n">IfcRelAggregates</span><span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span><span class="o">&amp;</span> <span class="n">cs</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">t</span><span class="o">-&gt;</span><span class="n">setRelatedObjects</span><span class="p">(</span><span class="n">cs</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">Ifc4x3_rc1</span><span class="o">::</span><span class="n">IfcObjectDefinition</span><span class="o">&gt;</span><span class="p">());</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nc">IFC_PARSE_API</span> <span class="nl">IfcHierarchyHelper</span> <span class="p">:</span> <span class="k">public</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcFile</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="n">IfcHierarchyHelper</span><span class="p">()</span> <span class="o">:</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcFile</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Schema</span><span class="o">::</span><span class="n">get_schema</span><span class="p">())</span> <span class="p">{}</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="nc">T</span><span class="o">&gt;</span>
+    <span class="n">T</span><span class="o">*</span> <span class="n">addTriplet</span><span class="p">(</span><span class="kt">double</span> <span class="n">x</span><span class="p">,</span> <span class="kt">double</span> <span class="n">y</span><span class="p">,</span> <span class="kt">double</span> <span class="n">z</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">a</span><span class="p">;</span> <span class="n">a</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">x</span><span class="p">);</span> <span class="n">a</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">y</span><span class="p">);</span> <span class="n">a</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">z</span><span class="p">);</span>
+        <span class="n">T</span><span class="o">*</span> <span class="n">t</span> <span class="o">=</span> <span class="k">new</span> <span class="n">T</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+        <span class="n">addEntity</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">t</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="nc">T</span><span class="o">&gt;</span>
+    <span class="n">T</span><span class="o">*</span> <span class="n">addDoublet</span><span class="p">(</span><span class="kt">double</span> <span class="n">x</span><span class="p">,</span> <span class="kt">double</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">a</span><span class="p">;</span> <span class="n">a</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">x</span><span class="p">);</span> <span class="n">a</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">y</span><span class="p">);</span>
+        <span class="n">T</span><span class="o">*</span> <span class="n">t</span> <span class="o">=</span> <span class="k">new</span> <span class="n">T</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+        <span class="n">addEntity</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">t</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="nc">T</span><span class="o">&gt;</span>
+    <span class="n">T</span><span class="o">*</span> <span class="n">getSingle</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">typename</span> <span class="nc">T</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">ts</span> <span class="o">=</span> <span class="n">instances_by_type</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">();</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">ts</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">()</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">return</span> <span class="o">*</span><span class="n">ts</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcAxis2Placement3D</span><span class="o">*</span> <span class="n">addPlacement3d</span><span class="p">(</span><span class="kt">double</span> <span class="n">ox</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">oy</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">oz</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+        <span class="kt">double</span> <span class="n">zx</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">zy</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">zz</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+        <span class="kt">double</span> <span class="n">xx</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">xy</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">xz</span><span class="o">=</span><span class="mf">0.0</span><span class="p">);</span>
+
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcAxis2Placement2D</span><span class="o">*</span> <span class="n">addPlacement2d</span><span class="p">(</span><span class="kt">double</span> <span class="n">ox</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">oy</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+        <span class="kt">double</span> <span class="n">xx</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">xy</span><span class="o">=</span><span class="mf">0.0</span><span class="p">);</span>
+
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcLocalPlacement</span><span class="o">*</span> <span class="n">addLocalPlacement</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcObjectPlacement</span><span class="o">*</span> <span class="n">parent</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="kt">double</span> <span class="n">ox</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">oy</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">oz</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+        <span class="kt">double</span> <span class="n">zx</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">zy</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">zz</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+        <span class="kt">double</span> <span class="n">xx</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">xy</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">xz</span><span class="o">=</span><span class="mf">0.0</span><span class="p">);</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="nc">T</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <span class="n">addRelatedObject</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcObjectDefinition</span><span class="o">*</span> <span class="n">relating_object</span><span class="p">,</span>
+        <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcObjectDefinition</span><span class="o">*</span> <span class="n">related_object</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcOwnerHistory</span><span class="o">*</span> <span class="n">owner_hist</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">typename</span> <span class="nc">T</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">li</span> <span class="o">=</span> <span class="n">instances_by_type</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">();</span>
+        <span class="kt">bool</span> <span class="n">found</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="k">typename</span> <span class="nc">T</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">it</span> <span class="n">i</span> <span class="o">=</span> <span class="n">li</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">li</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">T</span><span class="o">*</span> <span class="n">rel</span> <span class="o">=</span> <span class="o">*</span><span class="n">i</span><span class="p">;</span>
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">get_parent_of_relation</span><span class="p">(</span><span class="n">rel</span><span class="p">)</span> <span class="o">==</span> <span class="n">relating_object</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">products</span> <span class="o">=</span> <span class="n">get_children_of_relation</span><span class="p">(</span><span class="n">rel</span><span class="p">);</span>
+                    <span class="n">products</span><span class="o">-&gt;</span><span class="n">push</span><span class="p">(</span><span class="n">related_object</span><span class="p">);</span>
+                    <span class="n">set_children_of_relation</span><span class="p">(</span><span class="n">rel</span><span class="p">,</span> <span class="n">products</span><span class="p">);</span>
+                    <span class="n">found</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+                    <span class="k">break</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(...)</span> <span class="p">{</span>
+                <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="s">&quot;Unknown error in addRelatedObject()&quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span> <span class="n">found</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span> <span class="n">owner_hist</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">owner_hist</span> <span class="o">=</span> <span class="n">getSingle</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcOwnerHistory</span><span class="o">&gt;</span><span class="p">();</span>
+            <span class="p">}</span>
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span> <span class="n">owner_hist</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">owner_hist</span> <span class="o">=</span> <span class="n">addOwnerHistory</span><span class="p">();</span>
+            <span class="p">}</span>
+
+            <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">related_objects</span> <span class="p">(</span><span class="k">new</span> <span class="n">IfcEntityList</span><span class="p">);</span>
+            <span class="n">related_objects</span><span class="o">-&gt;</span><span class="n">push</span><span class="p">(</span><span class="n">related_object</span><span class="p">);</span>
+
+            <span class="n">IfcEntityInstanceData</span><span class="o">*</span> <span class="n">data</span> <span class="o">=</span> <span class="k">new</span> <span class="n">IfcEntityInstanceData</span><span class="p">(</span><span class="o">&amp;</span><span class="n">T</span><span class="o">::</span><span class="n">Class</span><span class="p">());</span>
+            <span class="p">{</span> <span class="n">IfcWrite</span><span class="o">::</span><span class="n">IfcWriteArgument</span><span class="o">*</span> <span class="n">attr</span> <span class="o">=</span> <span class="k">new</span> <span class="n">IfcWrite</span><span class="o">::</span><span class="n">IfcWriteArgument</span><span class="p">();</span> <span class="n">attr</span><span class="o">-&gt;</span><span class="n">set</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcGlobalId</span><span class="p">());</span> <span class="n">data</span><span class="o">-&gt;</span><span class="n">setArgument</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">attr</span><span class="p">);</span> <span class="p">}</span>
+            <span class="p">{</span> <span class="n">IfcWrite</span><span class="o">::</span><span class="n">IfcWriteArgument</span><span class="o">*</span> <span class="n">attr</span> <span class="o">=</span> <span class="k">new</span> <span class="n">IfcWrite</span><span class="o">::</span><span class="n">IfcWriteArgument</span><span class="p">();</span> <span class="n">attr</span><span class="o">-&gt;</span><span class="n">set</span><span class="p">(</span><span class="n">owner_hist</span><span class="p">);</span> <span class="n">data</span><span class="o">-&gt;</span><span class="n">setArgument</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">attr</span><span class="p">);</span> <span class="p">}</span>
+            <span class="kt">int</span> <span class="n">relating_index</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="n">related_index</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">T</span><span class="o">::</span><span class="n">Class</span><span class="p">().</span><span class="n">name</span><span class="p">()</span> <span class="o">==</span> <span class="s">&quot;IfcRelContainedInSpatialStructure&quot;</span><span class="p">)</span> <span class="p">{</span>
+                <span class="c1">// IfcRelContainedInSpatialStructure has attributes reversed.</span>
+                <span class="n">std</span><span class="o">::</span><span class="n">swap</span><span class="p">(</span><span class="n">relating_index</span><span class="p">,</span> <span class="n">related_index</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="p">{</span> <span class="n">IfcWrite</span><span class="o">::</span><span class="n">IfcWriteArgument</span><span class="o">*</span> <span class="n">attr</span> <span class="o">=</span> <span class="k">new</span> <span class="n">IfcWrite</span><span class="o">::</span><span class="n">IfcWriteArgument</span><span class="p">();</span> <span class="n">attr</span><span class="o">-&gt;</span><span class="n">set</span><span class="p">(</span><span class="n">relating_object</span><span class="p">);</span> <span class="n">data</span><span class="o">-&gt;</span><span class="n">setArgument</span><span class="p">(</span><span class="n">relating_index</span><span class="p">,</span> <span class="n">attr</span><span class="p">);</span> <span class="p">}</span>
+            <span class="p">{</span> <span class="n">IfcWrite</span><span class="o">::</span><span class="n">IfcWriteArgument</span><span class="o">*</span> <span class="n">attr</span> <span class="o">=</span> <span class="k">new</span> <span class="n">IfcWrite</span><span class="o">::</span><span class="n">IfcWriteArgument</span><span class="p">();</span> <span class="n">attr</span><span class="o">-&gt;</span><span class="n">set</span><span class="p">(</span><span class="n">related_objects</span><span class="p">);</span> <span class="n">data</span><span class="o">-&gt;</span><span class="n">setArgument</span><span class="p">(</span><span class="n">related_index</span><span class="p">,</span> <span class="n">attr</span><span class="p">);</span> <span class="p">}</span>
+
+            <span class="n">T</span><span class="o">*</span> <span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="n">T</span><span class="o">*</span><span class="p">)</span><span class="n">Schema</span><span class="o">::</span><span class="n">get_schema</span><span class="p">().</span><span class="n">instantiate</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
+            <span class="n">addEntity</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcOwnerHistory</span><span class="o">*</span> <span class="n">addOwnerHistory</span><span class="p">();</span>
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcProject</span><span class="o">*</span> <span class="n">addProject</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcOwnerHistory</span><span class="o">*</span> <span class="n">owner_hist</span> <span class="o">=</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="nf">relatePlacements</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span> <span class="n">parent</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span> <span class="n">product</span><span class="p">);</span>
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcSite</span><span class="o">*</span> <span class="n">addSite</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcProject</span><span class="o">*</span> <span class="n">proj</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcOwnerHistory</span><span class="o">*</span> <span class="n">owner_hist</span> <span class="o">=</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcBuilding</span><span class="o">*</span> <span class="n">addBuilding</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcSite</span><span class="o">*</span> <span class="n">site</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcOwnerHistory</span><span class="o">*</span> <span class="n">owner_hist</span> <span class="o">=</span> <span class="mi">0</span><span class="p">);</span>
+
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcBuildingStorey</span><span class="o">*</span> <span class="n">addBuildingStorey</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcBuilding</span><span class="o">*</span> <span class="n">building</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcOwnerHistory</span><span class="o">*</span> <span class="n">owner_hist</span> <span class="o">=</span> <span class="mi">0</span><span class="p">);</span>
+
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcBuildingStorey</span><span class="o">*</span> <span class="n">addBuildingProduct</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span> <span class="n">product</span><span class="p">,</span>
+        <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcBuildingStorey</span><span class="o">*</span> <span class="n">storey</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcOwnerHistory</span><span class="o">*</span> <span class="n">owner_hist</span> <span class="o">=</span> <span class="mi">0</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="nf">addExtrudedPolyline</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcShapeRepresentation</span><span class="o">*</span> <span class="n">rep</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="kt">double</span><span class="o">&gt;</span> <span class="o">&gt;&amp;</span> <span class="n">points</span><span class="p">,</span> <span class="kt">double</span> <span class="n">h</span><span class="p">,</span>
+        <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcAxis2Placement2D</span><span class="o">*</span> <span class="n">place</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcAxis2Placement3D</span><span class="o">*</span> <span class="n">place2</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcDirection</span><span class="o">*</span> <span class="n">dir</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcRepresentationContext</span><span class="o">*</span> <span class="n">context</span><span class="o">=</span><span class="mi">0</span><span class="p">);</span>
+
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcProductDefinitionShape</span><span class="o">*</span> <span class="n">addExtrudedPolyline</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="kt">double</span><span class="o">&gt;</span> <span class="o">&gt;&amp;</span> <span class="n">points</span><span class="p">,</span> <span class="kt">double</span> <span class="n">h</span><span class="p">,</span>
+        <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcAxis2Placement2D</span><span class="o">*</span> <span class="n">place</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcAxis2Placement3D</span><span class="o">*</span> <span class="n">place2</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcDirection</span><span class="o">*</span> <span class="n">dir</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcRepresentationContext</span><span class="o">*</span> <span class="n">context</span><span class="o">=</span><span class="mi">0</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="nf">addBox</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcShapeRepresentation</span><span class="o">*</span> <span class="n">rep</span><span class="p">,</span> <span class="kt">double</span> <span class="n">w</span><span class="p">,</span> <span class="kt">double</span> <span class="n">d</span><span class="p">,</span> <span class="kt">double</span> <span class="n">h</span><span class="p">,</span>
+        <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcAxis2Placement2D</span><span class="o">*</span> <span class="n">place</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcAxis2Placement3D</span><span class="o">*</span> <span class="n">place2</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcDirection</span><span class="o">*</span> <span class="n">dir</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcRepresentationContext</span><span class="o">*</span> <span class="n">context</span><span class="o">=</span><span class="mi">0</span><span class="p">);</span>
+
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcProductDefinitionShape</span><span class="o">*</span> <span class="n">addBox</span><span class="p">(</span><span class="kt">double</span> <span class="n">w</span><span class="p">,</span> <span class="kt">double</span> <span class="n">d</span><span class="p">,</span> <span class="kt">double</span> <span class="n">h</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcAxis2Placement2D</span><span class="o">*</span> <span class="n">place</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcAxis2Placement3D</span><span class="o">*</span> <span class="n">place2</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcDirection</span><span class="o">*</span> <span class="n">dir</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcRepresentationContext</span><span class="o">*</span> <span class="n">context</span><span class="o">=</span><span class="mi">0</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="nf">addAxis</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcShapeRepresentation</span><span class="o">*</span> <span class="n">rep</span><span class="p">,</span> <span class="kt">double</span> <span class="n">l</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcRepresentationContext</span><span class="o">*</span> <span class="n">context</span><span class="o">=</span><span class="mi">0</span><span class="p">);</span>
+
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcProductDefinitionShape</span><span class="o">*</span> <span class="n">addAxisBox</span><span class="p">(</span><span class="kt">double</span> <span class="n">w</span><span class="p">,</span> <span class="kt">double</span> <span class="n">d</span><span class="p">,</span> <span class="kt">double</span> <span class="n">h</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcRepresentationContext</span><span class="o">*</span> <span class="n">context</span><span class="o">=</span><span class="mi">0</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="nf">clipRepresentation</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcProductRepresentation</span><span class="o">*</span> <span class="n">shape</span><span class="p">,</span>
+        <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcAxis2Placement3D</span><span class="o">*</span> <span class="n">place</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">agree</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="nf">clipRepresentation</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">*</span> <span class="n">shape</span><span class="p">,</span>
+        <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcAxis2Placement3D</span><span class="o">*</span> <span class="n">place</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">agree</span><span class="p">);</span>
+
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcPresentationStyleAssignment</span><span class="o">*</span> <span class="n">addStyleAssignment</span><span class="p">(</span><span class="kt">double</span> <span class="n">r</span><span class="p">,</span> <span class="kt">double</span> <span class="n">g</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span><span class="p">,</span> <span class="kt">double</span> <span class="n">a</span><span class="o">=</span><span class="mf">1.0</span><span class="p">);</span>
+
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcPresentationStyleAssignment</span><span class="o">*</span> <span class="n">setSurfaceColour</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcProductRepresentation</span><span class="o">*</span> <span class="n">shape</span><span class="p">,</span>
+        <span class="kt">double</span> <span class="n">r</span><span class="p">,</span> <span class="kt">double</span> <span class="n">g</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span><span class="p">,</span> <span class="kt">double</span> <span class="n">a</span><span class="o">=</span><span class="mf">1.0</span><span class="p">);</span>
+
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcPresentationStyleAssignment</span><span class="o">*</span> <span class="n">setSurfaceColour</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">*</span> <span class="n">shape</span><span class="p">,</span>
+        <span class="kt">double</span> <span class="n">r</span><span class="p">,</span> <span class="kt">double</span> <span class="n">g</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span><span class="p">,</span> <span class="kt">double</span> <span class="n">a</span><span class="o">=</span><span class="mf">1.0</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="nf">setSurfaceColour</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcProductRepresentation</span><span class="o">*</span> <span class="n">shape</span><span class="p">,</span>
+        <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcPresentationStyleAssignment</span><span class="o">*</span> <span class="n">style_assignment</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="nf">setSurfaceColour</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">*</span> <span class="n">shape</span><span class="p">,</span>
+        <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcPresentationStyleAssignment</span><span class="o">*</span> <span class="n">style_assignment</span><span class="p">);</span>
+
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcProductDefinitionShape</span><span class="o">*</span> <span class="n">addMappedItem</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcShapeRepresentation</span><span class="o">*</span><span class="p">,</span>
+        <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcCartesianTransformationOperator3D</span><span class="o">*</span> <span class="n">transform</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcProductDefinitionShape</span><span class="o">*</span> <span class="n">def</span> <span class="o">=</span> <span class="mi">0</span><span class="p">);</span>
+
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcProductDefinitionShape</span><span class="o">*</span> <span class="n">addMappedItem</span><span class="p">(</span><span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcShapeRepresentation</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span><span class="p">,</span>
+        <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcCartesianTransformationOperator3D</span><span class="o">*</span> <span class="n">transform</span> <span class="o">=</span> <span class="mi">0</span><span class="p">);</span>
+
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcShapeRepresentation</span><span class="o">*</span> <span class="n">addEmptyRepresentation</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">repid</span> <span class="o">=</span> <span class="s">&quot;Body&quot;</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">reptype</span> <span class="o">=</span> <span class="s">&quot;SweptSolid&quot;</span><span class="p">);</span>
+
+    <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcGeometricRepresentationContext</span><span class="o">*</span> <span class="n">getRepresentationContext</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="p">);</span>
+
+<span class="k">private</span><span class="o">:</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">Schema</span><span class="o">::</span><span class="n">IfcGeometricRepresentationContext</span><span class="o">*&gt;</span> <span class="n">contexts</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="cm">/*</span>
+<span class="cm">template &lt;&gt;</span>
+<span class="cm">inline void IfcHierarchyHelper::addRelatedObject &lt;typename Schema::IfcRelContainedInSpatialStructure&gt; (typename Schema::IfcObjectDefinition* relating_structure,</span>
+<span class="cm">    typename Schema::IfcObjectDefinition* related_object, typename Schema::IfcOwnerHistory* owner_hist)</span>
+<span class="cm">{</span>
+<span class="cm">    typename Schema::IfcRelContainedInSpatialStructure::list::ptr li = instances_by_type&lt;typename Schema::IfcRelContainedInSpatialStructure&gt;();</span>
+<span class="cm">    bool found = false;</span>
+<span class="cm">    for (typename Schema::IfcRelContainedInSpatialStructure::list::it i = li-&gt;begin(); i != li-&gt;end(); ++i) {</span>
+<span class="cm">        typename Schema::IfcRelContainedInSpatialStructure* rel = *i;</span>
+<span class="cm">        if (rel-&gt;RelatingStructure() == relating_structure) {</span>
+<span class="cm">            typename Schema::IfcProduct::list::ptr products = rel-&gt;RelatedElements();</span>
+<span class="cm">            products-&gt;push((typename Schema::IfcProduct*)related_object);</span>
+<span class="cm">            rel-&gt;setRelatedElements(products);</span>
+<span class="cm">            found = true;</span>
+<span class="cm">            break;</span>
+<span class="cm">        }</span>
+<span class="cm">    }</span>
+<span class="cm">    if (! found) {</span>
+<span class="cm">        if (! owner_hist) {</span>
+<span class="cm">            owner_hist = getSingle&lt;typename Schema::IfcOwnerHistory&gt;();</span>
+<span class="cm">        }</span>
+<span class="cm">        if (! owner_hist) {</span>
+<span class="cm">            owner_hist = addOwnerHistory();</span>
+<span class="cm">        }</span>
+<span class="cm">        typename Schema::IfcProduct::list::ptr related_objects (new IfcTemplatedEntityList&lt;typename Schema::IfcProduct&gt;());</span>
+<span class="cm">        related_objects-&gt;push((typename Schema::IfcProduct*)related_object);</span>
+<span class="cm">        typename Schema::IfcRelContainedInSpatialStructure* t = new typename Schema::IfcRelContainedInSpatialStructure(IfcParse::IfcGlobalId(), owner_hist,</span>
+<span class="cm">            boost::none, boost::none, related_objects, (typename Schema::IfcSpatialStructureElement*)relating_structure);</span>
+
+<span class="cm">        addEntity(t);</span>
+<span class="cm">    }</span>
+<span class="cm">}</span>
+
+<span class="cm">template &lt;&gt;</span>
+<span class="cm">inline void IfcHierarchyHelper::addRelatedObject &lt;typename Schema::IfcRelDefinesByType&gt; (typename Schema::IfcObjectDefinition* relating_type,</span>
+<span class="cm">    typename Schema::IfcObjectDefinition* related_object, typename Schema::IfcOwnerHistory* owner_hist)</span>
+<span class="cm">{</span>
+<span class="cm">    typename Schema::IfcRelDefinesByType::list::ptr li = instances_by_type&lt;typename Schema::IfcRelDefinesByType&gt;();</span>
+<span class="cm">    bool found = false;</span>
+<span class="cm">    for (typename Schema::IfcRelDefinesByType::list::it i = li-&gt;begin(); i != li-&gt;end(); ++i) {</span>
+<span class="cm">        typename Schema::IfcRelDefinesByType* rel = *i;</span>
+<span class="cm">        if (rel-&gt;RelatingType() == relating_type) {</span>
+<span class="cm">            typename Schema::IfcObject::list::ptr objects = rel-&gt;RelatedObjects();</span>
+<span class="cm">            objects-&gt;push((typename Schema::IfcObject*)related_object);</span>
+<span class="cm">            rel-&gt;setRelatedObjects(objects);</span>
+<span class="cm">            found = true;</span>
+<span class="cm">            break;</span>
+<span class="cm">        }</span>
+<span class="cm">    }</span>
+<span class="cm">    if (! found) {</span>
+<span class="cm">        if (! owner_hist) {</span>
+<span class="cm">            owner_hist = getSingle&lt;typename Schema::IfcOwnerHistory&gt;();</span>
+<span class="cm">        }</span>
+<span class="cm">        if (! owner_hist) {</span>
+<span class="cm">            owner_hist = addOwnerHistory();</span>
+<span class="cm">        }</span>
+<span class="cm">        typename Schema::IfcObject::list::ptr related_objects (new IfcTemplatedEntityList&lt;typename Schema::IfcObject&gt;());</span>
+<span class="cm">        related_objects-&gt;push((typename Schema::IfcObject*)related_object);</span>
+<span class="cm">        typename Schema::IfcRelDefinesByType* t = new typename Schema::IfcRelDefinesByType(IfcParse::IfcGlobalId(), owner_hist,</span>
+<span class="cm">            boost::none, boost::none, related_objects, (typename Schema::IfcTypeObject*)relating_type);</span>
+
+<span class="cm">        addEntity(t);</span>
+<span class="cm">    }</span>
+<span class="cm">}</span>
+<span class="cm">*/</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/program_listing_file_src_ifcparse_IfcHierarchyHelper.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

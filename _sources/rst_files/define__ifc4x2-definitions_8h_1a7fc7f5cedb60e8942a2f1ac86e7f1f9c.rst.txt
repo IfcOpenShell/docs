@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a7fc7f5cedb60e8942a2f1ac86e7f1f9c:
+
+Define SCHEMA_IfcReinforcingMeshType_TransverseBarNominalDiameter_IS_OPTIONAL
+=============================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcReinforcingMeshType_TransverseBarNominalDiameter_IS_OPTIONAL

@@ -1,0 +1,554 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class SvgSerializer &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class string_buffer" href="classutil_1_1string__buffer.html" />
+    <link rel="prev" title="Class StepSerializer" href="class_step_serializer.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-svgserializer">
+<span id="exhale-class-class-svg-serializer"></span><h1>Class SvgSerializer<a class="headerlink" href="#class-svgserializer" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_serializers_SvgSerializer.h.html#file-src-serializers-svgserializer-h"><span class="std std-ref">File SvgSerializer.h</span></a></p></li>
+</ul>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">GeometrySerializer</span></code> (<a class="reference internal" href="class_geometry_serializer.html#exhale-class-class-geometry-serializer"><span class="std std-ref">Class GeometrySerializer</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv413SvgSerializer">
+<span id="_CPPv313SvgSerializer"></span><span id="_CPPv213SvgSerializer"></span><span id="SvgSerializer"></span><span class="target" id="class_svg_serializer"></span><em class="property">class </em><code class="sig-name descname">SvgSerializer</code> : <em class="property">public</em> <a class="reference internal" href="class_geometry_serializer.html#_CPPv418GeometrySerializer" title="GeometrySerializer">GeometrySerializer</a><a class="headerlink" href="#_CPPv413SvgSerializer" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N13SvgSerializer11path_objectE">
+<span id="_CPPv3N13SvgSerializer11path_objectE"></span><span id="_CPPv2N13SvgSerializer11path_objectE"></span><span id="SvgSerializer::path_object"></span><span class="target" id="class_svg_serializer_1a8d562e2cd21d023e61854cb2bbe36aa7"></span><em class="property">typedef </em>std::pair&lt;std::string, std::vector&lt;util::<a class="reference internal" href="classutil_1_1string__buffer.html#_CPPv4N4util13string_bufferE" title="util::string_buffer">string_buffer</a>&gt;&gt; <code class="sig-name descname">path_object</code><a class="headerlink" href="#_CPPv4N13SvgSerializer11path_objectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt id="_CPPv4N13SvgSerializer15float_item_listE">
+<span id="_CPPv3N13SvgSerializer15float_item_listE"></span><span id="_CPPv2N13SvgSerializer15float_item_listE"></span><span id="SvgSerializer::float_item_list"></span><span class="target" id="class_svg_serializer_1a82d3e7ec829cf987c46a0ca56abe0328"></span><em class="property">typedef </em>std::vector&lt;boost::shared_ptr&lt;util::<a class="reference internal" href="classutil_1_1string__buffer.html#_CPPv4N4util13string_bufferE" title="util::string_buffer">string_buffer</a>::<a class="reference internal" href="classutil_1_1string__buffer.html#_CPPv4N4util13string_buffer10float_itemE" title="util::string_buffer::float_item">float_item</a>&gt;&gt; <code class="sig-name descname">float_item_list</code><a class="headerlink" href="#_CPPv4N13SvgSerializer15float_item_listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer13SvgSerializerERKNSt6stringERK18SerializerSettings">
+<span id="_CPPv3N13SvgSerializer13SvgSerializerERKNSt6stringERK18SerializerSettings"></span><span id="_CPPv2N13SvgSerializer13SvgSerializerERKNSt6stringERK18SerializerSettings"></span><span id="SvgSerializer::SvgSerializer__ssCR.SerializerSettingsCR"></span><span class="target" id="class_svg_serializer_1ac46a8825f4a1af5b850a32a49e36bc50"></span><code class="sig-name descname">SvgSerializer</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>out_filename</em>, <em class="property">const</em> <a class="reference internal" href="class_serializer_settings.html#_CPPv418SerializerSettings" title="SerializerSettings">SerializerSettings</a> &amp;<em>settings</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer13SvgSerializerERKNSt6stringERK18SerializerSettings" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer14addXCoordinateERKN5boost10shared_ptrIN4util13string_buffer10float_itemEEE">
+<span id="_CPPv3N13SvgSerializer14addXCoordinateERKN5boost10shared_ptrIN4util13string_buffer10float_itemEEE"></span><span id="_CPPv2N13SvgSerializer14addXCoordinateERKN5boost10shared_ptrIN4util13string_buffer10float_itemEEE"></span><span id="SvgSerializer::addXCoordinate__boost::shared_ptr:util::string_buffer::float_item:CR"></span><span class="target" id="class_svg_serializer_1aa5e1febf1af6d842e98894f933fa024f"></span>void <code class="sig-name descname">addXCoordinate</code><span class="sig-paren">(</span><em class="property">const</em> boost::shared_ptr&lt;util::<a class="reference internal" href="classutil_1_1string__buffer.html#_CPPv4N4util13string_bufferE" title="util::string_buffer">string_buffer</a>::<a class="reference internal" href="classutil_1_1string__buffer.html#_CPPv4N4util13string_buffer10float_itemE" title="util::string_buffer::float_item">float_item</a>&gt; &amp;<em>fi</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer14addXCoordinateERKN5boost10shared_ptrIN4util13string_buffer10float_itemEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer14addYCoordinateERKN5boost10shared_ptrIN4util13string_buffer10float_itemEEE">
+<span id="_CPPv3N13SvgSerializer14addYCoordinateERKN5boost10shared_ptrIN4util13string_buffer10float_itemEEE"></span><span id="_CPPv2N13SvgSerializer14addYCoordinateERKN5boost10shared_ptrIN4util13string_buffer10float_itemEEE"></span><span id="SvgSerializer::addYCoordinate__boost::shared_ptr:util::string_buffer::float_item:CR"></span><span class="target" id="class_svg_serializer_1a7b47ba7c9e7cebd7bd2244b1918d7f9e"></span>void <code class="sig-name descname">addYCoordinate</code><span class="sig-paren">(</span><em class="property">const</em> boost::shared_ptr&lt;util::<a class="reference internal" href="classutil_1_1string__buffer.html#_CPPv4N4util13string_bufferE" title="util::string_buffer">string_buffer</a>::<a class="reference internal" href="classutil_1_1string__buffer.html#_CPPv4N4util13string_buffer10float_itemE" title="util::string_buffer::float_item">float_item</a>&gt; &amp;<em>fi</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer14addYCoordinateERKN5boost10shared_ptrIN4util13string_buffer10float_itemEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer16addSizeComponentERKN5boost10shared_ptrIN4util13string_buffer10float_itemEEE">
+<span id="_CPPv3N13SvgSerializer16addSizeComponentERKN5boost10shared_ptrIN4util13string_buffer10float_itemEEE"></span><span id="_CPPv2N13SvgSerializer16addSizeComponentERKN5boost10shared_ptrIN4util13string_buffer10float_itemEEE"></span><span id="SvgSerializer::addSizeComponent__boost::shared_ptr:util::string_buffer::float_item:CR"></span><span class="target" id="class_svg_serializer_1aa4a3824bf5406fa5aa4639cfe1ece741"></span>void <code class="sig-name descname">addSizeComponent</code><span class="sig-paren">(</span><em class="property">const</em> boost::shared_ptr&lt;util::<a class="reference internal" href="classutil_1_1string__buffer.html#_CPPv4N4util13string_bufferE" title="util::string_buffer">string_buffer</a>::<a class="reference internal" href="classutil_1_1string__buffer.html#_CPPv4N4util13string_buffer10float_itemE" title="util::string_buffer::float_item">float_item</a>&gt; &amp;<em>fi</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer16addSizeComponentERKN5boost10shared_ptrIN4util13string_buffer10float_itemEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer15growBoundingBoxEdd">
+<span id="_CPPv3N13SvgSerializer15growBoundingBoxEdd"></span><span id="_CPPv2N13SvgSerializer15growBoundingBoxEdd"></span><span id="SvgSerializer::growBoundingBox__double.double"></span><span class="target" id="class_svg_serializer_1a367c7015a16af6689c0d6ad0a7ffc6fb"></span>void <code class="sig-name descname">growBoundingBox</code><span class="sig-paren">(</span>double <em>x</em>, double <em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer15growBoundingBoxEdd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer11writeHeaderEv">
+<span id="_CPPv3N13SvgSerializer11writeHeaderEv"></span><span id="_CPPv2N13SvgSerializer11writeHeaderEv"></span><span id="SvgSerializer::writeHeader"></span><span class="target" id="class_svg_serializer_1a612d7e75795d2325a4f9cb9bdeca8766"></span>void <code class="sig-name descname">writeHeader</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer11writeHeaderEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer5readyEv">
+<span id="_CPPv3N13SvgSerializer5readyEv"></span><span id="_CPPv2N13SvgSerializer5readyEv"></span><span id="SvgSerializer::ready"></span><span class="target" id="class_svg_serializer_1af9abaf893e51a100e5ce5c6f5bd498e1"></span>bool <code class="sig-name descname">ready</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer5readyEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer5writeEPKN7IfcGeom20TriangulationElementI6real_tEE">
+<span id="_CPPv3N13SvgSerializer5writeEPKN7IfcGeom20TriangulationElementI6real_tEE"></span><span id="_CPPv2N13SvgSerializer5writeEPKN7IfcGeom20TriangulationElementI6real_tEE"></span><span id="SvgSerializer::write__IfcGeom::TriangulationElement:real_t:CP"></span><span class="target" id="class_svg_serializer_1acfe713d0580b0b76c76a9a86a1543c4b"></span>void <code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="property">const</em> IfcGeom::<a class="reference internal" href="class_ifc_geom_1_1_triangulation_element.html#_CPPv4I00EN7IfcGeom20TriangulationElementE" title="IfcGeom::TriangulationElement">TriangulationElement</a>&lt;<a class="reference internal" href="typedef__geometry_serializer_8h_1a1924a4f6907cc3833213aba1f07fcbe9.html#_CPPv46real_t" title="real_t">real_t</a>&gt;*<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer5writeEPKN7IfcGeom20TriangulationElementI6real_tEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer5writeEPKN7IfcGeom11BRepElementI6real_tEE">
+<span id="_CPPv3N13SvgSerializer5writeEPKN7IfcGeom11BRepElementI6real_tEE"></span><span id="_CPPv2N13SvgSerializer5writeEPKN7IfcGeom11BRepElementI6real_tEE"></span><span id="SvgSerializer::write__IfcGeom::BRepElement:real_t:CP"></span><span class="target" id="class_svg_serializer_1a5a577922a8c16fdcf3def9a1b19a73a9"></span>void <code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="property">const</em> IfcGeom::<a class="reference internal" href="class_ifc_geom_1_1_b_rep_element.html#_CPPv4I00EN7IfcGeom11BRepElementE" title="IfcGeom::BRepElement">BRepElement</a>&lt;<a class="reference internal" href="typedef__geometry_serializer_8h_1a1924a4f6907cc3833213aba1f07fcbe9.html#_CPPv46real_t" title="real_t">real_t</a>&gt; *<em>o</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer5writeEPKN7IfcGeom11BRepElementI6real_tEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer5writeER11path_objectRK11TopoDS_Wire">
+<span id="_CPPv3N13SvgSerializer5writeER11path_objectRK11TopoDS_Wire"></span><span id="_CPPv2N13SvgSerializer5writeER11path_objectRK11TopoDS_Wire"></span><span id="SvgSerializer::write__path_objectR.TopoDS_WireCR"></span><span class="target" id="class_svg_serializer_1a40513aaf7803f3b2b472506e3dd85b7b"></span>void <code class="sig-name descname">write</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N13SvgSerializer11path_objectE" title="SvgSerializer::path_object">path_object</a> &amp;<em>p</em>, <em class="property">const</em> TopoDS_Wire &amp;<em>wire</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer5writeER11path_objectRK11TopoDS_Wire" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer5writeERK13geometry_data">
+<span id="_CPPv3N13SvgSerializer5writeERK13geometry_data"></span><span id="_CPPv2N13SvgSerializer5writeERK13geometry_data"></span><span id="SvgSerializer::write__geometry_dataCR"></span><span class="target" id="class_svg_serializer_1a3a2117477f84c128c7ddd9b157bc8a96"></span>void <code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structgeometry__data.html#_CPPv413geometry_data" title="geometry_data">geometry_data</a> &amp;<em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer5writeERK13geometry_data" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer10start_pathERK6gp_PlnPN7IfcUtil13IfcBaseEntityERKNSt6stringE">
+<span id="_CPPv3N13SvgSerializer10start_pathERK6gp_PlnPN7IfcUtil13IfcBaseEntityERKNSt6stringE"></span><span id="_CPPv2N13SvgSerializer10start_pathERK6gp_PlnPN7IfcUtil13IfcBaseEntityERKNSt6stringE"></span><span id="SvgSerializer::start_path__gp_PlnCR.IfcUtil::IfcBaseEntityP.ssCR"></span><span class="target" id="class_svg_serializer_1a30ead5c817dcd6468daada5b76686eef"></span><a class="reference internal" href="#_CPPv4N13SvgSerializer11path_objectE" title="SvgSerializer::path_object">path_object</a> &amp;<code class="sig-name descname">start_path</code><span class="sig-paren">(</span><em class="property">const</em> gp_Pln &amp;<em>p</em>, IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a> *<em>storey</em>, <em class="property">const</em> std::string &amp;<em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer10start_pathERK6gp_PlnPN7IfcUtil13IfcBaseEntityERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer10start_pathERK6gp_PlnRKNSt6stringERKNSt6stringE">
+<span id="_CPPv3N13SvgSerializer10start_pathERK6gp_PlnRKNSt6stringERKNSt6stringE"></span><span id="_CPPv2N13SvgSerializer10start_pathERK6gp_PlnRKNSt6stringERKNSt6stringE"></span><span id="SvgSerializer::start_path__gp_PlnCR.ssCR.ssCR"></span><span class="target" id="class_svg_serializer_1aa84704117f8ba6edccdcfc51386b54cd"></span><a class="reference internal" href="#_CPPv4N13SvgSerializer11path_objectE" title="SvgSerializer::path_object">path_object</a> &amp;<code class="sig-name descname">start_path</code><span class="sig-paren">(</span><em class="property">const</em> gp_Pln &amp;<em>p</em>, <em class="property">const</em> std::string &amp;<em>drawing_name</em>, <em class="property">const</em> std::string &amp;<em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer10start_pathERK6gp_PlnRKNSt6stringERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK13SvgSerializer12isTesselatedEv">
+<span id="_CPPv3NK13SvgSerializer12isTesselatedEv"></span><span id="_CPPv2NK13SvgSerializer12isTesselatedEv"></span><span id="SvgSerializer::isTesselatedC"></span><span class="target" id="class_svg_serializer_1a7c73f8e81f5208f04707f63ed1d0c336"></span>bool <code class="sig-name descname">isTesselated</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK13SvgSerializer12isTesselatedEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer8finalizeEv">
+<span id="_CPPv3N13SvgSerializer8finalizeEv"></span><span id="_CPPv2N13SvgSerializer8finalizeEv"></span><span id="SvgSerializer::finalize"></span><span class="target" id="class_svg_serializer_1adb28803822389d41ed7afb9d800cadcd"></span>void <code class="sig-name descname">finalize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer8finalizeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer23setUnitNameAndMagnitudeERKNSt6stringEf">
+<span id="_CPPv3N13SvgSerializer23setUnitNameAndMagnitudeERKNSt6stringEf"></span><span id="_CPPv2N13SvgSerializer23setUnitNameAndMagnitudeERKNSt6stringEf"></span><span id="SvgSerializer::setUnitNameAndMagnitude__ssCR.float"></span><span class="target" id="class_svg_serializer_1ac2522c6235701f5c03eb152b639ba4d5"></span>void <code class="sig-name descname">setUnitNameAndMagnitude</code><span class="sig-paren">(</span><em class="property">const</em> std::string&amp;, float<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer23setUnitNameAndMagnitudeERKNSt6stringEf" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer7setFileEPN8IfcParse7IfcFileE">
+<span id="_CPPv3N13SvgSerializer7setFileEPN8IfcParse7IfcFileE"></span><span id="_CPPv2N13SvgSerializer7setFileEPN8IfcParse7IfcFileE"></span><span id="SvgSerializer::setFile__IfcParse::IfcFileP"></span><span class="target" id="class_svg_serializer_1a38593e5d5cc8a67b6639c42b589ab696"></span>void <code class="sig-name descname">setFile</code><span class="sig-paren">(</span>IfcParse::<a class="reference internal" href="class_ifc_parse_1_1_ifc_file.html#_CPPv4N8IfcParse7IfcFileE" title="IfcParse::IfcFile">IfcFile</a> *<em>f</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer7setFileEPN8IfcParse7IfcFileE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer20setBoundingRectangleEdd">
+<span id="_CPPv3N13SvgSerializer20setBoundingRectangleEdd"></span><span id="_CPPv2N13SvgSerializer20setBoundingRectangleEdd"></span><span id="SvgSerializer::setBoundingRectangle__double.double"></span><span class="target" id="class_svg_serializer_1a2ffab243b56b6983295159b1985d03da"></span>void <code class="sig-name descname">setBoundingRectangle</code><span class="sig-paren">(</span>double <em>width</em>, double <em>height</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer20setBoundingRectangleEdd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer16setSectionHeightEdPN7IfcUtil13IfcBaseEntityE">
+<span id="_CPPv3N13SvgSerializer16setSectionHeightEdPN7IfcUtil13IfcBaseEntityE"></span><span id="_CPPv2N13SvgSerializer16setSectionHeightEdPN7IfcUtil13IfcBaseEntityE"></span><span id="SvgSerializer::setSectionHeight__double.IfcUtil::IfcBaseEntityP"></span><span class="target" id="class_svg_serializer_1a3446e1a03fb1223132e628c37b9d3104"></span>void <code class="sig-name descname">setSectionHeight</code><span class="sig-paren">(</span>double <em>h</em>, IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a> *<em>storey</em> = 0<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer16setSectionHeightEdPN7IfcUtil13IfcBaseEntityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer28setSectionHeightsFromStoreysEd">
+<span id="_CPPv3N13SvgSerializer28setSectionHeightsFromStoreysEd"></span><span id="_CPPv2N13SvgSerializer28setSectionHeightsFromStoreysEd"></span><span id="SvgSerializer::setSectionHeightsFromStoreys__double"></span><span class="target" id="class_svg_serializer_1a6888d41069caa80b839ddfa7f0d084f8"></span>void <code class="sig-name descname">setSectionHeightsFromStoreys</code><span class="sig-paren">(</span>double <em>offset</em> = 1.<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer28setSectionHeightsFromStoreysEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer18setPrintSpaceNamesEb">
+<span id="_CPPv3N13SvgSerializer18setPrintSpaceNamesEb"></span><span id="_CPPv2N13SvgSerializer18setPrintSpaceNamesEb"></span><span id="SvgSerializer::setPrintSpaceNames__b"></span><span class="target" id="class_svg_serializer_1a11a725256bd4c6bfc804ef845dfd9424"></span>void <code class="sig-name descname">setPrintSpaceNames</code><span class="sig-paren">(</span>bool <em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer18setPrintSpaceNamesEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer18setPrintSpaceAreasEb">
+<span id="_CPPv3N13SvgSerializer18setPrintSpaceAreasEb"></span><span id="_CPPv2N13SvgSerializer18setPrintSpaceAreasEb"></span><span id="SvgSerializer::setPrintSpaceAreas__b"></span><span class="target" id="class_svg_serializer_1ab28ae3bc7cf3abe5ab728cd20b99b3c8"></span>void <code class="sig-name descname">setPrintSpaceAreas</code><span class="sig-paren">(</span>bool <em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer18setPrintSpaceAreasEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer15setDrawDoorArcsEb">
+<span id="_CPPv3N13SvgSerializer15setDrawDoorArcsEb"></span><span id="_CPPv2N13SvgSerializer15setDrawDoorArcsEb"></span><span id="SvgSerializer::setDrawDoorArcs__b"></span><span class="target" id="class_svg_serializer_1a8d1a82007ae0a6a563f899913bc75489"></span>void <code class="sig-name descname">setDrawDoorArcs</code><span class="sig-paren">(</span>bool <em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer15setDrawDoorArcsEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer6resizeEv">
+<span id="_CPPv3N13SvgSerializer6resizeEv"></span><span id="_CPPv2N13SvgSerializer6resizeEv"></span><span id="SvgSerializer::resize"></span><span class="target" id="class_svg_serializer_1ae09aaa0a702c4e08d361a31048f7625f"></span>std::array&lt;std::array&lt;double, 3&gt;, 3&gt; <code class="sig-name descname">resize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer6resizeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer10resetScaleEv">
+<span id="_CPPv3N13SvgSerializer10resetScaleEv"></span><span id="_CPPv2N13SvgSerializer10resetScaleEv"></span><span id="SvgSerializer::resetScale"></span><span class="target" id="class_svg_serializer_1a0fb3c182b70e6308856416fc387b43c2"></span>void <code class="sig-name descname">resetScale</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer10resetScaleEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer13setSectionRefERKN5boost8optionalINSt6stringEEE">
+<span id="_CPPv3N13SvgSerializer13setSectionRefERKN5boost8optionalINSt6stringEEE"></span><span id="_CPPv2N13SvgSerializer13setSectionRefERKN5boost8optionalINSt6stringEEE"></span><span id="SvgSerializer::setSectionRef__boost::optional:ss:CR"></span><span class="target" id="class_svg_serializer_1ae00fdefe45a74ecea35777a99da2da88"></span>void <code class="sig-name descname">setSectionRef</code><span class="sig-paren">(</span><em class="property">const</em> boost::optional&lt;std::string&gt; &amp;<em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer13setSectionRefERKN5boost8optionalINSt6stringEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer15setElevationRefERKN5boost8optionalINSt6stringEEE">
+<span id="_CPPv3N13SvgSerializer15setElevationRefERKN5boost8optionalINSt6stringEEE"></span><span id="_CPPv2N13SvgSerializer15setElevationRefERKN5boost8optionalINSt6stringEEE"></span><span id="SvgSerializer::setElevationRef__boost::optional:ss:CR"></span><span class="target" id="class_svg_serializer_1a4b9fdfa2570b827f37f2045e45287787"></span>void <code class="sig-name descname">setElevationRef</code><span class="sig-paren">(</span><em class="property">const</em> boost::optional&lt;std::string&gt; &amp;<em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer15setElevationRefERKN5boost8optionalINSt6stringEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer14setAutoSectionEb">
+<span id="_CPPv3N13SvgSerializer14setAutoSectionEb"></span><span id="_CPPv2N13SvgSerializer14setAutoSectionEb"></span><span id="SvgSerializer::setAutoSection__b"></span><span class="target" id="class_svg_serializer_1a7654008cef51bbbcfbc839e3caabad80"></span>void <code class="sig-name descname">setAutoSection</code><span class="sig-paren">(</span>bool <em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer14setAutoSectionEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer16setAutoElevationEb">
+<span id="_CPPv3N13SvgSerializer16setAutoElevationEb"></span><span id="_CPPv2N13SvgSerializer16setAutoElevationEb"></span><span id="SvgSerializer::setAutoElevation__b"></span><span class="target" id="class_svg_serializer_1af0ebc25a5b130521196481050fd7503d"></span>void <code class="sig-name descname">setAutoElevation</code><span class="sig-paren">(</span>bool <em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer16setAutoElevationEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer15setUseNamespaceEb">
+<span id="_CPPv3N13SvgSerializer15setUseNamespaceEb"></span><span id="_CPPv2N13SvgSerializer15setUseNamespaceEb"></span><span id="SvgSerializer::setUseNamespace__b"></span><span class="target" id="class_svg_serializer_1a935e617e580ab4b06ac1b4ffc96fd1a5"></span>void <code class="sig-name descname">setUseNamespace</code><span class="sig-paren">(</span>bool <em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer15setUseNamespaceEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer13setUseHlrPolyEb">
+<span id="_CPPv3N13SvgSerializer13setUseHlrPolyEb"></span><span id="_CPPv2N13SvgSerializer13setUseHlrPolyEb"></span><span id="SvgSerializer::setUseHlrPoly__b"></span><span class="target" id="class_svg_serializer_1a7109f6a0f1982a8e241195b88722fa4c"></span>void <code class="sig-name descname">setUseHlrPoly</code><span class="sig-paren">(</span>bool <em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer13setUseHlrPolyEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer16setAlwaysProjectEb">
+<span id="_CPPv3N13SvgSerializer16setAlwaysProjectEb"></span><span id="_CPPv2N13SvgSerializer16setAlwaysProjectEb"></span><span id="SvgSerializer::setAlwaysProject__b"></span><span class="target" id="class_svg_serializer_1a7909e164319894c8059bfc944ff79bd0"></span>void <code class="sig-name descname">setAlwaysProject</code><span class="sig-paren">(</span>bool <em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer16setAlwaysProjectEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer8setScaleEd">
+<span id="_CPPv3N13SvgSerializer8setScaleEd"></span><span id="_CPPv2N13SvgSerializer8setScaleEd"></span><span id="SvgSerializer::setScale__double"></span><span class="target" id="class_svg_serializer_1ae103ed1dd98d060c1afba29cd15655ba"></span>void <code class="sig-name descname">setScale</code><span class="sig-paren">(</span>double <em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer8setScaleEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer16setDrawingCenterEdd">
+<span id="_CPPv3N13SvgSerializer16setDrawingCenterEdd"></span><span id="_CPPv2N13SvgSerializer16setDrawingCenterEdd"></span><span id="SvgSerializer::setDrawingCenter__double.double"></span><span class="target" id="class_svg_serializer_1ae2f42e6fe54bb9a2a10455f9d9493997"></span>void <code class="sig-name descname">setDrawingCenter</code><span class="sig-paren">(</span>double <em>x</em>, double <em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer16setDrawingCenterEdd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer11nameElementEPKN7IfcUtil13IfcBaseEntityEPKN7IfcGeom7ElementI6real_tEE">
+<span id="_CPPv3N13SvgSerializer11nameElementEPKN7IfcUtil13IfcBaseEntityEPKN7IfcGeom7ElementI6real_tEE"></span><span id="_CPPv2N13SvgSerializer11nameElementEPKN7IfcUtil13IfcBaseEntityEPKN7IfcGeom7ElementI6real_tEE"></span><span id="SvgSerializer::nameElement__IfcUtil::IfcBaseEntityCP.IfcGeom::Element:real_t:CP"></span><span class="target" id="class_svg_serializer_1a337d80bf9c87b3d67d99a1b91cb5cee8"></span>std::string <code class="sig-name descname">nameElement</code><span class="sig-paren">(</span><em class="property">const</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a> *<em>storey</em>, <em class="property">const</em> IfcGeom::<a class="reference internal" href="class_ifc_geom_1_1_element.html#_CPPv4I00EN7IfcGeom7ElementE" title="IfcGeom::Element">Element</a>&lt;<a class="reference internal" href="typedef__geometry_serializer_8h_1a1924a4f6907cc3833213aba1f07fcbe9.html#_CPPv46real_t" title="real_t">real_t</a>&gt; *<em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer11nameElementEPKN7IfcUtil13IfcBaseEntityEPKN7IfcGeom7ElementI6real_tEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer11nameElementEPKN7IfcUtil13IfcBaseEntityE">
+<span id="_CPPv3N13SvgSerializer11nameElementEPKN7IfcUtil13IfcBaseEntityE"></span><span id="_CPPv2N13SvgSerializer11nameElementEPKN7IfcUtil13IfcBaseEntityE"></span><span id="SvgSerializer::nameElement__IfcUtil::IfcBaseEntityCP"></span><span class="target" id="class_svg_serializer_1a538e5594580166449f9d99b55135759a"></span>std::string <code class="sig-name descname">nameElement</code><span class="sig-paren">(</span><em class="property">const</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a> *<em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer11nameElementEPKN7IfcUtil13IfcBaseEntityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer9idElementEPKN7IfcUtil13IfcBaseEntityE">
+<span id="_CPPv3N13SvgSerializer9idElementEPKN7IfcUtil13IfcBaseEntityE"></span><span id="_CPPv2N13SvgSerializer9idElementEPKN7IfcUtil13IfcBaseEntityE"></span><span id="SvgSerializer::idElement__IfcUtil::IfcBaseEntityCP"></span><span class="target" id="class_svg_serializer_1a37e51e53e8a93d0ee19c0826ccff6c4f"></span>std::string <code class="sig-name descname">idElement</code><span class="sig-paren">(</span><em class="property">const</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a> *<em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer9idElementEPKN7IfcUtil13IfcBaseEntityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer9object_idEPKN7IfcUtil13IfcBaseEntityEPKN7IfcGeom7ElementI6real_tEE">
+<span id="_CPPv3N13SvgSerializer9object_idEPKN7IfcUtil13IfcBaseEntityEPKN7IfcGeom7ElementI6real_tEE"></span><span id="_CPPv2N13SvgSerializer9object_idEPKN7IfcUtil13IfcBaseEntityEPKN7IfcGeom7ElementI6real_tEE"></span><span id="SvgSerializer::object_id__IfcUtil::IfcBaseEntityCP.IfcGeom::Element:real_t:CP"></span><span class="target" id="class_svg_serializer_1ae9a163cbd4ae8cb43b9dd0215e182e33"></span>std::string <code class="sig-name descname">object_id</code><span class="sig-paren">(</span><em class="property">const</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a> *<em>storey</em>, <em class="property">const</em> IfcGeom::<a class="reference internal" href="class_ifc_geom_1_1_element.html#_CPPv4I00EN7IfcGeom7ElementE" title="IfcGeom::Element">Element</a>&lt;<a class="reference internal" href="typedef__geometry_serializer_8h_1a1924a4f6907cc3833213aba1f07fcbe9.html#_CPPv46real_t" title="real_t">real_t</a>&gt; *<em>o</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer9object_idEPKN7IfcUtil13IfcBaseEntityEPKN7IfcGeom7ElementI6real_tEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Protected Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer8draw_hlrERK6gp_PlnRK11drawing_key">
+<span id="_CPPv3N13SvgSerializer8draw_hlrERK6gp_PlnRK11drawing_key"></span><span id="_CPPv2N13SvgSerializer8draw_hlrERK6gp_PlnRK11drawing_key"></span><span id="SvgSerializer::draw_hlr__gp_PlnCR.drawing_keyCR"></span><span class="target" id="class_svg_serializer_1ace1d660e7185be7fa133b7d8b674d6e1"></span>void <code class="sig-name descname">draw_hlr</code><span class="sig-paren">(</span><em class="property">const</em> gp_Pln &amp;<em>pln</em>, <em class="property">const</em> <a class="reference internal" href="typedef__svg_serializer_8h_1a50cbec1f25b623c8c6a096c285ebddd5.html#_CPPv411drawing_key" title="drawing_key">drawing_key</a> &amp;<em>drawing_name</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer8draw_hlrERK6gp_PlnRK11drawing_key" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N13SvgSerializer13writeMetadataERK12drawing_meta">
+<span id="_CPPv3N13SvgSerializer13writeMetadataERK12drawing_meta"></span><span id="_CPPv2N13SvgSerializer13writeMetadataERK12drawing_meta"></span><span id="SvgSerializer::writeMetadata__drawing_metaCR"></span><span class="target" id="class_svg_serializer_1acb5cb93b79a198a95bde4bf4670ce6c2"></span>std::string <code class="sig-name descname">writeMetadata</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structdrawing__meta.html#_CPPv412drawing_meta" title="drawing_meta">drawing_meta</a> &amp;<em>m</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13SvgSerializer13writeMetadataERK12drawing_meta" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Protected Attributes</p>
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer8svg_fileE">
+<span id="_CPPv3N13SvgSerializer8svg_fileE"></span><span id="_CPPv2N13SvgSerializer8svg_fileE"></span><span id="SvgSerializer::svg_file__std::ofstream"></span><span class="target" id="class_svg_serializer_1a0f2149859b2c99df93a64aa326faa16d"></span>std::ofstream <code class="sig-name descname">svg_file</code><a class="headerlink" href="#_CPPv4N13SvgSerializer8svg_fileE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer4xminE">
+<span id="_CPPv3N13SvgSerializer4xminE"></span><span id="_CPPv2N13SvgSerializer4xminE"></span><span id="SvgSerializer::xmin__double"></span><span class="target" id="class_svg_serializer_1a328733f2c877d72c768c2710a62e5059"></span>double <code class="sig-name descname">xmin</code><a class="headerlink" href="#_CPPv4N13SvgSerializer4xminE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer4yminE">
+<span id="_CPPv3N13SvgSerializer4yminE"></span><span id="_CPPv2N13SvgSerializer4yminE"></span><span id="SvgSerializer::ymin__double"></span><span class="target" id="class_svg_serializer_1a008015d132de0f407b0740e209f7937b"></span>double <code class="sig-name descname">ymin</code><a class="headerlink" href="#_CPPv4N13SvgSerializer4yminE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer4xmaxE">
+<span id="_CPPv3N13SvgSerializer4xmaxE"></span><span id="_CPPv2N13SvgSerializer4xmaxE"></span><span id="SvgSerializer::xmax__double"></span><span class="target" id="class_svg_serializer_1a3de54ed03595e2de1789594db4e5b3d9"></span>double <code class="sig-name descname">xmax</code><a class="headerlink" href="#_CPPv4N13SvgSerializer4xmaxE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer4ymaxE">
+<span id="_CPPv3N13SvgSerializer4ymaxE"></span><span id="_CPPv2N13SvgSerializer4ymaxE"></span><span id="SvgSerializer::ymax__double"></span><span class="target" id="class_svg_serializer_1a11ba9c7f9c5291103d1374b97a104b0c"></span>double <code class="sig-name descname">ymax</code><a class="headerlink" href="#_CPPv4N13SvgSerializer4ymaxE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer5widthE">
+<span id="_CPPv3N13SvgSerializer5widthE"></span><span id="_CPPv2N13SvgSerializer5widthE"></span><span id="SvgSerializer::width__double"></span><span class="target" id="class_svg_serializer_1aedf1e79fa9a8f7b5c7b646f61090327a"></span>double <code class="sig-name descname">width</code><a class="headerlink" href="#_CPPv4N13SvgSerializer5widthE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer6heightE">
+<span id="_CPPv3N13SvgSerializer6heightE"></span><span id="_CPPv2N13SvgSerializer6heightE"></span><span id="SvgSerializer::height__double"></span><span class="target" id="class_svg_serializer_1a39f0639ec160208e5ef8c7574d82c16d"></span>double <code class="sig-name descname">height</code><a class="headerlink" href="#_CPPv4N13SvgSerializer6heightE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer13section_data_E">
+<span id="_CPPv3N13SvgSerializer13section_data_E"></span><span id="_CPPv2N13SvgSerializer13section_data_E"></span><span id="SvgSerializer::section_data___boost::optional:std::vector:section_data::"></span><span class="target" id="class_svg_serializer_1ac15d4f34d2b37caeab3070094aeb143c"></span>boost::optional&lt;std::vector&lt;<a class="reference internal" href="typedef__svg_serializer_8h_1a03d18632047cd401a8b9f40ec65df39a.html#_CPPv412section_data" title="section_data">section_data</a>&gt;&gt; <code class="sig-name descname">section_data_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer13section_data_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer22deferred_section_data_E">
+<span id="_CPPv3N13SvgSerializer22deferred_section_data_E"></span><span id="_CPPv2N13SvgSerializer22deferred_section_data_E"></span><span id="SvgSerializer::deferred_section_data___boost::optional:std::vector:section_data::"></span><span class="target" id="class_svg_serializer_1a9c081fa87b5a568d36d5a176f9d39f4e"></span>boost::optional&lt;std::vector&lt;<a class="reference internal" href="typedef__svg_serializer_8h_1a03d18632047cd401a8b9f40ec65df39a.html#_CPPv412section_data" title="section_data">section_data</a>&gt;&gt; <code class="sig-name descname">deferred_section_data_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer22deferred_section_data_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer6scale_E">
+<span id="_CPPv3N13SvgSerializer6scale_E"></span><span id="_CPPv2N13SvgSerializer6scale_E"></span><span id="SvgSerializer::scale___boost::optional:double:"></span><span class="target" id="class_svg_serializer_1a9d1a67d0416c2d69609d70a9eab75549"></span>boost::optional&lt;double&gt; <code class="sig-name descname">scale_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer6scale_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer17calculated_scale_E">
+<span id="_CPPv3N13SvgSerializer17calculated_scale_E"></span><span id="_CPPv2N13SvgSerializer17calculated_scale_E"></span><span id="SvgSerializer::calculated_scale___boost::optional:double:"></span><span class="target" id="class_svg_serializer_1a9eee15b8b89d4bc5200b4af609145e1e"></span>boost::optional&lt;double&gt; <code class="sig-name descname">calculated_scale_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer17calculated_scale_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer9center_x_E">
+<span id="_CPPv3N13SvgSerializer9center_x_E"></span><span id="_CPPv2N13SvgSerializer9center_x_E"></span><span id="SvgSerializer::center_x___boost::optional:double:"></span><span class="target" id="class_svg_serializer_1ab4de10a10d66a845c8f33ff3bab52e59"></span>boost::optional&lt;double&gt; <code class="sig-name descname">center_x_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer9center_x_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer9center_y_E">
+<span id="_CPPv3N13SvgSerializer9center_y_E"></span><span id="_CPPv2N13SvgSerializer9center_y_E"></span><span id="SvgSerializer::center_y___boost::optional:double:"></span><span class="target" id="class_svg_serializer_1a8092e6fe725a397456923d49c908eb7b"></span>boost::optional&lt;double&gt; <code class="sig-name descname">center_y_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer9center_y_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer33with_section_heights_from_storey_E">
+<span id="_CPPv3N13SvgSerializer33with_section_heights_from_storey_E"></span><span id="_CPPv2N13SvgSerializer33with_section_heights_from_storey_E"></span><span id="SvgSerializer::with_section_heights_from_storey___b"></span><span class="target" id="class_svg_serializer_1aec28403342f2113c58980e37ae5f358f"></span>bool <code class="sig-name descname">with_section_heights_from_storey_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer33with_section_heights_from_storey_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer7rescaleE">
+<span id="_CPPv3N13SvgSerializer7rescaleE"></span><span id="_CPPv2N13SvgSerializer7rescaleE"></span><span id="SvgSerializer::rescale__b"></span><span class="target" id="class_svg_serializer_1a4d38a2e21dfbe50ea202bf99d6afda51"></span>bool <code class="sig-name descname">rescale</code><a class="headerlink" href="#_CPPv4N13SvgSerializer7rescaleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer18print_space_names_E">
+<span id="_CPPv3N13SvgSerializer18print_space_names_E"></span><span id="_CPPv2N13SvgSerializer18print_space_names_E"></span><span id="SvgSerializer::print_space_names___b"></span><span class="target" id="class_svg_serializer_1a6ce2cf3be533507b8b562b5f2ef7dae1"></span>bool <code class="sig-name descname">print_space_names_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer18print_space_names_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer18print_space_areas_E">
+<span id="_CPPv3N13SvgSerializer18print_space_areas_E"></span><span id="_CPPv2N13SvgSerializer18print_space_areas_E"></span><span id="SvgSerializer::print_space_areas___b"></span><span class="target" id="class_svg_serializer_1a9e5b1fcc056ac62fba1143aaaac1bfb5"></span>bool <code class="sig-name descname">print_space_areas_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer18print_space_areas_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer15draw_door_arcs_E">
+<span id="_CPPv3N13SvgSerializer15draw_door_arcs_E"></span><span id="_CPPv2N13SvgSerializer15draw_door_arcs_E"></span><span id="SvgSerializer::draw_door_arcs___b"></span><span class="target" id="class_svg_serializer_1ad0171f68000563f04fcd02100cbef4e3"></span>bool <code class="sig-name descname">draw_door_arcs_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer15draw_door_arcs_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer14is_floor_plan_E">
+<span id="_CPPv3N13SvgSerializer14is_floor_plan_E"></span><span id="_CPPv2N13SvgSerializer14is_floor_plan_E"></span><span id="SvgSerializer::is_floor_plan___b"></span><span class="target" id="class_svg_serializer_1acd1bf572d70c3974e92f5c932f162efe"></span>bool <code class="sig-name descname">is_floor_plan_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer14is_floor_plan_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer13auto_section_E">
+<span id="_CPPv3N13SvgSerializer13auto_section_E"></span><span id="_CPPv2N13SvgSerializer13auto_section_E"></span><span id="SvgSerializer::auto_section___b"></span><span class="target" id="class_svg_serializer_1adbced0a6cab7b542ef19c4d1414a996f"></span>bool <code class="sig-name descname">auto_section_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer13auto_section_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer15auto_elevation_E">
+<span id="_CPPv3N13SvgSerializer15auto_elevation_E"></span><span id="_CPPv2N13SvgSerializer15auto_elevation_E"></span><span id="SvgSerializer::auto_elevation___b"></span><span class="target" id="class_svg_serializer_1a8b02998cd00ff9fbbd779857f4cd4b93"></span>bool <code class="sig-name descname">auto_elevation_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer15auto_elevation_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer14use_namespace_E">
+<span id="_CPPv3N13SvgSerializer14use_namespace_E"></span><span id="_CPPv2N13SvgSerializer14use_namespace_E"></span><span id="SvgSerializer::use_namespace___b"></span><span class="target" id="class_svg_serializer_1a7669167e8b633fdb190e622ec53e7e1c"></span>bool <code class="sig-name descname">use_namespace_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer14use_namespace_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer13use_hlr_poly_E">
+<span id="_CPPv3N13SvgSerializer13use_hlr_poly_E"></span><span id="_CPPv2N13SvgSerializer13use_hlr_poly_E"></span><span id="SvgSerializer::use_hlr_poly___b"></span><span class="target" id="class_svg_serializer_1af6bd90e38218a5e10c5d480047db0258"></span>bool <code class="sig-name descname">use_hlr_poly_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer13use_hlr_poly_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer15always_project_E">
+<span id="_CPPv3N13SvgSerializer15always_project_E"></span><span id="_CPPv2N13SvgSerializer15always_project_E"></span><span id="SvgSerializer::always_project___b"></span><span class="target" id="class_svg_serializer_1a652209c38442911219a13f5397ce67f6"></span>bool <code class="sig-name descname">always_project_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer15always_project_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer4fileE">
+<span id="_CPPv3N13SvgSerializer4fileE"></span><span id="_CPPv2N13SvgSerializer4fileE"></span><span id="SvgSerializer::file__IfcParse::IfcFileP"></span><span class="target" id="class_svg_serializer_1aa1405d409e0d082d2bc5955ec2ab7eb2"></span>IfcParse::<a class="reference internal" href="class_ifc_parse_1_1_ifc_file.html#_CPPv4N8IfcParse7IfcFileE" title="IfcParse::IfcFile">IfcFile</a> *<code class="sig-name descname">file</code><a class="headerlink" href="#_CPPv4N13SvgSerializer4fileE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer7storey_E">
+<span id="_CPPv3N13SvgSerializer7storey_E"></span><span id="_CPPv2N13SvgSerializer7storey_E"></span><span id="SvgSerializer::storey___IfcUtil::IfcBaseEntityP"></span><span class="target" id="class_svg_serializer_1a27873f3bb4da8528c450670fdb5f986e"></span>IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a> *<code class="sig-name descname">storey_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer7storey_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer5pathsE">
+<span id="_CPPv3N13SvgSerializer5pathsE"></span><span id="_CPPv2N13SvgSerializer5pathsE"></span><span id="SvgSerializer::paths__std::multimap:drawing_key.path_object.storey_sorter:"></span><span class="target" id="class_svg_serializer_1a46ce2b63bddab5890588a8ea3eb9bac7"></span>std::multimap&lt;<a class="reference internal" href="typedef__svg_serializer_8h_1a50cbec1f25b623c8c6a096c285ebddd5.html#_CPPv411drawing_key" title="drawing_key">drawing_key</a>, <a class="reference internal" href="#_CPPv4N13SvgSerializer11path_objectE" title="SvgSerializer::path_object">path_object</a>, <a class="reference internal" href="structstorey__sorter.html#_CPPv413storey_sorter" title="storey_sorter">storey_sorter</a>&gt; <code class="sig-name descname">paths</code><a class="headerlink" href="#_CPPv4N13SvgSerializer5pathsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer16drawing_metadataE">
+<span id="_CPPv3N13SvgSerializer16drawing_metadataE"></span><span id="_CPPv2N13SvgSerializer16drawing_metadataE"></span><span id="SvgSerializer::drawing_metadata__std::map:drawing_key.drawing_meta:"></span><span class="target" id="class_svg_serializer_1afb5e15b67fc91bd623f0dbff7d07e4bc"></span>std::map&lt;<a class="reference internal" href="typedef__svg_serializer_8h_1a50cbec1f25b623c8c6a096c285ebddd5.html#_CPPv411drawing_key" title="drawing_key">drawing_key</a>, <a class="reference internal" href="structdrawing__meta.html#_CPPv412drawing_meta" title="drawing_meta">drawing_meta</a>&gt; <code class="sig-name descname">drawing_metadata</code><a class="headerlink" href="#_CPPv4N13SvgSerializer16drawing_metadataE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer10storey_hlrE">
+<span id="_CPPv3N13SvgSerializer10storey_hlrE"></span><span id="_CPPv2N13SvgSerializer10storey_hlrE"></span><span id="SvgSerializer::storey_hlr__std::map:IfcUtil::IfcBaseEntityP.hlr_t:"></span><span class="target" id="class_svg_serializer_1a4867527b347e10552b8a01dd82c0dc3b"></span>std::map&lt;IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a>*, <a class="reference internal" href="typedef__svg_serializer_8h_1aa7e26d25a8b4358f15a4940c08c7d03a.html#_CPPv45hlr_t" title="hlr_t">hlr_t</a>&gt; <code class="sig-name descname">storey_hlr</code><a class="headerlink" href="#_CPPv4N13SvgSerializer10storey_hlrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer7xcoordsE">
+<span id="_CPPv3N13SvgSerializer7xcoordsE"></span><span id="_CPPv2N13SvgSerializer7xcoordsE"></span><span id="SvgSerializer::xcoords__float_item_list"></span><span class="target" id="class_svg_serializer_1aefe9f94f88cf1e038694ed6b84c939a7"></span><a class="reference internal" href="#_CPPv4N13SvgSerializer15float_item_listE" title="SvgSerializer::float_item_list">float_item_list</a> <code class="sig-name descname">xcoords</code><a class="headerlink" href="#_CPPv4N13SvgSerializer7xcoordsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer7ycoordsE">
+<span id="_CPPv3N13SvgSerializer7ycoordsE"></span><span id="_CPPv2N13SvgSerializer7ycoordsE"></span><span id="SvgSerializer::ycoords__float_item_list"></span><span class="target" id="class_svg_serializer_1a75d958692c566c8050957f6921babd4d"></span><a class="reference internal" href="#_CPPv4N13SvgSerializer15float_item_listE" title="SvgSerializer::float_item_list">float_item_list</a> <code class="sig-name descname">ycoords</code><a class="headerlink" href="#_CPPv4N13SvgSerializer7ycoordsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer5radiiE">
+<span id="_CPPv3N13SvgSerializer5radiiE"></span><span id="_CPPv2N13SvgSerializer5radiiE"></span><span id="SvgSerializer::radii__float_item_list"></span><span class="target" id="class_svg_serializer_1a52f30defe5836e3ca422f8458d218085"></span><a class="reference internal" href="#_CPPv4N13SvgSerializer15float_item_listE" title="SvgSerializer::float_item_list">float_item_list</a> <code class="sig-name descname">radii</code><a class="headerlink" href="#_CPPv4N13SvgSerializer5radiiE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer13xcoords_beginE">
+<span id="_CPPv3N13SvgSerializer13xcoords_beginE"></span><span id="_CPPv2N13SvgSerializer13xcoords_beginE"></span><span id="SvgSerializer::xcoords_begin__s"></span><span class="target" id="class_svg_serializer_1ab73ebf6085cd9da269ff2cd502cada5d"></span>size_t <code class="sig-name descname">xcoords_begin</code><a class="headerlink" href="#_CPPv4N13SvgSerializer13xcoords_beginE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer13ycoords_beginE">
+<span id="_CPPv3N13SvgSerializer13ycoords_beginE"></span><span id="_CPPv2N13SvgSerializer13ycoords_beginE"></span><span id="SvgSerializer::ycoords_begin__s"></span><span class="target" id="class_svg_serializer_1a4ec51128ed163a7c1e6b9c86dd4c1841"></span>size_t <code class="sig-name descname">ycoords_begin</code><a class="headerlink" href="#_CPPv4N13SvgSerializer13ycoords_beginE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer11radii_beginE">
+<span id="_CPPv3N13SvgSerializer11radii_beginE"></span><span id="_CPPv2N13SvgSerializer11radii_beginE"></span><span id="SvgSerializer::radii_begin__s"></span><span class="target" id="class_svg_serializer_1a46c5ad63bbdb3d01614d16b78b7ddff5"></span>size_t <code class="sig-name descname">radii_begin</code><a class="headerlink" href="#_CPPv4N13SvgSerializer11radii_beginE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer12section_ref_E">
+<span id="_CPPv3N13SvgSerializer12section_ref_E"></span><span id="_CPPv2N13SvgSerializer12section_ref_E"></span><span id="SvgSerializer::section_ref___boost::optional:ss:"></span><span class="target" id="class_svg_serializer_1a57502ca15d6d2c1871611c303e5537a9"></span>boost::optional&lt;std::string&gt; <code class="sig-name descname">section_ref_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer12section_ref_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer14elevation_ref_E">
+<span id="_CPPv3N13SvgSerializer14elevation_ref_E"></span><span id="_CPPv2N13SvgSerializer14elevation_ref_E"></span><span id="SvgSerializer::elevation_ref___boost::optional:ss:"></span><span class="target" id="class_svg_serializer_1ad2d0210edd6404fcd3cf33288cdfae7d"></span>boost::optional&lt;std::string&gt; <code class="sig-name descname">elevation_ref_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer14elevation_ref_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer15element_buffer_E">
+<span id="_CPPv3N13SvgSerializer15element_buffer_E"></span><span id="_CPPv2N13SvgSerializer15element_buffer_E"></span><span id="SvgSerializer::element_buffer___std::list:geometry_data:"></span><span class="target" id="class_svg_serializer_1a5f8792ea2a585ceab711b91c6bcef796"></span>std::list&lt;<a class="reference internal" href="structgeometry__data.html#_CPPv413geometry_data" title="geometry_data">geometry_data</a>&gt; <code class="sig-name descname">element_buffer_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer15element_buffer_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer3hlrE">
+<span id="_CPPv3N13SvgSerializer3hlrE"></span><span id="_CPPv2N13SvgSerializer3hlrE"></span><span id="SvgSerializer::hlr__hlr_t"></span><span class="target" id="class_svg_serializer_1a473845c1e758667a25534a7c1f24f472"></span><a class="reference internal" href="typedef__svg_serializer_8h_1aa7e26d25a8b4358f15a4940c08c7d03a.html#_CPPv45hlr_t" title="hlr_t">hlr_t</a> <code class="sig-name descname">hlr</code><a class="headerlink" href="#_CPPv4N13SvgSerializer3hlrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N13SvgSerializer17namespace_prefix_E">
+<span id="_CPPv3N13SvgSerializer17namespace_prefix_E"></span><span id="_CPPv2N13SvgSerializer17namespace_prefix_E"></span><span id="SvgSerializer::namespace_prefix___ss"></span><span class="target" id="class_svg_serializer_1a09bc0299367f11f0d9d19652f86e9014"></span>std::string <code class="sig-name descname">namespace_prefix_</code><a class="headerlink" href="#_CPPv4N13SvgSerializer17namespace_prefix_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_step_serializer.html" title="previous chapter">Class StepSerializer</a></li>
+      <li>Next: <a href="classutil_1_1string__buffer.html" title="next chapter">Class string_buffer</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_svg_serializer.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

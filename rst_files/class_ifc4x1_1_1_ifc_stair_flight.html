@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcStairFlight &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcStairFlightType" href="class_ifc4x1_1_1_ifc_stair_flight_type.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcStair" href="class_ifc4x1_1_1_ifc_stair.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcstairflight">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-stair-flight"></span><h1>Class Ifc4x1::IfcStairFlight<a class="headerlink" href="#class-ifc4x1-ifcstairflight" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcBuildingElement</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_building_element.html#exhale-class-class-ifc4x1-1-1-ifc-building-element"><span class="std std-ref">Class Ifc4x1::IfcBuildingElement</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x114IfcStairFlightE">
+<span id="_CPPv3N6Ifc4x114IfcStairFlightE"></span><span id="_CPPv2N6Ifc4x114IfcStairFlightE"></span><span id="Ifc4x1::IfcStairFlight"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcStairFlight</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_building_element.html#_CPPv4N6Ifc4x118IfcBuildingElementE" title="Ifc4x1::IfcBuildingElement">IfcBuildingElement</a><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcStairFlightE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A stair flight is an assembly of building components in a single “run” of stair steps (not interrupted by a landing). The stair steps and any stringers are included in the stair flight. A winder is also regarded a part of a stair flight. An <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a> is normally aggregated by an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair"><span class="std std-ref">IfcStair</span></a> through the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_aggregates"><span class="std std-ref">IfcRelAggregates</span></a> relationship, the stair flight is then included in the set of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_aggregates_1af118612af4cc321f1d3712f80ef1840f"><span class="std std-ref">IfcRelAggregates.RelatedObjects</span></a>. An <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a> normally connects the floor slab of zero to two different storeys (or partial storeys, or landings) within a building. The connection relationship between the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a> and the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_slab"><span class="std std-ref">IfcSlab</span></a> is expressed using the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_connects_elements"><span class="std std-ref">IfcRelConnectsElements</span></a> relationship.</p>
+<p>HISTORY: New Entity in IFC Release 2.0.</p>
+<p>Type Use Definition <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a> defines the occurrence of any stair flight, common information about stair flight types (or styles) is handled by <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight_type"><span class="std std-ref">IfcStairFlightType</span></a>. The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight_type"><span class="std std-ref">IfcStairFlightType</span></a> (if present) may establish the commontype name, usage (or predefined) type, common material layer set, common set of properties and common shape representations (using <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_representation_map"><span class="std std-ref">IfcRepresentationMap</span></a>). The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight_type"><span class="std std-ref">IfcStairFlightType</span></a> is attached using the IfcRelDefinedByType.RelatingType objectified relationship and is accessible by the inverse IsDefinedBy attribute. Material Use Definition The material of the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a> is defined by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_material"><span class="std std-ref">IfcMaterial</span></a> and attached by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_associates_material_1aaa02369b86dc394cb252c3c2535ea540"><span class="std std-ref">IfcRelAssociatesMaterial.RelatingMaterial</span></a>. It is accessible by the inverse HasAssociations relationship. Property Set Use Definition: The property sets relating to the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a> are defined by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> and attached by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. It is accessible by the inverse IsDefinedBy relationship. The following property set definitions specific to the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a> are part of this IFC release:</p>
+<p>Pset_StairFlightCommon: common property set for all stair flight occurrences</p>
+<p>Quantity Use Definition The quantities relating to the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a> are defined by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_element_quantity"><span class="std std-ref">IfcElementQuantity</span></a> and attached by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. It is accessible by the inverse IsDefinedBy relationship. The following base quantities are defined and should be exchanged with the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_root_1a19b3c6f66df5365f61595e0e96ca48c3"><span class="std std-ref">IfcElementQuantity.Name</span></a> = ‘BaseQuantities’. Other quantities can be defined being subjected to local standard of measurement with another string value assigned to Name and a value provided for MethodOfMeasurement. Quantities shall never be assigned to the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight_type"><span class="std std-ref">IfcStairFlightType</span></a>.</p>
+<p>Qto_StairFlightBaseQuantities: base quantities for all stair flight occurrences.</p>
+<p>Containment Use Definition The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a>, as any subtype of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_building_element"><span class="std std-ref">IfcBuildingElement</span></a>, may participate in two different containment relationships. The first relationship is the hierachical spatial containment, the second relationship is the aggregation within anelement assembly.</p>
+<p>The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a> is placed within the project spatial hierarchy using the objectified relationship <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_contained_in_spatial_structure"><span class="std std-ref">IfcRelContainedInSpatialStructure</span></a>, refering to it by its inverse attribute SELF\IfcElement.ContainedInStructure. Subtypes ofIfcSpatialStructureElement are valid spatial containers, with <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_building_storey"><span class="std std-ref">IfcBuildingStorey</span></a> being the default container. The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a> may be aggregated into an element assembly using the objectified relationship <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_aggregates"><span class="std std-ref">IfcRelAggregates</span></a>, refering to it by its inverse attribute SELF\IfcObjectDefinition.Decomposes. Any subtype of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a> can be an element assembly, with <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair"><span class="std std-ref">IfcStair</span></a> as a special focus subtype. In this case it shall not be additionally contained in the project spatial hierarchy, i.e.SELF\IfcElement.ContainedInStructure shall be NIL.</p>
+<p>Geometry Use Definition The geometric representation of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a> is given by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a>, allowing multiple geometric representation. Included are: Local placement The local placement for <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a> is defined in its supertype <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a>. It is defined by the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a>, which defines the local coordinate system that is referenced by all geometric representations.</p>
+<p>The PlacementRelTo relationship of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> shall point (if given) to the local placement of the same <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_spatial_structure_element"><span class="std std-ref">IfcSpatialStructureElement</span></a> that is used in the ContainedInStructure inverse attribute or to a referenced spatial structure element at a higher level. If the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a>, however, is used by an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair"><span class="std std-ref">IfcStair</span></a>, and this container class defines its own local placement, then the PlacementRelTo relationship of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> shall point to the local placement of the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair"><span class="std std-ref">IfcStair</span></a>.</p>
+<p>Geometric Representations Currently, the ‘Axis’, ‘FootPrint’, ‘Body’, and ‘Box’ representations are supported. The ‘Box’ representation includes the representation type ‘BoundingBox’ and is explained at <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_building_element"><span class="std std-ref">IfcBuildingElement</span></a>.</p>
+<p>Axis: A two-dimensional open curve <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_bounded_curve"><span class="std std-ref">IfcBoundedCurve</span></a> defining the walking line for the stair flight. FootPrint: A geometric curve set defining the footing print, including the boundary of the stair flight. Body: A solid representation defining the 3D shape of the stair flight</p>
+<p>Axis Representation The walking line is represented by a two-dimensional open curve as the axis. The curve is directed into the upward direction (direction has to be interpreted as specified at the subtypes of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_curve"><span class="std std-ref">IfcCurve</span></a>). The following attribute values for the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Axis’ RepresentationType : ‘Curve2D’</p>
+<p>Figure 129 illustrates the axis representation which has the following constraints:</p>
+<p>In case of straight flights the curve shall be a single item of type <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a>. In case of winding flights the curve shall be a single item of type <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_composite_curve"><span class="std std-ref">IfcCompositeCurve</span></a>. In case of a curved flight or a spiral flight the curve shall be a single item of type <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_trimmed_curve"><span class="std std-ref">IfcTrimmedCurve</span></a>.</p>
+<p>Figure 129 — Stair flight axis</p>
+<p>FootPrint Representation The flight foot print, including the flight boundary is represented by a two-dimensional geometric curve set. The following attribute values for the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘FootPrint’ RepresentationType : ‘GeometricCurveSet’</p>
+<p>Figure 130 illustrates the footprint representation which has the following constraints:</p>
+<p>In case of straight flights the curve set shall consists of a single item of type <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a>. In case of winding flights or curved flights the curve set shall consists of a single item of type <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_composite_curve"><span class="std std-ref">IfcCompositeCurve</span></a>. In case of a spiral flight the curve set shall consists of a single item of type <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_conic"><span class="std std-ref">IfcConic</span></a> or <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a>.</p>
+<p>Figure 130 — Stair flight footprint</p>
+<p>Body Representation The body representation of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a> can be represented using the representation types ‘SweptSolid’, ‘SurfaceModel’, ‘Brep’, and ‘MappedRepresentation’. The general usage of representation is are explained at <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_building_element"><span class="std std-ref">IfcBuildingElement</span></a>. No further constraints or provisions on how to use the representation types are defined for <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a>.</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘SweptSolid’, ‘SurfaceModel’, ‘Brep’, ‘MappedRepresentation’</p>
+<p>Figure 131 illustrates the body representation.</p>
+<p>Figure 131 — Stair flight body </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x114IfcStairFlight4listE">
+<span id="_CPPv3N6Ifc4x114IfcStairFlight4listE"></span><span id="_CPPv2N6Ifc4x114IfcStairFlight4listE"></span><span id="Ifc4x1::IfcStairFlight::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1a109731781b6633ec902c034d1a62259c"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x114IfcStairFlightE" title="Ifc4x1::IfcStairFlight">IfcStairFlight</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcStairFlight4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcStairFlight17hasNumberOfRisersEv">
+<span id="_CPPv3NK6Ifc4x114IfcStairFlight17hasNumberOfRisersEv"></span><span id="_CPPv2NK6Ifc4x114IfcStairFlight17hasNumberOfRisersEv"></span><span id="Ifc4x1::IfcStairFlight::hasNumberOfRisersC"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1a42e7e2ba788d3742b16ea45abf47a35f"></span>bool <code class="sig-name descname">hasNumberOfRisers</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcStairFlight17hasNumberOfRisersEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute NumberOfRisers is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcStairFlight14NumberOfRisersEv">
+<span id="_CPPv3NK6Ifc4x114IfcStairFlight14NumberOfRisersEv"></span><span id="_CPPv2NK6Ifc4x114IfcStairFlight14NumberOfRisersEv"></span><span id="Ifc4x1::IfcStairFlight::NumberOfRisersC"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1a8930e58e15c989088bdc05fa2af91b78"></span>int <code class="sig-name descname">NumberOfRisers</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcStairFlight14NumberOfRisersEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x114IfcStairFlight17setNumberOfRisersEi">
+<span id="_CPPv3N6Ifc4x114IfcStairFlight17setNumberOfRisersEi"></span><span id="_CPPv2N6Ifc4x114IfcStairFlight17setNumberOfRisersEi"></span><span id="Ifc4x1::IfcStairFlight::setNumberOfRisers__i"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1af09dc006571bdc4634356a40e273e1f6"></span>void <code class="sig-name descname">setNumberOfRisers</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcStairFlight17setNumberOfRisersEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcStairFlight17hasNumberOfTreadsEv">
+<span id="_CPPv3NK6Ifc4x114IfcStairFlight17hasNumberOfTreadsEv"></span><span id="_CPPv2NK6Ifc4x114IfcStairFlight17hasNumberOfTreadsEv"></span><span id="Ifc4x1::IfcStairFlight::hasNumberOfTreadsC"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1a41aa69e37d51ef066659c169a8add9bf"></span>bool <code class="sig-name descname">hasNumberOfTreads</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcStairFlight17hasNumberOfTreadsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute NumberOfTreads is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcStairFlight14NumberOfTreadsEv">
+<span id="_CPPv3NK6Ifc4x114IfcStairFlight14NumberOfTreadsEv"></span><span id="_CPPv2NK6Ifc4x114IfcStairFlight14NumberOfTreadsEv"></span><span id="Ifc4x1::IfcStairFlight::NumberOfTreadsC"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1a44aca54d27e30e7025c88d97e09f02f9"></span>int <code class="sig-name descname">NumberOfTreads</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcStairFlight14NumberOfTreadsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Number of treads included in the stair flight.</p>
+<p>IFC2x4 CHANGE The attribute has been deprecated it shall only be exposed with a NIL value. Use Pset_StairFlightCommon.NumberOfTreads instead. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x114IfcStairFlight17setNumberOfTreadsEi">
+<span id="_CPPv3N6Ifc4x114IfcStairFlight17setNumberOfTreadsEi"></span><span id="_CPPv2N6Ifc4x114IfcStairFlight17setNumberOfTreadsEi"></span><span id="Ifc4x1::IfcStairFlight::setNumberOfTreads__i"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1a43f7095cc9cf4ddd4f043ea4a09030d5"></span>void <code class="sig-name descname">setNumberOfTreads</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcStairFlight17setNumberOfTreadsEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcStairFlight14hasRiserHeightEv">
+<span id="_CPPv3NK6Ifc4x114IfcStairFlight14hasRiserHeightEv"></span><span id="_CPPv2NK6Ifc4x114IfcStairFlight14hasRiserHeightEv"></span><span id="Ifc4x1::IfcStairFlight::hasRiserHeightC"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1a3202da27820f5a971bd7c05ca5c7cb45"></span>bool <code class="sig-name descname">hasRiserHeight</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcStairFlight14hasRiserHeightEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RiserHeight is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcStairFlight11RiserHeightEv">
+<span id="_CPPv3NK6Ifc4x114IfcStairFlight11RiserHeightEv"></span><span id="_CPPv2NK6Ifc4x114IfcStairFlight11RiserHeightEv"></span><span id="Ifc4x1::IfcStairFlight::RiserHeightC"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1a2800ad595d4fbe6c7bd46556082f5db1"></span>double <code class="sig-name descname">RiserHeight</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcStairFlight11RiserHeightEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Vertical distance from tread to tread. The riser height is supposed to be equal for all stairs in a stair flight.</p>
+<p>IFC2x4 CHANGE The attribute has been deprecated it shall only be exposed with a NIL value. Use Pset_StairFlightCommon.RiserHeight instead. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x114IfcStairFlight14setRiserHeightEd">
+<span id="_CPPv3N6Ifc4x114IfcStairFlight14setRiserHeightEd"></span><span id="_CPPv2N6Ifc4x114IfcStairFlight14setRiserHeightEd"></span><span id="Ifc4x1::IfcStairFlight::setRiserHeight__double"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1a7ee5a783ca0a410339292f9723ba2f85"></span>void <code class="sig-name descname">setRiserHeight</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcStairFlight14setRiserHeightEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcStairFlight14hasTreadLengthEv">
+<span id="_CPPv3NK6Ifc4x114IfcStairFlight14hasTreadLengthEv"></span><span id="_CPPv2NK6Ifc4x114IfcStairFlight14hasTreadLengthEv"></span><span id="Ifc4x1::IfcStairFlight::hasTreadLengthC"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1ab155af0cf8c19b636a623d281f70a2e1"></span>bool <code class="sig-name descname">hasTreadLength</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcStairFlight14hasTreadLengthEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute TreadLength is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcStairFlight11TreadLengthEv">
+<span id="_CPPv3NK6Ifc4x114IfcStairFlight11TreadLengthEv"></span><span id="_CPPv2NK6Ifc4x114IfcStairFlight11TreadLengthEv"></span><span id="Ifc4x1::IfcStairFlight::TreadLengthC"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1aed6639a115629f4dfa4ae8c158e479f2"></span>double <code class="sig-name descname">TreadLength</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcStairFlight11TreadLengthEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Horizontal distance from the front to the back of the tread. The tread length is supposed to be equal for all steps of the stair flight.</p>
+<p>IFC2x4 CHANGE The attribute has been deprecated it shall only be exposed with a NIL value. Use Pset_StairFlightCommon.TreadLength instead. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x114IfcStairFlight14setTreadLengthEd">
+<span id="_CPPv3N6Ifc4x114IfcStairFlight14setTreadLengthEd"></span><span id="_CPPv2N6Ifc4x114IfcStairFlight14setTreadLengthEd"></span><span id="Ifc4x1::IfcStairFlight::setTreadLength__double"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1a75def54323c226d4e5b5faf5c546dcb4"></span>void <code class="sig-name descname">setTreadLength</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcStairFlight14setTreadLengthEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcStairFlight17hasPredefinedTypeEv">
+<span id="_CPPv3NK6Ifc4x114IfcStairFlight17hasPredefinedTypeEv"></span><span id="_CPPv2NK6Ifc4x114IfcStairFlight17hasPredefinedTypeEv"></span><span id="Ifc4x1::IfcStairFlight::hasPredefinedTypeC"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1af3078a74b80f4e313454341172efce7e"></span>bool <code class="sig-name descname">hasPredefinedType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcStairFlight17hasPredefinedTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute PredefinedType is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight"><span class="std std-ref">IfcStairFlight</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcStairFlight14PredefinedTypeEv">
+<span id="_CPPv3NK6Ifc4x114IfcStairFlight14PredefinedTypeEv"></span><span id="_CPPv2NK6Ifc4x114IfcStairFlight14PredefinedTypeEv"></span><span id="Ifc4x1::IfcStairFlight::PredefinedTypeC"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1aa0a2f1e2a1a270d9954cf86504e71c1b"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x122IfcStairFlightTypeEnumE" title="Ifc4x1::IfcStairFlightTypeEnum">IfcStairFlightTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x122IfcStairFlightTypeEnum5ValueE" title="Ifc4x1::IfcStairFlightTypeEnum::Value">Value</a> <code class="sig-name descname">PredefinedType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcStairFlight14PredefinedTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Predefined generic type for a stair flight that is specified in an enumeration. There may be a property set given specificly for the predefined types. NOTE The PredefinedType shall only be used, if no type object <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight_type"><span class="std std-ref">IfcStairFlightType</span></a> is assigned, providing its own <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_stair_flight_type_1a8b7d2a3ca041323f5801c13f1defcdc5"><span class="std std-ref">IfcStairFlightType.PredefinedType</span></a>.</p>
+<p>IFC2x4 CHANGE The attribute has been added at the end of the entity definition. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x114IfcStairFlight17setPredefinedTypeEN6Ifc4x122IfcStairFlightTypeEnum5ValueE">
+<span id="_CPPv3N6Ifc4x114IfcStairFlight17setPredefinedTypeEN6Ifc4x122IfcStairFlightTypeEnum5ValueE"></span><span id="_CPPv2N6Ifc4x114IfcStairFlight17setPredefinedTypeEN6Ifc4x122IfcStairFlightTypeEnum5ValueE"></span><span id="Ifc4x1::IfcStairFlight::setPredefinedType__Ifc4x1::IfcStairFlightTypeEnum::Value"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1abf20c4abfa42bd00ae86c2f0ed6dc499"></span>void <code class="sig-name descname">setPredefinedType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x122IfcStairFlightTypeEnumE" title="Ifc4x1::IfcStairFlightTypeEnum">IfcStairFlightTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x122IfcStairFlightTypeEnum5ValueE" title="Ifc4x1::IfcStairFlightTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcStairFlight17setPredefinedTypeEN6Ifc4x122IfcStairFlightTypeEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x114IfcStairFlight11declarationEv">
+<span id="_CPPv3NK6Ifc4x114IfcStairFlight11declarationEv"></span><span id="_CPPv2NK6Ifc4x114IfcStairFlight11declarationEv"></span><span id="Ifc4x1::IfcStairFlight::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1a10a89d808f113f3be5380d38379c69e4"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x114IfcStairFlight11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x114IfcStairFlight14IfcStairFlightEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x114IfcStairFlight14IfcStairFlightEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x114IfcStairFlight14IfcStairFlightEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcStairFlight::IfcStairFlight__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1a3f1d24ec0e91f9716807ade7f44fbe55"></span><code class="sig-name descname">IfcStairFlight</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcStairFlight14IfcStairFlightEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x114IfcStairFlight14IfcStairFlightENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIiEEN5boost8optionalIiEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIN6Ifc4x122IfcStairFlightTypeEnum5ValueEEE">
+<span id="_CPPv3N6Ifc4x114IfcStairFlight14IfcStairFlightENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIiEEN5boost8optionalIiEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIN6Ifc4x122IfcStairFlightTypeEnum5ValueEEE"></span><span id="_CPPv2N6Ifc4x114IfcStairFlight14IfcStairFlightENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIiEEN5boost8optionalIiEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIN6Ifc4x122IfcStairFlightTypeEnum5ValueEEE"></span><span id="Ifc4x1::IfcStairFlight::IfcStairFlight__ss.Ifc4x1::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4x1::IfcObjectPlacementP.Ifc4x1::IfcProductRepresentationP.boost::optional:ss:.boost::optional:i:.boost::optional:i:.boost::optional:double:.boost::optional:double:.boost::optional:Ifc4x1::IfcStairFlightTypeEnum::Value:"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1a90d42c0e40507bb874d8b63d612678bf"></span><code class="sig-name descname">IfcStairFlight</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_owner_history.html#_CPPv4N6Ifc4x115IfcOwnerHistoryE" title="Ifc4x1::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_object_placement.html#_CPPv4N6Ifc4x118IfcObjectPlacementE" title="Ifc4x1::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_product_representation.html#_CPPv4N6Ifc4x124IfcProductRepresentationE" title="Ifc4x1::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, boost::optional&lt;std::string&gt; <em>v8_Tag</em>, boost::optional&lt;int&gt; <em>v9_NumberOfRisers</em>, boost::optional&lt;int&gt; <em>v10_NumberOfTreads</em>, boost::optional&lt;double&gt; <em>v11_RiserHeight</em>, boost::optional&lt;double&gt; <em>v12_TreadLength</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x122IfcStairFlightTypeEnumE" title="Ifc4x1::IfcStairFlightTypeEnum">IfcStairFlightTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x122IfcStairFlightTypeEnum5ValueE" title="Ifc4x1::IfcStairFlightTypeEnum::Value">Value</a>&gt; <em>v13_PredefinedType</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcStairFlight14IfcStairFlightENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x118IfcObjectPlacementEPN6Ifc4x124IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIiEEN5boost8optionalIiEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIN6Ifc4x122IfcStairFlightTypeEnum5ValueEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x114IfcStairFlight5ClassEv">
+<span id="_CPPv3N6Ifc4x114IfcStairFlight5ClassEv"></span><span id="_CPPv2N6Ifc4x114IfcStairFlight5ClassEv"></span><span id="Ifc4x1::IfcStairFlight::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_stair_flight_1ad4be4123731ec0fdca86759d6c03dd5c"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x114IfcStairFlight5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_stair.html" title="previous chapter">Class Ifc4x1::IfcStair</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_stair_flight_type.html" title="next chapter">Class Ifc4x1::IfcStairFlightType</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_stair_flight.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

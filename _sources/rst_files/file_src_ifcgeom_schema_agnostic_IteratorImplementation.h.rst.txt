@@ -1,0 +1,103 @@
+
+.. _file_src_ifcgeom_schema_agnostic_IteratorImplementation.h:
+
+File IteratorImplementation.h
+=============================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcgeom_schema_agnostic>` (``src/ifcgeom_schema_agnostic``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom_schema_agnostic/IteratorImplementation.h``)
+---------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_schema_agnostic_IteratorImplementation.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/IfcGeomIteratorSettings.h``
+
+- ``../ifcgeom_schema_agnostic/IfcGeomFilter.h``
+
+- ``../ifcparse/IfcFile.h``
+
+- ``boost/function.hpp``
+
+- ``gp_XYZ.hxx``
+
+- ``map``
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_IfcGeomIteratorImplementation.h`
+
+- :ref:`file_src_ifcgeom_schema_agnostic_IfcGeomIterator.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcGeom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structget__factory__type`
+
+- :ref:`exhale_struct_structget__factory__type_3_01double_00_01double_01_4`
+
+- :ref:`exhale_struct_structget__factory__type_3_01float_00_01double_01_4`
+
+- :ref:`exhale_struct_structget__factory__type_3_01float_00_01float_01_4`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_b_rep_element`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_element`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_iterator_implementation`
+
+- :ref:`exhale_class_class_iterator_factory_implementation`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function__iterator_implementation_8h_1aebab0c1e22ec45f5180c10b210608958`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef__iterator_implementation_8h_1a0f7036ed22f79f4dff107c511530b37e`
+
+- :ref:`exhale_typedef__iterator_implementation_8h_1a99bc89a85d2d927610a2251182898bb9`
+
+- :ref:`exhale_typedef__iterator_implementation_8h_1a337515610f6e383656a72d5f9bacf96b`
+

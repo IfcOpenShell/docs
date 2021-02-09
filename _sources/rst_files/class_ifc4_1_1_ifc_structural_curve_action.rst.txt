@@ -1,0 +1,37 @@
+.. _exhale_class_class_ifc4_1_1_ifc_structural_curve_action:
+
+Class Ifc4::IfcStructuralCurveAction
+====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4::IfcStructuralAction`` (:ref:`exhale_class_class_ifc4_1_1_ifc_structural_action`)
+
+
+Derived Type
+************
+
+- ``public Ifc4::IfcStructuralLinearAction`` (:ref:`exhale_class_class_ifc4_1_1_ifc_structural_linear_action`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4::IfcStructuralCurveAction
+   :members:
+   :protected-members:
+   :undoc-members:

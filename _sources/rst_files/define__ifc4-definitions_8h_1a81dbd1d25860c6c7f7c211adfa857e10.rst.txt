@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a81dbd1d25860c6c7f7c211adfa857e10:
+
+Define SCHEMA_IfcBoundaryNodeConditionWarping_WarpingStiffness_IS_OPTIONAL
+==========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBoundaryNodeConditionWarping_WarpingStiffness_IS_OPTIONAL

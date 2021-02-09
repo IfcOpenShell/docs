@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a59155460eaf736f15f20a6727a8092f7:
+
+Define SCHEMA_IfcPhysicalComplexQuantity_HAS_HasQuantities
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPhysicalComplexQuantity_HAS_HasQuantities

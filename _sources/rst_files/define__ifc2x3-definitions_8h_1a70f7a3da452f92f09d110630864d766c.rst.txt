@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a70f7a3da452f92f09d110630864d766c:
+
+Define SCHEMA_HAS_IfcExtendedMaterialProperties
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcExtendedMaterialProperties

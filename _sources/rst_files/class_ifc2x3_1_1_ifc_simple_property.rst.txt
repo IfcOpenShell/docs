@@ -1,0 +1,42 @@
+.. _exhale_class_class_ifc2x3_1_1_ifc_simple_property:
+
+Class Ifc2x3::IfcSimpleProperty
+===============================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc2x3::IfcProperty`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_property`)
+
+
+Derived Types
+*************
+
+- ``public Ifc2x3::IfcPropertyBoundedValue`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_property_bounded_value`)
+- ``public Ifc2x3::IfcPropertyEnumeratedValue`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_property_enumerated_value`)
+- ``public Ifc2x3::IfcPropertyListValue`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_property_list_value`)
+- ``public Ifc2x3::IfcPropertyReferenceValue`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_property_reference_value`)
+- ``public Ifc2x3::IfcPropertySingleValue`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_property_single_value`)
+- ``public Ifc2x3::IfcPropertyTableValue`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_property_table_value`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc2x3::IfcSimpleProperty
+   :members:
+   :protected-members:
+   :undoc-members:

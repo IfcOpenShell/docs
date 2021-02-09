@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcSurfaceOfLinearExtrusion &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcSurfaceOfRevolution" href="class_ifc2x3_1_1_ifc_surface_of_revolution.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcSurfaceCurveSweptAreaSolid" href="class_ifc2x3_1_1_ifc_surface_curve_swept_area_solid.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcsurfaceoflinearextrusion">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-surface-of-linear-extrusion"></span><h1>Class Ifc2x3::IfcSurfaceOfLinearExtrusion<a class="headerlink" href="#class-ifc2x3-ifcsurfaceoflinearextrusion" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcSweptSurface</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_swept_surface.html#exhale-class-class-ifc2x3-1-1-ifc-swept-surface"><span class="std std-ref">Class Ifc2x3::IfcSweptSurface</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x327IfcSurfaceOfLinearExtrusionE">
+<span id="_CPPv3N6Ifc2x327IfcSurfaceOfLinearExtrusionE"></span><span id="_CPPv2N6Ifc2x327IfcSurfaceOfLinearExtrusionE"></span><span id="Ifc2x3::IfcSurfaceOfLinearExtrusion"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_of_linear_extrusion"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcSurfaceOfLinearExtrusion</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_swept_surface.html#_CPPv4N6Ifc2x315IfcSweptSurfaceE" title="Ifc2x3::IfcSweptSurface">IfcSweptSurface</a><a class="headerlink" href="#_CPPv4N6Ifc2x327IfcSurfaceOfLinearExtrusionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: This surface is a simple swept surface or a generalized cylinder obtained by sweeping a curve in a given direction. The parameterization is as follows where the curve has a parameterization l(u):</p>
+<p>V = ExtrusionAxis</p>
+<p>The parameterization range for v is -¥ &lt; v &lt; ¥ and for u it is defined by the curve parameterization.</p>
+<p>NOTE: Corresponding ISO 10303 entity: surface_of_linear_extrusion. Please refer to ISO/IS 10303-42:1994, p.76 for the final definition of the formal standard. The following adaption has been made. The ExtrusionAxis and the Direction are defined as two separate attributes in correlation to the definition of the extruded_area_solid, and not as a single vector attribute. The vector is derived as ExtrusionAxis.</p>
+<p>HISTORY: New entity in IFC Release 2x.</p>
+<p>Informal propositions:</p>
+<p>The surface shall not self-intersect </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x327IfcSurfaceOfLinearExtrusion4listE">
+<span id="_CPPv3N6Ifc2x327IfcSurfaceOfLinearExtrusion4listE"></span><span id="_CPPv2N6Ifc2x327IfcSurfaceOfLinearExtrusion4listE"></span><span id="Ifc2x3::IfcSurfaceOfLinearExtrusion::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_of_linear_extrusion_1a544bdb478b17a9b58f55a6bb912e48c9"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x327IfcSurfaceOfLinearExtrusionE" title="Ifc2x3::IfcSurfaceOfLinearExtrusion">IfcSurfaceOfLinearExtrusion</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x327IfcSurfaceOfLinearExtrusion4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x327IfcSurfaceOfLinearExtrusion17ExtrudedDirectionEv">
+<span id="_CPPv3NK6Ifc2x327IfcSurfaceOfLinearExtrusion17ExtrudedDirectionEv"></span><span id="_CPPv2NK6Ifc2x327IfcSurfaceOfLinearExtrusion17ExtrudedDirectionEv"></span><span id="Ifc2x3::IfcSurfaceOfLinearExtrusion::ExtrudedDirectionC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_of_linear_extrusion_1a39de3bb616d67b45e8bf3ae704d360a7"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_direction.html#_CPPv4N6Ifc2x312IfcDirectionE" title="Ifc2x3::IfcDirection">IfcDirection</a> *<code class="sig-name descname">ExtrudedDirection</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x327IfcSurfaceOfLinearExtrusion17ExtrudedDirectionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The direction of the extrusion. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x327IfcSurfaceOfLinearExtrusion20setExtrudedDirectionEPN6Ifc2x312IfcDirectionE">
+<span id="_CPPv3N6Ifc2x327IfcSurfaceOfLinearExtrusion20setExtrudedDirectionEPN6Ifc2x312IfcDirectionE"></span><span id="_CPPv2N6Ifc2x327IfcSurfaceOfLinearExtrusion20setExtrudedDirectionEPN6Ifc2x312IfcDirectionE"></span><span id="Ifc2x3::IfcSurfaceOfLinearExtrusion::setExtrudedDirection__Ifc2x3::IfcDirectionP"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_of_linear_extrusion_1ae45c783760ad29465156ae5786b140b6"></span>void <code class="sig-name descname">setExtrudedDirection</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_direction.html#_CPPv4N6Ifc2x312IfcDirectionE" title="Ifc2x3::IfcDirection">IfcDirection</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x327IfcSurfaceOfLinearExtrusion20setExtrudedDirectionEPN6Ifc2x312IfcDirectionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x327IfcSurfaceOfLinearExtrusion5DepthEv">
+<span id="_CPPv3NK6Ifc2x327IfcSurfaceOfLinearExtrusion5DepthEv"></span><span id="_CPPv2NK6Ifc2x327IfcSurfaceOfLinearExtrusion5DepthEv"></span><span id="Ifc2x3::IfcSurfaceOfLinearExtrusion::DepthC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_of_linear_extrusion_1a0aa99c18f6efaee67cb7259e0511bad8"></span>double <code class="sig-name descname">Depth</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x327IfcSurfaceOfLinearExtrusion5DepthEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The depth of the extrusion, it determines the parameterization. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x327IfcSurfaceOfLinearExtrusion8setDepthEd">
+<span id="_CPPv3N6Ifc2x327IfcSurfaceOfLinearExtrusion8setDepthEd"></span><span id="_CPPv2N6Ifc2x327IfcSurfaceOfLinearExtrusion8setDepthEd"></span><span id="Ifc2x3::IfcSurfaceOfLinearExtrusion::setDepth__double"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_of_linear_extrusion_1aec7ef1e1a6878ebbf1918f51a2bb597f"></span>void <code class="sig-name descname">setDepth</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x327IfcSurfaceOfLinearExtrusion8setDepthEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x327IfcSurfaceOfLinearExtrusion11declarationEv">
+<span id="_CPPv3NK6Ifc2x327IfcSurfaceOfLinearExtrusion11declarationEv"></span><span id="_CPPv2NK6Ifc2x327IfcSurfaceOfLinearExtrusion11declarationEv"></span><span id="Ifc2x3::IfcSurfaceOfLinearExtrusion::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_of_linear_extrusion_1a57ed0c8fb52eee8a7bfbc1a6b5710b33"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x327IfcSurfaceOfLinearExtrusion11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x327IfcSurfaceOfLinearExtrusion27IfcSurfaceOfLinearExtrusionEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x327IfcSurfaceOfLinearExtrusion27IfcSurfaceOfLinearExtrusionEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x327IfcSurfaceOfLinearExtrusion27IfcSurfaceOfLinearExtrusionEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcSurfaceOfLinearExtrusion::IfcSurfaceOfLinearExtrusion__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_of_linear_extrusion_1a250df73a25be67ee98ed4c96727f91b7"></span><code class="sig-name descname">IfcSurfaceOfLinearExtrusion</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x327IfcSurfaceOfLinearExtrusion27IfcSurfaceOfLinearExtrusionEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x327IfcSurfaceOfLinearExtrusion27IfcSurfaceOfLinearExtrusionEPN6Ifc2x313IfcProfileDefEPN6Ifc2x319IfcAxis2Placement3DEPN6Ifc2x312IfcDirectionEd">
+<span id="_CPPv3N6Ifc2x327IfcSurfaceOfLinearExtrusion27IfcSurfaceOfLinearExtrusionEPN6Ifc2x313IfcProfileDefEPN6Ifc2x319IfcAxis2Placement3DEPN6Ifc2x312IfcDirectionEd"></span><span id="_CPPv2N6Ifc2x327IfcSurfaceOfLinearExtrusion27IfcSurfaceOfLinearExtrusionEPN6Ifc2x313IfcProfileDefEPN6Ifc2x319IfcAxis2Placement3DEPN6Ifc2x312IfcDirectionEd"></span><span id="Ifc2x3::IfcSurfaceOfLinearExtrusion::IfcSurfaceOfLinearExtrusion__Ifc2x3::IfcProfileDefP.Ifc2x3::IfcAxis2Placement3DP.Ifc2x3::IfcDirectionP.double"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_of_linear_extrusion_1a1f0bef3d63102b7dd9669d317dbe940e"></span><code class="sig-name descname">IfcSurfaceOfLinearExtrusion</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_profile_def.html#_CPPv4N6Ifc2x313IfcProfileDefE" title="Ifc2x3::IfcProfileDef">IfcProfileDef</a> *<em>v1_SweptCurve</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_axis2_placement3_d.html#_CPPv4N6Ifc2x319IfcAxis2Placement3DE" title="Ifc2x3::IfcAxis2Placement3D">IfcAxis2Placement3D</a> *<em>v2_Position</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_direction.html#_CPPv4N6Ifc2x312IfcDirectionE" title="Ifc2x3::IfcDirection">IfcDirection</a> *<em>v3_ExtrudedDirection</em>, double <em>v4_Depth</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x327IfcSurfaceOfLinearExtrusion27IfcSurfaceOfLinearExtrusionEPN6Ifc2x313IfcProfileDefEPN6Ifc2x319IfcAxis2Placement3DEPN6Ifc2x312IfcDirectionEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x327IfcSurfaceOfLinearExtrusion5ClassEv">
+<span id="_CPPv3N6Ifc2x327IfcSurfaceOfLinearExtrusion5ClassEv"></span><span id="_CPPv2N6Ifc2x327IfcSurfaceOfLinearExtrusion5ClassEv"></span><span id="Ifc2x3::IfcSurfaceOfLinearExtrusion::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_of_linear_extrusion_1ad77f0188d6196096403119205f320d3f"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x327IfcSurfaceOfLinearExtrusion5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_surface_curve_swept_area_solid.html" title="previous chapter">Class Ifc2x3::IfcSurfaceCurveSweptAreaSolid</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_surface_of_revolution.html" title="next chapter">Class Ifc2x3::IfcSurfaceOfRevolution</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_surface_of_linear_extrusion.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

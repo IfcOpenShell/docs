@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcBeam &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcBeamType" href="class_ifc2x3_1_1_ifc_beam_type.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcAxis2Placement3D" href="class_ifc2x3_1_1_ifc_axis2_placement3_d.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcbeam">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-beam"></span><h1>Class Ifc2x3::IfcBeam<a class="headerlink" href="#class-ifc2x3-ifcbeam" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcBuildingElement</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_building_element.html#exhale-class-class-ifc2x3-1-1-ifc-building-element"><span class="std std-ref">Class Ifc2x3::IfcBuildingElement</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x37IfcBeamE">
+<span id="_CPPv3N6Ifc2x37IfcBeamE"></span><span id="_CPPv2N6Ifc2x37IfcBeamE"></span><span id="Ifc2x3::IfcBeam"></span><span class="target" id="class_ifc2x3_1_1_ifc_beam"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcBeam</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_building_element.html#_CPPv4N6Ifc2x318IfcBuildingElementE" title="Ifc2x3::IfcBuildingElement">IfcBuildingElement</a><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcBeamE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO 6707-1:1989: Structural member designed to carry loads between or beyond points of support, usually narrow in relation to its length and horizontal or nearly so.</p>
+<p>An <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a> is a horizontal, or nearly horizontal, structural member that is capable of withstanding load primarily by resisting bending. It represents such a member from an architectural point of view. It is not required to be load bearing.</p>
+<p>NOTE The representation of a beam in a structural analysis model is provided by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_structural_curve_member"><span class="std std-ref">IfcStructuralCurveMember</span></a> being part of an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_structural_analysis_model"><span class="std std-ref">IfcStructuralAnalysisModel</span></a>.</p>
+<p>NOTE For any longitudial structural member, not constrained to be predominately horizontal nor vertical, or where this semantic information is irrelevant, the entity <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_member"><span class="std std-ref">IfcMember</span></a> should be used.</p>
+<p>The IFC specification provides two entities for beam occurrences:</p>
+<p>IfcBeamStandardCase used for all occurrences of beams, that have a profile defined that is swept along a directrix. The profile might be changed uniformly by a taper definition along the directrix. The profile parameter and its cardinal point of insertion can be fully described by the IfcMaterialProfileSetUsage. These beams are always represented geometricly by an ‘Axis’ and a ‘SweptSolid’ or ‘AdvancedSweptSolid’ shape representation (or by a ‘Clipping’ geometry based on the swept solid), if a 3D geometric representation is assigned. In addition they have to have a corresponding IfcMaterialProfileSetUsage assigned. NOTE View definitions and implementer agreements may further constrain the applicable geometry types, for example, by excluding tapering from an IfcBeamStandardCase implementation.</p>
+<p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a> used for all other occurrences of beams, particularly for beams with changing profile sizes along the extrusion, or beams defined by non-linear extrusion, or beams having only ‘Brep’, or ‘SurfaceModel’ geometry.</p>
+<p>HISTORY New entity in IFC Release 1.0</p>
+<p>Type Use Definition <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a> defines the occuurence of any beam, common information about beam types (or styles) is handled by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam_type"><span class="std std-ref">IfcBeamType</span></a>. The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam_type"><span class="std std-ref">IfcBeamType</span></a> (if present) may establish the commontype name, usage (or predefined) type, common material layer set, common set of properties and common shape representations (using <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_representation_map"><span class="std std-ref">IfcRepresentationMap</span></a>). The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam_type"><span class="std std-ref">IfcBeamType</span></a> is attached using the IfcRelDefinedByType.RelatingType objectified relationship and is accessible by the inverse IsTypedBy attribute. If no <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam_type"><span class="std std-ref">IfcBeamType</span></a> is attached (i.e. if only occurrence information is given) the PredefinedType should be provided. If set to .USERDEFINED. a user defined value can be provided by the ObjectType attribute. Material Use Definition The material of the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a> is defined by the IfcMaterialProfileSet or as fallback by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_material"><span class="std std-ref">IfcMaterial</span></a> and attached by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_associates_material_1a524b927c8fc7eb816c986fc3b7c7c7c3"><span class="std std-ref">IfcRelAssociatesMaterial.RelatingMaterial</span></a>. It is accessible by the inverse HasAssociations relationship. Note It is illegal to assign an IfcMaterialProfileSetUsage to an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a>. Only the subtype IfcBeamStandardCase supports this concept. Material information can also be given at the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam_type"><span class="std std-ref">IfcBeamType</span></a>, defining the common attribute data for all occurrences of the same type. It is then accessible by the inverse IsTypedBy relationship pointing to IfcBeamType.HasAssociations and via <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_associates_material_1a524b927c8fc7eb816c986fc3b7c7c7c3"><span class="std std-ref">IfcRelAssociatesMaterial.RelatingMaterial</span></a> to IfcMaterialProfileSet or <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_material"><span class="std std-ref">IfcMaterial</span></a>. If both are given, then the material directly assigned to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a> overrides the material assigned to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam_type"><span class="std std-ref">IfcBeamType</span></a>. Property Set Use Definition The property sets relating to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a> are defined by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> and attached by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. It is accessible by the inverse IsDefinedBy relationship. The following property set definitions specific to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a> are part of this IFC release:</p>
+<p>Pset_BeamCommon: common property set for all beam occurrences</p>
+<p>Property sets can also be given at the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam_type"><span class="std std-ref">IfcBeamType</span></a>, defining the common property data for all occurrences of the same type. It is then accessible by the inverse IsTypedBy relationship pointing to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_type_object_1a333fcadcc907e84f4572e5eeaec1c8ea"><span class="std std-ref">IfcBeamType.HasPropertySets</span></a>. If both are given, then the properties directly assigned to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a> overrides the properties assigned to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam_type"><span class="std std-ref">IfcBeamType</span></a>. Quantity Use Definition The quantities relating to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a> are defined by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element_quantity"><span class="std std-ref">IfcElementQuantity</span></a> and attached by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. It is accessible by the inverse IsDefinedBy relationship. The following base quantities are defined and should be exchanged with the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_root_1af4c45563ef1c697ea8f42a51ed80454b"><span class="std std-ref">IfcElementQuantity.Name</span></a> = ‘BaseQuantities’. Other quantities can be defined being subjected to local standard of measurement with another string value assigned to MethodOfMeasurement. Quanties shall be never assigned to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam_type"><span class="std std-ref">IfcBeamType</span></a>.</p>
+<p>Qto_BeamBaseQuantities: base quantities for all beam occurrences.</p>
+<p>Containment Use Definition The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a>, as any subtype of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element"><span class="std std-ref">IfcBuildingElement</span></a>, may participate in two different containment relationships. The first (and in most implementation scenarios mandatory) relationship is the hierachical spatial containment, the second (optional) relationship is the aggregation within an element assembly.</p>
+<p>The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a> is places within the project spatial hierarchy using the objectified relationship <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_contained_in_spatial_structure"><span class="std std-ref">IfcRelContainedInSpatialStructure</span></a>, refering to it by its inverse attribute SELF\IfcElement.ContainedInStructure. Subtypes of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_spatial_structure_element"><span class="std std-ref">IfcSpatialStructureElement</span></a> are valid spatial containers, with <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_storey"><span class="std std-ref">IfcBuildingStorey</span></a> being the default container. The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a> may be aggregated into an element assembly using the objectified relationship <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_aggregates"><span class="std std-ref">IfcRelAggregates</span></a>, refering to it by its inverse attribute SELF\IfcObjectDefinition.Decomposes. Any subtype of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a> can be an element assembly, with <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element_assembly"><span class="std std-ref">IfcElementAssembly</span></a> as a special focus subtype. In this case it should not be additionally contained in the project spatial hierarchy, i.e. SELF\IfcElement.ContainedInStructure should be NIL.</p>
+<p>Geometry Use Definition The geometric representation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a> is given by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a>, allowing multiple geometric representations. Included are: Local Placement The local placement for <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a> is defined in its supertype <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a>. It is defined by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a>, which defines the local coordinate system that is referenced by all geometric representations.</p>
+<p>The PlacementRelTo relationship of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> shall point (if given) to the local placement of the same <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_spatial_structure_element"><span class="std std-ref">IfcSpatialStructureElement</span></a>, which is used in the ContainedInStructure inverse attribute, or to a spatial structure element at a higher level, referenced by that.</p>
+<p>Exception: If the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a> is part of an assembly, the PlacementRelTo relationship of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> shall point to the local placement of the container element, e.g. <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element_assembly"><span class="std std-ref">IfcElementAssembly</span></a>,</p>
+<p>If the relative placement is not used, the absolute placement is defined within the world coordinate system.</p>
+<p>Geometric Representation Currently, the ‘Axis’, ‘Body’, and ‘Box’ representations are supported. The ‘Box’ representation includes the representation type ‘BoundingBox’ and is explained at <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element"><span class="std std-ref">IfcBuildingElement</span></a>. Axis Representation The axis geometric representation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a> is defined using the ‘Axis’ representation.</p>
+<p>RepresentationIdentifier : ‘Axis’ RepresentationType : ‘Curve2D’, ‘Curve3D’</p>
+<p>The ‘Axis’ can be used to represent the system axis and length of a beam that may extent the body length. Body Representation The body representation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a> can be represented using the representation types ‘SweptSolid’, ‘Clipping’, ‘AdvancedSweptSolid’, ‘MappedRepresentation’, ‘SurfaceModel’, and ‘Brep’. The representation types ‘SurfaceModel’ and ‘Brep’ are explained at <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element"><span class="std std-ref">IfcBuildingElement</span></a>. SweptSolid Representation Type The following attribute values for the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘SweptSolid’</p>
+<p>The following additional constraints apply to the ‘SweptSolid’ representation type:</p>
+<p>Solid: <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_extruded_area_solid"><span class="std std-ref">IfcExtrudedAreaSolid</span></a>, <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_revolved_area_solid"><span class="std std-ref">IfcRevolvedAreaSolid</span></a> shall be supported Profile: all subtypes of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_profile_def"><span class="std std-ref">IfcProfileDef</span></a> (with exception of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_arbitrary_open_profile_def"><span class="std std-ref">IfcArbitraryOpenProfileDef</span></a>) Extrusion: All extrusion directions shall be supported.</p>
+<p>Figure 71 illustrates the ‘SweptSolid’ geometric representation. There are no restrictions or conventions on how to use the local placement (black), solid of extrusion placement (red) and profile placement (green).</p>
+<p>Figure 71 — Beam swept solid</p>
+<p>Figure 72 illustrates the use of non-perpendicular extrusion to create the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_extruded_area_solid"><span class="std std-ref">IfcExtrudedAreaSolid</span></a>.</p>
+<p>Figure 72 — Beam non-perpendicular extrusion</p>
+<p>Clipping Representation Type The following attribute values for the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘Clipping’</p>
+<p>The following constraints apply to the advanced representation:</p>
+<p>Solid: see ‘SweptSolid’ geometric representation Profile: see ‘SweptSolid’ geometric representation Extrusion: see ‘SweptSolid’ geometric representation Boolean result: The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_boolean_clipping_result"><span class="std std-ref">IfcBooleanClippingResult</span></a> shall be supported, allowing for Boolean differences between the swept solid (here <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_extruded_area_solid"><span class="std std-ref">IfcExtrudedAreaSolid</span></a>) and one or several <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_half_space_solid"><span class="std std-ref">IfcHalfSpaceSolid</span></a> (or its subtypes).</p>
+<p>Figure 73 illustrates use of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_boolean_clipping_result"><span class="std std-ref">IfcBooleanClippingResult</span></a> between an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_extruded_area_solid"><span class="std std-ref">IfcExtrudedAreaSolid</span></a> and an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_half_space_solid"><span class="std std-ref">IfcHalfSpaceSolid</span></a> to create a clipped body.</p>
+<p>Figure 73 — Beam clipping</p>
+<p>AdvancedSweptSolid Representation Type The following attribute values for the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘AdvancedSweptSolid’</p>
+<p>The following additional constraints apply to the ‘AdvancedSweptSolid’ representation type:</p>
+<p>Solid: <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_surface_curve_swept_area_solid"><span class="std std-ref">IfcSurfaceCurveSweptAreaSolid</span></a>, IfcFixedReferenceSweptAreaSolid, IfcExtrudedAreaSolidTapered, IfcRevolvedAreaSolidTapered shall be supported. NOTE View definitions and implementer agreement can further constrain the allowed swept solid types.</p>
+<p>Profile: see ‘SweptSolid’ geometric representation Extrusion: not applicable</p>
+<p>MappedRepresentation Representation Type The ‘MappedRepresentation’ representation is supported as it allows for reusing the geometry definition of the beam type at all occurrences of the same type. The following attribute values for the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘MappedRepresentation’</p>
+<p>The same constraints, as given for the ‘SweptSolid’, ‘Clipping’, ‘AdvancedSweptSolid’, ‘SurfaceModel’, and ‘Brep’ geometric representation, shall apply to the MappedRepresentation of the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_representation_map"><span class="std std-ref">IfcRepresentationMap</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x37IfcBeam4listE">
+<span id="_CPPv3N6Ifc2x37IfcBeam4listE"></span><span id="_CPPv2N6Ifc2x37IfcBeam4listE"></span><span id="Ifc2x3::IfcBeam::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_beam_1a17394f0888b320e4d1380a026c576d13"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x37IfcBeamE" title="Ifc2x3::IfcBeam">IfcBeam</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcBeam4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x37IfcBeam11declarationEv">
+<span id="_CPPv3NK6Ifc2x37IfcBeam11declarationEv"></span><span id="_CPPv2NK6Ifc2x37IfcBeam11declarationEv"></span><span id="Ifc2x3::IfcBeam::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_beam_1a0dcaf25c9efd9c50016b94c965f2195d"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x37IfcBeam11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x37IfcBeam7IfcBeamEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x37IfcBeam7IfcBeamEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x37IfcBeam7IfcBeamEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcBeam::IfcBeam__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_beam_1a4213d7614edfe7dd5dae2b0762e31c2e"></span><code class="sig-name descname">IfcBeam</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcBeam7IfcBeamEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x37IfcBeam7IfcBeamENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEE">
+<span id="_CPPv3N6Ifc2x37IfcBeam7IfcBeamENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEE"></span><span id="_CPPv2N6Ifc2x37IfcBeam7IfcBeamENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEE"></span><span id="Ifc2x3::IfcBeam::IfcBeam__ss.Ifc2x3::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc2x3::IfcObjectPlacementP.Ifc2x3::IfcProductRepresentationP.boost::optional:ss:"></span><span class="target" id="class_ifc2x3_1_1_ifc_beam_1a8a79ff5ff7f06b457cba8e124630df4c"></span><code class="sig-name descname">IfcBeam</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_owner_history.html#_CPPv4N6Ifc2x315IfcOwnerHistoryE" title="Ifc2x3::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_object_placement.html#_CPPv4N6Ifc2x318IfcObjectPlacementE" title="Ifc2x3::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_product_representation.html#_CPPv4N6Ifc2x324IfcProductRepresentationE" title="Ifc2x3::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, boost::optional&lt;std::string&gt; <em>v8_Tag</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcBeam7IfcBeamENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x37IfcBeam5ClassEv">
+<span id="_CPPv3N6Ifc2x37IfcBeam5ClassEv"></span><span id="_CPPv2N6Ifc2x37IfcBeam5ClassEv"></span><span id="Ifc2x3::IfcBeam::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_beam_1aea4892f7fe347e9e8dc1ebb538fa1cae"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcBeam5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_axis2_placement3_d.html" title="previous chapter">Class Ifc2x3::IfcAxis2Placement3D</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_beam_type.html" title="next chapter">Class Ifc2x3::IfcBeamType</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_beam.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,49 @@
+.. _exhale_class_class_ifc4x2_1_1_ifc_flow_terminal_type:
+
+Class Ifc4x2::IfcFlowTerminalType
+=================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x2`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x2::IfcDistributionFlowElementType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_distribution_flow_element_type`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x2::IfcAirTerminalType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_air_terminal_type`)
+- ``public Ifc4x2::IfcAudioVisualApplianceType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_audio_visual_appliance_type`)
+- ``public Ifc4x2::IfcCommunicationsApplianceType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_communications_appliance_type`)
+- ``public Ifc4x2::IfcElectricApplianceType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_electric_appliance_type`)
+- ``public Ifc4x2::IfcFireSuppressionTerminalType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_fire_suppression_terminal_type`)
+- ``public Ifc4x2::IfcLampType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_lamp_type`)
+- ``public Ifc4x2::IfcLightFixtureType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_light_fixture_type`)
+- ``public Ifc4x2::IfcMedicalDeviceType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_medical_device_type`)
+- ``public Ifc4x2::IfcOutletType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_outlet_type`)
+- ``public Ifc4x2::IfcSanitaryTerminalType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_sanitary_terminal_type`)
+- ``public Ifc4x2::IfcSpaceHeaterType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_space_heater_type`)
+- ``public Ifc4x2::IfcStackTerminalType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_stack_terminal_type`)
+- ``public Ifc4x2::IfcWasteTerminalType`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_waste_terminal_type`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x2::IfcFlowTerminalType
+   :members:
+   :protected-members:
+   :undoc-members:

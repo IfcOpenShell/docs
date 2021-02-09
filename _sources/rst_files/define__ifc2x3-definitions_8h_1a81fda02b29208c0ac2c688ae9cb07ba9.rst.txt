@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a81fda02b29208c0ac2c688ae9cb07ba9:
+
+Define SCHEMA_IfcRationalBezierCurve_HAS_WeightsData
+====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRationalBezierCurve_HAS_WeightsData

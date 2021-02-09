@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a764b981be2fcf6d050761c8a2b8b26f6:
+
+Define SCHEMA_IfcSweptDiskSolidPolygonal_FilletRadius_IS_OPTIONAL
+=================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSweptDiskSolidPolygonal_FilletRadius_IS_OPTIONAL

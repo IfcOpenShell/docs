@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a7d890f0e921072ce9c2f5cbf2e6f513c:
+
+Define SCHEMA_IfcMaterialConstituent_Description_IS_OPTIONAL
+============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMaterialConstituent_Description_IS_OPTIONAL

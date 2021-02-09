@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aaf19d2b7d76ccd7c16c359ef6a54e587:
+
+Define SCHEMA_IfcDocumentInformationRelationship_HAS_RelationshipType
+=====================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDocumentInformationRelationship_HAS_RelationshipType

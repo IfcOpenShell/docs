@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcPolygonalBoundedHalfSpace &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcPolyline" href="class_ifc2x3_1_1_ifc_polyline.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcPointOnSurface" href="class_ifc2x3_1_1_ifc_point_on_surface.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcpolygonalboundedhalfspace">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-polygonal-bounded-half-space"></span><h1>Class Ifc2x3::IfcPolygonalBoundedHalfSpace<a class="headerlink" href="#class-ifc2x3-ifcpolygonalboundedhalfspace" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcHalfSpaceSolid</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_half_space_solid.html#exhale-class-class-ifc2x3-1-1-ifc-half-space-solid"><span class="std std-ref">Class Ifc2x3::IfcHalfSpaceSolid</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x328IfcPolygonalBoundedHalfSpaceE">
+<span id="_CPPv3N6Ifc2x328IfcPolygonalBoundedHalfSpaceE"></span><span id="_CPPv2N6Ifc2x328IfcPolygonalBoundedHalfSpaceE"></span><span id="Ifc2x3::IfcPolygonalBoundedHalfSpace"></span><span class="target" id="class_ifc2x3_1_1_ifc_polygonal_bounded_half_space"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcPolygonalBoundedHalfSpace</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_half_space_solid.html#_CPPv4N6Ifc2x317IfcHalfSpaceSolidE" title="Ifc2x3::IfcHalfSpaceSolid">IfcHalfSpaceSolid</a><a class="headerlink" href="#_CPPv4N6Ifc2x328IfcPolygonalBoundedHalfSpaceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The polygonal bounded half space is a special subtype of a half space solid, where the material of the half space used in Boolean expressions is bounded by a polygonal boundary. The base surface of the half space is positioned by its normal relativeto the object coordinate system (as defined at the supertype <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_half_space_solid"><span class="std std-ref">IfcHalfSpaceSolid</span></a>),and its polygonal (with or without arc segments) boundary is defined in the XY plane of the position coordinate system established by the Position attribute, the subtraction body is extruded perpendicular to the XY plane of the position coordinate system, that is, into the direction of the positive Z axis defined by the Position attribute. The boundary is defined by a 2 dimensional polyline (or 2 dimensional composite curve, consisting of straight segments and circular arc segments) within the XY plane of the position coordinate system. The side of the surface which is in the half space is determined by the surface normal and the agreement flag. If the agreement flag is TRUE, then the subset is the one the normal points away from. If the agreement flag is FALSE, then the subset is the one the normal points into.</p>
+<p>NOTE A polygonal bounded half space is not a subtype of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_solid_model"><span class="std std-ref">IfcSolidModel</span></a>, half space solids are only useful as operands in Boolean expressions.</p>
+<p>HISTORY New class in IFC Release 2x.</p>
+<p>Informal propositions:</p>
+<p>The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a> or the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_composite_curve"><span class="std std-ref">IfcCompositeCurve</span></a> providing the PolygonalBoundary shall be closed. If the PolygonalBoundary is given by an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_composite_curve"><span class="std std-ref">IfcCompositeCurve</span></a>, it shall only have<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_composite_curve_segment"><span class="std std-ref">IfcCompositeCurveSegment</span></a>’s of type <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a>, or <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_trimmed_curve"><span class="std std-ref">IfcTrimmedCurve</span></a> (having a BasisCurve of type <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_line"><span class="std std-ref">IfcLine</span></a>, or <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_circle"><span class="std std-ref">IfcCircle</span></a>)</p>
+<p>Figure 259 illustrates a polygonal bounded half space.</p>
+<p>Black coordinates indicate the object coordinate system (usually provided by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a>). Green coordinates indicate the position coordinate system; the PolygonalBoundary is given within this coordinate system. It is provided by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_polygonal_bounded_half_space_1ad4d47e23c62f9dc4c2a1aa3ae3901b61"><span class="std std-ref">IfcPolygonalBoundedHalfSpace.Position</span></a>. This coordinate system is relative to the object coordinate system. The extrusion direction of the subtraction body is the positive Z axis. Red coordinates indicate the normal of the plane. It is provided by the BaseSurface (IfcSurface.Position). This normal is also relative to the object coordinate system.</p>
+<p>Figure 259 — Polygonal half space geometry</p>
+<p>Purpose The polygonal bounded half space is used to limit the volume of the half space in Boolean difference expressions. Only the part that is defined by a theoretical intersection between the half space solid and an extruded area solid, defined by extruding the polygonal boundary, is used for Boolean expressions. Parameter The PolygonalBoundary defines the 2D polyline which bounds the effectiveness of the half space in Boolean expressions. The BaseSurface is defined by a plane, and the normal of the plane together with the AgreementFlag defines the side of the material of the half space. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x328IfcPolygonalBoundedHalfSpace4listE">
+<span id="_CPPv3N6Ifc2x328IfcPolygonalBoundedHalfSpace4listE"></span><span id="_CPPv2N6Ifc2x328IfcPolygonalBoundedHalfSpace4listE"></span><span id="Ifc2x3::IfcPolygonalBoundedHalfSpace::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_polygonal_bounded_half_space_1a458163553cd4a4dac45b7a9aa19b66b1"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x328IfcPolygonalBoundedHalfSpaceE" title="Ifc2x3::IfcPolygonalBoundedHalfSpace">IfcPolygonalBoundedHalfSpace</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x328IfcPolygonalBoundedHalfSpace4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x328IfcPolygonalBoundedHalfSpace8PositionEv">
+<span id="_CPPv3NK6Ifc2x328IfcPolygonalBoundedHalfSpace8PositionEv"></span><span id="_CPPv2NK6Ifc2x328IfcPolygonalBoundedHalfSpace8PositionEv"></span><span id="Ifc2x3::IfcPolygonalBoundedHalfSpace::PositionC"></span><span class="target" id="class_ifc2x3_1_1_ifc_polygonal_bounded_half_space_1ad4d47e23c62f9dc4c2a1aa3ae3901b61"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_axis2_placement3_d.html#_CPPv4N6Ifc2x319IfcAxis2Placement3DE" title="Ifc2x3::IfcAxis2Placement3D">IfcAxis2Placement3D</a> *<code class="sig-name descname">Position</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x328IfcPolygonalBoundedHalfSpace8PositionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition of the position coordinate system for the bounding polyline and the base surface. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x328IfcPolygonalBoundedHalfSpace11setPositionEPN6Ifc2x319IfcAxis2Placement3DE">
+<span id="_CPPv3N6Ifc2x328IfcPolygonalBoundedHalfSpace11setPositionEPN6Ifc2x319IfcAxis2Placement3DE"></span><span id="_CPPv2N6Ifc2x328IfcPolygonalBoundedHalfSpace11setPositionEPN6Ifc2x319IfcAxis2Placement3DE"></span><span id="Ifc2x3::IfcPolygonalBoundedHalfSpace::setPosition__Ifc2x3::IfcAxis2Placement3DP"></span><span class="target" id="class_ifc2x3_1_1_ifc_polygonal_bounded_half_space_1ab6479a54088f538e97c6040b0908571d"></span>void <code class="sig-name descname">setPosition</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_axis2_placement3_d.html#_CPPv4N6Ifc2x319IfcAxis2Placement3DE" title="Ifc2x3::IfcAxis2Placement3D">IfcAxis2Placement3D</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x328IfcPolygonalBoundedHalfSpace11setPositionEPN6Ifc2x319IfcAxis2Placement3DE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x328IfcPolygonalBoundedHalfSpace17PolygonalBoundaryEv">
+<span id="_CPPv3NK6Ifc2x328IfcPolygonalBoundedHalfSpace17PolygonalBoundaryEv"></span><span id="_CPPv2NK6Ifc2x328IfcPolygonalBoundedHalfSpace17PolygonalBoundaryEv"></span><span id="Ifc2x3::IfcPolygonalBoundedHalfSpace::PolygonalBoundaryC"></span><span class="target" id="class_ifc2x3_1_1_ifc_polygonal_bounded_half_space_1a965be60bbbbc763aee2eb61f03ce1581"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_bounded_curve.html#_CPPv4N6Ifc2x315IfcBoundedCurveE" title="Ifc2x3::IfcBoundedCurve">IfcBoundedCurve</a> *<code class="sig-name descname">PolygonalBoundary</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x328IfcPolygonalBoundedHalfSpace17PolygonalBoundaryEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Two-dimensional polyline bounded curve, defined in the xy plane of the position coordinate system.</p>
+<p>IFC2x Edition 3 CHANGE The attribute type has been changed from <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a> to its supertype <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_bounded_curve"><span class="std std-ref">IfcBoundedCurve</span></a> with upward compatibility for file based exchange. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x328IfcPolygonalBoundedHalfSpace20setPolygonalBoundaryEPN6Ifc2x315IfcBoundedCurveE">
+<span id="_CPPv3N6Ifc2x328IfcPolygonalBoundedHalfSpace20setPolygonalBoundaryEPN6Ifc2x315IfcBoundedCurveE"></span><span id="_CPPv2N6Ifc2x328IfcPolygonalBoundedHalfSpace20setPolygonalBoundaryEPN6Ifc2x315IfcBoundedCurveE"></span><span id="Ifc2x3::IfcPolygonalBoundedHalfSpace::setPolygonalBoundary__Ifc2x3::IfcBoundedCurveP"></span><span class="target" id="class_ifc2x3_1_1_ifc_polygonal_bounded_half_space_1aa6363562c465a33ff0be1edbfd47bc84"></span>void <code class="sig-name descname">setPolygonalBoundary</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_bounded_curve.html#_CPPv4N6Ifc2x315IfcBoundedCurveE" title="Ifc2x3::IfcBoundedCurve">IfcBoundedCurve</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x328IfcPolygonalBoundedHalfSpace20setPolygonalBoundaryEPN6Ifc2x315IfcBoundedCurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x328IfcPolygonalBoundedHalfSpace11declarationEv">
+<span id="_CPPv3NK6Ifc2x328IfcPolygonalBoundedHalfSpace11declarationEv"></span><span id="_CPPv2NK6Ifc2x328IfcPolygonalBoundedHalfSpace11declarationEv"></span><span id="Ifc2x3::IfcPolygonalBoundedHalfSpace::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_polygonal_bounded_half_space_1a5a0a6b6331d8428b436bd6e8433c1e46"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x328IfcPolygonalBoundedHalfSpace11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x328IfcPolygonalBoundedHalfSpace28IfcPolygonalBoundedHalfSpaceEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x328IfcPolygonalBoundedHalfSpace28IfcPolygonalBoundedHalfSpaceEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x328IfcPolygonalBoundedHalfSpace28IfcPolygonalBoundedHalfSpaceEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcPolygonalBoundedHalfSpace::IfcPolygonalBoundedHalfSpace__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_polygonal_bounded_half_space_1a86072c73f575a62435ae9109272611c0"></span><code class="sig-name descname">IfcPolygonalBoundedHalfSpace</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x328IfcPolygonalBoundedHalfSpace28IfcPolygonalBoundedHalfSpaceEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x328IfcPolygonalBoundedHalfSpace28IfcPolygonalBoundedHalfSpaceEPN6Ifc2x310IfcSurfaceEbPN6Ifc2x319IfcAxis2Placement3DEPN6Ifc2x315IfcBoundedCurveE">
+<span id="_CPPv3N6Ifc2x328IfcPolygonalBoundedHalfSpace28IfcPolygonalBoundedHalfSpaceEPN6Ifc2x310IfcSurfaceEbPN6Ifc2x319IfcAxis2Placement3DEPN6Ifc2x315IfcBoundedCurveE"></span><span id="_CPPv2N6Ifc2x328IfcPolygonalBoundedHalfSpace28IfcPolygonalBoundedHalfSpaceEPN6Ifc2x310IfcSurfaceEbPN6Ifc2x319IfcAxis2Placement3DEPN6Ifc2x315IfcBoundedCurveE"></span><span id="Ifc2x3::IfcPolygonalBoundedHalfSpace::IfcPolygonalBoundedHalfSpace__Ifc2x3::IfcSurfaceP.b.Ifc2x3::IfcAxis2Placement3DP.Ifc2x3::IfcBoundedCurveP"></span><span class="target" id="class_ifc2x3_1_1_ifc_polygonal_bounded_half_space_1a574c43b16a5ffab95039a4a41dd18b4f"></span><code class="sig-name descname">IfcPolygonalBoundedHalfSpace</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_surface.html#_CPPv4N6Ifc2x310IfcSurfaceE" title="Ifc2x3::IfcSurface">IfcSurface</a> *<em>v1_BaseSurface</em>, bool <em>v2_AgreementFlag</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_axis2_placement3_d.html#_CPPv4N6Ifc2x319IfcAxis2Placement3DE" title="Ifc2x3::IfcAxis2Placement3D">IfcAxis2Placement3D</a> *<em>v3_Position</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_bounded_curve.html#_CPPv4N6Ifc2x315IfcBoundedCurveE" title="Ifc2x3::IfcBoundedCurve">IfcBoundedCurve</a> *<em>v4_PolygonalBoundary</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x328IfcPolygonalBoundedHalfSpace28IfcPolygonalBoundedHalfSpaceEPN6Ifc2x310IfcSurfaceEbPN6Ifc2x319IfcAxis2Placement3DEPN6Ifc2x315IfcBoundedCurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x328IfcPolygonalBoundedHalfSpace5ClassEv">
+<span id="_CPPv3N6Ifc2x328IfcPolygonalBoundedHalfSpace5ClassEv"></span><span id="_CPPv2N6Ifc2x328IfcPolygonalBoundedHalfSpace5ClassEv"></span><span id="Ifc2x3::IfcPolygonalBoundedHalfSpace::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_polygonal_bounded_half_space_1a1ed684626a5765e67fb8fe599533e661"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x328IfcPolygonalBoundedHalfSpace5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_point_on_surface.html" title="previous chapter">Class Ifc2x3::IfcPointOnSurface</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_polyline.html" title="next chapter">Class Ifc2x3::IfcPolyline</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_polygonal_bounded_half_space.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

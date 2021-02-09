@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1afb13b6596739ce3e0e31c2e37e483a8a:
+
+Define SCHEMA_IfcReinforcingMesh_HAS_LongitudinalBarCrossSectionArea
+====================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcReinforcingMesh_HAS_LongitudinalBarCrossSectionArea

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a64e514ec16419d72745f0bc6a16fb8ab:
+
+Define SCHEMA_IfcReference_HAS_InstanceName
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcReference_HAS_InstanceName

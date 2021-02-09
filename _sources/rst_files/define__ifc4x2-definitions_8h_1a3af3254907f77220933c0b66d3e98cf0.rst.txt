@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a3af3254907f77220933c0b66d3e98cf0:
+
+Define SCHEMA_IfcRelConnectsStructuralMember_HAS_RelatingStructuralMember
+=========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelConnectsStructuralMember_HAS_RelatingStructuralMember

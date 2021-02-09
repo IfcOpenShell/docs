@@ -1,0 +1,41 @@
+.. _exhale_class_class_ifc2x3_1_1_ifc_curve:
+
+Class Ifc2x3::IfcCurve
+======================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc2x3::IfcGeometricRepresentationItem`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_geometric_representation_item`)
+
+
+Derived Types
+*************
+
+- ``public Ifc2x3::IfcBoundedCurve`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_bounded_curve`)
+- ``public Ifc2x3::IfcConic`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_conic`)
+- ``public Ifc2x3::IfcLine`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_line`)
+- ``public Ifc2x3::IfcOffsetCurve2D`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_offset_curve2_d`)
+- ``public Ifc2x3::IfcOffsetCurve3D`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_offset_curve3_d`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc2x3::IfcCurve
+   :members:
+   :protected-members:
+   :undoc-members:

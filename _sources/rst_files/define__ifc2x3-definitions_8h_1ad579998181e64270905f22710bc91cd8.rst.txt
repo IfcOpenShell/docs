@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ad579998181e64270905f22710bc91cd8:
+
+Define SCHEMA_IfcConstraint_HAS_IsAggregatedIn
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConstraint_HAS_IsAggregatedIn

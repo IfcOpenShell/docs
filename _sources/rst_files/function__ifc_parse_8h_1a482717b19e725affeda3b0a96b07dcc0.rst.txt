@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_parse_8h_1a482717b19e725affeda3b0a96b07dcc0:
+
+Function operator<<
+===================
+
+- Defined in :ref:`file_src_ifcparse_IfcParse.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: operator<<(std::ostream&, const IfcParse::IfcFile&)

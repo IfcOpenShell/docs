@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a6e306552673246072e938c24ca733c5e:
+
+Define SCHEMA_IfcCalendarDate_HAS_YearComponent
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcCalendarDate_HAS_YearComponent

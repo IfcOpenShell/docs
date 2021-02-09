@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ad52b36ba85f832c079c26639218852b1:
+
+Define SCHEMA_HAS_IfcStructuralLoadSingleDisplacement
+=====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcStructuralLoadSingleDisplacement

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aa687cc5108c1d889ae4db041cd5042a3:
+
+Define SCHEMA_IfcStructuralMember_HAS_ReferencesElement
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralMember_HAS_ReferencesElement

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1abb15b6ade3456214076b0e81d54fc54e:
+
+Define SCHEMA_IfcPropertySetTemplate_HAS_HasPropertyTemplates
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPropertySetTemplate_HAS_HasPropertyTemplates

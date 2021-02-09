@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a2d13ef1fc0af16a06ab4140ec7de9fe3:
+
+Define SCHEMA_IfcSubContractResource_HAS_SubContractor
+======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSubContractResource_HAS_SubContractor

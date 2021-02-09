@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a4d645a6ce5c279c834372463b2496e14:
+
+Define SCHEMA_IfcComplexProperty_HAS_HasProperties
+==================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcComplexProperty_HAS_HasProperties

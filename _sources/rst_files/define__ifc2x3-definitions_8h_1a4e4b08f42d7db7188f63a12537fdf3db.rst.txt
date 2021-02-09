@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a4e4b08f42d7db7188f63a12537fdf3db:
+
+Define SCHEMA_HAS_IfcZone
+=========================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcZone

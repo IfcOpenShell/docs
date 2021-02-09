@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_parse_8h_1a5e72730bef37a4dbd74561720a7d45e1:
+
+Function IfcParse::GeneralTokenPtr
+==================================
+
+- Defined in :ref:`file_src_ifcparse_IfcParse.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcParse::GeneralTokenPtr(IfcSpfLexer *, unsigned, unsigned)

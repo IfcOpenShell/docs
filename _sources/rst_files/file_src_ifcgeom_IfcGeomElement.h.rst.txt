@@ -1,0 +1,85 @@
+
+.. _file_src_ifcgeom_IfcGeomElement.h:
+
+File IfcGeomElement.h
+=====================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcgeom>` (``src/ifcgeom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/IfcGeomElement.h``)
+---------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_IfcGeomElement.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/IfcGeomIteratorSettings.h``
+
+- ``../ifcgeom/IfcGeomRepresentation.h``
+
+- ``../ifcparse/Argument.h``
+
+- ``../ifcparse/IfcGlobalId.h``
+
+- ``algorithm``
+
+- ``ifc_geom_api.h`` (:ref:`file_src_ifcgeom_ifc_geom_api.h`)
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_IfcGeom.h`
+
+- :ref:`file_src_ifcgeom_IfcGeomIteratorImplementation.h`
+
+- :ref:`file_src_ifcgeom_IfcGeomTree.h`
+
+- :ref:`file_src_serializers_GeometrySerializer.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcGeom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_ifc_geom_1_1_b_rep_element`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_element`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_matrix`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_serialized_element`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_transformation`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_triangulation_element`
+

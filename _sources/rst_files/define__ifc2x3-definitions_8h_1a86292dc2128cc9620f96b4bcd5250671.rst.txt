@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a86292dc2128cc9620f96b4bcd5250671:
+
+Define SCHEMA_IfcDoor_OverallHeight_IS_OPTIONAL
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDoor_OverallHeight_IS_OPTIONAL

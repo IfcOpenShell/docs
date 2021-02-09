@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a6b825d48284e5a3922aea3782eac8400:
+
+Define SCHEMA_IfcReinforcingMeshType_HAS_LongitudinalBarNominalDiameter
+=======================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcReinforcingMeshType_HAS_LongitudinalBarNominalDiameter

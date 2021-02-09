@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ae16627540fd25cc309a296f1d53f819c:
+
+Define SCHEMA_IfcStructuralLoadSingleForce_HAS_MomentY
+======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLoadSingleForce_HAS_MomentY

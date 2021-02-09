@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1a57b93c542e8ce0ab8a032b31f857619d:
+
+Define SCHEMA_IfcSurfaceStyleRefraction_RefractionIndex_IS_OPTIONAL
+===================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSurfaceStyleRefraction_RefractionIndex_IS_OPTIONAL

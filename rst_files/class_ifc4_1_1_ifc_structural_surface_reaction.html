@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcStructuralSurfaceReaction &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcStyledItem" href="class_ifc4_1_1_ifc_styled_item.html" />
+    <link rel="prev" title="Class Ifc4::IfcStructuralSurfaceMemberVarying" href="class_ifc4_1_1_ifc_structural_surface_member_varying.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcstructuralsurfacereaction">
+<span id="exhale-class-class-ifc4-1-1-ifc-structural-surface-reaction"></span><h1>Class Ifc4::IfcStructuralSurfaceReaction<a class="headerlink" href="#class-ifc4-ifcstructuralsurfacereaction" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcStructuralReaction</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_structural_reaction.html#exhale-class-class-ifc4-1-1-ifc-structural-reaction"><span class="std std-ref">Class Ifc4::IfcStructuralReaction</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc428IfcStructuralSurfaceReactionE">
+<span id="_CPPv3N4Ifc428IfcStructuralSurfaceReactionE"></span><span id="_CPPv2N4Ifc428IfcStructuralSurfaceReactionE"></span><span id="Ifc4::IfcStructuralSurfaceReaction"></span><span class="target" id="class_ifc4_1_1_ifc_structural_surface_reaction"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcStructuralSurfaceReaction</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_structural_reaction.html#_CPPv4N4Ifc421IfcStructuralReactionE" title="Ifc4::IfcStructuralReaction">IfcStructuralReaction</a><a class="headerlink" href="#_CPPv4N4Ifc428IfcStructuralSurfaceReactionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from IAI: Defines a reaction which occurs distributed over a surface. A surface reaction may be connected with a surface member or surface connection.</p>
+<p>HISTORY: New entity in IFC 2x4.</p>
+<p>Coordinate Systems:</p>
+<p>See definitions at <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_structural_activity"><span class="std std-ref">IfcStructuralActivity</span></a>.</p>
+<p>Topology Use Definitions:</p>
+<p>See definitions at <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_structural_activity"><span class="std std-ref">IfcStructuralActivity</span></a>.</p>
+<p>Informal propositions:</p>
+<p>If the surface reaction is of the predefined type CONST, SELF\IfcStructuralActivity.AppliedLoad must not be of type <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_structural_load_configuration"><span class="std std-ref">IfcStructuralLoadConfiguration</span></a>. If the surface reaction is of the predefined type BILINEAR, SELF\IfcStructuralActivity.AppliedLoad shall be of type <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_structural_load_configuration"><span class="std std-ref">IfcStructuralLoadConfiguration</span></a> and shall contain three items with two-dimensional <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_structural_load_configuration_1a358a14b79d8085ebe9e01d8994f37601"><span class="std std-ref">IfcStructuralLoadConfiguration.Locations</span></a>, defining the location of the result samples in local coordinates of the surface reaction. If the surface reaction is of the predefined type DISCRETE, SELF\IfcStructuralActivity.AppliedLoad shall be of type <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_structural_load_configuration"><span class="std std-ref">IfcStructuralLoadConfiguration</span></a> and shall contain two or more items with two-dimensional locations. If the surface reaction is of the predefined type ISOCONTOUR, SELF\IfcStructuralActivity.AppliedLoad shall be of type <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_structural_load_configuration"><span class="std std-ref">IfcStructuralLoadConfiguration</span></a> and shall contain the same number of items as the set SELF.IfcProduct.Representation.Representations[?].Items. Each item in the load configuration shall have a two-dimensional location, defining the location of the result samples in local coordinates of the surface reaction. Each item in SELF\IfcStructuralActivity.AppliedLoad shall be located at exactly one of the isocontours. NOTE The set of representation items is unordered, hence result locations are required to correlate result values and isocontours. NOTE Isocontours are represented as IfcPCurves which are defined in terms of surface parameters u,v, while result locations are given in local surface item coordinates x,y. It is strongly recommended that the surface parameterization u,v is scaled 1:1 in order to avoid different scales of u,v versus x,y. If u,v are scaled 1:1 and the IfcPCurve’s base surface is identical with the surface item’s base surface, u,v and local x,y are identical.</p>
+<p>All items in SELF\IfcStructuralActivity.AppliedLoad\IfcStructuralLoadConfiguration.Values shall be of the same entity type. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc428IfcStructuralSurfaceReaction4listE">
+<span id="_CPPv3N4Ifc428IfcStructuralSurfaceReaction4listE"></span><span id="_CPPv2N4Ifc428IfcStructuralSurfaceReaction4listE"></span><span id="Ifc4::IfcStructuralSurfaceReaction::list"></span><span class="target" id="class_ifc4_1_1_ifc_structural_surface_reaction_1a23b49598c244279d26de8a9c003575c6"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc428IfcStructuralSurfaceReactionE" title="Ifc4::IfcStructuralSurfaceReaction">IfcStructuralSurfaceReaction</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc428IfcStructuralSurfaceReaction4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc428IfcStructuralSurfaceReaction14PredefinedTypeEv">
+<span id="_CPPv3NK4Ifc428IfcStructuralSurfaceReaction14PredefinedTypeEv"></span><span id="_CPPv2NK4Ifc428IfcStructuralSurfaceReaction14PredefinedTypeEv"></span><span id="Ifc4::IfcStructuralSurfaceReaction::PredefinedTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_structural_surface_reaction_1ab253a2ae051c581c1cec4c28ea86467a"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc436IfcStructuralSurfaceActivityTypeEnumE" title="Ifc4::IfcStructuralSurfaceActivityTypeEnum">IfcStructuralSurfaceActivityTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc436IfcStructuralSurfaceActivityTypeEnum5ValueE" title="Ifc4::IfcStructuralSurfaceActivityTypeEnum::Value">Value</a> <code class="sig-name descname">PredefinedType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc428IfcStructuralSurfaceReaction14PredefinedTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Type of reaction according to its distribution of load values. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc428IfcStructuralSurfaceReaction17setPredefinedTypeEN4Ifc436IfcStructuralSurfaceActivityTypeEnum5ValueE">
+<span id="_CPPv3N4Ifc428IfcStructuralSurfaceReaction17setPredefinedTypeEN4Ifc436IfcStructuralSurfaceActivityTypeEnum5ValueE"></span><span id="_CPPv2N4Ifc428IfcStructuralSurfaceReaction17setPredefinedTypeEN4Ifc436IfcStructuralSurfaceActivityTypeEnum5ValueE"></span><span id="Ifc4::IfcStructuralSurfaceReaction::setPredefinedType__Ifc4::IfcStructuralSurfaceActivityTypeEnum::Value"></span><span class="target" id="class_ifc4_1_1_ifc_structural_surface_reaction_1ae269717779005c52e954c13c3f5126f3"></span>void <code class="sig-name descname">setPredefinedType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc436IfcStructuralSurfaceActivityTypeEnumE" title="Ifc4::IfcStructuralSurfaceActivityTypeEnum">IfcStructuralSurfaceActivityTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc436IfcStructuralSurfaceActivityTypeEnum5ValueE" title="Ifc4::IfcStructuralSurfaceActivityTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc428IfcStructuralSurfaceReaction17setPredefinedTypeEN4Ifc436IfcStructuralSurfaceActivityTypeEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc428IfcStructuralSurfaceReaction11declarationEv">
+<span id="_CPPv3NK4Ifc428IfcStructuralSurfaceReaction11declarationEv"></span><span id="_CPPv2NK4Ifc428IfcStructuralSurfaceReaction11declarationEv"></span><span id="Ifc4::IfcStructuralSurfaceReaction::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_structural_surface_reaction_1aea2344735ccecf99e264d9cd4ca31db9"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc428IfcStructuralSurfaceReaction11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc428IfcStructuralSurfaceReaction28IfcStructuralSurfaceReactionEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc428IfcStructuralSurfaceReaction28IfcStructuralSurfaceReactionEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc428IfcStructuralSurfaceReaction28IfcStructuralSurfaceReactionEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcStructuralSurfaceReaction::IfcStructuralSurfaceReaction__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_structural_surface_reaction_1ac8da4ae5e7058187a8d8558937df8e69"></span><code class="sig-name descname">IfcStructuralSurfaceReaction</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc428IfcStructuralSurfaceReaction28IfcStructuralSurfaceReactionEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc428IfcStructuralSurfaceReaction28IfcStructuralSurfaceReactionENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc418IfcObjectPlacementEPN4Ifc424IfcProductRepresentationEPN4Ifc417IfcStructuralLoadEN4Ifc420IfcGlobalOrLocalEnum5ValueEN4Ifc436IfcStructuralSurfaceActivityTypeEnum5ValueE">
+<span id="_CPPv3N4Ifc428IfcStructuralSurfaceReaction28IfcStructuralSurfaceReactionENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc418IfcObjectPlacementEPN4Ifc424IfcProductRepresentationEPN4Ifc417IfcStructuralLoadEN4Ifc420IfcGlobalOrLocalEnum5ValueEN4Ifc436IfcStructuralSurfaceActivityTypeEnum5ValueE"></span><span id="_CPPv2N4Ifc428IfcStructuralSurfaceReaction28IfcStructuralSurfaceReactionENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc418IfcObjectPlacementEPN4Ifc424IfcProductRepresentationEPN4Ifc417IfcStructuralLoadEN4Ifc420IfcGlobalOrLocalEnum5ValueEN4Ifc436IfcStructuralSurfaceActivityTypeEnum5ValueE"></span><span id="Ifc4::IfcStructuralSurfaceReaction::IfcStructuralSurfaceReaction__ss.Ifc4::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4::IfcObjectPlacementP.Ifc4::IfcProductRepresentationP.Ifc4::IfcStructuralLoadP.Ifc4::IfcGlobalOrLocalEnum::Value.Ifc4::IfcStructuralSurfaceActivityTypeEnum::Value"></span><span class="target" id="class_ifc4_1_1_ifc_structural_surface_reaction_1acb076a645973984e77beb690adcfaf88"></span><code class="sig-name descname">IfcStructuralSurfaceReaction</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_owner_history.html#_CPPv4N4Ifc415IfcOwnerHistoryE" title="Ifc4::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_object_placement.html#_CPPv4N4Ifc418IfcObjectPlacementE" title="Ifc4::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_product_representation.html#_CPPv4N4Ifc424IfcProductRepresentationE" title="Ifc4::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_structural_load.html#_CPPv4N4Ifc417IfcStructuralLoadE" title="Ifc4::IfcStructuralLoad">IfcStructuralLoad</a> *<em>v8_AppliedLoad</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc420IfcGlobalOrLocalEnumE" title="Ifc4::IfcGlobalOrLocalEnum">IfcGlobalOrLocalEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc420IfcGlobalOrLocalEnum5ValueE" title="Ifc4::IfcGlobalOrLocalEnum::Value">Value</a> <em>v9_GlobalOrLocal</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc436IfcStructuralSurfaceActivityTypeEnumE" title="Ifc4::IfcStructuralSurfaceActivityTypeEnum">IfcStructuralSurfaceActivityTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc436IfcStructuralSurfaceActivityTypeEnum5ValueE" title="Ifc4::IfcStructuralSurfaceActivityTypeEnum::Value">Value</a> <em>v10_PredefinedType</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc428IfcStructuralSurfaceReaction28IfcStructuralSurfaceReactionENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc418IfcObjectPlacementEPN4Ifc424IfcProductRepresentationEPN4Ifc417IfcStructuralLoadEN4Ifc420IfcGlobalOrLocalEnum5ValueEN4Ifc436IfcStructuralSurfaceActivityTypeEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc428IfcStructuralSurfaceReaction5ClassEv">
+<span id="_CPPv3N4Ifc428IfcStructuralSurfaceReaction5ClassEv"></span><span id="_CPPv2N4Ifc428IfcStructuralSurfaceReaction5ClassEv"></span><span id="Ifc4::IfcStructuralSurfaceReaction::Class"></span><span class="target" id="class_ifc4_1_1_ifc_structural_surface_reaction_1af1cdc131564a46083cd25ea7dec57e0c"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc428IfcStructuralSurfaceReaction5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_structural_surface_member_varying.html" title="previous chapter">Class Ifc4::IfcStructuralSurfaceMemberVarying</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_styled_item.html" title="next chapter">Class Ifc4::IfcStyledItem</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_structural_surface_reaction.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

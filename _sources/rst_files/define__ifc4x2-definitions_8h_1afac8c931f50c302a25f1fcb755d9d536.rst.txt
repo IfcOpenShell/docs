@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1afac8c931f50c302a25f1fcb755d9d536:
+
+Define SCHEMA_HAS_IfcTemperatureGradientMeasure
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcTemperatureGradientMeasure

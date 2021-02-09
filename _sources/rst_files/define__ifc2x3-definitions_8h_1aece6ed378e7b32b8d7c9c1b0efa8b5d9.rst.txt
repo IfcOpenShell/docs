@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aece6ed378e7b32b8d7c9c1b0efa8b5d9:
+
+Define SCHEMA_IfcConstructionResource_HAS_ResourceConsumption
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConstructionResource_HAS_ResourceConsumption

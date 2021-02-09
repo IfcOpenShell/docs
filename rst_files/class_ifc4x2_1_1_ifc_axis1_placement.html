@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcAxis1Placement &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcAxis2Placement2D" href="class_ifc4x2_1_1_ifc_axis2_placement2_d.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcAudioVisualApplianceType" href="class_ifc4x2_1_1_ifc_audio_visual_appliance_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcaxis1placement">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-axis1-placement"></span><h1>Class Ifc4x2::IfcAxis1Placement<a class="headerlink" href="#class-ifc4x2-ifcaxis1placement" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcPlacement</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_placement.html#exhale-class-class-ifc4x2-1-1-ifc-placement"><span class="std std-ref">Class Ifc4x2::IfcPlacement</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x217IfcAxis1PlacementE">
+<span id="_CPPv3N6Ifc4x217IfcAxis1PlacementE"></span><span id="_CPPv2N6Ifc4x217IfcAxis1PlacementE"></span><span id="Ifc4x2::IfcAxis1Placement"></span><span class="target" id="class_ifc4x2_1_1_ifc_axis1_placement"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcAxis1Placement</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_placement.html#_CPPv4N6Ifc4x212IfcPlacementE" title="Ifc4x2::IfcPlacement">IfcPlacement</a><a class="headerlink" href="#_CPPv4N6Ifc4x217IfcAxis1PlacementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: The direction and location in three dimensional space of a single axis. An axis1_placement is defined in terms of a locating point (inherited from placement supertype) and an axis direction: this is either the direction of axis or defaults to (0.0,0.0,1.0). The actual direction for the axis placement is given by the derived attribute z (Z). </p>
+<p>NOTE Corresponding ISO 10303 name: axis1_placement, please refer to ISO/IS 10303-42:1994, p. 28 for the final definition of the formal standard.</p>
+<p>HISTORY New entity in IFC Release 1.5</p>
+<p>Figure 274 illustrates the definition of the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_axis1_placement"><span class="std std-ref">IfcAxis1Placement</span></a> within the three-dimensional coordinate system.</p>
+<p>Figure 274 — Axis1 placement </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x217IfcAxis1Placement4listE">
+<span id="_CPPv3N6Ifc4x217IfcAxis1Placement4listE"></span><span id="_CPPv2N6Ifc4x217IfcAxis1Placement4listE"></span><span id="Ifc4x2::IfcAxis1Placement::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_axis1_placement_1addd7d4f5dde272a423d52f8495d5f714"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x217IfcAxis1PlacementE" title="Ifc4x2::IfcAxis1Placement">IfcAxis1Placement</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x217IfcAxis1Placement4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x217IfcAxis1Placement7hasAxisEv">
+<span id="_CPPv3NK6Ifc4x217IfcAxis1Placement7hasAxisEv"></span><span id="_CPPv2NK6Ifc4x217IfcAxis1Placement7hasAxisEv"></span><span id="Ifc4x2::IfcAxis1Placement::hasAxisC"></span><span class="target" id="class_ifc4x2_1_1_ifc_axis1_placement_1a478788f5afc091a06df1272a88bf4a96"></span>bool <code class="sig-name descname">hasAxis</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x217IfcAxis1Placement7hasAxisEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Axis is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_axis1_placement"><span class="std std-ref">IfcAxis1Placement</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x217IfcAxis1Placement4AxisEv">
+<span id="_CPPv3NK6Ifc4x217IfcAxis1Placement4AxisEv"></span><span id="_CPPv2NK6Ifc4x217IfcAxis1Placement4AxisEv"></span><span id="Ifc4x2::IfcAxis1Placement::AxisC"></span><span class="target" id="class_ifc4x2_1_1_ifc_axis1_placement_1a07a6f3b0a5ce8bbc7afb83e9a378a287"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_direction.html#_CPPv4N6Ifc4x212IfcDirectionE" title="Ifc4x2::IfcDirection">IfcDirection</a> *<code class="sig-name descname">Axis</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x217IfcAxis1Placement4AxisEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The direction of the local Z axis. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x217IfcAxis1Placement7setAxisEPN6Ifc4x212IfcDirectionE">
+<span id="_CPPv3N6Ifc4x217IfcAxis1Placement7setAxisEPN6Ifc4x212IfcDirectionE"></span><span id="_CPPv2N6Ifc4x217IfcAxis1Placement7setAxisEPN6Ifc4x212IfcDirectionE"></span><span id="Ifc4x2::IfcAxis1Placement::setAxis__Ifc4x2::IfcDirectionP"></span><span class="target" id="class_ifc4x2_1_1_ifc_axis1_placement_1a50d45c4abfa99cc71d13f10bdf65c657"></span>void <code class="sig-name descname">setAxis</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_direction.html#_CPPv4N6Ifc4x212IfcDirectionE" title="Ifc4x2::IfcDirection">IfcDirection</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x217IfcAxis1Placement7setAxisEPN6Ifc4x212IfcDirectionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x217IfcAxis1Placement11declarationEv">
+<span id="_CPPv3NK6Ifc4x217IfcAxis1Placement11declarationEv"></span><span id="_CPPv2NK6Ifc4x217IfcAxis1Placement11declarationEv"></span><span id="Ifc4x2::IfcAxis1Placement::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_axis1_placement_1a554ed96a53fd8b36f8b34762bdc85c4b"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x217IfcAxis1Placement11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x217IfcAxis1Placement17IfcAxis1PlacementEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x217IfcAxis1Placement17IfcAxis1PlacementEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x217IfcAxis1Placement17IfcAxis1PlacementEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcAxis1Placement::IfcAxis1Placement__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_axis1_placement_1abfaa879692934067c31ecf13dfc21687"></span><code class="sig-name descname">IfcAxis1Placement</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x217IfcAxis1Placement17IfcAxis1PlacementEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x217IfcAxis1Placement17IfcAxis1PlacementEPN6Ifc4x217IfcCartesianPointEPN6Ifc4x212IfcDirectionE">
+<span id="_CPPv3N6Ifc4x217IfcAxis1Placement17IfcAxis1PlacementEPN6Ifc4x217IfcCartesianPointEPN6Ifc4x212IfcDirectionE"></span><span id="_CPPv2N6Ifc4x217IfcAxis1Placement17IfcAxis1PlacementEPN6Ifc4x217IfcCartesianPointEPN6Ifc4x212IfcDirectionE"></span><span id="Ifc4x2::IfcAxis1Placement::IfcAxis1Placement__Ifc4x2::IfcCartesianPointP.Ifc4x2::IfcDirectionP"></span><span class="target" id="class_ifc4x2_1_1_ifc_axis1_placement_1a1a1c14be04d4ab3d47a2ce424132c8e8"></span><code class="sig-name descname">IfcAxis1Placement</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_cartesian_point.html#_CPPv4N6Ifc4x217IfcCartesianPointE" title="Ifc4x2::IfcCartesianPoint">IfcCartesianPoint</a> *<em>v1_Location</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_direction.html#_CPPv4N6Ifc4x212IfcDirectionE" title="Ifc4x2::IfcDirection">IfcDirection</a> *<em>v2_Axis</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x217IfcAxis1Placement17IfcAxis1PlacementEPN6Ifc4x217IfcCartesianPointEPN6Ifc4x212IfcDirectionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x217IfcAxis1Placement5ClassEv">
+<span id="_CPPv3N6Ifc4x217IfcAxis1Placement5ClassEv"></span><span id="_CPPv2N6Ifc4x217IfcAxis1Placement5ClassEv"></span><span id="Ifc4x2::IfcAxis1Placement::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_axis1_placement_1aa35e5123c1709eff6f0f2be5ffba4856"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x217IfcAxis1Placement5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_audio_visual_appliance_type.html" title="previous chapter">Class Ifc4x2::IfcAudioVisualApplianceType</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_axis2_placement2_d.html" title="next chapter">Class Ifc4x2::IfcAxis2Placement2D</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_axis1_placement.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

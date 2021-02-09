@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1ac7796ab4e2e16b80b92ae206f904e2ff:
+
+Define SCHEMA_IfcConstraint_HAS_CreatingActor
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConstraint_HAS_CreatingActor

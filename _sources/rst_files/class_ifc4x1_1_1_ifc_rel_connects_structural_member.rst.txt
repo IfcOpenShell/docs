@@ -1,0 +1,37 @@
+.. _exhale_class_class_ifc4x1_1_1_ifc_rel_connects_structural_member:
+
+Class Ifc4x1::IfcRelConnectsStructuralMember
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x1::IfcRelConnects`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_connects`)
+
+
+Derived Type
+************
+
+- ``public Ifc4x1::IfcRelConnectsWithEccentricity`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_rel_connects_with_eccentricity`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x1::IfcRelConnectsStructuralMember
+   :members:
+   :protected-members:
+   :undoc-members:

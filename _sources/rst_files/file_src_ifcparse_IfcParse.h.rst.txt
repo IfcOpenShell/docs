@@ -1,0 +1,136 @@
+
+.. _file_src_ifcparse_IfcParse.h:
+
+File IfcParse.h
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcparse>` (``src/ifcparse``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/IfcParse.h``)
+----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_IfcParse.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/Argument.h``
+
+- ``../ifcparse/IfcBaseClass.h``
+
+- ``../ifcparse/IfcCharacterDecoder.h``
+
+- ``../ifcparse/IfcLogger.h``
+
+- ``../ifcparse/IfcSpfStream.h``
+
+- ``boost/dynamic_bitset.hpp``
+
+- ``boost/shared_ptr.hpp``
+
+- ``cstring``
+
+- ``fstream``
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+- ``iostream``
+
+- ``map``
+
+- ``sstream``
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_IfcGeom.h`
+
+- :ref:`file_src_ifcparse_IfcFile.h`
+
+- :ref:`file_src_ifcparse_IfcWrite.h`
+
+- :ref:`file_src_ifcgeom_IfcRegister.h`
+
+- :ref:`file_src_ifcparse_IfcSIPrefix.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcParse`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_struct_ifc_parse_1_1_token`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_argument_list`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_entity_argument`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_spf_lexer`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_null_argument`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_token_argument`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_token_func`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum__ifc_parse_8h_1a87329b11f95a7c8cc7139328880b0f31`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function__ifc_parse_8h_1a5e72730bef37a4dbd74561720a7d45e1`
+
+- :ref:`exhale_function__ifc_parse_8h_1a7680f51f9ea25226cfcd49d0ad4ae850`
+
+- :ref:`exhale_function__ifc_parse_8h_1aa755ed49756a10b049abd7ee7bb684bd`
+
+- :ref:`exhale_function__ifc_parse_8h_1ac08f6c495eac51dcfb07f4f5d936e7e9`
+
+- :ref:`exhale_function__ifc_parse_8h_1adbdc1ab9528a2502fb9132a68aaca203`
+
+- :ref:`exhale_function__ifc_parse_8h_1a482717b19e725affeda3b0a96b07dcc0`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define__ifc_parse_8h_1a5816275bef37f9789128730b76523e05`
+

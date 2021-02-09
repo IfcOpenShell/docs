@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1a1565a301d649ed5d4f344044f9f3264d:
+
+Define SCHEMA_IfcGeometricRepresentationContext_HAS_WorldCoordinateSystem
+=========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcGeometricRepresentationContext_HAS_WorldCoordinateSystem

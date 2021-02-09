@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a16c4178bb412d1efac61f352831dfc5c:
+
+Define SCHEMA_IfcProfileProperties_ProfileName_IS_OPTIONAL
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcProfileProperties_ProfileName_IS_OPTIONAL

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a8bc20dca31fc373e705b4e0b1f5ed29f:
+
+Define SCHEMA_IfcMaterialLayerWithOffsets_HAS_OffsetDirection
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMaterialLayerWithOffsets_HAS_OffsetDirection

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a277a094ddb0560da0a70bb5d7ccf84b5:
+
+Define SCHEMA_HAS_IfcEventTriggerTypeEnum
+=========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcEventTriggerTypeEnum

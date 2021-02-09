@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcClassification &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcClassificationReference" href="class_ifc4x1_1_1_ifc_classification_reference.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcCivilElementType" href="class_ifc4x1_1_1_ifc_civil_element_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcclassification">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-classification"></span><h1>Class Ifc4x1::IfcClassification<a class="headerlink" href="#class-ifc4x1-ifcclassification" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcExternalInformation</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_external_information.html#exhale-class-class-ifc4x1-1-1-ifc-external-information"><span class="std std-ref">Class Ifc4x1::IfcExternalInformation</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x117IfcClassificationE">
+<span id="_CPPv3N6Ifc4x117IfcClassificationE"></span><span id="_CPPv2N6Ifc4x117IfcClassificationE"></span><span id="Ifc4x1::IfcClassification"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcClassification</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_external_information.html#_CPPv4N6Ifc4x122IfcExternalInformationE" title="Ifc4x1::IfcExternalInformation">IfcExternalInformation</a><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcClassificationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_classification"><span class="std std-ref">IfcClassification</span></a> is used for the arrangement of objects into a class or category according to a common purpose or their possession of common characteristics. A classification in the sense of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_classification"><span class="std std-ref">IfcClassification</span></a> is taxonomy, or taxonomic scheme, arranged in a hierarchical structure. A category of objects relates to other categories in a generalization-specialization relationship. Therefore the classification items in an classification are organized in a tree structure.</p>
+<p>HISTORY New class in IFC Release 1.5. Modified in IFC 2x.</p>
+<p>IFC 2x4 CHANGE Attribute Edition made optional. Attributes: PublicationLocation, Description and ReferenceTokens added. Inverse attribute HasClassificationReferences added.</p>
+<p>Classification use definitions <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_classification"><span class="std std-ref">IfcClassification</span></a> identifies the classification system or source from which a classification notation is derived. Each classification reference or classification item, belonging to a single classification system, shall reference a single instance of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_classification"><span class="std std-ref">IfcClassification</span></a>. Therefore, each particular classification system or source used should have only one <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_classification"><span class="std std-ref">IfcClassification</span></a> instance. However, because multiple classification is allowed, there may be many <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_classification"><span class="std std-ref">IfcClassification</span></a> objects used, each identifying a different classification system or source.</p>
+<p>A classification system declared may be either formally published (such as Omniclass, Uniclass, Masterformat, or DIN) or it may be a locally defined method of classifiying information. There are two methods to define a classification system within an IFC dataset:</p>
+<p>Including the classification system structure within the dataset: Here a hierarchical tree of IfcClassificationItem’s is included that defines the classification system including the relationship between the classification items. An IfcClassificationNotation is used to classify an object. Referencing the classification system by a classification key or id: Here the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_classification_reference"><span class="std std-ref">IfcClassificationReference</span></a> is used to assign a classification id or key to each classified object. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x117IfcClassification4listE">
+<span id="_CPPv3N6Ifc4x117IfcClassification4listE"></span><span id="_CPPv2N6Ifc4x117IfcClassification4listE"></span><span id="Ifc4x1::IfcClassification::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1ad7f57470c9f2684d6064e23976daff61"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x117IfcClassificationE" title="Ifc4x1::IfcClassification">IfcClassification</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcClassification4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcClassification9hasSourceEv">
+<span id="_CPPv3NK6Ifc4x117IfcClassification9hasSourceEv"></span><span id="_CPPv2NK6Ifc4x117IfcClassification9hasSourceEv"></span><span id="Ifc4x1::IfcClassification::hasSourceC"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1aa32fbe3fd944f86c0f295feb02d5ed18"></span>bool <code class="sig-name descname">hasSource</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcClassification9hasSourceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Source is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_classification"><span class="std std-ref">IfcClassification</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcClassification6SourceEv">
+<span id="_CPPv3NK6Ifc4x117IfcClassification6SourceEv"></span><span id="_CPPv2NK6Ifc4x117IfcClassification6SourceEv"></span><span id="Ifc4x1::IfcClassification::SourceC"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1a6ce752d1645fb8edba0fac5a6644e117"></span>std::string <code class="sig-name descname">Source</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcClassification6SourceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Source (or publisher) for this classification.</p>
+<p>NOTE that the source of the classification means the person or organization that was the original author or the person or organization currently acting as the publisher. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcClassification9setSourceENSt6stringE">
+<span id="_CPPv3N6Ifc4x117IfcClassification9setSourceENSt6stringE"></span><span id="_CPPv2N6Ifc4x117IfcClassification9setSourceENSt6stringE"></span><span id="Ifc4x1::IfcClassification::setSource__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1a20373b146def30f559ddf39ce677adbe"></span>void <code class="sig-name descname">setSource</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcClassification9setSourceENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcClassification10hasEditionEv">
+<span id="_CPPv3NK6Ifc4x117IfcClassification10hasEditionEv"></span><span id="_CPPv2NK6Ifc4x117IfcClassification10hasEditionEv"></span><span id="Ifc4x1::IfcClassification::hasEditionC"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1a648a136c0db027eca1fa875e5e769429"></span>bool <code class="sig-name descname">hasEdition</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcClassification10hasEditionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Edition is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_classification"><span class="std std-ref">IfcClassification</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcClassification7EditionEv">
+<span id="_CPPv3NK6Ifc4x117IfcClassification7EditionEv"></span><span id="_CPPv2NK6Ifc4x117IfcClassification7EditionEv"></span><span id="Ifc4x1::IfcClassification::EditionC"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1a746a4eca6a97137114af34a467993fa9"></span>std::string <code class="sig-name descname">Edition</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcClassification7EditionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The edition or version of the classification system from which the classification notation is derived.</p>
+<p>NOTE the version labeling system is specific to the classification system.</p>
+<p>IFC2x4 CHANGE The attribute has been changed to be optional. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcClassification10setEditionENSt6stringE">
+<span id="_CPPv3N6Ifc4x117IfcClassification10setEditionENSt6stringE"></span><span id="_CPPv2N6Ifc4x117IfcClassification10setEditionENSt6stringE"></span><span id="Ifc4x1::IfcClassification::setEdition__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1a498f55a506fe7fc79a4bc16add6968f0"></span>void <code class="sig-name descname">setEdition</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcClassification10setEditionENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcClassification14hasEditionDateEv">
+<span id="_CPPv3NK6Ifc4x117IfcClassification14hasEditionDateEv"></span><span id="_CPPv2NK6Ifc4x117IfcClassification14hasEditionDateEv"></span><span id="Ifc4x1::IfcClassification::hasEditionDateC"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1a1ae8a8c1e16a075a6fd01b225fec2228"></span>bool <code class="sig-name descname">hasEditionDate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcClassification14hasEditionDateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute EditionDate is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_classification"><span class="std std-ref">IfcClassification</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcClassification11EditionDateEv">
+<span id="_CPPv3NK6Ifc4x117IfcClassification11EditionDateEv"></span><span id="_CPPv2NK6Ifc4x117IfcClassification11EditionDateEv"></span><span id="Ifc4x1::IfcClassification::EditionDateC"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1a76fd5755a9c87cd72c88b6eb263d96dc"></span>std::string <code class="sig-name descname">EditionDate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcClassification11EditionDateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The date on which the edition of the classification used became valid.</p>
+<p>NOTE The indication of edition may be sufficient to identify the classification source uniquely but the edition date is provided as an optional attribute to enable more precise identification where required.</p>
+<p>IFC2x4 CHANGE The data type has been changed to <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_date"><span class="std std-ref">IfcDate</span></a>, the date string according to ISO8601. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcClassification14setEditionDateENSt6stringE">
+<span id="_CPPv3N6Ifc4x117IfcClassification14setEditionDateENSt6stringE"></span><span id="_CPPv2N6Ifc4x117IfcClassification14setEditionDateENSt6stringE"></span><span id="Ifc4x1::IfcClassification::setEditionDate__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1ae138cc93dd625aff57c80c28a00c43f1"></span>void <code class="sig-name descname">setEditionDate</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcClassification14setEditionDateENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcClassification4NameEv">
+<span id="_CPPv3NK6Ifc4x117IfcClassification4NameEv"></span><span id="_CPPv2NK6Ifc4x117IfcClassification4NameEv"></span><span id="Ifc4x1::IfcClassification::NameC"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1a86c979038539dea7f639b367f4a5a5d9"></span>std::string <code class="sig-name descname">Name</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcClassification4NameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The name or label by which the classification used is normally known.</p>
+<p>NOTE Examples of names include CI/SfB, Masterformat, BSAB, Uniclass, STABU, DIN276, DIN277 etc. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcClassification7setNameENSt6stringE">
+<span id="_CPPv3N6Ifc4x117IfcClassification7setNameENSt6stringE"></span><span id="_CPPv2N6Ifc4x117IfcClassification7setNameENSt6stringE"></span><span id="Ifc4x1::IfcClassification::setName__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1a66b8c7b88727c31ce3ff284073e412eb"></span>void <code class="sig-name descname">setName</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcClassification7setNameENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcClassification14hasDescriptionEv">
+<span id="_CPPv3NK6Ifc4x117IfcClassification14hasDescriptionEv"></span><span id="_CPPv2NK6Ifc4x117IfcClassification14hasDescriptionEv"></span><span id="Ifc4x1::IfcClassification::hasDescriptionC"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1ad566757d3c8b217d5a1deab8515b59ce"></span>bool <code class="sig-name descname">hasDescription</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcClassification14hasDescriptionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Description is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_classification"><span class="std std-ref">IfcClassification</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcClassification11DescriptionEv">
+<span id="_CPPv3NK6Ifc4x117IfcClassification11DescriptionEv"></span><span id="_CPPv2NK6Ifc4x117IfcClassification11DescriptionEv"></span><span id="Ifc4x1::IfcClassification::DescriptionC"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1ad919237b2e0c7a9705a6ceee57c43642"></span>std::string <code class="sig-name descname">Description</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcClassification11DescriptionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Additional description provided for the classification.</p>
+<p>IFC2x4 CHANGE New attribute added at the end of the attribute list. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcClassification14setDescriptionENSt6stringE">
+<span id="_CPPv3N6Ifc4x117IfcClassification14setDescriptionENSt6stringE"></span><span id="_CPPv2N6Ifc4x117IfcClassification14setDescriptionENSt6stringE"></span><span id="Ifc4x1::IfcClassification::setDescription__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1aaadbae340e903d19cce2442cad75531a"></span>void <code class="sig-name descname">setDescription</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcClassification14setDescriptionENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcClassification11hasLocationEv">
+<span id="_CPPv3NK6Ifc4x117IfcClassification11hasLocationEv"></span><span id="_CPPv2NK6Ifc4x117IfcClassification11hasLocationEv"></span><span id="Ifc4x1::IfcClassification::hasLocationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1a364502011a6a8d330c54c2c40d6b158b"></span>bool <code class="sig-name descname">hasLocation</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcClassification11hasLocationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Location is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_classification"><span class="std std-ref">IfcClassification</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcClassification8LocationEv">
+<span id="_CPPv3NK6Ifc4x117IfcClassification8LocationEv"></span><span id="_CPPv2NK6Ifc4x117IfcClassification8LocationEv"></span><span id="Ifc4x1::IfcClassification::LocationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1ac7732c1cc050614e3027bbb88a2902a3"></span>std::string <code class="sig-name descname">Location</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcClassification8LocationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Resource identifier or locator, provided as URI, URN or URL, of the classification. </p>
+<p>IFC2x4 CHANGE New attribute added at the end of the attribute list. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcClassification11setLocationENSt6stringE">
+<span id="_CPPv3N6Ifc4x117IfcClassification11setLocationENSt6stringE"></span><span id="_CPPv2N6Ifc4x117IfcClassification11setLocationENSt6stringE"></span><span id="Ifc4x1::IfcClassification::setLocation__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1a3e132dc157e97463f8042b120d0a8ad6"></span>void <code class="sig-name descname">setLocation</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcClassification11setLocationENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcClassification18hasReferenceTokensEv">
+<span id="_CPPv3NK6Ifc4x117IfcClassification18hasReferenceTokensEv"></span><span id="_CPPv2NK6Ifc4x117IfcClassification18hasReferenceTokensEv"></span><span id="Ifc4x1::IfcClassification::hasReferenceTokensC"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1aab40fe0fa48318b62dfb572c3304dc8a"></span>bool <code class="sig-name descname">hasReferenceTokens</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcClassification18hasReferenceTokensEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ReferenceTokens is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_classification"><span class="std std-ref">IfcClassification</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcClassification15ReferenceTokensEv">
+<span id="_CPPv3NK6Ifc4x117IfcClassification15ReferenceTokensEv"></span><span id="_CPPv2NK6Ifc4x117IfcClassification15ReferenceTokensEv"></span><span id="Ifc4x1::IfcClassification::ReferenceTokensC"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1a35b2265c3c63adb66ae05757c7d48308"></span>std::vector&lt;std::string&gt; <code class="sig-name descname">ReferenceTokens</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcClassification15ReferenceTokensEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The delimiter tokens that are used to mark the boundaries of individual facets (substrings) in a classification reference.</p>
+<p>This typically applies then the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_classification"><span class="std std-ref">IfcClassification</span></a> is used in conjuction with <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_classification_reference"><span class="std std-ref">IfcClassificationReference</span></a>’s. If only one ReferenceToken is provided, it applies to all boundaries of individual facets, if more than one ReferenceToken are provided, the first token applies to the first boundary, the second token to the second boundary, and the nth token to the nth and any additional boundary.</p>
+<p>NOTE Tokens are typically recommended within the classification itself and each token will have a particular role.</p>
+<p>EXAMPLE 1 To indicate that the facet delimiter used for DIN277-2 reference key “2.1” (“Office rooms”) is “.”, a single ReferenceToken [‘.’] is provided. To indicate that the facet delimiter used for Omniclass Table 13 (space by function) reference key “13-15 11 34 11” (“Office”) are “-” and ” “, two ReferenceToken’s [‘-‘, ‘ ‘] are provided.</p>
+<p>EXAMPLE 2 The use of ReferenceTokens can also be extended to include masks. The use need to be agreed in view definitions or implementer agreements that stipulates a “mask syntax” that should be used. </p>
+<p>IFC2x4 CHANGE New attribute added at the end of the attribute list. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcClassification18setReferenceTokensENSt6vectorINSt6stringEEE">
+<span id="_CPPv3N6Ifc4x117IfcClassification18setReferenceTokensENSt6vectorINSt6stringEEE"></span><span id="_CPPv2N6Ifc4x117IfcClassification18setReferenceTokensENSt6vectorINSt6stringEEE"></span><span id="Ifc4x1::IfcClassification::setReferenceTokens__std::vector:ss:"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1aec375dbf5c17f3026517b779517d16c8"></span>void <code class="sig-name descname">setReferenceTokens</code><span class="sig-paren">(</span>std::vector&lt;std::string&gt; <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcClassification18setReferenceTokensENSt6vectorINSt6stringEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcClassification24ClassificationForObjectsEv">
+<span id="_CPPv3NK6Ifc4x117IfcClassification24ClassificationForObjectsEv"></span><span id="_CPPv2NK6Ifc4x117IfcClassification24ClassificationForObjectsEv"></span><span id="Ifc4x1::IfcClassification::ClassificationForObjectsC"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1a65ccf5daa8efaaa9ae8a18c05bbe4dd4"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4x1_1_1_ifc_rel_associates_classification.html#_CPPv4N6Ifc4x130IfcRelAssociatesClassificationE" title="Ifc4x1::IfcRelAssociatesClassification">IfcRelAssociatesClassification</a>&gt;::ptr <code class="sig-name descname">ClassificationForObjects</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcClassification24ClassificationForObjectsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcClassification13HasReferencesEv">
+<span id="_CPPv3NK6Ifc4x117IfcClassification13HasReferencesEv"></span><span id="_CPPv2NK6Ifc4x117IfcClassification13HasReferencesEv"></span><span id="Ifc4x1::IfcClassification::HasReferencesC"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1ac8c3ffce2d81c17c34540d363496e86e"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4x1_1_1_ifc_classification_reference.html#_CPPv4N6Ifc4x126IfcClassificationReferenceE" title="Ifc4x1::IfcClassificationReference">IfcClassificationReference</a>&gt;::ptr <code class="sig-name descname">HasReferences</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcClassification13HasReferencesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x117IfcClassification11declarationEv">
+<span id="_CPPv3NK6Ifc4x117IfcClassification11declarationEv"></span><span id="_CPPv2NK6Ifc4x117IfcClassification11declarationEv"></span><span id="Ifc4x1::IfcClassification::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1acb8af3ccddb249f58a22dd468df69912"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x117IfcClassification11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcClassification17IfcClassificationEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x117IfcClassification17IfcClassificationEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x117IfcClassification17IfcClassificationEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcClassification::IfcClassification__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1ad35589abd72acd0549b1f3a9c9169977"></span><code class="sig-name descname">IfcClassification</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcClassification17IfcClassificationEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcClassification17IfcClassificationEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEENSt6stringEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6vectorINSt6stringEEEEE">
+<span id="_CPPv3N6Ifc4x117IfcClassification17IfcClassificationEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEENSt6stringEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6vectorINSt6stringEEEEE"></span><span id="_CPPv2N6Ifc4x117IfcClassification17IfcClassificationEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEENSt6stringEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6vectorINSt6stringEEEEE"></span><span id="Ifc4x1::IfcClassification::IfcClassification__boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.ss.boost::optional:ss:.boost::optional:ss:.boost::optional:std::vector:ss::"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1aadb42c428bbc8f8e7dd508bf61e1417d"></span><code class="sig-name descname">IfcClassification</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Source</em>, boost::optional&lt;std::string&gt; <em>v2_Edition</em>, boost::optional&lt;std::string&gt; <em>v3_EditionDate</em>, std::string <em>v4_Name</em>, boost::optional&lt;std::string&gt; <em>v5_Description</em>, boost::optional&lt;std::string&gt; <em>v6_Location</em>, boost::optional&lt;std::vector&lt;std::string&gt;&gt; <em>v7_ReferenceTokens</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcClassification17IfcClassificationEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEENSt6stringEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6vectorINSt6stringEEEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcClassification5ClassEv">
+<span id="_CPPv3N6Ifc4x117IfcClassification5ClassEv"></span><span id="_CPPv2N6Ifc4x117IfcClassification5ClassEv"></span><span id="Ifc4x1::IfcClassification::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_classification_1a73711e697aed2467d7eef67c35c2373d"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x117IfcClassification5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_civil_element_type.html" title="previous chapter">Class Ifc4x1::IfcCivilElementType</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_classification_reference.html" title="next chapter">Class Ifc4x1::IfcClassificationReference</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_classification.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

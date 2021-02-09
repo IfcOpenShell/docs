@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1ac2845f0b529308cf15a6fd1d7cb6f472:
+
+Define SCHEMA_HAS_IfcLinearMomentMeasure
+========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcLinearMomentMeasure

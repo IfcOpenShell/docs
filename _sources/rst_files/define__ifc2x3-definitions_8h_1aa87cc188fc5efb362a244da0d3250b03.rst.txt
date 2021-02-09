@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aa87cc188fc5efb362a244da0d3250b03:
+
+Define SCHEMA_IfcEnvironmentalImpactValue_HAS_ImpactType
+========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcEnvironmentalImpactValue_HAS_ImpactType

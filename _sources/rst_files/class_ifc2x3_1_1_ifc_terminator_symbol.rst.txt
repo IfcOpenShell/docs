@@ -1,0 +1,37 @@
+.. _exhale_class_class_ifc2x3_1_1_ifc_terminator_symbol:
+
+Class Ifc2x3::IfcTerminatorSymbol
+=================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc2x3::IfcAnnotationSymbolOccurrence`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_annotation_symbol_occurrence`)
+
+
+Derived Type
+************
+
+- ``public Ifc2x3::IfcDimensionCurveTerminator`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_dimension_curve_terminator`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc2x3::IfcTerminatorSymbol
+   :members:
+   :protected-members:
+   :undoc-members:

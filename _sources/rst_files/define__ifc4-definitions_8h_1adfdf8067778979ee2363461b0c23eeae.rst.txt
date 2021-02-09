@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1adfdf8067778979ee2363461b0c23eeae:
+
+Define SCHEMA_IfcStructuralLoadLinearForce_LinearMomentX_IS_OPTIONAL
+====================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLoadLinearForce_LinearMomentX_IS_OPTIONAL

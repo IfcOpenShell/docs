@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a8201e97c2a2a2a0503df18f73a398629:
+
+Define SCHEMA_IfcProcess_HAS_IsSuccessorFrom
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcProcess_HAS_IsSuccessorFrom

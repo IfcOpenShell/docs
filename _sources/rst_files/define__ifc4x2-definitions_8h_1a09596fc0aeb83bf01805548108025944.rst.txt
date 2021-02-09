@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a09596fc0aeb83bf01805548108025944:
+
+Define SCHEMA_IfcMaterialDefinitionRepresentation_HAS_RepresentedMaterial
+=========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMaterialDefinitionRepresentation_HAS_RepresentedMaterial

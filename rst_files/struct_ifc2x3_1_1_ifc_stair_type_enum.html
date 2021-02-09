@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Struct Ifc2x3::IfcStairTypeEnum &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct Ifc2x3::IfcStateEnum" href="struct_ifc2x3_1_1_ifc_state_enum.html" />
+    <link rel="prev" title="Struct Ifc2x3::IfcStairFlightTypeEnum" href="struct_ifc2x3_1_1_ifc_stair_flight_type_enum.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="struct-ifc2x3-ifcstairtypeenum">
+<span id="exhale-struct-struct-ifc2x3-1-1-ifc-stair-type-enum"></span><h1>Struct Ifc2x3::IfcStairTypeEnum<a class="headerlink" href="#struct-ifc2x3-ifcstairtypeenum" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This struct is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp struct">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnumE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnumE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnumE"></span><span id="Ifc2x3::IfcStairTypeEnum"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum"></span><em class="property">struct </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcStairTypeEnum</code><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp enum">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum5ValueE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum5ValueE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum5ValueE"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a081dbb1055f4f1bcf631feb8dda8e3ae"></span><em class="property">enum </em><code class="sig-name descname">Value</code><br /></dt>
+<dd><p>This enumeration defines the basic configuration of the stair type in terms of the number of stair flights and the number of landings, as illustrated in Figure 69. The type also distinguished turns by windings or by landings. In addition the subdivision of the straight and changing direction stairs is included. The stair configurations are given for stairs without and with one, two or three landings.</p>
+<p>Stairs which are subdivided into more than three landings have to be defined by the geometry only. Also stairs with non-regular shapes have to be defined by the geometry only. The type of such stairs is OTHEROPERATION.</p>
+<p>HISTORY New Enumeration in IFC Release 2.0.</p>
+<p>Enumerator Description Figure</p>
+<p>StraightRunStair A stair extending from one level to another without turns or winders. The stair consists of one straight flight.</p>
+<p>TwoStraightRunStair A straight stair consisting of two straight flights without turns but with one landing.</p>
+<p>QuarterWindingStair A stair consisting of one flight with a quarter winder, which is making a 90° turn. The direction of the turn is determined by the walking line.</p>
+<p>QuarterTurnStair A stair making a 90° turn, consisting of two straight flights connected by a quarterspace landing. The direction of the turn is determined by the walking line.</p>
+<p>HalfWindingStair A stair consisting of one flight with one half winder, which makes a 180° turn. The orientation of the turn is determined by the walking line.</p>
+<p>HalfTurnStair A stair making a 180° turn, consisting of two straight flights connected by a halfspace landing. The orientation of the turn is determined by the walking line.</p>
+<p>TwoQuarterWindingStair A stair consisting of one flight with two quarter winders, which make a 90° turn. The stair makes a 180° turn. The direction of the turns is determined by the walking line.</p>
+<p>TwoQuarterTurnStair A stair making a 180° turn, consisting of three straight flights connected by two quarterspace landings. The direction of the turns is determined by the walking line.</p>
+<p>ThreeQuarterWindingStair</p>
+<p>A stair consisting of one flight with three quarter winders, which make a 90° turn. The stair makes a 270° turn. The direction of the turns is determined by the walking line.</p>
+<p>ThreeQuarterTurnStair A stair making a 270° turn, consisting of four straight flights connected by three quarterspace landings. The direction of the turns is determined by the walking line.</p>
+<p>SpiralStair A stair constructed with winders around a circular newel often without landings. Depending on outer boundary it can be either a circular, elliptical or rectangular spiral stair. The orientation of the winding stairs is determined by the walking line.</p>
+<p>DoubleReturnStair A stair having one straight flight to a wide quarterspace landing, and two side flights from that landing into opposite directions. The stair is making a 90° turn. The direction of traffic is determined by the walking line.</p>
+<p>CurvedRunStair A stair extending from one level to another without turns or winders. The stair is consisting of one curved flight.</p>
+<p>TwoCurvedRunStair A curved stair consisting of two curved flights without turns but with one landing.</p>
+<p>OtherOperation Free form stair (user defined operation type) </p>
+<p>NotDefined  </p>
+<p>Figure 69 — Stair types </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum5Value31IfcStairType_STRAIGHT_RUN_STAIRE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum5Value31IfcStairType_STRAIGHT_RUN_STAIRE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum5Value31IfcStairType_STRAIGHT_RUN_STAIRE"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a081dbb1055f4f1bcf631feb8dda8e3aea258bb4308fda4183f47c50566f429c97"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStairType_STRAIGHT_RUN_STAIR</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum5Value35IfcStairType_TWO_STRAIGHT_RUN_STAIRE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum5Value35IfcStairType_TWO_STRAIGHT_RUN_STAIRE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum5Value35IfcStairType_TWO_STRAIGHT_RUN_STAIRE"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a081dbb1055f4f1bcf631feb8dda8e3aead59eb16354995b686b257532647e7c93"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStairType_TWO_STRAIGHT_RUN_STAIR</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum5Value34IfcStairType_QUARTER_WINDING_STAIRE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum5Value34IfcStairType_QUARTER_WINDING_STAIRE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum5Value34IfcStairType_QUARTER_WINDING_STAIRE"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a081dbb1055f4f1bcf631feb8dda8e3aea09370df9a1c31948a494de6a9fda68c5"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStairType_QUARTER_WINDING_STAIR</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum5Value31IfcStairType_QUARTER_TURN_STAIRE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum5Value31IfcStairType_QUARTER_TURN_STAIRE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum5Value31IfcStairType_QUARTER_TURN_STAIRE"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a081dbb1055f4f1bcf631feb8dda8e3aea153f8a74ec97994481a722290dc90aaf"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStairType_QUARTER_TURN_STAIR</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum5Value31IfcStairType_HALF_WINDING_STAIRE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum5Value31IfcStairType_HALF_WINDING_STAIRE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum5Value31IfcStairType_HALF_WINDING_STAIRE"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a081dbb1055f4f1bcf631feb8dda8e3aea4607ff350a610c08ac93a74bb4050fad"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStairType_HALF_WINDING_STAIR</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum5Value28IfcStairType_HALF_TURN_STAIRE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum5Value28IfcStairType_HALF_TURN_STAIRE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum5Value28IfcStairType_HALF_TURN_STAIRE"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a081dbb1055f4f1bcf631feb8dda8e3aea2185e684634186021e122a3ec08b315b"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStairType_HALF_TURN_STAIR</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum5Value38IfcStairType_TWO_QUARTER_WINDING_STAIRE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum5Value38IfcStairType_TWO_QUARTER_WINDING_STAIRE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum5Value38IfcStairType_TWO_QUARTER_WINDING_STAIRE"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a081dbb1055f4f1bcf631feb8dda8e3aea33a5385ad5a72d7383a077b4b76c7e6e"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStairType_TWO_QUARTER_WINDING_STAIR</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum5Value35IfcStairType_TWO_QUARTER_TURN_STAIRE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum5Value35IfcStairType_TWO_QUARTER_TURN_STAIRE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum5Value35IfcStairType_TWO_QUARTER_TURN_STAIRE"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a081dbb1055f4f1bcf631feb8dda8e3aea3b1ce6023224403b2c7e1475448365d5"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStairType_TWO_QUARTER_TURN_STAIR</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum5Value40IfcStairType_THREE_QUARTER_WINDING_STAIRE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum5Value40IfcStairType_THREE_QUARTER_WINDING_STAIRE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum5Value40IfcStairType_THREE_QUARTER_WINDING_STAIRE"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a081dbb1055f4f1bcf631feb8dda8e3aea48fa1a754d639d5ae7b6fa4e53ccc001"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStairType_THREE_QUARTER_WINDING_STAIR</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum5Value37IfcStairType_THREE_QUARTER_TURN_STAIRE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum5Value37IfcStairType_THREE_QUARTER_TURN_STAIRE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum5Value37IfcStairType_THREE_QUARTER_TURN_STAIRE"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a081dbb1055f4f1bcf631feb8dda8e3aea50a6ffa4b4ada156342e7ee4cfe4873c"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStairType_THREE_QUARTER_TURN_STAIR</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum5Value25IfcStairType_SPIRAL_STAIRE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum5Value25IfcStairType_SPIRAL_STAIRE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum5Value25IfcStairType_SPIRAL_STAIRE"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a081dbb1055f4f1bcf631feb8dda8e3aeae35fd8e68d47d1919aaf5472709afc79"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStairType_SPIRAL_STAIR</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum5Value32IfcStairType_DOUBLE_RETURN_STAIRE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum5Value32IfcStairType_DOUBLE_RETURN_STAIRE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum5Value32IfcStairType_DOUBLE_RETURN_STAIRE"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a081dbb1055f4f1bcf631feb8dda8e3aea735061fdc8e98f791ed612d84e241b96"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStairType_DOUBLE_RETURN_STAIR</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum5Value29IfcStairType_CURVED_RUN_STAIRE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum5Value29IfcStairType_CURVED_RUN_STAIRE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum5Value29IfcStairType_CURVED_RUN_STAIRE"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a081dbb1055f4f1bcf631feb8dda8e3aea86fb479a87f6001dfacaa65b79ab1b3b"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStairType_CURVED_RUN_STAIR</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum5Value33IfcStairType_TWO_CURVED_RUN_STAIRE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum5Value33IfcStairType_TWO_CURVED_RUN_STAIRE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum5Value33IfcStairType_TWO_CURVED_RUN_STAIRE"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a081dbb1055f4f1bcf631feb8dda8e3aea8f7460fada250fec90436a778c47550a"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStairType_TWO_CURVED_RUN_STAIR</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum5Value24IfcStairType_USERDEFINEDE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum5Value24IfcStairType_USERDEFINEDE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum5Value24IfcStairType_USERDEFINEDE"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a081dbb1055f4f1bcf631feb8dda8e3aea158bfa15fc0bd28320f306bffdb587df"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStairType_USERDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum5Value23IfcStairType_NOTDEFINEDE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum5Value23IfcStairType_NOTDEFINEDE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum5Value23IfcStairType_NOTDEFINEDE"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a081dbb1055f4f1bcf631feb8dda8e3aea5ce7bb34f2f2f4aa1bf1e319932d13c4"></span><em class="property">enumerator </em><code class="sig-name descname">IfcStairType_NOTDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum8ToStringE5Value">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum8ToStringE5Value"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum8ToStringE5Value"></span><span id="Ifc2x3::IfcStairTypeEnum::ToString__Value"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a597b8d98cd01a3089e3c28abed9cd80b"></span>IFC_PARSE_API <em class="property">const</em> char *<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x316IfcStairTypeEnum5ValueE" title="Ifc2x3::IfcStairTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x316IfcStairTypeEnum10FromStringERKNSt6stringE">
+<span id="_CPPv3N6Ifc2x316IfcStairTypeEnum10FromStringERKNSt6stringE"></span><span id="_CPPv2N6Ifc2x316IfcStairTypeEnum10FromStringERKNSt6stringE"></span><span id="Ifc2x3::IfcStairTypeEnum::FromString__ssCR"></span><span class="target" id="struct_ifc2x3_1_1_ifc_stair_type_enum_1a3a89f196be22a0575d15071b6c44cc8a"></span>IFC_PARSE_API <a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x316IfcStairTypeEnum5ValueE" title="Ifc2x3::IfcStairTypeEnum::Value">Value</a> <code class="sig-name descname">FromString</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>s</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="struct_ifc2x3_1_1_ifc_stair_flight_type_enum.html" title="previous chapter">Struct Ifc2x3::IfcStairFlightTypeEnum</a></li>
+      <li>Next: <a href="struct_ifc2x3_1_1_ifc_state_enum.html" title="next chapter">Struct Ifc2x3::IfcStateEnum</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/struct_ifc2x3_1_1_ifc_stair_type_enum.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

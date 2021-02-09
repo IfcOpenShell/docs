@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a6d942c39135f0c9f8f1ef0aeb0e4459d:
+
+Define SCHEMA_IfcPostalAddress_HAS_PostalBox
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPostalAddress_HAS_PostalBox

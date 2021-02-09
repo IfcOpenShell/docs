@@ -1,0 +1,37 @@
+.. _exhale_class_class_ifc4x2_1_1_ifc_indexed_polygonal_face:
+
+Class Ifc4x2::IfcIndexedPolygonalFace
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x2`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x2::IfcTessellatedItem`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_tessellated_item`)
+
+
+Derived Type
+************
+
+- ``public Ifc4x2::IfcIndexedPolygonalFaceWithVoids`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_indexed_polygonal_face_with_voids`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x2::IfcIndexedPolygonalFace
+   :members:
+   :protected-members:
+   :undoc-members:

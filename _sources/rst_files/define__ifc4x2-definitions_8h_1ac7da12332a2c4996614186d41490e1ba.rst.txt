@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1ac7da12332a2c4996614186d41490e1ba:
+
+Define SCHEMA_IfcQuantityArea_HAS_AreaValue
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcQuantityArea_HAS_AreaValue

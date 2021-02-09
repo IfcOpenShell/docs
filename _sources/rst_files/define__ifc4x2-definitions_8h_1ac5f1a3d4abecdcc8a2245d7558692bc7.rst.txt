@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1ac5f1a3d4abecdcc8a2245d7558692bc7:
+
+Define SCHEMA_IfcAddress_HAS_UserDefinedPurpose
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcAddress_HAS_UserDefinedPurpose

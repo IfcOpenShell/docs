@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcMaterialProfileSet &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcMaterialProfileSetUsage" href="class_ifc4_1_1_ifc_material_profile_set_usage.html" />
+    <link rel="prev" title="Class Ifc4::IfcMaterialProfile" href="class_ifc4_1_1_ifc_material_profile.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcmaterialprofileset">
+<span id="exhale-class-class-ifc4-1-1-ifc-material-profile-set"></span><h1>Class Ifc4::IfcMaterialProfileSet<a class="headerlink" href="#class-ifc4-ifcmaterialprofileset" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcMaterialDefinition</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_material_definition.html#exhale-class-class-ifc4-1-1-ifc-material-definition"><span class="std std-ref">Class Ifc4::IfcMaterialDefinition</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc421IfcMaterialProfileSetE">
+<span id="_CPPv3N4Ifc421IfcMaterialProfileSetE"></span><span id="_CPPv2N4Ifc421IfcMaterialProfileSetE"></span><span id="Ifc4::IfcMaterialProfileSet"></span><span class="target" id="class_ifc4_1_1_ifc_material_profile_set"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcMaterialProfileSet</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_material_definition.html#_CPPv4N4Ifc421IfcMaterialDefinitionE" title="Ifc4::IfcMaterialDefinition">IfcMaterialDefinition</a><a class="headerlink" href="#_CPPv4N4Ifc421IfcMaterialProfileSetE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_material_profile_set"><span class="std std-ref">IfcMaterialProfileSet</span></a> is a designation by which individual material(s) of a prismatic element (for example, beam or column) constructed of a single or multiple material profiles is known. If only a single material profile is used (the most typical case) then no CompositeProfile is asserted.</p>
+<p>NOTE In case of multiple MaterialProfiles, the relative positioning of individual profiles in <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_material_profile_set"><span class="std std-ref">IfcMaterialProfileSet</span></a> are defined using the concept of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_composite_profile_def"><span class="std std-ref">IfcCompositeProfileDef</span></a> in IfcProfileResource schema; otherwise, only one MaterialProfile is given and defined by an individual <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_profile_def"><span class="std std-ref">IfcProfileDef</span></a> (subtype).</p>
+<p>HISTORYNew Entity in IFC2x4. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc421IfcMaterialProfileSet4listE">
+<span id="_CPPv3N4Ifc421IfcMaterialProfileSet4listE"></span><span id="_CPPv2N4Ifc421IfcMaterialProfileSet4listE"></span><span id="Ifc4::IfcMaterialProfileSet::list"></span><span class="target" id="class_ifc4_1_1_ifc_material_profile_set_1a56745684181f66ac56544ef0b05400f4"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc421IfcMaterialProfileSetE" title="Ifc4::IfcMaterialProfileSet">IfcMaterialProfileSet</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc421IfcMaterialProfileSet4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc421IfcMaterialProfileSet7hasNameEv">
+<span id="_CPPv3NK4Ifc421IfcMaterialProfileSet7hasNameEv"></span><span id="_CPPv2NK4Ifc421IfcMaterialProfileSet7hasNameEv"></span><span id="Ifc4::IfcMaterialProfileSet::hasNameC"></span><span class="target" id="class_ifc4_1_1_ifc_material_profile_set_1af9fffdb22aeb9c3155800d55995725ac"></span>bool <code class="sig-name descname">hasName</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc421IfcMaterialProfileSet7hasNameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Name is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_material_profile_set"><span class="std std-ref">IfcMaterialProfileSet</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc421IfcMaterialProfileSet4NameEv">
+<span id="_CPPv3NK4Ifc421IfcMaterialProfileSet4NameEv"></span><span id="_CPPv2NK4Ifc421IfcMaterialProfileSet4NameEv"></span><span id="Ifc4::IfcMaterialProfileSet::NameC"></span><span class="target" id="class_ifc4_1_1_ifc_material_profile_set_1af911289d73dc04d11364ef96a0a7e932"></span>std::string <code class="sig-name descname">Name</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc421IfcMaterialProfileSet4NameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The name by which the material profile set is known. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc421IfcMaterialProfileSet7setNameENSt6stringE">
+<span id="_CPPv3N4Ifc421IfcMaterialProfileSet7setNameENSt6stringE"></span><span id="_CPPv2N4Ifc421IfcMaterialProfileSet7setNameENSt6stringE"></span><span id="Ifc4::IfcMaterialProfileSet::setName__ss"></span><span class="target" id="class_ifc4_1_1_ifc_material_profile_set_1a7515d43deadd12ab5804966aba952700"></span>void <code class="sig-name descname">setName</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc421IfcMaterialProfileSet7setNameENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc421IfcMaterialProfileSet14hasDescriptionEv">
+<span id="_CPPv3NK4Ifc421IfcMaterialProfileSet14hasDescriptionEv"></span><span id="_CPPv2NK4Ifc421IfcMaterialProfileSet14hasDescriptionEv"></span><span id="Ifc4::IfcMaterialProfileSet::hasDescriptionC"></span><span class="target" id="class_ifc4_1_1_ifc_material_profile_set_1a662d463ba79dec1c0c31f4134b9131b0"></span>bool <code class="sig-name descname">hasDescription</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc421IfcMaterialProfileSet14hasDescriptionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Description is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_material_profile_set"><span class="std std-ref">IfcMaterialProfileSet</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc421IfcMaterialProfileSet11DescriptionEv">
+<span id="_CPPv3NK4Ifc421IfcMaterialProfileSet11DescriptionEv"></span><span id="_CPPv2NK4Ifc421IfcMaterialProfileSet11DescriptionEv"></span><span id="Ifc4::IfcMaterialProfileSet::DescriptionC"></span><span class="target" id="class_ifc4_1_1_ifc_material_profile_set_1a37db5cab3111394e71e53c056aa8b2e9"></span>std::string <code class="sig-name descname">Description</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc421IfcMaterialProfileSet11DescriptionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition of the material profile set in descriptive terms. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc421IfcMaterialProfileSet14setDescriptionENSt6stringE">
+<span id="_CPPv3N4Ifc421IfcMaterialProfileSet14setDescriptionENSt6stringE"></span><span id="_CPPv2N4Ifc421IfcMaterialProfileSet14setDescriptionENSt6stringE"></span><span id="Ifc4::IfcMaterialProfileSet::setDescription__ss"></span><span class="target" id="class_ifc4_1_1_ifc_material_profile_set_1abe35136d0fa59441918d6f46f2032971"></span>void <code class="sig-name descname">setDescription</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc421IfcMaterialProfileSet14setDescriptionENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc421IfcMaterialProfileSet16MaterialProfilesEv">
+<span id="_CPPv3NK4Ifc421IfcMaterialProfileSet16MaterialProfilesEv"></span><span id="_CPPv2NK4Ifc421IfcMaterialProfileSet16MaterialProfilesEv"></span><span id="Ifc4::IfcMaterialProfileSet::MaterialProfilesC"></span><span class="target" id="class_ifc4_1_1_ifc_material_profile_set_1af3b3960e721ff1493e1b1f024fcaa3fa"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_material_profile.html#_CPPv4N4Ifc418IfcMaterialProfileE" title="Ifc4::IfcMaterialProfile">IfcMaterialProfile</a>&gt;::ptr <code class="sig-name descname">MaterialProfiles</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc421IfcMaterialProfileSet16MaterialProfilesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Identification of the profiles from which the material profile set is composed. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc421IfcMaterialProfileSet19setMaterialProfilesEN22IfcTemplatedEntityListIN4Ifc418IfcMaterialProfileEE3ptrE">
+<span id="_CPPv3N4Ifc421IfcMaterialProfileSet19setMaterialProfilesEN22IfcTemplatedEntityListIN4Ifc418IfcMaterialProfileEE3ptrE"></span><span id="_CPPv2N4Ifc421IfcMaterialProfileSet19setMaterialProfilesEN22IfcTemplatedEntityListIN4Ifc418IfcMaterialProfileEE3ptrE"></span><span id="Ifc4::IfcMaterialProfileSet::setMaterialProfiles__IfcTemplatedEntityList:Ifc4::IfcMaterialProfile:::ptr"></span><span class="target" id="class_ifc4_1_1_ifc_material_profile_set_1a0ab1d161c6f62c0d599930b10652fdd3"></span>void <code class="sig-name descname">setMaterialProfiles</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_material_profile.html#_CPPv4N4Ifc418IfcMaterialProfileE" title="Ifc4::IfcMaterialProfile">IfcMaterialProfile</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc421IfcMaterialProfileSet19setMaterialProfilesEN22IfcTemplatedEntityListIN4Ifc418IfcMaterialProfileEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc421IfcMaterialProfileSet19hasCompositeProfileEv">
+<span id="_CPPv3NK4Ifc421IfcMaterialProfileSet19hasCompositeProfileEv"></span><span id="_CPPv2NK4Ifc421IfcMaterialProfileSet19hasCompositeProfileEv"></span><span id="Ifc4::IfcMaterialProfileSet::hasCompositeProfileC"></span><span class="target" id="class_ifc4_1_1_ifc_material_profile_set_1a2cb05a3a9a4775c1f6db8199a9467893"></span>bool <code class="sig-name descname">hasCompositeProfile</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc421IfcMaterialProfileSet19hasCompositeProfileEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute CompositeProfile is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_material_profile_set"><span class="std std-ref">IfcMaterialProfileSet</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc421IfcMaterialProfileSet16CompositeProfileEv">
+<span id="_CPPv3NK4Ifc421IfcMaterialProfileSet16CompositeProfileEv"></span><span id="_CPPv2NK4Ifc421IfcMaterialProfileSet16CompositeProfileEv"></span><span id="Ifc4::IfcMaterialProfileSet::CompositeProfileC"></span><span class="target" id="class_ifc4_1_1_ifc_material_profile_set_1a38b13d3b54754b1da7aeed8253c1160d"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_composite_profile_def.html#_CPPv4N4Ifc422IfcCompositeProfileDefE" title="Ifc4::IfcCompositeProfileDef">IfcCompositeProfileDef</a> *<code class="sig-name descname">CompositeProfile</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc421IfcMaterialProfileSet16CompositeProfileEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reference to the composite profile definition for which this material profile set associates material to each of its individual profile.</p>
+<p>NOTE  The referenced <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_composite_profile_def"><span class="std std-ref">IfcCompositeProfileDef</span></a> instance shall be composed of all of the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_profile_def"><span class="std std-ref">IfcProfileDef</span></a> instances which are used via the MaterialProfiles list in the current <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_material_profile_set"><span class="std std-ref">IfcMaterialProfileSet</span></a> . </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc421IfcMaterialProfileSet19setCompositeProfileEPN4Ifc422IfcCompositeProfileDefE">
+<span id="_CPPv3N4Ifc421IfcMaterialProfileSet19setCompositeProfileEPN4Ifc422IfcCompositeProfileDefE"></span><span id="_CPPv2N4Ifc421IfcMaterialProfileSet19setCompositeProfileEPN4Ifc422IfcCompositeProfileDefE"></span><span id="Ifc4::IfcMaterialProfileSet::setCompositeProfile__Ifc4::IfcCompositeProfileDefP"></span><span class="target" id="class_ifc4_1_1_ifc_material_profile_set_1a6c40360c7dee7cac7452d9511603e914"></span>void <code class="sig-name descname">setCompositeProfile</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_composite_profile_def.html#_CPPv4N4Ifc422IfcCompositeProfileDefE" title="Ifc4::IfcCompositeProfileDef">IfcCompositeProfileDef</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc421IfcMaterialProfileSet19setCompositeProfileEPN4Ifc422IfcCompositeProfileDefE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc421IfcMaterialProfileSet11declarationEv">
+<span id="_CPPv3NK4Ifc421IfcMaterialProfileSet11declarationEv"></span><span id="_CPPv2NK4Ifc421IfcMaterialProfileSet11declarationEv"></span><span id="Ifc4::IfcMaterialProfileSet::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_material_profile_set_1a25335315500dc66588d9f0b91b805374"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc421IfcMaterialProfileSet11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc421IfcMaterialProfileSet21IfcMaterialProfileSetEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc421IfcMaterialProfileSet21IfcMaterialProfileSetEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc421IfcMaterialProfileSet21IfcMaterialProfileSetEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcMaterialProfileSet::IfcMaterialProfileSet__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_material_profile_set_1ad6851f9ee324197f58b56bcf78666503"></span><code class="sig-name descname">IfcMaterialProfileSet</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc421IfcMaterialProfileSet21IfcMaterialProfileSetEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc421IfcMaterialProfileSet21IfcMaterialProfileSetEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN4Ifc418IfcMaterialProfileEE3ptrEPN4Ifc422IfcCompositeProfileDefE">
+<span id="_CPPv3N4Ifc421IfcMaterialProfileSet21IfcMaterialProfileSetEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN4Ifc418IfcMaterialProfileEE3ptrEPN4Ifc422IfcCompositeProfileDefE"></span><span id="_CPPv2N4Ifc421IfcMaterialProfileSet21IfcMaterialProfileSetEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN4Ifc418IfcMaterialProfileEE3ptrEPN4Ifc422IfcCompositeProfileDefE"></span><span id="Ifc4::IfcMaterialProfileSet::IfcMaterialProfileSet__boost::optional:ss:.boost::optional:ss:.IfcTemplatedEntityList:Ifc4::IfcMaterialProfile:::ptr.Ifc4::IfcCompositeProfileDefP"></span><span class="target" id="class_ifc4_1_1_ifc_material_profile_set_1af124cabf0bf4f7ee4d3d2fc9de7a1c4d"></span><code class="sig-name descname">IfcMaterialProfileSet</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Name</em>, boost::optional&lt;std::string&gt; <em>v2_Description</em>, <a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_material_profile.html#_CPPv4N4Ifc418IfcMaterialProfileE" title="Ifc4::IfcMaterialProfile">IfcMaterialProfile</a>&gt;::ptr <em>v3_MaterialProfiles</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_composite_profile_def.html#_CPPv4N4Ifc422IfcCompositeProfileDefE" title="Ifc4::IfcCompositeProfileDef">IfcCompositeProfileDef</a> *<em>v4_CompositeProfile</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc421IfcMaterialProfileSet21IfcMaterialProfileSetEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN4Ifc418IfcMaterialProfileEE3ptrEPN4Ifc422IfcCompositeProfileDefE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc421IfcMaterialProfileSet5ClassEv">
+<span id="_CPPv3N4Ifc421IfcMaterialProfileSet5ClassEv"></span><span id="_CPPv2N4Ifc421IfcMaterialProfileSet5ClassEv"></span><span id="Ifc4::IfcMaterialProfileSet::Class"></span><span class="target" id="class_ifc4_1_1_ifc_material_profile_set_1ae05be4c851e4af88db6cc028d2f7fae9"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc421IfcMaterialProfileSet5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_material_profile.html" title="previous chapter">Class Ifc4::IfcMaterialProfile</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_material_profile_set_usage.html" title="next chapter">Class Ifc4::IfcMaterialProfileSetUsage</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_material_profile_set.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

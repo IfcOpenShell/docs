@@ -1,0 +1,67 @@
+
+.. _file_src_serializers_GeometrySerializer.h:
+
+File GeometrySerializer.h
+=========================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_serializers>` (``src/serializers``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/serializers/GeometrySerializer.h``)
+-----------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_serializers_GeometrySerializer.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/IfcGeomElement.h``
+
+- ``../ifcgeom_schema_agnostic/IfcGeomIterator.h``
+
+- ``../serializers/Serializer.h``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_serializers_OpenCascadeBasedSerializer.h`
+
+- :ref:`file_src_serializers_SvgSerializer.h`
+
+- :ref:`file_src_serializers_WavefrontObjSerializer.h`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_geometry_serializer`
+
+- :ref:`exhale_class_class_serializer_settings`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef__geometry_serializer_8h_1a1924a4f6907cc3833213aba1f07fcbe9`
+

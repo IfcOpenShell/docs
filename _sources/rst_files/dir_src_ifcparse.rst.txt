@@ -1,0 +1,49 @@
+.. _dir_src_ifcparse:
+
+
+Directory ifcparse
+==================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_src>` (``src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``src/ifcparse``
+
+
+Files
+-----
+
+- :ref:`file_src_ifcparse_Argument.h`
+- :ref:`file_src_ifcparse_ArgumentType.h`
+- :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+- :ref:`file_src_ifcparse_Ifc2x3.h`
+- :ref:`file_src_ifcparse_Ifc4-definitions.h`
+- :ref:`file_src_ifcparse_Ifc4.h`
+- :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+- :ref:`file_src_ifcparse_Ifc4x1.h`
+- :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+- :ref:`file_src_ifcparse_Ifc4x2.h`
+- :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+- :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+- :ref:`file_src_ifcparse_ifc_parse_api.h`
+- :ref:`file_src_ifcparse_IfcBaseClass.h`
+- :ref:`file_src_ifcparse_IfcCharacterDecoder.h`
+- :ref:`file_src_ifcparse_IfcEntityInstanceData.h`
+- :ref:`file_src_ifcparse_IfcEntityList.h`
+- :ref:`file_src_ifcparse_IfcException.h`
+- :ref:`file_src_ifcparse_IfcFile.h`
+- :ref:`file_src_ifcparse_IfcGlobalId.h`
+- :ref:`file_src_ifcparse_IfcHierarchyHelper.h`
+- :ref:`file_src_ifcparse_IfcLogger.h`
+- :ref:`file_src_ifcparse_IfcParse.h`
+- :ref:`file_src_ifcparse_IfcSchema.h`
+- :ref:`file_src_ifcparse_IfcSIPrefix.h`
+- :ref:`file_src_ifcparse_IfcSpfHeader.h`
+- :ref:`file_src_ifcparse_IfcSpfStream.h`
+- :ref:`file_src_ifcparse_IfcWrite.h`
+- :ref:`file_src_ifcparse_macros.h`
+- :ref:`file_src_ifcparse_utils.h`
+
+

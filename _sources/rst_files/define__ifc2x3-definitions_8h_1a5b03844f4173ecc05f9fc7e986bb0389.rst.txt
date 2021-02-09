@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a5b03844f4173ecc05f9fc7e986bb0389:
+
+Define SCHEMA_HAS_IfcPreDefinedTerminatorSymbol
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcPreDefinedTerminatorSymbol

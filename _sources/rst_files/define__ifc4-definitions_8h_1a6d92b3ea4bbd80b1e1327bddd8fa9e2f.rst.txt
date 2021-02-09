@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a6d92b3ea4bbd80b1e1327bddd8fa9e2f:
+
+Define SCHEMA_IfcResourceTime_HAS_RemainingUsage
+================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcResourceTime_HAS_RemainingUsage

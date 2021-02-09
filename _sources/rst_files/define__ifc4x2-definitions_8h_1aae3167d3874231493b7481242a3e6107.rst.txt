@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1aae3167d3874231493b7481242a3e6107:
+
+Define SCHEMA_IfcResourceTime_HAS_ActualUsage
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcResourceTime_HAS_ActualUsage

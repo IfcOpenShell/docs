@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x3_rc1::IfcRectangularTrimmedSurface &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x3_rc1::IfcRecurrencePattern" href="class_ifc4x3__rc1_1_1_ifc_recurrence_pattern.html" />
+    <link rel="prev" title="Class Ifc4x3_rc1::IfcRectangularPyramid" href="class_ifc4x3__rc1_1_1_ifc_rectangular_pyramid.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x3-rc1-ifcrectangulartrimmedsurface">
+<span id="exhale-class-class-ifc4x3-rc1-1-1-ifc-rectangular-trimmed-surface"></span><h1>Class Ifc4x3_rc1::IfcRectangularTrimmedSurface<a class="headerlink" href="#class-ifc4x3-rc1-ifcrectangulartrimmedsurface" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x3_rc1.h.html#file-src-ifcparse-ifc4x3-rc1-h"><span class="std std-ref">File Ifc4x3_rc1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x3__rc1.html#exhale-struct-struct-ifc4x3-rc1"><span class="std std-ref">Struct Ifc4x3_rc1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x3_rc1::IfcBoundedSurface</span></code> (<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_bounded_surface.html#exhale-class-class-ifc4x3-rc1-1-1-ifc-bounded-surface"><span class="std std-ref">Class Ifc4x3_rc1::IfcBoundedSurface</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurfaceE">
+<span id="_CPPv3N10Ifc4x3_rc128IfcRectangularTrimmedSurfaceE"></span><span id="_CPPv2N10Ifc4x3_rc128IfcRectangularTrimmedSurfaceE"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcRectangularTrimmedSurface</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_bounded_surface.html#_CPPv4N10Ifc4x3_rc117IfcBoundedSurfaceE" title="Ifc4x3_rc1::IfcBoundedSurface">IfcBoundedSurface</a><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurfaceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: The trimmed surface is a simple bounded surface in which the boundaries are the constant parametric lines u1 = u1, u2 = u2, v1 = v1 and v2 = v2. All these values shall be within the parametric range of the referenced surface. Cyclic properties of the parameter range are assumed.</p>
+<p>NOTE 1 For example, 370 degrees is equivalent to 10 degrees, for those surfaces whose parametric form is defined using circular functions (sine and cosine).</p>
+<p>The rectangular trimmed surface inherits its parameterization directly from the basis surface and has parameter ranges from 0 to |u2 - u1| and 0 to|v2-v1|.</p>
+<p>NOTE 2 If the surface is closed in a given parametric direction, the values of u2 or v2 may require to be increased by the cyclic range.</p>
+<p>NOTE Corresponding ISO 10303 name: rectangular_trimmed_surface. Please refer to ISO/IS 10303-42:1994, p.86 for the final definition of the formal standard.</p>
+<p>HISTORY New class in IFC Release 2x.</p>
+<p>Informal propositions:</p>
+<p>The domain of the trimmed surface shall be within the domain of the surface being trimmed. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface4listE">
+<span id="_CPPv3N10Ifc4x3_rc128IfcRectangularTrimmedSurface4listE"></span><span id="_CPPv2N10Ifc4x3_rc128IfcRectangularTrimmedSurface4listE"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::list"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1aaeea7b1cb2e07007ebef89e2ba84044b"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurfaceE" title="Ifc4x3_rc1::IfcRectangularTrimmedSurface">IfcRectangularTrimmedSurface</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc128IfcRectangularTrimmedSurface12BasisSurfaceEv">
+<span id="_CPPv3NK10Ifc4x3_rc128IfcRectangularTrimmedSurface12BasisSurfaceEv"></span><span id="_CPPv2NK10Ifc4x3_rc128IfcRectangularTrimmedSurface12BasisSurfaceEv"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::BasisSurfaceC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1a165d28053276b583284e7cd21df53c78"></span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_surface.html#_CPPv4N10Ifc4x3_rc110IfcSurfaceE" title="Ifc4x3_rc1::IfcSurface">IfcSurface</a> *<code class="sig-name descname">BasisSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc128IfcRectangularTrimmedSurface12BasisSurfaceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Surface being trimmed. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface15setBasisSurfaceEPN10Ifc4x3_rc110IfcSurfaceE">
+<span id="_CPPv3N10Ifc4x3_rc128IfcRectangularTrimmedSurface15setBasisSurfaceEPN10Ifc4x3_rc110IfcSurfaceE"></span><span id="_CPPv2N10Ifc4x3_rc128IfcRectangularTrimmedSurface15setBasisSurfaceEPN10Ifc4x3_rc110IfcSurfaceE"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::setBasisSurface__Ifc4x3_rc1::IfcSurfaceP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1a2916b0c93dc6bdfa26b81007abe717f8"></span>void <code class="sig-name descname">setBasisSurface</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_surface.html#_CPPv4N10Ifc4x3_rc110IfcSurfaceE" title="Ifc4x3_rc1::IfcSurface">IfcSurface</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface15setBasisSurfaceEPN10Ifc4x3_rc110IfcSurfaceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc128IfcRectangularTrimmedSurface2U1Ev">
+<span id="_CPPv3NK10Ifc4x3_rc128IfcRectangularTrimmedSurface2U1Ev"></span><span id="_CPPv2NK10Ifc4x3_rc128IfcRectangularTrimmedSurface2U1Ev"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::U1C"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1a471a5f7d555ca5284764680230952187"></span>double <code class="sig-name descname">U1</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc128IfcRectangularTrimmedSurface2U1Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>First u parametric value. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface5setU1Ed">
+<span id="_CPPv3N10Ifc4x3_rc128IfcRectangularTrimmedSurface5setU1Ed"></span><span id="_CPPv2N10Ifc4x3_rc128IfcRectangularTrimmedSurface5setU1Ed"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::setU1__double"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1a30e0856d8f280fd60ece13359aaae91c"></span>void <code class="sig-name descname">setU1</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface5setU1Ed" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc128IfcRectangularTrimmedSurface2V1Ev">
+<span id="_CPPv3NK10Ifc4x3_rc128IfcRectangularTrimmedSurface2V1Ev"></span><span id="_CPPv2NK10Ifc4x3_rc128IfcRectangularTrimmedSurface2V1Ev"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::V1C"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1a33cf5c7fabb6d2055ec76efda479e154"></span>double <code class="sig-name descname">V1</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc128IfcRectangularTrimmedSurface2V1Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>First v parametric value. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface5setV1Ed">
+<span id="_CPPv3N10Ifc4x3_rc128IfcRectangularTrimmedSurface5setV1Ed"></span><span id="_CPPv2N10Ifc4x3_rc128IfcRectangularTrimmedSurface5setV1Ed"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::setV1__double"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1a4090051ee3c9fd6df9c4243af8163f7f"></span>void <code class="sig-name descname">setV1</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface5setV1Ed" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc128IfcRectangularTrimmedSurface2U2Ev">
+<span id="_CPPv3NK10Ifc4x3_rc128IfcRectangularTrimmedSurface2U2Ev"></span><span id="_CPPv2NK10Ifc4x3_rc128IfcRectangularTrimmedSurface2U2Ev"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::U2C"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1a6dd36699aaa974fb4d6d6e6fe10b88e4"></span>double <code class="sig-name descname">U2</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc128IfcRectangularTrimmedSurface2U2Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Second u parametric value. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface5setU2Ed">
+<span id="_CPPv3N10Ifc4x3_rc128IfcRectangularTrimmedSurface5setU2Ed"></span><span id="_CPPv2N10Ifc4x3_rc128IfcRectangularTrimmedSurface5setU2Ed"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::setU2__double"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1a6e7b2a3d4c4ef7aa2d0e322ee42d8cf7"></span>void <code class="sig-name descname">setU2</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface5setU2Ed" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc128IfcRectangularTrimmedSurface2V2Ev">
+<span id="_CPPv3NK10Ifc4x3_rc128IfcRectangularTrimmedSurface2V2Ev"></span><span id="_CPPv2NK10Ifc4x3_rc128IfcRectangularTrimmedSurface2V2Ev"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::V2C"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1ade62b6cea8b5f654eed69d41ef7eee16"></span>double <code class="sig-name descname">V2</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc128IfcRectangularTrimmedSurface2V2Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Second v parametric value. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface5setV2Ed">
+<span id="_CPPv3N10Ifc4x3_rc128IfcRectangularTrimmedSurface5setV2Ed"></span><span id="_CPPv2N10Ifc4x3_rc128IfcRectangularTrimmedSurface5setV2Ed"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::setV2__double"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1a1e2a080c81b98462ea0e1d811ce7a160"></span>void <code class="sig-name descname">setV2</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface5setV2Ed" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc128IfcRectangularTrimmedSurface6UsenseEv">
+<span id="_CPPv3NK10Ifc4x3_rc128IfcRectangularTrimmedSurface6UsenseEv"></span><span id="_CPPv2NK10Ifc4x3_rc128IfcRectangularTrimmedSurface6UsenseEv"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::UsenseC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1a9fcf50ef5e2fe6c2eb0b75c4ae055685"></span>bool <code class="sig-name descname">Usense</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc128IfcRectangularTrimmedSurface6UsenseEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Flag to indicate whether the direction of the first parameter of the trimmed surface agrees with or opposes the sense of u in the basis surface. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface9setUsenseEb">
+<span id="_CPPv3N10Ifc4x3_rc128IfcRectangularTrimmedSurface9setUsenseEb"></span><span id="_CPPv2N10Ifc4x3_rc128IfcRectangularTrimmedSurface9setUsenseEb"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::setUsense__b"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1acade3671de635d3d2c37f9f1e9da6ce7"></span>void <code class="sig-name descname">setUsense</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface9setUsenseEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc128IfcRectangularTrimmedSurface6VsenseEv">
+<span id="_CPPv3NK10Ifc4x3_rc128IfcRectangularTrimmedSurface6VsenseEv"></span><span id="_CPPv2NK10Ifc4x3_rc128IfcRectangularTrimmedSurface6VsenseEv"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::VsenseC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1acb321f8acf811b3b1331615c2bf8d82c"></span>bool <code class="sig-name descname">Vsense</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc128IfcRectangularTrimmedSurface6VsenseEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Flag to indicate whether the direction of the second parameter of the trimmed surface agrees with or opposes the sense of v in the basis surface. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface9setVsenseEb">
+<span id="_CPPv3N10Ifc4x3_rc128IfcRectangularTrimmedSurface9setVsenseEb"></span><span id="_CPPv2N10Ifc4x3_rc128IfcRectangularTrimmedSurface9setVsenseEb"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::setVsense__b"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1a7a769452e2c3b190da3b08b2a28abb5d"></span>void <code class="sig-name descname">setVsense</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface9setVsenseEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10Ifc4x3_rc128IfcRectangularTrimmedSurface11declarationEv">
+<span id="_CPPv3NK10Ifc4x3_rc128IfcRectangularTrimmedSurface11declarationEv"></span><span id="_CPPv2NK10Ifc4x3_rc128IfcRectangularTrimmedSurface11declarationEv"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::declarationC"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1a0a927a4f5a90d3d6f5b9d19670b36175"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10Ifc4x3_rc128IfcRectangularTrimmedSurface11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface28IfcRectangularTrimmedSurfaceEP21IfcEntityInstanceData">
+<span id="_CPPv3N10Ifc4x3_rc128IfcRectangularTrimmedSurface28IfcRectangularTrimmedSurfaceEP21IfcEntityInstanceData"></span><span id="_CPPv2N10Ifc4x3_rc128IfcRectangularTrimmedSurface28IfcRectangularTrimmedSurfaceEP21IfcEntityInstanceData"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::IfcRectangularTrimmedSurface__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1a60e7295ebaea4c9e8478db35039858ac"></span><code class="sig-name descname">IfcRectangularTrimmedSurface</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface28IfcRectangularTrimmedSurfaceEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface28IfcRectangularTrimmedSurfaceEPN10Ifc4x3_rc110IfcSurfaceEddddbb">
+<span id="_CPPv3N10Ifc4x3_rc128IfcRectangularTrimmedSurface28IfcRectangularTrimmedSurfaceEPN10Ifc4x3_rc110IfcSurfaceEddddbb"></span><span id="_CPPv2N10Ifc4x3_rc128IfcRectangularTrimmedSurface28IfcRectangularTrimmedSurfaceEPN10Ifc4x3_rc110IfcSurfaceEddddbb"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::IfcRectangularTrimmedSurface__Ifc4x3_rc1::IfcSurfaceP.double.double.double.double.b.b"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1a7205d062f82a276b03f1d2aca1cec010"></span><code class="sig-name descname">IfcRectangularTrimmedSurface</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a>::<a class="reference internal" href="class_ifc4x3__rc1_1_1_ifc_surface.html#_CPPv4N10Ifc4x3_rc110IfcSurfaceE" title="Ifc4x3_rc1::IfcSurface">IfcSurface</a> *<em>v1_BasisSurface</em>, double <em>v2_U1</em>, double <em>v3_V1</em>, double <em>v4_U2</em>, double <em>v5_V2</em>, bool <em>v6_Usense</em>, bool <em>v7_Vsense</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface28IfcRectangularTrimmedSurfaceEPN10Ifc4x3_rc110IfcSurfaceEddddbb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface5ClassEv">
+<span id="_CPPv3N10Ifc4x3_rc128IfcRectangularTrimmedSurface5ClassEv"></span><span id="_CPPv2N10Ifc4x3_rc128IfcRectangularTrimmedSurface5ClassEv"></span><span id="Ifc4x3_rc1::IfcRectangularTrimmedSurface::Class"></span><span class="target" id="class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface_1a05ceb96872547d1d71d2dd283bd2287a"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Ifc4x3_rc128IfcRectangularTrimmedSurface5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x3__rc1_1_1_ifc_rectangular_pyramid.html" title="previous chapter">Class Ifc4x3_rc1::IfcRectangularPyramid</a></li>
+      <li>Next: <a href="class_ifc4x3__rc1_1_1_ifc_recurrence_pattern.html" title="next chapter">Class Ifc4x3_rc1::IfcRecurrencePattern</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x3__rc1_1_1_ifc_rectangular_trimmed_surface.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,38 @@
+.. _exhale_class_class_ifc2x3_1_1_ifc_rel_decomposes:
+
+Class Ifc2x3::IfcRelDecomposes
+==============================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc2x3::IfcRelationship`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_relationship`)
+
+
+Derived Types
+*************
+
+- ``public Ifc2x3::IfcRelAggregates`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_rel_aggregates`)
+- ``public Ifc2x3::IfcRelNests`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_rel_nests`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc2x3::IfcRelDecomposes
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a33ff42b45d9065eeea92d1e51351def0:
+
+Define SCHEMA_IfcOneDirectionRepeatFactor_HAS_RepeatFactor
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcOneDirectionRepeatFactor_HAS_RepeatFactor

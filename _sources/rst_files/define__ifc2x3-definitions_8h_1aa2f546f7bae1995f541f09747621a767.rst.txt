@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aa2f546f7bae1995f541f09747621a767:
+
+Define SCHEMA_IfcElement_HAS_HasPorts
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcElement_HAS_HasPorts

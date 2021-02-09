@@ -1,0 +1,16 @@
+.. _exhale_class_class_ifc_geom_1_1_ifc_representation_shape_item:
+
+Class IfcRepresentationShapeItem
+================================
+
+- Defined in :ref:`file_src_ifcgeom_IfcRepresentationShapeItem.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcGeom::IfcRepresentationShapeItem
+   :members:
+   :protected-members:
+   :undoc-members:

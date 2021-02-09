@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1aefb35f97bec9dbaf69ac7e8c411a0e0c:
+
+Define SCHEMA_IfcStructuralActivity_HAS_AssignedToStructuralItem
+================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralActivity_HAS_AssignedToStructuralItem

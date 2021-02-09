@@ -1,0 +1,25 @@
+.. _exhale_class_class_ifc_entity_instance_data:
+
+Class IfcEntityInstanceData
+===========================
+
+- Defined in :ref:`file_src_ifcparse_IfcEntityInstanceData.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public IfcParse::HeaderEntity`` (:ref:`exhale_class_class_ifc_parse_1_1_header_entity`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcEntityInstanceData
+   :members:
+   :protected-members:
+   :undoc-members:

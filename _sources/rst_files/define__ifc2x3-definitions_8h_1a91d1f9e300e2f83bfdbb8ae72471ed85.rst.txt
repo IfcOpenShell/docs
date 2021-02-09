@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a91d1f9e300e2f83bfdbb8ae72471ed85:
+
+Define SCHEMA_IfcPointOnCurve_HAS_PointParameter
+================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPointOnCurve_HAS_PointParameter

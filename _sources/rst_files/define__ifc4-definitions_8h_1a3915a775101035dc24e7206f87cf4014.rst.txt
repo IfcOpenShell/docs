@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a3915a775101035dc24e7206f87cf4014:
+
+Define SCHEMA_IfcIrregularTimeSeriesValue_HAS_TimeStamp
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcIrregularTimeSeriesValue_HAS_TimeStamp

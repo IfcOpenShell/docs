@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcVirtualGridIntersection &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcVoidingFeature" href="class_ifc4_1_1_ifc_voiding_feature.html" />
+    <link rel="prev" title="Class Ifc4::IfcVirtualElement" href="class_ifc4_1_1_ifc_virtual_element.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcvirtualgridintersection">
+<span id="exhale-class-class-ifc4-1-1-ifc-virtual-grid-intersection"></span><h1>Class Ifc4::IfcVirtualGridIntersection<a class="headerlink" href="#class-ifc4-ifcvirtualgridintersection" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">IfcUtil::IfcBaseEntity</span></code> (<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#exhale-class-class-ifc-util-1-1-ifc-base-entity"><span class="std std-ref">Class IfcBaseEntity</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc426IfcVirtualGridIntersectionE">
+<span id="_CPPv3N4Ifc426IfcVirtualGridIntersectionE"></span><span id="_CPPv2N4Ifc426IfcVirtualGridIntersectionE"></span><span id="Ifc4::IfcVirtualGridIntersection"></span><span class="target" id="class_ifc4_1_1_ifc_virtual_grid_intersection"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcVirtualGridIntersection</code> : <em class="property">public</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a><a class="headerlink" href="#_CPPv4N4Ifc426IfcVirtualGridIntersectionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_virtual_grid_intersection"><span class="std std-ref">IfcVirtualGridIntersection</span></a> defines the derived location of the intersection between two grid axes. Offset values may be given to set an offset distance to the grid axis for the calculation of the virtual grid intersection.</p>
+<p>The two intersecting axes (IntersectingAxes) define the intersection point, which exact location (in terms of the Cartesian point representing the intersection) has to be calculated from the geometric representation of the two participating curves.</p>
+<p>NOTE The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a> local placement, that can be provided relative to the local placement of another spatial structure element, has to be taken into account for calculating the absolute placement of the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_virtual_grid_intersection"><span class="std std-ref">IfcVirtualGridIntersection</span></a>. Where rules and informal rules ensure, that the IntersectingAxes belong to the same <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a></p>
+<p>Offset values may be given (OffsetDistances). If given, the position within the list of OffsetDistances corresponds with the position within the list of IntersectingAxes. Therefore:</p>
+<p>OffsetDistances[1] sets the offset to IntersectingAxes[1], OffsetDistances[2] sets the offset to IntersectingAxes[2], and OffsetDistances[3] sets the offset to the virtual intersection in direction of the orientation of the cross product of IntersectingAxes[1] and the orthogonal complement of the IntersectingAxes[1] (which is the positive or negative direction of the z axis of the design grid position).</p>
+<p>HISTORY New entity in IFC Release 1.5. The entity name was changed from IfcConstraintRelIntersection in IFC Release 2x.</p>
+<p>Informal Propositions:</p>
+<p>Both, IntersectingAxes[1] and IntersectingAxes[2] shall be two <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_grid_axis"><span class="std std-ref">IfcGridAxis</span></a> defined by the same <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a>. IntersectingAxes[1] and IntersectingAxes[2] shall not be part of the same row of grid axes, i.e. both shall not be within the same set of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_grid_1ad716dd7943e249a50fd3a07c070e6874"><span class="std std-ref">IfcGrid.UAxes</span></a> or <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_grid_1a295478bd61e0b4721c871559a3644829"><span class="std std-ref">IfcGrid.VAxes</span></a> of the corresponding <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a>.</p>
+<p>Geometry use definitions: The following figures explain the usage of the OffsetDistances and IntersectingAxes attributes.</p>
+<p>Figure 246 illustrates two offset distances given where the virtual intersection is defined in the xy plane of the grid axis placement.</p>
+<p>Figure 246 — Virtual grid intersection with two offsets</p>
+<p>Figure 247 illustrates three offset distances given where the virtual intersection is defined by an offset (in direction of the z-axis of the design grid placement) to the virtual intersection in the xy plane of the grid axis placement.</p>
+<p>Figure 247 — Virtual grid intersection with three offsets</p>
+<p>The distance of the offset curve (OffsetDistances[n]) is measured from the basis curve. The distance may be positive, negative or zero. A positive value of distance defines an offset in the direction which is normal to the curve in the sense of an anti-clockwise rotation through 90 degrees from the tangent vector T at the given point. (This is in the direction of orthogonal complement(T).) This can be reverted by the SameSense attribute at <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_grid_axis"><span class="std std-ref">IfcGridAxis</span></a> which may switch the sense of the AxisCurve. Illustration</p>
+<p>Figure 248 illustrates an example of a negative offset where the figure shows the side of the offset.</p>
+<p>IntersectingAxes[1].AxisCurve is an <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_trimmed_curve"><span class="std std-ref">IfcTrimmedCurve</span></a> with an <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_circle"><span class="std std-ref">IfcCircle</span></a> as BasisCurve and SenseAgreement = TRUE. IntersectingAxes[1].SameSense = TRUE. OffsetDistances[1] is a negative length measure</p>
+<p>Figure 248 — Virtual grid intersection negative offset </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc426IfcVirtualGridIntersection4listE">
+<span id="_CPPv3N4Ifc426IfcVirtualGridIntersection4listE"></span><span id="_CPPv2N4Ifc426IfcVirtualGridIntersection4listE"></span><span id="Ifc4::IfcVirtualGridIntersection::list"></span><span class="target" id="class_ifc4_1_1_ifc_virtual_grid_intersection_1ab6b6530450b3448770ee9cf72d9e3c41"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc426IfcVirtualGridIntersectionE" title="Ifc4::IfcVirtualGridIntersection">IfcVirtualGridIntersection</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc426IfcVirtualGridIntersection4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc426IfcVirtualGridIntersection16IntersectingAxesEv">
+<span id="_CPPv3NK4Ifc426IfcVirtualGridIntersection16IntersectingAxesEv"></span><span id="_CPPv2NK4Ifc426IfcVirtualGridIntersection16IntersectingAxesEv"></span><span id="Ifc4::IfcVirtualGridIntersection::IntersectingAxesC"></span><span class="target" id="class_ifc4_1_1_ifc_virtual_grid_intersection_1a49ed69da58fd838a693c53a626260ec1"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_grid_axis.html#_CPPv4N4Ifc411IfcGridAxisE" title="Ifc4::IfcGridAxis">IfcGridAxis</a>&gt;::ptr <code class="sig-name descname">IntersectingAxes</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc426IfcVirtualGridIntersection16IntersectingAxesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Two grid axes which intersects at exactly one intersection (see also informal proposition at <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a>). If attribute OffsetDistances is omitted, the intersection defines the placement or ref direction of a grid placement directly. If OffsetDistances are given, the intersection is defined by the offset curves to the grid axes. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc426IfcVirtualGridIntersection19setIntersectingAxesEN22IfcTemplatedEntityListIN4Ifc411IfcGridAxisEE3ptrE">
+<span id="_CPPv3N4Ifc426IfcVirtualGridIntersection19setIntersectingAxesEN22IfcTemplatedEntityListIN4Ifc411IfcGridAxisEE3ptrE"></span><span id="_CPPv2N4Ifc426IfcVirtualGridIntersection19setIntersectingAxesEN22IfcTemplatedEntityListIN4Ifc411IfcGridAxisEE3ptrE"></span><span id="Ifc4::IfcVirtualGridIntersection::setIntersectingAxes__IfcTemplatedEntityList:Ifc4::IfcGridAxis:::ptr"></span><span class="target" id="class_ifc4_1_1_ifc_virtual_grid_intersection_1a5417fe2bdb646f467ada61455893fba3"></span>void <code class="sig-name descname">setIntersectingAxes</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_grid_axis.html#_CPPv4N4Ifc411IfcGridAxisE" title="Ifc4::IfcGridAxis">IfcGridAxis</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc426IfcVirtualGridIntersection19setIntersectingAxesEN22IfcTemplatedEntityListIN4Ifc411IfcGridAxisEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc426IfcVirtualGridIntersection15OffsetDistancesEv">
+<span id="_CPPv3NK4Ifc426IfcVirtualGridIntersection15OffsetDistancesEv"></span><span id="_CPPv2NK4Ifc426IfcVirtualGridIntersection15OffsetDistancesEv"></span><span id="Ifc4::IfcVirtualGridIntersection::OffsetDistancesC"></span><span class="target" id="class_ifc4_1_1_ifc_virtual_grid_intersection_1ae4cb6d897ec2d162caa15b226a33063b"></span>std::vector&lt;double&gt; <code class="sig-name descname">OffsetDistances</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc426IfcVirtualGridIntersection15OffsetDistancesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Offset distances to the grid axes. If given, it defines virtual offset curves to the grid axes. The intersection of the offset curves specify the virtual grid intersection. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc426IfcVirtualGridIntersection18setOffsetDistancesENSt6vectorIdEE">
+<span id="_CPPv3N4Ifc426IfcVirtualGridIntersection18setOffsetDistancesENSt6vectorIdEE"></span><span id="_CPPv2N4Ifc426IfcVirtualGridIntersection18setOffsetDistancesENSt6vectorIdEE"></span><span id="Ifc4::IfcVirtualGridIntersection::setOffsetDistances__std::vector:double:"></span><span class="target" id="class_ifc4_1_1_ifc_virtual_grid_intersection_1a227e5f91b3cf0e486a73f72fda65bfd4"></span>void <code class="sig-name descname">setOffsetDistances</code><span class="sig-paren">(</span>std::vector&lt;double&gt; <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc426IfcVirtualGridIntersection18setOffsetDistancesENSt6vectorIdEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc426IfcVirtualGridIntersection11declarationEv">
+<span id="_CPPv3NK4Ifc426IfcVirtualGridIntersection11declarationEv"></span><span id="_CPPv2NK4Ifc426IfcVirtualGridIntersection11declarationEv"></span><span id="Ifc4::IfcVirtualGridIntersection::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_virtual_grid_intersection_1af9cf1a6d2383352dab6f1271f2428774"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc426IfcVirtualGridIntersection11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc426IfcVirtualGridIntersection26IfcVirtualGridIntersectionEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc426IfcVirtualGridIntersection26IfcVirtualGridIntersectionEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc426IfcVirtualGridIntersection26IfcVirtualGridIntersectionEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcVirtualGridIntersection::IfcVirtualGridIntersection__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_virtual_grid_intersection_1a2296ef5068294ae5a192fb8646f3c233"></span><code class="sig-name descname">IfcVirtualGridIntersection</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc426IfcVirtualGridIntersection26IfcVirtualGridIntersectionEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc426IfcVirtualGridIntersection26IfcVirtualGridIntersectionEN22IfcTemplatedEntityListIN4Ifc411IfcGridAxisEE3ptrENSt6vectorIdEE">
+<span id="_CPPv3N4Ifc426IfcVirtualGridIntersection26IfcVirtualGridIntersectionEN22IfcTemplatedEntityListIN4Ifc411IfcGridAxisEE3ptrENSt6vectorIdEE"></span><span id="_CPPv2N4Ifc426IfcVirtualGridIntersection26IfcVirtualGridIntersectionEN22IfcTemplatedEntityListIN4Ifc411IfcGridAxisEE3ptrENSt6vectorIdEE"></span><span id="Ifc4::IfcVirtualGridIntersection::IfcVirtualGridIntersection__IfcTemplatedEntityList:Ifc4::IfcGridAxis:::ptr.std::vector:double:"></span><span class="target" id="class_ifc4_1_1_ifc_virtual_grid_intersection_1a9b3b55b8173332f60c95e14fc2e67f5e"></span><code class="sig-name descname">IfcVirtualGridIntersection</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_grid_axis.html#_CPPv4N4Ifc411IfcGridAxisE" title="Ifc4::IfcGridAxis">IfcGridAxis</a>&gt;::ptr <em>v1_IntersectingAxes</em>, std::vector&lt;double&gt; <em>v2_OffsetDistances</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc426IfcVirtualGridIntersection26IfcVirtualGridIntersectionEN22IfcTemplatedEntityListIN4Ifc411IfcGridAxisEE3ptrENSt6vectorIdEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc426IfcVirtualGridIntersection5ClassEv">
+<span id="_CPPv3N4Ifc426IfcVirtualGridIntersection5ClassEv"></span><span id="_CPPv2N4Ifc426IfcVirtualGridIntersection5ClassEv"></span><span id="Ifc4::IfcVirtualGridIntersection::Class"></span><span class="target" id="class_ifc4_1_1_ifc_virtual_grid_intersection_1a6bf81e5daf505c7d60b44e1b81734f06"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc426IfcVirtualGridIntersection5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_virtual_element.html" title="previous chapter">Class Ifc4::IfcVirtualElement</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_voiding_feature.html" title="next chapter">Class Ifc4::IfcVoidingFeature</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_virtual_grid_intersection.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

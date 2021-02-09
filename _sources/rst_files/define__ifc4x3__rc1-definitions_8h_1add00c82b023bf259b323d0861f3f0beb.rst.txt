@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1add00c82b023bf259b323d0861f3f0beb:
+
+Define SCHEMA_IfcSpaceType_HAS_PredefinedType
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSpaceType_HAS_PredefinedType

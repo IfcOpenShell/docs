@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a5c32b18c0537eeb4bfebabed1920a268:
+
+Define SCHEMA_IfcCostItem_HAS_CostQuantities
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcCostItem_HAS_CostQuantities

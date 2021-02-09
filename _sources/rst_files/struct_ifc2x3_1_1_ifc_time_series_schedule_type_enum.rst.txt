@@ -1,0 +1,22 @@
+.. _exhale_struct_struct_ifc2x3_1_1_ifc_time_series_schedule_type_enum:
+
+Struct Ifc2x3::IfcTimeSeriesScheduleTypeEnum
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Ifc2x3::IfcTimeSeriesScheduleTypeEnum
+   :members:
+   :protected-members:
+   :undoc-members:

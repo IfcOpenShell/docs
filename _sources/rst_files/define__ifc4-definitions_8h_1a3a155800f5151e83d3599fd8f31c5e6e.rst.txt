@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a3a155800f5151e83d3599fd8f31c5e6e:
+
+Define SCHEMA_IfcTimeSeries_HAS_StartTime
+=========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTimeSeries_HAS_StartTime

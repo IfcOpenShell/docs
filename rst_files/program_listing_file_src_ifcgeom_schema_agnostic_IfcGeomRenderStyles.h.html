@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Listing for File IfcGeomRenderStyles.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="program-listing-for-file-ifcgeomrenderstyles-h">
+<span id="program-listing-file-src-ifcgeom-schema-agnostic-ifcgeomrenderstyles-h"></span><h1>Program Listing for File IfcGeomRenderStyles.h<a class="headerlink" href="#program-listing-for-file-ifcgeomrenderstyles-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_ifcgeom_schema_agnostic_IfcGeomRenderStyles.h.html#file-src-ifcgeom-schema-agnostic-ifcgeomrenderstyles-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom_schema_agnostic/IfcGeomRenderStyles.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/********************************************************************************</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * This file is part of IfcOpenShell.                                           *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcOpenShell is free software: you can redistribute it and/or modify         *</span>
+<span class="cm"> * it under the terms of the Lesser GNU General Public License as published by  *</span>
+<span class="cm"> * the Free Software Foundation, either version 3.0 of the License, or          *</span>
+<span class="cm"> * (at your option) any later version.                                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcOpenShell is distributed in the hope that it will be useful,              *</span>
+<span class="cm"> * but WITHOUT ANY WARRANTY; without even the implied warranty of               *</span>
+<span class="cm"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 *</span>
+<span class="cm"> * Lesser GNU General Public License for more details.                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * You should have received a copy of the Lesser GNU General Public License     *</span>
+<span class="cm"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.         *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> ********************************************************************************/</span>
+
+<span class="cp">#ifndef IFCGEOMRENDERSTYLES_H</span>
+<span class="cp">#define IFCGEOMRENDERSTYLES_H</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom/ifc_geom_api.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;boost/algorithm/string/case_conv.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;boost/algorithm/string/replace.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;boost/optional.hpp&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;sstream&gt;</span><span class="cp"></span>
+
+<span class="k">namespace</span> <span class="n">IfcGeom</span> <span class="p">{</span>
+    <span class="k">class</span> <span class="nc">IFC_GEOM_API</span> <span class="n">SurfaceStyle</span> <span class="p">{</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="k">class</span> <span class="nc">ColorComponent</span> <span class="p">{</span>
+        <span class="k">private</span><span class="o">:</span>
+            <span class="kt">double</span> <span class="n">data</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+        <span class="k">public</span><span class="o">:</span>
+            <span class="n">ColorComponent</span><span class="p">(</span><span class="kt">double</span> <span class="n">r</span><span class="p">,</span> <span class="kt">double</span> <span class="n">g</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">r</span><span class="p">;</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">g</span><span class="p">;</span> <span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">const</span> <span class="kt">double</span><span class="o">&amp;</span> <span class="n">R</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span> <span class="p">}</span>
+            <span class="k">const</span> <span class="kt">double</span><span class="o">&amp;</span> <span class="n">G</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span> <span class="p">}</span>
+            <span class="k">const</span> <span class="kt">double</span><span class="o">&amp;</span> <span class="n">B</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span> <span class="p">}</span>
+            <span class="kt">double</span><span class="o">&amp;</span> <span class="n">R</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span> <span class="p">}</span>
+            <span class="kt">double</span><span class="o">&amp;</span> <span class="n">G</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span> <span class="p">}</span>
+            <span class="kt">double</span><span class="o">&amp;</span> <span class="n">B</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span> <span class="p">}</span>
+        <span class="p">};</span>
+    <span class="k">private</span><span class="o">:</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">original_name_</span><span class="p">;</span>
+        <span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">id</span><span class="p">;</span>
+        <span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">ColorComponent</span><span class="o">&gt;</span> <span class="n">diffuse</span><span class="p">,</span> <span class="n">specular</span><span class="p">;</span>
+        <span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">transparency</span><span class="p">;</span>
+        <span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">specularity</span><span class="p">;</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="n">SurfaceStyle</span><span class="p">()</span> <span class="o">:</span> <span class="n">name</span><span class="p">(</span><span class="s">&quot;surface-style&quot;</span><span class="p">)</span> <span class="p">{}</span>
+        <span class="n">SurfaceStyle</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">)</span> <span class="o">:</span> <span class="n">id</span><span class="p">(</span><span class="n">id</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">stringstream</span> <span class="n">sstr</span><span class="p">;</span>
+            <span class="n">sstr</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;surface-style-&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">id</span><span class="p">;</span>
+            <span class="k">this</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">=</span> <span class="n">sstr</span><span class="p">.</span><span class="n">str</span><span class="p">();</span>
+        <span class="p">}</span>
+        <span class="n">SurfaceStyle</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">)</span> <span class="o">:</span> <span class="n">name</span><span class="p">(</span><span class="n">name</span><span class="p">),</span> <span class="n">original_name_</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="p">{}</span>
+        <span class="n">SurfaceStyle</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">)</span> <span class="o">:</span> <span class="n">original_name_</span><span class="p">(</span><span class="n">name</span><span class="p">),</span> <span class="n">id</span><span class="p">(</span><span class="n">id</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">stringstream</span> <span class="n">sstr</span><span class="p">;</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">sanitized</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+            <span class="n">boost</span><span class="o">::</span><span class="n">to_lower</span><span class="p">(</span><span class="n">sanitized</span><span class="p">);</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">replace_if</span><span class="p">(</span><span class="n">sanitized</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">sanitized</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="p">[](</span><span class="kt">char</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="n">c</span> <span class="o">&lt;</span> <span class="mh">0x21</span> <span class="o">||</span> <span class="n">c</span> <span class="o">&gt;</span> <span class="mh">0x7e</span><span class="p">;</span>
+            <span class="p">},</span> <span class="sc">&#39;-&#39;</span><span class="p">);</span>
+            <span class="n">sstr</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;surface-style-&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">id</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;-&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">sanitized</span><span class="p">;</span>
+            <span class="k">this</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">=</span> <span class="n">sstr</span><span class="p">.</span><span class="n">str</span><span class="p">();</span>
+        <span class="p">}</span>
+
+        <span class="c1">// Not used at this point. In fact, equality testing in the current</span>
+        <span class="c1">// architecture can just as easily be accomplished by comparing the</span>
+        <span class="c1">// pointer addresses of the styles, as they are always referenced</span>
+        <span class="c1">// from out of a global map of some sort.</span>
+        <span class="kt">bool</span> <span class="k">operator</span><span class="o">==</span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceStyle</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="n">name</span> <span class="o">==</span> <span class="n">other</span><span class="p">.</span><span class="n">name</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">Name</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">name</span><span class="p">;</span> <span class="p">}</span>
+
+        <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">original_name</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">original_name_</span><span class="p">;</span> <span class="p">}</span>
+
+        <span class="k">const</span> <span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">ColorComponent</span><span class="o">&gt;&amp;</span> <span class="n">Diffuse</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">diffuse</span><span class="p">;</span> <span class="p">}</span>
+        <span class="k">const</span> <span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">ColorComponent</span><span class="o">&gt;&amp;</span> <span class="n">Specular</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">specular</span><span class="p">;</span> <span class="p">}</span>
+        <span class="k">const</span> <span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&amp;</span> <span class="n">Transparency</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">transparency</span><span class="p">;</span> <span class="p">}</span>
+        <span class="k">const</span> <span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&amp;</span> <span class="n">Specularity</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">specularity</span><span class="p">;</span> <span class="p">}</span>
+        <span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">ColorComponent</span><span class="o">&gt;&amp;</span> <span class="n">Diffuse</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">diffuse</span><span class="p">;</span> <span class="p">}</span>
+        <span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">ColorComponent</span><span class="o">&gt;&amp;</span> <span class="n">Specular</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">specular</span><span class="p">;</span> <span class="p">}</span>
+        <span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&amp;</span> <span class="n">Transparency</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">transparency</span><span class="p">;</span> <span class="p">}</span>
+        <span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&amp;</span> <span class="n">Specularity</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">specularity</span><span class="p">;</span> <span class="p">}</span>
+    <span class="p">};</span>
+
+    <span class="n">IFC_GEOM_API</span> <span class="k">const</span> <span class="n">SurfaceStyle</span><span class="o">*</span> <span class="n">get_default_style</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">ifc_type</span><span class="p">);</span>
+
+    <span class="n">IFC_GEOM_API</span> <span class="n">SurfaceStyle</span><span class="o">&amp;</span> <span class="n">update_default_style</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">ifc_type</span><span class="p">);</span>
+
+    <span class="n">IFC_GEOM_API</span> <span class="kt">void</span> <span class="n">set_default_style_file</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">json_file</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/program_listing_file_src_ifcgeom_schema_agnostic_IfcGeomRenderStyles.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

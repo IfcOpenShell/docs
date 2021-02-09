@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a57a86039f9ccfabadf8e5d0ec7eb6543:
+
+Define SCHEMA_IfcScheduleTimeControl_HAS_ActualStart
+====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcScheduleTimeControl_HAS_ActualStart

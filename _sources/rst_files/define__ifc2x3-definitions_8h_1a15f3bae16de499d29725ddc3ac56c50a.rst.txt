@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a15f3bae16de499d29725ddc3ac56c50a:
+
+Define SCHEMA_IfcFilterType_HAS_PredefinedType
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcFilterType_HAS_PredefinedType

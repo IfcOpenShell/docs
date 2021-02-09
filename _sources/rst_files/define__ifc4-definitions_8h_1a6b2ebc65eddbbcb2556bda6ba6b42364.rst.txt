@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a6b2ebc65eddbbcb2556bda6ba6b42364:
+
+Define SCHEMA_HAS_IfcEnergyConversionDevice
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcEnergyConversionDevice

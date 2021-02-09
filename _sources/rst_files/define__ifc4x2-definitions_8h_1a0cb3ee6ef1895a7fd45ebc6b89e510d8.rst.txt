@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a0cb3ee6ef1895a7fd45ebc6b89e510d8:
+
+Define SCHEMA_IfcWindowType_HAS_PredefinedType
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcWindowType_HAS_PredefinedType

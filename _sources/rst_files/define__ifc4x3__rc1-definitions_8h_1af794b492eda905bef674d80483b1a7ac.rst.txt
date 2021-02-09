@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1af794b492eda905bef674d80483b1a7ac:
+
+Define SCHEMA_IfcDoorStyle_HAS_ConstructionType
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDoorStyle_HAS_ConstructionType

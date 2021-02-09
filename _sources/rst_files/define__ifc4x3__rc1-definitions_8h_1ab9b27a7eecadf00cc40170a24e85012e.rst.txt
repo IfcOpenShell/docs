@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1ab9b27a7eecadf00cc40170a24e85012e:
+
+Define SCHEMA_IfcMaterialRelationship_HAS_RelatingMaterial
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMaterialRelationship_HAS_RelatingMaterial

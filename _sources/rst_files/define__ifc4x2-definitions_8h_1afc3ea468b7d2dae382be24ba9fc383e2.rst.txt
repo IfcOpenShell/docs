@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1afc3ea468b7d2dae382be24ba9fc383e2:
+
+Define SCHEMA_HAS_IfcVibrationDamper
+====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcVibrationDamper

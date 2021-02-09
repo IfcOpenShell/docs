@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1aa02e3df70dd39c65f54bf4d7b123e200:
+
+Define SCHEMA_IfcAsset_HAS_CurrentValue
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcAsset_HAS_CurrentValue

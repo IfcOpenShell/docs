@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1abca9a15e6827a7423dcdba4741f7103c:
+
+Define SCHEMA_HAS_IfcStructuralConnection
+=========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcStructuralConnection

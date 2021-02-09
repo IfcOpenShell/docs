@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a2495c3f07c8cd974b2cc3c4cdada502c:
+
+Define SCHEMA_IfcStructuralResultGroup_HAS_ResultForLoadGroup
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralResultGroup_HAS_ResultForLoadGroup

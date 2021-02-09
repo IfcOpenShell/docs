@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ab31781c0e8428c6f1bd9a328e6a3616d:
+
+Define SCHEMA_HAS_IfcLightSourceAmbient
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcLightSourceAmbient

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1ae3f17883bb98870bd96fc49d1ee3ab0d:
+
+Define SCHEMA_IfcBridgePart_HAS_PredefinedType
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBridgePart_HAS_PredefinedType

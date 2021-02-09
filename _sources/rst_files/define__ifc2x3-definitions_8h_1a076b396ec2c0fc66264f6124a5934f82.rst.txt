@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a076b396ec2c0fc66264f6124a5934f82:
+
+Define SCHEMA_IfcFuelProperties_HAS_CombustionTemperature
+=========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcFuelProperties_HAS_CombustionTemperature

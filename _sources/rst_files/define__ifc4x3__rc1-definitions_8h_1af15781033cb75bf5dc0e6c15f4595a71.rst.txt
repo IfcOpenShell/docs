@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1af15781033cb75bf5dc0e6c15f4595a71:
+
+Define SCHEMA_IfcReinforcingBarType_HAS_BarLength
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcReinforcingBarType_HAS_BarLength

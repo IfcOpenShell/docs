@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a7ef27ea0469162751fa76dbc503fdf06:
+
+Define SCHEMA_IfcStructuralAnalysisModel_HAS_OrientationOf2DPlane
+=================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralAnalysisModel_HAS_OrientationOf2DPlane

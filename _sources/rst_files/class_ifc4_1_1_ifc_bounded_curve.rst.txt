@@ -1,0 +1,41 @@
+.. _exhale_class_class_ifc4_1_1_ifc_bounded_curve:
+
+Class Ifc4::IfcBoundedCurve
+===========================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4::IfcCurve`` (:ref:`exhale_class_class_ifc4_1_1_ifc_curve`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4::IfcBSplineCurve`` (:ref:`exhale_class_class_ifc4_1_1_ifc_b_spline_curve`)
+- ``public Ifc4::IfcCompositeCurve`` (:ref:`exhale_class_class_ifc4_1_1_ifc_composite_curve`)
+- ``public Ifc4::IfcIndexedPolyCurve`` (:ref:`exhale_class_class_ifc4_1_1_ifc_indexed_poly_curve`)
+- ``public Ifc4::IfcPolyline`` (:ref:`exhale_class_class_ifc4_1_1_ifc_polyline`)
+- ``public Ifc4::IfcTrimmedCurve`` (:ref:`exhale_class_class_ifc4_1_1_ifc_trimmed_curve`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4::IfcBoundedCurve
+   :members:
+   :protected-members:
+   :undoc-members:

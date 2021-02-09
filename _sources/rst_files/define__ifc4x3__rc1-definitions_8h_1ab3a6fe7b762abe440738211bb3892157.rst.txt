@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1ab3a6fe7b762abe440738211bb3892157:
+
+Define SCHEMA_IfcCurveStyle_HAS_ModelOrDraughting
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcCurveStyle_HAS_ModelOrDraughting

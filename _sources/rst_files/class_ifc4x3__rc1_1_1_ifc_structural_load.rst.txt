@@ -1,0 +1,38 @@
+.. _exhale_class_class_ifc4x3__rc1_1_1_ifc_structural_load:
+
+Class Ifc4x3_rc1::IfcStructuralLoad
+===================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x3__rc1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcUtil::IfcBaseEntity`` (:ref:`exhale_class_class_ifc_util_1_1_ifc_base_entity`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x3_rc1::IfcStructuralLoadConfiguration`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_structural_load_configuration`)
+- ``public Ifc4x3_rc1::IfcStructuralLoadOrResult`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_structural_load_or_result`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x3_rc1::IfcStructuralLoad
+   :members:
+   :protected-members:
+   :undoc-members:

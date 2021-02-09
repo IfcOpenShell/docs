@@ -1,0 +1,22 @@
+.. _exhale_class_class_ifc_parse_1_1schema__definition_1_1declaration__by__index__sort:
+
+Class schema_definition::declaration_by_index_sort
+==================================================
+
+- Defined in :ref:`file_src_ifcparse_IfcSchema.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_class_class_ifc_parse_1_1schema__definition`.
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcParse::schema_definition::declaration_by_index_sort
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,38 @@
+.. _exhale_class_class_ifc2x3_1_1_ifc_constraint:
+
+Class Ifc2x3::IfcConstraint
+===========================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcUtil::IfcBaseEntity`` (:ref:`exhale_class_class_ifc_util_1_1_ifc_base_entity`)
+
+
+Derived Types
+*************
+
+- ``public Ifc2x3::IfcMetric`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_metric`)
+- ``public Ifc2x3::IfcObjective`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_objective`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc2x3::IfcConstraint
+   :members:
+   :protected-members:
+   :undoc-members:

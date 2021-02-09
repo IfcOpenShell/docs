@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ac02371bb6b1f1b23b9495ec9d06788a5:
+
+Define SCHEMA_IfcConstructionResourceType_HAS_BaseCosts
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConstructionResourceType_HAS_BaseCosts

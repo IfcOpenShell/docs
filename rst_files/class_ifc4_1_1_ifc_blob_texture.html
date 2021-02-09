@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcBlobTexture &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcBlock" href="class_ifc4_1_1_ifc_block.html" />
+    <link rel="prev" title="Class Ifc4::IfcBinary" href="class_ifc4_1_1_ifc_binary.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcblobtexture">
+<span id="exhale-class-class-ifc4-1-1-ifc-blob-texture"></span><h1>Class Ifc4::IfcBlobTexture<a class="headerlink" href="#class-ifc4-ifcblobtexture" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcSurfaceTexture</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_surface_texture.html#exhale-class-class-ifc4-1-1-ifc-surface-texture"><span class="std std-ref">Class Ifc4::IfcSurfaceTexture</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc414IfcBlobTextureE">
+<span id="_CPPv3N4Ifc414IfcBlobTextureE"></span><span id="_CPPv2N4Ifc414IfcBlobTextureE"></span><span id="Ifc4::IfcBlobTexture"></span><span class="target" id="class_ifc4_1_1_ifc_blob_texture"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcBlobTexture</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_surface_texture.html#_CPPv4N4Ifc417IfcSurfaceTextureE" title="Ifc4::IfcSurfaceTexture">IfcSurfaceTexture</a><a class="headerlink" href="#_CPPv4N4Ifc414IfcBlobTextureE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_blob_texture"><span class="std std-ref">IfcBlobTexture</span></a> provides a 2-dimensional distribution of the lighting parameters of a surface onto which it is mapped. The texture itself is given as a single binary blob, representing the content of a pixel format file. The file format of the pixel file is given by the RasterFormat attribute and allowable formats are guided by where rule SupportedRasterFormat.</p>
+<p>NOTE Toolbox specific implementations of the binary datatype may restrict the maximum length of the binary blob to capture the raster file content.</p>
+<p>For interpretation of the texture nodes see <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_image_texture"><span class="std std-ref">IfcImageTexture</span></a> definition.</p>
+<p>HISTORY New class in IFC2x3.</p>
+<p>IFC2x4 CHANGE Data type of RasterCode has been corrected to BINARY. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc414IfcBlobTexture4listE">
+<span id="_CPPv3N4Ifc414IfcBlobTexture4listE"></span><span id="_CPPv2N4Ifc414IfcBlobTexture4listE"></span><span id="Ifc4::IfcBlobTexture::list"></span><span class="target" id="class_ifc4_1_1_ifc_blob_texture_1a0f667cef6064bf14980541ca7d80306e"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc414IfcBlobTextureE" title="Ifc4::IfcBlobTexture">IfcBlobTexture</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc414IfcBlobTexture4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc414IfcBlobTexture12RasterFormatEv">
+<span id="_CPPv3NK4Ifc414IfcBlobTexture12RasterFormatEv"></span><span id="_CPPv2NK4Ifc414IfcBlobTexture12RasterFormatEv"></span><span id="Ifc4::IfcBlobTexture::RasterFormatC"></span><span class="target" id="class_ifc4_1_1_ifc_blob_texture_1a763bb4de2cc4b0b9f2db843209d87de4"></span>std::string <code class="sig-name descname">RasterFormat</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc414IfcBlobTexture12RasterFormatEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The format of the RasterCode often using a compression. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc414IfcBlobTexture15setRasterFormatENSt6stringE">
+<span id="_CPPv3N4Ifc414IfcBlobTexture15setRasterFormatENSt6stringE"></span><span id="_CPPv2N4Ifc414IfcBlobTexture15setRasterFormatENSt6stringE"></span><span id="Ifc4::IfcBlobTexture::setRasterFormat__ss"></span><span class="target" id="class_ifc4_1_1_ifc_blob_texture_1ae8e3c2c13c3b2433b2509d23321b50a3"></span>void <code class="sig-name descname">setRasterFormat</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc414IfcBlobTexture15setRasterFormatENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc414IfcBlobTexture10RasterCodeEv">
+<span id="_CPPv3NK4Ifc414IfcBlobTexture10RasterCodeEv"></span><span id="_CPPv2NK4Ifc414IfcBlobTexture10RasterCodeEv"></span><span id="Ifc4::IfcBlobTexture::RasterCodeC"></span><span class="target" id="class_ifc4_1_1_ifc_blob_texture_1a65b1edc84168e049bb6b850d5f7839ea"></span>boost::dynamic_bitset <code class="sig-name descname">RasterCode</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc414IfcBlobTexture10RasterCodeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Blob, given as a single binary, to capture the texture within one popular file (compression) format. The file format is provided by the RasterFormat attribute. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc414IfcBlobTexture13setRasterCodeEN5boost14dynamic_bitsetIEE">
+<span id="_CPPv3N4Ifc414IfcBlobTexture13setRasterCodeEN5boost14dynamic_bitsetIEE"></span><span id="_CPPv2N4Ifc414IfcBlobTexture13setRasterCodeEN5boost14dynamic_bitsetIEE"></span><span id="Ifc4::IfcBlobTexture::setRasterCode__boost::dynamic_bitset::"></span><span class="target" id="class_ifc4_1_1_ifc_blob_texture_1a81a5b469ef6dbcd463a5e4c6271cd21f"></span>void <code class="sig-name descname">setRasterCode</code><span class="sig-paren">(</span>boost::dynamic_bitset&lt;&gt; <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc414IfcBlobTexture13setRasterCodeEN5boost14dynamic_bitsetIEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc414IfcBlobTexture11declarationEv">
+<span id="_CPPv3NK4Ifc414IfcBlobTexture11declarationEv"></span><span id="_CPPv2NK4Ifc414IfcBlobTexture11declarationEv"></span><span id="Ifc4::IfcBlobTexture::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_blob_texture_1ad99276c0ab76ebae7b673607bc3327a1"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc414IfcBlobTexture11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc414IfcBlobTexture14IfcBlobTextureEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc414IfcBlobTexture14IfcBlobTextureEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc414IfcBlobTexture14IfcBlobTextureEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcBlobTexture::IfcBlobTexture__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_blob_texture_1a8e73f01418f1a803d6249e095a239cd7"></span><code class="sig-name descname">IfcBlobTexture</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc414IfcBlobTexture14IfcBlobTextureEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc414IfcBlobTexture14IfcBlobTextureEbbN5boost8optionalINSt6stringEEEPN4Ifc436IfcCartesianTransformationOperator2DEN5boost8optionalINSt6vectorINSt6stringEEEEENSt6stringEN5boost14dynamic_bitsetIEE">
+<span id="_CPPv3N4Ifc414IfcBlobTexture14IfcBlobTextureEbbN5boost8optionalINSt6stringEEEPN4Ifc436IfcCartesianTransformationOperator2DEN5boost8optionalINSt6vectorINSt6stringEEEEENSt6stringEN5boost14dynamic_bitsetIEE"></span><span id="_CPPv2N4Ifc414IfcBlobTexture14IfcBlobTextureEbbN5boost8optionalINSt6stringEEEPN4Ifc436IfcCartesianTransformationOperator2DEN5boost8optionalINSt6vectorINSt6stringEEEEENSt6stringEN5boost14dynamic_bitsetIEE"></span><span id="Ifc4::IfcBlobTexture::IfcBlobTexture__b.b.boost::optional:ss:.Ifc4::IfcCartesianTransformationOperator2DP.boost::optional:std::vector:ss::.ss.boost::dynamic_bitset::"></span><span class="target" id="class_ifc4_1_1_ifc_blob_texture_1a501e67803ee39ec6dea6395ff33ca5a5"></span><code class="sig-name descname">IfcBlobTexture</code><span class="sig-paren">(</span>bool <em>v1_RepeatS</em>, bool <em>v2_RepeatT</em>, boost::optional&lt;std::string&gt; <em>v3_Mode</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_cartesian_transformation_operator2_d.html#_CPPv4N4Ifc436IfcCartesianTransformationOperator2DE" title="Ifc4::IfcCartesianTransformationOperator2D">IfcCartesianTransformationOperator2D</a> *<em>v4_TextureTransform</em>, boost::optional&lt;std::vector&lt;std::string&gt;&gt; <em>v5_Parameter</em>, std::string <em>v6_RasterFormat</em>, boost::dynamic_bitset&lt;&gt; <em>v7_RasterCode</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc414IfcBlobTexture14IfcBlobTextureEbbN5boost8optionalINSt6stringEEEPN4Ifc436IfcCartesianTransformationOperator2DEN5boost8optionalINSt6vectorINSt6stringEEEEENSt6stringEN5boost14dynamic_bitsetIEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc414IfcBlobTexture5ClassEv">
+<span id="_CPPv3N4Ifc414IfcBlobTexture5ClassEv"></span><span id="_CPPv2N4Ifc414IfcBlobTexture5ClassEv"></span><span id="Ifc4::IfcBlobTexture::Class"></span><span class="target" id="class_ifc4_1_1_ifc_blob_texture_1aca961a44ce01235c235c2427141969e6"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc414IfcBlobTexture5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_binary.html" title="previous chapter">Class Ifc4::IfcBinary</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_block.html" title="next chapter">Class Ifc4::IfcBlock</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_blob_texture.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

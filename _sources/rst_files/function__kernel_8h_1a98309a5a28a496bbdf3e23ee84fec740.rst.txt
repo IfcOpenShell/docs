@@ -1,0 +1,13 @@
+.. _exhale_function__kernel_8h_1a98309a5a28a496bbdf3e23ee84fec740:
+
+Function IfcGeom::impl::kernel_implementations
+==============================================
+
+- Defined in :ref:`file_src_ifcgeom_schema_agnostic_Kernel.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcGeom::impl::kernel_implementations()

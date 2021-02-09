@@ -1,0 +1,75 @@
+
+.. _file_src_ifcparse_utils.h:
+
+File utils.h
+============
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcparse>` (``src/ifcparse``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/utils.h``)
+-------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_utils.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/ifc_parse_api.h``
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_IfcBaseClass.h`
+
+- :ref:`file_src_serializers_SvgSerializer.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcUtil`
+
+- :ref:`namespace_IfcUtil__path`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_utils_8h_1a0a61e68a9aeb88f3c6a9473f56009d8c`
+
+- :ref:`exhale_function_utils_8h_1a6b5f8d59ae470811b800b5fdbd277079`
+
+- :ref:`exhale_function_utils_8h_1a2dff1f8d7898389fe4ab66d64afb6e0c`
+
+- :ref:`exhale_function_utils_8h_1aa37c1f7b1c94535a8f10e62559711eaf`
+
+- :ref:`exhale_function_utils_8h_1a6fc0e5f148761bd1c781005b53009bcd`
+
+- :ref:`exhale_function_utils_8h_1a3ae6906daf92c3509b2f4bda8f3ded3b`
+
+- :ref:`exhale_function_utils_8h_1a3a6f7d990f2d08e17384f7383b925cb9`
+

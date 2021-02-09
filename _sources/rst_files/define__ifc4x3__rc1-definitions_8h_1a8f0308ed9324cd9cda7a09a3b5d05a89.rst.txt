@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a8f0308ed9324cd9cda7a09a3b5d05a89:
+
+Define SCHEMA_IfcDirectrixDistanceSweptAreaSolid_StartDistance_IS_OPTIONAL
+==========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDirectrixDistanceSweptAreaSolid_StartDistance_IS_OPTIONAL

@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Listing for File IfcRegisterConvertShape.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="program-listing-for-file-ifcregisterconvertshape-h">
+<span id="program-listing-file-src-ifcgeom-ifcregisterconvertshape-h"></span><h1>Program Listing for File IfcRegisterConvertShape.h<a class="headerlink" href="#program-listing-for-file-ifcregisterconvertshape-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_ifcgeom_IfcRegisterConvertShape.h.html#file-src-ifcgeom-ifcregisterconvertshape-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom/IfcRegisterConvertShape.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;IfcRegisterUndef.h&quot;</span><span class="cp"></span>
+<span class="cp">#define SHAPE(T) \</span>
+<span class="cp">    if ( !processed &amp;&amp; l-&gt;declaration().is(IfcSchema::T::Class()) ) { \</span>
+<span class="cp">        processed = true; \</span>
+<span class="cp">        try { \</span>
+<span class="cp">            if ( convert((IfcSchema::T*)l,r) ) { \</span>
+<span class="cp">                success = true; \</span>
+<span class="cp">            } \</span>
+<span class="cp">        } catch (const std::exception&amp; e) { \</span>
+<span class="cp">            Logger::Message(Logger::LOG_ERROR, std::string(e.what()) + &quot;\nFailed to convert:&quot;, l); \</span>
+<span class="cp">            return false; \</span>
+<span class="cp">        } catch (const Standard_Failure&amp; f) { \</span>
+<span class="cp">            if (f.GetMessageString() &amp;&amp; strlen(f.GetMessageString())) \</span>
+<span class="cp">                Logger::Message(Logger::LOG_ERROR, std::string(&quot;Error in: &quot;) + f.GetMessageString() + &quot;\nFailed to convert:&quot;, l); \</span>
+<span class="cp">            else \</span>
+<span class="cp">                Logger::Message(Logger::LOG_ERROR, &quot;Failed to convert:&quot;, l); \</span>
+<span class="cp">            return false; \</span>
+<span class="cp">        } \</span>
+<span class="cp">        if (!success) { \</span>
+<span class="cp">            Logger::Message(Logger::LOG_ERROR,&quot;Failed to convert:&quot;,l); \</span>
+<span class="cp">            return false; \</span>
+<span class="cp">        } \</span>
+<span class="cp">    }</span>
+<span class="cp">#include</span> <span class="cpf">&quot;IfcRegisterDef.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;IfcRegister.h&quot;</span><span class="cp"></span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/program_listing_file_src_ifcgeom_IfcRegisterConvertShape.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

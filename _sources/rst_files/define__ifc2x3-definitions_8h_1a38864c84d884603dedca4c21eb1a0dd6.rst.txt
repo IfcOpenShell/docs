@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a38864c84d884603dedca4c21eb1a0dd6:
+
+Define SCHEMA_IfcEdgeFeature_HAS_FeatureLength
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcEdgeFeature_HAS_FeatureLength

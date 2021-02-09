@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcFillAreaStyleHatching &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcFillAreaStyleTiles" href="class_ifc4x1_1_1_ifc_fill_area_style_tiles.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcFillAreaStyle" href="class_ifc4x1_1_1_ifc_fill_area_style.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcfillareastylehatching">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-fill-area-style-hatching"></span><h1>Class Ifc4x1::IfcFillAreaStyleHatching<a class="headerlink" href="#class-ifc4x1-ifcfillareastylehatching" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcGeometricRepresentationItem</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_geometric_representation_item.html#exhale-class-class-ifc4x1-1-1-ifc-geometric-representation-item"><span class="std std-ref">Class Ifc4x1::IfcGeometricRepresentationItem</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x124IfcFillAreaStyleHatchingE">
+<span id="_CPPv3N6Ifc4x124IfcFillAreaStyleHatchingE"></span><span id="_CPPv2N6Ifc4x124IfcFillAreaStyleHatchingE"></span><span id="Ifc4x1::IfcFillAreaStyleHatching"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcFillAreaStyleHatching</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_geometric_representation_item.html#_CPPv4N6Ifc4x130IfcGeometricRepresentationItemE" title="Ifc4x1::IfcGeometricRepresentationItem">IfcGeometricRepresentationItem</a><a class="headerlink" href="#_CPPv4N6Ifc4x124IfcFillAreaStyleHatchingE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-46:1992: The fill area style hatching defines a styled pattern of curves for hatching an annotation fill area or a surface.</p>
+<p>The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_fill_area_style_hatching"><span class="std std-ref">IfcFillAreaStyleHatching</span></a> is used to define simple, vector-based hatching patterns, based on styled straight lines. The curve font, color and thickness is given by the HatchLineAppearance, the angle by the HatchLineAngle and the distance to the next hatch line by StartOfNextHatchLine, being either an offset distance or a vector.</p>
+<p>NOTE If the hatch pattern involves two (potentially crossing) rows of hatch lines, then two instances of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_fill_area_style_hatching"><span class="std std-ref">IfcFillAreaStyleHatching</span></a> should be assigned to the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_fill_area_style"><span class="std std-ref">IfcFillAreaStyle</span></a>. Both share the same (virtual) point of origin of the hatching that is used by the reference hatch line (or the PointOfReferenceHatchLine if there is an offset).</p>
+<p>For better control of the hatching appearance, when using hatch lines with other fonts then continuous, the PatternStart allows to offset the start of the curve font pattern along the reference hatch line (if not given, the PatternStart is at zero distance from the virtual point of origin). If the reference hatch line does not go through the origin (of the virtual hatching coordinate system), it can be offset by using thePatternStartPointOfReferenceHatchLine.</p>
+<p>NOTE The coordinates of the PatternStart and the PointOfReferenceHatchLine are given relative to the assumed 0., 0. virtual point of origin at which the hatch pattern is later positioned by the FillStyleTarget point at IfcAnnotationFillAreaOccurrence. The measure values are given in global drawing length units and apply to the target plot scale for the scale depended representation subcontext.</p>
+<p>NOTE The use of PointOfReferenceHatchLine is deprecated.</p>
+<p>Figure 292 illustrates hatch attributes.</p>
+<p>Example 1 This example shows simple hatching given by using a curve font “continuous” at HatchLineAppearance.</p>
+<p>The distance of hatch lines is given by a positive length measure. The angle (here 45’ if measures in degree) is provided by HatchLineAngle.</p>
+<p>The PatternStart is set to NIL ($) in this example. Example 2 This shows hatching from example 1 with using a different curve font at HatchLineAppearance. The distance of hatch lines is given by a positive length measure, therefore the font pattern start is at a point at the next hatch line given by a vector being perpendicular to the point of origin at the reference hatch line. The PatternStart is set to NIL ($) in this example. Example 3 This example uses hatching from example 2 with a vector to determine the pattern start of the next hatch lines. The pattern start is the beginning of the first visual curve font pattern segment at IfcCurveFont.CurveFont. The PatternStart is set to NIL ($) in this example. Example 4 This example uses hatching from example 3 where the pattern start is offset from the point of origin at the reference hatch line. That is, the first visible curve font pattern segment now does not start at the point of origin at the reference hatch line.</p>
+<p>Example 5 This example uses hatching from example 4 where the hatch pattern is shifted against the underlying coordinate system. The point that is mapped to the insertion point of the IfcAnnotationFillAreaOccurrence now has an X and Y offset from the start of the reference hatch line. That is, the reference hatch line now does not go through the insertion point of the hatching. <p> Example 6 This example shows use of </p>
+<a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_fill_area_style_hatching"><span class="std std-ref">IfcFillAreaStyleHatching</span></a> attributes for two <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_fill_area_style_hatching"><span class="std std-ref">IfcFillAreaStyleHatching</span></a>’s within one <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_fill_area_style"><span class="std std-ref">IfcFillAreaStyle</span></a>. Note that the PatternStart now displaces both the reference hatch line from the point of origin and the start of the curve pattern. This can be used in cases when more than one <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_fill_area_style_hatching"><span class="std std-ref">IfcFillAreaStyleHatching</span></a> is used in an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_fill_area_style"><span class="std std-ref">IfcFillAreaStyle</span></a> in order to place rows of hatch lines with an offset from each other.</p>
+<p>Figure 292 — Fill area style hatching</p>
+<p>NOTE Corresponding ISO 10303 name: fill_area_style_hatching. Please refer to ISO/IS 10303-46:1994, p. 108 for the final definition of the formal standard.</p>
+<p>HISTORY New entity in IFC2x2.</p>
+<p>IFC2x3 CHANGE The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_fill_area_style_hatching"><span class="std std-ref">IfcFillAreaStyleHatching</span></a> has been changed by making the attributes PatternStart and PointOfReferenceHatchLine OPTIONAL. The attribute StartOfNextHatchLine has changed to a SELECT with the additional choice of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_positive_length_measure"><span class="std std-ref">IfcPositiveLengthMeasure</span></a>. Upward compatibility for file based exchange is guaranteed. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x124IfcFillAreaStyleHatching4listE">
+<span id="_CPPv3N6Ifc4x124IfcFillAreaStyleHatching4listE"></span><span id="_CPPv2N6Ifc4x124IfcFillAreaStyleHatching4listE"></span><span id="Ifc4x1::IfcFillAreaStyleHatching::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching_1abdacd44d76f0387cc43581f7378b95e8"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x124IfcFillAreaStyleHatchingE" title="Ifc4x1::IfcFillAreaStyleHatching">IfcFillAreaStyleHatching</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x124IfcFillAreaStyleHatching4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x124IfcFillAreaStyleHatching19HatchLineAppearanceEv">
+<span id="_CPPv3NK6Ifc4x124IfcFillAreaStyleHatching19HatchLineAppearanceEv"></span><span id="_CPPv2NK6Ifc4x124IfcFillAreaStyleHatching19HatchLineAppearanceEv"></span><span id="Ifc4x1::IfcFillAreaStyleHatching::HatchLineAppearanceC"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching_1a32ea5df79566cbae2d7733b5c58ade43"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_curve_style.html#_CPPv4N6Ifc4x113IfcCurveStyleE" title="Ifc4x1::IfcCurveStyle">IfcCurveStyle</a> *<code class="sig-name descname">HatchLineAppearance</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x124IfcFillAreaStyleHatching19HatchLineAppearanceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The curve style of the hatching lines. Any curve style pattern shall start at the origin of each hatch line. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x124IfcFillAreaStyleHatching22setHatchLineAppearanceEPN6Ifc4x113IfcCurveStyleE">
+<span id="_CPPv3N6Ifc4x124IfcFillAreaStyleHatching22setHatchLineAppearanceEPN6Ifc4x113IfcCurveStyleE"></span><span id="_CPPv2N6Ifc4x124IfcFillAreaStyleHatching22setHatchLineAppearanceEPN6Ifc4x113IfcCurveStyleE"></span><span id="Ifc4x1::IfcFillAreaStyleHatching::setHatchLineAppearance__Ifc4x1::IfcCurveStyleP"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching_1a44c7af002b9d66d1278c42ad847bc7c9"></span>void <code class="sig-name descname">setHatchLineAppearance</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_curve_style.html#_CPPv4N6Ifc4x113IfcCurveStyleE" title="Ifc4x1::IfcCurveStyle">IfcCurveStyle</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x124IfcFillAreaStyleHatching22setHatchLineAppearanceEPN6Ifc4x113IfcCurveStyleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x124IfcFillAreaStyleHatching20StartOfNextHatchLineEv">
+<span id="_CPPv3NK6Ifc4x124IfcFillAreaStyleHatching20StartOfNextHatchLineEv"></span><span id="_CPPv2NK6Ifc4x124IfcFillAreaStyleHatching20StartOfNextHatchLineEv"></span><span id="Ifc4x1::IfcFillAreaStyleHatching::StartOfNextHatchLineC"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching_1aec19baf47528485e964daf8c402ad517"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x126IfcHatchLineDistanceSelectE" title="Ifc4x1::IfcHatchLineDistanceSelect">IfcHatchLineDistanceSelect</a> *<code class="sig-name descname">StartOfNextHatchLine</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x124IfcFillAreaStyleHatching20StartOfNextHatchLineEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A repetition factor that determines the distance between adjacent hatch lines.</p>
+<p>IFC2x Edition 3 CHANGE The attribute type of StartOfNextHatchLine has changed to a SELECT of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_positive_length_measure"><span class="std std-ref">IfcPositiveLengthMeasure</span></a> (new) and IfcOneDirectionRepeatFactor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x124IfcFillAreaStyleHatching23setStartOfNextHatchLineEPN6Ifc4x126IfcHatchLineDistanceSelectE">
+<span id="_CPPv3N6Ifc4x124IfcFillAreaStyleHatching23setStartOfNextHatchLineEPN6Ifc4x126IfcHatchLineDistanceSelectE"></span><span id="_CPPv2N6Ifc4x124IfcFillAreaStyleHatching23setStartOfNextHatchLineEPN6Ifc4x126IfcHatchLineDistanceSelectE"></span><span id="Ifc4x1::IfcFillAreaStyleHatching::setStartOfNextHatchLine__Ifc4x1::IfcHatchLineDistanceSelectP"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching_1a01e63e5646bf7a38798331825a08aec5"></span>void <code class="sig-name descname">setStartOfNextHatchLine</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x126IfcHatchLineDistanceSelectE" title="Ifc4x1::IfcHatchLineDistanceSelect">IfcHatchLineDistanceSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x124IfcFillAreaStyleHatching23setStartOfNextHatchLineEPN6Ifc4x126IfcHatchLineDistanceSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x124IfcFillAreaStyleHatching28hasPointOfReferenceHatchLineEv">
+<span id="_CPPv3NK6Ifc4x124IfcFillAreaStyleHatching28hasPointOfReferenceHatchLineEv"></span><span id="_CPPv2NK6Ifc4x124IfcFillAreaStyleHatching28hasPointOfReferenceHatchLineEv"></span><span id="Ifc4x1::IfcFillAreaStyleHatching::hasPointOfReferenceHatchLineC"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching_1af28f9dbe43b745ac7f4fc5e240d64330"></span>bool <code class="sig-name descname">hasPointOfReferenceHatchLine</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x124IfcFillAreaStyleHatching28hasPointOfReferenceHatchLineEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute PointOfReferenceHatchLine is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_fill_area_style_hatching"><span class="std std-ref">IfcFillAreaStyleHatching</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x124IfcFillAreaStyleHatching25PointOfReferenceHatchLineEv">
+<span id="_CPPv3NK6Ifc4x124IfcFillAreaStyleHatching25PointOfReferenceHatchLineEv"></span><span id="_CPPv2NK6Ifc4x124IfcFillAreaStyleHatching25PointOfReferenceHatchLineEv"></span><span id="Ifc4x1::IfcFillAreaStyleHatching::PointOfReferenceHatchLineC"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching_1a70cae8fab92451392e4a80f04306dbc0"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_cartesian_point.html#_CPPv4N6Ifc4x117IfcCartesianPointE" title="Ifc4x1::IfcCartesianPoint">IfcCartesianPoint</a> *<code class="sig-name descname">PointOfReferenceHatchLine</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x124IfcFillAreaStyleHatching25PointOfReferenceHatchLineEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A Cartesian point which defines the offset of the reference hatch line from the origin of the (virtual) hatching coordinate system. The origin is used for mapping the fill area style hatching onto an annotation fill area or surface. The reference hatch line would then appear with this offset from the fill style target point. If not given the reference hatch lines goes through the origin of the (virtual) hatching coordinate system.</p>
+<p>IFC2x Edition 3 CHANGE The usage of the attribute PointOfReferenceHatchLine has changed to not provide the Cartesian point which is the origin for mapping, but to provide an offset to the origin for the mapping. The attribute has been made OPTIONAL. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x124IfcFillAreaStyleHatching28setPointOfReferenceHatchLineEPN6Ifc4x117IfcCartesianPointE">
+<span id="_CPPv3N6Ifc4x124IfcFillAreaStyleHatching28setPointOfReferenceHatchLineEPN6Ifc4x117IfcCartesianPointE"></span><span id="_CPPv2N6Ifc4x124IfcFillAreaStyleHatching28setPointOfReferenceHatchLineEPN6Ifc4x117IfcCartesianPointE"></span><span id="Ifc4x1::IfcFillAreaStyleHatching::setPointOfReferenceHatchLine__Ifc4x1::IfcCartesianPointP"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching_1acf24c5a2a8d2412b3aa2fdb489be74ae"></span>void <code class="sig-name descname">setPointOfReferenceHatchLine</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_cartesian_point.html#_CPPv4N6Ifc4x117IfcCartesianPointE" title="Ifc4x1::IfcCartesianPoint">IfcCartesianPoint</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x124IfcFillAreaStyleHatching28setPointOfReferenceHatchLineEPN6Ifc4x117IfcCartesianPointE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x124IfcFillAreaStyleHatching15hasPatternStartEv">
+<span id="_CPPv3NK6Ifc4x124IfcFillAreaStyleHatching15hasPatternStartEv"></span><span id="_CPPv2NK6Ifc4x124IfcFillAreaStyleHatching15hasPatternStartEv"></span><span id="Ifc4x1::IfcFillAreaStyleHatching::hasPatternStartC"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching_1ab417bf120d6e42c390c2659355411e4f"></span>bool <code class="sig-name descname">hasPatternStart</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x124IfcFillAreaStyleHatching15hasPatternStartEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute PatternStart is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_fill_area_style_hatching"><span class="std std-ref">IfcFillAreaStyleHatching</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x124IfcFillAreaStyleHatching12PatternStartEv">
+<span id="_CPPv3NK6Ifc4x124IfcFillAreaStyleHatching12PatternStartEv"></span><span id="_CPPv2NK6Ifc4x124IfcFillAreaStyleHatching12PatternStartEv"></span><span id="Ifc4x1::IfcFillAreaStyleHatching::PatternStartC"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching_1a999f86ac7293c2e43ddb1deb361d0f1d"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_cartesian_point.html#_CPPv4N6Ifc4x117IfcCartesianPointE" title="Ifc4x1::IfcCartesianPoint">IfcCartesianPoint</a> *<code class="sig-name descname">PatternStart</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x124IfcFillAreaStyleHatching12PatternStartEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A distance along the reference hatch line which is the start point for the curve style font pattern of the reference hatch line. If not given, the start point of the curve style font pattern is at the (virtual) hatching coordinate system.</p>
+<p>IFC2x Edition 2 Addendum 2 CHANGE The attribute PatternStart has been made OPTIONAL. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x124IfcFillAreaStyleHatching15setPatternStartEPN6Ifc4x117IfcCartesianPointE">
+<span id="_CPPv3N6Ifc4x124IfcFillAreaStyleHatching15setPatternStartEPN6Ifc4x117IfcCartesianPointE"></span><span id="_CPPv2N6Ifc4x124IfcFillAreaStyleHatching15setPatternStartEPN6Ifc4x117IfcCartesianPointE"></span><span id="Ifc4x1::IfcFillAreaStyleHatching::setPatternStart__Ifc4x1::IfcCartesianPointP"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching_1a721713f4bfec67d054f5c62a33ec7ce3"></span>void <code class="sig-name descname">setPatternStart</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_cartesian_point.html#_CPPv4N6Ifc4x117IfcCartesianPointE" title="Ifc4x1::IfcCartesianPoint">IfcCartesianPoint</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x124IfcFillAreaStyleHatching15setPatternStartEPN6Ifc4x117IfcCartesianPointE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x124IfcFillAreaStyleHatching14HatchLineAngleEv">
+<span id="_CPPv3NK6Ifc4x124IfcFillAreaStyleHatching14HatchLineAngleEv"></span><span id="_CPPv2NK6Ifc4x124IfcFillAreaStyleHatching14HatchLineAngleEv"></span><span id="Ifc4x1::IfcFillAreaStyleHatching::HatchLineAngleC"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching_1ae6229f617b11c5da76756f270c66e355"></span>double <code class="sig-name descname">HatchLineAngle</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x124IfcFillAreaStyleHatching14HatchLineAngleEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A plane angle measure determining the direction of the parallel hatching lines. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x124IfcFillAreaStyleHatching17setHatchLineAngleEd">
+<span id="_CPPv3N6Ifc4x124IfcFillAreaStyleHatching17setHatchLineAngleEd"></span><span id="_CPPv2N6Ifc4x124IfcFillAreaStyleHatching17setHatchLineAngleEd"></span><span id="Ifc4x1::IfcFillAreaStyleHatching::setHatchLineAngle__double"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching_1ac9fbca1fdb8df255e9df42d13ea2d87d"></span>void <code class="sig-name descname">setHatchLineAngle</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x124IfcFillAreaStyleHatching17setHatchLineAngleEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x124IfcFillAreaStyleHatching11declarationEv">
+<span id="_CPPv3NK6Ifc4x124IfcFillAreaStyleHatching11declarationEv"></span><span id="_CPPv2NK6Ifc4x124IfcFillAreaStyleHatching11declarationEv"></span><span id="Ifc4x1::IfcFillAreaStyleHatching::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching_1ae7dfea9992ecc995c7621d878863f107"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x124IfcFillAreaStyleHatching11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x124IfcFillAreaStyleHatching24IfcFillAreaStyleHatchingEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x124IfcFillAreaStyleHatching24IfcFillAreaStyleHatchingEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x124IfcFillAreaStyleHatching24IfcFillAreaStyleHatchingEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcFillAreaStyleHatching::IfcFillAreaStyleHatching__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching_1adb483f68cfa416a120326fe1e71af383"></span><code class="sig-name descname">IfcFillAreaStyleHatching</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x124IfcFillAreaStyleHatching24IfcFillAreaStyleHatchingEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x124IfcFillAreaStyleHatching24IfcFillAreaStyleHatchingEPN6Ifc4x113IfcCurveStyleEPN6Ifc4x126IfcHatchLineDistanceSelectEPN6Ifc4x117IfcCartesianPointEPN6Ifc4x117IfcCartesianPointEd">
+<span id="_CPPv3N6Ifc4x124IfcFillAreaStyleHatching24IfcFillAreaStyleHatchingEPN6Ifc4x113IfcCurveStyleEPN6Ifc4x126IfcHatchLineDistanceSelectEPN6Ifc4x117IfcCartesianPointEPN6Ifc4x117IfcCartesianPointEd"></span><span id="_CPPv2N6Ifc4x124IfcFillAreaStyleHatching24IfcFillAreaStyleHatchingEPN6Ifc4x113IfcCurveStyleEPN6Ifc4x126IfcHatchLineDistanceSelectEPN6Ifc4x117IfcCartesianPointEPN6Ifc4x117IfcCartesianPointEd"></span><span id="Ifc4x1::IfcFillAreaStyleHatching::IfcFillAreaStyleHatching__Ifc4x1::IfcCurveStyleP.Ifc4x1::IfcHatchLineDistanceSelectP.Ifc4x1::IfcCartesianPointP.Ifc4x1::IfcCartesianPointP.double"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching_1a09788677431db6e0992ca4fc3b1f3924"></span><code class="sig-name descname">IfcFillAreaStyleHatching</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_curve_style.html#_CPPv4N6Ifc4x113IfcCurveStyleE" title="Ifc4x1::IfcCurveStyle">IfcCurveStyle</a> *<em>v1_HatchLineAppearance</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x126IfcHatchLineDistanceSelectE" title="Ifc4x1::IfcHatchLineDistanceSelect">IfcHatchLineDistanceSelect</a> *<em>v2_StartOfNextHatchLine</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_cartesian_point.html#_CPPv4N6Ifc4x117IfcCartesianPointE" title="Ifc4x1::IfcCartesianPoint">IfcCartesianPoint</a> *<em>v3_PointOfReferenceHatchLine</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_cartesian_point.html#_CPPv4N6Ifc4x117IfcCartesianPointE" title="Ifc4x1::IfcCartesianPoint">IfcCartesianPoint</a> *<em>v4_PatternStart</em>, double <em>v5_HatchLineAngle</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x124IfcFillAreaStyleHatching24IfcFillAreaStyleHatchingEPN6Ifc4x113IfcCurveStyleEPN6Ifc4x126IfcHatchLineDistanceSelectEPN6Ifc4x117IfcCartesianPointEPN6Ifc4x117IfcCartesianPointEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x124IfcFillAreaStyleHatching5ClassEv">
+<span id="_CPPv3N6Ifc4x124IfcFillAreaStyleHatching5ClassEv"></span><span id="_CPPv2N6Ifc4x124IfcFillAreaStyleHatching5ClassEv"></span><span id="Ifc4x1::IfcFillAreaStyleHatching::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_fill_area_style_hatching_1a27292e29ee0eca11e1822f72c9ebd505"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x124IfcFillAreaStyleHatching5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_fill_area_style.html" title="previous chapter">Class Ifc4x1::IfcFillAreaStyle</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_fill_area_style_tiles.html" title="next chapter">Class Ifc4x1::IfcFillAreaStyleTiles</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_fill_area_style_hatching.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

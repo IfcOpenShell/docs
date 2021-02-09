@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a5d94333243e28d74b8eb17eb95dc57dd:
+
+Define SCHEMA_IfcObjectDefinition_HAS_Nests
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcObjectDefinition_HAS_Nests

@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_character_decoder_8h_1a126c2c7e0830ba572b41ea88ac9118f7:
+
+Function IfcUtil::convert_utf8(const std::string&)
+==================================================
+
+- Defined in :ref:`file_src_ifcparse_IfcCharacterDecoder.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcUtil::convert_utf8(const std::string&)

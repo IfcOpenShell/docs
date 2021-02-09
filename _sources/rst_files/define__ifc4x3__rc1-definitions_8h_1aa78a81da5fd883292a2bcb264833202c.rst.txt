@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1aa78a81da5fd883292a2bcb264833202c:
+
+Define SCHEMA_IfcComplexProperty_HAS_UsageName
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcComplexProperty_HAS_UsageName

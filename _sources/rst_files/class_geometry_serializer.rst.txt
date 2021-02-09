@@ -1,0 +1,33 @@
+.. _exhale_class_class_geometry_serializer:
+
+Class GeometrySerializer
+========================
+
+- Defined in :ref:`file_src_serializers_GeometrySerializer.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Serializer`` (:ref:`exhale_class_class_serializer`)
+
+
+Derived Types
+*************
+
+- ``public OpenCascadeBasedSerializer`` (:ref:`exhale_class_class_open_cascade_based_serializer`)
+- ``public SvgSerializer`` (:ref:`exhale_class_class_svg_serializer`)
+- ``public WaveFrontOBJSerializer`` (:ref:`exhale_class_class_wave_front_o_b_j_serializer`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: GeometrySerializer
+   :members:
+   :protected-members:
+   :undoc-members:

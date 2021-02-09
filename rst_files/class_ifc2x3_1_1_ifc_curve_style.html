@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcCurveStyle &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcCurveStyleFont" href="class_ifc2x3_1_1_ifc_curve_style_font.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcCurveBoundedPlane" href="class_ifc2x3_1_1_ifc_curve_bounded_plane.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifccurvestyle">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-curve-style"></span><h1>Class Ifc2x3::IfcCurveStyle<a class="headerlink" href="#class-ifc2x3-ifccurvestyle" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcPresentationStyle</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_presentation_style.html#exhale-class-class-ifc2x3-1-1-ifc-presentation-style"><span class="std std-ref">Class Ifc2x3::IfcPresentationStyle</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x313IfcCurveStyleE">
+<span id="_CPPv3N6Ifc2x313IfcCurveStyleE"></span><span id="_CPPv2N6Ifc2x313IfcCurveStyleE"></span><span id="Ifc2x3::IfcCurveStyle"></span><span class="target" id="class_ifc2x3_1_1_ifc_curve_style"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcCurveStyle</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_presentation_style.html#_CPPv4N6Ifc2x320IfcPresentationStyleE" title="Ifc2x3::IfcPresentationStyle">IfcPresentationStyle</a><a class="headerlink" href="#_CPPv4N6Ifc2x313IfcCurveStyleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-46:1992: A curve style specifies the visual appearance of curves.</p>
+<p>An <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_curve_style"><span class="std std-ref">IfcCurveStyle</span></a> provides the style table for presentation information assigned to geometric curves. The style is defined by a color, a font and a width. The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_curve_style"><span class="std std-ref">IfcCurveStyle</span></a> defines curve patterns as model patterns, that is, the distance between visible and invisible segments of curve patterns are given in model space dimensions (that have to be scaled using the target plot scale).</p>
+<p>Styles are intended to be shared by multiple <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_styled_item"><span class="std std-ref">IfcStyledItem</span></a>’s, assigning the style to occurrences of (subtypes of) <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_geometric_representation_item"><span class="std std-ref">IfcGeometricRepresentationItem</span></a>’s. Measures given to a font pattern or a curve width are given in global drawing length units.</p>
+<p>NOTE global units are defined at the single <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a> instance, given by UnitsInContext:<a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_unit_assignment"><span class="std std-ref">IfcUnitAssignment</span></a>, the same units are used for the geometric representation items and for the style definitions.</p>
+<p>The measure values for font pattern and curve width apply to the model space with a target plot scale provided for the correct appearance in the default plot scale.. For different scale and projection dependent curve styles a different instance of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_curve_style"><span class="std std-ref">IfcCurveStyle</span></a> needs to be used by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_presentation_style_assignment"><span class="std std-ref">IfcPresentationStyleAssignment</span></a> for different <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_geometric_representation_sub_context"><span class="std std-ref">IfcGeometricRepresentationSubContext</span></a> dependent representations.</p>
+<p>NOTE the target plot scale is given by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_geometric_representation_sub_context_1afdd093347389dc29c4ed51983ae98a8e"><span class="std std-ref">IfcGeometricRepresentationSubContext.TargetScale</span></a>.</p>
+<p>An <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_curve_style"><span class="std std-ref">IfcCurveStyle</span></a> can be assigned to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_geometric_representation_item"><span class="std std-ref">IfcGeometricRepresentationItem</span></a>’s via the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_presentation_style_assignment"><span class="std std-ref">IfcPresentationStyleAssignment</span></a> through an intermediate <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_styled_item"><span class="std std-ref">IfcStyledItem</span></a> or <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_annotation_curve_occurrence"><span class="std std-ref">IfcAnnotationCurveOccurrence</span></a>.</p>
+<p>NOTE Corresponding ISO 10303 name: curve_style. Please refer to ISO/IS 10303-46:1994 for the final definition of the formal standard.</p>
+<p>HISTORY New entity in IFC2x2. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x313IfcCurveStyle4listE">
+<span id="_CPPv3N6Ifc2x313IfcCurveStyle4listE"></span><span id="_CPPv2N6Ifc2x313IfcCurveStyle4listE"></span><span id="Ifc2x3::IfcCurveStyle::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_curve_style_1a5178e3ec8a00535d472cac79ee552146"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x313IfcCurveStyleE" title="Ifc2x3::IfcCurveStyle">IfcCurveStyle</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x313IfcCurveStyle4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x313IfcCurveStyle12hasCurveFontEv">
+<span id="_CPPv3NK6Ifc2x313IfcCurveStyle12hasCurveFontEv"></span><span id="_CPPv2NK6Ifc2x313IfcCurveStyle12hasCurveFontEv"></span><span id="Ifc2x3::IfcCurveStyle::hasCurveFontC"></span><span class="target" id="class_ifc2x3_1_1_ifc_curve_style_1a816c777aa1b66d03e4c6bd513f72c555"></span>bool <code class="sig-name descname">hasCurveFont</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x313IfcCurveStyle12hasCurveFontEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute CurveFont is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_curve_style"><span class="std std-ref">IfcCurveStyle</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x313IfcCurveStyle9CurveFontEv">
+<span id="_CPPv3NK6Ifc2x313IfcCurveStyle9CurveFontEv"></span><span id="_CPPv2NK6Ifc2x313IfcCurveStyle9CurveFontEv"></span><span id="Ifc2x3::IfcCurveStyle::CurveFontC"></span><span class="target" id="class_ifc2x3_1_1_ifc_curve_style_1a79c601c09b5834055a2e3f284ba696c2"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x335IfcCurveFontOrScaledCurveFontSelectE" title="Ifc2x3::IfcCurveFontOrScaledCurveFontSelect">IfcCurveFontOrScaledCurveFontSelect</a> *<code class="sig-name descname">CurveFont</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x313IfcCurveStyle9CurveFontEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A curve style font which is used to present a curve. It can either be a predefined curve font, or an explicitly defined curve font. Both may be scaled. If not given, then the curve font should be taken from the layer assignment with style, if that is not given either, then the default curve font applies. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x313IfcCurveStyle12setCurveFontEPN6Ifc2x335IfcCurveFontOrScaledCurveFontSelectE">
+<span id="_CPPv3N6Ifc2x313IfcCurveStyle12setCurveFontEPN6Ifc2x335IfcCurveFontOrScaledCurveFontSelectE"></span><span id="_CPPv2N6Ifc2x313IfcCurveStyle12setCurveFontEPN6Ifc2x335IfcCurveFontOrScaledCurveFontSelectE"></span><span id="Ifc2x3::IfcCurveStyle::setCurveFont__Ifc2x3::IfcCurveFontOrScaledCurveFontSelectP"></span><span class="target" id="class_ifc2x3_1_1_ifc_curve_style_1a34465af1dcf8ab6e016b9d5bbf637d45"></span>void <code class="sig-name descname">setCurveFont</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x335IfcCurveFontOrScaledCurveFontSelectE" title="Ifc2x3::IfcCurveFontOrScaledCurveFontSelect">IfcCurveFontOrScaledCurveFontSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x313IfcCurveStyle12setCurveFontEPN6Ifc2x335IfcCurveFontOrScaledCurveFontSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x313IfcCurveStyle13hasCurveWidthEv">
+<span id="_CPPv3NK6Ifc2x313IfcCurveStyle13hasCurveWidthEv"></span><span id="_CPPv2NK6Ifc2x313IfcCurveStyle13hasCurveWidthEv"></span><span id="Ifc2x3::IfcCurveStyle::hasCurveWidthC"></span><span class="target" id="class_ifc2x3_1_1_ifc_curve_style_1a1c2ca13c37e8a292527561b37f8db998"></span>bool <code class="sig-name descname">hasCurveWidth</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x313IfcCurveStyle13hasCurveWidthEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute CurveWidth is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_curve_style"><span class="std std-ref">IfcCurveStyle</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x313IfcCurveStyle10CurveWidthEv">
+<span id="_CPPv3NK6Ifc2x313IfcCurveStyle10CurveWidthEv"></span><span id="_CPPv2NK6Ifc2x313IfcCurveStyle10CurveWidthEv"></span><span id="Ifc2x3::IfcCurveStyle::CurveWidthC"></span><span class="target" id="class_ifc2x3_1_1_ifc_curve_style_1a546142efc638e9c6a180a05d60c18816"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x313IfcSizeSelectE" title="Ifc2x3::IfcSizeSelect">IfcSizeSelect</a> *<code class="sig-name descname">CurveWidth</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x313IfcCurveStyle10CurveWidthEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A positive length measure in units of the presentation area for the width of a presented curve. If not given, then the style should be taken from the layer assignment with style, if that is not given either, then the default style applies. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x313IfcCurveStyle13setCurveWidthEPN6Ifc2x313IfcSizeSelectE">
+<span id="_CPPv3N6Ifc2x313IfcCurveStyle13setCurveWidthEPN6Ifc2x313IfcSizeSelectE"></span><span id="_CPPv2N6Ifc2x313IfcCurveStyle13setCurveWidthEPN6Ifc2x313IfcSizeSelectE"></span><span id="Ifc2x3::IfcCurveStyle::setCurveWidth__Ifc2x3::IfcSizeSelectP"></span><span class="target" id="class_ifc2x3_1_1_ifc_curve_style_1a180880f3e738771274e31bd4050178b4"></span>void <code class="sig-name descname">setCurveWidth</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x313IfcSizeSelectE" title="Ifc2x3::IfcSizeSelect">IfcSizeSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x313IfcCurveStyle13setCurveWidthEPN6Ifc2x313IfcSizeSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x313IfcCurveStyle14hasCurveColourEv">
+<span id="_CPPv3NK6Ifc2x313IfcCurveStyle14hasCurveColourEv"></span><span id="_CPPv2NK6Ifc2x313IfcCurveStyle14hasCurveColourEv"></span><span id="Ifc2x3::IfcCurveStyle::hasCurveColourC"></span><span class="target" id="class_ifc2x3_1_1_ifc_curve_style_1a1cbb8c5821e1331771c1397f7d649f32"></span>bool <code class="sig-name descname">hasCurveColour</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x313IfcCurveStyle14hasCurveColourEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute CurveColour is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_curve_style"><span class="std std-ref">IfcCurveStyle</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x313IfcCurveStyle11CurveColourEv">
+<span id="_CPPv3NK6Ifc2x313IfcCurveStyle11CurveColourEv"></span><span id="_CPPv2NK6Ifc2x313IfcCurveStyle11CurveColourEv"></span><span id="Ifc2x3::IfcCurveStyle::CurveColourC"></span><span class="target" id="class_ifc2x3_1_1_ifc_curve_style_1af0fac99eaa17d8eb077ef478e3bdd0e8"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x39IfcColourE" title="Ifc2x3::IfcColour">IfcColour</a> *<code class="sig-name descname">CurveColour</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x313IfcCurveStyle11CurveColourEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The colour of the visible part of the curve. If not given, then the colour should be taken from the layer assignment with style, if that is not given either, then the default colour applies. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x313IfcCurveStyle14setCurveColourEPN6Ifc2x39IfcColourE">
+<span id="_CPPv3N6Ifc2x313IfcCurveStyle14setCurveColourEPN6Ifc2x39IfcColourE"></span><span id="_CPPv2N6Ifc2x313IfcCurveStyle14setCurveColourEPN6Ifc2x39IfcColourE"></span><span id="Ifc2x3::IfcCurveStyle::setCurveColour__Ifc2x3::IfcColourP"></span><span class="target" id="class_ifc2x3_1_1_ifc_curve_style_1a3b9ace9661d5886dbabc43efa23e6e07"></span>void <code class="sig-name descname">setCurveColour</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x39IfcColourE" title="Ifc2x3::IfcColour">IfcColour</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x313IfcCurveStyle14setCurveColourEPN6Ifc2x39IfcColourE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x313IfcCurveStyle11declarationEv">
+<span id="_CPPv3NK6Ifc2x313IfcCurveStyle11declarationEv"></span><span id="_CPPv2NK6Ifc2x313IfcCurveStyle11declarationEv"></span><span id="Ifc2x3::IfcCurveStyle::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_curve_style_1a124f9207fa0644c40c8e54c24de63c87"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x313IfcCurveStyle11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x313IfcCurveStyle13IfcCurveStyleEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x313IfcCurveStyle13IfcCurveStyleEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x313IfcCurveStyle13IfcCurveStyleEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcCurveStyle::IfcCurveStyle__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_curve_style_1ae57ddba7ffb67fa3ee20feab95cf316f"></span><code class="sig-name descname">IfcCurveStyle</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x313IfcCurveStyle13IfcCurveStyleEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x313IfcCurveStyle13IfcCurveStyleEN5boost8optionalINSt6stringEEEPN6Ifc2x335IfcCurveFontOrScaledCurveFontSelectEPN6Ifc2x313IfcSizeSelectEPN6Ifc2x39IfcColourE">
+<span id="_CPPv3N6Ifc2x313IfcCurveStyle13IfcCurveStyleEN5boost8optionalINSt6stringEEEPN6Ifc2x335IfcCurveFontOrScaledCurveFontSelectEPN6Ifc2x313IfcSizeSelectEPN6Ifc2x39IfcColourE"></span><span id="_CPPv2N6Ifc2x313IfcCurveStyle13IfcCurveStyleEN5boost8optionalINSt6stringEEEPN6Ifc2x335IfcCurveFontOrScaledCurveFontSelectEPN6Ifc2x313IfcSizeSelectEPN6Ifc2x39IfcColourE"></span><span id="Ifc2x3::IfcCurveStyle::IfcCurveStyle__boost::optional:ss:.Ifc2x3::IfcCurveFontOrScaledCurveFontSelectP.Ifc2x3::IfcSizeSelectP.Ifc2x3::IfcColourP"></span><span class="target" id="class_ifc2x3_1_1_ifc_curve_style_1a28feec0a6a38deab3a351e9b0ea771f7"></span><code class="sig-name descname">IfcCurveStyle</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Name</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x335IfcCurveFontOrScaledCurveFontSelectE" title="Ifc2x3::IfcCurveFontOrScaledCurveFontSelect">IfcCurveFontOrScaledCurveFontSelect</a> *<em>v2_CurveFont</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x313IfcSizeSelectE" title="Ifc2x3::IfcSizeSelect">IfcSizeSelect</a> *<em>v3_CurveWidth</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x39IfcColourE" title="Ifc2x3::IfcColour">IfcColour</a> *<em>v4_CurveColour</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x313IfcCurveStyle13IfcCurveStyleEN5boost8optionalINSt6stringEEEPN6Ifc2x335IfcCurveFontOrScaledCurveFontSelectEPN6Ifc2x313IfcSizeSelectEPN6Ifc2x39IfcColourE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x313IfcCurveStyle5ClassEv">
+<span id="_CPPv3N6Ifc2x313IfcCurveStyle5ClassEv"></span><span id="_CPPv2N6Ifc2x313IfcCurveStyle5ClassEv"></span><span id="Ifc2x3::IfcCurveStyle::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_curve_style_1a7f93bd1220183045458755fbac581459"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x313IfcCurveStyle5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_curve_bounded_plane.html" title="previous chapter">Class Ifc2x3::IfcCurveBoundedPlane</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_curve_style_font.html" title="next chapter">Class Ifc2x3::IfcCurveStyleFont</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_curve_style.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

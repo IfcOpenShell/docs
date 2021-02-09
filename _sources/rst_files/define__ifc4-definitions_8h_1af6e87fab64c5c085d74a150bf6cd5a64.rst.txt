@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1af6e87fab64c5c085d74a150bf6cd5a64:
+
+Define SCHEMA_IfcPropertySetDefinition_HAS_IsDefinedBy
+======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPropertySetDefinition_HAS_IsDefinedBy

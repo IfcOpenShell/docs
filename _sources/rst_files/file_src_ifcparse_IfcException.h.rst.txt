@@ -1,0 +1,79 @@
+
+.. _file_src_ifcparse_IfcException.h:
+
+File IfcException.h
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcparse>` (``src/ifcparse``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/IfcException.h``)
+--------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_IfcException.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``boost/lexical_cast.hpp``
+
+- ``exception``
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_IfcSchema.h`
+
+- :ref:`file_src_ifcgeom_IfcGeomIteratorSettings.h`
+
+- :ref:`file_src_ifcparse_Ifc2x3.h`
+
+- :ref:`file_src_ifcparse_Ifc4.h`
+
+- :ref:`file_src_ifcparse_Ifc4x1.h`
+
+- :ref:`file_src_ifcparse_Ifc4x2.h`
+
+- :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcParse`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_attribute_out_of_range_exception`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_exception`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_invalid_token_exception`
+

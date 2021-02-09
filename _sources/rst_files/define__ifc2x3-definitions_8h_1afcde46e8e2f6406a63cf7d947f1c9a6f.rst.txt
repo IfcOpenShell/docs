@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1afcde46e8e2f6406a63cf7d947f1c9a6f:
+
+Define SCHEMA_IfcTendon_HAS_NominalDiameter
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTendon_HAS_NominalDiameter

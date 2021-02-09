@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a1a8f82a6ffb3103de8f432fbddbc0458:
+
+Define SCHEMA_HAS_IfcTorqueMeasure
+==================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcTorqueMeasure

@@ -1,0 +1,62 @@
+
+.. _file_src_ifcparse_IfcHierarchyHelper.h:
+
+File IfcHierarchyHelper.h
+=========================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcparse>` (``src/ifcparse``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/IfcHierarchyHelper.h``)
+--------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_IfcHierarchyHelper.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/Ifc2x3.h``
+
+- ``../ifcparse/Ifc4.h``
+
+- ``../ifcparse/Ifc4x1.h``
+
+- ``../ifcparse/Ifc4x2.h``
+
+- ``../ifcparse/Ifc4x3_rc1.h``
+
+- ``../ifcparse/IfcFile.h``
+
+- ``../ifcparse/IfcGlobalId.h``
+
+- ``../ifcparse/IfcWrite.h``
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+- ``map``
+
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_ifc_hierarchy_helper`
+

@@ -1,0 +1,37 @@
+.. _exhale_class_class_ifc2x3_1_1_ifc_one_direction_repeat_factor:
+
+Class Ifc2x3::IfcOneDirectionRepeatFactor
+=========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc2x3::IfcGeometricRepresentationItem`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_geometric_representation_item`)
+
+
+Derived Type
+************
+
+- ``public Ifc2x3::IfcTwoDirectionRepeatFactor`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_two_direction_repeat_factor`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc2x3::IfcOneDirectionRepeatFactor
+   :members:
+   :protected-members:
+   :undoc-members:

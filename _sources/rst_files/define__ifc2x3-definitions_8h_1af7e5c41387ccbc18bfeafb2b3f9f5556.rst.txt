@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1af7e5c41387ccbc18bfeafb2b3f9f5556:
+
+Define SCHEMA_IfcAsset_HAS_AssetID
+==================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcAsset_HAS_AssetID

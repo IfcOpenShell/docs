@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1af1da7f1d5d541bb3d381260cb1d01d1c:
+
+Define SCHEMA_IfcThermalMaterialProperties_BoilingPoint_IS_OPTIONAL
+===================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcThermalMaterialProperties_BoilingPoint_IS_OPTIONAL

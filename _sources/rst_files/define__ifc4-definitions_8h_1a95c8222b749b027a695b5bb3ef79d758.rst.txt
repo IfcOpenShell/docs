@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a95c8222b749b027a695b5bb3ef79d758:
+
+Define SCHEMA_IfcTextStyleForDefinedFont_HAS_BackgroundColour
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTextStyleForDefinedFont_HAS_BackgroundColour

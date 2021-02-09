@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a51db08c4ace8d62a3f99ad13cd845a15:
+
+Define SCHEMA_HAS_IfcWarpingConstantMeasure
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcWarpingConstantMeasure

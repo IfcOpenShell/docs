@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a6a156147bd9cfd0ed59bfeca2f567d39:
+
+Define SCHEMA_IfcTendonType_HAS_PredefinedType
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTendonType_HAS_PredefinedType

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ad0256f882114f369f5f0ef95b9336da5:
+
+Define SCHEMA_IfcVertexLoop_HAS_LoopVertex
+==========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcVertexLoop_HAS_LoopVertex

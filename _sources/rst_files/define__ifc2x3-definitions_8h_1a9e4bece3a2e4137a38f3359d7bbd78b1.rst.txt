@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a9e4bece3a2e4137a38f3359d7bbd78b1:
+
+Define SCHEMA_IfcWaterProperties_HAS_Hardness
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcWaterProperties_HAS_Hardness

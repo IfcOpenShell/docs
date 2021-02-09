@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcRelInterferesElements &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcRelNests" href="class_ifc4_1_1_ifc_rel_nests.html" />
+    <link rel="prev" title="Class Ifc4::IfcRelFlowControlElements" href="class_ifc4_1_1_ifc_rel_flow_control_elements.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcrelinterfereselements">
+<span id="exhale-class-class-ifc4-1-1-ifc-rel-interferes-elements"></span><h1>Class Ifc4::IfcRelInterferesElements<a class="headerlink" href="#class-ifc4-ifcrelinterfereselements" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcRelConnects</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_rel_connects.html#exhale-class-class-ifc4-1-1-ifc-rel-connects"><span class="std std-ref">Class Ifc4::IfcRelConnects</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc424IfcRelInterferesElementsE">
+<span id="_CPPv3N4Ifc424IfcRelInterferesElementsE"></span><span id="_CPPv2N4Ifc424IfcRelInterferesElementsE"></span><span id="Ifc4::IfcRelInterferesElements"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcRelInterferesElements</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_rel_connects.html#_CPPv4N4Ifc414IfcRelConnectsE" title="Ifc4::IfcRelConnects">IfcRelConnects</a><a class="headerlink" href="#_CPPv4N4Ifc424IfcRelInterferesElementsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from IAI: The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_interferes_elements"><span class="std std-ref">IfcRelInterferesElements</span></a> objectified relationship indicates that two elements interfere. Interference is a spatial overlap between the two elements. It is a 1 to 1 relationship. The concept of two elements interfering physically or logically is described independently from the elements. The interference may be related to the shape representation of the entities by providing an interference geometry.</p>
+<p>When the interference geometry is available it can be passed by the optional attribute InterferenceGeometry pointing to <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_connection_geometry"><span class="std std-ref">IfcConnectionGeometry</span></a>. The connection geometry is provided as a point, curve, surface, or volume within the local placement coordinate systems of the connecting elements. The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_connection_volume_geometry"><span class="std std-ref">IfcConnectionVolumeGeometry</span></a> is the default type to be used for interference in 3D space, as indicated in e.g. clash detections. If the interference geometry is omitted then the interference is provided as a logical relationship. Under this circumstance, the connection point, curve, surface, or solid has to be recalculated by the receiving application.</p>
+<p>The RelatingElement and RelatedElement define the two elements in the relationship, that may have different roles. This is controlled by the attribute ImpliedOrder.</p>
+<p>ImpliedOrder=TRUE The RelatingElement constitutes the primary element of the interference relationship. If the interference is to be resolved by subtracting the overlapping part, it should be subtracted from the RelatingElement. The net result would be the RelatingElement subtracted by the InterferenceGeometry. This would be the case in interference relationships where the RelatedElement creates a void in the RelatingElement dynamically. ImpliedOrder=FALSE The RelatingElement and RelatedElement have no priority among each other. If the interference is to be resolved then no information about whether the InterferenceGeometry should be subtracted from the RelatingElement or thed RelatedElement can be traced. This would be the case for clash detection results. ImpliedOrder=UNKNOW No information about the priorities is provided.</p>
+<p>HISTORY New entity in IFC2x4. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc424IfcRelInterferesElements4listE">
+<span id="_CPPv3N4Ifc424IfcRelInterferesElements4listE"></span><span id="_CPPv2N4Ifc424IfcRelInterferesElements4listE"></span><span id="Ifc4::IfcRelInterferesElements::list"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements_1a22e36d16d1f1fe52fac84b30f2f9c79d"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc424IfcRelInterferesElementsE" title="Ifc4::IfcRelInterferesElements">IfcRelInterferesElements</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc424IfcRelInterferesElements4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcRelInterferesElements15RelatingElementEv">
+<span id="_CPPv3NK4Ifc424IfcRelInterferesElements15RelatingElementEv"></span><span id="_CPPv2NK4Ifc424IfcRelInterferesElements15RelatingElementEv"></span><span id="Ifc4::IfcRelInterferesElements::RelatingElementC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements_1a7d3201ff47c0d69786daa08e78fa27dc"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_element.html#_CPPv4N4Ifc410IfcElementE" title="Ifc4::IfcElement">IfcElement</a> *<code class="sig-name descname">RelatingElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcRelInterferesElements15RelatingElementEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reference to a subtype of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a> that is the RelatingElement in the interference relationship. Depending on the value of ImpliedOrder the RelatingElement may carry the notion to be the element from which the interference geometry should be subtracted. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc424IfcRelInterferesElements18setRelatingElementEPN4Ifc410IfcElementE">
+<span id="_CPPv3N4Ifc424IfcRelInterferesElements18setRelatingElementEPN4Ifc410IfcElementE"></span><span id="_CPPv2N4Ifc424IfcRelInterferesElements18setRelatingElementEPN4Ifc410IfcElementE"></span><span id="Ifc4::IfcRelInterferesElements::setRelatingElement__Ifc4::IfcElementP"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements_1a971dee6ba6ac1ad7f0e039996e17914e"></span>void <code class="sig-name descname">setRelatingElement</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_element.html#_CPPv4N4Ifc410IfcElementE" title="Ifc4::IfcElement">IfcElement</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc424IfcRelInterferesElements18setRelatingElementEPN4Ifc410IfcElementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcRelInterferesElements14RelatedElementEv">
+<span id="_CPPv3NK4Ifc424IfcRelInterferesElements14RelatedElementEv"></span><span id="_CPPv2NK4Ifc424IfcRelInterferesElements14RelatedElementEv"></span><span id="Ifc4::IfcRelInterferesElements::RelatedElementC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements_1a4b5297e8c6428eec5b146acbfa1c4b0a"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_element.html#_CPPv4N4Ifc410IfcElementE" title="Ifc4::IfcElement">IfcElement</a> *<code class="sig-name descname">RelatedElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcRelInterferesElements14RelatedElementEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reference to a subtype of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a> that is the RelatedElement in the interference relationship. Depending on the value of ImpliedOrder the RelatedElement may carry the notion to be the element from which the interference geometry should not be subtracted. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc424IfcRelInterferesElements17setRelatedElementEPN4Ifc410IfcElementE">
+<span id="_CPPv3N4Ifc424IfcRelInterferesElements17setRelatedElementEPN4Ifc410IfcElementE"></span><span id="_CPPv2N4Ifc424IfcRelInterferesElements17setRelatedElementEPN4Ifc410IfcElementE"></span><span id="Ifc4::IfcRelInterferesElements::setRelatedElement__Ifc4::IfcElementP"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements_1a67ddf624abaed8af44e909d062ada3a4"></span>void <code class="sig-name descname">setRelatedElement</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_element.html#_CPPv4N4Ifc410IfcElementE" title="Ifc4::IfcElement">IfcElement</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc424IfcRelInterferesElements17setRelatedElementEPN4Ifc410IfcElementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcRelInterferesElements23hasInterferenceGeometryEv">
+<span id="_CPPv3NK4Ifc424IfcRelInterferesElements23hasInterferenceGeometryEv"></span><span id="_CPPv2NK4Ifc424IfcRelInterferesElements23hasInterferenceGeometryEv"></span><span id="Ifc4::IfcRelInterferesElements::hasInterferenceGeometryC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements_1a65fd8b326a29684515164b861d9686ed"></span>bool <code class="sig-name descname">hasInterferenceGeometry</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcRelInterferesElements23hasInterferenceGeometryEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute InterferenceGeometry is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_interferes_elements"><span class="std std-ref">IfcRelInterferesElements</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcRelInterferesElements20InterferenceGeometryEv">
+<span id="_CPPv3NK4Ifc424IfcRelInterferesElements20InterferenceGeometryEv"></span><span id="_CPPv2NK4Ifc424IfcRelInterferesElements20InterferenceGeometryEv"></span><span id="Ifc4::IfcRelInterferesElements::InterferenceGeometryC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements_1ab7ca3e83ef8920d7bcbc9435f2ad87da"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_connection_geometry.html#_CPPv4N4Ifc421IfcConnectionGeometryE" title="Ifc4::IfcConnectionGeometry">IfcConnectionGeometry</a> *<code class="sig-name descname">InterferenceGeometry</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcRelInterferesElements20InterferenceGeometryEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The geometric shape representation of the interference geometry that is provided in the object coordinate system of the RelatingElement (mandatory) and in the object coordinate system of the RelatedElement (optionally). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc424IfcRelInterferesElements23setInterferenceGeometryEPN4Ifc421IfcConnectionGeometryE">
+<span id="_CPPv3N4Ifc424IfcRelInterferesElements23setInterferenceGeometryEPN4Ifc421IfcConnectionGeometryE"></span><span id="_CPPv2N4Ifc424IfcRelInterferesElements23setInterferenceGeometryEPN4Ifc421IfcConnectionGeometryE"></span><span id="Ifc4::IfcRelInterferesElements::setInterferenceGeometry__Ifc4::IfcConnectionGeometryP"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements_1a6d97bb378cf25afecaac474ed2f58ba6"></span>void <code class="sig-name descname">setInterferenceGeometry</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_connection_geometry.html#_CPPv4N4Ifc421IfcConnectionGeometryE" title="Ifc4::IfcConnectionGeometry">IfcConnectionGeometry</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc424IfcRelInterferesElements23setInterferenceGeometryEPN4Ifc421IfcConnectionGeometryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcRelInterferesElements19hasInterferenceTypeEv">
+<span id="_CPPv3NK4Ifc424IfcRelInterferesElements19hasInterferenceTypeEv"></span><span id="_CPPv2NK4Ifc424IfcRelInterferesElements19hasInterferenceTypeEv"></span><span id="Ifc4::IfcRelInterferesElements::hasInterferenceTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements_1afd5879f65084255c0cdfc0472c2bb5c2"></span>bool <code class="sig-name descname">hasInterferenceType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcRelInterferesElements19hasInterferenceTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute InterferenceType is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_interferes_elements"><span class="std std-ref">IfcRelInterferesElements</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcRelInterferesElements16InterferenceTypeEv">
+<span id="_CPPv3NK4Ifc424IfcRelInterferesElements16InterferenceTypeEv"></span><span id="_CPPv2NK4Ifc424IfcRelInterferesElements16InterferenceTypeEv"></span><span id="Ifc4::IfcRelInterferesElements::InterferenceTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements_1a50a1494b9ec22a9240f889b74d48ffed"></span>std::string <code class="sig-name descname">InterferenceType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcRelInterferesElements16InterferenceTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Optional identifier that describes the nature of the interference. Examples could include ‘Clash’, ‘ProvisionForVoid’, etc. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc424IfcRelInterferesElements19setInterferenceTypeENSt6stringE">
+<span id="_CPPv3N4Ifc424IfcRelInterferesElements19setInterferenceTypeENSt6stringE"></span><span id="_CPPv2N4Ifc424IfcRelInterferesElements19setInterferenceTypeENSt6stringE"></span><span id="Ifc4::IfcRelInterferesElements::setInterferenceType__ss"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements_1ad68ea098ac9ba168cecd3c76c91ba0a4"></span>void <code class="sig-name descname">setInterferenceType</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc424IfcRelInterferesElements19setInterferenceTypeENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcRelInterferesElements12ImpliedOrderEv">
+<span id="_CPPv3NK4Ifc424IfcRelInterferesElements12ImpliedOrderEv"></span><span id="_CPPv2NK4Ifc424IfcRelInterferesElements12ImpliedOrderEv"></span><span id="Ifc4::IfcRelInterferesElements::ImpliedOrderC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements_1adb8f2cc2620f46e74bae71bef938c547"></span>bool <code class="sig-name descname">ImpliedOrder</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcRelInterferesElements12ImpliedOrderEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Logical value indicating whether the interference geometry should be subtracted from the RelatingElement (if TRUE), or whether it should be either subtracted from the RelatingElement or the RelatedElement (if FALSE), or whether no indication can be provided (if UNKNOWN). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc424IfcRelInterferesElements15setImpliedOrderEb">
+<span id="_CPPv3N4Ifc424IfcRelInterferesElements15setImpliedOrderEb"></span><span id="_CPPv2N4Ifc424IfcRelInterferesElements15setImpliedOrderEb"></span><span id="Ifc4::IfcRelInterferesElements::setImpliedOrder__b"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements_1ad595f0c5dd6d5ab6c021e2f0eaed5399"></span>void <code class="sig-name descname">setImpliedOrder</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc424IfcRelInterferesElements15setImpliedOrderEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc424IfcRelInterferesElements11declarationEv">
+<span id="_CPPv3NK4Ifc424IfcRelInterferesElements11declarationEv"></span><span id="_CPPv2NK4Ifc424IfcRelInterferesElements11declarationEv"></span><span id="Ifc4::IfcRelInterferesElements::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements_1a30112ee3f1ea0445d94f66828388f2a9"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc424IfcRelInterferesElements11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc424IfcRelInterferesElements24IfcRelInterferesElementsEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc424IfcRelInterferesElements24IfcRelInterferesElementsEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc424IfcRelInterferesElements24IfcRelInterferesElementsEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcRelInterferesElements::IfcRelInterferesElements__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements_1a3286fdfc3ce79903cfebbd8e9cbc3c7c"></span><code class="sig-name descname">IfcRelInterferesElements</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc424IfcRelInterferesElements24IfcRelInterferesElementsEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc424IfcRelInterferesElements24IfcRelInterferesElementsENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc410IfcElementEPN4Ifc410IfcElementEPN4Ifc421IfcConnectionGeometryEN5boost8optionalINSt6stringEEEb">
+<span id="_CPPv3N4Ifc424IfcRelInterferesElements24IfcRelInterferesElementsENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc410IfcElementEPN4Ifc410IfcElementEPN4Ifc421IfcConnectionGeometryEN5boost8optionalINSt6stringEEEb"></span><span id="_CPPv2N4Ifc424IfcRelInterferesElements24IfcRelInterferesElementsENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc410IfcElementEPN4Ifc410IfcElementEPN4Ifc421IfcConnectionGeometryEN5boost8optionalINSt6stringEEEb"></span><span id="Ifc4::IfcRelInterferesElements::IfcRelInterferesElements__ss.Ifc4::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.Ifc4::IfcElementP.Ifc4::IfcElementP.Ifc4::IfcConnectionGeometryP.boost::optional:ss:.b"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements_1abe5e6e4014399f2a4c1a82150d5a6ca8"></span><code class="sig-name descname">IfcRelInterferesElements</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_owner_history.html#_CPPv4N4Ifc415IfcOwnerHistoryE" title="Ifc4::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_element.html#_CPPv4N4Ifc410IfcElementE" title="Ifc4::IfcElement">IfcElement</a> *<em>v5_RelatingElement</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_element.html#_CPPv4N4Ifc410IfcElementE" title="Ifc4::IfcElement">IfcElement</a> *<em>v6_RelatedElement</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_connection_geometry.html#_CPPv4N4Ifc421IfcConnectionGeometryE" title="Ifc4::IfcConnectionGeometry">IfcConnectionGeometry</a> *<em>v7_InterferenceGeometry</em>, boost::optional&lt;std::string&gt; <em>v8_InterferenceType</em>, bool <em>v9_ImpliedOrder</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc424IfcRelInterferesElements24IfcRelInterferesElementsENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc410IfcElementEPN4Ifc410IfcElementEPN4Ifc421IfcConnectionGeometryEN5boost8optionalINSt6stringEEEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc424IfcRelInterferesElements5ClassEv">
+<span id="_CPPv3N4Ifc424IfcRelInterferesElements5ClassEv"></span><span id="_CPPv2N4Ifc424IfcRelInterferesElements5ClassEv"></span><span id="Ifc4::IfcRelInterferesElements::Class"></span><span class="target" id="class_ifc4_1_1_ifc_rel_interferes_elements_1aca880c219695fc16a8b1c30b96f7a0a7"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc424IfcRelInterferesElements5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_rel_flow_control_elements.html" title="previous chapter">Class Ifc4::IfcRelFlowControlElements</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_rel_nests.html" title="next chapter">Class Ifc4::IfcRelNests</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_rel_interferes_elements.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

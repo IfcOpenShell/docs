@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a449cd2d14ec05960faac08a090744e20:
+
+Define SCHEMA_HAS_IfcCardinalPointReference
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcCardinalPointReference

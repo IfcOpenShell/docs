@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcDimensionalExponents &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcDimensionCount" href="class_ifc4x1_1_1_ifc_dimension_count.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcDescriptiveMeasure" href="class_ifc4x1_1_1_ifc_descriptive_measure.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcdimensionalexponents">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-dimensional-exponents"></span><h1>Class Ifc4x1::IfcDimensionalExponents<a class="headerlink" href="#class-ifc4x1-ifcdimensionalexponents" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">IfcUtil::IfcBaseEntity</span></code> (<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#exhale-class-class-ifc-util-1-1-ifc-base-entity"><span class="std std-ref">Class IfcBaseEntity</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x123IfcDimensionalExponentsE">
+<span id="_CPPv3N6Ifc4x123IfcDimensionalExponentsE"></span><span id="_CPPv2N6Ifc4x123IfcDimensionalExponentsE"></span><span id="Ifc4x1::IfcDimensionalExponents"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcDimensionalExponents</code> : <em class="property">public</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a><a class="headerlink" href="#_CPPv4N6Ifc4x123IfcDimensionalExponentsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-41:1992: The dimensionality of any quantity can be expressed as a product of powers of the dimensions of base quantities. The dimensional exponents entity defines the powers of the dimensions of the base quantities. All the physical quantities are founded on seven base quantities (ISO 31 (clause 2)).</p>
+<p>NOTE: Length, mass, time, electric current, thermodynamic temperature, amount of substance, and luminous intensity are the seven base quantities.</p>
+<p>EXAMPLE: A length of 2 millimetres has a length exponent of 1. The remaining exponents are equal to 0.</p>
+<p>EXAMPLE: A velocity of 2 millimetres per second has a length exponent of 1 and a time exponent of -1. The remaining exponents are equal to 0.</p>
+<p>NOTE Corresponding STEP name: dimensional_exponents, please refer to ISO/IS 10303-41 for the final definition of the formal standard.</p>
+<p>HISTORY New entity in IFC Release 1.5.1. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x123IfcDimensionalExponents4listE">
+<span id="_CPPv3N6Ifc4x123IfcDimensionalExponents4listE"></span><span id="_CPPv2N6Ifc4x123IfcDimensionalExponents4listE"></span><span id="Ifc4x1::IfcDimensionalExponents::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1a2831fb9d66d4f87476b2facd85f4afae"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x123IfcDimensionalExponentsE" title="Ifc4x1::IfcDimensionalExponents">IfcDimensionalExponents</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x123IfcDimensionalExponents4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x123IfcDimensionalExponents14LengthExponentEv">
+<span id="_CPPv3NK6Ifc4x123IfcDimensionalExponents14LengthExponentEv"></span><span id="_CPPv2NK6Ifc4x123IfcDimensionalExponents14LengthExponentEv"></span><span id="Ifc4x1::IfcDimensionalExponents::LengthExponentC"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1adba04f56d95c9628cb79c16aedff78d8"></span>int <code class="sig-name descname">LengthExponent</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x123IfcDimensionalExponents14LengthExponentEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The power of the length base quantity. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x123IfcDimensionalExponents17setLengthExponentEi">
+<span id="_CPPv3N6Ifc4x123IfcDimensionalExponents17setLengthExponentEi"></span><span id="_CPPv2N6Ifc4x123IfcDimensionalExponents17setLengthExponentEi"></span><span id="Ifc4x1::IfcDimensionalExponents::setLengthExponent__i"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1acd7c9d43e31313b05d1d58f372694ac1"></span>void <code class="sig-name descname">setLengthExponent</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x123IfcDimensionalExponents17setLengthExponentEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x123IfcDimensionalExponents12MassExponentEv">
+<span id="_CPPv3NK6Ifc4x123IfcDimensionalExponents12MassExponentEv"></span><span id="_CPPv2NK6Ifc4x123IfcDimensionalExponents12MassExponentEv"></span><span id="Ifc4x1::IfcDimensionalExponents::MassExponentC"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1a297a2d082fdc7be26862a186ab1c2b87"></span>int <code class="sig-name descname">MassExponent</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x123IfcDimensionalExponents12MassExponentEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The power of the mass base quantity. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x123IfcDimensionalExponents15setMassExponentEi">
+<span id="_CPPv3N6Ifc4x123IfcDimensionalExponents15setMassExponentEi"></span><span id="_CPPv2N6Ifc4x123IfcDimensionalExponents15setMassExponentEi"></span><span id="Ifc4x1::IfcDimensionalExponents::setMassExponent__i"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1a72d11afa1e83c75ff18ac45f70b9a8a2"></span>void <code class="sig-name descname">setMassExponent</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x123IfcDimensionalExponents15setMassExponentEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x123IfcDimensionalExponents12TimeExponentEv">
+<span id="_CPPv3NK6Ifc4x123IfcDimensionalExponents12TimeExponentEv"></span><span id="_CPPv2NK6Ifc4x123IfcDimensionalExponents12TimeExponentEv"></span><span id="Ifc4x1::IfcDimensionalExponents::TimeExponentC"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1a68c3eeb48944fba830e2c3c5a7decf21"></span>int <code class="sig-name descname">TimeExponent</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x123IfcDimensionalExponents12TimeExponentEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The power of the time base quantity. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x123IfcDimensionalExponents15setTimeExponentEi">
+<span id="_CPPv3N6Ifc4x123IfcDimensionalExponents15setTimeExponentEi"></span><span id="_CPPv2N6Ifc4x123IfcDimensionalExponents15setTimeExponentEi"></span><span id="Ifc4x1::IfcDimensionalExponents::setTimeExponent__i"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1ace1882e2fde08ca7a5fce454248f3a31"></span>void <code class="sig-name descname">setTimeExponent</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x123IfcDimensionalExponents15setTimeExponentEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x123IfcDimensionalExponents23ElectricCurrentExponentEv">
+<span id="_CPPv3NK6Ifc4x123IfcDimensionalExponents23ElectricCurrentExponentEv"></span><span id="_CPPv2NK6Ifc4x123IfcDimensionalExponents23ElectricCurrentExponentEv"></span><span id="Ifc4x1::IfcDimensionalExponents::ElectricCurrentExponentC"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1ad5ffb0439261064debc62aa3a1cb2951"></span>int <code class="sig-name descname">ElectricCurrentExponent</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x123IfcDimensionalExponents23ElectricCurrentExponentEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The power of the electric current base quantity. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x123IfcDimensionalExponents26setElectricCurrentExponentEi">
+<span id="_CPPv3N6Ifc4x123IfcDimensionalExponents26setElectricCurrentExponentEi"></span><span id="_CPPv2N6Ifc4x123IfcDimensionalExponents26setElectricCurrentExponentEi"></span><span id="Ifc4x1::IfcDimensionalExponents::setElectricCurrentExponent__i"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1a63e2e3937f6bf6f35d297e32fce2f103"></span>void <code class="sig-name descname">setElectricCurrentExponent</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x123IfcDimensionalExponents26setElectricCurrentExponentEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x123IfcDimensionalExponents32ThermodynamicTemperatureExponentEv">
+<span id="_CPPv3NK6Ifc4x123IfcDimensionalExponents32ThermodynamicTemperatureExponentEv"></span><span id="_CPPv2NK6Ifc4x123IfcDimensionalExponents32ThermodynamicTemperatureExponentEv"></span><span id="Ifc4x1::IfcDimensionalExponents::ThermodynamicTemperatureExponentC"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1a800b2e9035a0aa1b66b6f5f58c6eb178"></span>int <code class="sig-name descname">ThermodynamicTemperatureExponent</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x123IfcDimensionalExponents32ThermodynamicTemperatureExponentEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The power of the thermodynamic temperature base quantity. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x123IfcDimensionalExponents35setThermodynamicTemperatureExponentEi">
+<span id="_CPPv3N6Ifc4x123IfcDimensionalExponents35setThermodynamicTemperatureExponentEi"></span><span id="_CPPv2N6Ifc4x123IfcDimensionalExponents35setThermodynamicTemperatureExponentEi"></span><span id="Ifc4x1::IfcDimensionalExponents::setThermodynamicTemperatureExponent__i"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1af3fecec29e7e3e73a433aeb0a0e0e528"></span>void <code class="sig-name descname">setThermodynamicTemperatureExponent</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x123IfcDimensionalExponents35setThermodynamicTemperatureExponentEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x123IfcDimensionalExponents25AmountOfSubstanceExponentEv">
+<span id="_CPPv3NK6Ifc4x123IfcDimensionalExponents25AmountOfSubstanceExponentEv"></span><span id="_CPPv2NK6Ifc4x123IfcDimensionalExponents25AmountOfSubstanceExponentEv"></span><span id="Ifc4x1::IfcDimensionalExponents::AmountOfSubstanceExponentC"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1a92d52124834cedad44de41f1bdd5eb8b"></span>int <code class="sig-name descname">AmountOfSubstanceExponent</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x123IfcDimensionalExponents25AmountOfSubstanceExponentEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The power of the amount of substance base quantity. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x123IfcDimensionalExponents28setAmountOfSubstanceExponentEi">
+<span id="_CPPv3N6Ifc4x123IfcDimensionalExponents28setAmountOfSubstanceExponentEi"></span><span id="_CPPv2N6Ifc4x123IfcDimensionalExponents28setAmountOfSubstanceExponentEi"></span><span id="Ifc4x1::IfcDimensionalExponents::setAmountOfSubstanceExponent__i"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1a24109df76d783da3aea5056f735d7f9a"></span>void <code class="sig-name descname">setAmountOfSubstanceExponent</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x123IfcDimensionalExponents28setAmountOfSubstanceExponentEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x123IfcDimensionalExponents25LuminousIntensityExponentEv">
+<span id="_CPPv3NK6Ifc4x123IfcDimensionalExponents25LuminousIntensityExponentEv"></span><span id="_CPPv2NK6Ifc4x123IfcDimensionalExponents25LuminousIntensityExponentEv"></span><span id="Ifc4x1::IfcDimensionalExponents::LuminousIntensityExponentC"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1a817a2fb450a86b9d995e4c1bb93e669a"></span>int <code class="sig-name descname">LuminousIntensityExponent</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x123IfcDimensionalExponents25LuminousIntensityExponentEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The power of the luminous intensity base quantity. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x123IfcDimensionalExponents28setLuminousIntensityExponentEi">
+<span id="_CPPv3N6Ifc4x123IfcDimensionalExponents28setLuminousIntensityExponentEi"></span><span id="_CPPv2N6Ifc4x123IfcDimensionalExponents28setLuminousIntensityExponentEi"></span><span id="Ifc4x1::IfcDimensionalExponents::setLuminousIntensityExponent__i"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1a84e94d8a206580c390fa114a5912bec1"></span>void <code class="sig-name descname">setLuminousIntensityExponent</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x123IfcDimensionalExponents28setLuminousIntensityExponentEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x123IfcDimensionalExponents11declarationEv">
+<span id="_CPPv3NK6Ifc4x123IfcDimensionalExponents11declarationEv"></span><span id="_CPPv2NK6Ifc4x123IfcDimensionalExponents11declarationEv"></span><span id="Ifc4x1::IfcDimensionalExponents::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1a42bcc78adccf14af32daecef1ac786ba"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x123IfcDimensionalExponents11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x123IfcDimensionalExponents23IfcDimensionalExponentsEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x123IfcDimensionalExponents23IfcDimensionalExponentsEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x123IfcDimensionalExponents23IfcDimensionalExponentsEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcDimensionalExponents::IfcDimensionalExponents__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1a2b7ff15294ebca8b161ba25926dd5676"></span><code class="sig-name descname">IfcDimensionalExponents</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x123IfcDimensionalExponents23IfcDimensionalExponentsEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x123IfcDimensionalExponents23IfcDimensionalExponentsEiiiiiii">
+<span id="_CPPv3N6Ifc4x123IfcDimensionalExponents23IfcDimensionalExponentsEiiiiiii"></span><span id="_CPPv2N6Ifc4x123IfcDimensionalExponents23IfcDimensionalExponentsEiiiiiii"></span><span id="Ifc4x1::IfcDimensionalExponents::IfcDimensionalExponents__i.i.i.i.i.i.i"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1afd806c151660eda6868155bdde92f142"></span><code class="sig-name descname">IfcDimensionalExponents</code><span class="sig-paren">(</span>int <em>v1_LengthExponent</em>, int <em>v2_MassExponent</em>, int <em>v3_TimeExponent</em>, int <em>v4_ElectricCurrentExponent</em>, int <em>v5_ThermodynamicTemperatureExponent</em>, int <em>v6_AmountOfSubstanceExponent</em>, int <em>v7_LuminousIntensityExponent</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x123IfcDimensionalExponents23IfcDimensionalExponentsEiiiiiii" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x123IfcDimensionalExponents5ClassEv">
+<span id="_CPPv3N6Ifc4x123IfcDimensionalExponents5ClassEv"></span><span id="_CPPv2N6Ifc4x123IfcDimensionalExponents5ClassEv"></span><span id="Ifc4x1::IfcDimensionalExponents::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_dimensional_exponents_1abe2165d690c1f99eaa88349fa92db044"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x123IfcDimensionalExponents5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_descriptive_measure.html" title="previous chapter">Class Ifc4x1::IfcDescriptiveMeasure</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_dimension_count.html" title="next chapter">Class Ifc4x1::IfcDimensionCount</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_dimensional_exponents.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

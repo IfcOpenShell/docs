@@ -1,0 +1,31 @@
+.. _exhale_class_class_ifc4x2_1_1_ifc_draughting_pre_defined_curve_font:
+
+Class Ifc4x2::IfcDraughtingPreDefinedCurveFont
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x2`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x2::IfcPreDefinedCurveFont`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_pre_defined_curve_font`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x2::IfcDraughtingPreDefinedCurveFont
+   :members:
+   :protected-members:
+   :undoc-members:

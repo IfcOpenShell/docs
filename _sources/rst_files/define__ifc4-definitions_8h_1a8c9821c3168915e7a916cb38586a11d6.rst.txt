@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a8c9821c3168915e7a916cb38586a11d6:
+
+Define SCHEMA_IfcApproval_HAS_GivingApproval
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcApproval_HAS_GivingApproval

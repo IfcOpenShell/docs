@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1aaffc97ba83ac9b360ced76bdf42a0c6d:
+
+Define SCHEMA_IfcBSplineSurfaceWithKnots_HAS_VMultiplicities
+============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBSplineSurfaceWithKnots_HAS_VMultiplicities

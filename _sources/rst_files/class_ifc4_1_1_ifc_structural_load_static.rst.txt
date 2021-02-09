@@ -1,0 +1,41 @@
+.. _exhale_class_class_ifc4_1_1_ifc_structural_load_static:
+
+Class Ifc4::IfcStructuralLoadStatic
+===================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4::IfcStructuralLoadOrResult`` (:ref:`exhale_class_class_ifc4_1_1_ifc_structural_load_or_result`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4::IfcStructuralLoadLinearForce`` (:ref:`exhale_class_class_ifc4_1_1_ifc_structural_load_linear_force`)
+- ``public Ifc4::IfcStructuralLoadPlanarForce`` (:ref:`exhale_class_class_ifc4_1_1_ifc_structural_load_planar_force`)
+- ``public Ifc4::IfcStructuralLoadSingleDisplacement`` (:ref:`exhale_class_class_ifc4_1_1_ifc_structural_load_single_displacement`)
+- ``public Ifc4::IfcStructuralLoadSingleForce`` (:ref:`exhale_class_class_ifc4_1_1_ifc_structural_load_single_force`)
+- ``public Ifc4::IfcStructuralLoadTemperature`` (:ref:`exhale_class_class_ifc4_1_1_ifc_structural_load_temperature`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4::IfcStructuralLoadStatic
+   :members:
+   :protected-members:
+   :undoc-members:

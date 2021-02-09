@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a7ab3d391c3df972061d19c2410c776aa:
+
+Define SCHEMA_IfcPostalAddress_Region_IS_OPTIONAL
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPostalAddress_Region_IS_OPTIONAL

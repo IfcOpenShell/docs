@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Struct Ifc4::IfcRampTypeEnum &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct Ifc4::IfcRecurrenceTypeEnum" href="struct_ifc4_1_1_ifc_recurrence_type_enum.html" />
+    <link rel="prev" title="Struct Ifc4::IfcRampFlightTypeEnum" href="struct_ifc4_1_1_ifc_ramp_flight_type_enum.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="struct-ifc4-ifcramptypeenum">
+<span id="exhale-struct-struct-ifc4-1-1-ifc-ramp-type-enum"></span><h1>Struct Ifc4::IfcRampTypeEnum<a class="headerlink" href="#struct-ifc4-ifcramptypeenum" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This struct is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp struct">
+<dt id="_CPPv4N4Ifc415IfcRampTypeEnumE">
+<span id="_CPPv3N4Ifc415IfcRampTypeEnumE"></span><span id="_CPPv2N4Ifc415IfcRampTypeEnumE"></span><span id="Ifc4::IfcRampTypeEnum"></span><span class="target" id="struct_ifc4_1_1_ifc_ramp_type_enum"></span><em class="property">struct </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcRampTypeEnum</code><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp enum">
+<dt id="_CPPv4N4Ifc415IfcRampTypeEnum5ValueE">
+<span id="_CPPv3N4Ifc415IfcRampTypeEnum5ValueE"></span><span id="_CPPv2N4Ifc415IfcRampTypeEnum5ValueE"></span><span class="target" id="struct_ifc4_1_1_ifc_ramp_type_enum_1a82770912573c4d5669868c059394e531"></span><em class="property">enum </em><code class="sig-name descname">Value</code><br /></dt>
+<dd><p>This enumeration defines the basic configuration of the ramp type in terms of the number and shape of ramp flights, as shown in Figure 67. The type also distinguished turns by landings. In addition the subdivision of the straight and changing direction ramps is included. The ramp configurations are given for ramps without and with one and two landings.</p>
+<p>Ramps which are subdivided into more than two landings have to be defined by the geometry only. Also ramps with non-regular shapes have to be defined by the geometry only. The type of such ramps is USERDEFINED.</p>
+<p>HISTORY New Enumeration in IFC Release 2.0.</p>
+<p>Enumerator Description Figure</p>
+<p>StraightRunRamp A ramp - which is a sloping floor, walk, or roadway - connecting two levels. The straight ramp consists of one straight flight without turns or winders. </p>
+<p>TwoStraightRunRamp A straight ramp consisting of two straight flights without turns but with one landing.</p>
+<p>QuarterTurnRamp A ramp making a 90° turn, consisting of two straight flights connected by a quarterspace landing. The direction of the turn is determined by the walking line.</p>
+<p>TwoQuarterTurnRamp A ramp making a 180° turn, consisting of three straight flights connected by two quarterspace landings. The direction of the turn is determined by the walking line.</p>
+<p>HalfTurnRamp A ramp making a 180° turn, consisting of two straight flights connected by a halfspace landing. The orientation of the turn is determined by the walking line.</p>
+<p>SpiralRamp A ramp constructed around a circular or elliptical well without newels and landings.</p>
+<p>UserDefined Free form ramp (user defined operation type) </p>
+<p>NotDefined  </p>
+<p>Figure 67 — Ramp types </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcRampTypeEnum5Value29IfcRampType_STRAIGHT_RUN_RAMPE">
+<span id="_CPPv3N4Ifc415IfcRampTypeEnum5Value29IfcRampType_STRAIGHT_RUN_RAMPE"></span><span id="_CPPv2N4Ifc415IfcRampTypeEnum5Value29IfcRampType_STRAIGHT_RUN_RAMPE"></span><span class="target" id="struct_ifc4_1_1_ifc_ramp_type_enum_1a82770912573c4d5669868c059394e531ae0c8bf9bc7dc1a590bf9f834f25a6f61"></span><em class="property">enumerator </em><code class="sig-name descname">IfcRampType_STRAIGHT_RUN_RAMP</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcRampTypeEnum5Value33IfcRampType_TWO_STRAIGHT_RUN_RAMPE">
+<span id="_CPPv3N4Ifc415IfcRampTypeEnum5Value33IfcRampType_TWO_STRAIGHT_RUN_RAMPE"></span><span id="_CPPv2N4Ifc415IfcRampTypeEnum5Value33IfcRampType_TWO_STRAIGHT_RUN_RAMPE"></span><span class="target" id="struct_ifc4_1_1_ifc_ramp_type_enum_1a82770912573c4d5669868c059394e531af79f2dcb5c9e40c1ccfbafef7bab573d"></span><em class="property">enumerator </em><code class="sig-name descname">IfcRampType_TWO_STRAIGHT_RUN_RAMP</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcRampTypeEnum5Value29IfcRampType_QUARTER_TURN_RAMPE">
+<span id="_CPPv3N4Ifc415IfcRampTypeEnum5Value29IfcRampType_QUARTER_TURN_RAMPE"></span><span id="_CPPv2N4Ifc415IfcRampTypeEnum5Value29IfcRampType_QUARTER_TURN_RAMPE"></span><span class="target" id="struct_ifc4_1_1_ifc_ramp_type_enum_1a82770912573c4d5669868c059394e531a6f080c63c20fcf84d0d67794e15bf62a"></span><em class="property">enumerator </em><code class="sig-name descname">IfcRampType_QUARTER_TURN_RAMP</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcRampTypeEnum5Value33IfcRampType_TWO_QUARTER_TURN_RAMPE">
+<span id="_CPPv3N4Ifc415IfcRampTypeEnum5Value33IfcRampType_TWO_QUARTER_TURN_RAMPE"></span><span id="_CPPv2N4Ifc415IfcRampTypeEnum5Value33IfcRampType_TWO_QUARTER_TURN_RAMPE"></span><span class="target" id="struct_ifc4_1_1_ifc_ramp_type_enum_1a82770912573c4d5669868c059394e531aaebcb798c434374a3b15f7b7f991d94a"></span><em class="property">enumerator </em><code class="sig-name descname">IfcRampType_TWO_QUARTER_TURN_RAMP</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcRampTypeEnum5Value26IfcRampType_HALF_TURN_RAMPE">
+<span id="_CPPv3N4Ifc415IfcRampTypeEnum5Value26IfcRampType_HALF_TURN_RAMPE"></span><span id="_CPPv2N4Ifc415IfcRampTypeEnum5Value26IfcRampType_HALF_TURN_RAMPE"></span><span class="target" id="struct_ifc4_1_1_ifc_ramp_type_enum_1a82770912573c4d5669868c059394e531a66dadf004acbf9a2293120edf5351b6f"></span><em class="property">enumerator </em><code class="sig-name descname">IfcRampType_HALF_TURN_RAMP</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcRampTypeEnum5Value23IfcRampType_SPIRAL_RAMPE">
+<span id="_CPPv3N4Ifc415IfcRampTypeEnum5Value23IfcRampType_SPIRAL_RAMPE"></span><span id="_CPPv2N4Ifc415IfcRampTypeEnum5Value23IfcRampType_SPIRAL_RAMPE"></span><span class="target" id="struct_ifc4_1_1_ifc_ramp_type_enum_1a82770912573c4d5669868c059394e531a32192880455dc3cc705422fbf3829f3b"></span><em class="property">enumerator </em><code class="sig-name descname">IfcRampType_SPIRAL_RAMP</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcRampTypeEnum5Value23IfcRampType_USERDEFINEDE">
+<span id="_CPPv3N4Ifc415IfcRampTypeEnum5Value23IfcRampType_USERDEFINEDE"></span><span id="_CPPv2N4Ifc415IfcRampTypeEnum5Value23IfcRampType_USERDEFINEDE"></span><span class="target" id="struct_ifc4_1_1_ifc_ramp_type_enum_1a82770912573c4d5669868c059394e531afe2fae6e67712fdeadec8f472043c433"></span><em class="property">enumerator </em><code class="sig-name descname">IfcRampType_USERDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcRampTypeEnum5Value22IfcRampType_NOTDEFINEDE">
+<span id="_CPPv3N4Ifc415IfcRampTypeEnum5Value22IfcRampType_NOTDEFINEDE"></span><span id="_CPPv2N4Ifc415IfcRampTypeEnum5Value22IfcRampType_NOTDEFINEDE"></span><span class="target" id="struct_ifc4_1_1_ifc_ramp_type_enum_1a82770912573c4d5669868c059394e531a85b2bf8316109964c3e3653d79137d40"></span><em class="property">enumerator </em><code class="sig-name descname">IfcRampType_NOTDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc415IfcRampTypeEnum8ToStringE5Value">
+<span id="_CPPv3N4Ifc415IfcRampTypeEnum8ToStringE5Value"></span><span id="_CPPv2N4Ifc415IfcRampTypeEnum8ToStringE5Value"></span><span id="Ifc4::IfcRampTypeEnum::ToString__Value"></span><span class="target" id="struct_ifc4_1_1_ifc_ramp_type_enum_1a91b51e9433f87d83db3c5a3003b35247"></span>IFC_PARSE_API <em class="property">const</em> char *<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc415IfcRampTypeEnum5ValueE" title="Ifc4::IfcRampTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc415IfcRampTypeEnum10FromStringERKNSt6stringE">
+<span id="_CPPv3N4Ifc415IfcRampTypeEnum10FromStringERKNSt6stringE"></span><span id="_CPPv2N4Ifc415IfcRampTypeEnum10FromStringERKNSt6stringE"></span><span id="Ifc4::IfcRampTypeEnum::FromString__ssCR"></span><span class="target" id="struct_ifc4_1_1_ifc_ramp_type_enum_1aa58fa32e540b30d8aa41a623e1785809"></span>IFC_PARSE_API <a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc415IfcRampTypeEnum5ValueE" title="Ifc4::IfcRampTypeEnum::Value">Value</a> <code class="sig-name descname">FromString</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>s</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="struct_ifc4_1_1_ifc_ramp_flight_type_enum.html" title="previous chapter">Struct Ifc4::IfcRampFlightTypeEnum</a></li>
+      <li>Next: <a href="struct_ifc4_1_1_ifc_recurrence_type_enum.html" title="next chapter">Struct Ifc4::IfcRecurrenceTypeEnum</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/struct_ifc4_1_1_ifc_ramp_type_enum.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

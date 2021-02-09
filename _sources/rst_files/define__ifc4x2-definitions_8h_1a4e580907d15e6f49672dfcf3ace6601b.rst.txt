@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a4e580907d15e6f49672dfcf3ace6601b:
+
+Define SCHEMA_HAS_IfcMechanicalFastener
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcMechanicalFastener

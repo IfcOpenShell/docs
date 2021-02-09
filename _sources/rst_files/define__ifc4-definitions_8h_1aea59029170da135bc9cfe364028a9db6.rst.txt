@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1aea59029170da135bc9cfe364028a9db6:
+
+Define SCHEMA_IfcElementAssemblyType_HAS_PredefinedType
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcElementAssemblyType_HAS_PredefinedType

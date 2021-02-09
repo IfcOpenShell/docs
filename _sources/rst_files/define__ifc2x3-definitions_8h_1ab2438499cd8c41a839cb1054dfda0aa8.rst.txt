@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ab2438499cd8c41a839cb1054dfda0aa8:
+
+Define SCHEMA_IfcOwnerHistory_HAS_LastModifyingApplication
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcOwnerHistory_HAS_LastModifyingApplication

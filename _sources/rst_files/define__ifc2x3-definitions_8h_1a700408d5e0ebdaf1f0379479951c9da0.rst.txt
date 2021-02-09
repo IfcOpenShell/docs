@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a700408d5e0ebdaf1f0379479951c9da0:
+
+Define SCHEMA_IfcStructuralAnalysisModel_HAS_HasResults
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralAnalysisModel_HAS_HasResults

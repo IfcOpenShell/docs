@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a6d53ee7c5a038be161bb86f919bd4d90:
+
+Define SCHEMA_IfcWindowType_HAS_PartitioningType
+================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcWindowType_HAS_PartitioningType

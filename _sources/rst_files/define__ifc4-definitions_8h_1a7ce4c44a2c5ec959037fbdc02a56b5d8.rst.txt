@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a7ce4c44a2c5ec959037fbdc02a56b5d8:
+
+Define SCHEMA_IfcMechanicalFastenerType_HAS_NominalDiameter
+===========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMechanicalFastenerType_HAS_NominalDiameter

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a5da01440013c78fcc2d70250eceb6793:
+
+Define SCHEMA_IfcGeometricRepresentationContext_HAS_HasCoordinateOperation
+==========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcGeometricRepresentationContext_HAS_HasCoordinateOperation

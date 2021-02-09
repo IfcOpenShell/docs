@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcFixedReferenceSweptAreaSolid &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcFlowController" href="class_ifc4x2_1_1_ifc_flow_controller.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcFireSuppressionTerminalType" href="class_ifc4x2_1_1_ifc_fire_suppression_terminal_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcfixedreferencesweptareasolid">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-fixed-reference-swept-area-solid"></span><h1>Class Ifc4x2::IfcFixedReferenceSweptAreaSolid<a class="headerlink" href="#class-ifc4x2-ifcfixedreferencesweptareasolid" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcSweptAreaSolid</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_swept_area_solid.html#exhale-class-class-ifc4x2-1-1-ifc-swept-area-solid"><span class="std std-ref">Class Ifc4x2::IfcSweptAreaSolid</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolidE">
+<span id="_CPPv3N6Ifc4x231IfcFixedReferenceSweptAreaSolidE"></span><span id="_CPPv2N6Ifc4x231IfcFixedReferenceSweptAreaSolidE"></span><span id="Ifc4x2::IfcFixedReferenceSweptAreaSolid"></span><span class="target" id="class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcFixedReferenceSweptAreaSolid</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_swept_area_solid.html#_CPPv4N6Ifc4x217IfcSweptAreaSolidE" title="Ifc4x2::IfcSweptAreaSolid">IfcSweptAreaSolid</a><a class="headerlink" href="#_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolidE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A fixed reference swept area solid is a type of swept area solid which is the result of sweeping a surface along a Directrix. The orientation of the curve during the sweeping operation is controlled by the FixedReference direction. The SweptArea is required to be a curve bounded surface lying in the plane z = 0 and this is swept along the Directrix in such a way that the origin of the local coordinate system used to define the SweptArea is on the Directrix and the local X axis is in the direction of the projection of FixedReference onto the normal plane to the directrix at this point. The resulting solid has the property that the cross section of the surface by the normal plane to the Directrix at any point is a copy of the SweptArea.</p>
+<p>NOTE The swept face is given by <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_profile_def"><span class="std std-ref">IfcProfileDef</span></a> (or subtypes), the profile definition is given within a 2D coordinate system, which is inserted into the XY plane of the Position coordinate system inherited from the supertype <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_swept_area_solid"><span class="std std-ref">IfcSweptAreaSolid</span></a>.</p>
+<p>The orientation of the SweptArea as it sweeps along the Directrix is precisely defined by a CartesianTransformationOperator3d with attributes:</p>
+<p>LocalOrigin as point (0; 0; 0), Axis1 as the FixedReference. Axis3 as the direction of the tangent vector t at the point of the Directrix with parameter u.</p>
+<p>The remaining attributes are defaulted to define a corresponding transformation matrix T(u), which varies with the Directrix parameter u.</p>
+<p>NOTE The geometric shape of the solid is not dependent upon the curve parameterization; the volume depends upon the area swept and the length of the Directrix.</p>
+<p>The attributes of the Cartesian Transformation Operator (as shown above) should apply to the Position coordinate system, in which the profile is inserted. The Directrix and the FixedReference are positioned within the 3D Position coordinate system.</p>
+<p>NOTE The entity is defined in analogy to the ISO 10303-42 entity: fixed_reference_swept_surface. Please refer to ISO/DIS 10303-42:2003(E) p. 103.</p>
+<p>HISTORY New entity in IFC2x4.</p>
+<p>Informal propositions:</p>
+<p>The SweptArea shall lie in the plane z = 0. The FixedReference shall not be parallel to a tangent vector to the directrix at any point along this curve. The Directrix curve shall be tangent continuous. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolid4listE">
+<span id="_CPPv3N6Ifc4x231IfcFixedReferenceSweptAreaSolid4listE"></span><span id="_CPPv2N6Ifc4x231IfcFixedReferenceSweptAreaSolid4listE"></span><span id="Ifc4x2::IfcFixedReferenceSweptAreaSolid::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid_1aae066c49af4781b0dfcdb47a5a0a3880"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolidE" title="Ifc4x2::IfcFixedReferenceSweptAreaSolid">IfcFixedReferenceSweptAreaSolid</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolid4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x231IfcFixedReferenceSweptAreaSolid9DirectrixEv">
+<span id="_CPPv3NK6Ifc4x231IfcFixedReferenceSweptAreaSolid9DirectrixEv"></span><span id="_CPPv2NK6Ifc4x231IfcFixedReferenceSweptAreaSolid9DirectrixEv"></span><span id="Ifc4x2::IfcFixedReferenceSweptAreaSolid::DirectrixC"></span><span class="target" id="class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid_1a48f8bffc483bc43b709bbc162fa2d8c8"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_curve.html#_CPPv4N6Ifc4x28IfcCurveE" title="Ifc4x2::IfcCurve">IfcCurve</a> *<code class="sig-name descname">Directrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x231IfcFixedReferenceSweptAreaSolid9DirectrixEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The curve used to define the sweeping operation. The solid is generated by sweeping the SELF\IfcSweptAreaSolid.SweptArea along the Directrix. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolid12setDirectrixEPN6Ifc4x28IfcCurveE">
+<span id="_CPPv3N6Ifc4x231IfcFixedReferenceSweptAreaSolid12setDirectrixEPN6Ifc4x28IfcCurveE"></span><span id="_CPPv2N6Ifc4x231IfcFixedReferenceSweptAreaSolid12setDirectrixEPN6Ifc4x28IfcCurveE"></span><span id="Ifc4x2::IfcFixedReferenceSweptAreaSolid::setDirectrix__Ifc4x2::IfcCurveP"></span><span class="target" id="class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid_1a081e1d1ebb4fc09067e7f603038c4b51"></span>void <code class="sig-name descname">setDirectrix</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_curve.html#_CPPv4N6Ifc4x28IfcCurveE" title="Ifc4x2::IfcCurve">IfcCurve</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolid12setDirectrixEPN6Ifc4x28IfcCurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x231IfcFixedReferenceSweptAreaSolid13hasStartParamEv">
+<span id="_CPPv3NK6Ifc4x231IfcFixedReferenceSweptAreaSolid13hasStartParamEv"></span><span id="_CPPv2NK6Ifc4x231IfcFixedReferenceSweptAreaSolid13hasStartParamEv"></span><span id="Ifc4x2::IfcFixedReferenceSweptAreaSolid::hasStartParamC"></span><span class="target" id="class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid_1a1ca0c24a7aa2520500484488c14e834e"></span>bool <code class="sig-name descname">hasStartParam</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x231IfcFixedReferenceSweptAreaSolid13hasStartParamEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute StartParam is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid"><span class="std std-ref">IfcFixedReferenceSweptAreaSolid</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x231IfcFixedReferenceSweptAreaSolid10StartParamEv">
+<span id="_CPPv3NK6Ifc4x231IfcFixedReferenceSweptAreaSolid10StartParamEv"></span><span id="_CPPv2NK6Ifc4x231IfcFixedReferenceSweptAreaSolid10StartParamEv"></span><span id="Ifc4x2::IfcFixedReferenceSweptAreaSolid::StartParamC"></span><span class="target" id="class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid_1a7e0ed094e4ca030f0023c390c9672ae4"></span>double <code class="sig-name descname">StartParam</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x231IfcFixedReferenceSweptAreaSolid10StartParamEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The parameter value on the Directrix at which the sweeping operation commences. If no value is provided the start of the sweeping operation is at the start of the Directrix. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolid13setStartParamEd">
+<span id="_CPPv3N6Ifc4x231IfcFixedReferenceSweptAreaSolid13setStartParamEd"></span><span id="_CPPv2N6Ifc4x231IfcFixedReferenceSweptAreaSolid13setStartParamEd"></span><span id="Ifc4x2::IfcFixedReferenceSweptAreaSolid::setStartParam__double"></span><span class="target" id="class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid_1a07f34932f4dc6e9ff5db2216458ff23b"></span>void <code class="sig-name descname">setStartParam</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolid13setStartParamEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x231IfcFixedReferenceSweptAreaSolid11hasEndParamEv">
+<span id="_CPPv3NK6Ifc4x231IfcFixedReferenceSweptAreaSolid11hasEndParamEv"></span><span id="_CPPv2NK6Ifc4x231IfcFixedReferenceSweptAreaSolid11hasEndParamEv"></span><span id="Ifc4x2::IfcFixedReferenceSweptAreaSolid::hasEndParamC"></span><span class="target" id="class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid_1a3a1190ccdcb6cb20aff0567814579e87"></span>bool <code class="sig-name descname">hasEndParam</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x231IfcFixedReferenceSweptAreaSolid11hasEndParamEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute EndParam is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid"><span class="std std-ref">IfcFixedReferenceSweptAreaSolid</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x231IfcFixedReferenceSweptAreaSolid8EndParamEv">
+<span id="_CPPv3NK6Ifc4x231IfcFixedReferenceSweptAreaSolid8EndParamEv"></span><span id="_CPPv2NK6Ifc4x231IfcFixedReferenceSweptAreaSolid8EndParamEv"></span><span id="Ifc4x2::IfcFixedReferenceSweptAreaSolid::EndParamC"></span><span class="target" id="class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid_1adbdc0153e160f40d4e6fd9335d62397d"></span>double <code class="sig-name descname">EndParam</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x231IfcFixedReferenceSweptAreaSolid8EndParamEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The parameter value on the Directrix at which the sweeping operation ends. If no value is provided the end of the sweeping operation is at the end of the Directrix. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolid11setEndParamEd">
+<span id="_CPPv3N6Ifc4x231IfcFixedReferenceSweptAreaSolid11setEndParamEd"></span><span id="_CPPv2N6Ifc4x231IfcFixedReferenceSweptAreaSolid11setEndParamEd"></span><span id="Ifc4x2::IfcFixedReferenceSweptAreaSolid::setEndParam__double"></span><span class="target" id="class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid_1a0d018836361fd63772c4f40a66178d88"></span>void <code class="sig-name descname">setEndParam</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolid11setEndParamEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x231IfcFixedReferenceSweptAreaSolid14FixedReferenceEv">
+<span id="_CPPv3NK6Ifc4x231IfcFixedReferenceSweptAreaSolid14FixedReferenceEv"></span><span id="_CPPv2NK6Ifc4x231IfcFixedReferenceSweptAreaSolid14FixedReferenceEv"></span><span id="Ifc4x2::IfcFixedReferenceSweptAreaSolid::FixedReferenceC"></span><span class="target" id="class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid_1a32e502565da3b327763ff31b4c950760"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_direction.html#_CPPv4N6Ifc4x212IfcDirectionE" title="Ifc4x2::IfcDirection">IfcDirection</a> *<code class="sig-name descname">FixedReference</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x231IfcFixedReferenceSweptAreaSolid14FixedReferenceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The direction providing the fixed axis1 (x-axis) direction for orienting the swept area during the sweeping operation along the Directrix. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolid17setFixedReferenceEPN6Ifc4x212IfcDirectionE">
+<span id="_CPPv3N6Ifc4x231IfcFixedReferenceSweptAreaSolid17setFixedReferenceEPN6Ifc4x212IfcDirectionE"></span><span id="_CPPv2N6Ifc4x231IfcFixedReferenceSweptAreaSolid17setFixedReferenceEPN6Ifc4x212IfcDirectionE"></span><span id="Ifc4x2::IfcFixedReferenceSweptAreaSolid::setFixedReference__Ifc4x2::IfcDirectionP"></span><span class="target" id="class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid_1a8c9261841307db4b2da609a6d53d1026"></span>void <code class="sig-name descname">setFixedReference</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_direction.html#_CPPv4N6Ifc4x212IfcDirectionE" title="Ifc4x2::IfcDirection">IfcDirection</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolid17setFixedReferenceEPN6Ifc4x212IfcDirectionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x231IfcFixedReferenceSweptAreaSolid11declarationEv">
+<span id="_CPPv3NK6Ifc4x231IfcFixedReferenceSweptAreaSolid11declarationEv"></span><span id="_CPPv2NK6Ifc4x231IfcFixedReferenceSweptAreaSolid11declarationEv"></span><span id="Ifc4x2::IfcFixedReferenceSweptAreaSolid::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid_1a5a561a32c73b9568b2ce0190f1ebd9c0"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x231IfcFixedReferenceSweptAreaSolid11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolid31IfcFixedReferenceSweptAreaSolidEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x231IfcFixedReferenceSweptAreaSolid31IfcFixedReferenceSweptAreaSolidEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x231IfcFixedReferenceSweptAreaSolid31IfcFixedReferenceSweptAreaSolidEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcFixedReferenceSweptAreaSolid::IfcFixedReferenceSweptAreaSolid__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid_1ab9d2eb11f576240d1eed1555efcc216b"></span><code class="sig-name descname">IfcFixedReferenceSweptAreaSolid</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolid31IfcFixedReferenceSweptAreaSolidEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolid31IfcFixedReferenceSweptAreaSolidEPN6Ifc4x213IfcProfileDefEPN6Ifc4x219IfcAxis2Placement3DEPN6Ifc4x28IfcCurveEN5boost8optionalIdEEN5boost8optionalIdEEPN6Ifc4x212IfcDirectionE">
+<span id="_CPPv3N6Ifc4x231IfcFixedReferenceSweptAreaSolid31IfcFixedReferenceSweptAreaSolidEPN6Ifc4x213IfcProfileDefEPN6Ifc4x219IfcAxis2Placement3DEPN6Ifc4x28IfcCurveEN5boost8optionalIdEEN5boost8optionalIdEEPN6Ifc4x212IfcDirectionE"></span><span id="_CPPv2N6Ifc4x231IfcFixedReferenceSweptAreaSolid31IfcFixedReferenceSweptAreaSolidEPN6Ifc4x213IfcProfileDefEPN6Ifc4x219IfcAxis2Placement3DEPN6Ifc4x28IfcCurveEN5boost8optionalIdEEN5boost8optionalIdEEPN6Ifc4x212IfcDirectionE"></span><span id="Ifc4x2::IfcFixedReferenceSweptAreaSolid::IfcFixedReferenceSweptAreaSolid__Ifc4x2::IfcProfileDefP.Ifc4x2::IfcAxis2Placement3DP.Ifc4x2::IfcCurveP.boost::optional:double:.boost::optional:double:.Ifc4x2::IfcDirectionP"></span><span class="target" id="class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid_1a62bd0a9f41ef9c8c1b032fd1439095a3"></span><code class="sig-name descname">IfcFixedReferenceSweptAreaSolid</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_profile_def.html#_CPPv4N6Ifc4x213IfcProfileDefE" title="Ifc4x2::IfcProfileDef">IfcProfileDef</a> *<em>v1_SweptArea</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_axis2_placement3_d.html#_CPPv4N6Ifc4x219IfcAxis2Placement3DE" title="Ifc4x2::IfcAxis2Placement3D">IfcAxis2Placement3D</a> *<em>v2_Position</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_curve.html#_CPPv4N6Ifc4x28IfcCurveE" title="Ifc4x2::IfcCurve">IfcCurve</a> *<em>v3_Directrix</em>, boost::optional&lt;double&gt; <em>v4_StartParam</em>, boost::optional&lt;double&gt; <em>v5_EndParam</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_direction.html#_CPPv4N6Ifc4x212IfcDirectionE" title="Ifc4x2::IfcDirection">IfcDirection</a> *<em>v6_FixedReference</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolid31IfcFixedReferenceSweptAreaSolidEPN6Ifc4x213IfcProfileDefEPN6Ifc4x219IfcAxis2Placement3DEPN6Ifc4x28IfcCurveEN5boost8optionalIdEEN5boost8optionalIdEEPN6Ifc4x212IfcDirectionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolid5ClassEv">
+<span id="_CPPv3N6Ifc4x231IfcFixedReferenceSweptAreaSolid5ClassEv"></span><span id="_CPPv2N6Ifc4x231IfcFixedReferenceSweptAreaSolid5ClassEv"></span><span id="Ifc4x2::IfcFixedReferenceSweptAreaSolid::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid_1a6d811fe6a6f5ce6f22fb58e55dee07ee"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x231IfcFixedReferenceSweptAreaSolid5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_fire_suppression_terminal_type.html" title="previous chapter">Class Ifc4x2::IfcFireSuppressionTerminalType</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_flow_controller.html" title="next chapter">Class Ifc4x2::IfcFlowController</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

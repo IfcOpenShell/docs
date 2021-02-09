@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1af5a253ce3eae44879ba0709cc8d9ad46:
+
+Define SCHEMA_IfcPerson_HAS_Roles
+=================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPerson_HAS_Roles

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a8ebe422f649c726511cf262ee4834ca8:
+
+Define SCHEMA_IfcAsset_CurrentValue_IS_OPTIONAL
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcAsset_CurrentValue_IS_OPTIONAL

@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcSlabElementedCase &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcSlabStandardCase" href="class_ifc4x2_1_1_ifc_slab_standard_case.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcSlab" href="class_ifc4x2_1_1_ifc_slab.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcslabelementedcase">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-slab-elemented-case"></span><h1>Class Ifc4x2::IfcSlabElementedCase<a class="headerlink" href="#class-ifc4x2-ifcslabelementedcase" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcSlab</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_slab.html#exhale-class-class-ifc4x2-1-1-ifc-slab"><span class="std std-ref">Class Ifc4x2::IfcSlab</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x220IfcSlabElementedCaseE">
+<span id="_CPPv3N6Ifc4x220IfcSlabElementedCaseE"></span><span id="_CPPv2N6Ifc4x220IfcSlabElementedCaseE"></span><span id="Ifc4x2::IfcSlabElementedCase"></span><span class="target" id="class_ifc4x2_1_1_ifc_slab_elemented_case"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcSlabElementedCase</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_slab.html#_CPPv4N6Ifc4x27IfcSlabE" title="Ifc4x2::IfcSlab">IfcSlab</a><a class="headerlink" href="#_CPPv4N6Ifc4x220IfcSlabElementedCaseE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_slab_elemented_case"><span class="std std-ref">IfcSlabElementedCase</span></a> defines a slab with certain constraints for the provision of its components. The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_slab_elemented_case"><span class="std std-ref">IfcSlabElementedCase</span></a> handles all cases of slabs, that are decomposed into parts:</p>
+<p>having components being assigned to the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_slab_elemented_case"><span class="std std-ref">IfcSlabElementedCase</span></a> using the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_aggregates"><span class="std std-ref">IfcRelAggregates</span></a> relationship accessible by the inverse relationship IsDecomposedBy. applying the constraint that the parts within the decomposition shall be of type <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a>, <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member"><span class="std std-ref">IfcMember</span></a>, <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a>, <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_building_element_part"><span class="std std-ref">IfcBuildingElementPart</span></a> or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_building_element_proxy"><span class="std std-ref">IfcBuildingElementProxy</span></a>.</p>
+<p>HISTORY New entity in IFC2x4. Property Set Use Definition: The property sets relating to the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_slab_elemented_case"><span class="std std-ref">IfcSlabElementedCase</span></a> are defined at the supertype <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_slab"><span class="std std-ref">IfcSlab</span></a>. NOTE The parts within the decomposition relationship may define their own property sets. Quantity Use Definition: The quantities relating to the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_slab_elemented_case"><span class="std std-ref">IfcSlabElementedCase</span></a> are defined at the supertype <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_slab"><span class="std std-ref">IfcSlab</span></a>. NOTE The parts within the decomposition relationship may define their own individual quantities.</p>
+<p>Voiding Use Definition:</p>
+<p>As shown in Figure 122, openings within the composite slab are directly assigned to <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_slab_elemented_case"><span class="std std-ref">IfcSlabElementedCase</span></a> using <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_voids_element"><span class="std std-ref">IfcRelVoidsElement</span></a> pointing to <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_opening_element"><span class="std std-ref">IfcOpeningElement</span></a> and apply to all aggregated parts. If individual parts have cutting and other voiding features, then the decomposed parts have a separate voiding relationship <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_voids_element"><span class="std std-ref">IfcRelVoidsElement</span></a> pointing to <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_voiding_feature"><span class="std std-ref">IfcVoidingFeature</span></a>.</p>
+<p>Figure 122 — Slab elemented voiding</p>
+<p>Decomposition Use Definition: The following guidance is provided for the components of the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_slab_elemented_case"><span class="std std-ref">IfcSlabElementedCase</span></a>. The following component entity types should be used:</p>
+<p>Precast hollow core slabs</p>
+<p>double tee or plank components : <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_beam"><span class="std std-ref">IfcBeam</span></a> topping : <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_building_element_part"><span class="std std-ref">IfcBuildingElementPart</span></a> others : <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_building_element_part"><span class="std std-ref">IfcBuildingElementPart</span></a></p>
+<p>Geometry Use Definitions: The geometric representation of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_slab_elemented_case"><span class="std std-ref">IfcSlabElementedCase</span></a> is given by the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a>, allowing multiple geometric representation. Included are: Local Placement The use of local placement is defined at the supertype <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_slab"><span class="std std-ref">IfcSlab</span></a>. The local placement of the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_slab_elemented_case"><span class="std std-ref">IfcSlabElementedCase</span></a> defines the parent coordinate systems for the parts within the decomposition. All parts shall be positioned relative to the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_slab_elemented_case"><span class="std std-ref">IfcSlabElementedCase</span></a>. Geometric Representation The standard geometric representation of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_slab_elemented_case"><span class="std std-ref">IfcSlabElementedCase</span></a> is defined using the following multiple shape representations for its definition:</p>
+<p>Surface: A three-dimensional surface being a subtype of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_bounded_surface"><span class="std std-ref">IfcBoundedSurface</span></a> defining the reference surface for the elemented slab. It maybe used as a simplified representation directly at the elemented slab.</p>
+<p>NOTE It is invalid to exhange a ‘Body’ shape representation of an <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_slab_elemented_case"><span class="std std-ref">IfcSlabElementedCase</span></a>. The body geometry is defined by the parts within the decomposition. Surface Representation The surfacic geometric representation of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_slab_elemented_case"><span class="std std-ref">IfcSlabElementedCase</span></a> is defined using the ‘Surface’ representation.</p>
+<p>RepresentationIdentifier : ‘Surface’ RepresentationType : ‘Surface3D’</p>
+<p>NOTE The ‘Surface’ can be used to define a surfacic model of the building (e.g. for analytical purposes, or for reduced Level of Detail representation). It should suppress the geometric details of the parts in the decomposition. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x220IfcSlabElementedCase4listE">
+<span id="_CPPv3N6Ifc4x220IfcSlabElementedCase4listE"></span><span id="_CPPv2N6Ifc4x220IfcSlabElementedCase4listE"></span><span id="Ifc4x2::IfcSlabElementedCase::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_slab_elemented_case_1a4bbd998ca24fdbf590e5de7ca7a4d07d"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x220IfcSlabElementedCaseE" title="Ifc4x2::IfcSlabElementedCase">IfcSlabElementedCase</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x220IfcSlabElementedCase4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x220IfcSlabElementedCase11declarationEv">
+<span id="_CPPv3NK6Ifc4x220IfcSlabElementedCase11declarationEv"></span><span id="_CPPv2NK6Ifc4x220IfcSlabElementedCase11declarationEv"></span><span id="Ifc4x2::IfcSlabElementedCase::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_slab_elemented_case_1a730feb3b8a8722f3d4c11c3eb2ccce80"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x220IfcSlabElementedCase11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x220IfcSlabElementedCase20IfcSlabElementedCaseEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x220IfcSlabElementedCase20IfcSlabElementedCaseEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x220IfcSlabElementedCase20IfcSlabElementedCaseEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcSlabElementedCase::IfcSlabElementedCase__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_slab_elemented_case_1a4f0b79cd7d6c24815c61b159723b8149"></span><code class="sig-name descname">IfcSlabElementedCase</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x220IfcSlabElementedCase20IfcSlabElementedCaseEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x220IfcSlabElementedCase20IfcSlabElementedCaseENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x218IfcObjectPlacementEPN6Ifc4x224IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x215IfcSlabTypeEnum5ValueEEE">
+<span id="_CPPv3N6Ifc4x220IfcSlabElementedCase20IfcSlabElementedCaseENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x218IfcObjectPlacementEPN6Ifc4x224IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x215IfcSlabTypeEnum5ValueEEE"></span><span id="_CPPv2N6Ifc4x220IfcSlabElementedCase20IfcSlabElementedCaseENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x218IfcObjectPlacementEPN6Ifc4x224IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x215IfcSlabTypeEnum5ValueEEE"></span><span id="Ifc4x2::IfcSlabElementedCase::IfcSlabElementedCase__ss.Ifc4x2::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4x2::IfcObjectPlacementP.Ifc4x2::IfcProductRepresentationP.boost::optional:ss:.boost::optional:Ifc4x2::IfcSlabTypeEnum::Value:"></span><span class="target" id="class_ifc4x2_1_1_ifc_slab_elemented_case_1a31f6fd3019e65425aaf491896a225c1d"></span><code class="sig-name descname">IfcSlabElementedCase</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_owner_history.html#_CPPv4N6Ifc4x215IfcOwnerHistoryE" title="Ifc4x2::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_object_placement.html#_CPPv4N6Ifc4x218IfcObjectPlacementE" title="Ifc4x2::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_product_representation.html#_CPPv4N6Ifc4x224IfcProductRepresentationE" title="Ifc4x2::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, boost::optional&lt;std::string&gt; <em>v8_Tag</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x215IfcSlabTypeEnumE" title="Ifc4x2::IfcSlabTypeEnum">IfcSlabTypeEnum</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x215IfcSlabTypeEnum5ValueE" title="Ifc4x2::IfcSlabTypeEnum::Value">Value</a>&gt; <em>v9_PredefinedType</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x220IfcSlabElementedCase20IfcSlabElementedCaseENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x218IfcObjectPlacementEPN6Ifc4x224IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x215IfcSlabTypeEnum5ValueEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x220IfcSlabElementedCase5ClassEv">
+<span id="_CPPv3N6Ifc4x220IfcSlabElementedCase5ClassEv"></span><span id="_CPPv2N6Ifc4x220IfcSlabElementedCase5ClassEv"></span><span id="Ifc4x2::IfcSlabElementedCase::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_slab_elemented_case_1a01c8a2cba50aa3d035f284bfcde65e59"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x220IfcSlabElementedCase5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_slab.html" title="previous chapter">Class Ifc4x2::IfcSlab</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_slab_standard_case.html" title="next chapter">Class Ifc4x2::IfcSlabStandardCase</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_slab_elemented_case.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

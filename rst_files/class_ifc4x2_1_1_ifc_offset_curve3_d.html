@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcOffsetCurve3D &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcOffsetCurveByDistances" href="class_ifc4x2_1_1_ifc_offset_curve_by_distances.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcOffsetCurve2D" href="class_ifc4x2_1_1_ifc_offset_curve2_d.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcoffsetcurve3d">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-offset-curve3-d"></span><h1>Class Ifc4x2::IfcOffsetCurve3D<a class="headerlink" href="#class-ifc4x2-ifcoffsetcurve3d" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcOffsetCurve</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_offset_curve.html#exhale-class-class-ifc4x2-1-1-ifc-offset-curve"><span class="std std-ref">Class Ifc4x2::IfcOffsetCurve</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x216IfcOffsetCurve3DE">
+<span id="_CPPv3N6Ifc4x216IfcOffsetCurve3DE"></span><span id="_CPPv2N6Ifc4x216IfcOffsetCurve3DE"></span><span id="Ifc4x2::IfcOffsetCurve3D"></span><span class="target" id="class_ifc4x2_1_1_ifc_offset_curve3_d"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcOffsetCurve3D</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_offset_curve.html#_CPPv4N6Ifc4x214IfcOffsetCurveE" title="Ifc4x2::IfcOffsetCurve">IfcOffsetCurve</a><a class="headerlink" href="#_CPPv4N6Ifc4x216IfcOffsetCurve3DE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: An offset curve 3d is a curve at a constant distance from a basis curve in three-dimensional space. The underlying curve shall have a well-defined tangent direction at every point. In the case of a composite curve the transition code between each segment shall be cont same gradient or cont same gradient same curvature. The offset curve at any point (parameter) on the basis curve is in the direction V x T where V is the fixed reference direction and T is the unit tangent to the basis curve. For the offset direction to be well defined, T shall not at any point of the curve be in the same, or opposite, direction as V.</p>
+<p>NOTE: The offset curve 3d may differ in nature from the basis curve; the offset of a non self- intersecting curve can be self-intersecting. Care should be taken to ensure that the offset to a continuous curve does not become discontinuous.</p>
+<p>The offset curve 3d takes its parameterization from the basis curve. The offset curve 3d is parameterized as </p>
+<p>where T is the unit tangent vector to the basis curve C(u) at parameter value u, and d is distance. The underlying curve shall be three-dimensional.</p>
+<p>NOTE Corresponding ISO 10303 entity: offset_curve_3d, Please refer to ISO/IS 10303-42:1994, p.66 for the final definition of the formal standard.</p>
+<p>HISTORY New entity in IFC Release 2.x</p>
+<p>Informal propositions:</p>
+<p>At no point on the curve shall ref direction be parallel, or opposite to, the direction of the tangent vector. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x216IfcOffsetCurve3D4listE">
+<span id="_CPPv3N6Ifc4x216IfcOffsetCurve3D4listE"></span><span id="_CPPv2N6Ifc4x216IfcOffsetCurve3D4listE"></span><span id="Ifc4x2::IfcOffsetCurve3D::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_offset_curve3_d_1a236917ed2f17e8170dd8c95dd93652ba"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x216IfcOffsetCurve3DE" title="Ifc4x2::IfcOffsetCurve3D">IfcOffsetCurve3D</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x216IfcOffsetCurve3D4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x216IfcOffsetCurve3D8DistanceEv">
+<span id="_CPPv3NK6Ifc4x216IfcOffsetCurve3D8DistanceEv"></span><span id="_CPPv2NK6Ifc4x216IfcOffsetCurve3D8DistanceEv"></span><span id="Ifc4x2::IfcOffsetCurve3D::DistanceC"></span><span class="target" id="class_ifc4x2_1_1_ifc_offset_curve3_d_1aebc69ecde5835a775ca429874452fe54"></span>double <code class="sig-name descname">Distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x216IfcOffsetCurve3D8DistanceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The distance of the offset curve from the basis curve. The distance may be positive, negative or zero. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x216IfcOffsetCurve3D11setDistanceEd">
+<span id="_CPPv3N6Ifc4x216IfcOffsetCurve3D11setDistanceEd"></span><span id="_CPPv2N6Ifc4x216IfcOffsetCurve3D11setDistanceEd"></span><span id="Ifc4x2::IfcOffsetCurve3D::setDistance__double"></span><span class="target" id="class_ifc4x2_1_1_ifc_offset_curve3_d_1a89ea4726690e81852dc9cc9430810e50"></span>void <code class="sig-name descname">setDistance</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x216IfcOffsetCurve3D11setDistanceEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x216IfcOffsetCurve3D13SelfIntersectEv">
+<span id="_CPPv3NK6Ifc4x216IfcOffsetCurve3D13SelfIntersectEv"></span><span id="_CPPv2NK6Ifc4x216IfcOffsetCurve3D13SelfIntersectEv"></span><span id="Ifc4x2::IfcOffsetCurve3D::SelfIntersectC"></span><span class="target" id="class_ifc4x2_1_1_ifc_offset_curve3_d_1a5e9175a783c8998cf2c7e49b418ee1b1"></span>bool <code class="sig-name descname">SelfIntersect</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x216IfcOffsetCurve3D13SelfIntersectEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An indication of whether the offset curve self-intersects, this is for information only. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x216IfcOffsetCurve3D16setSelfIntersectEb">
+<span id="_CPPv3N6Ifc4x216IfcOffsetCurve3D16setSelfIntersectEb"></span><span id="_CPPv2N6Ifc4x216IfcOffsetCurve3D16setSelfIntersectEb"></span><span id="Ifc4x2::IfcOffsetCurve3D::setSelfIntersect__b"></span><span class="target" id="class_ifc4x2_1_1_ifc_offset_curve3_d_1a366cd0e3769a46b10b9b8516449a9b79"></span>void <code class="sig-name descname">setSelfIntersect</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x216IfcOffsetCurve3D16setSelfIntersectEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x216IfcOffsetCurve3D12RefDirectionEv">
+<span id="_CPPv3NK6Ifc4x216IfcOffsetCurve3D12RefDirectionEv"></span><span id="_CPPv2NK6Ifc4x216IfcOffsetCurve3D12RefDirectionEv"></span><span id="Ifc4x2::IfcOffsetCurve3D::RefDirectionC"></span><span class="target" id="class_ifc4x2_1_1_ifc_offset_curve3_d_1a7b564f1eee3febcac82c1616bb6415e9"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_direction.html#_CPPv4N6Ifc4x212IfcDirectionE" title="Ifc4x2::IfcDirection">IfcDirection</a> *<code class="sig-name descname">RefDirection</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x216IfcOffsetCurve3D12RefDirectionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The direction used to define the direction of the offset curve 3d from the basis curve. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x216IfcOffsetCurve3D15setRefDirectionEPN6Ifc4x212IfcDirectionE">
+<span id="_CPPv3N6Ifc4x216IfcOffsetCurve3D15setRefDirectionEPN6Ifc4x212IfcDirectionE"></span><span id="_CPPv2N6Ifc4x216IfcOffsetCurve3D15setRefDirectionEPN6Ifc4x212IfcDirectionE"></span><span id="Ifc4x2::IfcOffsetCurve3D::setRefDirection__Ifc4x2::IfcDirectionP"></span><span class="target" id="class_ifc4x2_1_1_ifc_offset_curve3_d_1a442d0cf4c8e90e861a3d74b4d9966566"></span>void <code class="sig-name descname">setRefDirection</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_direction.html#_CPPv4N6Ifc4x212IfcDirectionE" title="Ifc4x2::IfcDirection">IfcDirection</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x216IfcOffsetCurve3D15setRefDirectionEPN6Ifc4x212IfcDirectionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x216IfcOffsetCurve3D11declarationEv">
+<span id="_CPPv3NK6Ifc4x216IfcOffsetCurve3D11declarationEv"></span><span id="_CPPv2NK6Ifc4x216IfcOffsetCurve3D11declarationEv"></span><span id="Ifc4x2::IfcOffsetCurve3D::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_offset_curve3_d_1a26745e6c3f79ee74871761c8f2f463a5"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x216IfcOffsetCurve3D11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x216IfcOffsetCurve3D16IfcOffsetCurve3DEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x216IfcOffsetCurve3D16IfcOffsetCurve3DEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x216IfcOffsetCurve3D16IfcOffsetCurve3DEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcOffsetCurve3D::IfcOffsetCurve3D__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_offset_curve3_d_1ae9b64988558f301069f76410fb6e8605"></span><code class="sig-name descname">IfcOffsetCurve3D</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x216IfcOffsetCurve3D16IfcOffsetCurve3DEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x216IfcOffsetCurve3D16IfcOffsetCurve3DEPN6Ifc4x28IfcCurveEdbPN6Ifc4x212IfcDirectionE">
+<span id="_CPPv3N6Ifc4x216IfcOffsetCurve3D16IfcOffsetCurve3DEPN6Ifc4x28IfcCurveEdbPN6Ifc4x212IfcDirectionE"></span><span id="_CPPv2N6Ifc4x216IfcOffsetCurve3D16IfcOffsetCurve3DEPN6Ifc4x28IfcCurveEdbPN6Ifc4x212IfcDirectionE"></span><span id="Ifc4x2::IfcOffsetCurve3D::IfcOffsetCurve3D__Ifc4x2::IfcCurveP.double.b.Ifc4x2::IfcDirectionP"></span><span class="target" id="class_ifc4x2_1_1_ifc_offset_curve3_d_1ae857a9ec49f41c49b87d9641dbafbaaa"></span><code class="sig-name descname">IfcOffsetCurve3D</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_curve.html#_CPPv4N6Ifc4x28IfcCurveE" title="Ifc4x2::IfcCurve">IfcCurve</a> *<em>v1_BasisCurve</em>, double <em>v2_Distance</em>, bool <em>v3_SelfIntersect</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_direction.html#_CPPv4N6Ifc4x212IfcDirectionE" title="Ifc4x2::IfcDirection">IfcDirection</a> *<em>v4_RefDirection</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x216IfcOffsetCurve3D16IfcOffsetCurve3DEPN6Ifc4x28IfcCurveEdbPN6Ifc4x212IfcDirectionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x216IfcOffsetCurve3D5ClassEv">
+<span id="_CPPv3N6Ifc4x216IfcOffsetCurve3D5ClassEv"></span><span id="_CPPv2N6Ifc4x216IfcOffsetCurve3D5ClassEv"></span><span id="Ifc4x2::IfcOffsetCurve3D::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_offset_curve3_d_1a84f9d886c51c855939efbcaa2db7bb37"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x216IfcOffsetCurve3D5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_offset_curve2_d.html" title="previous chapter">Class Ifc4x2::IfcOffsetCurve2D</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_offset_curve_by_distances.html" title="next chapter">Class Ifc4x2::IfcOffsetCurveByDistances</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_offset_curve3_d.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

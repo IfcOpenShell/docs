@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a5b945eec519a10a8df0b7b608c47516c:
+
+Define SCHEMA_IfcSite_RefLongitude_IS_OPTIONAL
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSite_RefLongitude_IS_OPTIONAL

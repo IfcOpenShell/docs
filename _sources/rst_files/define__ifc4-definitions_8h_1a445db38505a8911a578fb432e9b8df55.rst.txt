@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a445db38505a8911a578fb432e9b8df55:
+
+Define SCHEMA_IfcBoilerType_HAS_PredefinedType
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBoilerType_HAS_PredefinedType

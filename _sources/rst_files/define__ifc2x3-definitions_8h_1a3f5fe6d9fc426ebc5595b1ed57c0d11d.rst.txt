@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a3f5fe6d9fc426ebc5595b1ed57c0d11d:
+
+Define SCHEMA_IfcWaterProperties_HAS_AlkalinityConcentration
+============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcWaterProperties_HAS_AlkalinityConcentration

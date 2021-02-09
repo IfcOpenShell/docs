@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a1b7f2e660b9a7db87e6e8bffbf546dab:
+
+Define SCHEMA_HAS_IfcTaskTypeEnum
+=================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcTaskTypeEnum

@@ -1,0 +1,16 @@
+.. _exhale_class_class_ifc_templated_entity_list:
+
+Template Class IfcTemplatedEntityList
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_IfcEntityList.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcTemplatedEntityList
+   :members:
+   :protected-members:
+   :undoc-members:

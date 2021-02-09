@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcLibraryReference &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcLightDistributionData" href="class_ifc4_1_1_ifc_light_distribution_data.html" />
+    <link rel="prev" title="Class Ifc4::IfcLibraryInformation" href="class_ifc4_1_1_ifc_library_information.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifclibraryreference">
+<span id="exhale-class-class-ifc4-1-1-ifc-library-reference"></span><h1>Class Ifc4::IfcLibraryReference<a class="headerlink" href="#class-ifc4-ifclibraryreference" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcExternalReference</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_external_reference.html#exhale-class-class-ifc4-1-1-ifc-external-reference"><span class="std std-ref">Class Ifc4::IfcExternalReference</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc419IfcLibraryReferenceE">
+<span id="_CPPv3N4Ifc419IfcLibraryReferenceE"></span><span id="_CPPv2N4Ifc419IfcLibraryReferenceE"></span><span id="Ifc4::IfcLibraryReference"></span><span class="target" id="class_ifc4_1_1_ifc_library_reference"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcLibraryReference</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_external_reference.html#_CPPv4N4Ifc420IfcExternalReferenceE" title="Ifc4::IfcExternalReference">IfcExternalReference</a><a class="headerlink" href="#_CPPv4N4Ifc419IfcLibraryReferenceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_library_reference"><span class="std std-ref">IfcLibraryReference</span></a> is a reference into a library of information by Location (provided as a URI). It also provides an optional inherited Identification key to allow more specific references to library sections or tables. The inherited Name attribute allows for a human interpretable identification of the library item. Also, general information on the library from which the reference is taken, is given by the ReferencedLibrary relation which identifies the relevant occurrence of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_library_information"><span class="std std-ref">IfcLibraryInformation</span></a>.</p>
+<p>The ifcLibraryReference additionally provides the capability to handle multilingual library entries. The Language attribute then holds the language tag for the language used by the strings kept in the Name and the Description attribute.</p>
+<p>HISTORY New Entity in IFC2.0.</p>
+<p>IFC2x4 CHANGE Description and Language attribute added; ReferencedLibrary attribute added (reversing previous ReferenceIntoLibrary inverse relationship). </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc419IfcLibraryReference4listE">
+<span id="_CPPv3N4Ifc419IfcLibraryReference4listE"></span><span id="_CPPv2N4Ifc419IfcLibraryReference4listE"></span><span id="Ifc4::IfcLibraryReference::list"></span><span class="target" id="class_ifc4_1_1_ifc_library_reference_1a49b8bb8aa0a8f7e7c9e197e9ddb9bd6a"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc419IfcLibraryReferenceE" title="Ifc4::IfcLibraryReference">IfcLibraryReference</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc419IfcLibraryReference4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcLibraryReference14hasDescriptionEv">
+<span id="_CPPv3NK4Ifc419IfcLibraryReference14hasDescriptionEv"></span><span id="_CPPv2NK4Ifc419IfcLibraryReference14hasDescriptionEv"></span><span id="Ifc4::IfcLibraryReference::hasDescriptionC"></span><span class="target" id="class_ifc4_1_1_ifc_library_reference_1af31cf20a97a8b1a7ed6b5319025cf2f9"></span>bool <code class="sig-name descname">hasDescription</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcLibraryReference14hasDescriptionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Description is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_library_reference"><span class="std std-ref">IfcLibraryReference</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcLibraryReference11DescriptionEv">
+<span id="_CPPv3NK4Ifc419IfcLibraryReference11DescriptionEv"></span><span id="_CPPv2NK4Ifc419IfcLibraryReference11DescriptionEv"></span><span id="Ifc4::IfcLibraryReference::DescriptionC"></span><span class="target" id="class_ifc4_1_1_ifc_library_reference_1a9785bc8134bb4b56769c8d3bd2c7d530"></span>std::string <code class="sig-name descname">Description</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcLibraryReference11DescriptionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Additional description provided for the library reference.</p>
+<p>IFC2x4 CHANGE New attribute added at the end of the attribute list. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcLibraryReference14setDescriptionENSt6stringE">
+<span id="_CPPv3N4Ifc419IfcLibraryReference14setDescriptionENSt6stringE"></span><span id="_CPPv2N4Ifc419IfcLibraryReference14setDescriptionENSt6stringE"></span><span id="Ifc4::IfcLibraryReference::setDescription__ss"></span><span class="target" id="class_ifc4_1_1_ifc_library_reference_1a08c4e3b916c954f1def4e9274fec58ca"></span>void <code class="sig-name descname">setDescription</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcLibraryReference14setDescriptionENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcLibraryReference11hasLanguageEv">
+<span id="_CPPv3NK4Ifc419IfcLibraryReference11hasLanguageEv"></span><span id="_CPPv2NK4Ifc419IfcLibraryReference11hasLanguageEv"></span><span id="Ifc4::IfcLibraryReference::hasLanguageC"></span><span class="target" id="class_ifc4_1_1_ifc_library_reference_1a04009e76272b9d69b33ca66c17026a7a"></span>bool <code class="sig-name descname">hasLanguage</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcLibraryReference11hasLanguageEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Language is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_library_reference"><span class="std std-ref">IfcLibraryReference</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcLibraryReference8LanguageEv">
+<span id="_CPPv3NK4Ifc419IfcLibraryReference8LanguageEv"></span><span id="_CPPv2NK4Ifc419IfcLibraryReference8LanguageEv"></span><span id="Ifc4::IfcLibraryReference::LanguageC"></span><span class="target" id="class_ifc4_1_1_ifc_library_reference_1ac611ac22b06b5a8b41994d406db4f486"></span>std::string <code class="sig-name descname">Language</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcLibraryReference8LanguageEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The language in which a library reference is expressed.</p>
+<p>IFC2x4 CHANGE New attribute added at the end of the attribute list. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcLibraryReference11setLanguageENSt6stringE">
+<span id="_CPPv3N4Ifc419IfcLibraryReference11setLanguageENSt6stringE"></span><span id="_CPPv2N4Ifc419IfcLibraryReference11setLanguageENSt6stringE"></span><span id="Ifc4::IfcLibraryReference::setLanguage__ss"></span><span class="target" id="class_ifc4_1_1_ifc_library_reference_1a9ccead6ba11b7c8a0f6dd4df640d2858"></span>void <code class="sig-name descname">setLanguage</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcLibraryReference11setLanguageENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcLibraryReference20hasReferencedLibraryEv">
+<span id="_CPPv3NK4Ifc419IfcLibraryReference20hasReferencedLibraryEv"></span><span id="_CPPv2NK4Ifc419IfcLibraryReference20hasReferencedLibraryEv"></span><span id="Ifc4::IfcLibraryReference::hasReferencedLibraryC"></span><span class="target" id="class_ifc4_1_1_ifc_library_reference_1a6bee6bb5f679dbe4f73f866009a5e5b4"></span>bool <code class="sig-name descname">hasReferencedLibrary</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcLibraryReference20hasReferencedLibraryEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ReferencedLibrary is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_library_reference"><span class="std std-ref">IfcLibraryReference</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcLibraryReference17ReferencedLibraryEv">
+<span id="_CPPv3NK4Ifc419IfcLibraryReference17ReferencedLibraryEv"></span><span id="_CPPv2NK4Ifc419IfcLibraryReference17ReferencedLibraryEv"></span><span id="Ifc4::IfcLibraryReference::ReferencedLibraryC"></span><span class="target" id="class_ifc4_1_1_ifc_library_reference_1a7dec44d12a1640afe7e35e1dc3a582c1"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_library_information.html#_CPPv4N4Ifc421IfcLibraryInformationE" title="Ifc4::IfcLibraryInformation">IfcLibraryInformation</a> *<code class="sig-name descname">ReferencedLibrary</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcLibraryReference17ReferencedLibraryEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The library information that is being referenced. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcLibraryReference20setReferencedLibraryEPN4Ifc421IfcLibraryInformationE">
+<span id="_CPPv3N4Ifc419IfcLibraryReference20setReferencedLibraryEPN4Ifc421IfcLibraryInformationE"></span><span id="_CPPv2N4Ifc419IfcLibraryReference20setReferencedLibraryEPN4Ifc421IfcLibraryInformationE"></span><span id="Ifc4::IfcLibraryReference::setReferencedLibrary__Ifc4::IfcLibraryInformationP"></span><span class="target" id="class_ifc4_1_1_ifc_library_reference_1ae317fe1c0224d38e6dc5f94d74999f5f"></span>void <code class="sig-name descname">setReferencedLibrary</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_library_information.html#_CPPv4N4Ifc421IfcLibraryInformationE" title="Ifc4::IfcLibraryInformation">IfcLibraryInformation</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcLibraryReference20setReferencedLibraryEPN4Ifc421IfcLibraryInformationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcLibraryReference20LibraryRefForObjectsEv">
+<span id="_CPPv3NK4Ifc419IfcLibraryReference20LibraryRefForObjectsEv"></span><span id="_CPPv2NK4Ifc419IfcLibraryReference20LibraryRefForObjectsEv"></span><span id="Ifc4::IfcLibraryReference::LibraryRefForObjectsC"></span><span class="target" id="class_ifc4_1_1_ifc_library_reference_1a1669c599ca28c5bebce9b19369b35ddc"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4_1_1_ifc_rel_associates_library.html#_CPPv4N4Ifc423IfcRelAssociatesLibraryE" title="Ifc4::IfcRelAssociatesLibrary">IfcRelAssociatesLibrary</a>&gt;::ptr <code class="sig-name descname">LibraryRefForObjects</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcLibraryReference20LibraryRefForObjectsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcLibraryReference11declarationEv">
+<span id="_CPPv3NK4Ifc419IfcLibraryReference11declarationEv"></span><span id="_CPPv2NK4Ifc419IfcLibraryReference11declarationEv"></span><span id="Ifc4::IfcLibraryReference::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_library_reference_1ace18200c154b92621959cdbae3586780"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcLibraryReference11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcLibraryReference19IfcLibraryReferenceEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc419IfcLibraryReference19IfcLibraryReferenceEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc419IfcLibraryReference19IfcLibraryReferenceEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcLibraryReference::IfcLibraryReference__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_library_reference_1aeb2244beabd8723a0d2b722996615d7e"></span><code class="sig-name descname">IfcLibraryReference</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcLibraryReference19IfcLibraryReferenceEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcLibraryReference19IfcLibraryReferenceEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc421IfcLibraryInformationE">
+<span id="_CPPv3N4Ifc419IfcLibraryReference19IfcLibraryReferenceEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc421IfcLibraryInformationE"></span><span id="_CPPv2N4Ifc419IfcLibraryReference19IfcLibraryReferenceEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc421IfcLibraryInformationE"></span><span id="Ifc4::IfcLibraryReference::IfcLibraryReference__boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4::IfcLibraryInformationP"></span><span class="target" id="class_ifc4_1_1_ifc_library_reference_1add01b2a123bde6dc2443362627df7060"></span><code class="sig-name descname">IfcLibraryReference</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Location</em>, boost::optional&lt;std::string&gt; <em>v2_Identification</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_Language</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_library_information.html#_CPPv4N4Ifc421IfcLibraryInformationE" title="Ifc4::IfcLibraryInformation">IfcLibraryInformation</a> *<em>v6_ReferencedLibrary</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcLibraryReference19IfcLibraryReferenceEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc421IfcLibraryInformationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcLibraryReference5ClassEv">
+<span id="_CPPv3N4Ifc419IfcLibraryReference5ClassEv"></span><span id="_CPPv2N4Ifc419IfcLibraryReference5ClassEv"></span><span id="Ifc4::IfcLibraryReference::Class"></span><span class="target" id="class_ifc4_1_1_ifc_library_reference_1a8130be8454acbaf48a8f93eb293d732a"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcLibraryReference5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_library_information.html" title="previous chapter">Class Ifc4::IfcLibraryInformation</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_light_distribution_data.html" title="next chapter">Class Ifc4::IfcLightDistributionData</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_library_reference.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a6cd21a5c2f61495086bee04be209d19a:
+
+Define SCHEMA_IfcProductDefinitionShape_HAS_ShapeOfProduct
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcProductDefinitionShape_HAS_ShapeOfProduct

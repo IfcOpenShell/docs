@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a6c29f44db9e9f66d9d57ec026bce52c4:
+
+Define SCHEMA_IfcGeographicElement_HAS_PredefinedType
+=====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcGeographicElement_HAS_PredefinedType

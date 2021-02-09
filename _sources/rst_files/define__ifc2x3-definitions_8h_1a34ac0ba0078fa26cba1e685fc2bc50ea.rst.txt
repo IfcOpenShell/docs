@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a34ac0ba0078fa26cba1e685fc2bc50ea:
+
+Define SCHEMA_IfcFluidFlowProperties_UserDefinedPropertySource_IS_OPTIONAL
+==========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcFluidFlowProperties_UserDefinedPropertySource_IS_OPTIONAL

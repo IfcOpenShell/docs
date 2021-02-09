@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1af5e569e2d82fc456a1bc61118f497bac:
+
+Define SCHEMA_IfcPropertyEnumeratedValue_HAS_EnumerationReference
+=================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPropertyEnumeratedValue_HAS_EnumerationReference

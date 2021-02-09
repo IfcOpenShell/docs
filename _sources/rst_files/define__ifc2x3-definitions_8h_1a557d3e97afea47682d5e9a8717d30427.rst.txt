@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a557d3e97afea47682d5e9a8717d30427:
+
+Define SCHEMA_IfcBoundaryNodeCondition_HAS_LinearStiffnessY
+===========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBoundaryNodeCondition_HAS_LinearStiffnessY

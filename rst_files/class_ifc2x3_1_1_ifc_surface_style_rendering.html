@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcSurfaceStyleRendering &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcSurfaceStyleShading" href="class_ifc2x3_1_1_ifc_surface_style_shading.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcSurfaceStyleRefraction" href="class_ifc2x3_1_1_ifc_surface_style_refraction.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcsurfacestylerendering">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-surface-style-rendering"></span><h1>Class Ifc2x3::IfcSurfaceStyleRendering<a class="headerlink" href="#class-ifc2x3-ifcsurfacestylerendering" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcSurfaceStyleShading</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_surface_style_shading.html#exhale-class-class-ifc2x3-1-1-ifc-surface-style-shading"><span class="std std-ref">Class Ifc2x3::IfcSurfaceStyleShading</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x324IfcSurfaceStyleRenderingE">
+<span id="_CPPv3N6Ifc2x324IfcSurfaceStyleRenderingE"></span><span id="_CPPv2N6Ifc2x324IfcSurfaceStyleRenderingE"></span><span id="Ifc2x3::IfcSurfaceStyleRendering"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcSurfaceStyleRendering</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_surface_style_shading.html#_CPPv4N6Ifc2x322IfcSurfaceStyleShadingE" title="Ifc2x3::IfcSurfaceStyleShading">IfcSurfaceStyleShading</a><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcSurfaceStyleRenderingE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_surface_style_rendering"><span class="std std-ref">IfcSurfaceStyleRendering</span></a> holds the properties for visualization related to a particular surface side style. </p>
+<p>It allows rendering properties to be defined by:</p>
+<p>a transparency component (Transparency attribute) a colour component (SurfaceColour attribute inherited from <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_surface_style_shading"><span class="std std-ref">IfcSurfaceStyleShading</span></a>) a reflectance component, given either by</p>
+<p>applying reflectance factors to the surface colour:</p>
+<p>diffuse component (SurfaceColour * DiffuseFactor) <p> transmission component (SurfaceColour * TransmissionFactor) diffuse transmission component (SurfaceColour * DiffuseTransmissionFactor) reflection component (SurfaceColour * ReflectionFactor) specular component (SurfaceColour * SpecularFactor attribute together with SpecularHighlight)</p>
+</p>
+<p>explicitly defining such factors as colours (DiffuseColour, TransmissionColour, DiffuseTransmissionColour, ReflectionColour and SpecularColour)</p>
+<p>a displacement component, currently only given by a texture map with the TextureType = bump a coverage component, currently only given by the alpha component of the texture map (2 or 4 component colour texture)</p>
+<p>NOTE: The inherited attribute SurfaceColour is treated as the ambient colour and specifies how much ambient light from light sources this surface shall reflect. Ambient light is omnidirectional and depends only on the number of light sources, not their positions with respect to the surface.</p>
+<p>NOTE: If the reflectance method, as given by the <a class="reference internal" href="struct_ifc2x3_1_1_ifc_reflectance_method_enum.html#struct_ifc2x3_1_1_ifc_reflectance_method_enum"><span class="std std-ref">IfcReflectanceMethodEnum</span></a> is “GLASS”, the transmission factor controls the level of transparency in the glass, In this case the transparency factor is interpreted as transmission factor.</p>
+<p>NOTE: Both Transparency and TransmissionColour (or factor) are included, the following definitions apply:</p>
+<p>Transparency is the ratio of the transmitted flux in a solid angle of 2 * PI sr (one hemisphere). It is a simple colour filtration that does not account for refraction. Transmission factor of a material is the ratio of transmitted flux in a given solid angle to the transmitted flux of a completely diffuse material with 100% transmission in the same solid angle. It is the portion of light that goes through the material and may be refracted.</p>
+<p>NOTE: IFC 2x2 adds additional capability for presentation of physically accurate illuminance on surfaces. VRML type rendering and rendering based on ISO 10303-46 continues to be supported by a subset of the information. For reflectance equations and further information about the surface style properties and its processing, see:</p>
+<p>ISO/IEC 14772-1: 1997: The Virtual Reality Modeling Language</p>
+<p>NOTE: The definition of IfcSurfaceStyleRenderingProperties includes the definitions as found in ISO 10303-46:1994, in particular of:</p>
+<p>surface_style_rendering_with_properties surface_style_rendering_ambient surface_style_rendering_ambient_diffuse surface_style_rendering_ambient_diffuse_specular surface_style_transparent</p>
+<p>In addition to the attributes as defined in ISO 10303-46, (ambient_reflectance, diffuse_reflectance, specular_reflectance, specular_exponent, and specular_colour), the current IFC definition adds other colours, reflectance factors and specular roughness.</p>
+<p>HISTORY: New Entity in IFC 2x. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x324IfcSurfaceStyleRendering4listE">
+<span id="_CPPv3N6Ifc2x324IfcSurfaceStyleRendering4listE"></span><span id="_CPPv2N6Ifc2x324IfcSurfaceStyleRendering4listE"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1a29b0ba78d2de95d6e8d51a3e6464b516"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x324IfcSurfaceStyleRenderingE" title="Ifc2x3::IfcSurfaceStyleRendering">IfcSurfaceStyleRendering</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcSurfaceStyleRendering4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering15hasTransparencyEv">
+<span id="_CPPv3NK6Ifc2x324IfcSurfaceStyleRendering15hasTransparencyEv"></span><span id="_CPPv2NK6Ifc2x324IfcSurfaceStyleRendering15hasTransparencyEv"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::hasTransparencyC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1a9c496e8d1ebd3f11c000541edbf0f573"></span>bool <code class="sig-name descname">hasTransparency</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering15hasTransparencyEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Transparency is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_surface_style_rendering"><span class="std std-ref">IfcSurfaceStyleRendering</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering12TransparencyEv">
+<span id="_CPPv3NK6Ifc2x324IfcSurfaceStyleRendering12TransparencyEv"></span><span id="_CPPv2NK6Ifc2x324IfcSurfaceStyleRendering12TransparencyEv"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::TransparencyC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1ac65f7de453f622593b60190ed8ee7c02"></span>double <code class="sig-name descname">Transparency</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering12TransparencyEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-46: The degree of transparency is indicated by the percentage of light traversing the surface. Definition from VRML97 - ISO/IEC 14772-1:1997: The transparency field specifies how “clear” an object is, with 1.0 being completely transparent, and 0.0 completely opaque. If not given, the value 0.0 (opaque) is assumed. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcSurfaceStyleRendering15setTransparencyEd">
+<span id="_CPPv3N6Ifc2x324IfcSurfaceStyleRendering15setTransparencyEd"></span><span id="_CPPv2N6Ifc2x324IfcSurfaceStyleRendering15setTransparencyEd"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::setTransparency__double"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1a288ab7c0e0d9dd8b0336566d3b79e3a9"></span>void <code class="sig-name descname">setTransparency</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcSurfaceStyleRendering15setTransparencyEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering16hasDiffuseColourEv">
+<span id="_CPPv3NK6Ifc2x324IfcSurfaceStyleRendering16hasDiffuseColourEv"></span><span id="_CPPv2NK6Ifc2x324IfcSurfaceStyleRendering16hasDiffuseColourEv"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::hasDiffuseColourC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1a58454a1be7b9dea1fc302e289fcb4763"></span>bool <code class="sig-name descname">hasDiffuseColour</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering16hasDiffuseColourEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute DiffuseColour is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_surface_style_rendering"><span class="std std-ref">IfcSurfaceStyleRendering</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering13DiffuseColourEv">
+<span id="_CPPv3NK6Ifc2x324IfcSurfaceStyleRendering13DiffuseColourEv"></span><span id="_CPPv2NK6Ifc2x324IfcSurfaceStyleRendering13DiffuseColourEv"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::DiffuseColourC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1a22b38bd5efc6d42a33b0ae6621de94d4"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x317IfcColourOrFactorE" title="Ifc2x3::IfcColourOrFactor">IfcColourOrFactor</a> *<code class="sig-name descname">DiffuseColour</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering13DiffuseColourEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The diffuse part of the reflectance equation can be given as either a colour or a scalar factor. The diffuse colour field reflects all light sources depending on the angle of the surface with respect to the light source. The more directly the surface faces the light, the more diffuse light reflects. The diffuse factor field specifies how much diffuse light from light sources this surface shall reflect. Diffuse light depends on the angle of the surface with respect to the light source. The more directly the surface faces the light, the more diffuse light reflects. The diffuse colour is then defined by surface colour * diffuse factor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcSurfaceStyleRendering16setDiffuseColourEPN6Ifc2x317IfcColourOrFactorE">
+<span id="_CPPv3N6Ifc2x324IfcSurfaceStyleRendering16setDiffuseColourEPN6Ifc2x317IfcColourOrFactorE"></span><span id="_CPPv2N6Ifc2x324IfcSurfaceStyleRendering16setDiffuseColourEPN6Ifc2x317IfcColourOrFactorE"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::setDiffuseColour__Ifc2x3::IfcColourOrFactorP"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1acb0ab5ab8d88543ab46e07872cc44eb9"></span>void <code class="sig-name descname">setDiffuseColour</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x317IfcColourOrFactorE" title="Ifc2x3::IfcColourOrFactor">IfcColourOrFactor</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcSurfaceStyleRendering16setDiffuseColourEPN6Ifc2x317IfcColourOrFactorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering21hasTransmissionColourEv">
+<span id="_CPPv3NK6Ifc2x324IfcSurfaceStyleRendering21hasTransmissionColourEv"></span><span id="_CPPv2NK6Ifc2x324IfcSurfaceStyleRendering21hasTransmissionColourEv"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::hasTransmissionColourC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1afd11be85f6a7effc58224e3ee26c5e8c"></span>bool <code class="sig-name descname">hasTransmissionColour</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering21hasTransmissionColourEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute TransmissionColour is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_surface_style_rendering"><span class="std std-ref">IfcSurfaceStyleRendering</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering18TransmissionColourEv">
+<span id="_CPPv3NK6Ifc2x324IfcSurfaceStyleRendering18TransmissionColourEv"></span><span id="_CPPv2NK6Ifc2x324IfcSurfaceStyleRendering18TransmissionColourEv"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::TransmissionColourC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1a2d4e9236d87b62ab4a9e64333a5833ab"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x317IfcColourOrFactorE" title="Ifc2x3::IfcColourOrFactor">IfcColourOrFactor</a> *<code class="sig-name descname">TransmissionColour</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering18TransmissionColourEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The transmissive part of the reflectance equation can be given as either a colour or a scalar factor. It only applies to materials which Transparency field is greater than zero. The transmissive colour field specifies the colour that passes through a transparant material (like the colour that shines through a glass). The transmissive factor defines the transmissive part, the transmissive colour is then defined by surface colour * transmissive factor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcSurfaceStyleRendering21setTransmissionColourEPN6Ifc2x317IfcColourOrFactorE">
+<span id="_CPPv3N6Ifc2x324IfcSurfaceStyleRendering21setTransmissionColourEPN6Ifc2x317IfcColourOrFactorE"></span><span id="_CPPv2N6Ifc2x324IfcSurfaceStyleRendering21setTransmissionColourEPN6Ifc2x317IfcColourOrFactorE"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::setTransmissionColour__Ifc2x3::IfcColourOrFactorP"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1a011c1336bb9bebff89372495a73ea4cd"></span>void <code class="sig-name descname">setTransmissionColour</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x317IfcColourOrFactorE" title="Ifc2x3::IfcColourOrFactor">IfcColourOrFactor</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcSurfaceStyleRendering21setTransmissionColourEPN6Ifc2x317IfcColourOrFactorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering28hasDiffuseTransmissionColourEv">
+<span id="_CPPv3NK6Ifc2x324IfcSurfaceStyleRendering28hasDiffuseTransmissionColourEv"></span><span id="_CPPv2NK6Ifc2x324IfcSurfaceStyleRendering28hasDiffuseTransmissionColourEv"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::hasDiffuseTransmissionColourC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1a91218acb28cde8cad33902da49cb8f04"></span>bool <code class="sig-name descname">hasDiffuseTransmissionColour</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering28hasDiffuseTransmissionColourEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute DiffuseTransmissionColour is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_surface_style_rendering"><span class="std std-ref">IfcSurfaceStyleRendering</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering25DiffuseTransmissionColourEv">
+<span id="_CPPv3NK6Ifc2x324IfcSurfaceStyleRendering25DiffuseTransmissionColourEv"></span><span id="_CPPv2NK6Ifc2x324IfcSurfaceStyleRendering25DiffuseTransmissionColourEv"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::DiffuseTransmissionColourC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1a0d84513bf1b4607b0c8d69e249a445da"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x317IfcColourOrFactorE" title="Ifc2x3::IfcColourOrFactor">IfcColourOrFactor</a> *<code class="sig-name descname">DiffuseTransmissionColour</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering25DiffuseTransmissionColourEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The diffuse transmission part of the reflectance equation can be given as either a colour or a scalar factor. It only applies to materials whose Transparency field is greater than zero. The diffuse transmission colour specifies how much diffuse light is reflected at the opposite side of the material surface. The diffuse transmission factor field specifies how much diffuse light from light sources this surface shall reflect on the opposite side of the material surface. The diffuse transmissive colour is then defined by surface colour * diffuse transmissive factor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcSurfaceStyleRendering28setDiffuseTransmissionColourEPN6Ifc2x317IfcColourOrFactorE">
+<span id="_CPPv3N6Ifc2x324IfcSurfaceStyleRendering28setDiffuseTransmissionColourEPN6Ifc2x317IfcColourOrFactorE"></span><span id="_CPPv2N6Ifc2x324IfcSurfaceStyleRendering28setDiffuseTransmissionColourEPN6Ifc2x317IfcColourOrFactorE"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::setDiffuseTransmissionColour__Ifc2x3::IfcColourOrFactorP"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1a75dc1ff4a4b34d994e2a28217d058331"></span>void <code class="sig-name descname">setDiffuseTransmissionColour</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x317IfcColourOrFactorE" title="Ifc2x3::IfcColourOrFactor">IfcColourOrFactor</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcSurfaceStyleRendering28setDiffuseTransmissionColourEPN6Ifc2x317IfcColourOrFactorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering19hasReflectionColourEv">
+<span id="_CPPv3NK6Ifc2x324IfcSurfaceStyleRendering19hasReflectionColourEv"></span><span id="_CPPv2NK6Ifc2x324IfcSurfaceStyleRendering19hasReflectionColourEv"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::hasReflectionColourC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1a2c0e5ff979738c2ba5ae8dd3bd3125f7"></span>bool <code class="sig-name descname">hasReflectionColour</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering19hasReflectionColourEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ReflectionColour is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_surface_style_rendering"><span class="std std-ref">IfcSurfaceStyleRendering</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering16ReflectionColourEv">
+<span id="_CPPv3NK6Ifc2x324IfcSurfaceStyleRendering16ReflectionColourEv"></span><span id="_CPPv2NK6Ifc2x324IfcSurfaceStyleRendering16ReflectionColourEv"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::ReflectionColourC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1a71e5838746243ef7c3c399811bb470e3"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x317IfcColourOrFactorE" title="Ifc2x3::IfcColourOrFactor">IfcColourOrFactor</a> *<code class="sig-name descname">ReflectionColour</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering16ReflectionColourEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The reflection (or mirror) part of the reflectance equation can be given as either a colour or a scalar factor. Applies to “glass” and “mirror” reflection models. The reflection colour specifies the contribution made by light from the mirror direction, i.e. light being reflected from the surface. The reflection factor specifies the amount of contribution made by light from the mirror direction. The reflection colour is then defined by surface colour * reflection factor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcSurfaceStyleRendering19setReflectionColourEPN6Ifc2x317IfcColourOrFactorE">
+<span id="_CPPv3N6Ifc2x324IfcSurfaceStyleRendering19setReflectionColourEPN6Ifc2x317IfcColourOrFactorE"></span><span id="_CPPv2N6Ifc2x324IfcSurfaceStyleRendering19setReflectionColourEPN6Ifc2x317IfcColourOrFactorE"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::setReflectionColour__Ifc2x3::IfcColourOrFactorP"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1a4c0d013047fff06642077a6464518a2e"></span>void <code class="sig-name descname">setReflectionColour</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x317IfcColourOrFactorE" title="Ifc2x3::IfcColourOrFactor">IfcColourOrFactor</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcSurfaceStyleRendering19setReflectionColourEPN6Ifc2x317IfcColourOrFactorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering17hasSpecularColourEv">
+<span id="_CPPv3NK6Ifc2x324IfcSurfaceStyleRendering17hasSpecularColourEv"></span><span id="_CPPv2NK6Ifc2x324IfcSurfaceStyleRendering17hasSpecularColourEv"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::hasSpecularColourC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1a7c95e7128840558dc96ebdefca7cf9ab"></span>bool <code class="sig-name descname">hasSpecularColour</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering17hasSpecularColourEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute SpecularColour is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_surface_style_rendering"><span class="std std-ref">IfcSurfaceStyleRendering</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering14SpecularColourEv">
+<span id="_CPPv3NK6Ifc2x324IfcSurfaceStyleRendering14SpecularColourEv"></span><span id="_CPPv2NK6Ifc2x324IfcSurfaceStyleRendering14SpecularColourEv"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::SpecularColourC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1aa54d3108d260c1d39259f5cdae932de7"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x317IfcColourOrFactorE" title="Ifc2x3::IfcColourOrFactor">IfcColourOrFactor</a> *<code class="sig-name descname">SpecularColour</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering14SpecularColourEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The specular part of the reflectance equation can be given as either a colour or a scalar factor. The specular colour determine the specular highlights (e.g., the shiny spots on an apple). When the angle from the light to the surface is close to the angle from the surface to the viewer, the specular colour is added to the diffuse and ambient colour calculations. The specular factor defines the specular part, the specular colour is then defined by surface colour * specular factor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcSurfaceStyleRendering17setSpecularColourEPN6Ifc2x317IfcColourOrFactorE">
+<span id="_CPPv3N6Ifc2x324IfcSurfaceStyleRendering17setSpecularColourEPN6Ifc2x317IfcColourOrFactorE"></span><span id="_CPPv2N6Ifc2x324IfcSurfaceStyleRendering17setSpecularColourEPN6Ifc2x317IfcColourOrFactorE"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::setSpecularColour__Ifc2x3::IfcColourOrFactorP"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1ab99db0c231f25265de683e1cb90870e9"></span>void <code class="sig-name descname">setSpecularColour</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x317IfcColourOrFactorE" title="Ifc2x3::IfcColourOrFactor">IfcColourOrFactor</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcSurfaceStyleRendering17setSpecularColourEPN6Ifc2x317IfcColourOrFactorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering20hasSpecularHighlightEv">
+<span id="_CPPv3NK6Ifc2x324IfcSurfaceStyleRendering20hasSpecularHighlightEv"></span><span id="_CPPv2NK6Ifc2x324IfcSurfaceStyleRendering20hasSpecularHighlightEv"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::hasSpecularHighlightC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1a610ef99f34040a19f19a0306e2ce272b"></span>bool <code class="sig-name descname">hasSpecularHighlight</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering20hasSpecularHighlightEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute SpecularHighlight is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_surface_style_rendering"><span class="std std-ref">IfcSurfaceStyleRendering</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering17SpecularHighlightEv">
+<span id="_CPPv3NK6Ifc2x324IfcSurfaceStyleRendering17SpecularHighlightEv"></span><span id="_CPPv2NK6Ifc2x324IfcSurfaceStyleRendering17SpecularHighlightEv"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::SpecularHighlightC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1abb006c73dd4febd9eb9c55809f0096f9"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x326IfcSpecularHighlightSelectE" title="Ifc2x3::IfcSpecularHighlightSelect">IfcSpecularHighlightSelect</a> *<code class="sig-name descname">SpecularHighlight</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering17SpecularHighlightEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The exponent or roughness part of the specular reflectance. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcSurfaceStyleRendering20setSpecularHighlightEPN6Ifc2x326IfcSpecularHighlightSelectE">
+<span id="_CPPv3N6Ifc2x324IfcSurfaceStyleRendering20setSpecularHighlightEPN6Ifc2x326IfcSpecularHighlightSelectE"></span><span id="_CPPv2N6Ifc2x324IfcSurfaceStyleRendering20setSpecularHighlightEPN6Ifc2x326IfcSpecularHighlightSelectE"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::setSpecularHighlight__Ifc2x3::IfcSpecularHighlightSelectP"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1af942a9e91aa9909cb4eb8523235d553b"></span>void <code class="sig-name descname">setSpecularHighlight</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x326IfcSpecularHighlightSelectE" title="Ifc2x3::IfcSpecularHighlightSelect">IfcSpecularHighlightSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcSurfaceStyleRendering20setSpecularHighlightEPN6Ifc2x326IfcSpecularHighlightSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering17ReflectanceMethodEv">
+<span id="_CPPv3NK6Ifc2x324IfcSurfaceStyleRendering17ReflectanceMethodEv"></span><span id="_CPPv2NK6Ifc2x324IfcSurfaceStyleRendering17ReflectanceMethodEv"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::ReflectanceMethodC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1ac5a55e3d9b47dd7155a13343209be31a"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x324IfcReflectanceMethodEnumE" title="Ifc2x3::IfcReflectanceMethodEnum">IfcReflectanceMethodEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x324IfcReflectanceMethodEnum5ValueE" title="Ifc2x3::IfcReflectanceMethodEnum::Value">Value</a> <code class="sig-name descname">ReflectanceMethod</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering17ReflectanceMethodEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Identifies the predefined types of reflectance method from which the method required may be set. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcSurfaceStyleRendering20setReflectanceMethodEN6Ifc2x324IfcReflectanceMethodEnum5ValueE">
+<span id="_CPPv3N6Ifc2x324IfcSurfaceStyleRendering20setReflectanceMethodEN6Ifc2x324IfcReflectanceMethodEnum5ValueE"></span><span id="_CPPv2N6Ifc2x324IfcSurfaceStyleRendering20setReflectanceMethodEN6Ifc2x324IfcReflectanceMethodEnum5ValueE"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::setReflectanceMethod__Ifc2x3::IfcReflectanceMethodEnum::Value"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1ae0bf916c827ba4f9eca4532edb4d08f7"></span>void <code class="sig-name descname">setReflectanceMethod</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x324IfcReflectanceMethodEnumE" title="Ifc2x3::IfcReflectanceMethodEnum">IfcReflectanceMethodEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x324IfcReflectanceMethodEnum5ValueE" title="Ifc2x3::IfcReflectanceMethodEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcSurfaceStyleRendering20setReflectanceMethodEN6Ifc2x324IfcReflectanceMethodEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering11declarationEv">
+<span id="_CPPv3NK6Ifc2x324IfcSurfaceStyleRendering11declarationEv"></span><span id="_CPPv2NK6Ifc2x324IfcSurfaceStyleRendering11declarationEv"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1a01d2e6cf8425e789a55c6d1d01352fe5"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcSurfaceStyleRendering11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcSurfaceStyleRendering24IfcSurfaceStyleRenderingEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x324IfcSurfaceStyleRendering24IfcSurfaceStyleRenderingEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x324IfcSurfaceStyleRendering24IfcSurfaceStyleRenderingEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::IfcSurfaceStyleRendering__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1a283f28bd8a78fd3c691a5d0f8b27391a"></span><code class="sig-name descname">IfcSurfaceStyleRendering</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcSurfaceStyleRendering24IfcSurfaceStyleRenderingEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcSurfaceStyleRendering24IfcSurfaceStyleRenderingEPN6Ifc2x312IfcColourRgbEN5boost8optionalIdEEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x326IfcSpecularHighlightSelectEN6Ifc2x324IfcReflectanceMethodEnum5ValueE">
+<span id="_CPPv3N6Ifc2x324IfcSurfaceStyleRendering24IfcSurfaceStyleRenderingEPN6Ifc2x312IfcColourRgbEN5boost8optionalIdEEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x326IfcSpecularHighlightSelectEN6Ifc2x324IfcReflectanceMethodEnum5ValueE"></span><span id="_CPPv2N6Ifc2x324IfcSurfaceStyleRendering24IfcSurfaceStyleRenderingEPN6Ifc2x312IfcColourRgbEN5boost8optionalIdEEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x326IfcSpecularHighlightSelectEN6Ifc2x324IfcReflectanceMethodEnum5ValueE"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::IfcSurfaceStyleRendering__Ifc2x3::IfcColourRgbP.boost::optional:double:.Ifc2x3::IfcColourOrFactorP.Ifc2x3::IfcColourOrFactorP.Ifc2x3::IfcColourOrFactorP.Ifc2x3::IfcColourOrFactorP.Ifc2x3::IfcColourOrFactorP.Ifc2x3::IfcSpecularHighlightSelectP.Ifc2x3::IfcReflectanceMethodEnum::Value"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1adf3130f4f28e61fab8607f5dbcd4e569"></span><code class="sig-name descname">IfcSurfaceStyleRendering</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_colour_rgb.html#_CPPv4N6Ifc2x312IfcColourRgbE" title="Ifc2x3::IfcColourRgb">IfcColourRgb</a> *<em>v1_SurfaceColour</em>, boost::optional&lt;double&gt; <em>v2_Transparency</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x317IfcColourOrFactorE" title="Ifc2x3::IfcColourOrFactor">IfcColourOrFactor</a> *<em>v3_DiffuseColour</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x317IfcColourOrFactorE" title="Ifc2x3::IfcColourOrFactor">IfcColourOrFactor</a> *<em>v4_TransmissionColour</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x317IfcColourOrFactorE" title="Ifc2x3::IfcColourOrFactor">IfcColourOrFactor</a> *<em>v5_DiffuseTransmissionColour</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x317IfcColourOrFactorE" title="Ifc2x3::IfcColourOrFactor">IfcColourOrFactor</a> *<em>v6_ReflectionColour</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x317IfcColourOrFactorE" title="Ifc2x3::IfcColourOrFactor">IfcColourOrFactor</a> *<em>v7_SpecularColour</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x326IfcSpecularHighlightSelectE" title="Ifc2x3::IfcSpecularHighlightSelect">IfcSpecularHighlightSelect</a> *<em>v8_SpecularHighlight</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x324IfcReflectanceMethodEnumE" title="Ifc2x3::IfcReflectanceMethodEnum">IfcReflectanceMethodEnum</a>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv4N6Ifc2x324IfcReflectanceMethodEnum5ValueE" title="Ifc2x3::IfcReflectanceMethodEnum::Value">Value</a> <em>v9_ReflectanceMethod</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcSurfaceStyleRendering24IfcSurfaceStyleRenderingEPN6Ifc2x312IfcColourRgbEN5boost8optionalIdEEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x317IfcColourOrFactorEPN6Ifc2x326IfcSpecularHighlightSelectEN6Ifc2x324IfcReflectanceMethodEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcSurfaceStyleRendering5ClassEv">
+<span id="_CPPv3N6Ifc2x324IfcSurfaceStyleRendering5ClassEv"></span><span id="_CPPv2N6Ifc2x324IfcSurfaceStyleRendering5ClassEv"></span><span id="Ifc2x3::IfcSurfaceStyleRendering::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_surface_style_rendering_1afd601fd50071674de7f912d18d42f9f4"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcSurfaceStyleRendering5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_surface_style_refraction.html" title="previous chapter">Class Ifc2x3::IfcSurfaceStyleRefraction</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_surface_style_shading.html" title="next chapter">Class Ifc2x3::IfcSurfaceStyleShading</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_surface_style_rendering.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

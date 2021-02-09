@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ada32a6308da10aef4326dac86f2d3631:
+
+Define SCHEMA_IfcTaskTime_LateStart_IS_OPTIONAL
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTaskTime_LateStart_IS_OPTIONAL

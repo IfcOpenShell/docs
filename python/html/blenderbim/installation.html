@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Installation &#8212; IfcOpenShell 0.0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Scene Properties" href="scene.html" />
+    <link rel="prev" title="BlenderBIM" href="../blenderbim.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>BlenderBIM is packaged as a Blender add-on, so installation is the same as any
+other Blender add-on. The full instructions for end-user installation is
+available at the <a class="reference external" href="https://blenderbim.org/download.html">Get BlenderBIM</a>
+website.</p>
+<p>If you downloaded Blender as a <code class="docutils literal notranslate"><span class="pre">.zip</span></code> file without running an installer, you
+will find the BlenderBIM plug-in installed in:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">blender</span><span class="o">/</span><span class="mf">2.81</span><span class="o">/</span><span class="n">scripts</span><span class="o">/</span><span class="n">addons</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>Otherwise, if you installed Blender using an installation package, the add-ons
+folder depends on which operating system you use. On Linux:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">~/.</span><span class="n">config</span><span class="o">/</span><span class="n">blender</span><span class="o">/</span><span class="mf">2.81</span><span class="o">/</span><span class="n">scripts</span><span class="o">/</span><span class="n">addons</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>On Mac:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="p">{</span><span class="n">YOUR_USER</span><span class="p">}</span><span class="o">/</span><span class="n">Library</span><span class="o">/</span><span class="n">Application</span> <span class="n">Support</span><span class="o">/</span><span class="n">Blender</span><span class="o">/</span><span class="mf">2.81</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>On Windows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="p">{</span><span class="n">YOUR_USER</span><span class="p">}</span>\<span class="n">AppData</span>\<span class="n">Roaming</span>\<span class="n">Blender</span> <span class="n">Foundation</span>\<span class="mf">2.81</span>\<span class="n">scripts</span>\<span class="n">addons</span>
+</pre></div>
+</div>
+<p>Upon installation, a series of files will be created. This is necessary as
+BlenderBIM has a variety of complex dependencies. A full list is below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">blenderbim</span><span class="o">/</span>
+<span class="n">ifcopenshell</span><span class="o">/</span>
+<span class="n">OCC</span><span class="o">/</span>
+<span class="n">pystache</span><span class="o">/</span>
+<span class="n">svgwrite</span><span class="o">/</span>
+<span class="n">deepdiff</span><span class="o">/</span>
+<span class="n">jsonpickle</span><span class="o">/</span>
+<span class="n">lib</span><span class="o">/</span> <span class="c1"># Note: this only exists on MacOS and Linux</span>
+<span class="n">ordered_set</span><span class="o">.</span><span class="n">py</span>
+<span class="n">pyparsing</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>If you are not on Windows, when BlenderBIM first launches, it will create a
+bunch of library files in the <code class="docutils literal notranslate"><span class="pre">2.81/</span></code> folder too. This is a non-standard
+location to place files, but is a hack to allow people to use precompiled builds
+from Conda.</p>
+<p>If you receive an error when enabling the add-on, you may have installed the
+package for the wrong platform.</p>
+<div class="section" id="updating">
+<h2>Updating<a class="headerlink" href="#updating" title="Permalink to this headline">¶</a></h2>
+<p>It is recommended to uninstall the current BlenderBIM add-on before installing
+the latest version to ensure the update goes well.</p>
+</div>
+<div class="section" id="from-source">
+<h2>From Source<a class="headerlink" href="#from-source" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to run the latest bleeding edge version of BlenderBIM without
+having to wait for an official release, since BlenderBIM is coded in Python and
+doesn’t require any compilation. First, install the latest official release, and
+then <a class="reference external" href="https://github.com/IfcOpenShell/IfcOpenShell/archive/v0.6.0.zip">download the latest source code</a>. If you know
+how to use Git, you can also stay up to date like so:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/IfcOpenShell/IfcOpenShell.git
+$ cd IfcOpenShell
+$ git checkout v0.6.0
+</pre></div>
+</div>
+<p>Then, just copy the files from the source code’s
+<code class="docutils literal notranslate"><span class="pre">src/ifcblenderexport/blenderbim/</span></code> folder and replace the files in your
+Blender add-on’s <code class="docutils literal notranslate"><span class="pre">blenderbim/</span></code> folder.</p>
+<p>Restart Blender for the changes to take effect. In <code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">&gt;</span> <span class="pre">Preferences</span> <span class="pre">&gt;</span>
+<span class="pre">Add-ons</span></code> you will see that the version number of BlenderBIM has changed to
+<code class="docutils literal notranslate"><span class="pre">0.0.999999</span></code>, which represents an un-versioned BlenderBIM.</p>
+</div>
+<div class="section" id="uninstalling">
+<h2>Uninstalling<a class="headerlink" href="#uninstalling" title="Permalink to this headline">¶</a></h2>
+<p>You can remove all of the files added by BlenderBIM in the Blender add-ons
+folder and then remove the add-on using the Blender interface through <code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">&gt;</span>
+<span class="pre">Preferences</span> <span class="pre">&gt;</span> <span class="pre">Add-ons</span></code> just like any other add-on.</p>
+<p>If you are not on Windows, then ensure that all library files are deleted in the
+<code class="docutils literal notranslate"><span class="pre">2.81/</span></code> directory. Do not delete any of Blender’s own folders.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ifcopenshell.html">IfcOpenShell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ifcopenshell-python.html">IfcOpenShell-Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ifcconvert.html">IfcConvert</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../blenderbim.html">BlenderBIM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bimtester.html">BIMTester</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ifcdiff.html">IfcDiff</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ifcclash.html">IfcClash</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ifccobie.html">IfcCOBie</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ifcmax.html">IfcMax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bimserver-plugin.html">BIMServer-Plugin</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../blenderbim.html">BlenderBIM</a><ul>
+      <li>Previous: <a href="../blenderbim.html" title="previous chapter">BlenderBIM</a></li>
+      <li>Next: <a href="scene.html" title="next chapter">Scene Properties</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell Contributors.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="../_sources/blenderbim/installation.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

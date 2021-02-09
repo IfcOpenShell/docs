@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a032502be3a181f6fdc748b321a8942b0:
+
+Define SCHEMA_IfcSoundProperties_HAS_IsAttenuating
+==================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSoundProperties_HAS_IsAttenuating

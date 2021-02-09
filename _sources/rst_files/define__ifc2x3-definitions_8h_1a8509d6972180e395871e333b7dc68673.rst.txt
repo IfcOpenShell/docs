@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a8509d6972180e395871e333b7dc68673:
+
+Define SCHEMA_IfcGeneralMaterialProperties_HAS_MassDensity
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcGeneralMaterialProperties_HAS_MassDensity

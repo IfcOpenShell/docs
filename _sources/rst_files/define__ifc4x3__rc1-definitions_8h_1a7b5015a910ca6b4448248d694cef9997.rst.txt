@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a7b5015a910ca6b4448248d694cef9997:
+
+Define SCHEMA_IfcRationalBSplineCurveWithKnots_HAS_WeightsData
+==============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRationalBSplineCurveWithKnots_HAS_WeightsData

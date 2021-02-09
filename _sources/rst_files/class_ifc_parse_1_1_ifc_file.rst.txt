@@ -1,0 +1,35 @@
+.. _exhale_class_class_ifc_parse_1_1_ifc_file:
+
+Class IfcFile
+=============
+
+- Defined in :ref:`file_src_ifcparse_IfcFile.h`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_file_1_1type__iterator`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public IfcHierarchyHelper< Schema >`` (:ref:`exhale_class_class_ifc_hierarchy_helper`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcParse::IfcFile
+   :members:
+   :protected-members:
+   :undoc-members:

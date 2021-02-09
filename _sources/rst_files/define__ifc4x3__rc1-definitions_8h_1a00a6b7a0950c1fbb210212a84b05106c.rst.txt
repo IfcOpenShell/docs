@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a00a6b7a0950c1fbb210212a84b05106c:
+
+Define SCHEMA_IfcSlippageConnectionCondition_SlippageZ_IS_OPTIONAL
+==================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSlippageConnectionCondition_SlippageZ_IS_OPTIONAL

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ac4a3de92bb0fc13c9c4234656c5d22a2:
+
+Define SCHEMA_HAS_IfcSoundPowerMeasure
+======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcSoundPowerMeasure

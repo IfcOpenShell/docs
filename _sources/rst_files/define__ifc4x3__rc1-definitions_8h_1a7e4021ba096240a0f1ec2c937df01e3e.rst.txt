@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a7e4021ba096240a0f1ec2c937df01e3e:
+
+Define SCHEMA_IfcTextureVertex_HAS_Coordinates
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTextureVertex_HAS_Coordinates

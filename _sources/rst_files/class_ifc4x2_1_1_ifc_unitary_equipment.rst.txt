@@ -1,0 +1,31 @@
+.. _exhale_class_class_ifc4x2_1_1_ifc_unitary_equipment:
+
+Class Ifc4x2::IfcUnitaryEquipment
+=================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x2`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x2::IfcEnergyConversionDevice`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_energy_conversion_device`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x2::IfcUnitaryEquipment
+   :members:
+   :protected-members:
+   :undoc-members:

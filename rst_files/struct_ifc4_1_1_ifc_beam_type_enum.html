@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Struct Ifc4::IfcBeamTypeEnum &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct Ifc4::IfcBenchmarkEnum" href="struct_ifc4_1_1_ifc_benchmark_enum.html" />
+    <link rel="prev" title="Struct Ifc4::IfcAudioVisualApplianceTypeEnum" href="struct_ifc4_1_1_ifc_audio_visual_appliance_type_enum.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="struct-ifc4-ifcbeamtypeenum">
+<span id="exhale-struct-struct-ifc4-1-1-ifc-beam-type-enum"></span><h1>Struct Ifc4::IfcBeamTypeEnum<a class="headerlink" href="#struct-ifc4-ifcbeamtypeenum" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This struct is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp struct">
+<dt id="_CPPv4N4Ifc415IfcBeamTypeEnumE">
+<span id="_CPPv3N4Ifc415IfcBeamTypeEnumE"></span><span id="_CPPv2N4Ifc415IfcBeamTypeEnumE"></span><span id="Ifc4::IfcBeamTypeEnum"></span><span class="target" id="struct_ifc4_1_1_ifc_beam_type_enum"></span><em class="property">struct </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcBeamTypeEnum</code><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp enum">
+<dt id="_CPPv4N4Ifc415IfcBeamTypeEnum5ValueE">
+<span id="_CPPv3N4Ifc415IfcBeamTypeEnum5ValueE"></span><span id="_CPPv2N4Ifc415IfcBeamTypeEnum5ValueE"></span><span class="target" id="struct_ifc4_1_1_ifc_beam_type_enum_1a1bc08311bb4e1a22d99ad631bc221f86"></span><em class="property">enum </em><code class="sig-name descname">Value</code><br /></dt>
+<dd><p>Definition from IAI: This enumeration defines the different types of linear elements an <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_beam_type"><span class="std std-ref">IfcBeamType</span></a> object can fulfill:</p>
+<p>BEAM: A standard beam usually used horizontally. JOIST: A beam used to support a floor or ceiling. HOLLOWCORE: A wide often prestressed beam with a hollow-core profile that usually serves as a slab component. LINTEL: A beam or horizontal piece of material over an opening (e.g. door, window). SPANDREL: A tall beam placed on the facade of a building. One tall side is usually finished to provide the exterior of the building. Can be used to support joists or slab elements on its interior side.</p>
+<p><p>NOTE They are also referred to as “spandrel</p>
+<p>panels”, which are parts of a facade and sometimes have supporting consoles for floor slabs integrated.</p>
+</p>
+<p>T_BEAM: A beam that forms part of a slab construction and acts together with the slab which its carries. Such beams are often of T-shape (therefore the English name), but may have other shapes as well, e.g. an L-Shape or an Inverted-T-Shape.</p>
+<p>NOTE In order to distinguish beams by shape, the assigned <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_profile_def"><span class="std std-ref">IfcProfileDef</span></a> subtypes provide the shape type and, if using a subtype of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_parameterized_profile_def"><span class="std std-ref">IfcParameterizedProfileDef</span></a>, also the shape parameterization.</p>
+<p>USERDEFINED: User-defined linear beam element. NOTDEFINED: Undefined linear beam element</p>
+<p>HISTORY New Enumeration in Release IFC2x Edition 2. IFC2x4 CHANGE The enumerators HOLLOWCORE and SPANDREL have been added. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcBeamTypeEnum5Value16IfcBeamType_BEAME">
+<span id="_CPPv3N4Ifc415IfcBeamTypeEnum5Value16IfcBeamType_BEAME"></span><span id="_CPPv2N4Ifc415IfcBeamTypeEnum5Value16IfcBeamType_BEAME"></span><span class="target" id="struct_ifc4_1_1_ifc_beam_type_enum_1a1bc08311bb4e1a22d99ad631bc221f86afa11dc2decba35d38801a604fd56b922"></span><em class="property">enumerator </em><code class="sig-name descname">IfcBeamType_BEAM</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcBeamTypeEnum5Value17IfcBeamType_JOISTE">
+<span id="_CPPv3N4Ifc415IfcBeamTypeEnum5Value17IfcBeamType_JOISTE"></span><span id="_CPPv2N4Ifc415IfcBeamTypeEnum5Value17IfcBeamType_JOISTE"></span><span class="target" id="struct_ifc4_1_1_ifc_beam_type_enum_1a1bc08311bb4e1a22d99ad631bc221f86ab635bf1b5d24844636d0443d6e1b5346"></span><em class="property">enumerator </em><code class="sig-name descname">IfcBeamType_JOIST</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcBeamTypeEnum5Value22IfcBeamType_HOLLOWCOREE">
+<span id="_CPPv3N4Ifc415IfcBeamTypeEnum5Value22IfcBeamType_HOLLOWCOREE"></span><span id="_CPPv2N4Ifc415IfcBeamTypeEnum5Value22IfcBeamType_HOLLOWCOREE"></span><span class="target" id="struct_ifc4_1_1_ifc_beam_type_enum_1a1bc08311bb4e1a22d99ad631bc221f86aba0aab7c8397ffa3371fa547ae557605"></span><em class="property">enumerator </em><code class="sig-name descname">IfcBeamType_HOLLOWCORE</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcBeamTypeEnum5Value18IfcBeamType_LINTELE">
+<span id="_CPPv3N4Ifc415IfcBeamTypeEnum5Value18IfcBeamType_LINTELE"></span><span id="_CPPv2N4Ifc415IfcBeamTypeEnum5Value18IfcBeamType_LINTELE"></span><span class="target" id="struct_ifc4_1_1_ifc_beam_type_enum_1a1bc08311bb4e1a22d99ad631bc221f86a5eb6114b36395be0dd7e7e1348512962"></span><em class="property">enumerator </em><code class="sig-name descname">IfcBeamType_LINTEL</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcBeamTypeEnum5Value20IfcBeamType_SPANDRELE">
+<span id="_CPPv3N4Ifc415IfcBeamTypeEnum5Value20IfcBeamType_SPANDRELE"></span><span id="_CPPv2N4Ifc415IfcBeamTypeEnum5Value20IfcBeamType_SPANDRELE"></span><span class="target" id="struct_ifc4_1_1_ifc_beam_type_enum_1a1bc08311bb4e1a22d99ad631bc221f86a6a81153470d038926e2a6a98a8fe403d"></span><em class="property">enumerator </em><code class="sig-name descname">IfcBeamType_SPANDREL</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcBeamTypeEnum5Value18IfcBeamType_T_BEAME">
+<span id="_CPPv3N4Ifc415IfcBeamTypeEnum5Value18IfcBeamType_T_BEAME"></span><span id="_CPPv2N4Ifc415IfcBeamTypeEnum5Value18IfcBeamType_T_BEAME"></span><span class="target" id="struct_ifc4_1_1_ifc_beam_type_enum_1a1bc08311bb4e1a22d99ad631bc221f86a71a03dedcb71c27227675e27caadb59c"></span><em class="property">enumerator </em><code class="sig-name descname">IfcBeamType_T_BEAM</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcBeamTypeEnum5Value23IfcBeamType_USERDEFINEDE">
+<span id="_CPPv3N4Ifc415IfcBeamTypeEnum5Value23IfcBeamType_USERDEFINEDE"></span><span id="_CPPv2N4Ifc415IfcBeamTypeEnum5Value23IfcBeamType_USERDEFINEDE"></span><span class="target" id="struct_ifc4_1_1_ifc_beam_type_enum_1a1bc08311bb4e1a22d99ad631bc221f86a1e63279c638e3dbed585d545b5ebc47f"></span><em class="property">enumerator </em><code class="sig-name descname">IfcBeamType_USERDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc415IfcBeamTypeEnum5Value22IfcBeamType_NOTDEFINEDE">
+<span id="_CPPv3N4Ifc415IfcBeamTypeEnum5Value22IfcBeamType_NOTDEFINEDE"></span><span id="_CPPv2N4Ifc415IfcBeamTypeEnum5Value22IfcBeamType_NOTDEFINEDE"></span><span class="target" id="struct_ifc4_1_1_ifc_beam_type_enum_1a1bc08311bb4e1a22d99ad631bc221f86a9e472cfec2667998e1c3785d74537e47"></span><em class="property">enumerator </em><code class="sig-name descname">IfcBeamType_NOTDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc415IfcBeamTypeEnum8ToStringE5Value">
+<span id="_CPPv3N4Ifc415IfcBeamTypeEnum8ToStringE5Value"></span><span id="_CPPv2N4Ifc415IfcBeamTypeEnum8ToStringE5Value"></span><span id="Ifc4::IfcBeamTypeEnum::ToString__Value"></span><span class="target" id="struct_ifc4_1_1_ifc_beam_type_enum_1a3b071d7138ebcf09592235fcd0c4ab11"></span>IFC_PARSE_API <em class="property">const</em> char *<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc415IfcBeamTypeEnum5ValueE" title="Ifc4::IfcBeamTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc415IfcBeamTypeEnum10FromStringERKNSt6stringE">
+<span id="_CPPv3N4Ifc415IfcBeamTypeEnum10FromStringERKNSt6stringE"></span><span id="_CPPv2N4Ifc415IfcBeamTypeEnum10FromStringERKNSt6stringE"></span><span id="Ifc4::IfcBeamTypeEnum::FromString__ssCR"></span><span class="target" id="struct_ifc4_1_1_ifc_beam_type_enum_1a42a5749e3cc64d498aa8b8712cf934de"></span>IFC_PARSE_API <a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc415IfcBeamTypeEnum5ValueE" title="Ifc4::IfcBeamTypeEnum::Value">Value</a> <code class="sig-name descname">FromString</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>s</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="struct_ifc4_1_1_ifc_audio_visual_appliance_type_enum.html" title="previous chapter">Struct Ifc4::IfcAudioVisualApplianceTypeEnum</a></li>
+      <li>Next: <a href="struct_ifc4_1_1_ifc_benchmark_enum.html" title="next chapter">Struct Ifc4::IfcBenchmarkEnum</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/struct_ifc4_1_1_ifc_beam_type_enum.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1abf142fe989b457557e078e7fc0f65cd2:
+
+Define SCHEMA_HAS_IfcPolyline
+=============================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcPolyline

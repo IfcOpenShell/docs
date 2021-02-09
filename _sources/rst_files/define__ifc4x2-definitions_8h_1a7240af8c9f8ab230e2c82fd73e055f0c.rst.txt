@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a7240af8c9f8ab230e2c82fd73e055f0c:
+
+Define SCHEMA_IfcOrganizationRelationship_HAS_RelatingOrganization
+==================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcOrganizationRelationship_HAS_RelatingOrganization

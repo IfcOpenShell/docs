@@ -1,0 +1,41 @@
+.. _exhale_class_class_ifc4x2_1_1_ifc_group:
+
+Class Ifc4x2::IfcGroup
+======================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x2`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x2::IfcObject`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_object`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x2::IfcAsset`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_asset`)
+- ``public Ifc4x2::IfcInventory`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_inventory`)
+- ``public Ifc4x2::IfcStructuralLoadGroup`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_structural_load_group`)
+- ``public Ifc4x2::IfcStructuralResultGroup`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_structural_result_group`)
+- ``public Ifc4x2::IfcSystem`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_system`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x2::IfcGroup
+   :members:
+   :protected-members:
+   :undoc-members:

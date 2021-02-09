@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a4a2f8fedcf64c2970e5942e74bf995e9:
+
+Define SCHEMA_IfcMaterialLayer_Material_IS_OPTIONAL
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMaterialLayer_Material_IS_OPTIONAL

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a6da6b6400d0198fb2c77d09590c718b0:
+
+Define SCHEMA_IfcGeometricRepresentationContext_HAS_TrueNorth
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcGeometricRepresentationContext_HAS_TrueNorth

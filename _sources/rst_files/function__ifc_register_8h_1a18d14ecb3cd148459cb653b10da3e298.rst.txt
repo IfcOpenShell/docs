@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_register_8h_1a18d14ecb3cd148459cb653b10da3e298:
+
+Function FACE(IfcRectangleProfileDef)
+=====================================
+
+- Defined in :ref:`file_src_ifcgeom_IfcRegister.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: FACE(IfcRectangleProfileDef)

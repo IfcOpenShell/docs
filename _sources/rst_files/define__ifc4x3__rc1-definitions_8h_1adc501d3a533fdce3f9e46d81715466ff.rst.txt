@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1adc501d3a533fdce3f9e46d81715466ff:
+
+Define SCHEMA_HAS_IfcNumericMeasure
+===================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcNumericMeasure

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a43fd6491a6a67c327774e284d0a5f90c:
+
+Define SCHEMA_HAS_IfcSanitaryTerminal
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcSanitaryTerminal

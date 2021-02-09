@@ -1,0 +1,40 @@
+.. _exhale_class_class_ifc2x3_1_1_ifc_dimension_curve_directed_callout:
+
+Class Ifc2x3::IfcDimensionCurveDirectedCallout
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc2x3::IfcDraughtingCallout`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_draughting_callout`)
+
+
+Derived Types
+*************
+
+- ``public Ifc2x3::IfcAngularDimension`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_angular_dimension`)
+- ``public Ifc2x3::IfcDiameterDimension`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_diameter_dimension`)
+- ``public Ifc2x3::IfcLinearDimension`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_linear_dimension`)
+- ``public Ifc2x3::IfcRadiusDimension`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_radius_dimension`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc2x3::IfcDimensionCurveDirectedCallout
+   :members:
+   :protected-members:
+   :undoc-members:

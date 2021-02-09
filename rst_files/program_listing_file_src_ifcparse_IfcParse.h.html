@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Listing for File IfcParse.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="program-listing-for-file-ifcparse-h">
+<span id="program-listing-file-src-ifcparse-ifcparse-h"></span><h1>Program Listing for File IfcParse.h<a class="headerlink" href="#program-listing-for-file-ifcparse-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_ifcparse_IfcParse.h.html#file-src-ifcparse-ifcparse-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/ifcparse/IfcParse.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/********************************************************************************</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* This file is part of IfcOpenShell.                                           *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* IfcOpenShell is free software: you can redistribute it and/or modify         *</span>
+<span class="cm">* it under the terms of the Lesser GNU General Public License as published by  *</span>
+<span class="cm">* the Free Software Foundation, either version 3.0 of the License, or          *</span>
+<span class="cm">* (at your option) any later version.                                          *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* IfcOpenShell is distributed in the hope that it will be useful,              *</span>
+<span class="cm">* but WITHOUT ANY WARRANTY; without even the implied warranty of               *</span>
+<span class="cm">* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 *</span>
+<span class="cm">* Lesser GNU General Public License for more details.                          *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* You should have received a copy of the Lesser GNU General Public License     *</span>
+<span class="cm">* along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.         *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">********************************************************************************/</span>
+
+<span class="cm">/********************************************************************************</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * This file provides functions for loading an IFC file into memory and access  *</span>
+<span class="cm"> * its entities either by ID, by an IfcSchema::Type or by reference             *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> ********************************************************************************/</span>
+
+<span class="cp">#ifndef IFCPARSE_H</span>
+<span class="cp">#define IFCPARSE_H</span>
+
+<span class="cp">#define IFCOPENSHELL_VERSION &quot;0.6.0b0&quot;</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;sstream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;fstream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;cstring&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;map&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;boost/shared_ptr.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;boost/dynamic_bitset.hpp&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;ifc_parse_api.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcCharacterDecoder.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcBaseClass.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcLogger.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/Argument.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcSpfStream.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#if defined(__clang__)</span>
+<span class="cp"># define my_thread_local thread_local</span>
+<span class="cp">#elif defined(__GNUC__)</span>
+<span class="cp"># define my_thread_local __thread</span>
+<span class="cp">#elif __STDC_VERSION__ &gt;= 201112L</span>
+<span class="cp"># define my_thread_local _Thread_local</span>
+<span class="cp">#elif defined(_MSC_VER)</span>
+<span class="cp"># define my_thread_local __declspec(thread)</span>
+<span class="cp">#else</span>
+<span class="cp"># error Cannot define thread_local</span>
+<span class="cp">#endif</span>
+
+<span class="k">namespace</span> <span class="n">IfcParse</span> <span class="p">{</span>
+
+    <span class="k">class</span> <span class="nc">IfcFile</span><span class="p">;</span>
+    <span class="k">class</span> <span class="nc">IfcSpfLexer</span><span class="p">;</span>
+
+    <span class="k">enum</span> <span class="nc">TokenType</span> <span class="p">{</span>
+        <span class="n">Token_NONE</span><span class="p">,</span>
+        <span class="n">Token_STRING</span><span class="p">,</span>
+        <span class="n">Token_IDENTIFIER</span><span class="p">,</span>
+        <span class="n">Token_OPERATOR</span><span class="p">,</span>
+        <span class="n">Token_ENUMERATION</span><span class="p">,</span>
+        <span class="n">Token_KEYWORD</span><span class="p">,</span>
+        <span class="n">Token_INT</span><span class="p">,</span>
+        <span class="n">Token_BOOL</span><span class="p">,</span>
+        <span class="n">Token_FLOAT</span><span class="p">,</span>
+        <span class="n">Token_BINARY</span>
+    <span class="p">};</span>
+
+    <span class="k">struct</span> <span class="nc">Token</span> <span class="p">{</span>
+        <span class="n">IfcSpfLexer</span><span class="o">*</span> <span class="n">lexer</span><span class="p">;</span> <span class="c1">//TODO: remove it from here</span>
+        <span class="kt">unsigned</span> <span class="n">startPos</span><span class="p">;</span>
+        <span class="n">TokenType</span> <span class="n">type</span><span class="p">;</span>
+        <span class="k">union</span> <span class="p">{</span>
+            <span class="kt">bool</span> <span class="n">value_bool</span><span class="p">;</span>      <span class="c1">//types: BOOL</span>
+            <span class="kt">char</span> <span class="n">value_char</span><span class="p">;</span>      <span class="c1">//types: OPERATOR</span>
+            <span class="kt">int</span> <span class="n">value_int</span><span class="p">;</span>        <span class="c1">//types: INT, IDENTIFIER</span>
+            <span class="kt">double</span> <span class="n">value_double</span><span class="p">;</span>  <span class="c1">//types: FLOAT</span>
+        <span class="p">};</span>
+
+        <span class="n">Token</span><span class="p">()</span> <span class="o">:</span> <span class="n">lexer</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">startPos</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">type</span><span class="p">(</span><span class="n">Token_NONE</span><span class="p">)</span> <span class="p">{}</span>
+        <span class="n">Token</span><span class="p">(</span><span class="n">IfcSpfLexer</span><span class="o">*</span> <span class="n">_lexer</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="n">_startPos</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="cm">/*_endPos*/</span><span class="p">,</span> <span class="n">TokenType</span> <span class="n">_type</span><span class="p">)</span>
+            <span class="o">:</span> <span class="n">lexer</span><span class="p">(</span><span class="n">_lexer</span><span class="p">),</span> <span class="n">startPos</span><span class="p">(</span><span class="n">_startPos</span><span class="p">),</span> <span class="n">type</span><span class="p">(</span><span class="n">_type</span><span class="p">)</span> <span class="p">{}</span>
+    <span class="p">};</span>
+
+    <span class="k">class</span> <span class="nc">IFC_PARSE_API</span> <span class="n">TokenFunc</span> <span class="p">{</span>
+    <span class="k">private</span><span class="o">:</span>
+        <span class="k">static</span> <span class="kt">bool</span> <span class="n">startsWith</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">,</span> <span class="kt">char</span> <span class="n">c</span><span class="p">);</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="c1">// static unsigned int Offset(const Token&amp; t);</span>
+        <span class="k">static</span> <span class="kt">bool</span> <span class="n">isString</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+        <span class="k">static</span> <span class="kt">bool</span> <span class="n">isIdentifier</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+        <span class="k">static</span> <span class="kt">bool</span> <span class="n">isOperator</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+        <span class="k">static</span> <span class="kt">bool</span> <span class="n">isOperator</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">,</span> <span class="kt">char</span> <span class="n">op</span><span class="p">);</span>
+        <span class="k">static</span> <span class="kt">bool</span> <span class="n">isEnumeration</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+        <span class="k">static</span> <span class="kt">bool</span> <span class="n">isKeyword</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+        <span class="k">static</span> <span class="kt">bool</span> <span class="n">isInt</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+        <span class="k">static</span> <span class="kt">bool</span> <span class="n">isBool</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+        <span class="k">static</span> <span class="kt">bool</span> <span class="n">isFloat</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+        <span class="k">static</span> <span class="kt">bool</span> <span class="n">isBinary</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+        <span class="k">static</span> <span class="kt">int</span> <span class="n">asInt</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+        <span class="k">static</span> <span class="kt">int</span> <span class="n">asIdentifier</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+        <span class="k">static</span> <span class="kt">bool</span> <span class="n">asBool</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+        <span class="k">static</span> <span class="kt">double</span> <span class="n">asFloat</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+        <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">asString</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+        <span class="k">static</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="o">&amp;</span><span class="n">asStringRef</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+        <span class="k">static</span> <span class="n">boost</span><span class="o">::</span><span class="n">dynamic_bitset</span><span class="o">&lt;&gt;</span> <span class="n">asBinary</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+        <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">toString</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+    <span class="p">};</span>
+
+    <span class="c1">//</span>
+    <span class="c1">// Functions for creating Tokens from an arbitary file offset</span>
+    <span class="c1">// The first 4 bits are reserved for Tokens of type ()=,;$*</span>
+    <span class="c1">//</span>
+    <span class="n">Token</span> <span class="nf">OperatorTokenPtr</span><span class="p">(</span><span class="n">IfcSpfLexer</span><span class="o">*</span> <span class="n">tokens</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="n">start</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="n">end</span><span class="p">);</span>
+    <span class="n">Token</span> <span class="nf">GeneralTokenPtr</span><span class="p">(</span><span class="n">IfcSpfLexer</span><span class="o">*</span> <span class="n">tokens</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="n">start</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="n">end</span><span class="p">);</span>
+    <span class="n">Token</span> <span class="nf">NoneTokenPtr</span><span class="p">();</span>
+
+    <span class="k">class</span> <span class="nc">IFC_PARSE_API</span> <span class="n">IfcSpfLexer</span> <span class="p">{</span>
+    <span class="k">private</span><span class="o">:</span>
+        <span class="n">IfcCharacterDecoder</span><span class="o">*</span> <span class="n">decoder</span><span class="p">;</span>
+        <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">skipWhitespace</span><span class="p">();</span>
+        <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">skipComment</span><span class="p">();</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="o">&amp;</span><span class="n">GetTempString</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
+            <span class="k">static</span> <span class="n">my_thread_local</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">s</span><span class="p">;</span>
+            <span class="k">return</span> <span class="n">s</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">IfcSpfStream</span><span class="o">*</span> <span class="n">stream</span><span class="p">;</span>
+        <span class="n">IfcFile</span><span class="o">*</span> <span class="n">file</span><span class="p">;</span>
+        <span class="n">IfcSpfLexer</span><span class="p">(</span><span class="n">IfcSpfStream</span><span class="o">*</span> <span class="n">s</span><span class="p">,</span> <span class="n">IfcFile</span><span class="o">*</span> <span class="n">f</span><span class="p">);</span>
+        <span class="n">Token</span> <span class="nf">Next</span><span class="p">();</span>
+        <span class="o">~</span><span class="n">IfcSpfLexer</span><span class="p">();</span>
+        <span class="kt">void</span> <span class="nf">TokenString</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">offset</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="o">&amp;</span><span class="n">result</span><span class="p">);</span>
+    <span class="p">};</span>
+
+    <span class="k">class</span> <span class="nc">IFC_PARSE_API</span> <span class="nl">ArgumentList</span><span class="p">:</span> <span class="k">public</span> <span class="n">Argument</span> <span class="p">{</span>
+    <span class="k">private</span><span class="o">:</span>
+        <span class="kt">size_t</span> <span class="n">size_</span><span class="p">;</span>
+        <span class="n">Argument</span><span class="o">**</span> <span class="n">list_</span><span class="p">;</span>
+
+    <span class="k">public</span><span class="o">:</span>
+        <span class="n">ArgumentList</span><span class="p">()</span> <span class="o">:</span> <span class="n">size_</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">list_</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="p">{}</span>
+        <span class="n">ArgumentList</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">n</span><span class="p">)</span> <span class="o">:</span> <span class="n">size_</span><span class="p">(</span><span class="n">n</span><span class="p">),</span> <span class="n">list_</span><span class="p">(</span><span class="k">new</span> <span class="n">Argument</span><span class="o">*</span><span class="p">[</span><span class="n">size_</span><span class="p">])</span> <span class="p">{}</span>
+        <span class="o">~</span><span class="n">ArgumentList</span><span class="p">();</span>
+
+        <span class="kt">void</span> <span class="nf">read</span><span class="p">(</span><span class="n">IfcSpfLexer</span><span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">ids</span><span class="p">);</span>
+
+        <span class="n">IfcUtil</span><span class="o">::</span><span class="n">ArgumentType</span> <span class="n">type</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+        <span class="k">operator</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+        <span class="k">operator</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+        <span class="k">operator</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+        <span class="k">operator</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">boost</span><span class="o">::</span><span class="n">dynamic_bitset</span><span class="o">&lt;&gt;</span> <span class="o">&gt;</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+        <span class="k">operator</span> <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+        <span class="k">operator</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="o">&gt;</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+        <span class="k">operator</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="o">&gt;</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+        <span class="k">operator</span> <span class="n">IfcEntityListList</span><span class="o">::</span><span class="n">ptr</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+        <span class="kt">bool</span> <span class="nf">isNull</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+        <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">size</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+        <span class="n">Argument</span><span class="o">*</span> <span class="k">operator</span> <span class="p">[]</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">i</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">toString</span><span class="p">(</span><span class="kt">bool</span> <span class="n">upper</span><span class="o">=</span><span class="nb">false</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+        <span class="n">Argument</span><span class="o">**&amp;</span> <span class="nf">arguments</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">list_</span><span class="p">;</span> <span class="p">}</span>
+        <span class="kt">size_t</span><span class="o">&amp;</span> <span class="nf">size</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">size_</span><span class="p">;</span> <span class="p">}</span>
+    <span class="p">};</span>
+
+
+    <span class="k">class</span> <span class="nc">IFC_PARSE_API</span> <span class="nl">NullArgument</span> <span class="p">:</span> <span class="k">public</span> <span class="n">Argument</span> <span class="p">{</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="n">NullArgument</span><span class="p">()</span> <span class="p">{}</span>
+        <span class="n">IfcUtil</span><span class="o">::</span><span class="n">ArgumentType</span> <span class="n">type</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">Argument_NULL</span><span class="p">;</span> <span class="p">}</span>
+        <span class="kt">bool</span> <span class="n">isNull</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="nb">true</span><span class="p">;</span> <span class="p">}</span>
+        <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">size</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span> <span class="p">}</span>
+        <span class="n">Argument</span><span class="o">*</span> <span class="k">operator</span> <span class="p">[]</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="cm">/*i*/</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span> <span class="k">throw</span> <span class="nf">IfcException</span><span class="p">(</span><span class="s">&quot;Argument is not a list of attributes&quot;</span><span class="p">);</span> <span class="p">}</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">toString</span><span class="p">(</span><span class="kt">bool</span> <span class="cm">/*upper=false*/</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;$&quot;</span><span class="p">;</span> <span class="p">}</span>
+    <span class="p">};</span>
+
+    <span class="k">class</span> <span class="nc">IFC_PARSE_API</span> <span class="nl">TokenArgument</span> <span class="p">:</span> <span class="k">public</span> <span class="n">Argument</span> <span class="p">{</span>
+    <span class="k">private</span><span class="o">:</span>
+
+    <span class="k">public</span><span class="o">:</span>
+        <span class="n">Token</span> <span class="n">token</span><span class="p">;</span>
+        <span class="n">TokenArgument</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+
+        <span class="n">IfcUtil</span><span class="o">::</span><span class="n">ArgumentType</span> <span class="n">type</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+        <span class="k">operator</span> <span class="nf">int</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+        <span class="k">operator</span> <span class="nf">bool</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+        <span class="k">operator</span> <span class="nf">double</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+        <span class="k">operator</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+        <span class="k">operator</span> <span class="n">boost</span><span class="o">::</span><span class="n">dynamic_bitset</span><span class="o">&lt;&gt;</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+        <span class="k">operator</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+        <span class="kt">bool</span> <span class="nf">isNull</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+        <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">size</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+        <span class="n">Argument</span><span class="o">*</span> <span class="k">operator</span> <span class="p">[]</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">i</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">toString</span><span class="p">(</span><span class="kt">bool</span> <span class="n">upper</span><span class="o">=</span><span class="nb">false</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="p">};</span>
+
+    <span class="k">class</span> <span class="nc">IFC_PARSE_API</span> <span class="nl">EntityArgument</span> <span class="p">:</span> <span class="k">public</span> <span class="n">Argument</span> <span class="p">{</span>
+    <span class="k">private</span><span class="o">:</span>
+        <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">entity</span><span class="p">;</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="n">EntityArgument</span><span class="p">(</span><span class="k">const</span> <span class="n">Token</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+        <span class="o">~</span><span class="n">EntityArgument</span><span class="p">();</span>
+
+        <span class="n">IfcUtil</span><span class="o">::</span><span class="n">ArgumentType</span> <span class="n">type</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+        <span class="k">operator</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+        <span class="kt">bool</span> <span class="nf">isNull</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+        <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">size</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+        <span class="n">Argument</span><span class="o">*</span> <span class="k">operator</span> <span class="p">[]</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">i</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">toString</span><span class="p">(</span><span class="kt">bool</span> <span class="n">upper</span><span class="o">=</span><span class="nb">false</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="p">};</span>
+
+    <span class="n">IFC_PARSE_API</span> <span class="n">IfcEntityInstanceData</span><span class="o">*</span> <span class="n">read</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">IfcFile</span><span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="kt">unsigned</span><span class="o">&gt;</span> <span class="n">offset</span> <span class="o">=</span> <span class="n">boost</span><span class="o">::</span><span class="n">none</span><span class="p">);</span>
+
+    <span class="n">IFC_PARSE_API</span> <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">traverse</span><span class="p">(</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">instance</span><span class="p">,</span> <span class="kt">int</span> <span class="n">max_level</span> <span class="o">=</span> <span class="mi">-1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">IFC_PARSE_API</span> <span class="n">std</span><span class="o">::</span><span class="n">ostream</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">ostream</span><span class="o">&amp;</span> <span class="n">os</span><span class="p">,</span> <span class="k">const</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcFile</span><span class="o">&amp;</span> <span class="n">f</span><span class="p">);</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/program_listing_file_src_ifcparse_IfcParse.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

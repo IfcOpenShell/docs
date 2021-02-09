@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a5097b27b2e1d5d45ac8c95e940abf6b5:
+
+Define SCHEMA_IfcVirtualGridIntersection_HAS_IntersectingAxes
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcVirtualGridIntersection_HAS_IntersectingAxes

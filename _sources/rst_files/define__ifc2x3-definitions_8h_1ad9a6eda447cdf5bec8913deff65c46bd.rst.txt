@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ad9a6eda447cdf5bec8913deff65c46bd:
+
+Define SCHEMA_IfcConstructionResource_HAS_ResourceGroup
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConstructionResource_HAS_ResourceGroup

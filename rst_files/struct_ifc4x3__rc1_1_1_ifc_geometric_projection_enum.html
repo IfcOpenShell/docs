@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Struct Ifc4x3_rc1::IfcGeometricProjectionEnum &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct Ifc4x3_rc1::IfcGlobalOrLocalEnum" href="struct_ifc4x3__rc1_1_1_ifc_global_or_local_enum.html" />
+    <link rel="prev" title="Struct Ifc4x3_rc1::IfcGeographicElementTypeEnum" href="struct_ifc4x3__rc1_1_1_ifc_geographic_element_type_enum.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="struct-ifc4x3-rc1-ifcgeometricprojectionenum">
+<span id="exhale-struct-struct-ifc4x3-rc1-1-1-ifc-geometric-projection-enum"></span><h1>Struct Ifc4x3_rc1::IfcGeometricProjectionEnum<a class="headerlink" href="#struct-ifc4x3-rc1-ifcgeometricprojectionenum" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x3_rc1.h.html#file-src-ifcparse-ifc4x3-rc1-h"><span class="std std-ref">File Ifc4x3_rc1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This struct is a nested type of <a class="reference internal" href="struct_ifc4x3__rc1.html#exhale-struct-struct-ifc4x3-rc1"><span class="std std-ref">Struct Ifc4x3_rc1</span></a>.</p>
+</div>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp struct">
+<dt id="_CPPv4N10Ifc4x3_rc126IfcGeometricProjectionEnumE">
+<span id="_CPPv3N10Ifc4x3_rc126IfcGeometricProjectionEnumE"></span><span id="_CPPv2N10Ifc4x3_rc126IfcGeometricProjectionEnumE"></span><span id="Ifc4x3_rc1::IfcGeometricProjectionEnum"></span><span class="target" id="struct_ifc4x3__rc1_1_1_ifc_geometric_projection_enum"></span><em class="property">struct </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv410Ifc4x3_rc1" title="Ifc4x3_rc1">Ifc4x3_rc1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcGeometricProjectionEnum</code><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp enum">
+<dt id="_CPPv4N10Ifc4x3_rc126IfcGeometricProjectionEnum5ValueE">
+<span id="_CPPv3N10Ifc4x3_rc126IfcGeometricProjectionEnum5ValueE"></span><span id="_CPPv2N10Ifc4x3_rc126IfcGeometricProjectionEnum5ValueE"></span><span class="target" id="struct_ifc4x3__rc1_1_1_ifc_geometric_projection_enum_1a162ef9dad743c28049dc1426d8e09cc5"></span><em class="property">enum </em><code class="sig-name descname">Value</code><br /></dt>
+<dd><p><a class="reference internal" href="#struct_ifc4x3__rc1_1_1_ifc_geometric_projection_enum"><span class="std std-ref">IfcGeometricProjectionEnum</span></a> defines the various representation types that can be semantically distinguished. Often different levels of detail of the shape representation are controlled by the representation type.</p>
+<p>GRAPH_VIEW: Geometric display representation that shows an abstract, often 1D element representation, e.g. representing a wall by its axis line. SKETCH_VIEW: Geometric display representation that shows an abstract, often 2D element representation, e.g. representing a wall by its two foot print edges, surpressing any inner layer representation. MODEL_VIEW: Geometric display representation that shows a full 3D element representation, e.g. representing a wall by its volumetric body. PLAN_VIEW: Geometric display representation that shows a full 2D element representation, the level of detail often depends on the target scale, e.g. representing a wall by its two foot print edges and the edges of all inner layers. The projection is shown in ground view as seen from above. REFLECTED_PLAN_VIEW: Geometric display representation that shows a full 2D element representation, the level of detail often depends on the target scale, e.g. representing a wall by its two foot print edges and the edges of all inner layers. The projection is shown in ground view as seen from below. SECTION_VIEW: Geometric display representation that shows a full 2D element representation, the level of detail often depends on the target scale, e.g. representing a wall by its two inner/outer edges and the edges of all inner layers, if the element is cut by the section line. ELEVATION_VIEW: Geometric display representation that shows a full 2D element representation, the level of detail often depends on the target scale, e.g. representing a wall by its bounding edges if the element is within an elevation view. USERDEFINED: A user defined specification is given by the value of the UserDefinedTargetView attribute. NOTDEFINED: No specification given.</p>
+<p>HISTORY: New Type in Release IFC2x2. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value33IfcGeometricProjection_GRAPH_VIEWE">
+<span id="_CPPv3N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value33IfcGeometricProjection_GRAPH_VIEWE"></span><span id="_CPPv2N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value33IfcGeometricProjection_GRAPH_VIEWE"></span><span class="target" id="struct_ifc4x3__rc1_1_1_ifc_geometric_projection_enum_1a162ef9dad743c28049dc1426d8e09cc5a5d6b207889c0c9005b166f0920acc857"></span><em class="property">enumerator </em><code class="sig-name descname">IfcGeometricProjection_GRAPH_VIEW</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value34IfcGeometricProjection_SKETCH_VIEWE">
+<span id="_CPPv3N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value34IfcGeometricProjection_SKETCH_VIEWE"></span><span id="_CPPv2N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value34IfcGeometricProjection_SKETCH_VIEWE"></span><span class="target" id="struct_ifc4x3__rc1_1_1_ifc_geometric_projection_enum_1a162ef9dad743c28049dc1426d8e09cc5aab8116bd8e6725e0e85c64c1ced34d30"></span><em class="property">enumerator </em><code class="sig-name descname">IfcGeometricProjection_SKETCH_VIEW</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value33IfcGeometricProjection_MODEL_VIEWE">
+<span id="_CPPv3N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value33IfcGeometricProjection_MODEL_VIEWE"></span><span id="_CPPv2N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value33IfcGeometricProjection_MODEL_VIEWE"></span><span class="target" id="struct_ifc4x3__rc1_1_1_ifc_geometric_projection_enum_1a162ef9dad743c28049dc1426d8e09cc5a25c3ed49434f715de4b70461266811d0"></span><em class="property">enumerator </em><code class="sig-name descname">IfcGeometricProjection_MODEL_VIEW</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value32IfcGeometricProjection_PLAN_VIEWE">
+<span id="_CPPv3N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value32IfcGeometricProjection_PLAN_VIEWE"></span><span id="_CPPv2N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value32IfcGeometricProjection_PLAN_VIEWE"></span><span class="target" id="struct_ifc4x3__rc1_1_1_ifc_geometric_projection_enum_1a162ef9dad743c28049dc1426d8e09cc5acee2a824ce938eaeab2a8252beda55ca"></span><em class="property">enumerator </em><code class="sig-name descname">IfcGeometricProjection_PLAN_VIEW</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value42IfcGeometricProjection_REFLECTED_PLAN_VIEWE">
+<span id="_CPPv3N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value42IfcGeometricProjection_REFLECTED_PLAN_VIEWE"></span><span id="_CPPv2N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value42IfcGeometricProjection_REFLECTED_PLAN_VIEWE"></span><span class="target" id="struct_ifc4x3__rc1_1_1_ifc_geometric_projection_enum_1a162ef9dad743c28049dc1426d8e09cc5ad7f8b18cee16b80ff71d1982a058a650"></span><em class="property">enumerator </em><code class="sig-name descname">IfcGeometricProjection_REFLECTED_PLAN_VIEW</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value35IfcGeometricProjection_SECTION_VIEWE">
+<span id="_CPPv3N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value35IfcGeometricProjection_SECTION_VIEWE"></span><span id="_CPPv2N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value35IfcGeometricProjection_SECTION_VIEWE"></span><span class="target" id="struct_ifc4x3__rc1_1_1_ifc_geometric_projection_enum_1a162ef9dad743c28049dc1426d8e09cc5ae3f3fac483519073922f49a47e330536"></span><em class="property">enumerator </em><code class="sig-name descname">IfcGeometricProjection_SECTION_VIEW</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value37IfcGeometricProjection_ELEVATION_VIEWE">
+<span id="_CPPv3N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value37IfcGeometricProjection_ELEVATION_VIEWE"></span><span id="_CPPv2N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value37IfcGeometricProjection_ELEVATION_VIEWE"></span><span class="target" id="struct_ifc4x3__rc1_1_1_ifc_geometric_projection_enum_1a162ef9dad743c28049dc1426d8e09cc5af26d490be9fe90583aac5a1569676cd3"></span><em class="property">enumerator </em><code class="sig-name descname">IfcGeometricProjection_ELEVATION_VIEW</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value34IfcGeometricProjection_USERDEFINEDE">
+<span id="_CPPv3N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value34IfcGeometricProjection_USERDEFINEDE"></span><span id="_CPPv2N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value34IfcGeometricProjection_USERDEFINEDE"></span><span class="target" id="struct_ifc4x3__rc1_1_1_ifc_geometric_projection_enum_1a162ef9dad743c28049dc1426d8e09cc5a7f04bee059e6a12ae6ae7a9528aafea5"></span><em class="property">enumerator </em><code class="sig-name descname">IfcGeometricProjection_USERDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value33IfcGeometricProjection_NOTDEFINEDE">
+<span id="_CPPv3N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value33IfcGeometricProjection_NOTDEFINEDE"></span><span id="_CPPv2N10Ifc4x3_rc126IfcGeometricProjectionEnum5Value33IfcGeometricProjection_NOTDEFINEDE"></span><span class="target" id="struct_ifc4x3__rc1_1_1_ifc_geometric_projection_enum_1a162ef9dad743c28049dc1426d8e09cc5af7397b4af7887a350cd52b3c28311300"></span><em class="property">enumerator </em><code class="sig-name descname">IfcGeometricProjection_NOTDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc126IfcGeometricProjectionEnum8ToStringE5Value">
+<span id="_CPPv3N10Ifc4x3_rc126IfcGeometricProjectionEnum8ToStringE5Value"></span><span id="_CPPv2N10Ifc4x3_rc126IfcGeometricProjectionEnum8ToStringE5Value"></span><span id="Ifc4x3_rc1::IfcGeometricProjectionEnum::ToString__Value"></span><span class="target" id="struct_ifc4x3__rc1_1_1_ifc_geometric_projection_enum_1a0a611fe004d50a3d41493ff84bcf9930"></span>IFC_PARSE_API <em class="property">const</em> char *<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc126IfcGeometricProjectionEnum5ValueE" title="Ifc4x3_rc1::IfcGeometricProjectionEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10Ifc4x3_rc126IfcGeometricProjectionEnum10FromStringERKNSt6stringE">
+<span id="_CPPv3N10Ifc4x3_rc126IfcGeometricProjectionEnum10FromStringERKNSt6stringE"></span><span id="_CPPv2N10Ifc4x3_rc126IfcGeometricProjectionEnum10FromStringERKNSt6stringE"></span><span id="Ifc4x3_rc1::IfcGeometricProjectionEnum::FromString__ssCR"></span><span class="target" id="struct_ifc4x3__rc1_1_1_ifc_geometric_projection_enum_1a905701308a8c2854a1d48a53c127789d"></span>IFC_PARSE_API <a class="reference internal" href="struct_ifc4x3__rc1.html#_CPPv4N10Ifc4x3_rc126IfcGeometricProjectionEnum5ValueE" title="Ifc4x3_rc1::IfcGeometricProjectionEnum::Value">Value</a> <code class="sig-name descname">FromString</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>s</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="struct_ifc4x3__rc1_1_1_ifc_geographic_element_type_enum.html" title="previous chapter">Struct Ifc4x3_rc1::IfcGeographicElementTypeEnum</a></li>
+      <li>Next: <a href="struct_ifc4x3__rc1_1_1_ifc_global_or_local_enum.html" title="next chapter">Struct Ifc4x3_rc1::IfcGlobalOrLocalEnum</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/struct_ifc4x3__rc1_1_1_ifc_geometric_projection_enum.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

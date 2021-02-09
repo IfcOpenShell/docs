@@ -1,0 +1,44 @@
+.. _exhale_class_class_ifc4x3__rc1_1_1_ifc_element_type:
+
+Class Ifc4x3_rc1::IfcElementType
+================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x3__rc1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x3_rc1::IfcTypeProduct`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_type_product`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x3_rc1::IfcBuiltElementType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_built_element_type`)
+- ``public Ifc4x3_rc1::IfcCivilElementType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_civil_element_type`)
+- ``public Ifc4x3_rc1::IfcDistributionElementType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_distribution_element_type`)
+- ``public Ifc4x3_rc1::IfcElementAssemblyType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_element_assembly_type`)
+- ``public Ifc4x3_rc1::IfcElementComponentType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_element_component_type`)
+- ``public Ifc4x3_rc1::IfcFurnishingElementType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_furnishing_element_type`)
+- ``public Ifc4x3_rc1::IfcGeographicElementType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_geographic_element_type`)
+- ``public Ifc4x3_rc1::IfcTransportElementType`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_transport_element_type`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x3_rc1::IfcElementType
+   :members:
+   :protected-members:
+   :undoc-members:

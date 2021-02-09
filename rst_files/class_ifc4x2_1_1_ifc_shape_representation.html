@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcShapeRepresentation &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcShearModulusMeasure" href="class_ifc4x2_1_1_ifc_shear_modulus_measure.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcShapeModel" href="class_ifc4x2_1_1_ifc_shape_model.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcshaperepresentation">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-shape-representation"></span><h1>Class Ifc4x2::IfcShapeRepresentation<a class="headerlink" href="#class-ifc4x2-ifcshaperepresentation" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcShapeModel</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_shape_model.html#exhale-class-class-ifc4x2-1-1-ifc-shape-model"><span class="std std-ref">Class Ifc4x2::IfcShapeModel</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x222IfcShapeRepresentationE">
+<span id="_CPPv3N6Ifc4x222IfcShapeRepresentationE"></span><span id="_CPPv2N6Ifc4x222IfcShapeRepresentationE"></span><span id="Ifc4x2::IfcShapeRepresentation"></span><span class="target" id="class_ifc4x2_1_1_ifc_shape_representation"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcShapeRepresentation</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_shape_model.html#_CPPv4N6Ifc4x213IfcShapeModelE" title="Ifc4x2::IfcShapeModel">IfcShapeModel</a><a class="headerlink" href="#_CPPv4N6Ifc4x222IfcShapeRepresentationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> represents the concept of a particular geometric representation of a product or a product component within a specific geometric representation context. The inherited attribute RepresentationType is used to define the geometric model used for the shape representation (for example, ‘SweptSolid’, or ‘Brep’), the inherited attribute RepresentationIdentifier is used to denote the part of the representation captured by the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> (for example, ‘Axis’, ‘Body’).</p>
+<p>Several representation identifiers for shape representation are included as predefined values for RepresentationIdentifier:</p>
+<p>Box Bounding box as simplified 3D box geometry of an element</p>
+<p>Annotation 2D annotations not representing elements</p>
+<p>Axis 2D or 3D Axis, or single line, representation of an element</p>
+<p>FootPrint 2D Foot print, or double line, representation of an element, projected to ground view</p>
+<p>Surface 3D Surface representation, e.g. of an analytical surface, of an elementplane)</p>
+<p>Body 3D Body representation, e.g. as wireframe, surface, or solid model, of an element</p>
+<p>Lighting Representation of emitting light as a light source within a shape representation</p>
+<p>Several representation types for shape representation are included as predefined values for RepresentationType:</p>
+<p>Curve2D 2 dimensional curve</p>
+<p>Curve3D 3 dimensional curve</p>
+<p>Surface2D 2 dimensional surface (a region on ground view)</p>
+<p>Surface3D 3 dimensional surface</p>
+<p>GeometricSet points, curves, surfaces (2 or 3 dimensional)</p>
+<p>GeometricCurveSet points, curves (2 or 3 dimensional)</p>
+<p>Annotation2D points, curves (2 or 3 dimensional), hatches and text (2 dimensional)</p>
+<p>SurfaceModel face based and shell based surface model</p>
+<p>SolidModel including swept solid, Boolean results and Brep bodies more specific types are:</p>
+<p>SweptSolid swept area solids, by extrusion and revolution, excluding tapered sweeps</p>
+<p>AdvancedSweptSolid swept area solids created by sweeping a profile along a directrix, and tapered sweeps</p>
+<p>Brep faceted Brep’s with and without voids</p>
+<p>AdvancedBrep Brep’s based on advanced faces, with b-spline surface geometry, with and without voids</p>
+<p>CSG Boolean results of operations between solid models, half spaces and Boolean results</p>
+<p>Clipping Boolean differences between swept area solids, half spaces and Boolean results</p>
+<p>additional types</p>
+<p>some additional representation types are provided:</p>
+<p>BoundingBox simplistic 3D representation by a bounding box</p>
+<p>SectionedSpine cross section based representation of a spine curve and planar cross sections. It can represent a surface or a solid and the interpolations of the between the cross sections is not defined</p>
+<p>LightSource light source with (depending on type) position, orientation, light colour, intensity and attenuation</p>
+<p>MappedRepresentation representation based on mapped item(s), referring to a representation map. Note: it can be seen as an inserted block reference. The shape representation of the mapped item has a representation type declaring the type of its representation items.</p>
+<p>Table 1: string values for the inherited attribute ‘RepresentationType’.</p>
+<p>NOTE The definition of this entity relates to the ISO 10303 entity shape_representation. Please refer to ISO/IS 10303-41:1994 for the final definition of the formal standard.</p>
+<p>HISTORY New entity in IFC Release 1.5.</p>
+<p>IFC2x4 CHANGE The RepresentationType’s ‘Curve3D’, ‘Surface2D’, ‘Surface3D’, ‘AdvancedBrep’, ‘LightSource’, and the RepresentationIdentifier ‘Lighting’ have been added. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x222IfcShapeRepresentation4listE">
+<span id="_CPPv3N6Ifc4x222IfcShapeRepresentation4listE"></span><span id="_CPPv2N6Ifc4x222IfcShapeRepresentation4listE"></span><span id="Ifc4x2::IfcShapeRepresentation::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_shape_representation_1a68211f09ee3f6986e13a5c57a1f4c940"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x222IfcShapeRepresentationE" title="Ifc4x2::IfcShapeRepresentation">IfcShapeRepresentation</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x222IfcShapeRepresentation4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x222IfcShapeRepresentation11declarationEv">
+<span id="_CPPv3NK6Ifc4x222IfcShapeRepresentation11declarationEv"></span><span id="_CPPv2NK6Ifc4x222IfcShapeRepresentation11declarationEv"></span><span id="Ifc4x2::IfcShapeRepresentation::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_shape_representation_1a7491cd8beab9337f91d332f1d125194f"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x222IfcShapeRepresentation11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x222IfcShapeRepresentation22IfcShapeRepresentationEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x222IfcShapeRepresentation22IfcShapeRepresentationEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x222IfcShapeRepresentation22IfcShapeRepresentationEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcShapeRepresentation::IfcShapeRepresentation__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_shape_representation_1aaeca3a81add2a7b645c29f1e48de31c6"></span><code class="sig-name descname">IfcShapeRepresentation</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x222IfcShapeRepresentation22IfcShapeRepresentationEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x222IfcShapeRepresentation22IfcShapeRepresentationEPN6Ifc4x224IfcRepresentationContextEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x221IfcRepresentationItemEE3ptrE">
+<span id="_CPPv3N6Ifc4x222IfcShapeRepresentation22IfcShapeRepresentationEPN6Ifc4x224IfcRepresentationContextEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x221IfcRepresentationItemEE3ptrE"></span><span id="_CPPv2N6Ifc4x222IfcShapeRepresentation22IfcShapeRepresentationEPN6Ifc4x224IfcRepresentationContextEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x221IfcRepresentationItemEE3ptrE"></span><span id="Ifc4x2::IfcShapeRepresentation::IfcShapeRepresentation__Ifc4x2::IfcRepresentationContextP.boost::optional:ss:.boost::optional:ss:.IfcTemplatedEntityList:Ifc4x2::IfcRepresentationItem:::ptr"></span><span class="target" id="class_ifc4x2_1_1_ifc_shape_representation_1a3f868d7685de650c61b5f0c478eb9469"></span><code class="sig-name descname">IfcShapeRepresentation</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_representation_context.html#_CPPv4N6Ifc4x224IfcRepresentationContextE" title="Ifc4x2::IfcRepresentationContext">IfcRepresentationContext</a> *<em>v1_ContextOfItems</em>, boost::optional&lt;std::string&gt; <em>v2_RepresentationIdentifier</em>, boost::optional&lt;std::string&gt; <em>v3_RepresentationType</em>, <a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_representation_item.html#_CPPv4N6Ifc4x221IfcRepresentationItemE" title="Ifc4x2::IfcRepresentationItem">IfcRepresentationItem</a>&gt;::ptr <em>v4_Items</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x222IfcShapeRepresentation22IfcShapeRepresentationEPN6Ifc4x224IfcRepresentationContextEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x221IfcRepresentationItemEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x222IfcShapeRepresentation5ClassEv">
+<span id="_CPPv3N6Ifc4x222IfcShapeRepresentation5ClassEv"></span><span id="_CPPv2N6Ifc4x222IfcShapeRepresentation5ClassEv"></span><span id="Ifc4x2::IfcShapeRepresentation::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_shape_representation_1adfdafd65fd2d85ddfbfd9d4bae40244d"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x222IfcShapeRepresentation5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_shape_model.html" title="previous chapter">Class Ifc4x2::IfcShapeModel</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_shear_modulus_measure.html" title="next chapter">Class Ifc4x2::IfcShearModulusMeasure</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_shape_representation.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

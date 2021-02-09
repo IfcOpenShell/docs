@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a72f220ff9f4ab1ae3c07b342cde4d395:
+
+Define SCHEMA_IfcTaskType_HAS_PredefinedType
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTaskType_HAS_PredefinedType

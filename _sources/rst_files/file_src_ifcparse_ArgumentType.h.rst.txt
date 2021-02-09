@@ -1,0 +1,66 @@
+
+.. _file_src_ifcparse_ArgumentType.h:
+
+File ArgumentType.h
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcparse>` (``src/ifcparse``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/ArgumentType.h``)
+--------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_ArgumentType.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/IfcSchema.h``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_IfcEntityInstanceData.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcUtil`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum__argument_type_8h_1a6c8c48060cd9c9d4787dae8f8944400b`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function__argument_type_8h_1a2d87de927e3891afa8f41ffab42b05d4`
+
+- :ref:`exhale_function__argument_type_8h_1a55a3fc483c63e7834203368205b8074c`
+

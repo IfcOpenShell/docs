@@ -1,0 +1,37 @@
+.. _exhale_class_class_ifc2x3_1_1_ifc_elementary_surface:
+
+Class Ifc2x3::IfcElementarySurface
+==================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc2x3::IfcSurface`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_surface`)
+
+
+Derived Type
+************
+
+- ``public Ifc2x3::IfcPlane`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_plane`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc2x3::IfcElementarySurface
+   :members:
+   :protected-members:
+   :undoc-members:

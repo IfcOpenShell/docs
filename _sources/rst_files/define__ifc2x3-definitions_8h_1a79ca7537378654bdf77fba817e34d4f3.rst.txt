@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a79ca7537378654bdf77fba817e34d4f3:
+
+Define SCHEMA_IfcMechanicalSteelMaterialProperties_HAS_PlasticStrain
+====================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMechanicalSteelMaterialProperties_HAS_PlasticStrain

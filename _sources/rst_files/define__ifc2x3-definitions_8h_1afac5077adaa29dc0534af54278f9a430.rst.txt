@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1afac5077adaa29dc0534af54278f9a430:
+
+Define SCHEMA_IfcCalendarDate_HAS_MonthComponent
+================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcCalendarDate_HAS_MonthComponent

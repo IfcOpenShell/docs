@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a6c9273e1cb81cedf0dec0177a099b6b1:
+
+Define SCHEMA_IfcStructuralLoadSingleDisplacementDistortion_HAS_Distortion
+==========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLoadSingleDisplacementDistortion_HAS_Distortion

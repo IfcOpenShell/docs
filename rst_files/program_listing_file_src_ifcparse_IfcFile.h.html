@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Listing for File IfcFile.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="program-listing-for-file-ifcfile-h">
+<span id="program-listing-file-src-ifcparse-ifcfile-h"></span><h1>Program Listing for File IfcFile.h<a class="headerlink" href="#program-listing-for-file-ifcfile-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_ifcparse_IfcFile.h.html#file-src-ifcparse-ifcfile-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/ifcparse/IfcFile.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/********************************************************************************</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * This file is part of IfcOpenShell.                                           *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcOpenShell is free software: you can redistribute it and/or modify         *</span>
+<span class="cm"> * it under the terms of the Lesser GNU General Public License as published by  *</span>
+<span class="cm"> * the Free Software Foundation, either version 3.0 of the License, or          *</span>
+<span class="cm"> * (at your option) any later version.                                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcOpenShell is distributed in the hope that it will be useful,              *</span>
+<span class="cm"> * but WITHOUT ANY WARRANTY; without even the implied warranty of               *</span>
+<span class="cm"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 *</span>
+<span class="cm"> * Lesser GNU General Public License for more details.                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * You should have received a copy of the Lesser GNU General Public License     *</span>
+<span class="cm"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.         *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> ********************************************************************************/</span>
+
+<span class="cp">#ifndef IFCFILE_H</span>
+<span class="cp">#define IFCFILE_H</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;map&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;set&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;iterator&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;boost/unordered_map.hpp&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;ifc_parse_api.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcParse.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcSpfHeader.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcSchema.h&quot;</span><span class="cp"></span>
+
+<span class="k">namespace</span> <span class="n">IfcParse</span> <span class="p">{</span>
+
+<span class="k">class</span> <span class="nc">IFC_PARSE_API</span> <span class="n">IfcFile</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">declaration</span><span class="o">*</span><span class="p">,</span> <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span><span class="o">&gt;</span> <span class="n">entities_by_type_t</span><span class="p">;</span>
+    <span class="k">typedef</span> <span class="n">boost</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="p">,</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*&gt;</span> <span class="n">entity_by_id_t</span><span class="p">;</span>
+    <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*&gt;</span> <span class="n">entity_by_guid_t</span><span class="p">;</span>
+    <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">entities_by_ref_t</span><span class="p">;</span>
+    <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="p">,</span> <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span><span class="o">&gt;</span> <span class="n">ref_map_t</span><span class="p">;</span>
+    <span class="k">typedef</span> <span class="n">entity_by_id_t</span><span class="o">::</span><span class="n">const_iterator</span> <span class="n">const_iterator</span><span class="p">;</span>
+
+    <span class="k">class</span> <span class="nc">type_iterator</span> <span class="o">:</span> <span class="k">private</span> <span class="n">entities_by_type_t</span><span class="o">::</span><span class="n">const_iterator</span> <span class="p">{</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="n">type_iterator</span><span class="p">()</span> <span class="o">:</span> <span class="n">entities_by_type_t</span><span class="o">::</span><span class="n">const_iterator</span><span class="p">()</span> <span class="p">{};</span>
+
+        <span class="n">type_iterator</span><span class="p">(</span><span class="k">const</span> <span class="n">entities_by_type_t</span><span class="o">::</span><span class="n">const_iterator</span><span class="o">&amp;</span> <span class="n">it</span><span class="p">)</span>
+            <span class="o">:</span> <span class="n">entities_by_type_t</span><span class="o">::</span><span class="n">const_iterator</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+        <span class="p">{};</span>
+
+        <span class="n">entities_by_type_t</span><span class="o">::</span><span class="n">key_type</span> <span class="k">const</span> <span class="o">*</span> <span class="k">operator</span><span class="o">-&gt;</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="o">&amp;</span><span class="n">entities_by_type_t</span><span class="o">::</span><span class="n">const_iterator</span><span class="o">::</span><span class="k">operator</span><span class="o">-&gt;</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="n">entities_by_type_t</span><span class="o">::</span><span class="n">key_type</span> <span class="k">const</span> <span class="o">&amp;</span> <span class="k">operator</span><span class="o">*</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="n">entities_by_type_t</span><span class="o">::</span><span class="n">const_iterator</span><span class="o">::</span><span class="k">operator</span><span class="o">*</span><span class="p">().</span><span class="n">first</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="n">type_iterator</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">++</span><span class="p">()</span> <span class="p">{</span>
+            <span class="n">entities_by_type_t</span><span class="o">::</span><span class="n">const_iterator</span><span class="o">::</span><span class="k">operator</span><span class="o">++</span><span class="p">();</span> <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="n">type_iterator</span> <span class="k">operator</span><span class="o">++</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">type_iterator</span> <span class="nf">tmp</span><span class="p">(</span><span class="o">*</span><span class="k">this</span><span class="p">);</span> <span class="k">operator</span><span class="o">++</span><span class="p">();</span> <span class="k">return</span> <span class="n">tmp</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kt">bool</span> <span class="k">operator</span><span class="o">!=</span><span class="p">(</span><span class="k">const</span> <span class="n">type_iterator</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+            <span class="k">const</span> <span class="n">entities_by_type_t</span><span class="o">::</span><span class="n">const_iterator</span><span class="o">&amp;</span> <span class="n">self_</span> <span class="o">=</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
+            <span class="k">const</span> <span class="n">entities_by_type_t</span><span class="o">::</span><span class="n">const_iterator</span><span class="o">&amp;</span> <span class="n">other_</span> <span class="o">=</span> <span class="n">other</span><span class="p">;</span>
+            <span class="k">return</span> <span class="n">self_</span> <span class="o">!=</span> <span class="n">other_</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+
+<span class="k">private</span><span class="o">:</span>
+    <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span><span class="p">,</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*&gt;</span> <span class="n">entity_entity_map_t</span><span class="p">;</span>
+
+    <span class="kt">bool</span> <span class="n">parsing_complete_</span><span class="p">,</span> <span class="n">good_</span><span class="p">;</span>
+
+    <span class="k">const</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">schema_definition</span><span class="o">*</span> <span class="n">schema_</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">declaration</span><span class="o">*</span> <span class="n">ifcroot_type_</span><span class="p">;</span>
+
+    <span class="n">entity_by_id_t</span> <span class="n">byid</span><span class="p">;</span>
+    <span class="n">entities_by_type_t</span> <span class="n">bytype</span><span class="p">;</span>
+    <span class="n">entities_by_type_t</span> <span class="n">bytype_excl</span><span class="p">;</span>
+    <span class="n">entities_by_ref_t</span> <span class="n">byref</span><span class="p">;</span>
+    <span class="n">ref_map_t</span> <span class="n">by_ref_cached_</span><span class="p">;</span>
+    <span class="n">entity_by_guid_t</span> <span class="n">byguid</span><span class="p">;</span>
+    <span class="n">entity_entity_map_t</span> <span class="n">entity_file_map</span><span class="p">;</span>
+
+    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">MaxId</span><span class="p">;</span>
+
+    <span class="n">IfcSpfHeader</span> <span class="n">_header</span><span class="p">;</span>
+
+    <span class="kt">void</span> <span class="nf">setDefaultHeaderValues</span><span class="p">();</span>
+
+    <span class="kt">void</span> <span class="nf">initialize_</span><span class="p">(</span><span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcSpfStream</span><span class="o">*</span> <span class="n">f</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="nf">build_inverses_</span><span class="p">(</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span><span class="p">);</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcSpfLexer</span><span class="o">*</span> <span class="n">tokens</span><span class="p">;</span>
+    <span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcSpfStream</span><span class="o">*</span> <span class="n">stream</span><span class="p">;</span>
+
+<span class="cp">#ifdef USE_MMAP</span>
+    <span class="n">IfcFile</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">fn</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">mmap</span> <span class="o">=</span> <span class="nb">false</span><span class="p">);</span>
+<span class="cp">#else</span>
+    <span class="n">IfcFile</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">fn</span><span class="p">);</span>
+<span class="cp">#endif</span>
+    <span class="n">IfcFile</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">istream</span><span class="o">&amp;</span> <span class="n">fn</span><span class="p">,</span> <span class="kt">int</span> <span class="n">len</span><span class="p">);</span>
+    <span class="n">IfcFile</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span> <span class="kt">int</span> <span class="n">len</span><span class="p">);</span>
+    <span class="n">IfcFile</span><span class="p">(</span><span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcSpfStream</span><span class="o">*</span> <span class="n">f</span><span class="p">);</span>
+    <span class="n">IfcFile</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">schema_definition</span><span class="o">*</span> <span class="n">schema</span> <span class="o">=</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">schema_by_name</span><span class="p">(</span><span class="s">&quot;IFC4&quot;</span><span class="p">));</span>
+
+    <span class="k">virtual</span> <span class="o">~</span><span class="n">IfcFile</span><span class="p">();</span>
+
+    <span class="kt">bool</span> <span class="nf">good</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">good_</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="n">const_iterator</span> <span class="nf">begin</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">const_iterator</span> <span class="nf">end</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="n">type_iterator</span> <span class="nf">types_begin</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">type_iterator</span> <span class="nf">types_end</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="n">type_iterator</span> <span class="nf">types_incl_super_begin</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">type_iterator</span> <span class="nf">types_incl_super_end</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="nc">T</span><span class="o">&gt;</span>
+    <span class="k">typename</span> <span class="nc">T</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">instances_by_type</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">untyped_list</span> <span class="o">=</span> <span class="n">instances_by_type</span><span class="p">(</span><span class="o">&amp;</span><span class="n">T</span><span class="o">::</span><span class="n">Class</span><span class="p">());</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">untyped_list</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="n">untyped_list</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">();</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="k">typename</span> <span class="nc">T</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span><span class="p">(</span><span class="k">new</span> <span class="k">typename</span> <span class="nc">T</span><span class="o">::</span><span class="n">list</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="nc">T</span><span class="o">&gt;</span>
+    <span class="k">typename</span> <span class="nc">T</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">instances_by_type_excl_subtypes</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">untyped_list</span> <span class="o">=</span> <span class="n">instances_by_type_excl_subtypes</span><span class="p">(</span><span class="o">&amp;</span><span class="n">T</span><span class="o">::</span><span class="n">Class</span><span class="p">());</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">untyped_list</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="n">untyped_list</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">();</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="k">typename</span> <span class="nc">T</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span><span class="p">(</span><span class="k">new</span> <span class="k">typename</span> <span class="nc">T</span><span class="o">::</span><span class="n">list</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">instances_by_type</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">declaration</span><span class="o">*</span><span class="p">);</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">instances_by_type_excl_subtypes</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">declaration</span><span class="o">*</span><span class="p">);</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">instances_by_type</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">instances_by_type_excl_subtypes</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">t</span><span class="p">);</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">instances_by_reference</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">);</span>
+
+    <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">instance_by_id</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">);</span>
+
+    <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">instance_by_guid</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">guid</span><span class="p">);</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">traverse</span><span class="p">(</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">instance</span><span class="p">,</span> <span class="kt">int</span> <span class="n">max_level</span><span class="o">=</span><span class="mi">-1</span><span class="p">);</span>
+
+    <span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">getInverse</span><span class="p">(</span><span class="kt">int</span> <span class="n">instance_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">declaration</span><span class="o">*</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">attribute_index</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="nf">mark_entity_as_modified</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">);</span>
+
+    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">FreshId</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="o">++</span><span class="n">MaxId</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">addEntity</span><span class="p">(</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">entity</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="nf">addEntities</span><span class="p">(</span><span class="n">IfcEntityList</span><span class="o">::</span><span class="n">ptr</span> <span class="n">es</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="nf">removeEntity</span><span class="p">(</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">entity</span><span class="p">);</span>
+
+    <span class="k">const</span> <span class="n">IfcSpfHeader</span><span class="o">&amp;</span> <span class="n">header</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_header</span><span class="p">;</span> <span class="p">}</span>
+    <span class="n">IfcSpfHeader</span><span class="o">&amp;</span> <span class="n">header</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_header</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">createTimestamp</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="kt">size_t</span> <span class="nf">load</span><span class="p">(</span><span class="kt">unsigned</span> <span class="n">entity_instance_name</span><span class="p">,</span> <span class="n">Argument</span><span class="o">**&amp;</span> <span class="n">attributes</span><span class="p">,</span> <span class="kt">size_t</span> <span class="n">num_attributes</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="nf">seek_to</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcEntityInstanceData</span><span class="o">&amp;</span> <span class="n">data</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="nf">try_read_semicolon</span><span class="p">();</span>
+
+    <span class="kt">void</span> <span class="nf">register_inverse</span><span class="p">(</span><span class="kt">unsigned</span><span class="p">,</span> <span class="n">Token</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="nf">register_inverse</span><span class="p">(</span><span class="kt">unsigned</span><span class="p">,</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="nf">unregister_inverse</span><span class="p">(</span><span class="kt">unsigned</span><span class="p">,</span> <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span><span class="p">);</span>
+
+    <span class="k">const</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">schema_definition</span><span class="o">*</span> <span class="n">schema</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">schema_</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span><span class="p">,</span> <span class="kt">double</span><span class="o">&gt;</span> <span class="n">getUnit</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">unit_type</span><span class="p">);</span>
+
+    <span class="kt">bool</span> <span class="nf">parsing_complete</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">parsing_complete_</span><span class="p">;</span> <span class="p">}</span>
+    <span class="kt">bool</span><span class="o">&amp;</span> <span class="nf">parsing_complete</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">parsing_complete_</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="nf">build_inverses</span><span class="p">();</span>
+<span class="p">};</span>
+
+<span class="cp">#ifdef WITH_IFCXML</span>
+<span class="n">IFC_PARSE_API</span> <span class="n">IfcFile</span><span class="o">*</span> <span class="n">parse_ifcxml</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">filename</span><span class="p">);</span>
+<span class="cp">#endif</span>
+
+<span class="p">}</span>
+
+<span class="k">namespace</span> <span class="n">std</span> <span class="p">{</span>
+    <span class="k">template</span> <span class="o">&lt;&gt;</span>
+    <span class="k">struct</span> <span class="nc">iterator_traits</span><span class="o">&lt;</span><span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcFile</span><span class="o">::</span><span class="n">type_iterator</span><span class="o">&gt;</span> <span class="p">{</span>
+        <span class="k">typedef</span> <span class="kt">ptrdiff_t</span> <span class="n">difference_type</span><span class="p">;</span>
+        <span class="k">typedef</span> <span class="k">const</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">declaration</span><span class="o">*</span> <span class="n">value_type</span><span class="p">;</span>
+        <span class="k">typedef</span> <span class="k">const</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">declaration</span><span class="o">*&amp;</span> <span class="n">reference</span><span class="p">;</span>
+        <span class="k">typedef</span> <span class="k">const</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">declaration</span><span class="o">**</span> <span class="n">pointer</span><span class="p">;</span>
+        <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">forward_iterator_tag</span> <span class="n">iterator_category</span><span class="p">;</span>
+    <span class="p">};</span>
+<span class="p">}</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/program_listing_file_src_ifcparse_IfcFile.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

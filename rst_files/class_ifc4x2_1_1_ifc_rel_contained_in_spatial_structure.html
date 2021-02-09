@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcRelContainedInSpatialStructure &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcRelCoversBldgElements" href="class_ifc4x2_1_1_ifc_rel_covers_bldg_elements.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcRelConnectsWithRealizingElements" href="class_ifc4x2_1_1_ifc_rel_connects_with_realizing_elements.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcrelcontainedinspatialstructure">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-rel-contained-in-spatial-structure"></span><h1>Class Ifc4x2::IfcRelContainedInSpatialStructure<a class="headerlink" href="#class-ifc4x2-ifcrelcontainedinspatialstructure" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcRelConnects</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_rel_connects.html#exhale-class-class-ifc4x2-1-1-ifc-rel-connects"><span class="std std-ref">Class Ifc4x2::IfcRelConnects</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x233IfcRelContainedInSpatialStructureE">
+<span id="_CPPv3N6Ifc4x233IfcRelContainedInSpatialStructureE"></span><span id="_CPPv2N6Ifc4x233IfcRelContainedInSpatialStructureE"></span><span id="Ifc4x2::IfcRelContainedInSpatialStructure"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_contained_in_spatial_structure"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcRelContainedInSpatialStructure</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_rel_connects.html#_CPPv4N6Ifc4x214IfcRelConnectsE" title="Ifc4x2::IfcRelConnects">IfcRelConnects</a><a class="headerlink" href="#_CPPv4N6Ifc4x233IfcRelContainedInSpatialStructureE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>This objectified relationship, <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_contained_in_spatial_structure"><span class="std std-ref">IfcRelContainedInSpatialStructure</span></a>, is used to assign elements to a certain level of the spatial project structure. Any element can only be assigned once to a certain level of the spatial structure. The question, which level is relevant for which type of element, can only be answered within the context of a particular project and might vary within the various regions.</p>
+<p>EXAMPLE A multi-storey space is contained (or belongs to) the building storey at which its ground level is, but it is referenced by all the other building storeys, in which it spans. A lift shaft might be contained by the basement, but referenced by all storeys, through which it spans.</p>
+<p>The containment relationship of an element within a spatial structure has to be a hierarchical relationship, an element can only be contained within a single spatial structure element. The reference relationship between an element and the spatial structure may not be hierarchical, i.e. an element can reference many spatial structure elements.</p>
+<p>NOTE The reference relationship is expressed by <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_referenced_in_spatial_structure"><span class="std std-ref">IfcRelReferencedInSpatialStructure</span></a>.</p>
+<p>Predefined spatial structure elements to which elements can be assigned are</p>
+<p>site as <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a></p>
+<p>building as <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a></p>
+<p>storey as <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_building_storey"><span class="std std-ref">IfcBuildingStorey</span></a></p>
+<p>space as <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a></p>
+<p>Occurrences of the same element type can be assigned to different spatial structure elements depending on the context of the occurrence.</p>
+<p>EXAMPLE A wall might be normally assigned to a storey, however the curtain wall might be assigned to the building and the retaining wall in the terrain might be assigned to the site.</p>
+<p>HISTORY New entity in IFC Release 2x.</p>
+<p>IFC2x PLATFORM CHANGE: The data type of the attribute RelatedElements has been changed from <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a> to its supertype <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a> with upward compatibility for file based exchange.</p>
+<p>Containment Use Definition Figure 39 shows the use of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_contained_in_spatial_structure"><span class="std std-ref">IfcRelContainedInSpatialStructure</span></a> to assign a stair and two walls to two different levels within the spatial structure.</p>
+<p>Figure 39 — Relationship for spatial structure containment </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x233IfcRelContainedInSpatialStructure4listE">
+<span id="_CPPv3N6Ifc4x233IfcRelContainedInSpatialStructure4listE"></span><span id="_CPPv2N6Ifc4x233IfcRelContainedInSpatialStructure4listE"></span><span id="Ifc4x2::IfcRelContainedInSpatialStructure::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_contained_in_spatial_structure_1a7e8edf78ad951ce460656a4e96a50c66"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x233IfcRelContainedInSpatialStructureE" title="Ifc4x2::IfcRelContainedInSpatialStructure">IfcRelContainedInSpatialStructure</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x233IfcRelContainedInSpatialStructure4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x233IfcRelContainedInSpatialStructure15RelatedElementsEv">
+<span id="_CPPv3NK6Ifc4x233IfcRelContainedInSpatialStructure15RelatedElementsEv"></span><span id="_CPPv2NK6Ifc4x233IfcRelContainedInSpatialStructure15RelatedElementsEv"></span><span id="Ifc4x2::IfcRelContainedInSpatialStructure::RelatedElementsC"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_contained_in_spatial_structure_1a4ffe9637fb055834a7397c2b33864d42"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_product.html#_CPPv4N6Ifc4x210IfcProductE" title="Ifc4x2::IfcProduct">IfcProduct</a>&gt;::ptr <code class="sig-name descname">RelatedElements</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x233IfcRelContainedInSpatialStructure15RelatedElementsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set of elements products, which are contained within this level of the spatial structure hierarchy.</p>
+<p>IFC2x PLATFORM CHANGE The data type has been changed from <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a> to <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a> with upward compatibility </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x233IfcRelContainedInSpatialStructure18setRelatedElementsEN22IfcTemplatedEntityListIN6Ifc4x210IfcProductEE3ptrE">
+<span id="_CPPv3N6Ifc4x233IfcRelContainedInSpatialStructure18setRelatedElementsEN22IfcTemplatedEntityListIN6Ifc4x210IfcProductEE3ptrE"></span><span id="_CPPv2N6Ifc4x233IfcRelContainedInSpatialStructure18setRelatedElementsEN22IfcTemplatedEntityListIN6Ifc4x210IfcProductEE3ptrE"></span><span id="Ifc4x2::IfcRelContainedInSpatialStructure::setRelatedElements__IfcTemplatedEntityList:Ifc4x2::IfcProduct:::ptr"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_contained_in_spatial_structure_1a35db97e04c90b087c4177a8a5322c09c"></span>void <code class="sig-name descname">setRelatedElements</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_product.html#_CPPv4N6Ifc4x210IfcProductE" title="Ifc4x2::IfcProduct">IfcProduct</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x233IfcRelContainedInSpatialStructure18setRelatedElementsEN22IfcTemplatedEntityListIN6Ifc4x210IfcProductEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x233IfcRelContainedInSpatialStructure17RelatingStructureEv">
+<span id="_CPPv3NK6Ifc4x233IfcRelContainedInSpatialStructure17RelatingStructureEv"></span><span id="_CPPv2NK6Ifc4x233IfcRelContainedInSpatialStructure17RelatingStructureEv"></span><span id="Ifc4x2::IfcRelContainedInSpatialStructure::RelatingStructureC"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_contained_in_spatial_structure_1a7b6114de3fabf910497c8726d990a79a"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_spatial_element.html#_CPPv4N6Ifc4x217IfcSpatialElementE" title="Ifc4x2::IfcSpatialElement">IfcSpatialElement</a> *<code class="sig-name descname">RelatingStructure</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x233IfcRelContainedInSpatialStructure17RelatingStructureEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Spatial structure element, within which the element is contained. Any element can only be contained within one element of the project spatial structure. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x233IfcRelContainedInSpatialStructure20setRelatingStructureEPN6Ifc4x217IfcSpatialElementE">
+<span id="_CPPv3N6Ifc4x233IfcRelContainedInSpatialStructure20setRelatingStructureEPN6Ifc4x217IfcSpatialElementE"></span><span id="_CPPv2N6Ifc4x233IfcRelContainedInSpatialStructure20setRelatingStructureEPN6Ifc4x217IfcSpatialElementE"></span><span id="Ifc4x2::IfcRelContainedInSpatialStructure::setRelatingStructure__Ifc4x2::IfcSpatialElementP"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_contained_in_spatial_structure_1a781d68f5e52b46648d187ebb2d150266"></span>void <code class="sig-name descname">setRelatingStructure</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_spatial_element.html#_CPPv4N6Ifc4x217IfcSpatialElementE" title="Ifc4x2::IfcSpatialElement">IfcSpatialElement</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x233IfcRelContainedInSpatialStructure20setRelatingStructureEPN6Ifc4x217IfcSpatialElementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x233IfcRelContainedInSpatialStructure11declarationEv">
+<span id="_CPPv3NK6Ifc4x233IfcRelContainedInSpatialStructure11declarationEv"></span><span id="_CPPv2NK6Ifc4x233IfcRelContainedInSpatialStructure11declarationEv"></span><span id="Ifc4x2::IfcRelContainedInSpatialStructure::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_contained_in_spatial_structure_1a57f413ab2a0431b1a0f0bdcd86bc96ae"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x233IfcRelContainedInSpatialStructure11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x233IfcRelContainedInSpatialStructure33IfcRelContainedInSpatialStructureEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x233IfcRelContainedInSpatialStructure33IfcRelContainedInSpatialStructureEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x233IfcRelContainedInSpatialStructure33IfcRelContainedInSpatialStructureEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcRelContainedInSpatialStructure::IfcRelContainedInSpatialStructure__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_contained_in_spatial_structure_1a2d14edc94a2025abbc1784c3be2725dc"></span><code class="sig-name descname">IfcRelContainedInSpatialStructure</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x233IfcRelContainedInSpatialStructure33IfcRelContainedInSpatialStructureEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x233IfcRelContainedInSpatialStructure33IfcRelContainedInSpatialStructureENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x210IfcProductEE3ptrEPN6Ifc4x217IfcSpatialElementE">
+<span id="_CPPv3N6Ifc4x233IfcRelContainedInSpatialStructure33IfcRelContainedInSpatialStructureENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x210IfcProductEE3ptrEPN6Ifc4x217IfcSpatialElementE"></span><span id="_CPPv2N6Ifc4x233IfcRelContainedInSpatialStructure33IfcRelContainedInSpatialStructureENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x210IfcProductEE3ptrEPN6Ifc4x217IfcSpatialElementE"></span><span id="Ifc4x2::IfcRelContainedInSpatialStructure::IfcRelContainedInSpatialStructure__ss.Ifc4x2::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.IfcTemplatedEntityList:Ifc4x2::IfcProduct:::ptr.Ifc4x2::IfcSpatialElementP"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_contained_in_spatial_structure_1aac80fd531331ca71d38587f726c0e317"></span><code class="sig-name descname">IfcRelContainedInSpatialStructure</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_owner_history.html#_CPPv4N6Ifc4x215IfcOwnerHistoryE" title="Ifc4x2::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, <a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_product.html#_CPPv4N6Ifc4x210IfcProductE" title="Ifc4x2::IfcProduct">IfcProduct</a>&gt;::ptr <em>v5_RelatedElements</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_spatial_element.html#_CPPv4N6Ifc4x217IfcSpatialElementE" title="Ifc4x2::IfcSpatialElement">IfcSpatialElement</a> *<em>v6_RelatingStructure</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x233IfcRelContainedInSpatialStructure33IfcRelContainedInSpatialStructureENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x210IfcProductEE3ptrEPN6Ifc4x217IfcSpatialElementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x233IfcRelContainedInSpatialStructure5ClassEv">
+<span id="_CPPv3N6Ifc4x233IfcRelContainedInSpatialStructure5ClassEv"></span><span id="_CPPv2N6Ifc4x233IfcRelContainedInSpatialStructure5ClassEv"></span><span id="Ifc4x2::IfcRelContainedInSpatialStructure::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_contained_in_spatial_structure_1afd76004186c9c19ff634b54681bbf8c9"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x233IfcRelContainedInSpatialStructure5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_rel_connects_with_realizing_elements.html" title="previous chapter">Class Ifc4x2::IfcRelConnectsWithRealizingElements</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_rel_covers_bldg_elements.html" title="next chapter">Class Ifc4x2::IfcRelCoversBldgElements</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_rel_contained_in_spatial_structure.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

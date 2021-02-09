@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a6377312f763a7b10ad87ff9edf9388b9:
+
+Define SCHEMA_IfcStructuralLoadTemperature_HAS_DeltaT_Constant
+==============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLoadTemperature_HAS_DeltaT_Constant

@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_register_8h_1aa77c7090100a517ba0b03b481a907529:
+
+Function CURVE(IfcCircle)
+=========================
+
+- Defined in :ref:`file_src_ifcgeom_IfcRegister.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: CURVE(IfcCircle)

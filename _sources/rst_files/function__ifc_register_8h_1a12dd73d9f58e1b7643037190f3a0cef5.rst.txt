@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_register_8h_1a12dd73d9f58e1b7643037190f3a0cef5:
+
+Function CLASS(IfcAxis2Placement3D, gp_Trsf)
+============================================
+
+- Defined in :ref:`file_src_ifcgeom_IfcRegister.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: CLASS(IfcAxis2Placement3D, gp_Trsf)

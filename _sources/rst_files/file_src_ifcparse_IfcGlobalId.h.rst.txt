@@ -1,0 +1,63 @@
+
+.. _file_src_ifcparse_IfcGlobalId.h:
+
+File IfcGlobalId.h
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcparse>` (``src/ifcparse``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/IfcGlobalId.h``)
+-------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_IfcGlobalId.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``boost/uuid/uuid.hpp``
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_IfcGeomElement.h`
+
+- :ref:`file_src_ifcparse_IfcHierarchyHelper.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcParse`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_global_id`
+

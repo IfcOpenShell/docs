@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ada63f3bedf29f1937946821df0f04b1d:
+
+Define SCHEMA_IfcResourceConstraintRelationship_HAS_RelatingConstraint
+======================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcResourceConstraintRelationship_HAS_RelatingConstraint

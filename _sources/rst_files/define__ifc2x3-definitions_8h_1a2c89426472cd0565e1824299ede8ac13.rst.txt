@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a2c89426472cd0565e1824299ede8ac13:
+
+Define SCHEMA_IfcScheduleTimeControl_HAS_ScheduleFinish
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcScheduleTimeControl_HAS_ScheduleFinish

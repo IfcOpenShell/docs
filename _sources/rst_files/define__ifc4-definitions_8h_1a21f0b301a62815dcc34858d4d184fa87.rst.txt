@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a21f0b301a62815dcc34858d4d184fa87:
+
+Define SCHEMA_IfcResourceTime_ActualWork_IS_OPTIONAL
+====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcResourceTime_ActualWork_IS_OPTIONAL

@@ -1,0 +1,13 @@
+.. _exhale_function_utils_8h_1a2dff1f8d7898389fe4ab66d64afb6e0c:
+
+Function IfcUtil::path::from_utf8
+=================================
+
+- Defined in :ref:`file_src_ifcparse_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcUtil::path::from_utf8(const std::string&)

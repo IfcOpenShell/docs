@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a81678d706be6954926ca7ef35093ffaf:
+
+Define SCHEMA_IfcCompositeCurve_HAS_SelfIntersect
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcCompositeCurve_HAS_SelfIntersect

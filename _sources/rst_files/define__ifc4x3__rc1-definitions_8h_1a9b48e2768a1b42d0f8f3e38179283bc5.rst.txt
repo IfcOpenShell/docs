@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a9b48e2768a1b42d0f8f3e38179283bc5:
+
+Define SCHEMA_IfcCoordinateReferenceSystem_Description_IS_OPTIONAL
+==================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcCoordinateReferenceSystem_Description_IS_OPTIONAL

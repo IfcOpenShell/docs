@@ -1,0 +1,91 @@
+
+.. _file_src_ifcparse_IfcFile.h:
+
+File IfcFile.h
+==============
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcparse>` (``src/ifcparse``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/IfcFile.h``)
+---------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_IfcFile.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/IfcParse.h``
+
+- ``../ifcparse/IfcSchema.h``
+
+- ``../ifcparse/IfcSpfHeader.h``
+
+- ``boost/unordered_map.hpp``
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+- ``iterator``
+
+- ``map``
+
+- ``set``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_schema_agnostic_Kernel.h`
+
+- :ref:`file_src_ifcgeom_IfcGeomIteratorImplementation.h`
+
+- :ref:`file_src_ifcgeom_schema_agnostic_IfcGeomFilter.h`
+
+- :ref:`file_src_ifcgeom_schema_agnostic_IteratorImplementation.h`
+
+- :ref:`file_src_ifcgeom_IfcGeomTree.h`
+
+- :ref:`file_src_serializers_Serializer.h`
+
+- :ref:`file_src_serializers_XmlSerializer.h`
+
+- :ref:`file_src_ifcparse_IfcHierarchyHelper.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcParse`
+
+- :ref:`namespace_std`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structstd_1_1iterator__traits_3_01_ifc_parse_1_1_ifc_file_1_1type__iterator_01_4`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_file`
+
+- :ref:`exhale_class_class_ifc_parse_1_1_ifc_file_1_1type__iterator`
+

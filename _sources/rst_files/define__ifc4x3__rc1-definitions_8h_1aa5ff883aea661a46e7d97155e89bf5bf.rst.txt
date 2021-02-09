@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1aa5ff883aea661a46e7d97155e89bf5bf:
+
+Define SCHEMA_HAS_IfcBSplineCurve
+=================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcBSplineCurve

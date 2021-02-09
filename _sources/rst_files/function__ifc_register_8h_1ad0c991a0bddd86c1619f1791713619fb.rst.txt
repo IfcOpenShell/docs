@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_register_8h_1ad0c991a0bddd86c1619f1791713619fb:
+
+Function CLASS(IfcCartesianTransformationOperator2DnonUniform, gp_GTrsf2d)
+==========================================================================
+
+- Defined in :ref:`file_src_ifcgeom_IfcRegister.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: CLASS(IfcCartesianTransformationOperator2DnonUniform, gp_GTrsf2d)

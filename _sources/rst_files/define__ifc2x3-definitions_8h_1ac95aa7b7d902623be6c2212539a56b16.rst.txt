@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ac95aa7b7d902623be6c2212539a56b16:
+
+Define SCHEMA_IfcGeometricRepresentationContext_HAS_HasSubContexts
+==================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcGeometricRepresentationContext_HAS_HasSubContexts

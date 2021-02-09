@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcRelAggregates &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcRelAssigns" href="class_ifc4x2_1_1_ifc_rel_assigns.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcReinforcingMeshType" href="class_ifc4x2_1_1_ifc_reinforcing_mesh_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcrelaggregates">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-rel-aggregates"></span><h1>Class Ifc4x2::IfcRelAggregates<a class="headerlink" href="#class-ifc4x2-ifcrelaggregates" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcRelDecomposes</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_rel_decomposes.html#exhale-class-class-ifc4x2-1-1-ifc-rel-decomposes"><span class="std std-ref">Class Ifc4x2::IfcRelDecomposes</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x216IfcRelAggregatesE">
+<span id="_CPPv3N6Ifc4x216IfcRelAggregatesE"></span><span id="_CPPv2N6Ifc4x216IfcRelAggregatesE"></span><span id="Ifc4x2::IfcRelAggregates"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_aggregates"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcRelAggregates</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_rel_decomposes.html#_CPPv4N6Ifc4x216IfcRelDecomposesE" title="Ifc4x2::IfcRelDecomposes">IfcRelDecomposes</a><a class="headerlink" href="#_CPPv4N6Ifc4x216IfcRelAggregatesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The aggregation relationship <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_aggregates"><span class="std std-ref">IfcRelAggregates</span></a> is a special type of the general composition/decomposition (or whole/part) relationship <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_decomposes"><span class="std std-ref">IfcRelDecomposes</span></a>. The aggregation relationship can be applied to all subtypes of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_object_definition"><span class="std std-ref">IfcObjectDefinition</span></a>. In cases of aggregation of physical elements into a physical aggregate the shape representation of the whole (within the same representation identifier) can be taken from the sum of the shape representations of the parts. EXAMPLE A roof is the aggregation of the roof elements, such as roof slabs, rafters, purlins, etc. Within the same representation identifier, e.g. the body geometric representation, the shape representation of the roof is given by the shape representation of its parts Decompositions imply a dependency, i.e. the definition of the whole depends on the definition of the parts and the parts depend on the existence of the whole. The behaviour that is implied from the dependency has to be established inside the applications.</p>
+<p>HISTORY New entity in IFC Release 2x.</p>
+<p>IFC2x4 CHANGE The attributes RelatingObject and RelatedObjects are demoted from the supertype <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_decomposes"><span class="std std-ref">IfcRelDecomposes</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x216IfcRelAggregates4listE">
+<span id="_CPPv3N6Ifc4x216IfcRelAggregates4listE"></span><span id="_CPPv2N6Ifc4x216IfcRelAggregates4listE"></span><span id="Ifc4x2::IfcRelAggregates::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_aggregates_1aa893b169ab28d68a20a5729ce0f6d460"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x216IfcRelAggregatesE" title="Ifc4x2::IfcRelAggregates">IfcRelAggregates</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x216IfcRelAggregates4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x216IfcRelAggregates14RelatingObjectEv">
+<span id="_CPPv3NK6Ifc4x216IfcRelAggregates14RelatingObjectEv"></span><span id="_CPPv2NK6Ifc4x216IfcRelAggregates14RelatingObjectEv"></span><span id="Ifc4x2::IfcRelAggregates::RelatingObjectC"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_aggregates_1a878fc8d3da55b49281b61ac3e672b4f3"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_object_definition.html#_CPPv4N6Ifc4x219IfcObjectDefinitionE" title="Ifc4x2::IfcObjectDefinition">IfcObjectDefinition</a> *<code class="sig-name descname">RelatingObject</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x216IfcRelAggregates14RelatingObjectEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The object definition, either an object type or an object occurrence, that represents the aggregation. It is the whole within the whole/part relationship.</p>
+<p>IFC2x4 CHANGE The attribute has been demoted from the supertype <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_decomposes"><span class="std std-ref">IfcRelDecomposes</span></a> and defines the non-ordered aggregation relationship. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x216IfcRelAggregates17setRelatingObjectEPN6Ifc4x219IfcObjectDefinitionE">
+<span id="_CPPv3N6Ifc4x216IfcRelAggregates17setRelatingObjectEPN6Ifc4x219IfcObjectDefinitionE"></span><span id="_CPPv2N6Ifc4x216IfcRelAggregates17setRelatingObjectEPN6Ifc4x219IfcObjectDefinitionE"></span><span id="Ifc4x2::IfcRelAggregates::setRelatingObject__Ifc4x2::IfcObjectDefinitionP"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_aggregates_1aef094a3e4dd7d9aeaccc481ff9b3d750"></span>void <code class="sig-name descname">setRelatingObject</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_object_definition.html#_CPPv4N6Ifc4x219IfcObjectDefinitionE" title="Ifc4x2::IfcObjectDefinition">IfcObjectDefinition</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x216IfcRelAggregates17setRelatingObjectEPN6Ifc4x219IfcObjectDefinitionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x216IfcRelAggregates14RelatedObjectsEv">
+<span id="_CPPv3NK6Ifc4x216IfcRelAggregates14RelatedObjectsEv"></span><span id="_CPPv2NK6Ifc4x216IfcRelAggregates14RelatedObjectsEv"></span><span id="Ifc4x2::IfcRelAggregates::RelatedObjectsC"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_aggregates_1a7e9f6af3d600c45cc8e62c9003be8dc3"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_object_definition.html#_CPPv4N6Ifc4x219IfcObjectDefinitionE" title="Ifc4x2::IfcObjectDefinition">IfcObjectDefinition</a>&gt;::ptr <code class="sig-name descname">RelatedObjects</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x216IfcRelAggregates14RelatedObjectsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The object definitions, either object occurrences or object types, that are being aggregated. They are defined as the parts in the whole/part relationship. No order is implied between the parts.</p>
+<p>IFC2x4 CHANGE The attribute has been demoted from the supertype <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_decomposes"><span class="std std-ref">IfcRelDecomposes</span></a> and defines the non-ordered set of parts within the aggregation. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x216IfcRelAggregates17setRelatedObjectsEN22IfcTemplatedEntityListIN6Ifc4x219IfcObjectDefinitionEE3ptrE">
+<span id="_CPPv3N6Ifc4x216IfcRelAggregates17setRelatedObjectsEN22IfcTemplatedEntityListIN6Ifc4x219IfcObjectDefinitionEE3ptrE"></span><span id="_CPPv2N6Ifc4x216IfcRelAggregates17setRelatedObjectsEN22IfcTemplatedEntityListIN6Ifc4x219IfcObjectDefinitionEE3ptrE"></span><span id="Ifc4x2::IfcRelAggregates::setRelatedObjects__IfcTemplatedEntityList:Ifc4x2::IfcObjectDefinition:::ptr"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_aggregates_1ad3f5ed13c89761b3b712801d54276140"></span>void <code class="sig-name descname">setRelatedObjects</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_object_definition.html#_CPPv4N6Ifc4x219IfcObjectDefinitionE" title="Ifc4x2::IfcObjectDefinition">IfcObjectDefinition</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x216IfcRelAggregates17setRelatedObjectsEN22IfcTemplatedEntityListIN6Ifc4x219IfcObjectDefinitionEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x216IfcRelAggregates11declarationEv">
+<span id="_CPPv3NK6Ifc4x216IfcRelAggregates11declarationEv"></span><span id="_CPPv2NK6Ifc4x216IfcRelAggregates11declarationEv"></span><span id="Ifc4x2::IfcRelAggregates::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_aggregates_1a22b0b9526a4cb85a8277a0891c6a5249"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x216IfcRelAggregates11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x216IfcRelAggregates16IfcRelAggregatesEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x216IfcRelAggregates16IfcRelAggregatesEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x216IfcRelAggregates16IfcRelAggregatesEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcRelAggregates::IfcRelAggregates__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_aggregates_1a0316b64bfe2ffd4d780ed6c86231626c"></span><code class="sig-name descname">IfcRelAggregates</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x216IfcRelAggregates16IfcRelAggregatesEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x216IfcRelAggregates16IfcRelAggregatesENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x219IfcObjectDefinitionEN22IfcTemplatedEntityListIN6Ifc4x219IfcObjectDefinitionEE3ptrE">
+<span id="_CPPv3N6Ifc4x216IfcRelAggregates16IfcRelAggregatesENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x219IfcObjectDefinitionEN22IfcTemplatedEntityListIN6Ifc4x219IfcObjectDefinitionEE3ptrE"></span><span id="_CPPv2N6Ifc4x216IfcRelAggregates16IfcRelAggregatesENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x219IfcObjectDefinitionEN22IfcTemplatedEntityListIN6Ifc4x219IfcObjectDefinitionEE3ptrE"></span><span id="Ifc4x2::IfcRelAggregates::IfcRelAggregates__ss.Ifc4x2::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.Ifc4x2::IfcObjectDefinitionP.IfcTemplatedEntityList:Ifc4x2::IfcObjectDefinition:::ptr"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_aggregates_1a24b8cdd62826bbc21b81bb0bcccce143"></span><code class="sig-name descname">IfcRelAggregates</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_owner_history.html#_CPPv4N6Ifc4x215IfcOwnerHistoryE" title="Ifc4x2::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_object_definition.html#_CPPv4N6Ifc4x219IfcObjectDefinitionE" title="Ifc4x2::IfcObjectDefinition">IfcObjectDefinition</a> *<em>v5_RelatingObject</em>, <a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_object_definition.html#_CPPv4N6Ifc4x219IfcObjectDefinitionE" title="Ifc4x2::IfcObjectDefinition">IfcObjectDefinition</a>&gt;::ptr <em>v6_RelatedObjects</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x216IfcRelAggregates16IfcRelAggregatesENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x219IfcObjectDefinitionEN22IfcTemplatedEntityListIN6Ifc4x219IfcObjectDefinitionEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x216IfcRelAggregates5ClassEv">
+<span id="_CPPv3N6Ifc4x216IfcRelAggregates5ClassEv"></span><span id="_CPPv2N6Ifc4x216IfcRelAggregates5ClassEv"></span><span id="Ifc4x2::IfcRelAggregates::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_rel_aggregates_1a4d0428bdedb3ff574c26034b33411f09"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x216IfcRelAggregates5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_reinforcing_mesh_type.html" title="previous chapter">Class Ifc4x2::IfcReinforcingMeshType</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_rel_assigns.html" title="next chapter">Class Ifc4x2::IfcRelAssigns</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_rel_aggregates.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

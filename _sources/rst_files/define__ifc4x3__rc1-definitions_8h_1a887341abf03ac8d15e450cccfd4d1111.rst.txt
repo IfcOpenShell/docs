@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a887341abf03ac8d15e450cccfd4d1111:
+
+Define SCHEMA_IfcStructuralLoadGroup_HAS_PredefinedType
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLoadGroup_HAS_PredefinedType

@@ -1,0 +1,22 @@
+.. _exhale_struct_struct_ifc4x2_1_1_ifc_actuator_type_enum:
+
+Struct Ifc4x2::IfcActuatorTypeEnum
+==================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_struct_struct_ifc4x2`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Ifc4x2::IfcActuatorTypeEnum
+   :members:
+   :protected-members:
+   :undoc-members:

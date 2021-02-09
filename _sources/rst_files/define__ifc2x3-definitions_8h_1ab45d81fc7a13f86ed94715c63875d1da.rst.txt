@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ab45d81fc7a13f86ed94715c63875d1da:
+
+Define SCHEMA_IfcScheduleTimeControl_EarlyStart_IS_OPTIONAL
+===========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcScheduleTimeControl_EarlyStart_IS_OPTIONAL

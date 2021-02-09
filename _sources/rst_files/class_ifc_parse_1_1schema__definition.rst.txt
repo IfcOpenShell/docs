@@ -1,0 +1,27 @@
+.. _exhale_class_class_ifc_parse_1_1schema__definition:
+
+Class schema_definition
+=======================
+
+- Defined in :ref:`file_src_ifcparse_IfcSchema.h`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_class_class_ifc_parse_1_1schema__definition_1_1declaration__by__index__sort`
+- :ref:`exhale_class_class_ifc_parse_1_1schema__definition_1_1declaration__by__name__cmp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcParse::schema_definition
+   :members:
+   :protected-members:
+   :undoc-members:

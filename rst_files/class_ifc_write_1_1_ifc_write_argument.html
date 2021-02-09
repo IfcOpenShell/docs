@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class IfcWriteArgument &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class IfcWriteArgument::Derived" href="class_ifc_write_1_1_ifc_write_argument_1_1_derived.html" />
+    <link rel="prev" title="Class IfcCharacterEncoder" href="class_ifc_write_1_1_ifc_character_encoder.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifcwriteargument">
+<span id="exhale-class-class-ifc-write-1-1-ifc-write-argument"></span><h1>Class IfcWriteArgument<a class="headerlink" href="#class-ifcwriteargument" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_IfcWrite.h.html#file-src-ifcparse-ifcwrite-h"><span class="std std-ref">File IfcWrite.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="nested-types">
+<h3>Nested Types<a class="headerlink" href="#nested-types" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="class_ifc_write_1_1_ifc_write_argument_1_1_derived.html#exhale-class-class-ifc-write-1-1-ifc-write-argument-1-1-derived"><span class="std std-ref">Class IfcWriteArgument::Derived</span></a></p></li>
+<li><p><a class="reference internal" href="class_ifc_write_1_1_ifc_write_argument_1_1_enumeration_reference.html#exhale-class-class-ifc-write-1-1-ifc-write-argument-1-1-enumeration-reference"><span class="std std-ref">Class IfcWriteArgument::EnumerationReference</span></a></p></li>
+<li><p><a class="reference internal" href="class_ifc_write_1_1_ifc_write_argument_1_1empty__aggregate__of__aggregate__t.html#exhale-class-class-ifc-write-1-1-ifc-write-argument-1-1empty-aggregate-of-aggregate-t"><span class="std std-ref">Class IfcWriteArgument::empty_aggregate_of_aggregate_t</span></a></p></li>
+<li><p><a class="reference internal" href="class_ifc_write_1_1_ifc_write_argument_1_1empty__aggregate__t.html#exhale-class-class-ifc-write-1-1-ifc-write-argument-1-1empty-aggregate-t"><span class="std std-ref">Class IfcWriteArgument::empty_aggregate_t</span></a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Argument</span></code> (<a class="reference internal" href="class_argument.html#exhale-class-class-argument"><span class="std std-ref">Class Argument</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N8IfcWrite16IfcWriteArgumentE">
+<span id="_CPPv3N8IfcWrite16IfcWriteArgumentE"></span><span id="_CPPv2N8IfcWrite16IfcWriteArgumentE"></span><span id="IfcWrite::IfcWriteArgument"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument"></span><em class="property">class </em><code class="sig-prename descclassname">IfcWrite<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcWriteArgument</code> : <em class="property">public</em> <a class="reference internal" href="class_argument.html#_CPPv48Argument" title="Argument">Argument</a><a class="headerlink" href="#_CPPv4N8IfcWrite16IfcWriteArgumentE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>This class is a writable container for attributes. A fundamental difference with the attribute types counterparts defined in the IfcParse namespace is that this class has a Boost.Variant member for storing its value, whereas the IfcParse classes only contain lazy references to byte offsets in the IFC-SPF file. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4I0ENK8IfcWrite16IfcWriteArgument2asERK1Tv">
+<span id="_CPPv3I0ENK8IfcWrite16IfcWriteArgument2asEv"></span><span id="_CPPv2I0ENK8IfcWrite16IfcWriteArgument2asEv"></span>template&lt;typename <code class="sig-name descname">T</code>&gt;<br /><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1ab3b32e5a5d297d753a599deb4883ebb2"></span><em class="property">const</em> <a class="reference internal" href="#_CPPv4I0ENK8IfcWrite16IfcWriteArgument2asERK1Tv" title="IfcWrite::IfcWriteArgument::as::T">T</a> &amp;<code class="sig-name descname">as</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4I0ENK8IfcWrite16IfcWriteArgument2asERK1Tv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4I0EN8IfcWrite16IfcWriteArgument3setEN5boost10disable_ifIN5boost10is_base_ofIN7IfcUtil12IfcBaseClassEN5boost14remove_pointerI1TE4typeEEEvE4typeERK1T">
+<span id="_CPPv3I0EN8IfcWrite16IfcWriteArgument3setERK1T"></span><span id="_CPPv2I0EN8IfcWrite16IfcWriteArgument3setERK1T"></span>template&lt;typename <code class="sig-name descname">T</code>&gt;<br /><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1ab2adf49c7a4fdaa4eeb56a9a5fa87c0a"></span>boost::disable_if&lt;boost::is_base_of&lt;IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a>, <em class="property">typename</em> boost::remove_pointer&lt;<a class="reference internal" href="#_CPPv4I0EN8IfcWrite16IfcWriteArgument3setEN5boost10disable_ifIN5boost10is_base_ofIN7IfcUtil12IfcBaseClassEN5boost14remove_pointerI1TE4typeEEEvE4typeERK1T" title="IfcWrite::IfcWriteArgument::set::T">T</a>&gt;::type&gt;, void&gt;::type <code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4I0EN8IfcWrite16IfcWriteArgument3setEN5boost10disable_ifIN5boost10is_base_ofIN7IfcUtil12IfcBaseClassEN5boost14remove_pointerI1TE4typeEEEvE4typeERK1T" title="IfcWrite::IfcWriteArgument::set::T">T</a> &amp;<em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN8IfcWrite16IfcWriteArgument3setEN5boost10disable_ifIN5boost10is_base_ofIN7IfcUtil12IfcBaseClassEN5boost14remove_pointerI1TE4typeEEEvE4typeERK1T" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcWrite16IfcWriteArgument3setERKN13IfcEntityList3ptrE">
+<span id="_CPPv3N8IfcWrite16IfcWriteArgument3setERKN13IfcEntityList3ptrE"></span><span id="_CPPv2N8IfcWrite16IfcWriteArgument3setERKN13IfcEntityList3ptrE"></span><span id="IfcWrite::IfcWriteArgument::set__IfcEntityList::ptrCR"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1ac798ef156ef5c503a392f96055497a71"></span>void <code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> &amp;<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcWrite16IfcWriteArgument3setERKN13IfcEntityList3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcWrite16IfcWriteArgument3setERKN17IfcEntityListList3ptrE">
+<span id="_CPPv3N8IfcWrite16IfcWriteArgument3setERKN17IfcEntityListList3ptrE"></span><span id="_CPPv2N8IfcWrite16IfcWriteArgument3setERKN17IfcEntityListList3ptrE"></span><span id="IfcWrite::IfcWriteArgument::set__IfcEntityListList::ptrCR"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1a9bb32f7162468b3fb198b4550c5d8937"></span>void <code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="class_ifc_entity_list_list.html#_CPPv417IfcEntityListList" title="IfcEntityListList">IfcEntityListList</a>::<a class="reference internal" href="class_ifc_entity_list_list.html#_CPPv4N17IfcEntityListList3ptrE" title="IfcEntityListList::ptr">ptr</a> &amp;<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcWrite16IfcWriteArgument3setERKN17IfcEntityListList3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcWrite16IfcWriteArgument3setERPCN7IfcUtil12IfcBaseClassE">
+<span id="_CPPv3N8IfcWrite16IfcWriteArgument3setERPCN7IfcUtil12IfcBaseClassE"></span><span id="_CPPv2N8IfcWrite16IfcWriteArgument3setERPCN7IfcUtil12IfcBaseClassE"></span><span id="IfcWrite::IfcWriteArgument::set__IfcUtil::IfcBaseClassPCR"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1a1ec3c53ebaa6d26b4fccb84149336a1a"></span>void <code class="sig-name descname">set</code><span class="sig-paren">(</span>IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a> *<em class="property">const</em> &amp;<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcWrite16IfcWriteArgument3setERPCN7IfcUtil12IfcBaseClassE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgumentcviEv">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgumentcviEv"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgumentcviEv"></span><span id="IfcWrite::IfcWriteArgument::castto-i-operatorC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1a5de692eabedd77d762c5ec3158633734"></span><code class="sig-name descname">operator int</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgumentcviEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgumentcvbEv">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgumentcvbEv"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgumentcvbEv"></span><span id="IfcWrite::IfcWriteArgument::castto-b-operatorC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1ae03accb0850d96f9595ba9118e74c69d"></span><code class="sig-name descname">operator bool</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgumentcvbEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgumentcvdEv">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgumentcvdEv"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgumentcvdEv"></span><span id="IfcWrite::IfcWriteArgument::castto-double-operatorC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1acff8455b0d45e8ec7c0611410af2430b"></span><code class="sig-name descname">operator double</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgumentcvdEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgumentcvNSt6stringEEv">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgumentcvNSt6stringEEv"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgumentcvNSt6stringEEv"></span><span id="IfcWrite::IfcWriteArgument::castto-ss-operatorC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1a3bae00dff7bc4c2453d6d0d74816e022"></span><code class="sig-name descname">operator std::string</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgumentcvNSt6stringEEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgumentcvN5boost14dynamic_bitsetEEv">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgumentcvN5boost14dynamic_bitsetEEv"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgumentcvN5boost14dynamic_bitsetEEv"></span><span id="IfcWrite::IfcWriteArgument::castto-boost::dynamic_bitset-operatorC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1a67a7c1d58f71e1315d4d137439445537"></span><code class="sig-name descname">operator boost::dynamic_bitset</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgumentcvN5boost14dynamic_bitsetEEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgumentcvPN7IfcUtil12IfcBaseClassEEv">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgumentcvPN7IfcUtil12IfcBaseClassEEv"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgumentcvPN7IfcUtil12IfcBaseClassEEv"></span><span id="IfcWrite::IfcWriteArgument::castto-IfcUtil::IfcBaseClassP-operatorC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1a4d569f4d285b8612964ecf7ed839ddb6"></span><code class="sig-name descname">operator IfcUtil::IfcBaseClass*</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgumentcvPN7IfcUtil12IfcBaseClassEEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgumentcvNSt6vectorIiEEEv">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgumentcvNSt6vectorIiEEEv"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgumentcvNSt6vectorIiEEEv"></span><span id="IfcWrite::IfcWriteArgument::castto-std::vector:i:-operatorC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1af2040d0512c5a9f7aa7537da4a0cfe55"></span><code class="sig-name descname">operator std::vector&lt;int&gt;</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgumentcvNSt6vectorIiEEEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgumentcvNSt6vectorIdEEEv">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgumentcvNSt6vectorIdEEEv"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgumentcvNSt6vectorIdEEEv"></span><span id="IfcWrite::IfcWriteArgument::castto-std::vector:double:-operatorC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1a4b3f2184253436329bfad1973a636cc2"></span><code class="sig-name descname">operator std::vector&lt;double&gt;</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgumentcvNSt6vectorIdEEEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgumentcvNSt6vectorINSt6stringEEEEv">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgumentcvNSt6vectorINSt6stringEEEEv"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgumentcvNSt6vectorINSt6stringEEEEv"></span><span id="IfcWrite::IfcWriteArgument::castto-std::vector:ss:-operatorC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1a529709b6fa29d583053edd6d536af716"></span><code class="sig-name descname">operator std::vector&lt;std::string&gt;</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgumentcvNSt6vectorINSt6stringEEEEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgumentcvNSt6vectorIN5boost14dynamic_bitsetEEEEv">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgumentcvNSt6vectorIN5boost14dynamic_bitsetEEEEv"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgumentcvNSt6vectorIN5boost14dynamic_bitsetEEEEv"></span><span id="IfcWrite::IfcWriteArgument::castto-std::vector:boost::dynamic_bitset:-operatorC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1ab37f6b6020c050d285e9503246a06539"></span><code class="sig-name descname">operator std::vector&lt;boost::dynamic_bitset&gt;</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgumentcvNSt6vectorIN5boost14dynamic_bitsetEEEEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgumentcvN13IfcEntityList3ptrEEv">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgumentcvN13IfcEntityList3ptrEEv"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgumentcvN13IfcEntityList3ptrEEv"></span><span id="IfcWrite::IfcWriteArgument::castto-IfcEntityList::ptr-operatorC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1a138a85028c432059de00f8023d260aac"></span><code class="sig-name descname">operator IfcEntityList::ptr</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgumentcvN13IfcEntityList3ptrEEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgumentcvNSt6vectorINSt6vectorIiEEEEEv">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgumentcvNSt6vectorINSt6vectorIiEEEEEv"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgumentcvNSt6vectorINSt6vectorIiEEEEEv"></span><span id="IfcWrite::IfcWriteArgument::castto-std::vector:std::vector:i::-operatorC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1a383980f4810520346c1956653182f64f"></span><code class="sig-name descname">operator std::vector&lt;std::vector&lt;int&gt;&gt;</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgumentcvNSt6vectorINSt6vectorIiEEEEEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgumentcvNSt6vectorINSt6vectorIdEEEEEv">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgumentcvNSt6vectorINSt6vectorIdEEEEEv"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgumentcvNSt6vectorINSt6vectorIdEEEEEv"></span><span id="IfcWrite::IfcWriteArgument::castto-std::vector:std::vector:double::-operatorC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1a00faadb32c04b5d435a566a93bcb602a"></span><code class="sig-name descname">operator std::vector&lt;std::vector&lt;double&gt;&gt;</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgumentcvNSt6vectorINSt6vectorIdEEEEEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgumentcvN17IfcEntityListList3ptrEEv">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgumentcvN17IfcEntityListList3ptrEEv"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgumentcvN17IfcEntityListList3ptrEEv"></span><span id="IfcWrite::IfcWriteArgument::castto-IfcEntityListList::ptr-operatorC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1a2bb886f67846e2d4e25c244929e1fc4e"></span><code class="sig-name descname">operator IfcEntityListList::ptr</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgumentcvN17IfcEntityListList3ptrEEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgument6isNullEv">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgument6isNullEv"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgument6isNullEv"></span><span id="IfcWrite::IfcWriteArgument::isNullC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1a0899925e0348d6589c31876192968475"></span>bool <code class="sig-name descname">isNull</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgument6isNullEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgumentixEj">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgumentixEj"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgumentixEj"></span><span id="IfcWrite::IfcWriteArgument::subscript-operator__unsigned-iC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1a81a7845d3ff20e8776d1091452e5b5ad"></span><a class="reference internal" href="class_argument.html#_CPPv48Argument" title="Argument">Argument</a> *<code class="sig-name descname">operator[]</code><span class="sig-paren">(</span>unsigned int <em>i</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgumentixEj" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgument8toStringEb">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgument8toStringEb"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgument8toStringEb"></span><span id="IfcWrite::IfcWriteArgument::toString__bC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1a2f1eb7e8f9078c573d253faee4e9b2f2"></span>std::string <code class="sig-name descname">toString</code><span class="sig-paren">(</span>bool <em>upper</em> = false<span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgument8toStringEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgument4sizeEv">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgument4sizeEv"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgument4sizeEv"></span><span id="IfcWrite::IfcWriteArgument::sizeC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1a59ae92a202a73542b0656087634b8050"></span>unsigned int <code class="sig-name descname">size</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgument4sizeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8IfcWrite16IfcWriteArgument4typeEv">
+<span id="_CPPv3NK8IfcWrite16IfcWriteArgument4typeEv"></span><span id="_CPPv2NK8IfcWrite16IfcWriteArgument4typeEv"></span><span id="IfcWrite::IfcWriteArgument::typeC"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1a418f6cc26b8b68601e720cfe67135533"></span>IfcUtil::<a class="reference internal" href="enum__argument_type_8h_1a6c8c48060cd9c9d4787dae8f8944400b.html#_CPPv4N7IfcUtil12ArgumentTypeE" title="IfcUtil::ArgumentType">ArgumentType</a> <code class="sig-name descname">type</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8IfcWrite16IfcWriteArgument4typeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp class">
+<dt id="_CPPv4N8IfcWrite16IfcWriteArgument7DerivedE">
+<span id="_CPPv3N8IfcWrite16IfcWriteArgument7DerivedE"></span><span id="_CPPv2N8IfcWrite16IfcWriteArgument7DerivedE"></span><span id="IfcWrite::IfcWriteArgument::Derived"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1_1_derived"></span><em class="property">class </em><code class="sig-name descname">Derived</code><a class="headerlink" href="#_CPPv4N8IfcWrite16IfcWriteArgument7DerivedE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp class">
+<dt id="_CPPv4N8IfcWrite16IfcWriteArgument30empty_aggregate_of_aggregate_tE">
+<span id="_CPPv3N8IfcWrite16IfcWriteArgument30empty_aggregate_of_aggregate_tE"></span><span id="_CPPv2N8IfcWrite16IfcWriteArgument30empty_aggregate_of_aggregate_tE"></span><span id="IfcWrite::IfcWriteArgument::empty_aggregate_of_aggregate_t"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1_1empty__aggregate__of__aggregate__t"></span><em class="property">class </em><code class="sig-name descname">empty_aggregate_of_aggregate_t</code><a class="headerlink" href="#_CPPv4N8IfcWrite16IfcWriteArgument30empty_aggregate_of_aggregate_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp class">
+<dt id="_CPPv4N8IfcWrite16IfcWriteArgument17empty_aggregate_tE">
+<span id="_CPPv3N8IfcWrite16IfcWriteArgument17empty_aggregate_tE"></span><span id="_CPPv2N8IfcWrite16IfcWriteArgument17empty_aggregate_tE"></span><span id="IfcWrite::IfcWriteArgument::empty_aggregate_t"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1_1empty__aggregate__t"></span><em class="property">class </em><code class="sig-name descname">empty_aggregate_t</code><a class="headerlink" href="#_CPPv4N8IfcWrite16IfcWriteArgument17empty_aggregate_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp class">
+<dt id="_CPPv4N8IfcWrite16IfcWriteArgument20EnumerationReferenceE">
+<span id="_CPPv3N8IfcWrite16IfcWriteArgument20EnumerationReferenceE"></span><span id="_CPPv2N8IfcWrite16IfcWriteArgument20EnumerationReferenceE"></span><span id="IfcWrite::IfcWriteArgument::EnumerationReference"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1_1_enumeration_reference"></span><em class="property">class </em><code class="sig-name descname">EnumerationReference</code><a class="headerlink" href="#_CPPv4N8IfcWrite16IfcWriteArgument20EnumerationReferenceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N8IfcWrite16IfcWriteArgument20EnumerationReference20EnumerationReferenceEiPKc">
+<span id="_CPPv3N8IfcWrite16IfcWriteArgument20EnumerationReference20EnumerationReferenceEiPKc"></span><span id="_CPPv2N8IfcWrite16IfcWriteArgument20EnumerationReference20EnumerationReferenceEiPKc"></span><span id="IfcWrite::IfcWriteArgument::EnumerationReference::EnumerationReference__i.cCP"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1_1_enumeration_reference_1a4e8c3ca682944f44d314ebf8a2c78f18"></span><code class="sig-name descname">EnumerationReference</code><span class="sig-paren">(</span>int <em>data</em>, <em class="property">const</em> char *<em>enumeration_value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8IfcWrite16IfcWriteArgument20EnumerationReference20EnumerationReferenceEiPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="cpp var">
+<dt id="_CPPv4N8IfcWrite16IfcWriteArgument20EnumerationReference4dataE">
+<span id="_CPPv3N8IfcWrite16IfcWriteArgument20EnumerationReference4dataE"></span><span id="_CPPv2N8IfcWrite16IfcWriteArgument20EnumerationReference4dataE"></span><span id="IfcWrite::IfcWriteArgument::EnumerationReference::data__i"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1_1_enumeration_reference_1afddf040b1c16798fc5cd307a13e9fef8"></span>int <code class="sig-name descname">data</code><a class="headerlink" href="#_CPPv4N8IfcWrite16IfcWriteArgument20EnumerationReference4dataE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N8IfcWrite16IfcWriteArgument20EnumerationReference17enumeration_valueE">
+<span id="_CPPv3N8IfcWrite16IfcWriteArgument20EnumerationReference17enumeration_valueE"></span><span id="_CPPv2N8IfcWrite16IfcWriteArgument20EnumerationReference17enumeration_valueE"></span><span id="IfcWrite::IfcWriteArgument::EnumerationReference::enumeration_value__cCP"></span><span class="target" id="class_ifc_write_1_1_ifc_write_argument_1_1_enumeration_reference_1aec422a675c4adcf5c5e328dca6068a79"></span><em class="property">const</em> char *<code class="sig-name descname">enumeration_value</code><a class="headerlink" href="#_CPPv4N8IfcWrite16IfcWriteArgument20EnumerationReference17enumeration_valueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc_write_1_1_ifc_character_encoder.html" title="previous chapter">Class IfcCharacterEncoder</a></li>
+      <li>Next: <a href="class_ifc_write_1_1_ifc_write_argument_1_1_derived.html" title="next chapter">Class IfcWriteArgument::Derived</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc_write_1_1_ifc_write_argument.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

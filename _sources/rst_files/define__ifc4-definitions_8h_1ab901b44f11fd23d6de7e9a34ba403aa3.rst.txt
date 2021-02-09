@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ab901b44f11fd23d6de7e9a34ba403aa3:
+
+Define SCHEMA_IfcEvent_EventOccurenceTime_IS_OPTIONAL
+=====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcEvent_EventOccurenceTime_IS_OPTIONAL

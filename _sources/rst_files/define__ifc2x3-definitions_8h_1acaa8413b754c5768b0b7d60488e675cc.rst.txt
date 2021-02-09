@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1acaa8413b754c5768b0b7d60488e675cc:
+
+Define SCHEMA_IfcDocumentInformation_HAS_IsPointedTo
+====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDocumentInformation_HAS_IsPointedTo

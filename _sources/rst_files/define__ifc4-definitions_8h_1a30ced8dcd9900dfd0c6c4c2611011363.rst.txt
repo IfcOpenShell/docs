@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a30ced8dcd9900dfd0c6c4c2611011363:
+
+Define SCHEMA_IfcResourceTime_HAS_ActualFinish
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcResourceTime_HAS_ActualFinish

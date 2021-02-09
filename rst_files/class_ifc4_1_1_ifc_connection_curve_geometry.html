@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcConnectionCurveGeometry &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcConnectionGeometry" href="class_ifc4_1_1_ifc_connection_geometry.html" />
+    <link rel="prev" title="Class Ifc4::IfcConnectedFaceSet" href="class_ifc4_1_1_ifc_connected_face_set.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcconnectioncurvegeometry">
+<span id="exhale-class-class-ifc4-1-1-ifc-connection-curve-geometry"></span><h1>Class Ifc4::IfcConnectionCurveGeometry<a class="headerlink" href="#class-ifc4-ifcconnectioncurvegeometry" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcConnectionGeometry</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_connection_geometry.html#exhale-class-class-ifc4-1-1-ifc-connection-geometry"><span class="std std-ref">Class Ifc4::IfcConnectionGeometry</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc426IfcConnectionCurveGeometryE">
+<span id="_CPPv3N4Ifc426IfcConnectionCurveGeometryE"></span><span id="_CPPv2N4Ifc426IfcConnectionCurveGeometryE"></span><span id="Ifc4::IfcConnectionCurveGeometry"></span><span class="target" id="class_ifc4_1_1_ifc_connection_curve_geometry"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcConnectionCurveGeometry</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_connection_geometry.html#_CPPv4N4Ifc421IfcConnectionGeometryE" title="Ifc4::IfcConnectionGeometry">IfcConnectionGeometry</a><a class="headerlink" href="#_CPPv4N4Ifc426IfcConnectionCurveGeometryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_connection_curve_geometry"><span class="std std-ref">IfcConnectionCurveGeometry</span></a> is used to describe the geometric constraints that facilitate the physical connection of two objects at a curve or at an edge with curve geometry associated. It is envisioned as a control that applies to the element connection relationships.</p>
+<p>EXAMPLE The connection relationship between two walls has a geometric constraint which describes the end caps (or cut-off of the wall ends) by a CurveOnRelatingElement for the first wall and a CurveOnRelatedElement for the second wall. The exact usage of the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_connection_curve_geometry"><span class="std std-ref">IfcConnectionCurveGeometry</span></a> is further defined in the geometry use sections of the elements that use it.</p>
+<p>The available geometry for the connection constraint may be further restricted to only allow straight segments by applying <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a> only. Such an usage constraint is provided at the object definition of the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a> subtype, utilizing the element connection by referring to the subtype of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_connects"><span class="std std-ref">IfcRelConnects</span></a> with the associated<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_connection_curve_geometry"><span class="std std-ref">IfcConnectionCurveGeometry</span></a>.</p>
+<p>HISTORY New entity in IFC Release 1.5, has been renamed from IfcLineConnectionGeometry in IFC Release 2x.</p>
+<p>IFC2x Edition 3 CHANGE The provision of topology with associated geometry, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_edge_curve"><span class="std std-ref">IfcEdgeCurve</span></a>, is enabled by using the IfcCurveOrEdgeCurve.</p>
+<p>Geometry use definitions The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_curve"><span class="std std-ref">IfcCurve</span></a> (or the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_edge_curve"><span class="std std-ref">IfcEdgeCurve</span></a> with an associated <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_curve"><span class="std std-ref">IfcCurve</span></a>) at the CurveOnRelatingElement attribute defines the curve where the basic geometry items of the connected elements connects. The curve geometry and coordinates are provided within the local coordinate system of the RelatingElement, as specified at the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_connects"><span class="std std-ref">IfcRelConnects</span></a> Subtype that utilizes the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_connection_curve_geometry"><span class="std std-ref">IfcConnectionCurveGeometry</span></a>. Optionally, the same curve geometry and coordinates can also be provided within the local coordinate system of the RelatedElement by using the CurveOnRelatedElement attribute. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc426IfcConnectionCurveGeometry4listE">
+<span id="_CPPv3N4Ifc426IfcConnectionCurveGeometry4listE"></span><span id="_CPPv2N4Ifc426IfcConnectionCurveGeometry4listE"></span><span id="Ifc4::IfcConnectionCurveGeometry::list"></span><span class="target" id="class_ifc4_1_1_ifc_connection_curve_geometry_1a879669095e4a219d46248c47c9b62378"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc426IfcConnectionCurveGeometryE" title="Ifc4::IfcConnectionCurveGeometry">IfcConnectionCurveGeometry</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc426IfcConnectionCurveGeometry4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc426IfcConnectionCurveGeometry22CurveOnRelatingElementEv">
+<span id="_CPPv3NK4Ifc426IfcConnectionCurveGeometry22CurveOnRelatingElementEv"></span><span id="_CPPv2NK4Ifc426IfcConnectionCurveGeometry22CurveOnRelatingElementEv"></span><span id="Ifc4::IfcConnectionCurveGeometry::CurveOnRelatingElementC"></span><span class="target" id="class_ifc4_1_1_ifc_connection_curve_geometry_1a4c3913003834571bb55d42031e46fced"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcCurveOrEdgeCurveE" title="Ifc4::IfcCurveOrEdgeCurve">IfcCurveOrEdgeCurve</a> *<code class="sig-name descname">CurveOnRelatingElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc426IfcConnectionCurveGeometry22CurveOnRelatingElementEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The bounded curve at which the connected objects are aligned at the relating element, given in the LCS of the relating element. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc426IfcConnectionCurveGeometry25setCurveOnRelatingElementEPN4Ifc419IfcCurveOrEdgeCurveE">
+<span id="_CPPv3N4Ifc426IfcConnectionCurveGeometry25setCurveOnRelatingElementEPN4Ifc419IfcCurveOrEdgeCurveE"></span><span id="_CPPv2N4Ifc426IfcConnectionCurveGeometry25setCurveOnRelatingElementEPN4Ifc419IfcCurveOrEdgeCurveE"></span><span id="Ifc4::IfcConnectionCurveGeometry::setCurveOnRelatingElement__Ifc4::IfcCurveOrEdgeCurveP"></span><span class="target" id="class_ifc4_1_1_ifc_connection_curve_geometry_1a712dc5fc5577fa4cb773d5da08a3ab16"></span>void <code class="sig-name descname">setCurveOnRelatingElement</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcCurveOrEdgeCurveE" title="Ifc4::IfcCurveOrEdgeCurve">IfcCurveOrEdgeCurve</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc426IfcConnectionCurveGeometry25setCurveOnRelatingElementEPN4Ifc419IfcCurveOrEdgeCurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc426IfcConnectionCurveGeometry24hasCurveOnRelatedElementEv">
+<span id="_CPPv3NK4Ifc426IfcConnectionCurveGeometry24hasCurveOnRelatedElementEv"></span><span id="_CPPv2NK4Ifc426IfcConnectionCurveGeometry24hasCurveOnRelatedElementEv"></span><span id="Ifc4::IfcConnectionCurveGeometry::hasCurveOnRelatedElementC"></span><span class="target" id="class_ifc4_1_1_ifc_connection_curve_geometry_1a4a2eb93335a075ca162f25bf79cb6ba2"></span>bool <code class="sig-name descname">hasCurveOnRelatedElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc426IfcConnectionCurveGeometry24hasCurveOnRelatedElementEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute CurveOnRelatedElement is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_connection_curve_geometry"><span class="std std-ref">IfcConnectionCurveGeometry</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc426IfcConnectionCurveGeometry21CurveOnRelatedElementEv">
+<span id="_CPPv3NK4Ifc426IfcConnectionCurveGeometry21CurveOnRelatedElementEv"></span><span id="_CPPv2NK4Ifc426IfcConnectionCurveGeometry21CurveOnRelatedElementEv"></span><span id="Ifc4::IfcConnectionCurveGeometry::CurveOnRelatedElementC"></span><span class="target" id="class_ifc4_1_1_ifc_connection_curve_geometry_1a0c6481e70c33714515e6aed468e13535"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcCurveOrEdgeCurveE" title="Ifc4::IfcCurveOrEdgeCurve">IfcCurveOrEdgeCurve</a> *<code class="sig-name descname">CurveOnRelatedElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc426IfcConnectionCurveGeometry21CurveOnRelatedElementEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The bounded curve at which the connected objects are aligned at the related element, given in the LCS of the related element. If the information is omitted, then the origin of the related element is used. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc426IfcConnectionCurveGeometry24setCurveOnRelatedElementEPN4Ifc419IfcCurveOrEdgeCurveE">
+<span id="_CPPv3N4Ifc426IfcConnectionCurveGeometry24setCurveOnRelatedElementEPN4Ifc419IfcCurveOrEdgeCurveE"></span><span id="_CPPv2N4Ifc426IfcConnectionCurveGeometry24setCurveOnRelatedElementEPN4Ifc419IfcCurveOrEdgeCurveE"></span><span id="Ifc4::IfcConnectionCurveGeometry::setCurveOnRelatedElement__Ifc4::IfcCurveOrEdgeCurveP"></span><span class="target" id="class_ifc4_1_1_ifc_connection_curve_geometry_1a58a940ad877087b039d85d698aa7555e"></span>void <code class="sig-name descname">setCurveOnRelatedElement</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcCurveOrEdgeCurveE" title="Ifc4::IfcCurveOrEdgeCurve">IfcCurveOrEdgeCurve</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc426IfcConnectionCurveGeometry24setCurveOnRelatedElementEPN4Ifc419IfcCurveOrEdgeCurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc426IfcConnectionCurveGeometry11declarationEv">
+<span id="_CPPv3NK4Ifc426IfcConnectionCurveGeometry11declarationEv"></span><span id="_CPPv2NK4Ifc426IfcConnectionCurveGeometry11declarationEv"></span><span id="Ifc4::IfcConnectionCurveGeometry::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_connection_curve_geometry_1a7a3241e179acf7323505f9dcc1fedbca"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc426IfcConnectionCurveGeometry11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc426IfcConnectionCurveGeometry26IfcConnectionCurveGeometryEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc426IfcConnectionCurveGeometry26IfcConnectionCurveGeometryEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc426IfcConnectionCurveGeometry26IfcConnectionCurveGeometryEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcConnectionCurveGeometry::IfcConnectionCurveGeometry__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_connection_curve_geometry_1a720f5ff6eaab0219358d38e0e89576b4"></span><code class="sig-name descname">IfcConnectionCurveGeometry</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc426IfcConnectionCurveGeometry26IfcConnectionCurveGeometryEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc426IfcConnectionCurveGeometry26IfcConnectionCurveGeometryEPN4Ifc419IfcCurveOrEdgeCurveEPN4Ifc419IfcCurveOrEdgeCurveE">
+<span id="_CPPv3N4Ifc426IfcConnectionCurveGeometry26IfcConnectionCurveGeometryEPN4Ifc419IfcCurveOrEdgeCurveEPN4Ifc419IfcCurveOrEdgeCurveE"></span><span id="_CPPv2N4Ifc426IfcConnectionCurveGeometry26IfcConnectionCurveGeometryEPN4Ifc419IfcCurveOrEdgeCurveEPN4Ifc419IfcCurveOrEdgeCurveE"></span><span id="Ifc4::IfcConnectionCurveGeometry::IfcConnectionCurveGeometry__Ifc4::IfcCurveOrEdgeCurveP.Ifc4::IfcCurveOrEdgeCurveP"></span><span class="target" id="class_ifc4_1_1_ifc_connection_curve_geometry_1af51420fa6fdcc768f5d41bca400eaa3c"></span><code class="sig-name descname">IfcConnectionCurveGeometry</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcCurveOrEdgeCurveE" title="Ifc4::IfcCurveOrEdgeCurve">IfcCurveOrEdgeCurve</a> *<em>v1_CurveOnRelatingElement</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcCurveOrEdgeCurveE" title="Ifc4::IfcCurveOrEdgeCurve">IfcCurveOrEdgeCurve</a> *<em>v2_CurveOnRelatedElement</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc426IfcConnectionCurveGeometry26IfcConnectionCurveGeometryEPN4Ifc419IfcCurveOrEdgeCurveEPN4Ifc419IfcCurveOrEdgeCurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc426IfcConnectionCurveGeometry5ClassEv">
+<span id="_CPPv3N4Ifc426IfcConnectionCurveGeometry5ClassEv"></span><span id="_CPPv2N4Ifc426IfcConnectionCurveGeometry5ClassEv"></span><span id="Ifc4::IfcConnectionCurveGeometry::Class"></span><span class="target" id="class_ifc4_1_1_ifc_connection_curve_geometry_1a1829d463f09e0bd4fe1fddf713bbb2fe"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc426IfcConnectionCurveGeometry5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_connected_face_set.html" title="previous chapter">Class Ifc4::IfcConnectedFaceSet</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_connection_geometry.html" title="next chapter">Class Ifc4::IfcConnectionGeometry</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_connection_curve_geometry.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

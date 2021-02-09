@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcWallStandardCase &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcWallType" href="class_ifc4x2_1_1_ifc_wall_type.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcWallElementedCase" href="class_ifc4x2_1_1_ifc_wall_elemented_case.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcwallstandardcase">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-wall-standard-case"></span><h1>Class Ifc4x2::IfcWallStandardCase<a class="headerlink" href="#class-ifc4x2-ifcwallstandardcase" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcWall</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_wall.html#exhale-class-class-ifc4x2-1-1-ifc-wall"><span class="std std-ref">Class Ifc4x2::IfcWall</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x219IfcWallStandardCaseE">
+<span id="_CPPv3N6Ifc4x219IfcWallStandardCaseE"></span><span id="_CPPv2N6Ifc4x219IfcWallStandardCaseE"></span><span id="Ifc4x2::IfcWallStandardCase"></span><span class="target" id="class_ifc4x2_1_1_ifc_wall_standard_case"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcWallStandardCase</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_wall.html#_CPPv4N6Ifc4x27IfcWallE" title="Ifc4x2::IfcWall">IfcWall</a><a class="headerlink" href="#_CPPv4N6Ifc4x219IfcWallStandardCaseE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall_standard_case"><span class="std std-ref">IfcWallStandardCase</span></a> defines a wall with certain constraints for the provision of parameters and with certain constraints for the geometric representation. The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall_standard_case"><span class="std std-ref">IfcWallStandardCase</span></a> handles all cases of walls, that are extruded vertically:</p>
+<p>along the positive z axis of the wall object coordinate system, and along the positve z axis of the global (world) coordinate system</p>
+<p>and have a single thickness along the path for each wall layer, i.e.:</p>
+<p>parallel sides for straight walls co-centric sides for curved walls.</p>
+<p>and have either:</p>
+<p>a straight line axis (straight wall), or a circular arc axis (round wall).</p>
+<p>and shall not have</p>
+<p>aggregated components, that is, parts aggregated to a wall by <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_aggregates"><span class="std std-ref">IfcRelAggregates</span></a> shape representation for ‘Body’ not being an extrusion, or clipped extrusion</p>
+<p>The following parameter have to be provided:</p>
+<p>Wall height, taken from the depth of extrusion, provided by the geometric representation. Wall thickness, taken from the material layer set usage, attached to the wall Wall offset from axis, taken from the material layer set usage, attached to the wall</p>
+<p>The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall_standard_case"><span class="std std-ref">IfcWallStandardCase</span></a> requires the provision of the wall axis either a straight line that is parallel to the x-axis of the object coordinate system, or a circular arc where the tangent at start is parallel to the x-axis of the object coordinate system. The direction of the wall axis shall be the positive direction of that x-axis. The material of the wall is defined by the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set_usage"><span class="std std-ref">IfcMaterialLayerSetUsage</span></a> and is attached by the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_associates_material"><span class="std std-ref">IfcRelAssociatesMaterial</span></a> objectified relationship. It is accessible by the inverse HasAssociations relationship. The material layer set usage has to be given (enforced by where rule). HISTORY New entity in IFC Release 2x.</p>
+<p>Type Use Definition The type information relating to the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall_standard_case"><span class="std std-ref">IfcWallStandardCase</span></a> is defined at the supertype <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall"><span class="std std-ref">IfcWall</span></a>. As an additional use agreement for standard walls, the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall_type"><span class="std std-ref">IfcWallType</span></a> should have a unique <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set"><span class="std std-ref">IfcMaterialLayerSet</span></a>, that is referenced by the<a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set_usage"><span class="std std-ref">IfcMaterialLayerSetUsage</span></a> assigned to all occurrences of this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall_type"><span class="std std-ref">IfcWallType</span></a>.</p>
+<p>Figure 134 illustrates assignment of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set_usage"><span class="std std-ref">IfcMaterialLayerSetUsage</span></a> and <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set"><span class="std std-ref">IfcMaterialLayerSet</span></a> to the wall type and the wall occurrence.</p>
+<p>Figure 134</p>
+<p>Material Use Definition The material of the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall_standard_case"><span class="std std-ref">IfcWallStandardCase</span></a> is defined by <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set_usage"><span class="std std-ref">IfcMaterialLayerSetUsage</span></a> and attached by the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_associates_material_1a9073a6099e9b8c288b6d66189c9f4271"><span class="std std-ref">IfcRelAssociatesMaterial.RelatingMaterial</span></a>. It is accessible by the inverse HasAssociations relationship. Multi-layer walls can be represented by refering to several <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer"><span class="std std-ref">IfcMaterialLayer</span></a>’s within the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set"><span class="std std-ref">IfcMaterialLayerSet</span></a> that is referenced from the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set_usage"><span class="std std-ref">IfcMaterialLayerSetUsage</span></a>. Material information can also be given at the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall_type"><span class="std std-ref">IfcWallType</span></a>, defining the common attribute data for all occurrences of the same type.It is then accessible by the inverse IsDefinedBy relationship pointing to IfcSlabType.HasAssociations and via <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_associates_material_1a9073a6099e9b8c288b6d66189c9f4271"><span class="std std-ref">IfcRelAssociatesMaterial.RelatingMaterial</span></a>. See Type Use Definition for additional agreements for standard slabs.</p>
+<p>Figure 134 illustrates material layer usage, where the following conventions shall be met:</p>
+<p>The reference coordinate system is the local coordinate system established by the ObjectPlacement of the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall_standard_case"><span class="std std-ref">IfcWallStandardCase</span></a>. The reference axis is the axis defined by the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> with RepresentationType=’Axis’ as one of the Representation.Representations of the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall_standard_case"><span class="std std-ref">IfcWallStandardCase</span></a>. The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set_usage_1a0c15e05f447a72684407142839e4177c"><span class="std std-ref">IfcMaterialLayerSetUsage.OffsetFromReferenceLine</span></a> is given as a distance from this axis. The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set_usage_1a0c15e05f447a72684407142839e4177c"><span class="std std-ref">IfcMaterialLayerSetUsage.OffsetFromReferenceLine</span></a> is the distance parallel to the reference axis and always within the base (XY) plane of the reference coordinate system. A positve value of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set_usage_1a0c15e05f447a72684407142839e4177c"><span class="std std-ref">IfcMaterialLayerSetUsage.OffsetFromReferenceLine</span></a> would then point into the positive y-axis of the reference coordinate system. The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set_usage_1a744639f8bc323ff8714c9c563532a151"><span class="std std-ref">IfcMaterialLayerSetUsage.DirectionSense</span></a> defines how the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer"><span class="std std-ref">IfcMaterialLayer</span></a>’s are assigned to the reference axis. POSITIVE means in direction to the positive y-axis of the reference coordinate system. The Thickness of each <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer"><span class="std std-ref">IfcMaterialLayer</span></a> is provided starting from the OffsetFromReferenceLine and in the direction given by DirectionSense. It is applied without any gap or overlap between two consecutive layers. The TotalThickness of the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set"><span class="std std-ref">IfcMaterialLayerSet</span></a> is the sum of all layer thicknesses. The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set_usage_1a1257e2aab4de456eec7ae4be5a4d219d"><span class="std std-ref">IfcMaterialLayerSetUsage.LayerSetDirection</span></a> is always AXIS2.</p>
+<p>Figure 134 — Wall material layers</p>
+<p>Property Set Use Definition: The property sets relating to the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall_standard_case"><span class="std std-ref">IfcWallStandardCase</span></a> are defined at the supertype <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall"><span class="std std-ref">IfcWall</span></a>. Quantity Use Definition: The quantities relating to the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall_standard_case"><span class="std std-ref">IfcWallStandardCase</span></a> are defined at the supertype <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall"><span class="std std-ref">IfcWall</span></a>. Geometry Use Definitions: The geometric representation of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall_standard_case"><span class="std std-ref">IfcWallStandardCase</span></a> is given by the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a>, allowing multiple geometric representation. Included are: Local Placement The use of local placement defining the wall object coordinate system is defined at the supertype <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall"><span class="std std-ref">IfcWall</span></a>. Geometric Representation The standard geometric representation of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall_standard_case"><span class="std std-ref">IfcWallStandardCase</span></a> is defined using the following multiple shape representations for its definition:</p>
+<p>Axis: A two-dimensional open curve (<a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_bounded_curve"><span class="std std-ref">IfcBoundedCurve</span></a>) defining the axis for the standard wall. The material layer offset is measured from the wall axis. Body: A Swept Solid Representation or a CSG representation defining the 3D shape of the standard wall</p>
+<p>NOTE It is invalid to exhange a ‘SurfaceModel’, or ‘Brep’ or ‘MappedRepresentation’ representation for the ‘Body’ shape representation of an <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall_standard_case"><span class="std std-ref">IfcWallStandardCase</span></a>. Axis Representation The wall axis is represented by a two-dimensional open curve within a particular shape representation. The wall axis is used to apply the material layer set usage parameter to the wall geometry. The following attribute values shall be used</p>
+<p>RepresentationIdentifier : ‘Axis’ RepresentationType : ‘Curve2D’</p>
+<p>Figure 135 illustrates an axis representation for a straight wall. In case of a straight wall, the set of items shall include a single geometric representation item of type <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a> or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_trimmed_curve"><span class="std std-ref">IfcTrimmedCurve</span></a> with the BasisCurve being an <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_line"><span class="std std-ref">IfcLine</span></a>. The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a> or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_trimmed_curve"><span class="std std-ref">IfcTrimmedCurve</span></a> shall be parallel (here in a special case co-linear) to the x-axis of the object coordinate system. The direction shall be identical to the direction of the x-axis.</p>
+<p>Figure 136 illustrates an axis representation for a curved wall. In case of a curved wall, the set of items shall include a single geometric representation item of type <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_trimmed_curve"><span class="std std-ref">IfcTrimmedCurve</span></a>. The curve shall have a BasisCurve of type <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_circle"><span class="std std-ref">IfcCircle</span></a>. The tangent of the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_trimmed_curve"><span class="std std-ref">IfcTrimmedCurve</span></a> shall be parallel at start to the x-axis of the object coordinate system. The direction shall be identical to the direction of the x-axis.</p>
+<p>Figure 135 — Wall axis straight Figure 136 — Wall axis curved</p>
+<p>Body Representation The body representation of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_wall_standard_case"><span class="std std-ref">IfcWallStandardCase</span></a> is defined by using ‘SweptSolid’ representation for walls without clippings or ‘Clipping’ representation for walls with clippings (e.g. under sloped roof slabs). SweptSolid Representation Type The following attribute values for the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘SweptSolid’</p>
+<p>The following additional constraints apply to the ‘SweptSolid’ representation:</p>
+<p>Solid: <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_extruded_area_solid"><span class="std std-ref">IfcExtrudedAreaSolid</span></a> is required, Profile: <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_arbitrary_closed_profile_def"><span class="std std-ref">IfcArbitraryClosedProfileDef</span></a> and <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rectangle_profile_def"><span class="std std-ref">IfcRectangleProfileDef</span></a> shall be supported. Extrusion: The profile shall be extruded vertically, i.e., in the direction of the z-axis of the co-ordinate system of the referred spatial structure element. It might be further constraint to be in the direction of the global z-axis in implementers agreements. The extrusion axis shall be perpendicular to the swept profile, i.e. pointing into the direction of the z-axis of the Position of the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_extruded_area_solid"><span class="std std-ref">IfcExtrudedAreaSolid</span></a>.</p>
+<p>The profile of a wall is described in the ground view and extruded vertically. The profile (also identical with the foot print of the wall) is defined by the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_arbitrary_closed_profile_def"><span class="std std-ref">IfcArbitraryClosedProfileDef</span></a> (excluding its subtypes). The profile is given with all wall connections already resolved.</p>
+<p>Figure 137 illustrates a body representation for a straight wall. In case of a straight wall, the two sides of the profile shall be parallel to the wall axis, that is, the wall has a single unchanged thickness.</p>
+<p>Figure 138 illustrates a body representation for a curved wall. In case of a curved wall, the two sides of the profile shall be parallel (with defined offset) to the wall axis, that is, the wall has a single unchanged thickness.</p>
+<p>Figure 137 — Wall body extrusion straight Figure 138 — Wall body extrusion curved</p>
+<p>Clipping Representation Type The following attribute values for the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘Clipping’</p>
+<p>The following constraints apply to the ‘Clipping’ representation:</p>
+<p>Solid: see standard geometric representation Profile: see standard geometric representation Extrusion: see standard geometric representation Boolean result: The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_boolean_clipping_result"><span class="std std-ref">IfcBooleanClippingResult</span></a> shall be supported, allowing for Boolean differences between the swept solid (here <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_extruded_area_solid"><span class="std std-ref">IfcExtrudedAreaSolid</span></a>) and one or several <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_half_space_solid"><span class="std std-ref">IfcHalfSpaceSolid</span></a> (or subtypes).</p>
+<p>Figure 139 illustrates a clipping for a straight wall using an <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_polygonal_bounded_half_space"><span class="std std-ref">IfcPolygonalBoundedHalfSpace</span></a> as SecondOperand in the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_boolean_clipping_result"><span class="std std-ref">IfcBooleanClippingResult</span></a>.</p>
+<p>Figure 140 illustrates a clipping for a curved wall using an <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_half_space_solid"><span class="std std-ref">IfcHalfSpaceSolid</span></a> as SecondOperand in the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_boolean_clipping_result"><span class="std std-ref">IfcBooleanClippingResult</span></a>.</p>
+<p>Figure 139 — Wall body clipping straight Figure 140 — Wall body clipping curved </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x219IfcWallStandardCase4listE">
+<span id="_CPPv3N6Ifc4x219IfcWallStandardCase4listE"></span><span id="_CPPv2N6Ifc4x219IfcWallStandardCase4listE"></span><span id="Ifc4x2::IfcWallStandardCase::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_wall_standard_case_1abfc6bbdf71aa30d2513a9460d3a2255a"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x219IfcWallStandardCaseE" title="Ifc4x2::IfcWallStandardCase">IfcWallStandardCase</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x219IfcWallStandardCase4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x219IfcWallStandardCase11declarationEv">
+<span id="_CPPv3NK6Ifc4x219IfcWallStandardCase11declarationEv"></span><span id="_CPPv2NK6Ifc4x219IfcWallStandardCase11declarationEv"></span><span id="Ifc4x2::IfcWallStandardCase::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_wall_standard_case_1aa2077e416aaa4499da12951bc11ebb24"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x219IfcWallStandardCase11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x219IfcWallStandardCase19IfcWallStandardCaseEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x219IfcWallStandardCase19IfcWallStandardCaseEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x219IfcWallStandardCase19IfcWallStandardCaseEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcWallStandardCase::IfcWallStandardCase__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_wall_standard_case_1af487a37ab71ee3047d43640e47636d50"></span><code class="sig-name descname">IfcWallStandardCase</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x219IfcWallStandardCase19IfcWallStandardCaseEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x219IfcWallStandardCase19IfcWallStandardCaseENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x218IfcObjectPlacementEPN6Ifc4x224IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x215IfcWallTypeEnum5ValueEEE">
+<span id="_CPPv3N6Ifc4x219IfcWallStandardCase19IfcWallStandardCaseENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x218IfcObjectPlacementEPN6Ifc4x224IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x215IfcWallTypeEnum5ValueEEE"></span><span id="_CPPv2N6Ifc4x219IfcWallStandardCase19IfcWallStandardCaseENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x218IfcObjectPlacementEPN6Ifc4x224IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x215IfcWallTypeEnum5ValueEEE"></span><span id="Ifc4x2::IfcWallStandardCase::IfcWallStandardCase__ss.Ifc4x2::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4x2::IfcObjectPlacementP.Ifc4x2::IfcProductRepresentationP.boost::optional:ss:.boost::optional:Ifc4x2::IfcWallTypeEnum::Value:"></span><span class="target" id="class_ifc4x2_1_1_ifc_wall_standard_case_1ae7ff1c9956e271aa339fc0fe3b4d5b53"></span><code class="sig-name descname">IfcWallStandardCase</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_owner_history.html#_CPPv4N6Ifc4x215IfcOwnerHistoryE" title="Ifc4x2::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_object_placement.html#_CPPv4N6Ifc4x218IfcObjectPlacementE" title="Ifc4x2::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_product_representation.html#_CPPv4N6Ifc4x224IfcProductRepresentationE" title="Ifc4x2::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, boost::optional&lt;std::string&gt; <em>v8_Tag</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x215IfcWallTypeEnumE" title="Ifc4x2::IfcWallTypeEnum">IfcWallTypeEnum</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x215IfcWallTypeEnum5ValueE" title="Ifc4x2::IfcWallTypeEnum::Value">Value</a>&gt; <em>v9_PredefinedType</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x219IfcWallStandardCase19IfcWallStandardCaseENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x218IfcObjectPlacementEPN6Ifc4x224IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x215IfcWallTypeEnum5ValueEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x219IfcWallStandardCase5ClassEv">
+<span id="_CPPv3N6Ifc4x219IfcWallStandardCase5ClassEv"></span><span id="_CPPv2N6Ifc4x219IfcWallStandardCase5ClassEv"></span><span id="Ifc4x2::IfcWallStandardCase::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_wall_standard_case_1a5bec3ad6cccf61bc2c358bdf7ade79e7"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x219IfcWallStandardCase5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_wall_elemented_case.html" title="previous chapter">Class Ifc4x2::IfcWallElementedCase</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_wall_type.html" title="next chapter">Class Ifc4x2::IfcWallType</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_wall_standard_case.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a5f9081dff0f8d0726d2f275d5b5e81ea:
+
+Define SCHEMA_IfcAnnotation_HAS_ContainedInStructure
+====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcAnnotation_HAS_ContainedInStructure

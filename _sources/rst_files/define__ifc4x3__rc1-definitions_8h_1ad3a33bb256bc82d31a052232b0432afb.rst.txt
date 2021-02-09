@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1ad3a33bb256bc82d31a052232b0432afb:
+
+Define SCHEMA_IfcProductRepresentation_Name_IS_OPTIONAL
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcProductRepresentation_Name_IS_OPTIONAL

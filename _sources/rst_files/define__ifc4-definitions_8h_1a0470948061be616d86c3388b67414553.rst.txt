@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a0470948061be616d86c3388b67414553:
+
+Define SCHEMA_IfcConnectionSurfaceGeometry_HAS_SurfaceOnRelatingElement
+=======================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConnectionSurfaceGeometry_HAS_SurfaceOnRelatingElement

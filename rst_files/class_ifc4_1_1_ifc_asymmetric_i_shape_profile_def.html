@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcAsymmetricIShapeProfileDef &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcAudioVisualAppliance" href="class_ifc4_1_1_ifc_audio_visual_appliance.html" />
+    <link rel="prev" title="Class Ifc4::IfcAsset" href="class_ifc4_1_1_ifc_asset.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcasymmetricishapeprofiledef">
+<span id="exhale-class-class-ifc4-1-1-ifc-asymmetric-i-shape-profile-def"></span><h1>Class Ifc4::IfcAsymmetricIShapeProfileDef<a class="headerlink" href="#class-ifc4-ifcasymmetricishapeprofiledef" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcParameterizedProfileDef</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_parameterized_profile_def.html#exhale-class-class-ifc4-1-1-ifc-parameterized-profile-def"><span class="std std-ref">Class Ifc4::IfcParameterizedProfileDef</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDefE">
+<span id="_CPPv3N4Ifc429IfcAsymmetricIShapeProfileDefE"></span><span id="_CPPv2N4Ifc429IfcAsymmetricIShapeProfileDefE"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcAsymmetricIShapeProfileDef</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_parameterized_profile_def.html#_CPPv4N4Ifc426IfcParameterizedProfileDefE" title="Ifc4::IfcParameterizedProfileDef">IfcParameterizedProfileDef</a><a class="headerlink" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDefE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def"><span class="std std-ref">IfcAsymmetricIShapeProfileDef</span></a> defines a section profile that provides the defining parameters of a singly symmetric I-shaped section. Its parameters and orientation relative to the position coordinate system are according to the following illustration. The centre of the position coordinate system is in the profile’s centre of the bounding box.</p>
+<p>The inherited attributes are redefined as:</p>
+<p>OverallWidth  BottomFlangeWidth FlangeThickness  BottomFlangeThickness FilletRadius  BottomFlangeFilletRadius</p>
+<p>The overall width of the profile is implicitly given by the maximum of the bottom flange width and the top flange width.</p>
+<p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def"><span class="std std-ref">IfcAsymmetricIShapeProfileDef</span></a> can also be used to model rail profiles if the application scenario does not require a full explicit shape model of the rail profile. Alternatively, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_arbitrary_closed_profile_def"><span class="std std-ref">IfcArbitraryClosedProfileDef</span></a> can be used to provide the exact shape of rail profiles. Either way, a reference to an external document or library should be provided to further define the profile as described at <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_profile_def"><span class="std std-ref">IfcProfileDef</span></a>.</p>
+<p>HISTORY New entity in Release IFC2x Edition 2.</p>
+<p>IFC2x3 CHANGE All profile origins are now in the center of the bounding box. The attribute CentreOfGravityInY has been made OPTIONAL.</p>
+<p>IFC2x4 CHANGE Bottom flange is not necessarily wider than top flange. TopFlangeThickness changed from OPTIONAL to mandatory. Type of TopFlangeFilletRadius relaxed to allow for zero radius. Trailing attribute CentreOfGravityInY deleted, use respective property in IfcExtendedProfileProperties instead.</p>
+<p>Figure 310 illustrates parameters of the asymmetric I-shaped section definition. The parameterized profile defines its own position coordinate system. The underlying coordinate system is defined by the swept area solid that uses the profile definition. It is the xy plane of:</p>
+<p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_swept_area_solid_1a90abb2dcd960a4f47c3f780504effeec"><span class="std std-ref">IfcSweptAreaSolid.Position</span></a></p>
+<p>By using offsets of the position location, the parameterized profile can be positioned centric (using x,y offsets = 0.), or at any position relative to the profile. The parameterized profile is defined by a set of parameter attributes. In the illustrated example, the ‘CentreOfGravityInY’ property in IfcExtendedProfileProperties, if provided, is negative.</p>
+<p>Figure 310 — Assymetric I-shape profile </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef4listE">
+<span id="_CPPv3N4Ifc429IfcAsymmetricIShapeProfileDef4listE"></span><span id="_CPPv2N4Ifc429IfcAsymmetricIShapeProfileDef4listE"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::list"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1afb8f0c0c4b9359d622f00045d921bac9"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDefE" title="Ifc4::IfcAsymmetricIShapeProfileDef">IfcAsymmetricIShapeProfileDef</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef17BottomFlangeWidthEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef17BottomFlangeWidthEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef17BottomFlangeWidthEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::BottomFlangeWidthC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1af5b73cdc813c6935c91165906bf343cb"></span>double <code class="sig-name descname">BottomFlangeWidth</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef17BottomFlangeWidthEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef20setBottomFlangeWidthEd">
+<span id="_CPPv3N4Ifc429IfcAsymmetricIShapeProfileDef20setBottomFlangeWidthEd"></span><span id="_CPPv2N4Ifc429IfcAsymmetricIShapeProfileDef20setBottomFlangeWidthEd"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::setBottomFlangeWidth__double"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1aaa6165152da7b545973bce88d57f372b"></span>void <code class="sig-name descname">setBottomFlangeWidth</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef20setBottomFlangeWidthEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef12OverallDepthEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef12OverallDepthEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef12OverallDepthEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::OverallDepthC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1aebfa35ebbbc6f1e35b01467c4d38233a"></span>double <code class="sig-name descname">OverallDepth</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef12OverallDepthEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef15setOverallDepthEd">
+<span id="_CPPv3N4Ifc429IfcAsymmetricIShapeProfileDef15setOverallDepthEd"></span><span id="_CPPv2N4Ifc429IfcAsymmetricIShapeProfileDef15setOverallDepthEd"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::setOverallDepth__double"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a02e04a187d91a2d156e76fbd59229b01"></span>void <code class="sig-name descname">setOverallDepth</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef15setOverallDepthEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef12WebThicknessEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef12WebThicknessEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef12WebThicknessEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::WebThicknessC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a418a62f8ebe122c261eec85c022a9c1b"></span>double <code class="sig-name descname">WebThickness</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef12WebThicknessEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef15setWebThicknessEd">
+<span id="_CPPv3N4Ifc429IfcAsymmetricIShapeProfileDef15setWebThicknessEd"></span><span id="_CPPv2N4Ifc429IfcAsymmetricIShapeProfileDef15setWebThicknessEd"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::setWebThickness__double"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a8fb4779179775446c307c94e97468c9c"></span>void <code class="sig-name descname">setWebThickness</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef15setWebThicknessEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef21BottomFlangeThicknessEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef21BottomFlangeThicknessEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef21BottomFlangeThicknessEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::BottomFlangeThicknessC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1afdbb17a6afe9b63ae7d6b2e24e828a74"></span>double <code class="sig-name descname">BottomFlangeThickness</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef21BottomFlangeThicknessEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef24setBottomFlangeThicknessEd">
+<span id="_CPPv3N4Ifc429IfcAsymmetricIShapeProfileDef24setBottomFlangeThicknessEd"></span><span id="_CPPv2N4Ifc429IfcAsymmetricIShapeProfileDef24setBottomFlangeThicknessEd"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::setBottomFlangeThickness__double"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a8b2d9d0485c85ae786ae75f7c4800ebc"></span>void <code class="sig-name descname">setBottomFlangeThickness</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef24setBottomFlangeThicknessEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef27hasBottomFlangeFilletRadiusEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef27hasBottomFlangeFilletRadiusEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef27hasBottomFlangeFilletRadiusEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::hasBottomFlangeFilletRadiusC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1aa8205b287674b533df2dd4b951bda8cc"></span>bool <code class="sig-name descname">hasBottomFlangeFilletRadius</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef27hasBottomFlangeFilletRadiusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute BottomFlangeFilletRadius is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def"><span class="std std-ref">IfcAsymmetricIShapeProfileDef</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef24BottomFlangeFilletRadiusEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef24BottomFlangeFilletRadiusEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef24BottomFlangeFilletRadiusEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::BottomFlangeFilletRadiusC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a86ad93c8c92e8e61b4028b08b547eb63"></span>double <code class="sig-name descname">BottomFlangeFilletRadius</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef24BottomFlangeFilletRadiusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef27setBottomFlangeFilletRadiusEd">
+<span id="_CPPv3N4Ifc429IfcAsymmetricIShapeProfileDef27setBottomFlangeFilletRadiusEd"></span><span id="_CPPv2N4Ifc429IfcAsymmetricIShapeProfileDef27setBottomFlangeFilletRadiusEd"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::setBottomFlangeFilletRadius__double"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1af51a4c6f7417f97168d0a195bf32d0ec"></span>void <code class="sig-name descname">setBottomFlangeFilletRadius</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef27setBottomFlangeFilletRadiusEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef14TopFlangeWidthEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef14TopFlangeWidthEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef14TopFlangeWidthEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::TopFlangeWidthC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a43f98a1d959107302e999c5b86911ef8"></span>double <code class="sig-name descname">TopFlangeWidth</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef14TopFlangeWidthEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Extent of the top flange, defined parallel to the x axis of the position coordinate system. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef17setTopFlangeWidthEd">
+<span id="_CPPv3N4Ifc429IfcAsymmetricIShapeProfileDef17setTopFlangeWidthEd"></span><span id="_CPPv2N4Ifc429IfcAsymmetricIShapeProfileDef17setTopFlangeWidthEd"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::setTopFlangeWidth__double"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1afd227f96a5109f24db6f8003ea2ceca4"></span>void <code class="sig-name descname">setTopFlangeWidth</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef17setTopFlangeWidthEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef21hasTopFlangeThicknessEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef21hasTopFlangeThicknessEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef21hasTopFlangeThicknessEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::hasTopFlangeThicknessC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1af83fe93c912abe1ac6de61d595a644fa"></span>bool <code class="sig-name descname">hasTopFlangeThickness</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef21hasTopFlangeThicknessEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute TopFlangeThickness is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def"><span class="std std-ref">IfcAsymmetricIShapeProfileDef</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef18TopFlangeThicknessEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef18TopFlangeThicknessEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef18TopFlangeThicknessEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::TopFlangeThicknessC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a34aac695d11902e0be8d789db516d1ce"></span>double <code class="sig-name descname">TopFlangeThickness</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef18TopFlangeThicknessEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Flange thickness of the top flange of the I-shape. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef21setTopFlangeThicknessEd">
+<span id="_CPPv3N4Ifc429IfcAsymmetricIShapeProfileDef21setTopFlangeThicknessEd"></span><span id="_CPPv2N4Ifc429IfcAsymmetricIShapeProfileDef21setTopFlangeThicknessEd"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::setTopFlangeThickness__double"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a15227082480cd3930e1559fe4fa499b1"></span>void <code class="sig-name descname">setTopFlangeThickness</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef21setTopFlangeThicknessEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef24hasTopFlangeFilletRadiusEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef24hasTopFlangeFilletRadiusEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef24hasTopFlangeFilletRadiusEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::hasTopFlangeFilletRadiusC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a2c4230083d9c7445f470d63e278256f8"></span>bool <code class="sig-name descname">hasTopFlangeFilletRadius</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef24hasTopFlangeFilletRadiusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute TopFlangeFilletRadius is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def"><span class="std std-ref">IfcAsymmetricIShapeProfileDef</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef21TopFlangeFilletRadiusEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef21TopFlangeFilletRadiusEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef21TopFlangeFilletRadiusEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::TopFlangeFilletRadiusC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a656e93a28cc03e7e416d360b29d9aea0"></span>double <code class="sig-name descname">TopFlangeFilletRadius</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef21TopFlangeFilletRadiusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The fillet between the web and the top flange of the I-shape. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef24setTopFlangeFilletRadiusEd">
+<span id="_CPPv3N4Ifc429IfcAsymmetricIShapeProfileDef24setTopFlangeFilletRadiusEd"></span><span id="_CPPv2N4Ifc429IfcAsymmetricIShapeProfileDef24setTopFlangeFilletRadiusEd"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::setTopFlangeFilletRadius__double"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1ad7a3a537068a13ae5cdca6d3d1eb2035"></span>void <code class="sig-name descname">setTopFlangeFilletRadius</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef24setTopFlangeFilletRadiusEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef25hasBottomFlangeEdgeRadiusEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef25hasBottomFlangeEdgeRadiusEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef25hasBottomFlangeEdgeRadiusEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::hasBottomFlangeEdgeRadiusC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a1ddbd7edc7a80f12b59a525c7deff0c3"></span>bool <code class="sig-name descname">hasBottomFlangeEdgeRadius</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef25hasBottomFlangeEdgeRadiusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute BottomFlangeEdgeRadius is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def"><span class="std std-ref">IfcAsymmetricIShapeProfileDef</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef22BottomFlangeEdgeRadiusEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef22BottomFlangeEdgeRadiusEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef22BottomFlangeEdgeRadiusEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::BottomFlangeEdgeRadiusC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a5a6dfd0952fd5f85e675ffb9827fe9f2"></span>double <code class="sig-name descname">BottomFlangeEdgeRadius</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef22BottomFlangeEdgeRadiusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef25setBottomFlangeEdgeRadiusEd">
+<span id="_CPPv3N4Ifc429IfcAsymmetricIShapeProfileDef25setBottomFlangeEdgeRadiusEd"></span><span id="_CPPv2N4Ifc429IfcAsymmetricIShapeProfileDef25setBottomFlangeEdgeRadiusEd"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::setBottomFlangeEdgeRadius__double"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a1c5af9a45a177d505bfece5ff0c4a8da"></span>void <code class="sig-name descname">setBottomFlangeEdgeRadius</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef25setBottomFlangeEdgeRadiusEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef20hasBottomFlangeSlopeEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef20hasBottomFlangeSlopeEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef20hasBottomFlangeSlopeEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::hasBottomFlangeSlopeC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1aca17f8ee9e402f66132c9246b524aa6d"></span>bool <code class="sig-name descname">hasBottomFlangeSlope</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef20hasBottomFlangeSlopeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute BottomFlangeSlope is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def"><span class="std std-ref">IfcAsymmetricIShapeProfileDef</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef17BottomFlangeSlopeEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef17BottomFlangeSlopeEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef17BottomFlangeSlopeEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::BottomFlangeSlopeC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1ae85cd86113f54f124b3ac9c41d7f0cc8"></span>double <code class="sig-name descname">BottomFlangeSlope</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef17BottomFlangeSlopeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef20setBottomFlangeSlopeEd">
+<span id="_CPPv3N4Ifc429IfcAsymmetricIShapeProfileDef20setBottomFlangeSlopeEd"></span><span id="_CPPv2N4Ifc429IfcAsymmetricIShapeProfileDef20setBottomFlangeSlopeEd"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::setBottomFlangeSlope__double"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1af39f44c89665eecfaaf5fa9636d28ef7"></span>void <code class="sig-name descname">setBottomFlangeSlope</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef20setBottomFlangeSlopeEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef22hasTopFlangeEdgeRadiusEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef22hasTopFlangeEdgeRadiusEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef22hasTopFlangeEdgeRadiusEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::hasTopFlangeEdgeRadiusC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a75dce8a74ea180fbbb6b2eee0366cd00"></span>bool <code class="sig-name descname">hasTopFlangeEdgeRadius</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef22hasTopFlangeEdgeRadiusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute TopFlangeEdgeRadius is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def"><span class="std std-ref">IfcAsymmetricIShapeProfileDef</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef19TopFlangeEdgeRadiusEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef19TopFlangeEdgeRadiusEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef19TopFlangeEdgeRadiusEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::TopFlangeEdgeRadiusC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a185004816db2e7b6a8383be40795ce15"></span>double <code class="sig-name descname">TopFlangeEdgeRadius</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef19TopFlangeEdgeRadiusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef22setTopFlangeEdgeRadiusEd">
+<span id="_CPPv3N4Ifc429IfcAsymmetricIShapeProfileDef22setTopFlangeEdgeRadiusEd"></span><span id="_CPPv2N4Ifc429IfcAsymmetricIShapeProfileDef22setTopFlangeEdgeRadiusEd"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::setTopFlangeEdgeRadius__double"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a8884f7c5b11717da2bb726e7c1af8ee3"></span>void <code class="sig-name descname">setTopFlangeEdgeRadius</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef22setTopFlangeEdgeRadiusEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef17hasTopFlangeSlopeEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef17hasTopFlangeSlopeEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef17hasTopFlangeSlopeEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::hasTopFlangeSlopeC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1afdac4cc62d8e8427496e8e9d8f3e586c"></span>bool <code class="sig-name descname">hasTopFlangeSlope</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef17hasTopFlangeSlopeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute TopFlangeSlope is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def"><span class="std std-ref">IfcAsymmetricIShapeProfileDef</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef14TopFlangeSlopeEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef14TopFlangeSlopeEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef14TopFlangeSlopeEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::TopFlangeSlopeC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1ad8fe5e2fd5a93d1b945883532e4bc0e2"></span>double <code class="sig-name descname">TopFlangeSlope</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef14TopFlangeSlopeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef17setTopFlangeSlopeEd">
+<span id="_CPPv3N4Ifc429IfcAsymmetricIShapeProfileDef17setTopFlangeSlopeEd"></span><span id="_CPPv2N4Ifc429IfcAsymmetricIShapeProfileDef17setTopFlangeSlopeEd"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::setTopFlangeSlope__double"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a03acc56aaf0071ee38659cd190eaf649"></span>void <code class="sig-name descname">setTopFlangeSlope</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef17setTopFlangeSlopeEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef11declarationEv">
+<span id="_CPPv3NK4Ifc429IfcAsymmetricIShapeProfileDef11declarationEv"></span><span id="_CPPv2NK4Ifc429IfcAsymmetricIShapeProfileDef11declarationEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a41db2a83e3ec76b882a1ab7cc32c1759"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc429IfcAsymmetricIShapeProfileDef11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef29IfcAsymmetricIShapeProfileDefEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc429IfcAsymmetricIShapeProfileDef29IfcAsymmetricIShapeProfileDefEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc429IfcAsymmetricIShapeProfileDef29IfcAsymmetricIShapeProfileDefEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::IfcAsymmetricIShapeProfileDef__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a816cd87491517c40524aae19ae9d4a70"></span><code class="sig-name descname">IfcAsymmetricIShapeProfileDef</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef29IfcAsymmetricIShapeProfileDefEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef29IfcAsymmetricIShapeProfileDefEN4Ifc418IfcProfileTypeEnum5ValueEN5boost8optionalINSt6stringEEEPN4Ifc419IfcAxis2Placement2DEddddN5boost8optionalIdEEdN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEE">
+<span id="_CPPv3N4Ifc429IfcAsymmetricIShapeProfileDef29IfcAsymmetricIShapeProfileDefEN4Ifc418IfcProfileTypeEnum5ValueEN5boost8optionalINSt6stringEEEPN4Ifc419IfcAxis2Placement2DEddddN5boost8optionalIdEEdN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEE"></span><span id="_CPPv2N4Ifc429IfcAsymmetricIShapeProfileDef29IfcAsymmetricIShapeProfileDefEN4Ifc418IfcProfileTypeEnum5ValueEN5boost8optionalINSt6stringEEEPN4Ifc419IfcAxis2Placement2DEddddN5boost8optionalIdEEdN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEE"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::IfcAsymmetricIShapeProfileDef__Ifc4::IfcProfileTypeEnum::Value.boost::optional:ss:.Ifc4::IfcAxis2Placement2DP.double.double.double.double.boost::optional:double:.double.boost::optional:double:.boost::optional:double:.boost::optional:double:.boost::optional:double:.boost::optional:double:.boost::optional:double:"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a7a10a313b2a215715f17a149319aad0f"></span><code class="sig-name descname">IfcAsymmetricIShapeProfileDef</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc418IfcProfileTypeEnumE" title="Ifc4::IfcProfileTypeEnum">IfcProfileTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc418IfcProfileTypeEnum5ValueE" title="Ifc4::IfcProfileTypeEnum::Value">Value</a> <em>v1_ProfileType</em>, boost::optional&lt;std::string&gt; <em>v2_ProfileName</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_axis2_placement2_d.html#_CPPv4N4Ifc419IfcAxis2Placement2DE" title="Ifc4::IfcAxis2Placement2D">IfcAxis2Placement2D</a> *<em>v3_Position</em>, double <em>v4_BottomFlangeWidth</em>, double <em>v5_OverallDepth</em>, double <em>v6_WebThickness</em>, double <em>v7_BottomFlangeThickness</em>, boost::optional&lt;double&gt; <em>v8_BottomFlangeFilletRadius</em>, double <em>v9_TopFlangeWidth</em>, boost::optional&lt;double&gt; <em>v10_TopFlangeThickness</em>, boost::optional&lt;double&gt; <em>v11_TopFlangeFilletRadius</em>, boost::optional&lt;double&gt; <em>v12_BottomFlangeEdgeRadius</em>, boost::optional&lt;double&gt; <em>v13_BottomFlangeSlope</em>, boost::optional&lt;double&gt; <em>v14_TopFlangeEdgeRadius</em>, boost::optional&lt;double&gt; <em>v15_TopFlangeSlope</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef29IfcAsymmetricIShapeProfileDefEN4Ifc418IfcProfileTypeEnum5ValueEN5boost8optionalINSt6stringEEEPN4Ifc419IfcAxis2Placement2DEddddN5boost8optionalIdEEdN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef5ClassEv">
+<span id="_CPPv3N4Ifc429IfcAsymmetricIShapeProfileDef5ClassEv"></span><span id="_CPPv2N4Ifc429IfcAsymmetricIShapeProfileDef5ClassEv"></span><span id="Ifc4::IfcAsymmetricIShapeProfileDef::Class"></span><span class="target" id="class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def_1a456c0e7276543150b51bf757a2c8202c"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc429IfcAsymmetricIShapeProfileDef5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_asset.html" title="previous chapter">Class Ifc4::IfcAsset</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_audio_visual_appliance.html" title="next chapter">Class Ifc4::IfcAudioVisualAppliance</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_asymmetric_i_shape_profile_def.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

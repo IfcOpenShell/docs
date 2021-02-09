@@ -1,0 +1,38 @@
+.. _exhale_class_class_ifc4x1_1_1_ifc_wall:
+
+Class Ifc4x1::IfcWall
+=====================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x1::IfcBuildingElement`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_building_element`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x1::IfcWallElementedCase`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_wall_elemented_case`)
+- ``public Ifc4x1::IfcWallStandardCase`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_wall_standard_case`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x1::IfcWall
+   :members:
+   :protected-members:
+   :undoc-members:

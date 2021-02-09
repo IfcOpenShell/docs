@@ -1,0 +1,41 @@
+.. _exhale_class_class_ifc2x3_1_1_ifc_annotation_occurrence:
+
+Class Ifc2x3::IfcAnnotationOccurrence
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc2x3::IfcStyledItem`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_styled_item`)
+
+
+Derived Types
+*************
+
+- ``public Ifc2x3::IfcAnnotationCurveOccurrence`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_annotation_curve_occurrence`)
+- ``public Ifc2x3::IfcAnnotationFillAreaOccurrence`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_annotation_fill_area_occurrence`)
+- ``public Ifc2x3::IfcAnnotationSurfaceOccurrence`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_annotation_surface_occurrence`)
+- ``public Ifc2x3::IfcAnnotationSymbolOccurrence`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_annotation_symbol_occurrence`)
+- ``public Ifc2x3::IfcAnnotationTextOccurrence`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_annotation_text_occurrence`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc2x3::IfcAnnotationOccurrence
+   :members:
+   :protected-members:
+   :undoc-members:

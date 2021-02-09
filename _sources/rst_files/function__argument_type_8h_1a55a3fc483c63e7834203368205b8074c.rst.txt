@@ -1,0 +1,13 @@
+.. _exhale_function__argument_type_8h_1a55a3fc483c63e7834203368205b8074c:
+
+Function IfcUtil::make_aggregate
+================================
+
+- Defined in :ref:`file_src_ifcparse_ArgumentType.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcUtil::make_aggregate(ArgumentType)

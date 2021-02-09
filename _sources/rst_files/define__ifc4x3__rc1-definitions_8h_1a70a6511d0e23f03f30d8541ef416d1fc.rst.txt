@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a70a6511d0e23f03f30d8541ef416d1fc:
+
+Define SCHEMA_IfcMechanicalFastenerType_HAS_NominalLength
+=========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMechanicalFastenerType_HAS_NominalLength

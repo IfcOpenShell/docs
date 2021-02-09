@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a525a1a0478b91a842b759b288090d82d:
+
+Define SCHEMA_HAS_IfcRelDefinesByType
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcRelDefinesByType

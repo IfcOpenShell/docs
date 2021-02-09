@@ -1,0 +1,22 @@
+.. _exhale_class_class_ifc_parse_1_1entity_1_1attribute__by__name__cmp:
+
+Class entity::attribute_by_name_cmp
+===================================
+
+- Defined in :ref:`file_src_ifcparse_IfcSchema.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_class_class_ifc_parse_1_1entity`.
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcParse::entity::attribute_by_name_cmp
+   :members:
+   :protected-members:
+   :undoc-members:

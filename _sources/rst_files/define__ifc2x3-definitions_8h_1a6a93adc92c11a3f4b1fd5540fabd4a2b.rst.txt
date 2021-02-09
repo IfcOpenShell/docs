@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a6a93adc92c11a3f4b1fd5540fabd4a2b:
+
+Define SCHEMA_IfcDamperType_HAS_PredefinedType
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDamperType_HAS_PredefinedType

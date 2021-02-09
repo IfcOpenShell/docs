@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a3959744e3af01d35768e98ad29e88381:
+
+Define SCHEMA_IfcCurveBoundedPlane_HAS_BasisSurface
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcCurveBoundedPlane_HAS_BasisSurface

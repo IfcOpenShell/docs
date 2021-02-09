@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1ac2bba96a3670b6fa606f40719acc5229:
+
+Define SCHEMA_IfcPropertyBoundedValue_SetPointValue_IS_OPTIONAL
+===============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPropertyBoundedValue_SetPointValue_IS_OPTIONAL

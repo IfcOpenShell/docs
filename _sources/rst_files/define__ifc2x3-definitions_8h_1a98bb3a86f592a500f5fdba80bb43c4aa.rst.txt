@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a98bb3a86f592a500f5fdba80bb43c4aa:
+
+Define SCHEMA_IfcMechanicalSteelMaterialProperties_HAS_UltimateStress
+=====================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMechanicalSteelMaterialProperties_HAS_UltimateStress

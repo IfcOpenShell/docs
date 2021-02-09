@@ -1,0 +1,90 @@
+
+.. _file_src_ifcgeom_IfcGeomIteratorImplementation.h:
+
+File IfcGeomIteratorImplementation.h
+====================================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcgeom>` (``src/ifcgeom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/IfcGeomIteratorImplementation.h``)
+------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_IfcGeomIteratorImplementation.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/IfcGeom.h``
+
+- ``../ifcgeom/IfcGeomElement.h``
+
+- ``../ifcgeom/IfcGeomIteratorSettings.h``
+
+- ``../ifcgeom/IfcRepresentationShapeItem.h``
+
+- ``../ifcgeom_schema_agnostic/IfcGeomFilter.h``
+
+- ``../ifcgeom_schema_agnostic/IfcGeomMaterial.h``
+
+- ``../ifcgeom_schema_agnostic/IteratorImplementation.h``
+
+- ``../ifcparse/IfcFile.h``
+
+- ``algorithm``
+
+- ``atomic``
+
+- ``boost/algorithm/string.hpp``
+
+- ``chrono``
+
+- ``future``
+
+- ``gp_GTrsf.hxx``
+
+- ``gp_GTrsf2d.hxx``
+
+- ``gp_Mat.hxx``
+
+- ``gp_Mat2d.hxx``
+
+- ``gp_Trsf.hxx``
+
+- ``gp_Trsf2d.hxx``
+
+- ``limits``
+
+- ``map``
+
+- ``set``
+
+- ``thread``
+
+- ``vector``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcGeom`
+

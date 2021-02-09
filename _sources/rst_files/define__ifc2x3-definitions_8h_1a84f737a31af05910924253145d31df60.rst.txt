@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a84f737a31af05910924253145d31df60:
+
+Define SCHEMA_IfcRelConnectsStructuralMember_HAS_AdditionalConditions
+=====================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelConnectsStructuralMember_HAS_AdditionalConditions

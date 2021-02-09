@@ -1,0 +1,22 @@
+.. _exhale_struct_struct_ifc2x3_1_1_ifc_s_i_unit_name:
+
+Struct Ifc2x3::IfcSIUnitName
+============================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Ifc2x3::IfcSIUnitName
+   :members:
+   :protected-members:
+   :undoc-members:

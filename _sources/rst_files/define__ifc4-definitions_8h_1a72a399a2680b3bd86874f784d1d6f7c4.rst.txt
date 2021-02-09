@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a72a399a2680b3bd86874f784d1d6f7c4:
+
+Define SCHEMA_IfcBSplineCurveWithKnots_HAS_KnotSpec
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBSplineCurveWithKnots_HAS_KnotSpec

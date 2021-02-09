@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1af0a4dc18bb0d92b9b00480862ef6ba85:
+
+Define SCHEMA_IfcRelInteractionRequirements_LocationOfInteraction_IS_OPTIONAL
+=============================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRelInteractionRequirements_LocationOfInteraction_IS_OPTIONAL

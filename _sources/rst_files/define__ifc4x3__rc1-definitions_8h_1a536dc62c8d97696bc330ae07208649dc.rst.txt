@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a536dc62c8d97696bc330ae07208649dc:
+
+Define SCHEMA_IfcApproval_HAS_IsRelatedWith
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcApproval_HAS_IsRelatedWith

@@ -1,0 +1,47 @@
+.. _exhale_class_class_ifc2x3_1_1_ifc_flow_terminal_type:
+
+Class Ifc2x3::IfcFlowTerminalType
+=================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc2x3`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc2x3::IfcDistributionFlowElementType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_distribution_flow_element_type`)
+
+
+Derived Types
+*************
+
+- ``public Ifc2x3::IfcAirTerminalType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_air_terminal_type`)
+- ``public Ifc2x3::IfcElectricApplianceType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_electric_appliance_type`)
+- ``public Ifc2x3::IfcElectricHeaterType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_electric_heater_type`)
+- ``public Ifc2x3::IfcFireSuppressionTerminalType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_fire_suppression_terminal_type`)
+- ``public Ifc2x3::IfcGasTerminalType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_gas_terminal_type`)
+- ``public Ifc2x3::IfcLampType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_lamp_type`)
+- ``public Ifc2x3::IfcLightFixtureType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_light_fixture_type`)
+- ``public Ifc2x3::IfcOutletType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_outlet_type`)
+- ``public Ifc2x3::IfcSanitaryTerminalType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_sanitary_terminal_type`)
+- ``public Ifc2x3::IfcStackTerminalType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_stack_terminal_type`)
+- ``public Ifc2x3::IfcWasteTerminalType`` (:ref:`exhale_class_class_ifc2x3_1_1_ifc_waste_terminal_type`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc2x3::IfcFlowTerminalType
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,32 @@
+.. _exhale_class_classutil_1_1string__buffer_1_1item:
+
+Class string_buffer::item
+=========================
+
+- Defined in :ref:`file_src_serializers_util.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_class_classutil_1_1string__buffer`.
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public util::string_buffer::float_item`` (:ref:`exhale_class_classutil_1_1string__buffer_1_1float__item`)
+- ``public util::string_buffer::string_item`` (:ref:`exhale_class_classutil_1_1string__buffer_1_1string__item`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: util::string_buffer::item
+   :members:
+   :protected-members:
+   :undoc-members:

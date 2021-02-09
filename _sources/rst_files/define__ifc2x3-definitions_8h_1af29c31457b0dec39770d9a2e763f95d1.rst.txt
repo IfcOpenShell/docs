@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1af29c31457b0dec39770d9a2e763f95d1:
+
+Define SCHEMA_HAS_IfcClosedShell
+================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcClosedShell

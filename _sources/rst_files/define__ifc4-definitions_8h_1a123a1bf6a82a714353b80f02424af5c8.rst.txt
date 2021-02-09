@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a123a1bf6a82a714353b80f02424af5c8:
+
+Define SCHEMA_IfcSurfaceStyleLighting_HAS_DiffuseTransmissionColour
+===================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSurfaceStyleLighting_HAS_DiffuseTransmissionColour

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a213ba9e51cde666f897f4aeffd0f18de:
+
+Define SCHEMA_IfcOpticalMaterialProperties_HAS_SolarTransmittance
+=================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcOpticalMaterialProperties_HAS_SolarTransmittance

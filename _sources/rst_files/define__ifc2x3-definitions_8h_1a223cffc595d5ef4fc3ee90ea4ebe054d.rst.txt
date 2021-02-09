@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a223cffc595d5ef4fc3ee90ea4ebe054d:
+
+Define SCHEMA_IfcFluidFlowProperties_HAS_FlowrateTimeSeries
+===========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcFluidFlowProperties_HAS_FlowrateTimeSeries

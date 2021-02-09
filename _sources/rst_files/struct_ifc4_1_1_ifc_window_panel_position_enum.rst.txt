@@ -1,0 +1,22 @@
+.. _exhale_struct_struct_ifc4_1_1_ifc_window_panel_position_enum:
+
+Struct Ifc4::IfcWindowPanelPositionEnum
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Ifc4::IfcWindowPanelPositionEnum
+   :members:
+   :protected-members:
+   :undoc-members:

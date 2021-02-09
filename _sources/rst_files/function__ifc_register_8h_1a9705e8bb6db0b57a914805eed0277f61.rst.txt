@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_register_8h_1a9705e8bb6db0b57a914805eed0277f61:
+
+Function SHAPE(IfcSweptDiskSolid)
+=================================
+
+- Defined in :ref:`file_src_ifcgeom_IfcRegister.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: SHAPE(IfcSweptDiskSolid)

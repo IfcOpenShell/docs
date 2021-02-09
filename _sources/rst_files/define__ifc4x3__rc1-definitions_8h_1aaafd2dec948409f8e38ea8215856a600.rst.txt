@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1aaafd2dec948409f8e38ea8215856a600:
+
+Define SCHEMA_IfcObjective_HAS_UserDefinedQualifier
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcObjective_HAS_UserDefinedQualifier

@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcDistributionPort &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcDistributionSystem" href="class_ifc4_1_1_ifc_distribution_system.html" />
+    <link rel="prev" title="Class Ifc4::IfcDistributionFlowElementType" href="class_ifc4_1_1_ifc_distribution_flow_element_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcdistributionport">
+<span id="exhale-class-class-ifc4-1-1-ifc-distribution-port"></span><h1>Class Ifc4::IfcDistributionPort<a class="headerlink" href="#class-ifc4-ifcdistributionport" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcPort</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_port.html#exhale-class-class-ifc4-1-1-ifc-port"><span class="std std-ref">Class Ifc4::IfcPort</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc419IfcDistributionPortE">
+<span id="_CPPv3N4Ifc419IfcDistributionPortE"></span><span id="_CPPv2N4Ifc419IfcDistributionPortE"></span><span id="Ifc4::IfcDistributionPort"></span><span class="target" id="class_ifc4_1_1_ifc_distribution_port"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcDistributionPort</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_port.html#_CPPv4N4Ifc47IfcPortE" title="Ifc4::IfcPort">IfcPort</a><a class="headerlink" href="#_CPPv4N4Ifc419IfcDistributionPortE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A distribution port is an inlet or outlet of a product through which a particular substance may flow.</p>
+<p>Distribution ports are used for passage of solid, liquid, or gas substances, as well as electricity for power or communications. Flow segments (pipes, ducts, cables) may be used to connect ports across products. Distribution ports are defined by system type and flow direction such that for two ports to be connected, they must share the same system type and have opposite flow directions (one side being a SOURCE and the other being a SINK). Ports are similar to openings in that they do not have any visible geometry; such geometry is captured at the shape representation of the enclosing element or element type. Ports may have shape representations that indicate the position, orientation, and cross-section of the connection.</p>
+<p>HISTORY: New entity in IFC2x2</p>
+<p>Property Set Use Definition The property sets relating to this entity are defined by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> and attached by the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. They are accessible by the IsDefinedBy inverse attribute. Refer to the documentation at the supertype <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_port"><span class="std std-ref">IfcPort</span></a> and ancestors for inherited property set definitions. The following property set definitions are applicable to this entity:</p>
+<p>Pset_DistributionPortCommon</p>
+<p>The following property set definitions are applicable to this entity according to the PredefinedType attribute:</p>
+<p>Pset_DistributionPortTypeAirConditioning (AIRCONDITIONING) Pset_DistributionPortTypeAudioVisual (AUDIOVISUAL) Pset_DistributionPortTypeData (DATA) Pset_DistributionPortTypeDomesticColdWater (DOMESTICCOLDWATER) Pset_DistributionPortTypeDomesticHotWater (DOMESTICHOTWATER) Pset_DistributionPortTypeDrainage (DRAINAGE) Pset_DistributionPortTypeElectrical (ELECTRICAL) Pset_DistributionPortTypeFireProtection (FIREPROTECTION) Pset_DistributionPortTypeGas (GAS) Pset_DistributionPortTypeHeating (HEATING) Pset_DistributionPortTypeOil (OIL) Pset_DistributionPortTypeSewage (SEWAGE) Pset_DistributionPortTypeSignal (SIGNAL) Pset_DistributionPortTypeTelephone (TELEPHONE)</p>
+<p>The following property set definitions are applicable to <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_performance_history"><span class="std std-ref">IfcPerformanceHistory</span></a>, for which objects are assigned:</p>
+<p>Pset_DistributionPortPHistoryAirConditioning (AIRCONDITIONING) Pset_DistributionPortPHistoryControl (CONTROL) Pset_DistributionPortPHistoryData (DATA) Pset_DistributionPortPHistoryElectrical (ELECTRICAL) Pset_DistributionPortPHistoryGas (GAS) Pset_DistributionPortPHistoryHeating (HEATING) Pset_DistributionPortPHistoryOil (OIL) Pset_DistributionPortPHistorySignal (SIGNAL)</p>
+<p>Material Use Definition The material of the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a> is defined by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_material_constituent_set"><span class="std std-ref">IfcMaterialConstituentSet</span></a> or as a fallback by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_material"><span class="std std-ref">IfcMaterial</span></a>, and attached by the RelatingMaterial attribute on the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_associates_material"><span class="std std-ref">IfcRelAssociatesMaterial</span></a> relationship. It is accessible by the HasAssociations inverse attribute. The following keywords for <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_material_constituent_set_1a72a3375b45b2320074ddedd845864e7e"><span class="std std-ref">IfcMaterialConstituentSet.MaterialConstituents</span></a>[n].Name shall be used:</p>
+<p>‘Media’: The solid, liquid, or gas media passing through the port.</p>
+<p>Composition Use Definition The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a> may be decomposed into components using <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_aggregates"><span class="std std-ref">IfcRelAggregates</span></a> where RelatingObject refers to the enclosing <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a> and RelatedObjects contains one or more components. Composition use is defined for the following predefined types:</p>
+<p>AUDIOVISUAL: May contain <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a> components having PredefinedType AUDIOVISUAL. If needed, audio-visual ports may be aggregated into specific streams (channels).CONTROL: May contain <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a> components having PredefinedType SIGNAL. If needed, control ports may be aggregated into signal lines for indicating pinout specification.DATA: May contain <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a> components having PredefinedType SIGNAL. If needed, data ports may be aggregated into signal lines for indicating pinout specification.ELECTRICAL: May contain <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a> components having PredefinedType SIGNAL. If needed, electrical ports may be aggregated into modulated signals for data or lighting control.ELECTROACCOUSTIC: May contain <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a> components having PredefinedType ELECTROACCOUSTIC. If needed, speaker ports may be aggregated into streams (channels) for each speaker.TELEPHONE: May contain <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a> components having PredefinedType TELEPHONE. If needed, telephone ports may be aggregated for each line.</p>
+<p>Connection Use Definition The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a> may be connected to other objects as follows using the indicated relationship:</p>
+<p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_element"><span class="std std-ref">IfcDistributionElement</span></a> (<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_connects_port_to_element"><span class="std std-ref">IfcRelConnectsPortToElement</span></a>) : Indicates the host element or element type containing the port. <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a> (<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_connects_ports"><span class="std std-ref">IfcRelConnectsPorts</span></a>) : Indicates a connection to another port having the same type and opposite flow direction. <p> For port connections between elements, the RelatingPort is set to a port having FlowDirection=SOURCE and the RelatedPort is set to a port having FlowDirection=SINK. </p>
+<p> For aggregation scenarios, ports on a device may be mapped to aggregated devices within, in which case ports on the outer device indicate a single FlowDirection but have an additional connection internally to a port on an aggregated inner device. </p>
+<p> Refer to </p>
+<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_unitary_equipment"><span class="std std-ref">IfcUnitaryEquipment</span></a> for an example.</p>
+<p>Figure 149 illustrates distribution port connectivity.</p>
+<p>Figure 149 — Distribution port connectivity</p>
+<p>Assignment Use Definition The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a> may be assigned to the following entities using relationships as indicated:</p>
+<p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_system"><span class="std std-ref">IfcDistributionSystem</span></a> (<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_assigns_to_group"><span class="std std-ref">IfcRelAssignsToGroup</span></a>): Indicates a system containing interconnected devices. <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_performance_history"><span class="std std-ref">IfcPerformanceHistory</span></a> (<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_assigns_to_control"><span class="std std-ref">IfcRelAssignsToControl</span></a>): Indicates realtime or historical infomation captured for the device.</p>
+<p>The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a> may have assignments of its own using the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_assigns_to_product"><span class="std std-ref">IfcRelAssignsToProduct</span></a> relationship where RelatingProduct refers to the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a> and RelatedObjects contains one or more objects of the following types: <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_system"><span class="std std-ref">IfcDistributionSystem</span></a>: Indicates a system that is hosted by the port, as the origination.</p>
+<p>Representation Use Definition The representation of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a> is given by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a>, allowing multiple shape and topology representations. Included are:</p>
+<p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a>: The optional shape representation describes the connection volume and supports indication of the port position and orientation. The position is typically the midpoint of the physical connection, and the orientation points in the flow direction normal to the physical connection. Upon connecting elements through ports with rigid connections, each object is aligned such that the effective Location, Axis, and RefDirection of each port is aligned to be equal.</p>
+<p>‘Body’: The shape of the port. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc419IfcDistributionPort4listE">
+<span id="_CPPv3N4Ifc419IfcDistributionPort4listE"></span><span id="_CPPv2N4Ifc419IfcDistributionPort4listE"></span><span id="Ifc4::IfcDistributionPort::list"></span><span class="target" id="class_ifc4_1_1_ifc_distribution_port_1a1d9db73f7f647840136b5b2e42900bbb"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc419IfcDistributionPortE" title="Ifc4::IfcDistributionPort">IfcDistributionPort</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc419IfcDistributionPort4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcDistributionPort16hasFlowDirectionEv">
+<span id="_CPPv3NK4Ifc419IfcDistributionPort16hasFlowDirectionEv"></span><span id="_CPPv2NK4Ifc419IfcDistributionPort16hasFlowDirectionEv"></span><span id="Ifc4::IfcDistributionPort::hasFlowDirectionC"></span><span class="target" id="class_ifc4_1_1_ifc_distribution_port_1a50fee4c91d87082f157e40cce0c7d54b"></span>bool <code class="sig-name descname">hasFlowDirection</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcDistributionPort16hasFlowDirectionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute FlowDirection is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcDistributionPort13FlowDirectionEv">
+<span id="_CPPv3NK4Ifc419IfcDistributionPort13FlowDirectionEv"></span><span id="_CPPv2NK4Ifc419IfcDistributionPort13FlowDirectionEv"></span><span id="Ifc4::IfcDistributionPort::FlowDirectionC"></span><span class="target" id="class_ifc4_1_1_ifc_distribution_port_1a602927dd007c298d5c33a9402128fa15"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc420IfcFlowDirectionEnumE" title="Ifc4::IfcFlowDirectionEnum">IfcFlowDirectionEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc420IfcFlowDirectionEnum5ValueE" title="Ifc4::IfcFlowDirectionEnum::Value">Value</a> <code class="sig-name descname">FlowDirection</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcDistributionPort13FlowDirectionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Enumeration that identifies if this port is a Sink (inlet), a Source (outlet) or both a SinkAndSource. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcDistributionPort16setFlowDirectionEN4Ifc420IfcFlowDirectionEnum5ValueE">
+<span id="_CPPv3N4Ifc419IfcDistributionPort16setFlowDirectionEN4Ifc420IfcFlowDirectionEnum5ValueE"></span><span id="_CPPv2N4Ifc419IfcDistributionPort16setFlowDirectionEN4Ifc420IfcFlowDirectionEnum5ValueE"></span><span id="Ifc4::IfcDistributionPort::setFlowDirection__Ifc4::IfcFlowDirectionEnum::Value"></span><span class="target" id="class_ifc4_1_1_ifc_distribution_port_1a342374007de6d50e75c5d3ed727b9c94"></span>void <code class="sig-name descname">setFlowDirection</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc420IfcFlowDirectionEnumE" title="Ifc4::IfcFlowDirectionEnum">IfcFlowDirectionEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc420IfcFlowDirectionEnum5ValueE" title="Ifc4::IfcFlowDirectionEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcDistributionPort16setFlowDirectionEN4Ifc420IfcFlowDirectionEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcDistributionPort17hasPredefinedTypeEv">
+<span id="_CPPv3NK4Ifc419IfcDistributionPort17hasPredefinedTypeEv"></span><span id="_CPPv2NK4Ifc419IfcDistributionPort17hasPredefinedTypeEv"></span><span id="Ifc4::IfcDistributionPort::hasPredefinedTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_distribution_port_1adee293ead394fce125b59b3758f4a035"></span>bool <code class="sig-name descname">hasPredefinedType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcDistributionPort17hasPredefinedTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute PredefinedType is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcDistributionPort14PredefinedTypeEv">
+<span id="_CPPv3NK4Ifc419IfcDistributionPort14PredefinedTypeEv"></span><span id="_CPPv2NK4Ifc419IfcDistributionPort14PredefinedTypeEv"></span><span id="Ifc4::IfcDistributionPort::PredefinedTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_distribution_port_1a9e100c0ff9da33ce1d62342398e4687e"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc427IfcDistributionPortTypeEnumE" title="Ifc4::IfcDistributionPortTypeEnum">IfcDistributionPortTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc427IfcDistributionPortTypeEnum5ValueE" title="Ifc4::IfcDistributionPortTypeEnum::Value">Value</a> <code class="sig-name descname">PredefinedType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcDistributionPort14PredefinedTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Enumeration that identifies the system type. If a system type is defined, the port may only be connected to other ports having the same system type. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcDistributionPort17setPredefinedTypeEN4Ifc427IfcDistributionPortTypeEnum5ValueE">
+<span id="_CPPv3N4Ifc419IfcDistributionPort17setPredefinedTypeEN4Ifc427IfcDistributionPortTypeEnum5ValueE"></span><span id="_CPPv2N4Ifc419IfcDistributionPort17setPredefinedTypeEN4Ifc427IfcDistributionPortTypeEnum5ValueE"></span><span id="Ifc4::IfcDistributionPort::setPredefinedType__Ifc4::IfcDistributionPortTypeEnum::Value"></span><span class="target" id="class_ifc4_1_1_ifc_distribution_port_1aa667341ff6871fe24f075e910ab0d8ec"></span>void <code class="sig-name descname">setPredefinedType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc427IfcDistributionPortTypeEnumE" title="Ifc4::IfcDistributionPortTypeEnum">IfcDistributionPortTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc427IfcDistributionPortTypeEnum5ValueE" title="Ifc4::IfcDistributionPortTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcDistributionPort17setPredefinedTypeEN4Ifc427IfcDistributionPortTypeEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcDistributionPort13hasSystemTypeEv">
+<span id="_CPPv3NK4Ifc419IfcDistributionPort13hasSystemTypeEv"></span><span id="_CPPv2NK4Ifc419IfcDistributionPort13hasSystemTypeEv"></span><span id="Ifc4::IfcDistributionPort::hasSystemTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_distribution_port_1a69dd877253bfa3f613c0d57ff6590cf5"></span>bool <code class="sig-name descname">hasSystemType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcDistributionPort13hasSystemTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute SystemType is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_distribution_port"><span class="std std-ref">IfcDistributionPort</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcDistributionPort10SystemTypeEv">
+<span id="_CPPv3NK4Ifc419IfcDistributionPort10SystemTypeEv"></span><span id="_CPPv2NK4Ifc419IfcDistributionPort10SystemTypeEv"></span><span id="Ifc4::IfcDistributionPort::SystemTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_distribution_port_1a61f9cce0550b07ecad1e3d819461207f"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcDistributionSystemEnumE" title="Ifc4::IfcDistributionSystemEnum">IfcDistributionSystemEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcDistributionSystemEnum5ValueE" title="Ifc4::IfcDistributionSystemEnum::Value">Value</a> <code class="sig-name descname">SystemType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcDistributionPort10SystemTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcDistributionPort13setSystemTypeEN4Ifc425IfcDistributionSystemEnum5ValueE">
+<span id="_CPPv3N4Ifc419IfcDistributionPort13setSystemTypeEN4Ifc425IfcDistributionSystemEnum5ValueE"></span><span id="_CPPv2N4Ifc419IfcDistributionPort13setSystemTypeEN4Ifc425IfcDistributionSystemEnum5ValueE"></span><span id="Ifc4::IfcDistributionPort::setSystemType__Ifc4::IfcDistributionSystemEnum::Value"></span><span class="target" id="class_ifc4_1_1_ifc_distribution_port_1a154d7346643820c993f663f26fad2e8f"></span>void <code class="sig-name descname">setSystemType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcDistributionSystemEnumE" title="Ifc4::IfcDistributionSystemEnum">IfcDistributionSystemEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcDistributionSystemEnum5ValueE" title="Ifc4::IfcDistributionSystemEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcDistributionPort13setSystemTypeEN4Ifc425IfcDistributionSystemEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc419IfcDistributionPort11declarationEv">
+<span id="_CPPv3NK4Ifc419IfcDistributionPort11declarationEv"></span><span id="_CPPv2NK4Ifc419IfcDistributionPort11declarationEv"></span><span id="Ifc4::IfcDistributionPort::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_distribution_port_1afe9e29e6b391b64732d3dd549ed49c87"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc419IfcDistributionPort11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcDistributionPort19IfcDistributionPortEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc419IfcDistributionPort19IfcDistributionPortEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc419IfcDistributionPort19IfcDistributionPortEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcDistributionPort::IfcDistributionPort__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_distribution_port_1afb4ad6c6129ce42a3204b58e811184c6"></span><code class="sig-name descname">IfcDistributionPort</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcDistributionPort19IfcDistributionPortEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcDistributionPort19IfcDistributionPortENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc418IfcObjectPlacementEPN4Ifc424IfcProductRepresentationEN5boost8optionalIN4Ifc420IfcFlowDirectionEnum5ValueEEEN5boost8optionalIN4Ifc427IfcDistributionPortTypeEnum5ValueEEEN5boost8optionalIN4Ifc425IfcDistributionSystemEnum5ValueEEE">
+<span id="_CPPv3N4Ifc419IfcDistributionPort19IfcDistributionPortENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc418IfcObjectPlacementEPN4Ifc424IfcProductRepresentationEN5boost8optionalIN4Ifc420IfcFlowDirectionEnum5ValueEEEN5boost8optionalIN4Ifc427IfcDistributionPortTypeEnum5ValueEEEN5boost8optionalIN4Ifc425IfcDistributionSystemEnum5ValueEEE"></span><span id="_CPPv2N4Ifc419IfcDistributionPort19IfcDistributionPortENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc418IfcObjectPlacementEPN4Ifc424IfcProductRepresentationEN5boost8optionalIN4Ifc420IfcFlowDirectionEnum5ValueEEEN5boost8optionalIN4Ifc427IfcDistributionPortTypeEnum5ValueEEEN5boost8optionalIN4Ifc425IfcDistributionSystemEnum5ValueEEE"></span><span id="Ifc4::IfcDistributionPort::IfcDistributionPort__ss.Ifc4::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4::IfcObjectPlacementP.Ifc4::IfcProductRepresentationP.boost::optional:Ifc4::IfcFlowDirectionEnum::Value:.boost::optional:Ifc4::IfcDistributionPortTypeEnum::Value:.boost::optional:Ifc4::IfcDistributionSystemEnum::Value:"></span><span class="target" id="class_ifc4_1_1_ifc_distribution_port_1a7465409b216d11dba4c0ff81a98a30f5"></span><code class="sig-name descname">IfcDistributionPort</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_owner_history.html#_CPPv4N4Ifc415IfcOwnerHistoryE" title="Ifc4::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_object_placement.html#_CPPv4N4Ifc418IfcObjectPlacementE" title="Ifc4::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_product_representation.html#_CPPv4N4Ifc424IfcProductRepresentationE" title="Ifc4::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc420IfcFlowDirectionEnumE" title="Ifc4::IfcFlowDirectionEnum">IfcFlowDirectionEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc420IfcFlowDirectionEnum5ValueE" title="Ifc4::IfcFlowDirectionEnum::Value">Value</a>&gt; <em>v8_FlowDirection</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc427IfcDistributionPortTypeEnumE" title="Ifc4::IfcDistributionPortTypeEnum">IfcDistributionPortTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc427IfcDistributionPortTypeEnum5ValueE" title="Ifc4::IfcDistributionPortTypeEnum::Value">Value</a>&gt; <em>v9_PredefinedType</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcDistributionSystemEnumE" title="Ifc4::IfcDistributionSystemEnum">IfcDistributionSystemEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcDistributionSystemEnum5ValueE" title="Ifc4::IfcDistributionSystemEnum::Value">Value</a>&gt; <em>v10_SystemType</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcDistributionPort19IfcDistributionPortENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc418IfcObjectPlacementEPN4Ifc424IfcProductRepresentationEN5boost8optionalIN4Ifc420IfcFlowDirectionEnum5ValueEEEN5boost8optionalIN4Ifc427IfcDistributionPortTypeEnum5ValueEEEN5boost8optionalIN4Ifc425IfcDistributionSystemEnum5ValueEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcDistributionPort5ClassEv">
+<span id="_CPPv3N4Ifc419IfcDistributionPort5ClassEv"></span><span id="_CPPv2N4Ifc419IfcDistributionPort5ClassEv"></span><span id="Ifc4::IfcDistributionPort::Class"></span><span class="target" id="class_ifc4_1_1_ifc_distribution_port_1ab6cb37bec389cfacfcd2c449df2297b0"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc419IfcDistributionPort5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_distribution_flow_element_type.html" title="previous chapter">Class Ifc4::IfcDistributionFlowElementType</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_distribution_system.html" title="next chapter">Class Ifc4::IfcDistributionSystem</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_distribution_port.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

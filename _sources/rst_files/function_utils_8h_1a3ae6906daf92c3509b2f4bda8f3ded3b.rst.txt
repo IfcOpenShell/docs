@@ -1,0 +1,13 @@
+.. _exhale_function_utils_8h_1a3ae6906daf92c3509b2f4bda8f3ded3b:
+
+Function IfcUtil::sanitate_material_name
+========================================
+
+- Defined in :ref:`file_src_ifcparse_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcUtil::sanitate_material_name(std::string&)

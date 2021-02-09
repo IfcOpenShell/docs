@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcPhysicalComplexQuantity &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcPhysicalQuantity" href="class_ifc4x1_1_1_ifc_physical_quantity.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcPHMeasure" href="class_ifc4x1_1_1_ifc_p_h_measure.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcphysicalcomplexquantity">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-physical-complex-quantity"></span><h1>Class Ifc4x1::IfcPhysicalComplexQuantity<a class="headerlink" href="#class-ifc4x1-ifcphysicalcomplexquantity" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcPhysicalQuantity</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_physical_quantity.html#exhale-class-class-ifc4x1-1-1-ifc-physical-quantity"><span class="std std-ref">Class Ifc4x1::IfcPhysicalQuantity</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x126IfcPhysicalComplexQuantityE">
+<span id="_CPPv3N6Ifc4x126IfcPhysicalComplexQuantityE"></span><span id="_CPPv2N6Ifc4x126IfcPhysicalComplexQuantityE"></span><span id="Ifc4x1::IfcPhysicalComplexQuantity"></span><span class="target" id="class_ifc4x1_1_1_ifc_physical_complex_quantity"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcPhysicalComplexQuantity</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_physical_quantity.html#_CPPv4N6Ifc4x119IfcPhysicalQuantityE" title="Ifc4x1::IfcPhysicalQuantity">IfcPhysicalQuantity</a><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcPhysicalComplexQuantityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The complex physical quantity, <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_physical_complex_quantity"><span class="std std-ref">IfcPhysicalComplexQuantity</span></a>, is an entity that holds a set of single quantity measure value (as defined at the subtypes of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_physical_simple_quantity"><span class="std std-ref">IfcPhysicalSimpleQuantity</span></a>), that all apply to a given component or aspect of the element.</p>
+<p>EXAMPLE: A layered element, like a wall, may have several material layers, each having individual quantities, like footprint area, side area and volume. An instance of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_physical_complex_quantity"><span class="std std-ref">IfcPhysicalComplexQuantity</span></a> would group these individual quantities (given by a subtype of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_physical_simple_quantity"><span class="std std-ref">IfcPhysicalSimpleQuantity</span></a>) and name them according to the material layer name by using the Name attribute. The Discrimination attribute would then be ‘layer’.</p>
+<p>A section “Quantity Use Definition” at individual entities as subtypes of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_building_element"><span class="std std-ref">IfcBuildingElement</span></a> gives guidance to the usage of the Name and Discrimination attribute to characterize the complex quantities.</p>
+<p>HISTORY New entity in IFC2x2 Addendum 1.</p>
+<p>IFC2x2 ADDENDUM 1 CHANGE The entity <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_physical_complex_quantity"><span class="std std-ref">IfcPhysicalComplexQuantity</span></a> has been added. Upward compatibility for file based exchange is guaranteed. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x126IfcPhysicalComplexQuantity4listE">
+<span id="_CPPv3N6Ifc4x126IfcPhysicalComplexQuantity4listE"></span><span id="_CPPv2N6Ifc4x126IfcPhysicalComplexQuantity4listE"></span><span id="Ifc4x1::IfcPhysicalComplexQuantity::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_physical_complex_quantity_1ae6c8bad7ee7a454309993405622563ee"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x126IfcPhysicalComplexQuantityE" title="Ifc4x1::IfcPhysicalComplexQuantity">IfcPhysicalComplexQuantity</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcPhysicalComplexQuantity4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcPhysicalComplexQuantity13HasQuantitiesEv">
+<span id="_CPPv3NK6Ifc4x126IfcPhysicalComplexQuantity13HasQuantitiesEv"></span><span id="_CPPv2NK6Ifc4x126IfcPhysicalComplexQuantity13HasQuantitiesEv"></span><span id="Ifc4x1::IfcPhysicalComplexQuantity::HasQuantitiesC"></span><span class="target" id="class_ifc4x1_1_1_ifc_physical_complex_quantity_1a7ce96e374ddc36601969d66295c303c1"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_physical_quantity.html#_CPPv4N6Ifc4x119IfcPhysicalQuantityE" title="Ifc4x1::IfcPhysicalQuantity">IfcPhysicalQuantity</a>&gt;::ptr <code class="sig-name descname">HasQuantities</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcPhysicalComplexQuantity13HasQuantitiesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set of physical quantities that are grouped by this complex physical quantity according to a given discrimination. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcPhysicalComplexQuantity16setHasQuantitiesEN22IfcTemplatedEntityListIN6Ifc4x119IfcPhysicalQuantityEE3ptrE">
+<span id="_CPPv3N6Ifc4x126IfcPhysicalComplexQuantity16setHasQuantitiesEN22IfcTemplatedEntityListIN6Ifc4x119IfcPhysicalQuantityEE3ptrE"></span><span id="_CPPv2N6Ifc4x126IfcPhysicalComplexQuantity16setHasQuantitiesEN22IfcTemplatedEntityListIN6Ifc4x119IfcPhysicalQuantityEE3ptrE"></span><span id="Ifc4x1::IfcPhysicalComplexQuantity::setHasQuantities__IfcTemplatedEntityList:Ifc4x1::IfcPhysicalQuantity:::ptr"></span><span class="target" id="class_ifc4x1_1_1_ifc_physical_complex_quantity_1af8a2e2f6131fd5709b62018b373a7085"></span>void <code class="sig-name descname">setHasQuantities</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_physical_quantity.html#_CPPv4N6Ifc4x119IfcPhysicalQuantityE" title="Ifc4x1::IfcPhysicalQuantity">IfcPhysicalQuantity</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcPhysicalComplexQuantity16setHasQuantitiesEN22IfcTemplatedEntityListIN6Ifc4x119IfcPhysicalQuantityEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcPhysicalComplexQuantity14DiscriminationEv">
+<span id="_CPPv3NK6Ifc4x126IfcPhysicalComplexQuantity14DiscriminationEv"></span><span id="_CPPv2NK6Ifc4x126IfcPhysicalComplexQuantity14DiscriminationEv"></span><span id="Ifc4x1::IfcPhysicalComplexQuantity::DiscriminationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_physical_complex_quantity_1af4af8de4ef5b13027d8dedbef2d738bc"></span>std::string <code class="sig-name descname">Discrimination</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcPhysicalComplexQuantity14DiscriminationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Identification of the discrimination by which this physical complex property is distinguished. Examples of discriminations are ‘layer’, ‘steel bar diameter’, etc. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcPhysicalComplexQuantity17setDiscriminationENSt6stringE">
+<span id="_CPPv3N6Ifc4x126IfcPhysicalComplexQuantity17setDiscriminationENSt6stringE"></span><span id="_CPPv2N6Ifc4x126IfcPhysicalComplexQuantity17setDiscriminationENSt6stringE"></span><span id="Ifc4x1::IfcPhysicalComplexQuantity::setDiscrimination__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_physical_complex_quantity_1a26b42028bf22649fd61dc6ad2adc087e"></span>void <code class="sig-name descname">setDiscrimination</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcPhysicalComplexQuantity17setDiscriminationENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcPhysicalComplexQuantity10hasQualityEv">
+<span id="_CPPv3NK6Ifc4x126IfcPhysicalComplexQuantity10hasQualityEv"></span><span id="_CPPv2NK6Ifc4x126IfcPhysicalComplexQuantity10hasQualityEv"></span><span id="Ifc4x1::IfcPhysicalComplexQuantity::hasQualityC"></span><span class="target" id="class_ifc4x1_1_1_ifc_physical_complex_quantity_1a088e308ca4d88813f4c4334ab04b817d"></span>bool <code class="sig-name descname">hasQuality</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcPhysicalComplexQuantity10hasQualityEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Quality is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_physical_complex_quantity"><span class="std std-ref">IfcPhysicalComplexQuantity</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcPhysicalComplexQuantity7QualityEv">
+<span id="_CPPv3NK6Ifc4x126IfcPhysicalComplexQuantity7QualityEv"></span><span id="_CPPv2NK6Ifc4x126IfcPhysicalComplexQuantity7QualityEv"></span><span id="Ifc4x1::IfcPhysicalComplexQuantity::QualityC"></span><span class="target" id="class_ifc4x1_1_1_ifc_physical_complex_quantity_1a7b240f6ea86a115d9f361a2064a58727"></span>std::string <code class="sig-name descname">Quality</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcPhysicalComplexQuantity7QualityEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Additional indication of a quality of the quantities that are grouped under this physical complex quantity. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcPhysicalComplexQuantity10setQualityENSt6stringE">
+<span id="_CPPv3N6Ifc4x126IfcPhysicalComplexQuantity10setQualityENSt6stringE"></span><span id="_CPPv2N6Ifc4x126IfcPhysicalComplexQuantity10setQualityENSt6stringE"></span><span id="Ifc4x1::IfcPhysicalComplexQuantity::setQuality__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_physical_complex_quantity_1a54b6833578c42bf0bec4ea0f6559d5c4"></span>void <code class="sig-name descname">setQuality</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcPhysicalComplexQuantity10setQualityENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcPhysicalComplexQuantity8hasUsageEv">
+<span id="_CPPv3NK6Ifc4x126IfcPhysicalComplexQuantity8hasUsageEv"></span><span id="_CPPv2NK6Ifc4x126IfcPhysicalComplexQuantity8hasUsageEv"></span><span id="Ifc4x1::IfcPhysicalComplexQuantity::hasUsageC"></span><span class="target" id="class_ifc4x1_1_1_ifc_physical_complex_quantity_1a577af742518a31713dd18573f14fe3c7"></span>bool <code class="sig-name descname">hasUsage</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcPhysicalComplexQuantity8hasUsageEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Usage is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_physical_complex_quantity"><span class="std std-ref">IfcPhysicalComplexQuantity</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcPhysicalComplexQuantity5UsageEv">
+<span id="_CPPv3NK6Ifc4x126IfcPhysicalComplexQuantity5UsageEv"></span><span id="_CPPv2NK6Ifc4x126IfcPhysicalComplexQuantity5UsageEv"></span><span id="Ifc4x1::IfcPhysicalComplexQuantity::UsageC"></span><span class="target" id="class_ifc4x1_1_1_ifc_physical_complex_quantity_1a5924f786553a83ecf234193ad3202b02"></span>std::string <code class="sig-name descname">Usage</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcPhysicalComplexQuantity5UsageEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Additional indication of a usage type of the quantities that are grouped under this physical complex quantity. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcPhysicalComplexQuantity8setUsageENSt6stringE">
+<span id="_CPPv3N6Ifc4x126IfcPhysicalComplexQuantity8setUsageENSt6stringE"></span><span id="_CPPv2N6Ifc4x126IfcPhysicalComplexQuantity8setUsageENSt6stringE"></span><span id="Ifc4x1::IfcPhysicalComplexQuantity::setUsage__ss"></span><span class="target" id="class_ifc4x1_1_1_ifc_physical_complex_quantity_1ab7549d2dd6647fb8e11c5415fda1b5ca"></span>void <code class="sig-name descname">setUsage</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcPhysicalComplexQuantity8setUsageENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcPhysicalComplexQuantity11declarationEv">
+<span id="_CPPv3NK6Ifc4x126IfcPhysicalComplexQuantity11declarationEv"></span><span id="_CPPv2NK6Ifc4x126IfcPhysicalComplexQuantity11declarationEv"></span><span id="Ifc4x1::IfcPhysicalComplexQuantity::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_physical_complex_quantity_1acf012700accb979b7349599729ca7540"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcPhysicalComplexQuantity11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcPhysicalComplexQuantity26IfcPhysicalComplexQuantityEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x126IfcPhysicalComplexQuantity26IfcPhysicalComplexQuantityEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x126IfcPhysicalComplexQuantity26IfcPhysicalComplexQuantityEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcPhysicalComplexQuantity::IfcPhysicalComplexQuantity__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_physical_complex_quantity_1a9610241d2c8494995e2ecf7dd2647493"></span><code class="sig-name descname">IfcPhysicalComplexQuantity</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcPhysicalComplexQuantity26IfcPhysicalComplexQuantityEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcPhysicalComplexQuantity26IfcPhysicalComplexQuantityENSt6stringEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x119IfcPhysicalQuantityEE3ptrENSt6stringEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE">
+<span id="_CPPv3N6Ifc4x126IfcPhysicalComplexQuantity26IfcPhysicalComplexQuantityENSt6stringEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x119IfcPhysicalQuantityEE3ptrENSt6stringEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE"></span><span id="_CPPv2N6Ifc4x126IfcPhysicalComplexQuantity26IfcPhysicalComplexQuantityENSt6stringEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x119IfcPhysicalQuantityEE3ptrENSt6stringEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE"></span><span id="Ifc4x1::IfcPhysicalComplexQuantity::IfcPhysicalComplexQuantity__ss.boost::optional:ss:.IfcTemplatedEntityList:Ifc4x1::IfcPhysicalQuantity:::ptr.ss.boost::optional:ss:.boost::optional:ss:"></span><span class="target" id="class_ifc4x1_1_1_ifc_physical_complex_quantity_1ae53fe5c62c3d7ea4f7aeb96555e2f594"></span><code class="sig-name descname">IfcPhysicalComplexQuantity</code><span class="sig-paren">(</span>std::string <em>v1_Name</em>, boost::optional&lt;std::string&gt; <em>v2_Description</em>, <a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_physical_quantity.html#_CPPv4N6Ifc4x119IfcPhysicalQuantityE" title="Ifc4x1::IfcPhysicalQuantity">IfcPhysicalQuantity</a>&gt;::ptr <em>v3_HasQuantities</em>, std::string <em>v4_Discrimination</em>, boost::optional&lt;std::string&gt; <em>v5_Quality</em>, boost::optional&lt;std::string&gt; <em>v6_Usage</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcPhysicalComplexQuantity26IfcPhysicalComplexQuantityENSt6stringEN5boost8optionalINSt6stringEEEN22IfcTemplatedEntityListIN6Ifc4x119IfcPhysicalQuantityEE3ptrENSt6stringEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcPhysicalComplexQuantity5ClassEv">
+<span id="_CPPv3N6Ifc4x126IfcPhysicalComplexQuantity5ClassEv"></span><span id="_CPPv2N6Ifc4x126IfcPhysicalComplexQuantity5ClassEv"></span><span id="Ifc4x1::IfcPhysicalComplexQuantity::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_physical_complex_quantity_1ada3955554d9d5d59abbbd521c4a6c6dc"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcPhysicalComplexQuantity5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_p_h_measure.html" title="previous chapter">Class Ifc4x1::IfcPHMeasure</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_physical_quantity.html" title="next chapter">Class Ifc4x1::IfcPhysicalQuantity</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_physical_complex_quantity.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

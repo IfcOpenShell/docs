@@ -1,0 +1,70 @@
+
+.. _file_src_ifcparse_IfcEntityList.h:
+
+File IfcEntityList.h
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcparse>` (``src/ifcparse``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/IfcEntityList.h``)
+---------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_IfcEntityList.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/IfcBaseClass.h``
+
+- ``boost/shared_ptr.hpp``
+
+- ``set``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_Argument.h`
+
+- :ref:`file_src_ifcparse_Ifc2x3.h`
+
+- :ref:`file_src_ifcparse_Ifc4.h`
+
+- :ref:`file_src_ifcparse_Ifc4x1.h`
+
+- :ref:`file_src_ifcparse_Ifc4x2.h`
+
+- :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_ifc_entity_list`
+
+- :ref:`exhale_class_class_ifc_entity_list_list`
+
+- :ref:`exhale_class_class_ifc_templated_entity_list`
+
+- :ref:`exhale_class_class_ifc_templated_entity_list_list`
+

@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcPcurve &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcPerformanceHistory" href="class_ifc4_1_1_ifc_performance_history.html" />
+    <link rel="prev" title="Class Ifc4::IfcPath" href="class_ifc4_1_1_ifc_path.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcpcurve">
+<span id="exhale-class-class-ifc4-1-1-ifc-pcurve"></span><h1>Class Ifc4::IfcPcurve<a class="headerlink" href="#class-ifc4-ifcpcurve" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcCurve</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_curve.html#exhale-class-class-ifc4-1-1-ifc-curve"><span class="std std-ref">Class Ifc4::IfcCurve</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc49IfcPcurveE">
+<span id="_CPPv3N4Ifc49IfcPcurveE"></span><span id="_CPPv2N4Ifc49IfcPcurveE"></span><span id="Ifc4::IfcPcurve"></span><span class="target" id="class_ifc4_1_1_ifc_pcurve"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcPcurve</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_curve.html#_CPPv4N4Ifc48IfcCurveE" title="Ifc4::IfcCurve">IfcCurve</a><a class="headerlink" href="#_CPPv4N4Ifc49IfcPcurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: A pcurve is a curve which lies on the basis of a surface and is defined in the parameter space of that surface. The basis curve is a curve defined in the two-dimensional parametric space of a reference basis surface. Although it is defined by a curve in two dimensional space, the variables involved are u and v, which occur in the parametric representation of the referenced surface, rather than the x, y, Cartesian coordinates.</p>
+<p>The basis curve is only defined within the parametric range of the surface.</p>
+<p>NOTE Corresponding ISO 10303 entity: pcurve. Please refer to ISO/IS 10303-42:1994, p.59 for the final definition of the formal standard. The definition of IfcPCurve derivates from pcurve. The following changes have been made: The BasisCurve replaces the definition of reference_to_curve since there is no requirement of having same dimensionality within the representation context.</p>
+<p>HISTORY New class in IFC2x4. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc49IfcPcurve4listE">
+<span id="_CPPv3N4Ifc49IfcPcurve4listE"></span><span id="_CPPv2N4Ifc49IfcPcurve4listE"></span><span id="Ifc4::IfcPcurve::list"></span><span class="target" id="class_ifc4_1_1_ifc_pcurve_1af4c76d5060825fdb23f58b685e3070e3"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc49IfcPcurveE" title="Ifc4::IfcPcurve">IfcPcurve</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc49IfcPcurve4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc49IfcPcurve12BasisSurfaceEv">
+<span id="_CPPv3NK4Ifc49IfcPcurve12BasisSurfaceEv"></span><span id="_CPPv2NK4Ifc49IfcPcurve12BasisSurfaceEv"></span><span id="Ifc4::IfcPcurve::BasisSurfaceC"></span><span class="target" id="class_ifc4_1_1_ifc_pcurve_1abc031bb97f686c7044877e7003eefd47"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_surface.html#_CPPv4N4Ifc410IfcSurfaceE" title="Ifc4::IfcSurface">IfcSurface</a> *<code class="sig-name descname">BasisSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc49IfcPcurve12BasisSurfaceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc49IfcPcurve15setBasisSurfaceEPN4Ifc410IfcSurfaceE">
+<span id="_CPPv3N4Ifc49IfcPcurve15setBasisSurfaceEPN4Ifc410IfcSurfaceE"></span><span id="_CPPv2N4Ifc49IfcPcurve15setBasisSurfaceEPN4Ifc410IfcSurfaceE"></span><span id="Ifc4::IfcPcurve::setBasisSurface__Ifc4::IfcSurfaceP"></span><span class="target" id="class_ifc4_1_1_ifc_pcurve_1a98b37632472d9f0a98fbfc1c2507bf1d"></span>void <code class="sig-name descname">setBasisSurface</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_surface.html#_CPPv4N4Ifc410IfcSurfaceE" title="Ifc4::IfcSurface">IfcSurface</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc49IfcPcurve15setBasisSurfaceEPN4Ifc410IfcSurfaceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc49IfcPcurve14ReferenceCurveEv">
+<span id="_CPPv3NK4Ifc49IfcPcurve14ReferenceCurveEv"></span><span id="_CPPv2NK4Ifc49IfcPcurve14ReferenceCurveEv"></span><span id="Ifc4::IfcPcurve::ReferenceCurveC"></span><span class="target" id="class_ifc4_1_1_ifc_pcurve_1aba3baa1b984a76cb8bb7ae19ae90ae5d"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_curve.html#_CPPv4N4Ifc48IfcCurveE" title="Ifc4::IfcCurve">IfcCurve</a> *<code class="sig-name descname">ReferenceCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc49IfcPcurve14ReferenceCurveEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc49IfcPcurve17setReferenceCurveEPN4Ifc48IfcCurveE">
+<span id="_CPPv3N4Ifc49IfcPcurve17setReferenceCurveEPN4Ifc48IfcCurveE"></span><span id="_CPPv2N4Ifc49IfcPcurve17setReferenceCurveEPN4Ifc48IfcCurveE"></span><span id="Ifc4::IfcPcurve::setReferenceCurve__Ifc4::IfcCurveP"></span><span class="target" id="class_ifc4_1_1_ifc_pcurve_1aa235718165189de631eb59b1b1b1180f"></span>void <code class="sig-name descname">setReferenceCurve</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_curve.html#_CPPv4N4Ifc48IfcCurveE" title="Ifc4::IfcCurve">IfcCurve</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc49IfcPcurve17setReferenceCurveEPN4Ifc48IfcCurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc49IfcPcurve11declarationEv">
+<span id="_CPPv3NK4Ifc49IfcPcurve11declarationEv"></span><span id="_CPPv2NK4Ifc49IfcPcurve11declarationEv"></span><span id="Ifc4::IfcPcurve::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_pcurve_1a3cc8e618dbd8e99d41b1aa4c707d63d5"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc49IfcPcurve11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc49IfcPcurve9IfcPcurveEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc49IfcPcurve9IfcPcurveEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc49IfcPcurve9IfcPcurveEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcPcurve::IfcPcurve__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_pcurve_1ae31f9629543beb56b428f5c4f46e6cbf"></span><code class="sig-name descname">IfcPcurve</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc49IfcPcurve9IfcPcurveEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc49IfcPcurve9IfcPcurveEPN4Ifc410IfcSurfaceEPN4Ifc48IfcCurveE">
+<span id="_CPPv3N4Ifc49IfcPcurve9IfcPcurveEPN4Ifc410IfcSurfaceEPN4Ifc48IfcCurveE"></span><span id="_CPPv2N4Ifc49IfcPcurve9IfcPcurveEPN4Ifc410IfcSurfaceEPN4Ifc48IfcCurveE"></span><span id="Ifc4::IfcPcurve::IfcPcurve__Ifc4::IfcSurfaceP.Ifc4::IfcCurveP"></span><span class="target" id="class_ifc4_1_1_ifc_pcurve_1a73ac7a44b9db39e7857a96b9fbfad6ac"></span><code class="sig-name descname">IfcPcurve</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_surface.html#_CPPv4N4Ifc410IfcSurfaceE" title="Ifc4::IfcSurface">IfcSurface</a> *<em>v1_BasisSurface</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_curve.html#_CPPv4N4Ifc48IfcCurveE" title="Ifc4::IfcCurve">IfcCurve</a> *<em>v2_ReferenceCurve</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc49IfcPcurve9IfcPcurveEPN4Ifc410IfcSurfaceEPN4Ifc48IfcCurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc49IfcPcurve5ClassEv">
+<span id="_CPPv3N4Ifc49IfcPcurve5ClassEv"></span><span id="_CPPv2N4Ifc49IfcPcurve5ClassEv"></span><span id="Ifc4::IfcPcurve::Class"></span><span class="target" id="class_ifc4_1_1_ifc_pcurve_1a217a8260c7a11218619d101ddc8bd987"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc49IfcPcurve5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_path.html" title="previous chapter">Class Ifc4::IfcPath</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_performance_history.html" title="next chapter">Class Ifc4::IfcPerformanceHistory</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_pcurve.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

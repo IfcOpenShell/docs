@@ -1,0 +1,32 @@
+.. _exhale_class_class_open_cascade_based_serializer:
+
+Class OpenCascadeBasedSerializer
+================================
+
+- Defined in :ref:`file_src_serializers_OpenCascadeBasedSerializer.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public GeometrySerializer`` (:ref:`exhale_class_class_geometry_serializer`)
+
+
+Derived Types
+*************
+
+- ``public IgesSerializer`` (:ref:`exhale_class_class_iges_serializer`)
+- ``public StepSerializer`` (:ref:`exhale_class_class_step_serializer`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: OpenCascadeBasedSerializer
+   :members:
+   :protected-members:
+   :undoc-members:

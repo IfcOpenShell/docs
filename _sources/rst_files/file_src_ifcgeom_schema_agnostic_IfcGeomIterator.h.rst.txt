@@ -1,0 +1,63 @@
+
+.. _file_src_ifcgeom_schema_agnostic_IfcGeomIterator.h:
+
+File IfcGeomIterator.h
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcgeom_schema_agnostic>` (``src/ifcgeom_schema_agnostic``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom_schema_agnostic/IfcGeomIterator.h``)
+--------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_schema_agnostic_IfcGeomIterator.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom_schema_agnostic/IteratorImplementation.h``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_IfcGeomTree.h`
+
+- :ref:`file_src_serializers_GeometrySerializer.h`
+
+- :ref:`file_src_serializers_OpenCascadeBasedSerializer.h`
+
+- :ref:`file_src_serializers_StepSerializer.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcGeom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_ifc_geom_1_1_iterator`
+

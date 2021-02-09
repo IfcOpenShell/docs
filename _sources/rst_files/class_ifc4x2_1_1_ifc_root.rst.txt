@@ -1,0 +1,39 @@
+.. _exhale_class_class_ifc4x2_1_1_ifc_root:
+
+Class Ifc4x2::IfcRoot
+=====================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x2`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcUtil::IfcBaseEntity`` (:ref:`exhale_class_class_ifc_util_1_1_ifc_base_entity`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x2::IfcObjectDefinition`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_object_definition`)
+- ``public Ifc4x2::IfcPropertyDefinition`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_property_definition`)
+- ``public Ifc4x2::IfcRelationship`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_relationship`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x2::IfcRoot
+   :members:
+   :protected-members:
+   :undoc-members:

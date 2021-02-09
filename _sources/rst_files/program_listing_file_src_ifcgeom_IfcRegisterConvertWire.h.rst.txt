@@ -1,0 +1,18 @@
+
+.. _program_listing_file_src_ifcgeom_IfcRegisterConvertWire.h:
+
+Program Listing for File IfcRegisterConvertWire.h
+=================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_ifcgeom_IfcRegisterConvertWire.h>` (``src/ifcgeom/IfcRegisterConvertWire.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #include "IfcRegisterUndef.h"
+   #define WIRE(T) \
+       if ( l->declaration().is(IfcSchema::T::Class()) ) return convert((IfcSchema::T*)l,r);
+   #include "IfcRegisterDef.h"
+   
+   #include "IfcRegister.h"

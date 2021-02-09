@@ -1,0 +1,16 @@
+.. _exhale_class_class_ifc_write_1_1_ifc_character_encoder:
+
+Class IfcCharacterEncoder
+=========================
+
+- Defined in :ref:`file_src_ifcparse_IfcCharacterDecoder.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcWrite::IfcCharacterEncoder
+   :members:
+   :protected-members:
+   :undoc-members:

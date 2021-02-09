@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_parse_8h_1ac08f6c495eac51dcfb07f4f5d936e7e9:
+
+Function IfcParse::read
+=======================
+
+- Defined in :ref:`file_src_ifcparse_IfcParse.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcParse::read(unsigned int, IfcFile *, boost::optional<unsigned>)

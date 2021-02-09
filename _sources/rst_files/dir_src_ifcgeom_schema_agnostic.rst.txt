@@ -1,0 +1,26 @@
+.. _dir_src_ifcgeom_schema_agnostic:
+
+
+Directory agnostic
+==================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_src>` (``src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``src/ifcgeom_schema_agnostic``
+
+
+Files
+-----
+
+- :ref:`file_src_ifcgeom_schema_agnostic_IfcGeomFilter.h`
+- :ref:`file_src_ifcgeom_schema_agnostic_IfcGeomIterator.h`
+- :ref:`file_src_ifcgeom_schema_agnostic_IfcGeomMaterial.h`
+- :ref:`file_src_ifcgeom_schema_agnostic_IfcGeomRenderStyles.h`
+- :ref:`file_src_ifcgeom_schema_agnostic_IteratorImplementation.h`
+- :ref:`file_src_ifcgeom_schema_agnostic_Kernel.h`
+- :ref:`file_src_ifcgeom_schema_agnostic_Serialization.h`
+
+

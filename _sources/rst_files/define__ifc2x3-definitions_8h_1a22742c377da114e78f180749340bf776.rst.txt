@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a22742c377da114e78f180749340bf776:
+
+Define SCHEMA_IfcTimeSeriesSchedule_HAS_TimeSeriesScheduleType
+==============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTimeSeriesSchedule_HAS_TimeSeriesScheduleType

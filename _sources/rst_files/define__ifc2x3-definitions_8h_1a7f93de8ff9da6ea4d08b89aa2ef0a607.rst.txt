@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a7f93de8ff9da6ea4d08b89aa2ef0a607:
+
+Define SCHEMA_IfcStructuralSurfaceMemberVarying_HAS_SubsequentThickness
+=======================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralSurfaceMemberVarying_HAS_SubsequentThickness

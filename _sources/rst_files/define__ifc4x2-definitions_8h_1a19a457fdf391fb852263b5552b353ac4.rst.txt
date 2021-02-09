@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a19a457fdf391fb852263b5552b353ac4:
+
+Define SCHEMA_IfcEventType_HAS_PredefinedType
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcEventType_HAS_PredefinedType

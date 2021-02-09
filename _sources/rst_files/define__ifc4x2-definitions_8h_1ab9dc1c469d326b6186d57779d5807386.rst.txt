@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1ab9dc1c469d326b6186d57779d5807386:
+
+Define SCHEMA_HAS_IfcElectricVoltageMeasure
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcElectricVoltageMeasure

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1aed9ab26ff4ad96adcdc05a3b0688890f:
+
+Define SCHEMA_IfcConnectionCurveGeometry_HAS_CurveOnRelatedElement
+==================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConnectionCurveGeometry_HAS_CurveOnRelatedElement

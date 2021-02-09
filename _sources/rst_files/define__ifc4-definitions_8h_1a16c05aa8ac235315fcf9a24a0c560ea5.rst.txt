@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a16c05aa8ac235315fcf9a24a0c560ea5:
+
+Define SCHEMA_IfcExternalReference_Identification_IS_OPTIONAL
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcExternalReference_Identification_IS_OPTIONAL

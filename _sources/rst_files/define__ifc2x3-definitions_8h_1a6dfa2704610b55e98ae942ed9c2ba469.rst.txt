@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a6dfa2704610b55e98ae942ed9c2ba469:
+
+Define SCHEMA_IfcElectricalBaseProperties_HAS_RatedPowerInput
+=============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcElectricalBaseProperties_HAS_RatedPowerInput

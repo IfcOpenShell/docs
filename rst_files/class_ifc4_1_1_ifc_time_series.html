@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcTimeSeries &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcTimeSeriesValue" href="class_ifc4_1_1_ifc_time_series_value.html" />
+    <link rel="prev" title="Class Ifc4::IfcTimePeriod" href="class_ifc4_1_1_ifc_time_period.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifctimeseries">
+<span id="exhale-class-class-ifc4-1-1-ifc-time-series"></span><h1>Class Ifc4::IfcTimeSeries<a class="headerlink" href="#class-ifc4-ifctimeseries" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">IfcUtil::IfcBaseEntity</span></code> (<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#exhale-class-class-ifc-util-1-1-ifc-base-entity"><span class="std std-ref">Class IfcBaseEntity</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="derived-types">
+<h3>Derived Types<a class="headerlink" href="#derived-types" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcIrregularTimeSeries</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_irregular_time_series.html#exhale-class-class-ifc4-1-1-ifc-irregular-time-series"><span class="std std-ref">Class Ifc4::IfcIrregularTimeSeries</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcRegularTimeSeries</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_regular_time_series.html#exhale-class-class-ifc4-1-1-ifc-regular-time-series"><span class="std std-ref">Class Ifc4::IfcRegularTimeSeries</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc413IfcTimeSeriesE">
+<span id="_CPPv3N4Ifc413IfcTimeSeriesE"></span><span id="_CPPv2N4Ifc413IfcTimeSeriesE"></span><span id="Ifc4::IfcTimeSeries"></span><span class="target" id="class_ifc4_1_1_ifc_time_series"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcTimeSeries</code> : <em class="property">public</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_entity.html#_CPPv4N7IfcUtil13IfcBaseEntityE" title="IfcUtil::IfcBaseEntity">IfcBaseEntity</a><a class="headerlink" href="#_CPPv4N4Ifc413IfcTimeSeriesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A time series is a set of a time-stamped data entries. It allows a natural association of data collected over intervals of time. Time series can be regular or irregular. In regular time series data arrive predictably at predefined intervals. In irregular time series some or all time stamps do not follow a repetitive pattern and unpredictable bursts of data may arrive at unspecified points in time.</p>
+<p>The modeling of buildings and their performance involves data that are generated and recorded over a period of time. Such data cover a large spectrum, from weather data to schedules of all kinds to status measurements to reporting to everything else that has a time related aspect. Their correct placement in time is essential for their proper understanding and use, and the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_time_series"><span class="std std-ref">IfcTimeSeries</span></a> subtypes provide the appropriate data structures to accommodate these types of data.</p>
+<p>HISTORY: New entity in IFC 2x2. </p>
+<p>Subclassed by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_irregular_time_series"><span class="std std-ref">Ifc4::IfcIrregularTimeSeries</span></a>, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_regular_time_series"><span class="std std-ref">Ifc4::IfcRegularTimeSeries</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc413IfcTimeSeries4listE">
+<span id="_CPPv3N4Ifc413IfcTimeSeries4listE"></span><span id="_CPPv2N4Ifc413IfcTimeSeries4listE"></span><span id="Ifc4::IfcTimeSeries::list"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1ab7c657423e9e0d25b2c90fde15d7f19f"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc413IfcTimeSeriesE" title="Ifc4::IfcTimeSeries">IfcTimeSeries</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc413IfcTimeSeries4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc413IfcTimeSeries4NameEv">
+<span id="_CPPv3NK4Ifc413IfcTimeSeries4NameEv"></span><span id="_CPPv2NK4Ifc413IfcTimeSeries4NameEv"></span><span id="Ifc4::IfcTimeSeries::NameC"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1a2f1a248b6430a559d7c454dcf4e565e9"></span>std::string <code class="sig-name descname">Name</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc413IfcTimeSeries4NameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An unique name for the time series. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc413IfcTimeSeries7setNameENSt6stringE">
+<span id="_CPPv3N4Ifc413IfcTimeSeries7setNameENSt6stringE"></span><span id="_CPPv2N4Ifc413IfcTimeSeries7setNameENSt6stringE"></span><span id="Ifc4::IfcTimeSeries::setName__ss"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1a33d3dfda1bfaa23f294a4ae49e8622b0"></span>void <code class="sig-name descname">setName</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc413IfcTimeSeries7setNameENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc413IfcTimeSeries14hasDescriptionEv">
+<span id="_CPPv3NK4Ifc413IfcTimeSeries14hasDescriptionEv"></span><span id="_CPPv2NK4Ifc413IfcTimeSeries14hasDescriptionEv"></span><span id="Ifc4::IfcTimeSeries::hasDescriptionC"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1a4132e6ad6ba98de95e96e48de273cf51"></span>bool <code class="sig-name descname">hasDescription</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc413IfcTimeSeries14hasDescriptionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Description is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_time_series"><span class="std std-ref">IfcTimeSeries</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc413IfcTimeSeries11DescriptionEv">
+<span id="_CPPv3NK4Ifc413IfcTimeSeries11DescriptionEv"></span><span id="_CPPv2NK4Ifc413IfcTimeSeries11DescriptionEv"></span><span id="Ifc4::IfcTimeSeries::DescriptionC"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1a62f70b957d908f4b06f6de572f956560"></span>std::string <code class="sig-name descname">Description</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc413IfcTimeSeries11DescriptionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A text description of the data that the series represents. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc413IfcTimeSeries14setDescriptionENSt6stringE">
+<span id="_CPPv3N4Ifc413IfcTimeSeries14setDescriptionENSt6stringE"></span><span id="_CPPv2N4Ifc413IfcTimeSeries14setDescriptionENSt6stringE"></span><span id="Ifc4::IfcTimeSeries::setDescription__ss"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1a957434bb3342ee44f97c9c8dec454101"></span>void <code class="sig-name descname">setDescription</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc413IfcTimeSeries14setDescriptionENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc413IfcTimeSeries9StartTimeEv">
+<span id="_CPPv3NK4Ifc413IfcTimeSeries9StartTimeEv"></span><span id="_CPPv2NK4Ifc413IfcTimeSeries9StartTimeEv"></span><span id="Ifc4::IfcTimeSeries::StartTimeC"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1a82b07c81e25df6909e89d895fb844fbc"></span>std::string <code class="sig-name descname">StartTime</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc413IfcTimeSeries9StartTimeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The start time of a time series. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc413IfcTimeSeries12setStartTimeENSt6stringE">
+<span id="_CPPv3N4Ifc413IfcTimeSeries12setStartTimeENSt6stringE"></span><span id="_CPPv2N4Ifc413IfcTimeSeries12setStartTimeENSt6stringE"></span><span id="Ifc4::IfcTimeSeries::setStartTime__ss"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1a158a6fd88a1f5c13353d55b5156e0785"></span>void <code class="sig-name descname">setStartTime</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc413IfcTimeSeries12setStartTimeENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc413IfcTimeSeries7EndTimeEv">
+<span id="_CPPv3NK4Ifc413IfcTimeSeries7EndTimeEv"></span><span id="_CPPv2NK4Ifc413IfcTimeSeries7EndTimeEv"></span><span id="Ifc4::IfcTimeSeries::EndTimeC"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1a9e8d61f4e6e171588f3d8c473e95d34e"></span>std::string <code class="sig-name descname">EndTime</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc413IfcTimeSeries7EndTimeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The end time of a time series. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc413IfcTimeSeries10setEndTimeENSt6stringE">
+<span id="_CPPv3N4Ifc413IfcTimeSeries10setEndTimeENSt6stringE"></span><span id="_CPPv2N4Ifc413IfcTimeSeries10setEndTimeENSt6stringE"></span><span id="Ifc4::IfcTimeSeries::setEndTime__ss"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1a21180c3fc9eb054d288c1822a40d9f07"></span>void <code class="sig-name descname">setEndTime</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc413IfcTimeSeries10setEndTimeENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc413IfcTimeSeries18TimeSeriesDataTypeEv">
+<span id="_CPPv3NK4Ifc413IfcTimeSeries18TimeSeriesDataTypeEv"></span><span id="_CPPv2NK4Ifc413IfcTimeSeries18TimeSeriesDataTypeEv"></span><span id="Ifc4::IfcTimeSeries::TimeSeriesDataTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1a5d69f8c5195b2dd992fad05d8e5466d3"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcTimeSeriesDataTypeEnumE" title="Ifc4::IfcTimeSeriesDataTypeEnum">IfcTimeSeriesDataTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcTimeSeriesDataTypeEnum5ValueE" title="Ifc4::IfcTimeSeriesDataTypeEnum::Value">Value</a> <code class="sig-name descname">TimeSeriesDataType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc413IfcTimeSeries18TimeSeriesDataTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The time series data type. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc413IfcTimeSeries21setTimeSeriesDataTypeEN4Ifc425IfcTimeSeriesDataTypeEnum5ValueE">
+<span id="_CPPv3N4Ifc413IfcTimeSeries21setTimeSeriesDataTypeEN4Ifc425IfcTimeSeriesDataTypeEnum5ValueE"></span><span id="_CPPv2N4Ifc413IfcTimeSeries21setTimeSeriesDataTypeEN4Ifc425IfcTimeSeriesDataTypeEnum5ValueE"></span><span id="Ifc4::IfcTimeSeries::setTimeSeriesDataType__Ifc4::IfcTimeSeriesDataTypeEnum::Value"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1adfde9f02bb4a3ec17e279ea9aaa15d6e"></span>void <code class="sig-name descname">setTimeSeriesDataType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcTimeSeriesDataTypeEnumE" title="Ifc4::IfcTimeSeriesDataTypeEnum">IfcTimeSeriesDataTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcTimeSeriesDataTypeEnum5ValueE" title="Ifc4::IfcTimeSeriesDataTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc413IfcTimeSeries21setTimeSeriesDataTypeEN4Ifc425IfcTimeSeriesDataTypeEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc413IfcTimeSeries10DataOriginEv">
+<span id="_CPPv3NK4Ifc413IfcTimeSeries10DataOriginEv"></span><span id="_CPPv2NK4Ifc413IfcTimeSeries10DataOriginEv"></span><span id="Ifc4::IfcTimeSeries::DataOriginC"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1a66aa0b1243db3d65bb2b6461ee74669e"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc417IfcDataOriginEnumE" title="Ifc4::IfcDataOriginEnum">IfcDataOriginEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc417IfcDataOriginEnum5ValueE" title="Ifc4::IfcDataOriginEnum::Value">Value</a> <code class="sig-name descname">DataOrigin</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc413IfcTimeSeries10DataOriginEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The orgin of a time series data. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc413IfcTimeSeries13setDataOriginEN4Ifc417IfcDataOriginEnum5ValueE">
+<span id="_CPPv3N4Ifc413IfcTimeSeries13setDataOriginEN4Ifc417IfcDataOriginEnum5ValueE"></span><span id="_CPPv2N4Ifc413IfcTimeSeries13setDataOriginEN4Ifc417IfcDataOriginEnum5ValueE"></span><span id="Ifc4::IfcTimeSeries::setDataOrigin__Ifc4::IfcDataOriginEnum::Value"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1ad92411c298ad8108557fca388147fde6"></span>void <code class="sig-name descname">setDataOrigin</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc417IfcDataOriginEnumE" title="Ifc4::IfcDataOriginEnum">IfcDataOriginEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc417IfcDataOriginEnum5ValueE" title="Ifc4::IfcDataOriginEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc413IfcTimeSeries13setDataOriginEN4Ifc417IfcDataOriginEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc413IfcTimeSeries24hasUserDefinedDataOriginEv">
+<span id="_CPPv3NK4Ifc413IfcTimeSeries24hasUserDefinedDataOriginEv"></span><span id="_CPPv2NK4Ifc413IfcTimeSeries24hasUserDefinedDataOriginEv"></span><span id="Ifc4::IfcTimeSeries::hasUserDefinedDataOriginC"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1a35e5fa5f89db0368a982e6075949551f"></span>bool <code class="sig-name descname">hasUserDefinedDataOrigin</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc413IfcTimeSeries24hasUserDefinedDataOriginEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute UserDefinedDataOrigin is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_time_series"><span class="std std-ref">IfcTimeSeries</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc413IfcTimeSeries21UserDefinedDataOriginEv">
+<span id="_CPPv3NK4Ifc413IfcTimeSeries21UserDefinedDataOriginEv"></span><span id="_CPPv2NK4Ifc413IfcTimeSeries21UserDefinedDataOriginEv"></span><span id="Ifc4::IfcTimeSeries::UserDefinedDataOriginC"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1a897aa8799bdce6313be575280a8235c7"></span>std::string <code class="sig-name descname">UserDefinedDataOrigin</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc413IfcTimeSeries21UserDefinedDataOriginEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Value of the data origin if DataOrigin attribute is USERDEFINED. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc413IfcTimeSeries24setUserDefinedDataOriginENSt6stringE">
+<span id="_CPPv3N4Ifc413IfcTimeSeries24setUserDefinedDataOriginENSt6stringE"></span><span id="_CPPv2N4Ifc413IfcTimeSeries24setUserDefinedDataOriginENSt6stringE"></span><span id="Ifc4::IfcTimeSeries::setUserDefinedDataOrigin__ss"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1af350dcac08a03445276b19c652544e0e"></span>void <code class="sig-name descname">setUserDefinedDataOrigin</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc413IfcTimeSeries24setUserDefinedDataOriginENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc413IfcTimeSeries7hasUnitEv">
+<span id="_CPPv3NK4Ifc413IfcTimeSeries7hasUnitEv"></span><span id="_CPPv2NK4Ifc413IfcTimeSeries7hasUnitEv"></span><span id="Ifc4::IfcTimeSeries::hasUnitC"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1ae7034414883ba8a7a49f174613e92ae5"></span>bool <code class="sig-name descname">hasUnit</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc413IfcTimeSeries7hasUnitEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Unit is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_time_series"><span class="std std-ref">IfcTimeSeries</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc413IfcTimeSeries4UnitEv">
+<span id="_CPPv3NK4Ifc413IfcTimeSeries4UnitEv"></span><span id="_CPPv2NK4Ifc413IfcTimeSeries4UnitEv"></span><span id="Ifc4::IfcTimeSeries::UnitC"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1a8ebc8361f5723c4cc6647ada41a8279e"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc47IfcUnitE" title="Ifc4::IfcUnit">IfcUnit</a> *<code class="sig-name descname">Unit</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc413IfcTimeSeries4UnitEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The unit to be assigned to all values within the time series. Note that mixing units is not allowed. If the value is not given, the global unit for the type of IfcValue, as defined at <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_context_1a8a64efe3eaf70918b5c094004d08a1e2"><span class="std std-ref">IfcProject.UnitsInContext</span></a> is used. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc413IfcTimeSeries7setUnitEPN4Ifc47IfcUnitE">
+<span id="_CPPv3N4Ifc413IfcTimeSeries7setUnitEPN4Ifc47IfcUnitE"></span><span id="_CPPv2N4Ifc413IfcTimeSeries7setUnitEPN4Ifc47IfcUnitE"></span><span id="Ifc4::IfcTimeSeries::setUnit__Ifc4::IfcUnitP"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1ad4a3df92d0c2c2ae638fc0ab0f50a488"></span>void <code class="sig-name descname">setUnit</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc47IfcUnitE" title="Ifc4::IfcUnit">IfcUnit</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc413IfcTimeSeries7setUnitEPN4Ifc47IfcUnitE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc413IfcTimeSeries20HasExternalReferenceEv">
+<span id="_CPPv3NK4Ifc413IfcTimeSeries20HasExternalReferenceEv"></span><span id="_CPPv2NK4Ifc413IfcTimeSeries20HasExternalReferenceEv"></span><span id="Ifc4::IfcTimeSeries::HasExternalReferenceC"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1a587a906aff59492b2bb496231485dad4"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="class_ifc4_1_1_ifc_external_reference_relationship.html#_CPPv4N4Ifc432IfcExternalReferenceRelationshipE" title="Ifc4::IfcExternalReferenceRelationship">IfcExternalReferenceRelationship</a>&gt;::ptr <code class="sig-name descname">HasExternalReference</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc413IfcTimeSeries20HasExternalReferenceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc413IfcTimeSeries11declarationEv">
+<span id="_CPPv3NK4Ifc413IfcTimeSeries11declarationEv"></span><span id="_CPPv2NK4Ifc413IfcTimeSeries11declarationEv"></span><span id="Ifc4::IfcTimeSeries::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1a0a3e0d4f608fb148303e6dae2e2e94d9"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc413IfcTimeSeries11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc413IfcTimeSeries13IfcTimeSeriesEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc413IfcTimeSeries13IfcTimeSeriesEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc413IfcTimeSeries13IfcTimeSeriesEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcTimeSeries::IfcTimeSeries__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1abd0461c7a88d95092405a72d8d9d7825"></span><code class="sig-name descname">IfcTimeSeries</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc413IfcTimeSeries13IfcTimeSeriesEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc413IfcTimeSeries13IfcTimeSeriesENSt6stringEN5boost8optionalINSt6stringEEENSt6stringENSt6stringEN4Ifc425IfcTimeSeriesDataTypeEnum5ValueEN4Ifc417IfcDataOriginEnum5ValueEN5boost8optionalINSt6stringEEEPN4Ifc47IfcUnitE">
+<span id="_CPPv3N4Ifc413IfcTimeSeries13IfcTimeSeriesENSt6stringEN5boost8optionalINSt6stringEEENSt6stringENSt6stringEN4Ifc425IfcTimeSeriesDataTypeEnum5ValueEN4Ifc417IfcDataOriginEnum5ValueEN5boost8optionalINSt6stringEEEPN4Ifc47IfcUnitE"></span><span id="_CPPv2N4Ifc413IfcTimeSeries13IfcTimeSeriesENSt6stringEN5boost8optionalINSt6stringEEENSt6stringENSt6stringEN4Ifc425IfcTimeSeriesDataTypeEnum5ValueEN4Ifc417IfcDataOriginEnum5ValueEN5boost8optionalINSt6stringEEEPN4Ifc47IfcUnitE"></span><span id="Ifc4::IfcTimeSeries::IfcTimeSeries__ss.boost::optional:ss:.ss.ss.Ifc4::IfcTimeSeriesDataTypeEnum::Value.Ifc4::IfcDataOriginEnum::Value.boost::optional:ss:.Ifc4::IfcUnitP"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1ae6c925fb246d1778714ce50d604a9abe"></span><code class="sig-name descname">IfcTimeSeries</code><span class="sig-paren">(</span>std::string <em>v1_Name</em>, boost::optional&lt;std::string&gt; <em>v2_Description</em>, std::string <em>v3_StartTime</em>, std::string <em>v4_EndTime</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcTimeSeriesDataTypeEnumE" title="Ifc4::IfcTimeSeriesDataTypeEnum">IfcTimeSeriesDataTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcTimeSeriesDataTypeEnum5ValueE" title="Ifc4::IfcTimeSeriesDataTypeEnum::Value">Value</a> <em>v5_TimeSeriesDataType</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc417IfcDataOriginEnumE" title="Ifc4::IfcDataOriginEnum">IfcDataOriginEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc417IfcDataOriginEnum5ValueE" title="Ifc4::IfcDataOriginEnum::Value">Value</a> <em>v6_DataOrigin</em>, boost::optional&lt;std::string&gt; <em>v7_UserDefinedDataOrigin</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc47IfcUnitE" title="Ifc4::IfcUnit">IfcUnit</a> *<em>v8_Unit</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc413IfcTimeSeries13IfcTimeSeriesENSt6stringEN5boost8optionalINSt6stringEEENSt6stringENSt6stringEN4Ifc425IfcTimeSeriesDataTypeEnum5ValueEN4Ifc417IfcDataOriginEnum5ValueEN5boost8optionalINSt6stringEEEPN4Ifc47IfcUnitE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc413IfcTimeSeries5ClassEv">
+<span id="_CPPv3N4Ifc413IfcTimeSeries5ClassEv"></span><span id="_CPPv2N4Ifc413IfcTimeSeries5ClassEv"></span><span id="Ifc4::IfcTimeSeries::Class"></span><span class="target" id="class_ifc4_1_1_ifc_time_series_1ae3337b177debd49e17440aaf7e0dc55c"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc413IfcTimeSeries5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_time_period.html" title="previous chapter">Class Ifc4::IfcTimePeriod</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_time_series_value.html" title="next chapter">Class Ifc4::IfcTimeSeriesValue</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_time_series.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

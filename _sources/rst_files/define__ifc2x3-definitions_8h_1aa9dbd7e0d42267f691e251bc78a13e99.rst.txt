@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aa9dbd7e0d42267f691e251bc78a13e99:
+
+Define SCHEMA_HAS_IfcDateAndTime
+================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcDateAndTime

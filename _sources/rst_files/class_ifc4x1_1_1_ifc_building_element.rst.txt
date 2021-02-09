@@ -1,0 +1,57 @@
+.. _exhale_class_class_ifc4x1_1_1_ifc_building_element:
+
+Class Ifc4x1::IfcBuildingElement
+================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x1::IfcElement`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_element`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x1::IfcBeam`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_beam`)
+- ``public Ifc4x1::IfcBuildingElementProxy`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_building_element_proxy`)
+- ``public Ifc4x1::IfcChimney`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_chimney`)
+- ``public Ifc4x1::IfcColumn`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_column`)
+- ``public Ifc4x1::IfcCovering`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_covering`)
+- ``public Ifc4x1::IfcCurtainWall`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_curtain_wall`)
+- ``public Ifc4x1::IfcDoor`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_door`)
+- ``public Ifc4x1::IfcFooting`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_footing`)
+- ``public Ifc4x1::IfcMember`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_member`)
+- ``public Ifc4x1::IfcPile`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_pile`)
+- ``public Ifc4x1::IfcPlate`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_plate`)
+- ``public Ifc4x1::IfcRailing`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_railing`)
+- ``public Ifc4x1::IfcRamp`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_ramp`)
+- ``public Ifc4x1::IfcRampFlight`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_ramp_flight`)
+- ``public Ifc4x1::IfcRoof`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_roof`)
+- ``public Ifc4x1::IfcShadingDevice`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_shading_device`)
+- ``public Ifc4x1::IfcSlab`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_slab`)
+- ``public Ifc4x1::IfcStair`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_stair`)
+- ``public Ifc4x1::IfcStairFlight`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_stair_flight`)
+- ``public Ifc4x1::IfcWall`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_wall`)
+- ``public Ifc4x1::IfcWindow`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_window`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x1::IfcBuildingElement
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a79c70e695f7d9691f0e9d71d67134657:
+
+Define SCHEMA_IfcSpace_HAS_BoundedBy
+====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSpace_HAS_BoundedBy

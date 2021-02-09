@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a1e3578847e74df780a77ad7c544cd0c2:
+
+Define SCHEMA_IfcClassification_HAS_HasReferences
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcClassification_HAS_HasReferences

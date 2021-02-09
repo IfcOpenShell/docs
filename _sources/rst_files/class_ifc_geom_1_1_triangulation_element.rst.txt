@@ -1,0 +1,25 @@
+.. _exhale_class_class_ifc_geom_1_1_triangulation_element:
+
+Template Class TriangulationElement
+===================================
+
+- Defined in :ref:`file_src_ifcgeom_IfcGeomElement.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcGeom::Element< double, double >`` (:ref:`exhale_class_class_ifc_geom_1_1_element`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcGeom::TriangulationElement
+   :members:
+   :protected-members:
+   :undoc-members:

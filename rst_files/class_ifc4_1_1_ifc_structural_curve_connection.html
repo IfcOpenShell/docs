@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcStructuralCurveConnection &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcStructuralCurveMember" href="class_ifc4_1_1_ifc_structural_curve_member.html" />
+    <link rel="prev" title="Class Ifc4::IfcStructuralCurveAction" href="class_ifc4_1_1_ifc_structural_curve_action.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcstructuralcurveconnection">
+<span id="exhale-class-class-ifc4-1-1-ifc-structural-curve-connection"></span><h1>Class Ifc4::IfcStructuralCurveConnection<a class="headerlink" href="#class-ifc4-ifcstructuralcurveconnection" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcStructuralConnection</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_structural_connection.html#exhale-class-class-ifc4-1-1-ifc-structural-connection"><span class="std std-ref">Class Ifc4::IfcStructuralConnection</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc428IfcStructuralCurveConnectionE">
+<span id="_CPPv3N4Ifc428IfcStructuralCurveConnectionE"></span><span id="_CPPv2N4Ifc428IfcStructuralCurveConnectionE"></span><span id="Ifc4::IfcStructuralCurveConnection"></span><span class="target" id="class_ifc4_1_1_ifc_structural_curve_connection"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcStructuralCurveConnection</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_structural_connection.html#_CPPv4N4Ifc423IfcStructuralConnectionE" title="Ifc4::IfcStructuralConnection">IfcStructuralConnection</a><a class="headerlink" href="#_CPPv4N4Ifc428IfcStructuralCurveConnectionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from IAI: Instances of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_structural_curve_connection"><span class="std std-ref">IfcStructuralCurveConnection</span></a> describe edge ‘nodes’, i.e. edges where two or more surface members are joined, or edge supports. Edge curves may be straight or curved.</p>
+<p>HISTORY: New entity in IFC 2x2.</p>
+<p>IFC 2x4 change: Attribute Axis added, allowing for skewed supports. Use definitions added.</p>
+<p>Coordinate Systems:</p>
+<p>See definitions at <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_structural_item"><span class="std std-ref">IfcStructuralItem</span></a>. The local coordinate system is established by the reference curve given by topology representation and by the attribute Axis. The local x axis is parallel with the tangent on the reference curve. The local z axis is located in the surface which is created by sweeping Axis along the reference curve and is directed according to Axis. The local y axis is directed such that x,y,z form a right-handed Cartesian coordinate system.</p>
+<p>Topology Use Definitions:</p>
+<p>Instances of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_structural_curve_connection"><span class="std std-ref">IfcStructuralCurveConnection</span></a> shall have a topology representation which consists of one instance of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_edge"><span class="std std-ref">IfcEdge</span></a> or a subtype, representing the reference curve of the curve connection. See definitions at <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_structural_item"><span class="std std-ref">IfcStructuralItem</span></a> for further specifications.</p>
+<p>Informal propositions:</p>
+<p>The reference curve must not be parallel with Axis at any point within the curve connections’s domain. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc428IfcStructuralCurveConnection4listE">
+<span id="_CPPv3N4Ifc428IfcStructuralCurveConnection4listE"></span><span id="_CPPv2N4Ifc428IfcStructuralCurveConnection4listE"></span><span id="Ifc4::IfcStructuralCurveConnection::list"></span><span class="target" id="class_ifc4_1_1_ifc_structural_curve_connection_1a1cc863dace1bea85f68b1a7be2f84c5f"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc428IfcStructuralCurveConnectionE" title="Ifc4::IfcStructuralCurveConnection">IfcStructuralCurveConnection</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc428IfcStructuralCurveConnection4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc428IfcStructuralCurveConnection4AxisEv">
+<span id="_CPPv3NK4Ifc428IfcStructuralCurveConnection4AxisEv"></span><span id="_CPPv2NK4Ifc428IfcStructuralCurveConnection4AxisEv"></span><span id="Ifc4::IfcStructuralCurveConnection::AxisC"></span><span class="target" id="class_ifc4_1_1_ifc_structural_curve_connection_1af3cb7ddbeebd7433ea1d5a59301a7fee"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_direction.html#_CPPv4N4Ifc412IfcDirectionE" title="Ifc4::IfcDirection">IfcDirection</a> *<code class="sig-name descname">Axis</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc428IfcStructuralCurveConnection4AxisEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Direction which is used in the definition of the local z axis. Axis is specified relative to the so-called global coordinate system, i.e. the SELF\IfcProduct.ObjectPlacement.</p>
+<p>NOTE It is desirable and usually possible that many instances of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_structural_curve_connection"><span class="std std-ref">IfcStructuralCurveConnection</span></a> and <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_structural_curve_member"><span class="std std-ref">IfcStructuralCurveMember</span></a> share a common instance of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_direction"><span class="std std-ref">IfcDirection</span></a> as their Axis attribute. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc428IfcStructuralCurveConnection7setAxisEPN4Ifc412IfcDirectionE">
+<span id="_CPPv3N4Ifc428IfcStructuralCurveConnection7setAxisEPN4Ifc412IfcDirectionE"></span><span id="_CPPv2N4Ifc428IfcStructuralCurveConnection7setAxisEPN4Ifc412IfcDirectionE"></span><span id="Ifc4::IfcStructuralCurveConnection::setAxis__Ifc4::IfcDirectionP"></span><span class="target" id="class_ifc4_1_1_ifc_structural_curve_connection_1a27b31a4b67abbaec4b0a11cb9fe65236"></span>void <code class="sig-name descname">setAxis</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_direction.html#_CPPv4N4Ifc412IfcDirectionE" title="Ifc4::IfcDirection">IfcDirection</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc428IfcStructuralCurveConnection7setAxisEPN4Ifc412IfcDirectionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc428IfcStructuralCurveConnection11declarationEv">
+<span id="_CPPv3NK4Ifc428IfcStructuralCurveConnection11declarationEv"></span><span id="_CPPv2NK4Ifc428IfcStructuralCurveConnection11declarationEv"></span><span id="Ifc4::IfcStructuralCurveConnection::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_structural_curve_connection_1a68e9532c77679a625c99abd63ed2a5fe"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc428IfcStructuralCurveConnection11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc428IfcStructuralCurveConnection28IfcStructuralCurveConnectionEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc428IfcStructuralCurveConnection28IfcStructuralCurveConnectionEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc428IfcStructuralCurveConnection28IfcStructuralCurveConnectionEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcStructuralCurveConnection::IfcStructuralCurveConnection__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_structural_curve_connection_1a91d1207db67194b73103974e9bcf1202"></span><code class="sig-name descname">IfcStructuralCurveConnection</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc428IfcStructuralCurveConnection28IfcStructuralCurveConnectionEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc428IfcStructuralCurveConnection28IfcStructuralCurveConnectionENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc418IfcObjectPlacementEPN4Ifc424IfcProductRepresentationEPN4Ifc420IfcBoundaryConditionEPN4Ifc412IfcDirectionE">
+<span id="_CPPv3N4Ifc428IfcStructuralCurveConnection28IfcStructuralCurveConnectionENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc418IfcObjectPlacementEPN4Ifc424IfcProductRepresentationEPN4Ifc420IfcBoundaryConditionEPN4Ifc412IfcDirectionE"></span><span id="_CPPv2N4Ifc428IfcStructuralCurveConnection28IfcStructuralCurveConnectionENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc418IfcObjectPlacementEPN4Ifc424IfcProductRepresentationEPN4Ifc420IfcBoundaryConditionEPN4Ifc412IfcDirectionE"></span><span id="Ifc4::IfcStructuralCurveConnection::IfcStructuralCurveConnection__ss.Ifc4::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4::IfcObjectPlacementP.Ifc4::IfcProductRepresentationP.Ifc4::IfcBoundaryConditionP.Ifc4::IfcDirectionP"></span><span class="target" id="class_ifc4_1_1_ifc_structural_curve_connection_1ada611b8e08a9913950bc161aa49f852a"></span><code class="sig-name descname">IfcStructuralCurveConnection</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_owner_history.html#_CPPv4N4Ifc415IfcOwnerHistoryE" title="Ifc4::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_object_placement.html#_CPPv4N4Ifc418IfcObjectPlacementE" title="Ifc4::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_product_representation.html#_CPPv4N4Ifc424IfcProductRepresentationE" title="Ifc4::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_boundary_condition.html#_CPPv4N4Ifc420IfcBoundaryConditionE" title="Ifc4::IfcBoundaryCondition">IfcBoundaryCondition</a> *<em>v8_AppliedCondition</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_direction.html#_CPPv4N4Ifc412IfcDirectionE" title="Ifc4::IfcDirection">IfcDirection</a> *<em>v9_Axis</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc428IfcStructuralCurveConnection28IfcStructuralCurveConnectionENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc418IfcObjectPlacementEPN4Ifc424IfcProductRepresentationEPN4Ifc420IfcBoundaryConditionEPN4Ifc412IfcDirectionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc428IfcStructuralCurveConnection5ClassEv">
+<span id="_CPPv3N4Ifc428IfcStructuralCurveConnection5ClassEv"></span><span id="_CPPv2N4Ifc428IfcStructuralCurveConnection5ClassEv"></span><span id="Ifc4::IfcStructuralCurveConnection::Class"></span><span class="target" id="class_ifc4_1_1_ifc_structural_curve_connection_1aec5a775501b62757e417efdfbc2e2f1f"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc428IfcStructuralCurveConnection5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_structural_curve_action.html" title="previous chapter">Class Ifc4::IfcStructuralCurveAction</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_structural_curve_member.html" title="next chapter">Class Ifc4::IfcStructuralCurveMember</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_structural_curve_connection.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

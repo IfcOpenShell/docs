@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcStructuralAnalysisModel &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcStructuralConnection" href="class_ifc4x1_1_1_ifc_structural_connection.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcStructuralActivity" href="class_ifc4x1_1_1_ifc_structural_activity.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcstructuralanalysismodel">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-structural-analysis-model"></span><h1>Class Ifc4x1::IfcStructuralAnalysisModel<a class="headerlink" href="#class-ifc4x1-ifcstructuralanalysismodel" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcSystem</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_system.html#exhale-class-class-ifc4x1-1-1-ifc-system"><span class="std std-ref">Class Ifc4x1::IfcSystem</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x126IfcStructuralAnalysisModelE">
+<span id="_CPPv3N6Ifc4x126IfcStructuralAnalysisModelE"></span><span id="_CPPv2N6Ifc4x126IfcStructuralAnalysisModelE"></span><span id="Ifc4x1::IfcStructuralAnalysisModel"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcStructuralAnalysisModel</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_system.html#_CPPv4N6Ifc4x19IfcSystemE" title="Ifc4x1::IfcSystem">IfcSystem</a><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcStructuralAnalysisModelE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from IAI: The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_structural_analysis_model"><span class="std std-ref">IfcStructuralAnalysisModel</span></a> is used to assemble all information needed to represent a structural analysis model. It encompasses certain general properties (such as analysis type), references to all contained structural members, structural supports or connections, as well as loads and the respective load results.</p>
+<p>Important functionalities for the description of an analysis model are derived from existing IFC entities:</p>
+<p>From <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_system"><span class="std std-ref">IfcSystem</span></a> it inherits the ability to couple the analysis model via <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_services_buildings"><span class="std std-ref">IfcRelServicesBuildings</span></a> to one or more IfcBuildings as necessary. From <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_group"><span class="std std-ref">IfcGroup</span></a> it inherits the inverse attribute IsGroupedBy, pointing to the relationship class <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_assigns_to_group"><span class="std std-ref">IfcRelAssignsToGroup</span></a>. This allows to group structural members (instances of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_structural_member"><span class="std std-ref">IfcStructuralMember</span></a>), and supports (instances of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_structural_connection"><span class="std std-ref">IfcStructuralConnection</span></a>) which belong to a specific analysis model. NOTE: Loads (as instances of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_structural_action"><span class="std std-ref">IfcStructuralAction</span></a>) are not included through IsGroupedBy. Loads are assigned through the LoadedBy attribute relationship, using load groups as a grouping mechanism. Only top-level load groups should be referenced via LoadedBy, i.e. load combinations if any load combinations exist, or load cases if no load combinations exist in this analysis model. NOTE: Results (as instances of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_structural_reaction"><span class="std std-ref">IfcStructuralReaction</span></a>) are not included through IsGroupedBy. Results are assigned through the HasResults attribute relationship, using result groups as a grouping mechanism.</p>
+<p>From <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_object"><span class="std std-ref">IfcObject</span></a> it inherits the inverse attribute IsDecomposedBy pointing to the relationship class <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rel_nests"><span class="std std-ref">IfcRelNests</span></a>. It provides the hierarchy between the separate (partial) analysis models.</p>
+<p>HISTORY: New entity in IFC 2x2.</p>
+<p>IFC 2x4 change: Attribute SharedPlacement and informal propositions added, allowing for easy retrieval of the common object placement and for specification of the analysis model’s coordiante system before any structural item is instantiated. WHERE rule added.</p>
+<p>Informal propositions:</p>
+<p>If one or more structural item (instance of a subtype of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_structural_item"><span class="std std-ref">IfcStructuralItem</span></a>) is grouped into an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_structural_analysis_model"><span class="std std-ref">IfcStructuralAnalysisModel</span></a>, the attribute SharedPlacement shall be provided with a value. The ObjectPlacements of all structural items which are grouped into the same instance of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_structural_analysis_model"><span class="std std-ref">IfcStructuralAnalysisModel</span></a> shall refer to the same instance of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_object_placement"><span class="std std-ref">IfcObjectPlacement</span></a> as <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_structural_analysis_model_1a9413005d93c610995321de2ae8ff2599"><span class="std std-ref">IfcStructuralAnalysisModel.SharedPlacement</span></a>.</p>
+<p>NOTE This rule is necessary to achieve consistent topology representations. The topology representations of structural items in an analysis model are meant to share vertices and edges und must therefore have the same object placement.</p>
+<p>NOTE A structural item may be grouped into more than one analysis model. In this case, all these models must use the same instance of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_object_placement"><span class="std std-ref">IfcObjectPlacement</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x126IfcStructuralAnalysisModel4listE">
+<span id="_CPPv3N6Ifc4x126IfcStructuralAnalysisModel4listE"></span><span id="_CPPv2N6Ifc4x126IfcStructuralAnalysisModel4listE"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1abb1ad045300e9e3e045c16a982f3b487"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x126IfcStructuralAnalysisModelE" title="Ifc4x1::IfcStructuralAnalysisModel">IfcStructuralAnalysisModel</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcStructuralAnalysisModel4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel14PredefinedTypeEv">
+<span id="_CPPv3NK6Ifc4x126IfcStructuralAnalysisModel14PredefinedTypeEv"></span><span id="_CPPv2NK6Ifc4x126IfcStructuralAnalysisModel14PredefinedTypeEv"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::PredefinedTypeC"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1a12e99c72ee102fcb3486b722d5e2c9f7"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x124IfcAnalysisModelTypeEnumE" title="Ifc4x1::IfcAnalysisModelTypeEnum">IfcAnalysisModelTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x124IfcAnalysisModelTypeEnum5ValueE" title="Ifc4x1::IfcAnalysisModelTypeEnum::Value">Value</a> <code class="sig-name descname">PredefinedType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel14PredefinedTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Defines the type of the structural analysis model. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcStructuralAnalysisModel17setPredefinedTypeEN6Ifc4x124IfcAnalysisModelTypeEnum5ValueE">
+<span id="_CPPv3N6Ifc4x126IfcStructuralAnalysisModel17setPredefinedTypeEN6Ifc4x124IfcAnalysisModelTypeEnum5ValueE"></span><span id="_CPPv2N6Ifc4x126IfcStructuralAnalysisModel17setPredefinedTypeEN6Ifc4x124IfcAnalysisModelTypeEnum5ValueE"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::setPredefinedType__Ifc4x1::IfcAnalysisModelTypeEnum::Value"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1a0095555a376255c0fc4f3bb6edd1a8fe"></span>void <code class="sig-name descname">setPredefinedType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x124IfcAnalysisModelTypeEnumE" title="Ifc4x1::IfcAnalysisModelTypeEnum">IfcAnalysisModelTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x124IfcAnalysisModelTypeEnum5ValueE" title="Ifc4x1::IfcAnalysisModelTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcStructuralAnalysisModel17setPredefinedTypeEN6Ifc4x124IfcAnalysisModelTypeEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel23hasOrientationOf2DPlaneEv">
+<span id="_CPPv3NK6Ifc4x126IfcStructuralAnalysisModel23hasOrientationOf2DPlaneEv"></span><span id="_CPPv2NK6Ifc4x126IfcStructuralAnalysisModel23hasOrientationOf2DPlaneEv"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::hasOrientationOf2DPlaneC"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1a564c867b20face81d3bcf7ab62aa2a7f"></span>bool <code class="sig-name descname">hasOrientationOf2DPlane</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel23hasOrientationOf2DPlaneEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute OrientationOf2DPlane is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_structural_analysis_model"><span class="std std-ref">IfcStructuralAnalysisModel</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel20OrientationOf2DPlaneEv">
+<span id="_CPPv3NK6Ifc4x126IfcStructuralAnalysisModel20OrientationOf2DPlaneEv"></span><span id="_CPPv2NK6Ifc4x126IfcStructuralAnalysisModel20OrientationOf2DPlaneEv"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::OrientationOf2DPlaneC"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1ad847dc260cbba9c470c5a04476c42278"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_axis2_placement3_d.html#_CPPv4N6Ifc4x119IfcAxis2Placement3DE" title="Ifc4x1::IfcAxis2Placement3D">IfcAxis2Placement3D</a> *<code class="sig-name descname">OrientationOf2DPlane</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel20OrientationOf2DPlaneEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>If the selected model type (PredefinedType) describes a 2D system, the orientation defines the analysis plane (P[1], P[2]) and the normal to the analysis plane (P[3]). This is needed because structural items and activities are always defined in three-dimensional space even if they are meant to be analysed in a two-dimensional manner.</p>
+<p>In case of predefined type IN_PLANE_LOADING_2D, the analysis is to be performed within the projection into the P[1], P[2] plane. In case of predefined type OUT_PLANE_LOADING_2D, only the P[3] component of loads and their effects is meant to be analyzed. This is used for beam grids and for typical slab analyses. In case of predefined type LOADING_3D, OrientationOf2DPlane shall be omitted. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcStructuralAnalysisModel23setOrientationOf2DPlaneEPN6Ifc4x119IfcAxis2Placement3DE">
+<span id="_CPPv3N6Ifc4x126IfcStructuralAnalysisModel23setOrientationOf2DPlaneEPN6Ifc4x119IfcAxis2Placement3DE"></span><span id="_CPPv2N6Ifc4x126IfcStructuralAnalysisModel23setOrientationOf2DPlaneEPN6Ifc4x119IfcAxis2Placement3DE"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::setOrientationOf2DPlane__Ifc4x1::IfcAxis2Placement3DP"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1a480182a501c487c570092cf89ec34cb4"></span>void <code class="sig-name descname">setOrientationOf2DPlane</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_axis2_placement3_d.html#_CPPv4N6Ifc4x119IfcAxis2Placement3DE" title="Ifc4x1::IfcAxis2Placement3D">IfcAxis2Placement3D</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcStructuralAnalysisModel23setOrientationOf2DPlaneEPN6Ifc4x119IfcAxis2Placement3DE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel11hasLoadedByEv">
+<span id="_CPPv3NK6Ifc4x126IfcStructuralAnalysisModel11hasLoadedByEv"></span><span id="_CPPv2NK6Ifc4x126IfcStructuralAnalysisModel11hasLoadedByEv"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::hasLoadedByC"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1af0a500807a02ff5e394307c5d88ba260"></span>bool <code class="sig-name descname">hasLoadedBy</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel11hasLoadedByEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute LoadedBy is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_structural_analysis_model"><span class="std std-ref">IfcStructuralAnalysisModel</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel8LoadedByEv">
+<span id="_CPPv3NK6Ifc4x126IfcStructuralAnalysisModel8LoadedByEv"></span><span id="_CPPv2NK6Ifc4x126IfcStructuralAnalysisModel8LoadedByEv"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::LoadedByC"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1a019d407c9a7901954cbbc95f393145f3"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_structural_load_group.html#_CPPv4N6Ifc4x122IfcStructuralLoadGroupE" title="Ifc4x1::IfcStructuralLoadGroup">IfcStructuralLoadGroup</a>&gt;::ptr <code class="sig-name descname">LoadedBy</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel8LoadedByEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>References to all load groups to be analyzed. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcStructuralAnalysisModel11setLoadedByEN22IfcTemplatedEntityListIN6Ifc4x122IfcStructuralLoadGroupEE3ptrE">
+<span id="_CPPv3N6Ifc4x126IfcStructuralAnalysisModel11setLoadedByEN22IfcTemplatedEntityListIN6Ifc4x122IfcStructuralLoadGroupEE3ptrE"></span><span id="_CPPv2N6Ifc4x126IfcStructuralAnalysisModel11setLoadedByEN22IfcTemplatedEntityListIN6Ifc4x122IfcStructuralLoadGroupEE3ptrE"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::setLoadedBy__IfcTemplatedEntityList:Ifc4x1::IfcStructuralLoadGroup:::ptr"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1afc0159320d5835292b203d24b78be049"></span>void <code class="sig-name descname">setLoadedBy</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_structural_load_group.html#_CPPv4N6Ifc4x122IfcStructuralLoadGroupE" title="Ifc4x1::IfcStructuralLoadGroup">IfcStructuralLoadGroup</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcStructuralAnalysisModel11setLoadedByEN22IfcTemplatedEntityListIN6Ifc4x122IfcStructuralLoadGroupEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel13hasHasResultsEv">
+<span id="_CPPv3NK6Ifc4x126IfcStructuralAnalysisModel13hasHasResultsEv"></span><span id="_CPPv2NK6Ifc4x126IfcStructuralAnalysisModel13hasHasResultsEv"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::hasHasResultsC"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1ac8abccd2ca867ad90f8d50b0dee7e7cc"></span>bool <code class="sig-name descname">hasHasResults</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel13hasHasResultsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute HasResults is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_structural_analysis_model"><span class="std std-ref">IfcStructuralAnalysisModel</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel10HasResultsEv">
+<span id="_CPPv3NK6Ifc4x126IfcStructuralAnalysisModel10HasResultsEv"></span><span id="_CPPv2NK6Ifc4x126IfcStructuralAnalysisModel10HasResultsEv"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::HasResultsC"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1a462b8e75382b53abfbdd35eb7af7b159"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_structural_result_group.html#_CPPv4N6Ifc4x124IfcStructuralResultGroupE" title="Ifc4x1::IfcStructuralResultGroup">IfcStructuralResultGroup</a>&gt;::ptr <code class="sig-name descname">HasResults</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel10HasResultsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>References to all result groups available for this structural analysis model. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcStructuralAnalysisModel13setHasResultsEN22IfcTemplatedEntityListIN6Ifc4x124IfcStructuralResultGroupEE3ptrE">
+<span id="_CPPv3N6Ifc4x126IfcStructuralAnalysisModel13setHasResultsEN22IfcTemplatedEntityListIN6Ifc4x124IfcStructuralResultGroupEE3ptrE"></span><span id="_CPPv2N6Ifc4x126IfcStructuralAnalysisModel13setHasResultsEN22IfcTemplatedEntityListIN6Ifc4x124IfcStructuralResultGroupEE3ptrE"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::setHasResults__IfcTemplatedEntityList:Ifc4x1::IfcStructuralResultGroup:::ptr"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1aa972684c477bae1f8b9c292d8641e457"></span>void <code class="sig-name descname">setHasResults</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_structural_result_group.html#_CPPv4N6Ifc4x124IfcStructuralResultGroupE" title="Ifc4x1::IfcStructuralResultGroup">IfcStructuralResultGroup</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcStructuralAnalysisModel13setHasResultsEN22IfcTemplatedEntityListIN6Ifc4x124IfcStructuralResultGroupEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel18hasSharedPlacementEv">
+<span id="_CPPv3NK6Ifc4x126IfcStructuralAnalysisModel18hasSharedPlacementEv"></span><span id="_CPPv2NK6Ifc4x126IfcStructuralAnalysisModel18hasSharedPlacementEv"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::hasSharedPlacementC"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1a5e1a455a763545014b1c85b2038e8c9e"></span>bool <code class="sig-name descname">hasSharedPlacement</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel18hasSharedPlacementEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute SharedPlacement is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_structural_analysis_model"><span class="std std-ref">IfcStructuralAnalysisModel</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel15SharedPlacementEv">
+<span id="_CPPv3NK6Ifc4x126IfcStructuralAnalysisModel15SharedPlacementEv"></span><span id="_CPPv2NK6Ifc4x126IfcStructuralAnalysisModel15SharedPlacementEv"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::SharedPlacementC"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1a9413005d93c610995321de2ae8ff2599"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_object_placement.html#_CPPv4N6Ifc4x118IfcObjectPlacementE" title="Ifc4x1::IfcObjectPlacement">IfcObjectPlacement</a> *<code class="sig-name descname">SharedPlacement</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel15SharedPlacementEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Object placement which shall be common to all items and activities which are grouped into this instance of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_structural_analysis_model"><span class="std std-ref">IfcStructuralAnalysisModel</span></a>. This placement establishes a coordinate system which is referred to as ‘global coordinate system’ in use definitions of various classes of structural items and activities.</p>
+<p>NOTE Most commonly, but not necessarily, the SharedPlacement is an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> whose z axis is parallel with the z axis of the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a>’s world coordinate system and directed like the WCS z axis (i.e. pointing “upwards”) or directed against the WCS z axis (i.e. points “downwards”).</p>
+<p>NOTE Per informal proposition, this attribute is not optional as soon as at least one <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_structural_item"><span class="std std-ref">IfcStructuralItem</span></a> is grouped into the instance of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_structural_analysis_model"><span class="std std-ref">IfcStructuralAnalysisModel</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcStructuralAnalysisModel18setSharedPlacementEPN6Ifc4x118IfcObjectPlacementE">
+<span id="_CPPv3N6Ifc4x126IfcStructuralAnalysisModel18setSharedPlacementEPN6Ifc4x118IfcObjectPlacementE"></span><span id="_CPPv2N6Ifc4x126IfcStructuralAnalysisModel18setSharedPlacementEPN6Ifc4x118IfcObjectPlacementE"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::setSharedPlacement__Ifc4x1::IfcObjectPlacementP"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1ac1b648a93a76d45f301f16099d8b3423"></span>void <code class="sig-name descname">setSharedPlacement</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_object_placement.html#_CPPv4N6Ifc4x118IfcObjectPlacementE" title="Ifc4x1::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcStructuralAnalysisModel18setSharedPlacementEPN6Ifc4x118IfcObjectPlacementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel11declarationEv">
+<span id="_CPPv3NK6Ifc4x126IfcStructuralAnalysisModel11declarationEv"></span><span id="_CPPv2NK6Ifc4x126IfcStructuralAnalysisModel11declarationEv"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1aec4bc03a80241b646346301253f3ad16"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcStructuralAnalysisModel11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcStructuralAnalysisModel26IfcStructuralAnalysisModelEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x126IfcStructuralAnalysisModel26IfcStructuralAnalysisModelEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x126IfcStructuralAnalysisModel26IfcStructuralAnalysisModelEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::IfcStructuralAnalysisModel__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1a1af4133218370caf16049bce84267b7a"></span><code class="sig-name descname">IfcStructuralAnalysisModel</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcStructuralAnalysisModel26IfcStructuralAnalysisModelEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcStructuralAnalysisModel26IfcStructuralAnalysisModelENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN6Ifc4x124IfcAnalysisModelTypeEnum5ValueEPN6Ifc4x119IfcAxis2Placement3DEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x122IfcStructuralLoadGroupEE3ptrEEEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x124IfcStructuralResultGroupEE3ptrEEEPN6Ifc4x118IfcObjectPlacementE">
+<span id="_CPPv3N6Ifc4x126IfcStructuralAnalysisModel26IfcStructuralAnalysisModelENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN6Ifc4x124IfcAnalysisModelTypeEnum5ValueEPN6Ifc4x119IfcAxis2Placement3DEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x122IfcStructuralLoadGroupEE3ptrEEEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x124IfcStructuralResultGroupEE3ptrEEEPN6Ifc4x118IfcObjectPlacementE"></span><span id="_CPPv2N6Ifc4x126IfcStructuralAnalysisModel26IfcStructuralAnalysisModelENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN6Ifc4x124IfcAnalysisModelTypeEnum5ValueEPN6Ifc4x119IfcAxis2Placement3DEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x122IfcStructuralLoadGroupEE3ptrEEEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x124IfcStructuralResultGroupEE3ptrEEEPN6Ifc4x118IfcObjectPlacementE"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::IfcStructuralAnalysisModel__ss.Ifc4x1::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4x1::IfcAnalysisModelTypeEnum::Value.Ifc4x1::IfcAxis2Placement3DP.boost::optional:IfcTemplatedEntityList:Ifc4x1::IfcStructuralLoadGroup:::ptr:.boost::optional:IfcTemplatedEntityList:Ifc4x1::IfcStructuralResultGroup:::ptr:.Ifc4x1::IfcObjectPlacementP"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1a83d571affa9f954b0a2ba322551c72b9"></span><code class="sig-name descname">IfcStructuralAnalysisModel</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_owner_history.html#_CPPv4N6Ifc4x115IfcOwnerHistoryE" title="Ifc4x1::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x124IfcAnalysisModelTypeEnumE" title="Ifc4x1::IfcAnalysisModelTypeEnum">IfcAnalysisModelTypeEnum</a>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x124IfcAnalysisModelTypeEnum5ValueE" title="Ifc4x1::IfcAnalysisModelTypeEnum::Value">Value</a> <em>v6_PredefinedType</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_axis2_placement3_d.html#_CPPv4N6Ifc4x119IfcAxis2Placement3DE" title="Ifc4x1::IfcAxis2Placement3D">IfcAxis2Placement3D</a> *<em>v7_OrientationOf2DPlane</em>, boost::optional&lt;<a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_structural_load_group.html#_CPPv4N6Ifc4x122IfcStructuralLoadGroupE" title="Ifc4x1::IfcStructuralLoadGroup">IfcStructuralLoadGroup</a>&gt;::ptr&gt; <em>v8_LoadedBy</em>, boost::optional&lt;<a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_structural_result_group.html#_CPPv4N6Ifc4x124IfcStructuralResultGroupE" title="Ifc4x1::IfcStructuralResultGroup">IfcStructuralResultGroup</a>&gt;::ptr&gt; <em>v9_HasResults</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_object_placement.html#_CPPv4N6Ifc4x118IfcObjectPlacementE" title="Ifc4x1::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v10_SharedPlacement</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcStructuralAnalysisModel26IfcStructuralAnalysisModelENSt6stringEPN6Ifc4x115IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN6Ifc4x124IfcAnalysisModelTypeEnum5ValueEPN6Ifc4x119IfcAxis2Placement3DEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x122IfcStructuralLoadGroupEE3ptrEEEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x124IfcStructuralResultGroupEE3ptrEEEPN6Ifc4x118IfcObjectPlacementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcStructuralAnalysisModel5ClassEv">
+<span id="_CPPv3N6Ifc4x126IfcStructuralAnalysisModel5ClassEv"></span><span id="_CPPv2N6Ifc4x126IfcStructuralAnalysisModel5ClassEv"></span><span id="Ifc4x1::IfcStructuralAnalysisModel::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_structural_analysis_model_1acc056386ce3924dc0d8bbd7a36707343"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcStructuralAnalysisModel5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_structural_activity.html" title="previous chapter">Class Ifc4x1::IfcStructuralActivity</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_structural_connection.html" title="next chapter">Class Ifc4x1::IfcStructuralConnection</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_structural_analysis_model.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

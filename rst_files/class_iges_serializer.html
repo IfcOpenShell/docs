@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class IgesSerializer &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Template Class IteratorFactoryImplementation" href="class_iterator_factory_implementation.html" />
+    <link rel="prev" title="Class IfcWriteArgument::EnumerationReference" href="class_ifc_write_1_1_ifc_write_argument_1_1_enumeration_reference.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-igesserializer">
+<span id="exhale-class-class-iges-serializer"></span><h1>Class IgesSerializer<a class="headerlink" href="#class-igesserializer" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_serializers_IgesSerializer.h.html#file-src-serializers-igesserializer-h"><span class="std std-ref">File IgesSerializer.h</span></a></p></li>
+</ul>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">OpenCascadeBasedSerializer</span></code> (<a class="reference internal" href="class_open_cascade_based_serializer.html#exhale-class-class-open-cascade-based-serializer"><span class="std std-ref">Class OpenCascadeBasedSerializer</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv414IgesSerializer">
+<span id="_CPPv314IgesSerializer"></span><span id="_CPPv214IgesSerializer"></span><span id="IgesSerializer"></span><span class="target" id="class_iges_serializer"></span><em class="property">class </em><code class="sig-name descname">IgesSerializer</code> : <em class="property">public</em> <a class="reference internal" href="class_open_cascade_based_serializer.html#_CPPv426OpenCascadeBasedSerializer" title="OpenCascadeBasedSerializer">OpenCascadeBasedSerializer</a><a class="headerlink" href="#_CPPv414IgesSerializer" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><dl class="simple">
+<dt><strong>Note</strong></dt><dd><p>this is brittle, but apparently the only way to differentiate OCCT from OCE. In the latter including this header fails for some versions. </p>
+</dd>
+</dl>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N14IgesSerializer14IgesSerializerERKNSt6stringERK18SerializerSettings">
+<span id="_CPPv3N14IgesSerializer14IgesSerializerERKNSt6stringERK18SerializerSettings"></span><span id="_CPPv2N14IgesSerializer14IgesSerializerERKNSt6stringERK18SerializerSettings"></span><span id="IgesSerializer::IgesSerializer__ssCR.SerializerSettingsCR"></span><span class="target" id="class_iges_serializer_1a197c3022a56b902901fad893ab7134d8"></span><code class="sig-name descname">IgesSerializer</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>out_filename</em>, <em class="property">const</em> <a class="reference internal" href="class_serializer_settings.html#_CPPv418SerializerSettings" title="SerializerSettings">SerializerSettings</a> &amp;<em>settings</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14IgesSerializer14IgesSerializerERKNSt6stringERK18SerializerSettings" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><dl class="simple">
+<dt><strong>Note</strong></dt><dd><p>IGESControl_Controller::Init() must be called prior to instantiating <a class="reference internal" href="#class_iges_serializer"><span class="std std-ref">IgesSerializer</span></a>. See <a class="reference external" href="http://tracker.dev.opencascade.org/view.php?id=23679">http://tracker.dev.opencascade.org/view.php?id=23679</a> for more information. </p>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N14IgesSerializerD0Ev">
+<span id="_CPPv3N14IgesSerializerD0Ev"></span><span id="_CPPv2N14IgesSerializerD0Ev"></span><span id="IgesSerializer::~IgesSerializer"></span><span class="target" id="class_iges_serializer_1ac908ae3a3f411a9f1e248a9ffa8a18c0"></span><code class="sig-name descname">~IgesSerializer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14IgesSerializerD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N14IgesSerializer10writeShapeERKNSt6stringERK12TopoDS_Shape">
+<span id="_CPPv3N14IgesSerializer10writeShapeERKNSt6stringERK12TopoDS_Shape"></span><span id="_CPPv2N14IgesSerializer10writeShapeERKNSt6stringERK12TopoDS_Shape"></span><span id="IgesSerializer::writeShape__ssCR.TopoDS_ShapeCR"></span><span class="target" id="class_iges_serializer_1afc4a0120136d2535d3981bfb66bfbda5"></span>void <code class="sig-name descname">writeShape</code><span class="sig-paren">(</span><em class="property">const</em> std::string&amp;, <em class="property">const</em> TopoDS_Shape &amp;<em>shape</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14IgesSerializer10writeShapeERKNSt6stringERK12TopoDS_Shape" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N14IgesSerializer8finalizeEv">
+<span id="_CPPv3N14IgesSerializer8finalizeEv"></span><span id="_CPPv2N14IgesSerializer8finalizeEv"></span><span id="IgesSerializer::finalize"></span><span class="target" id="class_iges_serializer_1a6873263ee7e54bb9b8a6243b40ad64f3"></span>void <code class="sig-name descname">finalize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14IgesSerializer8finalizeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N14IgesSerializer23setUnitNameAndMagnitudeERKNSt6stringEf">
+<span id="_CPPv3N14IgesSerializer23setUnitNameAndMagnitudeERKNSt6stringEf"></span><span id="_CPPv2N14IgesSerializer23setUnitNameAndMagnitudeERKNSt6stringEf"></span><span id="IgesSerializer::setUnitNameAndMagnitude__ssCR.float"></span><span class="target" id="class_iges_serializer_1afac31ddb89880c46e8d4f3fc968cc373"></span>void <code class="sig-name descname">setUnitNameAndMagnitude</code><span class="sig-paren">(</span><em class="property">const</em> std::string&amp;, float <em>magnitude</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14IgesSerializer23setUnitNameAndMagnitudeERKNSt6stringEf" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc_write_1_1_ifc_write_argument_1_1_enumeration_reference.html" title="previous chapter">Class IfcWriteArgument::EnumerationReference</a></li>
+      <li>Next: <a href="class_iterator_factory_implementation.html" title="next chapter">Template Class IteratorFactoryImplementation</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_iges_serializer.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcPlate &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcPlateType" href="class_ifc2x3_1_1_ifc_plate_type.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcPlaneAngleMeasure" href="class_ifc2x3_1_1_ifc_plane_angle_measure.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcplate">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-plate"></span><h1>Class Ifc2x3::IfcPlate<a class="headerlink" href="#class-ifc2x3-ifcplate" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcBuildingElement</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_building_element.html#exhale-class-class-ifc2x3-1-1-ifc-building-element"><span class="std std-ref">Class Ifc2x3::IfcBuildingElement</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x38IfcPlateE">
+<span id="_CPPv3N6Ifc2x38IfcPlateE"></span><span id="_CPPv2N6Ifc2x38IfcPlateE"></span><span id="Ifc2x3::IfcPlate"></span><span class="target" id="class_ifc2x3_1_1_ifc_plate"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcPlate</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_building_element.html#_CPPv4N6Ifc2x318IfcBuildingElementE" title="Ifc2x3::IfcBuildingElement">IfcBuildingElement</a><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcPlateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from IAI: An <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a> is a planar and often flat part with constant thickness. A plate can be a structural part carrying loads between or beyond points of support, however it is not required to be load bearing.The location of the plate (being horizontal, vertical or sloped) is not relevant to its definition (in contrary to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_wall"><span class="std std-ref">IfcWall</span></a> and <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_slab"><span class="std std-ref">IfcSlab</span></a> (as floor slab)). NOTE Plates arenormally made of steel, other metallic material, or by glass panels. However the definition of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a> is material independent and specific material information shall be handled by using IfcAssociatesMaterial to assign a material specification to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a>.</p>
+<p>NOTE Although not necessarily, plates are often add-on parts. This is represented by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_aggregates"><span class="std std-ref">IfcRelAggregates</span></a> decomposition mechanism used to aggregate parts, such as <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a>, into a container element, e.g. <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element_assembly"><span class="std std-ref">IfcElementAssembly</span></a>, or <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_curtain_wall"><span class="std std-ref">IfcCurtainWall</span></a>.</p>
+<p>NOTE The representation of a plate in a structural analysis model is provided by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_structural_surface_member"><span class="std std-ref">IfcStructuralSurfaceMember</span></a> being part of an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_structural_analysis_model"><span class="std std-ref">IfcStructuralAnalysisModel</span></a>. An instance <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a> should preferably get its geometric representation and material assignment through the type definition by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate_type"><span class="std std-ref">IfcPlateType</span></a> assigned using the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_defines_by_type"><span class="std std-ref">IfcRelDefinesByType</span></a> relationship. This allows identical plates in a construction to be represented by the same instance of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate_type"><span class="std std-ref">IfcPlateType</span></a>. A plate may have openings, such as voids or recesses. They are defined by an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_opening_element"><span class="std std-ref">IfcOpeningElement</span></a> attached to the plate using the inverse relationship HasOpenings pointing to <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_voids_element"><span class="std std-ref">IfcRelVoidsElement</span></a>. The position number of a plate as often used in steel construction is assigned through the attribute <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element_1a6076f6a940218c79195e037849ad4345"><span class="std std-ref">IfcElement.Tag</span></a> The IFC specification provides two entities for plate occurrences:</p>
+<p>IfcPlateStandardCase used for all occurrences of plates, that are prismatic and where the thickness parameter can be fully described by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_material_layer_set_usage"><span class="std std-ref">IfcMaterialLayerSetUsage</span></a>. These plates are always represented geometrically by a ‘SweptSolid’ geometry (or by a ‘Clipping’ geometry based on ‘SweptSolid’), if a 3D geometric representation is assigned. In addition they have to have a corresponding <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_material_layer_set_usage"><span class="std std-ref">IfcMaterialLayerSetUsage</span></a> assigned. <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a> used for all other occurrences of plates, particularly for plates with changing thickness, or plates with non planar surfaces, and plates having only ‘SurfaceModel’ or ‘Brep’ geometry.</p>
+<p>HISTORY New entity in IFC Release 2x2 Type Use Definition The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a> defines the occuurence of any plate, common information about plate types (or styles) is handled by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate_type"><span class="std std-ref">IfcPlateType</span></a>. The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate_type"><span class="std std-ref">IfcPlateType</span></a> (if present) may establish the commontype name, usage (or predefined) type, common set of properties, common material layer set, and common shape representations (using <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_representation_map"><span class="std std-ref">IfcRepresentationMap</span></a>). The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate_type"><span class="std std-ref">IfcPlateType</span></a> is attached using the IfcRelDefinedByType.RelatingType objectified relationship and is accessible by the inverse IsTypedBy attribute. If no <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate_type"><span class="std std-ref">IfcPlateType</span></a> is attached(i.e. if only occurrence information is given) the PredefinedType should be provided. If set to .USERDEFINED. a user defined value can be provided by the ObjectType attribute. Material Use Definition The material of the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a> is defined by <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_material_layer_set"><span class="std std-ref">IfcMaterialLayerSet</span></a>, or <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_material"><span class="std std-ref">IfcMaterial</span></a> and attached by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_associates_material_1a524b927c8fc7eb816c986fc3b7c7c7c3"><span class="std std-ref">IfcRelAssociatesMaterial.RelatingMaterial</span></a>. It is accessible by the inverse HasAssociations relationship. NOTE It is illegal to assign an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_material_layer_set_usage"><span class="std std-ref">IfcMaterialLayerSetUsage</span></a> to an <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a>. Only the subtype IfcPlateStandardCase supports this concept. Material information can also be given at the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate_type"><span class="std std-ref">IfcPlateType</span></a>, defining the common attribute data for all occurrences of the same type.It is then accessible by the inverse IsTypedBy relationship pointing to IfcPlateType.HasAssociations and via <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_associates_material_1a524b927c8fc7eb816c986fc3b7c7c7c3"><span class="std std-ref">IfcRelAssociatesMaterial.RelatingMaterial</span></a>. Property Set Use Definition The property sets relating to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a> are defined by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a> and attached by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. It is accessible by the inverse IsDefinedBy relationship. The following property set definitions specific to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a> are part of this IFC release:</p>
+<p>Pset_PlateCommon: common property set for all plate occurrences</p>
+<p>Quantity Use Definition The quantities relating to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a> and IfcPlateStandardCase are defined by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element_quantity"><span class="std std-ref">IfcElementQuantity</span></a> and attached by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_defines_by_properties"><span class="std std-ref">IfcRelDefinesByProperties</span></a> relationship. It is accessible by the inverse IsDefinedBy relationship. The following base quantities are defined and should be exchanged with the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_root_1af4c45563ef1c697ea8f42a51ed80454b"><span class="std std-ref">IfcElementQuantity.Name</span></a> = ‘BaseQuantities’. Other quantities can be defined being subjected to local standard of measurement with another string value assigned to Name and a value provided for MethodOfMeasurement. Quanties shall be never assigned to the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate_type"><span class="std std-ref">IfcPlateType</span></a>.</p>
+<p>Qto_PlateBaseQuantities: base quantities for all plate occurrences.</p>
+<p>Containment Use Definitions The <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a>, as any subtype of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element"><span class="std std-ref">IfcBuildingElement</span></a>, may participate in two different containment relationships. The first (and in most implementation scenarios mandatory) relationship is the hierachical spatial containment, the second relationship is the aggregation within anelement assembly.</p>
+<p>TheIfcPlate is places within the project spatial hierarchy using the objectified relationship <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_contained_in_spatial_structure"><span class="std std-ref">IfcRelContainedInSpatialStructure</span></a>, referring to it by its inverse attribute SELF\IfcElement.ContainedInStructure. Subtypes ofIfcSpatialStructureElement are valid spatial containers, with <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_storey"><span class="std std-ref">IfcBuildingStorey</span></a> being the default container. TheIfcPlate may be aggregated into an element assembly using the objectified relationship <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rel_aggregates"><span class="std std-ref">IfcRelAggregates</span></a>, referring to it by its inverse attribute SELF\IfcObjectDefinition.Decomposes. Any subtype of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a> can be an element assembly, with <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element_assembly"><span class="std std-ref">IfcElementAssembly</span></a> as a special focus subtype. In this case, no additional relationship to the spatial hierarchy shall be given (i.e.SELF\IfcElement.ContainedInStructure = NIL), the relationship to the spatial container is handled by the element assembly.</p>
+<p>Geometry Use Definition The geometric representation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a> is given by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a>, allowing multiple geometric representations. Included are: Local Placement The local placement for <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a> is defined in its supertype <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a>. It is defined by the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a>, which defines the local coordinate system that is referenced by all geometric representations.</p>
+<p>The PlacementRelTo relationship of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> shall point (if given) to the local placement of the same <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_spatial_structure_element"><span class="std std-ref">IfcSpatialStructureElement</span></a>, which is used in the ContainedInStructure inverse attribute, or to a spatial structure element at a higher level, referenced by that.</p>
+<p>If the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a> is part of an assembly, the PlacementRelTo relationship of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> shall point to the local placement of the container element, e.g. <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_element_assembly"><span class="std std-ref">IfcElementAssembly</span></a>,</p>
+<p>If the relative placement is not used, the absolute placement is defined within the world coordinate system.</p>
+<p>Geometric Representation Currently, the ‘Surface’, ‘FootPrint’, ‘Body’, and ‘Box’ representations are supported. The ‘Box’ representation includes the representation type ‘BoundingBox’ and is explained at <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element"><span class="std std-ref">IfcBuildingElement</span></a>. Surface Representation The surfacic geometric representation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a> is defined using the ‘Surface’ representation.</p>
+<p>RepresentationIdentifier : ‘Surface’ RepresentationType : ‘Surface3D’</p>
+<p>NOTE The ‘Surface’ can be used to define a surfacic model of the building (e.g. for analytical purposes, or for reduced Level of Detail representation). Body Representation The body representation of <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a> can be represented using the representation types ‘SweptSolid’, ‘Clipping’, ‘MappedRepresentation’, ‘SurfaceModel’, and ‘Brep’. The representation types ‘SurfaceModel’ and ‘Brep’ are explained at <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_building_element"><span class="std std-ref">IfcBuildingElement</span></a>. SweptSolid Representation Type The following attribute values for the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used: If a corresponding material definition using <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_material_layer_set_usage"><span class="std std-ref">IfcMaterialLayerSetUsage</span></a> can be assigned, the subtype IfcPlateStandardCase shall be used.</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘SweptSolid’</p>
+<p>The following additional constraints apply to the swept solid representation:</p>
+<p>Solid: <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_extruded_area_solid"><span class="std std-ref">IfcExtrudedAreaSolid</span></a> is required, Profile: <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_arbitrary_closed_profile_def"><span class="std std-ref">IfcArbitraryClosedProfileDef</span></a>, <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_arbitrary_profile_def_with_voids"><span class="std std-ref">IfcArbitraryProfileDefWithVoids</span></a>, <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_rectangle_profile_def"><span class="std std-ref">IfcRectangleProfileDef</span></a>, <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_circle_profile_def"><span class="std std-ref">IfcCircleProfileDef</span></a>, <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_ellipse_profile_def"><span class="std std-ref">IfcEllipseProfileDef</span></a> shall be supported. Extrusion: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile.</p>
+<p>Clipping Representation Type The following attribute values for the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘Clipping’</p>
+<p>MappedRepresentation Representation Type The ‘MappedRepresentation’ shall be supported as it allows for reusing the geometry definition of the member type at all occurrences of the same type. The following attribute values for the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘MappedRepresentation’</p>
+<p>The same constraints, as given for the ‘SweptSolid’, ‘Clipping’, ‘SurfaceModel’, and ‘Brep’ geometric representation, shall apply to the MappedRepresentation of the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_representation_map"><span class="std std-ref">IfcRepresentationMap</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x38IfcPlate4listE">
+<span id="_CPPv3N6Ifc2x38IfcPlate4listE"></span><span id="_CPPv2N6Ifc2x38IfcPlate4listE"></span><span id="Ifc2x3::IfcPlate::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_plate_1af55724bc7ce31a8062cb51dd409922cd"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x38IfcPlateE" title="Ifc2x3::IfcPlate">IfcPlate</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcPlate4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x38IfcPlate11declarationEv">
+<span id="_CPPv3NK6Ifc2x38IfcPlate11declarationEv"></span><span id="_CPPv2NK6Ifc2x38IfcPlate11declarationEv"></span><span id="Ifc2x3::IfcPlate::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_plate_1aad6f78e0f40ac6af103ac58292b52b87"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x38IfcPlate11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x38IfcPlate8IfcPlateEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x38IfcPlate8IfcPlateEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x38IfcPlate8IfcPlateEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcPlate::IfcPlate__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_plate_1afce64c638d925b680cd2215553cce757"></span><code class="sig-name descname">IfcPlate</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcPlate8IfcPlateEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x38IfcPlate8IfcPlateENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEE">
+<span id="_CPPv3N6Ifc2x38IfcPlate8IfcPlateENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEE"></span><span id="_CPPv2N6Ifc2x38IfcPlate8IfcPlateENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEE"></span><span id="Ifc2x3::IfcPlate::IfcPlate__ss.Ifc2x3::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc2x3::IfcObjectPlacementP.Ifc2x3::IfcProductRepresentationP.boost::optional:ss:"></span><span class="target" id="class_ifc2x3_1_1_ifc_plate_1ad298225f95e49e62fd1230c15889b4f6"></span><code class="sig-name descname">IfcPlate</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_owner_history.html#_CPPv4N6Ifc2x315IfcOwnerHistoryE" title="Ifc2x3::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_object_placement.html#_CPPv4N6Ifc2x318IfcObjectPlacementE" title="Ifc2x3::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_product_representation.html#_CPPv4N6Ifc2x324IfcProductRepresentationE" title="Ifc2x3::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, boost::optional&lt;std::string&gt; <em>v8_Tag</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcPlate8IfcPlateENSt6stringEPN6Ifc2x315IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc2x318IfcObjectPlacementEPN6Ifc2x324IfcProductRepresentationEN5boost8optionalINSt6stringEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x38IfcPlate5ClassEv">
+<span id="_CPPv3N6Ifc2x38IfcPlate5ClassEv"></span><span id="_CPPv2N6Ifc2x38IfcPlate5ClassEv"></span><span id="Ifc2x3::IfcPlate::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_plate_1abd4ad5277128a3fe9e0ecbd467f55328"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x38IfcPlate5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_plane_angle_measure.html" title="previous chapter">Class Ifc2x3::IfcPlaneAngleMeasure</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_plate_type.html" title="next chapter">Class Ifc2x3::IfcPlateType</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_plate.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

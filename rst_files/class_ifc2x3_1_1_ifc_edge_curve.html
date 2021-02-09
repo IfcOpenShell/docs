@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcEdgeCurve &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcEdgeFeature" href="class_ifc2x3_1_1_ifc_edge_feature.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcEdge" href="class_ifc2x3_1_1_ifc_edge.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcedgecurve">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-edge-curve"></span><h1>Class Ifc2x3::IfcEdgeCurve<a class="headerlink" href="#class-ifc2x3-ifcedgecurve" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcEdge</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_edge.html#exhale-class-class-ifc2x3-1-1-ifc-edge"><span class="std std-ref">Class Ifc2x3::IfcEdge</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x312IfcEdgeCurveE">
+<span id="_CPPv3N6Ifc2x312IfcEdgeCurveE"></span><span id="_CPPv2N6Ifc2x312IfcEdgeCurveE"></span><span id="Ifc2x3::IfcEdgeCurve"></span><span class="target" id="class_ifc2x3_1_1_ifc_edge_curve"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcEdgeCurve</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_edge.html#_CPPv4N6Ifc2x37IfcEdgeE" title="Ifc2x3::IfcEdge">IfcEdge</a><a class="headerlink" href="#_CPPv4N6Ifc2x312IfcEdgeCurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: An edge curve is a special subtype of edge which has its geometry fully defined. The geometry is defined by associating the edge with a curve which may be unbounded. As the topological and geometric directions may be opposed, an indicator (same sense) is used to identify whether the edge and curve directions agree or are opposed. The Boolean value indicates whether the curve direction agrees with (TRUE) or is in the opposite direction (FALSE) to the edge direction. Any geometry associated with the vertices of the edge shall be consistent with the edge geometry. Multiple edges can reference the same curve.</p>
+<p>Figure 334 illustrates an example where the edge geometry is given by an unbounded curve, here <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_circle"><span class="std std-ref">IfcCircle</span></a>. The bounds are provided by the EdgeStart and EdgeEnd, the topological direction of the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_edge_curve"><span class="std std-ref">IfcEdgeCurve</span></a> opposes the direction of the <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_circle"><span class="std std-ref">IfcCircle</span></a> by SameSense = FALSE.</p>
+<p>Figure 334 — Edge curve</p>
+<p>NOTE Corresponding ISO 10303 entity: edge_curve. Please refer to ISO/IS 10303-42:1994, p. 132 for the final definition of the formal standard. Due to the general IFC model specification rule not to use multiple inheritance, the subtype relationship to geometric_representation_item is not included.</p>
+<p>&lt;blockquote class=”history” HISTORY New Entity in IFC2x.</p>
+<p>Informal propositions:</p>
+<p>The domain of the edge curve is formally defined to be the domain of its edge geometry as trimmed by the vertices. This domain does not include the vertices. An edge curve has non-zero finite extent. An edge curve is a manifold. An edge curve is arcwise connected. The edge start is not a part of the edge domain. The edge end is not a part of the edge domain. Vertex geometry shall be consistent with edge geometry. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x312IfcEdgeCurve4listE">
+<span id="_CPPv3N6Ifc2x312IfcEdgeCurve4listE"></span><span id="_CPPv2N6Ifc2x312IfcEdgeCurve4listE"></span><span id="Ifc2x3::IfcEdgeCurve::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_edge_curve_1ac3a6d0e069484b0381124cb4c25a609e"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x312IfcEdgeCurveE" title="Ifc2x3::IfcEdgeCurve">IfcEdgeCurve</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x312IfcEdgeCurve4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x312IfcEdgeCurve12EdgeGeometryEv">
+<span id="_CPPv3NK6Ifc2x312IfcEdgeCurve12EdgeGeometryEv"></span><span id="_CPPv2NK6Ifc2x312IfcEdgeCurve12EdgeGeometryEv"></span><span id="Ifc2x3::IfcEdgeCurve::EdgeGeometryC"></span><span class="target" id="class_ifc2x3_1_1_ifc_edge_curve_1a564eb17969ad1a2a5876d05ae57cb36c"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_curve.html#_CPPv4N6Ifc2x38IfcCurveE" title="Ifc2x3::IfcCurve">IfcCurve</a> *<code class="sig-name descname">EdgeGeometry</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x312IfcEdgeCurve12EdgeGeometryEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The curve which defines the shape and spatial location of the edge. This curve may be unbounded and is implicitly trimmed by the vertices of the edge; this defines the edge domain. Multiple edges can reference the same curve. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x312IfcEdgeCurve15setEdgeGeometryEPN6Ifc2x38IfcCurveE">
+<span id="_CPPv3N6Ifc2x312IfcEdgeCurve15setEdgeGeometryEPN6Ifc2x38IfcCurveE"></span><span id="_CPPv2N6Ifc2x312IfcEdgeCurve15setEdgeGeometryEPN6Ifc2x38IfcCurveE"></span><span id="Ifc2x3::IfcEdgeCurve::setEdgeGeometry__Ifc2x3::IfcCurveP"></span><span class="target" id="class_ifc2x3_1_1_ifc_edge_curve_1ae9998b833738c0b9d057e5c11681ce64"></span>void <code class="sig-name descname">setEdgeGeometry</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_curve.html#_CPPv4N6Ifc2x38IfcCurveE" title="Ifc2x3::IfcCurve">IfcCurve</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x312IfcEdgeCurve15setEdgeGeometryEPN6Ifc2x38IfcCurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x312IfcEdgeCurve9SameSenseEv">
+<span id="_CPPv3NK6Ifc2x312IfcEdgeCurve9SameSenseEv"></span><span id="_CPPv2NK6Ifc2x312IfcEdgeCurve9SameSenseEv"></span><span id="Ifc2x3::IfcEdgeCurve::SameSenseC"></span><span class="target" id="class_ifc2x3_1_1_ifc_edge_curve_1a1b9f0612a34058d749c2c19737a0dfe5"></span>bool <code class="sig-name descname">SameSense</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x312IfcEdgeCurve9SameSenseEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>This logical flag indicates whether (TRUE), or not (FALSE) the senses of the edge and the curve defining the edge geometry are the same. The sense of an edge is from the edge start vertex to the edge end vertex; the sense of a curve is in the direction of increasing parameter. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x312IfcEdgeCurve12setSameSenseEb">
+<span id="_CPPv3N6Ifc2x312IfcEdgeCurve12setSameSenseEb"></span><span id="_CPPv2N6Ifc2x312IfcEdgeCurve12setSameSenseEb"></span><span id="Ifc2x3::IfcEdgeCurve::setSameSense__b"></span><span class="target" id="class_ifc2x3_1_1_ifc_edge_curve_1a1af123a751bdf55d2cd3158e0bff17ad"></span>void <code class="sig-name descname">setSameSense</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x312IfcEdgeCurve12setSameSenseEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x312IfcEdgeCurve11declarationEv">
+<span id="_CPPv3NK6Ifc2x312IfcEdgeCurve11declarationEv"></span><span id="_CPPv2NK6Ifc2x312IfcEdgeCurve11declarationEv"></span><span id="Ifc2x3::IfcEdgeCurve::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_edge_curve_1a89fb10b81b6b77b0ffd821cbbe25623c"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x312IfcEdgeCurve11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x312IfcEdgeCurve12IfcEdgeCurveEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x312IfcEdgeCurve12IfcEdgeCurveEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x312IfcEdgeCurve12IfcEdgeCurveEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcEdgeCurve::IfcEdgeCurve__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_edge_curve_1adad5613d5a84292c7f4862910f003c35"></span><code class="sig-name descname">IfcEdgeCurve</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x312IfcEdgeCurve12IfcEdgeCurveEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x312IfcEdgeCurve12IfcEdgeCurveEPN6Ifc2x39IfcVertexEPN6Ifc2x39IfcVertexEPN6Ifc2x38IfcCurveEb">
+<span id="_CPPv3N6Ifc2x312IfcEdgeCurve12IfcEdgeCurveEPN6Ifc2x39IfcVertexEPN6Ifc2x39IfcVertexEPN6Ifc2x38IfcCurveEb"></span><span id="_CPPv2N6Ifc2x312IfcEdgeCurve12IfcEdgeCurveEPN6Ifc2x39IfcVertexEPN6Ifc2x39IfcVertexEPN6Ifc2x38IfcCurveEb"></span><span id="Ifc2x3::IfcEdgeCurve::IfcEdgeCurve__Ifc2x3::IfcVertexP.Ifc2x3::IfcVertexP.Ifc2x3::IfcCurveP.b"></span><span class="target" id="class_ifc2x3_1_1_ifc_edge_curve_1adda68b71d28aa6540c94db008bdeb400"></span><code class="sig-name descname">IfcEdgeCurve</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_vertex.html#_CPPv4N6Ifc2x39IfcVertexE" title="Ifc2x3::IfcVertex">IfcVertex</a> *<em>v1_EdgeStart</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_vertex.html#_CPPv4N6Ifc2x39IfcVertexE" title="Ifc2x3::IfcVertex">IfcVertex</a> *<em>v2_EdgeEnd</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_curve.html#_CPPv4N6Ifc2x38IfcCurveE" title="Ifc2x3::IfcCurve">IfcCurve</a> *<em>v3_EdgeGeometry</em>, bool <em>v4_SameSense</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x312IfcEdgeCurve12IfcEdgeCurveEPN6Ifc2x39IfcVertexEPN6Ifc2x39IfcVertexEPN6Ifc2x38IfcCurveEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x312IfcEdgeCurve5ClassEv">
+<span id="_CPPv3N6Ifc2x312IfcEdgeCurve5ClassEv"></span><span id="_CPPv2N6Ifc2x312IfcEdgeCurve5ClassEv"></span><span id="Ifc2x3::IfcEdgeCurve::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_edge_curve_1ae828052a85d385b5af99dd3a6ccf4eaf"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x312IfcEdgeCurve5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_edge.html" title="previous chapter">Class Ifc2x3::IfcEdge</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_edge_feature.html" title="next chapter">Class Ifc2x3::IfcEdgeFeature</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_edge_curve.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

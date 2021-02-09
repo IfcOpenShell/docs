@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcPropertyEnumeratedValue &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcPropertyEnumeration" href="class_ifc4x1_1_1_ifc_property_enumeration.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcPropertyDependencyRelationship" href="class_ifc4x1_1_1_ifc_property_dependency_relationship.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifcpropertyenumeratedvalue">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-property-enumerated-value"></span><h1>Class Ifc4x1::IfcPropertyEnumeratedValue<a class="headerlink" href="#class-ifc4x1-ifcpropertyenumeratedvalue" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcSimpleProperty</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_simple_property.html#exhale-class-class-ifc4x1-1-1-ifc-simple-property"><span class="std std-ref">Class Ifc4x1::IfcSimpleProperty</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x126IfcPropertyEnumeratedValueE">
+<span id="_CPPv3N6Ifc4x126IfcPropertyEnumeratedValueE"></span><span id="_CPPv2N6Ifc4x126IfcPropertyEnumeratedValueE"></span><span id="Ifc4x1::IfcPropertyEnumeratedValue"></span><span class="target" id="class_ifc4x1_1_1_ifc_property_enumerated_value"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcPropertyEnumeratedValue</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_simple_property.html#_CPPv4N6Ifc4x117IfcSimplePropertyE" title="Ifc4x1::IfcSimpleProperty">IfcSimpleProperty</a><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcPropertyEnumeratedValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A property with an enumerated value, <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_property_enumerated_value"><span class="std std-ref">IfcPropertyEnumeratedValue</span></a>, defines a property object which has a value assigned that is chosen from an enumeration. It defines a property - value combination for which theproperty Name, an optional Description,the optional EnumerationValues with measure type and optionally an Unit is given.</p>
+<p>NOTE Multiple choices from the property enumeration are supported.</p>
+<p>The unit is handled by the Unit attribute of the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_property_enumeration"><span class="std std-ref">IfcPropertyEnumeration</span></a>:</p>
+<p>If the Unit attribute is not given, then the unit is already implied by the type of IfcMeasureValue or IfcDerivedMeasureValue. The associated unit can be found at the <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_unit_assignment"><span class="std std-ref">IfcUnitAssignment</span></a> globally defined at the project level (<a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_context_1a3fa2016da5412bfbc2491c99f167816b"><span class="std std-ref">IfcProject.UnitsInContext</span></a>). If the Unit attribute is given, then the unit assigned by the unit attribute overrides the globally assigned unit.</p>
+<p>More precisely: The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_property_enumerated_value"><span class="std std-ref">IfcPropertyEnumeratedValue</span></a> defines a property, which value is selected from a defined list of enumerators. The enumerators are stored in a dynamic enumeration of values including the type information from IfcValue (see <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_property_enumeration"><span class="std std-ref">IfcPropertyEnumeration</span></a>). This enables applications to use an enumeration value as a property within a property set (<a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_property_set"><span class="std std-ref">IfcPropertySet</span></a>) including the allowed list of values.</p>
+<p>NOTE An <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_property_enumerated_value"><span class="std std-ref">IfcPropertyEnumeratedValue</span></a> may be exchanged with no values assigned yet. In this case the EnumerationValues are set to NIL.</p>
+<p>Examples of a property with enumerated value are:</p>
+<p>Name Value (EnumerationValue) Type (through IfcValue) ref.IfcPropertyEnumeration (Name)</p>
+<p>BladeAction Opposed IfcString DamperBladeActionEnum</p>
+<p>BladeAction Parallel IfcString DamperBladeActionEnum</p>
+<p>The <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_property_enumerated_value"><span class="std std-ref">IfcPropertyEnumeratedValue</span></a> refers to an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_property_enumeration"><span class="std std-ref">IfcPropertyEnumeration</span></a>, e.g. for the above:</p>
+<p>Name EnumerationValues Type (through IfcValue) Unit</p>
+<p>DamperBladeActionEnum (Parallel, Opposed, Other, Unset) IfcString<ul class="simple">
+<li><p>It is not mandatory to use an instance of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_property_enumeration"><span class="std std-ref">IfcPropertyEnumeration</span></a> to hold the applicable values for <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_property_enumerated_value"><span class="std std-ref">IfcPropertyEnumeratedValue</span></a>, however this is the preferred way. A single instance of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_property_enumeration"><span class="std std-ref">IfcPropertyEnumeration</span></a> can be referenced by multiple instances of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_property_enumerated_value"><span class="std std-ref">IfcPropertyEnumeratedValue</span></a>.</p></li>
+</ul>
+</p>
+<p>HISTORYNew Entity in IFC Release 2.0, capabilities enhanced in IFC2x. The entity has been renamed from IfcEnumeratedProperty in IFC2x.</p>
+<p>IFC2x4 CHANGE Attribute EnumerationValues has been made OPTIONAL with upward compatibility for file based exchange. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x126IfcPropertyEnumeratedValue4listE">
+<span id="_CPPv3N6Ifc4x126IfcPropertyEnumeratedValue4listE"></span><span id="_CPPv2N6Ifc4x126IfcPropertyEnumeratedValue4listE"></span><span id="Ifc4x1::IfcPropertyEnumeratedValue::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_property_enumerated_value_1a3318e37b2991b3d9eecaa1c3766702f1"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x126IfcPropertyEnumeratedValueE" title="Ifc4x1::IfcPropertyEnumeratedValue">IfcPropertyEnumeratedValue</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcPropertyEnumeratedValue4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcPropertyEnumeratedValue20hasEnumerationValuesEv">
+<span id="_CPPv3NK6Ifc4x126IfcPropertyEnumeratedValue20hasEnumerationValuesEv"></span><span id="_CPPv2NK6Ifc4x126IfcPropertyEnumeratedValue20hasEnumerationValuesEv"></span><span id="Ifc4x1::IfcPropertyEnumeratedValue::hasEnumerationValuesC"></span><span class="target" id="class_ifc4x1_1_1_ifc_property_enumerated_value_1a87a3ae67daef70675e1d708d3080e187"></span>bool <code class="sig-name descname">hasEnumerationValues</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcPropertyEnumeratedValue20hasEnumerationValuesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute EnumerationValues is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_property_enumerated_value"><span class="std std-ref">IfcPropertyEnumeratedValue</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcPropertyEnumeratedValue17EnumerationValuesEv">
+<span id="_CPPv3NK6Ifc4x126IfcPropertyEnumeratedValue17EnumerationValuesEv"></span><span id="_CPPv2NK6Ifc4x126IfcPropertyEnumeratedValue17EnumerationValuesEv"></span><span id="Ifc4x1::IfcPropertyEnumeratedValue::EnumerationValuesC"></span><span class="target" id="class_ifc4x1_1_1_ifc_property_enumerated_value_1a134f0355416a29220bbd54922a532139"></span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <code class="sig-name descname">EnumerationValues</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcPropertyEnumeratedValue17EnumerationValuesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Enumeration values, which shall be listed in the referenced <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_property_enumeration"><span class="std std-ref">IfcPropertyEnumeration</span></a>, if such a reference is provided.</p>
+<p>IFC2x4 CHANGE The attribute has been made optional with upward compatibility for file based exchange. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcPropertyEnumeratedValue20setEnumerationValuesEN13IfcEntityList3ptrE">
+<span id="_CPPv3N6Ifc4x126IfcPropertyEnumeratedValue20setEnumerationValuesEN13IfcEntityList3ptrE"></span><span id="_CPPv2N6Ifc4x126IfcPropertyEnumeratedValue20setEnumerationValuesEN13IfcEntityList3ptrE"></span><span id="Ifc4x1::IfcPropertyEnumeratedValue::setEnumerationValues__IfcEntityList::ptr"></span><span class="target" id="class_ifc4x1_1_1_ifc_property_enumerated_value_1af17d3e5e1342652fd0ca68b78e598903"></span>void <code class="sig-name descname">setEnumerationValues</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcPropertyEnumeratedValue20setEnumerationValuesEN13IfcEntityList3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcPropertyEnumeratedValue23hasEnumerationReferenceEv">
+<span id="_CPPv3NK6Ifc4x126IfcPropertyEnumeratedValue23hasEnumerationReferenceEv"></span><span id="_CPPv2NK6Ifc4x126IfcPropertyEnumeratedValue23hasEnumerationReferenceEv"></span><span id="Ifc4x1::IfcPropertyEnumeratedValue::hasEnumerationReferenceC"></span><span class="target" id="class_ifc4x1_1_1_ifc_property_enumerated_value_1a26054ab0638af8f676784fd1f594d12d"></span>bool <code class="sig-name descname">hasEnumerationReference</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcPropertyEnumeratedValue23hasEnumerationReferenceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute EnumerationReference is defined for this <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_property_enumerated_value"><span class="std std-ref">IfcPropertyEnumeratedValue</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcPropertyEnumeratedValue20EnumerationReferenceEv">
+<span id="_CPPv3NK6Ifc4x126IfcPropertyEnumeratedValue20EnumerationReferenceEv"></span><span id="_CPPv2NK6Ifc4x126IfcPropertyEnumeratedValue20EnumerationReferenceEv"></span><span id="Ifc4x1::IfcPropertyEnumeratedValue::EnumerationReferenceC"></span><span class="target" id="class_ifc4x1_1_1_ifc_property_enumerated_value_1a45dbf45576807236268317437d310282"></span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_property_enumeration.html#_CPPv4N6Ifc4x122IfcPropertyEnumerationE" title="Ifc4x1::IfcPropertyEnumeration">IfcPropertyEnumeration</a> *<code class="sig-name descname">EnumerationReference</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcPropertyEnumeratedValue20EnumerationReferenceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Enumeration from which a enumeration value has been selected. The referenced enumeration also establishes the unit of the enumeration value. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcPropertyEnumeratedValue23setEnumerationReferenceEPN6Ifc4x122IfcPropertyEnumerationE">
+<span id="_CPPv3N6Ifc4x126IfcPropertyEnumeratedValue23setEnumerationReferenceEPN6Ifc4x122IfcPropertyEnumerationE"></span><span id="_CPPv2N6Ifc4x126IfcPropertyEnumeratedValue23setEnumerationReferenceEPN6Ifc4x122IfcPropertyEnumerationE"></span><span id="Ifc4x1::IfcPropertyEnumeratedValue::setEnumerationReference__Ifc4x1::IfcPropertyEnumerationP"></span><span class="target" id="class_ifc4x1_1_1_ifc_property_enumerated_value_1af313e7f87b8c25733219aced782fd341"></span>void <code class="sig-name descname">setEnumerationReference</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_property_enumeration.html#_CPPv4N6Ifc4x122IfcPropertyEnumerationE" title="Ifc4x1::IfcPropertyEnumeration">IfcPropertyEnumeration</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcPropertyEnumeratedValue23setEnumerationReferenceEPN6Ifc4x122IfcPropertyEnumerationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x126IfcPropertyEnumeratedValue11declarationEv">
+<span id="_CPPv3NK6Ifc4x126IfcPropertyEnumeratedValue11declarationEv"></span><span id="_CPPv2NK6Ifc4x126IfcPropertyEnumeratedValue11declarationEv"></span><span id="Ifc4x1::IfcPropertyEnumeratedValue::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_property_enumerated_value_1ad8029a2b45b62a28a9523822126b41c7"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x126IfcPropertyEnumeratedValue11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcPropertyEnumeratedValue26IfcPropertyEnumeratedValueEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x126IfcPropertyEnumeratedValue26IfcPropertyEnumeratedValueEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x126IfcPropertyEnumeratedValue26IfcPropertyEnumeratedValueEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcPropertyEnumeratedValue::IfcPropertyEnumeratedValue__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_property_enumerated_value_1a72ffc133ca4a042ced770f97c77da483"></span><code class="sig-name descname">IfcPropertyEnumeratedValue</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcPropertyEnumeratedValue26IfcPropertyEnumeratedValueEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcPropertyEnumeratedValue26IfcPropertyEnumeratedValueENSt6stringEN5boost8optionalINSt6stringEEEN5boost8optionalIN13IfcEntityList3ptrEEEPN6Ifc4x122IfcPropertyEnumerationE">
+<span id="_CPPv3N6Ifc4x126IfcPropertyEnumeratedValue26IfcPropertyEnumeratedValueENSt6stringEN5boost8optionalINSt6stringEEEN5boost8optionalIN13IfcEntityList3ptrEEEPN6Ifc4x122IfcPropertyEnumerationE"></span><span id="_CPPv2N6Ifc4x126IfcPropertyEnumeratedValue26IfcPropertyEnumeratedValueENSt6stringEN5boost8optionalINSt6stringEEEN5boost8optionalIN13IfcEntityList3ptrEEEPN6Ifc4x122IfcPropertyEnumerationE"></span><span id="Ifc4x1::IfcPropertyEnumeratedValue::IfcPropertyEnumeratedValue__ss.boost::optional:ss:.boost::optional:IfcEntityList::ptr:.Ifc4x1::IfcPropertyEnumerationP"></span><span class="target" id="class_ifc4x1_1_1_ifc_property_enumerated_value_1a0490db782a2f6a088cb17a228bff8c9d"></span><code class="sig-name descname">IfcPropertyEnumeratedValue</code><span class="sig-paren">(</span>std::string <em>v1_Name</em>, boost::optional&lt;std::string&gt; <em>v2_Description</em>, boost::optional&lt;<a class="reference internal" href="class_ifc_entity_list.html#_CPPv413IfcEntityList" title="IfcEntityList">IfcEntityList</a>::<a class="reference internal" href="class_ifc_entity_list.html#_CPPv4N13IfcEntityList3ptrE" title="IfcEntityList::ptr">ptr</a>&gt; <em>v3_EnumerationValues</em>, ::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_property_enumeration.html#_CPPv4N6Ifc4x122IfcPropertyEnumerationE" title="Ifc4x1::IfcPropertyEnumeration">IfcPropertyEnumeration</a> *<em>v4_EnumerationReference</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcPropertyEnumeratedValue26IfcPropertyEnumeratedValueENSt6stringEN5boost8optionalINSt6stringEEEN5boost8optionalIN13IfcEntityList3ptrEEEPN6Ifc4x122IfcPropertyEnumerationE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x126IfcPropertyEnumeratedValue5ClassEv">
+<span id="_CPPv3N6Ifc4x126IfcPropertyEnumeratedValue5ClassEv"></span><span id="_CPPv2N6Ifc4x126IfcPropertyEnumeratedValue5ClassEv"></span><span id="Ifc4x1::IfcPropertyEnumeratedValue::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_property_enumerated_value_1a0e2b94634c9c4f7268aae2bcfb6f3dab"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x126IfcPropertyEnumeratedValue5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_property_dependency_relationship.html" title="previous chapter">Class Ifc4x1::IfcPropertyDependencyRelationship</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_property_enumeration.html" title="next chapter">Class Ifc4x1::IfcPropertyEnumeration</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_property_enumerated_value.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

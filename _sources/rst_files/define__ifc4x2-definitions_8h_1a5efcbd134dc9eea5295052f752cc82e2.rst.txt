@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a5efcbd134dc9eea5295052f752cc82e2:
+
+Define SCHEMA_HAS_IfcRelCoversSpaces
+====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcRelCoversSpaces

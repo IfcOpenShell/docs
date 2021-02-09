@@ -1,0 +1,16 @@
+.. _exhale_class_class_ifc_parse_1_1_ifc_spf_lexer:
+
+Class IfcSpfLexer
+=================
+
+- Defined in :ref:`file_src_ifcparse_IfcParse.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcParse::IfcSpfLexer
+   :members:
+   :protected-members:
+   :undoc-members:

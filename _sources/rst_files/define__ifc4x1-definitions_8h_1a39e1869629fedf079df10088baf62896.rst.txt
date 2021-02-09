@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1a39e1869629fedf079df10088baf62896:
+
+Define SCHEMA_IfcDistanceExpression_HAS_AlongHorizontal
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDistanceExpression_HAS_AlongHorizontal

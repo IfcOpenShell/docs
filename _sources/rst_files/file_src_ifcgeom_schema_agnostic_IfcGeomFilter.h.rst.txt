@@ -1,0 +1,95 @@
+
+.. _file_src_ifcgeom_schema_agnostic_IfcGeomFilter.h:
+
+File IfcGeomFilter.h
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcgeom_schema_agnostic>` (``src/ifcgeom_schema_agnostic``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+A set of predefined product filters for :ref:`exhale_class_class_ifc_geom_1_1_iterator`. 
+
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom_schema_agnostic/IfcGeomFilter.h``)
+------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_schema_agnostic_IfcGeomFilter.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/IfcFile.h``
+
+- ``Kernel.h`` (:ref:`file_src_ifcgeom_schema_agnostic_Kernel.h`)
+
+- ``boost/algorithm/string/case_conv.hpp``
+
+- ``boost/algorithm/string/replace.hpp``
+
+- ``boost/foreach.hpp``
+
+- ``boost/function.hpp``
+
+- ``boost/regex.hpp``
+
+- ``functional``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_IfcGeomIteratorImplementation.h`
+
+- :ref:`file_src_ifcgeom_schema_agnostic_IteratorImplementation.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcGeom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_struct_ifc_geom_1_1attribute__filter`
+
+- :ref:`exhale_struct_struct_ifc_geom_1_1entity__filter`
+
+- :ref:`exhale_struct_struct_ifc_geom_1_1filter`
+
+- :ref:`exhale_struct_struct_ifc_geom_1_1layer__filter`
+
+- :ref:`exhale_struct_struct_ifc_geom_1_1layer__filter_1_1wildcards__match`
+
+- :ref:`exhale_struct_struct_ifc_geom_1_1wildcard__filter`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef__ifc_geom_filter_8h_1a12aa1c5ef44699e96c0f8fd74bf75139`
+

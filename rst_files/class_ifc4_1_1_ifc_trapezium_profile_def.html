@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcTrapeziumProfileDef &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcTriangulatedFaceSet" href="class_ifc4_1_1_ifc_triangulated_face_set.html" />
+    <link rel="prev" title="Class Ifc4::IfcTransportElementType" href="class_ifc4_1_1_ifc_transport_element_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifctrapeziumprofiledef">
+<span id="exhale-class-class-ifc4-1-1-ifc-trapezium-profile-def"></span><h1>Class Ifc4::IfcTrapeziumProfileDef<a class="headerlink" href="#class-ifc4-ifctrapeziumprofiledef" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcParameterizedProfileDef</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_parameterized_profile_def.html#exhale-class-class-ifc4-1-1-ifc-parameterized-profile-def"><span class="std std-ref">Class Ifc4::IfcParameterizedProfileDef</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc422IfcTrapeziumProfileDefE">
+<span id="_CPPv3N4Ifc422IfcTrapeziumProfileDefE"></span><span id="_CPPv2N4Ifc422IfcTrapeziumProfileDefE"></span><span id="Ifc4::IfcTrapeziumProfileDef"></span><span class="target" id="class_ifc4_1_1_ifc_trapezium_profile_def"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcTrapeziumProfileDef</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_parameterized_profile_def.html#_CPPv4N4Ifc426IfcParameterizedProfileDefE" title="Ifc4::IfcParameterizedProfileDef">IfcParameterizedProfileDef</a><a class="headerlink" href="#_CPPv4N4Ifc422IfcTrapeziumProfileDefE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_trapezium_profile_def"><span class="std std-ref">IfcTrapeziumProfileDef</span></a> defines a trapezium as the profile definition used by the swept surface geometry or the swept area solid. It is given by its Top X and Bottom X extent and its Y extent as well as by the offset of the Top X extend, and placed within the 2D position coordinate system, established by the Position attribute. It is placed centric within the position coordinate system, that is, in the center of the bounding box.</p>
+<p>HISTORY New class in IFC 1.5. The use definition has changed in IFC2x.</p>
+<p>Figure 325 illustrates parameters of the trapezium profile definition.</p>
+<p>Position</p>
+<p>The parameterized profile defines its own position coordinate system. The underlying coordinate system is defined by the swept surface or swept area solid that uses the profile definition. It is the xy plane of either:</p>
+<p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_swept_surface_1a03ad65a781b5e1224a979955f54a06bc"><span class="std std-ref">IfcSweptSurface.Position</span></a> <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_swept_area_solid_1a90abb2dcd960a4f47c3f780504effeec"><span class="std std-ref">IfcSweptAreaSolid.Position</span></a></p>
+<p>or in case of sectioned spines the xy plane of each list member of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_sectioned_spine_1a4adec888d405132c239b0328be081198"><span class="std std-ref">IfcSectionedSpine.CrossSectionPositions</span></a>.</p>
+<p>By using offsets of the position location, the parameterized profile can be positioned centric (using x,y offsets = 0.), or at any position relative to the profile. Explicit coordinate offsets are used to define cardinal points (e.g. upper-left bound). Parameter</p>
+<p>The <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_trapezium_profile_def"><span class="std std-ref">IfcTrapeziumProfileDef</span></a> is defined within the position coordinate system, where the BottomDim defines the length measure for the bottom line (half along the positive x-axis) and the YDim defines the length measure for the parallel distance of bottom and top line (half along the positive y-axis). The top line starts with a distance of TopXOffset from [-BottomLine/2,YDim] (which can be negative, zero, or positive) and has a length of TopXDim along the positive x-axis.</p>
+<p>Figure 325 — Trapezium profile </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc422IfcTrapeziumProfileDef4listE">
+<span id="_CPPv3N4Ifc422IfcTrapeziumProfileDef4listE"></span><span id="_CPPv2N4Ifc422IfcTrapeziumProfileDef4listE"></span><span id="Ifc4::IfcTrapeziumProfileDef::list"></span><span class="target" id="class_ifc4_1_1_ifc_trapezium_profile_def_1aae2a3fcecb880ce6df21eda223bfc970"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc422IfcTrapeziumProfileDefE" title="Ifc4::IfcTrapeziumProfileDef">IfcTrapeziumProfileDef</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc422IfcTrapeziumProfileDef4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc422IfcTrapeziumProfileDef10BottomXDimEv">
+<span id="_CPPv3NK4Ifc422IfcTrapeziumProfileDef10BottomXDimEv"></span><span id="_CPPv2NK4Ifc422IfcTrapeziumProfileDef10BottomXDimEv"></span><span id="Ifc4::IfcTrapeziumProfileDef::BottomXDimC"></span><span class="target" id="class_ifc4_1_1_ifc_trapezium_profile_def_1a4da35768a27ff0efadde13da0be57a9b"></span>double <code class="sig-name descname">BottomXDim</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc422IfcTrapeziumProfileDef10BottomXDimEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The extent of the bottom line measured along the implicit x-axis. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc422IfcTrapeziumProfileDef13setBottomXDimEd">
+<span id="_CPPv3N4Ifc422IfcTrapeziumProfileDef13setBottomXDimEd"></span><span id="_CPPv2N4Ifc422IfcTrapeziumProfileDef13setBottomXDimEd"></span><span id="Ifc4::IfcTrapeziumProfileDef::setBottomXDim__double"></span><span class="target" id="class_ifc4_1_1_ifc_trapezium_profile_def_1a3c84c20b50e9b43a339cd7a3b9873940"></span>void <code class="sig-name descname">setBottomXDim</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc422IfcTrapeziumProfileDef13setBottomXDimEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc422IfcTrapeziumProfileDef7TopXDimEv">
+<span id="_CPPv3NK4Ifc422IfcTrapeziumProfileDef7TopXDimEv"></span><span id="_CPPv2NK4Ifc422IfcTrapeziumProfileDef7TopXDimEv"></span><span id="Ifc4::IfcTrapeziumProfileDef::TopXDimC"></span><span class="target" id="class_ifc4_1_1_ifc_trapezium_profile_def_1add3d7c0975803f4b067c0648a8debb54"></span>double <code class="sig-name descname">TopXDim</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc422IfcTrapeziumProfileDef7TopXDimEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The extent of the top line measured along the implicit x-axis. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc422IfcTrapeziumProfileDef10setTopXDimEd">
+<span id="_CPPv3N4Ifc422IfcTrapeziumProfileDef10setTopXDimEd"></span><span id="_CPPv2N4Ifc422IfcTrapeziumProfileDef10setTopXDimEd"></span><span id="Ifc4::IfcTrapeziumProfileDef::setTopXDim__double"></span><span class="target" id="class_ifc4_1_1_ifc_trapezium_profile_def_1a568f386dfd05324b0b89bfaa5423789b"></span>void <code class="sig-name descname">setTopXDim</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc422IfcTrapeziumProfileDef10setTopXDimEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc422IfcTrapeziumProfileDef4YDimEv">
+<span id="_CPPv3NK4Ifc422IfcTrapeziumProfileDef4YDimEv"></span><span id="_CPPv2NK4Ifc422IfcTrapeziumProfileDef4YDimEv"></span><span id="Ifc4::IfcTrapeziumProfileDef::YDimC"></span><span class="target" id="class_ifc4_1_1_ifc_trapezium_profile_def_1a3aeac6b8da5ab048546b7c634923bb89"></span>double <code class="sig-name descname">YDim</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc422IfcTrapeziumProfileDef4YDimEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The extent of the distance between the parallel bottom and top lines measured along the implicit y-axis. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc422IfcTrapeziumProfileDef7setYDimEd">
+<span id="_CPPv3N4Ifc422IfcTrapeziumProfileDef7setYDimEd"></span><span id="_CPPv2N4Ifc422IfcTrapeziumProfileDef7setYDimEd"></span><span id="Ifc4::IfcTrapeziumProfileDef::setYDim__double"></span><span class="target" id="class_ifc4_1_1_ifc_trapezium_profile_def_1a66c4ad1d7e6a9ec2faacc96e4e22dc3d"></span>void <code class="sig-name descname">setYDim</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc422IfcTrapeziumProfileDef7setYDimEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc422IfcTrapeziumProfileDef10TopXOffsetEv">
+<span id="_CPPv3NK4Ifc422IfcTrapeziumProfileDef10TopXOffsetEv"></span><span id="_CPPv2NK4Ifc422IfcTrapeziumProfileDef10TopXOffsetEv"></span><span id="Ifc4::IfcTrapeziumProfileDef::TopXOffsetC"></span><span class="target" id="class_ifc4_1_1_ifc_trapezium_profile_def_1a9e2b9330e7fe9a5430ad47412d55302b"></span>double <code class="sig-name descname">TopXOffset</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc422IfcTrapeziumProfileDef10TopXOffsetEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Offset from the beginning of the top line to the bottom line, measured along the implicit x-axis. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc422IfcTrapeziumProfileDef13setTopXOffsetEd">
+<span id="_CPPv3N4Ifc422IfcTrapeziumProfileDef13setTopXOffsetEd"></span><span id="_CPPv2N4Ifc422IfcTrapeziumProfileDef13setTopXOffsetEd"></span><span id="Ifc4::IfcTrapeziumProfileDef::setTopXOffset__double"></span><span class="target" id="class_ifc4_1_1_ifc_trapezium_profile_def_1a99c08ce9220c329bb2d81a2ceebcffae"></span>void <code class="sig-name descname">setTopXOffset</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc422IfcTrapeziumProfileDef13setTopXOffsetEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc422IfcTrapeziumProfileDef11declarationEv">
+<span id="_CPPv3NK4Ifc422IfcTrapeziumProfileDef11declarationEv"></span><span id="_CPPv2NK4Ifc422IfcTrapeziumProfileDef11declarationEv"></span><span id="Ifc4::IfcTrapeziumProfileDef::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_trapezium_profile_def_1a4044438a19de1b59bcb94dbd3162e105"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc422IfcTrapeziumProfileDef11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc422IfcTrapeziumProfileDef22IfcTrapeziumProfileDefEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc422IfcTrapeziumProfileDef22IfcTrapeziumProfileDefEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc422IfcTrapeziumProfileDef22IfcTrapeziumProfileDefEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcTrapeziumProfileDef::IfcTrapeziumProfileDef__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_trapezium_profile_def_1a708244f9a42112542ce0d2376966b8e1"></span><code class="sig-name descname">IfcTrapeziumProfileDef</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc422IfcTrapeziumProfileDef22IfcTrapeziumProfileDefEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc422IfcTrapeziumProfileDef22IfcTrapeziumProfileDefEN4Ifc418IfcProfileTypeEnum5ValueEN5boost8optionalINSt6stringEEEPN4Ifc419IfcAxis2Placement2DEdddd">
+<span id="_CPPv3N4Ifc422IfcTrapeziumProfileDef22IfcTrapeziumProfileDefEN4Ifc418IfcProfileTypeEnum5ValueEN5boost8optionalINSt6stringEEEPN4Ifc419IfcAxis2Placement2DEdddd"></span><span id="_CPPv2N4Ifc422IfcTrapeziumProfileDef22IfcTrapeziumProfileDefEN4Ifc418IfcProfileTypeEnum5ValueEN5boost8optionalINSt6stringEEEPN4Ifc419IfcAxis2Placement2DEdddd"></span><span id="Ifc4::IfcTrapeziumProfileDef::IfcTrapeziumProfileDef__Ifc4::IfcProfileTypeEnum::Value.boost::optional:ss:.Ifc4::IfcAxis2Placement2DP.double.double.double.double"></span><span class="target" id="class_ifc4_1_1_ifc_trapezium_profile_def_1a267dd5e18af6c156a781f2040302ae1f"></span><code class="sig-name descname">IfcTrapeziumProfileDef</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc418IfcProfileTypeEnumE" title="Ifc4::IfcProfileTypeEnum">IfcProfileTypeEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc418IfcProfileTypeEnum5ValueE" title="Ifc4::IfcProfileTypeEnum::Value">Value</a> <em>v1_ProfileType</em>, boost::optional&lt;std::string&gt; <em>v2_ProfileName</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_axis2_placement2_d.html#_CPPv4N4Ifc419IfcAxis2Placement2DE" title="Ifc4::IfcAxis2Placement2D">IfcAxis2Placement2D</a> *<em>v3_Position</em>, double <em>v4_BottomXDim</em>, double <em>v5_TopXDim</em>, double <em>v6_YDim</em>, double <em>v7_TopXOffset</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc422IfcTrapeziumProfileDef22IfcTrapeziumProfileDefEN4Ifc418IfcProfileTypeEnum5ValueEN5boost8optionalINSt6stringEEEPN4Ifc419IfcAxis2Placement2DEdddd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc422IfcTrapeziumProfileDef5ClassEv">
+<span id="_CPPv3N4Ifc422IfcTrapeziumProfileDef5ClassEv"></span><span id="_CPPv2N4Ifc422IfcTrapeziumProfileDef5ClassEv"></span><span id="Ifc4::IfcTrapeziumProfileDef::Class"></span><span class="target" id="class_ifc4_1_1_ifc_trapezium_profile_def_1a8c0026a5760e45b231825171aacf0a44"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc422IfcTrapeziumProfileDef5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_transport_element_type.html" title="previous chapter">Class Ifc4::IfcTransportElementType</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_triangulated_face_set.html" title="next chapter">Class Ifc4::IfcTriangulatedFaceSet</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_trapezium_profile_def.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,38 @@
+.. _exhale_class_class_ifc4x1_1_1_ifc_alignment2_d_segment:
+
+Class Ifc4x1::IfcAlignment2DSegment
+===================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x1::IfcGeometricRepresentationItem`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_geometric_representation_item`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x1::IfcAlignment2DHorizontalSegment`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_alignment2_d_horizontal_segment`)
+- ``public Ifc4x1::IfcAlignment2DVerticalSegment`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_alignment2_d_vertical_segment`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x1::IfcAlignment2DSegment
+   :members:
+   :protected-members:
+   :undoc-members:

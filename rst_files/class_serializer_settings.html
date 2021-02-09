@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class SerializerSettings &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class StepSerializer" href="class_step_serializer.html" />
+    <link rel="prev" title="Class Serializer" href="class_serializer.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-serializersettings">
+<span id="exhale-class-class-serializer-settings"></span><h1>Class SerializerSettings<a class="headerlink" href="#class-serializersettings" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_serializers_GeometrySerializer.h.html#file-src-serializers-geometryserializer-h"><span class="std std-ref">File GeometrySerializer.h</span></a></p></li>
+</ul>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">IfcGeom::IteratorSettings</span></code> (<a class="reference internal" href="class_ifc_geom_1_1_iterator_settings.html#exhale-class-class-ifc-geom-1-1-iterator-settings"><span class="std std-ref">Class IteratorSettings</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv418SerializerSettings">
+<span id="_CPPv318SerializerSettings"></span><span id="_CPPv218SerializerSettings"></span><span id="SerializerSettings"></span><span class="target" id="class_serializer_settings"></span><em class="property">class </em><code class="sig-name descname">SerializerSettings</code> : <em class="property">public</em> IfcGeom::<a class="reference internal" href="class_ifc_geom_1_1_iterator_settings.html#_CPPv4N7IfcGeom16IteratorSettingsE" title="IfcGeom::IteratorSettings">IteratorSettings</a><a class="headerlink" href="#_CPPv418SerializerSettings" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp enum">
+<dt id="_CPPv4N18SerializerSettings7SettingE">
+<span id="_CPPv3N18SerializerSettings7SettingE"></span><span id="_CPPv2N18SerializerSettings7SettingE"></span><span class="target" id="class_serializer_settings_1a25564f8de88508b6e48a6660ae19c3bc"></span><em class="property">enum </em><code class="sig-name descname">Setting</code><a class="headerlink" href="#_CPPv4N18SerializerSettings7SettingE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N18SerializerSettings7Setting17USE_ELEMENT_NAMESE">
+<span id="_CPPv3N18SerializerSettings7Setting17USE_ELEMENT_NAMESE"></span><span id="_CPPv2N18SerializerSettings7Setting17USE_ELEMENT_NAMESE"></span><span class="target" id="class_serializer_settings_1a25564f8de88508b6e48a6660ae19c3bcac06eaa1d49ec8d4851b9abaf57614632"></span><em class="property">enumerator </em><code class="sig-name descname">USE_ELEMENT_NAMES</code><a class="headerlink" href="#_CPPv4N18SerializerSettings7Setting17USE_ELEMENT_NAMESE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Use entity names instead of unique IDs for naming elements. Applicable for OBJ, DAE, and SVG output. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N18SerializerSettings7Setting17USE_ELEMENT_GUIDSE">
+<span id="_CPPv3N18SerializerSettings7Setting17USE_ELEMENT_GUIDSE"></span><span id="_CPPv2N18SerializerSettings7Setting17USE_ELEMENT_GUIDSE"></span><span class="target" id="class_serializer_settings_1a25564f8de88508b6e48a6660ae19c3bcace4873b1514ff1daa210b758c9c51c9e"></span><em class="property">enumerator </em><code class="sig-name descname">USE_ELEMENT_GUIDS</code><a class="headerlink" href="#_CPPv4N18SerializerSettings7Setting17USE_ELEMENT_GUIDSE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Use entity GUIDs instead of unique IDs for naming elements. Applicable for OBJ, DAE, and SVG output. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N18SerializerSettings7Setting18USE_MATERIAL_NAMESE">
+<span id="_CPPv3N18SerializerSettings7Setting18USE_MATERIAL_NAMESE"></span><span id="_CPPv2N18SerializerSettings7Setting18USE_MATERIAL_NAMESE"></span><span class="target" id="class_serializer_settings_1a25564f8de88508b6e48a6660ae19c3bcaf8ca0878f6770831dccd65b71a7dcdba"></span><em class="property">enumerator </em><code class="sig-name descname">USE_MATERIAL_NAMES</code><a class="headerlink" href="#_CPPv4N18SerializerSettings7Setting18USE_MATERIAL_NAMESE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Use material names instead of unique IDs for naming materials. Applicable for OBJ and DAE output. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N18SerializerSettings7Setting17USE_ELEMENT_TYPESE">
+<span id="_CPPv3N18SerializerSettings7Setting17USE_ELEMENT_TYPESE"></span><span id="_CPPv2N18SerializerSettings7Setting17USE_ELEMENT_TYPESE"></span><span class="target" id="class_serializer_settings_1a25564f8de88508b6e48a6660ae19c3bca19cd51496b27e10829be379ba3815b49"></span><em class="property">enumerator </em><code class="sig-name descname">USE_ELEMENT_TYPES</code><a class="headerlink" href="#_CPPv4N18SerializerSettings7Setting17USE_ELEMENT_TYPESE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Use element types instead of unique IDs for naming elements. Applicable for DAE output. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N18SerializerSettings7Setting21USE_ELEMENT_HIERARCHYE">
+<span id="_CPPv3N18SerializerSettings7Setting21USE_ELEMENT_HIERARCHYE"></span><span id="_CPPv2N18SerializerSettings7Setting21USE_ELEMENT_HIERARCHYE"></span><span class="target" id="class_serializer_settings_1a25564f8de88508b6e48a6660ae19c3bca4922c7a6309910d558cc763515009e52"></span><em class="property">enumerator </em><code class="sig-name descname">USE_ELEMENT_HIERARCHY</code><a class="headerlink" href="#_CPPv4N18SerializerSettings7Setting21USE_ELEMENT_HIERARCHYE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Order the elements using their IfcBuildingStorey parent Applicable for DAE output </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N18SerializerSettings7Setting19USE_ELEMENT_STEPIDSE">
+<span id="_CPPv3N18SerializerSettings7Setting19USE_ELEMENT_STEPIDSE"></span><span id="_CPPv2N18SerializerSettings7Setting19USE_ELEMENT_STEPIDSE"></span><span class="target" id="class_serializer_settings_1a25564f8de88508b6e48a6660ae19c3bca672314f85942ed95dbcd928d278aa025"></span><em class="property">enumerator </em><code class="sig-name descname">USE_ELEMENT_STEPIDS</code><a class="headerlink" href="#_CPPv4N18SerializerSettings7Setting19USE_ELEMENT_STEPIDSE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Use step ids for naming elements. Applicable for OBJ, DAE, and SVG output. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N18SerializerSettings7Setting8USE_Y_UPE">
+<span id="_CPPv3N18SerializerSettings7Setting8USE_Y_UPE"></span><span id="_CPPv2N18SerializerSettings7Setting8USE_Y_UPE"></span><span class="target" id="class_serializer_settings_1a25564f8de88508b6e48a6660ae19c3bca1252e739d74558c3a7629b58ca0388f2"></span><em class="property">enumerator </em><code class="sig-name descname">USE_Y_UP</code><a class="headerlink" href="#_CPPv4N18SerializerSettings7Setting8USE_Y_UPE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Use Y UP . Applicable for OBJ output. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N18SerializerSettings7Setting12NUM_SETTINGSE">
+<span id="_CPPv3N18SerializerSettings7Setting12NUM_SETTINGSE"></span><span id="_CPPv2N18SerializerSettings7Setting12NUM_SETTINGSE"></span><span class="target" id="class_serializer_settings_1a25564f8de88508b6e48a6660ae19c3bcac2286c13c702e57b4dcea734d230c312"></span><em class="property">enumerator </em><code class="sig-name descname">NUM_SETTINGS</code><a class="headerlink" href="#_CPPv4N18SerializerSettings7Setting12NUM_SETTINGSE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Number of different setting flags. </p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt id="_CPPv4N18SerializerSettingsUt1_0E">
+<span id="_CPPv3N18SerializerSettingsUt1_0E"></span><span class="target" id="class_serializer_settings_1a8edca166107b44e0a80102440c7ea74b"></span><em class="property">enum </em><strong>[anonymous]</strong><a class="headerlink" href="#_CPPv4N18SerializerSettingsUt1_0E" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N18SerializerSettingsUt1_017DEFAULT_PRECISIONE">
+<span id="_CPPv3N18SerializerSettingsUt1_017DEFAULT_PRECISIONE"></span><span class="target" id="class_serializer_settings_1a8edca166107b44e0a80102440c7ea74bac094a169da87885872faf6aedfb07c40"></span><em class="property">enumerator </em><code class="sig-name descname">DEFAULT_PRECISION</code><a class="headerlink" href="#_CPPv4N18SerializerSettingsUt1_017DEFAULT_PRECISIONE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N18SerializerSettings18SerializerSettingsEv">
+<span id="_CPPv3N18SerializerSettings18SerializerSettingsEv"></span><span id="_CPPv2N18SerializerSettings18SerializerSettingsEv"></span><span id="SerializerSettings::SerializerSettings"></span><span class="target" id="class_serializer_settings_1a4c39718f1206b45584f17599d37cd3b8"></span><code class="sig-name descname">SerializerSettings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18SerializerSettings18SerializerSettingsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="cpp var">
+<dt id="_CPPv4N18SerializerSettings9precisionE">
+<span id="_CPPv3N18SerializerSettings9precisionE"></span><span id="_CPPv2N18SerializerSettings9precisionE"></span><span id="SerializerSettings::precision__short"></span><span class="target" id="class_serializer_settings_1a1dc43429a40927f5320427750f9a9368"></span>short <code class="sig-name descname">precision</code><a class="headerlink" href="#_CPPv4N18SerializerSettings9precisionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Sets the precision used to format floating-point values, 15 by default. Use a negative value to use the system’s default precision (should be 6 typically). </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_serializer.html" title="previous chapter">Class Serializer</a></li>
+      <li>Next: <a href="class_step_serializer.html" title="next chapter">Class StepSerializer</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_serializer_settings.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

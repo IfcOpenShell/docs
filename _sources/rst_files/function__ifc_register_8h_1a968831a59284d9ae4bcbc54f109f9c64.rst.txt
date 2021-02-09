@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_register_8h_1a968831a59284d9ae4bcbc54f109f9c64:
+
+Function SHAPE(IfcRectangularPyramid)
+=====================================
+
+- Defined in :ref:`file_src_ifcgeom_IfcRegister.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: SHAPE(IfcRectangularPyramid)

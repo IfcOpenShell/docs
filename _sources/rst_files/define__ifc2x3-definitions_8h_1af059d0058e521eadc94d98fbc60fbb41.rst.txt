@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1af059d0058e521eadc94d98fbc60fbb41:
+
+Define SCHEMA_IfcConstraintClassificationRelationship_HAS_RelatedClassifications
+================================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConstraintClassificationRelationship_HAS_RelatedClassifications

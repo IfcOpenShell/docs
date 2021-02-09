@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ad06df9341081202be89062c9ee27e835:
+
+Define SCHEMA_IfcMechanicalMaterialProperties_HAS_YoungModulus
+==============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMechanicalMaterialProperties_HAS_YoungModulus

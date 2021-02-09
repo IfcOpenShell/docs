@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ac5955d063b85ef4a9a60f547f6009f88:
+
+Define SCHEMA_IfcVector_HAS_Magnitude
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcVector_HAS_Magnitude

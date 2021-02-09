@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a303bc1d8c34cc56bfd7d8319c47bee91:
+
+Define SCHEMA_IfcPostalAddress_HAS_Region
+=========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPostalAddress_HAS_Region

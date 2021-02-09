@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1acef7cabf418ebde1a1f1354a1b8217e3:
+
+Define SCHEMA_IfcSurfaceReinforcementArea_HAS_ShearReinforcement
+================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSurfaceReinforcementArea_HAS_ShearReinforcement

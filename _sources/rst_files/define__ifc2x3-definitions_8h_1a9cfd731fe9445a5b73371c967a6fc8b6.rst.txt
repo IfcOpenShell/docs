@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a9cfd731fe9445a5b73371c967a6fc8b6:
+
+Define SCHEMA_IfcTimeSeriesSchedule_ApplicableDates_IS_OPTIONAL
+===============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTimeSeriesSchedule_ApplicableDates_IS_OPTIONAL

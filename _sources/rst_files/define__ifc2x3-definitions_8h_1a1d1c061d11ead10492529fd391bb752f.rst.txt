@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a1d1c061d11ead10492529fd391bb752f:
+
+Define SCHEMA_IfcLibraryInformation_HAS_Publisher
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcLibraryInformation_HAS_Publisher

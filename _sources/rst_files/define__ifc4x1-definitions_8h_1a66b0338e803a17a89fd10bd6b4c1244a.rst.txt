@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1a66b0338e803a17a89fd10bd6b4c1244a:
+
+Define SCHEMA_HAS_IfcSolidAngleMeasure
+======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcSolidAngleMeasure

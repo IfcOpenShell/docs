@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a319ef955836ac6ebb18aeab25af9d446:
+
+Define SCHEMA_IfcReference_HAS_TypeIdentifier
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcReference_HAS_TypeIdentifier

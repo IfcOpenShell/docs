@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a58ad698055324955a398e085ac3d781f:
+
+Define SCHEMA_IfcOrganization_Id_IS_OPTIONAL
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcOrganization_Id_IS_OPTIONAL

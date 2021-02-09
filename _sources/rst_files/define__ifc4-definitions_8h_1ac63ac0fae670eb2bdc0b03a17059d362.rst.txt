@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1ac63ac0fae670eb2bdc0b03a17059d362:
+
+Define SCHEMA_HAS_IfcBoundaryCondition
+======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcBoundaryCondition

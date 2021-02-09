@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1acd8a5f209acc174f6e36556ed728ff8e:
+
+Define SCHEMA_IfcRegularTimeSeries_HAS_Values
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRegularTimeSeries_HAS_Values

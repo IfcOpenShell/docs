@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a193331a59cecf164b535d1cc5764e60d:
+
+Define SCHEMA_IfcConstraint_CreationTime_IS_OPTIONAL
+====================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcConstraint_CreationTime_IS_OPTIONAL

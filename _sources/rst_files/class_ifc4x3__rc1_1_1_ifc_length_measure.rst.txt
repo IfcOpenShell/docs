@@ -1,0 +1,38 @@
+.. _exhale_class_class_ifc4x3__rc1_1_1_ifc_length_measure:
+
+Class Ifc4x3_rc1::IfcLengthMeasure
+==================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x3__rc1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcUtil::IfcBaseType`` (:ref:`exhale_class_class_ifc_util_1_1_ifc_base_type`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x3_rc1::IfcNonNegativeLengthMeasure`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_non_negative_length_measure`)
+- ``public Ifc4x3_rc1::IfcPositiveLengthMeasure`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_positive_length_measure`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x3_rc1::IfcLengthMeasure
+   :members:
+   :protected-members:
+   :undoc-members:

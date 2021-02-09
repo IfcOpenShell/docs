@@ -1,0 +1,16 @@
+.. _exhale_class_class_ifc_geom_1_1_material:
+
+Class Material
+==============
+
+- Defined in :ref:`file_src_ifcgeom_schema_agnostic_IfcGeomMaterial.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcGeom::Material
+   :members:
+   :protected-members:
+   :undoc-members:

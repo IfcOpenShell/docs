@@ -1,0 +1,61 @@
+
+.. _file_src_ifcgeom_schema_agnostic_IfcGeomMaterial.h:
+
+File IfcGeomMaterial.h
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcgeom_schema_agnostic>` (``src/ifcgeom_schema_agnostic``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom_schema_agnostic/IfcGeomMaterial.h``)
+--------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_schema_agnostic_IfcGeomMaterial.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom_schema_agnostic/IfcGeomRenderStyles.h``
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_IfcGeomRepresentation.h`
+
+- :ref:`file_src_ifcgeom_IfcGeomIteratorImplementation.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcGeom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_ifc_geom_1_1_material`
+

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1aa3d30689897786d783d07b89f04f39d1:
+
+Define SCHEMA_IfcStructuralLoadLinearForce_HAS_LinearMomentX
+============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLoadLinearForce_HAS_LinearMomentX

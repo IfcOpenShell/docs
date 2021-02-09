@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_register_8h_1ae68ad260e2c0b49cb0ed9c95e12223ac:
+
+Function SHAPE(IfcConnectedFaceSet)
+===================================
+
+- Defined in :ref:`file_src_ifcgeom_IfcRegister.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: SHAPE(IfcConnectedFaceSet)

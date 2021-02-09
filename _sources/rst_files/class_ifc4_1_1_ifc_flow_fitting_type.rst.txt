@@ -1,0 +1,41 @@
+.. _exhale_class_class_ifc4_1_1_ifc_flow_fitting_type:
+
+Class Ifc4::IfcFlowFittingType
+==============================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4::IfcDistributionFlowElementType`` (:ref:`exhale_class_class_ifc4_1_1_ifc_distribution_flow_element_type`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4::IfcCableCarrierFittingType`` (:ref:`exhale_class_class_ifc4_1_1_ifc_cable_carrier_fitting_type`)
+- ``public Ifc4::IfcCableFittingType`` (:ref:`exhale_class_class_ifc4_1_1_ifc_cable_fitting_type`)
+- ``public Ifc4::IfcDuctFittingType`` (:ref:`exhale_class_class_ifc4_1_1_ifc_duct_fitting_type`)
+- ``public Ifc4::IfcJunctionBoxType`` (:ref:`exhale_class_class_ifc4_1_1_ifc_junction_box_type`)
+- ``public Ifc4::IfcPipeFittingType`` (:ref:`exhale_class_class_ifc4_1_1_ifc_pipe_fitting_type`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4::IfcFlowFittingType
+   :members:
+   :protected-members:
+   :undoc-members:

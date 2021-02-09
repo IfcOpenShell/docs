@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1af58055ad3da59ffa48fe61c6ccf7a4c0:
+
+Define SCHEMA_IfcPropertyConstraintRelationship_HAS_RelatingConstraint
+======================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPropertyConstraintRelationship_HAS_RelatingConstraint

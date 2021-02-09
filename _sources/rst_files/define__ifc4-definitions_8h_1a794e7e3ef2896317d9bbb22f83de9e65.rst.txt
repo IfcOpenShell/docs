@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a794e7e3ef2896317d9bbb22f83de9e65:
+
+Define SCHEMA_IfcStructuralPointConnection_HAS_ConditionCoordinateSystem
+========================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralPointConnection_HAS_ConditionCoordinateSystem

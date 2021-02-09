@@ -1,0 +1,56 @@
+.. _exhale_class_class_ifc4x1_1_1_ifc_energy_conversion_device_type:
+
+Class Ifc4x1::IfcEnergyConversionDeviceType
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x1::IfcDistributionFlowElementType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_distribution_flow_element_type`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x1::IfcAirToAirHeatRecoveryType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_air_to_air_heat_recovery_type`)
+- ``public Ifc4x1::IfcBoilerType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_boiler_type`)
+- ``public Ifc4x1::IfcBurnerType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_burner_type`)
+- ``public Ifc4x1::IfcChillerType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_chiller_type`)
+- ``public Ifc4x1::IfcCoilType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_coil_type`)
+- ``public Ifc4x1::IfcCondenserType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_condenser_type`)
+- ``public Ifc4x1::IfcCooledBeamType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_cooled_beam_type`)
+- ``public Ifc4x1::IfcCoolingTowerType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_cooling_tower_type`)
+- ``public Ifc4x1::IfcElectricGeneratorType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_generator_type`)
+- ``public Ifc4x1::IfcElectricMotorType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_electric_motor_type`)
+- ``public Ifc4x1::IfcEngineType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_engine_type`)
+- ``public Ifc4x1::IfcEvaporativeCoolerType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_evaporative_cooler_type`)
+- ``public Ifc4x1::IfcEvaporatorType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_evaporator_type`)
+- ``public Ifc4x1::IfcHeatExchangerType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_heat_exchanger_type`)
+- ``public Ifc4x1::IfcHumidifierType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_humidifier_type`)
+- ``public Ifc4x1::IfcMotorConnectionType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_motor_connection_type`)
+- ``public Ifc4x1::IfcSolarDeviceType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_solar_device_type`)
+- ``public Ifc4x1::IfcTransformerType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_transformer_type`)
+- ``public Ifc4x1::IfcTubeBundleType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_tube_bundle_type`)
+- ``public Ifc4x1::IfcUnitaryEquipmentType`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_unitary_equipment_type`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x1::IfcEnergyConversionDeviceType
+   :members:
+   :protected-members:
+   :undoc-members:

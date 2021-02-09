@@ -1,0 +1,29 @@
+.. _exhale_class_class_argument:
+
+Class Argument
+==============
+
+- Defined in :ref:`file_src_ifcparse_Argument.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public IfcParse::ArgumentList`` (:ref:`exhale_class_class_ifc_parse_1_1_argument_list`)
+- ``public IfcParse::EntityArgument`` (:ref:`exhale_class_class_ifc_parse_1_1_entity_argument`)
+- ``public IfcParse::NullArgument`` (:ref:`exhale_class_class_ifc_parse_1_1_null_argument`)
+- ``public IfcParse::TokenArgument`` (:ref:`exhale_class_class_ifc_parse_1_1_token_argument`)
+- ``public IfcWrite::IfcWriteArgument`` (:ref:`exhale_class_class_ifc_write_1_1_ifc_write_argument`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Argument
+   :members:
+   :protected-members:
+   :undoc-members:

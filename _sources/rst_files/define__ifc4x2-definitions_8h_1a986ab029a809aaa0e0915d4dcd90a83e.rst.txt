@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a986ab029a809aaa0e0915d4dcd90a83e:
+
+Define SCHEMA_HAS_IfcRotationalStiffnessSelect
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcRotationalStiffnessSelect

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a79c7948f91ea0d6215b3c9843af4bd91:
+
+Define SCHEMA_IfcActionRequest_HAS_RequestID
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcActionRequest_HAS_RequestID

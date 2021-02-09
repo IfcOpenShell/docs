@@ -1,0 +1,16 @@
+.. _exhale_class_class_ifc_parse_1_1_token_func:
+
+Class TokenFunc
+===============
+
+- Defined in :ref:`file_src_ifcparse_IfcParse.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcParse::TokenFunc
+   :members:
+   :protected-members:
+   :undoc-members:

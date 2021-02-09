@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcMemberStandardCase &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcMemberType" href="class_ifc4x2_1_1_ifc_member_type.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcMember" href="class_ifc4x2_1_1_ifc_member.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcmemberstandardcase">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-member-standard-case"></span><h1>Class Ifc4x2::IfcMemberStandardCase<a class="headerlink" href="#class-ifc4x2-ifcmemberstandardcase" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcMember</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_member.html#exhale-class-class-ifc4x2-1-1-ifc-member"><span class="std std-ref">Class Ifc4x2::IfcMember</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x221IfcMemberStandardCaseE">
+<span id="_CPPv3N6Ifc4x221IfcMemberStandardCaseE"></span><span id="_CPPv2N6Ifc4x221IfcMemberStandardCaseE"></span><span id="Ifc4x2::IfcMemberStandardCase"></span><span class="target" id="class_ifc4x2_1_1_ifc_member_standard_case"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcMemberStandardCase</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_member.html#_CPPv4N6Ifc4x29IfcMemberE" title="Ifc4x2::IfcMember">IfcMember</a><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcMemberStandardCaseE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The standard member, <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a>, defines a member with certain constraints for the provision of material usage, parameters and with certain constraints for the geometric representation. The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a> handles all cases of members, that:</p>
+<p>have a reference to the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile_set_usage"><span class="std std-ref">IfcMaterialProfileSetUsage</span></a> defining the material profile association of the member with the cardinal point of its insertion relative to the local placement. are based on a sweep of a planar profile, or set of profiles, as defined by the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile_set"><span class="std std-ref">IfcMaterialProfileSet</span></a> have an ‘Axis’ shape representation with constraints provided below in the geometry use definition have a ‘Body’ shape representation with constraints provided below in the geometry use definition have a start profile, or set of profiles, that is swept along the directrix and might be changed uniformly by a taper definition are consistent in using the correct cardinal point offset of the profile as compared to the ‘Axis’ and ‘Body’ shape representation are extruded perpendicular to the profile definition plane</p>
+<p>NOTE View definitions and implementer agreements may further constrain the applicable geometry types, e.g. by excluding tapering from an <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a> implementation.</p>
+<p>HISTORY New entity in IFC2x4.</p>
+<p>Type Use Definition <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member"><span class="std std-ref">IfcMember</span></a> defines the occuurence of any member, common information about member types (or styles) is handled by <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_type"><span class="std std-ref">IfcMemberType</span></a>. The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_type"><span class="std std-ref">IfcMemberType</span></a> (if present) may establish the commontype name, usage (or predefined) type, common material layer set, common set of properties and common shape representations (using <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_representation_map"><span class="std std-ref">IfcRepresentationMap</span></a>). The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_type"><span class="std std-ref">IfcMemberType</span></a> is attached using the IfcRelDefinedByType.RelatingType objectified relationship and is accessible by the inverse IsDefinedBy attribute. The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a> defines in addition that the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_type"><span class="std std-ref">IfcMemberType</span></a> should have a unique <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile_set"><span class="std std-ref">IfcMaterialProfileSet</span></a>, that is referenced by the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile_set_usage"><span class="std std-ref">IfcMaterialProfileSetUsage</span></a> assigned to all occurrences of this beam type.</p>
+<p>Figure 101 illustrates assignment of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile_set_usage"><span class="std std-ref">IfcMaterialProfileSetUsage</span></a> and <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile_set"><span class="std std-ref">IfcMaterialProfileSet</span></a> to the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a> as the member occurrence and to the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_type"><span class="std std-ref">IfcMemberType</span></a>. The same <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile_set"><span class="std std-ref">IfcMaterialProfileSet</span></a> shall be shared by many occurrences of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile_set_usage"><span class="std std-ref">IfcMaterialProfileSetUsage</span></a>. This relationship shall be consistent to the relationship between the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_type"><span class="std std-ref">IfcMemberType</span></a> and the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a>.</p>
+<p>Figure 101 — Member profile usage</p>
+<p>Figure 102 illustrates assignment of a composite profile by using IfcCompositeProfile for geometric representation and several <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile"><span class="std std-ref">IfcMaterialProfile</span></a>’s within the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile_set"><span class="std std-ref">IfcMaterialProfileSet</span></a>. The number of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile"><span class="std std-ref">IfcMaterialProfile</span></a>’s within the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile_set"><span class="std std-ref">IfcMaterialProfileSet</span></a> is restricted to maximal 2 and requires the use of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_extruded_area_solid_tapered"><span class="std std-ref">IfcExtrudedAreaSolidTapered</span></a>, or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_revolved_area_solid_tapered"><span class="std std-ref">IfcRevolvedAreaSolidTapered</span></a> for the correct ‘Body’ shape representation.</p>
+<p>Figure 102 — Member composite profiles</p>
+<p>Material Use Definition The material of the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a> is defined by <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile_set_usage"><span class="std std-ref">IfcMaterialProfileSetUsage</span></a> and attached by the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_associates_material_1a9073a6099e9b8c288b6d66189c9f4271"><span class="std std-ref">IfcRelAssociatesMaterial.RelatingMaterial</span></a>. It is accessible by the inverse HasAssociations relationship. Composite profile members can be represented by refering to several <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile"><span class="std std-ref">IfcMaterialProfile</span></a>’s within the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile_set"><span class="std std-ref">IfcMaterialProfileSet</span></a> that is referenced from the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile_set_usage"><span class="std std-ref">IfcMaterialProfileSetUsage</span></a>. Material information can also be given at the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_type"><span class="std std-ref">IfcMemberType</span></a>, defining the common attribute data for all occurrences of the same type. It is then accessible by the inverse IsDefinedBy relationship pointing to IfcMemberType.HasAssociations and via <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_associates_material_1a9073a6099e9b8c288b6d66189c9f4271"><span class="std std-ref">IfcRelAssociatesMaterial.RelatingMaterial</span></a>. See Type Use Definition for additional agreements for standard members. Property Set Use Definition: The property sets relating to the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a> are defined at the supertype <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member"><span class="std std-ref">IfcMember</span></a>. Quantity Use Definition The quantities relating to the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a> are defined at the supertype <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member"><span class="std std-ref">IfcMember</span></a>. Containment Use Definition The containment use definitions relating to the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a> are defined at the supertype <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member"><span class="std std-ref">IfcMember</span></a>. Geometry Use Definitions: The geometric representation of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a> is given by the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_product_definition_shape"><span class="std std-ref">IfcProductDefinitionShape</span></a>, allowing multiple geometric representations. Included are: Local Placement The use of local placement is defined at the supertype <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member"><span class="std std-ref">IfcMember</span></a>. Geometric Representations The geometric representation of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a> is defined using the following multiple shape representations for its definition:</p>
+<p>Axis: A two- or three dimensional open curve (<a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_bounded_curve"><span class="std std-ref">IfcBoundedCurve</span></a>) defining the axis for the standard member. The cardinal point is determined by the member axis. Body: A Swept Solid Representation or a CSG representation defining the 3D shape of the standard member.</p>
+<p>NOTE It is invalid to exchange a ‘SurfaceModel’, ‘Brep’, or ‘MappedRepresentation’ representation for the ‘Body’ shape representation of an <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a>. Axis Representation The axis geometric representation of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a> is defined using the ‘Axis’ representation. The following attribute values for the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Axis’ RepresentationType : ‘Curve2D’, or ‘Curve3D’</p>
+<p>The following additional constraints apply to the ‘Axis’ representation:</p>
+<p>Axis : <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_polyline"><span class="std std-ref">IfcPolyline</span></a> having two Points, or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_trimmed_curve"><span class="std std-ref">IfcTrimmedCurve</span></a> with BasisCurve of Type <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_line"><span class="std std-ref">IfcLine</span></a>.</p>
+<p>As shown in Figure 103, the axis representation can be used to represent the system length of a member that may extent the body length of the member.</p>
+<p>Figure 103 — Member axis representation</p>
+<p>As shown in Figure 104, the axis representation shall be used to represent the cardinal point as the offset between the ‘Axis’ and the extrusion path of the member. The extrusion path is provided as <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_extruded_area_solid_1a3f9bd18607dcafb2078fd2cac3aef2d8"><span class="std std-ref">IfcExtrudedAreaSolid.ExtrudedDirection</span></a> and should be parallel to the ‘Axis’. It has to be guaranteed that the value provided by <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile_set_usage_1a5b382e7a93f4fb73a0c649821a5d06d8"><span class="std std-ref">IfcMaterialProfileSetUsage.CardinalPoint</span></a> is consistent to the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_swept_area_solid_1aee7712090e7f4145f92636cf96acd3cd"><span class="std std-ref">IfcExtrudedAreaSolid.Position</span></a>.</p>
+<p>Figure 104 — Member axis cardinal point</p>
+<p>Body Representation The body representation of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a> can be represented using the representation types ‘SweptSolid’, ‘Clipping’, or ‘AdvancedSweptSolid’. SweptSolid Representation Type The standard geometric representation of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a> is defined using the ‘SweptSolid’ representation. The following attribute values for the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘SweptSolid’</p>
+<p>The following additional constraints apply to the ‘SweptSolid’ representation:</p>
+<p>Solid: <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_extruded_area_solid"><span class="std std-ref">IfcExtrudedAreaSolid</span></a>, <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_revolved_area_solid"><span class="std std-ref">IfcRevolvedAreaSolid</span></a> shall be supported Profile: all subtypes of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_profile_def"><span class="std std-ref">IfcProfileDef</span></a> (with exception of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_arbitrary_open_profile_def"><span class="std std-ref">IfcArbitraryOpenProfileDef</span></a>) Profile Position : For all single profiles, the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_parameterized_profile_def_1a9a0d35015bdd8494d023330e0eaed8c5"><span class="std std-ref">IfcParameterizedProfileDef.Position</span></a> shall be NIL, or having Location = 0.,0. and RefDirection = 1.,0. Extrusion:perpendicular to the profile direction. Orientation: The y-axis of the profile, as determined by IfcSweptAreaSolid.Position.P[2] shall point to the Z-Axis. It indicates the “role” of the column, a role=0° means y-axis of profile = Z-axis of reference coordinate system. In the exception of a vertical member, the y-axis shall point to the Y-axis.</p>
+<p>Figure 105 illustrates a ‘SweptSolid’ geometric representation with cardinal point applied as 1 (bottom left). The following interpretation of dimension parameter applies for rectangular members:</p>
+<p><a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rectangle_profile_def_1acdd4e11b63204aa953fee2e314aab8c0"><span class="std std-ref">IfcRectangleProfileDef.YDim</span></a> interpreted as member width <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rectangle_profile_def_1a5ea96cf727d67703065cf468cef29711"><span class="std std-ref">IfcRectangleProfileDef.XDim</span></a> interpreted as member depth</p>
+<p>The following interpretation of dimension parameter applies for circular members:</p>
+<p><a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_circle_profile_def_1ac62084fcd2944e4782e87b2f50d2441c"><span class="std std-ref">IfcCircleProfileDef.Radius</span></a> interpreted as beam radius.</p>
+<p>Figure 105 — Member body extrusion</p>
+<p>Clipping Representation Type The advanced geometric representation of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a> is defined using the ‘Clipping’ geometry. The following attribute values for the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘Clipping’</p>
+<p>The following constraints apply to the advanced representation:</p>
+<p>Solid: see ‘SweptSolid’ geometric representation Profile: see ‘SweptSolid’ geometric representation Profile Position : see ‘SweptSolid’ geometric representation Extrusion:see ‘SweptSolid’ geometric representation Boolean result: The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_boolean_clipping_result"><span class="std std-ref">IfcBooleanClippingResult</span></a> shall be supported, allowing for Boolean differences between the swept solid (here <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_extruded_area_solid"><span class="std std-ref">IfcExtrudedAreaSolid</span></a>) and one or several <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_half_space_solid"><span class="std std-ref">IfcHalfSpaceSolid</span></a> (or its subtypes).</p>
+<p>Figure 106 illustrates an advanced geometric representation with use of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_boolean_clipping_result"><span class="std std-ref">IfcBooleanClippingResult</span></a> between an <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_extruded_area_solid"><span class="std std-ref">IfcExtrudedAreaSolid</span></a> and an <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_half_space_solid"><span class="std std-ref">IfcHalfSpaceSolid</span></a> to create a clipped body, with cardinal point applied as 4 (mid-depth left).</p>
+<p>Figure 06 — Member body clipping</p>
+<p>AdvancedSweptSolid Representation Type The ‘AdvancedSweptSolid’ representation type is a valid body representation of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_member_standard_case"><span class="std std-ref">IfcMemberStandardCase</span></a>. The following attribute values for the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_shape_representation"><span class="std std-ref">IfcShapeRepresentation</span></a> holding this geometric representation shall be used:</p>
+<p>RepresentationIdentifier : ‘Body’ RepresentationType : ‘AdvancedSweptSolid’</p>
+<p>The following additional constraints apply to the ‘AdvancedSweptSolid’ representation type:</p>
+<p>Solid: <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_surface_curve_swept_area_solid"><span class="std std-ref">IfcSurfaceCurveSweptAreaSolid</span></a>, <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_fixed_reference_swept_area_solid"><span class="std std-ref">IfcFixedReferenceSweptAreaSolid</span></a>, <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_extruded_area_solid_tapered"><span class="std std-ref">IfcExtrudedAreaSolidTapered</span></a>, <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_revolved_area_solid_tapered"><span class="std std-ref">IfcRevolvedAreaSolidTapered</span></a> shall be supported. NOTE View definitions and implementer agreement can further constrain the allowed swept solid types. NOTE Using <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_extruded_area_solid_tapered"><span class="std std-ref">IfcExtrudedAreaSolidTapered</span></a>, or <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_revolved_area_solid_tapered"><span class="std std-ref">IfcRevolvedAreaSolidTapered</span></a> requires the use of two <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile"><span class="std std-ref">IfcMaterialProfile</span></a>’s within the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_profile_set"><span class="std std-ref">IfcMaterialProfileSet</span></a> assinged to the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_beam_standard_case"><span class="std std-ref">IfcBeamStandardCase</span></a></p>
+<p>Profile: see ‘SweptSolid’ geometric representation Profile Position : see ‘SweptSolid’ geometric representation Extrusion:not applicable </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x221IfcMemberStandardCase4listE">
+<span id="_CPPv3N6Ifc4x221IfcMemberStandardCase4listE"></span><span id="_CPPv2N6Ifc4x221IfcMemberStandardCase4listE"></span><span id="Ifc4x2::IfcMemberStandardCase::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_member_standard_case_1a55d3e38bff3842fbc2681c4f7167852f"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x221IfcMemberStandardCaseE" title="Ifc4x2::IfcMemberStandardCase">IfcMemberStandardCase</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcMemberStandardCase4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x221IfcMemberStandardCase11declarationEv">
+<span id="_CPPv3NK6Ifc4x221IfcMemberStandardCase11declarationEv"></span><span id="_CPPv2NK6Ifc4x221IfcMemberStandardCase11declarationEv"></span><span id="Ifc4x2::IfcMemberStandardCase::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_member_standard_case_1a14fd89a719fb760a7d3fab18588d947e"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x221IfcMemberStandardCase11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x221IfcMemberStandardCase21IfcMemberStandardCaseEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x221IfcMemberStandardCase21IfcMemberStandardCaseEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x221IfcMemberStandardCase21IfcMemberStandardCaseEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcMemberStandardCase::IfcMemberStandardCase__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_member_standard_case_1a6871c00d4a68e913cc9c77ae2e39f1d5"></span><code class="sig-name descname">IfcMemberStandardCase</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcMemberStandardCase21IfcMemberStandardCaseEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x221IfcMemberStandardCase21IfcMemberStandardCaseENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x218IfcObjectPlacementEPN6Ifc4x224IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x217IfcMemberTypeEnum5ValueEEE">
+<span id="_CPPv3N6Ifc4x221IfcMemberStandardCase21IfcMemberStandardCaseENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x218IfcObjectPlacementEPN6Ifc4x224IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x217IfcMemberTypeEnum5ValueEEE"></span><span id="_CPPv2N6Ifc4x221IfcMemberStandardCase21IfcMemberStandardCaseENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x218IfcObjectPlacementEPN6Ifc4x224IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x217IfcMemberTypeEnum5ValueEEE"></span><span id="Ifc4x2::IfcMemberStandardCase::IfcMemberStandardCase__ss.Ifc4x2::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.Ifc4x2::IfcObjectPlacementP.Ifc4x2::IfcProductRepresentationP.boost::optional:ss:.boost::optional:Ifc4x2::IfcMemberTypeEnum::Value:"></span><span class="target" id="class_ifc4x2_1_1_ifc_member_standard_case_1a33e83f009dd02e7d0e18573189825d38"></span><code class="sig-name descname">IfcMemberStandardCase</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_owner_history.html#_CPPv4N6Ifc4x215IfcOwnerHistoryE" title="Ifc4x2::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_object_placement.html#_CPPv4N6Ifc4x218IfcObjectPlacementE" title="Ifc4x2::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v6_ObjectPlacement</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_product_representation.html#_CPPv4N6Ifc4x224IfcProductRepresentationE" title="Ifc4x2::IfcProductRepresentation">IfcProductRepresentation</a> *<em>v7_Representation</em>, boost::optional&lt;std::string&gt; <em>v8_Tag</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x217IfcMemberTypeEnumE" title="Ifc4x2::IfcMemberTypeEnum">IfcMemberTypeEnum</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x217IfcMemberTypeEnum5ValueE" title="Ifc4x2::IfcMemberTypeEnum::Value">Value</a>&gt; <em>v9_PredefinedType</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcMemberStandardCase21IfcMemberStandardCaseENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN6Ifc4x218IfcObjectPlacementEPN6Ifc4x224IfcProductRepresentationEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x217IfcMemberTypeEnum5ValueEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x221IfcMemberStandardCase5ClassEv">
+<span id="_CPPv3N6Ifc4x221IfcMemberStandardCase5ClassEv"></span><span id="_CPPv2N6Ifc4x221IfcMemberStandardCase5ClassEv"></span><span id="Ifc4x2::IfcMemberStandardCase::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_member_standard_case_1a08d83211d1efbb0db38db7b55de2c8f1"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcMemberStandardCase5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_member.html" title="previous chapter">Class Ifc4x2::IfcMember</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_member_type.html" title="next chapter">Class Ifc4x2::IfcMemberType</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_member_standard_case.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

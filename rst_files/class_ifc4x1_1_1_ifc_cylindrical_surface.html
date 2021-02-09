@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x1::IfcCylindricalSurface &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x1::IfcDamper" href="class_ifc4x1_1_1_ifc_damper.html" />
+    <link rel="prev" title="Class Ifc4x1::IfcCurveStyleFontPattern" href="class_ifc4x1_1_1_ifc_curve_style_font_pattern.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x1-ifccylindricalsurface">
+<span id="exhale-class-class-ifc4x1-1-1-ifc-cylindrical-surface"></span><h1>Class Ifc4x1::IfcCylindricalSurface<a class="headerlink" href="#class-ifc4x1-ifccylindricalsurface" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x1::IfcElementarySurface</span></code> (<a class="reference internal" href="class_ifc4x1_1_1_ifc_elementary_surface.html#exhale-class-class-ifc4x1-1-1-ifc-elementary-surface"><span class="std std-ref">Class Ifc4x1::IfcElementarySurface</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x121IfcCylindricalSurfaceE">
+<span id="_CPPv3N6Ifc4x121IfcCylindricalSurfaceE"></span><span id="_CPPv2N6Ifc4x121IfcCylindricalSurfaceE"></span><span id="Ifc4x1::IfcCylindricalSurface"></span><span class="target" id="class_ifc4x1_1_1_ifc_cylindrical_surface"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcCylindricalSurface</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_elementary_surface.html#_CPPv4N6Ifc4x120IfcElementarySurfaceE" title="Ifc4x1::IfcElementarySurface">IfcElementarySurface</a><a class="headerlink" href="#_CPPv4N6Ifc4x121IfcCylindricalSurfaceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: A cylindrical surface is a surface at a constant distance (the radius) from a straight line. A cylindrical surface is defined by its radius and its orientation and location. The data is to be interpreted as follows:</p>
+<p>C = Position.Location x = Position.P[1] y = Position.P[2] z = Position.P[3] R = Radius</p>
+<p>and the surface is parameterized as:</p>
+<p>where the parametric range is -∞ &lt; u,v &lt; ∞ . In the above parameterization the length unit for the unit vectors z is equal to that of the radius R. In the placement coordinate system defined above, the surface is represented by the equation S = 0, where</p>
+<p>The positive direction of the normal to the surface at any point on the surface is given by</p>
+<p>, or as unit normal by</p>
+<p>The direction of the normal is away from the axis of the cylinder.</p>
+<p>The cylindrical surface is a surface unbounded in the direction of z. Bounded cylindrical surfaces are defined by using a subtype of <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_bounded_surface"><span class="std std-ref">IfcBoundedSurface</span></a> with BasisSurface being a cylindrical surface.</p>
+<p>NOTE A bounded cylindrical surface can be defined by an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_rectangular_trimmed_surface"><span class="std std-ref">IfcRectangularTrimmedSurface</span></a> with BasisSurface being the cylindrical surface and U1 = 0°, U2 = 360° and V1 = lower bound in z, V2 = upper bound in z (if the plane angle measure is degree). A bounded cylindrical arc surface is provided with |U1 - U2| &lt; 360° (assuming the Usense and Vsense agree to the sense of the basis surface). NOTE A non-rectangular bounded cylindrical surface, e.g. the surface of a round wall underneath a sloped roof, cab be defined by an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_curve_bounded_surface"><span class="std std-ref">IfcCurveBoundedSurface</span></a> with <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_boundary_curve"><span class="std std-ref">IfcBoundaryCurve</span></a>’s, being a collection of p-curve segments. A p-curve is curve which lies on the basis of a surface and is defined in the parameter space of that surface.</p>
+<p>The inherited attributes are interpreted as</p>
+<p>SELF\IfcElementarySurface.Position defines the location and orientation of the cylindrical surface. SELF\IfcElementarySurface.Position.Location definesd a point on the axis of the cylindrical surface. SELF\IfcElementarySurface.Position.P[3] defines the direction of the axis of the cylindrical surface.</p>
+<p>NOTE Corresponding ISO 10303 entity: plane. Please refer to ISO/IS 10303-42:1994, p.70 for the final definition of the formal standard.</p>
+<p>HISTORY New class in IFC2x4. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x121IfcCylindricalSurface4listE">
+<span id="_CPPv3N6Ifc4x121IfcCylindricalSurface4listE"></span><span id="_CPPv2N6Ifc4x121IfcCylindricalSurface4listE"></span><span id="Ifc4x1::IfcCylindricalSurface::list"></span><span class="target" id="class_ifc4x1_1_1_ifc_cylindrical_surface_1aa8861c7482d96f168dccc4751c155345"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x121IfcCylindricalSurfaceE" title="Ifc4x1::IfcCylindricalSurface">IfcCylindricalSurface</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x121IfcCylindricalSurface4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x121IfcCylindricalSurface6RadiusEv">
+<span id="_CPPv3NK6Ifc4x121IfcCylindricalSurface6RadiusEv"></span><span id="_CPPv2NK6Ifc4x121IfcCylindricalSurface6RadiusEv"></span><span id="Ifc4x1::IfcCylindricalSurface::RadiusC"></span><span class="target" id="class_ifc4x1_1_1_ifc_cylindrical_surface_1a56f7ccc54760d3240dcf7202f8ebbad0"></span>double <code class="sig-name descname">Radius</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x121IfcCylindricalSurface6RadiusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The radius of the cylindrical surface. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x121IfcCylindricalSurface9setRadiusEd">
+<span id="_CPPv3N6Ifc4x121IfcCylindricalSurface9setRadiusEd"></span><span id="_CPPv2N6Ifc4x121IfcCylindricalSurface9setRadiusEd"></span><span id="Ifc4x1::IfcCylindricalSurface::setRadius__double"></span><span class="target" id="class_ifc4x1_1_1_ifc_cylindrical_surface_1ae97033bb2bedcb98de27671d07bbd57a"></span>void <code class="sig-name descname">setRadius</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x121IfcCylindricalSurface9setRadiusEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x121IfcCylindricalSurface11declarationEv">
+<span id="_CPPv3NK6Ifc4x121IfcCylindricalSurface11declarationEv"></span><span id="_CPPv2NK6Ifc4x121IfcCylindricalSurface11declarationEv"></span><span id="Ifc4x1::IfcCylindricalSurface::declarationC"></span><span class="target" id="class_ifc4x1_1_1_ifc_cylindrical_surface_1ae047ee6cc83d31d51ae2ab9cacb02fd9"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x121IfcCylindricalSurface11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x121IfcCylindricalSurface21IfcCylindricalSurfaceEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x121IfcCylindricalSurface21IfcCylindricalSurfaceEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x121IfcCylindricalSurface21IfcCylindricalSurfaceEP21IfcEntityInstanceData"></span><span id="Ifc4x1::IfcCylindricalSurface::IfcCylindricalSurface__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x1_1_1_ifc_cylindrical_surface_1a17f80ee3e06da6766445d7af5beb117e"></span><code class="sig-name descname">IfcCylindricalSurface</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x121IfcCylindricalSurface21IfcCylindricalSurfaceEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x121IfcCylindricalSurface21IfcCylindricalSurfaceEPN6Ifc4x119IfcAxis2Placement3DEd">
+<span id="_CPPv3N6Ifc4x121IfcCylindricalSurface21IfcCylindricalSurfaceEPN6Ifc4x119IfcAxis2Placement3DEd"></span><span id="_CPPv2N6Ifc4x121IfcCylindricalSurface21IfcCylindricalSurfaceEPN6Ifc4x119IfcAxis2Placement3DEd"></span><span id="Ifc4x1::IfcCylindricalSurface::IfcCylindricalSurface__Ifc4x1::IfcAxis2Placement3DP.double"></span><span class="target" id="class_ifc4x1_1_1_ifc_cylindrical_surface_1ab203a0c945a41a77b3ace74c17fc82b4"></span><code class="sig-name descname">IfcCylindricalSurface</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a>::<a class="reference internal" href="class_ifc4x1_1_1_ifc_axis2_placement3_d.html#_CPPv4N6Ifc4x119IfcAxis2Placement3DE" title="Ifc4x1::IfcAxis2Placement3D">IfcAxis2Placement3D</a> *<em>v1_Position</em>, double <em>v2_Radius</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x121IfcCylindricalSurface21IfcCylindricalSurfaceEPN6Ifc4x119IfcAxis2Placement3DEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x121IfcCylindricalSurface5ClassEv">
+<span id="_CPPv3N6Ifc4x121IfcCylindricalSurface5ClassEv"></span><span id="_CPPv2N6Ifc4x121IfcCylindricalSurface5ClassEv"></span><span id="Ifc4x1::IfcCylindricalSurface::Class"></span><span class="target" id="class_ifc4x1_1_1_ifc_cylindrical_surface_1a8a2db2dc1db686cbccad18dfe1216928"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x121IfcCylindricalSurface5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x1_1_1_ifc_curve_style_font_pattern.html" title="previous chapter">Class Ifc4x1::IfcCurveStyleFontPattern</a></li>
+      <li>Next: <a href="class_ifc4x1_1_1_ifc_damper.html" title="next chapter">Class Ifc4x1::IfcDamper</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x1_1_1_ifc_cylindrical_surface.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

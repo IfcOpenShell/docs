@@ -1,0 +1,1153 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Listing for File IfcGeomIteratorImplementation.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="program-listing-for-file-ifcgeomiteratorimplementation-h">
+<span id="program-listing-file-src-ifcgeom-ifcgeomiteratorimplementation-h"></span><h1>Program Listing for File IfcGeomIteratorImplementation.h<a class="headerlink" href="#program-listing-for-file-ifcgeomiteratorimplementation-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_ifcgeom_IfcGeomIteratorImplementation.h.html#file-src-ifcgeom-ifcgeomiteratorimplementation-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom/IfcGeomIteratorImplementation.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/********************************************************************************</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * This file is part of IfcOpenShell.                                           *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcOpenShell is free software: you can redistribute it and/or modify         *</span>
+<span class="cm"> * it under the terms of the Lesser GNU General Public License as published by  *</span>
+<span class="cm"> * the Free Software Foundation, either version 3.0 of the License, or          *</span>
+<span class="cm"> * (at your option) any later version.                                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcOpenShell is distributed in the hope that it will be useful,              *</span>
+<span class="cm"> * but WITHOUT ANY WARRANTY; without even the implied warranty of               *</span>
+<span class="cm"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 *</span>
+<span class="cm"> * Lesser GNU General Public License for more details.                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * You should have received a copy of the Lesser GNU General Public License     *</span>
+<span class="cm"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.         *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> ********************************************************************************/</span>
+
+<span class="cm">/********************************************************************************</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * Geometrical data in an IFC file consists of shapes (IfcShapeRepresentation)  *</span>
+<span class="cm"> * and instances (SUBTYPE OF IfcBuildingElement e.g. IfcWindow).                *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcGeom::Representation::Triangulation is a class that represents a          *</span>
+<span class="cm"> * triangulated IfcShapeRepresentation.                                         *</span>
+<span class="cm"> *   Triangulation.verts is a 1 dimensional vector of float defining the        *</span>
+<span class="cm"> *      cartesian coordinates of the vertices of the triangulated shape in the  *</span>
+<span class="cm"> *      format of [x1,y1,z1,..,xn,yn,zn]                                        *</span>
+<span class="cm"> *   Triangulation.faces is a 1 dimensional vector of int containing the        *</span>
+<span class="cm"> *     indices of the triangles referencing positions in Triangulation.verts    *</span>
+<span class="cm"> *   Triangulation.edges is a 1 dimensional vector of int in {0,1} that dictates*</span>
+<span class="cm"> *     the visibility of the edges that span the faces in Triangulation.faces   *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcGeom::Element represents the actual IfcBuildingElements.                  *</span>
+<span class="cm"> *   IfcGeomObject.name is the GUID of the element                              *</span>
+<span class="cm"> *   IfcGeomObject.type is the datatype of the element e.g. IfcWindow           *</span>
+<span class="cm"> *   IfcGeomObject.mesh is a pointer to an IfcMesh                              *</span>
+<span class="cm"> *   IfcGeomObject.transformation.matrix is a 4x3 matrix that defines the       *</span>
+<span class="cm"> *     orientation and translation of the mesh in relation to the world origin  *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcGeom::Iterator::initialize()                                              *</span>
+<span class="cm"> *   finds the most suitable representation contexts. Returns true iff          *</span>
+<span class="cm"> *   at least a single representation will process successfully                 *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcGeom::Iterator::get()                                                     *</span>
+<span class="cm"> *   returns a pointer to the current IfcGeom::Element                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcGeom::Iterator::next()                                                    *</span>
+<span class="cm"> *   returns true iff a following entity is available for a successive call to  *</span>
+<span class="cm"> *   IfcGeom::Iterator::get()                                                   *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcGeom::Iterator::progress()                                                *</span>
+<span class="cm"> *   returns an int in [0..100] that indicates the overall progress             *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> ********************************************************************************/</span>
+
+<span class="cp">#ifndef IFCGEOMITERATOR_H</span>
+<span class="cp">#define IFCGEOMITERATOR_H</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;map&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;set&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;limits&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;atomic&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;future&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;thread&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;chrono&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;boost/algorithm/string.hpp&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Mat.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Mat2d.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_GTrsf.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_GTrsf2d.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Trsf.hxx&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;gp_Trsf2d.hxx&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcparse/IfcFile.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom/IfcGeom.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom/IfcGeomElement.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom_schema_agnostic/IfcGeomMaterial.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom/IfcGeomIteratorSettings.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom/IfcRepresentationShapeItem.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom_schema_agnostic/IfcGeomFilter.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../ifcgeom_schema_agnostic/IteratorImplementation.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;atomic&gt;</span><span class="cp"></span>
+
+<span class="c1">// The infamous min &amp; max Win32 #defines can leak here from OCE depending on the build configuration</span>
+<span class="cp">#ifdef min</span>
+<span class="cp">#undef min</span>
+<span class="cp">#endif</span>
+<span class="cp">#ifdef max</span>
+<span class="cp">#undef max</span>
+<span class="cp">#endif</span>
+
+<span class="k">namespace</span> <span class="p">{</span>
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="nc">P</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">PP</span><span class="o">=</span><span class="n">P</span><span class="o">&gt;</span>
+    <span class="k">struct</span> <span class="nc">geometry_conversion_task</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">index</span><span class="p">;</span>
+        <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span> <span class="o">*</span><span class="n">representation</span><span class="p">;</span>
+        <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">products</span><span class="p">;</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">BRepElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*&gt;</span> <span class="n">breps</span><span class="p">;</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">Element</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*&gt;</span> <span class="n">elements</span><span class="p">;</span>
+    <span class="p">};</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="nc">P</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">PP</span><span class="o">=</span><span class="n">P</span><span class="o">&gt;</span>
+    <span class="n">IfcGeom</span><span class="o">::</span><span class="n">Element</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">process_based_on_settings</span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">IteratorSettings</span><span class="o">&amp;</span> <span class="n">settings</span><span class="p">,</span>
+        <span class="n">IfcGeom</span><span class="o">::</span><span class="n">BRepElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">elem</span><span class="p">,</span>
+        <span class="n">IfcGeom</span><span class="o">::</span><span class="n">TriangulationElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">previous</span><span class="o">=</span><span class="k">nullptr</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">USE_BREP_DATA</span><span class="p">))</span> <span class="p">{</span>
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="k">new</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">SerializedElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;</span><span class="p">(</span><span class="o">*</span><span class="n">elem</span><span class="p">);</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(...)</span> <span class="p">{</span>
+                <span class="n">Logger</span><span class="o">::</span><span class="n">Message</span><span class="p">(</span><span class="n">Logger</span><span class="o">::</span><span class="n">LOG_ERROR</span><span class="p">,</span> <span class="s">&quot;Getting a serialized element from model failed.&quot;</span><span class="p">);</span>
+                <span class="k">return</span> <span class="k">nullptr</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">DISABLE_TRIANGULATION</span><span class="p">))</span> <span class="p">{</span>
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">previous</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">return</span>  <span class="k">new</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">TriangulationElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;</span><span class="p">(</span><span class="o">*</span><span class="n">elem</span><span class="p">);</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="k">return</span>  <span class="k">new</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">TriangulationElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;</span><span class="p">(</span><span class="o">*</span><span class="n">elem</span><span class="p">,</span> <span class="n">previous</span><span class="o">-&gt;</span><span class="n">geometry_pointer</span><span class="p">());</span>
+                <span class="p">}</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(...)</span> <span class="p">{</span>
+                <span class="n">Logger</span><span class="o">::</span><span class="n">Message</span><span class="p">(</span><span class="n">Logger</span><span class="o">::</span><span class="n">LOG_ERROR</span><span class="p">,</span> <span class="s">&quot;Getting a triangulation element from model failed.&quot;</span><span class="p">);</span>
+                <span class="k">return</span> <span class="k">nullptr</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="n">elem</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="nc">P</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">PP</span> <span class="o">=</span> <span class="n">P</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <span class="n">create_element</span><span class="p">(</span>
+        <span class="n">IfcGeom</span><span class="o">::</span><span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">Kernel</span><span class="p">)</span><span class="o">*</span> <span class="n">kernel</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">IteratorSettings</span><span class="o">&amp;</span> <span class="n">settings</span><span class="p">,</span>
+        <span class="n">geometry_conversion_task</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">rep</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span> <span class="o">*</span><span class="n">representation</span> <span class="o">=</span> <span class="n">rep</span><span class="o">-&gt;</span><span class="n">representation</span><span class="p">;</span>
+        <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span> <span class="o">*</span><span class="n">product</span> <span class="o">=</span> <span class="o">*</span><span class="n">rep</span><span class="o">-&gt;</span><span class="n">products</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span>
+        <span class="k">auto</span> <span class="n">brep</span> <span class="o">=</span> <span class="n">kernel</span><span class="o">-&gt;</span><span class="n">create_brep_for_representation_and_product</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="n">representation</span><span class="p">,</span> <span class="n">product</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">brep</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">auto</span> <span class="n">elem</span> <span class="o">=</span> <span class="n">process_based_on_settings</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="n">brep</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">elem</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="n">rep</span><span class="o">-&gt;</span><span class="n">breps</span> <span class="o">=</span> <span class="p">{</span> <span class="n">brep</span> <span class="p">};</span>
+        <span class="n">rep</span><span class="o">-&gt;</span><span class="n">elements</span> <span class="o">=</span> <span class="p">{</span> <span class="n">elem</span> <span class="p">};</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">it</span> <span class="o">=</span> <span class="n">rep</span><span class="o">-&gt;</span><span class="n">products</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">rep</span><span class="o">-&gt;</span><span class="n">products</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">it</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">auto</span> <span class="n">brep2</span> <span class="o">=</span> <span class="n">kernel</span><span class="o">-&gt;</span><span class="n">create_brep_for_processed_representation</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="n">representation</span><span class="p">,</span> <span class="o">*</span><span class="n">it</span><span class="p">,</span> <span class="n">brep</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">brep2</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">auto</span> <span class="n">elem2</span> <span class="o">=</span> <span class="n">process_based_on_settings</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="n">brep2</span><span class="p">,</span> <span class="k">dynamic_cast</span><span class="o">&lt;</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">TriangulationElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*&gt;</span><span class="p">(</span><span class="n">elem</span><span class="p">));</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">elem2</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">rep</span><span class="o">-&gt;</span><span class="n">breps</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">brep2</span><span class="p">);</span>
+                    <span class="n">rep</span><span class="o">-&gt;</span><span class="n">elements</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">elem2</span><span class="p">);</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">namespace</span> <span class="n">IfcGeom</span> <span class="p">{</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="nc">P</span><span class="p">,</span> <span class="k">typename</span> <span class="nc">PP</span><span class="o">&gt;</span>
+    <span class="k">class</span> <span class="nc">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">IteratorImplementation_</span><span class="p">)</span> <span class="o">:</span> <span class="k">public</span> <span class="n">IteratorImplementation</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="k">private</span><span class="o">:</span>
+
+        <span class="n">std</span><span class="o">::</span><span class="n">atomic</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">progress_</span><span class="p">;</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_conversion_task</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;&gt;</span> <span class="n">tasks_</span><span class="p">;</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">Element</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*&gt;</span> <span class="n">all_processed_elements_</span><span class="p">;</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">BRepElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*&gt;</span> <span class="n">all_processed_native_elements_</span><span class="p">;</span>
+        <span class="k">typename</span> <span class="nc">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">Element</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*&gt;::</span><span class="n">const_iterator</span> <span class="n">task_result_iterator_</span><span class="p">;</span>
+        <span class="k">typename</span> <span class="nc">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">BRepElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*&gt;::</span><span class="n">const_iterator</span> <span class="n">native_task_result_iterator_</span><span class="p">;</span>
+
+        <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">IteratorImplementation_</span><span class="p">)(</span><span class="k">const</span> <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">IteratorImplementation_</span><span class="p">)</span><span class="o">&amp;</span><span class="p">);</span> <span class="c1">// N/I</span>
+        <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">IteratorImplementation_</span><span class="p">)</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">IteratorImplementation_</span><span class="p">)</span><span class="o">&amp;</span><span class="p">);</span> <span class="c1">// N/I</span>
+
+        <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">Kernel</span><span class="p">)</span> <span class="n">kernel</span><span class="p">;</span>
+
+        <span class="n">IteratorSettings</span> <span class="n">settings</span><span class="p">;</span>
+        <span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcFile</span><span class="o">*</span> <span class="n">ifc_file</span><span class="p">;</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">filter_t</span><span class="o">&gt;</span> <span class="n">filters_</span><span class="p">;</span>
+        <span class="kt">bool</span> <span class="n">owns_ifc_file</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">num_threads_</span><span class="p">;</span>
+
+        <span class="c1">// A container and iterator for IfcRepresentations</span>
+        <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">representations</span><span class="p">;</span>
+        <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">it</span> <span class="n">representation_iterator</span><span class="p">;</span>
+
+        <span class="c1">// The object is fetched beforehand to be sure that get() returns a valid element</span>
+        <span class="n">TriangulationElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">current_triangulation</span><span class="p">;</span>
+        <span class="n">BRepElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">current_shape_model</span><span class="p">;</span>
+        <span class="n">SerializedElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">current_serialization</span><span class="p">;</span>
+
+        <span class="c1">// A container and iterator for IfcBuildingElements for the current IfcRepresentation referenced by *representation_iterator</span>
+        <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">ifcproducts</span><span class="p">;</span>
+        <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">it</span> <span class="n">ifcproduct_iterator</span><span class="p">;</span>
+
+
+        <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">ok_mapped_representations</span><span class="p">;</span>
+
+        <span class="kt">int</span> <span class="n">done</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">total</span><span class="p">;</span>
+
+        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">unit_name</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">unit_magnitude</span><span class="p">;</span>
+
+        <span class="n">gp_XYZ</span> <span class="n">bounds_min_</span><span class="p">;</span>
+        <span class="n">gp_XYZ</span> <span class="n">bounds_max_</span><span class="p">;</span>
+
+        <span class="k">struct</span> <span class="nc">filter_match</span>
+        <span class="p">{</span>
+            <span class="n">filter_match</span><span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span> <span class="o">*</span><span class="n">prod</span><span class="p">)</span> <span class="o">:</span> <span class="n">product</span><span class="p">(</span><span class="n">prod</span><span class="p">)</span> <span class="p">{}</span>
+            <span class="kt">bool</span> <span class="k">operator</span><span class="p">()(</span><span class="k">const</span> <span class="n">filter_t</span><span class="o">&amp;</span> <span class="n">filter</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="nf">filter</span><span class="p">(</span><span class="n">product</span><span class="p">);</span>  <span class="p">}</span>
+
+            <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span> <span class="n">product</span><span class="p">;</span>
+        <span class="p">};</span>
+
+        <span class="kt">void</span> <span class="nf">initUnits</span><span class="p">()</span> <span class="p">{</span>
+            <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProject</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">projects</span> <span class="o">=</span> <span class="n">ifc_file</span><span class="o">-&gt;</span><span class="n">instances_by_type</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProject</span><span class="o">&gt;</span><span class="p">();</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">projects</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProject</span><span class="o">*</span> <span class="n">project</span> <span class="o">=</span> <span class="o">*</span><span class="n">projects</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span>
+                <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <span class="kt">double</span><span class="o">&gt;</span> <span class="n">length_unit</span> <span class="o">=</span> <span class="n">kernel</span><span class="p">.</span><span class="n">initializeUnits</span><span class="p">(</span><span class="n">project</span><span class="o">-&gt;</span><span class="n">UnitsInContext</span><span class="p">());</span>
+                <span class="n">unit_name</span> <span class="o">=</span> <span class="n">length_unit</span><span class="p">.</span><span class="n">first</span><span class="p">;</span>
+                <span class="n">unit_magnitude</span> <span class="o">=</span> <span class="n">length_unit</span><span class="p">.</span><span class="n">second</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="n">Logger</span><span class="o">::</span><span class="n">Warning</span><span class="p">(</span><span class="s">&quot;A single IfcProject is expected (encountered &quot;</span> <span class="o">+</span> <span class="n">boost</span><span class="o">::</span><span class="n">lexical_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="n">projects</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">())</span> <span class="o">+</span> <span class="s">&quot;); unable to read unit information.&quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+    <span class="k">public</span><span class="o">:</span>
+        <span class="k">typedef</span> <span class="n">P</span> <span class="n">Precision</span><span class="p">;</span>
+        <span class="k">typedef</span> <span class="n">PP</span> <span class="n">PlacementPrecision</span><span class="p">;</span>
+
+        <span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="n">initialization_outcome_</span><span class="p">;</span>
+
+        <span class="kt">bool</span> <span class="nf">initialize</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">initialization_outcome_</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="o">*</span><span class="n">initialization_outcome_</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="n">initUnits</span><span class="p">();</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+            <span class="p">}</span>
+
+            <span class="n">std</span><span class="o">::</span><span class="n">set</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">allowed_context_types</span><span class="p">;</span>
+            <span class="n">allowed_context_types</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="s">&quot;model&quot;</span><span class="p">);</span>
+            <span class="n">allowed_context_types</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="s">&quot;plan&quot;</span><span class="p">);</span>
+            <span class="n">allowed_context_types</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="s">&quot;notdefined&quot;</span><span class="p">);</span>
+
+            <span class="n">std</span><span class="o">::</span><span class="n">set</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">context_types</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">EXCLUDE_SOLIDS_AND_SURFACES</span><span class="p">))</span> <span class="p">{</span>
+                <span class="c1">// Really this should only be &#39;Model&#39;, as per</span>
+                <span class="c1">// the standard &#39;Design&#39; is deprecated. So,</span>
+                <span class="c1">// just for backwards compatibility:</span>
+                <span class="n">context_types</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="s">&quot;model&quot;</span><span class="p">);</span>
+                <span class="n">context_types</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="s">&quot;design&quot;</span><span class="p">);</span>
+                <span class="c1">// Some earlier (?) versions DDS-CAD output their own ContextTypes</span>
+                <span class="n">context_types</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="s">&quot;model view&quot;</span><span class="p">);</span>
+                <span class="n">context_types</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="s">&quot;detail view&quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">INCLUDE_CURVES</span><span class="p">))</span> <span class="p">{</span>
+                <span class="n">context_types</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="s">&quot;plan&quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+
+            <span class="kt">double</span> <span class="n">lowest_precision_encountered</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;::</span><span class="n">infinity</span><span class="p">();</span>
+            <span class="kt">bool</span> <span class="n">any_precision_encountered</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+
+            <span class="n">representations</span> <span class="o">=</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span><span class="p">(</span><span class="k">new</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">::</span><span class="n">list</span><span class="p">);</span>
+            <span class="n">ok_mapped_representations</span> <span class="o">=</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span><span class="p">(</span><span class="k">new</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">::</span><span class="n">list</span><span class="p">);</span>
+
+            <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcGeometricRepresentationContext</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">it</span> <span class="n">it</span><span class="p">;</span>
+            <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcGeometricRepresentationSubContext</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">it</span> <span class="n">jt</span><span class="p">;</span>
+            <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcGeometricRepresentationContext</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">contexts</span> <span class="o">=</span>
+                <span class="n">ifc_file</span><span class="o">-&gt;</span><span class="n">instances_by_type</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcGeometricRepresentationContext</span><span class="o">&gt;</span><span class="p">();</span>
+
+            <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcGeometricRepresentationContext</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">filtered_contexts</span> <span class="p">(</span><span class="k">new</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcGeometricRepresentationContext</span><span class="o">::</span><span class="n">list</span><span class="p">);</span>
+
+            <span class="k">for</span> <span class="p">(</span><span class="n">it</span> <span class="o">=</span> <span class="n">contexts</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">contexts</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">it</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcGeometricRepresentationContext</span><span class="o">*</span> <span class="n">context</span> <span class="o">=</span> <span class="o">*</span><span class="n">it</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">context</span><span class="o">-&gt;</span><span class="n">declaration</span><span class="p">().</span><span class="n">is</span><span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcGeometricRepresentationSubContext</span><span class="o">::</span><span class="n">Class</span><span class="p">()))</span> <span class="p">{</span>
+                    <span class="c1">// Continue, as the list of subcontexts will be considered</span>
+                    <span class="c1">// by the parent&#39;s context inverse attributes.</span>
+                    <span class="k">continue</span><span class="p">;</span>
+                <span class="p">}</span>
+                <span class="k">try</span> <span class="p">{</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">context</span><span class="o">-&gt;</span><span class="n">hasContextType</span><span class="p">())</span> <span class="p">{</span>
+                        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">context_type</span> <span class="o">=</span> <span class="n">context</span><span class="o">-&gt;</span><span class="n">ContextType</span><span class="p">();</span>
+                        <span class="n">boost</span><span class="o">::</span><span class="n">to_lower</span><span class="p">(</span><span class="n">context_type</span><span class="p">);</span>
+
+                        <span class="k">if</span> <span class="p">(</span><span class="n">allowed_context_types</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">context_type</span><span class="p">)</span> <span class="o">==</span> <span class="n">allowed_context_types</span><span class="p">.</span><span class="n">end</span><span class="p">())</span> <span class="p">{</span>
+                            <span class="n">Logger</span><span class="o">::</span><span class="n">Warning</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="s">&quot;ContextType &#39;&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="n">context</span><span class="o">-&gt;</span><span class="n">ContextType</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot;&#39; not allowed:&quot;</span><span class="p">,</span> <span class="n">context</span><span class="p">);</span>
+                        <span class="p">}</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">context_types</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">context_type</span><span class="p">)</span> <span class="o">!=</span> <span class="n">context_types</span><span class="p">.</span><span class="n">end</span><span class="p">())</span> <span class="p">{</span>
+                            <span class="n">filtered_contexts</span><span class="o">-&gt;</span><span class="n">push</span><span class="p">(</span><span class="n">context</span><span class="p">);</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+                <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="c1">// In case no contexts are identified based on their ContextType, all contexts are</span>
+            <span class="c1">// considered. Note that sub contexts are excluded as they are considered later on.</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">filtered_contexts</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">for</span> <span class="p">(</span><span class="n">it</span> <span class="o">=</span> <span class="n">contexts</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">contexts</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">it</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcGeometricRepresentationContext</span><span class="o">*</span> <span class="n">context</span> <span class="o">=</span> <span class="o">*</span><span class="n">it</span><span class="p">;</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">context</span><span class="o">-&gt;</span><span class="n">declaration</span><span class="p">().</span><span class="n">is</span><span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcGeometricRepresentationSubContext</span><span class="o">::</span><span class="n">Class</span><span class="p">()))</span> <span class="p">{</span>
+                        <span class="n">filtered_contexts</span><span class="o">-&gt;</span><span class="n">push</span><span class="p">(</span><span class="n">context</span><span class="p">);</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="k">for</span> <span class="p">(</span><span class="n">it</span> <span class="o">=</span> <span class="n">filtered_contexts</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">filtered_contexts</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">it</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcGeometricRepresentationContext</span><span class="o">*</span> <span class="n">context</span> <span class="o">=</span> <span class="o">*</span><span class="n">it</span><span class="p">;</span>
+
+                <span class="n">representations</span><span class="o">-&gt;</span><span class="n">push</span><span class="p">(</span><span class="n">context</span><span class="o">-&gt;</span><span class="n">RepresentationsInContext</span><span class="p">());</span>
+                <span class="k">try</span> <span class="p">{</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">context</span><span class="o">-&gt;</span><span class="n">hasPrecision</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">context</span><span class="o">-&gt;</span><span class="n">Precision</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">lowest_precision_encountered</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">lowest_precision_encountered</span> <span class="o">=</span> <span class="n">context</span><span class="o">-&gt;</span><span class="n">Precision</span><span class="p">();</span>
+                        <span class="n">any_precision_encountered</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+                    <span class="p">}</span>
+                <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+                <span class="p">}</span>
+
+                <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcGeometricRepresentationSubContext</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">sub_contexts</span> <span class="o">=</span> <span class="n">context</span><span class="o">-&gt;</span><span class="n">HasSubContexts</span><span class="p">();</span>
+                <span class="k">for</span> <span class="p">(</span><span class="n">jt</span> <span class="o">=</span> <span class="n">sub_contexts</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span> <span class="n">jt</span> <span class="o">!=</span> <span class="n">sub_contexts</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">jt</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">representations</span><span class="o">-&gt;</span><span class="n">push</span><span class="p">((</span><span class="o">*</span><span class="n">jt</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">RepresentationsInContext</span><span class="p">());</span>
+                <span class="p">}</span>
+                <span class="c1">// There is no need for full recursion as the following is governed by the schema:</span>
+                <span class="c1">// WR31: The parent context shall not be another geometric representation sub context.</span>
+            <span class="p">}</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">any_precision_encountered</span><span class="p">)</span> <span class="p">{</span>
+                <span class="c1">// Some arbitrary factor that has proven to work better for the models in the set of test files.</span>
+                <span class="n">lowest_precision_encountered</span> <span class="o">*=</span> <span class="mf">10.</span><span class="p">;</span>
+
+                <span class="n">lowest_precision_encountered</span> <span class="o">*=</span> <span class="n">unit_magnitude</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">lowest_precision_encountered</span> <span class="o">&lt;</span> <span class="mf">1.</span><span class="n">e</span><span class="mi">-7</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">Logger</span><span class="o">::</span><span class="n">Message</span><span class="p">(</span><span class="n">Logger</span><span class="o">::</span><span class="n">LOG_WARNING</span><span class="p">,</span> <span class="s">&quot;Precision lower than 0.0000001 meter not enforced&quot;</span><span class="p">);</span>
+                    <span class="n">kernel</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">Kernel</span><span class="o">::</span><span class="n">GV_PRECISION</span><span class="p">,</span> <span class="mf">1.</span><span class="n">e</span><span class="mi">-7</span><span class="p">);</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="n">kernel</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">Kernel</span><span class="o">::</span><span class="n">GV_PRECISION</span><span class="p">,</span> <span class="n">lowest_precision_encountered</span><span class="p">);</span>
+                <span class="p">}</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="n">kernel</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">Kernel</span><span class="o">::</span><span class="n">GV_PRECISION</span><span class="p">,</span> <span class="mf">1.</span><span class="n">e</span><span class="mi">-5</span><span class="p">);</span>
+            <span class="p">}</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">representations</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">Logger</span><span class="o">::</span><span class="n">Warning</span><span class="p">(</span><span class="s">&quot;No representations encountered in relevant contexts, using all&quot;</span><span class="p">);</span>
+                <span class="n">representations</span> <span class="o">=</span> <span class="n">ifc_file</span><span class="o">-&gt;</span><span class="n">instances_by_type</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">&gt;</span><span class="p">();</span>
+            <span class="p">}</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">representations</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">Logger</span><span class="o">::</span><span class="n">Warning</span><span class="p">(</span><span class="s">&quot;No representations encountered, aborting&quot;</span><span class="p">);</span>
+                <span class="n">initialization_outcome_</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="n">representation_iterator</span> <span class="o">=</span> <span class="n">representations</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span>
+                <span class="n">ifcproducts</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
+
+                <span class="n">done</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="n">total</span> <span class="o">=</span> <span class="n">representations</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">();</span>
+
+                <span class="k">if</span> <span class="p">(</span><span class="n">num_threads_</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">collect</span><span class="p">();</span>
+                    <span class="n">process_concurrently</span><span class="p">();</span>
+
+                    <span class="n">initialization_outcome_</span> <span class="o">=</span> <span class="o">!</span><span class="n">all_processed_elements_</span><span class="p">.</span><span class="n">empty</span><span class="p">();</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="n">initialization_outcome_</span> <span class="o">=</span> <span class="n">create</span><span class="p">();</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="k">return</span> <span class="o">*</span><span class="n">initialization_outcome_</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kt">void</span> <span class="nf">collect</span><span class="p">()</span> <span class="p">{</span>
+            <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">::</span><span class="n">list</span><span class="o">*</span> <span class="n">previous</span> <span class="o">=</span> <span class="k">nullptr</span><span class="p">;</span>
+            <span class="k">while</span> <span class="p">(</span><span class="k">auto</span> <span class="n">rp</span> <span class="o">=</span> <span class="n">try_get_next_task</span><span class="p">())</span> <span class="p">{</span>
+                <span class="c1">// Note that get_next_task() mutates the state of the iterator</span>
+                <span class="c1">// we use that capture all products that can be processed as</span>
+                <span class="c1">// part of this representation and then keep iterating until</span>
+                <span class="c1">// the underlying list of products changes.</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">ifcproducts</span><span class="p">.</span><span class="n">get</span><span class="p">()</span> <span class="o">!=</span> <span class="n">previous</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">previous</span> <span class="o">=</span> <span class="n">ifcproducts</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">ifcproducts</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">())</span> <span class="p">{</span>
+                        <span class="n">geometry_conversion_task</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;</span> <span class="n">t</span><span class="p">;</span>
+                        <span class="n">t</span><span class="p">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+                        <span class="n">t</span><span class="p">.</span><span class="n">representation</span> <span class="o">=</span> <span class="o">*</span><span class="n">representation_iterator</span><span class="p">;</span>
+                        <span class="n">t</span><span class="p">.</span><span class="n">products</span> <span class="o">=</span> <span class="n">ifcproducts</span><span class="p">;</span>
+                        <span class="n">tasks_</span><span class="p">.</span><span class="n">emplace_back</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+
+                <span class="k">if</span> <span class="p">(</span><span class="n">rp</span><span class="o">-&gt;</span><span class="n">which</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="n">boost</span><span class="o">::</span><span class="n">get</span><span class="o">&lt;</span><span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcException</span><span class="o">&gt;</span><span class="p">(</span><span class="o">*</span><span class="n">rp</span><span class="p">));</span>
+                <span class="p">}</span>
+
+                <span class="n">_nextShape</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="kt">void</span> <span class="nf">process_concurrently</span><span class="p">()</span> <span class="p">{</span>
+            <span class="kt">size_t</span> <span class="n">conc_threads</span> <span class="o">=</span> <span class="n">num_threads_</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">conc_threads</span> <span class="o">&gt;</span> <span class="n">tasks_</span><span class="p">.</span><span class="n">size</span><span class="p">())</span> <span class="p">{</span>
+                <span class="n">conc_threads</span> <span class="o">=</span> <span class="n">tasks_</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+            <span class="p">}</span>
+
+            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">Kernel</span><span class="p">)</span><span class="o">*&gt;</span> <span class="n">kernel_pool</span><span class="p">;</span>
+            <span class="n">kernel_pool</span><span class="p">.</span><span class="n">reserve</span><span class="p">(</span><span class="n">conc_threads</span><span class="p">);</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">conc_threads</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">kernel_pool</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="k">new</span> <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">Kernel</span><span class="p">)(</span><span class="n">kernel</span><span class="p">));</span>
+            <span class="p">}</span>
+
+            <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">future</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;&gt;</span> <span class="n">threadpool</span><span class="p">;</span>
+
+            <span class="kt">int</span> <span class="n">old_progress</span> <span class="o">=</span> <span class="mi">-1</span><span class="p">;</span>
+            <span class="kt">int</span> <span class="n">processed</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+            <span class="n">Logger</span><span class="o">::</span><span class="n">ProgressBar</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+            <span class="k">for</span> <span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span> <span class="nl">rep</span> <span class="p">:</span> <span class="n">tasks_</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">Kernel</span><span class="p">)</span><span class="o">*</span> <span class="n">K</span> <span class="o">=</span> <span class="k">nullptr</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">threadpool</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">kernel_pool</span><span class="p">.</span><span class="n">size</span><span class="p">())</span> <span class="p">{</span>
+                    <span class="n">K</span> <span class="o">=</span> <span class="n">kernel_pool</span><span class="p">[</span><span class="n">threadpool</span><span class="p">.</span><span class="n">size</span><span class="p">()];</span>
+                <span class="p">}</span>
+
+                <span class="k">while</span> <span class="p">(</span><span class="n">threadpool</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">==</span> <span class="n">conc_threads</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">threadpool</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">std</span><span class="o">::</span><span class="n">future</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">fu</span> <span class="o">=</span> <span class="n">threadpool</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+                        <span class="n">std</span><span class="o">::</span><span class="n">future_status</span> <span class="n">status</span><span class="p">;</span>
+                        <span class="n">status</span> <span class="o">=</span> <span class="n">fu</span><span class="p">.</span><span class="n">wait_for</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">seconds</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">status</span> <span class="o">==</span> <span class="n">std</span><span class="o">::</span><span class="n">future_status</span><span class="o">::</span><span class="n">ready</span><span class="p">)</span> <span class="p">{</span>
+                            <span class="n">fu</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
+
+                            <span class="n">processed</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+                            <span class="n">progress_</span> <span class="o">=</span> <span class="n">processed</span> <span class="o">*</span> <span class="mi">50</span> <span class="o">/</span> <span class="n">tasks_</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+                            <span class="k">if</span> <span class="p">(</span><span class="n">progress_</span> <span class="o">!=</span> <span class="n">old_progress</span><span class="p">)</span> <span class="p">{</span>
+                                <span class="n">Logger</span><span class="o">::</span><span class="n">ProgressBar</span><span class="p">(</span><span class="n">progress_</span><span class="p">);</span>
+                                <span class="n">old_progress</span> <span class="o">=</span> <span class="n">progress_</span><span class="p">;</span>
+                            <span class="p">}</span>
+
+                            <span class="n">std</span><span class="o">::</span><span class="n">swap</span><span class="p">(</span><span class="n">threadpool</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">threadpool</span><span class="p">.</span><span class="n">back</span><span class="p">());</span>
+                            <span class="n">threadpool</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span>
+                            <span class="n">std</span><span class="o">::</span><span class="n">swap</span><span class="p">(</span><span class="n">kernel_pool</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">kernel_pool</span><span class="p">.</span><span class="n">back</span><span class="p">());</span>
+                            <span class="n">K</span> <span class="o">=</span> <span class="n">kernel_pool</span><span class="p">.</span><span class="n">back</span><span class="p">();</span>
+                            <span class="k">break</span><span class="p">;</span>
+                        <span class="p">}</span> <span class="c1">// if</span>
+                    <span class="p">}</span>   <span class="c1">// for</span>
+                <span class="p">}</span>     <span class="c1">// while</span>
+
+                <span class="n">std</span><span class="o">::</span><span class="n">future</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span> <span class="n">fu</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">async</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">launch</span><span class="o">::</span><span class="n">async</span><span class="p">,</span> <span class="n">create_element</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">ref</span><span class="p">(</span><span class="n">settings</span><span class="p">),</span> <span class="o">&amp;</span><span class="n">rep</span><span class="p">);</span>
+                <span class="n">threadpool</span><span class="p">.</span><span class="n">emplace_back</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">move</span><span class="p">(</span><span class="n">fu</span><span class="p">));</span>
+            <span class="p">}</span>
+
+            <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">future</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="nl">fu</span> <span class="p">:</span> <span class="n">threadpool</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">fu</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
+
+                <span class="n">processed</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+                <span class="n">progress_</span> <span class="o">=</span> <span class="n">processed</span> <span class="o">*</span> <span class="mi">50</span> <span class="o">/</span> <span class="n">tasks_</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">progress_</span> <span class="o">!=</span> <span class="n">old_progress</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">Logger</span><span class="o">::</span><span class="n">ProgressBar</span><span class="p">(</span><span class="n">progress_</span><span class="p">);</span>
+                    <span class="n">old_progress</span> <span class="o">=</span> <span class="n">progress_</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="k">for</span> <span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span> <span class="nl">rep</span> <span class="p">:</span> <span class="n">tasks_</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">all_processed_elements_</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">all_processed_elements_</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">rep</span><span class="p">.</span><span class="n">elements</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">rep</span><span class="p">.</span><span class="n">elements</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+                <span class="n">all_processed_native_elements_</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">all_processed_native_elements_</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">rep</span><span class="p">.</span><span class="n">breps</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">rep</span><span class="p">.</span><span class="n">breps</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+            <span class="p">}</span>
+
+            <span class="n">task_result_iterator_</span> <span class="o">=</span> <span class="n">all_processed_elements_</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+            <span class="n">native_task_result_iterator_</span> <span class="o">=</span> <span class="n">all_processed_native_elements_</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+
+            <span class="n">Logger</span><span class="o">::</span><span class="n">Status</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\r</span><span class="s">Done creating geometry (&quot;</span> <span class="o">+</span> <span class="n">boost</span><span class="o">::</span><span class="n">lexical_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="n">all_processed_elements_</span><span class="p">.</span><span class="n">size</span><span class="p">())</span> <span class="o">+</span>
+                <span class="s">&quot; objects)                                &quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="kt">void</span> <span class="nf">compute_bounds</span><span class="p">(</span><span class="kt">bool</span> <span class="n">with_geometry</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">bounds_min_</span><span class="p">.</span><span class="n">SetCoord</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;::</span><span class="n">infinity</span><span class="p">());</span>
+                <span class="n">bounds_max_</span><span class="p">.</span><span class="n">SetCoord</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="o">-</span><span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;::</span><span class="n">infinity</span><span class="p">());</span>
+            <span class="p">}</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">with_geometry</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kt">size_t</span> <span class="n">num_created</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="k">do</span> <span class="p">{</span>
+                    <span class="n">IfcGeom</span><span class="o">::</span><span class="n">Element</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">geom_object</span> <span class="o">=</span> <span class="n">get</span><span class="p">();</span>
+                    <span class="k">const</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">TriangulationElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">o</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">TriangulationElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*&gt;</span><span class="p">(</span><span class="n">geom_object</span><span class="p">);</span>
+                    <span class="k">const</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">Representation</span><span class="o">::</span><span class="n">Triangulation</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span> <span class="o">=</span> <span class="n">o</span><span class="o">-&gt;</span><span class="n">geometry</span><span class="p">();</span>
+                    <span class="k">const</span> <span class="n">gp_XYZ</span><span class="o">&amp;</span> <span class="n">pos</span> <span class="o">=</span> <span class="n">o</span><span class="o">-&gt;</span><span class="n">transformation</span><span class="p">().</span><span class="n">data</span><span class="p">().</span><span class="n">TranslationPart</span><span class="p">();</span>
+
+                    <span class="k">for</span> <span class="p">(</span><span class="k">typename</span> <span class="nc">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;::</span><span class="n">const_iterator</span> <span class="n">it</span> <span class="o">=</span> <span class="n">mesh</span><span class="p">.</span><span class="n">verts</span><span class="p">().</span><span class="n">begin</span><span class="p">();</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">mesh</span><span class="p">.</span><span class="n">verts</span><span class="p">().</span><span class="n">end</span><span class="p">();)</span> <span class="p">{</span>
+                        <span class="k">const</span> <span class="n">P</span> <span class="n">x</span> <span class="o">=</span> <span class="o">*</span><span class="p">(</span><span class="n">it</span><span class="o">++</span><span class="p">);</span>
+                        <span class="k">const</span> <span class="n">P</span> <span class="n">y</span> <span class="o">=</span> <span class="o">*</span><span class="p">(</span><span class="n">it</span><span class="o">++</span><span class="p">);</span>
+                        <span class="k">const</span> <span class="n">P</span> <span class="n">z</span> <span class="o">=</span> <span class="o">*</span><span class="p">(</span><span class="n">it</span><span class="o">++</span><span class="p">);</span>
+
+                        <span class="n">bounds_min_</span><span class="p">.</span><span class="n">SetX</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="n">bounds_min_</span><span class="p">.</span><span class="n">X</span><span class="p">(),</span> <span class="n">pos</span><span class="p">.</span><span class="n">X</span><span class="p">()</span> <span class="o">+</span> <span class="n">x</span><span class="p">));</span>
+                        <span class="n">bounds_min_</span><span class="p">.</span><span class="n">SetY</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="n">bounds_min_</span><span class="p">.</span><span class="n">Y</span><span class="p">(),</span> <span class="n">pos</span><span class="p">.</span><span class="n">Y</span><span class="p">()</span> <span class="o">+</span> <span class="n">y</span><span class="p">));</span>
+                        <span class="n">bounds_min_</span><span class="p">.</span><span class="n">SetZ</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="n">bounds_min_</span><span class="p">.</span><span class="n">Z</span><span class="p">(),</span> <span class="n">pos</span><span class="p">.</span><span class="n">Z</span><span class="p">()</span> <span class="o">+</span> <span class="n">z</span><span class="p">));</span>
+                        <span class="n">bounds_max_</span><span class="p">.</span><span class="n">SetX</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">max</span><span class="p">(</span><span class="n">bounds_max_</span><span class="p">.</span><span class="n">X</span><span class="p">(),</span> <span class="n">pos</span><span class="p">.</span><span class="n">X</span><span class="p">()</span> <span class="o">+</span> <span class="n">x</span><span class="p">));</span>
+                        <span class="n">bounds_max_</span><span class="p">.</span><span class="n">SetY</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">max</span><span class="p">(</span><span class="n">bounds_max_</span><span class="p">.</span><span class="n">Y</span><span class="p">(),</span> <span class="n">pos</span><span class="p">.</span><span class="n">Y</span><span class="p">()</span> <span class="o">+</span> <span class="n">y</span><span class="p">));</span>
+                        <span class="n">bounds_max_</span><span class="p">.</span><span class="n">SetZ</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">max</span><span class="p">(</span><span class="n">bounds_max_</span><span class="p">.</span><span class="n">Z</span><span class="p">(),</span> <span class="n">pos</span><span class="p">.</span><span class="n">Z</span><span class="p">()</span> <span class="o">+</span> <span class="n">z</span><span class="p">));</span>
+                    <span class="p">}</span>
+                <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="o">++</span><span class="n">num_created</span><span class="p">,</span> <span class="n">next</span><span class="p">());</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">products</span> <span class="o">=</span> <span class="n">ifc_file</span><span class="o">-&gt;</span><span class="n">instances_by_type</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">&gt;</span><span class="p">();</span>
+                <span class="k">for</span> <span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">it</span> <span class="n">iter</span> <span class="o">=</span> <span class="n">products</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span> <span class="n">iter</span> <span class="o">!=</span> <span class="n">products</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">iter</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span> <span class="n">product</span> <span class="o">=</span> <span class="o">*</span><span class="n">iter</span><span class="p">;</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">product</span><span class="o">-&gt;</span><span class="n">hasObjectPlacement</span><span class="p">())</span> <span class="p">{</span>
+                        <span class="c1">// Use a fresh trsf every time in order to prevent the result to be concatenated</span>
+                        <span class="n">gp_Trsf</span> <span class="n">trsf</span><span class="p">;</span>
+                        <span class="kt">bool</span> <span class="n">success</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+
+                        <span class="k">try</span> <span class="p">{</span>
+                            <span class="n">success</span> <span class="o">=</span> <span class="n">kernel</span><span class="p">.</span><span class="n">convert</span><span class="p">(</span><span class="n">product</span><span class="o">-&gt;</span><span class="n">ObjectPlacement</span><span class="p">(),</span> <span class="n">trsf</span><span class="p">);</span>
+                        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                            <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+                        <span class="p">}</span> <span class="k">catch</span> <span class="p">(...)</span> <span class="p">{</span>
+                            <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="s">&quot;Failed to construct placement&quot;</span><span class="p">);</span>
+                        <span class="p">}</span>
+
+                        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">success</span><span class="p">)</span> <span class="p">{</span>
+                            <span class="k">continue</span><span class="p">;</span>
+                        <span class="p">}</span>
+
+                        <span class="k">const</span> <span class="n">gp_XYZ</span><span class="o">&amp;</span> <span class="n">pos</span> <span class="o">=</span> <span class="n">trsf</span><span class="p">.</span><span class="n">TranslationPart</span><span class="p">();</span>
+                        <span class="n">bounds_min_</span><span class="p">.</span><span class="n">SetX</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="n">bounds_min_</span><span class="p">.</span><span class="n">X</span><span class="p">(),</span> <span class="n">pos</span><span class="p">.</span><span class="n">X</span><span class="p">()));</span>
+                        <span class="n">bounds_min_</span><span class="p">.</span><span class="n">SetY</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="n">bounds_min_</span><span class="p">.</span><span class="n">Y</span><span class="p">(),</span> <span class="n">pos</span><span class="p">.</span><span class="n">Y</span><span class="p">()));</span>
+                        <span class="n">bounds_min_</span><span class="p">.</span><span class="n">SetZ</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="n">bounds_min_</span><span class="p">.</span><span class="n">Z</span><span class="p">(),</span> <span class="n">pos</span><span class="p">.</span><span class="n">Z</span><span class="p">()));</span>
+                        <span class="n">bounds_max_</span><span class="p">.</span><span class="n">SetX</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">max</span><span class="p">(</span><span class="n">bounds_max_</span><span class="p">.</span><span class="n">X</span><span class="p">(),</span> <span class="n">pos</span><span class="p">.</span><span class="n">X</span><span class="p">()));</span>
+                        <span class="n">bounds_max_</span><span class="p">.</span><span class="n">SetY</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">max</span><span class="p">(</span><span class="n">bounds_max_</span><span class="p">.</span><span class="n">Y</span><span class="p">(),</span> <span class="n">pos</span><span class="p">.</span><span class="n">Y</span><span class="p">()));</span>
+                        <span class="n">bounds_max_</span><span class="p">.</span><span class="n">SetZ</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">max</span><span class="p">(</span><span class="n">bounds_max_</span><span class="p">.</span><span class="n">Z</span><span class="p">(),</span> <span class="n">pos</span><span class="p">.</span><span class="n">Z</span><span class="p">()));</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="kt">int</span> <span class="nf">progress</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">num_threads_</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="mi">100</span> <span class="o">*</span> <span class="n">done</span> <span class="o">/</span> <span class="n">total</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="n">progress_</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">getUnitName</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">unit_name</span><span class="p">;</span> <span class="p">}</span>
+
+        <span class="kt">double</span> <span class="n">getUnitMagnitude</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">unit_magnitude</span><span class="p">;</span> <span class="p">}</span>
+
+        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">getLog</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">Logger</span><span class="o">::</span><span class="n">GetLog</span><span class="p">();</span> <span class="p">}</span>
+
+        <span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcFile</span><span class="o">*</span> <span class="n">file</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">ifc_file</span><span class="p">;</span> <span class="p">}</span>
+
+        <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">filter_t</span><span class="o">&gt;&amp;</span> <span class="n">filters</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">filters_</span><span class="p">;</span> <span class="p">}</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">filter_t</span><span class="o">&gt;&amp;</span> <span class="n">filters</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">filters_</span><span class="p">;</span> <span class="p">}</span>
+
+        <span class="k">const</span> <span class="n">gp_XYZ</span><span class="o">&amp;</span> <span class="n">bounds_min</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">bounds_min_</span><span class="p">;</span> <span class="p">}</span>
+        <span class="k">const</span> <span class="n">gp_XYZ</span><span class="o">&amp;</span> <span class="n">bounds_max</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">bounds_max_</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="k">private</span><span class="o">:</span>
+        <span class="c1">// Move to the next IfcRepresentation</span>
+        <span class="kt">void</span> <span class="n">_nextShape</span><span class="p">()</span> <span class="p">{</span>
+            <span class="c1">// In order to conserve memory and reduce cache insertion times, the cache is</span>
+            <span class="c1">// cleared after an arbitrary number of processed representations. This has been</span>
+            <span class="c1">// benchmarked extensively: https://github.com/IfcOpenShell/IfcOpenShell/pull/47</span>
+            <span class="k">static</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">clear_interval</span> <span class="o">=</span> <span class="mi">64</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">done</span> <span class="o">%</span> <span class="n">clear_interval</span> <span class="o">==</span> <span class="n">clear_interval</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">kernel</span><span class="p">.</span><span class="n">purge_cache</span><span class="p">();</span>
+            <span class="p">}</span>
+            <span class="n">ifcproducts</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
+            <span class="o">++</span> <span class="n">representation_iterator</span><span class="p">;</span>
+            <span class="o">++</span> <span class="n">done</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kt">bool</span> <span class="n">geometry_reuse_ok_for_current_representation_</span><span class="p">;</span>
+
+        <span class="kt">bool</span> <span class="nf">reuse_ok_</span><span class="p">(</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span><span class="o">&amp;</span> <span class="n">products</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// With world coords enabled, object transformations are directly applied to</span>
+            <span class="c1">// the BRep. There is no way to re-use the geometry for multiple products.</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">USE_WORLD_COORDS</span><span class="p">))</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="n">std</span><span class="o">::</span><span class="n">set</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcMaterial</span><span class="o">*&gt;</span> <span class="n">associated_single_materials</span><span class="p">;</span>
+
+            <span class="k">for</span> <span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">it</span> <span class="n">it</span> <span class="o">=</span> <span class="n">products</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">products</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">it</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span> <span class="n">product</span> <span class="o">=</span> <span class="o">*</span><span class="n">it</span><span class="p">;</span>
+
+                <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">DISABLE_OPENING_SUBTRACTIONS</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">kernel</span><span class="p">.</span><span class="n">find_openings</span><span class="p">(</span><span class="n">product</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">())</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+                <span class="p">}</span>
+
+                <span class="k">if</span> <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">APPLY_LAYERSETS</span><span class="p">))</span> <span class="p">{</span>
+                    <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRelAssociates</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">associations</span> <span class="o">=</span> <span class="n">product</span><span class="o">-&gt;</span><span class="n">HasAssociations</span><span class="p">();</span>
+                    <span class="k">for</span> <span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRelAssociates</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">it</span> <span class="n">jt</span> <span class="o">=</span> <span class="n">associations</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span> <span class="n">jt</span> <span class="o">!=</span> <span class="n">associations</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">jt</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRelAssociatesMaterial</span><span class="o">*</span> <span class="n">assoc</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">jt</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRelAssociatesMaterial</span><span class="o">&gt;</span><span class="p">();</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">assoc</span><span class="p">)</span> <span class="p">{</span>
+                            <span class="k">if</span> <span class="p">(</span><span class="n">assoc</span><span class="o">-&gt;</span><span class="n">RelatingMaterial</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">declaration</span><span class="p">().</span><span class="n">is</span><span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcMaterialLayerSetUsage</span><span class="o">::</span><span class="n">Class</span><span class="p">()))</span> <span class="p">{</span>
+                                <span class="c1">// TODO: Check whether single layer?</span>
+                                <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+                            <span class="p">}</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+
+                <span class="c1">// Note that this can be a nullptr (!), but the fact that set size should be one still holds</span>
+                <span class="n">associated_single_materials</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">kernel</span><span class="p">.</span><span class="n">get_single_material_association</span><span class="p">(</span><span class="n">product</span><span class="p">));</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">associated_single_materials</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="k">return</span> <span class="n">associated_single_materials</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">boost</span><span class="o">::</span><span class="n">variant</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">*</span><span class="p">,</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*&gt;</span><span class="p">,</span><span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcException</span><span class="o">&gt;&gt;</span> <span class="n">try_get_next_task</span><span class="p">()</span> <span class="p">{</span>
+            <span class="n">boost</span><span class="o">::</span><span class="n">variant</span><span class="o">&lt;</span>
+                <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">*</span><span class="p">,</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*&gt;</span><span class="p">,</span>
+                <span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcException</span>
+            <span class="o">&gt;</span> <span class="n">r</span><span class="p">;</span>
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="k">auto</span> <span class="n">p</span> <span class="o">=</span> <span class="n">get_next_task</span><span class="p">();</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">r</span> <span class="o">=</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="n">boost</span><span class="o">::</span><span class="n">none</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcException</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">r</span> <span class="o">=</span> <span class="n">e</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(...)</span> <span class="p">{</span>
+                <span class="n">r</span> <span class="o">=</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcException</span><span class="p">(</span><span class="s">&quot;Unknown error&quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">*</span><span class="p">,</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*&gt;&gt;</span> <span class="n">get_next_task</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(;;)</span> <span class="p">{</span>
+                <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">*</span> <span class="n">representation</span><span class="p">;</span>
+
+                <span class="k">if</span> <span class="p">(</span><span class="n">representation_iterator</span> <span class="o">==</span> <span class="n">representations</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">())</span> <span class="p">{</span>
+                    <span class="n">representations</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
+                    <span class="k">return</span> <span class="n">boost</span><span class="o">::</span><span class="n">none</span><span class="p">;</span> <span class="c1">// reached the end of our list of representations</span>
+                <span class="p">}</span>
+                <span class="n">representation</span> <span class="o">=</span> <span class="o">*</span><span class="n">representation_iterator</span><span class="p">;</span>
+
+                <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">ifcproducts</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="c1">// Init. the list of filtered IfcProducts for this representation</span>
+                    <span class="n">ifcproducts</span> <span class="o">=</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span><span class="p">(</span><span class="k">new</span> <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">::</span><span class="n">list</span><span class="p">);</span>
+                    <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">unfiltered_products</span> <span class="o">=</span> <span class="n">kernel</span><span class="p">.</span><span class="n">products_represented_by</span><span class="p">(</span><span class="n">representation</span><span class="p">);</span>
+                    <span class="c1">// Include only the desired products for processing.</span>
+                    <span class="k">for</span> <span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">it</span> <span class="n">jt</span> <span class="o">=</span> <span class="n">unfiltered_products</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span> <span class="n">jt</span> <span class="o">!=</span> <span class="n">unfiltered_products</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">jt</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span> <span class="n">prod</span> <span class="o">=</span> <span class="o">*</span><span class="n">jt</span><span class="p">;</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">boost</span><span class="o">::</span><span class="n">all</span><span class="p">(</span><span class="n">filters_</span><span class="p">,</span> <span class="n">filter_match</span><span class="p">(</span><span class="n">prod</span><span class="p">)))</span> <span class="p">{</span>
+                            <span class="n">ifcproducts</span><span class="o">-&gt;</span><span class="n">push</span><span class="p">(</span><span class="n">prod</span><span class="p">);</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+
+                    <span class="k">if</span> <span class="p">(</span><span class="n">ifcproducts</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">_nextShape</span><span class="p">();</span>
+                        <span class="k">continue</span><span class="p">;</span>
+                    <span class="p">}</span>
+
+                    <span class="n">geometry_reuse_ok_for_current_representation_</span> <span class="o">=</span> <span class="n">reuse_ok_</span><span class="p">(</span><span class="n">ifcproducts</span><span class="p">);</span>
+
+                    <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentationMap</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">ptr</span> <span class="n">maps</span> <span class="o">=</span> <span class="n">representation</span><span class="o">-&gt;</span><span class="n">RepresentationMap</span><span class="p">();</span>
+
+                    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">geometry_reuse_ok_for_current_representation_</span> <span class="o">&amp;&amp;</span> <span class="n">maps</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="c1">// unfiltered_products contains products represented by this representation by means of mapped items.</span>
+                        <span class="c1">// For example because of openings applied to products, reuse might not be acceptable and then the</span>
+                        <span class="c1">// products will be processed by means of their immediate representation and not the mapped representation.</span>
+
+                        <span class="c1">// IfcRepresentationMaps are also used for IfcTypeProducts, so an additional check is performed whether the map</span>
+                        <span class="c1">// is indeed used by IfcMappedItems.</span>
+                        <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentationMap</span><span class="o">*</span> <span class="n">map</span> <span class="o">=</span> <span class="o">*</span><span class="n">maps</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">map</span><span class="o">-&gt;</span><span class="n">MapUsage</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                            <span class="n">_nextShape</span><span class="p">();</span>
+                            <span class="k">continue</span><span class="p">;</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+
+                    <span class="c1">// Check if this represenation has (or will be) processed as part its mapped representation</span>
+                    <span class="kt">bool</span> <span class="n">representation_processed_as_mapped_item</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+                    <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRepresentation</span><span class="o">*</span> <span class="n">representation_mapped_to</span> <span class="o">=</span> <span class="n">kernel</span><span class="p">.</span><span class="n">representation_mapped_to</span><span class="p">(</span><span class="n">representation</span><span class="p">);</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">representation_mapped_to</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">representation_processed_as_mapped_item</span> <span class="o">=</span> <span class="n">geometry_reuse_ok_for_current_representation_</span> <span class="o">&amp;&amp;</span> <span class="p">(</span>
+                            <span class="n">ok_mapped_representations</span><span class="o">-&gt;</span><span class="n">contains</span><span class="p">(</span><span class="n">representation_mapped_to</span><span class="p">)</span> <span class="o">||</span> <span class="n">reuse_ok_</span><span class="p">(</span><span class="n">kernel</span><span class="p">.</span><span class="n">products_represented_by</span><span class="p">(</span><span class="n">representation_mapped_to</span><span class="p">)));</span>
+                    <span class="p">}</span>
+
+                    <span class="k">if</span> <span class="p">(</span><span class="n">representation_processed_as_mapped_item</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">ok_mapped_representations</span><span class="o">-&gt;</span><span class="n">push</span><span class="p">(</span><span class="n">representation_mapped_to</span><span class="p">);</span>
+                        <span class="n">_nextShape</span><span class="p">();</span>
+                        <span class="k">continue</span><span class="p">;</span>
+                    <span class="p">}</span>
+
+                    <span class="n">ifcproduct_iterator</span> <span class="o">=</span> <span class="n">ifcproducts</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span>
+                <span class="p">}</span>
+
+                <span class="c1">// Have we reached the end of our list of IfcProducts?</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">ifcproduct_iterator</span> <span class="o">==</span> <span class="n">ifcproducts</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">())</span> <span class="p">{</span>
+                    <span class="n">_nextShape</span><span class="p">();</span>
+                    <span class="k">continue</span><span class="p">;</span>
+                <span class="p">}</span>
+
+                <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span> <span class="n">product</span> <span class="o">=</span> <span class="o">*</span><span class="n">ifcproduct_iterator</span><span class="p">;</span>
+
+
+                <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">make_pair</span><span class="p">(</span><span class="n">representation</span><span class="p">,</span> <span class="n">product</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="n">BRepElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">create_shape_model_for_next_entity</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(;;)</span> <span class="p">{</span>
+                <span class="k">auto</span> <span class="n">rp</span> <span class="o">=</span> <span class="n">get_next_task</span><span class="p">();</span>
+                <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">rp</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="k">nullptr</span><span class="p">;</span>
+                <span class="p">}</span>
+                <span class="k">auto</span> <span class="n">representation</span> <span class="o">=</span> <span class="n">rp</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">;</span>
+                <span class="k">auto</span> <span class="n">product</span> <span class="o">=</span> <span class="n">rp</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">;</span>
+
+                <span class="n">Logger</span><span class="o">::</span><span class="n">SetProduct</span><span class="p">(</span><span class="n">product</span><span class="p">);</span>
+
+                <span class="n">BRepElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">element</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">ifcproduct_iterator</span> <span class="o">==</span> <span class="n">ifcproducts</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">()</span> <span class="o">||</span> <span class="o">!</span><span class="n">geometry_reuse_ok_for_current_representation_</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">element</span> <span class="o">=</span> <span class="n">kernel</span><span class="p">.</span><span class="n">create_brep_for_representation_and_product</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="n">representation</span><span class="p">,</span> <span class="n">product</span><span class="p">);</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="n">element</span> <span class="o">=</span> <span class="n">kernel</span><span class="p">.</span><span class="n">create_brep_for_processed_representation</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="n">representation</span><span class="p">,</span> <span class="n">product</span><span class="p">,</span> <span class="n">current_shape_model</span><span class="p">);</span>
+                <span class="p">}</span>
+
+                <span class="n">Logger</span><span class="o">::</span><span class="n">SetProduct</span><span class="p">(</span><span class="n">boost</span><span class="o">::</span><span class="n">none</span><span class="p">);</span>
+
+                <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">element</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">_nextShape</span><span class="p">();</span>
+                    <span class="k">continue</span><span class="p">;</span>
+                <span class="p">}</span>
+
+                <span class="k">return</span> <span class="n">element</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="kt">void</span> <span class="n">free_shapes</span><span class="p">()</span> <span class="p">{</span>
+            <span class="c1">// Free all possible representations of the current geometrical entity</span>
+            <span class="k">delete</span> <span class="n">current_triangulation</span><span class="p">;</span>
+            <span class="n">current_triangulation</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="k">delete</span> <span class="n">current_serialization</span><span class="p">;</span>
+            <span class="n">current_serialization</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="k">delete</span> <span class="n">current_shape_model</span><span class="p">;</span>
+            <span class="n">current_shape_model</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">}</span>
+
+    <span class="k">public</span><span class="o">:</span>
+        <span class="c1">//IfcSchema::IfcProduct* peek_next() const</span>
+        <span class="c1">//{</span>
+        <span class="c1">//    if (ifcproducts &amp;&amp; ifcproduct_iterator + 1 != ifcproducts-&gt;end()){</span>
+        <span class="c1">//        return *(ifcproduct_iterator + 1);</span>
+        <span class="c1">//    } else {</span>
+        <span class="c1">//        return 0;</span>
+        <span class="c1">//    }</span>
+        <span class="c1">//}</span>
+
+        <span class="c1">//void skip_next() { if (ifcproducts) { ++ifcproduct_iterator; } }</span>
+
+        <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">next</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">num_threads_</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">task_result_iterator_</span><span class="o">++</span><span class="p">;</span>
+                <span class="n">native_task_result_iterator_</span><span class="o">++</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">task_result_iterator_</span> <span class="o">==</span> <span class="n">all_processed_elements_</span><span class="p">.</span><span class="n">end</span><span class="p">())</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="k">nullptr</span><span class="p">;</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="p">(</span><span class="o">*</span><span class="n">task_result_iterator_</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">product</span><span class="p">();</span>
+                <span class="p">}</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="c1">// Increment the iterator over the list of products using the current</span>
+                <span class="c1">// shape representation</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">ifcproducts</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="o">++</span><span class="n">ifcproduct_iterator</span><span class="p">;</span>
+                <span class="p">}</span>
+
+                <span class="k">return</span> <span class="n">create</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="n">Element</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">get</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="c1">// TODO: Test settings and throw</span>
+            <span class="n">Element</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">ret</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">num_threads_</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">ret</span> <span class="o">=</span> <span class="o">*</span><span class="n">task_result_iterator_</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">current_triangulation</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">ret</span> <span class="o">=</span> <span class="n">current_triangulation</span><span class="p">;</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">current_serialization</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">ret</span> <span class="o">=</span> <span class="n">current_serialization</span><span class="p">;</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">current_shape_model</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">ret</span> <span class="o">=</span> <span class="n">current_shape_model</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="c1">// If we want to organize the element considering their hierarchy</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">SEARCH_FLOOR</span><span class="p">))</span>
+            <span class="p">{</span>
+                <span class="c1">// We are going to build a vector with the element parents.</span>
+                <span class="c1">// First, create the parent vector</span>
+                <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">Element</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*&gt;</span> <span class="n">parents</span><span class="p">;</span>
+
+                <span class="c1">// if the element has a parent</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">ret</span><span class="o">-&gt;</span><span class="n">parent_id</span><span class="p">()</span> <span class="o">!=</span> <span class="mi">-1</span><span class="p">)</span>
+                <span class="p">{</span>
+                    <span class="k">const</span> <span class="n">IfcGeom</span><span class="o">::</span><span class="n">Element</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">parent_object</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+                    <span class="kt">bool</span> <span class="n">hasParent</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+
+                    <span class="c1">// get the parent</span>
+                    <span class="k">try</span> <span class="p">{</span>
+                        <span class="n">parent_object</span> <span class="o">=</span> <span class="n">get_object</span><span class="p">(</span><span class="n">ret</span><span class="o">-&gt;</span><span class="n">parent_id</span><span class="p">());</span>
+                    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+                        <span class="n">hasParent</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+                    <span class="p">}</span>
+
+                    <span class="c1">// Add the previously found parent to the vector</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">hasParent</span><span class="p">)</span> <span class="n">parents</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">parents</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">parent_object</span><span class="p">);</span>
+
+                    <span class="c1">// We need to find all the parents</span>
+                    <span class="k">while</span> <span class="p">(</span><span class="n">parent_object</span> <span class="o">!=</span> <span class="nb">NULL</span> <span class="o">&amp;&amp;</span> <span class="n">hasParent</span> <span class="o">&amp;&amp;</span> <span class="n">parent_object</span><span class="o">-&gt;</span><span class="n">parent_id</span><span class="p">()</span> <span class="o">!=</span> <span class="mi">-1</span><span class="p">)</span>
+                    <span class="p">{</span>
+                        <span class="c1">// Find the next parent</span>
+                        <span class="k">try</span> <span class="p">{</span>
+                            <span class="n">parent_object</span> <span class="o">=</span> <span class="n">get_object</span><span class="p">(</span><span class="n">parent_object</span><span class="o">-&gt;</span><span class="n">parent_id</span><span class="p">());</span>
+                        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                            <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+                            <span class="n">hasParent</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+                        <span class="p">}</span>
+
+                        <span class="c1">// Add the previously found parent to the vector</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">hasParent</span><span class="p">)</span> <span class="n">parents</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">parents</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">parent_object</span><span class="p">);</span>
+
+                        <span class="n">hasParent</span> <span class="o">=</span> <span class="n">hasParent</span> <span class="o">&amp;&amp;</span> <span class="n">parent_object</span><span class="o">-&gt;</span><span class="n">parent_id</span><span class="p">()</span> <span class="o">!=</span> <span class="mi">-1</span><span class="p">;</span>
+                    <span class="p">}</span>
+
+                    <span class="c1">// when done push the parent list in the Element object</span>
+                    <span class="n">ret</span><span class="o">-&gt;</span><span class="n">SetParents</span><span class="p">(</span><span class="n">parents</span><span class="p">);</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="k">return</span> <span class="n">ret</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="n">BRepElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">get_native</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="c1">// TODO: Test settings and throw</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">num_threads_</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="o">*</span><span class="n">native_task_result_iterator_</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="n">current_shape_model</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">const</span> <span class="n">Element</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">get_object</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">gp_Trsf</span> <span class="n">trsf</span><span class="p">;</span>
+            <span class="kt">int</span> <span class="n">parent_id</span> <span class="o">=</span> <span class="mi">-1</span><span class="p">;</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">instance_type</span><span class="p">,</span> <span class="n">product_name</span><span class="p">,</span> <span class="n">product_guid</span><span class="p">;</span>
+            <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">*</span> <span class="n">ifc_product</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">ifc_entity</span> <span class="o">=</span> <span class="n">ifc_file</span><span class="o">-&gt;</span><span class="n">instance_by_id</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
+                <span class="n">instance_type</span> <span class="o">=</span> <span class="n">ifc_entity</span><span class="o">-&gt;</span><span class="n">declaration</span><span class="p">().</span><span class="n">name</span><span class="p">();</span>
+
+                <span class="k">if</span> <span class="p">(</span><span class="n">ifc_entity</span><span class="o">-&gt;</span><span class="n">declaration</span><span class="p">().</span><span class="n">is</span><span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRoot</span><span class="o">::</span><span class="n">Class</span><span class="p">()))</span> <span class="p">{</span>
+                    <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRoot</span><span class="o">*</span> <span class="n">ifc_root</span> <span class="o">=</span> <span class="n">ifc_entity</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcRoot</span><span class="o">&gt;</span><span class="p">();</span>
+                    <span class="n">product_guid</span> <span class="o">=</span> <span class="n">ifc_root</span><span class="o">-&gt;</span><span class="n">GlobalId</span><span class="p">();</span>
+                    <span class="n">product_name</span> <span class="o">=</span> <span class="n">ifc_root</span><span class="o">-&gt;</span><span class="n">hasName</span><span class="p">()</span> <span class="o">?</span> <span class="n">ifc_root</span><span class="o">-&gt;</span><span class="n">Name</span><span class="p">()</span> <span class="o">:</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
+                <span class="p">}</span>
+
+                <span class="k">if</span> <span class="p">(</span><span class="n">ifc_entity</span><span class="o">-&gt;</span><span class="n">declaration</span><span class="p">().</span><span class="n">is</span><span class="p">(</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">::</span><span class="n">Class</span><span class="p">()))</span> <span class="p">{</span>
+                    <span class="n">ifc_product</span> <span class="o">=</span> <span class="n">ifc_entity</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcProduct</span><span class="o">&gt;</span><span class="p">();</span>
+                    <span class="n">parent_id</span> <span class="o">=</span> <span class="mi">-1</span><span class="p">;</span>
+                    <span class="k">try</span> <span class="p">{</span>
+                        <span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcObjectDefinition</span><span class="o">*</span> <span class="n">parent_object</span> <span class="o">=</span> <span class="n">kernel</span><span class="p">.</span><span class="n">get_decomposing_entity</span><span class="p">(</span><span class="n">ifc_product</span><span class="p">)</span><span class="o">-&gt;</span><span class="k">template</span> <span class="n">as</span><span class="o">&lt;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcObjectDefinition</span><span class="o">&gt;</span><span class="p">();</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">parent_object</span><span class="p">)</span> <span class="p">{</span>
+                            <span class="n">parent_id</span> <span class="o">=</span> <span class="n">parent_object</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">().</span><span class="n">id</span><span class="p">();</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+                    <span class="p">}</span> <span class="k">catch</span> <span class="p">(...)</span> <span class="p">{</span>
+                        <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="s">&quot;Failed to find decomposing entity&quot;</span><span class="p">);</span>
+                    <span class="p">}</span>
+
+                    <span class="k">try</span> <span class="p">{</span>
+                        <span class="n">kernel</span><span class="p">.</span><span class="n">convert</span><span class="p">(</span><span class="n">ifc_product</span><span class="o">-&gt;</span><span class="n">ObjectPlacement</span><span class="p">(),</span> <span class="n">trsf</span><span class="p">);</span>
+                    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+                    <span class="p">}</span> <span class="k">catch</span> <span class="p">(...)</span> <span class="p">{</span>
+                        <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="s">&quot;Failed to construct placement&quot;</span><span class="p">);</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">Standard_Failure</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">GetMessageString</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">GetMessageString</span><span class="p">()))</span> <span class="p">{</span>
+                    <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">GetMessageString</span><span class="p">());</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="s">&quot;Unknown error returning product&quot;</span><span class="p">);</span>
+                <span class="p">}</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(...)</span> <span class="p">{</span>
+                <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="s">&quot;Unknown error returning product&quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+
+            <span class="n">ElementSettings</span> <span class="n">element_settings</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="n">unit_magnitude</span><span class="p">,</span> <span class="n">instance_type</span><span class="p">);</span>
+
+            <span class="n">Element</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">ifc_object</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Element</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;</span><span class="p">(</span><span class="n">element_settings</span><span class="p">,</span> <span class="n">id</span><span class="p">,</span> <span class="n">parent_id</span><span class="p">,</span> <span class="n">product_name</span><span class="p">,</span> <span class="n">instance_type</span><span class="p">,</span> <span class="n">product_guid</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="n">trsf</span><span class="p">,</span> <span class="n">ifc_product</span><span class="p">);</span>
+            <span class="k">return</span> <span class="n">ifc_object</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="n">IfcUtil</span><span class="o">::</span><span class="n">IfcBaseClass</span><span class="o">*</span> <span class="n">create</span><span class="p">()</span> <span class="p">{</span>
+            <span class="n">IfcGeom</span><span class="o">::</span><span class="n">BRepElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">next_shape_model</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="n">IfcGeom</span><span class="o">::</span><span class="n">SerializedElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">next_serialization</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="n">IfcGeom</span><span class="o">::</span><span class="n">TriangulationElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;*</span> <span class="n">next_triangulation</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="n">next_shape_model</span> <span class="o">=</span> <span class="n">create_shape_model_for_next_entity</span><span class="p">();</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">Standard_Failure</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">GetMessageString</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">strlen</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">GetMessageString</span><span class="p">()))</span> <span class="p">{</span>
+                    <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">GetMessageString</span><span class="p">());</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="s">&quot;Unknown error creating geometry&quot;</span><span class="p">);</span>
+                <span class="p">}</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(...)</span> <span class="p">{</span>
+                <span class="n">Logger</span><span class="o">::</span><span class="n">Error</span><span class="p">(</span><span class="s">&quot;Unknown error creating geometry&quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">next_shape_model</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">USE_BREP_DATA</span><span class="p">))</span> <span class="p">{</span>
+                    <span class="k">try</span> <span class="p">{</span>
+                        <span class="n">next_serialization</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SerializedElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;</span><span class="p">(</span><span class="o">*</span><span class="n">next_shape_model</span><span class="p">);</span>
+                    <span class="p">}</span> <span class="k">catch</span> <span class="p">(...)</span> <span class="p">{</span>
+                        <span class="n">Logger</span><span class="o">::</span><span class="n">Message</span><span class="p">(</span><span class="n">Logger</span><span class="o">::</span><span class="n">LOG_ERROR</span><span class="p">,</span> <span class="s">&quot;Getting a serialized element from model failed.&quot;</span><span class="p">);</span>
+                    <span class="p">}</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">DISABLE_TRIANGULATION</span><span class="p">))</span> <span class="p">{</span>
+                    <span class="k">try</span> <span class="p">{</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">ifcproduct_iterator</span> <span class="o">==</span> <span class="n">ifcproducts</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">()</span> <span class="o">||</span> <span class="o">!</span><span class="n">geometry_reuse_ok_for_current_representation_</span><span class="p">)</span> <span class="p">{</span>
+                            <span class="n">next_triangulation</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TriangulationElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;</span><span class="p">(</span><span class="o">*</span><span class="n">next_shape_model</span><span class="p">);</span>
+                        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                            <span class="n">next_triangulation</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TriangulationElement</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span> <span class="n">PP</span><span class="o">&gt;</span><span class="p">(</span><span class="o">*</span><span class="n">next_shape_model</span><span class="p">,</span> <span class="n">current_triangulation</span><span class="o">-&gt;</span><span class="n">geometry_pointer</span><span class="p">());</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span> <span class="k">catch</span> <span class="p">(...)</span> <span class="p">{</span>
+                        <span class="n">Logger</span><span class="o">::</span><span class="n">Message</span><span class="p">(</span><span class="n">Logger</span><span class="o">::</span><span class="n">LOG_ERROR</span><span class="p">,</span> <span class="s">&quot;Getting a triangulation element from model failed.&quot;</span><span class="p">);</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="n">free_shapes</span><span class="p">();</span>
+
+            <span class="n">current_shape_model</span> <span class="o">=</span> <span class="n">next_shape_model</span><span class="p">;</span>
+            <span class="n">current_serialization</span> <span class="o">=</span> <span class="n">next_serialization</span><span class="p">;</span>
+            <span class="n">current_triangulation</span> <span class="o">=</span> <span class="n">next_triangulation</span><span class="p">;</span>
+
+            <span class="k">return</span> <span class="n">next_shape_model</span> <span class="o">?</span> <span class="n">next_shape_model</span><span class="o">-&gt;</span><span class="n">product</span><span class="p">()</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="k">private</span><span class="o">:</span>
+        <span class="kt">void</span> <span class="n">_initialize</span><span class="p">()</span> <span class="p">{</span>
+            <span class="n">current_triangulation</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="n">current_shape_model</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="n">current_serialization</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+            <span class="n">unit_name</span> <span class="o">=</span> <span class="s">&quot;METER&quot;</span><span class="p">;</span>
+            <span class="n">unit_magnitude</span> <span class="o">=</span> <span class="mf">1.f</span><span class="p">;</span>
+
+            <span class="n">kernel</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">Kernel</span><span class="o">::</span><span class="n">GV_MAX_FACES_TO_ORIENT</span><span class="p">,</span> <span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">SEW_SHELLS</span><span class="p">)</span> <span class="o">?</span> <span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;::</span><span class="n">infinity</span><span class="p">()</span> <span class="o">:</span> <span class="mi">-1</span><span class="p">);</span>
+            <span class="n">kernel</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">Kernel</span><span class="o">::</span><span class="n">GV_DIMENSIONALITY</span><span class="p">,</span> <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">INCLUDE_CURVES</span><span class="p">)</span>
+                <span class="o">?</span> <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">EXCLUDE_SOLIDS_AND_SURFACES</span><span class="p">)</span> <span class="o">?</span> <span class="mf">-1.</span> <span class="o">:</span> <span class="mf">0.</span><span class="p">)</span> <span class="o">:</span> <span class="o">+</span><span class="mf">1.</span><span class="p">));</span>
+            <span class="n">kernel</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">Kernel</span><span class="o">::</span><span class="n">GV_LAYERSET_FIRST</span><span class="p">,</span>
+                <span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">LAYERSET_FIRST</span><span class="p">)</span>
+                <span class="o">?</span> <span class="o">+</span><span class="mf">1.0</span>
+                <span class="o">:</span> <span class="mf">-1.0</span>
+            <span class="p">);</span>
+            <span class="n">kernel</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">Kernel</span><span class="o">::</span><span class="n">GV_DISABLE_BOOLEAN_RESULT</span><span class="p">,</span>
+                <span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">DISABLE_BOOLEAN_RESULT</span><span class="p">)</span>
+                <span class="o">?</span> <span class="o">+</span><span class="mf">1.0</span>
+                <span class="o">:</span> <span class="mf">-1.0</span>
+            <span class="p">);</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">BUILDING_LOCAL_PLACEMENT</span><span class="p">))</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">SITE_LOCAL_PLACEMENT</span><span class="p">))</span> <span class="p">{</span>
+                    <span class="n">Logger</span><span class="o">::</span><span class="n">Message</span><span class="p">(</span><span class="n">Logger</span><span class="o">::</span><span class="n">LOG_WARNING</span><span class="p">,</span> <span class="s">&quot;building-local-placement takes precedence over site-local-placement&quot;</span><span class="p">);</span>
+                <span class="p">}</span>
+                <span class="n">kernel</span><span class="p">.</span><span class="n">set_conversion_placement_rel_to</span><span class="p">(</span><span class="o">&amp;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcBuilding</span><span class="o">::</span><span class="n">Class</span><span class="p">());</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">SITE_LOCAL_PLACEMENT</span><span class="p">))</span> <span class="p">{</span>
+                <span class="n">kernel</span><span class="p">.</span><span class="n">set_conversion_placement_rel_to</span><span class="p">(</span><span class="o">&amp;</span><span class="n">IfcSchema</span><span class="o">::</span><span class="n">IfcSite</span><span class="o">::</span><span class="n">Class</span><span class="p">());</span>
+            <span class="p">}</span>
+            <span class="n">kernel</span><span class="p">.</span><span class="n">set_offset</span><span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">offset</span><span class="p">);</span>
+            <span class="n">kernel</span><span class="p">.</span><span class="n">set_rotation</span><span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">rotation</span><span class="p">);</span>
+        <span class="p">}</span>
+
+    <span class="k">public</span><span class="o">:</span>
+        <span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">IteratorImplementation_</span><span class="p">)(</span><span class="k">const</span> <span class="n">IteratorSettings</span><span class="o">&amp;</span> <span class="n">settings</span><span class="p">,</span> <span class="n">IfcParse</span><span class="o">::</span><span class="n">IfcFile</span><span class="o">*</span> <span class="n">file</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">filter_t</span><span class="o">&gt;&amp;</span> <span class="n">filters</span><span class="p">,</span> <span class="kt">int</span> <span class="n">num_threads</span><span class="p">)</span>
+            <span class="o">:</span> <span class="n">settings</span><span class="p">(</span><span class="n">settings</span><span class="p">)</span>
+            <span class="p">,</span> <span class="n">ifc_file</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+            <span class="p">,</span> <span class="n">filters_</span><span class="p">(</span><span class="n">filters</span><span class="p">)</span>
+            <span class="p">,</span> <span class="n">owns_ifc_file</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+            <span class="p">,</span> <span class="n">num_threads_</span><span class="p">(</span><span class="n">num_threads</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">_initialize</span><span class="p">();</span>
+        <span class="p">}</span>
+
+        <span class="o">~</span><span class="n">MAKE_TYPE_NAME</span><span class="p">(</span><span class="n">IteratorImplementation_</span><span class="p">)()</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">owns_ifc_file</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">delete</span> <span class="n">ifc_file</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">IfcGeom</span><span class="o">::</span><span class="n">IteratorSettings</span><span class="o">::</span><span class="n">DISABLE_TRIANGULATION</span><span class="p">))</span> <span class="p">{</span>
+                <span class="k">for</span> <span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span> <span class="nl">p</span> <span class="p">:</span> <span class="n">all_processed_native_elements_</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="k">for</span> <span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span> <span class="nl">p</span> <span class="p">:</span> <span class="n">all_processed_elements_</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">delete</span> <span class="n">p</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="n">free_shapes</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+<span class="p">}</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/program_listing_file_src_ifcgeom_IfcGeomIteratorImplementation.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

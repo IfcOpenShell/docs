@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a33b3aa9cc107708c842eb1f05e076f56:
+
+Define SCHEMA_IfcBuildingElementProxyType_HAS_PredefinedType
+============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcBuildingElementProxyType_HAS_PredefinedType

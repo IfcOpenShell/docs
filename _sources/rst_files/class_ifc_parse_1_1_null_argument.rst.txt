@@ -1,0 +1,25 @@
+.. _exhale_class_class_ifc_parse_1_1_null_argument:
+
+Class NullArgument
+==================
+
+- Defined in :ref:`file_src_ifcparse_IfcParse.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Argument`` (:ref:`exhale_class_class_argument`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcParse::NullArgument
+   :members:
+   :protected-members:
+   :undoc-members:

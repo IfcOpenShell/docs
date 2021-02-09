@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcAnnotationFillArea &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcApplication" href="class_ifc4x2_1_1_ifc_application.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcAnnotation" href="class_ifc4x2_1_1_ifc_annotation.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcannotationfillarea">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-annotation-fill-area"></span><h1>Class Ifc4x2::IfcAnnotationFillArea<a class="headerlink" href="#class-ifc4x2-ifcannotationfillarea" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcGeometricRepresentationItem</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_geometric_representation_item.html#exhale-class-class-ifc4x2-1-1-ifc-geometric-representation-item"><span class="std std-ref">Class Ifc4x2::IfcGeometricRepresentationItem</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x221IfcAnnotationFillAreaE">
+<span id="_CPPv3N6Ifc4x221IfcAnnotationFillAreaE"></span><span id="_CPPv2N6Ifc4x221IfcAnnotationFillAreaE"></span><span id="Ifc4x2::IfcAnnotationFillArea"></span><span class="target" id="class_ifc4x2_1_1_ifc_annotation_fill_area"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcAnnotationFillArea</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_geometric_representation_item.html#_CPPv4N6Ifc4x230IfcGeometricRepresentationItemE" title="Ifc4x2::IfcGeometricRepresentationItem">IfcGeometricRepresentationItem</a><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcAnnotationFillAreaE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-46:1992: An annotation fill area is a set of curves that may be filled with hatching, colour or tiling. The annotation fill are is described by boundaries which consist of non-intersecting, non-self-intersecting closed curves. These curves form the boundary of planar areas to be filled according to the style for the annotation fill area.</p>
+<p>NOTE: A curve that is not surrounded by any other curve is a border between an unfilled area on the outside and a filled area on the inside. Another curve may surround an unfilled area if it is surrounded by another curve whose inside is a filled area.</p>
+<p>Figure 300 (from ISO 10303-46) illustrates annotation fill area.</p>
+<p>Figure 300 — Annotation fill area</p>
+<p>NOTE Corresponding ISO 10303 name: annotation_fill_area. Please refer to ISO/IS 10303-46:1994 for the final definition of the formal standard.</p>
+<p>The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_annotation_fill_area"><span class="std std-ref">IfcAnnotationFillArea</span></a> defines an area by a definite OuterBoundary, that might include InnerBoundaries. The areas defined by the InnerBoundaries are excluded from applying the fill area style.</p>
+<p>Informal Proposition:</p>
+<p>Any curve that describes an inner boundary shall not intersect with, nor include, another curve defining an inner boundary. The curve defining the outer boundary shall not intersect with any curve defining an inner boundary, nor shall it be surrounded by a curve defining an inner boundary.</p>
+<p>HISTORY New entity in IFC2x2.</p>
+<p>IFC2x3 CHANGE The two attributes OuterBoundary and InnerBoundaries are added and replace the previous single boundary. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x221IfcAnnotationFillArea4listE">
+<span id="_CPPv3N6Ifc4x221IfcAnnotationFillArea4listE"></span><span id="_CPPv2N6Ifc4x221IfcAnnotationFillArea4listE"></span><span id="Ifc4x2::IfcAnnotationFillArea::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_annotation_fill_area_1ad4cf1454f7b4fded807989a84a44b47e"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x221IfcAnnotationFillAreaE" title="Ifc4x2::IfcAnnotationFillArea">IfcAnnotationFillArea</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcAnnotationFillArea4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x221IfcAnnotationFillArea13OuterBoundaryEv">
+<span id="_CPPv3NK6Ifc4x221IfcAnnotationFillArea13OuterBoundaryEv"></span><span id="_CPPv2NK6Ifc4x221IfcAnnotationFillArea13OuterBoundaryEv"></span><span id="Ifc4x2::IfcAnnotationFillArea::OuterBoundaryC"></span><span class="target" id="class_ifc4x2_1_1_ifc_annotation_fill_area_1a5fc34ec8188631bfcc7bf5d0e39455c8"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_curve.html#_CPPv4N6Ifc4x28IfcCurveE" title="Ifc4x2::IfcCurve">IfcCurve</a> *<code class="sig-name descname">OuterBoundary</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x221IfcAnnotationFillArea13OuterBoundaryEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A closed curve that defines the outer boundary of the fill area. The areas defined by the outer boundary (minus potentially defined inner boundaries) is filled by the fill area style.</p>
+<p>IFC2x Edition 3 CHANGE The two new attributes OuterBoundary and InnerBoundaries replace the old single attribute Boundaries. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x221IfcAnnotationFillArea16setOuterBoundaryEPN6Ifc4x28IfcCurveE">
+<span id="_CPPv3N6Ifc4x221IfcAnnotationFillArea16setOuterBoundaryEPN6Ifc4x28IfcCurveE"></span><span id="_CPPv2N6Ifc4x221IfcAnnotationFillArea16setOuterBoundaryEPN6Ifc4x28IfcCurveE"></span><span id="Ifc4x2::IfcAnnotationFillArea::setOuterBoundary__Ifc4x2::IfcCurveP"></span><span class="target" id="class_ifc4x2_1_1_ifc_annotation_fill_area_1a5f20081fc2001d0fb9c861c55437da84"></span>void <code class="sig-name descname">setOuterBoundary</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_curve.html#_CPPv4N6Ifc4x28IfcCurveE" title="Ifc4x2::IfcCurve">IfcCurve</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcAnnotationFillArea16setOuterBoundaryEPN6Ifc4x28IfcCurveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x221IfcAnnotationFillArea18hasInnerBoundariesEv">
+<span id="_CPPv3NK6Ifc4x221IfcAnnotationFillArea18hasInnerBoundariesEv"></span><span id="_CPPv2NK6Ifc4x221IfcAnnotationFillArea18hasInnerBoundariesEv"></span><span id="Ifc4x2::IfcAnnotationFillArea::hasInnerBoundariesC"></span><span class="target" id="class_ifc4x2_1_1_ifc_annotation_fill_area_1a723db64405a53015fbba53481c79d37e"></span>bool <code class="sig-name descname">hasInnerBoundaries</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x221IfcAnnotationFillArea18hasInnerBoundariesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute InnerBoundaries is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_annotation_fill_area"><span class="std std-ref">IfcAnnotationFillArea</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x221IfcAnnotationFillArea15InnerBoundariesEv">
+<span id="_CPPv3NK6Ifc4x221IfcAnnotationFillArea15InnerBoundariesEv"></span><span id="_CPPv2NK6Ifc4x221IfcAnnotationFillArea15InnerBoundariesEv"></span><span id="Ifc4x2::IfcAnnotationFillArea::InnerBoundariesC"></span><span class="target" id="class_ifc4x2_1_1_ifc_annotation_fill_area_1ad615024254574f1358bb2c007e586ea1"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_curve.html#_CPPv4N6Ifc4x28IfcCurveE" title="Ifc4x2::IfcCurve">IfcCurve</a>&gt;::ptr <code class="sig-name descname">InnerBoundaries</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x221IfcAnnotationFillArea15InnerBoundariesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A set of inner curves that define the inner boundaries of the fill area. The areas defined by the inner boundaries are excluded from applying the fill area style.</p>
+<p>IFC2x Edition 3 CHANGE The two new attributes OuterBoundary and InnerBoundaries replace the old single attribute Boundaries. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x221IfcAnnotationFillArea18setInnerBoundariesEN22IfcTemplatedEntityListIN6Ifc4x28IfcCurveEE3ptrE">
+<span id="_CPPv3N6Ifc4x221IfcAnnotationFillArea18setInnerBoundariesEN22IfcTemplatedEntityListIN6Ifc4x28IfcCurveEE3ptrE"></span><span id="_CPPv2N6Ifc4x221IfcAnnotationFillArea18setInnerBoundariesEN22IfcTemplatedEntityListIN6Ifc4x28IfcCurveEE3ptrE"></span><span id="Ifc4x2::IfcAnnotationFillArea::setInnerBoundaries__IfcTemplatedEntityList:Ifc4x2::IfcCurve:::ptr"></span><span class="target" id="class_ifc4x2_1_1_ifc_annotation_fill_area_1aebae1d9b138a2bd262def708fff1dfcf"></span>void <code class="sig-name descname">setInnerBoundaries</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_curve.html#_CPPv4N6Ifc4x28IfcCurveE" title="Ifc4x2::IfcCurve">IfcCurve</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcAnnotationFillArea18setInnerBoundariesEN22IfcTemplatedEntityListIN6Ifc4x28IfcCurveEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x221IfcAnnotationFillArea11declarationEv">
+<span id="_CPPv3NK6Ifc4x221IfcAnnotationFillArea11declarationEv"></span><span id="_CPPv2NK6Ifc4x221IfcAnnotationFillArea11declarationEv"></span><span id="Ifc4x2::IfcAnnotationFillArea::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_annotation_fill_area_1ae1563b7ee9fb379dde9c4aab0495af30"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x221IfcAnnotationFillArea11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x221IfcAnnotationFillArea21IfcAnnotationFillAreaEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x221IfcAnnotationFillArea21IfcAnnotationFillAreaEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x221IfcAnnotationFillArea21IfcAnnotationFillAreaEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcAnnotationFillArea::IfcAnnotationFillArea__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_annotation_fill_area_1a73dcb06569ac1ddaac72810dd52a118c"></span><code class="sig-name descname">IfcAnnotationFillArea</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcAnnotationFillArea21IfcAnnotationFillAreaEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x221IfcAnnotationFillArea21IfcAnnotationFillAreaEPN6Ifc4x28IfcCurveEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x28IfcCurveEE3ptrEEE">
+<span id="_CPPv3N6Ifc4x221IfcAnnotationFillArea21IfcAnnotationFillAreaEPN6Ifc4x28IfcCurveEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x28IfcCurveEE3ptrEEE"></span><span id="_CPPv2N6Ifc4x221IfcAnnotationFillArea21IfcAnnotationFillAreaEPN6Ifc4x28IfcCurveEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x28IfcCurveEE3ptrEEE"></span><span id="Ifc4x2::IfcAnnotationFillArea::IfcAnnotationFillArea__Ifc4x2::IfcCurveP.boost::optional:IfcTemplatedEntityList:Ifc4x2::IfcCurve:::ptr:"></span><span class="target" id="class_ifc4x2_1_1_ifc_annotation_fill_area_1ab4454ad6dbb36738e011115471349eec"></span><code class="sig-name descname">IfcAnnotationFillArea</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_curve.html#_CPPv4N6Ifc4x28IfcCurveE" title="Ifc4x2::IfcCurve">IfcCurve</a> *<em>v1_OuterBoundary</em>, boost::optional&lt;<a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_curve.html#_CPPv4N6Ifc4x28IfcCurveE" title="Ifc4x2::IfcCurve">IfcCurve</a>&gt;::ptr&gt; <em>v2_InnerBoundaries</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcAnnotationFillArea21IfcAnnotationFillAreaEPN6Ifc4x28IfcCurveEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x28IfcCurveEE3ptrEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x221IfcAnnotationFillArea5ClassEv">
+<span id="_CPPv3N6Ifc4x221IfcAnnotationFillArea5ClassEv"></span><span id="_CPPv2N6Ifc4x221IfcAnnotationFillArea5ClassEv"></span><span id="Ifc4x2::IfcAnnotationFillArea::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_annotation_fill_area_1a2ff0f00b9e0e73df26ff97eaf71f3463"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x221IfcAnnotationFillArea5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_annotation.html" title="previous chapter">Class Ifc4x2::IfcAnnotation</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_application.html" title="next chapter">Class Ifc4x2::IfcApplication</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_annotation_fill_area.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

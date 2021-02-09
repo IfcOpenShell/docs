@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcRelSpaceBoundary2ndLevel &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcRelVoidsElement" href="class_ifc4_1_1_ifc_rel_voids_element.html" />
+    <link rel="prev" title="Class Ifc4::IfcRelSpaceBoundary1stLevel" href="class_ifc4_1_1_ifc_rel_space_boundary1st_level.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcrelspaceboundary2ndlevel">
+<span id="exhale-class-class-ifc4-1-1-ifc-rel-space-boundary2nd-level"></span><h1>Class Ifc4::IfcRelSpaceBoundary2ndLevel<a class="headerlink" href="#class-ifc4-ifcrelspaceboundary2ndlevel" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcRelSpaceBoundary1stLevel</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_rel_space_boundary1st_level.html#exhale-class-class-ifc4-1-1-ifc-rel-space-boundary1st-level"><span class="std std-ref">Class Ifc4::IfcRelSpaceBoundary1stLevel</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc427IfcRelSpaceBoundary2ndLevelE">
+<span id="_CPPv3N4Ifc427IfcRelSpaceBoundary2ndLevelE"></span><span id="_CPPv2N4Ifc427IfcRelSpaceBoundary2ndLevelE"></span><span id="Ifc4::IfcRelSpaceBoundary2ndLevel"></span><span class="target" id="class_ifc4_1_1_ifc_rel_space_boundary2nd_level"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcRelSpaceBoundary2ndLevel</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_rel_space_boundary1st_level.html#_CPPv4N4Ifc427IfcRelSpaceBoundary1stLevelE" title="Ifc4::IfcRelSpaceBoundary1stLevel">IfcRelSpaceBoundary1stLevel</a><a class="headerlink" href="#_CPPv4N4Ifc427IfcRelSpaceBoundary2ndLevelE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The 2nd level space boundary defines the physical or virtual delimiter of a space by the relationship <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_space_boundary2nd_level"><span class="std std-ref">IfcRelSpaceBoundary2ndLevel</span></a> to the surrounding elements. 2nd level space boundaries are characterized by:</p>
+<p>2nd level space boundaries still represent building elements that bound the space, but are more granular in that they are subdivided in any of the following cases:</p>
+<p>Differences in materials and/or material assemblies (for example, a wainscot or paneling on the lower portion of a wall). Differences in spaces or zones on the other side of the building element (or virtual boundary) represented by the space boundary (for example, two different spaces on the other side of a wall)</p>
+<p>2nd level space boundaries are differentiated in two ways: virtual or physical and internal or external, whereby any space boundary that is both internal and external has to be split into segments being either or. 2nd level space boundaries represent both sides of a heat transfer surface separated by the thickness of the building element. They can be further differentiated in:</p>
+<p>Type 2a that occurs when there is a space on the opposite side of the building element providing the space boundary Type 2b occurs if there is a building element on the opposite side of the building element providing the space boundary.</p>
+<p>The connection geometry of 2nd level space boundaries is restricted to planar surfaces only. This means that curved surfaces must be segmented.</p>
+<p>2nd level space boundaries define the heat transfer surfaces on both sides of building elements that separate spaces. The generation of 2nd level space boundaries has to take building elements and spaces on the other side into account. NOTE 2nd level space boundaries are used by many analysis packages that require a surface view of the building that can be transformed into the various simple topological models. Examples of such analysis packages include: (1) energy analysis, (2) lighting analysis, (3) fluid dynamics</p>
+<p>HISTORY New entity in IFC2x4.</p>
+<p>Relationship Use Definitions As shown in Figure 49, the attribute ParentBoundary with inverse InnerBoundaries is provided to link the space boundaries of doors, windows, and openings to the parent boundary, such as of a wall or slab. NOTE The space boundary of the parent is not cut by the inner boundary - both overlap. The attribute CorrespondingBoundary with inverse Corresponds is provided to link the pair of space boundaries on the opposite sides of the building element. NOTE Only 2nd level space boundaries of type A have corresponding boundaries.</p>
+<p>Figure 49 — Space boundary second level relationships</p>
+<p>Geometry Use Definitions See the definition at the supertype <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_space_boundary"><span class="std std-ref">IfcRelSpaceBoundary</span></a> for guidance on using the connection geometry for second level space boundaries. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc427IfcRelSpaceBoundary2ndLevel4listE">
+<span id="_CPPv3N4Ifc427IfcRelSpaceBoundary2ndLevel4listE"></span><span id="_CPPv2N4Ifc427IfcRelSpaceBoundary2ndLevel4listE"></span><span id="Ifc4::IfcRelSpaceBoundary2ndLevel::list"></span><span class="target" id="class_ifc4_1_1_ifc_rel_space_boundary2nd_level_1ad11200543e7721c833e52218e61eb3ad"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc427IfcRelSpaceBoundary2ndLevelE" title="Ifc4::IfcRelSpaceBoundary2ndLevel">IfcRelSpaceBoundary2ndLevel</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc427IfcRelSpaceBoundary2ndLevel4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc427IfcRelSpaceBoundary2ndLevel24hasCorrespondingBoundaryEv">
+<span id="_CPPv3NK4Ifc427IfcRelSpaceBoundary2ndLevel24hasCorrespondingBoundaryEv"></span><span id="_CPPv2NK4Ifc427IfcRelSpaceBoundary2ndLevel24hasCorrespondingBoundaryEv"></span><span id="Ifc4::IfcRelSpaceBoundary2ndLevel::hasCorrespondingBoundaryC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_space_boundary2nd_level_1a827825d51f69bc37f367533d3f82e0ac"></span>bool <code class="sig-name descname">hasCorrespondingBoundary</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc427IfcRelSpaceBoundary2ndLevel24hasCorrespondingBoundaryEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute CorrespondingBoundary is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_space_boundary2nd_level"><span class="std std-ref">IfcRelSpaceBoundary2ndLevel</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc427IfcRelSpaceBoundary2ndLevel21CorrespondingBoundaryEv">
+<span id="_CPPv3NK4Ifc427IfcRelSpaceBoundary2ndLevel21CorrespondingBoundaryEv"></span><span id="_CPPv2NK4Ifc427IfcRelSpaceBoundary2ndLevel21CorrespondingBoundaryEv"></span><span id="Ifc4::IfcRelSpaceBoundary2ndLevel::CorrespondingBoundaryC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_space_boundary2nd_level_1afb079d97c510b25bc1788989dcfcb140"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="#_CPPv4N4Ifc427IfcRelSpaceBoundary2ndLevelE" title="Ifc4::IfcRelSpaceBoundary2ndLevel">IfcRelSpaceBoundary2ndLevel</a> *<code class="sig-name descname">CorrespondingBoundary</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc427IfcRelSpaceBoundary2ndLevel21CorrespondingBoundaryEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reference to the other space boundary of the pair of two space boundaries on either side of a space separating thermal boundary element. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc427IfcRelSpaceBoundary2ndLevel24setCorrespondingBoundaryEPN4Ifc427IfcRelSpaceBoundary2ndLevelE">
+<span id="_CPPv3N4Ifc427IfcRelSpaceBoundary2ndLevel24setCorrespondingBoundaryEPN4Ifc427IfcRelSpaceBoundary2ndLevelE"></span><span id="_CPPv2N4Ifc427IfcRelSpaceBoundary2ndLevel24setCorrespondingBoundaryEPN4Ifc427IfcRelSpaceBoundary2ndLevelE"></span><span id="Ifc4::IfcRelSpaceBoundary2ndLevel::setCorrespondingBoundary__Ifc4::IfcRelSpaceBoundary2ndLevelP"></span><span class="target" id="class_ifc4_1_1_ifc_rel_space_boundary2nd_level_1a8e755edaba796cca11c5966715af3546"></span>void <code class="sig-name descname">setCorrespondingBoundary</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="#_CPPv4N4Ifc427IfcRelSpaceBoundary2ndLevelE" title="Ifc4::IfcRelSpaceBoundary2ndLevel">IfcRelSpaceBoundary2ndLevel</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc427IfcRelSpaceBoundary2ndLevel24setCorrespondingBoundaryEPN4Ifc427IfcRelSpaceBoundary2ndLevelE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc427IfcRelSpaceBoundary2ndLevel11CorrespondsEv">
+<span id="_CPPv3NK4Ifc427IfcRelSpaceBoundary2ndLevel11CorrespondsEv"></span><span id="_CPPv2NK4Ifc427IfcRelSpaceBoundary2ndLevel11CorrespondsEv"></span><span id="Ifc4::IfcRelSpaceBoundary2ndLevel::CorrespondsC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_space_boundary2nd_level_1adc611518d96667515e26ff947bf74c44"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc427IfcRelSpaceBoundary2ndLevelE" title="Ifc4::IfcRelSpaceBoundary2ndLevel">IfcRelSpaceBoundary2ndLevel</a>&gt;::ptr <code class="sig-name descname">Corresponds</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc427IfcRelSpaceBoundary2ndLevel11CorrespondsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc427IfcRelSpaceBoundary2ndLevel11declarationEv">
+<span id="_CPPv3NK4Ifc427IfcRelSpaceBoundary2ndLevel11declarationEv"></span><span id="_CPPv2NK4Ifc427IfcRelSpaceBoundary2ndLevel11declarationEv"></span><span id="Ifc4::IfcRelSpaceBoundary2ndLevel::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_rel_space_boundary2nd_level_1a716091080181a885ccec5d14f32c5b12"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc427IfcRelSpaceBoundary2ndLevel11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc427IfcRelSpaceBoundary2ndLevel27IfcRelSpaceBoundary2ndLevelEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc427IfcRelSpaceBoundary2ndLevel27IfcRelSpaceBoundary2ndLevelEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc427IfcRelSpaceBoundary2ndLevel27IfcRelSpaceBoundary2ndLevelEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcRelSpaceBoundary2ndLevel::IfcRelSpaceBoundary2ndLevel__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_rel_space_boundary2nd_level_1a578d90873f451949d9a76cd0a93dddfb"></span><code class="sig-name descname">IfcRelSpaceBoundary2ndLevel</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc427IfcRelSpaceBoundary2ndLevel27IfcRelSpaceBoundary2ndLevelEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc427IfcRelSpaceBoundary2ndLevel27IfcRelSpaceBoundary2ndLevelENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc422IfcSpaceBoundarySelectEPN4Ifc410IfcElementEPN4Ifc421IfcConnectionGeometryEN4Ifc424IfcPhysicalOrVirtualEnum5ValueEN4Ifc425IfcInternalOrExternalEnum5ValueEPN4Ifc427IfcRelSpaceBoundary1stLevelEPN4Ifc427IfcRelSpaceBoundary2ndLevelE">
+<span id="_CPPv3N4Ifc427IfcRelSpaceBoundary2ndLevel27IfcRelSpaceBoundary2ndLevelENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc422IfcSpaceBoundarySelectEPN4Ifc410IfcElementEPN4Ifc421IfcConnectionGeometryEN4Ifc424IfcPhysicalOrVirtualEnum5ValueEN4Ifc425IfcInternalOrExternalEnum5ValueEPN4Ifc427IfcRelSpaceBoundary1stLevelEPN4Ifc427IfcRelSpaceBoundary2ndLevelE"></span><span id="_CPPv2N4Ifc427IfcRelSpaceBoundary2ndLevel27IfcRelSpaceBoundary2ndLevelENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc422IfcSpaceBoundarySelectEPN4Ifc410IfcElementEPN4Ifc421IfcConnectionGeometryEN4Ifc424IfcPhysicalOrVirtualEnum5ValueEN4Ifc425IfcInternalOrExternalEnum5ValueEPN4Ifc427IfcRelSpaceBoundary1stLevelEPN4Ifc427IfcRelSpaceBoundary2ndLevelE"></span><span id="Ifc4::IfcRelSpaceBoundary2ndLevel::IfcRelSpaceBoundary2ndLevel__ss.Ifc4::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.Ifc4::IfcSpaceBoundarySelectP.Ifc4::IfcElementP.Ifc4::IfcConnectionGeometryP.Ifc4::IfcPhysicalOrVirtualEnum::Value.Ifc4::IfcInternalOrExternalEnum::Value.Ifc4::IfcRelSpaceBoundary1stLevelP.Ifc4::IfcRelSpaceBoundary2ndLevelP"></span><span class="target" id="class_ifc4_1_1_ifc_rel_space_boundary2nd_level_1a3d1ea1eba28605202a7c62a45e49b703"></span><code class="sig-name descname">IfcRelSpaceBoundary2ndLevel</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_owner_history.html#_CPPv4N4Ifc415IfcOwnerHistoryE" title="Ifc4::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc422IfcSpaceBoundarySelectE" title="Ifc4::IfcSpaceBoundarySelect">IfcSpaceBoundarySelect</a> *<em>v5_RelatingSpace</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_element.html#_CPPv4N4Ifc410IfcElementE" title="Ifc4::IfcElement">IfcElement</a> *<em>v6_RelatedBuildingElement</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_connection_geometry.html#_CPPv4N4Ifc421IfcConnectionGeometryE" title="Ifc4::IfcConnectionGeometry">IfcConnectionGeometry</a> *<em>v7_ConnectionGeometry</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc424IfcPhysicalOrVirtualEnumE" title="Ifc4::IfcPhysicalOrVirtualEnum">IfcPhysicalOrVirtualEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc424IfcPhysicalOrVirtualEnum5ValueE" title="Ifc4::IfcPhysicalOrVirtualEnum::Value">Value</a> <em>v8_PhysicalOrVirtualBoundary</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcInternalOrExternalEnumE" title="Ifc4::IfcInternalOrExternalEnum">IfcInternalOrExternalEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc425IfcInternalOrExternalEnum5ValueE" title="Ifc4::IfcInternalOrExternalEnum::Value">Value</a> <em>v9_InternalOrExternalBoundary</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_rel_space_boundary1st_level.html#_CPPv4N4Ifc427IfcRelSpaceBoundary1stLevelE" title="Ifc4::IfcRelSpaceBoundary1stLevel">IfcRelSpaceBoundary1stLevel</a> *<em>v10_ParentBoundary</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="#_CPPv4N4Ifc427IfcRelSpaceBoundary2ndLevelE" title="Ifc4::IfcRelSpaceBoundary2ndLevel">IfcRelSpaceBoundary2ndLevel</a> *<em>v11_CorrespondingBoundary</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc427IfcRelSpaceBoundary2ndLevel27IfcRelSpaceBoundary2ndLevelENSt6stringEPN4Ifc415IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEPN4Ifc422IfcSpaceBoundarySelectEPN4Ifc410IfcElementEPN4Ifc421IfcConnectionGeometryEN4Ifc424IfcPhysicalOrVirtualEnum5ValueEN4Ifc425IfcInternalOrExternalEnum5ValueEPN4Ifc427IfcRelSpaceBoundary1stLevelEPN4Ifc427IfcRelSpaceBoundary2ndLevelE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc427IfcRelSpaceBoundary2ndLevel5ClassEv">
+<span id="_CPPv3N4Ifc427IfcRelSpaceBoundary2ndLevel5ClassEv"></span><span id="_CPPv2N4Ifc427IfcRelSpaceBoundary2ndLevel5ClassEv"></span><span id="Ifc4::IfcRelSpaceBoundary2ndLevel::Class"></span><span class="target" id="class_ifc4_1_1_ifc_rel_space_boundary2nd_level_1ab3fb338f41cbafc21fd54b8f9edfd78a"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc427IfcRelSpaceBoundary2ndLevel5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_rel_space_boundary1st_level.html" title="previous chapter">Class Ifc4::IfcRelSpaceBoundary1stLevel</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_rel_voids_element.html" title="next chapter">Class Ifc4::IfcRelVoidsElement</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_rel_space_boundary2nd_level.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

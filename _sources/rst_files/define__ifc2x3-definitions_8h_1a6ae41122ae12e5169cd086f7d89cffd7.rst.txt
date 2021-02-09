@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a6ae41122ae12e5169cd086f7d89cffd7:
+
+Define SCHEMA_IfcOpticalMaterialProperties_ThermalIrEmissivityFront_IS_OPTIONAL
+===============================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcOpticalMaterialProperties_ThermalIrEmissivityFront_IS_OPTIONAL

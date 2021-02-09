@@ -1,0 +1,16 @@
+.. _exhale_struct_struct_ifc_parse_1_1_token:
+
+Struct Token
+============
+
+- Defined in :ref:`file_src_ifcparse_IfcParse.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: IfcParse::Token
+   :members:
+   :protected-members:
+   :undoc-members:

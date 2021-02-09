@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a79f8f9480f5d8a7783d38fbf9c3d1ae9:
+
+Define SCHEMA_IfcPerson_MiddleNames_IS_OPTIONAL
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPerson_MiddleNames_IS_OPTIONAL

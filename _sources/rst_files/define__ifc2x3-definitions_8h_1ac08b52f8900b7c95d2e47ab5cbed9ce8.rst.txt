@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ac08b52f8900b7c95d2e47ab5cbed9ce8:
+
+Define SCHEMA_HAS_IfcEnergyProperties
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcEnergyProperties

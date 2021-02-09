@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcLine &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcLinearDimension" href="class_ifc2x3_1_1_ifc_linear_dimension.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcLightSourceSpot" href="class_ifc2x3_1_1_ifc_light_source_spot.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcline">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-line"></span><h1>Class Ifc2x3::IfcLine<a class="headerlink" href="#class-ifc2x3-ifcline" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcCurve</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_curve.html#exhale-class-class-ifc2x3-1-1-ifc-curve"><span class="std std-ref">Class Ifc2x3::IfcCurve</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x37IfcLineE">
+<span id="_CPPv3N6Ifc2x37IfcLineE"></span><span id="_CPPv2N6Ifc2x37IfcLineE"></span><span id="Ifc2x3::IfcLine"></span><span class="target" id="class_ifc2x3_1_1_ifc_line"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcLine</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_curve.html#_CPPv4N6Ifc2x38IfcCurveE" title="Ifc2x3::IfcCurve">IfcCurve</a><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcLineE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: A line is an unbounded curve with constant tangent direction. A line is defined by a point and a direction. The positive direction of the line is in the direction of the Dir vector. The line is parameterized as follows:</p>
+<p>P = Pnt V = Dir λ(u) = P + uV</p>
+<p>and the parametric range is:</p>
+<p>∞ &lt; u &lt; ∞</p>
+<p>NOTE Corresponding ISO 10303 entity: line. Please refer to ISO/IS 10303-42:1994, p.37 for the final definition of the formal standard. The derived attribute Dim has been added at this level and was therefore demoted from the geometric_representation_item.</p>
+<p>HISTORY New class in IFC Release 1.0 </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x37IfcLine4listE">
+<span id="_CPPv3N6Ifc2x37IfcLine4listE"></span><span id="_CPPv2N6Ifc2x37IfcLine4listE"></span><span id="Ifc2x3::IfcLine::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_line_1a268b9a7e02059193c9a24f621bf721ab"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x37IfcLineE" title="Ifc2x3::IfcLine">IfcLine</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcLine4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x37IfcLine3PntEv">
+<span id="_CPPv3NK6Ifc2x37IfcLine3PntEv"></span><span id="_CPPv2NK6Ifc2x37IfcLine3PntEv"></span><span id="Ifc2x3::IfcLine::PntC"></span><span class="target" id="class_ifc2x3_1_1_ifc_line_1a692be7c385498653cb6832b261dbbb4b"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cartesian_point.html#_CPPv4N6Ifc2x317IfcCartesianPointE" title="Ifc2x3::IfcCartesianPoint">IfcCartesianPoint</a> *<code class="sig-name descname">Pnt</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x37IfcLine3PntEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The location of the line. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x37IfcLine6setPntEPN6Ifc2x317IfcCartesianPointE">
+<span id="_CPPv3N6Ifc2x37IfcLine6setPntEPN6Ifc2x317IfcCartesianPointE"></span><span id="_CPPv2N6Ifc2x37IfcLine6setPntEPN6Ifc2x317IfcCartesianPointE"></span><span id="Ifc2x3::IfcLine::setPnt__Ifc2x3::IfcCartesianPointP"></span><span class="target" id="class_ifc2x3_1_1_ifc_line_1a897f8fc4f7794d047384077f6dff5fd4"></span>void <code class="sig-name descname">setPnt</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cartesian_point.html#_CPPv4N6Ifc2x317IfcCartesianPointE" title="Ifc2x3::IfcCartesianPoint">IfcCartesianPoint</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcLine6setPntEPN6Ifc2x317IfcCartesianPointE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x37IfcLine3DirEv">
+<span id="_CPPv3NK6Ifc2x37IfcLine3DirEv"></span><span id="_CPPv2NK6Ifc2x37IfcLine3DirEv"></span><span id="Ifc2x3::IfcLine::DirC"></span><span class="target" id="class_ifc2x3_1_1_ifc_line_1a20731c9fd99cee10d0b51647c74c40c5"></span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_vector.html#_CPPv4N6Ifc2x39IfcVectorE" title="Ifc2x3::IfcVector">IfcVector</a> *<code class="sig-name descname">Dir</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x37IfcLine3DirEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The direction of the line, the magnitude and units of Dir affect the parameterization of the line. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x37IfcLine6setDirEPN6Ifc2x39IfcVectorE">
+<span id="_CPPv3N6Ifc2x37IfcLine6setDirEPN6Ifc2x39IfcVectorE"></span><span id="_CPPv2N6Ifc2x37IfcLine6setDirEPN6Ifc2x39IfcVectorE"></span><span id="Ifc2x3::IfcLine::setDir__Ifc2x3::IfcVectorP"></span><span class="target" id="class_ifc2x3_1_1_ifc_line_1a5d3c4809ce1489d063a00e73a3928d5b"></span>void <code class="sig-name descname">setDir</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_vector.html#_CPPv4N6Ifc2x39IfcVectorE" title="Ifc2x3::IfcVector">IfcVector</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcLine6setDirEPN6Ifc2x39IfcVectorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x37IfcLine11declarationEv">
+<span id="_CPPv3NK6Ifc2x37IfcLine11declarationEv"></span><span id="_CPPv2NK6Ifc2x37IfcLine11declarationEv"></span><span id="Ifc2x3::IfcLine::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_line_1a73fe43a03b4a84f2422728251257ed25"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x37IfcLine11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x37IfcLine7IfcLineEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x37IfcLine7IfcLineEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x37IfcLine7IfcLineEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcLine::IfcLine__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_line_1ab3528593ceacec4579f29920157780b6"></span><code class="sig-name descname">IfcLine</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcLine7IfcLineEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x37IfcLine7IfcLineEPN6Ifc2x317IfcCartesianPointEPN6Ifc2x39IfcVectorE">
+<span id="_CPPv3N6Ifc2x37IfcLine7IfcLineEPN6Ifc2x317IfcCartesianPointEPN6Ifc2x39IfcVectorE"></span><span id="_CPPv2N6Ifc2x37IfcLine7IfcLineEPN6Ifc2x317IfcCartesianPointEPN6Ifc2x39IfcVectorE"></span><span id="Ifc2x3::IfcLine::IfcLine__Ifc2x3::IfcCartesianPointP.Ifc2x3::IfcVectorP"></span><span class="target" id="class_ifc2x3_1_1_ifc_line_1a4afa7f1f75ada536dc4ca868ec03e9d7"></span><code class="sig-name descname">IfcLine</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_cartesian_point.html#_CPPv4N6Ifc2x317IfcCartesianPointE" title="Ifc2x3::IfcCartesianPoint">IfcCartesianPoint</a> *<em>v1_Pnt</em>, ::<a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_vector.html#_CPPv4N6Ifc2x39IfcVectorE" title="Ifc2x3::IfcVector">IfcVector</a> *<em>v2_Dir</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcLine7IfcLineEPN6Ifc2x317IfcCartesianPointEPN6Ifc2x39IfcVectorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x37IfcLine5ClassEv">
+<span id="_CPPv3N6Ifc2x37IfcLine5ClassEv"></span><span id="_CPPv2N6Ifc2x37IfcLine5ClassEv"></span><span id="Ifc2x3::IfcLine::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_line_1afea358a391a79befbad3b40e7bbf7f90"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x37IfcLine5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_light_source_spot.html" title="previous chapter">Class Ifc2x3::IfcLightSourceSpot</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_linear_dimension.html" title="next chapter">Class Ifc2x3::IfcLinearDimension</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_line.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,38 @@
+.. _exhale_class_class_ifc4x2_1_1_ifc_structural_load_or_result:
+
+Class Ifc4x2::IfcStructuralLoadOrResult
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x2`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x2::IfcStructuralLoad`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_structural_load`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x2::IfcStructuralLoadStatic`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_structural_load_static`)
+- ``public Ifc4x2::IfcSurfaceReinforcementArea`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_surface_reinforcement_area`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x2::IfcStructuralLoadOrResult
+   :members:
+   :protected-members:
+   :undoc-members:

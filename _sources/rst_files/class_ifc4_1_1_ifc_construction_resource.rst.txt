@@ -1,0 +1,42 @@
+.. _exhale_class_class_ifc4_1_1_ifc_construction_resource:
+
+Class Ifc4::IfcConstructionResource
+===================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4::IfcResource`` (:ref:`exhale_class_class_ifc4_1_1_ifc_resource`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4::IfcConstructionEquipmentResource`` (:ref:`exhale_class_class_ifc4_1_1_ifc_construction_equipment_resource`)
+- ``public Ifc4::IfcConstructionMaterialResource`` (:ref:`exhale_class_class_ifc4_1_1_ifc_construction_material_resource`)
+- ``public Ifc4::IfcConstructionProductResource`` (:ref:`exhale_class_class_ifc4_1_1_ifc_construction_product_resource`)
+- ``public Ifc4::IfcCrewResource`` (:ref:`exhale_class_class_ifc4_1_1_ifc_crew_resource`)
+- ``public Ifc4::IfcLaborResource`` (:ref:`exhale_class_class_ifc4_1_1_ifc_labor_resource`)
+- ``public Ifc4::IfcSubContractResource`` (:ref:`exhale_class_class_ifc4_1_1_ifc_sub_contract_resource`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4::IfcConstructionResource
+   :members:
+   :protected-members:
+   :undoc-members:

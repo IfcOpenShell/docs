@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcLocalPlacement &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcLogical" href="class_ifc4_1_1_ifc_logical.html" />
+    <link rel="prev" title="Class Ifc4::IfcLineIndex" href="class_ifc4_1_1_ifc_line_index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifclocalplacement">
+<span id="exhale-class-class-ifc4-1-1-ifc-local-placement"></span><h1>Class Ifc4::IfcLocalPlacement<a class="headerlink" href="#class-ifc4-ifclocalplacement" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcObjectPlacement</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_object_placement.html#exhale-class-class-ifc4-1-1-ifc-object-placement"><span class="std std-ref">Class Ifc4::IfcObjectPlacement</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc417IfcLocalPlacementE">
+<span id="_CPPv3N4Ifc417IfcLocalPlacementE"></span><span id="_CPPv2N4Ifc417IfcLocalPlacementE"></span><span id="Ifc4::IfcLocalPlacement"></span><span class="target" id="class_ifc4_1_1_ifc_local_placement"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcLocalPlacement</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_object_placement.html#_CPPv4N4Ifc418IfcObjectPlacementE" title="Ifc4::IfcObjectPlacement">IfcObjectPlacement</a><a class="headerlink" href="#_CPPv4N4Ifc417IfcLocalPlacementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> defines the relative placement of a product in relation to the placement of another product or the absolute placement of a product within the geometric representation context of the project. <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> allows that an <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a> can be placed by this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a> (through the attributeObjectPlacement) within the local coordinate system of the object placement of another <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a>, which is referenced by the PlacementRelTo. Rules to prevent cyclic relative placements have to be introduced on the application level. If the PlacementRelTo is not given, then the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a> is placed absolutely within the world coordinate system.</p>
+<p>HISTORY: New entity in IFC Release 1.0.</p>
+<p>Geometry use definitions The following conventions shall apply as default relative positions if the relative placement is used. The conventions are given for all five direct subtypes of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_product"><span class="std std-ref">IfcProduct</span></a>, the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_spatial_structure_element"><span class="std std-ref">IfcSpatialStructureElement</span></a>, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a>, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_annotation"><span class="std std-ref">IfcAnnotation</span></a>, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a>, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_port"><span class="std std-ref">IfcPort</span></a>. More detailed placement information is given at the level of subtypes of those five types mentioned.</p>
+<p>For the subtypes of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_spatial_structure_element"><span class="std std-ref">IfcSpatialStructureElement</span></a> the following conventions apply</p>
+<p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> shall be placed absolutely within the world coordinate system established by the geometric representation context of the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_project"><span class="std std-ref">IfcProject</span></a> <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a> shall be placed relative to the local placement of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a> <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_building_storey"><span class="std std-ref">IfcBuildingStorey</span></a> shall be placed relative to the local placement of <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a></p>
+<p>For <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_grid"><span class="std std-ref">IfcGrid</span></a> and <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_annotation"><span class="std std-ref">IfcAnnotation</span></a> the convention applies that it shall be placed relative</p>
+<p>to the local placement of its container (<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a>, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a>, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_building_storey"><span class="std std-ref">IfcBuildingStorey</span></a>)</p>
+<p>it should be the same container element that is referenced by the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_contained_in_spatial_structure"><span class="std std-ref">IfcRelContainedInSpatialStructure</span></a> containment relationship,</p>
+<p>For <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_port"><span class="std std-ref">IfcPort</span></a> the convention applies that it shall be placed relative</p>
+<p>to the local placement of the element it belongs to (<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a>)</p>
+<p>it should be the same element that is referenced by the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_connects_port_to_element"><span class="std std-ref">IfcRelConnectsPortToElement</span></a> connection relationship,</p>
+<p>For <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a> the convention applies that it shall be placed relative:</p>
+<p>to the local placement of its container (<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_site"><span class="std std-ref">IfcSite</span></a>, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_building"><span class="std std-ref">IfcBuilding</span></a>, <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_building_storey"><span class="std std-ref">IfcBuildingStorey</span></a>)</p>
+<p>it should be the same container element that is referenced by the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_contained_in_spatial_structure"><span class="std std-ref">IfcRelContainedInSpatialStructure</span></a> containment relationship,</p>
+<p>to the local placement of the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a> to which it is tied by an element composition relationship</p>
+<p>for features that are located relative to the main component (such as openings), as expressed by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_voids_element"><span class="std std-ref">IfcRelVoidsElement</span></a> and <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_projects_element"><span class="std std-ref">IfcRelProjectsElement</span></a>, for elements that fill an opening (such as doors or windows), as expressed byIfcRelFillsElement, for coverings that cover the element, as expressed byIfcRelCoversBldgElements, for sub components that are aggregated to the main component, as expressed by IIfcRelAggregates and <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_rel_nests"><span class="std std-ref">IfcRelNests</span></a>)</p>
+<p>If the PlacementRelTo relationship is not given, then it defaults to an absolute placement within the world coordinate system established by the referenced geometric representation context within the project. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc417IfcLocalPlacement4listE">
+<span id="_CPPv3N4Ifc417IfcLocalPlacement4listE"></span><span id="_CPPv2N4Ifc417IfcLocalPlacement4listE"></span><span id="Ifc4::IfcLocalPlacement::list"></span><span class="target" id="class_ifc4_1_1_ifc_local_placement_1a286448cdf6282ee69ad655e7657e8a0b"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc417IfcLocalPlacementE" title="Ifc4::IfcLocalPlacement">IfcLocalPlacement</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc417IfcLocalPlacement4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc417IfcLocalPlacement17hasPlacementRelToEv">
+<span id="_CPPv3NK4Ifc417IfcLocalPlacement17hasPlacementRelToEv"></span><span id="_CPPv2NK4Ifc417IfcLocalPlacement17hasPlacementRelToEv"></span><span id="Ifc4::IfcLocalPlacement::hasPlacementRelToC"></span><span class="target" id="class_ifc4_1_1_ifc_local_placement_1aff4370b4da2ab143795bf3fae5dfc88e"></span>bool <code class="sig-name descname">hasPlacementRelTo</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc417IfcLocalPlacement17hasPlacementRelToEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute PlacementRelTo is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_local_placement"><span class="std std-ref">IfcLocalPlacement</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc417IfcLocalPlacement14PlacementRelToEv">
+<span id="_CPPv3NK4Ifc417IfcLocalPlacement14PlacementRelToEv"></span><span id="_CPPv2NK4Ifc417IfcLocalPlacement14PlacementRelToEv"></span><span id="Ifc4::IfcLocalPlacement::PlacementRelToC"></span><span class="target" id="class_ifc4_1_1_ifc_local_placement_1a57dfa16d3e87424784e01a417167ecb1"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_object_placement.html#_CPPv4N4Ifc418IfcObjectPlacementE" title="Ifc4::IfcObjectPlacement">IfcObjectPlacement</a> *<code class="sig-name descname">PlacementRelTo</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc417IfcLocalPlacement14PlacementRelToEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reference to Object that provides the relative placement by its local coordinate system. If it is omitted, then the local placement is given to the WCS, established by the geometric representation context. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc417IfcLocalPlacement17setPlacementRelToEPN4Ifc418IfcObjectPlacementE">
+<span id="_CPPv3N4Ifc417IfcLocalPlacement17setPlacementRelToEPN4Ifc418IfcObjectPlacementE"></span><span id="_CPPv2N4Ifc417IfcLocalPlacement17setPlacementRelToEPN4Ifc418IfcObjectPlacementE"></span><span id="Ifc4::IfcLocalPlacement::setPlacementRelTo__Ifc4::IfcObjectPlacementP"></span><span class="target" id="class_ifc4_1_1_ifc_local_placement_1aa51f4dac2057df06d219210791f4969e"></span>void <code class="sig-name descname">setPlacementRelTo</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_object_placement.html#_CPPv4N4Ifc418IfcObjectPlacementE" title="Ifc4::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc417IfcLocalPlacement17setPlacementRelToEPN4Ifc418IfcObjectPlacementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc417IfcLocalPlacement17RelativePlacementEv">
+<span id="_CPPv3NK4Ifc417IfcLocalPlacement17RelativePlacementEv"></span><span id="_CPPv2NK4Ifc417IfcLocalPlacement17RelativePlacementEv"></span><span id="Ifc4::IfcLocalPlacement::RelativePlacementC"></span><span class="target" id="class_ifc4_1_1_ifc_local_placement_1a328927cc48d72404481b78660ebcadb0"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc417IfcAxis2PlacementE" title="Ifc4::IfcAxis2Placement">IfcAxis2Placement</a> *<code class="sig-name descname">RelativePlacement</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc417IfcLocalPlacement17RelativePlacementEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Geometric placement that defines the transformation from the related coordinate system into the relating. The placement can be either 2D or 3D, depending on the dimension count of the coordinate system. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc417IfcLocalPlacement20setRelativePlacementEPN4Ifc417IfcAxis2PlacementE">
+<span id="_CPPv3N4Ifc417IfcLocalPlacement20setRelativePlacementEPN4Ifc417IfcAxis2PlacementE"></span><span id="_CPPv2N4Ifc417IfcLocalPlacement20setRelativePlacementEPN4Ifc417IfcAxis2PlacementE"></span><span id="Ifc4::IfcLocalPlacement::setRelativePlacement__Ifc4::IfcAxis2PlacementP"></span><span class="target" id="class_ifc4_1_1_ifc_local_placement_1a0dac7d2e5ae29183a6fbbab567bc83c5"></span>void <code class="sig-name descname">setRelativePlacement</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc417IfcAxis2PlacementE" title="Ifc4::IfcAxis2Placement">IfcAxis2Placement</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc417IfcLocalPlacement20setRelativePlacementEPN4Ifc417IfcAxis2PlacementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc417IfcLocalPlacement11declarationEv">
+<span id="_CPPv3NK4Ifc417IfcLocalPlacement11declarationEv"></span><span id="_CPPv2NK4Ifc417IfcLocalPlacement11declarationEv"></span><span id="Ifc4::IfcLocalPlacement::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_local_placement_1af43fc69632d47088c3a068d872ebbbec"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc417IfcLocalPlacement11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc417IfcLocalPlacement17IfcLocalPlacementEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc417IfcLocalPlacement17IfcLocalPlacementEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc417IfcLocalPlacement17IfcLocalPlacementEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcLocalPlacement::IfcLocalPlacement__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_local_placement_1a1a070edc6fd8bd83e3a56f088040c5ee"></span><code class="sig-name descname">IfcLocalPlacement</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc417IfcLocalPlacement17IfcLocalPlacementEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc417IfcLocalPlacement17IfcLocalPlacementEPN4Ifc418IfcObjectPlacementEPN4Ifc417IfcAxis2PlacementE">
+<span id="_CPPv3N4Ifc417IfcLocalPlacement17IfcLocalPlacementEPN4Ifc418IfcObjectPlacementEPN4Ifc417IfcAxis2PlacementE"></span><span id="_CPPv2N4Ifc417IfcLocalPlacement17IfcLocalPlacementEPN4Ifc418IfcObjectPlacementEPN4Ifc417IfcAxis2PlacementE"></span><span id="Ifc4::IfcLocalPlacement::IfcLocalPlacement__Ifc4::IfcObjectPlacementP.Ifc4::IfcAxis2PlacementP"></span><span class="target" id="class_ifc4_1_1_ifc_local_placement_1a93bdea2239bd82ab87607dd60a84e0e0"></span><code class="sig-name descname">IfcLocalPlacement</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_object_placement.html#_CPPv4N4Ifc418IfcObjectPlacementE" title="Ifc4::IfcObjectPlacement">IfcObjectPlacement</a> *<em>v1_PlacementRelTo</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc417IfcAxis2PlacementE" title="Ifc4::IfcAxis2Placement">IfcAxis2Placement</a> *<em>v2_RelativePlacement</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc417IfcLocalPlacement17IfcLocalPlacementEPN4Ifc418IfcObjectPlacementEPN4Ifc417IfcAxis2PlacementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc417IfcLocalPlacement5ClassEv">
+<span id="_CPPv3N4Ifc417IfcLocalPlacement5ClassEv"></span><span id="_CPPv2N4Ifc417IfcLocalPlacement5ClassEv"></span><span id="Ifc4::IfcLocalPlacement::Class"></span><span class="target" id="class_ifc4_1_1_ifc_local_placement_1a4db128b0a96b04a372b91a547fa84442"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc417IfcLocalPlacement5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_line_index.html" title="previous chapter">Class Ifc4::IfcLineIndex</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_logical.html" title="next chapter">Class Ifc4::IfcLogical</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_local_placement.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

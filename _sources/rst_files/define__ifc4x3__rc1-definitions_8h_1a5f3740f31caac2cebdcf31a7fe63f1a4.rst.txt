@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a5f3740f31caac2cebdcf31a7fe63f1a4:
+
+Define SCHEMA_IfcSectionedSolidHorizontal_HAS_CrossSectionPositions
+===================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSectionedSolidHorizontal_HAS_CrossSectionPositions

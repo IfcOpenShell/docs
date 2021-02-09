@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a8cc6759811c9d1ec1e3354e669b623a2:
+
+Define SCHEMA_IfcReinforcingMesh_HAS_MeshWidth
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcReinforcingMesh_HAS_MeshWidth

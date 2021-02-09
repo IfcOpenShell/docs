@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1a1e3dac16098bd09b05167136fade1f52:
+
+Define SCHEMA_IfcPerson_HAS_PrefixTitles
+========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPerson_HAS_PrefixTitles

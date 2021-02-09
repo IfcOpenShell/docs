@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x1-definitions_8h_1a040e59fa3b478e49accd90abc709f9cc:
+
+Define SCHEMA_IfcPropertyDependencyRelationship_HAS_DependantProperty
+=====================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPropertyDependencyRelationship_HAS_DependantProperty

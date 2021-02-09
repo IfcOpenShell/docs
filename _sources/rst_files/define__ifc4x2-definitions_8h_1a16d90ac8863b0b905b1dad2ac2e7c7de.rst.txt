@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a16d90ac8863b0b905b1dad2ac2e7c7de:
+
+Define SCHEMA_IfcDocumentInformationRelationship_HAS_RelatedDocuments
+=====================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcDocumentInformationRelationship_HAS_RelatedDocuments

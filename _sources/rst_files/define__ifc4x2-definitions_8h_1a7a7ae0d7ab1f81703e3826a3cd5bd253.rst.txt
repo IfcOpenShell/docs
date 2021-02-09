@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a7a7ae0d7ab1f81703e3826a3cd5bd253:
+
+Define SCHEMA_IfcPerson_HAS_GivenName
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcPerson_HAS_GivenName

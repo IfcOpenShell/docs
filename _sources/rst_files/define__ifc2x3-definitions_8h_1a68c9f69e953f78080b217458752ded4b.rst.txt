@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a68c9f69e953f78080b217458752ded4b:
+
+Define SCHEMA_IfcWaterProperties_HAS_DissolvedSolidsContent
+===========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcWaterProperties_HAS_DissolvedSolidsContent

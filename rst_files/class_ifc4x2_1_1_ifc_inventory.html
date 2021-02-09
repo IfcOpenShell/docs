@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcInventory &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcIonConcentrationMeasure" href="class_ifc4x2_1_1_ifc_ion_concentration_measure.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcIntersectionCurve" href="class_ifc4x2_1_1_ifc_intersection_curve.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcinventory">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-inventory"></span><h1>Class Ifc4x2::IfcInventory<a class="headerlink" href="#class-ifc4x2-ifcinventory" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcGroup</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_group.html#exhale-class-class-ifc4x2-1-1-ifc-group"><span class="std std-ref">Class Ifc4x2::IfcGroup</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x212IfcInventoryE">
+<span id="_CPPv3N6Ifc4x212IfcInventoryE"></span><span id="_CPPv2N6Ifc4x212IfcInventoryE"></span><span id="Ifc4x2::IfcInventory"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcInventory</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_group.html#_CPPv4N6Ifc4x28IfcGroupE" title="Ifc4x2::IfcGroup">IfcGroup</a><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcInventoryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An inventory is a list of items within an enterprise.</p>
+<p>Various types of inventory can be included. These are identified by the range of values within the inventory type enumeration which includes space, asset, and furniture. User defined inventories can also be defined for lists of particular types of element such as may be required in operating and maintenance instructions. Such inventories should be constrained to contain a list of elements of a restricted type.There are a number of actors that can be associated with an inventory, each actor having a role. Actors within the scope of the project are indicated using the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_assigns_to_actor"><span class="std std-ref">IfcRelAssignsToActor</span></a> relationship in which case roles should be defined through the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_actor_role"><span class="std std-ref">IfcActorRole</span></a> class; otherwise principal actors are identified as attributes of the class. In the existence of both, direct attributes take precedence.There are a number of costs that can be associated with an inventory, each cost having a role. These are specified through the CurrentValue and OriginalValue attributes.HISTORY: New entity in IFC2.0. Modified in IFC2x4 to make all attributes optional and remove Where Rule.</p>
+<p>Assignment Use Definition The <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_inventory"><span class="std std-ref">IfcInventory</span></a> may have assignments of its own using the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_rel_assigns_to_group"><span class="std std-ref">IfcRelAssignsToGroup</span></a> relationship where RelatingGroup refers to the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_inventory"><span class="std std-ref">IfcInventory</span></a> and RelatedObjects contains one or more objects of the following types: <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_asset"><span class="std std-ref">IfcAsset</span></a>: Assets included in the inventory.</p>
+<p><a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_element"><span class="std std-ref">IfcElement</span></a>: Elements such as furniture included in the inventory.</p>
+<p><a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_space"><span class="std std-ref">IfcSpace</span></a>: Spaces included in the inventory. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x212IfcInventory4listE">
+<span id="_CPPv3N6Ifc4x212IfcInventory4listE"></span><span id="_CPPv2N6Ifc4x212IfcInventory4listE"></span><span id="Ifc4x2::IfcInventory::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a7d327060fe1d6d8468be72109a5341aa"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x212IfcInventoryE" title="Ifc4x2::IfcInventory">IfcInventory</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcInventory4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcInventory17hasPredefinedTypeEv">
+<span id="_CPPv3NK6Ifc4x212IfcInventory17hasPredefinedTypeEv"></span><span id="_CPPv2NK6Ifc4x212IfcInventory17hasPredefinedTypeEv"></span><span id="Ifc4x2::IfcInventory::hasPredefinedTypeC"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1aff8a4f3656f3b744b459f06a2312e9a2"></span>bool <code class="sig-name descname">hasPredefinedType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcInventory17hasPredefinedTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute PredefinedType is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_inventory"><span class="std std-ref">IfcInventory</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcInventory14PredefinedTypeEv">
+<span id="_CPPv3NK6Ifc4x212IfcInventory14PredefinedTypeEv"></span><span id="_CPPv2NK6Ifc4x212IfcInventory14PredefinedTypeEv"></span><span id="Ifc4x2::IfcInventory::PredefinedTypeC"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a02f7390071963cff61398c5accd1d064"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x220IfcInventoryTypeEnumE" title="Ifc4x2::IfcInventoryTypeEnum">IfcInventoryTypeEnum</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x220IfcInventoryTypeEnum5ValueE" title="Ifc4x2::IfcInventoryTypeEnum::Value">Value</a> <code class="sig-name descname">PredefinedType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcInventory14PredefinedTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A list of the types of inventories from which that required may be selected.</p>
+<p>IFC2x4 CHANGE Attribute made optional. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcInventory17setPredefinedTypeEN6Ifc4x220IfcInventoryTypeEnum5ValueE">
+<span id="_CPPv3N6Ifc4x212IfcInventory17setPredefinedTypeEN6Ifc4x220IfcInventoryTypeEnum5ValueE"></span><span id="_CPPv2N6Ifc4x212IfcInventory17setPredefinedTypeEN6Ifc4x220IfcInventoryTypeEnum5ValueE"></span><span id="Ifc4x2::IfcInventory::setPredefinedType__Ifc4x2::IfcInventoryTypeEnum::Value"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a4ced04a9efd68a69760d8524dbabe47b"></span>void <code class="sig-name descname">setPredefinedType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x220IfcInventoryTypeEnumE" title="Ifc4x2::IfcInventoryTypeEnum">IfcInventoryTypeEnum</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x220IfcInventoryTypeEnum5ValueE" title="Ifc4x2::IfcInventoryTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcInventory17setPredefinedTypeEN6Ifc4x220IfcInventoryTypeEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcInventory15hasJurisdictionEv">
+<span id="_CPPv3NK6Ifc4x212IfcInventory15hasJurisdictionEv"></span><span id="_CPPv2NK6Ifc4x212IfcInventory15hasJurisdictionEv"></span><span id="Ifc4x2::IfcInventory::hasJurisdictionC"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a420cea534d86b6ad2539005d6ea86ee2"></span>bool <code class="sig-name descname">hasJurisdiction</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcInventory15hasJurisdictionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Jurisdiction is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_inventory"><span class="std std-ref">IfcInventory</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcInventory12JurisdictionEv">
+<span id="_CPPv3NK6Ifc4x212IfcInventory12JurisdictionEv"></span><span id="_CPPv2NK6Ifc4x212IfcInventory12JurisdictionEv"></span><span id="Ifc4x2::IfcInventory::JurisdictionC"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a2e824afa2571041e3ad42666bbef75db"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x214IfcActorSelectE" title="Ifc4x2::IfcActorSelect">IfcActorSelect</a> *<code class="sig-name descname">Jurisdiction</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcInventory12JurisdictionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The organizational unit to which the inventory is applicable. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcInventory15setJurisdictionEPN6Ifc4x214IfcActorSelectE">
+<span id="_CPPv3N6Ifc4x212IfcInventory15setJurisdictionEPN6Ifc4x214IfcActorSelectE"></span><span id="_CPPv2N6Ifc4x212IfcInventory15setJurisdictionEPN6Ifc4x214IfcActorSelectE"></span><span id="Ifc4x2::IfcInventory::setJurisdiction__Ifc4x2::IfcActorSelectP"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1aa53c03a279ac591706b6296b0aae88b4"></span>void <code class="sig-name descname">setJurisdiction</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x214IfcActorSelectE" title="Ifc4x2::IfcActorSelect">IfcActorSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcInventory15setJurisdictionEPN6Ifc4x214IfcActorSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcInventory21hasResponsiblePersonsEv">
+<span id="_CPPv3NK6Ifc4x212IfcInventory21hasResponsiblePersonsEv"></span><span id="_CPPv2NK6Ifc4x212IfcInventory21hasResponsiblePersonsEv"></span><span id="Ifc4x2::IfcInventory::hasResponsiblePersonsC"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a1bbec85b941af57804c0c7da39c85ccb"></span>bool <code class="sig-name descname">hasResponsiblePersons</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcInventory21hasResponsiblePersonsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ResponsiblePersons is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_inventory"><span class="std std-ref">IfcInventory</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcInventory18ResponsiblePersonsEv">
+<span id="_CPPv3NK6Ifc4x212IfcInventory18ResponsiblePersonsEv"></span><span id="_CPPv2NK6Ifc4x212IfcInventory18ResponsiblePersonsEv"></span><span id="Ifc4x2::IfcInventory::ResponsiblePersonsC"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a76477e7273b4a379381063178233aed8"></span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_person.html#_CPPv4N6Ifc4x29IfcPersonE" title="Ifc4x2::IfcPerson">IfcPerson</a>&gt;::ptr <code class="sig-name descname">ResponsiblePersons</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcInventory18ResponsiblePersonsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Persons who are responsible for the inventory. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcInventory21setResponsiblePersonsEN22IfcTemplatedEntityListIN6Ifc4x29IfcPersonEE3ptrE">
+<span id="_CPPv3N6Ifc4x212IfcInventory21setResponsiblePersonsEN22IfcTemplatedEntityListIN6Ifc4x29IfcPersonEE3ptrE"></span><span id="_CPPv2N6Ifc4x212IfcInventory21setResponsiblePersonsEN22IfcTemplatedEntityListIN6Ifc4x29IfcPersonEE3ptrE"></span><span id="Ifc4x2::IfcInventory::setResponsiblePersons__IfcTemplatedEntityList:Ifc4x2::IfcPerson:::ptr"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a9350523f15bc9990c3ceaf5200ab3fd4"></span>void <code class="sig-name descname">setResponsiblePersons</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_person.html#_CPPv4N6Ifc4x29IfcPersonE" title="Ifc4x2::IfcPerson">IfcPerson</a>&gt;::ptr <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcInventory21setResponsiblePersonsEN22IfcTemplatedEntityListIN6Ifc4x29IfcPersonEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcInventory17hasLastUpdateDateEv">
+<span id="_CPPv3NK6Ifc4x212IfcInventory17hasLastUpdateDateEv"></span><span id="_CPPv2NK6Ifc4x212IfcInventory17hasLastUpdateDateEv"></span><span id="Ifc4x2::IfcInventory::hasLastUpdateDateC"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a026ea9388e0676c5f27f31813ba84a2a"></span>bool <code class="sig-name descname">hasLastUpdateDate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcInventory17hasLastUpdateDateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute LastUpdateDate is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_inventory"><span class="std std-ref">IfcInventory</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcInventory14LastUpdateDateEv">
+<span id="_CPPv3NK6Ifc4x212IfcInventory14LastUpdateDateEv"></span><span id="_CPPv2NK6Ifc4x212IfcInventory14LastUpdateDateEv"></span><span id="Ifc4x2::IfcInventory::LastUpdateDateC"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a2e0f21072f1a166f67f148a828f934f0"></span>std::string <code class="sig-name descname">LastUpdateDate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcInventory14LastUpdateDateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The date on which the last update of the inventory was carried out.</p>
+<p>IFC2x4 CHANGE Type changed from IfcDateTimeSelect. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcInventory17setLastUpdateDateENSt6stringE">
+<span id="_CPPv3N6Ifc4x212IfcInventory17setLastUpdateDateENSt6stringE"></span><span id="_CPPv2N6Ifc4x212IfcInventory17setLastUpdateDateENSt6stringE"></span><span id="Ifc4x2::IfcInventory::setLastUpdateDate__ss"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a342e1265873479988485dd4e725127ba"></span>void <code class="sig-name descname">setLastUpdateDate</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcInventory17setLastUpdateDateENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcInventory15hasCurrentValueEv">
+<span id="_CPPv3NK6Ifc4x212IfcInventory15hasCurrentValueEv"></span><span id="_CPPv2NK6Ifc4x212IfcInventory15hasCurrentValueEv"></span><span id="Ifc4x2::IfcInventory::hasCurrentValueC"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a99fd9127970e1c4b088c97ba3b44919c"></span>bool <code class="sig-name descname">hasCurrentValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcInventory15hasCurrentValueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute CurrentValue is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_inventory"><span class="std std-ref">IfcInventory</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcInventory12CurrentValueEv">
+<span id="_CPPv3NK6Ifc4x212IfcInventory12CurrentValueEv"></span><span id="_CPPv2NK6Ifc4x212IfcInventory12CurrentValueEv"></span><span id="Ifc4x2::IfcInventory::CurrentValueC"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a8471b2d88de9b5454c95aedc5678ff95"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_cost_value.html#_CPPv4N6Ifc4x212IfcCostValueE" title="Ifc4x2::IfcCostValue">IfcCostValue</a> *<code class="sig-name descname">CurrentValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcInventory12CurrentValueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An estimate of the current cost value of the inventory. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcInventory15setCurrentValueEPN6Ifc4x212IfcCostValueE">
+<span id="_CPPv3N6Ifc4x212IfcInventory15setCurrentValueEPN6Ifc4x212IfcCostValueE"></span><span id="_CPPv2N6Ifc4x212IfcInventory15setCurrentValueEPN6Ifc4x212IfcCostValueE"></span><span id="Ifc4x2::IfcInventory::setCurrentValue__Ifc4x2::IfcCostValueP"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a450ce257a8e20241eeef93a11dbbd332"></span>void <code class="sig-name descname">setCurrentValue</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_cost_value.html#_CPPv4N6Ifc4x212IfcCostValueE" title="Ifc4x2::IfcCostValue">IfcCostValue</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcInventory15setCurrentValueEPN6Ifc4x212IfcCostValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcInventory16hasOriginalValueEv">
+<span id="_CPPv3NK6Ifc4x212IfcInventory16hasOriginalValueEv"></span><span id="_CPPv2NK6Ifc4x212IfcInventory16hasOriginalValueEv"></span><span id="Ifc4x2::IfcInventory::hasOriginalValueC"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1ad6960e1527dfb62b02def0b892a5c117"></span>bool <code class="sig-name descname">hasOriginalValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcInventory16hasOriginalValueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute OriginalValue is defined for this <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_inventory"><span class="std std-ref">IfcInventory</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcInventory13OriginalValueEv">
+<span id="_CPPv3NK6Ifc4x212IfcInventory13OriginalValueEv"></span><span id="_CPPv2NK6Ifc4x212IfcInventory13OriginalValueEv"></span><span id="Ifc4x2::IfcInventory::OriginalValueC"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1ae62eebc23aa1f78c0357ea5041a4ba82"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_cost_value.html#_CPPv4N6Ifc4x212IfcCostValueE" title="Ifc4x2::IfcCostValue">IfcCostValue</a> *<code class="sig-name descname">OriginalValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcInventory13OriginalValueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An estimate of the original cost value of the inventory. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcInventory16setOriginalValueEPN6Ifc4x212IfcCostValueE">
+<span id="_CPPv3N6Ifc4x212IfcInventory16setOriginalValueEPN6Ifc4x212IfcCostValueE"></span><span id="_CPPv2N6Ifc4x212IfcInventory16setOriginalValueEPN6Ifc4x212IfcCostValueE"></span><span id="Ifc4x2::IfcInventory::setOriginalValue__Ifc4x2::IfcCostValueP"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a5306970b18650b2dff8b27f41cbace9d"></span>void <code class="sig-name descname">setOriginalValue</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_cost_value.html#_CPPv4N6Ifc4x212IfcCostValueE" title="Ifc4x2::IfcCostValue">IfcCostValue</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcInventory16setOriginalValueEPN6Ifc4x212IfcCostValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x212IfcInventory11declarationEv">
+<span id="_CPPv3NK6Ifc4x212IfcInventory11declarationEv"></span><span id="_CPPv2NK6Ifc4x212IfcInventory11declarationEv"></span><span id="Ifc4x2::IfcInventory::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a45f456adaae52fd96f08543a36187108"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x212IfcInventory11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcInventory12IfcInventoryEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x212IfcInventory12IfcInventoryEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x212IfcInventory12IfcInventoryEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcInventory::IfcInventory__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a8c2db5126ce63be65742d07143b62185"></span><code class="sig-name descname">IfcInventory</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcInventory12IfcInventoryEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcInventory12IfcInventoryENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x220IfcInventoryTypeEnum5ValueEEEPN6Ifc4x214IfcActorSelectEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x29IfcPersonEE3ptrEEEN5boost8optionalINSt6stringEEEPN6Ifc4x212IfcCostValueEPN6Ifc4x212IfcCostValueE">
+<span id="_CPPv3N6Ifc4x212IfcInventory12IfcInventoryENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x220IfcInventoryTypeEnum5ValueEEEPN6Ifc4x214IfcActorSelectEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x29IfcPersonEE3ptrEEEN5boost8optionalINSt6stringEEEPN6Ifc4x212IfcCostValueEPN6Ifc4x212IfcCostValueE"></span><span id="_CPPv2N6Ifc4x212IfcInventory12IfcInventoryENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x220IfcInventoryTypeEnum5ValueEEEPN6Ifc4x214IfcActorSelectEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x29IfcPersonEE3ptrEEEN5boost8optionalINSt6stringEEEPN6Ifc4x212IfcCostValueEPN6Ifc4x212IfcCostValueE"></span><span id="Ifc4x2::IfcInventory::IfcInventory__ss.Ifc4x2::IfcOwnerHistoryP.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:Ifc4x2::IfcInventoryTypeEnum::Value:.Ifc4x2::IfcActorSelectP.boost::optional:IfcTemplatedEntityList:Ifc4x2::IfcPerson:::ptr:.boost::optional:ss:.Ifc4x2::IfcCostValueP.Ifc4x2::IfcCostValueP"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a6fa2b4a19d0aad2de98afc77061134dc"></span><code class="sig-name descname">IfcInventory</code><span class="sig-paren">(</span>std::string <em>v1_GlobalId</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_owner_history.html#_CPPv4N6Ifc4x215IfcOwnerHistoryE" title="Ifc4x2::IfcOwnerHistory">IfcOwnerHistory</a> *<em>v2_OwnerHistory</em>, boost::optional&lt;std::string&gt; <em>v3_Name</em>, boost::optional&lt;std::string&gt; <em>v4_Description</em>, boost::optional&lt;std::string&gt; <em>v5_ObjectType</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x220IfcInventoryTypeEnumE" title="Ifc4x2::IfcInventoryTypeEnum">IfcInventoryTypeEnum</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x220IfcInventoryTypeEnum5ValueE" title="Ifc4x2::IfcInventoryTypeEnum::Value">Value</a>&gt; <em>v6_PredefinedType</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x214IfcActorSelectE" title="Ifc4x2::IfcActorSelect">IfcActorSelect</a> *<em>v7_Jurisdiction</em>, boost::optional&lt;<a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_person.html#_CPPv4N6Ifc4x29IfcPersonE" title="Ifc4x2::IfcPerson">IfcPerson</a>&gt;::ptr&gt; <em>v8_ResponsiblePersons</em>, boost::optional&lt;std::string&gt; <em>v9_LastUpdateDate</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_cost_value.html#_CPPv4N6Ifc4x212IfcCostValueE" title="Ifc4x2::IfcCostValue">IfcCostValue</a> *<em>v10_CurrentValue</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_cost_value.html#_CPPv4N6Ifc4x212IfcCostValueE" title="Ifc4x2::IfcCostValue">IfcCostValue</a> *<em>v11_OriginalValue</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcInventory12IfcInventoryENSt6stringEPN6Ifc4x215IfcOwnerHistoryEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN6Ifc4x220IfcInventoryTypeEnum5ValueEEEPN6Ifc4x214IfcActorSelectEN5boost8optionalIN22IfcTemplatedEntityListIN6Ifc4x29IfcPersonEE3ptrEEEN5boost8optionalINSt6stringEEEPN6Ifc4x212IfcCostValueEPN6Ifc4x212IfcCostValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x212IfcInventory5ClassEv">
+<span id="_CPPv3N6Ifc4x212IfcInventory5ClassEv"></span><span id="_CPPv2N6Ifc4x212IfcInventory5ClassEv"></span><span id="Ifc4x2::IfcInventory::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_inventory_1a7dc612aa9104897e8718140e7a97cedd"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x212IfcInventory5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_intersection_curve.html" title="previous chapter">Class Ifc4x2::IfcIntersectionCurve</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_ion_concentration_measure.html" title="next chapter">Class Ifc4x2::IfcIonConcentrationMeasure</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_inventory.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

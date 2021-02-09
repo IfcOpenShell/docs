@@ -1,0 +1,67 @@
+
+.. _file_src_serializers_util.h:
+
+File util.h
+===========
+
+|exhale_lsh| :ref:`Parent directory <dir_src_serializers>` (``src/serializers``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/serializers/util.h``)
+---------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_serializers_util.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``boost/shared_ptr.hpp``
+
+- ``sstream``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_serializers_SvgSerializer.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_util`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classutil_1_1string__buffer`
+
+- :ref:`exhale_class_classutil_1_1string__buffer_1_1float__item`
+
+- :ref:`exhale_class_classutil_1_1string__buffer_1_1item`
+
+- :ref:`exhale_class_classutil_1_1string__buffer_1_1string__item`
+

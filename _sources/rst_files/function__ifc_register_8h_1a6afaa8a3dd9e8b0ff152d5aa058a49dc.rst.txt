@@ -1,0 +1,13 @@
+.. _exhale_function__ifc_register_8h_1a6afaa8a3dd9e8b0ff152d5aa058a49dc:
+
+Function SHAPES(IfcFaceBasedSurfaceModel)
+=========================================
+
+- Defined in :ref:`file_src_ifcgeom_IfcRegister.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: SHAPES(IfcFaceBasedSurfaceModel)

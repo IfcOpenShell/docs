@@ -1,0 +1,37 @@
+.. _exhale_class_class_ifc4x2_1_1_ifc_style_model:
+
+Class Ifc4x2::IfcStyleModel
+===========================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x2`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x2::IfcRepresentation`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_representation`)
+
+
+Derived Type
+************
+
+- ``public Ifc4x2::IfcStyledRepresentation`` (:ref:`exhale_class_class_ifc4x2_1_1_ifc_styled_representation`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x2::IfcStyleModel
+   :members:
+   :protected-members:
+   :undoc-members:

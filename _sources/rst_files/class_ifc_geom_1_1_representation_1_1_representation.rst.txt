@@ -1,0 +1,27 @@
+.. _exhale_class_class_ifc_geom_1_1_representation_1_1_representation:
+
+Class Representation
+====================
+
+- Defined in :ref:`file_src_ifcgeom_IfcGeomRepresentation.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public IfcGeom::Representation::BRep`` (:ref:`exhale_class_class_ifc_geom_1_1_representation_1_1_b_rep`)
+- ``public IfcGeom::Representation::Serialization`` (:ref:`exhale_class_class_ifc_geom_1_1_representation_1_1_serialization`)
+- ``public IfcGeom::Representation::Triangulation< P >`` (:ref:`exhale_class_class_ifc_geom_1_1_representation_1_1_triangulation`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcGeom::Representation::Representation
+   :members:
+   :protected-members:
+   :undoc-members:

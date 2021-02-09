@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a414542cba29cd3ff3ca752f42b13e245:
+
+Define SCHEMA_IfcLocalTime_SecondComponent_IS_OPTIONAL
+======================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcLocalTime_SecondComponent_IS_OPTIONAL

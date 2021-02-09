@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a6aeb8dd61295303c988f46046b86c6a5:
+
+Define SCHEMA_IfcContext_HAS_RepresentationContexts
+===================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcContext_HAS_RepresentationContexts

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a336072d572e3b09d9906b47e106fef06:
+
+Define SCHEMA_IfcTaskTime_HAS_ActualDuration
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTaskTime_HAS_ActualDuration

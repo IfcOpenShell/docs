@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1aa03f7e2575789399c3c54c21c9317ad1:
+
+Define SCHEMA_HAS_IfcFeatureElementSubtraction
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcFeatureElementSubtraction

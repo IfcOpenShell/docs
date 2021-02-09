@@ -1,0 +1,154 @@
+
+.. _file_src_ifcgeom_IfcGeom.h:
+
+File IfcGeom.h
+==============
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcgeom>` (``src/ifcgeom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/IfcGeom.h``)
+--------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_IfcGeom.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/IfcGeomElement.h``
+
+- ``../ifcgeom/IfcGeomRepresentation.h``
+
+- ``../ifcgeom/IfcGeomShapeType.h``
+
+- ``../ifcgeom/IfcRepresentationShapeItem.h``
+
+- ``../ifcgeom_schema_agnostic/Kernel.h``
+
+- ``../ifcparse/IfcBaseClass.h``
+
+- ``../ifcparse/IfcParse.h``
+
+- ``../ifcparse/macros.h``
+
+- ``BOPAlgo_Operation.hxx``
+
+- ``BRepBuilderAPI_MakeEdge.hxx``
+
+- ``BRep_Builder.hxx``
+
+- ``Geom_Curve.hxx``
+
+- ``IfcRegisterCreateCache.h`` (:ref:`file_src_ifcgeom_IfcRegisterCreateCache.h`)
+
+- ``IfcRegisterGeomHeader.h`` (:ref:`file_src_ifcgeom_IfcRegisterGeomHeader.h`)
+
+- ``TColgp_SequenceOfPnt.hxx``
+
+- ``TopTools_ListOfShape.hxx``
+
+- ``TopoDS.hxx``
+
+- ``TopoDS_Face.hxx``
+
+- ``TopoDS_Wire.hxx``
+
+- ``array``
+
+- ``cmath``
+
+- ``gp_GTrsf.hxx``
+
+- ``gp_GTrsf2d.hxx``
+
+- ``gp_Mat.hxx``
+
+- ``gp_Mat2d.hxx``
+
+- ``gp_Pln.hxx``
+
+- ``gp_Pnt.hxx``
+
+- ``gp_Quaternion.hxx``
+
+- ``gp_Trsf.hxx``
+
+- ``gp_Trsf2d.hxx``
+
+- ``gp_Vec.hxx``
+
+- ``ifc_geom_api.h`` (:ref:`file_src_ifcgeom_ifc_geom_api.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_IfcGeomIteratorImplementation.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcGeom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_ifc_geom_1_1geometry__exception`
+
+- :ref:`exhale_class_class_ifc_geom_1_1too__many__faces__exception`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function__ifc_geom_8h_1a08a6d29ead2c50b1ee6bb3c322eea3ff`
+
+- :ref:`exhale_function__ifc_geom_8h_1a50dc2a43fdb9313e23c33a7cf78e8ee8`
+
+- :ref:`exhale_function__ifc_geom_8h_1a931777c8a4d3e1e1361448426ef383fe`
+
+- :ref:`exhale_function__ifc_geom_8h_1af1de4ef5b695b0c860f4302e9cacd476`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define__ifc_geom_8h_1a6e89bf282cfb2727a409d4cabe4276e8`
+
+- :ref:`exhale_define__ifc_geom_8h_1a271e870b7b3e2a554cd7981e05cdc5dc`
+
+- :ref:`exhale_define__ifc_geom_8h_1af30b9f470f5a43076bc31942f34b2be4`
+
+- :ref:`exhale_define__ifc_geom_8h_1af30b9f470f5a43076bc31942f34b2be4`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable__ifc_geom_8h_1a0c0ce8d3e1c56d4119cfd5f4a2332827`
+

@@ -1,0 +1,45 @@
+.. _exhale_class_class_ifc4x3__rc1_1_1_ifc_resource_level_relationship:
+
+Class Ifc4x3_rc1::IfcResourceLevelRelationship
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x3__rc1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcUtil::IfcBaseEntity`` (:ref:`exhale_class_class_ifc_util_1_1_ifc_base_entity`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x3_rc1::IfcApprovalRelationship`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_approval_relationship`)
+- ``public Ifc4x3_rc1::IfcCurrencyRelationship`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_currency_relationship`)
+- ``public Ifc4x3_rc1::IfcDocumentInformationRelationship`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_document_information_relationship`)
+- ``public Ifc4x3_rc1::IfcExternalReferenceRelationship`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_external_reference_relationship`)
+- ``public Ifc4x3_rc1::IfcMaterialRelationship`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_material_relationship`)
+- ``public Ifc4x3_rc1::IfcOrganizationRelationship`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_organization_relationship`)
+- ``public Ifc4x3_rc1::IfcPropertyDependencyRelationship`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_property_dependency_relationship`)
+- ``public Ifc4x3_rc1::IfcResourceApprovalRelationship`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_resource_approval_relationship`)
+- ``public Ifc4x3_rc1::IfcResourceConstraintRelationship`` (:ref:`exhale_class_class_ifc4x3__rc1_1_1_ifc_resource_constraint_relationship`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x3_rc1::IfcResourceLevelRelationship
+   :members:
+   :protected-members:
+   :undoc-members:

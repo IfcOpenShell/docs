@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1abb3c3e2acef5bc04b477687bbb9b1370:
+
+Define SCHEMA_IfcMaterialProfile_HAS_ToMaterialProfileSet
+=========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcMaterialProfile_HAS_ToMaterialProfileSet

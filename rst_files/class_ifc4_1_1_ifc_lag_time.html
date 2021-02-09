@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcLagTime &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcLamp" href="class_ifc4_1_1_ifc_lamp.html" />
+    <link rel="prev" title="Class Ifc4::IfcLaborResourceType" href="class_ifc4_1_1_ifc_labor_resource_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifclagtime">
+<span id="exhale-class-class-ifc4-1-1-ifc-lag-time"></span><h1>Class Ifc4::IfcLagTime<a class="headerlink" href="#class-ifc4-ifclagtime" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcSchedulingTime</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_scheduling_time.html#exhale-class-class-ifc4-1-1-ifc-scheduling-time"><span class="std std-ref">Class Ifc4::IfcSchedulingTime</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc410IfcLagTimeE">
+<span id="_CPPv3N4Ifc410IfcLagTimeE"></span><span id="_CPPv2N4Ifc410IfcLagTimeE"></span><span id="Ifc4::IfcLagTime"></span><span class="target" id="class_ifc4_1_1_ifc_lag_time"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcLagTime</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_scheduling_time.html#_CPPv4N4Ifc417IfcSchedulingTimeE" title="Ifc4::IfcSchedulingTime">IfcSchedulingTime</a><a class="headerlink" href="#_CPPv4N4Ifc410IfcLagTimeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_lag_time"><span class="std std-ref">IfcLagTime</span></a> describes the time parameters that may exist within a sequence relationship between two processes.</p>
+<p>HISTORY: New entity in IFC Release 2x4.</p>
+<p>Use Definitions</p>
+<p>An <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_lag_time"><span class="std std-ref">IfcLagTime</span></a> provides information about the time lag that exists between the predecessor and successor process in a sequence. The assertion of the time lag is optional for a sequence but for work schedules that specifically deal with processes occurring at particular times, it should be asserted.</p>
+<p>A lag time has a duration type. This allows the identification of whether elapsed time or work time is being measured (where work time is the estimate of the time required to complete the process and elapsed time being the amount of time actually allocated to the process)</p>
+<p>The form of measurement of the duration can be captured. Allowed values for this are MEASURED, PREDICTED or SIMULATED. The selection of this value depends on the use of the schedule. A NOTDEFINED value is also allowed.</p>
+<p>The value of the time lag may be selected as being either a percentage ratio or an actual time measure. If selected as a ratio, the percentage should apply to the duration of the predecessor process (relating process) such that e.g. a value of 0.5 (50%) would indicate that the successor task should start when the predecessor task is 50% complete (if a START-START sequence type is used) or should wait for 50% of the duration of the predecessor process to have elapsed after the finish of the predecessor process in case of a FINISH-START sequence type.</p>
+<p>The time unit for the task duration may also be set and this may be set to any allowed unit of time measure. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc410IfcLagTime4listE">
+<span id="_CPPv3N4Ifc410IfcLagTime4listE"></span><span id="_CPPv2N4Ifc410IfcLagTime4listE"></span><span id="Ifc4::IfcLagTime::list"></span><span class="target" id="class_ifc4_1_1_ifc_lag_time_1a6ca1397d410d2e6a7fdc19508cf31559"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc410IfcLagTimeE" title="Ifc4::IfcLagTime">IfcLagTime</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc410IfcLagTime4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc410IfcLagTime8LagValueEv">
+<span id="_CPPv3NK4Ifc410IfcLagTime8LagValueEv"></span><span id="_CPPv2NK4Ifc410IfcLagTime8LagValueEv"></span><span id="Ifc4::IfcLagTime::LagValueC"></span><span class="target" id="class_ifc4_1_1_ifc_lag_time_1a706f29d865af3844147f425efd0802e6"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc420IfcTimeOrRatioSelectE" title="Ifc4::IfcTimeOrRatioSelect">IfcTimeOrRatioSelect</a> *<code class="sig-name descname">LagValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc410IfcLagTime8LagValueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Value of the time lag selected as being either a ratio or a time measure. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc410IfcLagTime11setLagValueEPN4Ifc420IfcTimeOrRatioSelectE">
+<span id="_CPPv3N4Ifc410IfcLagTime11setLagValueEPN4Ifc420IfcTimeOrRatioSelectE"></span><span id="_CPPv2N4Ifc410IfcLagTime11setLagValueEPN4Ifc420IfcTimeOrRatioSelectE"></span><span id="Ifc4::IfcLagTime::setLagValue__Ifc4::IfcTimeOrRatioSelectP"></span><span class="target" id="class_ifc4_1_1_ifc_lag_time_1ad34adbad82d9950f8dae32394d97c840"></span>void <code class="sig-name descname">setLagValue</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc420IfcTimeOrRatioSelectE" title="Ifc4::IfcTimeOrRatioSelect">IfcTimeOrRatioSelect</a> *<em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc410IfcLagTime11setLagValueEPN4Ifc420IfcTimeOrRatioSelectE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc410IfcLagTime12DurationTypeEv">
+<span id="_CPPv3NK4Ifc410IfcLagTime12DurationTypeEv"></span><span id="_CPPv2NK4Ifc410IfcLagTime12DurationTypeEv"></span><span id="Ifc4::IfcLagTime::DurationTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_lag_time_1ad8fb99a9e30fe0a036219b3c9ef0d0da"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcTaskDurationEnumE" title="Ifc4::IfcTaskDurationEnum">IfcTaskDurationEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcTaskDurationEnum5ValueE" title="Ifc4::IfcTaskDurationEnum::Value">Value</a> <code class="sig-name descname">DurationType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc410IfcLagTime12DurationTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The allowed types of task duration that specify the lag time measurement (work time or elapsed time). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc410IfcLagTime15setDurationTypeEN4Ifc419IfcTaskDurationEnum5ValueE">
+<span id="_CPPv3N4Ifc410IfcLagTime15setDurationTypeEN4Ifc419IfcTaskDurationEnum5ValueE"></span><span id="_CPPv2N4Ifc410IfcLagTime15setDurationTypeEN4Ifc419IfcTaskDurationEnum5ValueE"></span><span id="Ifc4::IfcLagTime::setDurationType__Ifc4::IfcTaskDurationEnum::Value"></span><span class="target" id="class_ifc4_1_1_ifc_lag_time_1a2bacd082e68aa490c6498843cef55cbd"></span>void <code class="sig-name descname">setDurationType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcTaskDurationEnumE" title="Ifc4::IfcTaskDurationEnum">IfcTaskDurationEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcTaskDurationEnum5ValueE" title="Ifc4::IfcTaskDurationEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc410IfcLagTime15setDurationTypeEN4Ifc419IfcTaskDurationEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc410IfcLagTime11declarationEv">
+<span id="_CPPv3NK4Ifc410IfcLagTime11declarationEv"></span><span id="_CPPv2NK4Ifc410IfcLagTime11declarationEv"></span><span id="Ifc4::IfcLagTime::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_lag_time_1a0b221596ce2ee0b82721edf483b8ec37"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc410IfcLagTime11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc410IfcLagTime10IfcLagTimeEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc410IfcLagTime10IfcLagTimeEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc410IfcLagTime10IfcLagTimeEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcLagTime::IfcLagTime__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_lag_time_1a22e7136c0c844ba4bb7057963d137918"></span><code class="sig-name descname">IfcLagTime</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc410IfcLagTime10IfcLagTimeEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc410IfcLagTime10IfcLagTimeEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc417IfcDataOriginEnum5ValueEEEN5boost8optionalINSt6stringEEEPN4Ifc420IfcTimeOrRatioSelectEN4Ifc419IfcTaskDurationEnum5ValueE">
+<span id="_CPPv3N4Ifc410IfcLagTime10IfcLagTimeEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc417IfcDataOriginEnum5ValueEEEN5boost8optionalINSt6stringEEEPN4Ifc420IfcTimeOrRatioSelectEN4Ifc419IfcTaskDurationEnum5ValueE"></span><span id="_CPPv2N4Ifc410IfcLagTime10IfcLagTimeEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc417IfcDataOriginEnum5ValueEEEN5boost8optionalINSt6stringEEEPN4Ifc420IfcTimeOrRatioSelectEN4Ifc419IfcTaskDurationEnum5ValueE"></span><span id="Ifc4::IfcLagTime::IfcLagTime__boost::optional:ss:.boost::optional:Ifc4::IfcDataOriginEnum::Value:.boost::optional:ss:.Ifc4::IfcTimeOrRatioSelectP.Ifc4::IfcTaskDurationEnum::Value"></span><span class="target" id="class_ifc4_1_1_ifc_lag_time_1a617eaea9a8c1f079478cc6cfd1422e96"></span><code class="sig-name descname">IfcLagTime</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Name</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc417IfcDataOriginEnumE" title="Ifc4::IfcDataOriginEnum">IfcDataOriginEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc417IfcDataOriginEnum5ValueE" title="Ifc4::IfcDataOriginEnum::Value">Value</a>&gt; <em>v2_DataOrigin</em>, boost::optional&lt;std::string&gt; <em>v3_UserDefinedDataOrigin</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc420IfcTimeOrRatioSelectE" title="Ifc4::IfcTimeOrRatioSelect">IfcTimeOrRatioSelect</a> *<em>v4_LagValue</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcTaskDurationEnumE" title="Ifc4::IfcTaskDurationEnum">IfcTaskDurationEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcTaskDurationEnum5ValueE" title="Ifc4::IfcTaskDurationEnum::Value">Value</a> <em>v5_DurationType</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc410IfcLagTime10IfcLagTimeEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc417IfcDataOriginEnum5ValueEEEN5boost8optionalINSt6stringEEEPN4Ifc420IfcTimeOrRatioSelectEN4Ifc419IfcTaskDurationEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc410IfcLagTime5ClassEv">
+<span id="_CPPv3N4Ifc410IfcLagTime5ClassEv"></span><span id="_CPPv2N4Ifc410IfcLagTime5ClassEv"></span><span id="Ifc4::IfcLagTime::Class"></span><span class="target" id="class_ifc4_1_1_ifc_lag_time_1abedc114d5056e5ce99ee87329a499f61"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc410IfcLagTime5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_labor_resource_type.html" title="previous chapter">Class Ifc4::IfcLaborResourceType</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_lamp.html" title="next chapter">Class Ifc4::IfcLamp</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_lag_time.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

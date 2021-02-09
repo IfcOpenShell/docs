@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a184a9d61fad2aa6b5ddc62ede9f2cff4:
+
+Define SCHEMA_IfcCostSchedule_HAS_TargetUsers
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcCostSchedule_HAS_TargetUsers

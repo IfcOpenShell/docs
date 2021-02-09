@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a62d758767a1a08915693c5bb6a6afa16:
+
+Define SCHEMA_IfcSectionProperties_HAS_EndProfile
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSectionProperties_HAS_EndProfile

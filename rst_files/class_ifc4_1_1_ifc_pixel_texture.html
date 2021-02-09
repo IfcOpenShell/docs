@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcPixelTexture &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcPlacement" href="class_ifc4_1_1_ifc_placement.html" />
+    <link rel="prev" title="Class Ifc4::IfcPipeSegmentType" href="class_ifc4_1_1_ifc_pipe_segment_type.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcpixeltexture">
+<span id="exhale-class-class-ifc4-1-1-ifc-pixel-texture"></span><h1>Class Ifc4::IfcPixelTexture<a class="headerlink" href="#class-ifc4-ifcpixeltexture" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcSurfaceTexture</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_surface_texture.html#exhale-class-class-ifc4-1-1-ifc-surface-texture"><span class="std std-ref">Class Ifc4::IfcSurfaceTexture</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc415IfcPixelTextureE">
+<span id="_CPPv3N4Ifc415IfcPixelTextureE"></span><span id="_CPPv2N4Ifc415IfcPixelTextureE"></span><span id="Ifc4::IfcPixelTexture"></span><span class="target" id="class_ifc4_1_1_ifc_pixel_texture"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcPixelTexture</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_surface_texture.html#_CPPv4N4Ifc417IfcSurfaceTextureE" title="Ifc4::IfcSurfaceTexture">IfcSurfaceTexture</a><a class="headerlink" href="#_CPPv4N4Ifc415IfcPixelTextureE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_pixel_texture"><span class="std std-ref">IfcPixelTexture</span></a> provides a 2D image-based texture map as an explicit array of pixel values (list of Pixel binary attributes). In contrary to the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_image_texture"><span class="std std-ref">IfcImageTexture</span></a> the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_pixel_texture"><span class="std std-ref">IfcPixelTexture</span></a> holds a 2 dimensional list of pixel color (and opacity) directly, instead of referencing to an URL.</p>
+<p>The following definitions from ISO/IEC 19775-1 X3D Architecture and base components (X3D Specification) apply:</p>
+<p>The PixelTexture node defines a 2D image-based texture map as an explicit array of pixel values (image field) and parameters controlling tiling repetition of the texture onto geometry. Texture maps are defined in a 2D coordinate system (s, t) that ranges from 0.0 to 1.0 in both directions. The bottom edge of the pixel image corresponds to the S-axis of the texture map, and left edge of the pixel image corresponds to the T-axis of the texture map. The lower-left pixel of the pixel image corresponds to s=0.0, t=0.0, and the top-right pixel of the image corresponds to s = 1.0, t = 1.0. The Image field specifies a single uncompressed 2-dimensional pixel image. Image fields contain three integers representing the width, height and number of components in the image, followed by width×height hexadecimal values representing the pixels in the image. Pixel values are limited to 256 levels of intensity (that is, 0x00-0xFF hexadecimal).</p>
+<p>A one-component image specifies one-byte hexadecimal value representing the intensity of the image. For example, 0xFF is full intensity in hexadecimal (255 in decimal), 0x00 is no intensity (0 in decimal). A two-component image specifies the intensity in the first (high) byte and the alpha opacity in the second (low) byte. Pixels in a three-component image specify the red component in the first (high) byte, followed by the green and blue components (for example, 0xFF0000 is red, 0x00FF00 is green, 0x0000FF is blue). Four-component images specify the alpha opacity byte after red/green/blue (e.g., 0x0000FF80 is semi-transparent blue). A value of 00 is completely transparent, FF is completely opaque, 80 is semi-transparent.</p>
+<p>Note that alpha equals (1.0 -transparency), if alpha and transparency each range from 0.0 to 1.0.</p>
+<p>HISTORY: New class in IFC2x2. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc415IfcPixelTexture4listE">
+<span id="_CPPv3N4Ifc415IfcPixelTexture4listE"></span><span id="_CPPv2N4Ifc415IfcPixelTexture4listE"></span><span id="Ifc4::IfcPixelTexture::list"></span><span class="target" id="class_ifc4_1_1_ifc_pixel_texture_1a8e21221dae5297a3fd3adb3d7691ce75"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc415IfcPixelTextureE" title="Ifc4::IfcPixelTexture">IfcPixelTexture</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc415IfcPixelTexture4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc415IfcPixelTexture5WidthEv">
+<span id="_CPPv3NK4Ifc415IfcPixelTexture5WidthEv"></span><span id="_CPPv2NK4Ifc415IfcPixelTexture5WidthEv"></span><span id="Ifc4::IfcPixelTexture::WidthC"></span><span class="target" id="class_ifc4_1_1_ifc_pixel_texture_1a500b42b75a48da04d44792f49dc13dd5"></span>int <code class="sig-name descname">Width</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc415IfcPixelTexture5WidthEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The number of pixels in width (S) direction. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc415IfcPixelTexture8setWidthEi">
+<span id="_CPPv3N4Ifc415IfcPixelTexture8setWidthEi"></span><span id="_CPPv2N4Ifc415IfcPixelTexture8setWidthEi"></span><span id="Ifc4::IfcPixelTexture::setWidth__i"></span><span class="target" id="class_ifc4_1_1_ifc_pixel_texture_1aed5289a18a27b1453334c2c1830bfaa3"></span>void <code class="sig-name descname">setWidth</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc415IfcPixelTexture8setWidthEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc415IfcPixelTexture6HeightEv">
+<span id="_CPPv3NK4Ifc415IfcPixelTexture6HeightEv"></span><span id="_CPPv2NK4Ifc415IfcPixelTexture6HeightEv"></span><span id="Ifc4::IfcPixelTexture::HeightC"></span><span class="target" id="class_ifc4_1_1_ifc_pixel_texture_1a55fd5a62faaee05cbdd92b2fefc7acc2"></span>int <code class="sig-name descname">Height</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc415IfcPixelTexture6HeightEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The number of pixels in height (T) direction. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc415IfcPixelTexture9setHeightEi">
+<span id="_CPPv3N4Ifc415IfcPixelTexture9setHeightEi"></span><span id="_CPPv2N4Ifc415IfcPixelTexture9setHeightEi"></span><span id="Ifc4::IfcPixelTexture::setHeight__i"></span><span class="target" id="class_ifc4_1_1_ifc_pixel_texture_1aff9c9345be5b447e57392bb62b3db6d0"></span>void <code class="sig-name descname">setHeight</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc415IfcPixelTexture9setHeightEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc415IfcPixelTexture16ColourComponentsEv">
+<span id="_CPPv3NK4Ifc415IfcPixelTexture16ColourComponentsEv"></span><span id="_CPPv2NK4Ifc415IfcPixelTexture16ColourComponentsEv"></span><span id="Ifc4::IfcPixelTexture::ColourComponentsC"></span><span class="target" id="class_ifc4_1_1_ifc_pixel_texture_1acc21e739d565edf88579237ef6163ac1"></span>int <code class="sig-name descname">ColourComponents</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc415IfcPixelTexture16ColourComponentsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Indication whether the pixel values contain a 1, 2, 3, or 4 colour component. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc415IfcPixelTexture19setColourComponentsEi">
+<span id="_CPPv3N4Ifc415IfcPixelTexture19setColourComponentsEi"></span><span id="_CPPv2N4Ifc415IfcPixelTexture19setColourComponentsEi"></span><span id="Ifc4::IfcPixelTexture::setColourComponents__i"></span><span class="target" id="class_ifc4_1_1_ifc_pixel_texture_1aadd7e3a721f63e055342545f2684eb13"></span>void <code class="sig-name descname">setColourComponents</code><span class="sig-paren">(</span>int <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc415IfcPixelTexture19setColourComponentsEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc415IfcPixelTexture5PixelEv">
+<span id="_CPPv3NK4Ifc415IfcPixelTexture5PixelEv"></span><span id="_CPPv2NK4Ifc415IfcPixelTexture5PixelEv"></span><span id="Ifc4::IfcPixelTexture::PixelC"></span><span class="target" id="class_ifc4_1_1_ifc_pixel_texture_1a3bf85c61298bc216c07d9d6fbec0f1dd"></span>std::vector&lt;boost::dynamic_bitset&lt;&gt;&gt; <code class="sig-name descname">Pixel</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc415IfcPixelTexture5PixelEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Flat list of hexadecimal values, each describing one pixel by 1, 2, 3, or 4 components.</p>
+<p>IFC2x Edition 3 CHANGE The data type has been changed from STRING to BINARY. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc415IfcPixelTexture8setPixelENSt6vectorIN5boost14dynamic_bitsetIEEEE">
+<span id="_CPPv3N4Ifc415IfcPixelTexture8setPixelENSt6vectorIN5boost14dynamic_bitsetIEEEE"></span><span id="_CPPv2N4Ifc415IfcPixelTexture8setPixelENSt6vectorIN5boost14dynamic_bitsetIEEEE"></span><span id="Ifc4::IfcPixelTexture::setPixel__std::vector:boost::dynamic_bitset:::"></span><span class="target" id="class_ifc4_1_1_ifc_pixel_texture_1a167cf55dbb1be21f25830febfe95b0de"></span>void <code class="sig-name descname">setPixel</code><span class="sig-paren">(</span>std::vector&lt;boost::dynamic_bitset&lt;&gt;&gt; <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc415IfcPixelTexture8setPixelENSt6vectorIN5boost14dynamic_bitsetIEEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc415IfcPixelTexture11declarationEv">
+<span id="_CPPv3NK4Ifc415IfcPixelTexture11declarationEv"></span><span id="_CPPv2NK4Ifc415IfcPixelTexture11declarationEv"></span><span id="Ifc4::IfcPixelTexture::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_pixel_texture_1a71113c9940a9dc76cac21c67dc99276e"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc415IfcPixelTexture11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc415IfcPixelTexture15IfcPixelTextureEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc415IfcPixelTexture15IfcPixelTextureEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc415IfcPixelTexture15IfcPixelTextureEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcPixelTexture::IfcPixelTexture__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_pixel_texture_1a05f0b0efd71c4f22d04fbef64ceb1173"></span><code class="sig-name descname">IfcPixelTexture</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc415IfcPixelTexture15IfcPixelTextureEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc415IfcPixelTexture15IfcPixelTextureEbbN5boost8optionalINSt6stringEEEPN4Ifc436IfcCartesianTransformationOperator2DEN5boost8optionalINSt6vectorINSt6stringEEEEEiiiNSt6vectorIN5boost14dynamic_bitsetIEEEE">
+<span id="_CPPv3N4Ifc415IfcPixelTexture15IfcPixelTextureEbbN5boost8optionalINSt6stringEEEPN4Ifc436IfcCartesianTransformationOperator2DEN5boost8optionalINSt6vectorINSt6stringEEEEEiiiNSt6vectorIN5boost14dynamic_bitsetIEEEE"></span><span id="_CPPv2N4Ifc415IfcPixelTexture15IfcPixelTextureEbbN5boost8optionalINSt6stringEEEPN4Ifc436IfcCartesianTransformationOperator2DEN5boost8optionalINSt6vectorINSt6stringEEEEEiiiNSt6vectorIN5boost14dynamic_bitsetIEEEE"></span><span id="Ifc4::IfcPixelTexture::IfcPixelTexture__b.b.boost::optional:ss:.Ifc4::IfcCartesianTransformationOperator2DP.boost::optional:std::vector:ss::.i.i.i.std::vector:boost::dynamic_bitset:::"></span><span class="target" id="class_ifc4_1_1_ifc_pixel_texture_1a73b2837903c9d9d18822085fa7773c0d"></span><code class="sig-name descname">IfcPixelTexture</code><span class="sig-paren">(</span>bool <em>v1_RepeatS</em>, bool <em>v2_RepeatT</em>, boost::optional&lt;std::string&gt; <em>v3_Mode</em>, ::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_cartesian_transformation_operator2_d.html#_CPPv4N4Ifc436IfcCartesianTransformationOperator2DE" title="Ifc4::IfcCartesianTransformationOperator2D">IfcCartesianTransformationOperator2D</a> *<em>v4_TextureTransform</em>, boost::optional&lt;std::vector&lt;std::string&gt;&gt; <em>v5_Parameter</em>, int <em>v6_Width</em>, int <em>v7_Height</em>, int <em>v8_ColourComponents</em>, std::vector&lt;boost::dynamic_bitset&lt;&gt;&gt; <em>v9_Pixel</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc415IfcPixelTexture15IfcPixelTextureEbbN5boost8optionalINSt6stringEEEPN4Ifc436IfcCartesianTransformationOperator2DEN5boost8optionalINSt6vectorINSt6stringEEEEEiiiNSt6vectorIN5boost14dynamic_bitsetIEEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc415IfcPixelTexture5ClassEv">
+<span id="_CPPv3N4Ifc415IfcPixelTexture5ClassEv"></span><span id="_CPPv2N4Ifc415IfcPixelTexture5ClassEv"></span><span id="Ifc4::IfcPixelTexture::Class"></span><span class="target" id="class_ifc4_1_1_ifc_pixel_texture_1a2c2bee5eda94a149104d876a5911127a"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc415IfcPixelTexture5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_pipe_segment_type.html" title="previous chapter">Class Ifc4::IfcPipeSegmentType</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_placement.html" title="next chapter">Class Ifc4::IfcPlacement</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_pixel_texture.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

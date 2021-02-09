@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1aefbc8f2c0ec6bc4f4a9553b1c052fd9e:
+
+Define SCHEMA_IfcLocalPlacement_PlacementRelTo_IS_OPTIONAL
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcLocalPlacement_PlacementRelTo_IS_OPTIONAL

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a3cd0a1a6be9d18014c313e99de0e6789:
+
+Define SCHEMA_HAS_IfcStructuralSurfaceTypeEnum
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcStructuralSurfaceTypeEnum

@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a859c8f8911ad5c00c5ad761f764deb3e:
+
+Define SCHEMA_IfcRepresentationContext_HAS_ContextIdentifier
+============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcRepresentationContext_HAS_ContextIdentifier

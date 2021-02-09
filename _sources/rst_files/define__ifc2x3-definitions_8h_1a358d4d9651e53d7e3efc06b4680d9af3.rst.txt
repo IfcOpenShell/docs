@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a358d4d9651e53d7e3efc06b4680d9af3:
+
+Define SCHEMA_HAS_IfcThermalLoadSourceEnum
+==========================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcThermalLoadSourceEnum

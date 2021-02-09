@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Logger &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class OpenCascadeBasedSerializer" href="class_open_cascade_based_serializer.html" />
+    <link rel="prev" title="Template Class IteratorFactoryImplementation" href="class_iterator_factory_implementation.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-logger">
+<span id="exhale-class-class-logger"></span><h1>Class Logger<a class="headerlink" href="#class-logger" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_IfcLogger.h.html#file-src-ifcparse-ifclogger-h"><span class="std std-ref">File IfcLogger.h</span></a></p></li>
+</ul>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv46Logger">
+<span id="_CPPv36Logger"></span><span id="_CPPv26Logger"></span><span id="Logger"></span><span class="target" id="class_logger"></span><em class="property">class </em><code class="sig-name descname">Logger</code><a class="headerlink" href="#_CPPv46Logger" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp enum">
+<dt id="_CPPv4N6Logger8SeverityE">
+<span id="_CPPv3N6Logger8SeverityE"></span><span id="_CPPv2N6Logger8SeverityE"></span><span class="target" id="class_logger_1a4cc16315b37eb0265c2d199880464a15"></span><em class="property">enum </em><code class="sig-name descname">Severity</code><a class="headerlink" href="#_CPPv4N6Logger8SeverityE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Logger8Severity9LOG_DEBUGE">
+<span id="_CPPv3N6Logger8Severity9LOG_DEBUGE"></span><span id="_CPPv2N6Logger8Severity9LOG_DEBUGE"></span><span class="target" id="class_logger_1a4cc16315b37eb0265c2d199880464a15a3d390e12a16a389ee2d0d496bd692890"></span><em class="property">enumerator </em><code class="sig-name descname">LOG_DEBUG</code><a class="headerlink" href="#_CPPv4N6Logger8Severity9LOG_DEBUGE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Logger8Severity10LOG_NOTICEE">
+<span id="_CPPv3N6Logger8Severity10LOG_NOTICEE"></span><span id="_CPPv2N6Logger8Severity10LOG_NOTICEE"></span><span class="target" id="class_logger_1a4cc16315b37eb0265c2d199880464a15ad01b8adcf65f0a651fdc1a48ece4b221"></span><em class="property">enumerator </em><code class="sig-name descname">LOG_NOTICE</code><a class="headerlink" href="#_CPPv4N6Logger8Severity10LOG_NOTICEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Logger8Severity11LOG_WARNINGE">
+<span id="_CPPv3N6Logger8Severity11LOG_WARNINGE"></span><span id="_CPPv2N6Logger8Severity11LOG_WARNINGE"></span><span class="target" id="class_logger_1a4cc16315b37eb0265c2d199880464a15a6c02a459f178795533376d3622d42b11"></span><em class="property">enumerator </em><code class="sig-name descname">LOG_WARNING</code><a class="headerlink" href="#_CPPv4N6Logger8Severity11LOG_WARNINGE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Logger8Severity9LOG_ERRORE">
+<span id="_CPPv3N6Logger8Severity9LOG_ERRORE"></span><span id="_CPPv2N6Logger8Severity9LOG_ERRORE"></span><span class="target" id="class_logger_1a4cc16315b37eb0265c2d199880464a15ad0843a7cc01f5aecd3f20e15e78f1410"></span><em class="property">enumerator </em><code class="sig-name descname">LOG_ERROR</code><a class="headerlink" href="#_CPPv4N6Logger8Severity9LOG_ERRORE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt id="_CPPv4N6Logger6FormatE">
+<span id="_CPPv3N6Logger6FormatE"></span><span id="_CPPv2N6Logger6FormatE"></span><span class="target" id="class_logger_1a876acabde318830881e48bb9c5c38098"></span><em class="property">enum </em><code class="sig-name descname">Format</code><a class="headerlink" href="#_CPPv4N6Logger6FormatE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Logger6Format9FMT_PLAINE">
+<span id="_CPPv3N6Logger6Format9FMT_PLAINE"></span><span id="_CPPv2N6Logger6Format9FMT_PLAINE"></span><span class="target" id="class_logger_1a876acabde318830881e48bb9c5c38098ade715fe5fb49c5e01099f7084b441f84"></span><em class="property">enumerator </em><code class="sig-name descname">FMT_PLAIN</code><a class="headerlink" href="#_CPPv4N6Logger6Format9FMT_PLAINE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Logger6Format8FMT_JSONE">
+<span id="_CPPv3N6Logger6Format8FMT_JSONE"></span><span id="_CPPv2N6Logger6Format8FMT_JSONE"></span><span class="target" id="class_logger_1a876acabde318830881e48bb9c5c38098a0f49d0499625a22b4b38e1f709f0108d"></span><em class="property">enumerator </em><code class="sig-name descname">FMT_JSON</code><a class="headerlink" href="#_CPPv4N6Logger6Format8FMT_JSONE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger10SetProductEN5boost8optionalIPN7IfcUtil12IfcBaseClassEEE">
+<span id="_CPPv3N6Logger10SetProductEN5boost8optionalIPN7IfcUtil12IfcBaseClassEEE"></span><span id="_CPPv2N6Logger10SetProductEN5boost8optionalIPN7IfcUtil12IfcBaseClassEEE"></span><span id="Logger::SetProduct__boost::optional:IfcUtil::IfcBaseClassP:"></span><span class="target" id="class_logger_1a15d5401f41383b85ed5a23d6f30af9b9"></span>void <code class="sig-name descname">SetProduct</code><span class="sig-paren">(</span>boost::optional&lt;IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a>*&gt; <em>product</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger10SetProductEN5boost8optionalIPN7IfcUtil12IfcBaseClassEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger9SetOutputEPNSt8wostreamEPNSt8wostreamE">
+<span id="_CPPv3N6Logger9SetOutputEPNSt8wostreamEPNSt8wostreamE"></span><span id="_CPPv2N6Logger9SetOutputEPNSt8wostreamEPNSt8wostreamE"></span><span id="Logger::SetOutput__std::wostreamP.std::wostreamP"></span><span class="target" id="class_logger_1a0807b80e978e9b8311140ba8fa176123"></span>void <code class="sig-name descname">SetOutput</code><span class="sig-paren">(</span>std::wostream *<em>l1</em>, std::wostream *<em>l2</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger9SetOutputEPNSt8wostreamEPNSt8wostreamE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Determines to what stream respectively progress and errors are logged. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger9SetOutputEPNSt7ostreamEPNSt7ostreamE">
+<span id="_CPPv3N6Logger9SetOutputEPNSt7ostreamEPNSt7ostreamE"></span><span id="_CPPv2N6Logger9SetOutputEPNSt7ostreamEPNSt7ostreamE"></span><span id="Logger::SetOutput__osP.osP"></span><span class="target" id="class_logger_1a833d79e9c206441b7cb47a6560e455e3"></span>void <code class="sig-name descname">SetOutput</code><span class="sig-paren">(</span>std::ostream *<em>l1</em>, std::ostream *<em>l2</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger9SetOutputEPNSt7ostreamEPNSt7ostreamE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Determines to what stream respectively progress and errors are logged. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger9VerbosityE8Severity">
+<span id="_CPPv3N6Logger9VerbosityE8Severity"></span><span id="_CPPv2N6Logger9VerbosityE8Severity"></span><span id="Logger::Verbosity__Severity"></span><span class="target" id="class_logger_1a3c7b740dc6171fcce3ff5b260347d5df"></span>void <code class="sig-name descname">Verbosity</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N6Logger8SeverityE" title="Logger::Severity">Severity</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger9VerbosityE8Severity" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Determines the types of log messages to get logged. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger9VerbosityEv">
+<span id="_CPPv3N6Logger9VerbosityEv"></span><span id="_CPPv2N6Logger9VerbosityEv"></span><span id="Logger::Verbosity"></span><span class="target" id="class_logger_1ad96ae78d442b739762569baf2ef9069b"></span><a class="reference internal" href="#_CPPv4N6Logger8SeverityE" title="Logger::Severity">Severity</a> <code class="sig-name descname">Verbosity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger9VerbosityEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger11MaxSeverityEv">
+<span id="_CPPv3N6Logger11MaxSeverityEv"></span><span id="_CPPv2N6Logger11MaxSeverityEv"></span><span id="Logger::MaxSeverity"></span><span class="target" id="class_logger_1aab0617a2b92b204e30288f819f9a0131"></span><a class="reference internal" href="#_CPPv4N6Logger8SeverityE" title="Logger::Severity">Severity</a> <code class="sig-name descname">MaxSeverity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger11MaxSeverityEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger12OutputFormatE6Format">
+<span id="_CPPv3N6Logger12OutputFormatE6Format"></span><span id="_CPPv2N6Logger12OutputFormatE6Format"></span><span id="Logger::OutputFormat__Format"></span><span class="target" id="class_logger_1a8bda994855c9ce2c948cb96a8bad08aa"></span>void <code class="sig-name descname">OutputFormat</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N6Logger6FormatE" title="Logger::Format">Format</a> <em>f</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger12OutputFormatE6Format" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Determines output format: plain text or sequence of JSON objects. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger12OutputFormatEv">
+<span id="_CPPv3N6Logger12OutputFormatEv"></span><span id="_CPPv2N6Logger12OutputFormatEv"></span><span id="Logger::OutputFormat"></span><span class="target" id="class_logger_1a37b28da8f17ee0e065d66ab4b15fa470"></span><a class="reference internal" href="#_CPPv4N6Logger6FormatE" title="Logger::Format">Format</a> <code class="sig-name descname">OutputFormat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger12OutputFormatEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger7MessageE8SeverityRKNSt6stringEPKN7IfcUtil12IfcBaseClassE">
+<span id="_CPPv3N6Logger7MessageE8SeverityRKNSt6stringEPKN7IfcUtil12IfcBaseClassE"></span><span id="_CPPv2N6Logger7MessageE8SeverityRKNSt6stringEPKN7IfcUtil12IfcBaseClassE"></span><span id="Logger::Message__Severity.ssCR.IfcUtil::IfcBaseClassCP"></span><span class="target" id="class_logger_1a3e874893584fb3e5b145077294204ee1"></span>void <code class="sig-name descname">Message</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N6Logger8SeverityE" title="Logger::Severity">Severity</a> <em>type</em>, <em class="property">const</em> std::string &amp;<em>message</em>, <em class="property">const</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a> *<em>instance</em> = 0<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger7MessageE8SeverityRKNSt6stringEPKN7IfcUtil12IfcBaseClassE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Log a message to the output stream. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger7MessageE8SeverityRKNSt9exceptionEPKN7IfcUtil12IfcBaseClassE">
+<span id="_CPPv3N6Logger7MessageE8SeverityRKNSt9exceptionEPKN7IfcUtil12IfcBaseClassE"></span><span id="_CPPv2N6Logger7MessageE8SeverityRKNSt9exceptionEPKN7IfcUtil12IfcBaseClassE"></span><span id="Logger::Message__Severity.std::exceptionCR.IfcUtil::IfcBaseClassCP"></span><span class="target" id="class_logger_1a6fa2793cdf88391fb5c937f35d015be0"></span>void <code class="sig-name descname">Message</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N6Logger8SeverityE" title="Logger::Severity">Severity</a> <em>type</em>, <em class="property">const</em> std::exception &amp;<em>message</em>, <em class="property">const</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a> *<em>instance</em> = 0<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger7MessageE8SeverityRKNSt9exceptionEPKN7IfcUtil12IfcBaseClassE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger6NoticeERKNSt6stringEPKN7IfcUtil12IfcBaseClassE">
+<span id="_CPPv3N6Logger6NoticeERKNSt6stringEPKN7IfcUtil12IfcBaseClassE"></span><span id="_CPPv2N6Logger6NoticeERKNSt6stringEPKN7IfcUtil12IfcBaseClassE"></span><span id="Logger::Notice__ssCR.IfcUtil::IfcBaseClassCP"></span><span class="target" id="class_logger_1a9120f0e06efb40b51c905625738438ea"></span>void <code class="sig-name descname">Notice</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>message</em>, <em class="property">const</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a> *<em>instance</em> = 0<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger6NoticeERKNSt6stringEPKN7IfcUtil12IfcBaseClassE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger7WarningERKNSt6stringEPKN7IfcUtil12IfcBaseClassE">
+<span id="_CPPv3N6Logger7WarningERKNSt6stringEPKN7IfcUtil12IfcBaseClassE"></span><span id="_CPPv2N6Logger7WarningERKNSt6stringEPKN7IfcUtil12IfcBaseClassE"></span><span id="Logger::Warning__ssCR.IfcUtil::IfcBaseClassCP"></span><span class="target" id="class_logger_1ab851bbafd63221a6f57731552fa78871"></span>void <code class="sig-name descname">Warning</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>message</em>, <em class="property">const</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a> *<em>instance</em> = 0<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger7WarningERKNSt6stringEPKN7IfcUtil12IfcBaseClassE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger5ErrorERKNSt6stringEPKN7IfcUtil12IfcBaseClassE">
+<span id="_CPPv3N6Logger5ErrorERKNSt6stringEPKN7IfcUtil12IfcBaseClassE"></span><span id="_CPPv2N6Logger5ErrorERKNSt6stringEPKN7IfcUtil12IfcBaseClassE"></span><span id="Logger::Error__ssCR.IfcUtil::IfcBaseClassCP"></span><span class="target" id="class_logger_1a25bd8471aacd07b8d9c050c5f72ea315"></span>void <code class="sig-name descname">Error</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>message</em>, <em class="property">const</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a> *<em>instance</em> = 0<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger5ErrorERKNSt6stringEPKN7IfcUtil12IfcBaseClassE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger6NoticeERKNSt9exceptionEPKN7IfcUtil12IfcBaseClassE">
+<span id="_CPPv3N6Logger6NoticeERKNSt9exceptionEPKN7IfcUtil12IfcBaseClassE"></span><span id="_CPPv2N6Logger6NoticeERKNSt9exceptionEPKN7IfcUtil12IfcBaseClassE"></span><span id="Logger::Notice__std::exceptionCR.IfcUtil::IfcBaseClassCP"></span><span class="target" id="class_logger_1abd77bfcdfb7673910a16a94a31a7ea07"></span>void <code class="sig-name descname">Notice</code><span class="sig-paren">(</span><em class="property">const</em> std::exception &amp;<em>exception</em>, <em class="property">const</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a> *<em>instance</em> = 0<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger6NoticeERKNSt9exceptionEPKN7IfcUtil12IfcBaseClassE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger7WarningERKNSt9exceptionEPKN7IfcUtil12IfcBaseClassE">
+<span id="_CPPv3N6Logger7WarningERKNSt9exceptionEPKN7IfcUtil12IfcBaseClassE"></span><span id="_CPPv2N6Logger7WarningERKNSt9exceptionEPKN7IfcUtil12IfcBaseClassE"></span><span id="Logger::Warning__std::exceptionCR.IfcUtil::IfcBaseClassCP"></span><span class="target" id="class_logger_1a2cbdfa1e794d9b39dfd431654b834595"></span>void <code class="sig-name descname">Warning</code><span class="sig-paren">(</span><em class="property">const</em> std::exception &amp;<em>exception</em>, <em class="property">const</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a> *<em>instance</em> = 0<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger7WarningERKNSt9exceptionEPKN7IfcUtil12IfcBaseClassE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger5ErrorERKNSt9exceptionEPKN7IfcUtil12IfcBaseClassE">
+<span id="_CPPv3N6Logger5ErrorERKNSt9exceptionEPKN7IfcUtil12IfcBaseClassE"></span><span id="_CPPv2N6Logger5ErrorERKNSt9exceptionEPKN7IfcUtil12IfcBaseClassE"></span><span id="Logger::Error__std::exceptionCR.IfcUtil::IfcBaseClassCP"></span><span class="target" id="class_logger_1a28fa985c78033283a33b1d6dbf76b8a2"></span>void <code class="sig-name descname">Error</code><span class="sig-paren">(</span><em class="property">const</em> std::exception &amp;<em>exception</em>, <em class="property">const</em> IfcUtil::<a class="reference internal" href="class_ifc_util_1_1_ifc_base_class.html#_CPPv4N7IfcUtil12IfcBaseClassE" title="IfcUtil::IfcBaseClass">IfcBaseClass</a> *<em>instance</em> = 0<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger5ErrorERKNSt9exceptionEPKN7IfcUtil12IfcBaseClassE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger6StatusERKNSt6stringEb">
+<span id="_CPPv3N6Logger6StatusERKNSt6stringEb"></span><span id="_CPPv2N6Logger6StatusERKNSt6stringEb"></span><span id="Logger::Status__ssCR.b"></span><span class="target" id="class_logger_1a4aef1ca331aad985d96b878199755e55"></span>void <code class="sig-name descname">Status</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>message</em>, bool <em>new_line</em> = true<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger6StatusERKNSt6stringEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger11ProgressBarEi">
+<span id="_CPPv3N6Logger11ProgressBarEi"></span><span id="_CPPv2N6Logger11ProgressBarEi"></span><span id="Logger::ProgressBar__i"></span><span class="target" id="class_logger_1ad9387f34f7d4d5aad2a583063b715e47"></span>void <code class="sig-name descname">ProgressBar</code><span class="sig-paren">(</span>int <em>progress</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger11ProgressBarEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Logger6GetLogEv">
+<span id="_CPPv3N6Logger6GetLogEv"></span><span id="_CPPv2N6Logger6GetLogEv"></span><span id="Logger::GetLog"></span><span class="target" id="class_logger_1a23d70aba29f6116a8089d8a07fee99ea"></span>std::string <code class="sig-name descname">GetLog</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Logger6GetLogEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_iterator_factory_implementation.html" title="previous chapter">Template Class IteratorFactoryImplementation</a></li>
+      <li>Next: <a href="class_open_cascade_based_serializer.html" title="next chapter">Class OpenCascadeBasedSerializer</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_logger.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

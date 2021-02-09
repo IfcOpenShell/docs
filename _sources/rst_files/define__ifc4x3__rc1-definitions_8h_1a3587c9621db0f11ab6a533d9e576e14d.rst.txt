@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x3__rc1-definitions_8h_1a3587c9621db0f11ab6a533d9e576e14d:
+
+Define SCHEMA_HAS_IfcCurveBoundedPlane
+======================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x3_rc1-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_HAS_IfcCurveBoundedPlane

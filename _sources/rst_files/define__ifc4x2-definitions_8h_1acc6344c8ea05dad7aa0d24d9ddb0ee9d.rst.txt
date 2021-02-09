@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1acc6344c8ea05dad7aa0d24d9ddb0ee9d:
+
+Define SCHEMA_IfcSite_RefLatitude_IS_OPTIONAL
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcSite_RefLatitude_IS_OPTIONAL

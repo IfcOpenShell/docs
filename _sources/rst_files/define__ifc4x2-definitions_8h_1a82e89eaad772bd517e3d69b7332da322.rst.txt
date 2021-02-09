@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4x2-definitions_8h_1a82e89eaad772bd517e3d69b7332da322:
+
+Define SCHEMA_IfcTypeObject_HAS_HasPropertySets
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x2-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTypeObject_HAS_HasPropertySets

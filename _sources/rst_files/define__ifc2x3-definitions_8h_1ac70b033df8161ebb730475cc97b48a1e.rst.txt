@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ac70b033df8161ebb730475cc97b48a1e:
+
+Define SCHEMA_IfcCurrencyRelationship_HAS_RelatingMonetaryUnit
+==============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcCurrencyRelationship_HAS_RelatingMonetaryUnit

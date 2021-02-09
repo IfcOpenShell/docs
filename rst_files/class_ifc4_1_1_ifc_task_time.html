@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcTaskTime &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcTaskTimeRecurring" href="class_ifc4_1_1_ifc_task_time_recurring.html" />
+    <link rel="prev" title="Class Ifc4::IfcTask" href="class_ifc4_1_1_ifc_task.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifctasktime">
+<span id="exhale-class-class-ifc4-1-1-ifc-task-time"></span><h1>Class Ifc4::IfcTaskTime<a class="headerlink" href="#class-ifc4-ifctasktime" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcSchedulingTime</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_scheduling_time.html#exhale-class-class-ifc4-1-1-ifc-scheduling-time"><span class="std std-ref">Class Ifc4::IfcSchedulingTime</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="derived-type">
+<h3>Derived Type<a class="headerlink" href="#derived-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcTaskTimeRecurring</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_task_time_recurring.html#exhale-class-class-ifc4-1-1-ifc-task-time-recurring"><span class="std std-ref">Class Ifc4::IfcTaskTimeRecurring</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc411IfcTaskTimeE">
+<span id="_CPPv3N4Ifc411IfcTaskTimeE"></span><span id="_CPPv2N4Ifc411IfcTaskTimeE"></span><span id="Ifc4::IfcTaskTime"></span><span class="target" id="class_ifc4_1_1_ifc_task_time"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcTaskTime</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_scheduling_time.html#_CPPv4N4Ifc417IfcSchedulingTimeE" title="Ifc4::IfcSchedulingTime">IfcSchedulingTime</a><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTimeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a> captures the time-related information about a task including the different types (actual or scheduled) of starting and ending times.</p>
+<p>HISTORY: New entity in IFC2x4, adapted from IfcScheduleTimeControl. Differently to IfcScheduleTimeControl it is also possible to differentiate duration time measures between the two possible types; (1) work time and (2) elapsed time.</p>
+<p>Use definitions All given values should be provided by the application; the IFC schema does not deal with dependencies between task time values. There is also no consistency check through where rules that guarantee a meaningful population of time values. Thus, an application is responsible to provide reasonable values and, if an application receives task times, has to make consistency checks by their own.</p>
+<p><a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a> furthermore provides a generic mechanism to differentiate between user given time values and time values derived from user given time values and other constraints such as work calendars and assigned resources. </p>
+<p>Subclassed by <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time_recurring"><span class="std std-ref">Ifc4::IfcTaskTimeRecurring</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc411IfcTaskTime4listE">
+<span id="_CPPv3N4Ifc411IfcTaskTime4listE"></span><span id="_CPPv2N4Ifc411IfcTaskTime4listE"></span><span id="Ifc4::IfcTaskTime::list"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a441a34b4426c286ef3da4bff06b46d8c"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc411IfcTaskTimeE" title="Ifc4::IfcTaskTime">IfcTaskTime</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime15hasDurationTypeEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime15hasDurationTypeEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime15hasDurationTypeEv"></span><span id="Ifc4::IfcTaskTime::hasDurationTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1af1693a9c5316e638af9e1b9616e52855"></span>bool <code class="sig-name descname">hasDurationType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime15hasDurationTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute DurationType is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime12DurationTypeEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime12DurationTypeEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime12DurationTypeEv"></span><span id="Ifc4::IfcTaskTime::DurationTypeC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a440fa4ae9ccca568aabddbd3c23c8b30"></span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcTaskDurationEnumE" title="Ifc4::IfcTaskDurationEnum">IfcTaskDurationEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcTaskDurationEnum5ValueE" title="Ifc4::IfcTaskDurationEnum::Value">Value</a> <code class="sig-name descname">DurationType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime12DurationTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Enables to specify the type of duration values for ScheduleDuration, ActualDuration and RemainingTime. The duration type is either work time or elapsed time. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime15setDurationTypeEN4Ifc419IfcTaskDurationEnum5ValueE">
+<span id="_CPPv3N4Ifc411IfcTaskTime15setDurationTypeEN4Ifc419IfcTaskDurationEnum5ValueE"></span><span id="_CPPv2N4Ifc411IfcTaskTime15setDurationTypeEN4Ifc419IfcTaskDurationEnum5ValueE"></span><span id="Ifc4::IfcTaskTime::setDurationType__Ifc4::IfcTaskDurationEnum::Value"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1ab0a6d8f1e75b1bea1056eabde09767ef"></span>void <code class="sig-name descname">setDurationType</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcTaskDurationEnumE" title="Ifc4::IfcTaskDurationEnum">IfcTaskDurationEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcTaskDurationEnum5ValueE" title="Ifc4::IfcTaskDurationEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime15setDurationTypeEN4Ifc419IfcTaskDurationEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime19hasScheduleDurationEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime19hasScheduleDurationEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime19hasScheduleDurationEv"></span><span id="Ifc4::IfcTaskTime::hasScheduleDurationC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1ac522d1eb04c35a53be3c3c2c9fa7e22b"></span>bool <code class="sig-name descname">hasScheduleDuration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime19hasScheduleDurationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ScheduleDuration is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime16ScheduleDurationEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime16ScheduleDurationEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime16ScheduleDurationEv"></span><span id="Ifc4::IfcTaskTime::ScheduleDurationC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a6b21f1ea26ef71ab23253072b6ef66c5"></span>std::string <code class="sig-name descname">ScheduleDuration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime16ScheduleDurationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The amount of time which is scheduled for completion of a task. The value might be measured or somehow calculated, which is defined by ScheduleDataOrigin. The value is either given as elapsed time or work time, which is defined by DurationType.</p>
+<p>NOTE: Scheduled Duration may be calculated as the time from scheduled start date to scheduled finish date. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime19setScheduleDurationENSt6stringE">
+<span id="_CPPv3N4Ifc411IfcTaskTime19setScheduleDurationENSt6stringE"></span><span id="_CPPv2N4Ifc411IfcTaskTime19setScheduleDurationENSt6stringE"></span><span id="Ifc4::IfcTaskTime::setScheduleDuration__ss"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a5d2c2b9bc4f7c8573bb32dd1204d9e73"></span>void <code class="sig-name descname">setScheduleDuration</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime19setScheduleDurationENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime16hasScheduleStartEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime16hasScheduleStartEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime16hasScheduleStartEv"></span><span id="Ifc4::IfcTaskTime::hasScheduleStartC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a58a52acc515dc0cda1da347835bb4f8d"></span>bool <code class="sig-name descname">hasScheduleStart</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime16hasScheduleStartEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ScheduleStart is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime13ScheduleStartEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime13ScheduleStartEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime13ScheduleStartEv"></span><span id="Ifc4::IfcTaskTime::ScheduleStartC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a1a1d38f664d7a40727606ab38260fc06"></span>std::string <code class="sig-name descname">ScheduleStart</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime13ScheduleStartEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The date on which a task is scheduled to be started. The value might be measured or somehow calculated, which is defined by ScheduleDataOrigin.</p>
+<p>NOTE: The scheduled start date must be greater than or equal to the earliest start date. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime16setScheduleStartENSt6stringE">
+<span id="_CPPv3N4Ifc411IfcTaskTime16setScheduleStartENSt6stringE"></span><span id="_CPPv2N4Ifc411IfcTaskTime16setScheduleStartENSt6stringE"></span><span id="Ifc4::IfcTaskTime::setScheduleStart__ss"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a1180af404b79c50f5d89b642cf63d317"></span>void <code class="sig-name descname">setScheduleStart</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime16setScheduleStartENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime17hasScheduleFinishEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime17hasScheduleFinishEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime17hasScheduleFinishEv"></span><span id="Ifc4::IfcTaskTime::hasScheduleFinishC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a375dd269571957947d1b39c1f264332d"></span>bool <code class="sig-name descname">hasScheduleFinish</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime17hasScheduleFinishEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ScheduleFinish is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime14ScheduleFinishEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime14ScheduleFinishEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime14ScheduleFinishEv"></span><span id="Ifc4::IfcTaskTime::ScheduleFinishC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a9b161935bce936a31f1b3966ea3cad03"></span>std::string <code class="sig-name descname">ScheduleFinish</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime14ScheduleFinishEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The date on which a task is scheduled to be finished. The value might be measured or somehow calculated, which is defined by ScheduleDataOrigin.</p>
+<p>NOTE: The scheduled finish date must be greater than or equal to the earliest finish date. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime17setScheduleFinishENSt6stringE">
+<span id="_CPPv3N4Ifc411IfcTaskTime17setScheduleFinishENSt6stringE"></span><span id="_CPPv2N4Ifc411IfcTaskTime17setScheduleFinishENSt6stringE"></span><span id="Ifc4::IfcTaskTime::setScheduleFinish__ss"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a613647f09a52a4cde8e2a0c1dadcc531"></span>void <code class="sig-name descname">setScheduleFinish</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime17setScheduleFinishENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime13hasEarlyStartEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime13hasEarlyStartEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime13hasEarlyStartEv"></span><span id="Ifc4::IfcTaskTime::hasEarlyStartC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1ac6e2fd865772e26f657d4395bf59262e"></span>bool <code class="sig-name descname">hasEarlyStart</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime13hasEarlyStartEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute EarlyStart is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime10EarlyStartEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime10EarlyStartEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime10EarlyStartEv"></span><span id="Ifc4::IfcTaskTime::EarlyStartC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a3abb305538938166c420774fe133a174"></span>std::string <code class="sig-name descname">EarlyStart</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime10EarlyStartEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The earliest date on which a task can be started. It is a calculated value. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime13setEarlyStartENSt6stringE">
+<span id="_CPPv3N4Ifc411IfcTaskTime13setEarlyStartENSt6stringE"></span><span id="_CPPv2N4Ifc411IfcTaskTime13setEarlyStartENSt6stringE"></span><span id="Ifc4::IfcTaskTime::setEarlyStart__ss"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1ab0d5d5e83de816e5e8c2be3376f75910"></span>void <code class="sig-name descname">setEarlyStart</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime13setEarlyStartENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime14hasEarlyFinishEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime14hasEarlyFinishEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime14hasEarlyFinishEv"></span><span id="Ifc4::IfcTaskTime::hasEarlyFinishC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a3c36c00cb137d05f37f94f08ca2145f5"></span>bool <code class="sig-name descname">hasEarlyFinish</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime14hasEarlyFinishEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute EarlyFinish is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime11EarlyFinishEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime11EarlyFinishEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime11EarlyFinishEv"></span><span id="Ifc4::IfcTaskTime::EarlyFinishC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a29123e14ecf58597892fab89b2f4cf44"></span>std::string <code class="sig-name descname">EarlyFinish</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime11EarlyFinishEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The earliest date on which a task can be finished. It is a calculated value. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime14setEarlyFinishENSt6stringE">
+<span id="_CPPv3N4Ifc411IfcTaskTime14setEarlyFinishENSt6stringE"></span><span id="_CPPv2N4Ifc411IfcTaskTime14setEarlyFinishENSt6stringE"></span><span id="Ifc4::IfcTaskTime::setEarlyFinish__ss"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1aaf27857f5a8eac95250ec49e75cebb58"></span>void <code class="sig-name descname">setEarlyFinish</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime14setEarlyFinishENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime12hasLateStartEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime12hasLateStartEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime12hasLateStartEv"></span><span id="Ifc4::IfcTaskTime::hasLateStartC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a58e9bfac6d702731c8a1185e7ae73999"></span>bool <code class="sig-name descname">hasLateStart</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime12hasLateStartEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute LateStart is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime9LateStartEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime9LateStartEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime9LateStartEv"></span><span id="Ifc4::IfcTaskTime::LateStartC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a2706676b2b5df958600686c538d755c4"></span>std::string <code class="sig-name descname">LateStart</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime9LateStartEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The latest date on which a task can be started. It is a calculated value. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime12setLateStartENSt6stringE">
+<span id="_CPPv3N4Ifc411IfcTaskTime12setLateStartENSt6stringE"></span><span id="_CPPv2N4Ifc411IfcTaskTime12setLateStartENSt6stringE"></span><span id="Ifc4::IfcTaskTime::setLateStart__ss"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a9a964ef148a5dd04effeeb109f810fc8"></span>void <code class="sig-name descname">setLateStart</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime12setLateStartENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime13hasLateFinishEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime13hasLateFinishEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime13hasLateFinishEv"></span><span id="Ifc4::IfcTaskTime::hasLateFinishC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a92efaac32606d7a9ca70cd8cd44b5f9e"></span>bool <code class="sig-name descname">hasLateFinish</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime13hasLateFinishEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute LateFinish is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime10LateFinishEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime10LateFinishEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime10LateFinishEv"></span><span id="Ifc4::IfcTaskTime::LateFinishC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a082e6c79ee19b81c962015ca66d5f28a"></span>std::string <code class="sig-name descname">LateFinish</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime10LateFinishEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The latest date on which a task can be finished. It is a calculated value. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime13setLateFinishENSt6stringE">
+<span id="_CPPv3N4Ifc411IfcTaskTime13setLateFinishENSt6stringE"></span><span id="_CPPv2N4Ifc411IfcTaskTime13setLateFinishENSt6stringE"></span><span id="Ifc4::IfcTaskTime::setLateFinish__ss"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a9285103b5fb4af5f68dd7f07cacb4457"></span>void <code class="sig-name descname">setLateFinish</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime13setLateFinishENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime12hasFreeFloatEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime12hasFreeFloatEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime12hasFreeFloatEv"></span><span id="Ifc4::IfcTaskTime::hasFreeFloatC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a47f8959c6ddfe9ad739d8eb716318d0e"></span>bool <code class="sig-name descname">hasFreeFloat</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime12hasFreeFloatEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute FreeFloat is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime9FreeFloatEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime9FreeFloatEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime9FreeFloatEv"></span><span id="Ifc4::IfcTaskTime::FreeFloatC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a5a284ecfa42924c02b9ee02c9ffd2fc7"></span>std::string <code class="sig-name descname">FreeFloat</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime9FreeFloatEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The amount of time during which the start or finish of a task may be varied without any effect on the overall programme of work. It is a calculated elapsed time value. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime12setFreeFloatENSt6stringE">
+<span id="_CPPv3N4Ifc411IfcTaskTime12setFreeFloatENSt6stringE"></span><span id="_CPPv2N4Ifc411IfcTaskTime12setFreeFloatENSt6stringE"></span><span id="Ifc4::IfcTaskTime::setFreeFloat__ss"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a93de314e8b5130ea167a635d98e37f0d"></span>void <code class="sig-name descname">setFreeFloat</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime12setFreeFloatENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime13hasTotalFloatEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime13hasTotalFloatEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime13hasTotalFloatEv"></span><span id="Ifc4::IfcTaskTime::hasTotalFloatC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1ac72032c2c9d82944293288b6320005f9"></span>bool <code class="sig-name descname">hasTotalFloat</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime13hasTotalFloatEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute TotalFloat is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime10TotalFloatEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime10TotalFloatEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime10TotalFloatEv"></span><span id="Ifc4::IfcTaskTime::TotalFloatC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a4f5205e9e3461851e7b3d1b3ace1084b"></span>std::string <code class="sig-name descname">TotalFloat</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime10TotalFloatEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The difference between the duration available to carry out a task and the scheduled duration of the task. It is a calculated elapsed time value.</p>
+<p>NOTE: Total Float time may be calculated as being the difference between the scheduled duration of a task and the available duration from earliest start to latest finish. Float time may be either positive, zero or negative. Where it is zero or negative, the task becomes critical. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime13setTotalFloatENSt6stringE">
+<span id="_CPPv3N4Ifc411IfcTaskTime13setTotalFloatENSt6stringE"></span><span id="_CPPv2N4Ifc411IfcTaskTime13setTotalFloatENSt6stringE"></span><span id="Ifc4::IfcTaskTime::setTotalFloat__ss"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a157df300932e1cbe10a16f54dd547c3d"></span>void <code class="sig-name descname">setTotalFloat</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime13setTotalFloatENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime13hasIsCriticalEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime13hasIsCriticalEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime13hasIsCriticalEv"></span><span id="Ifc4::IfcTaskTime::hasIsCriticalC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1ad6c9d2e8e6085bedfa33e8c1a18cebf7"></span>bool <code class="sig-name descname">hasIsCritical</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime13hasIsCriticalEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute IsCritical is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime10IsCriticalEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime10IsCriticalEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime10IsCriticalEv"></span><span id="Ifc4::IfcTaskTime::IsCriticalC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1aeec76f8da2de3633f74bf5a0ae034882"></span>bool <code class="sig-name descname">IsCritical</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime10IsCriticalEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A flag which identifies whether a scheduled task is a critical item within the programme.</p>
+<p>NOTE: A task becomes critical when the float time becomes zero or negative. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime13setIsCriticalEb">
+<span id="_CPPv3N4Ifc411IfcTaskTime13setIsCriticalEb"></span><span id="_CPPv2N4Ifc411IfcTaskTime13setIsCriticalEb"></span><span id="Ifc4::IfcTaskTime::setIsCritical__b"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a8e122e916458a1f34edb2f0879e2139b"></span>void <code class="sig-name descname">setIsCritical</code><span class="sig-paren">(</span>bool <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime13setIsCriticalEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime13hasStatusTimeEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime13hasStatusTimeEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime13hasStatusTimeEv"></span><span id="Ifc4::IfcTaskTime::hasStatusTimeC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a156efdd6cf4e996c90a5c5e923f4941e"></span>bool <code class="sig-name descname">hasStatusTime</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime13hasStatusTimeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute StatusTime is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime10StatusTimeEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime10StatusTimeEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime10StatusTimeEv"></span><span id="Ifc4::IfcTaskTime::StatusTimeC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a3573ae4637955f1a0887b1cca473020a"></span>std::string <code class="sig-name descname">StatusTime</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime10StatusTimeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The date or time at which the status of the tasks within the schedule is analyzed. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime13setStatusTimeENSt6stringE">
+<span id="_CPPv3N4Ifc411IfcTaskTime13setStatusTimeENSt6stringE"></span><span id="_CPPv2N4Ifc411IfcTaskTime13setStatusTimeENSt6stringE"></span><span id="Ifc4::IfcTaskTime::setStatusTime__ss"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1afb6bdfe75f11acbf61b3cc61697ff04d"></span>void <code class="sig-name descname">setStatusTime</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime13setStatusTimeENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime17hasActualDurationEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime17hasActualDurationEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime17hasActualDurationEv"></span><span id="Ifc4::IfcTaskTime::hasActualDurationC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a5d8dec82fb4375a02796d4ffebf3511a"></span>bool <code class="sig-name descname">hasActualDuration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime17hasActualDurationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ActualDuration is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime14ActualDurationEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime14ActualDurationEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime14ActualDurationEv"></span><span id="Ifc4::IfcTaskTime::ActualDurationC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1acd1266afe33c5df24aa182d2989d16ee"></span>std::string <code class="sig-name descname">ActualDuration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime14ActualDurationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The actual duration of the task. It is a measured value. The value is either given as elapsed time or work time, which is defined by DurationType. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime17setActualDurationENSt6stringE">
+<span id="_CPPv3N4Ifc411IfcTaskTime17setActualDurationENSt6stringE"></span><span id="_CPPv2N4Ifc411IfcTaskTime17setActualDurationENSt6stringE"></span><span id="Ifc4::IfcTaskTime::setActualDuration__ss"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a33ccd805438800f6bc70fbf3972ab786"></span>void <code class="sig-name descname">setActualDuration</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime17setActualDurationENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime14hasActualStartEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime14hasActualStartEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime14hasActualStartEv"></span><span id="Ifc4::IfcTaskTime::hasActualStartC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a7d767b3b34111850079f4967c9feaabe"></span>bool <code class="sig-name descname">hasActualStart</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime14hasActualStartEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ActualStart is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime11ActualStartEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime11ActualStartEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime11ActualStartEv"></span><span id="Ifc4::IfcTaskTime::ActualStartC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1accaaeb552cd512e6aef20793bf4fe757"></span>std::string <code class="sig-name descname">ActualStart</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime11ActualStartEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The date on which a task is actually started. It is a measured value.</p>
+<p>NOTE: The scheduled start date must be greater than or equal to the earliest start date. No constraint is applied to the actual start date with respect to the scheduled start date since a task may be started earlier than had originally been scheduled if circumstances allow. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime14setActualStartENSt6stringE">
+<span id="_CPPv3N4Ifc411IfcTaskTime14setActualStartENSt6stringE"></span><span id="_CPPv2N4Ifc411IfcTaskTime14setActualStartENSt6stringE"></span><span id="Ifc4::IfcTaskTime::setActualStart__ss"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1aba8baac266be5e59b0de654b42223db6"></span>void <code class="sig-name descname">setActualStart</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime14setActualStartENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime15hasActualFinishEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime15hasActualFinishEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime15hasActualFinishEv"></span><span id="Ifc4::IfcTaskTime::hasActualFinishC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1acc4adedcfd2b6955e10b2494467c7837"></span>bool <code class="sig-name descname">hasActualFinish</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime15hasActualFinishEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute ActualFinish is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime12ActualFinishEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime12ActualFinishEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime12ActualFinishEv"></span><span id="Ifc4::IfcTaskTime::ActualFinishC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a5c8fc278e613232514f71425a3f9bbc7"></span>std::string <code class="sig-name descname">ActualFinish</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime12ActualFinishEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The date on which a task is actually finished. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime15setActualFinishENSt6stringE">
+<span id="_CPPv3N4Ifc411IfcTaskTime15setActualFinishENSt6stringE"></span><span id="_CPPv2N4Ifc411IfcTaskTime15setActualFinishENSt6stringE"></span><span id="Ifc4::IfcTaskTime::setActualFinish__ss"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a95f64c7161c897869528b59dd265d878"></span>void <code class="sig-name descname">setActualFinish</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime15setActualFinishENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime16hasRemainingTimeEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime16hasRemainingTimeEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime16hasRemainingTimeEv"></span><span id="Ifc4::IfcTaskTime::hasRemainingTimeC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1ac6777ccad930759a2ccf102371ddcb9f"></span>bool <code class="sig-name descname">hasRemainingTime</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime16hasRemainingTimeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RemainingTime is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime13RemainingTimeEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime13RemainingTimeEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime13RemainingTimeEv"></span><span id="Ifc4::IfcTaskTime::RemainingTimeC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a2cdc602a8559400304ccfd6d0ed480cd"></span>std::string <code class="sig-name descname">RemainingTime</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime13RemainingTimeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The amount of time remaining to complete a task. It is a predicted value. The value is either given as elapsed time or work time, which is defined by DurationType.</p>
+<p>NOTE: The time remaining in which to complete a task may be determined both for tasks which have not yet started and those which have. Remaining time for a task not yet started has the same value as the scheduled duration. For a task already started, remaining time is calculated as the difference between the scheduled finish and the point of analysis. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime16setRemainingTimeENSt6stringE">
+<span id="_CPPv3N4Ifc411IfcTaskTime16setRemainingTimeENSt6stringE"></span><span id="_CPPv2N4Ifc411IfcTaskTime16setRemainingTimeENSt6stringE"></span><span id="Ifc4::IfcTaskTime::setRemainingTime__ss"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a7610f2c47cb788dbaeb43659eff0d65e"></span>void <code class="sig-name descname">setRemainingTime</code><span class="sig-paren">(</span>std::string <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime16setRemainingTimeENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime13hasCompletionEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime13hasCompletionEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime13hasCompletionEv"></span><span id="Ifc4::IfcTaskTime::hasCompletionC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1acfe2df13e0035370bcb646145ac2f800"></span>bool <code class="sig-name descname">hasCompletion</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime13hasCompletionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute Completion is defined for this <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_task_time"><span class="std std-ref">IfcTaskTime</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime10CompletionEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime10CompletionEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime10CompletionEv"></span><span id="Ifc4::IfcTaskTime::CompletionC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a2f9ac288531463597112fc6fcc001439"></span>double <code class="sig-name descname">Completion</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime10CompletionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The extent of completion expressed as a ratio or percentage. It is a measured value. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime13setCompletionEd">
+<span id="_CPPv3N4Ifc411IfcTaskTime13setCompletionEd"></span><span id="_CPPv2N4Ifc411IfcTaskTime13setCompletionEd"></span><span id="Ifc4::IfcTaskTime::setCompletion__double"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a118d5d56a26a01e17b5f02ce56560605"></span>void <code class="sig-name descname">setCompletion</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime13setCompletionEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc411IfcTaskTime11declarationEv">
+<span id="_CPPv3NK4Ifc411IfcTaskTime11declarationEv"></span><span id="_CPPv2NK4Ifc411IfcTaskTime11declarationEv"></span><span id="Ifc4::IfcTaskTime::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a3fcb316940d6e6378817dbfb9ffb3f58"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc411IfcTaskTime11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime11IfcTaskTimeEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc411IfcTaskTime11IfcTaskTimeEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc411IfcTaskTime11IfcTaskTimeEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcTaskTime::IfcTaskTime__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1aceba66581190bac41e02dede3a01fbad"></span><code class="sig-name descname">IfcTaskTime</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime11IfcTaskTimeEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime11IfcTaskTimeEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc417IfcDataOriginEnum5ValueEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc419IfcTaskDurationEnum5ValueEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIbEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIdEE">
+<span id="_CPPv3N4Ifc411IfcTaskTime11IfcTaskTimeEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc417IfcDataOriginEnum5ValueEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc419IfcTaskDurationEnum5ValueEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIbEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIdEE"></span><span id="_CPPv2N4Ifc411IfcTaskTime11IfcTaskTimeEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc417IfcDataOriginEnum5ValueEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc419IfcTaskDurationEnum5ValueEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIbEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIdEE"></span><span id="Ifc4::IfcTaskTime::IfcTaskTime__boost::optional:ss:.boost::optional:Ifc4::IfcDataOriginEnum::Value:.boost::optional:ss:.boost::optional:Ifc4::IfcTaskDurationEnum::Value:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:b:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:double:"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a9cf9e65880c5a7a7f53a6ec6f945e07b"></span><code class="sig-name descname">IfcTaskTime</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Name</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc417IfcDataOriginEnumE" title="Ifc4::IfcDataOriginEnum">IfcDataOriginEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc417IfcDataOriginEnum5ValueE" title="Ifc4::IfcDataOriginEnum::Value">Value</a>&gt; <em>v2_DataOrigin</em>, boost::optional&lt;std::string&gt; <em>v3_UserDefinedDataOrigin</em>, boost::optional&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcTaskDurationEnumE" title="Ifc4::IfcTaskDurationEnum">IfcTaskDurationEnum</a>::<a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcTaskDurationEnum5ValueE" title="Ifc4::IfcTaskDurationEnum::Value">Value</a>&gt; <em>v4_DurationType</em>, boost::optional&lt;std::string&gt; <em>v5_ScheduleDuration</em>, boost::optional&lt;std::string&gt; <em>v6_ScheduleStart</em>, boost::optional&lt;std::string&gt; <em>v7_ScheduleFinish</em>, boost::optional&lt;std::string&gt; <em>v8_EarlyStart</em>, boost::optional&lt;std::string&gt; <em>v9_EarlyFinish</em>, boost::optional&lt;std::string&gt; <em>v10_LateStart</em>, boost::optional&lt;std::string&gt; <em>v11_LateFinish</em>, boost::optional&lt;std::string&gt; <em>v12_FreeFloat</em>, boost::optional&lt;std::string&gt; <em>v13_TotalFloat</em>, boost::optional&lt;bool&gt; <em>v14_IsCritical</em>, boost::optional&lt;std::string&gt; <em>v15_StatusTime</em>, boost::optional&lt;std::string&gt; <em>v16_ActualDuration</em>, boost::optional&lt;std::string&gt; <em>v17_ActualStart</em>, boost::optional&lt;std::string&gt; <em>v18_ActualFinish</em>, boost::optional&lt;std::string&gt; <em>v19_RemainingTime</em>, boost::optional&lt;double&gt; <em>v20_Completion</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime11IfcTaskTimeEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc417IfcDataOriginEnum5ValueEEEN5boost8optionalINSt6stringEEEN5boost8optionalIN4Ifc419IfcTaskDurationEnum5ValueEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIbEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIdEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc411IfcTaskTime5ClassEv">
+<span id="_CPPv3N4Ifc411IfcTaskTime5ClassEv"></span><span id="_CPPv2N4Ifc411IfcTaskTime5ClassEv"></span><span id="Ifc4::IfcTaskTime::Class"></span><span class="target" id="class_ifc4_1_1_ifc_task_time_1a1256c9a11cb48c8790c7c4665c0711f0"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc411IfcTaskTime5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_task.html" title="previous chapter">Class Ifc4::IfcTask</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_task_time_recurring.html" title="next chapter">Class Ifc4::IfcTaskTimeRecurring</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_task_time.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

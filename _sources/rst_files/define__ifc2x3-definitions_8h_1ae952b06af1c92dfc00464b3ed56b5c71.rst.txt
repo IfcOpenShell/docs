@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1ae952b06af1c92dfc00464b3ed56b5c71:
+
+Define SCHEMA_IfcAnnotationFillAreaOccurrence_GlobalOrLocal_IS_OPTIONAL
+=======================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcAnnotationFillAreaOccurrence_GlobalOrLocal_IS_OPTIONAL

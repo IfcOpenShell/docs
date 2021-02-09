@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Struct Ifc4::IfcChangeActionEnum &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct Ifc4::IfcChillerTypeEnum" href="struct_ifc4_1_1_ifc_chiller_type_enum.html" />
+    <link rel="prev" title="Struct Ifc4::IfcCableSegmentTypeEnum" href="struct_ifc4_1_1_ifc_cable_segment_type_enum.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="struct-ifc4-ifcchangeactionenum">
+<span id="exhale-struct-struct-ifc4-1-1-ifc-change-action-enum"></span><h1>Struct Ifc4::IfcChangeActionEnum<a class="headerlink" href="#struct-ifc4-ifcchangeactionenum" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This struct is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp struct">
+<dt id="_CPPv4N4Ifc419IfcChangeActionEnumE">
+<span id="_CPPv3N4Ifc419IfcChangeActionEnumE"></span><span id="_CPPv2N4Ifc419IfcChangeActionEnumE"></span><span id="Ifc4::IfcChangeActionEnum"></span><span class="target" id="struct_ifc4_1_1_ifc_change_action_enum"></span><em class="property">struct </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcChangeActionEnum</code><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp enum">
+<dt id="_CPPv4N4Ifc419IfcChangeActionEnum5ValueE">
+<span id="_CPPv3N4Ifc419IfcChangeActionEnum5ValueE"></span><span id="_CPPv2N4Ifc419IfcChangeActionEnum5ValueE"></span><span class="target" id="struct_ifc4_1_1_ifc_change_action_enum_1a9613df8122926db1221fa2693b1d23a3"></span><em class="property">enum </em><code class="sig-name descname">Value</code><br /></dt>
+<dd><p><a class="reference internal" href="#struct_ifc4_1_1_ifc_change_action_enum"><span class="std std-ref">IfcChangeActionEnum</span></a> identifies the type of change that might have occurred to the object during the last session (for example, added, modified, deleted). This information is required in a partial model exchange scenario so that an application or model server will know how an object might have been affected by the previous application. Valid enumerations are:</p>
+<p>NOCHANGE: Object has not been modified.</p>
+<p>MODIFIED: A modification to the object has been made by the user and application defined by the LastModifyingUser and LastModifyingApplication respectively.</p>
+<p>ADDED: The object has been created by the user and application defined by the OwningUser and OwningApplication respectively.</p>
+<p>DELETED: The object has been deleted by the user and application defined by the LastModifyingUser and LastModifyingApplication respectively.</p>
+<p>NOTDEFINED: The change action is not known or has not been defined.</p>
+<p>Consider Application A will create an IFC dataset that it wants to publish to others for modification and have the ability to subsequently merge these changes back into the original model. Before publication, it may want to set the <a class="reference internal" href="#struct_ifc4_1_1_ifc_change_action_enum"><span class="std std-ref">IfcChangeActionEnum</span></a> to NOCHANGE to establish a baseline so that other application changes can be easily identified. Application B then receives this IFC dataset and adds a new object and sets <a class="reference internal" href="#struct_ifc4_1_1_ifc_change_action_enum"><span class="std std-ref">IfcChangeActionEnum</span></a> to ADDED with Application B defined as the OwningApplication. Application B then modifies an existing object and (re)defines the LastModifiedDate to the time of the modification, LastModifyingUser to the <a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_person_and_organization"><span class="std std-ref">IfcPersonAndOrganization</span></a> making the change, and sets the LastModifyingApplication to Application B. When Application A receives this modified dataset, it can determine which objects have been added and modified by Application B and either merge or reject these changes as necessary. Consequently, the intent is that an application only modifies the value of <a class="reference internal" href="#struct_ifc4_1_1_ifc_change_action_enum"><span class="std std-ref">IfcChangeActionEnum</span></a> when it does something to the object, with the further intent that a model server is responsible for clearing the <a class="reference internal" href="#struct_ifc4_1_1_ifc_change_action_enum"><span class="std std-ref">IfcChangeActionEnum</span></a> back to NOCHANGE when it is ready to be republished.</p>
+<p>HISTORY: New enumeration in IFC R2.0. Modified in IFC2x4. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc419IfcChangeActionEnum5Value24IfcChangeAction_NOCHANGEE">
+<span id="_CPPv3N4Ifc419IfcChangeActionEnum5Value24IfcChangeAction_NOCHANGEE"></span><span id="_CPPv2N4Ifc419IfcChangeActionEnum5Value24IfcChangeAction_NOCHANGEE"></span><span class="target" id="struct_ifc4_1_1_ifc_change_action_enum_1a9613df8122926db1221fa2693b1d23a3ae3f1461cc06efb2ef8f090acb7d9ae7c"></span><em class="property">enumerator </em><code class="sig-name descname">IfcChangeAction_NOCHANGE</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc419IfcChangeActionEnum5Value24IfcChangeAction_MODIFIEDE">
+<span id="_CPPv3N4Ifc419IfcChangeActionEnum5Value24IfcChangeAction_MODIFIEDE"></span><span id="_CPPv2N4Ifc419IfcChangeActionEnum5Value24IfcChangeAction_MODIFIEDE"></span><span class="target" id="struct_ifc4_1_1_ifc_change_action_enum_1a9613df8122926db1221fa2693b1d23a3a9ab0389e3a975b61e20f6405364f7278"></span><em class="property">enumerator </em><code class="sig-name descname">IfcChangeAction_MODIFIED</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc419IfcChangeActionEnum5Value21IfcChangeAction_ADDEDE">
+<span id="_CPPv3N4Ifc419IfcChangeActionEnum5Value21IfcChangeAction_ADDEDE"></span><span id="_CPPv2N4Ifc419IfcChangeActionEnum5Value21IfcChangeAction_ADDEDE"></span><span class="target" id="struct_ifc4_1_1_ifc_change_action_enum_1a9613df8122926db1221fa2693b1d23a3a54f01fded5b2cc8bc588f562214e8ba5"></span><em class="property">enumerator </em><code class="sig-name descname">IfcChangeAction_ADDED</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc419IfcChangeActionEnum5Value23IfcChangeAction_DELETEDE">
+<span id="_CPPv3N4Ifc419IfcChangeActionEnum5Value23IfcChangeAction_DELETEDE"></span><span id="_CPPv2N4Ifc419IfcChangeActionEnum5Value23IfcChangeAction_DELETEDE"></span><span class="target" id="struct_ifc4_1_1_ifc_change_action_enum_1a9613df8122926db1221fa2693b1d23a3aa514730d355b5551f4eb58d1a2494209"></span><em class="property">enumerator </em><code class="sig-name descname">IfcChangeAction_DELETED</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N4Ifc419IfcChangeActionEnum5Value26IfcChangeAction_NOTDEFINEDE">
+<span id="_CPPv3N4Ifc419IfcChangeActionEnum5Value26IfcChangeAction_NOTDEFINEDE"></span><span id="_CPPv2N4Ifc419IfcChangeActionEnum5Value26IfcChangeAction_NOTDEFINEDE"></span><span class="target" id="struct_ifc4_1_1_ifc_change_action_enum_1a9613df8122926db1221fa2693b1d23a3a3d9226951cbf2de1a3ac91764f2411b6"></span><em class="property">enumerator </em><code class="sig-name descname">IfcChangeAction_NOTDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcChangeActionEnum8ToStringE5Value">
+<span id="_CPPv3N4Ifc419IfcChangeActionEnum8ToStringE5Value"></span><span id="_CPPv2N4Ifc419IfcChangeActionEnum8ToStringE5Value"></span><span id="Ifc4::IfcChangeActionEnum::ToString__Value"></span><span class="target" id="struct_ifc4_1_1_ifc_change_action_enum_1af4c828b0123643e831a01c289ae958aa"></span>IFC_PARSE_API <em class="property">const</em> char *<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcChangeActionEnum5ValueE" title="Ifc4::IfcChangeActionEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc419IfcChangeActionEnum10FromStringERKNSt6stringE">
+<span id="_CPPv3N4Ifc419IfcChangeActionEnum10FromStringERKNSt6stringE"></span><span id="_CPPv2N4Ifc419IfcChangeActionEnum10FromStringERKNSt6stringE"></span><span id="Ifc4::IfcChangeActionEnum::FromString__ssCR"></span><span class="target" id="struct_ifc4_1_1_ifc_change_action_enum_1a7ce4083666f9a7927c213ff6d7b3e46c"></span>IFC_PARSE_API <a class="reference internal" href="struct_ifc4.html#_CPPv4N4Ifc419IfcChangeActionEnum5ValueE" title="Ifc4::IfcChangeActionEnum::Value">Value</a> <code class="sig-name descname">FromString</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>s</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="struct_ifc4_1_1_ifc_cable_segment_type_enum.html" title="previous chapter">Struct Ifc4::IfcCableSegmentTypeEnum</a></li>
+      <li>Next: <a href="struct_ifc4_1_1_ifc_chiller_type_enum.html" title="next chapter">Struct Ifc4::IfcChillerTypeEnum</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/struct_ifc4_1_1_ifc_change_action_enum.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

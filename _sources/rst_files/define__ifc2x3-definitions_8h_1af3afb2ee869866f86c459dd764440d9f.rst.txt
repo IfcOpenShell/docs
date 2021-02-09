@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1af3afb2ee869866f86c459dd764440d9f:
+
+Define SCHEMA_IfcCraneRailFShapeProfileDef_HAS_CentreOfGravityInY
+=================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcCraneRailFShapeProfileDef_HAS_CentreOfGravityInY

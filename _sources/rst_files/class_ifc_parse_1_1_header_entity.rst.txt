@@ -1,0 +1,33 @@
+.. _exhale_class_class_ifc_parse_1_1_header_entity:
+
+Class HeaderEntity
+==================
+
+- Defined in :ref:`file_src_ifcparse_IfcSpfHeader.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public IfcEntityInstanceData`` (:ref:`exhale_class_class_ifc_entity_instance_data`)
+
+
+Derived Types
+*************
+
+- ``public IfcParse::FileDescription`` (:ref:`exhale_class_class_ifc_parse_1_1_file_description`)
+- ``public IfcParse::FileName`` (:ref:`exhale_class_class_ifc_parse_1_1_file_name`)
+- ``public IfcParse::FileSchema`` (:ref:`exhale_class_class_ifc_parse_1_1_file_schema`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IfcParse::HeaderEntity
+   :members:
+   :protected-members:
+   :undoc-members:

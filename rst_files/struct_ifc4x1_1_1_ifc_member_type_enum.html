@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Struct Ifc4x1::IfcMemberTypeEnum &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct Ifc4x1::IfcMotorConnectionTypeEnum" href="struct_ifc4x1_1_1_ifc_motor_connection_type_enum.html" />
+    <link rel="prev" title="Struct Ifc4x1::IfcMedicalDeviceTypeEnum" href="struct_ifc4x1_1_1_ifc_medical_device_type_enum.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="struct-ifc4x1-ifcmembertypeenum">
+<span id="exhale-struct-struct-ifc4x1-1-1-ifc-member-type-enum"></span><h1>Struct Ifc4x1::IfcMemberTypeEnum<a class="headerlink" href="#struct-ifc4x1-ifcmembertypeenum" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x1.h.html#file-src-ifcparse-ifc4x1-h"><span class="std std-ref">File Ifc4x1.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This struct is a nested type of <a class="reference internal" href="struct_ifc4x1.html#exhale-struct-struct-ifc4x1"><span class="std std-ref">Struct Ifc4x1</span></a>.</p>
+</div>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp struct">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnumE">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnumE"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnumE"></span><span id="Ifc4x1::IfcMemberTypeEnum"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum"></span><em class="property">struct </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x1.html#_CPPv46Ifc4x1" title="Ifc4x1">Ifc4x1</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcMemberTypeEnum</code><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp enum">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnum5ValueE">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnum5ValueE"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnum5ValueE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum_1a06c59067a4582d02f9cba3489c76f77b"></span><em class="property">enum </em><code class="sig-name descname">Value</code><br /></dt>
+<dd><p>Definition from IAI: This enumeration defines the different types of linear elements an <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_member_type"><span class="std std-ref">IfcMemberType</span></a> object can fulfill:</p>
+<p>BRACE: A linear element (usually sloped) often used for bracing of a girder or truss. CHORD: Upper or lower longitudinal member of a truss, used horizontally or sloped. COLLAR: A linear element (usually used horizontally) within a roof structure to connect rafters and posts. MEMBER: A linear element within a girder or truss with no further meaning. MULLION: A linear element within a curtain wall system to connect two (or more) panels. PLATE: Alinear continuous horizontal element in wall framing, e.g. a head piece or a sole plate.</p>
+<p>NOTE This head piece or sole plate shall not be mixed up with planar elements, such as sheets and panels, that are handled as <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_plate"><span class="std std-ref">IfcPlate</span></a> (and <a class="reference internal" href="struct_ifc4x1.html#class_ifc4x1_1_1_ifc_plate_type"><span class="std std-ref">IfcPlateType</span></a>).</p>
+<p>POST: A linear member (usually used vertically) within a roof structure to support purlins. PURLIN: A linear element (usually used horizontally) within a roof structure to support rafters RAFTER: A linear elements used to support roof slabs or roof covering, usually used with slope. STRINGER: A linear element used to support stair or ramp flights, usually used with slope. STRUT: A linear element often used within a girder or truss. STUD: Vertical element in wall framing. USERDEFINED: User-defined linear element. NOTDEFINED: Undefined linear element</p>
+<p>HISTORY: New Enumeration in Release IFC2x Edition 2. IFC2x Edition 2 Addendum 1 CHANGE The additional identifiers CHORD, PLATE, STUD are added. IFC2x Edition 3 CHANGE The additional identifier MULLION has been added. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnum5Value19IfcMemberType_BRACEE">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnum5Value19IfcMemberType_BRACEE"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnum5Value19IfcMemberType_BRACEE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum_1a06c59067a4582d02f9cba3489c76f77bac6efc271002dfeca98eaacb597897d18"></span><em class="property">enumerator </em><code class="sig-name descname">IfcMemberType_BRACE</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnum5Value19IfcMemberType_CHORDE">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnum5Value19IfcMemberType_CHORDE"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnum5Value19IfcMemberType_CHORDE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum_1a06c59067a4582d02f9cba3489c76f77ba1d5059d85a361e491647657d7fff39b9"></span><em class="property">enumerator </em><code class="sig-name descname">IfcMemberType_CHORD</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnum5Value20IfcMemberType_COLLARE">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnum5Value20IfcMemberType_COLLARE"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnum5Value20IfcMemberType_COLLARE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum_1a06c59067a4582d02f9cba3489c76f77ba2390befb6b55232b94d9611691510a5a"></span><em class="property">enumerator </em><code class="sig-name descname">IfcMemberType_COLLAR</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnum5Value20IfcMemberType_MEMBERE">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnum5Value20IfcMemberType_MEMBERE"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnum5Value20IfcMemberType_MEMBERE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum_1a06c59067a4582d02f9cba3489c76f77ba1d7a9d0711255efaee817029c81920b8"></span><em class="property">enumerator </em><code class="sig-name descname">IfcMemberType_MEMBER</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnum5Value21IfcMemberType_MULLIONE">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnum5Value21IfcMemberType_MULLIONE"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnum5Value21IfcMemberType_MULLIONE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum_1a06c59067a4582d02f9cba3489c76f77bad9d609d06f1a6198ddaf7002aea33c34"></span><em class="property">enumerator </em><code class="sig-name descname">IfcMemberType_MULLION</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnum5Value19IfcMemberType_PLATEE">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnum5Value19IfcMemberType_PLATEE"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnum5Value19IfcMemberType_PLATEE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum_1a06c59067a4582d02f9cba3489c76f77bae190a12de2e63121c3db825a91f8e630"></span><em class="property">enumerator </em><code class="sig-name descname">IfcMemberType_PLATE</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnum5Value18IfcMemberType_POSTE">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnum5Value18IfcMemberType_POSTE"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnum5Value18IfcMemberType_POSTE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum_1a06c59067a4582d02f9cba3489c76f77ba9f7e06be504acc1500ea97f79a6e871e"></span><em class="property">enumerator </em><code class="sig-name descname">IfcMemberType_POST</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnum5Value20IfcMemberType_PURLINE">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnum5Value20IfcMemberType_PURLINE"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnum5Value20IfcMemberType_PURLINE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum_1a06c59067a4582d02f9cba3489c76f77ba78a1231e5d148c2ac7e66c21ebb27fa7"></span><em class="property">enumerator </em><code class="sig-name descname">IfcMemberType_PURLIN</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnum5Value20IfcMemberType_RAFTERE">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnum5Value20IfcMemberType_RAFTERE"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnum5Value20IfcMemberType_RAFTERE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum_1a06c59067a4582d02f9cba3489c76f77ba23a811eb2d899bc096cd5924824f6af8"></span><em class="property">enumerator </em><code class="sig-name descname">IfcMemberType_RAFTER</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnum5Value22IfcMemberType_STRINGERE">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnum5Value22IfcMemberType_STRINGERE"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnum5Value22IfcMemberType_STRINGERE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum_1a06c59067a4582d02f9cba3489c76f77ba751e0e8d4c681389ae74b05f63bc5bd0"></span><em class="property">enumerator </em><code class="sig-name descname">IfcMemberType_STRINGER</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnum5Value19IfcMemberType_STRUTE">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnum5Value19IfcMemberType_STRUTE"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnum5Value19IfcMemberType_STRUTE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum_1a06c59067a4582d02f9cba3489c76f77ba9a4b42d01f7bb77b8a0acec17e419bcc"></span><em class="property">enumerator </em><code class="sig-name descname">IfcMemberType_STRUT</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnum5Value18IfcMemberType_STUDE">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnum5Value18IfcMemberType_STUDE"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnum5Value18IfcMemberType_STUDE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum_1a06c59067a4582d02f9cba3489c76f77bacadaa71b93b11c9aab15e1be2ff7a3df"></span><em class="property">enumerator </em><code class="sig-name descname">IfcMemberType_STUD</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnum5Value25IfcMemberType_USERDEFINEDE">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnum5Value25IfcMemberType_USERDEFINEDE"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnum5Value25IfcMemberType_USERDEFINEDE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum_1a06c59067a4582d02f9cba3489c76f77bae4d9d04fb0bc71fd722f8d22f4fb94fa"></span><em class="property">enumerator </em><code class="sig-name descname">IfcMemberType_USERDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnum5Value24IfcMemberType_NOTDEFINEDE">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnum5Value24IfcMemberType_NOTDEFINEDE"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnum5Value24IfcMemberType_NOTDEFINEDE"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum_1a06c59067a4582d02f9cba3489c76f77ba13cec89380d69b1ea069cb99640235e0"></span><em class="property">enumerator </em><code class="sig-name descname">IfcMemberType_NOTDEFINED</code><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnum8ToStringE5Value">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnum8ToStringE5Value"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnum8ToStringE5Value"></span><span id="Ifc4x1::IfcMemberTypeEnum::ToString__Value"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum_1af061c17740d42c4152c10d71b1476de4"></span>IFC_PARSE_API <em class="property">const</em> char *<code class="sig-name descname">ToString</code><span class="sig-paren">(</span><a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x117IfcMemberTypeEnum5ValueE" title="Ifc4x1::IfcMemberTypeEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x117IfcMemberTypeEnum10FromStringERKNSt6stringE">
+<span id="_CPPv3N6Ifc4x117IfcMemberTypeEnum10FromStringERKNSt6stringE"></span><span id="_CPPv2N6Ifc4x117IfcMemberTypeEnum10FromStringERKNSt6stringE"></span><span id="Ifc4x1::IfcMemberTypeEnum::FromString__ssCR"></span><span class="target" id="struct_ifc4x1_1_1_ifc_member_type_enum_1a23c7a5374364599f7f49b369b83593e5"></span>IFC_PARSE_API <a class="reference internal" href="struct_ifc4x1.html#_CPPv4N6Ifc4x117IfcMemberTypeEnum5ValueE" title="Ifc4x1::IfcMemberTypeEnum::Value">Value</a> <code class="sig-name descname">FromString</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>s</em><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="struct_ifc4x1_1_1_ifc_medical_device_type_enum.html" title="previous chapter">Struct Ifc4x1::IfcMedicalDeviceTypeEnum</a></li>
+      <li>Next: <a href="struct_ifc4x1_1_1_ifc_motor_connection_type_enum.html" title="next chapter">Struct Ifc4x1::IfcMotorConnectionTypeEnum</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/struct_ifc4x1_1_1_ifc_member_type_enum.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

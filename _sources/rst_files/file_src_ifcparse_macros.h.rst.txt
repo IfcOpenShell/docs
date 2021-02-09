@@ -1,0 +1,60 @@
+
+.. _file_src_ifcparse_macros.h:
+
+File macros.h
+=============
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcparse>` (``src/ifcparse``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/macros.h``)
+--------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_macros.h.rst
+
+
+
+
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_IfcGeom.h`
+
+- :ref:`file_src_serializers_schema_dependent_XmlSerializer.h`
+
+
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_macros_8h_1a6a25f60a772cb68c534c680c8aac57aa`
+
+- :ref:`exhale_define_macros_8h_1ae6d3ee4b06d5e01150fbddcf1e70d817`
+
+- :ref:`exhale_define_macros_8h_1ac62d761c558f9256d4e6449f3b52d471`
+
+- :ref:`exhale_define_macros_8h_1af5786c24fc816712ae74d024a35c37f7`
+
+- :ref:`exhale_define_macros_8h_1a8072d8b1c41953a3bad599deb9f73804`
+
+- :ref:`exhale_define_macros_8h_1ab52fff6dc7fa923c8c58068ff7aa4de0`
+
+- :ref:`exhale_define_macros_8h_1a6df1d22fb5f09eccc23b9f399670cfd7`
+
+- :ref:`exhale_define_macros_8h_1a371f5fdc79a13d2d87ba491e42984a4f`
+

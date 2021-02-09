@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4x2::IfcMaterialLayerWithOffsets &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4x2::IfcMaterialList" href="class_ifc4x2_1_1_ifc_material_list.html" />
+    <link rel="prev" title="Class Ifc4x2::IfcMaterialLayerSetUsage" href="class_ifc4x2_1_1_ifc_material_layer_set_usage.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4x2-ifcmateriallayerwithoffsets">
+<span id="exhale-class-class-ifc4x2-1-1-ifc-material-layer-with-offsets"></span><h1>Class Ifc4x2::IfcMaterialLayerWithOffsets<a class="headerlink" href="#class-ifc4x2-ifcmateriallayerwithoffsets" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4x2.h.html#file-src-ifcparse-ifc4x2-h"><span class="std std-ref">File Ifc4x2.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4x2.html#exhale-struct-struct-ifc4x2"><span class="std std-ref">Struct Ifc4x2</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4x2::IfcMaterialLayer</span></code> (<a class="reference internal" href="class_ifc4x2_1_1_ifc_material_layer.html#exhale-class-class-ifc4x2-1-1-ifc-material-layer"><span class="std std-ref">Class Ifc4x2::IfcMaterialLayer</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc4x227IfcMaterialLayerWithOffsetsE">
+<span id="_CPPv3N6Ifc4x227IfcMaterialLayerWithOffsetsE"></span><span id="_CPPv2N6Ifc4x227IfcMaterialLayerWithOffsetsE"></span><span id="Ifc4x2::IfcMaterialLayerWithOffsets"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_layer_with_offsets"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcMaterialLayerWithOffsets</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_material_layer.html#_CPPv4N6Ifc4x216IfcMaterialLayerE" title="Ifc4x2::IfcMaterialLayer">IfcMaterialLayer</a><a class="headerlink" href="#_CPPv4N6Ifc4x227IfcMaterialLayerWithOffsetsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_with_offsets"><span class="std std-ref">IfcMaterialLayerWithOffsets</span></a> is a specialization of <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer"><span class="std std-ref">IfcMaterialLayer</span></a> enabling definition of offset values along edges (within the material layer set usage in parent layer set).</p>
+<p>It defines the assignment of two offset values for a material layer in its intended use within a material layer set. Offsets are applied to the edges of layered elements (that is, in directions perpendicular to the layer set direction). Offsets shall not be used in layer set direction, that is, for modelling gaps (or overlaps) between layers; gaps shall be modeled as layers with appropriate material assignment for the void.</p>
+<p>EXAMPLE  At the top of a standard wall, with shape representation SweptSolid, offset of a given layer can be specified in the direction of the extrusion (positive Z axis), applied at the start or end (extruded from bottom to top), and with a positive (extending above extrusion) or negative (ending below extrusion).</p>
+<p>Take a standard wall with the outer material layer for the external isolation extending above extrusion by 100mm, but starting at the same base height. In this case the following values are set:</p>
+<p>OffsetDirection = .AXIS3. OffsetValues[1] = 0.0 OffsetValues[2] = 100.0 (default unit assumed to be mm)</p>
+<p>HISTORY New Entity in IFC2x4.</p>
+<p>Informal propositions</p>
+<p>The OffestDirection shall not be identical to the LayerSetDirection of the corresponding <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set_usage"><span class="std std-ref">IfcMaterialLayerSetUsage</span></a> The attribute ReferenceExtent shall be asserted at the corresponding <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set_usage"><span class="std std-ref">IfcMaterialLayerSetUsage</span></a></p>
+<p>Attribute use definition The OffsetValues and OffsetDirection correspond to the definitions ReferenceExtent and LayerSetDirection at the <a class="reference internal" href="struct_ifc4x2.html#class_ifc4x2_1_1_ifc_material_layer_set_usage"><span class="std std-ref">IfcMaterialLayerSetUsage</span></a>. Figure 289 shows an example of applying the OffsetValues to the material layers of a standard wall.</p>
+<p>Figure 289 — Material layer with offsets </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc4x227IfcMaterialLayerWithOffsets4listE">
+<span id="_CPPv3N6Ifc4x227IfcMaterialLayerWithOffsets4listE"></span><span id="_CPPv2N6Ifc4x227IfcMaterialLayerWithOffsets4listE"></span><span id="Ifc4x2::IfcMaterialLayerWithOffsets::list"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_layer_with_offsets_1a1303b81fdca0d746ef9d7195fd8722ec"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc4x227IfcMaterialLayerWithOffsetsE" title="Ifc4x2::IfcMaterialLayerWithOffsets">IfcMaterialLayerWithOffsets</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc4x227IfcMaterialLayerWithOffsets4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x227IfcMaterialLayerWithOffsets15OffsetDirectionEv">
+<span id="_CPPv3NK6Ifc4x227IfcMaterialLayerWithOffsets15OffsetDirectionEv"></span><span id="_CPPv2NK6Ifc4x227IfcMaterialLayerWithOffsets15OffsetDirectionEv"></span><span id="Ifc4x2::IfcMaterialLayerWithOffsets::OffsetDirectionC"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_layer_with_offsets_1af4ec4e3ab3359fce88f745fef8089224"></span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x224IfcLayerSetDirectionEnumE" title="Ifc4x2::IfcLayerSetDirectionEnum">IfcLayerSetDirectionEnum</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x224IfcLayerSetDirectionEnum5ValueE" title="Ifc4x2::IfcLayerSetDirectionEnum::Value">Value</a> <code class="sig-name descname">OffsetDirection</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x227IfcMaterialLayerWithOffsets15OffsetDirectionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Orientation of the offset; shall be perpendicular to the parent layer set direction. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x227IfcMaterialLayerWithOffsets18setOffsetDirectionEN6Ifc4x224IfcLayerSetDirectionEnum5ValueE">
+<span id="_CPPv3N6Ifc4x227IfcMaterialLayerWithOffsets18setOffsetDirectionEN6Ifc4x224IfcLayerSetDirectionEnum5ValueE"></span><span id="_CPPv2N6Ifc4x227IfcMaterialLayerWithOffsets18setOffsetDirectionEN6Ifc4x224IfcLayerSetDirectionEnum5ValueE"></span><span id="Ifc4x2::IfcMaterialLayerWithOffsets::setOffsetDirection__Ifc4x2::IfcLayerSetDirectionEnum::Value"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_layer_with_offsets_1aaa249e19459607eb67525ad96ee155cd"></span>void <code class="sig-name descname">setOffsetDirection</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x224IfcLayerSetDirectionEnumE" title="Ifc4x2::IfcLayerSetDirectionEnum">IfcLayerSetDirectionEnum</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x224IfcLayerSetDirectionEnum5ValueE" title="Ifc4x2::IfcLayerSetDirectionEnum::Value">Value</a> <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x227IfcMaterialLayerWithOffsets18setOffsetDirectionEN6Ifc4x224IfcLayerSetDirectionEnum5ValueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x227IfcMaterialLayerWithOffsets12OffsetValuesEv">
+<span id="_CPPv3NK6Ifc4x227IfcMaterialLayerWithOffsets12OffsetValuesEv"></span><span id="_CPPv2NK6Ifc4x227IfcMaterialLayerWithOffsets12OffsetValuesEv"></span><span id="Ifc4x2::IfcMaterialLayerWithOffsets::OffsetValuesC"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_layer_with_offsets_1af2aa4d0a94b2a88063c2ae6052bf7ad2"></span>std::vector&lt;double&gt; <code class="sig-name descname">OffsetValues</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x227IfcMaterialLayerWithOffsets12OffsetValuesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>The numerical value of layer offset, in the direction of the axis assigned by the attribute OffsetDirection. The OffsetValues[1] identifies the offset from the lower position along the axis direction (normally the start of the standard extrusion), the OffsetValues[2] identifies the offset from the upper position along the axis direction (normally the end of the standard extrusion),. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x227IfcMaterialLayerWithOffsets15setOffsetValuesENSt6vectorIdEE">
+<span id="_CPPv3N6Ifc4x227IfcMaterialLayerWithOffsets15setOffsetValuesENSt6vectorIdEE"></span><span id="_CPPv2N6Ifc4x227IfcMaterialLayerWithOffsets15setOffsetValuesENSt6vectorIdEE"></span><span id="Ifc4x2::IfcMaterialLayerWithOffsets::setOffsetValues__std::vector:double:"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_layer_with_offsets_1a097d03d6cb6d0514f3b6e5e0523bb473"></span>void <code class="sig-name descname">setOffsetValues</code><span class="sig-paren">(</span>std::vector&lt;double&gt; <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x227IfcMaterialLayerWithOffsets15setOffsetValuesENSt6vectorIdEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc4x227IfcMaterialLayerWithOffsets11declarationEv">
+<span id="_CPPv3NK6Ifc4x227IfcMaterialLayerWithOffsets11declarationEv"></span><span id="_CPPv2NK6Ifc4x227IfcMaterialLayerWithOffsets11declarationEv"></span><span id="Ifc4x2::IfcMaterialLayerWithOffsets::declarationC"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_layer_with_offsets_1a686b7b6f27c2569528772426dab58ae0"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc4x227IfcMaterialLayerWithOffsets11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x227IfcMaterialLayerWithOffsets27IfcMaterialLayerWithOffsetsEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc4x227IfcMaterialLayerWithOffsets27IfcMaterialLayerWithOffsetsEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc4x227IfcMaterialLayerWithOffsets27IfcMaterialLayerWithOffsetsEP21IfcEntityInstanceData"></span><span id="Ifc4x2::IfcMaterialLayerWithOffsets::IfcMaterialLayerWithOffsets__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_layer_with_offsets_1afe0e488dd0d391264ac3dc0203a1a9b2"></span><code class="sig-name descname">IfcMaterialLayerWithOffsets</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x227IfcMaterialLayerWithOffsets27IfcMaterialLayerWithOffsetsEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x227IfcMaterialLayerWithOffsets27IfcMaterialLayerWithOffsetsEPN6Ifc4x211IfcMaterialEdN5boost8optionalIbEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIiEEN6Ifc4x224IfcLayerSetDirectionEnum5ValueENSt6vectorIdEE">
+<span id="_CPPv3N6Ifc4x227IfcMaterialLayerWithOffsets27IfcMaterialLayerWithOffsetsEPN6Ifc4x211IfcMaterialEdN5boost8optionalIbEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIiEEN6Ifc4x224IfcLayerSetDirectionEnum5ValueENSt6vectorIdEE"></span><span id="_CPPv2N6Ifc4x227IfcMaterialLayerWithOffsets27IfcMaterialLayerWithOffsetsEPN6Ifc4x211IfcMaterialEdN5boost8optionalIbEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIiEEN6Ifc4x224IfcLayerSetDirectionEnum5ValueENSt6vectorIdEE"></span><span id="Ifc4x2::IfcMaterialLayerWithOffsets::IfcMaterialLayerWithOffsets__Ifc4x2::IfcMaterialP.double.boost::optional:b:.boost::optional:ss:.boost::optional:ss:.boost::optional:ss:.boost::optional:i:.Ifc4x2::IfcLayerSetDirectionEnum::Value.std::vector:double:"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_layer_with_offsets_1a6c574e0d512b31b76c41324085f18496"></span><code class="sig-name descname">IfcMaterialLayerWithOffsets</code><span class="sig-paren">(</span>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="class_ifc4x2_1_1_ifc_material.html#_CPPv4N6Ifc4x211IfcMaterialE" title="Ifc4x2::IfcMaterial">IfcMaterial</a> *<em>v1_Material</em>, double <em>v2_LayerThickness</em>, boost::optional&lt;bool&gt; <em>v3_IsVentilated</em>, boost::optional&lt;std::string&gt; <em>v4_Name</em>, boost::optional&lt;std::string&gt; <em>v5_Description</em>, boost::optional&lt;std::string&gt; <em>v6_Category</em>, boost::optional&lt;int&gt; <em>v7_Priority</em>, ::<a class="reference internal" href="struct_ifc4x2.html#_CPPv46Ifc4x2" title="Ifc4x2">Ifc4x2</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x224IfcLayerSetDirectionEnumE" title="Ifc4x2::IfcLayerSetDirectionEnum">IfcLayerSetDirectionEnum</a>::<a class="reference internal" href="struct_ifc4x2.html#_CPPv4N6Ifc4x224IfcLayerSetDirectionEnum5ValueE" title="Ifc4x2::IfcLayerSetDirectionEnum::Value">Value</a> <em>v8_OffsetDirection</em>, std::vector&lt;double&gt; <em>v9_OffsetValues</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x227IfcMaterialLayerWithOffsets27IfcMaterialLayerWithOffsetsEPN6Ifc4x211IfcMaterialEdN5boost8optionalIbEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalINSt6stringEEEN5boost8optionalIiEEN6Ifc4x224IfcLayerSetDirectionEnum5ValueENSt6vectorIdEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc4x227IfcMaterialLayerWithOffsets5ClassEv">
+<span id="_CPPv3N6Ifc4x227IfcMaterialLayerWithOffsets5ClassEv"></span><span id="_CPPv2N6Ifc4x227IfcMaterialLayerWithOffsets5ClassEv"></span><span id="Ifc4x2::IfcMaterialLayerWithOffsets::Class"></span><span class="target" id="class_ifc4x2_1_1_ifc_material_layer_with_offsets_1a83810164c49cac8b453548ec9a4f6372"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc4x227IfcMaterialLayerWithOffsets5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4x2_1_1_ifc_material_layer_set_usage.html" title="previous chapter">Class Ifc4x2::IfcMaterialLayerSetUsage</a></li>
+      <li>Next: <a href="class_ifc4x2_1_1_ifc_material_list.html" title="next chapter">Class Ifc4x2::IfcMaterialList</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4x2_1_1_ifc_material_layer_with_offsets.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

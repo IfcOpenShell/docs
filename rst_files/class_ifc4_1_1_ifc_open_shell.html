@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc4::IfcOpenShell &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc4::IfcOrganization" href="class_ifc4_1_1_ifc_organization.html" />
+    <link rel="prev" title="Class Ifc4::IfcOpeningStandardCase" href="class_ifc4_1_1_ifc_opening_standard_case.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc4-ifcopenshell">
+<span id="exhale-class-class-ifc4-1-1-ifc-open-shell"></span><h1>Class Ifc4::IfcOpenShell<a class="headerlink" href="#class-ifc4-ifcopenshell" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc4.h.html#file-src-ifcparse-ifc4-h"><span class="std std-ref">File Ifc4.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc4.html#exhale-struct-struct-ifc4"><span class="std std-ref">Struct Ifc4</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc4::IfcConnectedFaceSet</span></code> (<a class="reference internal" href="class_ifc4_1_1_ifc_connected_face_set.html#exhale-class-class-ifc4-1-1-ifc-connected-face-set"><span class="std std-ref">Class Ifc4::IfcConnectedFaceSet</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N4Ifc412IfcOpenShellE">
+<span id="_CPPv3N4Ifc412IfcOpenShellE"></span><span id="_CPPv2N4Ifc412IfcOpenShellE"></span><span id="Ifc4::IfcOpenShell"></span><span class="target" id="class_ifc4_1_1_ifc_open_shell"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcOpenShell</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_connected_face_set.html#_CPPv4N4Ifc419IfcConnectedFaceSetE" title="Ifc4::IfcConnectedFaceSet">IfcConnectedFaceSet</a><a class="headerlink" href="#_CPPv4N4Ifc412IfcOpenShellE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from ISO/CD 10303-42:1992: An open shell is a shell of the dimensionality 2. Its domain, if present, is a finite, connected, oriented, 2-manifold with boundary, but is not a closed surface. It can be thought of as a closed shell with one or more holes punched in it. The domain of an open shell satisfies 0 &lt; Ξ &lt; 1. An open shell is functionally more general than a face because its domain can have handles. The shell is defined by a collection of faces, which may be oriented faces. The sense of each face, after taking account of the orientation, shall agree with the shell normal as defined below. The orientation can be supplied directly as a BOOLEAN attribute of an oriented face, or be defaulted to TRUE if the shell member is a face without the orientation attribute. The following combinatorial restrictions on open shells and geometrical restrictions on their domains are designed, together with the informal propositions, to ensure that any domain associated with an open shell is an orientable manifold.</p>
+<p>Each face reference shall be unique. <p> An open shell shall have at least one face. </p>
+<p> A given face may exist in more than one open shell.</p>
+</p>
+<p>The boundary of an open shell consists of the edges that are referenced only once by the face - bounds (loops) of its faces, together with all of their vertices. The domain of an open shell, if present, contains all edges and vertices of its faces.</p>
+<p>NOTE Note that this is slightly different from the definition of a face domain, which includes none of its bounds. For example, a face domain may exclude an isolated point or line segment. An open shell domain may not. (See the algorithm for computing below.) In the current IFC Release only poly loops (<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_poly_loop"><span class="std std-ref">IfcPolyLoop</span></a>) are defined for bounds of face bound (<a class="reference internal" href="struct_ifc4.html#class_ifc4_1_1_ifc_face_bound_1a674c6eaec696f0f3c501149e4e1283b9"><span class="std std-ref">IfcFaceBound.Bound</span></a>). This will allow for faceted B-rep only. For further specification, including the Euler formulas to be satisfied, please refer to ISO 10303-42:1994.</p>
+<p>NOTE Corresponding ISO 10303 entity: open_shell, please refer to ISO/IS 10303-42:1994, p.148 for the final definition of the formal standard.</p>
+<p>HISTORY New class in IFC2x.</p>
+<p>Informal propositions:</p>
+<p>Every edge shall be referenced exactly twice by the face bounds of the face. <p> Each oriented edge shall be unique. </p>
+<p> No edge shall be referenced by more than two faces. </p>
+<p> Distinct faces of the shell do not intersect, but may share edges or vertices. </p>
+<p> Distinct edges do not intersect but may share vertices. </p>
+<p> Each face reference shall be unique. </p>
+<p> The loops of the shell shall not be a mixture of poly loop and other loop types. Note: this is given, since only poly loop is defined as face bound definition. </p>
+<p> The closed shell shall be an oriented arcwise connected 2-manifold.</p>
+</p>
+<p>The Euler equation shall be satisfied. Note: Please refer to ISO/IS 10303-42:1994, p.148 for the equation. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N4Ifc412IfcOpenShell4listE">
+<span id="_CPPv3N4Ifc412IfcOpenShell4listE"></span><span id="_CPPv2N4Ifc412IfcOpenShell4listE"></span><span id="Ifc4::IfcOpenShell::list"></span><span class="target" id="class_ifc4_1_1_ifc_open_shell_1a5cb6f8152f4e8189756695d972bc00da"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N4Ifc412IfcOpenShellE" title="Ifc4::IfcOpenShell">IfcOpenShell</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N4Ifc412IfcOpenShell4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK4Ifc412IfcOpenShell11declarationEv">
+<span id="_CPPv3NK4Ifc412IfcOpenShell11declarationEv"></span><span id="_CPPv2NK4Ifc412IfcOpenShell11declarationEv"></span><span id="Ifc4::IfcOpenShell::declarationC"></span><span class="target" id="class_ifc4_1_1_ifc_open_shell_1a8dd66dd42a2e861661bf2bf49584f857"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK4Ifc412IfcOpenShell11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc412IfcOpenShell12IfcOpenShellEP21IfcEntityInstanceData">
+<span id="_CPPv3N4Ifc412IfcOpenShell12IfcOpenShellEP21IfcEntityInstanceData"></span><span id="_CPPv2N4Ifc412IfcOpenShell12IfcOpenShellEP21IfcEntityInstanceData"></span><span id="Ifc4::IfcOpenShell::IfcOpenShell__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc4_1_1_ifc_open_shell_1ae90bb2c3b41a030afa4aad06d790620b"></span><code class="sig-name descname">IfcOpenShell</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc412IfcOpenShell12IfcOpenShellEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc412IfcOpenShell12IfcOpenShellEN22IfcTemplatedEntityListIN4Ifc47IfcFaceEE3ptrE">
+<span id="_CPPv3N4Ifc412IfcOpenShell12IfcOpenShellEN22IfcTemplatedEntityListIN4Ifc47IfcFaceEE3ptrE"></span><span id="_CPPv2N4Ifc412IfcOpenShell12IfcOpenShellEN22IfcTemplatedEntityListIN4Ifc47IfcFaceEE3ptrE"></span><span id="Ifc4::IfcOpenShell::IfcOpenShell__IfcTemplatedEntityList:Ifc4::IfcFace:::ptr"></span><span class="target" id="class_ifc4_1_1_ifc_open_shell_1ab068f41dd5d6cee3b6d2d4c0d4eeedae"></span><code class="sig-name descname">IfcOpenShell</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;::<a class="reference internal" href="struct_ifc4.html#_CPPv44Ifc4" title="Ifc4">Ifc4</a>::<a class="reference internal" href="class_ifc4_1_1_ifc_face.html#_CPPv4N4Ifc47IfcFaceE" title="Ifc4::IfcFace">IfcFace</a>&gt;::ptr <em>v1_CfsFaces</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc412IfcOpenShell12IfcOpenShellEN22IfcTemplatedEntityListIN4Ifc47IfcFaceEE3ptrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N4Ifc412IfcOpenShell5ClassEv">
+<span id="_CPPv3N4Ifc412IfcOpenShell5ClassEv"></span><span id="_CPPv2N4Ifc412IfcOpenShell5ClassEv"></span><span id="Ifc4::IfcOpenShell::Class"></span><span class="target" id="class_ifc4_1_1_ifc_open_shell_1aec42afa9f3088918b46ab71f80e7ce58"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Ifc412IfcOpenShell5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc4_1_1_ifc_opening_standard_case.html" title="previous chapter">Class Ifc4::IfcOpeningStandardCase</a></li>
+      <li>Next: <a href="class_ifc4_1_1_ifc_organization.html" title="next chapter">Class Ifc4::IfcOrganization</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc4_1_1_ifc_open_shell.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

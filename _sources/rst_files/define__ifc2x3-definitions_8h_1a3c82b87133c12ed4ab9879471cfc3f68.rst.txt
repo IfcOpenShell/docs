@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a3c82b87133c12ed4ab9879471cfc3f68:
+
+Define SCHEMA_IfcStructuralLoadTemperature_DeltaT_Z_IS_OPTIONAL
+===============================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcStructuralLoadTemperature_DeltaT_Z_IS_OPTIONAL

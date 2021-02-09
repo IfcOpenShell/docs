@@ -1,0 +1,38 @@
+.. _exhale_class_class_ifc4x1_1_1_ifc_half_space_solid:
+
+Class Ifc4x1::IfcHalfSpaceSolid
+===============================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4x1.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_struct_ifc4x1`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Ifc4x1::IfcGeometricRepresentationItem`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_geometric_representation_item`)
+
+
+Derived Types
+*************
+
+- ``public Ifc4x1::IfcBoxedHalfSpace`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_boxed_half_space`)
+- ``public Ifc4x1::IfcPolygonalBoundedHalfSpace`` (:ref:`exhale_class_class_ifc4x1_1_1_ifc_polygonal_bounded_half_space`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Ifc4x1::IfcHalfSpaceSolid
+   :members:
+   :protected-members:
+   :undoc-members:

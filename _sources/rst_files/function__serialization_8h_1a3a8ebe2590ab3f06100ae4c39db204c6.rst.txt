@@ -1,0 +1,13 @@
+.. _exhale_function__serialization_8h_1a3a8ebe2590ab3f06100ae4c39db204c6:
+
+Function IfcGeom::tesselate
+===========================
+
+- Defined in :ref:`file_src_ifcgeom_schema_agnostic_Serialization.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: IfcGeom::tesselate(const std::string&, const TopoDS_Shape&, double)

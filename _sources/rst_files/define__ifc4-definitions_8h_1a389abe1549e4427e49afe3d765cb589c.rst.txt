@@ -1,0 +1,13 @@
+.. _exhale_define__ifc4-definitions_8h_1a389abe1549e4427e49afe3d765cb589c:
+
+Define SCHEMA_IfcTypeResource_HAS_ResourceOf
+============================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc4-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcTypeResource_HAS_ResourceOf

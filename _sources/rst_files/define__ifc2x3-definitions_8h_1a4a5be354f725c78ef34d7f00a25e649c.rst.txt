@@ -1,0 +1,13 @@
+.. _exhale_define__ifc2x3-definitions_8h_1a4a5be354f725c78ef34d7f00a25e649c:
+
+Define SCHEMA_IfcHygroscopicMaterialProperties_HAS_IsothermalMoistureCapacity
+=============================================================================
+
+- Defined in :ref:`file_src_ifcparse_Ifc2x3-definitions.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SCHEMA_IfcHygroscopicMaterialProperties_HAS_IsothermalMoistureCapacity

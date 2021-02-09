@@ -1,0 +1,23 @@
+
+.. _program_listing_file_src_ifcgeom_schema_agnostic_Serialization.h:
+
+Program Listing for File Serialization.h
+========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_ifcgeom_schema_agnostic_Serialization.h>` (``src/ifcgeom_schema_agnostic/Serialization.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #include "../ifcgeom/ifc_geom_api.h"
+   #include "../ifcparse/IfcBaseClass.h"
+   
+   #include <TopoDS_Shape.hxx>
+   
+   #include <string>
+   
+   namespace IfcGeom {
+       IFC_GEOM_API IfcUtil::IfcBaseClass* tesselate(const std::string& schema_name, const TopoDS_Shape& shape, double deflection);
+       IFC_GEOM_API IfcUtil::IfcBaseClass* serialise(const std::string& schema_name, const TopoDS_Shape& shape, bool advanced);
+   }

@@ -1,0 +1,80 @@
+
+.. _file_src_ifcgeom_schema_agnostic_IfcGeomRenderStyles.h:
+
+File IfcGeomRenderStyles.h
+==========================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_ifcgeom_schema_agnostic>` (``src/ifcgeom_schema_agnostic``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom_schema_agnostic/IfcGeomRenderStyles.h``)
+------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_schema_agnostic_IfcGeomRenderStyles.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/ifc_geom_api.h``
+
+- ``boost/algorithm/string/case_conv.hpp``
+
+- ``boost/algorithm/string/replace.hpp``
+
+- ``boost/optional.hpp``
+
+- ``sstream``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_schema_agnostic_IfcGeomMaterial.h`
+
+- :ref:`file_src_ifcgeom_IfcRepresentationShapeItem.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_IfcGeom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_class_ifc_geom_1_1_surface_style`
+
+- :ref:`exhale_class_class_ifc_geom_1_1_surface_style_1_1_color_component`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function__ifc_geom_render_styles_8h_1a36715a4198e3c22a81b18ca582f834cc`
+
+- :ref:`exhale_function__ifc_geom_render_styles_8h_1a0805e258e2170e4254caefe72449abc9`
+
+- :ref:`exhale_function__ifc_geom_render_styles_8h_1a287d682b8d5af5e147840a277092239c`
+

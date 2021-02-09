@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Ifc2x3::IfcBoundaryEdgeCondition &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Ifc2x3::IfcBoundaryFaceCondition" href="class_ifc2x3_1_1_ifc_boundary_face_condition.html" />
+    <link rel="prev" title="Class Ifc2x3::IfcBoundaryCondition" href="class_ifc2x3_1_1_ifc_boundary_condition.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-ifc2x3-ifcboundaryedgecondition">
+<span id="exhale-class-class-ifc2x3-1-1-ifc-boundary-edge-condition"></span><h1>Class Ifc2x3::IfcBoundaryEdgeCondition<a class="headerlink" href="#class-ifc2x3-ifcboundaryedgecondition" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_Ifc2x3.h.html#file-src-ifcparse-ifc2x3-h"><span class="std std-ref">File Ifc2x3.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This class is a nested type of <a class="reference internal" href="struct_ifc2x3.html#exhale-struct-struct-ifc2x3"><span class="std std-ref">Struct Ifc2x3</span></a>.</p>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Ifc2x3::IfcBoundaryCondition</span></code> (<a class="reference internal" href="class_ifc2x3_1_1_ifc_boundary_condition.html#exhale-class-class-ifc2x3-1-1-ifc-boundary-condition"><span class="std std-ref">Class Ifc2x3::IfcBoundaryCondition</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv4N6Ifc2x324IfcBoundaryEdgeConditionE">
+<span id="_CPPv3N6Ifc2x324IfcBoundaryEdgeConditionE"></span><span id="_CPPv2N6Ifc2x324IfcBoundaryEdgeConditionE"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a><code class="sig-prename descclassname">::</code></code><code class="sig-name descname">IfcBoundaryEdgeCondition</code> : <em class="property">public</em> <a class="reference internal" href="struct_ifc2x3.html#_CPPv46Ifc2x3" title="Ifc2x3">Ifc2x3</a>::<a class="reference internal" href="class_ifc2x3_1_1_ifc_boundary_condition.html#_CPPv4N6Ifc2x320IfcBoundaryConditionE" title="Ifc2x3::IfcBoundaryCondition">IfcBoundaryCondition</a><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcBoundaryEdgeConditionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Definition from IAI: Describes linearly elastic support conditions or connection conditions.</p>
+<p>Applicability:</p>
+<p>Curve supports and connections.</p>
+<p>HISTORY: New entity in IFC 2x2. IFC 2x4 change: Attributes LinearStiffnessX/Y/Z renamed to TranslationalStiffnessX/Y/Z.</p>
+<p>IFC 2x4 change: All attribute data types changed from numeric to SELECT between Boolean and numeric. Stiffnesses may now also be negative, for example to capture destabilizing effects in boundary conditions. The IFC 2x3 convention of -1. representing infinite stiffness is no longer valid and must not be used. Infinite stiffness, i.e. fixed supports, are now modeled by the Boolean value TRUE. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition4listE">
+<span id="_CPPv3N6Ifc2x324IfcBoundaryEdgeCondition4listE"></span><span id="_CPPv2N6Ifc2x324IfcBoundaryEdgeCondition4listE"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::list"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1a8e8714abe44fb61da070e9ba364ff4f4"></span><em class="property">typedef </em><a class="reference internal" href="class_ifc_templated_entity_list.html#_CPPv4I0E22IfcTemplatedEntityList" title="IfcTemplatedEntityList">IfcTemplatedEntityList</a>&lt;<a class="reference internal" href="#_CPPv4N6Ifc2x324IfcBoundaryEdgeConditionE" title="Ifc2x3::IfcBoundaryEdgeCondition">IfcBoundaryEdgeCondition</a>&gt; <code class="sig-name descname">list</code><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition4listE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition27hasLinearStiffnessByLengthXEv">
+<span id="_CPPv3NK6Ifc2x324IfcBoundaryEdgeCondition27hasLinearStiffnessByLengthXEv"></span><span id="_CPPv2NK6Ifc2x324IfcBoundaryEdgeCondition27hasLinearStiffnessByLengthXEv"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::hasLinearStiffnessByLengthXC"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1abb706f2d7f7b16780826f23828aedf98"></span>bool <code class="sig-name descname">hasLinearStiffnessByLengthX</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition27hasLinearStiffnessByLengthXEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute LinearStiffnessByLengthX is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_boundary_edge_condition"><span class="std std-ref">IfcBoundaryEdgeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition24LinearStiffnessByLengthXEv">
+<span id="_CPPv3NK6Ifc2x324IfcBoundaryEdgeCondition24LinearStiffnessByLengthXEv"></span><span id="_CPPv2NK6Ifc2x324IfcBoundaryEdgeCondition24LinearStiffnessByLengthXEv"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::LinearStiffnessByLengthXC"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1ad14f535615417afc241d19e105d0503e"></span>double <code class="sig-name descname">LinearStiffnessByLengthX</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition24LinearStiffnessByLengthXEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition27setLinearStiffnessByLengthXEd">
+<span id="_CPPv3N6Ifc2x324IfcBoundaryEdgeCondition27setLinearStiffnessByLengthXEd"></span><span id="_CPPv2N6Ifc2x324IfcBoundaryEdgeCondition27setLinearStiffnessByLengthXEd"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::setLinearStiffnessByLengthX__double"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1a6ffde9384fe7c2f39eced9f8aadc78a1"></span>void <code class="sig-name descname">setLinearStiffnessByLengthX</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition27setLinearStiffnessByLengthXEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition27hasLinearStiffnessByLengthYEv">
+<span id="_CPPv3NK6Ifc2x324IfcBoundaryEdgeCondition27hasLinearStiffnessByLengthYEv"></span><span id="_CPPv2NK6Ifc2x324IfcBoundaryEdgeCondition27hasLinearStiffnessByLengthYEv"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::hasLinearStiffnessByLengthYC"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1a28cfee3ea3a508cb06ad9f5519c3102f"></span>bool <code class="sig-name descname">hasLinearStiffnessByLengthY</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition27hasLinearStiffnessByLengthYEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute LinearStiffnessByLengthY is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_boundary_edge_condition"><span class="std std-ref">IfcBoundaryEdgeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition24LinearStiffnessByLengthYEv">
+<span id="_CPPv3NK6Ifc2x324IfcBoundaryEdgeCondition24LinearStiffnessByLengthYEv"></span><span id="_CPPv2NK6Ifc2x324IfcBoundaryEdgeCondition24LinearStiffnessByLengthYEv"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::LinearStiffnessByLengthYC"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1a1e0c20ddedf00492e5da8cdb7ca97088"></span>double <code class="sig-name descname">LinearStiffnessByLengthY</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition24LinearStiffnessByLengthYEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition27setLinearStiffnessByLengthYEd">
+<span id="_CPPv3N6Ifc2x324IfcBoundaryEdgeCondition27setLinearStiffnessByLengthYEd"></span><span id="_CPPv2N6Ifc2x324IfcBoundaryEdgeCondition27setLinearStiffnessByLengthYEd"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::setLinearStiffnessByLengthY__double"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1aa895c6e0a31332c03ed22ac813dcf9f5"></span>void <code class="sig-name descname">setLinearStiffnessByLengthY</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition27setLinearStiffnessByLengthYEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition27hasLinearStiffnessByLengthZEv">
+<span id="_CPPv3NK6Ifc2x324IfcBoundaryEdgeCondition27hasLinearStiffnessByLengthZEv"></span><span id="_CPPv2NK6Ifc2x324IfcBoundaryEdgeCondition27hasLinearStiffnessByLengthZEv"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::hasLinearStiffnessByLengthZC"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1a8f8daa7fac013d655c3e1b262600c98c"></span>bool <code class="sig-name descname">hasLinearStiffnessByLengthZ</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition27hasLinearStiffnessByLengthZEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute LinearStiffnessByLengthZ is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_boundary_edge_condition"><span class="std std-ref">IfcBoundaryEdgeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition24LinearStiffnessByLengthZEv">
+<span id="_CPPv3NK6Ifc2x324IfcBoundaryEdgeCondition24LinearStiffnessByLengthZEv"></span><span id="_CPPv2NK6Ifc2x324IfcBoundaryEdgeCondition24LinearStiffnessByLengthZEv"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::LinearStiffnessByLengthZC"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1af8a3e1964177891381d78812efb88ec6"></span>double <code class="sig-name descname">LinearStiffnessByLengthZ</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition24LinearStiffnessByLengthZEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition27setLinearStiffnessByLengthZEd">
+<span id="_CPPv3N6Ifc2x324IfcBoundaryEdgeCondition27setLinearStiffnessByLengthZEd"></span><span id="_CPPv2N6Ifc2x324IfcBoundaryEdgeCondition27setLinearStiffnessByLengthZEd"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::setLinearStiffnessByLengthZ__double"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1a60bf81f2ec5401151d1b43478b2497c0"></span>void <code class="sig-name descname">setLinearStiffnessByLengthZ</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition27setLinearStiffnessByLengthZEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthXEv">
+<span id="_CPPv3NK6Ifc2x324IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthXEv"></span><span id="_CPPv2NK6Ifc2x324IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthXEv"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::hasRotationalStiffnessByLengthXC"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1adc4ab484ed01a187c5cd95befcc17832"></span>bool <code class="sig-name descname">hasRotationalStiffnessByLengthX</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthXEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RotationalStiffnessByLengthX is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_boundary_edge_condition"><span class="std std-ref">IfcBoundaryEdgeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition28RotationalStiffnessByLengthXEv">
+<span id="_CPPv3NK6Ifc2x324IfcBoundaryEdgeCondition28RotationalStiffnessByLengthXEv"></span><span id="_CPPv2NK6Ifc2x324IfcBoundaryEdgeCondition28RotationalStiffnessByLengthXEv"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::RotationalStiffnessByLengthXC"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1a4998fd0178cd1b2f477ef764623a2051"></span>double <code class="sig-name descname">RotationalStiffnessByLengthX</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition28RotationalStiffnessByLengthXEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Rotational stiffness value about the x-axis of the coordinate system defined by the instance which uses this resource object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthXEd">
+<span id="_CPPv3N6Ifc2x324IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthXEd"></span><span id="_CPPv2N6Ifc2x324IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthXEd"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::setRotationalStiffnessByLengthX__double"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1ac4a0ce69f71c99c96adfdf18144d8a07"></span>void <code class="sig-name descname">setRotationalStiffnessByLengthX</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthXEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthYEv">
+<span id="_CPPv3NK6Ifc2x324IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthYEv"></span><span id="_CPPv2NK6Ifc2x324IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthYEv"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::hasRotationalStiffnessByLengthYC"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1aa02a1a11e4a3ef688143894b20f24975"></span>bool <code class="sig-name descname">hasRotationalStiffnessByLengthY</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthYEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RotationalStiffnessByLengthY is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_boundary_edge_condition"><span class="std std-ref">IfcBoundaryEdgeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition28RotationalStiffnessByLengthYEv">
+<span id="_CPPv3NK6Ifc2x324IfcBoundaryEdgeCondition28RotationalStiffnessByLengthYEv"></span><span id="_CPPv2NK6Ifc2x324IfcBoundaryEdgeCondition28RotationalStiffnessByLengthYEv"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::RotationalStiffnessByLengthYC"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1a2fe67c185d9adfc1e18546d4920c3c87"></span>double <code class="sig-name descname">RotationalStiffnessByLengthY</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition28RotationalStiffnessByLengthYEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Rotational stiffness value about the y-axis of the coordinate system defined by the instance which uses this resource object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthYEd">
+<span id="_CPPv3N6Ifc2x324IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthYEd"></span><span id="_CPPv2N6Ifc2x324IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthYEd"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::setRotationalStiffnessByLengthY__double"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1a41ef0586c1eb41aa5c1117508ebd3fac"></span>void <code class="sig-name descname">setRotationalStiffnessByLengthY</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthYEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthZEv">
+<span id="_CPPv3NK6Ifc2x324IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthZEv"></span><span id="_CPPv2NK6Ifc2x324IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthZEv"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::hasRotationalStiffnessByLengthZC"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1afd77cd484bbd64768cd0b8877216c61a"></span>bool <code class="sig-name descname">hasRotationalStiffnessByLengthZ</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition31hasRotationalStiffnessByLengthZEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether the optional attribute RotationalStiffnessByLengthZ is defined for this <a class="reference internal" href="struct_ifc2x3.html#class_ifc2x3_1_1_ifc_boundary_edge_condition"><span class="std std-ref">IfcBoundaryEdgeCondition</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition28RotationalStiffnessByLengthZEv">
+<span id="_CPPv3NK6Ifc2x324IfcBoundaryEdgeCondition28RotationalStiffnessByLengthZEv"></span><span id="_CPPv2NK6Ifc2x324IfcBoundaryEdgeCondition28RotationalStiffnessByLengthZEv"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::RotationalStiffnessByLengthZC"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1a18bcedf6cd52decf4814a7ce766b0d7d"></span>double <code class="sig-name descname">RotationalStiffnessByLengthZ</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition28RotationalStiffnessByLengthZEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Rotational stiffness value about the z-axis of the coordinate system defined by the instance which uses this resource object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthZEd">
+<span id="_CPPv3N6Ifc2x324IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthZEd"></span><span id="_CPPv2N6Ifc2x324IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthZEd"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::setRotationalStiffnessByLengthZ__double"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1a95fe30b4396569ed302d5521b0c06426"></span>void <code class="sig-name descname">setRotationalStiffnessByLengthZ</code><span class="sig-paren">(</span>double <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition31setRotationalStiffnessByLengthZEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition11declarationEv">
+<span id="_CPPv3NK6Ifc2x324IfcBoundaryEdgeCondition11declarationEv"></span><span id="_CPPv2NK6Ifc2x324IfcBoundaryEdgeCondition11declarationEv"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::declarationC"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1a0cd2e5db3e377f60adabd76565c39353"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">declaration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6Ifc2x324IfcBoundaryEdgeCondition11declarationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition24IfcBoundaryEdgeConditionEP21IfcEntityInstanceData">
+<span id="_CPPv3N6Ifc2x324IfcBoundaryEdgeCondition24IfcBoundaryEdgeConditionEP21IfcEntityInstanceData"></span><span id="_CPPv2N6Ifc2x324IfcBoundaryEdgeCondition24IfcBoundaryEdgeConditionEP21IfcEntityInstanceData"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::IfcBoundaryEdgeCondition__IfcEntityInstanceDataP"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1a64cff5fbe6bf78bd57170ab8bfa2c563"></span><code class="sig-name descname">IfcBoundaryEdgeCondition</code><span class="sig-paren">(</span><a class="reference internal" href="class_ifc_entity_instance_data.html#_CPPv421IfcEntityInstanceData" title="IfcEntityInstanceData">IfcEntityInstanceData</a> *<em>e</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition24IfcBoundaryEdgeConditionEP21IfcEntityInstanceData" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition24IfcBoundaryEdgeConditionEN5boost8optionalINSt6stringEEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEE">
+<span id="_CPPv3N6Ifc2x324IfcBoundaryEdgeCondition24IfcBoundaryEdgeConditionEN5boost8optionalINSt6stringEEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEE"></span><span id="_CPPv2N6Ifc2x324IfcBoundaryEdgeCondition24IfcBoundaryEdgeConditionEN5boost8optionalINSt6stringEEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEE"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::IfcBoundaryEdgeCondition__boost::optional:ss:.boost::optional:double:.boost::optional:double:.boost::optional:double:.boost::optional:double:.boost::optional:double:.boost::optional:double:"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1a62cfdc63839f59b9ad665d550f1b5258"></span><code class="sig-name descname">IfcBoundaryEdgeCondition</code><span class="sig-paren">(</span>boost::optional&lt;std::string&gt; <em>v1_Name</em>, boost::optional&lt;double&gt; <em>v2_LinearStiffnessByLengthX</em>, boost::optional&lt;double&gt; <em>v3_LinearStiffnessByLengthY</em>, boost::optional&lt;double&gt; <em>v4_LinearStiffnessByLengthZ</em>, boost::optional&lt;double&gt; <em>v5_RotationalStiffnessByLengthX</em>, boost::optional&lt;double&gt; <em>v6_RotationalStiffnessByLengthY</em>, boost::optional&lt;double&gt; <em>v7_RotationalStiffnessByLengthZ</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition24IfcBoundaryEdgeConditionEN5boost8optionalINSt6stringEEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition5ClassEv">
+<span id="_CPPv3N6Ifc2x324IfcBoundaryEdgeCondition5ClassEv"></span><span id="_CPPv2N6Ifc2x324IfcBoundaryEdgeCondition5ClassEv"></span><span id="Ifc2x3::IfcBoundaryEdgeCondition::Class"></span><span class="target" id="class_ifc2x3_1_1_ifc_boundary_edge_condition_1a83c257e81516f4dfaa06398a5c73aa69"></span><em class="property">const</em> IfcParse::<a class="reference internal" href="class_ifc_parse_1_1entity.html#_CPPv4N8IfcParse6entityE" title="IfcParse::entity">entity</a> &amp;<code class="sig-name descname">Class</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Ifc2x324IfcBoundaryEdgeCondition5ClassEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++</a><ul>
+      <li>Previous: <a href="class_ifc2x3_1_1_ifc_boundary_condition.html" title="previous chapter">Class Ifc2x3::IfcBoundaryCondition</a></li>
+      <li>Next: <a href="class_ifc2x3_1_1_ifc_boundary_face_condition.html" title="next chapter">Class Ifc2x3::IfcBoundaryFaceCondition</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/rst_files/class_ifc2x3_1_1_ifc_boundary_edge_condition.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
