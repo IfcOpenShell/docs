@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>API Documentation &#8212; IfcOpenShell 0.0.1 documentation</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
@@ -19,6 +20,7 @@
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
+  
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head><body>
@@ -27,9 +29,11 @@
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
-  <div class="section" id="module-ifcopenshell.entity_instance">
+  <section id="module-ifcopenshell.entity_instance">
 <span id="api-documentation"></span><h1>API Documentation<a class="headerlink" href="#module-ifcopenshell.entity_instance" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="ifcopenshell.entity_instance.entity_instance">
@@ -317,30 +321,511 @@ the reference to the deleted will be removed from the aggregate.</p>
 <dl class="py class">
 <dt id="ifcopenshell.validate.log_entry_type">
 <em class="property">class </em><code class="sig-prename descclassname">ifcopenshell.validate.</code><code class="sig-name descname">log_entry_type</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">level</span></em>, <em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="n">instance</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.validate.log_entry_type" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="py attribute">
+<dd><dl class="py method">
 <dt id="ifcopenshell.validate.log_entry_type.instance">
-<code class="sig-name descname">instance</code><a class="headerlink" href="#ifcopenshell.validate.log_entry_type.instance" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="sig-name descname">instance</code><a class="headerlink" href="#ifcopenshell.validate.log_entry_type.instance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Alias for field number 2</p>
 </dd></dl>
 
-<dl class="py attribute">
+<dl class="py method">
 <dt id="ifcopenshell.validate.log_entry_type.level">
-<code class="sig-name descname">level</code><a class="headerlink" href="#ifcopenshell.validate.log_entry_type.level" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="sig-name descname">level</code><a class="headerlink" href="#ifcopenshell.validate.log_entry_type.level" title="Permalink to this definition">¶</a></dt>
 <dd><p>Alias for field number 0</p>
 </dd></dl>
 
-<dl class="py attribute">
+<dl class="py method">
 <dt id="ifcopenshell.validate.log_entry_type.message">
-<code class="sig-name descname">message</code><a class="headerlink" href="#ifcopenshell.validate.log_entry_type.message" title="Permalink to this definition">¶</a></dt>
+<em class="property">property </em><code class="sig-name descname">message</code><a class="headerlink" href="#ifcopenshell.validate.log_entry_type.message" title="Permalink to this definition">¶</a></dt>
 <dd><p>Alias for field number 1</p>
 </dd></dl>
 
 </dd></dl>
 
+<span class="target" id="module-ifcopenshell.ids"></span><dl class="py class">
+<dt id="ifcopenshell.ids.BcfHandler">
+<em class="property">class </em><code class="sig-prename descclassname">ifcopenshell.ids.</code><code class="sig-name descname">BcfHandler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">project_name</span><span class="o">=</span><span class="default_value">'IDS Project'</span></em>, <em class="sig-param"><span class="n">author</span><span class="o">=</span><span class="default_value">'your&#64;email.com'</span></em>, <em class="sig-param"><span class="n">filepath</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">report_valid</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.BcfHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logging handler for creation of BCF report files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>project_name</strong> (<em>str</em><em>, </em><em>optional</em>) – defaults to “IDS Project”</p></li>
+<li><p><strong>author</strong> (<em>str</em><em>, </em><em>optional</em>) – Email of the person creating the BCF report, defaults to “<a class="reference external" href="mailto:your&#37;&#52;&#48;email&#46;com">your<span>&#64;</span>email<span>&#46;</span>com</a>”</p></li>
+<li><p><strong>filepath</strong> (<em>str</em><em>, </em><em>optional</em>) – Path to save the BCF report, defaults to None</p></li>
+<li><p><strong>report_valid</strong> (<em>bool</em><em>, </em><em>optional</em>) – True if you want to list all the compliant cases as well, defaults to False</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bcf_handler</span> <span class="o">=</span> <span class="n">BcfHandler</span><span class="p">(</span>
+    <span class="n">project_name</span><span class="o">=</span><span class="s2">&quot;Default IDS Project&quot;</span><span class="p">,</span>
+    <span class="n">author</span><span class="o">=</span><span class="s2">&quot;your@email.com&quot;</span><span class="p">,</span>
+    <span class="n">filepath</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;.\example.bcfzip&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;IDS_Logger&quot;</span><span class="p">)</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">%(message)s</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">addHandler</span><span class="p">(</span><span class="n">bcf_handler</span><span class="p">)</span>
+</pre></div>
 </div>
+<dl class="py method">
+<dt id="ifcopenshell.ids.BcfHandler.emit">
+<code class="sig-name descname">emit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_content</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.BcfHandler.emit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Triggered on each use of logging with the BCF handler enabled.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>log_content</strong> (<em>string|dict</em>) – default logger message</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ifcopenshell.ids.BcfHandler.flush">
+<code class="sig-name descname">flush</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.BcfHandler.flush" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the BCF report to file. Triggered at the end of the validation process.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ifcopenshell.ids.SimpleHandler">
+<em class="property">class </em><code class="sig-prename descclassname">ifcopenshell.ids.</code><code class="sig-name descname">SimpleHandler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">report_valid</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.SimpleHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logging handler listing all cases in python list.</p>
+<dl class="py method">
+<dt id="ifcopenshell.ids.SimpleHandler.emit">
+<code class="sig-name descname">emit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mymsg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.SimpleHandler.emit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Triggered on each use of logging with the Simple handler enabled.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>log_content</strong> (<em>string|dict</em>) – default logger message</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ifcopenshell.ids.boolean_and">
+<em class="property">class </em><code class="sig-prename descclassname">ifcopenshell.ids.</code><code class="sig-name descname">boolean_and</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">terms</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.boolean_and" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="ifcopenshell.ids.boolean_and.fold">
+<code class="sig-name descname">fold</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.boolean_and.fold" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True if bool(x) is True for all values x in the iterable.</p>
+<p>If the iterable is empty, return True.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ifcopenshell.ids.boolean_logic">
+<em class="property">class </em><code class="sig-prename descclassname">ifcopenshell.ids.</code><code class="sig-name descname">boolean_logic</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">terms</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.boolean_logic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boolean conjunction over a collection of functions</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="ifcopenshell.ids.boolean_or">
+<em class="property">class </em><code class="sig-prename descclassname">ifcopenshell.ids.</code><code class="sig-name descname">boolean_or</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">terms</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.boolean_or" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="ifcopenshell.ids.boolean_or.fold">
+<code class="sig-name descname">fold</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.boolean_or.fold" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True if bool(x) is True for any x in the iterable.</p>
+<p>If the iterable is empty, return False.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ifcopenshell.ids.classification">
+<em class="property">class </em><code class="sig-prename descclassname">ifcopenshell.ids.</code><code class="sig-name descname">classification</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">node</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">location</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.classification" title="Permalink to this definition">¶</a></dt>
+<dd><p>The IDS classification facet by traversing the HasAssociations inverse attribute</p>
+<dl class="py method">
+<dt id="ifcopenshell.ids.classification.asdict">
+<code class="sig-name descname">asdict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.classification.asdict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts object to a dictionary, adding required attributes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Xmlschema compliant dictionary.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ifcopenshell.ids.classification.create">
+<em class="property">static </em><code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">location</span><span class="o">=</span><span class="default_value">'any'</span></em>, <em class="sig-param"><span class="n">value</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">system</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.classification.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a classification facet that can be added to applicability or requirements of IDS specification.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>location</strong> (<em>str</em><em>, </em><em>optional</em>) – Define where to check for the parameter. One of “any”|”instance”|”type”, defaults to “any”</p></li>
+<li><p><strong>value</strong> (<em>restriction|alphanumeric</em><em>, </em><em>optional</em>) – Value that is required. Could be alphanumeric or restriction object, defaults to None</p></li>
+<li><p><strong>system</strong> (<em>restriction|alphanumeric</em><em>, </em><em>optional</em>) – System that is required. Could be alphanumeric or restriction object, defaults to None</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>classification object</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#ifcopenshell.ids.classification" title="ifcopenshell.ids.classification">classification</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ifcopenshell.ids.entity">
+<em class="property">class </em><code class="sig-prename descclassname">ifcopenshell.ids.</code><code class="sig-name descname">entity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">node</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">location</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.entity" title="Permalink to this definition">¶</a></dt>
+<dd><p>The IDS entity facet currently <em>with</em> inheritance</p>
+<dl class="py method">
+<dt id="ifcopenshell.ids.entity.asdict">
+<code class="sig-name descname">asdict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.entity.asdict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts object to a dictionary, adding required attributes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Xmlschema compliant dictionary.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ifcopenshell.ids.entity.create">
+<em class="property">static </em><code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">predefinedtype</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.entity.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an entity facet that can be added to applicability or requirements of IDS specification.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – IFC entity name that is required. e.g. IfcWall, defaults to None</p></li>
+<li><p><strong>predefinedtype</strong> (<em>str</em><em>, </em><em>optional</em>) – name of the predefined type, defaults to None</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>entity object</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#ifcopenshell.ids.entity" title="ifcopenshell.ids.entity">entity</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ifcopenshell.ids.facet">
+<em class="property">class </em><code class="sig-prename descclassname">ifcopenshell.ids.</code><code class="sig-name descname">facet</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">node</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">location</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.facet" title="Permalink to this definition">¶</a></dt>
+<dd><p>The base class for IDS facets. IDS facets are functors constructed from
+XML nodes that return True or False. A getattr method is provided for
+conveniently extracting XML child node text content.
+Use child classes instead: entity, classification, property and material.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="ifcopenshell.ids.facet_evaluation">
+<em class="property">class </em><code class="sig-prename descclassname">ifcopenshell.ids.</code><code class="sig-name descname">facet_evaluation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">success</span></em>, <em class="sig-param"><span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.facet_evaluation" title="Permalink to this definition">¶</a></dt>
+<dd><p>The evaluation of a facet with data from IFC. Converts to bool and has a human readable string format.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="ifcopenshell.ids.ids">
+<em class="property">class </em><code class="sig-prename descclassname">ifcopenshell.ids.</code><code class="sig-name descname">ids</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ifcversion</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">description</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">author</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">copyright</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">version</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">creation_date</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">purpose</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">milestone</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Represents the XML root &lt;ids&gt; node and its &lt;specification&gt; childNodes.</p>
+<dl class="py method">
+<dt id="ifcopenshell.ids.ids.asdict">
+<code class="sig-name descname">asdict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.ids.asdict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts object to a dictionary, adding required attributes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Xmlschema compliant dictionary.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ifcopenshell.ids.ids.open">
+<em class="property">static </em><code class="sig-name descname">open</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filepath</span></em>, <em class="sig-param"><span class="n">ids_schema</span><span class="o">=</span><span class="default_value">XMLSchema10(name='ids.xsd', namespace='http://standards.buildingsmart.org/IDS')</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.ids.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use to open ids.xml files</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<em>str</em>) – ids file path</p></li>
+<li><p><strong>ids_schema</strong> (<em>XMLschema</em><em>, </em><em>optional</em>) – XML Schema for an IDS file, defaults to ids_schema object from buildingSMART</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>IDS file as a python object</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ids object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ifcopenshell.ids.ids.to_xml">
+<code class="sig-name descname">to_xml</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filepath</span><span class="o">=</span><span class="default_value">'./'</span></em>, <em class="sig-param"><span class="n">ids_schema</span><span class="o">=</span><span class="default_value">XMLSchema10(name='ids.xsd', namespace='http://standards.buildingsmart.org/IDS')</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.ids.to_xml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save IDS object as .xml file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<em>str</em><em>, </em><em>optional</em>) – Path for the new file, defaults to “./”</p></li>
+<li><p><strong>ids_schema</strong> (<em>XMLschema</em><em>, </em><em>optional</em>) – XML Schema for an IDS file, defaults to ids_schema object from buildingSMART</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Result of the newly created file validation against the schema.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ifcopenshell.ids.ids.validate">
+<code class="sig-name descname">validate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ifc_file</span></em>, <em class="sig-param"><span class="n">logger</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.ids.validate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use to validate IFC model against IDS specifications.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ifc_file</strong> (<em>str</em>) – path to ifc file</p></li>
+<li><p><strong>logger</strong> (<em>logging</em><em>, </em><em>optional</em>) – Logging object with handlers, defaults to None</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ifcopenshell.ids.material">
+<em class="property">class </em><code class="sig-prename descclassname">ifcopenshell.ids.</code><code class="sig-name descname">material</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">node</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">location</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.material" title="Permalink to this definition">¶</a></dt>
+<dd><p>The IDS material facet used to traverse the HasAssociations inverse attribute.</p>
+<dl class="py method">
+<dt id="ifcopenshell.ids.material.asdict">
+<code class="sig-name descname">asdict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.material.asdict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts object to a dictionary, adding required attributes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Xmlschema compliant dictionary.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ifcopenshell.ids.material.create">
+<em class="property">static </em><code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">location</span><span class="o">=</span><span class="default_value">'any'</span></em>, <em class="sig-param"><span class="n">value</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.material.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a material facet that can be added to applicability or requirements of IDS specification.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>location</strong> (<em>str</em><em>, </em><em>optional</em>) – Define where to check for the parameter. One of “any”|”instance”|”type”, defaults to “any”</p></li>
+<li><p><strong>value</strong> (<em>restriction|alphanumeric</em><em>, </em><em>optional</em>) – Value that is required. Could be alphanumeric or restriction object, defaults to None</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>material object</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#ifcopenshell.ids.material" title="ifcopenshell.ids.material">material</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ifcopenshell.ids.meta_facet">
+<em class="property">class </em><code class="sig-prename descclassname">ifcopenshell.ids.</code><code class="sig-name descname">meta_facet</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">clsname</span></em>, <em class="sig-param"><span class="n">bases</span></em>, <em class="sig-param"><span class="n">attrs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.meta_facet" title="Permalink to this definition">¶</a></dt>
+<dd><p>A metaclass for automatically registering facets in a map to be instantiated based on XML tagnames.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ifcopenshell.ids.parameter_asdict">
+<code class="sig-prename descclassname">ifcopenshell.ids.</code><code class="sig-name descname">parameter_asdict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parameter</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.parameter_asdict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts parameter to an IDS compliant dictionary, handling both value and restrictions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Xmlschema compliant dictionary.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt id="ifcopenshell.ids.property">
+<em class="property">class </em><code class="sig-prename descclassname">ifcopenshell.ids.</code><code class="sig-name descname">property</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">node</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">location</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.property" title="Permalink to this definition">¶</a></dt>
+<dd><p>The IDS property facet implemented using <cite>ifcopenshell.util.element</cite></p>
+<dl class="py method">
+<dt id="ifcopenshell.ids.property.asdict">
+<code class="sig-name descname">asdict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.property.asdict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts object to a dictionary, adding required attributes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Xmlschema compliant dictionary.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ifcopenshell.ids.property.create">
+<em class="property">static </em><code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">location</span><span class="o">=</span><span class="default_value">'any'</span></em>, <em class="sig-param"><span class="n">propertyset</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">value</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.property.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a property facet that can be added to applicability or requirements of IDS specification.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>location</strong> (<em>str</em><em>, </em><em>optional</em>) – Define where to check for the parameter. One of “any”|”instance”|”type”, defaults to “any”</p></li>
+<li><p><strong>propertyset</strong> (<em>restriction|alphanumeric</em><em>, </em><em>optional</em>) – Propertyset that is required. Could be alphanumeric or restriction object, defaults to None</p></li>
+<li><p><strong>name</strong> (<em>restriction|alphanumeric</em><em>, </em><em>optional</em>) – Name that is required. Could be alphanumeric or restriction object, defaults to None</p></li>
+<li><p><strong>value</strong> (<em>restriction|alphanumeric</em><em>, </em><em>optional</em>) – Value that is required. Could be alphanumeric or restriction object, defaults to None</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>property object</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#ifcopenshell.ids.property" title="ifcopenshell.ids.property">property</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ifcopenshell.ids.restriction">
+<em class="property">class </em><code class="sig-prename descclassname">ifcopenshell.ids.</code><code class="sig-name descname">restriction</code><a class="headerlink" href="#ifcopenshell.ids.restriction" title="Permalink to this definition">¶</a></dt>
+<dd><p>The value restriction from XSD implemented as a list of values and a containment test</p>
+<dl class="py method">
+<dt id="ifcopenshell.ids.restriction.asdict">
+<code class="sig-name descname">asdict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.restriction.asdict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts object to a dictionary, adding required attributes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Xmlschema compliant dictionary.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ifcopenshell.ids.restriction.create">
+<em class="property">static </em><code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">options</span></em>, <em class="sig-param"><span class="n">type</span><span class="o">=</span><span class="default_value">'pattern'</span></em>, <em class="sig-param"><span class="n">base</span><span class="o">=</span><span class="default_value">'string'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.restriction.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create restriction instead of simpleValue</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>type</strong> (<em>str</em><em>, </em><em>optional</em>) – One of “enumeration”|”pattern”|”bounds”, defaults to “pattern”</p></li>
+<li><p><strong>options</strong> (<em>list|str|dict</em>) – if enumeration: list of possible values
+if pattern: xml regular expression string
+if bounds: dictionary with possible keys: ‘minInclusive’, ‘maxInclusive’, ‘minExclusive’, ‘maxExclusive’</p></li>
+<li><p><strong>base</strong> (<em>str</em><em>, </em><em>optional</em>) – One of “string”|”boolean”|”decimal”|”integer”, defaults to “string”</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>Exception</strong> – If not properly defined restriction.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>restriction object</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#ifcopenshell.ids.restriction" title="ifcopenshell.ids.restriction">restriction</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ifcopenshell.ids.restriction.parse">
+<em class="property">static </em><code class="sig-name descname">parse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ids_dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.restriction.parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse xml restriction to python object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ids_dict</strong> (<em>dict</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ifcopenshell.ids.specification">
+<em class="property">class </em><code class="sig-prename descclassname">ifcopenshell.ids.</code><code class="sig-name descname">specification</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'Specification'</span></em>, <em class="sig-param"><span class="n">necessity</span><span class="o">=</span><span class="default_value">'required'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.specification" title="Permalink to this definition">¶</a></dt>
+<dd><p>Represents the XML &lt;specification&gt; node and its two children &lt;applicability&gt; and &lt;requirements&gt;</p>
+<dl class="py method">
+<dt id="ifcopenshell.ids.specification.add_applicability">
+<code class="sig-name descname">add_applicability</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">facet</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.specification.add_applicability" title="Permalink to this definition">¶</a></dt>
+<dd><p>Applicability specifies what conditions must be meet for an IFC object to be used for validation. Note, that at least one entity facet is required.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>facet</strong> (<a class="reference internal" href="#ifcopenshell.ids.facet" title="ifcopenshell.ids.facet"><em>facet</em></a>) – any of entity|classification|property|material</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="n">ids</span><span class="o">.</span><span class="n">ids</span><span class="p">()</span>
+<span class="n">i</span><span class="o">.</span><span class="n">specifications</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ids</span><span class="o">.</span><span class="n">specification</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Test_Specification&quot;</span><span class="p">))</span>
+<span class="n">e</span> <span class="o">=</span> <span class="n">ids</span><span class="o">.</span><span class="n">entity</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Test_Name&quot;</span><span class="p">,</span> <span class="n">predefinedtype</span><span class="o">=</span><span class="s2">&quot;Test_PredefinedType&quot;</span><span class="p">)</span>
+<span class="n">i</span><span class="o">.</span><span class="n">specifications</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">add_applicability</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ifcopenshell.ids.specification.add_requirement">
+<code class="sig-name descname">add_requirement</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">facet</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.specification.add_requirement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Requirement is validated on all applicable IFC elements. Note, that at least one facet of any type is required.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>facet</strong> (<a class="reference internal" href="#ifcopenshell.ids.facet" title="ifcopenshell.ids.facet"><em>facet</em></a>) – any of entity|classification|property|material</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ifcopenshell.ids.specification.asdict">
+<code class="sig-name descname">asdict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.specification.asdict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts object to a dictionary, adding required attributes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Xmlschema compliant dictionary.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ifcopenshell.ids.specification.parse">
+<em class="property">static </em><code class="sig-name descname">parse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ids_dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifcopenshell.ids.specification.parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse xml specification to python object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ids_dict</strong> (<em>dict</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -355,7 +840,7 @@ the reference to the deleted will be removed from the aggregate.</p>
 
 
 <h3>Navigation</h3>
-<p class="caption"><span class="caption-text">Contents:</span></p>
+<p><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../ifcopenshell.html">IfcOpenShell</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../ifcopenshell-python.html">IfcOpenShell-Python</a></li>
@@ -390,6 +875,14 @@ the reference to the deleted will be removed from the aggregate.</p>
     </div>
 </div>
 <script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="clearer"></div>
@@ -399,7 +892,7 @@ the reference to the deleted will be removed from the aggregate.</p>
       
       |
       Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="../_sources/ifcopenshell-python/api-documentation.rst.txt"
